@@ -1,0 +1,34 @@
+---
+// Root page: Tự động chuyển hướng tới /vi hoặc /en theo thiết lập ngôn ngữ của trình duyệt
+---
+
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content="0; url=/vi" />
+    <title>Tech Tips Hub</title>
+    <script is:inline>
+      (function () {
+        const stored = localStorage.getItem('techtips_lang');
+        if (stored === 'en') {
+          window.location.replace('/en');
+          return;
+        }
+        if (stored === 'vi') {
+          window.location.replace('/vi');
+          return;
+        }
+        const navLang = navigator.language || '';
+        if (navLang.startsWith('en')) {
+          window.location.replace('/en');
+        } else {
+          window.location.replace('/vi');
+        }
+      })();
+    </script>
+  </head>
+  <body class="bg-[#faf7f2] flex items-center justify-center min-h-screen text-[#57524a] font-sans">
+    <p>Đang chuyển hướng tới Tech Tips Hub...</p>
+  </body>
+</html>

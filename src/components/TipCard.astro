@@ -1,0 +1,188 @@
+---
+import type { Tip } from '../lib/data';
+import type { Locale } from '../lib/i18n';
+import { getTranslations } from '../lib/i18n';
+
+interface Props {
+  tip: Tip;
+  lang: Locale;
+  featured?: boolean;
+}
+
+const { tip, lang, featured = false } = Astro.props;
+const t = getTranslations(lang);
+
+const titleText = tip.title[lang] || tip.title['en'] || Object.values(tip.title)[0] || '';
+const summaryText = tip.summary[lang] || tip.summary['en'] || Object.values(tip.summary)[0] || '';
+const isMachineTranslated = tip.translated && tip.translated[lang];
+
+// Format ngày đăng
+let formattedDate = '';
+try {
+  const d = new Date(tip.published_at);
+  if (!isNaN(d.getTime())) {
+    formattedDate = d.toLocaleDateString(lang === 'vi' ? 'vi-VN' : 'en-US', {
+      year: 'numeric',
+      month: 'short',
+      day: 'numeric',
+    });
+  }
+} catch {
+  formattedDate = '';
+}
+
+// Domain cho favicon
+let sourceDomain = 'example.com';
+try {
+  sourceDomain = new URL(tip.url).hostname;
+} catch {}
+
+const faviconUrl = `https://www.google.com/s2/favicons?domain=${sourceDomain}&sz=32`;
+---
+
+<article
+  class={`tip-card group relative bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-xl p-5 transition-all duration-200 hover:shadow-craft-hover hover:border-[var(--accent)] flex flex-col justify-between ${
+    featured ? 'border-2 border-[var(--accent)] shadow-craft' : ''
+  }`}
+  data-tip-id={tip.id}
+  data-category={tip.categories.join(' ')}
+  data-difficulty={tip.difficulty}
+>
+  <div>
+    <!-- Top Metadata Bar -->
+    <div class="flex items-center justify-between gap-2 mb-3 text-xs">
+      <!-- Source Badge -->
+      <a
+        href={`/${lang}/sources#${tip.source.id}`}
+        class="inline-flex items-center gap-1.5 font-medium text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors"
+      >
+        <img
+          src={faviconUrl}
+          alt=""
+          width="16"
+          height="16"
+          loading="lazy"
+          class="w-4 h-4 rounded-sm shrink-0"
+          onerror="this.style.display='none'"
+        />
+        <span class="truncate max-w-[140px]">{tip.source.name}</span>
+      </a>
+
+      <!-- Right Meta: Difficulty + Date -->
+      <div class="flex items-center gap-2 shrink-0">
+        <!-- Difficulty Badge with shape and text (Accessibility compliance 12.3) -->
+        <span
+          class={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-medium border ${
+            tip.difficulty === 'easy'
+              ? 'bg-[var(--badge-easy-bg)] text-[var(--badge-easy-text)] border-[var(--badge-easy-border)]'
+              : tip.difficulty === 'advanced'
+                ? 'bg-[var(--badge-adv-bg)] text-[var(--badge-adv-text)] border-[var(--badge-adv-border)]'
+                : 'bg-[var(--badge-med-bg)] text-[var(--badge-med-text)] border-[var(--badge-med-border)]'
+          }`}
+          title={`${t.detail.difficulty}: ${t.difficulty[tip.difficulty]}`}
+        >
+          <span class="w-1.5 h-1.5 rounded-full bg-current"></span>
+          {t.difficulty[tip.difficulty]}
+        </span>
+
+        {formattedDate && (
+          <span class="text-[var(--text-muted)] text-[11px] hidden sm:inline">
+            {formattedDate}
+          </span>
+        )}
+      </div>
+    </div>
+
+    <!-- Title -->
+    <h3 class="text-base sm:text-lg font-bold font-serif leading-snug mb-2 text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
+      <a href={`/${lang}/tip/${tip.id}`} class="focus:outline-none">
+        {titleText}
+      </a>
+    </h3>
+
+    <!-- Summary -->
+    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-4 line-clamp-3">
+      {summaryText}
+    </p>
+  </div>
+
+  <div>
+    <!-- Machine Translation Label -->
+    {isMachineTranslated && (
+      <div class="mb-3 inline-flex items-center gap-1.5 text-[11px] text-[var(--text-muted)] font-mono bg-[var(--bg-muted)] px-2 py-0.5 rounded border border-[var(--border-subtle)]" title={t.card.machine_translation_tip}>
+        <svg class="w-3 h-3 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="m5 8 6 6" stroke-width="2" stroke-linecap="round"></path>
+          <path d="m4 14 6-6 2-3" stroke-width="2" stroke-linecap="round"></path>
+          <path d="M2 5h12" stroke-width="2" stroke-linecap="round"></path>
+          <path d="M7 2h1" stroke-width="2" stroke-linecap="round"></path>
+          <path d="m22 22-5-10-5 10" stroke-width="2" stroke-linecap="round"></path>
+          <path d="M14 18h6" stroke-width="2" stroke-linecap="round"></path>
+        </svg>
+        <span>{t.card.machine_translation}</span>
+      </div>
+    )}
+
+    <!-- Category & Tags Chips -->
+    <div class="flex flex-wrap items-center gap-1.5 mb-4">
+      {tip.categories.map((cat) => (
+        <a
+          href={`/${lang}/category/${cat}`}
+          class="px-2 py-0.5 rounded text-[11px] font-mono capitalize border border-[var(--border-subtle)] bg-[var(--bg-muted)] text-[var(--text-secondary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+        >
+          #{cat}
+        </a>
+      ))}
+      {tip.tags.slice(0, 2).map((tg) => (
+        <span class="px-1.5 py-0.5 rounded text-[10px] text-[var(--text-muted)] font-mono">
+          · {tg}
+        </span>
+      ))}
+    </div>
+
+    <!-- Action Bar -->
+    <div class="pt-3 border-t border-[var(--border-subtle)] flex items-center justify-between gap-2">
+      <!-- Direct Link to Original Article -->
+      <a
+        href={tip.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--accent-bg)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white border border-[var(--accent-border)] transition-colors"
+      >
+        <span>{t.card.read_original}</span>
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          <polyline points="15 3 21 3 21 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+          <line x1="10" y1="14" x2="21" y2="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+        </svg>
+      </a>
+
+      <!-- Quick Actions: Save & Read Status -->
+      <div class="flex items-center gap-1">
+        <!-- Bookmark Button -->
+        <button
+          type="button"
+          class="bookmark-btn p-2 rounded-lg text-[var(--text-muted)] hover:text-[var(--accent)] hover:bg-[var(--bg-muted)] transition-colors"
+          data-id={tip.id}
+          title={t.card.save_tip}
+          aria-label={t.card.save_tip}
+        >
+          <svg class="bookmark-icon w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+
+        <!-- Details Link -->
+        <a
+          href={`/${lang}/tip/${tip.id}`}
+          class="p-2 rounded-lg text-[var(--text-muted)] hover:text-[var(--accent)] hover:bg-[var(--bg-muted)] transition-colors"
+          title={t.card.view_details}
+          aria-label={t.card.view_details}
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <polyline points="9 18 15 12 9 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</article>

@@ -1,0 +1,204 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TipCard from '../../components/TipCard.astro';
+import TrickOfTheDay from '../../components/TrickOfTheDay.astro';
+import { getAllTips, getTrickOfTheDay, getCategoriesWithCounts } from '../../lib/data';
+import { getTranslations } from '../../lib/i18n';
+
+const lang = 'vi';
+const t = getTranslations(lang);
+const tips = getAllTips();
+const trickOfDay = getTrickOfTheDay();
+const categoriesWithCounts = getCategoriesWithCounts();
+---
+
+<Layout lang={lang} title={t.site.tagline}>
+  <!-- Hero Section (Phong cách Sổ tay thủ thuật, không sáo rỗng AI) -->
+  <header class="mb-8 pb-8 border-b border-[var(--border-color)]">
+    <div class="max-w-3xl">
+      <div class="inline-flex items-center gap-2 px-2.5 py-1 rounded-md border border-[var(--accent-border)] bg-[var(--accent-bg)] text-[var(--accent)] text-xs font-mono font-semibold mb-4">
+        <span>⚡ Cập nhật tự động mỗi 4 giờ</span>
+        <span>•</span>
+        <span>{tips.length} thủ thuật trong kho</span>
+      </div>
+
+      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-tight text-[var(--text-primary)] mb-4 leading-tight">
+        Sổ tay thủ thuật của dân công nghệ.
+      </h1>
+
+      <p class="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed">
+        Tổng hợp mẹo hay, phím tắt thực chiến và cách gỡ rối cho Windows, macOS, Linux, Android, iOS và công cụ lập trình. Luôn ghi nguồn tác giả gốc, chi phí vận hành 0đ.
+      </p>
+    </div>
+  </header>
+
+  <!-- Trick of the Day -->
+  {trickOfDay && <TrickOfTheDay tip={trickOfDay} lang={lang} />}
+
+  <!-- Main Content Controls: Filters -->
+  <section class="mb-8" aria-label="Bộ lọc thủ thuật">
+    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+      <div>
+        <h2 class="text-xl font-serif font-bold text-[var(--text-primary)]">
+          {t.home.latest_tips}
+        </h2>
+        <p class="text-xs text-[var(--text-muted)] font-mono mt-0.5">
+          {t.home.latest_tips_sub}
+        </p>
+      </div>
+
+      <!-- Difficulty Filter -->
+      <div class="flex items-center gap-2 text-xs">
+        <span class="text-[var(--text-muted)] font-medium font-mono">{t.home.filter_by_difficulty}:</span>
+        <div class="inline-flex p-1 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)]" id="difficulty-filter-group">
+          <button
+            type="button"
+            class="diff-btn px-2.5 py-1 rounded text-xs font-medium transition-colors bg-[var(--accent)] text-white"
+            data-diff="all"
+          >
+            {t.home.all_difficulties}
+          </button>
+          <button
+            type="button"
+            class="diff-btn px-2.5 py-1 rounded text-xs font-medium transition-colors text-[var(--text-secondary)] hover:text-[var(--accent)]"
+            data-diff="easy"
+          >
+            {t.difficulty.easy}
+          </button>
+          <button
+            type="button"
+            class="diff-btn px-2.5 py-1 rounded text-xs font-medium transition-colors text-[var(--text-secondary)] hover:text-[var(--accent)]"
+            data-diff="medium"
+          >
+            {t.difficulty.medium}
+          </button>
+          <button
+            type="button"
+            class="diff-btn px-2.5 py-1 rounded text-xs font-medium transition-colors text-[var(--text-secondary)] hover:text-[var(--accent)]"
+            data-diff="advanced"
+          >
+            {t.difficulty.advanced}
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Category Filter Pills -->
+    <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none" id="category-filter-group">
+      <button
+        type="button"
+        class="cat-btn shrink-0 px-3 py-1.5 rounded-lg text-xs font-semibold font-mono border transition-all border-[var(--accent)] bg-[var(--accent)] text-white shadow-sm"
+        data-category="all"
+      >
+        Tất cả ({tips.length})
+      </button>
+      {categoriesWithCounts.map((cat) => (
+        <button
+          type="button"
+          class="cat-btn shrink-0 px-3 py-1.5 rounded-lg text-xs font-semibold font-mono border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all"
+          data-category={cat.id}
+        >
+          {cat.name.vi} ({cat.count})
+        </button>
+      ))}
+    </div>
+  </section>
+
+  <!-- Tips Grid -->
+  <div id="tips-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {tips.map((tip) => (
+      <TipCard tip={tip} lang={lang} />
+    ))}
+  </div>
+
+  <!-- Empty Search / Filter state -->
+  <div id="empty-tips-msg" class="hidden py-16 text-center border border-dashed border-[var(--border-color)] rounded-xl bg-[var(--bg-surface)] mt-6">
+    <div class="w-12 h-12 mx-auto rounded-full bg-[var(--bg-muted)] flex items-center justify-center text-[var(--text-muted)] mb-3">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <circle cx="11" cy="11" r="8" stroke-width="2"></circle>
+        <path d="m21 21-4.35-4.35" stroke-width="2" stroke-linecap="round"></path>
+      </svg>
+    </div>
+    <h3 class="text-base font-serif font-bold text-[var(--text-primary)] mb-1">
+      {t.home.no_tips_found}
+    </h3>
+    <p class="text-xs text-[var(--text-muted)] mb-4">
+      Hãy thử chọn danh mục khác hoặc xóa bộ lọc độ khó.
+    </p>
+    <button
+      id="reset-filter-btn"
+      type="button"
+      class="px-4 py-2 rounded-lg text-xs font-semibold bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] transition-colors"
+    >
+      {t.home.clear_filters}
+    </button>
+  </div>
+</Layout>
+
+<script is:inline>
+  (function () {
+    let currentCat = 'all';
+    let currentDiff = 'all';
+
+    const catButtons = document.querySelectorAll('.cat-btn');
+    const diffButtons = document.querySelectorAll('.diff-btn');
+    const cards = document.querySelectorAll('.tip-card');
+    const emptyMsg = document.getElementById('empty-tips-msg');
+    const resetBtn = document.getElementById('reset-filter-btn');
+
+    function applyFilter() {
+      let visibleCount = 0;
+      cards.forEach((card) => {
+        const cats = card.getAttribute('data-category') || '';
+        const diff = card.getAttribute('data-difficulty') || '';
+
+        const matchCat = currentCat === 'all' || cats.split(' ').includes(currentCat);
+        const matchDiff = currentDiff === 'all' || diff === currentDiff;
+
+        if (matchCat && matchDiff) {
+          card.classList.remove('hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+
+      if (emptyMsg) {
+        if (visibleCount === 0) {
+          emptyMsg.classList.remove('hidden');
+        } else {
+          emptyMsg.classList.add('hidden');
+        }
+      }
+    }
+
+    catButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        catButtons.forEach((b) => {
+          b.className = 'cat-btn shrink-0 px-3 py-1.5 rounded-lg text-xs font-semibold font-mono border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all';
+        });
+        btn.className = 'cat-btn shrink-0 px-3 py-1.5 rounded-lg text-xs font-semibold font-mono border transition-all border-[var(--accent)] bg-[var(--accent)] text-white shadow-sm';
+        currentCat = btn.getAttribute('data-category');
+        applyFilter();
+      });
+    });
+
+    diffButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        diffButtons.forEach((b) => {
+          b.className = 'diff-btn px-2.5 py-1 rounded text-xs font-medium transition-colors text-[var(--text-secondary)] hover:text-[var(--accent)]';
+        });
+        btn.className = 'diff-btn px-2.5 py-1 rounded text-xs font-medium transition-colors bg-[var(--accent)] text-white';
+        currentDiff = btn.getAttribute('data-diff');
+        applyFilter();
+      });
+    });
+
+    resetBtn?.addEventListener('click', () => {
+      currentCat = 'all';
+      currentDiff = 'all';
+      catButtons[0]?.click();
+      diffButtons[0]?.click();
+    });
+  })();
+</script>

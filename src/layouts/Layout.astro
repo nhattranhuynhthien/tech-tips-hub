@@ -1,0 +1,278 @@
+---
+import '../styles/global.css';
+import type { Locale } from '../lib/i18n';
+import { getTranslations } from '../lib/i18n';
+import SearchModal from '../components/SearchModal.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+  lang: Locale;
+  canonicalPath?: string;
+}
+
+const {
+  lang,
+  title,
+  description,
+  canonicalPath = Astro.url.pathname,
+} = Astro.props;
+
+const t = getTranslations(lang);
+const pageTitle = title ? `${title} — Tech Tips Hub` : t.site.title;
+const pageDesc = description || t.site.description;
+
+// Đường dẫn đối ứng sang ngôn ngữ còn lại
+const otherLang: Locale = lang === 'vi' ? 'en' : 'vi';
+const targetPath = canonicalPath.replace(new RegExp(`^/${lang}`), `/${otherLang}`);
+const alternateUrl = `https://techtipshub.pages.dev${targetPath}`;
+const canonicalUrl = `https://techtipshub.pages.dev${canonicalPath}`;
+---
+
+<!doctype html>
+<html lang={lang} class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{pageTitle}</title>
+    <meta name="description" content={pageDesc} />
+    <link rel="canonical" href={canonicalUrl} />
+    <link rel="alternate" hreflang={lang} href={canonicalUrl} />
+    <link rel="alternate" hreflang={otherLang} href={alternateUrl} />
+    <link rel="alternate" hreflang="x-default" href="https://techtipshub.pages.dev/vi" />
+    <link rel="alternate" type="application/rss+xml" title={`${t.site.title} RSS`} href={`/${lang}/rss.xml`} />
+
+    <!-- Open Graph & Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDesc} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:site_name" content="Tech Tips Hub" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDesc} />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+    <!-- Web Fonts: Plus Jakarta Sans & Source Serif 4 with Vietnamese sub-sets -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,400&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Theme initialization (Inline script to prevent flash of wrong theme) -->
+    <script is:inline>
+      (function () {
+        const storedTheme = localStorage.getItem('techtips_theme');
+        if (storedTheme === 'dark' || (!storedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+        } else {
+          document.documentElement.classList.remove('dark');
+        }
+      })();
+    </script>
+  </head>
+  <body class="flex flex-col min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] font-sans selection:bg-[#f4d3bc] dark:selection:bg-[#5a351e]">
+    <!-- Accessibility Skip Link -->
+    <a
+      href="#main-content"
+      class="sr-only focus:not-sr-only focus:fixed focus:top-4 focus:left-4 z-50 px-4 py-2 bg-[var(--accent)] text-white rounded-md font-medium shadow-lg"
+    >
+      {lang === 'vi' ? 'Bỏ qua và chuyển tới nội dung chính' : 'Skip to main content'}
+    </a>
+
+    <!-- Top Navigation Header -->
+    <header class="sticky top-0 z-40 bg-[var(--bg-primary)]/90 backdrop-blur-md border-b border-[var(--border-color)] transition-colors">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+        <!-- Brand / Logo -->
+        <div class="flex items-center gap-3">
+          <a href={`/${lang}`} class="flex items-center gap-2 group">
+            <div class="w-9 h-9 rounded-lg bg-[var(--accent)] text-white flex items-center justify-center font-serif font-bold text-xl shadow-sm transition-transform group-hover:scale-105">
+              T
+            </div>
+            <div class="flex flex-col">
+              <span class="font-serif font-bold text-lg leading-tight tracking-tight text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
+                Tech Tips Hub
+              </span>
+              <span class="text-[10px] font-mono tracking-wider uppercase text-[var(--text-muted)]">
+                {lang === 'vi' ? 'Sổ tay thủ thuật' : 'Tech Notebook'}
+              </span>
+            </div>
+          </a>
+          <span class="hidden md:inline-flex items-center px-2 py-0.5 rounded text-[11px] font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-muted)] text-[var(--text-secondary)]">
+            0đ • Open Source
+          </span>
+        </div>
+
+        <!-- Navigation Links -->
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a
+            href={`/${lang}`}
+            class={`transition-colors hover:text-[var(--accent)] ${canonicalPath === `/${lang}` ? 'text-[var(--accent)] font-semibold' : 'text-[var(--text-secondary)]'}`}
+          >
+            {t.nav.home}
+          </a>
+          <a
+            href={`/${lang}/saved`}
+            class={`transition-colors hover:text-[var(--accent)] ${canonicalPath.includes('/saved') ? 'text-[var(--accent)] font-semibold' : 'text-[var(--text-secondary)]'}`}
+          >
+            {t.nav.saved}
+          </a>
+          <a
+            href={`/${lang}/sources`}
+            class={`transition-colors hover:text-[var(--accent)] ${canonicalPath.includes('/sources') ? 'text-[var(--accent)] font-semibold' : 'text-[var(--text-secondary)]'}`}
+          >
+            {t.nav.sources}
+          </a>
+          <a
+            href={`/${lang}/about`}
+            class={`transition-colors hover:text-[var(--accent)] ${canonicalPath.includes('/about') ? 'text-[var(--accent)] font-semibold' : 'text-[var(--text-secondary)]'}`}
+          >
+            {t.nav.about}
+          </a>
+        </nav>
+
+        <!-- Right Side Utility Controls -->
+        <div class="flex items-center gap-2 sm:gap-3">
+          <!-- Search trigger -->
+          <button
+            id="open-search-btn"
+            type="button"
+            class="flex items-center gap-2 px-2.5 py-1.5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--accent)] transition-all text-xs"
+            aria-label={t.nav.search}
+          >
+            <svg class="w-4 h-4 text-[var(--text-muted)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="8" stroke-width="2"></circle>
+              <path d="m21 21-4.35-4.35" stroke-width="2" stroke-linecap="round"></path>
+            </svg>
+            <span class="hidden sm:inline">{t.nav.search}</span>
+            <kbd class="hidden sm:inline-block text-[10px]">/</kbd>
+          </button>
+
+          <!-- Language Switcher (retains current route) -->
+          <a
+            href={targetPath}
+            class="px-2.5 py-1.5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-xs font-semibold text-[var(--text-secondary)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-colors flex items-center gap-1"
+            title={t.nav.language}
+          >
+            <span class={lang === 'vi' ? 'text-[var(--accent)]' : ''}>VI</span>
+            <span class="text-[var(--text-muted)]">/</span>
+            <span class={lang === 'en' ? 'text-[var(--accent)]' : ''}>EN</span>
+          </a>
+
+          <!-- Dark / Light Theme Toggle -->
+          <button
+            id="theme-toggle-btn"
+            type="button"
+            class="p-2 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-colors"
+            aria-label={t.nav.toggle_theme}
+          >
+            <!-- Sun icon for light mode -->
+            <svg id="theme-sun-icon" class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="5" stroke-width="2"></circle>
+              <line x1="12" y1="1" x2="12" y2="3" stroke-width="2" stroke-linecap="round"></line>
+              <line x1="12" y1="21" x2="12" y2="23" stroke-width="2" stroke-linecap="round"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" stroke-width="2" stroke-linecap="round"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" stroke-width="2" stroke-linecap="round"></line>
+              <line x1="1" y1="12" x2="3" y2="12" stroke-width="2" stroke-linecap="round"></line>
+              <line x1="21" y1="12" x2="23" y2="12" stroke-width="2" stroke-linecap="round"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke-width="2" stroke-linecap="round"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke-width="2" stroke-linecap="round"></line>
+            </svg>
+            <!-- Moon icon for dark mode -->
+            <svg id="theme-moon-icon" class="w-4 h-4 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main id="main-content" class="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 py-8">
+      <slot />
+    </main>
+
+    <!-- Footer -->
+    <footer class="mt-auto border-t border-[var(--border-color)] bg-[var(--bg-muted)] transition-colors">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+          <!-- Col 1: About Tech Tips Hub -->
+          <div class="md:col-span-2 space-y-3">
+            <div class="flex items-center gap-2">
+              <div class="w-6 h-6 rounded bg-[var(--accent)] text-white flex items-center justify-center font-serif font-bold text-xs">
+                T
+              </div>
+              <h3 class="font-serif font-bold text-base text-[var(--text-primary)]">Tech Tips Hub</h3>
+            </div>
+            <p class="text-xs text-[var(--text-secondary)] leading-relaxed max-w-md">
+              {t.footer.statement}
+            </p>
+            <p class="text-xs text-[var(--text-muted)] font-mono">
+              {t.footer.built_with}
+            </p>
+          </div>
+
+          <!-- Col 2: Navigation -->
+          <div>
+            <h4 class="font-mono text-xs uppercase tracking-wider text-[var(--text-muted)] font-semibold mb-3">
+              {lang === 'vi' ? 'Khám phá' : 'Explore'}
+            </h4>
+            <ul class="space-y-2 text-xs">
+              <li><a href={`/${lang}`} class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors">{t.nav.home}</a></li>
+              <li><a href={`/${lang}/saved`} class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors">{t.nav.saved}</a></li>
+              <li><a href={`/${lang}/sources`} class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors">{t.nav.sources}</a></li>
+              <li><a href={`/${lang}/rss.xml`} class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors flex items-center gap-1.5">
+                <svg class="w-3 h-3 text-[var(--accent)]" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M6.18 15.64a2.18 2.18 0 0 1 2.18 2.18C8.36 19 7.38 20 6.18 20C5 20 4 19 4 17.82a2.18 2.18 0 0 1 2.18-2.18M4 4.44A15.56 15.56 0 0 1 19.56 20h-2.83A12.73 12.73 0 0 0 4 7.27V4.44m0 5.66a9.9 9.9 0 0 1 9.9 9.9h-2.83A7.07 7.07 0 0 0 4 12.93v-2.83Z"/>
+                </svg>
+                {t.footer.rss_feed}
+              </a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Legal & Ethics -->
+          <div>
+            <h4 class="font-mono text-xs uppercase tracking-wider text-[var(--text-muted)] font-semibold mb-3">
+              {lang === 'vi' ? 'Pháp lý & Minh bạch' : 'Legal & Trust'}
+            </h4>
+            <ul class="space-y-2 text-xs">
+              <li><a href={`/${lang}/copyright`} class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors">{t.nav.copyright}</a></li>
+              <li><a href={`/${lang}/privacy`} class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors">{t.nav.privacy}</a></li>
+              <li><a href={`/${lang}/about`} class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors">{t.nav.about}</a></li>
+              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors">GitHub Repository</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="pt-6 border-t border-[var(--border-color)] flex flex-col sm:flex-row items-center justify-between text-[11px] text-[var(--text-muted)] gap-2">
+          <span>{t.footer.rights}</span>
+          <span class="font-mono">Chi phí vận hành: 0đ • Free Tier Only</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Search Modal Component -->
+    <SearchModal lang={lang} />
+
+    <!-- Actions Handler (Bookmarks, Read Status) -->
+    <script src="/js/actions.js" defer></script>
+
+    <!-- Script for Theme Toggle & Search Hook -->
+    <script is:inline>
+      const themeBtn = document.getElementById('theme-toggle-btn');
+      themeBtn?.addEventListener('click', () => {
+        const isDark = document.documentElement.classList.toggle('dark');
+        localStorage.setItem('techtips_theme', isDark ? 'dark' : 'light');
+      });
+
+      const searchBtn = document.getElementById('open-search-btn');
+      searchBtn?.addEventListener('click', () => {
+        if (window.openSearchModal) window.openSearchModal();
+      });
+    </script>
+  </body>
+</html>

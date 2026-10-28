@@ -1,0 +1,77 @@
+{
+  "site": {
+    "title": "Tech Tips Hub - Handcrafted Tech Tricks",
+    "tagline": "A pocket notebook of tech tricks & practical tweaks",
+    "description": "Curated practical tips for Windows, Mac, Linux, Android, iOS, browsers, and developer tools. Always credited, 0 operating cost.",
+    "subtext": "Automatically aggregated every 4 hours from 15+ trusted sources worldwide. Crisp summaries, direct links to original authors."
+  },
+  "nav": {
+    "home": "Tips",
+    "saved": "Saved",
+    "sources": "Sources",
+    "about": "About",
+    "privacy": "Privacy",
+    "copyright": "Copyright & Takedown",
+    "search": "Search...",
+    "search_placeholder": "Search tips, shortcuts, Windows 11, Docker, terminal...",
+    "toggle_theme": "Toggle light/dark theme",
+    "language": "Language"
+  },
+  "home": {
+    "trick_of_day": "Tip of the Day",
+    "trick_of_day_sub": "Hand-picked by score from trusted community sources",
+    "all_categories": "All Categories",
+    "filter_by_category": "Filter by category",
+    "filter_by_difficulty": "Difficulty",
+    "all_difficulties": "All difficulties",
+    "latest_tips": "Latest Tips & Tricks",
+    "latest_tips_sub": "Ordered by freshness and practical usefulness",
+    "reading_time": "min read",
+    "no_tips_found": "No tips found matching your current filter.",
+    "clear_filters": "Clear filters",
+    "load_more": "Load more tips",
+    "showing_count": "Showing {count} of {total} tips"
+  },
+  "card": {
+    "read_original": "Read Original",
+    "view_details": "View Details",
+    "save_tip": "Save for later",
+    "unsave_tip": "Remove bookmark",
+    "saved": "Saved",
+    "mark_read": "Mark as read",
+    "marked_read": "Read",
+    "machine_translation": "Machine translated",
+    "machine_translation_tip": "This summary was auto-translated for convenience. Click 'Read Original' to view the full author's article."
+  },
+  "detail": {
+    "published_by": "Source",
+    "published_at": "Published",
+    "difficulty": "Difficulty",
+    "reading_time": "Est. Reading Time",
+    "category": "Category",
+    "tags": "Related Tags",
+    "original_link": "Open original article on {source}",
+    "report_tip": "Report issue or request takedown",
+    "related_tips": "Related Tips",
+    "disclaimer_title": "Fair Use & Attribution",
+    "disclaimer_body": "Tech Tips Hub only stores short summaries and links following fair use aggregator practices. All rights belong to original authors and publications.",
+    "back_to_list": "Back to list"
+  },
+  "saved": {
+    "title": "Saved Tips",
+    "description": "Tech tricks and shortcuts you have bookmarked for quick reference. Stored locally in your browser.",
+    "empty": "You have no saved tips yet. Click the bookmark icon on any card to keep it here!",
+    "explore_now": "Explore tech tips now"
+  },
+  "difficulty": {
+    "easy": "Easy",
+    "medium": "Medium",
+    "advanced": "Advanced"
+  },
+  "footer": {
+    "statement": "Tech Tips Hub is an open-source project running entirely on free tiers ($0 operating cost). No ads, no trackers.",
+    "built_with": "Powered by Astro, Cloudflare Pages, and GitHub Actions",
+    "rights": "All content rights belong to original authors.",
+    "rss_feed": "RSS Feed"
+  }
+}

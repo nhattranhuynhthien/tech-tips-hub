@@ -1,0 +1,91 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import TipCard from '../../../components/TipCard.astro';
+import { getAllTips, getAllCategories, type Category, type Tip } from '../../../lib/data';
+import { getTranslations } from '../../../lib/i18n';
+
+export async function getStaticPaths() {
+  const categories = getAllCategories();
+  const tips = getAllTips();
+
+  return categories.map((cat) => {
+    const catTips = tips.filter((t) => t.categories.includes(cat.id));
+    return {
+      params: { category: cat.id },
+      props: { category: cat, tips: catTips },
+    };
+  });
+}
+
+interface Props {
+  category: Category;
+  tips: Tip[];
+}
+
+const { category, tips } = Astro.props;
+const lang = 'vi';
+const t = getTranslations(lang);
+const allCategories = getAllCategories();
+---
+
+<Layout lang={lang} title={`Thủ thuật ${category.name.vi}`} description={category.description.vi}>
+  <!-- Breadcrumb -->
+  <nav class="mb-6 flex items-center gap-2 text-xs font-mono text-[var(--text-muted)]" aria-label="Breadcrumb">
+    <a href={`/${lang}`} class="hover:text-[var(--accent)] transition-colors">Trang chủ</a>
+    <span>/</span>
+    <span class="text-[var(--text-secondary)] capitalize">{category.name.vi}</span>
+  </nav>
+
+  <!-- Category Header -->
+  <header class="mb-8 pb-6 border-b border-[var(--border-color)]">
+    <div class="flex items-center gap-3 mb-2">
+      <span class="px-3 py-1 rounded-lg text-sm font-bold font-mono uppercase bg-[var(--accent-bg)] text-[var(--accent)] border border-[var(--accent-border)]">
+        #{category.id}
+      </span>
+      <h1 class="text-3xl sm:text-4xl font-serif font-bold text-[var(--text-primary)]">
+        Thủ thuật {category.name.vi}
+      </h1>
+    </div>
+    <p class="text-sm sm:text-base text-[var(--text-secondary)] max-w-2xl mt-2 leading-relaxed">
+      {category.description.vi}
+    </p>
+    <div class="mt-4 text-xs font-mono text-[var(--text-muted)]">
+      Hiển thị {tips.length} thủ thuật chất lượng cao trong chuyên mục này
+    </div>
+  </header>
+
+  <!-- Other Categories Quick Links -->
+  <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none">
+    <a
+      href={`/${lang}`}
+      class="shrink-0 px-3 py-1.5 rounded-lg text-xs font-mono border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--accent)] transition-colors"
+    >
+      ← Tất cả
+    </a>
+    {allCategories.map((c) => (
+      <a
+        href={`/${lang}/category/${c.id}`}
+        class={`shrink-0 px-3 py-1.5 rounded-lg text-xs font-mono border transition-colors ${
+          c.id === category.id
+            ? 'border-[var(--accent)] bg-[var(--accent)] text-white font-semibold'
+            : 'border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--accent)]'
+        }`}
+      >
+        {c.name.vi}
+      </a>
+    ))}
+  </div>
+
+  <!-- Tips Grid -->
+  {tips.length > 0 ? (
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {tips.map((tip) => (
+        <TipCard tip={tip} lang={lang} />
+      ))}
+    </div>
+  ) : (
+    <div class="py-16 text-center border border-dashed border-[var(--border-color)] rounded-xl bg-[var(--bg-surface)]">
+      <p class="text-sm text-[var(--text-muted)]">Chưa có bài viết nào trong danh mục này.</p>
+    </div>
+  )}
+</Layout>

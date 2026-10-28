@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+.venv/
+env/
+venv/
+
+# Production build output
+dist/
+.astro/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Environment secrets
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+*.log

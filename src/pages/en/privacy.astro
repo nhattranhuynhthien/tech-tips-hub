@@ -1,0 +1,59 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getTranslations } from '../../lib/i18n';
+
+const lang = 'en';
+const t = getTranslations(lang);
+---
+
+<Layout lang={lang} title="Privacy Policy" description="Our cookieless, tracker-free commitment to visitor privacy and transparent local data usage.">
+  <article class="max-w-3xl mx-auto bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-2xl p-6 sm:p-10 shadow-craft mb-12">
+    <!-- Header -->
+    <header class="pb-6 border-b border-[var(--border-subtle)] mb-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[var(--accent-bg)] text-[var(--accent)] border border-[var(--accent-border)] text-xs font-mono font-semibold mb-3">
+        <span>🛡️ Trust & Privacy</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-serif font-bold text-[var(--text-primary)] mb-3">
+        Privacy Policy
+      </h1>
+      <p class="text-base text-[var(--text-secondary)] leading-relaxed">
+        Tech Tips Hub is built on a simple foundation: respect for the reader's right to private exploration.
+      </p>
+    </header>
+
+    <div class="space-y-6 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed">
+      <section>
+        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
+          1. No Tracking Cookies, No Ads
+        </h2>
+        <p>
+          We do not deploy marketing cookies, ad tech scripts, fingerprinting pixels, or behavioral cross-site trackers. You browse anonymously with peace of mind.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
+          2. Client-Side Browser Storage (localStorage)
+        </h2>
+        <p class="mb-2">
+          Your browser solely preserves small UI state keys stored entirely on your device (never sent to our server):
+        </p>
+        <ul class="list-disc list-inside space-y-1 text-xs sm:text-sm pl-2">
+          <li><code class="font-mono">techtips_theme</code>: Remembers light or dark theme choice.</li>
+          <li><code class="font-mono">techtips_lang</code>: Remembers your preferred language selection.</li>
+          <li><code class="font-mono">techtips_saved</code>: Stores array of tip IDs bookmarked for reading later.</li>
+          <li><code class="font-mono">techtips_read</code>: Remembers which tips you marked as read.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
+          3. Cookieless Web Analytics
+        </h2>
+        <p>
+          High-level traffic volume is monitored via privacy-preserving tools (e.g. Cloudflare Web Analytics) which do not store cookies, personal profiling identifiers, or IP addresses.
+        </p>
+      </section>
+    </div>
+  </article>
+</Layout>

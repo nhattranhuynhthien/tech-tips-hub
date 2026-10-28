@@ -1,0 +1,104 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TipCard from '../../components/TipCard.astro';
+import { getAllTips } from '../../lib/data';
+import { getTranslations } from '../../lib/i18n';
+
+const lang = 'vi';
+const t = getTranslations(lang);
+const allTips = getAllTips();
+---
+
+<Layout lang={lang} title={t.saved.title} description={t.saved.description}>
+  <!-- Header -->
+  <header class="mb-8 pb-6 border-b border-[var(--border-color)]">
+    <div class="flex items-center gap-3 mb-2">
+      <div class="w-8 h-8 rounded-lg bg-[var(--accent-bg)] text-[var(--accent)] flex items-center justify-center border border-[var(--accent-border)]">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+          <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z"></path>
+        </svg>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-serif font-bold text-[var(--text-primary)]">
+        {t.saved.title}
+      </h1>
+    </div>
+    <p class="text-sm sm:text-base text-[var(--text-secondary)] max-w-2xl mt-1 leading-relaxed">
+      {t.saved.description}
+    </p>
+    <div id="saved-counter" class="mt-3 text-xs font-mono text-[var(--text-muted)]">
+      Đang tải danh sách đã lưu...
+    </div>
+  </header>
+
+  <!-- Empty State -->
+  <div id="saved-empty-state" class="hidden py-16 text-center border border-dashed border-[var(--border-color)] rounded-xl bg-[var(--bg-surface)]">
+    <div class="w-12 h-12 mx-auto rounded-full bg-[var(--bg-muted)] flex items-center justify-center text-[var(--text-muted)] mb-3">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </div>
+    <h3 class="text-base font-serif font-bold text-[var(--text-primary)] mb-2">
+      {t.saved.empty}
+    </h3>
+    <a
+      href={`/${lang}`}
+      class="inline-flex items-center gap-2 mt-2 px-4 py-2 rounded-lg text-xs font-semibold bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] transition-colors shadow-sm"
+    >
+      <span>{t.saved.explore_now}</span>
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="m9 18 6-6-6-6" stroke-width="2" stroke-linecap="round"></path>
+      </svg>
+    </a>
+  </div>
+
+  <!-- Cards Container -->
+  <div id="saved-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {allTips.map((tip) => (
+      <div class="saved-item-wrapper hidden" data-id={tip.id}>
+        <TipCard tip={tip} lang={lang} />
+      </div>
+    ))}
+  </div>
+</Layout>
+
+<script is:inline>
+  (function () {
+    const SAVED_KEY = 'techtips_saved';
+    const wrappers = document.querySelectorAll('.saved-item-wrapper');
+    const emptyState = document.getElementById('saved-empty-state');
+    const counter = document.getElementById('saved-counter');
+
+    function renderSaved() {
+      let saved = [];
+      try {
+        saved = JSON.parse(localStorage.getItem(SAVED_KEY)) || [];
+      } catch {}
+
+      let visible = 0;
+      wrappers.forEach((el) => {
+        const id = el.getAttribute('data-id');
+        if (saved.includes(id)) {
+          el.classList.remove('hidden');
+          visible++;
+        } else {
+          el.classList.add('hidden');
+        }
+      });
+
+      if (counter) {
+        counter.textContent = `Bạn đang lưu trữ ${visible} thủ thuật cục bộ trong trình duyệt`;
+      }
+
+      if (emptyState) {
+        if (visible === 0) {
+          emptyState.classList.remove('hidden');
+        } else {
+          emptyState.classList.add('hidden');
+        }
+      }
+    }
+
+    renderSaved();
+    window.addEventListener('techtips:bookmark_changed', renderSaved);
+  })();
+</script>

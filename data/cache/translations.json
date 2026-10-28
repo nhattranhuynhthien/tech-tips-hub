@@ -1,0 +1,1991 @@
+{
+  "4972d322c4e8c011": {
+    "title": {
+      "en": "Japan's GMO urges customers to shut down PCs amid ransomware threat",
+      "vi": "Japan's GMO urges customers to shut down PCs amid ransomware threat"
+    },
+    "summary": {
+      "en": "The GMO Group has urged customers to disconnect their systems from the internet and shut down computers after a threat actor who breached the company's Onamae Desktop Cloud threatened to launch a ransomware attack today. [...]",
+      "vi": "[Bản dịch] The GMO Group has urged customers to disconnect their systems from the internet and shut down computers after a threat actor who breached the company's Onamae Desktop Cloud threatened to launch a ransomware attack today. [...]"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "48026cc92494b22f": {
+    "title": {
+      "en": "OpenAI's GPT-6.1 Terra is safer overall, but shows more destructive-action flags in tests",
+      "vi": "OpenAI's GPT-6.1 Terra is safer overall, but shows more destructive-action flags in tests"
+    },
+    "summary": {
+      "en": "OpenAI confirmed GPT-6.1 Terra is safer overall than some of its older models, but its safety testing also found other problems. [...]",
+      "vi": "[Bản dịch] OpenAI confirmed GPT-6.1 Terra is safer overall than some of its older models, but its safety testing also found other problems. [...]"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "e5255ef8ffec1464": {
+    "title": {
+      "en": "UNM Health ransomware attack disrupts patient care, surgeries",
+      "vi": "UNM Health ransomware attack disrupts patient care, surgeries"
+    },
+    "summary": {
+      "en": "The University of New Mexico Health Sciences Center disclosed a cyberattack that caused system outages and disrupted patient care and academic activities. [...]",
+      "vi": "[Bản dịch] The University of New Mexico Health Sciences Center disclosed a cyberattack that caused system outages and disrupted patient care and academic activities. [...]"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "851b1601424b3acb": {
+    "title": {
+      "en": "Hackers hijack Convertr analytics script to steal payment card data",
+      "vi": "Hackers hijack Convertr analytics script to steal payment card data"
+    },
+    "summary": {
+      "en": "A credit card skimming group reportedly compromised a shared analytics script used by e-commerce platform Convertr to steal shoppers' payment data during checkout. [...]",
+      "vi": "[Bản dịch] A credit card skimming group reportedly compromised a shared analytics script used by e-commerce platform Convertr to steal shoppers' payment data during checkout. [...]"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "bb361a8a2de1d6b7": {
+    "title": {
+      "en": "Microsoft releases Windows OOB updates to distrust eMudhra certificates",
+      "vi": "Microsoft releases Windows OOB updates to distrust eMudhra certificates"
+    },
+    "summary": {
+      "en": "Microsoft has released out-of-band (OOB) Windows updates to remove trust in certificates tied to compromised eMudhra certificate authority keys, protecting systems that do not receive automatic certificate trust updates. [...]",
+      "vi": "[Bản dịch] Microsoft has released out-of-band (OOB) Windows updates to remove trust in certificates tied to compromised eMudhra certificate authority keys, protecting systems that do not receive automatic certificate trust updates. [...]"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "3d85f524f76bf1c3": {
+    "title": {
+      "en": "Warp discloses breach exposing AI agent logs, user telemetry data",
+      "vi": "Warp discloses breach exposing AI agent logs, user telemetry data"
+    },
+    "summary": {
+      "en": "Agent decision logs and telemetry data belonging to Warp agentic development environment users were exposed in an attack on a third-party vendor in the project's infrastructure. [...]",
+      "vi": "[Bản dịch] Agent decision logs and telemetry data belonging to Warp agentic development environment users were exposed in an attack on a third-party vendor in the project's infrastructure. [...]"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "3d97e60810b90b8b": {
+    "title": {
+      "en": "Tailscale warns of SSH flaws allowing root privilege escalation",
+      "vi": "Tailscale warns of SSH flaws allowing root privilege escalation"
+    },
+    "summary": {
+      "en": "The Tailscale security team is working to patch almost a dozen security vulnerabilities that could be exploited to steal credentials, crash servers, gain root privileges, and more. [...]",
+      "vi": "[Bản dịch] The Tailscale security team is working to patch almost a dozen security vulnerabilities that could be exploited to steal credentials, crash servers, gain root privileges, and more. [...]"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "8995a18f59186bba": {
+    "title": {
+      "en": "The Huntress Tragic Quadrant: Ranking Threats Hitting Businesses Hardest",
+      "vi": "The Huntress Tragic Quadrant: Ranking Threats Hitting Businesses Hardest"
+    },
+    "summary": {
+      "en": "Attackers are increasingly abusing legitimate IT tools, Microsoft 365 sessions, and everyday workflows to compromise businesses without triggering traditional defenses. Huntress Labs ranks the threats hitting organizations hardest, highlighting which attack techniques deserve immediate attention and which remain emerging risks. [...]",
+      "vi": "[Bản dịch] Attackers are increasingly abusing legitimate IT tools, Microsoft 365 sessions, and everyday workflows to compromise businesses without triggering traditional defenses. Huntress Labs ranks the threats hitting organizations hardest, highlighting which attack techniques deserve immediate attention and which remain emerging risks. [...]"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "0f3bafdfab2f4a93": {
+    "title": {
+      "en": "Apple backports CoreGraphics zero-day patches to older iPhones",
+      "vi": "Apple backports CoreGraphics zero-day patches to older iPhones"
+    },
+    "summary": {
+      "en": "​Apple has backported security patches released last month to older iPhones and iPads, addressing a zero-day bug exploited in \"extremely sophisticated\" targeted attacks on iOS devices. [...]",
+      "vi": "[Bản dịch] ​Apple has backported security patches released last month to older iPhones and iPads, addressing a zero-day bug exploited in \"extremely sophisticated\" targeted attacks on iOS devices. [...]"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "46a8ef52d5672a37": {
+    "title": {
+      "en": "Energy giant ENGIE discloses data breach affecting customers",
+      "vi": "Energy giant ENGIE discloses data breach affecting customers"
+    },
+    "summary": {
+      "en": "French energy giant ENGIE, one of the world's largest power and natural gas providers, confirmed that attackers stole customer data after breaching a marketing platform used by business partners. [...]",
+      "vi": "[Bản dịch] French energy giant ENGIE, one of the world's largest power and natural gas providers, confirmed that attackers stole customer data after breaching a marketing platform used by business partners. [...]"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "3f35e51b5c5d5697": {
+    "title": {
+      "en": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks",
+      "vi": "CISA confirms PHP2Shell vulnerabilities now exploited in attacks"
+    },
+    "summary": {
+      "en": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added the PHP2Shell vulnerabilities to its catalog of actively exploited security flaws and ordered federal agencies to patch their systems by Thursday. [...]",
+      "vi": "[Bản dịch] The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has added the PHP2Shell vulnerabilities to its catalog of actively exploited security flaws and ordered federal agencies to patch their systems by Thursday. [...]"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "3888d3892c7a2482": {
+    "title": {
+      "en": "University of Copenhagen data breach exposes data of 525,000 people",
+      "vi": "University of Copenhagen data breach exposes data of 525,000 people"
+    },
+    "summary": {
+      "en": "The University of Copenhagen in Denmark confirmed that hackers accessed one of its test environments containing personal data belonging to 525,000 people. [...]",
+      "vi": "[Bản dịch] The University of Copenhagen in Denmark confirmed that hackers accessed one of its test environments containing personal data belonging to 525,000 people. [...]"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "d46a6379a65f7138": {
+    "title": {
+      "en": "Former pentester used ARTEX AI to steal 8.2 million data records",
+      "vi": "Former pentester used ARTEX AI to steal 8.2 million data records"
+    },
+    "summary": {
+      "en": "South Korean police identified seven suspects linked to a cybercrime operation that breached more than 90 organizations in the country, with ARTEX AI pentesting framework used in most of the attacks. [...]",
+      "vi": "[Bản dịch] South Korean police identified seven suspects linked to a cybercrime operation that breached more than 90 organizations in the country, with ARTEX AI pentesting framework used in most of the attacks. [...]"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "913af53404e3046c": {
+    "title": {
+      "en": "OpenAI launches GPT-6.1 Terra with 3x faster AI agents, 50% lower pricing",
+      "vi": "OpenAI launches GPT-6.1 Terra with 3x faster AI agents, 50% lower pricing"
+    },
+    "summary": {
+      "en": "OpenAI has launched GPT-6.1 Terra, a new model focused on computer use, visual reasoning, coding, and everyday work, while costing significantly less than its larger models. [...]",
+      "vi": "[Bản dịch] OpenAI has launched GPT-6.1 Terra, a new model focused on computer use, visual reasoning, coding, and everyday work, while costing significantly less than its larger models. [...]"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "dded67c342c48a27": {
+    "title": {
+      "en": "DreamHost forces password resets in ongoing \"incident\"",
+      "vi": "DreamHost forces password resets in ongoing \"incident\""
+    },
+    "summary": {
+      "en": "DreamHost has forced password resets for email and FTP/SFTP users following an incident that disrupted connections to the File Manager interface. [...]",
+      "vi": "[Bản dịch] DreamHost has forced password resets for email and FTP/SFTP users following an incident that disrupted connections to the File Manager interface. [...]"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "551be656cf2e4d58": {
+    "title": {
+      "en": "New M6 Macs buck Apple’s second wave of price hikes",
+      "vi": "New M6 Macs buck Apple’s second wave of price hikes"
+    },
+    "summary": {
+      "en": "In addition to the spec bumps, today’s M6-powered iMac and 14-inch MacBook Pro announcements came with an extra piece of good news: prices remained unchanged from the previous generations, unlike several other recent Apple product launches that brought another round of increases. Here are the details. more…",
+      "vi": "[Bản dịch] In addition to the spec bumps, today’s M6-powered iMac and 14-inch MacBook Pro announcements came with an extra piece of good news: prices remained unchanged from the previous generations, unlike several other recent Apple product launches that brought another round of increases. Here are the details. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "c1e5184d1adebb4e": {
+    "title": {
+      "en": "Apple wins expanded access to evidence in OpenAI trade secrets lawsuit",
+      "vi": "Apple wins expanded access to evidence in OpenAI trade secrets lawsuit"
+    },
+    "summary": {
+      "en": "Apple has scored another win in its trade secrets misappropriation lawsuit against two former employees, OpenAI, and io Products. Here are the details. more…",
+      "vi": "[Bản dịch] Apple has scored another win in its trade secrets misappropriation lawsuit against two former employees, OpenAI, and io Products. Here are the details. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "5cd328f3ba405d97": {
+    "title": {
+      "en": "Apple releases two new real-life Apple Watch stories, including a life-saving alert",
+      "vi": "Apple releases two new real-life Apple Watch stories, including a life-saving alert"
+    },
+    "summary": {
+      "en": "Apple’s YouTube channel shared two new videos today from its “True Apple Watch Story” series, highlighting how the device helped save one woman’s life and transform another person’s fitness journey. Watch them below. more…",
+      "vi": "[Bản dịch] Apple’s YouTube channel shared two new videos today from its “True Apple Watch Story” series, highlighting how the device helped save one woman’s life and transform another person’s fitness journey. Watch them below. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "f0b764f4987f757e": {
+    "title": {
+      "en": "Last-minute leak reveals new touchscreen MacBook Pro details: pricing, new cooling system, more",
+      "vi": "Last-minute leak reveals new touchscreen MacBook Pro details: pricing, new cooling system, more"
+    },
+    "summary": {
+      "en": "In a roundup of what to expect from tomorrow’s “Pro and Tell” event , Bloomberg ’s Mark Gurman shared new details about the upcoming OLED touchscreen MacBook Pro models. Here’s what to expect. more…",
+      "vi": "[Bản dịch] In a roundup of what to expect from tomorrow’s “Pro and Tell” event , Bloomberg ’s Mark Gurman shared new details about the upcoming OLED touchscreen MacBook Pro models. Here’s what to expect. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "33c58db9c89605b0": {
+    "title": {
+      "en": "Firefox’s AI-powered Smart Window gets form autofill and website monitoring",
+      "vi": "Firefox’s AI-powered Smart Window gets form autofill and website monitoring"
+    },
+    "summary": {
+      "en": "Mozilla today announced two new features for Smart Window, its opt-in AI-powered browsing experience in Firefox. Here are the details. more…",
+      "vi": "[Bản dịch] Mozilla today announced two new features for Smart Window, its opt-in AI-powered browsing experience in Firefox. Here are the details. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "3ceaccbebb8574e2": {
+    "title": {
+      "en": "Apple’s European government affairs chief to speak at Web Summit 2026",
+      "vi": "Apple’s European government affairs chief to speak at Web Summit 2026"
+    },
+    "summary": {
+      "en": "Apple’s Director of European Government Affairs, Sébastien Gros, will speak at this year’s Web Summit in Lisbon, Portugal, taking place November 9–12. Here are the details. more…",
+      "vi": "[Bản dịch] Apple’s Director of European Government Affairs, Sébastien Gros, will speak at this year’s Web Summit in Lisbon, Portugal, taking place November 9–12. Here are the details. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "c8fcf2754e839df2": {
+    "title": {
+      "en": "iOS 27.2 adds new app icon for Apple Music, more design updates",
+      "vi": "iOS 27.2 adds new app icon for Apple Music, more design updates"
+    },
+    "summary": {
+      "en": "iOS 27.2 launched this week , and the update includes a new app icon for Apple Music alongside other small design changes in the Music app. more…",
+      "vi": "[Bản dịch] iOS 27.2 launched this week , and the update includes a new app icon for Apple Music alongside other small design changes in the Music app. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "52bbdcbace3091fb": {
+    "title": {
+      "en": "iOS 27.2 now available: Here’s everything new for iPhone",
+      "vi": "iOS 27.2 now available: Here’s everything new for iPhone"
+    },
+    "summary": {
+      "en": "iOS 27.2 is now available to everyone after six weeks of beta testing. The update was released on Monday , bringing multiple new iPhone features. Here’s everything you need to know. more…",
+      "vi": "[Bản dịch] iOS 27.2 is now available to everyone after six weeks of beta testing. The update was released on Monday , bringing multiple new iPhone features. Here’s Tất cả những gì bạn cần biết. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "6e36c7f34af1a5c5": {
+    "title": {
+      "en": "Apple TV releases trailer for upcoming original film starring Chris Pratt",
+      "vi": "Apple TV releases trailer for upcoming original film starring Chris Pratt"
+    },
+    "summary": {
+      "en": "Apple TV today released the trailer for “ Way of the Warrior Kid ,” which premieres globally on the platform on November 25. Here are the details. more…",
+      "vi": "[Bản dịch] Apple TV today released the trailer for “ Way of the Warrior Kid ,” which premieres globally on the platform on November 25. Here are the details. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "231aa6188bc2b8f9": {
+    "title": {
+      "en": "Report: iPhone 18 Pro sales down 4% in the US, but China drives 3.1% global growth",
+      "vi": "Report: iPhone 18 Pro sales down 4% in the US, but China drives 3.1% global growth"
+    },
+    "summary": {
+      "en": "Counterpoint Research’s latest report offers a look at global iPhone 18 Pro sales during the first three weeks of availability. Here are the details. more…",
+      "vi": "[Bản dịch] Counterpoint Research’s latest report offers a look at global iPhone 18 Pro sales during the first three weeks of availability. Here are the details. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "5d1a554bc2464f7e": {
+    "title": {
+      "en": "Apple’s low-cost iPhone 18 details revealed by leaker",
+      "vi": "Apple’s low-cost iPhone 18 details revealed by leaker"
+    },
+    "summary": {
+      "en": "Apple reportedly plans to introduce a low-cost iPhone 18e next spring alongside iPhone 18 and iPhone Air 2. Here are the details on what to expect from iPhone 18e, per a new leak. more…",
+      "vi": "[Bản dịch] Apple reportedly plans to introduce a low-cost iPhone 18e next spring alongside iPhone 18 and iPhone Air 2. Here are the details on what to expect from iPhone 18e, per a new leak. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "5cc7cd6db55dda33": {
+    "title": {
+      "en": "Copilot Money gets even better with new AI-powered Money Assistant",
+      "vi": "Copilot Money gets even better with new AI-powered Money Assistant"
+    },
+    "summary": {
+      "en": "Copilot Money, the award-winning personal finance app, is getting even better this week with the launch of Money Assistant: an AI financial agent built into every part of the app. It tells you what you need to know, makes changes for you, and answers anything about your money. Copilot Money is exclusively offering 9to5Mac readers an extended...",
+      "vi": "[Bản dịch] Copilot Money, the award-winning personal finance app, is getting even better this week with the launch of Money Assistant: an AI financial agent built into every part of the app. It tells you what you need to know, makes changes for you, and answers anything about your money. Copilot Money is exclusively offering 9to5Mac readers an extended..."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "f4e98bfc5724bcec": {
+    "title": {
+      "en": "Astropad Workbench 1.4 adds terminal access, iPhone Duo support, and more",
+      "vi": "Astropad Workbench 1.4 adds terminal access, iPhone Duo support, and more"
+    },
+    "summary": {
+      "en": "Astropad is out today with Workbench 1.4, the latest update to its remote desktop app for Mac. The release adds a built-in terminal, native iPhone Duo support, and a new way to transfer files between Macs. more…",
+      "vi": "[Bản dịch] Astropad is out today with Workbench 1.4, the latest update to its remote desktop app for Mac. The release adds a built-in terminal, native iPhone Duo support, and a new way to transfer files between Macs. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "1cd07dd40c5c7402": {
+    "title": {
+      "en": "iOS 27.2 has two CarPlay improvements, here’s what’s new",
+      "vi": "iOS 27.2 has two CarPlay improvements, here’s what’s new"
+    },
+    "summary": {
+      "en": "iOS 27.2 arrived this week with new features for Messages , Apple TV , and more, plus two improvements for CarPlay. Here’s what’s new for CarPlay users. more…",
+      "vi": "[Bản dịch] iOS 27.2 arrived this week with new features for Messages , Apple TV , and more, plus two improvements for CarPlay. Here’s what’s new for CarPlay users. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "7b6645bf9da9489b": {
+    "title": {
+      "en": "iCloud Mail and Calendar plugins now work with ChatGPT",
+      "vi": "iCloud Mail and Calendar plugins now work with ChatGPT"
+    },
+    "summary": {
+      "en": "Here’s a welcome change. OpenAI just announced iCloud Mail and Calendar plugin support for ChatGPT. That means you can connect ChatGPT to your Apple email and calendar just like Gmail and other services. more…",
+      "vi": "[Bản dịch] Here’s a welcome change. OpenAI just announced iCloud Mail and Calendar plugin support for ChatGPT. That means you can connect ChatGPT to your Apple email and calendar just like Gmail and other services. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "c0b16e31125c6e85": {
+    "title": {
+      "en": "Twelve South launches new Airfly View dongle with built-in screen",
+      "vi": "Twelve South launches new Airfly View dongle with built-in screen"
+    },
+    "summary": {
+      "en": "Last month, Twelve South introduced the wildly popular AirFly Drive , its first wireless CarPlay adapter (which is now back in stock after initially selling out). Now, the popular accessory maker is back with Airfly View , which adds a built-in screen to its other popular wireless audio dongle. You can order it on Amazon today . Here’s how it...",
+      "vi": "[Bản dịch] Last month, Twelve South introduced the wildly popular AirFly Drive , its first wireless CarPlay adapter (which is now back in stock after initially selling out). Now, the popular accessory maker is back with Airfly View , which adds a built-in screen to its other popular wireless audio dongle. You can order it on Amazon today . Here’s how it..."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "30095bde7f28ad8f": {
+    "title": {
+      "en": "Google Photos rolls out customizable redesign of your ‘Collections’ tab",
+      "vi": "Google Photos rolls out customizable redesign of your ‘Collections’ tab"
+    },
+    "summary": {
+      "en": "Following the floating navigation bar in July, Google Photos is rolling out a big redesign that lets you customize the Collections tab on Android and iOS. more…",
+      "vi": "[Bản dịch] Following the floating navigation bar in July, Google Photos is rolling out a big redesign that lets you customize the Collections tab trên Android and iOS. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "0be63b0d1d22e65b": {
+    "title": {
+      "en": "iOS 27.2 introduces new age verification feature using selfie",
+      "vi": "iOS 27.2 introduces new age verification feature using selfie"
+    },
+    "summary": {
+      "en": "iOS 27.2 is here , and it introduces a new feature for age verification using a selfie. Here are the details. more…",
+      "vi": "[Bản dịch] iOS 27.2 is here , and it introduces a new feature for age verification using a selfie. Here are the details. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "9c4513834e54fc0d": {
+    "title": {
+      "en": "Gemini Notebook for Android, iOS adds built-in audio recorder",
+      "vi": "Gemini Notebook for Android, iOS adds built-in audio recorder"
+    },
+    "summary": {
+      "en": "After introducing Connected App integration last week, Gemini Notebook has rolled out an audio recorder on Android and iOS. more…",
+      "vi": "[Bản dịch] After introducing Connected App integration last week, Gemini Notebook has rolled out an audio recorder trên Android and iOS. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "fd3406239f197505": {
+    "title": {
+      "en": "The Sideload 049: The death of the browser",
+      "vi": "The Sideload 049: The death of the browser"
+    },
+    "summary": {
+      "en": "Welcome to episode 49 of The Sideload, a 9to5Google podcast. This week, Will is once again joined by Daniel Bader — now in a more permanent co-host position, listen to the episode to find out more — as they discuss the state of browsers outside of Chrome, what we’re even looking for in a browser in 2026, and how agentic use cases might completely...",
+      "vi": "[Bản dịch] Welcome to episode 49 of The Sideload, a 9to5Google podcast. This week, Will is once again joined by Daniel Bader — now in a more permanent co-host position, listen to the episode to find out more — as they discuss the state of browsers outside of Chrome, what we’re even looking for in a browser in 2026, and how agentic use cases might completely..."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "8053e5f5aa290f62": {
+    "title": {
+      "en": "Google Nest Wifi router and point get October 2026 update",
+      "vi": "Google Nest Wifi router and point get October 2026 update"
+    },
+    "summary": {
+      "en": "The second update this year for the Nest Wifi router and point rolled out last week with two improvements. more…",
+      "vi": "[Bản dịch] The second update this year for the Nest Wifi router and point rolled out last week with two improvements. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "6bc14454eda8250f": {
+    "title": {
+      "en": "Someone is bringing Android Auto back to your phone’s screen, and it actually works [Gallery]",
+      "vi": "Someone is bringing Android Auto back to your phone’s screen, and it actually works [Gallery]"
+    },
+    "summary": {
+      "en": "When Android Auto first debuted, it didn’t require a fancy display in your car. It just worked on your phone screen and, now, someone is bringing that functionality back after Google killed it. more…",
+      "vi": "[Bản dịch] When Android Auto first debuted, it didn’t require a fancy display in your car. It just worked on your phone screen and, now, someone is bringing that functionality back after Google killed it. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "062533ad30384e68": {
+    "title": {
+      "en": "Here are the latest Samsung Galaxy phones getting Android 17 updates",
+      "vi": "Here are the latest Samsung Galaxy phones getting Android 17 updates"
+    },
+    "summary": {
+      "en": "One UI 9 is in its late-stage rollout phase, and a bunch of Galaxy phones have been added to the Android 17 availability list within the last few days. more…",
+      "vi": "[Bản dịch] One UI 9 is in its late-stage rollout phase, and a bunch of Galaxy phones have been added to the Android 17 availability list within the last few days. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "95e11c2694b29f77": {
+    "title": {
+      "en": "The Galaxy Z Fold 8 still feels refreshing in all the best ways [Video]",
+      "vi": "The Galaxy Z Fold 8 still feels refreshing in all the best ways [Video]"
+    },
+    "summary": {
+      "en": "With the iPhone Duo now a thing, it puts the Z Fold 8 in an even more interesting position. Yes, it’s an attempt by Samsung to get ahead of the curve, but, in truth, it really has worked. more…",
+      "vi": "[Bản dịch] With the iPhone Duo now a thing, it puts the Z Fold 8 in an even more interesting position. Yes, it’s an attempt by Samsung to get ahead of the curve, but, in truth, it really has worked. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "9fef63cfaf94b22b": {
+    "title": {
+      "en": "Android 17-based Redmagic OS 12 gets closer to a global release",
+      "vi": "Android 17-based Redmagic OS 12 gets closer to a global release"
+    },
+    "summary": {
+      "en": "The global rollout schedule is still a bit of a mystery, but we at least know which Redmagic devices are getting the Redmagic OS 12 Android 17 upgrade. more…",
+      "vi": "[Bản dịch] The global rollout schedule is still a bit of a mystery, but we at least know which Redmagic devices are getting the Redmagic OS 12 Android 17 upgrade. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "f141eebe4fb26a74": {
+    "title": {
+      "en": "Vivo’s X500 series launches globally with MediaTek chips and insane cameras",
+      "vi": "Vivo’s X500 series launches globally with MediaTek chips and insane cameras"
+    },
+    "summary": {
+      "en": "Following its initial debut in China, Vivo is officially taking its flagship lineup global. The X500 series brings three new models to the international stage , including the Vivo X500, X500 Pro, and the range-topping X500 Pro Max. more…",
+      "vi": "[Bản dịch] Following its initial debut in China, Vivo is officially taking its flagship lineup global. The X500 series brings three new models to the international stage , including the Vivo X500, X500 Pro, and the range-topping X500 Pro Max. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "8408b04cec4af81d": {
+    "title": {
+      "en": "Android Find Hub app reveals how ‘Left Behind’ and ‘Ring your phone’ alerts work on Pixel Tag",
+      "vi": "Android Find Hub app reveals how ‘Left Behind’ and ‘Ring your phone’ alerts work on Pixel Tag"
+    },
+    "summary": {
+      "en": "We’re just weeks away from the launch of Google’s first Android Find Hub tracker, the Pixel Tag, and that’s also going to bring new options to the Find Hub app, as revealed in a new app update. more…",
+      "vi": "[Bản dịch] We’re just weeks away from the launch of Google’s first Android Find Hub tracker, the Pixel Tag, and that’s also going to bring new options to the Find Hub app, as revealed in a new app update. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "ff08915e80d7d767": {
+    "title": {
+      "en": "OnePlus rolling out ColorOS to OnePlus 13, others as Android 17 update expands",
+      "vi": "OnePlus rolling out ColorOS to OnePlus 13, others as Android 17 update expands"
+    },
+    "summary": {
+      "en": "OnePlus 13 is the latest OnePlus device to ditch OxygenOS for ColorOS as the brand’s Android 17 update rolls out more broadly. more…",
+      "vi": "[Bản dịch] OnePlus 13 is the latest OnePlus device to ditch OxygenOS for ColorOS as the brand’s Android 17 update rolls out more broadly. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "0e7ce6088d588ffb": {
+    "title": {
+      "en": "Galaxy Z Fold 8 is still $200 off as iPhone Duo displays crack",
+      "vi": "Galaxy Z Fold 8 is still $200 off as iPhone Duo displays crack"
+    },
+    "summary": {
+      "en": "Samsung’s Galaxy Z Fold 8 has the same form factor as Apple’s new iPhone Duo, but it’s in stock, discounted, and doesn’t have any cracking display issue at the moment. more…",
+      "vi": "[Bản dịch] Samsung’s Galaxy Z Fold 8 has the same form factor as Apple’s new iPhone Duo, but it’s in stock, discounted, and doesn’t have any cracking display issue at the moment. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "c834c4fc994dd6a4": {
+    "title": {
+      "en": "Anthropic is printing money, but AI isn’t paying off outside tech",
+      "vi": "Anthropic is printing money, but AI isn’t paying off outside tech"
+    },
+    "summary": {
+      "en": "Good morning. Today I’m reading about Netflix’s bloody week , playing with Apple Music’s fun new 404 page , mourning Arc’s untimely demise , and devouring Maggie O’Farrell’s new novel, Land . As a reminder, Inbox is the tech newsletter that goes beyond the news cycle. We cover the most important 9to5Google stories from the last couple of days...",
+      "vi": "[Bản dịch] Good morning. Today I’m reading about Netflix’s bloody week , playing with Apple Music’s fun new 404 page , mourning Arc’s untimely demise , and devouring Maggie O’Farrell’s new novel, Land . As a reminder, Inbox is the tech newsletter that goes beyond the news cycle. We cover the most important 9to5Google stories from the last couple of days..."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "800056ac6a3301f7": {
+    "title": {
+      "en": "Google says Gemini 4 Argon ranks well behind Claude and GPT-6 for Android coding",
+      "vi": "Google says Gemini 4 Argon ranks well behind Claude and GPT-6 for Android coding"
+    },
+    "summary": {
+      "en": "Google has updated its Android Bench list for showing how good AI models are at Android coding assistance, with Gemini 4 Argon ranking way behind that of the latest Claude and GPT models. more…",
+      "vi": "[Bản dịch] Google has updated its Android Bench list for showing how good AI models are at Android coding assistance, with Gemini 4 Argon ranking way behind that of the latest Claude and GPT models. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "4b628a278f53b3b6": {
+    "title": {
+      "en": "What’s new in Android’s October 2026 Google System Updates [U]",
+      "vi": "What’s new in Android’s October 2026 Google System Updates [U]"
+    },
+    "summary": {
+      "en": "The monthly “ Google System Release Notes ” primarily detail what’s new in Play services, Play Store, and Play system update across Android phones/tablets, Wear OS, Google/Android TV, Auto, and PC. Some features apply to end users, while others are aimed at developers. more…",
+      "vi": "[Bản dịch] The monthly “ Google System Release Notes ” primarily detail what’s new in Play services, Play Store, and Play system update across Android phones/tablets, Wear OS, Google/Android TV, Auto, and PC. Some features apply to end users, while others are aimed at developers. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "1d22dd0edb251dbb": {
+    "title": {
+      "en": "Chrome 156 for Googlebook rolling out with 14 updates across sites, shortcuts, more",
+      "vi": "Chrome 156 for Googlebook rolling out with 14 updates across sites, shortcuts, more"
+    },
+    "summary": {
+      "en": "Google is rolling out Chrome 156 for Googlebooks with a slew of improvements and bug fixes. This follows the last browser update two weeks ago. more…",
+      "vi": "[Bản dịch] Google is rolling out Chrome 156 for Googlebooks with a slew of improvements and bug fixes. This follows the last browser update two weeks ago. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "d5a5f3154c0e5f47": {
+    "title": {
+      "en": "Even your abuelita will love Even Realities’ new smart glasses styles",
+      "vi": "Even your abuelita will love Even Realities’ new smart glasses styles"
+    },
+    "summary": {
+      "en": "Grab a cup of hot cocoa and a sweater, because Even Realities’ new styles and glasses accessories are warming up for the fall. more…",
+      "vi": "[Bản dịch] Grab a cup of hot cocoa and a sweater, because Even Realities’ new styles and glasses accessories are warming up for the fall. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "1fcc7f8c9a4e6895": {
+    "title": {
+      "en": "I’ve been using Android’s iPad Mini OLED for months, and it’s the better tiny tablet",
+      "vi": "I’ve been using Android’s iPad Mini OLED for months, and it’s the better tiny tablet"
+    },
+    "summary": {
+      "en": "Apple has just released a new iPad Mini with an OLED display and it looks great, but I’ve spent the past few months with Android’s equivalent in the Redmagic Astra 2, and it’s well worth your attention. more…",
+      "vi": "[Bản dịch] Apple has just released a new iPad Mini with an OLED display and it looks great, but I’ve spent the past few months with Android’s equivalent in the Redmagic Astra 2, and it’s well worth your attention. more…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "8b7f3fa5f264affe": {
+    "title": {
+      "en": "Apple refreshes the iMac, entry-level MacBook Pro with the M6 chip",
+      "vi": "Apple refreshes the iMac, entry-level MacBook Pro with the M6 chip"
+    },
+    "summary": {
+      "en": "Additionally, the N1 chip brings Wi-Fi 7 and Bluetooth 6.",
+      "vi": "[Bản dịch] Additionally, the N1 chip brings Wi-Fi 7 and Bluetooth 6."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "5c819a565532267f": {
+    "title": {
+      "en": "South Carolina's measles outbreak jumped to Washington state 5 times in 2 weeks",
+      "vi": "South Carolina's measles outbreak jumped to Washington state 5 times in 2 weeks"
+    },
+    "summary": {
+      "en": "International travel used to be the main risk of measles cases in the US—not anymore.",
+      "vi": "[Bản dịch] International travel used to be the main risk of measles cases in the US—not anymore."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "7170133e65402359": {
+    "title": {
+      "en": "China's top-secret spaceplane can't hide in low-Earth orbit",
+      "vi": "China's top-secret spaceplane can't hide in low-Earth orbit"
+    },
+    "summary": {
+      "en": "The DIA's threat assessment suggests China may soon place directed energy weapons in space.",
+      "vi": "[Bản dịch] The DIA's threat assessment suggests China may soon place directed energy weapons in space."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "0419fa07eb025d9c": {
+    "title": {
+      "en": "\"No human at the helm\": Delaware plan would let AI agents run entire businesses",
+      "vi": "\"No human at the helm\": Delaware plan would let AI agents run entire businesses"
+    },
+    "summary": {
+      "en": "Owners of AI-run firms would evade liability for \"reckless\" AI, US Rep. Comer says.",
+      "vi": "[Bản dịch] Owners of AI-run firms would evade liability for \"reckless\" AI, US Rep. Comer says."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "9daa2cd43fa51930": {
+    "title": {
+      "en": "Anthropic IPO warns its AI could blackmail people, become sentient, end humanity",
+      "vi": "Anthropic IPO warns its AI could blackmail people, become sentient, end humanity"
+    },
+    "summary": {
+      "en": "Seven potential AI nightmares pulled from Anthropic's 93-page \"Risk Factor\" tome.",
+      "vi": "[Bản dịch] Seven potential AI nightmares pulled from Anthropic's 93-page \"Risk Factor\" tome."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "9d02bbba005f11f7": {
+    "title": {
+      "en": "Code-execution flaw in UEFI firmware affects most servers on planet Earth",
+      "vi": "Code-execution flaw in UEFI firmware affects most servers on planet Earth"
+    },
+    "summary": {
+      "en": "Critical flaw in EDK2 allows attackers to execute code early in the boot process.",
+      "vi": "[Bản dịch] Critical flaw in EDK2 allows attackers to execute code early in the boot process."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "3ecd70f4bffc6633": {
+    "title": {
+      "en": "Google begins certifying Registered App Stores for Android, but not in the US",
+      "vi": "Google begins certifying Registered App Stores for Android, but not in the US"
+    },
+    "summary": {
+      "en": "Easier app installs are coming to third-party stores, pending Google's stamp of approval.",
+      "vi": "[Bản dịch] Easier app installs are coming to third-party stores, pending Google's stamp of approval."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "5330f3f99d7dd24d": {
+    "title": {
+      "en": "Vibe genes? Natural(ish) language comes to protein, genome design software",
+      "vi": "Vibe genes? Natural(ish) language comes to protein, genome design software"
+    },
+    "summary": {
+      "en": "You can apparently now tell AI tools what sort of protein you want them to make.",
+      "vi": "[Bản dịch] You can apparently now tell AI tools what sort of protein you want them to make."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "e1fa18e2075cca9e": {
+    "title": {
+      "en": "Warner Bros. drops final trailer for Dune: Part Three",
+      "vi": "Warner Bros. drops final trailer for Dune: Part Three"
+    },
+    "summary": {
+      "en": "\"After years of combat, I've become the oppressor Chani had sworn to fight.\"",
+      "vi": "[Bản dịch] \"After years of combat, I've become the oppressor Chani had sworn to fight.\""
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "9006af7c3927ecdf": {
+    "title": {
+      "en": "Ford simplifies using your EV as a home battery with the $30K Fathom",
+      "vi": "Ford simplifies using your EV as a home battery with the $30K Fathom"
+    },
+    "summary": {
+      "en": "The Fathom pickup won’t need a wall-mounted inverter to output 10 kW to your house.",
+      "vi": "[Bản dịch] The Fathom pickup won’t need a wall-mounted inverter to output 10 kW to your house."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "a44b4d5034e532d9": {
+    "title": {
+      "en": "DeepMind unveils Genie 4 world model promising more realistic physics and humans",
+      "vi": "DeepMind unveils Genie 4 world model promising more realistic physics and humans"
+    },
+    "summary": {
+      "en": "Genie 4 will roll out to developers and Google AI Ultra subscribers soon.",
+      "vi": "[Bản dịch] Genie 4 will roll out to developers and Google AI Ultra subscribers soon."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "305926464c4f5d58": {
+    "title": {
+      "en": "From cheap tool to premium subscription: When a beloved app's price skyrockets",
+      "vi": "From cheap tool to premium subscription: When a beloved app's price skyrockets"
+    },
+    "summary": {
+      "en": "Huge price hikes force loyal users to reconsider their favorite apps.",
+      "vi": "[Bản dịch] Huge price hikes force loyal users to reconsider their favorite apps."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "2c03dc92d3050e0b": {
+    "title": {
+      "en": "Apple iPhone Duo review: Two screens, two experiences, two thousand dollars",
+      "vi": "Apple iPhone Duo review: Two screens, two experiences, two thousand dollars"
+    },
+    "summary": {
+      "en": "I respect Apple's first crack at a foldable phone, but I'm not sure I like it.",
+      "vi": "[Bản dịch] I respect Apple's first crack at a foldable phone, but I'm not sure I like it."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "8e8f0387002bfcb3": {
+    "title": {
+      "en": "Some iPhone Duo screens are already failing, Apple says only a \"small number\" are affected",
+      "vi": "Some iPhone Duo screens are already failing, Apple says only a \"small number\" are affected"
+    },
+    "summary": {
+      "en": "Apple's \"precision-engineered\" hinge is apparently damaging some iPhone Duo screens.",
+      "vi": "[Bản dịch] Apple's \"precision-engineered\" hinge is apparently damaging some iPhone Duo screens."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "57f9e735d3ff4182": {
+    "title": {
+      "en": "Sculpture re-creates odd optical effects of famed Lycurgus Cup",
+      "vi": "Sculpture re-creates odd optical effects of famed Lycurgus Cup"
+    },
+    "summary": {
+      "en": "University of Sheffield researchers figured out how to re-create the 1,600-year-old glass recipe.",
+      "vi": "[Bản dịch] University of Sheffield researchers figured out Cách re-create the 1,600-year-old glass recipe."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "74dd9a7521050bc7": {
+    "title": {
+      "en": "US officials want Section 702 renewed before damaging court ruling goes public",
+      "vi": "US officials want Section 702 renewed before damaging court ruling goes public"
+    },
+    "summary": {
+      "en": "Senators say officials hid a ruling on warrantless searches past its release deadline.",
+      "vi": "[Bản dịch] Senators say officials hid a ruling on warrantless searches past its release deadline."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "3291964448bf63b8": {
+    "title": {
+      "en": "Microsoft offers to buy out a quarter of its workforce",
+      "vi": "Microsoft offers to buy out a quarter of its workforce"
+    },
+    "summary": {
+      "en": "Employees in the US, Canada, India, and the UK may receive offers to leave MS today.",
+      "vi": "[Bản dịch] Employees in the US, Canada, India, and the UK may receive offers to leave MS today."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "ff235960aebe93e3": {
+    "title": {
+      "en": "Worms mate in man's eyes, get plucked out right before larvae burst out",
+      "vi": "Worms mate in man's eyes, get plucked out right before larvae burst out"
+    },
+    "summary": {
+      "en": "Case study gives a whole new meaning to \"bedroom eyes.\"",
+      "vi": "[Bản dịch] Case study gives a whole new meaning to \"bedroom eyes.\""
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "e690224c4db60bf8": {
+    "title": {
+      "en": "Meet the real-life Scottish surgeon who inspired Sherlock Holmes",
+      "vi": "Meet the real-life Scottish surgeon who inspired Sherlock Holmes"
+    },
+    "summary": {
+      "en": "Lindsey Fitzharris chats with Ars about her new book, Sleuth-Hound: The Case of the Real Sherlock Holmes .",
+      "vi": "[Bản dịch] Lindsey Fitzharris chats with Ars about her new book, Sleuth-Hound: The Case of the Real Sherlock Holmes ."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "93eb651fa249ea23": {
+    "title": {
+      "en": "Apple releases iOS and macOS 27.2 with new Siri AI features, new Music logo",
+      "vi": "Apple releases iOS and macOS 27.2 with new Siri AI features, new Music logo"
+    },
+    "summary": {
+      "en": "Included is the ability to limit which applications Siri can directly access.",
+      "vi": "[Bản dịch] Included is the ability to limit which applications Siri can directly access."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "37108c33863abd27": {
+    "title": {
+      "en": "Hate setting up eSIMs? Gemini might soon do it for you (APK teardown)",
+      "vi": "Hate setting up eSIMs? Gemini might soon do it for you (APK teardown)"
+    },
+    "summary": {
+      "en": "We've spotted a new connector for Gemini, and it can already start the eSIM setup process with a few simple prompts.",
+      "vi": "[Bản dịch] We've spotted a new connector for Gemini, and it can already start the eSIM setup process with a few simple prompts."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "a56d48b67799ca68": {
+    "title": {
+      "en": "Google Wallet is working on a new payment option for international travel",
+      "vi": "Google Wallet is working on a new payment option for international travel"
+    },
+    "summary": {
+      "en": "Wallet may soon support Alipay Plus payments in Southeast Asia.",
+      "vi": "[Bản dịch] Wallet may soon support Alipay Plus payments in Southeast Asia."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "810c31a17d363c35": {
+    "title": {
+      "en": "Score $100 off the XGIMI MoGo 4 portable projector",
+      "vi": "Score $100 off the XGIMI MoGo 4 portable projector"
+    },
+    "summary": {
+      "en": "The XGIMI MoGo 4 portable projector drops to $399 on Amazon, with 1080p playback, Google TV, and a built-in battery.",
+      "vi": "[Bản dịch] The XGIMI MoGo 4 portable projector drops to $399 on Amazon, with 1080p playback, Google TV, and a built-in battery."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "57191e739206d930": {
+    "title": {
+      "en": "Google’s working on a new look for Gemini Live, and we have a sneak peek for you",
+      "vi": "Google’s working on a new look for Gemini Live, and we have a sneak peek for you"
+    },
+    "summary": {
+      "en": "Gemini Live could be getting a Neural Expressive glow-up.",
+      "vi": "[Bản dịch] Gemini Live could be getting a Neural Expressive glow-up."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "86d56b90b9b37d15": {
+    "title": {
+      "en": "Pixel phones are still missing alarms, turning anxiety dreams into reality",
+      "vi": "Pixel phones are still missing alarms, turning anxiety dreams into reality"
+    },
+    "summary": {
+      "en": "Users report missed morning wake-ups, Google steps in to investigate.",
+      "vi": "[Bản dịch] Users report missed morning wake-ups, Google steps in to investigate."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "a2dfba4c00d71744": {
+    "title": {
+      "en": "Samsung wants you actively approving or blocking your child’s apps",
+      "vi": "Samsung wants you actively approving or blocking your child’s apps"
+    },
+    "summary": {
+      "en": "Samsung will soon lock children out of certain apps until parents grant permission.",
+      "vi": "[Bản dịch] Samsung will soon lock children out of certain apps until parents grant permission."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "80d3f9ec0708adc2": {
+    "title": {
+      "en": "Is Duolingo down for you? Here’s what’s going on (Update: Back)",
+      "vi": "Is Duolingo down for you? Here’s what’s going on (Update: Back)"
+    },
+    "summary": {
+      "en": "Let's just hope Duolingo sorts this out before you break your streak.",
+      "vi": "[Bản dịch] Let's just hope Duolingo sorts this out before you break your streak."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "5ab2455b8be53bf7": {
+    "title": {
+      "en": "Amazon slashes Samsung’s 34-inch Odyssey G5 by $150",
+      "vi": "Amazon slashes Samsung’s 34-inch Odyssey G5 by $150"
+    },
+    "summary": {
+      "en": "Samsung’s 34-inch Odyssey G5 drops to $249.99 on Amazon, bringing curved ultrawide gaming and 165Hz speed for much less.",
+      "vi": "[Bản dịch] Samsung’s 34-inch Odyssey G5 drops to $249.99 on Amazon, bringing curved ultrawide gaming and 165Hz speed for much less."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "a722c24074006fc5": {
+    "title": {
+      "en": "Android opens enrollment for program that brings one-tap sideloading for app stores",
+      "vi": "Android opens enrollment for program that brings one-tap sideloading for app stores"
+    },
+    "summary": {
+      "en": "Google’s Epic-fueled app store plan starts enrollment.",
+      "vi": "[Bản dịch] Google’s Epic-fueled app store plan starts enrollment."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "f6c9f7a96ab67e27": {
+    "title": {
+      "en": "This Amazon Basics 68W 2-port GaN charger is just $21 right now",
+      "vi": "This Amazon Basics 68W 2-port GaN charger is just $21 right now"
+    },
+    "summary": {
+      "en": "Save 28% on the Amazon Basics 68W GaN wall charger, a compact two-port pick for charging a laptop and phone.",
+      "vi": "[Bản dịch] Save 28% on the Amazon Basics 68W GaN wall charger, a compact two-port pick for charging a laptop and phone."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "87af4dfbfc5ebd15": {
+    "title": {
+      "en": "Android is locking down permissions to keep apps from messing with your contacts",
+      "vi": "Android is locking down permissions to keep apps from messing with your contacts"
+    },
+    "summary": {
+      "en": "Google is putting apps that want to add to or change your contacts under new scrutiny.",
+      "vi": "[Bản dịch] Google is putting apps that want to add to or change your contacts under new scrutiny."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "01c430c0cc58c479": {
+    "title": {
+      "en": "Google Wallet could borrow a handy transit feature for everyday purchases",
+      "vi": "Google Wallet could borrow a handy transit feature for everyday purchases"
+    },
+    "summary": {
+      "en": "Unlocking your phone for contactless payments could soon be optional.",
+      "vi": "[Bản dịch] Unlocking your phone for contactless payments could soon be optional."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "c32eabfe499c4e5b": {
+    "title": {
+      "en": "AYANEO offers both good and bad news on handheld shipments",
+      "vi": "AYANEO offers both good and bad news on handheld shipments"
+    },
+    "summary": {
+      "en": "You'll have to wait a little longer for your Pocket Micro 2.",
+      "vi": "[Bản dịch] You'll have to wait a little longer for your Pocket Micro 2."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "ffcad8c0bef63f3b": {
+    "title": {
+      "en": "ONO5 Pro 2.0 projector drops $197 on Amazon",
+      "vi": "ONO5 Pro 2.0 projector drops $197 on Amazon"
+    },
+    "summary": {
+      "en": "ONOAYO’s ONO5 Pro 2.0 projector drops to $296.94 on Amazon with built-in Netflix, 1080p output, and 4K input support.",
+      "vi": "[Bản dịch] ONOAYO’s ONO5 Pro 2.0 projector drops to $296.94 on Amazon with built-in Netflix, 1080p output, and 4K input support."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "5ad52332c44d6c2d": {
+    "title": {
+      "en": "Samsung faces fines for throttling Galaxy gaming performance",
+      "vi": "Samsung faces fines for throttling Galaxy gaming performance"
+    },
+    "summary": {
+      "en": "Samsung has to pay up for promising \"ultimate\" gaming performance, then throttling phones.",
+      "vi": "[Bản dịch] Samsung has to pay up for promising \"ultimate\" gaming performance, then throttling phones."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "e724fb83679bba72": {
+    "title": {
+      "en": "Ubuntu firmware HWE will prevent issues on older kernel",
+      "vi": "Ubuntu firmware HWE will prevent issues on older kernel"
+    },
+    "summary": {
+      "en": "Ubuntu is planning a new linux-firmware-hwe package, in an effort to reduce the risk of firmware updates for newer kernels causing problems for users running older ones. On Ubuntu long-term support (LTS) releases, you can stick with the standard (GA) kernel it was released with for the duration of its support period, or you can install the HWE...",
+      "vi": "[Bản dịch] Ubuntu is planning a new linux-firmware-hwe package, in an effort to reduce the risk of firmware updates for newer kernels causing problems for users running older ones. On Ubuntu long-term support (LTS) releases, you can stick with the standard (GA) kernel it was released with for the duration of its support period, or you can install the HWE..."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "739c9f9103673d3c": {
+    "title": {
+      "en": "Firefox 159 released with Wayland Linux fixes",
+      "vi": "Firefox 159 released with Wayland Linux fixes"
+    },
+    "summary": {
+      "en": "Firefox 159 is out, with a fresh set of improvements and some Linux-specific fixes. Now that Mozilla’s browser hews to a faster release cadence, with two releases a month rather than one, some changelogs may look minor on their own, as they’re smaller, if more frequent slices. So what’s changed? The Passwords tool in the browser sidebar (added as...",
+      "vi": "[Bản dịch] Firefox 159 is out, with a fresh set of improvements and some Linux-specific fixes. Now that Mozilla’s browser hews to a faster release cadence, with two releases a month rather than one, some changelogs may look minor on their own, as they’re smaller, if more frequent slices. So what’s changed? The Passwords tool in the browser sidebar (added as..."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "f6ba26099c5cb990": {
+    "title": {
+      "en": "Trash talking Ubuntu’s confusing British bin labels",
+      "vi": "Trash talking Ubuntu’s confusing British bin labels"
+    },
+    "summary": {
+      "en": "Every operating systems needs somewhere to put the files you delete (and give you chance to rummage through to find the ones you want to keep). But, if you’re a Brit using Ubuntu, the name of that place varies based on where you look. It seems Ubuntu’s UK English translation team don’t agree on what to call a bin. The dock hover label says Trash....",
+      "vi": "[Bản dịch] Every operating systems needs somewhere to put the files you delete (and give you chance to rummage through to find the ones you want to keep). But, if you’re a Brit using Ubuntu, the name of that place varies based on where you look. It seems Ubuntu’s UK English translation team don’t agree on what to call a bin. The dock hover label says Trash...."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "45c76ee61d860588": {
+    "title": {
+      "en": "Ubuntu users can now file bugs against specific Launchpad PPAs",
+      "vi": "Ubuntu users can now file bugs against specific Launchpad PPAs"
+    },
+    "summary": {
+      "en": "Launchpad now offers bug tracking for personal package archives (PPAs), making it easier for users to report issues specific to software within a PPA. Why does that matter? Well, not all PPAs are maintained by their upstream counterparts – folks who, frankly, aren’t always minded to care about quirks in their software that might be down to someone...",
+      "vi": "[Bản dịch] Launchpad now offers bug tracking for personal package archives (PPAs), making it easier for users to report issues specific to software within a PPA. Why does that matter? Well, not all PPAs are maintained by their upstream counterparts – folks who, frankly, aren’t always minded to care about quirks in their software that might be down to someone..."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "178301a7ab9b01b0": {
+    "title": {
+      "en": "PHP2Shell scare sees SuperTuxKart pull its online server",
+      "vi": "PHP2Shell scare sees SuperTuxKart pull its online server"
+    },
+    "summary": {
+      "en": "SuperTuxKart has taken several online services offline, having pulled the server that powers them rather than risk it being exploited by PHP2shell. The open-source karting game is not alone in ‘pitting’ to patch, with Wikimedia, DeviantArt, government websites and many more taking various systems offline to harden against it. While offline, gamers...",
+      "vi": "[Bản dịch] SuperTuxKart has taken several online services offline, having pulled the server that powers them rather than risk it being exploited by PHP2shell. The open-source karting game is not alone in ‘pitting’ to patch, with Wikimedia, DeviantArt, government websites and many more taking various systems offline to harden against it. While offline, gamers..."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "ca31470603a5474e": {
+    "title": {
+      "en": "Shader Effects is the coolest GNOME extension you’ll try this weekend",
+      "vi": "Shader Effects is the coolest GNOME extension you’ll try this weekend"
+    },
+    "summary": {
+      "en": "Ever wondered what your Ubuntu desktop would look like if you were watching it on a chewed up VHS tape or an old monochrome CRT monitor? You probably haven’t, but a new GNOME Shell extension lets you find out anyway. The Shader Effects extension applies GPU-accelerated filters, things like scan lines, NTSC RGB bloom and flickery green CRT glow, to...",
+      "vi": "[Bản dịch] Ever wondered what your Ubuntu desktop would look like if you were watching it on a chewed up VHS tape or an old monochrome CRT monitor? You probably haven’t, but a new GNOME Shell extension lets you find out anyway. The Shader Effects extension applies GPU-accelerated filters, things like scan lines, NTSC RGB bloom and flickery green CRT glow, to..."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "3371457e4c3a2604": {
+    "title": {
+      "en": "Calibre 9.17 release brings faster ebook conversions",
+      "vi": "Calibre 9.17 release brings faster ebook conversions"
+    },
+    "summary": {
+      "en": "Calibre 9.17 has been released with faster ebook conversion speeds and JPEG XL image support. The open-source ebook editor improves output compression speeds for MOBI, AZW3 and PDB files, which makes conversions to those formats quicker. Converting EPUB to MOBI is what I use Calibre for to read on my ancient Kindle. Calibre 9.17 can read JPEG XL...",
+      "vi": "[Bản dịch] Calibre 9.17 has been released with faster ebook conversion speeds and JPEG XL image support. The open-source ebook editor improves output compression speeds for MOBI, AZW3 and PDB files, which makes conversions to those formats quicker. Converting EPUB to MOBI is what I use Calibre for to read on my ancient Kindle. Calibre 9.17 can read JPEG XL..."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "8a2e6d2c33ee39b0": {
+    "title": {
+      "en": "Canonical dev mocks up an Ubuntu launcher that uses AI",
+      "vi": "Canonical dev mocks up an Ubuntu launcher that uses AI"
+    },
+    "summary": {
+      "en": "What would deeper AI integration on the Ubuntu desktop look like? Well, you don’t need to think too hard to find out. A Canonical engineer has published a prototype launcher that simulates how on-device AI could be used to enhance and aid users of the Ubuntu desktop. But the warty-prototype snap by Didier Roche-Tolomelli (aka didrocks) is not a...",
+      "vi": "[Bản dịch] What would deeper AI integration on the Ubuntu desktop look like? Well, you don’t need to think too hard to find out. A Canonical engineer has published a prototype launcher that simulates how on-device AI could be used to enhance and aid users of the Ubuntu desktop. But the warty-prototype snap by Didier Roche-Tolomelli (aka didrocks) is not a..."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "4f9a6a4a0665abf7": {
+    "title": {
+      "en": "Epic’s new vibe-coded games launcher is available on Ubuntu",
+      "vi": "Epic’s new vibe-coded games launcher is available on Ubuntu"
+    },
+    "summary": {
+      "en": "Epic Games has confirmed that Fortnite is coming to Linux, and the launcher it will arrive through is available to try in preview on Ubuntu – a vibe-coded wonder that’s been royally roasted on the internet. The gaming company has also announced a rebuilt version of its anti-cheat tech for Linux, which will be required to run Fortnite to Linux....",
+      "vi": "[Bản dịch] Epic Games has confirmed that Fortnite is coming to Linux, and the launcher it will arrive through is available to try in preview on Ubuntu – a vibe-coded wonder that’s been royally roasted on the internet. The gaming company has also announced a rebuilt version of its anti-cheat tech for Linux, which will be required to run Fortnite to Linux...."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "8e99a2fd677f7950": {
+    "title": {
+      "en": "KeePassXC 2.8 released with Qt6, support for Wayland auto-type",
+      "vi": "KeePassXC 2.8 released with Qt6, support for Wayland auto-type"
+    },
+    "summary": {
+      "en": "If KeePassXC is your password-management app of choice on Linux, the new 2.8.0 update is going to please. KeePassXC 2.8.0 sees some “long-awaited new features” arrive, including a Qt6 port of the main app interface, auto-type support on Wayland via XDG Desktop Portals, fingerprint unlock and a new experimental Aarch64 AppImage. The Qt6 port has...",
+      "vi": "[Bản dịch] If KeePassXC is your password-management app of choice on Linux, the new 2.8.0 update is going to please. KeePassXC 2.8.0 sees some “long-awaited new features” arrive, including a Qt6 port of the main app interface, auto-type support on Wayland via XDG Desktop Portals, fingerprint unlock and a new experimental Aarch64 AppImage. The Qt6 port has..."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "287908b3e087f501": {
+    "title": {
+      "en": "Ubuntu rolls out php2shell, eMudhra certificate fixes",
+      "vi": "Ubuntu rolls out php2shell, eMudhra certificate fixes"
+    },
+    "summary": {
+      "en": "Ubuntu has released security updates for the php2shell PHP flaw that’s led to websites being taken offline, and a key compromise at the eMudhra certificate authority. Desktop Ubuntu isn’t directly affected by php2shell, since PHP isn’t installed by default. The certificate issue is more of a browser-based concern, though Google, Apple, Mozilla et...",
+      "vi": "[Bản dịch] Ubuntu has released security updates for the php2shell PHP flaw that’s led to websites being taken offline, and a key compromise at the eMudhra certificate authority. Desktop Ubuntu isn’t directly affected by php2shell, since PHP isn’t installed by default. The certificate issue is more of a browser-based concern, though Google, Apple, Mozilla et..."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "2f1f3dcba6e12a09": {
+    "title": {
+      "en": "PS5 Linux hack now supports (some) newer firmware versions",
+      "vi": "PS5 Linux hack now supports (some) newer firmware versions"
+    },
+    "summary": {
+      "en": "New PS5 Linux hack pLinux5-NG supports newer firmware, allowing Linux and Steam games to run on Sony's console. But not for long, welp. You're reading PS5 Linux hack now supports (some) newer firmware versions , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission.",
+      "vi": "[Bản dịch] New PS5 Linux hack pLinux5-NG supports newer firmware, allowing Linux and Steam games to run on Sony's console. But not for long, welp. You're reading PS5 Linux hack now supports (some) newer firmware versions , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "09c11f07e58f7e0b": {
+    "title": {
+      "en": "Firefox 158.0.1 brings eMudhra certificate security fixes",
+      "vi": "Firefox 158.0.1 brings eMudhra certificate security fixes"
+    },
+    "summary": {
+      "en": "Mozilla Firefox 158.0.1 is rolling out with some important security fixes. Now, I don’t tend to cover Firefox point releases as mainly ship minor fixes for things the majority of users won’t have noticed were wrong in the first place. The Firefox 158.0.1 update is more ‘meaty’ than usual fare. Among the security advisories this update covers are...",
+      "vi": "[Bản dịch] Mozilla Firefox 158.0.1 is rolling out with some important security fixes. Now, I don’t tend to cover Firefox point releases as mainly ship minor fixes for things the majority of users won’t have noticed were wrong in the first place. The Firefox 158.0.1 update is more ‘meaty’ than usual fare. Among the security advisories this update covers are..."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "fc1520313d731b21": {
+    "title": {
+      "en": "Give Nautilus file manager the ‘Computer’ view it lacks",
+      "vi": "Give Nautilus file manager the ‘Computer’ view it lacks"
+    },
+    "summary": {
+      "en": "Nautilus My Computer brings a Windows-style Computer overview to the GNOME file manager, and extras like Miller columns and sidebar editing. You're reading Give Nautilus file manager the ‘Computer’ view it lacks , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission.",
+      "vi": "[Bản dịch] Nautilus My Computer brings a Windows-style Computer overview to the GNOME file manager, and extras like Miller columns and sidebar editing. You're reading Give Nautilus file manager the ‘Computer’ view it lacks , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "24667ebd409b6cab": {
+    "title": {
+      "en": "BleachBit 6.0.6 fixes admin cleaning on Linux",
+      "vi": "BleachBit 6.0.6 fixes admin cleaning on Linux"
+    },
+    "summary": {
+      "en": "BleachBit, the free, open-source and cross-platform system cleaning utility has a new maintenance release out – with support for Ubuntu 26.10. BleachBit 6.0.6 introduces cleaners for the Helium browser and Docker Desktop (including its AI assistant). This update also boosts app startup times, and makes deep scan, file deletion and file wiping...",
+      "vi": "[Bản dịch] BleachBit, the free, open-source and cross-platform system cleaning utility has a new maintenance release out – with support for Ubuntu 26.10. BleachBit 6.0.6 introduces cleaners for the Helium browser and Docker Desktop (including its AI assistant). This update also boosts app startup times, and makes deep scan, file deletion and file wiping..."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "d788112ac5f1a908": {
+    "title": {
+      "en": "Audacious 4.6.2 fills the last gaps in its Qt Winamp mode",
+      "vi": "Audacious 4.6.2 fills the last gaps in its Qt Winamp mode"
+    },
+    "summary": {
+      "en": "Audacious 4.6.2 lets you drop Winamp skin files onto the Qt window to install them, and adds keyboard navigation for toolbar buttons. You're reading Audacious 4.6.2 fills the last gaps in its Qt Winamp mode , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission.",
+      "vi": "[Bản dịch] Audacious 4.6.2 lets you drop Winamp skin files onto the Qt window to install them, and adds keyboard navigation for toolbar buttons. You're reading Audacious 4.6.2 fills the last gaps in its Qt Winamp mode , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "91283ff265261284": {
+    "title": {
+      "en": "NordVPN 6.0 for Linux is coming – with ‘breaking’ changes",
+      "vi": "NordVPN 6.0 for Linux is coming – with ‘breaking’ changes"
+    },
+    "summary": {
+      "en": "NordVPN are updating their Linux app to offer a “cleaner, simpler way to manage VPN connections” from the command line. The NordVPN 6.0 update, which is coming soon (so not out yet), “cuts down” the number of commands that “overlap”. The company say this will make it easier for users to enable and configure VPN settings. Among the changes, NordVPN...",
+      "vi": "[Bản dịch] NordVPN are updating their Linux app to offer a “cleaner, simpler way to manage VPN connections” from the command line. The NordVPN 6.0 update, which is coming soon (so not out yet), “cuts down” the number of commands that “overlap”. The company say this will make it easier for users to enable and configure VPN settings. Among the changes, NordVPN..."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "2d49c928424222e9": {
+    "title": {
+      "en": "Linux 7.3 is out, speeds up ext4 and low-VRAM AMD GPUs",
+      "vi": "Linux 7.3 is out, speeds up ext4 and low-VRAM AMD GPUs"
+    },
+    "summary": {
+      "en": "Linux 7.3 is out with faster ext4, better performance on AMD GPUs with low VRAM and a new cgroup scheduling mode. 2026 Steam Controller driver debuts. You're reading Linux 7.3 is out, speeds up ext4 and low-VRAM AMD GPUs , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission.",
+      "vi": "[Bản dịch] Linux 7.3 is out with faster ext4, better performance on AMD GPUs with low VRAM and a new cgroup scheduling mode. 2026 Steam Controller driver debuts. You're reading Linux 7.3 is out, speeds up ext4 and low-VRAM AMD GPUs , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "651b6a2bacfdac69": {
+    "title": {
+      "en": "How bug bounty sharpens one researcher’s security skills",
+      "vi": "Cách bug bounty sharpens one researcher’s security skills"
+    },
+    "summary": {
+      "en": "As Cybersecurity Awareness Month continues, the GitHub Bug Bounty team spotlights @r31n, diving into their research approach, favorite bug classes, and advice for aspiring hackers. The post How bug bounty sharpens one researcher’s security skills appeared first on The GitHub Blog .",
+      "vi": "[Bản dịch] As Cybersecurity Awareness Month continues, the GitHub Bug Bounty team spotlights @r31n, diving into their research approach, favorite bug classes, and advice for aspiring hackers. The post How bug bounty sharpens one researcher’s security skills appeared first on The GitHub Blog ."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "20a259028135abda": {
+    "title": {
+      "en": "The bridge to agent-scale Git infrastructure",
+      "vi": "The bridge to agent-scale Git infrastructure"
+    },
+    "summary": {
+      "en": "We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently. The post The bridge to agent-scale Git infrastructure appeared first on The GitHub Blog .",
+      "vi": "[Bản dịch] We moved a copy of 99.99999% of GitHub's repositories to Azure. Here's how per-reference quorums will bring over the rest, and how object storage lets reads scale independently. The post The bridge to agent-scale Git infrastructure appeared first on The GitHub Blog ."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "eb477756520c8ff8": {
+    "title": {
+      "en": "How 3 Java Champions are using GitHub Copilot for increased productivity",
+      "vi": "Cách 3 Java Champions are using GitHub Copilot for increased productivity"
+    },
+    "summary": {
+      "en": "Three Java Champions share how they use GitHub Copilot to solve problems, accelerate development, and keep humans responsible for the results. The post How 3 Java Champions are using GitHub Copilot for increased productivity appeared first on The GitHub Blog .",
+      "vi": "[Bản dịch] Three Java Champions share how they use GitHub Copilot to solve problems, accelerate development, and keep humans responsible for the results. The post How 3 Java Champions are using GitHub Copilot for increased productivity appeared first on The GitHub Blog ."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "f73f11092849b85a": {
+    "title": {
+      "en": "How to continue a GitHub Copilot app session in VS Code",
+      "vi": "Cách continue a GitHub Copilot app session in VS Code"
+    },
+    "summary": {
+      "en": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context. The post How to continue a GitHub Copilot app session in VS Code appeared first on The GitHub Blog .",
+      "vi": "[Bản dịch] Learn Cách move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context. The post Cách continue a GitHub Copilot app session in VS Code appeared first on The GitHub Blog ."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "61022bc6478f9d2b": {
+    "title": {
+      "en": "The next developer interface is ambient intelligence",
+      "vi": "The next developer interface is ambient intelligence"
+    },
+    "summary": {
+      "en": "AI, agents, voice, and physical controls are shifting software development from operating tools to expressing intent—and helping developers stay focused on building. The post The next developer interface is ambient intelligence appeared first on The GitHub Blog .",
+      "vi": "[Bản dịch] AI, agents, voice, and physical controls are shifting software development from operating tools to expressing intent—and helping developers stay focused on building. The post The next developer interface is ambient intelligence appeared first on The GitHub Blog ."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "f118bcb568c33605": {
+    "title": {
+      "en": "Staying Evergreen: How we automated secure access and repo hygiene in a shared org",
+      "vi": "Staying Evergreen: How we automated secure access and repo hygiene in a shared org"
+    },
+    "summary": {
+      "en": "Put native GitHub features to work to review outside collaborator access and archive stale repositories. The post Staying Evergreen: How we automated secure access and repo hygiene in a shared org appeared first on The GitHub Blog .",
+      "vi": "[Bản dịch] Put native GitHub features to work to review outside collaborator access and archive stale repositories. The post Staying Evergreen: How we automated secure access and repo hygiene in a shared org appeared first on The GitHub Blog ."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "08683db964d08ddd": {
+    "title": {
+      "en": "GitHub availability report: September 2026",
+      "vi": "GitHub availability report: September 2026"
+    },
+    "summary": {
+      "en": "In September, we experienced two incidents that resulted in degraded performance across GitHub services. The post GitHub availability report: September 2026 appeared first on The GitHub Blog .",
+      "vi": "[Bản dịch] In September, we experienced two incidents that resulted in degraded performance across GitHub services. The post GitHub availability report: September 2026 appeared first on The GitHub Blog ."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "42cfdf49638add89": {
+    "title": {
+      "en": "From 2,500 requests to 24: Rebuilding star history without the stargazers",
+      "vi": "From 2,500 requests to 24: Rebuilding star history without the stargazers"
+    },
+    "summary": {
+      "en": "Our new repo star history API now provides trends without returning individual identities or requiring unbounded database work. These are the engineering tradeoffs we made. The post From 2,500 requests to 24: Rebuilding star history without the stargazers appeared first on The GitHub Blog .",
+      "vi": "[Bản dịch] Our new repo star history API now provides trends without returning individual identities or requiring unbounded database work. These are the engineering tradeoffs we made. The post From 2,500 requests to 24: Rebuilding star history without the stargazers appeared first on The GitHub Blog ."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "49fe8a3fc3d9ad0e": {
+    "title": {
+      "en": "GitHub’s model for secret detection: Finding more secrets with less noise",
+      "vi": "GitHub’s model for secret detection: Finding more secrets with less noise"
+    },
+    "summary": {
+      "en": "GitHub’s context-aware secret classifier improves detection quality, raises weighted acceptance by 11.5%, and reduces median scan execution time by 86%. The post GitHub’s model for secret detection: Finding more secrets with less noise appeared first on The GitHub Blog .",
+      "vi": "[Bản dịch] GitHub’s context-aware secret classifier improves detection quality, raises weighted acceptance by 11.5%, and reduces median scan execution time by 86%. The post GitHub’s model for secret detection: Finding more secrets with less noise appeared first on The GitHub Blog ."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "acb868617334bc3b": {
+    "title": {
+      "en": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+      "vi": "GitHub Copilot app cho người mới bắt đầu: Cách teach Copilot about your codebase"
+    },
+    "summary": {
+      "en": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright. The post GitHub Copilot app for Beginners: How to teach Copilot about your codebase appeared first on The GitHub Blog .",
+      "vi": "[Bản dịch] Learn Cách add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright. The post GitHub Copilot app cho người mới bắt đầu: Cách teach Copilot about your codebase appeared first on The GitHub Blog ."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "caa595723c68af9e": {
+    "title": {
+      "vi": "Plaud vào Việt Nam với Note Pro và NotePin S, giá từ 5,49 triệu đồng",
+      "en": "Plaud vào Việt Nam với Note Pro và NotePin S, giá từ 5,49 triệu đồng"
+    },
+    "summary": {
+      "vi": "Ngày 27/10/2026, Plaud chính thức ra mắt tại Việt Nam với hai máy ghi âm kiêm trợ lý AI: Note Pro và NotePin S. Đây là thị trường thứ sáu của hãng tại Đông Nam Á, sau Singapore, Thái Lan,...",
+      "en": "[Summary] Ngày 27/10/2026, Plaud chính thức ra mắt tại Việt Nam với hai máy ghi âm kiêm trợ lý AI: Note Pro và NotePin S. Đây là thị trường thứ sáu của hãng tại Đông Nam Á, sau Singapore, Thái Lan,..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "097135a1456533a6": {
+    "title": {
+      "vi": "Tất cả về Apple Silicon đến A20 Pro - M6 (update 28/10/2026)",
+      "en": "Tất cả về Apple Silicon đến A20 Pro - M6 (update 28/10/2026)"
+    },
+    "summary": {
+      "vi": "Ở bài viết này, hãy làm quen với các thuật ngữ kỹ thuật và tất cả các thông tin về Apple Silicon và các thành phần phần cứng bên trong nó, nếu Anh Em muốn hiểu tương đối hết về chúng thì bài viết...",
+      "en": "[Summary] Ở bài viết này, hãy làm quen với các thuật ngữ kỹ thuật và tất cả các thông tin về Apple Silicon và các thành phần phần cứng bên trong nó, nếu Anh Em muốn hiểu tương đối hết về chúng thì bài viết..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "3df302d4bc97d6ee": {
+    "title": {
+      "vi": "[QC] Trải nghiệm cảm giác phấn khích ngay trong những hành trình đi làm hằng ngày",
+      "en": "[QC] Trải nghiệm cảm giác phấn khích ngay trong những hành trình đi làm hằng ngày"
+    },
+    "summary": {
+      "vi": "Trong bối cảnh ngày càng nhiều người lựa chọn sinh sống tại khu vực ngoại thành để phù hợp với điều kiện tài chính và không gian sống, quãng đường di chuyển giữa nhà và nơi làm việc cũng có xu...",
+      "en": "[Summary] Trong bối cảnh ngày càng nhiều người lựa chọn sinh sống tại khu vực ngoại thành để phù hợp với điều kiện tài chính và không gian sống, quãng đường di chuyển giữa nhà và nơi làm việc cũng có xu..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "477baea26f15d800": {
+    "title": {
+      "vi": "Hướng dẫn dùng iPhone Duo: vuốt back, xác nhận và các thao tác cơ bản",
+      "en": "Guide to dùng iPhone Duo: vuốt back, xác nhận và các thao tác cơ bản"
+    },
+    "summary": {
+      "vi": "iPhone Duo không có nút Home, không có Face ID, màn hình gập 7,6 inch — mọi thao tác đều bằng cử chỉ và nút bấm. Apple giữ nguyên logic vuốt back từ cạnh trái, nhưng thêm nút bấm ở cạnh màn hình...",
+      "en": "[Summary] iPhone Duo không có nút Home, không có Face ID, màn hình gập 7,6 inch — mọi thao tác đều bằng cử chỉ và nút bấm. Apple giữ nguyên logic vuốt back từ cạnh trái, nhưng thêm nút bấm ở cạnh màn hình..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "9a63fe95fa6678d2": {
+    "title": {
+      "vi": "Nhà cung cấp bản lề iPhone Duo khẳng định linh kiện của mình không gây nứt màn hình",
+      "en": "Nhà cung cấp bản lề iPhone Duo khẳng định linh kiện của mình không gây nứt màn hình"
+    },
+    "summary": {
+      "vi": "Theo The Elec, Fine M-Tec, công ty Hàn Quốc cung cấp linh kiện cho iPhone Duo, chiếc smartphone gập đầu tiên của Apple, đã ra tuyên bố chính thức vào ngày 26/10 để phủ nhận việc linh kiện của mình...",
+      "en": "[Summary] Theo The Elec, Fine M-Tec, công ty Hàn Quốc cung cấp linh kiện cho iPhone Duo, chiếc smartphone gập đầu tiên của Apple, đã ra tuyên bố chính thức vào ngày 26/10 để phủ nhận việc linh kiện của mình..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "9a16bf8b8fb8bbd3": {
+    "title": {
+      "vi": "Apple ra mắt iMac M6: chip 2 nm, CPU 12 nhân, Neural Engine kép, giá từ 1.499 USD",
+      "en": "Apple ra mắt iMac M6: chip 2 nm, CPU 12 nhân, Neural Engine kép, giá từ 1.499 USD"
+    },
+    "summary": {
+      "vi": "Apple vừa công bố iMac mới dùng chip M6, bản nâng cấp đầu tiên của dòng máy tính all-in-one 24 inch kể từ thế hệ M4. Máy giữ nguyên thiết kế mỏng và bảy màu quen thuộc, nhưng thay đổi gần như toàn...",
+      "en": "[Summary] Apple vừa công bố iMac mới dùng chip M6, bản nâng cấp đầu tiên của dòng máy tính all-in-one 24 inch kể từ thế hệ M4. Máy giữ nguyên thiết kế mỏng và bảy màu quen thuộc, nhưng thay đổi gần như toàn..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "96940594ca7c5a0f": {
+    "title": {
+      "vi": "Apple ra mắt MacBook Pro 14-inch M6: chip 12 nhân, NPU kép 16 nhân, pin 24 giờ, giá từ 1.999 USD",
+      "en": "Apple ra mắt MacBook Pro 14-inch M6: chip 12 nhân, NPU kép 16 nhân, pin 24 giờ, giá từ 1.999 USD"
+    },
+    "summary": {
+      "vi": "Apple vừa chính thức giới thiệu chiếc MacBook Pro 14-inch thế hệ mới trang bị chip M6. Bản nâng cấp này tập trung vào việc đẩy mạnh hiệu năng xử lý, năng lực AI cục bộ trên thiết bị và chuẩn kết...",
+      "en": "[Summary] Apple vừa chính thức giới thiệu chiếc MacBook Pro 14-inch thế hệ mới trang bị chip M6. Bản nâng cấp này tập trung vào việc đẩy mạnh hiệu năng xử lý, năng lực AI cục bộ trên thiết bị và chuẩn kết..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "05d6cbb5ba6a47d7": {
+    "title": {
+      "vi": "Trên tay/Đánh giá đồng hồ Casio AE1200WHD: Pin 10 năm, đẹp, ngầu, nhiều múi giờ & tính năng hay",
+      "en": "Trên tay/Đánh giá đồng hồ Casio AE1200WHD: Pin 10 năm, đẹp, ngầu, nhiều múi giờ & tính năng hay"
+    },
+    "summary": {
+      "vi": "Sau khi dùng qua nhiều loại smartwatch kể cả Apple Watch thì bây giờ mình tạm dừng lại ở chiếc Casio truyền thống AE1200WHD. Lý do thứ nhất: không cần cần sạc mỗi ngày, lý do là thứ hai là nó đẹp...",
+      "en": "[Summary] Sau khi dùng qua nhiều loại smartwatch kể cả Apple Watch thì bây giờ mình tạm dừng lại ở chiếc Casio truyền thống AE1200WHD. Lý do thứ nhất: không cần cần sạc mỗi ngày, lý do là thứ hai là nó đẹp..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "706495c6447b7057": {
+    "title": {
+      "vi": "iPhone Duo vs Galaxy Z Fold 8 sau vài ngày dùng: Câu trả lời là dễ",
+      "en": "iPhone Duo vs Galaxy Z Fold 8 sau vài ngày dùng: Câu trả lời là dễ"
+    },
+    "summary": {
+      "vi": "Mình vừa dùng song song iPhone Duo và Galaxy Z Fold 8 trong vài ngày. Hai máy cùng form gập sách, cùng màn ngoài khoảng 5,4 đến 5,5 inch và màn trong 7,6 inch, nhưng cảm giác cầm, tỷ lệ màn và...",
+      "en": "[Summary] Mình vừa dùng song song iPhone Duo và Galaxy Z Fold 8 trong vài ngày. Hai máy cùng form gập sách, cùng màn ngoài khoảng 5,4 đến 5,5 inch và màn trong 7,6 inch, nhưng cảm giác cầm, tỷ lệ màn và..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "ceccb89a7c03249a": {
+    "title": {
+      "vi": "Xài sạc dự phòng Anker MagGo 2 Pro với iPhone 18 Pro Max: Có quạt tản nhiệt, sạc không dây 25W",
+      "en": "Xài sạc dự phòng Anker MagGo 2 Pro với iPhone 18 Pro Max: Có quạt tản nhiệt, sạc không dây 25W"
+    },
+    "summary": {
+      "vi": "Hồi đợt Cu Hiệp đi triển lãm IFA bên châu Âu ghé vào gian hàng của Anker, mình đã nghía thấy cục pin dự phòng này và cực kỳ ấn tượng với ý tưởng thiết kế của nó. Mấy bữa nay mình đã mượn được một...",
+      "en": "[Summary] Hồi đợt Cu Hiệp đi triển lãm IFA bên châu Âu ghé vào gian hàng của Anker, mình đã nghía thấy cục pin dự phòng này và cực kỳ ấn tượng với ý tưởng thiết kế của nó. Mấy bữa nay mình đã mượn được một..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "8c8d0a474000d4fc": {
+    "title": {
+      "vi": "Hành trình đi tìm dải ngân hà",
+      "en": "Hành trình đi tìm dải ngân hà"
+    },
+    "summary": {
+      "vi": "Milkyway luôn là một trong những thể loại nhiếp ảnh đầy quyến rũ và hấp dẫn với bất cứ ai. Cái cảm giác nhìn lên một bầu trời toàn sao với một dải trắng nhờ vắt ngang qua trước mặt luôn là một...",
+      "en": "[Summary] Milkyway luôn là một trong những thể loại nhiếp ảnh đầy quyến rũ và hấp dẫn với bất cứ ai. Cái cảm giác nhìn lên một bầu trời toàn sao với một dải trắng nhờ vắt ngang qua trước mặt luôn là một..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "3e16f0e4e4fde3aa": {
+    "title": {
+      "vi": "Honda SH160i/125i 2027 ra mắt tại Việt Nam: thêm màu Aura Black, Euro 4,  giá từ 78,09 triệu",
+      "en": "Honda SH160i/125i 2027 ra mắt tại Việt Nam: thêm màu Aura Black, Euro 4,  giá từ 78,09 triệu"
+    },
+    "summary": {
+      "vi": "Honda Việt Nam vừa chính thức giới thiệu SH160i và SH125i phiên bản 2027. Thay đổi chính nằm ở động cơ eSP+ 4 van được cải tiến hệ thống phun xăng và xử lý khí thải để đạt tiêu chuẩn khí thải Euro...",
+      "en": "[Summary] Honda Việt Nam vừa chính thức giới thiệu SH160i và SH125i phiên bản 2027. Thay đổi chính nằm ở động cơ eSP+ 4 van được cải tiến hệ thống phun xăng và xử lý khí thải để đạt tiêu chuẩn khí thải Euro..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "9961eaf00b4f7dd1": {
+    "title": {
+      "vi": "Thống kê xe hybrid tại Việt Nam 9 tháng đầu năm 2026: doanh số tăng 64%, số mẫu mới ngang xe xăng",
+      "en": "Thống kê xe hybrid tại Việt Nam 9 tháng đầu năm 2026: doanh số tăng 64%, số mẫu mới ngang xe xăng"
+    },
+    "summary": {
+      "vi": "Sau 9 tháng đầu năm 2026, thị trường Việt Nam đã tiêu thụ 16.057 xe hybrid, tăng 64% so với cùng kỳ và vượt cả năm 2025 khoảng 13%. Đáng chú ý hơn, lần đầu tiên số mẫu hybrid ra mắt đã ngang với...",
+      "en": "[Summary] Sau 9 tháng đầu năm 2026, thị trường Việt Nam đã tiêu thụ 16.057 xe hybrid, tăng 64% so với cùng kỳ và vượt cả năm 2025 khoảng 13%. Đáng chú ý hơn, lần đầu tiên số mẫu hybrid ra mắt đã ngang với..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "f870263f4b11e1ee": {
+    "title": {
+      "vi": "Tổng hợp 1 số đánh giá Fitbit Edge",
+      "en": "Tổng hợp 1 số đánh giá Fitbit Edge"
+    },
+    "summary": {
+      "vi": "Google vừa đưa Fitbit Edge ra thị trường với giá 180 USD, nằm giữa Fitbit Air không màn hình và Pixel Watch đầy đủ hơn. Mấy trang review lớn vừa đăng bài cùng ngày nhưng chấm khá lệch nhau. Mình...",
+      "en": "[Summary] Google vừa đưa Fitbit Edge ra thị trường với giá 180 USD, nằm giữa Fitbit Air không màn hình và Pixel Watch đầy đủ hơn. Mấy trang review lớn vừa đăng bài cùng ngày nhưng chấm khá lệch nhau. Mình..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "ffd566a244e4429b": {
+    "title": {
+      "vi": "iOS 27.2: Siri AI thêm 5 ngôn ngữ, Apple hứa tiếng Việt trước cuối năm",
+      "en": "iOS 27.2: Siri AI thêm 5 ngôn ngữ, Apple hứa tiếng Việt trước cuối năm"
+    },
+    "summary": {
+      "vi": "Apple vừa phát hành iOS 27.2, bản cập nhật lớn đầu tiên của iOS 27. Điểm mình chú ý nhất là Siri AI mở rộng thêm 5 ngôn ngữ và Apple nói sẽ có thêm 4 ngôn ngữ nữa trước cuối năm, trong đó có tiếng...",
+      "en": "[Summary] Apple vừa phát hành iOS 27.2, bản cập nhật lớn đầu tiên của iOS 27. Điểm mình chú ý nhất là Siri AI mở rộng thêm 5 ngôn ngữ và Apple nói sẽ có thêm 4 ngôn ngữ nữa trước cuối năm, trong đó có tiếng..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "48595b2fcf682171": {
+    "title": {
+      "vi": "iPhone Duo hỏng màn hình sau hơn 75.000 lần gập, thua xa các mẫu gập của Samsung",
+      "en": "iPhone Duo hỏng màn hình sau hơn 75.000 lần gập, thua xa các mẫu gập của Samsung"
+    },
+    "summary": {
+      "vi": "iPhone Duo hỏng màn hình sau hơn 75.000 lần gập, thua xa các mẫu gập của Samsung Trong một buổi livestream thử nghiệm độ bền vừa diễn ra, màn hình trong của iPhone Duo đã xuất hiện vết nứt và...",
+      "en": "[Summary] iPhone Duo hỏng màn hình sau hơn 75.000 lần gập, thua xa các mẫu gập của Samsung Trong một buổi livestream thử nghiệm độ bền vừa diễn ra, màn hình trong của iPhone Duo đã xuất hiện vết nứt và..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "e2b658d50745b4f8": {
+    "title": {
+      "vi": "iOS 27.2 cho iPhone Duo dùng được Apple Pencil, thêm Edge Light rọi sáng mặt khi gọi video",
+      "en": "iOS 27.2 cho iPhone Duo dùng được Apple Pencil, thêm Edge Light rọi sáng mặt khi gọi video"
+    },
+    "summary": {
+      "vi": "iOS 27.2 cho iPhone Duo dùng được Apple Pencil, thêm Edge Light rọi sáng mặt khi gọi video Apple vừa phát hành iOS 27.2 và người dùng iPhone Duo được thêm 2 tính năng dành riêng. Đầu tiên là hỗ...",
+      "en": "[Summary] iOS 27.2 cho iPhone Duo dùng được Apple Pencil, thêm Edge Light rọi sáng mặt khi gọi video Apple vừa phát hành iOS 27.2 và người dùng iPhone Duo được thêm 2 tính năng dành riêng. Đầu tiên là hỗ..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "e1c0f8038b5d89c8": {
+    "title": {
+      "vi": "Apple xác nhận lỗi nứt màn hình trong trên một số iPhone Duo, người dùng gặp lỗi được đổi máy mới",
+      "en": "Apple xác nhận lỗi nứt màn hình trong trên một số iPhone Duo, người dùng gặp lỗi được đổi máy mới"
+    },
+    "summary": {
+      "vi": "Apple xác nhận lỗi nứt màn hình trong trên một số iPhone Duo, người dùng gặp lỗi được đổi máy mới Apple vừa xác nhận có lỗi ảnh hưởng tới màn hình trong trên một số ít máy iPhone Duo, sau khi...",
+      "en": "[Summary] Apple xác nhận lỗi nứt màn hình trong trên một số iPhone Duo, người dùng gặp lỗi được đổi máy mới Apple vừa xác nhận có lỗi ảnh hưởng tới màn hình trong trên một số ít máy iPhone Duo, sau khi..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "6aaf671df097a150": {
+    "title": {
+      "vi": "Biến laptop thành máy dò camera ẩn trong phòng khách sạn bằng Claude Code",
+      "en": "Biến laptop thành máy dò camera ẩn trong phòng khách sạn bằng Claude Code"
+    },
+    "summary": {
+      "vi": "Biến laptop thành máy dò camera ẩn trong phòng khách sạn bằng Claude Code Một mẹo sử dụng Claude Code được chia sẻ gần đây cho phép người dùng biến chiếc laptop thành một thiết bị an ninh kiểm...",
+      "en": "[Summary] Biến laptop thành máy dò camera ẩn trong phòng khách sạn bằng Claude Code Một mẹo sử dụng Claude Code được chia sẻ gần đây cho phép người dùng biến chiếc laptop thành một thiết bị an ninh kiểm..."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "002ce9ee9a1b6222": {
+    "title": {
+      "vi": "Không vui vì màn hình nano-texture trên iPhone Duo",
+      "en": "Không vui vì màn hình nano-texture trên iPhone Duo"
+    },
+    "summary": {
+      "vi": "Mấy tuần nay trên mạng xã hội anh em bàn cãi rất nhiều về lớp màn hình nano-texture chống chói ở màn hình trong của iPhone Duo. Người khen nó giúp nếp gấp mờ hẳn đi, người chê nó làm hình ảnh đục....",
+      "en": "[Summary] Mấy tuần nay trên mạng xã hội anh em bàn cãi rất nhiều về lớp màn hình nano-texture chống chói ở màn hình trong của iPhone Duo. Người khen nó giúp nếp gấp mờ hẳn đi, người chê nó làm hình ảnh đục...."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "5ca4881913cb8dcf": {
+    "title": {
+      "vi": "Những sản phẩm, giải pháp công nghệ nổi bật tại Tuần lễ Số 2026",
+      "en": "Những sản phẩm, giải pháp công nghệ nổi bật tại Tuần lễ Số 2026"
+    },
+    "summary": {
+      "vi": "Sáng 28/10, trong khuôn khổ Tuần lễ Số Quốc tế Việt Nam (VIDW) 2026 tại Quảng Ninh giới thiệu hàng chục sản phẩm, giải pháp công nghệ ứng dụng AI, IoT... sẵn sàng chuyển giao, thương mại hóa.",
+      "en": "[Summary] Sáng 28/10, trong khuôn khổ Tuần lễ Số Quốc tế Việt Nam (VIDW) 2026 tại Quảng Ninh giới thiệu hàng chục sản phẩm, giải pháp công nghệ ứng dụng AI, IoT... sẵn sàng chuyển giao, thương mại hóa."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "832366bdb4a343bb": {
+    "title": {
+      "vi": "Việt Nam nhận Giải thưởng Lãnh đạo Chính phủ của GSMA",
+      "en": "Việt Nam nhận Giải thưởng Lãnh đạo Chính phủ của GSMA"
+    },
+    "summary": {
+      "vi": "Giải thưởng Lãnh đạo Chính phủ 2026 của Hiệp hội Di động Toàn cầu (GSMA) ghi nhận Việt Nam về định hướng phát triển hạ tầng kết nối, chính sách thúc đẩy đầu tư viễn thông và các sáng kiến phổ cập kỹ năng số.",
+      "en": "[Summary] Giải thưởng Lãnh đạo Chính phủ 2026 của Hiệp hội Di động Toàn cầu (GSMA) ghi nhận Việt Nam về định hướng phát triển hạ tầng kết nối, chính sách thúc đẩy đầu tư viễn thông và các sáng kiến phổ cập kỹ năng số."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "a96a2bc2e4956e61": {
+    "title": {
+      "vi": "Cơ hội tỷ USD từ thiết bị bay và bài toán thương mại hóa",
+      "en": "Cơ hội tỷ USD từ thiết bị bay và bài toán thương mại hóa"
+    },
+    "summary": {
+      "vi": "Kinh tế tầm thấp, đặc biệt là UAV, có tiềm năng lớn nhưng cần hoàn thiện pháp lý, tăng công nghệ nội địa, thương mại hóa dự án thử nghiệm, theo các chuyên gia.",
+      "en": "[Summary] Kinh tế tầm thấp, đặc biệt là UAV, có tiềm năng lớn nhưng cần hoàn thiện pháp lý, tăng công nghệ nội địa, thương mại hóa dự án thử nghiệm, theo các chuyên gia."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "9afe15df17b2478a": {
+    "title": {
+      "vi": "Nghề lập trình đảo lộn thời AI",
+      "en": "Nghề lập trình đảo lộn thời AI"
+    },
+    "summary": {
+      "vi": "Việc Microsoft đề xuất 60.000 người tự nguyện nghỉ việc phần nào cho thấy nhiều lập trình viên phải chuyển đổi kỹ năng, thậm chí bỏ nghề khi doanh nghiệp tăng cường ứng dụng AI.",
+      "en": "[Summary] Việc Microsoft đề xuất 60.000 người tự nguyện nghỉ việc phần nào cho thấy nhiều lập trình viên phải chuyển đổi kỹ năng, thậm chí bỏ nghề khi doanh nghiệp tăng cường ứng dụng AI."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "942d018fd2a2072e": {
+    "title": {
+      "vi": "iPhone 18e dự kiến nâng cấp lớn về chip và máy ảnh selfie",
+      "en": "iPhone 18e dự kiến nâng cấp lớn về chip và máy ảnh selfie"
+    },
+    "summary": {
+      "vi": "Mẫu iPhone giá rẻ thế hệ mới được cho là sẽ trang bị chip A20 và có camera selfie độ phân giải 24 megapixel tương tự dòng Pro.",
+      "en": "[Summary] Mẫu iPhone giá rẻ thế hệ mới được cho là sẽ trang bị chip A20 và có camera selfie độ phân giải 24 megapixel tương tự dòng Pro."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "782337b513495fe3": {
+    "title": {
+      "vi": "Hôm nay diễn ra Tuần lễ Số Quốc tế Việt Nam 2026",
+      "en": "Hôm nay diễn ra Tuần lễ Số Quốc tế Việt Nam 2026"
+    },
+    "summary": {
+      "vi": "Tuần lễ Số 2026 diễn ra trong ba ngày tại Quảng Ninh, quy tụ 500 đại biểu, gồm đại diện cơ quan quản lý, tổ chức quốc tế và doanh nghiệp công nghệ trong và ngoài nước.",
+      "en": "[Summary] Tuần lễ Số 2026 diễn ra trong ba ngày tại Quảng Ninh, quy tụ 500 đại biểu, gồm đại diện cơ quan quản lý, tổ chức quốc tế và doanh nghiệp công nghệ trong và ngoài nước."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "f1a096d5d4e355f9": {
+    "title": {
+      "vi": "OpenAI công bố loạt phát kiến khoa học nhờ AI",
+      "en": "OpenAI công bố loạt phát kiến khoa học nhờ AI"
+    },
+    "summary": {
+      "vi": "Sử dụng mô hình nội bộ, OpenAI cho biết đã tạo ra ba kết quả nghiên cứu đột phá trong toán học, khoa học máy tính và vật lý.",
+      "en": "[Summary] Sử dụng mô hình nội bộ, OpenAI cho biết đã tạo ra ba kết quả nghiên cứu đột phá trong toán học, khoa học máy tính và vật lý."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "b326b05a40b812bc": {
+    "title": {
+      "vi": "Apple nâng cấp iMac và MacBook Pro 14 inch với chip M6",
+      "en": "Apple nâng cấp iMac và MacBook Pro 14 inch với chip M6"
+    },
+    "summary": {
+      "vi": "MacBook Pro 14 inch cùng iMac phiên bản 2026 nâng cấp vi xử lý lên Apple M6, pin 24 tiếng nhưng giữ nguyên kiểu dáng, các lựa chọn màu sắc.",
+      "en": "[Summary] MacBook Pro 14 inch cùng iMac phiên bản 2026 nâng cấp vi xử lý lên Apple M6, pin 24 tiếng nhưng giữ nguyên kiểu dáng, các lựa chọn màu sắc."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "7e82a6b980a92ccf": {
+    "title": {
+      "vi": "Xe máy cải tiến lập kỷ lục chạy trên mặt nước",
+      "en": "Xe máy cải tiến lập kỷ lục chạy trên mặt nước"
+    },
+    "summary": {
+      "vi": "Một doanh nhân người Trung Quốc cải tiến chiếc xe máy chạy hơn 40 km trên mặt sông Thần chảy qua tỉnh Hồ Nam, phá vỡ kỷ lục thế giới trước đó là 31,8 km.",
+      "en": "[Summary] Một doanh nhân người Trung Quốc cải tiến chiếc xe máy chạy hơn 40 km trên mặt sông Thần chảy qua tỉnh Hồ Nam, phá vỡ kỷ lục thế giới trước đó là 31,8 km."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "081bd5bf15bc6c4d": {
+    "title": {
+      "vi": "Thiết kế giúp tên lửa siêu vượt âm chịu nhiệt cực hạn",
+      "en": "Thiết kế giúp tên lửa siêu vượt âm chịu nhiệt cực hạn"
+    },
+    "summary": {
+      "vi": "Để bay nhanh gấp 5 lần vận tốc âm thanh, tên lửa siêu vượt âm cần một hệ thống tích hợp gồm vật liệu, lớp phủ, công nghệ làm mát, kết cấu và kế hoạch bay hiệu quả.",
+      "en": "[Summary] Để bay nhanh gấp 5 lần vận tốc âm thanh, tên lửa siêu vượt âm cần một hệ thống tích hợp gồm vật liệu, lớp phủ, công nghệ làm mát, kết cấu và kế hoạch bay hiệu quả."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "65a7831f485fdf8f": {
+    "title": {
+      "vi": "Chỉnh sửa gene bò H'Mông xây dựng thương hiệu cao cấp của Việt Nam",
+      "en": "Chỉnh sửa gene bò H'Mông xây dựng thương hiệu cao cấp của Việt Nam"
+    },
+    "summary": {
+      "vi": "Học viện Nông nghiệp Việt Nam tạo thành công 5 bê H'Mông bằng công nghệ chỉnh sửa gene MSTN, hướng tới xây dựng thương hiệu bò thịt cao cấp của Việt Nam.",
+      "en": "[Summary] Học viện Nông nghiệp Việt Nam tạo thành công 5 bê H'Mông bằng công nghệ chỉnh sửa gene MSTN, hướng tới xây dựng thương hiệu bò thịt cao cấp của Việt Nam."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "427eb68e42c55a43": {
+    "title": {
+      "vi": "Cán bộ an ninh mạng diễn tập phòng thủ, điều tra tấn công mạng",
+      "en": "Cán bộ an ninh mạng diễn tập phòng thủ, điều tra tấn công mạng"
+    },
+    "summary": {
+      "vi": "90 cán bộ, chiến sĩ và chuyên viên từ các đơn vị trên cả nước tham gia diễn tập an ninh mạng quốc gia năm 2026, với kịch bản tấn công hệ thống của một tổ chức tài chính.",
+      "en": "[Summary] 90 cán bộ, chiến sĩ và chuyên viên từ các đơn vị trên cả nước tham gia diễn tập an ninh mạng quốc gia năm 2026, với kịch bản tấn công hệ thống của một tổ chức tài chính."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "76d636ef6ca9d478": {
+    "title": {
+      "vi": "Việt Nam - Lào nghiên cứu công nhận chéo chữ ký số",
+      "en": "Việt Nam - Lào nghiên cứu công nhận chéo chữ ký số"
+    },
+    "summary": {
+      "vi": "Việt Nam và Lào nghiên cứu phương án thí điểm công nhận lẫn nhau về chữ ký số, trước mắt trong lĩnh vực hải quan và xuất nhập khẩu hàng hóa.",
+      "en": "[Summary] Việt Nam và Lào nghiên cứu phương án thí điểm công nhận lẫn nhau về chữ ký số, trước mắt trong lĩnh vực hải quan và xuất nhập khẩu hàng hóa."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "b0a657d8b115ae08": {
+    "title": {
+      "vi": "Việt Nam 'cần chuẩn bị ngay' cho nguy cơ bảo mật lượng tử",
+      "en": "Việt Nam 'cần chuẩn bị ngay' cho nguy cơ bảo mật lượng tử"
+    },
+    "summary": {
+      "vi": "Các chuyên gia đánh giá nguy cơ dữ liệu \"thu thập ngay, giải mã sau\" bằng máy tính lượng tử đang gia tăng, đòi hỏi Việt Nam sớm chuẩn bị phương án ứng phó.",
+      "en": "[Summary] Các chuyên gia đánh giá nguy cơ dữ liệu \"thu thập ngay, giải mã sau\" bằng máy tính lượng tử đang gia tăng, đòi hỏi Việt Nam sớm chuẩn bị phương án ứng phó."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "907e218a9ee0c10f": {
+    "title": {
+      "vi": "Ứng dụng Tammi của Viettel đạt 20 triệu người dùng sau ba tháng",
+      "en": "Ứng dụng Tammi của Viettel đạt 20 triệu người dùng sau ba tháng"
+    },
+    "summary": {
+      "vi": "Viettel Telecom cho biết nền tảng liên lạc và tiện ích số Tammi của nhà mạng đạt mốc 20 triệu người dùng, trong đó thu hút cả người dùng từ các nhà mạng khác.",
+      "en": "[Summary] Viettel Telecom cho biết nền tảng liên lạc và tiện ích số Tammi của nhà mạng đạt mốc 20 triệu người dùng, trong đó thu hút cả người dùng từ các nhà mạng khác."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "be0e88b6714cc47c": {
+    "title": {
+      "vi": "Những diễn giả nổi bật tại Tuần lễ Số 2026",
+      "en": "Những diễn giả nổi bật tại Tuần lễ Số 2026"
+    },
+    "summary": {
+      "vi": "Nhiều chuyên gia, quan chức, lãnh đạo doanh nghiệp hàng đầu về công nghệ số trong nước và quốc tế sẽ tham dự Tuần lễ Số 2026, trong đó Bộ trưởng Vũ Hải Quân sẽ chủ trì Hội nghị bàn tròn Bộ trưởng.",
+      "en": "[Summary] Nhiều chuyên gia, quan chức, lãnh đạo doanh nghiệp hàng đầu về công nghệ số trong nước và quốc tế sẽ tham dự Tuần lễ Số 2026, trong đó Bộ trưởng Vũ Hải Quân sẽ chủ trì Hội nghị bàn tròn Bộ trưởng."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "302034242acffa95": {
+    "title": {
+      "vi": "Robot đánh cờ, nhảy múa trên phố đi bộ Nguyễn Huệ",
+      "en": "Robot đánh cờ, nhảy múa trên phố đi bộ Nguyễn Huệ"
+    },
+    "summary": {
+      "vi": "Loạt robot nhảy múa, đánh cờ, pha chế, nhận diện cảm xúc được giới thiệu tại trung tâm TP HCM, hút khách tham quan.",
+      "en": "[Summary] Loạt robot nhảy múa, đánh cờ, pha chế, nhận diện cảm xúc được giới thiệu tại trung tâm TP HCM, hút khách tham quan."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "160d9ad3e893e80e": {
+    "title": {
+      "vi": "Những vấn đề nổi bật sẽ thảo luận tại Tuần lễ Số 2026",
+      "en": "Những vấn đề nổi bật sẽ thảo luận tại Tuần lễ Số 2026"
+    },
+    "summary": {
+      "vi": "Quản trị AI, phát triển hạ tầng số, mở rộng hợp tác công nghệ và bảo đảm an toàn AI cùng nhiều vấn đề sẽ được thảo luận tại Tuần lễ Số Quốc tế Việt Nam 2026 cuối tháng 10.",
+      "en": "[Summary] Quản trị AI, phát triển hạ tầng số, mở rộng hợp tác công nghệ và bảo đảm an toàn AI cùng nhiều vấn đề sẽ được thảo luận tại Tuần lễ Số Quốc tế Việt Nam 2026 cuối tháng 10."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "d3df51d570678a74": {
+    "title": {
+      "vi": "Apple lên tiếng về hiện tượng iPhone Duo nứt màn hình",
+      "en": "Apple lên tiếng về hiện tượng iPhone Duo nứt màn hình"
+    },
+    "summary": {
+      "vi": "Đại diện Apple xác nhận sự cố ảnh hưởng đến màn hình bên trong của một số lượng nhỏ iPhone Duo và đang tiến hành kiểm tra.",
+      "en": "[Summary] Đại diện Apple xác nhận sự cố ảnh hưởng đến màn hình bên trong của một số lượng nhỏ iPhone Duo và đang tiến hành kiểm tra."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "6fd48a4edcfbd165": {
+    "title": {
+      "vi": "iPhone Duo được tháo rời, hé lộ lý do màn hình dễ nứt",
+      "en": "iPhone Duo được tháo rời, hé lộ lý do màn hình dễ nứt"
+    },
+    "summary": {
+      "vi": "Sau khi tháo iPhone Duo, iFixit chỉ ra hai lý do tiềm ẩn của tình trạng nứt vỡ tại đường gấp khúc màn hình, nhưng vẫn đánh giá cao điện thoại gập này.",
+      "en": "[Summary] Sau khi tháo iPhone Duo, iFixit chỉ ra hai lý do tiềm ẩn của tình trạng nứt vỡ tại đường gấp khúc màn hình, nhưng vẫn đánh giá cao điện thoại gập này."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  }
+}

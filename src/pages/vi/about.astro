@@ -1,0 +1,129 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getTranslations } from '../../lib/i18n';
+
+const lang = 'vi';
+const t = getTranslations(lang);
+---
+
+<Layout lang={lang} title="Về dự án Tech Tips Hub" description="Tìm hiểu sứ mệnh, nguyên tắc hoạt động 0đ và kiến trúc kỹ thuật của Tech Tips Hub.">
+  <article class="max-w-3xl mx-auto bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-2xl p-6 sm:p-10 shadow-craft mb-12">
+    <!-- Header -->
+    <header class="pb-6 border-b border-[var(--border-subtle)] mb-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[var(--accent-bg)] text-[var(--accent)] border border-[var(--accent-border)] text-xs font-mono font-semibold mb-3">
+        <span>📖 Triết lý & Thiết kế</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-serif font-bold text-[var(--text-primary)] mb-3">
+        Về dự án Tech Tips Hub
+      </h1>
+      <p class="text-base text-[var(--text-secondary)] leading-relaxed">
+        Sổ tay tự động tổng hợp thủ thuật và mẹo vặt công nghệ song ngữ, minh bạch nguồn gốc với chi phí vận hành 0đ.
+      </p>
+    </header>
+
+    <div class="space-y-8 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed">
+      <!-- 1. Mục tiêu -->
+      <section>
+        <h2 class="text-xl font-serif font-bold text-[var(--text-primary)] mb-3 flex items-center gap-2">
+          <span>🎯 Mục tiêu ra đời</span>
+        </h2>
+        <p class="mb-3">
+          Internet có hàng triệu mẹo công nghệ quý giá bị phân tán khắp nơi: một phím tắt macOS tiện lợi trên Twitter/X, một lệnh Linux dọn dẹp ổ đĩa trên Reddit, một mẹo gỡ lỗi Windows trên BleepingComputer, hay một bài tối ưu pin trên Tinh tế.
+        </p>
+        <p>
+          <strong>Tech Tips Hub</strong> được xây dựng như một cuốn sổ tay tập trung: tự động chọn lọc các thủ thuật thực chiến nhất, tóm tắt cô đọng theo dạng song ngữ <strong>Tiếng Việt / English</strong>, và luôn dẫn đường link trực tiếp về bài viết của tác giả gốc.
+        </p>
+      </section>
+
+      <!-- 2. 5 Nguyên tắc cốt lõi -->
+      <section class="p-6 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-muted)] space-y-4">
+        <h3 class="text-base font-serif font-bold text-[var(--text-primary)]">
+          5 Nguyên tắc cốt lõi
+        </h3>
+        <ol class="space-y-3 list-decimal list-inside text-xs sm:text-sm">
+          <li><strong>Chi phí 0đ tuyệt đối:</strong> Toàn bộ hạ tầng từ thu thập (GitHub Actions), lưu trữ (Git repo), frontend (Astro static), CDN (Cloudflare Pages) đều dùng free tier vĩnh viễn, không cần thẻ tín dụng.</li>
+          <li><strong>Hợp pháp & Fair Use:</strong> Không sao chép nguyên văn bài viết. Chỉ lưu giữ tiêu đề chuẩn hóa, tóm tắt ngắn (dưới 350 ký tự) và đường link trực tiếp về bài gốc.</li>
+          <li><strong>Tôn trọng tác giả:</strong> Luôn ghi rõ tên nguồn, favicon, tác giả (nếu có), tuân thủ robots.txt và giãn cách request lịch sự.</li>
+          <li><strong>Tĩnh trước, động sau:</strong> Dựng static site với Astro để web tải dưới 1 giây, bảo mật cao, không lo sập database.</li>
+          <li><strong>Chất lượng hơn số lượng:</strong> Thuật toán lọc trùng lặp tiêu đề, loại bỏ tin quảng cáo/giảm giá, chấm điểm chất lượng trước khi đưa lên web.</li>
+        </ol>
+      </section>
+
+      <!-- 3. Kiến trúc kỹ thuật -->
+      <section>
+        <h2 class="text-xl font-serif font-bold text-[var(--text-primary)] mb-3">
+          🛠️ Kiến trúc hệ thống
+        </h2>
+        <p class="mb-4">
+          Quy trình vận hành khép kín hoàn toàn tự động bằng GitHub Actions:
+        </p>
+        <div class="p-4 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-color)] font-mono text-xs overflow-x-auto text-[var(--text-primary)] leading-normal">
+<pre>
+┌────────────────────┐   cron mỗi 4 giờ
+│  GitHub Actions    │───────────────────────┐
+└────────────────────┘                       │
+                                             ▼
+   RSS / API  ──►  fetch.py  ──►  lọc trùng  ──►  chấm điểm  ──►  phân loại
+ (15+ nguồn)                                                           │
+                                                                       ▼
+                                          tóm tắt + dịch EN/VI (có cache)
+                                                                       │
+                                                                       ▼
+                                             data/*.json  (commit vào repo)
+                                                                       │
+                                                                       ▼
+                                      Cloudflare Pages / GitHub Pages build
+                                                                       │
+                                                                       ▼
+                                          Static site song ngữ (/vi, /en)
+</pre>
+        </div>
+      </section>
+
+      <!-- 4. Minh bạch chi phí -->
+      <section>
+        <h2 class="text-xl font-serif font-bold text-[var(--text-primary)] mb-3">
+          💰 Bảng kê chi phí vận hành (0đ)
+        </h2>
+        <div class="border border-[var(--border-color)] rounded-lg overflow-hidden text-xs">
+          <table class="w-full text-left border-collapse">
+            <thead class="bg-[var(--bg-muted)] border-b border-[var(--border-color)] font-mono text-[var(--text-muted)]">
+              <tr>
+                <th class="p-3">Thành phần</th>
+                <th class="p-3">Dịch vụ sử dụng</th>
+                <th class="p-3">Chi phí</th>
+              </tr>
+            </thead>
+            <tbody class="divide-y divide-[var(--border-subtle)] font-mono">
+              <tr>
+                <td class="p-3">Hosting & CDN toàn cầu</td>
+                <td class="p-3">Cloudflare Pages</td>
+                <td class="p-3 text-[var(--accent)] font-bold">0đ</td>
+              </tr>
+              <tr>
+                <td class="p-3">Tự động hóa Cronjob</td>
+                <td class="p-3">GitHub Actions (public repo)</td>
+                <td class="p-3 text-[var(--accent)] font-bold">0đ</td>
+              </tr>
+              <tr>
+                <td class="p-3">Kho lưu trữ dữ liệu</td>
+                <td class="p-3">Git Repository (JSON flat file)</td>
+                <td class="p-3 text-[var(--accent)] font-bold">0đ</td>
+              </tr>
+              <tr>
+                <td class="p-3">Dịch thuật & Tóm tắt</td>
+                <td class="p-3">Gemini API Free Tier + Bộ dịch quy tắc offline</td>
+                <td class="p-3 text-[var(--accent)] font-bold">0đ</td>
+              </tr>
+              <tr>
+                <td class="p-3">Tìm kiếm toàn văn</td>
+                <td class="p-3">Client-side Instant Index</td>
+                <td class="p-3 text-[var(--accent)] font-bold">0đ</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </div>
+  </article>
+</Layout>

@@ -1,0 +1,59 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getTranslations } from '../../lib/i18n';
+
+const lang = 'vi';
+const t = getTranslations(lang);
+---
+
+<Layout lang={lang} title="Chính sách Quyền riêng tư" description="Cam kết không theo dõi người dùng, không sử dụng cookie thu thập dữ liệu cá nhân của Tech Tips Hub.">
+  <article class="max-w-3xl mx-auto bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-2xl p-6 sm:p-10 shadow-craft mb-12">
+    <!-- Header -->
+    <header class="pb-6 border-b border-[var(--border-subtle)] mb-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[var(--accent-bg)] text-[var(--accent)] border border-[var(--accent-border)] text-xs font-mono font-semibold mb-3">
+        <span>🛡️ Minh bạch & Bảo mật</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-serif font-bold text-[var(--text-primary)] mb-3">
+        Chính sách Quyền riêng tư
+      </h1>
+      <p class="text-base text-[var(--text-secondary)] leading-relaxed">
+        Tech Tips Hub hoạt động với triết lý bảo vệ tối đa quyền riêng tư của độc giả.
+      </p>
+    </header>
+
+    <div class="space-y-6 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed">
+      <section>
+        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
+          1. Không Cookie theo dõi, Không Quảng cáo
+        </h2>
+        <p>
+          Chúng tôi không đặt bất kỳ cookie quảng cáo hoặc pixel theo dõi hành vi người dùng nào. Bạn có thể duyệt web ẩn danh hoàn toàn mà không lo bị thu thập dữ liệu cá nhân.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
+          2. Lưu trữ cục bộ (Local Storage)
+        </h2>
+        <p class="mb-2">
+          Trình duyệt của bạn chỉ lưu trữ các thông tin tùy chọn giao diện sau đây hoàn toàn trên máy của bạn (không gửi về máy chủ):
+        </p>
+        <ul class="list-disc list-inside space-y-1 text-xs sm:text-sm pl-2">
+          <li><code class="font-mono">techtips_theme</code>: Lựa chọn giao diện sáng hoặc tối (light / dark).</li>
+          <li><code class="font-mono">techtips_lang</code>: Lựa chọn ngôn ngữ hiển thị ưu tiên (vi / en).</li>
+          <li><code class="font-mono">techtips_saved</code>: Danh sách mã ID bài viết bạn đã bấm lưu để xem sau.</li>
+          <li><code class="font-mono">techtips_read</code>: Danh sách bài viết bạn đã bấm đánh dấu đã xem.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
+          3. Thống kê truy cập không định danh
+        </h2>
+        <p>
+          Nếu có sử dụng công cụ thống kê (ví dụ Cloudflare Web Analytics), dữ liệu chỉ đo lường số lượt tải trang tổng quan ở cấp độ ẩn danh hoàn toàn, không sử dụng cookie hay lưu trữ địa chỉ IP của bạn.
+        </p>
+      </section>
+    </div>
+  </article>
+</Layout>

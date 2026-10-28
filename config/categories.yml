@@ -1,0 +1,248 @@
+# config/categories.yml
+# Danh mục thủ thuật công nghệ và từ khóa phát hiện tự động
+
+categories:
+  - id: windows
+    slug: windows
+    name:
+      en: Windows
+      vi: Windows
+    description:
+      en: Tips, tricks, keyboard shortcuts and registry tweaks for Windows 10 & 11
+      vi: Mẹo, phím tắt và tinh chỉnh hệ điều hành Windows 10 & Windows 11
+    icon: windows
+    color: "#0078d4"
+    keywords:
+      - windows
+      - win11
+      - win10
+      - cmd
+      - powershell
+      - registry
+      - task manager
+      - bitlocker
+      - directx
+      - file explorer
+
+  - id: macos
+    slug: macos
+    name:
+      en: macOS
+      vi: macOS
+    description:
+      en: Productivity hacks, Spotlight shortcuts, and terminal commands for Mac
+      vi: Tối ưu hiệu suất, phím tắt Spotlight và lệnh Terminal cho máy Mac
+    icon: apple
+    color: "#555555"
+    keywords:
+      - macos
+      - macbook
+      - imac
+      - spotlight
+      - finder
+      - alfred
+      - homebrew
+      - apple silicon
+      - sequoia
+      - sonoma
+
+  - id: linux
+    slug: linux
+    name:
+      en: Linux
+      vi: Linux
+    description:
+      en: Command line wizardry, bash scripts, distros, and system administration
+      vi: Lệnh dòng lệnh, script bash, các bản phân phối và quản trị hệ thống
+    icon: terminal
+    color: "#f5a623"
+    keywords:
+      - linux
+      - ubuntu
+      - debian
+      - arch
+      - fedora
+      - bash
+      - terminal
+      - systemd
+      - ssh
+      - grep
+      - cron
+
+  - id: android
+    slug: android
+    name:
+      en: Android
+      vi: Android
+    description:
+      en: Battery saving, developer options, custom launchers, and APK tricks
+      vi: Tiết kiệm pin, tùy chọn nhà phát triển, launcher và mẹo Android
+    icon: smartphone
+    color: "#3ddc84"
+    keywords:
+      - android
+      - samsung
+      - pixel
+      - adb
+      - apk
+      - play store
+      - fastboot
+      - one ui
+      - battery saver
+
+  - id: ios
+    slug: ios
+    name:
+      en: iOS
+      vi: iOS
+    description:
+      en: Hidden iPhone tricks, Shortcuts app automation, and privacy settings
+      vi: Mẹo ẩn iPhone, phím tắt tự động hóa Shortcuts và bảo mật iOS
+    icon: tablet
+    color: "#1c1c1e"
+    keywords:
+      - ios
+      - iphone
+      - ipad
+      - shortcuts
+      - airtag
+      - safari
+      - icloud
+      - battery health
+      - face id
+
+  - id: browser
+    slug: browser
+    name:
+      en: Browser
+      vi: Trình duyệt
+    description:
+      en: Chrome, Firefox, Brave tricks, extension recommendations and tab management
+      vi: Mẹo Chrome, Firefox, Brave, tiện ích mở rộng và quản lý tab thông minh
+    icon: globe
+    color: "#4285f4"
+    keywords:
+      - browser
+      - chrome
+      - firefox
+      - brave
+      - edge
+      - extension
+      - bookmarks
+      - cookies
+      - devtools
+
+  - id: office
+    slug: office
+    name:
+      en: Office & Productivity
+      vi: Văn phòng & Năng suất
+    description:
+      en: Excel formulas, Google Docs/Sheets tips, Notion workflows and shortcuts
+      vi: Công thức Excel, thủ thuật Google Docs/Sheets, tối ưu Notion
+    icon: file-spreadsheet
+    color: "#107c41"
+    keywords:
+      - excel
+      - word
+      - google sheets
+      - google docs
+      - notion
+      - powerpoint
+      - pdf
+      - vlookup
+      - formula
+      - spreadsheet
+
+  - id: security
+    slug: security
+    name:
+      en: Security & Privacy
+      vi: Bảo mật & Riêng tư
+    description:
+      en: Password managers, two-factor authentication, malware prevention and VPNs
+      vi: Trình quản lý mật khẩu, xác thực 2 lớp, diệt mã độc và VPN an toàn
+    icon: shield-check
+    color: "#e83e8c"
+    keywords:
+      - security
+      - privacy
+      - 2fa
+      - password
+      - vpn
+      - malware
+      - phishing
+      - encryption
+      - bitwarden
+      - firewall
+      - antivirus
+
+  - id: ai
+    slug: ai
+    name:
+      en: AI Tools
+      vi: Công cụ AI
+    description:
+      en: Prompt engineering, local LLMs (Ollama), ChatGPT, Claude & Gemini tricks
+      vi: Kỹ thuật prompt, chạy AI cục bộ (Ollama), mẹo ChatGPT, Claude & Gemini
+    icon: bot
+    color: "#7952b3"
+    keywords:
+      - ai
+      - llm
+      - prompt
+      - chatgpt
+      - gemini
+      - claude
+      - ollama
+      - midjourney
+      - local ai
+      - deepseek
+
+  - id: dev
+    slug: dev
+    name:
+      en: Dev & DevOps
+      vi: Lập trình & DevOps
+    description:
+      en: Git tricks, Docker snippets, VS Code shortcuts, regex, and debugging
+      vi: Mẹo Git, lệnh Docker, phím tắt VS Code, regex và gỡ lỗi nhanh
+    icon: code
+    color: "#20c997"
+    keywords:
+      - git
+      - docker
+      - vs code
+      - vscode
+      - regex
+      - python
+      - javascript
+      - nodejs
+      - api
+      - github
+      - devops
+      - debugging
+
+  - id: hardware
+    slug: hardware
+    name:
+      en: Hardware & Network
+      vi: Phần cứng & Mạng
+    description:
+      en: Wi-Fi optimization, router setup, PC building, thermal and cable management
+      vi: Tối ưu Wi-Fi, cài đặt router, lắp ráp PC, nhiệt độ và quản lý dây cáp
+    icon: cpu
+    color: "#fd7e14"
+    keywords:
+      - router
+      - wifi
+      - wi-fi
+      - lan
+      - dns
+      - cpu
+      - gpu
+      - ram
+      - ssd
+      - monitor
+      - bluetooth
+      - thermal

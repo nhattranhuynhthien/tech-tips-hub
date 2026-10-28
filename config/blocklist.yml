@@ -1,0 +1,37 @@
+# config/blocklist.yml
+# Danh sách từ khóa và tên miền bị loại bỏ khỏi luồng tổng hợp thủ thuật
+
+keywords:
+  - deal
+  - deals
+  - discount
+  - coupon
+  - sale
+  - off on
+  - price drop
+  - sponsored
+  - giveaway
+  - affiliate
+  - promo code
+  - best price
+  - black friday
+  - prime day
+  - cyber monday
+  - giam gia
+  - khuyen mai
+  - ma giam gia
+  - gia re
+  - ban chay
+  - quang cao
+  - tai tro
+
+domains:
+  - spam-site.example.com
+  - affiliate-hub.example.com
+
+title_patterns:
+  - "^deal alert:"
+  - "for only \\$\\d+"
+  - "save \\$\\d+ on"
+  - "\\d+% off"
+  - "săn sale"

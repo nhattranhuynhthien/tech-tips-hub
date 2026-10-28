@@ -1,0 +1,71 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getTranslations } from '../../lib/i18n';
+
+const lang = 'vi';
+const t = getTranslations(lang);
+---
+
+<Layout lang={lang} title="Chính sách Bản quyền & Yêu cầu gỡ bài" description="Quy định về tôn trọng bản quyền tác giả, mô hình tổng hợp tin hợp pháp và quy trình gỡ bỏ bài viết theo yêu cầu.">
+  <article class="max-w-3xl mx-auto bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-2xl p-6 sm:p-10 shadow-craft mb-12">
+    <!-- Header -->
+    <header class="pb-6 border-b border-[var(--border-subtle)] mb-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[var(--accent-bg)] text-[var(--accent)] border border-[var(--accent-border)] text-xs font-mono font-semibold mb-3">
+        <span>⚖️ Pháp lý & Tôn trọng bản quyền</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-serif font-bold text-[var(--text-primary)] mb-3">
+        Chính sách Bản quyền & Quy trình Gỡ bài
+      </h1>
+      <p class="text-base text-[var(--text-secondary)] leading-relaxed">
+        Chúng tôi cam kết tuân thủ nghiêm ngặt quyền sở hữu trí tuệ của tác giả và các cơ quan báo chí, xuất bản.
+      </p>
+    </header>
+
+    <div class="space-y-6 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed">
+      <section>
+        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
+          1. Mô hình Aggregator (Tổng hợp & Dẫn link)
+        </h2>
+        <p class="mb-3">
+          Tech Tips Hub vận hành hoàn toàn theo mô hình tổng hợp thông tin tóm tắt (Content Aggregator):
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-xs sm:text-sm pl-2">
+          <li><strong>Không sao chép nguyên bài:</strong> Website tuyệt đối không đăng tải lại toàn bộ nội dung bài viết. Chúng tôi chỉ trích xuất tiêu đề và đoạn tóm tắt ngắn (thường từ 1-2 câu).</li>
+          <li><strong>Luôn dẫn nguồn trực tiếp:</strong> Mọi bài viết đều có nút "Đọc bài gốc" đưa người đọc trực tiếp về URL của trang báo hoặc blog gốc.</li>
+          <li><strong>Không lưu trữ hình ảnh:</strong> Chúng tôi không cào hay re-host các file ảnh hoặc tài sản truyền thông của nguồn.</li>
+          <li><strong>Tuân thủ Robots.txt:</strong> Trình thu thập tự động chỉ truy cập các luồng RSS/Atom được nhà xuất bản công khai và tôn trọng các chỉ thị cấm cào.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
+          2. Bản dịch tự động
+        </h2>
+        <p>
+          Các bản dịch tiêu đề và tóm tắt sang tiếng Việt hoặc tiếng Anh là sản phẩm xử lý máy móc hỗ trợ độc giả tiếp cận kiến thức nhanh chóng. Các bản dịch này được gắn nhãn minh bạch "Bản dịch tự động". Nếu có bất kỳ sự sai lệch ngữ nghĩa nào so với nguyên tác, bài viết gốc của tác giả luôn là tiêu chuẩn duy nhất và chính xác nhất.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
+          3. Quy trình Yêu cầu Gỡ bài (Takedown Notice)
+        </h2>
+        <p class="mb-3">
+          Nếu bạn là tác giả hoặc đại diện pháp lý của nguồn nội dung và không muốn bài viết của mình xuất hiện trên Tech Tips Hub, chúng tôi sẽ ngay lập tức gỡ bỏ mà không cần bất kỳ thủ tục rườm rà nào:
+        </p>
+        <div class="p-5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-muted)] space-y-3">
+          <p class="font-semibold text-xs sm:text-sm text-[var(--text-primary)]">
+            Cách thức gửi yêu cầu:
+          </p>
+          <ul class="list-disc list-inside space-y-1.5 text-xs">
+            <li>Tạo một <strong>GitHub Issue</strong> trên repository dự án với nhãn <code class="px-1.5 py-0.5 rounded bg-[var(--bg-surface)] font-mono">takedown-request</code>.</li>
+            <li>Hoặc gửi email thông báo tới ban quản trị kèm link bài viết hoặc domain cần loại bỏ.</li>
+          </ul>
+          <p class="text-xs text-[var(--text-muted)]">
+            Ngay khi nhận được yêu cầu, URL hoặc toàn bộ domain sẽ được đưa vào <code class="font-mono">config/blocklist.yml</code> và bị xóa hoàn toàn khỏi cơ sở dữ liệu trong lần build kế tiếp (tối đa 24 giờ).
+          </p>
+        </div>
+      </section>
+    </div>
+  </article>
+</Layout>

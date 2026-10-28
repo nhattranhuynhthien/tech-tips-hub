@@ -1,0 +1,39 @@
+name: CI Build & Test
+
+on:
+  push:
+    branches: [main, master]
+  pull_request:
+    branches: [main, master]
+
+jobs:
+  test-pipeline:
+    name: Test Python Pipeline
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: pip install -r scripts/requirements.txt
+      - name: Validate Pipeline Script Syntax
+        run: |
+          python -m py_compile scripts/dedupe.py
+          python -m py_compile scripts/score.py
+          python -m py_compile scripts/translate.py
+          python -m py_compile scripts/fetch.py
+          python -m py_compile scripts/run_pipeline.py
+
+  build-frontend:
+    name: Build Astro Static Site
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: npm
+      - run: npm ci || npm install
+      - name: Build site
+        run: npm run build

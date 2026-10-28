@@ -1,0 +1,20 @@
+{
+  "name": "tech-tips-hub",
+  "version": "1.0.0",
+  "description": "Aggregator of tech tricks and tips from around the world - bilingual EN/VI - 0 VND operating cost",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "latest",
+    "astro": "latest",
+    "js-yaml": "^5.5.0",
+    "lucide-astro": "latest",
+    "tailwindcss": "^3.4.17"
+  }
+}

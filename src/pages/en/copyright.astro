@@ -1,0 +1,71 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getTranslations } from '../../lib/i18n';
+
+const lang = 'en';
+const t = getTranslations(lang);
+---
+
+<Layout lang={lang} title="Copyright Policy & Takedown Requests" description="Fair use principles, ethical content aggregation standards, and instant removal guidelines.">
+  <article class="max-w-3xl mx-auto bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-2xl p-6 sm:p-10 shadow-craft mb-12">
+    <!-- Header -->
+    <header class="pb-6 border-b border-[var(--border-subtle)] mb-8">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[var(--accent-bg)] text-[var(--accent)] border border-[var(--accent-border)] text-xs font-mono font-semibold mb-3">
+        <span>⚖️ Legal Compliance & Fair Use</span>
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-serif font-bold text-[var(--text-primary)] mb-3">
+        Copyright Policy & Takedown Notice
+      </h1>
+      <p class="text-base text-[var(--text-secondary)] leading-relaxed">
+        We firmly respect the intellectual property rights of creators, bloggers, and online publications.
+      </p>
+    </header>
+
+    <div class="space-y-6 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed">
+      <section>
+        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
+          1. Aggregator Model (Fair Use & Direct Linking)
+        </h2>
+        <p class="mb-3">
+          Tech Tips Hub operates purely as an indexer and directory:
+        </p>
+        <ul class="list-disc list-inside space-y-2 text-xs sm:text-sm pl-2">
+          <li><strong>No Full Article Reproduction:</strong> We never copy or reproduce entire articles. We store only brief excerpts (1-2 sentences) and normalized headlines.</li>
+          <li><strong>Direct Canonical Attribution:</strong> Every entry contains an explicit, prominent "Read Original" link driving readership directly back to the original publisher.</li>
+          <li><strong>No Media Scraping:</strong> We do not download or host original author images, attachments, or videos.</li>
+          <li><strong>Robots.txt & RSS Adherence:</strong> Our crawlers read public feeds and respect standard web etiquette and rate limits.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
+          2. Machine Translation Notice
+        </h2>
+        <p>
+          Bilingual titles and summaries are generated via automated machine translation models to aid cross-linguistic discovery. The original publication remains the authoritative, definitive reference for all technical instructions.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
+          3. Takedown & Content Removal Requests
+        </h2>
+        <p class="mb-3">
+          If you are an author or publisher and prefer that your feed or specific articles not be referenced on Tech Tips Hub, we will swiftly honor your request:
+        </p>
+        <div class="p-5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-muted)] space-y-3">
+          <p class="font-semibold text-xs sm:text-sm text-[var(--text-primary)]">
+            How to request removal:
+          </p>
+          <ul class="list-disc list-inside space-y-1.5 text-xs">
+            <li>Open a <strong>GitHub Issue</strong> on our public repository tagged with <code class="px-1.5 py-0.5 rounded bg-[var(--bg-surface)] font-mono">takedown-request</code>.</li>
+            <li>Specify the article URL or full domain you wish excluded.</li>
+          </ul>
+          <p class="text-xs text-[var(--text-muted)]">
+            Upon receipt, your domain or URL pattern will be appended to <code class="font-mono">config/blocklist.yml</code>, permanently pruning your content in the subsequent automated build.
+          </p>
+        </div>
+      </section>
+    </div>
+  </article>
+</Layout>
