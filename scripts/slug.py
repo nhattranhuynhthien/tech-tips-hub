@@ -15,3 +15,4 @@ def generate_seo_slug(title: str, item_id: str) -> str:
     text = re.sub(r"-+", "-", text)[:60].rstrip("-")
     short_hash = item_id[:6]
     return f"{text or 'tip'}-{short_hash}"
+
