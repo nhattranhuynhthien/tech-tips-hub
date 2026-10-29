@@ -67,6 +67,74 @@
     "raw_summary": "China's AI stocks lost $480 billion. But SK Hynix posted record profits and says RAM stays scarce till 2030. Bubbles pop, prices don't.",
     "hidden": false
   },
+  "131eaa65657ae221": {
+    "id": "131eaa65657ae221",
+    "url": "https://www.howtogeek.com/these-mistakes-can-turn-pi-hole-into-least-secure-part-your-home-network",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Umair Khurshid",
+    "published_at": "Wed, 28 Oct 2026 21:30:14 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "These 6 mistakes can turn Pi-hole into the least secure part of your home network",
+      "vi": "These 6 mistakes can turn Pi-hole into the least secure part of your home network"
+    },
+    "summary": {
+      "en": "Nothing says peace of mind like discovering your favorite privacy tool has a few secrets of its own!",
+      "vi": "Nothing says peace of mind like discovering your favorite privacy tool has a few secrets of its own!"
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [
+      "privacy"
+    ],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "72c7ad11c062c24d": {
+    "id": "72c7ad11c062c24d",
+    "url": "https://feed.itsfoss.com/link/24361/17508486/ghostty-1-4-release",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "Wed, 28 Oct 2026 15:39:27 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Ghostty 1.4 Is Faster and Uses Less RAM, but Drops Ubuntu 24.04 LTS Support",
+      "vi": "Ghostty 1.4 Is Faster and Uses Less RAM, but Drops Ubuntu 24.04 LTS Support"
+    },
+    "summary": {
+      "en": "The Ubuntu 24.04 support drop is thanks to the native builds requiring some newer dependencies. Anyhow, there’s more to this Ghostty release than that.",
+      "vi": "The Ubuntu 24.04 support drop is thanks to the native builds requiring some newer dependencies. Anyhow, there’s more to this Ghostty release than that."
+    },
+    "categories": [
+      "linux",
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Ghostty 1.4 Is Faster and Uses Less RAM, but Drops Ubuntu 24.04 LTS Support",
+    "raw_summary": "The Ubuntu 24.04 support drop is thanks to the native builds requiring some newer dependencies. Anyhow, there’s more to this Ghostty release than that.",
+    "hidden": false
+  },
   "739c9f9103673d3c": {
     "id": "739c9f9103673d3c",
     "url": "https://www.omgubuntu.co.uk/2026/10/firefox-159-released",
@@ -102,41 +170,6 @@
     "translated": {},
     "raw_title": "Firefox 159 released with Wayland Linux fixes",
     "raw_summary": "Firefox 159 is out, with a fresh set of improvements and some Linux-specific fixes. Now that Mozilla’s browser hews to a faster release cadence, with two releases a month rather than one, some changelogs may look minor on their own, as they’re smaller, if more frequent slices. So what’s changed?…",
-    "hidden": false
-  },
-  "72c7ad11c062c24d": {
-    "id": "72c7ad11c062c24d",
-    "url": "https://feed.itsfoss.com/link/24361/17508486/ghostty-1-4-release",
-    "source": {
-      "id": "itsfoss",
-      "name": "It's FOSS",
-      "site_url": "https://itsfoss.com",
-      "kind": "tips"
-    },
-    "author": "Sourav Rudra",
-    "published_at": "Wed, 28 Oct 2026 15:39:27 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Ghostty 1.4 Is Faster and Uses Less RAM, but Drops Ubuntu 24.04 LTS Support",
-      "vi": "Ghostty 1.4 Is Faster and Uses Less RAM, but Drops Ubuntu 24.04 LTS Support"
-    },
-    "summary": {
-      "en": "The Ubuntu 24.04 support drop is thanks to the native builds requiring some newer dependencies. Anyhow, there’s more to this Ghostty release than that.",
-      "vi": "The Ubuntu 24.04 support drop is thanks to the native builds requiring some newer dependencies. Anyhow, there’s more to this Ghostty release than that."
-    },
-    "categories": [
-      "linux",
-      "hardware"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.5,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Ghostty 1.4 Is Faster and Uses Less RAM, but Drops Ubuntu 24.04 LTS Support",
-    "raw_summary": "The Ubuntu 24.04 support drop is thanks to the native builds requiring some newer dependencies. Anyhow, there’s more to this Ghostty release than that.",
     "hidden": false
   },
   "51ae3dcde8c253db": {
@@ -176,6 +209,40 @@
     "raw_summary": "A major new release of Ghostty, the open-source terminal emulator, has been released. Ghostty 1.4.0 brings a varied set of changes after 7 months of development. There are welcome performance optimisations on Linux and macOS, a more capable SHH implementation and an easier way to rearrange tab…",
     "hidden": false
   },
+  "494dec1bba8b15b8": {
+    "id": "494dec1bba8b15b8",
+    "url": "https://genk.vn/ky-nguyen-dien-anh-ai-nam-2026-su-that-ve-nhung-bo-phim-dai-hang-gio-va-cach-san-xuat-165261029113319504.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Thu, 29 Oct 2026 11:39:00 +07",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Kỷ nguyên điện ảnh AI năm 2026: Sự thật về những bộ phim dài hàng giờ và cách sản xuất",
+      "en": "Kỷ nguyên điện ảnh AI năm 2026: Sự thật về những bộ phim dài hàng giờ và cách sản xuất"
+    },
+    "summary": {
+      "vi": "Phim tạo bằng AI không còn dừng lại ở những đoạn video ngắn ngủi vô nghĩa. Năm 2026 chứng kiến sự bùng nổ của các tác phẩm điện ảnh dài hàng giờ, mở ra một kỷ nguyên mới cho ngành công nghiệp giải trí với những bước tiến công nghệ đột phá và đầy thách thức.",
+      "en": "Phim tạo bằng AI không còn dừng lại ở những đoạn video ngắn ngủi vô nghĩa. Năm 2026 chứng kiến sự bùng nổ của các tác phẩm điện ảnh dài hàng giờ, mở ra một kỷ nguyên mới cho ngành công nghiệp giải trí với những bước tiến công nghệ đột phá và đầy thách thức."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 2,
+    "translated": {},
+    "raw_title": "Kỷ nguyên điện ảnh AI năm 2026: Sự thật về những bộ phim dài hàng giờ và cách sản xuất",
+    "raw_summary": "Phim tạo bằng AI không còn dừng lại ở những đoạn video ngắn ngủi vô nghĩa. Năm 2026 chứng kiến sự bùng nổ của các tác phẩm điện ảnh dài hàng giờ, mở ra một kỷ nguyên mới cho ngành công nghiệp giải trí với những bước tiến công nghệ đột phá và đầy thách thức.",
+    "hidden": false
+  },
   "bd9ce4e0e37eb114": {
     "id": "bd9ce4e0e37eb114",
     "url": "https://www.omgubuntu.co.uk/2026/10/ubuntu-core-desktop-2704",
@@ -208,6 +275,40 @@
     "translated": {},
     "raw_title": "Ubuntu Core Desktop ‘accelerating’ development ahead of 27.04",
     "raw_summary": "Canonical has announced it’s ‘accelerating’ development of Ubuntu Core Desktop, its immutable, snap-based version of its desktop OS. Ubuntu Core Desktop was announced in 2023 and made available in preview for enthusiasts to try. But a lack of of obvious progress and direction (not to mention…",
+    "hidden": false
+  },
+  "0dd866e0bf3ef228": {
+    "id": "0dd866e0bf3ef228",
+    "url": "https://vnexpress.net/amazon-ai-mo-ra-thoi-ky-cua-nha-phat-trien-phuc-hung-5138051.html",
+    "source": {
+      "id": "vnexpress_sohoa",
+      "name": "VnExpress Thủ Thuật",
+      "site_url": "https://vnexpress.net/so-hoa",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Thu, 29 Oct 2026 10:00:00 +0700",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Amazon: AI mở ra thời kỳ của nhà phát triển Phục hưng",
+      "en": "Amazon: AI mở ra thời kỳ của nhà phát triển Phục hưng"
+    },
+    "summary": {
+      "vi": "Amazon cho rằng AI đang làm thay đổi cách viết phần mềm, mở ra thời kỳ nhà phát triển có thể đảm nhiệm nhiều việc thay vì chuyên sâu một lĩnh vực.",
+      "en": "Amazon cho rằng AI đang làm thay đổi cách viết phần mềm, mở ra thời kỳ nhà phát triển có thể đảm nhiệm nhiều việc thay vì chuyên sâu một lĩnh vực."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Amazon: AI mở ra thời kỳ của nhà phát triển Phục hưng",
+    "raw_summary": "Amazon cho rằng AI đang làm thay đổi cách viết phần mềm, mở ra thời kỳ nhà phát triển có thể đảm nhiệm nhiều việc thay vì chuyên sâu một lĩnh vực.",
     "hidden": false
   },
   "4d429bba38d36917": {
@@ -278,39 +379,36 @@
     "raw_summary": "Tired of the rising licensing cost of VMWare, Tesco seems to be looking to switch to Proxmox.",
     "hidden": false
   },
-  "e724fb83679bba72": {
-    "id": "e724fb83679bba72",
-    "url": "https://www.omgubuntu.co.uk/2026/10/ubuntu-firmware-hwe-effort-moving-forward",
+  "22665e7c7e5afa39": {
+    "id": "22665e7c7e5afa39",
+    "url": "https://www.howtogeek.com/this-3d-print-is-designed-to-get-destroyed-and-its-the-most-useful-thing-i-make",
     "source": {
-      "id": "omgubuntu",
-      "name": "OMG! Ubuntu!",
-      "site_url": "https://www.omgubuntu.co.uk",
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
       "kind": "tips"
     },
-    "author": "Joey Sneddon",
-    "published_at": "Tue, 27 Oct 2026 23:15:24 +0000",
-    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
+    "author": "Patrick Campanale",
+    "published_at": "Thu, 29 Oct 2026 00:00:15 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Ubuntu firmware HWE will prevent issues on older kernel",
-      "vi": "Ubuntu firmware HWE will prevent issues on older kernel"
+      "en": "This 3D print is designed to get destroyed, and it’s the most useful thing I make",
+      "vi": "This 3D print is designed to get destroyed, and it’s the most useful thing I make"
     },
     "summary": {
-      "en": "Ubuntu is planning a new linux-firmware-hwe package, in an effort to reduce the risk of firmware updates for newer kernels causing problems for users running older ones. On Ubuntu long-term support (LTS) releases, you can stick with the standard (GA) kernel it was released with for the duration of…",
-      "vi": "Ubuntu is planning a new linux-firmware-hwe package, in an effort to reduce the risk of firmware updates for newer kernels causing problems for users running older ones. On Ubuntu long-term support (LTS) releases, you can stick with the standard (GA) kernel it was released with for the duration of…"
+      "en": "Sacrificial parts are where a 3D printer really earns its keep.",
+      "vi": "Sacrificial parts are where a 3D printer really earns its keep."
     },
     "categories": [
-      "linux"
+      "windows"
     ],
     "tags": [],
-    "difficulty": "advanced",
-    "score": 1.34,
+    "difficulty": "medium",
+    "score": 1.4,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Ubuntu firmware HWE will prevent issues on older kernel",
-    "raw_summary": "Ubuntu is planning a new linux-firmware-hwe package, in an effort to reduce the risk of firmware updates for newer kernels causing problems for users running older ones. On Ubuntu long-term support (LTS) releases, you can stick with the standard (GA) kernel it was released with for the duration of…",
-    "hidden": false
+    "translated": {}
   },
   "a649527bbaa9fadb": {
     "id": "a649527bbaa9fadb",
@@ -380,39 +478,67 @@
     "raw_summary": "Amutable Foundations is a read-only, image-based system where every machine produces signed reports of its own state.",
     "hidden": false
   },
-  "f6ba26099c5cb990": {
-    "id": "f6ba26099c5cb990",
-    "url": "https://www.omgubuntu.co.uk/2026/10/trash-talk-ubuntu-uk-rubbish-bin-terminology",
+  "b25dac19ae9865bb": {
+    "id": "b25dac19ae9865bb",
+    "url": "https://www.howtogeek.com/your-hdr-movies-have-a-subtitle-problem",
     "source": {
-      "id": "omgubuntu",
-      "name": "OMG! Ubuntu!",
-      "site_url": "https://www.omgubuntu.co.uk",
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
       "kind": "tips"
     },
-    "author": "Joey Sneddon",
-    "published_at": "Mon, 26 Oct 2026 23:58:00 +0000",
-    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
+    "author": "Sydney Butler",
+    "published_at": "Wed, 28 Oct 2026 20:16:16 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Trash talking Ubuntu’s confusing British bin labels",
-      "vi": "Trash talking Ubuntu’s confusing British bin labels"
+      "en": "Your HDR movies have a subtitle problem",
+      "vi": "Your HDR movies have a subtitle problem"
     },
     "summary": {
-      "en": "Every operating systems needs somewhere to put the files you delete (and give you chance to rummage through to find the ones you want to keep). But, if you’re a Brit using Ubuntu, the name of that place varies based on where you look. It seems Ubuntu’s UK English translation team don’t agree on…",
-      "vi": "Every operating systems needs somewhere to put the files you delete (and give you chance to rummage through to find the ones you want to keep). But, if you’re a Brit using Ubuntu, the name of that place varies based on where you look. It seems Ubuntu’s UK English translation team don’t agree on…"
+      "en": "Blinding white captions can dominate dark scenes on modern HDR sets and even cause mini LED bloom to flare during evening viewing.",
+      "vi": "Blinding white captions can dominate dark scenes on modern HDR sets and even cause mini LED bloom to flare during evening viewing."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.4,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "55f3dda9cce6d5d1": {
+    "id": "55f3dda9cce6d5d1",
+    "url": "https://www.howtogeek.com/heres-how-i-replicated-3-of-the-googlebooks-best-features-on-a-60-dollar-linux-laptop",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Andrew Heinzman",
+    "published_at": "Wed, 28 Oct 2026 20:00:15 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Here's how I replicated 3 of the Googlebook's best features on a $60 Linux laptop",
+      "vi": "Here's how I replicated 3 of the Googlebook's best features on a $60 Linux laptop"
+    },
+    "summary": {
+      "en": "Turns out, I didn't have to work hard to get a semi-Googlebook experience in Linux",
+      "vi": "Turns out, I didn't have to work hard to get a semi-Googlebook experience in Linux"
     },
     "categories": [
       "linux"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.34,
+    "score": 1.4,
     "howto": true,
-    "reading_time_min": 2,
-    "translated": {},
-    "raw_title": "Trash talking Ubuntu’s confusing British bin labels",
-    "raw_summary": "Every operating systems needs somewhere to put the files you delete (and give you chance to rummage through to find the ones you want to keep). But, if you’re a Brit using Ubuntu, the name of that place varies based on where you look. It seems Ubuntu’s UK English translation team don’t agree on…",
-    "hidden": false
+    "reading_time_min": 1,
+    "translated": {}
   },
   "50540090dc1f9a17": {
     "id": "50540090dc1f9a17",
@@ -448,6 +574,74 @@
     "raw_summary": "Make Ubuntu 26.10 yours by following these tweaks and tips.",
     "hidden": false
   },
+  "e724fb83679bba72": {
+    "id": "e724fb83679bba72",
+    "url": "https://www.omgubuntu.co.uk/2026/10/ubuntu-firmware-hwe-effort-moving-forward",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Tue, 27 Oct 2026 23:15:24 +0000",
+    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Ubuntu firmware HWE will prevent issues on older kernel",
+      "vi": "Ubuntu firmware HWE will prevent issues on older kernel"
+    },
+    "summary": {
+      "en": "Ubuntu is planning a new linux-firmware-hwe package, in an effort to reduce the risk of firmware updates for newer kernels causing problems for users running older ones. On Ubuntu long-term support (LTS) releases, you can stick with the standard (GA) kernel it was released with for the duration of…",
+      "vi": "Ubuntu is planning a new linux-firmware-hwe package, in an effort to reduce the risk of firmware updates for newer kernels causing problems for users running older ones. On Ubuntu long-term support (LTS) releases, you can stick with the standard (GA) kernel it was released with for the duration of…"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": "advanced",
+    "score": 1.34,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Ubuntu firmware HWE will prevent issues on older kernel",
+    "raw_summary": "Ubuntu is planning a new linux-firmware-hwe package, in an effort to reduce the risk of firmware updates for newer kernels causing problems for users running older ones. On Ubuntu long-term support (LTS) releases, you can stick with the standard (GA) kernel it was released with for the duration of…",
+    "hidden": false
+  },
+  "f6ba26099c5cb990": {
+    "id": "f6ba26099c5cb990",
+    "url": "https://www.omgubuntu.co.uk/2026/10/trash-talk-ubuntu-uk-rubbish-bin-terminology",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Mon, 26 Oct 2026 23:58:00 +0000",
+    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Trash talking Ubuntu’s confusing British bin labels",
+      "vi": "Trash talking Ubuntu’s confusing British bin labels"
+    },
+    "summary": {
+      "en": "Every operating systems needs somewhere to put the files you delete (and give you chance to rummage through to find the ones you want to keep). But, if you’re a Brit using Ubuntu, the name of that place varies based on where you look. It seems Ubuntu’s UK English translation team don’t agree on…",
+      "vi": "Every operating systems needs somewhere to put the files you delete (and give you chance to rummage through to find the ones you want to keep). But, if you’re a Brit using Ubuntu, the name of that place varies based on where you look. It seems Ubuntu’s UK English translation team don’t agree on…"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.34,
+    "howto": true,
+    "reading_time_min": 2,
+    "translated": {},
+    "raw_title": "Trash talking Ubuntu’s confusing British bin labels",
+    "raw_summary": "Every operating systems needs somewhere to put the files you delete (and give you chance to rummage through to find the ones you want to keep). But, if you’re a Brit using Ubuntu, the name of that place varies based on where you look. It seems Ubuntu’s UK English translation team don’t agree on…",
+    "hidden": false
+  },
   "d5d383be6d2d90ea": {
     "id": "d5d383be6d2d90ea",
     "url": "https://feed.itsfoss.com/link/24361/17502832/beamfs-linux-filesystem-proposal",
@@ -481,6 +675,104 @@
     "raw_title": "This Newly Proposed Linux Filesystem Can Fix Corrupted Data",
     "raw_summary": "Aimed at hardware exposed to radiation, like satellites, BeamFS can repair data without keeping a second copy.",
     "hidden": false
+  },
+  "6f7743a9465550a4": {
+    "id": "6f7743a9465550a4",
+    "url": "https://vnexpress.net/oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-5138064.html",
+    "source": {
+      "id": "vnexpress_sohoa",
+      "name": "VnExpress Thủ Thuật",
+      "site_url": "https://vnexpress.net/so-hoa",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Wed, 28 Oct 2026 22:27:00 +0700",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel",
+      "en": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel"
+    },
+    "summary": {
+      "vi": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh.",
+      "en": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": "machine"
+    },
+    "raw_title": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel",
+    "raw_summary": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh.",
+    "hidden": false
+  },
+  "4a8d15ba801ad04d": {
+    "id": "4a8d15ba801ad04d",
+    "url": "https://www.makeuseof.com/xpipe-open-source-app-a-shot-and-it-put-ssh-docker-proxmox-and-my-remote-files-in-one-place",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Afam Onyimadu",
+    "published_at": "Wed, 28 Oct 2026 19:00:16 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "XPipe makes managing a home lab feel like it should",
+      "vi": "XPipe makes managing a home lab feel like it should"
+    },
+    "summary": {
+      "en": "My home server finally stopped feeling like a pile of chores.",
+      "vi": "My home server finally stopped feeling like a pile of chores."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "b5dd38c1b651141f": {
+    "id": "b5dd38c1b651141f",
+    "url": "https://www.makeuseof.com/samsung-good-lock-gave-my-galaxy-a-feature-i-thought-i-needed-a-new-phone-for",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Brandon Miniman",
+    "published_at": "Wed, 28 Oct 2026 18:30:16 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Samsung Good Lock gave my Galaxy a feature I thought I needed a new phone for",
+      "vi": "Samsung Good Lock gave my Galaxy a feature I thought I needed a new phone for"
+    },
+    "summary": {
+      "en": "This Good Lock module makes split-screen multitasking feel more like a foldable",
+      "vi": "This Good Lock module makes split-screen multitasking feel more like a foldable"
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "513f9c14c838474f": {
     "id": "513f9c14c838474f",
@@ -585,38 +877,38 @@
     "raw_summary": "Calculate usable capacity, fault tolerance, and storage efficiency for any RAID or ZFS layout. Also see if there are any risks associated with your rebuilds.",
     "hidden": false
   },
-  "fadd7467dc36644c": {
-    "id": "fadd7467dc36644c",
-    "url": "https://dev.to/bowentse/word-counting-is-harder-than-it-looks-a-devs-guide-1jpb",
+  "65a7831f485fdf8f": {
+    "id": "65a7831f485fdf8f",
+    "url": "https://vnexpress.net/chinh-sua-gene-bo-h-mong-xay-dung-thuong-hieu-cao-cap-cua-viet-nam-5137453.html",
     "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
+      "id": "vnexpress_sohoa",
+      "name": "VnExpress Thủ Thuật",
+      "site_url": "https://vnexpress.net/so-hoa",
       "kind": "tips"
     },
-    "author": "bowen Tse",
-    "published_at": "2026-10-29T02:58:56Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
+    "author": null,
+    "published_at": "Tue, 27 Oct 2026 20:19:45 +0700",
+    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
+    "original_lang": "vi",
     "title": {
-      "en": "Word Counting Is Harder Than It Looks: A Dev's Guide",
-      "vi": "Word Counting Is Harder Than It Looks: A Dev's Guide"
+      "vi": "Chỉnh sửa gene bò H'Mông xây dựng thương hiệu cao cấp của Việt Nam",
+      "en": "Chỉnh sửa gene bò H'Mông xây dựng thương hiệu cao cấp của Việt Nam"
     },
     "summary": {
-      "en": "Every developer has written the naive version at least once: const words =",
-      "vi": "Every developer has written the naive version at least once: const words ="
+      "vi": "Học viện Nông nghiệp Việt Nam tạo thành công 5 bê H'Mông bằng công nghệ chỉnh sửa gene MSTN, hướng tới xây dựng thương hiệu bò thịt cao cấp của Việt Nam.",
+      "en": "Học viện Nông nghiệp Việt Nam tạo thành công 5 bê H'Mông bằng công nghệ chỉnh sửa gene MSTN, hướng tới xây dựng thương hiệu bò thịt cao cấp của Việt Nam."
     },
     "categories": [
-      "office"
+      "android"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.09,
+    "score": 1.18,
     "howto": true,
     "reading_time_min": 1,
     "translated": {},
-    "raw_title": "Word Counting Is Harder Than It Looks: A Dev's Guide",
-    "raw_summary": "Every developer has written the naive version at least once: const words =",
+    "raw_title": "Chỉnh sửa gene bò H'Mông xây dựng thương hiệu cao cấp của Việt Nam",
+    "raw_summary": "Học viện Nông nghiệp Việt Nam tạo thành công 5 bê H'Mông bằng công nghệ chỉnh sửa gene MSTN, hướng tới xây dựng thương hiệu bò thịt cao cấp của Việt Nam.",
     "hidden": false
   },
   "9b4da64b24df25e5": {
@@ -687,142 +979,6 @@
     "raw_summary": "The small SBC brings a 6 TOPS NPU, Wi-Fi 6, a Pi-compatible 40-pin header, and up to 32GB RAM, starting at $153.",
     "hidden": false
   },
-  "f4cb4a6778724aeb": {
-    "id": "f4cb4a6778724aeb",
-    "url": "https://dev.to/toolsyhub/how-to-compress-an-image-to-an-exact-kb-limit-in-the-browser-canvas-binary-search-and-when-to-2d7i",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Toolsy Hub",
-    "published_at": "2026-10-29T02:52:26Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "How to compress an image to an exact KB limit in the browser (canvas, binary search, and when to stop lowering quality)",
-      "vi": "How to compress an image to an exact KB limit in the browser (canvas, binary search, and when to stop lowering quality)"
-    },
-    "summary": {
-      "en": "Upload forms for visas, exams and job portals often say \"photo must be under 100 KB\". A phone photo",
-      "vi": "Upload forms for visas, exams and job portals often say \"photo must be under 100 KB\". A phone photo"
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.09,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "How to compress an image to an exact KB limit in the browser (canvas, binary search, and when to stop lowering quality)",
-    "raw_summary": "Upload forms for visas, exams and job portals often say \"photo must be under 100 KB\". A phone photo",
-    "hidden": false
-  },
-  "4189b4549c8cf284": {
-    "id": "4189b4549c8cf284",
-    "url": "https://feed.itsfoss.com/link/24361/17502941/red-hat-lf-research-ai-slop-report",
-    "source": {
-      "id": "itsfoss",
-      "name": "It's FOSS",
-      "site_url": "https://itsfoss.com",
-      "kind": "tips"
-    },
-    "author": "Sourav Rudra",
-    "published_at": "Thu, 22 Oct 2026 23:20:00 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Red Hat Funded a Report That Found a Quarter of Incoming Pull Requests May Be AI Slop",
-      "vi": "Red Hat Funded a Report That Found a Quarter of Incoming Pull Requests May Be AI Slop"
-    },
-    "summary": {
-      "en": "The Linux Foundation Research survey also found that only 35% of projects have a formal policy permitting AI contributions.",
-      "vi": "The Linux Foundation Research survey also found that only 35% of projects have a formal policy permitting AI contributions."
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.22,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Red Hat Funded a Report That Found a Quarter of Incoming Pull Requests May Be AI Slop",
-    "raw_summary": "The Linux Foundation Research survey also found that only 35% of projects have a formal policy permitting AI contributions.",
-    "hidden": false
-  },
-  "6508908febf34a09": {
-    "id": "6508908febf34a09",
-    "url": "https://dev.to/tomaszkrystman/building-an-mlops-workflow-from-experiment-to-production-4d3c",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Tomasz Krystman",
-    "published_at": "2026-10-29T03:00:59Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Building an MLOps Workflow: From Experiment to Production",
-      "vi": "Building an MLOps Workflow: From Experiment to Production"
-    },
-    "summary": {
-      "en": "A practical guide to MLOps workflows, maturity levels, governance, monitoring, and the relationship between MLOps and DevOps.",
-      "vi": "A practical guide to MLOps workflows, maturity levels, governance, monitoring, and the relationship between MLOps and DevOps."
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.09,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Building an MLOps Workflow: From Experiment to Production",
-    "raw_summary": "A practical guide to MLOps workflows, maturity levels, governance, monitoring, and the relationship between MLOps and DevOps.",
-    "hidden": false
-  },
-  "256c27b306f09301": {
-    "id": "256c27b306f09301",
-    "url": "https://dev.to/dinesh_04/how-to-plan-a-game-vertical-slice-in-7-days-with-a-one-page-gdd-e7",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Dinesh",
-    "published_at": "2026-10-29T03:17:16Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "How to Plan a Game Vertical Slice in 7 Days with a One-Page GDD",
-      "vi": "How to Plan a Game Vertical Slice in 7 Days with a One-Page GDD"
-    },
-    "summary": {
-      "en": "Most solo devs skip the game design document because it feels like homework. Then scope creep eats a",
-      "vi": "Most solo devs skip the game design document because it feels like homework. Then scope creep eats a"
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.09,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "How to Plan a Game Vertical Slice in 7 Days with a One-Page GDD",
-    "raw_summary": "Most solo devs skip the game design document because it feels like homework. Then scope creep eats a",
-    "hidden": false
-  },
   "1d22dd0edb251dbb": {
     "id": "1d22dd0edb251dbb",
     "url": "https://9to5google.com/2026/10/26/chrome-156-googlebooks",
@@ -857,6 +1013,40 @@
     "translated": {},
     "raw_title": "Chrome 156 for Googlebook rolling out with 14 updates across sites, shortcuts, more",
     "raw_summary": "Google is rolling out Chrome 156 for Googlebooks with a slew of improvements and bug fixes. This follows the last browser update two weeks ago.",
+    "hidden": false
+  },
+  "4189b4549c8cf284": {
+    "id": "4189b4549c8cf284",
+    "url": "https://feed.itsfoss.com/link/24361/17502941/red-hat-lf-research-ai-slop-report",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "Thu, 22 Oct 2026 23:20:00 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Red Hat Funded a Report That Found a Quarter of Incoming Pull Requests May Be AI Slop",
+      "vi": "Red Hat Funded a Report That Found a Quarter of Incoming Pull Requests May Be AI Slop"
+    },
+    "summary": {
+      "en": "The Linux Foundation Research survey also found that only 35% of projects have a formal policy permitting AI contributions.",
+      "vi": "The Linux Foundation Research survey also found that only 35% of projects have a formal policy permitting AI contributions."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.22,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Red Hat Funded a Report That Found a Quarter of Incoming Pull Requests May Be AI Slop",
+    "raw_summary": "The Linux Foundation Research survey also found that only 35% of projects have a formal policy permitting AI contributions.",
     "hidden": false
   },
   "45c76ee61d860588": {
@@ -1206,74 +1396,295 @@
     "raw_summary": "If KeePassXC is your password-management app of choice on Linux, the new 2.8.0 update is going to please. KeePassXC 2.8.0 sees some “long-awaited new features” arrive, including a Qt6 port of the main app interface, auto-type support on Wayland via XDG Desktop Portals, fingerprint unlock and a new…",
     "hidden": false
   },
-  "4a466fb18b4efea7": {
-    "id": "4a466fb18b4efea7",
-    "url": "https://dev.to/akhourianmolkumar/are-you-a-python-developer-or-a-python-expert-7-tests-i-failed-building-3-desktop-apps-2fp4",
+  "5a5d0c990d338acb": {
+    "id": "5a5d0c990d338acb",
+    "url": "https://www.howtogeek.com/heres-how-i-added-the-pixel-11s-most-exclusive-feature-to-my-pixel-8a",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Andrew Heinzman",
+    "published_at": "Wed, 28 Oct 2026 23:00:15 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Here's how I added the Pixel 11's most exclusive feature to my Pixel 8a",
+      "vi": "Here's how I added the Pixel 11's most exclusive feature to my Pixel 8a"
+    },
+    "summary": {
+      "en": "I'm a Rambler.",
+      "vi": "I'm a Rambler."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.12,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "5d2cddf1a4fd792d": {
+    "id": "5d2cddf1a4fd792d",
+    "url": "https://www.howtogeek.com/nfc-tags-on-appliances-stops-searching-for-manuals",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Adam Davidson",
+    "published_at": "Wed, 28 Oct 2026 22:30:15 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I put NFC tags on my appliances so I could stop searching for their manuals",
+      "vi": "I put NFC tags on my appliances so I could stop searching for their manuals"
+    },
+    "summary": {
+      "en": "No more manual labor.",
+      "vi": "No more manual labor."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.12,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "fadd7467dc36644c": {
+    "id": "fadd7467dc36644c",
+    "url": "https://dev.to/bowentse/word-counting-is-harder-than-it-looks-a-devs-guide-1jpb",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
       "site_url": "https://dev.to",
       "kind": "tips"
     },
-    "author": "Akhouri Anmol Kumar",
-    "published_at": "2026-10-28T10:13:29Z",
+    "author": "bowen Tse",
+    "published_at": "2026-10-29T02:58:56Z",
     "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Are You a Python Developer or a Python Expert? 7 Tests I Failed Building 3 Desktop Apps",
-      "vi": "Are You a Python Developer or a Python Expert? 7 Tests I Failed Building 3 Desktop Apps"
+      "en": "Word Counting Is Harder Than It Looks: A Dev's Guide",
+      "vi": "Word Counting Is Harder Than It Looks: A Dev's Guide"
     },
     "summary": {
-      "en": "Description: Python security, screen capture, spring physics, HiDPI and PyInstaller .exe gotchas. 7",
-      "vi": "Description: Python security, screen capture, spring physics, HiDPI and PyInstaller .exe gotchas. 7"
+      "en": "Every developer has written the naive version at least once: const words =",
+      "vi": "Every developer has written the naive version at least once: const words ="
     },
     "categories": [
-      "dev"
+      "office"
     ],
-    "tags": [
-      "python"
-    ],
+    "tags": [],
     "difficulty": "medium",
-    "score": 1.0,
+    "score": 1.09,
     "howto": true,
     "reading_time_min": 1,
     "translated": {},
-    "raw_title": "Are You a Python Developer or a Python Expert? 7 Tests I Failed Building 3 Desktop Apps",
-    "raw_summary": "Description: Python security, screen capture, spring physics, HiDPI and PyInstaller .exe gotchas. 7",
+    "raw_title": "Word Counting Is Harder Than It Looks: A Dev's Guide",
+    "raw_summary": "Every developer has written the naive version at least once: const words =",
     "hidden": false
   },
-  "8fb639d936f65def": {
-    "id": "8fb639d936f65def",
-    "url": "https://dev.to/morsezone/building-a-morse-code-practice-timer-in-javascript-timing-dits-dahs-and-gaps-39ol",
+  "43c5160c744f7d57": {
+    "id": "43c5160c744f7d57",
+    "url": "https://www.howtogeek.com/netflix-horror-movies-to-stream-for-halloween-watch-party",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "T.M. Amrita",
+    "published_at": "Wed, 28 Oct 2026 22:00:15 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Netflix is bringing these horror movies right in time for your Halloween watch party",
+      "vi": "Netflix is bringing these horror movies right in time for your Halloween watch party"
+    },
+    "summary": {
+      "en": "Keep the horror alive with these titles.",
+      "vi": "Keep the horror alive with these titles."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.12,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "3b94f401db45eb9e": {
+    "id": "3b94f401db45eb9e",
+    "url": "https://www.howtogeek.com/photoshop-plugins-so-essential-they-should-be-built-in",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Diana Todea",
+    "published_at": "Wed, 28 Oct 2026 21:00:15 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "4 Photoshop plugins so essential they should be built-in",
+      "vi": "4 Photoshop plugins so essential they should be built-in"
+    },
+    "summary": {
+      "en": "Simple add-ons for smoother workflows",
+      "vi": "Simple add-ons for smoother workflows"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.12,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "f4cb4a6778724aeb": {
+    "id": "f4cb4a6778724aeb",
+    "url": "https://dev.to/toolsyhub/how-to-compress-an-image-to-an-exact-kb-limit-in-the-browser-canvas-binary-search-and-when-to-2d7i",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
       "site_url": "https://dev.to",
       "kind": "tips"
     },
-    "author": "Morse Zone",
-    "published_at": "2026-10-29T04:29:52Z",
+    "author": "Toolsy Hub",
+    "published_at": "2026-10-29T02:52:26Z",
     "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Building a Morse Code Practice Timer in JavaScript: Timing Dits, Dahs and Gaps",
-      "vi": "Building a Morse Code Practice Timer in JavaScript: Timing Dits, Dahs and Gaps"
+      "en": "How to compress an image to an exact KB limit in the browser (canvas, binary search, and when to stop lowering quality)",
+      "vi": "How to compress an image to an exact KB limit in the browser (canvas, binary search, and when to stop lowering quality)"
     },
     "summary": {
-      "en": "Learning Morse code is not only about memorising dots and dashes. It is about rhythm. If your timing",
-      "vi": "Learning Morse code is not only about memorising dots and dashes. It is about rhythm. If your timing"
+      "en": "Upload forms for visas, exams and job portals often say \"photo must be under 100 KB\". A phone photo",
+      "vi": "Upload forms for visas, exams and job portals often say \"photo must be under 100 KB\". A phone photo"
     },
     "categories": [
       "dev"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.0,
+    "score": 1.09,
     "howto": true,
     "reading_time_min": 1,
     "translated": {},
-    "raw_title": "Building a Morse Code Practice Timer in JavaScript: Timing Dits, Dahs and Gaps",
-    "raw_summary": "Learning Morse code is not only about memorising dots and dashes. It is about rhythm. If your timing",
+    "raw_title": "How to compress an image to an exact KB limit in the browser (canvas, binary search, and when to stop lowering quality)",
+    "raw_summary": "Upload forms for visas, exams and job portals often say \"photo must be under 100 KB\". A phone photo",
+    "hidden": false
+  },
+  "29d0fd5470988252": {
+    "id": "29d0fd5470988252",
+    "url": "https://www.howtogeek.com/google-maps-companion-apps-that-fill-its-biggest-gaps",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Sanya Shah",
+    "published_at": "Wed, 28 Oct 2026 20:30:15 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "5 Google Maps companion apps that fill its biggest gaps",
+      "vi": "5 Google Maps companion apps that fill its biggest gaps"
+    },
+    "summary": {
+      "en": "Why settle for basic maps?",
+      "vi": "Why settle for basic maps?"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.12,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "6508908febf34a09": {
+    "id": "6508908febf34a09",
+    "url": "https://dev.to/tomaszkrystman/building-an-mlops-workflow-from-experiment-to-production-4d3c",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Tomasz Krystman",
+    "published_at": "2026-10-29T03:00:59Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Building an MLOps Workflow: From Experiment to Production",
+      "vi": "Building an MLOps Workflow: From Experiment to Production"
+    },
+    "summary": {
+      "en": "A practical guide to MLOps workflows, maturity levels, governance, monitoring, and the relationship between MLOps and DevOps.",
+      "vi": "A practical guide to MLOps workflows, maturity levels, governance, monitoring, and the relationship between MLOps and DevOps."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.09,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Building an MLOps Workflow: From Experiment to Production",
+    "raw_summary": "A practical guide to MLOps workflows, maturity levels, governance, monitoring, and the relationship between MLOps and DevOps.",
+    "hidden": false
+  },
+  "256c27b306f09301": {
+    "id": "256c27b306f09301",
+    "url": "https://dev.to/dinesh_04/how-to-plan-a-game-vertical-slice-in-7-days-with-a-one-page-gdd-e7",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Dinesh",
+    "published_at": "2026-10-29T03:17:16Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "How to Plan a Game Vertical Slice in 7 Days with a One-Page GDD",
+      "vi": "How to Plan a Game Vertical Slice in 7 Days with a One-Page GDD"
+    },
+    "summary": {
+      "en": "Most solo devs skip the game design document because it feels like homework. Then scope creep eats a",
+      "vi": "Most solo devs skip the game design document because it feels like homework. Then scope creep eats a"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.09,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "How to Plan a Game Vertical Slice in 7 Days with a One-Page GDD",
+    "raw_summary": "Most solo devs skip the game design document because it feels like homework. Then scope creep eats a",
     "hidden": false
   },
   "287908b3e087f501": {
@@ -1310,74 +1721,6 @@
     "raw_summary": "Ubuntu has released security updates for the php2shell PHP flaw that’s led to websites being taken offline, and a key compromise at the eMudhra certificate authority. Desktop Ubuntu isn’t directly affected by php2shell, since PHP isn’t installed by default. The certificate issue is more of a…",
     "hidden": false
   },
-  "c55a4eec3fa5eaad": {
-    "id": "c55a4eec3fa5eaad",
-    "url": "https://dev.to/glinck/35-x-45-cm-is-not-a-pixel-size-converting-cm-and-dpi-for-form-photos-5l7",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Anuj Kabra",
-    "published_at": "2026-10-29T04:29:06Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "3.5 x 4.5 cm is not a pixel size: converting cm and DPI for form photos",
-      "vi": "3.5 x 4.5 cm is not a pixel size: converting cm and DPI for form photos"
-    },
-    "summary": {
-      "en": "A lot of application forms ask for a passport-style photo of \"3.5 x 4.5 cm\". An image file has no",
-      "vi": "A lot of application forms ask for a passport-style photo of \"3.5 x 4.5 cm\". An image file has no"
-    },
-    "categories": [
-      "android"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.0,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "3.5 x 4.5 cm is not a pixel size: converting cm and DPI for form photos",
-    "raw_summary": "A lot of application forms ask for a passport-style photo of \"3.5 x 4.5 cm\". An image file has no",
-    "hidden": false
-  },
-  "c989d358786f1ec1": {
-    "id": "c989d358786f1ec1",
-    "url": "https://dev.to/selen_sherlock_64186c9222/turn-a-whatsapp-group-chat-into-a-weekly-summary-with-a-local-llm-1i3p",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Selen Sherlock",
-    "published_at": "2026-10-29T03:46:40Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Turn a WhatsApp Group Chat into a Weekly Summary with a Local LLM",
-      "vi": "Turn a WhatsApp Group Chat into a Weekly Summary with a Local LLM"
-    },
-    "summary": {
-      "en": "A project group can discuss a quotation on Monday, change its deadline on Wednesday, and confirm",
-      "vi": "A project group can discuss a quotation on Monday, change its deadline on Wednesday, and confirm"
-    },
-    "categories": [
-      "ai"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.0,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Turn a WhatsApp Group Chat into a Weekly Summary with a Local LLM",
-    "raw_summary": "A project group can discuss a quotation on Monday, change its deadline on Wednesday, and confirm",
-    "hidden": false
-  },
   "09c11f07e58f7e0b": {
     "id": "09c11f07e58f7e0b",
     "url": "https://www.omgubuntu.co.uk/2026/10/firefox-fixes-emudhra-secuity-issue",
@@ -1412,183 +1755,6 @@
     "translated": {},
     "raw_title": "Firefox 158.0.1 brings eMudhra certificate security fixes",
     "raw_summary": "Mozilla Firefox 158.0.1 is rolling out with some important security fixes. Now, I don’t tend to cover Firefox point releases as mainly ship minor fixes for things the majority of users won’t have noticed were wrong in the first place. The Firefox 158.0.1 update is more ‘meaty’ than usual fare.…",
-    "hidden": false
-  },
-  "e911f0d646627b9d": {
-    "id": "e911f0d646627b9d",
-    "url": "https://dev.to/hi_hphanthanh_41c4083/find-podcasts-and-their-latest-episodes-with-python-itunes-search-api-rss-no-api-key-38p7",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Hải Hà Phan Thanh",
-    "published_at": "2026-10-29T03:20:19Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Find podcasts and their latest episodes with Python (iTunes Search API + RSS, no API key)",
-      "vi": "Find podcasts and their latest episodes with Python (iTunes Search API + RSS, no API key)"
-    },
-    "summary": {
-      "en": "Podcast guest outreach, sponsorship research, and \"new episode\" alerts all need the same two things:",
-      "vi": "Podcast guest outreach, sponsorship research, and \"new episode\" alerts all need the same two things:"
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [
-      "python"
-    ],
-    "difficulty": "medium",
-    "score": 1.0,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Find podcasts and their latest episodes with Python (iTunes Search API + RSS, no API key)",
-    "raw_summary": "Podcast guest outreach, sponsorship research, and \"new episode\" alerts all need the same two things:",
-    "hidden": false
-  },
-  "82587239bd94ad26": {
-    "id": "82587239bd94ad26",
-    "url": "https://dev.to/hirantha_sandaruwan/sri-lankan-public-holidays-and-poya-days-as-open-data-and-two-date-bugs-to-avoid-3d2c",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Hirantha Sandaruwan Lakshan",
-    "published_at": "2026-10-29T02:53:48Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Sri Lankan public holidays and Poya days as open data, and two date bugs to avoid",
-      "vi": "Sri Lankan public holidays and Poya days as open data, and two date bugs to avoid"
-    },
-    "summary": {
-      "en": "An open JSON, CSV and iCalendar list of Sri Lanka's 2026 and 2027 holidays, where it comes from, and two date bugs to avoid when you use it.",
-      "vi": "An open JSON, CSV and iCalendar list of Sri Lanka's 2026 and 2027 holidays, where it comes from, and two date bugs to avoid when you use it."
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.0,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Sri Lankan public holidays and Poya days as open data, and two date bugs to avoid",
-    "raw_summary": "An open JSON, CSV and iCalendar list of Sri Lanka's 2026 and 2027 holidays, where it comes from, and two date bugs to avoid when you use it.",
-    "hidden": false
-  },
-  "24667ebd409b6cab": {
-    "id": "24667ebd409b6cab",
-    "url": "https://www.omgubuntu.co.uk/2026/10/bleachbit-606-update-speed-boost",
-    "source": {
-      "id": "omgubuntu",
-      "name": "OMG! Ubuntu!",
-      "site_url": "https://www.omgubuntu.co.uk",
-      "kind": "tips"
-    },
-    "author": "Joey Sneddon",
-    "published_at": "Mon, 19 Oct 2026 23:57:44 +0000",
-    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "BleachBit 6.0.6 fixes admin cleaning on Linux",
-      "vi": "BleachBit 6.0.6 fixes admin cleaning on Linux"
-    },
-    "summary": {
-      "en": "BleachBit, the free, open-source and cross-platform system cleaning utility has a new maintenance release out – with support for Ubuntu 26.10. BleachBit 6.0.6 introduces cleaners for the Helium browser and Docker Desktop (including its AI assistant). This update also boosts app startup times, and…",
-      "vi": "BleachBit, the free, open-source and cross-platform system cleaning utility has a new maintenance release out – with support for Ubuntu 26.10. BleachBit 6.0.6 introduces cleaners for the Helium browser and Docker Desktop (including its AI assistant). This update also boosts app startup times, and…"
-    },
-    "categories": [
-      "linux",
-      "dev"
-    ],
-    "tags": [
-      "docker"
-    ],
-    "difficulty": "advanced",
-    "score": 1.09,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "BleachBit 6.0.6 fixes admin cleaning on Linux",
-    "raw_summary": "BleachBit, the free, open-source and cross-platform system cleaning utility has a new maintenance release out – with support for Ubuntu 26.10. BleachBit 6.0.6 introduces cleaners for the Helium browser and Docker Desktop (including its AI assistant). This update also boosts app startup times, and…",
-    "hidden": false
-  },
-  "7b0dcfffd55692e8": {
-    "id": "7b0dcfffd55692e8",
-    "url": "https://dev.to/systemcraftdev/pipes-and-redirection-how-2-and-really-work-12m3",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "SystemCraftDev",
-    "published_at": "2026-10-29T02:56:48Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Pipes and Redirection: How >, >>, 2> and | Really Work",
-      "vi": "Pipes and Redirection: How >, >>, 2> and | Really Work"
-    },
-    "summary": {
-      "en": "Four small symbols move text between commands and files. Once you see the three streams behind them, shell one-liners stop looking like magic.",
-      "vi": "Four small symbols move text between commands and files. Once you see the three streams behind them, shell one-liners stop looking like magic."
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.0,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Pipes and Redirection: How >, >>, 2> and | Really Work",
-    "raw_summary": "Four small symbols move text between commands and files. Once you see the three streams behind them, shell one-liners stop looking like magic.",
-    "hidden": false
-  },
-  "843e2f5d387fbdbf": {
-    "id": "843e2f5d387fbdbf",
-    "url": "https://dev.to/qunirice_verase_1ab0caeba/steamos-or-windows-11-deciding-with-powershell-before-you-partition-14hj",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "AI Release",
-    "published_at": "2026-10-29T03:23:06Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "SteamOS or Windows 11: deciding with PowerShell before you partition",
-      "vi": "SteamOS or Windows 11: deciding with PowerShell before you partition"
-    },
-    "summary": {
-      "en": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11.",
-      "vi": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11."
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [
-      "powershell"
-    ],
-    "difficulty": "advanced",
-    "score": 1.0,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "SteamOS or Windows 11: deciding with PowerShell before you partition",
-    "raw_summary": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11.",
     "hidden": false
   },
   "37108c33863abd27": {
@@ -1628,74 +1794,41 @@
     "raw_summary": "We've spotted a new connector for Gemini, and it can already start the eSIM setup process with a few simple prompts.",
     "hidden": false
   },
-  "89542d4c2591aab7": {
-    "id": "89542d4c2591aab7",
-    "url": "https://dev.to/kailas_warade_d2a15d1ef8a/5-common-sql-mistakes-where-order-by-andor-and-top-3-queries-3k9c",
+  "24667ebd409b6cab": {
+    "id": "24667ebd409b6cab",
+    "url": "https://www.omgubuntu.co.uk/2026/10/bleachbit-606-update-speed-boost",
     "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
       "kind": "tips"
     },
-    "author": "Kailas Warade",
-    "published_at": "2026-10-29T03:31:06Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "Joey Sneddon",
+    "published_at": "Mon, 19 Oct 2026 23:57:44 +0000",
+    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
     "original_lang": "en",
     "title": {
-      "en": "5 Common SQL Mistakes: WHERE, ORDER BY, AND/OR, and Top 3 Queries",
-      "vi": "5 Common SQL Mistakes: WHERE, ORDER BY, AND/OR, and Top 3 Queries"
+      "en": "BleachBit 6.0.6 fixes admin cleaning on Linux",
+      "vi": "BleachBit 6.0.6 fixes admin cleaning on Linux"
     },
     "summary": {
-      "en": "A SQL query can execute without errors and still produce an unexpected result. It might return the",
-      "vi": "A SQL query can execute without errors and still produce an unexpected result. It might return the"
+      "en": "BleachBit, the free, open-source and cross-platform system cleaning utility has a new maintenance release out – with support for Ubuntu 26.10. BleachBit 6.0.6 introduces cleaners for the Helium browser and Docker Desktop (including its AI assistant). This update also boosts app startup times, and…",
+      "vi": "BleachBit, the free, open-source and cross-platform system cleaning utility has a new maintenance release out – with support for Ubuntu 26.10. BleachBit 6.0.6 introduces cleaners for the Helium browser and Docker Desktop (including its AI assistant). This update also boosts app startup times, and…"
     },
     "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.0,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "5 Common SQL Mistakes: WHERE, ORDER BY, AND/OR, and Top 3 Queries",
-    "raw_summary": "A SQL query can execute without errors and still produce an unexpected result. It might return the",
-    "hidden": false
-  },
-  "d78bc6b547af3975": {
-    "id": "d78bc6b547af3975",
-    "url": "https://dev.to/neorhapsody/detect-a-websites-tech-stack-from-headers-html-and-cookies-js-python-4fkc",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Fikri Marhan",
-    "published_at": "2026-10-29T02:22:07Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Detect a website's tech stack from headers, HTML and cookies (JS + Python)",
-      "vi": "Detect a website's tech stack from headers, HTML and cookies (JS + Python)"
-    },
-    "summary": {
-      "en": "Find a website's CMS, framework, analytics and hosting from one HTTP request. Learn the five clues, their limits, and two short scripts in Node and Python with no dependencies.",
-      "vi": "Find a website's CMS, framework, analytics and hosting from one HTTP request. Learn the five clues, their limits, and two short scripts in Node and Python with no dependencies."
-    },
-    "categories": [
+      "linux",
       "dev"
     ],
     "tags": [
-      "python"
+      "docker"
     ],
-    "difficulty": "medium",
-    "score": 1.0,
+    "difficulty": "advanced",
+    "score": 1.09,
     "howto": true,
     "reading_time_min": 1,
     "translated": {},
-    "raw_title": "Detect a website's tech stack from headers, HTML and cookies (JS + Python)",
-    "raw_summary": "Find a website's CMS, framework, analytics and hosting from one HTTP request. Learn the five clues, their limits, and two short scripts in Node and Python with no dependencies.",
+    "raw_title": "BleachBit 6.0.6 fixes admin cleaning on Linux",
+    "raw_summary": "BleachBit, the free, open-source and cross-platform system cleaning utility has a new maintenance release out – with support for Ubuntu 26.10. BleachBit 6.0.6 introduces cleaners for the Helium browser and Docker Desktop (including its AI assistant). This update also boosts app startup times, and…",
     "hidden": false
   },
   "6aaf671df097a150": {
@@ -1873,72 +2006,429 @@
     "raw_summary": "Free capture-the-flag games that test your Linux command line skills. No account needed. The levels run in Docker on your own computer.",
     "hidden": false
   },
-  "494dec1bba8b15b8": {
-    "id": "494dec1bba8b15b8",
-    "url": "https://genk.vn/ky-nguyen-dien-anh-ai-nam-2026-su-that-ve-nhung-bo-phim-dai-hang-gio-va-cach-san-xuat-165261029113319504.chn",
+  "f370cc54cb497e18": {
+    "id": "f370cc54cb497e18",
+    "url": "https://www.makeuseof.com/replace-7-zip-winrar-with-nanazip",
     "source": {
-      "id": "genk",
-      "name": "GenK Thủ Thuật",
-      "site_url": "https://genk.vn",
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
       "kind": "tips"
     },
-    "author": null,
-    "published_at": "Thu, 29 Oct 2026 11:39:00 +07",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "vi",
+    "author": "Pankil Shah",
+    "published_at": "Wed, 28 Oct 2026 20:00:16 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
     "title": {
-      "vi": "Kỷ nguyên điện ảnh AI năm 2026: Sự thật về những bộ phim dài hàng giờ và cách sản xuất",
-      "en": "Kỷ nguyên điện ảnh AI năm 2026: Sự thật về những bộ phim dài hàng giờ và cách sản xuất"
+      "en": "I ditched both 7-Zip and WinRAR for this alternative for this one reason",
+      "vi": "I ditched both 7-Zip and WinRAR for this alternative for this one reason"
     },
     "summary": {
-      "vi": "Phim tạo bằng AI không còn dừng lại ở những đoạn video ngắn ngủi vô nghĩa. Năm 2026 chứng kiến sự bùng nổ của các tác phẩm điện ảnh dài hàng giờ, mở ra một kỷ nguyên mới cho ngành công nghiệp giải trí với những bước tiến công nghệ đột phá và đầy thách thức.",
-      "en": "Phim tạo bằng AI không còn dừng lại ở những đoạn video ngắn ngủi vô nghĩa. Năm 2026 chứng kiến sự bùng nổ của các tác phẩm điện ảnh dài hàng giờ, mở ra một kỷ nguyên mới cho ngành công nghiệp giải trí với những bước tiến công nghệ đột phá và đầy thách thức."
+      "en": "My PC is now more secure, thanks to this change.",
+      "vi": "My PC is now more secure, thanks to this change."
     },
     "categories": [
       "windows"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.41,
+    "score": 1.01,
     "howto": true,
-    "reading_time_min": 2,
-    "translated": {},
-    "raw_title": "Kỷ nguyên điện ảnh AI năm 2026: Sự thật về những bộ phim dài hàng giờ và cách sản xuất",
-    "raw_summary": "Phim tạo bằng AI không còn dừng lại ở những đoạn video ngắn ngủi vô nghĩa. Năm 2026 chứng kiến sự bùng nổ của các tác phẩm điện ảnh dài hàng giờ, mở ra một kỷ nguyên mới cho ngành công nghiệp giải trí với những bước tiến công nghệ đột phá và đầy thách thức.",
-    "hidden": false
+    "reading_time_min": 1,
+    "translated": {}
   },
-  "c60bf0ed12d07979": {
-    "id": "c60bf0ed12d07979",
-    "url": "https://dev.to/amananandrai/101-indian-monuments-modelled-in-the-browser-g4f",
+  "024e8db1df02dbee": {
+    "id": "024e8db1df02dbee",
+    "url": "https://www.makeuseof.com/i-built-a-lossless-music-library",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Brady Snyder",
+    "published_at": "Wed, 28 Oct 2026 19:30:16 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I built a subscription-free lossless music library with this affordable USB accessory",
+      "vi": "I built a subscription-free lossless music library with this affordable USB accessory"
+    },
+    "summary": {
+      "en": "Out with the new, in with the old.",
+      "vi": "Out with the new, in with the old."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.01,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "4a466fb18b4efea7": {
+    "id": "4a466fb18b4efea7",
+    "url": "https://dev.to/akhourianmolkumar/are-you-a-python-developer-or-a-python-expert-7-tests-i-failed-building-3-desktop-apps-2fp4",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
       "site_url": "https://dev.to",
       "kind": "tips"
     },
-    "author": "amananandrai",
-    "published_at": "2026-10-28T00:39:09Z",
-    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "author": "Akhouri Anmol Kumar",
+    "published_at": "2026-10-28T10:13:29Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "From Code to Culture: Building 101 Indian Monuments in 3D",
-      "vi": "From Code to Culture: Building 101 Indian Monuments in 3D"
+      "en": "Are You a Python Developer or a Python Expert? 7 Tests I Failed Building 3 Desktop Apps",
+      "vi": "Are You a Python Developer or a Python Expert? 7 Tests I Failed Building 3 Desktop Apps"
     },
     "summary": {
-      "en": "101 Indian Monuments, Modelled in the Browser India's heritage has always fascinated me.",
-      "vi": "101 Indian Monuments, Modelled in the Browser India's heritage has always fascinated me."
+      "en": "Description: Python security, screen capture, spring physics, HiDPI and PyInstaller .exe gotchas. 7",
+      "vi": "Description: Python security, screen capture, spring physics, HiDPI and PyInstaller .exe gotchas. 7"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [
+      "python"
+    ],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Are You a Python Developer or a Python Expert? 7 Tests I Failed Building 3 Desktop Apps",
+    "raw_summary": "Description: Python security, screen capture, spring physics, HiDPI and PyInstaller .exe gotchas. 7",
+    "hidden": false
+  },
+  "10ef57b720dca9c5": {
+    "id": "10ef57b720dca9c5",
+    "url": "https://www.makeuseof.com/the-next-big-wi-fi-upgrade-is-tackling-something-more-important-than-speed",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Gavin Phillips",
+    "published_at": "Wed, 28 Oct 2026 18:00:16 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "The next big Wi-Fi upgrade is tackling something more important than speed",
+      "vi": "The next big Wi-Fi upgrade is tackling something more important than speed"
+    },
+    "summary": {
+      "en": "Where we're going, we won't need faster Wi-Fi speeds.",
+      "vi": "Where we're going, we won't need faster Wi-Fi speeds."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.01,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "0f61e1e47dbe051e": {
+    "id": "0f61e1e47dbe051e",
+    "url": "https://www.makeuseof.com/ikea-kreativ-home-furnishings",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Chris Hachey",
+    "published_at": "Wed, 28 Oct 2026 17:30:16 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "IKEA has a better way to shop for furniture than scrolling product pages",
+      "vi": "IKEA has a better way to shop for furniture than scrolling product pages"
+    },
+    "summary": {
+      "en": "Take the tour around the room yourself.",
+      "vi": "Take the tour around the room yourself."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.01,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "8fb639d936f65def": {
+    "id": "8fb639d936f65def",
+    "url": "https://dev.to/morsezone/building-a-morse-code-practice-timer-in-javascript-timing-dits-dahs-and-gaps-39ol",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Morse Zone",
+    "published_at": "2026-10-29T04:29:52Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Building a Morse Code Practice Timer in JavaScript: Timing Dits, Dahs and Gaps",
+      "vi": "Building a Morse Code Practice Timer in JavaScript: Timing Dits, Dahs and Gaps"
+    },
+    "summary": {
+      "en": "Learning Morse code is not only about memorising dots and dashes. It is about rhythm. If your timing",
+      "vi": "Learning Morse code is not only about memorising dots and dashes. It is about rhythm. If your timing"
     },
     "categories": [
       "dev"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.92,
+    "score": 1.0,
     "howto": true,
     "reading_time_min": 1,
     "translated": {},
-    "raw_title": "From Code to Culture: Building 101 Indian Monuments in 3D",
-    "raw_summary": "101 Indian Monuments, Modelled in the Browser India's heritage has always fascinated me.",
+    "raw_title": "Building a Morse Code Practice Timer in JavaScript: Timing Dits, Dahs and Gaps",
+    "raw_summary": "Learning Morse code is not only about memorising dots and dashes. It is about rhythm. If your timing",
+    "hidden": false
+  },
+  "51f8dcdc7f9b270d": {
+    "id": "51f8dcdc7f9b270d",
+    "url": "https://www.makeuseof.com/microsoft-wants-to-make-storage-that-lasts-10000-years-and-its-not-an-ssd",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Gavin Phillips",
+    "published_at": "Wed, 28 Oct 2026 17:15:45 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Microsoft wants to make storage that lasts 10,000 years, and it's not an SSD",
+      "vi": "Microsoft wants to make storage that lasts 10,000 years, and it's not an SSD"
+    },
+    "summary": {
+      "en": "We all need more lasers, that's for sure.",
+      "vi": "We all need more lasers, that's for sure."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.01,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "8099aaefadc9434a": {
+    "id": "8099aaefadc9434a",
+    "url": "https://www.makeuseof.com/windows-reset-options-explained",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Pankil Shah",
+    "published_at": "Wed, 28 Oct 2026 16:30:18 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I learned what Windows “Reset this PC” actually keeps, and it’s not what I expected",
+      "vi": "I learned what Windows “Reset this PC” actually keeps, and it’s not what I expected"
+    },
+    "summary": {
+      "en": "It's not as straightforward as you think.",
+      "vi": "It's not as straightforward as you think."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.01,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "c55a4eec3fa5eaad": {
+    "id": "c55a4eec3fa5eaad",
+    "url": "https://dev.to/glinck/35-x-45-cm-is-not-a-pixel-size-converting-cm-and-dpi-for-form-photos-5l7",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Anuj Kabra",
+    "published_at": "2026-10-29T04:29:06Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "3.5 x 4.5 cm is not a pixel size: converting cm and DPI for form photos",
+      "vi": "3.5 x 4.5 cm is not a pixel size: converting cm and DPI for form photos"
+    },
+    "summary": {
+      "en": "A lot of application forms ask for a passport-style photo of \"3.5 x 4.5 cm\". An image file has no",
+      "vi": "A lot of application forms ask for a passport-style photo of \"3.5 x 4.5 cm\". An image file has no"
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "3.5 x 4.5 cm is not a pixel size: converting cm and DPI for form photos",
+    "raw_summary": "A lot of application forms ask for a passport-style photo of \"3.5 x 4.5 cm\". An image file has no",
+    "hidden": false
+  },
+  "89fc99ddb03996f5": {
+    "id": "89fc99ddb03996f5",
+    "url": "https://www.makeuseof.com/changed-android-settings-stopped-carrying-power-bank",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Digvijay Kumar",
+    "published_at": "Wed, 28 Oct 2026 16:00:17 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I changed 3 Android settings and stopped carrying a power bank everywhere",
+      "vi": "I changed 3 Android settings and stopped carrying a power bank everywhere"
+    },
+    "summary": {
+      "en": "I found where my battery was actually going.",
+      "vi": "I found where my battery was actually going."
+    },
+    "categories": [
+      "android",
+      "hardware"
+    ],
+    "tags": [
+      "battery"
+    ],
+    "difficulty": "easy",
+    "score": 1.01,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "e3b74b75e702204f": {
+    "id": "e3b74b75e702204f",
+    "url": "https://www.makeuseof.com/bentopdf-local-browser-pdf-tools",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Oluwademilade Afolabi",
+    "published_at": "Wed, 28 Oct 2026 15:45:18 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I do almost every annoying PDF job locally in my browser now",
+      "vi": "I do almost every annoying PDF job locally in my browser now"
+    },
+    "summary": {
+      "en": "I’m running out of reasons to open a dedicated PDF app.",
+      "vi": "I’m running out of reasons to open a dedicated PDF app."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.01,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "c989d358786f1ec1": {
+    "id": "c989d358786f1ec1",
+    "url": "https://dev.to/selen_sherlock_64186c9222/turn-a-whatsapp-group-chat-into-a-weekly-summary-with-a-local-llm-1i3p",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Selen Sherlock",
+    "published_at": "2026-10-29T03:46:40Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Turn a WhatsApp Group Chat into a Weekly Summary with a Local LLM",
+      "vi": "Turn a WhatsApp Group Chat into a Weekly Summary with a Local LLM"
+    },
+    "summary": {
+      "en": "A project group can discuss a quotation on Monday, change its deadline on Wednesday, and confirm",
+      "vi": "A project group can discuss a quotation on Monday, change its deadline on Wednesday, and confirm"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Turn a WhatsApp Group Chat into a Weekly Summary with a Local LLM",
+    "raw_summary": "A project group can discuss a quotation on Monday, change its deadline on Wednesday, and confirm",
+    "hidden": false
+  },
+  "e911f0d646627b9d": {
+    "id": "e911f0d646627b9d",
+    "url": "https://dev.to/hi_hphanthanh_41c4083/find-podcasts-and-their-latest-episodes-with-python-itunes-search-api-rss-no-api-key-38p7",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Hải Hà Phan Thanh",
+    "published_at": "2026-10-29T03:20:19Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Find podcasts and their latest episodes with Python (iTunes Search API + RSS, no API key)",
+      "vi": "Find podcasts and their latest episodes with Python (iTunes Search API + RSS, no API key)"
+    },
+    "summary": {
+      "en": "Podcast guest outreach, sponsorship research, and \"new episode\" alerts all need the same two things:",
+      "vi": "Podcast guest outreach, sponsorship research, and \"new episode\" alerts all need the same two things:"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [
+      "python"
+    ],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Find podcasts and their latest episodes with Python (iTunes Search API + RSS, no API key)",
+    "raw_summary": "Podcast guest outreach, sponsorship research, and \"new episode\" alerts all need the same two things:",
     "hidden": false
   },
   "2f1f3dcba6e12a09": {
@@ -1973,6 +2463,74 @@
     "translated": {},
     "raw_title": "PS5 Linux hack now supports (some) newer firmware versions",
     "raw_summary": "New PS5 Linux hack pLinux5-NG supports newer firmware, allowing Linux and Steam games to run on Sony's console. But not for long, welp. You're reading PS5 Linux hack now supports (some) newer firmware versions , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission.",
+    "hidden": false
+  },
+  "82587239bd94ad26": {
+    "id": "82587239bd94ad26",
+    "url": "https://dev.to/hirantha_sandaruwan/sri-lankan-public-holidays-and-poya-days-as-open-data-and-two-date-bugs-to-avoid-3d2c",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Hirantha Sandaruwan Lakshan",
+    "published_at": "2026-10-29T02:53:48Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Sri Lankan public holidays and Poya days as open data, and two date bugs to avoid",
+      "vi": "Sri Lankan public holidays and Poya days as open data, and two date bugs to avoid"
+    },
+    "summary": {
+      "en": "An open JSON, CSV and iCalendar list of Sri Lanka's 2026 and 2027 holidays, where it comes from, and two date bugs to avoid when you use it.",
+      "vi": "An open JSON, CSV and iCalendar list of Sri Lanka's 2026 and 2027 holidays, where it comes from, and two date bugs to avoid when you use it."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Sri Lankan public holidays and Poya days as open data, and two date bugs to avoid",
+    "raw_summary": "An open JSON, CSV and iCalendar list of Sri Lanka's 2026 and 2027 holidays, where it comes from, and two date bugs to avoid when you use it.",
+    "hidden": false
+  },
+  "7b0dcfffd55692e8": {
+    "id": "7b0dcfffd55692e8",
+    "url": "https://dev.to/systemcraftdev/pipes-and-redirection-how-2-and-really-work-12m3",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "SystemCraftDev",
+    "published_at": "2026-10-29T02:56:48Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Pipes and Redirection: How >, >>, 2> and | Really Work",
+      "vi": "Pipes and Redirection: How >, >>, 2> and | Really Work"
+    },
+    "summary": {
+      "en": "Four small symbols move text between commands and files. Once you see the three streams behind them, shell one-liners stop looking like magic.",
+      "vi": "Four small symbols move text between commands and files. Once you see the three streams behind them, shell one-liners stop looking like magic."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Pipes and Redirection: How >, >>, 2> and | Really Work",
+    "raw_summary": "Four small symbols move text between commands and files. Once you see the three streams behind them, shell one-liners stop looking like magic.",
     "hidden": false
   },
   "fc1520313d731b21": {
@@ -2010,6 +2568,76 @@
     "raw_summary": "Nautilus My Computer brings a Windows-style Computer overview to the GNOME file manager, and extras like Miller columns and sidebar editing. You're reading Give Nautilus file manager the ‘Computer’ view it lacks , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission.",
     "hidden": false
   },
+  "843e2f5d387fbdbf": {
+    "id": "843e2f5d387fbdbf",
+    "url": "https://dev.to/qunirice_verase_1ab0caeba/steamos-or-windows-11-deciding-with-powershell-before-you-partition-14hj",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "AI Release",
+    "published_at": "2026-10-29T03:23:06Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "SteamOS or Windows 11: deciding with PowerShell before you partition",
+      "vi": "SteamOS or Windows 11: deciding with PowerShell before you partition"
+    },
+    "summary": {
+      "en": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11.",
+      "vi": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [
+      "powershell"
+    ],
+    "difficulty": "advanced",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "SteamOS or Windows 11: deciding with PowerShell before you partition",
+    "raw_summary": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11.",
+    "hidden": false
+  },
+  "89542d4c2591aab7": {
+    "id": "89542d4c2591aab7",
+    "url": "https://dev.to/kailas_warade_d2a15d1ef8a/5-common-sql-mistakes-where-order-by-andor-and-top-3-queries-3k9c",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Kailas Warade",
+    "published_at": "2026-10-29T03:31:06Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "5 Common SQL Mistakes: WHERE, ORDER BY, AND/OR, and Top 3 Queries",
+      "vi": "5 Common SQL Mistakes: WHERE, ORDER BY, AND/OR, and Top 3 Queries"
+    },
+    "summary": {
+      "en": "A SQL query can execute without errors and still produce an unexpected result. It might return the",
+      "vi": "A SQL query can execute without errors and still produce an unexpected result. It might return the"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "5 Common SQL Mistakes: WHERE, ORDER BY, AND/OR, and Top 3 Queries",
+    "raw_summary": "A SQL query can execute without errors and still produce an unexpected result. It might return the",
+    "hidden": false
+  },
   "2f60432befdab164": {
     "id": "2f60432befdab164",
     "url": "https://feed.itsfoss.com/link/24361/17502758/foss-weekly-26-43",
@@ -2042,6 +2670,42 @@
     "translated": {},
     "raw_title": "FOSS Weekly #26.43: Kernel 7.3, Non-Linux OS, de-Googled Phone, DuxOS, Podcasts, De-bloating TVs, KDE Dock and More",
     "raw_summary": "A new kernel and a new Ubuntu release are here.",
+    "hidden": false
+  },
+  "d78bc6b547af3975": {
+    "id": "d78bc6b547af3975",
+    "url": "https://dev.to/neorhapsody/detect-a-websites-tech-stack-from-headers-html-and-cookies-js-python-4fkc",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Fikri Marhan",
+    "published_at": "2026-10-29T02:22:07Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Detect a website's tech stack from headers, HTML and cookies (JS + Python)",
+      "vi": "Detect a website's tech stack from headers, HTML and cookies (JS + Python)"
+    },
+    "summary": {
+      "en": "Find a website's CMS, framework, analytics and hosting from one HTTP request. Learn the five clues, their limits, and two short scripts in Node and Python with no dependencies.",
+      "vi": "Find a website's CMS, framework, analytics and hosting from one HTTP request. Learn the five clues, their limits, and two short scripts in Node and Python with no dependencies."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [
+      "python"
+    ],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Detect a website's tech stack from headers, HTML and cookies (JS + Python)",
+    "raw_summary": "Find a website's CMS, framework, analytics and hosting from one HTTP request. Learn the five clues, their limits, and two short scripts in Node and Python with no dependencies.",
     "hidden": false
   },
   "d788112ac5f1a908": {
@@ -2185,40 +2849,6 @@
     "raw_summary": "Linux 7.3 is out with faster ext4, better performance on AMD GPUs with low VRAM and a new cgroup scheduling mode. 2026 Steam Controller driver debuts. You're reading Linux 7.3 is out, speeds up ext4 and low-VRAM AMD GPUs , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission.",
     "hidden": false
   },
-  "b302cd56f6ec631a": {
-    "id": "b302cd56f6ec631a",
-    "url": "https://dev.to/annavi11arrea1/understanding-what-ai-just-created-in-the-500mph-landscape-1m52",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Anna Villarreal",
-    "published_at": "2026-10-23T15:59:05Z",
-    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Understanding What AI just Created in the 500mph Landscape",
-      "vi": "Understanding What AI just Created in the 500mph Landscape"
-    },
-    "summary": {
-      "en": "How to understand what AI wrote: For beginners! Avoid lack of dopamine, mental atrophy,",
-      "vi": "How to understand what AI wrote: For beginners! Avoid lack of dopamine, mental atrophy,"
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.87,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Understanding What AI just Created in the 500mph Landscape",
-    "raw_summary": "How to understand what AI wrote: For beginners! Avoid lack of dopamine, mental atrophy,",
-    "hidden": false
-  },
   "d9c39429d489eec5": {
     "id": "d9c39429d489eec5",
     "url": "https://linuxhandbook.com/courses/tmux/tmux-essential-shortcuts",
@@ -2357,6 +2987,40 @@
     "raw_summary": "So với touchpad cơ học truyền thống, touchpad haptic feedback cho trải nghiệm tốt hơn rất nhiều, nhưng để",
     "hidden": false
   },
+  "c60bf0ed12d07979": {
+    "id": "c60bf0ed12d07979",
+    "url": "https://dev.to/amananandrai/101-indian-monuments-modelled-in-the-browser-g4f",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "amananandrai",
+    "published_at": "2026-10-28T00:39:09Z",
+    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "From Code to Culture: Building 101 Indian Monuments in 3D",
+      "vi": "From Code to Culture: Building 101 Indian Monuments in 3D"
+    },
+    "summary": {
+      "en": "101 Indian Monuments, Modelled in the Browser India's heritage has always fascinated me.",
+      "vi": "101 Indian Monuments, Modelled in the Browser India's heritage has always fascinated me."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.92,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "From Code to Culture: Building 101 Indian Monuments in 3D",
+    "raw_summary": "101 Indian Monuments, Modelled in the Browser India's heritage has always fascinated me.",
+    "hidden": false
+  },
   "ca0f5a1a0dc47e76": {
     "id": "ca0f5a1a0dc47e76",
     "url": "https://arstechnica.com/science/2026/10/antarctic-sea-ice-loss-could-reshape-weather-far-beyond-the-pole",
@@ -2389,40 +3053,6 @@
     "translated": {},
     "raw_title": "A hidden ocean change near Antarctica could have global consequences",
     "raw_summary": "Antarctic waters are getting saltier as sea-ice loss reshapes ocean circulation.",
-    "hidden": false
-  },
-  "0dd866e0bf3ef228": {
-    "id": "0dd866e0bf3ef228",
-    "url": "https://vnexpress.net/amazon-ai-mo-ra-thoi-ky-cua-nha-phat-trien-phuc-hung-5138051.html",
-    "source": {
-      "id": "vnexpress_sohoa",
-      "name": "VnExpress Thủ Thuật",
-      "site_url": "https://vnexpress.net/so-hoa",
-      "kind": "tips"
-    },
-    "author": null,
-    "published_at": "Thu, 29 Oct 2026 10:00:00 +0700",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "vi",
-    "title": {
-      "vi": "Amazon: AI mở ra thời kỳ của nhà phát triển Phục hưng",
-      "en": "Amazon: AI mở ra thời kỳ của nhà phát triển Phục hưng"
-    },
-    "summary": {
-      "vi": "Amazon cho rằng AI đang làm thay đổi cách viết phần mềm, mở ra thời kỳ nhà phát triển có thể đảm nhiệm nhiều việc thay vì chuyên sâu một lĩnh vực.",
-      "en": "Amazon cho rằng AI đang làm thay đổi cách viết phần mềm, mở ra thời kỳ nhà phát triển có thể đảm nhiệm nhiều việc thay vì chuyên sâu một lĩnh vực."
-    },
-    "categories": [
-      "android"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.41,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Amazon: AI mở ra thời kỳ của nhà phát triển Phục hưng",
-    "raw_summary": "Amazon cho rằng AI đang làm thay đổi cách viết phần mềm, mở ra thời kỳ nhà phát triển có thể đảm nhiệm nhiều việc thay vì chuyên sâu một lĩnh vực.",
     "hidden": false
   },
   "f335a5077f36cc12": {
@@ -2493,6 +3123,40 @@
     "translated": {},
     "raw_title": "Tải ứng dụng Claude từ tên miền của Anthropic vẫn dính mã độc",
     "raw_summary": "Tội phạm mạng đang dùng mánh khóe để dẫn dụ người dùng đến các trang hướng dẫn cài đặt Claude giả mạo nằm ngay trên tên miền claude.ai.",
+    "hidden": false
+  },
+  "b302cd56f6ec631a": {
+    "id": "b302cd56f6ec631a",
+    "url": "https://dev.to/annavi11arrea1/understanding-what-ai-just-created-in-the-500mph-landscape-1m52",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Anna Villarreal",
+    "published_at": "2026-10-23T15:59:05Z",
+    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Understanding What AI just Created in the 500mph Landscape",
+      "vi": "Understanding What AI just Created in the 500mph Landscape"
+    },
+    "summary": {
+      "en": "How to understand what AI wrote: For beginners! Avoid lack of dopamine, mental atrophy,",
+      "vi": "How to understand what AI wrote: For beginners! Avoid lack of dopamine, mental atrophy,"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.87,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Understanding What AI just Created in the 500mph Landscape",
+    "raw_summary": "How to understand what AI wrote: For beginners! Avoid lack of dopamine, mental atrophy,",
     "hidden": false
   },
   "0fa94f2e13af5ee4": {
@@ -3085,180 +3749,6 @@
     "raw_summary": "Khoảng một thập kỷ trước, việc thay thế smartphone diễn ra thường xuyên nhờ vào những cải tiến công nghệ đáng kể.",
     "hidden": false
   },
-  "0f0bb852393de50b": {
-    "id": "0f0bb852393de50b",
-    "url": "https://dev.to/gde/local-embeddings-with-llamadart-how-llamas-share-secrets-46o",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Jhin Lee",
-    "published_at": "2026-10-12T18:18:49Z",
-    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Local embeddings with llamadart: how llamas share secrets",
-      "vi": "Local embeddings with llamadart: how llamas share secrets"
-    },
-    "summary": {
-      "en": "Beyond chat with llamadart · Part 2 Llama Village, where five llamas share a world without sharing",
-      "vi": "Beyond chat with llamadart · Part 2 Llama Village, where five llamas share a world without sharing"
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.74,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Local embeddings with llamadart: how llamas share secrets",
-    "raw_summary": "Beyond chat with llamadart · Part 2 Llama Village, where five llamas share a world without sharing",
-    "hidden": false
-  },
-  "3cbe5eb393bebabf": {
-    "id": "3cbe5eb393bebabf",
-    "url": "https://dev.to/devopsdaily/how-to-resolve-merge-conflicts-in-git-without-guessing-markers-ours-theirs-and-the-rebase-flip-b4g",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "DevOps Daily",
-    "published_at": "2026-10-08T10:15:49Z",
-    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "How to resolve merge conflicts in Git without guessing: markers, --ours/--theirs and the rebase flip",
-      "vi": "How to resolve merge conflicts in Git without guessing: markers, --ours/--theirs and the rebase flip"
-    },
-    "summary": {
-      "en": "You are rebasing your branch onto main. Git stops on a conflict in limits.py. You want to keep your",
-      "vi": "You are rebasing your branch onto main. Git stops on a conflict in limits.py. You want to keep your"
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [
-      "git"
-    ],
-    "difficulty": "medium",
-    "score": 0.74,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "How to resolve merge conflicts in Git without guessing: markers, --ours/--theirs and the rebase flip",
-    "raw_summary": "You are rebasing your branch onto main. Git stops on a conflict in limits.py. You want to keep your",
-    "hidden": false
-  },
-  "6f7743a9465550a4": {
-    "id": "6f7743a9465550a4",
-    "url": "https://vnexpress.net/oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-5138064.html",
-    "source": {
-      "id": "vnexpress_sohoa",
-      "name": "VnExpress Thủ Thuật",
-      "site_url": "https://vnexpress.net/so-hoa",
-      "kind": "tips"
-    },
-    "author": null,
-    "published_at": "Wed, 28 Oct 2026 22:27:00 +0700",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "vi",
-    "title": {
-      "vi": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel",
-      "en": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel"
-    },
-    "summary": {
-      "vi": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh.",
-      "en": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh."
-    },
-    "categories": [
-      "hardware"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.29,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "en": "machine"
-    },
-    "raw_title": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel",
-    "raw_summary": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh.",
-    "hidden": false
-  },
-  "c345484e72e039b1": {
-    "id": "c345484e72e039b1",
-    "url": "https://dev.to/composiodev/how-to-moderate-live-chat-in-real-time-with-jev-and-composio-discord-twitch-5ab0",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Shrijal Acharya",
-    "published_at": "2026-09-30T13:05:00Z",
-    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "How to Moderate Live Chat in Real Time with Jev and Composio (Discord + Twitch)",
-      "vi": "How to Moderate Live Chat in Real Time with Jev and Composio (Discord + Twitch)"
-    },
-    "summary": {
-      "en": "Anyone who has moderated a live chat knows how fast things go wrong. Someone says something bad and",
-      "vi": "Anyone who has moderated a live chat knows how fast things go wrong. Someone says something bad and"
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.74,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "How to Moderate Live Chat in Real Time with Jev and Composio (Discord + Twitch)",
-    "raw_summary": "Anyone who has moderated a live chat knows how fast things go wrong. Someone says something bad and",
-    "hidden": false
-  },
-  "3b1a643c22cd5cd6": {
-    "id": "3b1a643c22cd5cd6",
-    "url": "https://dev.to/johnnylemonny/stop-waiting-for-github-actions-make-your-ci-faster-today-a2l",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "𝗝𝗼𝗵𝗻",
-    "published_at": "2026-09-29T15:30:00Z",
-    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Stop Waiting for GitHub Actions: Make Your CI Faster Today",
-      "vi": "Stop Waiting for GitHub Actions: Make Your CI Faster Today"
-    },
-    "summary": {
-      "en": "A practical guide to canceling outdated runs, caching dependencies, reducing duplicate work, and getting faster feedback from GitHub Actions.",
-      "vi": "A practical guide to canceling outdated runs, caching dependencies, reducing duplicate work, and getting faster feedback from GitHub Actions."
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.74,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Stop Waiting for GitHub Actions: Make Your CI Faster Today",
-    "raw_summary": "A practical guide to canceling outdated runs, caching dependencies, reducing duplicate work, and getting faster feedback from GitHub Actions.",
-    "hidden": false
-  },
   "70f0bde7899c6128": {
     "id": "70f0bde7899c6128",
     "url": "https://genk.vn/google-maps-se-chi-duong-chinh-xac-nhat-khi-ban-bat-tinh-nang-nay-tren-dien-thoai-165260829172654305.chn",
@@ -3366,38 +3856,38 @@
     "raw_summary": "In the previous chapter, we looked at the problem tmux solves and why persistent terminal sessions are useful, especially when working over SSH. Now it's time to actually use tmux. In this chapter, we'll install tmux on your system, verify that everything is working, start your",
     "hidden": false
   },
-  "65a7831f485fdf8f": {
-    "id": "65a7831f485fdf8f",
-    "url": "https://vnexpress.net/chinh-sua-gene-bo-h-mong-xay-dung-thuong-hieu-cao-cap-cua-viet-nam-5137453.html",
+  "0f0bb852393de50b": {
+    "id": "0f0bb852393de50b",
+    "url": "https://dev.to/gde/local-embeddings-with-llamadart-how-llamas-share-secrets-46o",
     "source": {
-      "id": "vnexpress_sohoa",
-      "name": "VnExpress Thủ Thuật",
-      "site_url": "https://vnexpress.net/so-hoa",
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
       "kind": "tips"
     },
-    "author": null,
-    "published_at": "Tue, 27 Oct 2026 20:19:45 +0700",
-    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
-    "original_lang": "vi",
+    "author": "Jhin Lee",
+    "published_at": "2026-10-12T18:18:49Z",
+    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "original_lang": "en",
     "title": {
-      "vi": "Chỉnh sửa gene bò H'Mông xây dựng thương hiệu cao cấp của Việt Nam",
-      "en": "Chỉnh sửa gene bò H'Mông xây dựng thương hiệu cao cấp của Việt Nam"
+      "en": "Local embeddings with llamadart: how llamas share secrets",
+      "vi": "Local embeddings with llamadart: how llamas share secrets"
     },
     "summary": {
-      "vi": "Học viện Nông nghiệp Việt Nam tạo thành công 5 bê H'Mông bằng công nghệ chỉnh sửa gene MSTN, hướng tới xây dựng thương hiệu bò thịt cao cấp của Việt Nam.",
-      "en": "Học viện Nông nghiệp Việt Nam tạo thành công 5 bê H'Mông bằng công nghệ chỉnh sửa gene MSTN, hướng tới xây dựng thương hiệu bò thịt cao cấp của Việt Nam."
+      "en": "Beyond chat with llamadart · Part 2 Llama Village, where five llamas share a world without sharing",
+      "vi": "Beyond chat with llamadart · Part 2 Llama Village, where five llamas share a world without sharing"
     },
     "categories": [
-      "android"
+      "dev"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.18,
+    "score": 0.74,
     "howto": true,
     "reading_time_min": 1,
     "translated": {},
-    "raw_title": "Chỉnh sửa gene bò H'Mông xây dựng thương hiệu cao cấp của Việt Nam",
-    "raw_summary": "Học viện Nông nghiệp Việt Nam tạo thành công 5 bê H'Mông bằng công nghệ chỉnh sửa gene MSTN, hướng tới xây dựng thương hiệu bò thịt cao cấp của Việt Nam.",
+    "raw_title": "Local embeddings with llamadart: how llamas share secrets",
+    "raw_summary": "Beyond chat with llamadart · Part 2 Llama Village, where five llamas share a world without sharing",
     "hidden": false
   },
   "1ef8ba8857793b35": {
@@ -3435,6 +3925,351 @@
     "translated": {},
     "raw_title": "Tmux Fundamentals",
     "raw_summary": "Never lose a terminal session again! Learn tmux sessions, panes, and windows in this free, beginner-friendly course. No signup required.",
+    "hidden": false
+  },
+  "3cbe5eb393bebabf": {
+    "id": "3cbe5eb393bebabf",
+    "url": "https://dev.to/devopsdaily/how-to-resolve-merge-conflicts-in-git-without-guessing-markers-ours-theirs-and-the-rebase-flip-b4g",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "DevOps Daily",
+    "published_at": "2026-10-08T10:15:49Z",
+    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "How to resolve merge conflicts in Git without guessing: markers, --ours/--theirs and the rebase flip",
+      "vi": "How to resolve merge conflicts in Git without guessing: markers, --ours/--theirs and the rebase flip"
+    },
+    "summary": {
+      "en": "You are rebasing your branch onto main. Git stops on a conflict in limits.py. You want to keep your",
+      "vi": "You are rebasing your branch onto main. Git stops on a conflict in limits.py. You want to keep your"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [
+      "git"
+    ],
+    "difficulty": "medium",
+    "score": 0.74,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "How to resolve merge conflicts in Git without guessing: markers, --ours/--theirs and the rebase flip",
+    "raw_summary": "You are rebasing your branch onto main. Git stops on a conflict in limits.py. You want to keep your",
+    "hidden": false
+  },
+  "c345484e72e039b1": {
+    "id": "c345484e72e039b1",
+    "url": "https://dev.to/composiodev/how-to-moderate-live-chat-in-real-time-with-jev-and-composio-discord-twitch-5ab0",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Shrijal Acharya",
+    "published_at": "2026-09-30T13:05:00Z",
+    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "How to Moderate Live Chat in Real Time with Jev and Composio (Discord + Twitch)",
+      "vi": "How to Moderate Live Chat in Real Time with Jev and Composio (Discord + Twitch)"
+    },
+    "summary": {
+      "en": "Anyone who has moderated a live chat knows how fast things go wrong. Someone says something bad and",
+      "vi": "Anyone who has moderated a live chat knows how fast things go wrong. Someone says something bad and"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.74,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "How to Moderate Live Chat in Real Time with Jev and Composio (Discord + Twitch)",
+    "raw_summary": "Anyone who has moderated a live chat knows how fast things go wrong. Someone says something bad and",
+    "hidden": false
+  },
+  "f73f11092849b85a": {
+    "id": "f73f11092849b85a",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code",
+    "source": {
+      "id": "githubblog",
+      "name": "GitHub Blog",
+      "site_url": "https://github.blog",
+      "kind": "news"
+    },
+    "author": "Kayla Cinnamon",
+    "published_at": "Mon, 19 Oct 2026 18:47:22 +0000",
+    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "How to continue a GitHub Copilot app session in VS Code",
+      "vi": "How to continue a GitHub Copilot app session in VS Code"
+    },
+    "summary": {
+      "en": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context.",
+      "vi": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context."
+    },
+    "categories": [
+      "ai",
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.74,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "How to continue a GitHub Copilot app session in VS Code",
+    "raw_summary": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context.",
+    "hidden": false
+  },
+  "3b1a643c22cd5cd6": {
+    "id": "3b1a643c22cd5cd6",
+    "url": "https://dev.to/johnnylemonny/stop-waiting-for-github-actions-make-your-ci-faster-today-a2l",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "𝗝𝗼𝗵𝗻",
+    "published_at": "2026-09-29T15:30:00Z",
+    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Stop Waiting for GitHub Actions: Make Your CI Faster Today",
+      "vi": "Stop Waiting for GitHub Actions: Make Your CI Faster Today"
+    },
+    "summary": {
+      "en": "A practical guide to canceling outdated runs, caching dependencies, reducing duplicate work, and getting faster feedback from GitHub Actions.",
+      "vi": "A practical guide to canceling outdated runs, caching dependencies, reducing duplicate work, and getting faster feedback from GitHub Actions."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.74,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Stop Waiting for GitHub Actions: Make Your CI Faster Today",
+    "raw_summary": "A practical guide to canceling outdated runs, caching dependencies, reducing duplicate work, and getting faster feedback from GitHub Actions.",
+    "hidden": false
+  },
+  "acb868617334bc3b": {
+    "id": "acb868617334bc3b",
+    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
+    "source": {
+      "id": "githubblog",
+      "name": "GitHub Blog",
+      "site_url": "https://github.blog",
+      "kind": "news"
+    },
+    "author": "Christopher Harrison",
+    "published_at": "Mon, 12 Oct 2026 17:43:59 +0000",
+    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+      "vi": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase"
+    },
+    "summary": {
+      "en": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright.",
+      "vi": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright."
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.74,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+    "raw_summary": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright.",
+    "hidden": false
+  },
+  "df7f2e84081d3bfb": {
+    "id": "df7f2e84081d3bfb",
+    "url": "https://genk.vn/loi-khuyen-cho-nhung-gia-dinh-hay-tat-wifi-bang-cach-rut-phich-cam-165260905132351422.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Sat, 05 Sep 2026 15:22:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Lời khuyên cho những gia đình hay tắt WiFi bằng cách rút phích cắm",
+      "en": "Lời khuyên cho những gia đình hay tắt WiFi bằng cách rút phích cắm"
+    },
+    "summary": {
+      "vi": "Rút phích cắm là cách nhiều gia đình vẫn dùng để tắt WiFi, nhưng có vài điều nên biết trước khi duy trì thói quen này hàng ngày.",
+      "en": "Rút phích cắm là cách nhiều gia đình vẫn dùng để tắt WiFi, nhưng có vài điều nên biết trước khi duy trì thói quen này hàng ngày."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [
+      "wifi"
+    ],
+    "difficulty": "easy",
+    "score": 0.73,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Lời khuyên cho những gia đình hay tắt WiFi bằng cách rút phích cắm",
+    "raw_summary": "Rút phích cắm là cách nhiều gia đình vẫn dùng để tắt WiFi, nhưng có vài điều nên biết trước khi duy trì thói quen này hàng ngày.",
+    "hidden": false
+  },
+  "47487520da62623a": {
+    "id": "47487520da62623a",
+    "url": "https://genk.vn/thong-tin-quan-trong-tren-vneid-tat-ca-nguoi-dan-di-may-bay-can-biet-165260829141738442.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Sat, 29 Aug 2026 15:46:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Thông tin quan trọng trên VNeID, tất cả người dân đi máy bay cần biết",
+      "en": "Thông tin quan trọng trên VNeID, tất cả người dân đi máy bay cần biết"
+    },
+    "summary": {
+      "vi": "Để giúp hành khách tiết kiệm thời gian làm thủ tục, lực lượng an ninh hàng không khuyến nghị hành khách chủ động thực hiện check-in online trước khi đến sân bay.",
+      "en": "Để giúp hành khách tiết kiệm thời gian làm thủ tục, lực lượng an ninh hàng không khuyến nghị hành khách chủ động thực hiện check-in online trước khi đến sân bay."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.73,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Thông tin quan trọng trên VNeID, tất cả người dân đi máy bay cần biết",
+    "raw_summary": "Để giúp hành khách tiết kiệm thời gian làm thủ tục, lực lượng an ninh hàng không khuyến nghị hành khách chủ động thực hiện check-in online trước khi đến sân bay.",
+    "hidden": false
+  },
+  "6af748521fe1dd69": {
+    "id": "6af748521fe1dd69",
+    "url": "https://linuxhandbook.com/newsletter/26-12",
+    "source": {
+      "id": "linuxhandbook",
+      "name": "Linux Handbook",
+      "site_url": "https://linuxhandbook.com",
+      "kind": "tips"
+    },
+    "author": "Abhishek Prakash",
+    "published_at": "Fri, 11 Sep 2026 17:29:04 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LHB Linux Digest #26.12: Demystifying diff, Process Substitution, History Trick, and More",
+      "vi": "LHB Linux Digest #26.12: Demystifying diff, Process Substitution, History Trick, and More"
+    },
+    "summary": {
+      "en": "Keep on Linux-ing :)",
+      "vi": "Keep on Linux-ing :)"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.71,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "LHB Linux Digest #26.12: Demystifying diff, Process Substitution, History Trick, and More",
+    "raw_summary": "Keep on Linux-ing :)",
+    "hidden": false
+  },
+  "7a82ad8fe469044c": {
+    "id": "7a82ad8fe469044c",
+    "url": "https://genk.vn/thong-tin-quan-trong-den-tat-ca-nguoi-dung-iphone-165260825041529642.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Tue, 25 Aug 2026 10:25:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Thông tin quan trọng đến tất cả người dùng iPhone",
+      "en": "Thông tin quan trọng đến tất cả người dùng iPhone"
+    },
+    "summary": {
+      "vi": "Một thay đổi nhỏ trong cách sử dụng iPhone có thể tạo ra khác biệt lớn với người dùng.",
+      "en": "Một thay đổi nhỏ trong cách sử dụng iPhone có thể tạo ra khác biệt lớn với người dùng."
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.73,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Thông tin quan trọng đến tất cả người dùng iPhone",
+    "raw_summary": "Một thay đổi nhỏ trong cách sử dụng iPhone có thể tạo ra khác biệt lớn với người dùng.",
+    "hidden": false
+  },
+  "2ad84ab401bee4f9": {
+    "id": "2ad84ab401bee4f9",
+    "url": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws",
+    "source": {
+      "id": "krebsonsecurity",
+      "name": "Krebs on Security",
+      "site_url": "https://krebsonsecurity.com",
+      "kind": "news"
+    },
+    "author": "BrianKrebs",
+    "published_at": "Tue, 13 Oct 2026 23:24:53 +0000",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Microsoft Patches More Than 1,400 Security Flaws",
+      "vi": "Microsoft Patches More Than 1,400 Security Flaws"
+    },
+    "summary": {
+      "en": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today's epic patch batch dwarfs September's record of nearly 1,000 fixes, which was already about ten times the normal monthly patch load from Redmond.",
+      "vi": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today's epic patch batch dwarfs September's record of nearly 1,000 fixes, which was already about ten times the normal monthly patch load from Redmond."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.7,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Microsoft Patches More Than 1,400 Security Flaws",
+    "raw_summary": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today's epic patch batch dwarfs September's record of nearly 1,000 fixes, which was already about ten times the normal monthly patch load from Redmond.",
     "hidden": false
   },
   "40262c947ecb07ba": {
@@ -3507,39 +4342,40 @@
     "raw_summary": "Persistent agents and agent teams truly caught my attention when I tried Grok Bot. Publicly, Grok",
     "hidden": false
   },
-  "f73f11092849b85a": {
-    "id": "f73f11092849b85a",
-    "url": "https://github.blog/ai-and-ml/github-copilot/how-to-continue-a-github-copilot-app-session-in-vs-code",
+  "7c214f2efd884062": {
+    "id": "7c214f2efd884062",
+    "url": "https://genk.vn/tai-khoan-zalo-dang-bi-theo-doi-bat-ngay-3-tinh-nang-nay-de-ngan-chan-165260926172946152.chn",
     "source": {
-      "id": "githubblog",
-      "name": "GitHub Blog",
-      "site_url": "https://github.blog",
-      "kind": "news"
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
     },
-    "author": "Kayla Cinnamon",
-    "published_at": "Mon, 19 Oct 2026 18:47:22 +0000",
-    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
-    "original_lang": "en",
+    "author": null,
+    "published_at": "Sat, 26 Sep 2026 18:00:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
     "title": {
-      "en": "How to continue a GitHub Copilot app session in VS Code",
-      "vi": "How to continue a GitHub Copilot app session in VS Code"
+      "vi": "Tài khoản Zalo đang bị theo dõi, bật ngay 3 tính năng này để ngăn chặn",
+      "en": "Tài khoản Zalo đang bị theo dõi, bật ngay 3 tính năng này để ngăn chặn"
     },
     "summary": {
-      "en": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context.",
-      "vi": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context."
+      "vi": "Zalo hiện là công cụ liên lạc của hàng triệu người dùng Việt Nam. Tuy nhiên, sự phổ biến này cũng kéo theo nguy cơ bị kẻ xấu nhắm đến để lừa đảo, đánh cắp thông tin hoặc chiếm quyền tài khoản. Dưới đây là những thiết lập bảo mật quan trọng bạn cần kích hoạt ngay.",
+      "en": "Zalo hiện là công cụ liên lạc của hàng triệu người dùng Việt Nam. Tuy nhiên, sự phổ biến này cũng kéo theo nguy cơ bị kẻ xấu nhắm đến để lừa đảo, đánh cắp thông tin hoặc chiếm quyền tài khoản. Dưới đây là những thiết lập bảo mật quan trọng bạn cần kích hoạt ngay."
     },
     "categories": [
-      "ai",
-      "dev"
+      "windows"
     ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.74,
+    "tags": [
+      "bảo mật"
+    ],
+    "difficulty": "easy",
+    "score": 0.67,
     "howto": true,
-    "reading_time_min": 1,
+    "reading_time_min": 2,
     "translated": {},
-    "raw_title": "How to continue a GitHub Copilot app session in VS Code",
-    "raw_summary": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context.",
+    "raw_title": "Tài khoản Zalo đang bị theo dõi, bật ngay 3 tính năng này để ngăn chặn",
+    "raw_summary": "Zalo hiện là công cụ liên lạc của hàng triệu người dùng Việt Nam. Tuy nhiên, sự phổ biến này cũng kéo theo nguy cơ bị kẻ xấu nhắm đến để lừa đảo, đánh cắp thông tin hoặc chiếm quyền tài khoản. Dưới đây là những thiết lập bảo mật quan trọng bạn cần kích hoạt ngay.",
     "hidden": false
   },
   "bba44a7718a4d5e9": {
@@ -3610,38 +4446,38 @@
     "raw_summary": "Disclaimer This is an independent, personal write-up — not official AWS content, and",
     "hidden": false
   },
-  "acb868617334bc3b": {
-    "id": "acb868617334bc3b",
-    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
+  "e3c4395bc7834f36": {
+    "id": "e3c4395bc7834f36",
+    "url": "https://genk.vn/vi-sao-can-khoi-dong-lai-dien-thoai-sau-moi-lan-cap-nhat-165260904015710285.chn",
     "source": {
-      "id": "githubblog",
-      "name": "GitHub Blog",
-      "site_url": "https://github.blog",
-      "kind": "news"
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
     },
-    "author": "Christopher Harrison",
-    "published_at": "Mon, 12 Oct 2026 17:43:59 +0000",
-    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
-    "original_lang": "en",
+    "author": null,
+    "published_at": "Fri, 04 Sep 2026 09:45:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
     "title": {
-      "en": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
-      "vi": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase"
+      "vi": "Vì sao cần khởi động lại điện thoại sau mỗi lần cập nhật?",
+      "en": "Vì sao cần khởi động lại điện thoại sau mỗi lần cập nhật?"
     },
     "summary": {
-      "en": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright.",
-      "vi": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright."
+      "vi": "Sau mỗi lần nâng cấp hệ điều hành, smartphone hay máy tính bảng thường sẽ tự động khởi động lại để hoàn tất quá trình thiết lập. Việc chủ động tắt nguồn và mở lại máy là một thao tác cực kỳ cần thiết để đảm bảo cả hiệu suất lẫn độ an toàn cho dữ liệu.",
+      "en": "Sau mỗi lần nâng cấp hệ điều hành, smartphone hay máy tính bảng thường sẽ tự động khởi động lại để hoàn tất quá trình thiết lập. Việc chủ động tắt nguồn và mở lại máy là một thao tác cực kỳ cần thiết để đảm bảo cả hiệu suất lẫn độ an toàn cho dữ liệu."
     },
     "categories": [
-      "ai"
+      "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.74,
+    "difficulty": "easy",
+    "score": 0.67,
     "howto": true,
-    "reading_time_min": 1,
+    "reading_time_min": 2,
     "translated": {},
-    "raw_title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
-    "raw_summary": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright.",
+    "raw_title": "Vì sao cần khởi động lại điện thoại sau mỗi lần cập nhật?",
+    "raw_summary": "Sau mỗi lần nâng cấp hệ điều hành, smartphone hay máy tính bảng thường sẽ tự động khởi động lại để hoàn tất quá trình thiết lập. Việc chủ động tắt nguồn và mở lại máy là một thao tác cực kỳ cần thiết để đảm bảo cả hiệu suất lẫn độ an toàn cho dữ liệu.",
     "hidden": false
   },
   "16f4cd68e20165e0": {
@@ -3712,9 +4548,9 @@
     "raw_summary": "Your CI service account needs to read pods. Someone writes a ClusterRole called pod-reader, binds it",
     "hidden": false
   },
-  "df7f2e84081d3bfb": {
-    "id": "df7f2e84081d3bfb",
-    "url": "https://genk.vn/loi-khuyen-cho-nhung-gia-dinh-hay-tat-wifi-bang-cach-rut-phich-cam-165260905132351422.chn",
+  "5b2af56ec8a3a001": {
+    "id": "5b2af56ec8a3a001",
+    "url": "https://genk.vn/phat-hien-5-thiet-bi-la-dai-ky-lam-cham-song-wifi-nhieu-nguoi-dang-de-canh-ma-khong-hay-biet-165260822001258225.chn",
     "source": {
       "id": "genk",
       "name": "GenK Thủ Thuật",
@@ -3722,16 +4558,16 @@
       "kind": "tips"
     },
     "author": null,
-    "published_at": "Sat, 05 Sep 2026 15:22:00 +07",
+    "published_at": "Sat, 22 Aug 2026 10:22:00 +07",
     "fetched_at": "2026-10-29T06:55:21.278157+00:00",
     "original_lang": "vi",
     "title": {
-      "vi": "Lời khuyên cho những gia đình hay tắt WiFi bằng cách rút phích cắm",
-      "en": "Lời khuyên cho những gia đình hay tắt WiFi bằng cách rút phích cắm"
+      "vi": "Phát hiện 5 thiết bị là “đại kỵ” làm chậm sóng WiFi, nhiều người đang để cạnh mà không hay biết",
+      "en": "Phát hiện 5 thiết bị là “đại kỵ” làm chậm sóng WiFi, nhiều người đang để cạnh mà không hay biết"
     },
     "summary": {
-      "vi": "Rút phích cắm là cách nhiều gia đình vẫn dùng để tắt WiFi, nhưng có vài điều nên biết trước khi duy trì thói quen này hàng ngày.",
-      "en": "Rút phích cắm là cách nhiều gia đình vẫn dùng để tắt WiFi, nhưng có vài điều nên biết trước khi duy trì thói quen này hàng ngày."
+      "vi": "Không ít người có xu hướng quy nguyên nhân Wi-Fi chậm, chập chờn cho nhà mạng.",
+      "en": "Không ít người có xu hướng quy nguyên nhân Wi-Fi chậm, chập chờn cho nhà mạng."
     },
     "categories": [
       "hardware"
@@ -3739,13 +4575,13 @@
     "tags": [
       "wifi"
     ],
-    "difficulty": "easy",
-    "score": 0.73,
+    "difficulty": "medium",
+    "score": 0.67,
     "howto": true,
     "reading_time_min": 1,
     "translated": {},
-    "raw_title": "Lời khuyên cho những gia đình hay tắt WiFi bằng cách rút phích cắm",
-    "raw_summary": "Rút phích cắm là cách nhiều gia đình vẫn dùng để tắt WiFi, nhưng có vài điều nên biết trước khi duy trì thói quen này hàng ngày.",
+    "raw_title": "Phát hiện 5 thiết bị là “đại kỵ” làm chậm sóng WiFi, nhiều người đang để cạnh mà không hay biết",
+    "raw_summary": "Không ít người có xu hướng quy nguyên nhân Wi-Fi chậm, chập chờn cho nhà mạng.",
     "hidden": false
   },
   "4f44c84843cbe970": {
@@ -3818,282 +4654,6 @@
     "raw_summary": "My writing assistant could talk to Gemini. The missing piece was using it without a connection. That",
     "hidden": false
   },
-  "47487520da62623a": {
-    "id": "47487520da62623a",
-    "url": "https://genk.vn/thong-tin-quan-trong-tren-vneid-tat-ca-nguoi-dan-di-may-bay-can-biet-165260829141738442.chn",
-    "source": {
-      "id": "genk",
-      "name": "GenK Thủ Thuật",
-      "site_url": "https://genk.vn",
-      "kind": "tips"
-    },
-    "author": null,
-    "published_at": "Sat, 29 Aug 2026 15:46:00 +07",
-    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
-    "original_lang": "vi",
-    "title": {
-      "vi": "Thông tin quan trọng trên VNeID, tất cả người dân đi máy bay cần biết",
-      "en": "Thông tin quan trọng trên VNeID, tất cả người dân đi máy bay cần biết"
-    },
-    "summary": {
-      "vi": "Để giúp hành khách tiết kiệm thời gian làm thủ tục, lực lượng an ninh hàng không khuyến nghị hành khách chủ động thực hiện check-in online trước khi đến sân bay.",
-      "en": "Để giúp hành khách tiết kiệm thời gian làm thủ tục, lực lượng an ninh hàng không khuyến nghị hành khách chủ động thực hiện check-in online trước khi đến sân bay."
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.73,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Thông tin quan trọng trên VNeID, tất cả người dân đi máy bay cần biết",
-    "raw_summary": "Để giúp hành khách tiết kiệm thời gian làm thủ tục, lực lượng an ninh hàng không khuyến nghị hành khách chủ động thực hiện check-in online trước khi đến sân bay.",
-    "hidden": false
-  },
-  "7a82ad8fe469044c": {
-    "id": "7a82ad8fe469044c",
-    "url": "https://genk.vn/thong-tin-quan-trong-den-tat-ca-nguoi-dung-iphone-165260825041529642.chn",
-    "source": {
-      "id": "genk",
-      "name": "GenK Thủ Thuật",
-      "site_url": "https://genk.vn",
-      "kind": "tips"
-    },
-    "author": null,
-    "published_at": "Tue, 25 Aug 2026 10:25:00 +07",
-    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
-    "original_lang": "vi",
-    "title": {
-      "vi": "Thông tin quan trọng đến tất cả người dùng iPhone",
-      "en": "Thông tin quan trọng đến tất cả người dùng iPhone"
-    },
-    "summary": {
-      "vi": "Một thay đổi nhỏ trong cách sử dụng iPhone có thể tạo ra khác biệt lớn với người dùng.",
-      "en": "Một thay đổi nhỏ trong cách sử dụng iPhone có thể tạo ra khác biệt lớn với người dùng."
-    },
-    "categories": [
-      "ios"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.73,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Thông tin quan trọng đến tất cả người dùng iPhone",
-    "raw_summary": "Một thay đổi nhỏ trong cách sử dụng iPhone có thể tạo ra khác biệt lớn với người dùng.",
-    "hidden": false
-  },
-  "6af748521fe1dd69": {
-    "id": "6af748521fe1dd69",
-    "url": "https://linuxhandbook.com/newsletter/26-12",
-    "source": {
-      "id": "linuxhandbook",
-      "name": "Linux Handbook",
-      "site_url": "https://linuxhandbook.com",
-      "kind": "tips"
-    },
-    "author": "Abhishek Prakash",
-    "published_at": "Fri, 11 Sep 2026 17:29:04 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "LHB Linux Digest #26.12: Demystifying diff, Process Substitution, History Trick, and More",
-      "vi": "LHB Linux Digest #26.12: Demystifying diff, Process Substitution, History Trick, and More"
-    },
-    "summary": {
-      "en": "Keep on Linux-ing :)",
-      "vi": "Keep on Linux-ing :)"
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.71,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "LHB Linux Digest #26.12: Demystifying diff, Process Substitution, History Trick, and More",
-    "raw_summary": "Keep on Linux-ing :)",
-    "hidden": false
-  },
-  "2ad84ab401bee4f9": {
-    "id": "2ad84ab401bee4f9",
-    "url": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws",
-    "source": {
-      "id": "krebsonsecurity",
-      "name": "Krebs on Security",
-      "site_url": "https://krebsonsecurity.com",
-      "kind": "news"
-    },
-    "author": "BrianKrebs",
-    "published_at": "Tue, 13 Oct 2026 23:24:53 +0000",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Microsoft Patches More Than 1,400 Security Flaws",
-      "vi": "Microsoft Patches More Than 1,400 Security Flaws"
-    },
-    "summary": {
-      "en": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today's epic patch batch dwarfs September's record of nearly 1,000 fixes, which was already about ten times the normal monthly patch load from Redmond.",
-      "vi": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today's epic patch batch dwarfs September's record of nearly 1,000 fixes, which was already about ten times the normal monthly patch load from Redmond."
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.7,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Microsoft Patches More Than 1,400 Security Flaws",
-    "raw_summary": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today's epic patch batch dwarfs September's record of nearly 1,000 fixes, which was already about ten times the normal monthly patch load from Redmond.",
-    "hidden": false
-  },
-  "7c214f2efd884062": {
-    "id": "7c214f2efd884062",
-    "url": "https://genk.vn/tai-khoan-zalo-dang-bi-theo-doi-bat-ngay-3-tinh-nang-nay-de-ngan-chan-165260926172946152.chn",
-    "source": {
-      "id": "genk",
-      "name": "GenK Thủ Thuật",
-      "site_url": "https://genk.vn",
-      "kind": "tips"
-    },
-    "author": null,
-    "published_at": "Sat, 26 Sep 2026 18:00:00 +07",
-    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
-    "original_lang": "vi",
-    "title": {
-      "vi": "Tài khoản Zalo đang bị theo dõi, bật ngay 3 tính năng này để ngăn chặn",
-      "en": "Tài khoản Zalo đang bị theo dõi, bật ngay 3 tính năng này để ngăn chặn"
-    },
-    "summary": {
-      "vi": "Zalo hiện là công cụ liên lạc của hàng triệu người dùng Việt Nam. Tuy nhiên, sự phổ biến này cũng kéo theo nguy cơ bị kẻ xấu nhắm đến để lừa đảo, đánh cắp thông tin hoặc chiếm quyền tài khoản. Dưới đây là những thiết lập bảo mật quan trọng bạn cần kích hoạt ngay.",
-      "en": "Zalo hiện là công cụ liên lạc của hàng triệu người dùng Việt Nam. Tuy nhiên, sự phổ biến này cũng kéo theo nguy cơ bị kẻ xấu nhắm đến để lừa đảo, đánh cắp thông tin hoặc chiếm quyền tài khoản. Dưới đây là những thiết lập bảo mật quan trọng bạn cần kích hoạt ngay."
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [
-      "bảo mật"
-    ],
-    "difficulty": "easy",
-    "score": 0.67,
-    "howto": true,
-    "reading_time_min": 2,
-    "translated": {},
-    "raw_title": "Tài khoản Zalo đang bị theo dõi, bật ngay 3 tính năng này để ngăn chặn",
-    "raw_summary": "Zalo hiện là công cụ liên lạc của hàng triệu người dùng Việt Nam. Tuy nhiên, sự phổ biến này cũng kéo theo nguy cơ bị kẻ xấu nhắm đến để lừa đảo, đánh cắp thông tin hoặc chiếm quyền tài khoản. Dưới đây là những thiết lập bảo mật quan trọng bạn cần kích hoạt ngay.",
-    "hidden": false
-  },
-  "e3c4395bc7834f36": {
-    "id": "e3c4395bc7834f36",
-    "url": "https://genk.vn/vi-sao-can-khoi-dong-lai-dien-thoai-sau-moi-lan-cap-nhat-165260904015710285.chn",
-    "source": {
-      "id": "genk",
-      "name": "GenK Thủ Thuật",
-      "site_url": "https://genk.vn",
-      "kind": "tips"
-    },
-    "author": null,
-    "published_at": "Fri, 04 Sep 2026 09:45:00 +07",
-    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
-    "original_lang": "vi",
-    "title": {
-      "vi": "Vì sao cần khởi động lại điện thoại sau mỗi lần cập nhật?",
-      "en": "Vì sao cần khởi động lại điện thoại sau mỗi lần cập nhật?"
-    },
-    "summary": {
-      "vi": "Sau mỗi lần nâng cấp hệ điều hành, smartphone hay máy tính bảng thường sẽ tự động khởi động lại để hoàn tất quá trình thiết lập. Việc chủ động tắt nguồn và mở lại máy là một thao tác cực kỳ cần thiết để đảm bảo cả hiệu suất lẫn độ an toàn cho dữ liệu.",
-      "en": "Sau mỗi lần nâng cấp hệ điều hành, smartphone hay máy tính bảng thường sẽ tự động khởi động lại để hoàn tất quá trình thiết lập. Việc chủ động tắt nguồn và mở lại máy là một thao tác cực kỳ cần thiết để đảm bảo cả hiệu suất lẫn độ an toàn cho dữ liệu."
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": "easy",
-    "score": 0.67,
-    "howto": true,
-    "reading_time_min": 2,
-    "translated": {},
-    "raw_title": "Vì sao cần khởi động lại điện thoại sau mỗi lần cập nhật?",
-    "raw_summary": "Sau mỗi lần nâng cấp hệ điều hành, smartphone hay máy tính bảng thường sẽ tự động khởi động lại để hoàn tất quá trình thiết lập. Việc chủ động tắt nguồn và mở lại máy là một thao tác cực kỳ cần thiết để đảm bảo cả hiệu suất lẫn độ an toàn cho dữ liệu.",
-    "hidden": false
-  },
-  "41f219415183b9c6": {
-    "id": "41f219415183b9c6",
-    "url": "https://linuxhandbook.com/newsletter/26-11",
-    "source": {
-      "id": "linuxhandbook",
-      "name": "Linux Handbook",
-      "site_url": "https://linuxhandbook.com",
-      "kind": "tips"
-    },
-    "author": "Abhishek Prakash",
-    "published_at": "Fri, 04 Sep 2026 19:00:39 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "LHB Linux Digest #26.11: New Free Course, Named Pipes, Multi-kernel and More",
-      "vi": "LHB Linux Digest #26.11: New Free Course, Named Pipes, Multi-kernel and More"
-    },
-    "summary": {
-      "en": "Enjoy the new course",
-      "vi": "Enjoy the new course"
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": "advanced",
-    "score": 0.64,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "LHB Linux Digest #26.11: New Free Course, Named Pipes, Multi-kernel and More",
-    "raw_summary": "Enjoy the new course",
-    "hidden": false
-  },
-  "5b2af56ec8a3a001": {
-    "id": "5b2af56ec8a3a001",
-    "url": "https://genk.vn/phat-hien-5-thiet-bi-la-dai-ky-lam-cham-song-wifi-nhieu-nguoi-dang-de-canh-ma-khong-hay-biet-165260822001258225.chn",
-    "source": {
-      "id": "genk",
-      "name": "GenK Thủ Thuật",
-      "site_url": "https://genk.vn",
-      "kind": "tips"
-    },
-    "author": null,
-    "published_at": "Sat, 22 Aug 2026 10:22:00 +07",
-    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
-    "original_lang": "vi",
-    "title": {
-      "vi": "Phát hiện 5 thiết bị là “đại kỵ” làm chậm sóng WiFi, nhiều người đang để cạnh mà không hay biết",
-      "en": "Phát hiện 5 thiết bị là “đại kỵ” làm chậm sóng WiFi, nhiều người đang để cạnh mà không hay biết"
-    },
-    "summary": {
-      "vi": "Không ít người có xu hướng quy nguyên nhân Wi-Fi chậm, chập chờn cho nhà mạng.",
-      "en": "Không ít người có xu hướng quy nguyên nhân Wi-Fi chậm, chập chờn cho nhà mạng."
-    },
-    "categories": [
-      "hardware"
-    ],
-    "tags": [
-      "wifi"
-    ],
-    "difficulty": "medium",
-    "score": 0.67,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Phát hiện 5 thiết bị là “đại kỵ” làm chậm sóng WiFi, nhiều người đang để cạnh mà không hay biết",
-    "raw_summary": "Không ít người có xu hướng quy nguyên nhân Wi-Fi chậm, chập chờn cho nhà mạng.",
-    "hidden": false
-  },
   "1f87f1f4b67002fe": {
     "id": "1f87f1f4b67002fe",
     "url": "https://genk.vn/tu-iphone-13-pro-len-doi-z-fold8-hoa-ra-chuyen-du-lieu-tu-apple-sang-samsung-gio-de-the-nay-165260821150745802.chn",
@@ -4127,40 +4687,6 @@
     "translated": {},
     "raw_title": "Từ iPhone 13 Pro lên đời Z Fold8: Hóa ra chuyển dữ liệu từ Apple sang Samsung giờ dễ thế này",
     "raw_summary": "Dùng iPhone suốt nhiều năm khiến tôi từng ngần ngại đổi sang Galaxy vì nghĩ chuyển dữ liệu sẽ rất phiền, nhưng Smart Switch giúp mang theo phần lớn dữ liệu quen thuộc chỉ với vài bước.",
-    "hidden": false
-  },
-  "b62740fe7dece39d": {
-    "id": "b62740fe7dece39d",
-    "url": "https://tinhte.vn/thread/di-tim-giai-phap-cap-khi-tuoi-cho-cafe-tinh-te-5-0.4040527",
-    "source": {
-      "id": "tinhte",
-      "name": "Tinh tế",
-      "site_url": "https://tinhte.vn",
-      "kind": "news"
-    },
-    "author": "cuhiep",
-    "published_at": "Fri, 01 Aug 2025 02:14:00 +0000",
-    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
-    "original_lang": "vi",
-    "title": {
-      "vi": "Đi tìm giải pháp cấp khí tươi cho Cafe Tinh tế 5.0",
-      "en": "Đi tìm giải pháp cấp khí tươi cho Cafe Tinh tế 5.0"
-    },
-    "summary": {
-      "vi": "Sau 20 năm cafe Tinh tế ở không gian mở thì mình đã chọn một không gian kín cho phiên bản Cafe Tinh tế 5.0. Ngoài chuyện xử lý cách âm, cách nhiệt thì mình cũng nghĩ đến chuyện cần một không gian",
-      "en": "Sau 20 năm cafe Tinh tế ở không gian mở thì mình đã chọn một không gian kín cho phiên bản Cafe Tinh tế 5.0. Ngoài chuyện xử lý cách âm, cách nhiệt thì mình cũng nghĩ đến chuyện cần một không gian"
-    },
-    "categories": [
-      "ios"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.53,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Đi tìm giải pháp cấp khí tươi cho Cafe Tinh tế 5.0",
-    "raw_summary": "Sau 20 năm cafe Tinh tế ở không gian mở thì mình đã chọn một không gian kín cho phiên bản Cafe Tinh tế 5.0. Ngoài chuyện xử lý cách âm, cách nhiệt thì mình cũng nghĩ đến chuyện cần một không gian",
     "hidden": false
   },
   "7bc142ac7586d52e": {
@@ -4199,6 +4725,40 @@
     "raw_summary": "Liệu bộ định tuyến không dây của hàng xóm có thể ảnh hưởng đến cường độ Wi-Fi của bạn không?",
     "hidden": false
   },
+  "41f219415183b9c6": {
+    "id": "41f219415183b9c6",
+    "url": "https://linuxhandbook.com/newsletter/26-11",
+    "source": {
+      "id": "linuxhandbook",
+      "name": "Linux Handbook",
+      "site_url": "https://linuxhandbook.com",
+      "kind": "tips"
+    },
+    "author": "Abhishek Prakash",
+    "published_at": "Fri, 04 Sep 2026 19:00:39 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LHB Linux Digest #26.11: New Free Course, Named Pipes, Multi-kernel and More",
+      "vi": "LHB Linux Digest #26.11: New Free Course, Named Pipes, Multi-kernel and More"
+    },
+    "summary": {
+      "en": "Enjoy the new course",
+      "vi": "Enjoy the new course"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": "advanced",
+    "score": 0.64,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "LHB Linux Digest #26.11: New Free Course, Named Pipes, Multi-kernel and More",
+    "raw_summary": "Enjoy the new course",
+    "hidden": false
+  },
   "da96698ef028a283": {
     "id": "da96698ef028a283",
     "url": "https://genk.vn/tinh-nang-tren-zalo-giup-xem-tin-nhan-thoai-mai-nguoi-gui-khong-biet-nguoi-nhan-doc-tin-nhan-hay-chua-165260813170550719.chn",
@@ -4231,40 +4791,6 @@
     "translated": {},
     "raw_title": "Tính năng trên Zalo giúp xem tin nhắn thoải mái, người gửi không biết người nhận đọc tin nhắn hay chưa",
     "raw_summary": "Dưới đây là các bước đơn giản giúp người dùng đọc tin nhắn trên Zalo mà không hiển thị trạng thái đã xem cho người gửi.",
-    "hidden": false
-  },
-  "28c9ec341b6e3347": {
-    "id": "28c9ec341b6e3347",
-    "url": "https://vietnamnet.vn/viettel-hay-thay-doi-suy-nghi-va-lam-tot-su-menh-dan-dat-2333411.html",
-    "source": {
-      "id": "vietnamnet_tech",
-      "name": "VietNamNet Công Nghệ",
-      "site_url": "https://vietnamnet.vn/cong-nghe",
-      "kind": "news"
-    },
-    "author": null,
-    "published_at": "Tue, 18 Feb 2025 14:52:06 +0700",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "vi",
-    "title": {
-      "vi": "Viettel phải tìm và giải bài toán khó, bài toán lớn bằng sức mạnh toàn cầu",
-      "en": "Viettel phải tìm và giải bài toán khó, bài toán lớn bằng sức mạnh toàn cầu"
-    },
-    "summary": {
-      "vi": "Bộ trưởng Nguyễn Mạnh Hùng đề nghị lãnh đạo, cán bộ chủ chốt của Viettel thay đổi suy nghĩ, cách làm. Đó là, đi tìm bài toán khó, bài toán lớn và giải chúng bằng sức mạnh toàn cầu, thông qua hợp tác với các nước phát triển.",
-      "en": "Bộ trưởng Nguyễn Mạnh Hùng đề nghị lãnh đạo, cán bộ chủ chốt của Viettel thay đổi suy nghĩ, cách làm. Đó là, đi tìm bài toán khó, bài toán lớn và giải chúng bằng sức mạnh toàn cầu, thông qua hợp tác với các nước phát triển."
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.47,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Viettel phải tìm và giải bài toán khó, bài toán lớn bằng sức mạnh toàn cầu",
-    "raw_summary": "Bộ trưởng Nguyễn Mạnh Hùng đề nghị lãnh đạo, cán bộ chủ chốt của Viettel thay đổi suy nghĩ, cách làm. Đó là, đi tìm bài toán khó, bài toán lớn và giải chúng bằng sức mạnh toàn cầu, thông qua hợp tác với các nước phát triển.",
     "hidden": false
   },
   "5e6652c40b2a757d": {
@@ -4303,6 +4829,40 @@
     "raw_summary": "Vị trí đặt bộ định tuyến Wi-Fi đóng vai trò rất quan trọng đối với hiệu suất của nó.",
     "hidden": false
   },
+  "b62740fe7dece39d": {
+    "id": "b62740fe7dece39d",
+    "url": "https://tinhte.vn/thread/di-tim-giai-phap-cap-khi-tuoi-cho-cafe-tinh-te-5-0.4040527",
+    "source": {
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news"
+    },
+    "author": "cuhiep",
+    "published_at": "Fri, 01 Aug 2025 02:14:00 +0000",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Đi tìm giải pháp cấp khí tươi cho Cafe Tinh tế 5.0",
+      "en": "Đi tìm giải pháp cấp khí tươi cho Cafe Tinh tế 5.0"
+    },
+    "summary": {
+      "vi": "Sau 20 năm cafe Tinh tế ở không gian mở thì mình đã chọn một không gian kín cho phiên bản Cafe Tinh tế 5.0. Ngoài chuyện xử lý cách âm, cách nhiệt thì mình cũng nghĩ đến chuyện cần một không gian",
+      "en": "Sau 20 năm cafe Tinh tế ở không gian mở thì mình đã chọn một không gian kín cho phiên bản Cafe Tinh tế 5.0. Ngoài chuyện xử lý cách âm, cách nhiệt thì mình cũng nghĩ đến chuyện cần một không gian"
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.53,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Đi tìm giải pháp cấp khí tươi cho Cafe Tinh tế 5.0",
+    "raw_summary": "Sau 20 năm cafe Tinh tế ở không gian mở thì mình đã chọn một không gian kín cho phiên bản Cafe Tinh tế 5.0. Ngoài chuyện xử lý cách âm, cách nhiệt thì mình cũng nghĩ đến chuyện cần một không gian",
+    "hidden": false
+  },
   "789154b52a9575e1": {
     "id": "789154b52a9575e1",
     "url": "https://genk.vn/tinh-nang-tren-dien-thoai-nguoi-dung-ngan-hang-nen-tat-ngay-165260804032037691.chn",
@@ -4335,40 +4895,6 @@
     "translated": {},
     "raw_title": "Tính năng trên điện thoại người dùng ngân hàng nên tắt ngay",
     "raw_summary": "Người dùng ngân hàng được khuyến cáo kiểm tra và tắt một tính năng trên điện thoại nếu không cần sử dụng.",
-    "hidden": false
-  },
-  "d216bb3ff1d11d21": {
-    "id": "d216bb3ff1d11d21",
-    "url": "https://vietnamnet.vn/cmc-hay-nhan-viec-lon-de-gop-suc-dua-viet-nam-vao-ky-nguyen-moi-2335714.html",
-    "source": {
-      "id": "vietnamnet_tech",
-      "name": "VietNamNet Công Nghệ",
-      "site_url": "https://vietnamnet.vn/cong-nghe",
-      "kind": "news"
-    },
-    "author": null,
-    "published_at": "Tue, 22 Apr 2025 16:39:57 +0700",
-    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
-    "original_lang": "vi",
-    "title": {
-      "vi": "CMC hãy nhận việc lớn để góp sức đưa Việt Nam vào kỷ nguyên mới",
-      "en": "CMC hãy nhận việc lớn để góp sức đưa Việt Nam vào kỷ nguyên mới"
-    },
-    "summary": {
-      "vi": "Nhận định đã đến lúc CMC cần tuyên bố mình là một doanh nghiệp công nghệ số đầu đàn, Bộ trưởng Bộ TT&TT Nguyễn Mạnh Hùng chỉ rõ, cách duy nhất để CMC lớn lên là nhận những việc lớn, gắn với sứ mệnh quốc gia và làm cho tới nơi.",
-      "en": "Nhận định đã đến lúc CMC cần tuyên bố mình là một doanh nghiệp công nghệ số đầu đàn, Bộ trưởng Bộ TT&TT Nguyễn Mạnh Hùng chỉ rõ, cách duy nhất để CMC lớn lên là nhận những việc lớn, gắn với sứ mệnh quốc gia và làm cho tới nơi."
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.47,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "CMC hãy nhận việc lớn để góp sức đưa Việt Nam vào kỷ nguyên mới",
-    "raw_summary": "Nhận định đã đến lúc CMC cần tuyên bố mình là một doanh nghiệp công nghệ số đầu đàn, Bộ trưởng Bộ TT&TT Nguyễn Mạnh Hùng chỉ rõ, cách duy nhất để CMC lớn lên là nhận những việc lớn, gắn với sứ mệnh quốc gia và làm cho tới nơi.",
     "hidden": false
   },
   "67792300585839e1": {
@@ -4405,6 +4931,40 @@
     "raw_summary": "Nếu không kịp thời cập nhiều, người dùng có thể không xem được YouTube, bị hạn chế Gmail, hoặc một số ứng dụng có liên quan.",
     "hidden": false
   },
+  "28c9ec341b6e3347": {
+    "id": "28c9ec341b6e3347",
+    "url": "https://vietnamnet.vn/viettel-hay-thay-doi-suy-nghi-va-lam-tot-su-menh-dan-dat-2333411.html",
+    "source": {
+      "id": "vietnamnet_tech",
+      "name": "VietNamNet Công Nghệ",
+      "site_url": "https://vietnamnet.vn/cong-nghe",
+      "kind": "news"
+    },
+    "author": null,
+    "published_at": "Tue, 18 Feb 2025 14:52:06 +0700",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Viettel phải tìm và giải bài toán khó, bài toán lớn bằng sức mạnh toàn cầu",
+      "en": "Viettel phải tìm và giải bài toán khó, bài toán lớn bằng sức mạnh toàn cầu"
+    },
+    "summary": {
+      "vi": "Bộ trưởng Nguyễn Mạnh Hùng đề nghị lãnh đạo, cán bộ chủ chốt của Viettel thay đổi suy nghĩ, cách làm. Đó là, đi tìm bài toán khó, bài toán lớn và giải chúng bằng sức mạnh toàn cầu, thông qua hợp tác với các nước phát triển.",
+      "en": "Bộ trưởng Nguyễn Mạnh Hùng đề nghị lãnh đạo, cán bộ chủ chốt của Viettel thay đổi suy nghĩ, cách làm. Đó là, đi tìm bài toán khó, bài toán lớn và giải chúng bằng sức mạnh toàn cầu, thông qua hợp tác với các nước phát triển."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.47,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Viettel phải tìm và giải bài toán khó, bài toán lớn bằng sức mạnh toàn cầu",
+    "raw_summary": "Bộ trưởng Nguyễn Mạnh Hùng đề nghị lãnh đạo, cán bộ chủ chốt của Viettel thay đổi suy nghĩ, cách làm. Đó là, đi tìm bài toán khó, bài toán lớn và giải chúng bằng sức mạnh toàn cầu, thông qua hợp tác với các nước phát triển.",
+    "hidden": false
+  },
   "f92547e7125a4981": {
     "id": "f92547e7125a4981",
     "url": "https://genk.vn/loi-khuyen-cho-tat-ca-nguoi-dung-android-pin-dien-thoai-co-the-cong-them-2-gio-neu-ban-biet-cach-cai-dat-165260827080844937.chn",
@@ -4438,6 +4998,40 @@
     "translated": {},
     "raw_title": "Lời khuyên cho tất cả người dùng Android: Pin điện thoại có thể cộng thêm 2 giờ nếu bạn biết cách cài đặt",
     "raw_summary": "Một vài thay đổi nhỏ sẽ giúp ích nhiều cho bạn.",
+    "hidden": false
+  },
+  "d216bb3ff1d11d21": {
+    "id": "d216bb3ff1d11d21",
+    "url": "https://vietnamnet.vn/cmc-hay-nhan-viec-lon-de-gop-suc-dua-viet-nam-vao-ky-nguyen-moi-2335714.html",
+    "source": {
+      "id": "vietnamnet_tech",
+      "name": "VietNamNet Công Nghệ",
+      "site_url": "https://vietnamnet.vn/cong-nghe",
+      "kind": "news"
+    },
+    "author": null,
+    "published_at": "Tue, 22 Apr 2025 16:39:57 +0700",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "CMC hãy nhận việc lớn để góp sức đưa Việt Nam vào kỷ nguyên mới",
+      "en": "CMC hãy nhận việc lớn để góp sức đưa Việt Nam vào kỷ nguyên mới"
+    },
+    "summary": {
+      "vi": "Nhận định đã đến lúc CMC cần tuyên bố mình là một doanh nghiệp công nghệ số đầu đàn, Bộ trưởng Bộ TT&TT Nguyễn Mạnh Hùng chỉ rõ, cách duy nhất để CMC lớn lên là nhận những việc lớn, gắn với sứ mệnh quốc gia và làm cho tới nơi.",
+      "en": "Nhận định đã đến lúc CMC cần tuyên bố mình là một doanh nghiệp công nghệ số đầu đàn, Bộ trưởng Bộ TT&TT Nguyễn Mạnh Hùng chỉ rõ, cách duy nhất để CMC lớn lên là nhận những việc lớn, gắn với sứ mệnh quốc gia và làm cho tới nơi."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.47,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "CMC hãy nhận việc lớn để góp sức đưa Việt Nam vào kỷ nguyên mới",
+    "raw_summary": "Nhận định đã đến lúc CMC cần tuyên bố mình là một doanh nghiệp công nghệ số đầu đàn, Bộ trưởng Bộ TT&TT Nguyễn Mạnh Hùng chỉ rõ, cách duy nhất để CMC lớn lên là nhận những việc lớn, gắn với sứ mệnh quốc gia và làm cho tới nơi.",
     "hidden": false
   }
 }
