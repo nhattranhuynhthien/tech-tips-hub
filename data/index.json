@@ -945,35 +945,35 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "d3a089a79de6f388": {
-    "id": "d3a089a79de6f388",
-    "url": "https://www.tomshardware.com/tech-industry/policy/malaysia-seizes-usd12-million-worth-of-advanced-ai-chips-hidden-inside-30-servers-customs-says-suspected-smuggling-network-used-the-country-as-a-transit-hub",
+  "e0c4a27393065c73": {
+    "id": "e0c4a27393065c73",
+    "url": "https://genk.vn/di-nuoc-ngoai-duoc-mang-toi-da-bao-nhieu-usd-tien-mat-165261024175952763.chn",
     "source": {
-      "id": "tomshardware",
-      "name": "Tom's Hardware",
-      "site_url": "https://www.tomshardware.com",
-      "kind": "news"
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
     },
-    "author": "Etiido Uko",
-    "published_at": "Wed, 28 Oct 2026 17:02:14 +0000",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
+    "author": null,
+    "published_at": "Sat, 24 Oct 2026 17:59:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
     "title": {
-      "en": "Malaysia seizes $12 million worth of advanced AI chips hidden inside 30 servers",
-      "vi": "Malaysia seizes $12 million worth of advanced AI chips hidden inside 30 servers"
+      "vi": "Đi nước ngoài được mang tối đa bao nhiêu USD tiền mặt?",
+      "en": "Đi nước ngoài được mang tối đa bao nhiêu USD tiền mặt?"
     },
     "summary": {
-      "en": "Malaysian customs seized 30 servers containing more than $12 million worth of advanced AI chips at Kuala Lumpur International Airport, as authorities investigate a suspected smuggling network linked to multiple previous seizures.",
-      "vi": "Malaysian customs seized 30 servers containing more than $12 million worth of advanced AI chips at Kuala Lumpur International Airport, as authorities investigate a suspected smuggling network linked to multiple previous seizures."
+      "vi": "Bạn đọc Hoàng Thủy (Hưng Yên) hỏi: \"Tôi chuẩn bị đi du lịch nước ngoài và muốn mang theo một ít USD tiền mặt để chi tiêu. Xin hỏi, một người được mang tối đa bao nhiêu USD khi xuất cảnh từ Việt Nam? Nếu mang trên 5.000 USD thì có bị cấm hay phải làm thủ tục gì\"?",
+      "en": "Bạn đọc Hoàng Thủy (Hưng Yên) hỏi: \"Tôi chuẩn bị đi du lịch nước ngoài và muốn mang theo một ít USD tiền mặt để chi tiêu. Xin hỏi, một người được mang tối đa bao nhiêu USD khi xuất cảnh từ Việt Nam? Nếu mang trên 5.000 USD thì có bị cấm hay phải làm thủ tục gì\"?"
     },
     "categories": [
-      "hardware"
+      "windows"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.12,
+    "score": 1.13,
     "howto": true,
-    "reading_time_min": 1,
+    "reading_time_min": 2,
     "translated": {}
   },
   "8a2e6d2c33ee39b0": {
@@ -1038,35 +1038,33 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "4a466fb18b4efea7": {
-    "id": "4a466fb18b4efea7",
-    "url": "https://dev.to/akhourianmolkumar/are-you-a-python-developer-or-a-python-expert-7-tests-i-failed-building-3-desktop-apps-2fp4",
+  "d3a089a79de6f388": {
+    "id": "d3a089a79de6f388",
+    "url": "https://www.tomshardware.com/tech-industry/policy/malaysia-seizes-usd12-million-worth-of-advanced-ai-chips-hidden-inside-30-servers-customs-says-suspected-smuggling-network-used-the-country-as-a-transit-hub",
     "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
+      "id": "tomshardware",
+      "name": "Tom's Hardware",
+      "site_url": "https://www.tomshardware.com",
+      "kind": "news"
     },
-    "author": "Akhouri Anmol Kumar",
-    "published_at": "2026-10-28T10:13:29Z",
+    "author": "Etiido Uko",
+    "published_at": "Wed, 28 Oct 2026 17:02:14 +0000",
     "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Are You a Python Developer or a Python Expert? 7 Tests I Failed Building 3 Desktop Apps",
-      "vi": "Are You a Python Developer or a Python Expert? 7 Tests I Failed Building 3 Desktop Apps"
+      "en": "Malaysia seizes $12 million worth of advanced AI chips hidden inside 30 servers",
+      "vi": "Malaysia seizes $12 million worth of advanced AI chips hidden inside 30 servers"
     },
     "summary": {
-      "en": "Description: Python security, screen capture, spring physics, HiDPI and PyInstaller .exe gotchas. 7",
-      "vi": "Description: Python security, screen capture, spring physics, HiDPI and PyInstaller .exe gotchas. 7"
+      "en": "Malaysian customs seized 30 servers containing more than $12 million worth of advanced AI chips at Kuala Lumpur International Airport, as authorities investigate a suspected smuggling network linked to multiple previous seizures.",
+      "vi": "Malaysian customs seized 30 servers containing more than $12 million worth of advanced AI chips at Kuala Lumpur International Airport, as authorities investigate a suspected smuggling network linked to multiple previous seizures."
     },
     "categories": [
-      "dev"
+      "hardware"
     ],
-    "tags": [
-      "python"
-    ],
+    "tags": [],
     "difficulty": "medium",
-    "score": 1.11,
+    "score": 1.12,
     "howto": true,
     "reading_time_min": 1,
     "translated": {}
@@ -1105,6 +1103,39 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "4a466fb18b4efea7": {
+    "id": "4a466fb18b4efea7",
+    "url": "https://dev.to/akhourianmolkumar/are-you-a-python-developer-or-a-python-expert-7-tests-i-failed-building-3-desktop-apps-2fp4",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Akhouri Anmol Kumar",
+    "published_at": "2026-10-28T10:13:29Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Are You a Python Developer or a Python Expert? 7 Tests I Failed Building 3 Desktop Apps",
+      "vi": "Are You a Python Developer or a Python Expert? 7 Tests I Failed Building 3 Desktop Apps"
+    },
+    "summary": {
+      "en": "Description: Python security, screen capture, spring physics, HiDPI and PyInstaller .exe gotchas. 7",
+      "vi": "Description: Python security, screen capture, spring physics, HiDPI and PyInstaller .exe gotchas. 7"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [
+      "python"
+    ],
+    "difficulty": "medium",
+    "score": 1.11,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "8fb639d936f65def": {
     "id": "8fb639d936f65def",
     "url": "https://dev.to/morsezone/building-a-morse-code-practice-timer-in-javascript-timing-dits-dahs-and-gaps-39ol",
@@ -1128,37 +1159,6 @@
     },
     "categories": [
       "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.11,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {}
-  },
-  "c55a4eec3fa5eaad": {
-    "id": "c55a4eec3fa5eaad",
-    "url": "https://dev.to/glinck/35-x-45-cm-is-not-a-pixel-size-converting-cm-and-dpi-for-form-photos-5l7",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Anuj Kabra",
-    "published_at": "2026-10-29T04:29:06Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "3.5 x 4.5 cm is not a pixel size: converting cm and DPI for form photos",
-      "vi": "3.5 x 4.5 cm is not a pixel size: converting cm and DPI for form photos"
-    },
-    "summary": {
-      "en": "A lot of application forms ask for a passport-style photo of \"3.5 x 4.5 cm\". An image file has no",
-      "vi": "A lot of application forms ask for a passport-style photo of \"3.5 x 4.5 cm\". An image file has no"
-    },
-    "categories": [
-      "android"
     ],
     "tags": [],
     "difficulty": "medium",
@@ -1198,6 +1198,37 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "c55a4eec3fa5eaad": {
+    "id": "c55a4eec3fa5eaad",
+    "url": "https://dev.to/glinck/35-x-45-cm-is-not-a-pixel-size-converting-cm-and-dpi-for-form-photos-5l7",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Anuj Kabra",
+    "published_at": "2026-10-29T04:29:06Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "3.5 x 4.5 cm is not a pixel size: converting cm and DPI for form photos",
+      "vi": "3.5 x 4.5 cm is not a pixel size: converting cm and DPI for form photos"
+    },
+    "summary": {
+      "en": "A lot of application forms ask for a passport-style photo of \"3.5 x 4.5 cm\". An image file has no",
+      "vi": "A lot of application forms ask for a passport-style photo of \"3.5 x 4.5 cm\". An image file has no"
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.11,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "c989d358786f1ec1": {
     "id": "c989d358786f1ec1",
     "url": "https://dev.to/selen_sherlock_64186c9222/turn-a-whatsapp-group-chat-into-a-weekly-summary-with-a-local-llm-1i3p",
@@ -1223,39 +1254,6 @@
       "ai"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.11,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {}
-  },
-  "e911f0d646627b9d": {
-    "id": "e911f0d646627b9d",
-    "url": "https://dev.to/hi_hphanthanh_41c4083/find-podcasts-and-their-latest-episodes-with-python-itunes-search-api-rss-no-api-key-38p7",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Hải Hà Phan Thanh",
-    "published_at": "2026-10-29T03:20:19Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Find podcasts and their latest episodes with Python (iTunes Search API + RSS, no API key)",
-      "vi": "Find podcasts and their latest episodes with Python (iTunes Search API + RSS, no API key)"
-    },
-    "summary": {
-      "en": "Podcast guest outreach, sponsorship research, and \"new episode\" alerts all need the same two things:",
-      "vi": "Podcast guest outreach, sponsorship research, and \"new episode\" alerts all need the same two things:"
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [
-      "python"
-    ],
     "difficulty": "medium",
     "score": 1.11,
     "howto": true,
@@ -1295,6 +1293,39 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "e911f0d646627b9d": {
+    "id": "e911f0d646627b9d",
+    "url": "https://dev.to/hi_hphanthanh_41c4083/find-podcasts-and-their-latest-episodes-with-python-itunes-search-api-rss-no-api-key-38p7",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Hải Hà Phan Thanh",
+    "published_at": "2026-10-29T03:20:19Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Find podcasts and their latest episodes with Python (iTunes Search API + RSS, no API key)",
+      "vi": "Find podcasts and their latest episodes with Python (iTunes Search API + RSS, no API key)"
+    },
+    "summary": {
+      "en": "Podcast guest outreach, sponsorship research, and \"new episode\" alerts all need the same two things:",
+      "vi": "Podcast guest outreach, sponsorship research, and \"new episode\" alerts all need the same two things:"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [
+      "python"
+    ],
+    "difficulty": "medium",
+    "score": 1.11,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "82587239bd94ad26": {
     "id": "82587239bd94ad26",
     "url": "https://dev.to/hirantha_sandaruwan/sri-lankan-public-holidays-and-poya-days-as-open-data-and-two-date-bugs-to-avoid-3d2c",
@@ -1315,37 +1346,6 @@
     "summary": {
       "en": "An open JSON, CSV and iCalendar list of Sri Lanka's 2026 and 2027 holidays, where it comes from, and two date bugs to avoid when you use it.",
       "vi": "An open JSON, CSV and iCalendar list of Sri Lanka's 2026 and 2027 holidays, where it comes from, and two date bugs to avoid when you use it."
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.11,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {}
-  },
-  "7b0dcfffd55692e8": {
-    "id": "7b0dcfffd55692e8",
-    "url": "https://dev.to/systemcraftdev/pipes-and-redirection-how-2-and-really-work-12m3",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "SystemCraftDev",
-    "published_at": "2026-10-29T02:56:48Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Pipes and Redirection: How >, >>, 2> and | Really Work",
-      "vi": "Pipes and Redirection: How >, >>, 2> and | Really Work"
-    },
-    "summary": {
-      "en": "Four small symbols move text between commands and files. Once you see the three streams behind them, shell one-liners stop looking like magic.",
-      "vi": "Four small symbols move text between commands and files. Once you see the three streams behind them, shell one-liners stop looking like magic."
     },
     "categories": [
       "dev"
@@ -1391,6 +1391,37 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "7b0dcfffd55692e8": {
+    "id": "7b0dcfffd55692e8",
+    "url": "https://dev.to/systemcraftdev/pipes-and-redirection-how-2-and-really-work-12m3",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "SystemCraftDev",
+    "published_at": "2026-10-29T02:56:48Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Pipes and Redirection: How >, >>, 2> and | Really Work",
+      "vi": "Pipes and Redirection: How >, >>, 2> and | Really Work"
+    },
+    "summary": {
+      "en": "Four small symbols move text between commands and files. Once you see the three streams behind them, shell one-liners stop looking like magic.",
+      "vi": "Four small symbols move text between commands and files. Once you see the three streams behind them, shell one-liners stop looking like magic."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.11,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "843e2f5d387fbdbf": {
     "id": "843e2f5d387fbdbf",
     "url": "https://dev.to/qunirice_verase_1ab0caeba/steamos-or-windows-11-deciding-with-powershell-before-you-partition-14hj",
@@ -1419,37 +1450,6 @@
       "powershell"
     ],
     "difficulty": "advanced",
-    "score": 1.11,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {}
-  },
-  "89542d4c2591aab7": {
-    "id": "89542d4c2591aab7",
-    "url": "https://dev.to/kailas_warade_d2a15d1ef8a/5-common-sql-mistakes-where-order-by-andor-and-top-3-queries-3k9c",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Kailas Warade",
-    "published_at": "2026-10-29T03:31:06Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "5 Common SQL Mistakes: WHERE, ORDER BY, AND/OR, and Top 3 Queries",
-      "vi": "5 Common SQL Mistakes: WHERE, ORDER BY, AND/OR, and Top 3 Queries"
-    },
-    "summary": {
-      "en": "A SQL query can execute without errors and still produce an unexpected result. It might return the",
-      "vi": "A SQL query can execute without errors and still produce an unexpected result. It might return the"
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
     "score": 1.11,
     "howto": true,
     "reading_time_min": 1,
@@ -1485,6 +1485,37 @@
     ],
     "difficulty": "easy",
     "score": 1.06,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "89542d4c2591aab7": {
+    "id": "89542d4c2591aab7",
+    "url": "https://dev.to/kailas_warade_d2a15d1ef8a/5-common-sql-mistakes-where-order-by-andor-and-top-3-queries-3k9c",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Kailas Warade",
+    "published_at": "2026-10-29T03:31:06Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "5 Common SQL Mistakes: WHERE, ORDER BY, AND/OR, and Top 3 Queries",
+      "vi": "5 Common SQL Mistakes: WHERE, ORDER BY, AND/OR, and Top 3 Queries"
+    },
+    "summary": {
+      "en": "A SQL query can execute without errors and still produce an unexpected result. It might return the",
+      "vi": "A SQL query can execute without errors and still produce an unexpected result. It might return the"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.11,
     "howto": true,
     "reading_time_min": 1,
     "translated": {}
@@ -2031,6 +2062,37 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "c83e4a34493e1229": {
+    "id": "c83e4a34493e1229",
+    "url": "https://genk.vn/loi-khuyen-danh-cho-tat-ca-nhung-ai-hay-dung-google-maps-de-tra-duong-165261010112912055.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Sat, 10 Oct 2026 14:00:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Lời khuyên dành cho tất cả những ai hay dùng Google Maps để tra đường",
+      "en": "Lời khuyên dành cho tất cả những ai hay dùng Google Maps để tra đường"
+    },
+    "summary": {
+      "vi": "Với những ai thường xuyên sử dụng, việc nắm rõ một vài thiết lập thông minh sẽ giúp bạn tối ưu hóa công năng của Google Maps.",
+      "en": "Với những ai thường xuyên sử dụng, việc nắm rõ một vài thiết lập thông minh sẽ giúp bạn tối ưu hóa công năng của Google Maps."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.96,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "477baea26f15d800": {
     "id": "477baea26f15d800",
     "url": "https://tinhte.vn/thread/huong-dan-dung-iphone-duo-vuot-back-xac-nhan-va-cac-thao-tac-co-ban.4186747",
@@ -2284,33 +2346,33 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "7b15ec4f543529d7": {
-    "id": "7b15ec4f543529d7",
-    "url": "https://www.androidauthority.com/oura-ring-4-sync-bug-3729281",
+  "fa62f87463ae5def": {
+    "id": "fa62f87463ae5def",
+    "url": "https://genk.vn/loi-khuyen-cho-nguoi-vua-chuyen-khoan-cho-lua-dao-lam-ngay-5-viec-sau-trong-30-phut-dau-de-han-che-mat-tien-165261018175612162.chn",
     "source": {
-      "id": "androidauthority",
-      "name": "Android Authority",
-      "site_url": "https://www.androidauthority.com",
-      "kind": "news"
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
     },
-    "author": "Ryan McNeal",
-    "published_at": "Wed, 28 Oct 2026 17:16:08 +0000",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
+    "author": null,
+    "published_at": "Sun, 18 Oct 2026 18:25:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
     "title": {
-      "en": "Oura confirms Ring 4 sync bug, but the fix is simple",
-      "vi": "Oura confirms Ring 4 sync bug, but the fix is simple"
+      "vi": "Lời khuyên cho người vừa chuyển khoản cho lừa đảo: Làm ngay 5 việc sau trong 30 phút đầu để hạn chế mất tiền",
+      "en": "Lời khuyên cho người vừa chuyển khoản cho lừa đảo: Làm ngay 5 việc sau trong 30 phút đầu để hạn chế mất tiền"
     },
     "summary": {
-      "en": "Oura offers workaround for confirmed Ring 4 syncing bug.",
-      "vi": "Oura offers workaround for confirmed Ring 4 syncing bug."
+      "vi": "Khi phát hiện dấu hiệu bị lừa đảo trên không gian mạng, người dân cần lập tức dừng giao dịch, liên hệ ngân hàng đề nghị ngăn chặn giao dịch đáng ngờ, bảo vệ các tài khoản cá nhân và trình báo cơ quan Công an.",
+      "en": "Khi phát hiện dấu hiệu bị lừa đảo trên không gian mạng, người dân cần lập tức dừng giao dịch, liên hệ ngân hàng đề nghị ngăn chặn giao dịch đáng ngờ, bảo vệ các tài khoản cá nhân và trình báo cơ quan Công an."
     },
     "categories": [
-      "android"
+      "windows"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.85,
+    "score": 0.87,
     "howto": true,
     "reading_time_min": 1,
     "translated": {}
@@ -2380,33 +2442,34 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "57f9e735d3ff4182": {
-    "id": "57f9e735d3ff4182",
-    "url": "https://arstechnica.com/science/2026/10/scientists-recreate-the-1600-year-old-recipe-of-lycurgus-cup",
+  "3c45809cc7350ab1": {
+    "id": "3c45809cc7350ab1",
+    "url": "https://genk.vn/5-ung-dung-khien-iphone-het-pin-nhanh-165261016115420936.chn",
     "source": {
-      "id": "arstechnica",
-      "name": "Ars Technica",
-      "site_url": "https://arstechnica.com",
-      "kind": "news"
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
     },
-    "author": "Jennifer Ouellette",
-    "published_at": "Tue, 27 Oct 2026 13:32:35 +0000",
-    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
-    "original_lang": "en",
+    "author": null,
+    "published_at": "Fri, 16 Oct 2026 13:53:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
     "title": {
-      "en": "Sculpture re-creates odd optical effects of famed Lycurgus Cup",
-      "vi": "Sculpture re-creates odd optical effects of famed Lycurgus Cup"
+      "vi": "5 ứng dụng khiến iPhone hết pin nhanh",
+      "en": "5 ứng dụng khiến iPhone hết pin nhanh"
     },
     "summary": {
-      "en": "University of Sheffield researchers figured out how to re-create the 1,600-year-old glass recipe.",
-      "vi": "University of Sheffield researchers figured out how to re-create the 1,600-year-old glass recipe."
+      "vi": "Nhiều ứng dụng quen thuộc là nguyên nhân khiến pin iPhone tụt nhanh hơn người dùng nghĩ.",
+      "en": "Nhiều ứng dụng quen thuộc là nguyên nhân khiến pin iPhone tụt nhanh hơn người dùng nghĩ."
     },
     "categories": [
-      "linux"
+      "ios",
+      "hardware"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.83,
+    "score": 0.87,
     "howto": true,
     "reading_time_min": 1,
     "translated": {}
@@ -2476,33 +2539,33 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "8f167c675f8edb5c": {
-    "id": "8f167c675f8edb5c",
-    "url": "https://dev.to/kyle_kaplan_a570d11f43143/how-a-salon-website-gets-built-in-lovable-a-build-walkthrough-52l4",
+  "a3aec8177249f1ba": {
+    "id": "a3aec8177249f1ba",
+    "url": "https://genk.vn/loi-khuyen-quan-trong-ma-nhung-nguoi-dung-google-maps-ngoai-tuyen-nen-biet-165261005110833462.chn",
     "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
       "kind": "tips"
     },
-    "author": "Kyle Kaplan",
-    "published_at": "2026-10-29T04:31:58Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
+    "author": null,
+    "published_at": "Mon, 05 Oct 2026 11:18:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
     "title": {
-      "en": "How a Salon Website Gets Built in Lovable: A Build Walkthrough",
-      "vi": "How a Salon Website Gets Built in Lovable: A Build Walkthrough"
+      "vi": "Lời khuyên quan trọng mà những người dùng Google Maps ngoại tuyến nên biết",
+      "en": "Lời khuyên quan trọng mà những người dùng Google Maps ngoại tuyến nên biết"
     },
     "summary": {
-      "en": "",
-      "vi": ""
+      "vi": "Google Maps ngoại tuyến không phải là một phiên bản hoàn hảo.",
+      "en": "Google Maps ngoại tuyến không phải là một phiên bản hoàn hảo."
     },
     "categories": [
-      "dev"
+      "windows"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.83,
+    "score": 0.87,
     "howto": true,
     "reading_time_min": 1,
     "translated": {}
@@ -2540,6 +2603,68 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "de7b7e50d713f055": {
+    "id": "de7b7e50d713f055",
+    "url": "https://genk.vn/vi-sao-khong-nen-su-dung-khuon-mat-van-tay-de-mo-khoa-dien-thoai-1652610011748567.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Thu, 01 Oct 2026 19:36:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Vì sao không nên sử dụng khuôn mặt, vân tay để mở khóa điện thoại?",
+      "en": "Vì sao không nên sử dụng khuôn mặt, vân tay để mở khóa điện thoại?"
+    },
+    "summary": {
+      "vi": "Sử dụng vân tay, khuôn mặt để mở khóa điện thoại tồn tại những rủi ro gì?",
+      "en": "Sử dụng vân tay, khuôn mặt để mở khóa điện thoại tồn tại những rủi ro gì?"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.87,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "7b15ec4f543529d7": {
+    "id": "7b15ec4f543529d7",
+    "url": "https://www.androidauthority.com/oura-ring-4-sync-bug-3729281",
+    "source": {
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news"
+    },
+    "author": "Ryan McNeal",
+    "published_at": "Wed, 28 Oct 2026 17:16:08 +0000",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Oura confirms Ring 4 sync bug, but the fix is simple",
+      "vi": "Oura confirms Ring 4 sync bug, but the fix is simple"
+    },
+    "summary": {
+      "en": "Oura offers workaround for confirmed Ring 4 syncing bug.",
+      "vi": "Oura offers workaround for confirmed Ring 4 syncing bug."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.85,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "657c1b7c5a36fe10": {
     "id": "657c1b7c5a36fe10",
     "url": "https://linuxhandbook.com/newsletter/26-15",
@@ -2567,6 +2692,68 @@
     "tags": [],
     "difficulty": "medium",
     "score": 0.84,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "57f9e735d3ff4182": {
+    "id": "57f9e735d3ff4182",
+    "url": "https://arstechnica.com/science/2026/10/scientists-recreate-the-1600-year-old-recipe-of-lycurgus-cup",
+    "source": {
+      "id": "arstechnica",
+      "name": "Ars Technica",
+      "site_url": "https://arstechnica.com",
+      "kind": "news"
+    },
+    "author": "Jennifer Ouellette",
+    "published_at": "Tue, 27 Oct 2026 13:32:35 +0000",
+    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Sculpture re-creates odd optical effects of famed Lycurgus Cup",
+      "vi": "Sculpture re-creates odd optical effects of famed Lycurgus Cup"
+    },
+    "summary": {
+      "en": "University of Sheffield researchers figured out how to re-create the 1,600-year-old glass recipe.",
+      "vi": "University of Sheffield researchers figured out how to re-create the 1,600-year-old glass recipe."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.83,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "8f167c675f8edb5c": {
+    "id": "8f167c675f8edb5c",
+    "url": "https://dev.to/kyle_kaplan_a570d11f43143/how-a-salon-website-gets-built-in-lovable-a-build-walkthrough-52l4",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Kyle Kaplan",
+    "published_at": "2026-10-29T04:31:58Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "How a Salon Website Gets Built in Lovable: A Build Walkthrough",
+      "vi": "How a Salon Website Gets Built in Lovable: A Build Walkthrough"
+    },
+    "summary": {
+      "en": "",
+      "vi": ""
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.83,
     "howto": true,
     "reading_time_min": 1,
     "translated": {}
@@ -2788,6 +2975,37 @@
     "tags": [],
     "difficulty": "medium",
     "score": 0.83,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "70f0bde7899c6128": {
+    "id": "70f0bde7899c6128",
+    "url": "https://genk.vn/google-maps-se-chi-duong-chinh-xac-nhat-khi-ban-bat-tinh-nang-nay-tren-dien-thoai-165260829172654305.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Sat, 29 Aug 2026 18:26:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Google Maps sẽ chỉ đường chính xác nhất khi bạn bật tính năng này trên điện thoại",
+      "en": "Google Maps sẽ chỉ đường chính xác nhất khi bạn bật tính năng này trên điện thoại"
+    },
+    "summary": {
+      "vi": "Hãy thử hai cách đơn giản sau để cải thiện độ chính xác của Google Maps.",
+      "en": "Hãy thử hai cách đơn giản sau để cải thiện độ chính xác của Google Maps."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 0.8,
     "howto": true,
     "reading_time_min": 1,
     "translated": {}
@@ -3175,33 +3393,35 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "6af748521fe1dd69": {
-    "id": "6af748521fe1dd69",
-    "url": "https://linuxhandbook.com/newsletter/26-12",
+  "df7f2e84081d3bfb": {
+    "id": "df7f2e84081d3bfb",
+    "url": "https://genk.vn/loi-khuyen-cho-nhung-gia-dinh-hay-tat-wifi-bang-cach-rut-phich-cam-165260905132351422.chn",
     "source": {
-      "id": "linuxhandbook",
-      "name": "Linux Handbook",
-      "site_url": "https://linuxhandbook.com",
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
       "kind": "tips"
     },
-    "author": "Abhishek Prakash",
-    "published_at": "Fri, 11 Sep 2026 17:29:04 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
+    "author": null,
+    "published_at": "Sat, 05 Sep 2026 15:22:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
     "title": {
-      "en": "LHB Linux Digest #26.12: Demystifying diff, Process Substitution, History Trick, and More",
-      "vi": "LHB Linux Digest #26.12: Demystifying diff, Process Substitution, History Trick, and More"
+      "vi": "Lời khuyên cho những gia đình hay tắt WiFi bằng cách rút phích cắm",
+      "en": "Lời khuyên cho những gia đình hay tắt WiFi bằng cách rút phích cắm"
     },
     "summary": {
-      "en": "Keep on Linux-ing :)",
-      "vi": "Keep on Linux-ing :)"
+      "vi": "Rút phích cắm là cách nhiều gia đình vẫn dùng để tắt WiFi, nhưng có vài điều nên biết trước khi duy trì thói quen này hàng ngày.",
+      "en": "Rút phích cắm là cách nhiều gia đình vẫn dùng để tắt WiFi, nhưng có vài điều nên biết trước khi duy trì thói quen này hàng ngày."
     },
     "categories": [
-      "linux"
+      "hardware"
     ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.71,
+    "tags": [
+      "wifi"
+    ],
+    "difficulty": "easy",
+    "score": 0.73,
     "howto": true,
     "reading_time_min": 1,
     "translated": {}
@@ -3270,6 +3490,99 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "47487520da62623a": {
+    "id": "47487520da62623a",
+    "url": "https://genk.vn/thong-tin-quan-trong-tren-vneid-tat-ca-nguoi-dan-di-may-bay-can-biet-165260829141738442.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Sat, 29 Aug 2026 15:46:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Thông tin quan trọng trên VNeID, tất cả người dân đi máy bay cần biết",
+      "en": "Thông tin quan trọng trên VNeID, tất cả người dân đi máy bay cần biết"
+    },
+    "summary": {
+      "vi": "Để giúp hành khách tiết kiệm thời gian làm thủ tục, lực lượng an ninh hàng không khuyến nghị hành khách chủ động thực hiện check-in online trước khi đến sân bay.",
+      "en": "Để giúp hành khách tiết kiệm thời gian làm thủ tục, lực lượng an ninh hàng không khuyến nghị hành khách chủ động thực hiện check-in online trước khi đến sân bay."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.73,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "7a82ad8fe469044c": {
+    "id": "7a82ad8fe469044c",
+    "url": "https://genk.vn/thong-tin-quan-trong-den-tat-ca-nguoi-dung-iphone-165260825041529642.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Tue, 25 Aug 2026 10:25:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Thông tin quan trọng đến tất cả người dùng iPhone",
+      "en": "Thông tin quan trọng đến tất cả người dùng iPhone"
+    },
+    "summary": {
+      "vi": "Một thay đổi nhỏ trong cách sử dụng iPhone có thể tạo ra khác biệt lớn với người dùng.",
+      "en": "Một thay đổi nhỏ trong cách sử dụng iPhone có thể tạo ra khác biệt lớn với người dùng."
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.73,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "6af748521fe1dd69": {
+    "id": "6af748521fe1dd69",
+    "url": "https://linuxhandbook.com/newsletter/26-12",
+    "source": {
+      "id": "linuxhandbook",
+      "name": "Linux Handbook",
+      "site_url": "https://linuxhandbook.com",
+      "kind": "tips"
+    },
+    "author": "Abhishek Prakash",
+    "published_at": "Fri, 11 Sep 2026 17:29:04 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LHB Linux Digest #26.12: Demystifying diff, Process Substitution, History Trick, and More",
+      "vi": "LHB Linux Digest #26.12: Demystifying diff, Process Substitution, History Trick, and More"
+    },
+    "summary": {
+      "en": "Keep on Linux-ing :)",
+      "vi": "Keep on Linux-ing :)"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.71,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "2ad84ab401bee4f9": {
     "id": "2ad84ab401bee4f9",
     "url": "https://krebsonsecurity.com/2026/10/microsoft-patches-more-than-1400-security-flaws",
@@ -3299,6 +3612,70 @@
     "score": 0.7,
     "howto": true,
     "reading_time_min": 1,
+    "translated": {}
+  },
+  "7c214f2efd884062": {
+    "id": "7c214f2efd884062",
+    "url": "https://genk.vn/tai-khoan-zalo-dang-bi-theo-doi-bat-ngay-3-tinh-nang-nay-de-ngan-chan-165260926172946152.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Sat, 26 Sep 2026 18:00:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Tài khoản Zalo đang bị theo dõi, bật ngay 3 tính năng này để ngăn chặn",
+      "en": "Tài khoản Zalo đang bị theo dõi, bật ngay 3 tính năng này để ngăn chặn"
+    },
+    "summary": {
+      "vi": "Zalo hiện là công cụ liên lạc của hàng triệu người dùng Việt Nam. Tuy nhiên, sự phổ biến này cũng kéo theo nguy cơ bị kẻ xấu nhắm đến để lừa đảo, đánh cắp thông tin hoặc chiếm quyền tài khoản. Dưới đây là những thiết lập bảo mật quan trọng bạn cần kích hoạt ngay.",
+      "en": "Zalo hiện là công cụ liên lạc của hàng triệu người dùng Việt Nam. Tuy nhiên, sự phổ biến này cũng kéo theo nguy cơ bị kẻ xấu nhắm đến để lừa đảo, đánh cắp thông tin hoặc chiếm quyền tài khoản. Dưới đây là những thiết lập bảo mật quan trọng bạn cần kích hoạt ngay."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [
+      "bảo mật"
+    ],
+    "difficulty": "easy",
+    "score": 0.67,
+    "howto": true,
+    "reading_time_min": 2,
+    "translated": {}
+  },
+  "e3c4395bc7834f36": {
+    "id": "e3c4395bc7834f36",
+    "url": "https://genk.vn/vi-sao-can-khoi-dong-lai-dien-thoai-sau-moi-lan-cap-nhat-165260904015710285.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Fri, 04 Sep 2026 09:45:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Vì sao cần khởi động lại điện thoại sau mỗi lần cập nhật?",
+      "en": "Vì sao cần khởi động lại điện thoại sau mỗi lần cập nhật?"
+    },
+    "summary": {
+      "vi": "Sau mỗi lần nâng cấp hệ điều hành, smartphone hay máy tính bảng thường sẽ tự động khởi động lại để hoàn tất quá trình thiết lập. Việc chủ động tắt nguồn và mở lại máy là một thao tác cực kỳ cần thiết để đảm bảo cả hiệu suất lẫn độ an toàn cho dữ liệu.",
+      "en": "Sau mỗi lần nâng cấp hệ điều hành, smartphone hay máy tính bảng thường sẽ tự động khởi động lại để hoàn tất quá trình thiết lập. Việc chủ động tắt nguồn và mở lại máy là một thao tác cực kỳ cần thiết để đảm bảo cả hiệu suất lẫn độ an toàn cho dữ liệu."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 0.67,
+    "howto": true,
+    "reading_time_min": 2,
     "translated": {}
   },
   "41f219415183b9c6": {
@@ -3332,6 +3709,166 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "5b2af56ec8a3a001": {
+    "id": "5b2af56ec8a3a001",
+    "url": "https://genk.vn/phat-hien-5-thiet-bi-la-dai-ky-lam-cham-song-wifi-nhieu-nguoi-dang-de-canh-ma-khong-hay-biet-165260822001258225.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Sat, 22 Aug 2026 10:22:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Phát hiện 5 thiết bị là “đại kỵ” làm chậm sóng WiFi, nhiều người đang để cạnh mà không hay biết",
+      "en": "Phát hiện 5 thiết bị là “đại kỵ” làm chậm sóng WiFi, nhiều người đang để cạnh mà không hay biết"
+    },
+    "summary": {
+      "vi": "Không ít người có xu hướng quy nguyên nhân Wi-Fi chậm, chập chờn cho nhà mạng.",
+      "en": "Không ít người có xu hướng quy nguyên nhân Wi-Fi chậm, chập chờn cho nhà mạng."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [
+      "wifi"
+    ],
+    "difficulty": "medium",
+    "score": 0.67,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "1f87f1f4b67002fe": {
+    "id": "1f87f1f4b67002fe",
+    "url": "https://genk.vn/tu-iphone-13-pro-len-doi-z-fold8-hoa-ra-chuyen-du-lieu-tu-apple-sang-samsung-gio-de-the-nay-165260821150745802.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Fri, 21 Aug 2026 16:07:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Từ iPhone 13 Pro lên đời Z Fold8: Hóa ra chuyển dữ liệu từ Apple sang Samsung giờ dễ thế này",
+      "en": "Từ iPhone 13 Pro lên đời Z Fold8: Hóa ra chuyển dữ liệu từ Apple sang Samsung giờ dễ thế này"
+    },
+    "summary": {
+      "vi": "Dùng iPhone suốt nhiều năm khiến tôi từng ngần ngại đổi sang Galaxy vì nghĩ chuyển dữ liệu sẽ rất phiền, nhưng Smart Switch giúp mang theo phần lớn dữ liệu quen thuộc chỉ với vài bước.",
+      "en": "Dùng iPhone suốt nhiều năm khiến tôi từng ngần ngại đổi sang Galaxy vì nghĩ chuyển dữ liệu sẽ rất phiền, nhưng Smart Switch giúp mang theo phần lớn dữ liệu quen thuộc chỉ với vài bước."
+    },
+    "categories": [
+      "android",
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.67,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "b62740fe7dece39d": {
+    "id": "b62740fe7dece39d",
+    "url": "https://tinhte.vn/thread/di-tim-giai-phap-cap-khi-tuoi-cho-cafe-tinh-te-5-0.4040527",
+    "source": {
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news"
+    },
+    "author": "cuhiep",
+    "published_at": "Fri, 01 Aug 2025 02:14:00 +0000",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Đi tìm giải pháp cấp khí tươi cho Cafe Tinh tế 5.0",
+      "en": "Đi tìm giải pháp cấp khí tươi cho Cafe Tinh tế 5.0"
+    },
+    "summary": {
+      "vi": "Sau 20 năm cafe Tinh tế ở không gian mở thì mình đã chọn một không gian kín cho phiên bản Cafe Tinh tế 5.0. Ngoài chuyện xử lý cách âm, cách nhiệt thì mình cũng nghĩ đến chuyện cần một không gian",
+      "en": "Sau 20 năm cafe Tinh tế ở không gian mở thì mình đã chọn một không gian kín cho phiên bản Cafe Tinh tế 5.0. Ngoài chuyện xử lý cách âm, cách nhiệt thì mình cũng nghĩ đến chuyện cần một không gian"
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.53,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "7bc142ac7586d52e": {
+    "id": "7bc142ac7586d52e",
+    "url": "https://genk.vn/vi-sao-wifi-trong-nha-o-rat-gan-nhung-tin-hieu-lai-yeu-hon-cua-hang-xom-165260814033909292.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Fri, 14 Aug 2026 10:23:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Vì sao wifi trong nhà ở rất gần nhưng tín hiệu lại yếu hơn của hàng xóm?",
+      "en": "Vì sao wifi trong nhà ở rất gần nhưng tín hiệu lại yếu hơn của hàng xóm?"
+    },
+    "summary": {
+      "vi": "Liệu bộ định tuyến không dây của hàng xóm có thể ảnh hưởng đến cường độ Wi-Fi của bạn không?",
+      "en": "Liệu bộ định tuyến không dây của hàng xóm có thể ảnh hưởng đến cường độ Wi-Fi của bạn không?"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [
+      "wifi"
+    ],
+    "difficulty": "medium",
+    "score": 0.67,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "da96698ef028a283": {
+    "id": "da96698ef028a283",
+    "url": "https://genk.vn/tinh-nang-tren-zalo-giup-xem-tin-nhan-thoai-mai-nguoi-gui-khong-biet-nguoi-nhan-doc-tin-nhan-hay-chua-165260813170550719.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Thu, 13 Aug 2026 17:05:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Tính năng trên Zalo giúp xem tin nhắn thoải mái, người gửi không biết người nhận đọc tin nhắn hay chưa",
+      "en": "Tính năng trên Zalo giúp xem tin nhắn thoải mái, người gửi không biết người nhận đọc tin nhắn hay chưa"
+    },
+    "summary": {
+      "vi": "Dưới đây là các bước đơn giản giúp người dùng đọc tin nhắn trên Zalo mà không hiển thị trạng thái đã xem cho người gửi.",
+      "en": "Dưới đây là các bước đơn giản giúp người dùng đọc tin nhắn trên Zalo mà không hiển thị trạng thái đã xem cho người gửi."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.67,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "28c9ec341b6e3347": {
     "id": "28c9ec341b6e3347",
     "url": "https://vietnamnet.vn/viettel-hay-thay-doi-suy-nghi-va-lam-tot-su-menh-dan-dat-2333411.html",
@@ -3359,6 +3896,164 @@
     "tags": [],
     "difficulty": "medium",
     "score": 0.47,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "5e6652c40b2a757d": {
+    "id": "5e6652c40b2a757d",
+    "url": "https://genk.vn/dat-wifi-xuong-san-nha-co-lam-sao-khong-hoa-ra-day-la-loi-nhieu-gia-dinh-dang-mac-phai-165260805015233438.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Wed, 05 Aug 2026 10:14:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Đặt wifi xuống sàn nhà có làm sao không? Hóa ra đây là lỗi nhiều gia đình đang mắc phải",
+      "en": "Đặt wifi xuống sàn nhà có làm sao không? Hóa ra đây là lỗi nhiều gia đình đang mắc phải"
+    },
+    "summary": {
+      "vi": "Vị trí đặt bộ định tuyến Wi-Fi đóng vai trò rất quan trọng đối với hiệu suất của nó.",
+      "en": "Vị trí đặt bộ định tuyến Wi-Fi đóng vai trò rất quan trọng đối với hiệu suất của nó."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [
+      "wifi"
+    ],
+    "difficulty": "medium",
+    "score": 0.67,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "789154b52a9575e1": {
+    "id": "789154b52a9575e1",
+    "url": "https://genk.vn/tinh-nang-tren-dien-thoai-nguoi-dung-ngan-hang-nen-tat-ngay-165260804032037691.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Tue, 04 Aug 2026 09:40:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Tính năng trên điện thoại người dùng ngân hàng nên tắt ngay",
+      "en": "Tính năng trên điện thoại người dùng ngân hàng nên tắt ngay"
+    },
+    "summary": {
+      "vi": "Người dùng ngân hàng được khuyến cáo kiểm tra và tắt một tính năng trên điện thoại nếu không cần sử dụng.",
+      "en": "Người dùng ngân hàng được khuyến cáo kiểm tra và tắt một tính năng trên điện thoại nếu không cần sử dụng."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 0.67,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "d216bb3ff1d11d21": {
+    "id": "d216bb3ff1d11d21",
+    "url": "https://vietnamnet.vn/cmc-hay-nhan-viec-lon-de-gop-suc-dua-viet-nam-vao-ky-nguyen-moi-2335714.html",
+    "source": {
+      "id": "vietnamnet_tech",
+      "name": "VietNamNet Công Nghệ",
+      "site_url": "https://vietnamnet.vn/cong-nghe",
+      "kind": "news"
+    },
+    "author": null,
+    "published_at": "Tue, 22 Apr 2025 16:39:57 +0700",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "CMC hãy nhận việc lớn để góp sức đưa Việt Nam vào kỷ nguyên mới",
+      "en": "CMC hãy nhận việc lớn để góp sức đưa Việt Nam vào kỷ nguyên mới"
+    },
+    "summary": {
+      "vi": "Nhận định đã đến lúc CMC cần tuyên bố mình là một doanh nghiệp công nghệ số đầu đàn, Bộ trưởng Bộ TT&TT Nguyễn Mạnh Hùng chỉ rõ, cách duy nhất để CMC lớn lên là nhận những việc lớn, gắn với sứ mệnh quốc gia và làm cho tới nơi.",
+      "en": "Nhận định đã đến lúc CMC cần tuyên bố mình là một doanh nghiệp công nghệ số đầu đàn, Bộ trưởng Bộ TT&TT Nguyễn Mạnh Hùng chỉ rõ, cách duy nhất để CMC lớn lên là nhận những việc lớn, gắn với sứ mệnh quốc gia và làm cho tới nơi."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.47,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "67792300585839e1": {
+    "id": "67792300585839e1",
+    "url": "https://genk.vn/loi-khuyen-cho-nhung-nguoi-dang-dung-android-165260729022159939.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Wed, 29 Jul 2026 10:06:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Lời khuyên cho những người đang dùng Android",
+      "en": "Lời khuyên cho những người đang dùng Android"
+    },
+    "summary": {
+      "vi": "Nếu không kịp thời cập nhiều, người dùng có thể không xem được YouTube, bị hạn chế Gmail, hoặc một số ứng dụng có liên quan.",
+      "en": "Nếu không kịp thời cập nhiều, người dùng có thể không xem được YouTube, bị hạn chế Gmail, hoặc một số ứng dụng có liên quan."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.67,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "f92547e7125a4981": {
+    "id": "f92547e7125a4981",
+    "url": "https://genk.vn/loi-khuyen-cho-tat-ca-nguoi-dung-android-pin-dien-thoai-co-the-cong-them-2-gio-neu-ban-biet-cach-cai-dat-165260827080844937.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Thu, 27 Aug 2026 08:19:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Lời khuyên cho tất cả người dùng Android: Pin điện thoại có thể cộng thêm 2 giờ nếu bạn biết cách cài đặt",
+      "en": "Lời khuyên cho tất cả người dùng Android: Pin điện thoại có thể cộng thêm 2 giờ nếu bạn biết cách cài đặt"
+    },
+    "summary": {
+      "vi": "Một vài thay đổi nhỏ sẽ giúp ích nhiều cho bạn.",
+      "en": "Một vài thay đổi nhỏ sẽ giúp ích nhiều cho bạn."
+    },
+    "categories": [
+      "android",
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 0.63,
     "howto": true,
     "reading_time_min": 1,
     "translated": {}

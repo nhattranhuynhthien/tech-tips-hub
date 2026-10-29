@@ -1,7 +1,8 @@
 # config/sources.yml
 # Danh sách nguồn RSS / API uy tín tổng hợp thủ thuật công nghệ
-# kind: tips (nguồn chuyên hướng dẫn, nhận hầu hết bài) | news (nguồn tin tức, chỉ nhận bài qua bộ lọc howto)
-# Trọng số weight: 0.5 - 1.5 phản ánh độ tin cậy và chuyên sâu
+# kind: tips (nguồn chuyên hướng dẫn, nhận bài chuẩn) | news (nguồn tin tức, bắt buộc qua bộ lọc howto)
+# min_score: điểm số tối thiểu của cộng đồng (dành cho Hacker News)
+# weight: trọng số uy tín từ 0.5 đến 1.5
 
 # === Nguồn Quốc tế (English) ===
 - id: howtogeek
@@ -14,6 +15,73 @@
   weight: 1.1
   categories: [windows, android, macos, browser, office, hardware]
   description: Hướng dẫn chuyên sâu và thủ thuật công nghệ cho mọi nền tảng
+
+- id: itsfoss
+  name: It's FOSS
+  url: https://itsfoss.com/feed/
+  site_url: https://itsfoss.com
+  type: rss
+  lang: en
+  kind: tips
+  weight: 1.2
+  categories: [linux, dev, browser]
+  description: Cẩm nang hướng dẫn chuyên sâu cho Linux, phần mềm mã nguồn mở và lệnh terminal
+
+- id: linuxhandbook
+  name: Linux Handbook
+  url: https://linuxhandbook.com/rss/
+  site_url: https://linuxhandbook.com
+  type: rss
+  lang: en
+  kind: tips
+  weight: 1.2
+  categories: [linux, dev, security]
+  description: Lệnh bash script, mẹo quản trị máy chủ và thủ thuật terminal thực dụng
+
+- id: omgubuntu
+  name: OMG! Ubuntu!
+  url: https://www.omgubuntu.co.uk/feed
+  site_url: https://www.omgubuntu.co.uk
+  type: rss
+  lang: en
+  kind: tips
+  weight: 1.15
+  categories: [linux, dev]
+  description: Mẹo tùy biến Linux Ubuntu, dòng lệnh shell và ứng dụng mã nguồn mở
+
+- id: makeuseof
+  name: MakeUseOf
+  url: https://www.makeuseof.com/feed/
+  site_url: https://www.makeuseof.com
+  type: rss
+  lang: en
+  kind: tips
+  weight: 1.0
+  categories: [windows, android, macos, browser, ai]
+  description: Hướng dẫn người dùng phổ thông, mẹo sử dụng phần mềm và phím tắt
+
+- id: hackernews
+  name: Hacker News
+  url: https://hnrss.org/frontpage?points=100
+  site_url: https://news.ycombinator.com
+  type: rss
+  lang: en
+  kind: news
+  weight: 0.75
+  min_score: 100
+  categories: [dev, security, ai]
+  description: Cộng đồng lập trình viên thế giới chia sẻ bài viết kỹ thuật và thủ thuật
+
+- id: devto_tips
+  name: Dev.to Tutorials
+  url: https://dev.to/api/articles?tag=tutorial&top=30&per_page=15
+  site_url: https://dev.to
+  type: devto_api
+  lang: en
+  kind: tips
+  weight: 0.75
+  categories: [dev, ai, browser]
+  description: Cộng đồng lập trình viên thế giới chia sẻ mẹo code, Git, VS Code và DevOps
 
 - id: bleepingcomputer
   name: BleepingComputer
@@ -70,17 +138,6 @@
   categories: [linux, dev, security, hardware]
   description: Phân tích kỹ thuật, kiến trúc hệ thống và hướng dẫn công nghệ cao cấp
 
-- id: makeuseof
-  name: MakeUseOf
-  url: https://www.makeuseof.com/feed/
-  site_url: https://www.makeuseof.com
-  type: rss
-  lang: en
-  kind: tips
-  weight: 1.0
-  categories: [windows, android, macos, browser, ai]
-  description: Hướng dẫn người dùng phổ thông, mẹo sử dụng phần mềm và phím tắt
-
 - id: androidauthority
   name: Android Authority
   url: https://www.androidauthority.com/feed/
@@ -92,17 +149,6 @@
   categories: [android, hardware]
   description: Mẹo vặt Android, đánh giá tính năng mới và tối ưu thiết bị
 
-- id: omgubuntu
-  name: OMG! Ubuntu!
-  url: https://www.omgubuntu.co.uk/feed
-  site_url: https://www.omgubuntu.co.uk
-  type: rss
-  lang: en
-  kind: tips
-  weight: 1.15
-  categories: [linux, dev]
-  description: Mẹo tùy biến Linux Ubuntu, dòng lệnh shell và ứng dụng mã nguồn mở
-
 - id: githubblog
   name: GitHub Blog
   url: https://github.blog/feed/
@@ -113,51 +159,6 @@
   weight: 0.75
   categories: [dev, ai]
   description: Kỹ năng Git, GitHub Actions, mẹo lập trình và Copilot AI
-
-- id: hackernews
-  name: Hacker News
-  url: https://hnrss.org/frontpage?points=30
-  site_url: https://news.ycombinator.com
-  type: rss
-  lang: en
-  kind: news
-  weight: 0.7
-  min_score: 30
-  categories: [dev, security, ai]
-  description: Cộng đồng lập trình viên thế giới chia sẻ bài viết kỹ thuật và thủ thuật
-
-- id: itsfoss
-  name: It's FOSS
-  url: https://itsfoss.com/feed/
-  site_url: https://itsfoss.com
-  type: rss
-  lang: en
-  kind: tips
-  weight: 1.2
-  categories: [linux, dev, browser]
-  description: Cẩm nang hướng dẫn chuyên sâu cho Linux, phần mềm mã nguồn mở và lệnh terminal
-
-- id: linuxhandbook
-  name: Linux Handbook
-  url: https://linuxhandbook.com/rss/
-  site_url: https://linuxhandbook.com
-  type: rss
-  lang: en
-  kind: tips
-  weight: 1.2
-  categories: [linux, dev, security]
-  description: Lệnh bash script, mẹo quản trị máy chủ và thủ thuật terminal thực dụng
-
-- id: devto_tips
-  name: Dev.to Tutorials
-  url: https://dev.to/api/articles?tag=tutorial&top=30&per_page=15
-  site_url: https://dev.to
-  type: devto_api
-  lang: en
-  kind: tips
-  weight: 0.85
-  categories: [dev, ai, browser]
-  description: Cộng đồng lập trình viên thế giới chia sẻ mẹo code, Git, VS Code và DevOps
 
 - id: krebsonsecurity
   name: Krebs on Security
@@ -193,6 +194,28 @@
   categories: [windows, linux, security, office, hardware]
   description: Kho tàng hướng dẫn quản trị mạng, phím tắt phần mềm và thủ thuật văn phòng
 
+- id: genk
+  name: GenK Thủ Thuật
+  url: https://genk.vn/rss/thu-thuat.rss
+  site_url: https://genk.vn
+  type: rss
+  lang: vi
+  kind: tips
+  weight: 1.0
+  categories: [windows, android, ios, ai]
+  description: Chuyên mục Thủ thuật công nghệ, mẹo hay cho máy tính và smartphone
+
+- id: vnexpress_sohoa
+  name: VnExpress Thủ Thuật
+  url: https://vnexpress.net/rss/thu-thuat.rss
+  site_url: https://vnexpress.net
+  type: rss
+  lang: vi
+  kind: tips
+  weight: 1.0
+  categories: [android, ios, windows, hardware]
+  description: Chuyên mục Thủ thuật công nghệ và mẹo sử dụng thiết bị đời sống
+
 - id: tinhte
   name: Tinh tế
   url: https://tinhte.vn/rss
@@ -203,28 +226,6 @@
   weight: 0.7
   categories: [ios, android, macos, windows, hardware]
   description: Diễn đàn khoa học và công nghệ lớn nhất Việt Nam, nhiều thủ thuật thực tế
-
-- id: genk
-  name: GenK
-  url: https://genk.vn/rss/home.rss
-  site_url: https://genk.vn
-  type: rss
-  lang: vi
-  kind: news
-  weight: 0.7
-  categories: [windows, android, ios, ai]
-  description: Chuyên mục Thủ thuật công nghệ, mẹo hay cho máy tính và smartphone
-
-- id: vnexpress_sohoa
-  name: VnExpress Số Hóa
-  url: https://vnexpress.net/rss/so-hoa.rss
-  site_url: https://vnexpress.net/so-hoa
-  type: rss
-  lang: vi
-  kind: news
-  weight: 0.6
-  categories: [android, ios, windows, hardware]
-  description: Tin tức công nghệ đời sống và các mẹo sử dụng thiết bị cho người Việt
 
 - id: thanhnien_tech
   name: Thanh Niên Công Nghệ

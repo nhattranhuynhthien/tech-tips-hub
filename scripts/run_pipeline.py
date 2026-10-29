@@ -15,7 +15,7 @@ from fetch import fetch_feed_items
 from dedupe import is_duplicate_title, is_blocked
 from filters import accept, is_howto_match
 from classify import classify, extract_tags
-from score import calculate_score, detect_difficulty
+from score import calculate_score, detect_difficulty, parse_published_time
 from translate import load_cache, save_cache, process_item_bilingual
 
 DATA_DIR = Path("data")
@@ -32,13 +32,15 @@ def diversify(items: list[dict], max_run: int = 2) -> list[dict]:
     Xen kẽ nguồn để danh sách đa dạng và hấp dẫn:
     Không để quá max_run bài liên tiếp từ cùng một nguồn.
     """
-    pending = sorted(items, key=lambda x: -x["score"])
+    pending = sorted(items, key=lambda x: -x.get("score", 0))
     out = []
     while pending:
         for idx, it in enumerate(pending):
             run = 0
             for prev in reversed(out):
-                if prev["source"]["id"] == it["source"]["id"]:
+                prev_src = prev.get("source", {}).get("id")
+                curr_src = it.get("source", {}).get("id")
+                if prev_src and curr_src and prev_src == curr_src:
                     run += 1
                 else:
                     break
@@ -49,6 +51,52 @@ def diversify(items: list[dict], max_run: int = 2) -> list[dict]:
             # Nếu không còn lựa chọn nào khác nguồn, đành lấy phần tử đầu
             out.append(pending.pop(0))
     return out
+
+def update_featured_history(items: list[dict]):
+    """Cập nhật lịch sử 'Mẹo hay hôm nay' để không lặp lại trong 14 ngày."""
+    history_file = DATA_DIR / "history_featured.json"
+    history = []
+    if history_file.exists():
+        try:
+            history = json.loads(history_file.read_text(encoding="utf-8"))
+        except Exception:
+            history = []
+    
+    # Loại bỏ lịch sử cũ hơn 14 ngày
+    now_dt = datetime.now(timezone.utc)
+    cutoff = now_dt.timestamp() - (14 * 86400)
+    history = [
+        h for h in history
+        if parse_published_time(h.get("featured_at", "")).timestamp() >= cutoff
+    ]
+    history_ids = {h["id"] for h in history}
+
+    # Ứng viên: howto == True, <= 72h, không bị hidden, chưa từng featured trong 14 ngày
+    candidates = []
+    for it in items:
+        if not it.get("howto") or it.get("hidden"):
+            continue
+        if it["id"] in history_ids:
+            continue
+        pub_dt = parse_published_time(it.get("published_at", ""))
+        age_hours = (now_dt - pub_dt).total_seconds() / 3600.0
+        if 0 <= age_hours <= 72:
+            candidates.append(it)
+    
+    if candidates:
+        # Sắp xếp ưu tiên nguồn tips và điểm score cao nhất
+        candidates.sort(key=lambda x: (x.get("source", {}).get("kind") == "tips", x.get("score", 0)), reverse=True)
+        chosen = candidates[0]
+        today_str = now_dt.strftime("%Y-%m-%d")
+        already_today = any(h.get("date") == today_str for h in history)
+        if not already_today:
+            history.append({
+                "id": chosen["id"],
+                "title": chosen.get("title", {}).get("vi") or chosen.get("title", {}).get("en") or "",
+                "featured_at": now_dt.isoformat(),
+                "date": today_str
+            })
+            history_file.write_text(json.dumps(history, ensure_ascii=False, indent=2), encoding="utf-8")
 
 def main():
     print("=== [Tech Tips Hub] Bắt đầu tiến trình thu thập và xử lý thủ thuật ===")
@@ -131,12 +179,14 @@ def main():
             difficulty = detect_difficulty(title, summary, howto=is_howto)
 
             # Tính điểm chất lượng
+            community_val = raw_item.get("hn_points", 0) or raw_item.get("reactions", 0)
             score = calculate_score(
                 title=title,
                 summary=summary,
                 source_weight=raw_item["source_weight"],
                 published_at=raw_item["published_at"],
-                is_howto=is_howto
+                is_howto=is_howto,
+                community_signal=community_val
             )
 
             # Lọc bỏ bài có điểm quá thấp (< 0.35)
@@ -189,9 +239,10 @@ def main():
     diversified_items = diversify(all_items, max_run=2)
     reordered_index = {it["id"]: it for it in diversified_items}
 
-    # 5. Ghi dữ liệu và cập nhật cache
+    # 5. Ghi dữ liệu, cập nhật featured history và cache
     save_cache(trans_cache)
     INDEX_PATH.write_text(json.dumps(reordered_index, ensure_ascii=False, indent=2), encoding="utf-8")
+    update_featured_history(diversified_items)
 
     print("\n=== [Kết quả tổng hợp] ===")
     print(f"Tổng số mục quét: {fetched_count}")

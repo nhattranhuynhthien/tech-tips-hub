@@ -31,10 +31,17 @@ def parse_published_time(date_str: str) -> datetime:
         pass
     return datetime.now(timezone.utc)
 
-def calculate_score(title: str, summary: str, source_weight: float, published_at: str, is_howto: bool = False) -> float:
+def calculate_score(
+    title: str,
+    summary: str,
+    source_weight: float,
+    published_at: str,
+    is_howto: bool = False,
+    community_signal: int = 0
+) -> float:
     """
     Tính điểm chất lượng và mức độ hữu ích của thủ thuật:
-    Score = Trọng số nguồn x Hệ số độ mới x Điểm chất lượng nội dung
+    Score = (Trọng số nguồn + Tín hiệu cộng đồng + Chất lượng tóm tắt) x Hệ số hướng dẫn x Hệ số độ mới
     """
     text = f"{title} {summary}".lower()
     
@@ -60,13 +67,18 @@ def calculate_score(title: str, summary: str, source_weight: float, published_at
     else:
         recency_multiplier = 0.65
 
-    # 3. Điểm cơ sở
+    # 3. Điểm cơ sở từ trọng số nguồn
     base_score = float(source_weight) * 0.75
 
-    # 4. Kiểm tra độ dài có ích của tóm tắt
+    # 4. Thưởng tín hiệu cộng đồng (HN points, Dev.to reactions)
+    comm_bonus = 0.0
+    if community_signal > 0:
+        comm_bonus = min(0.2, (community_signal / 200.0) * 0.1)
+
+    # 5. Kiểm tra độ dài có ích của tóm tắt
     length_bonus = 0.08 if len(summary.strip()) >= 60 else -0.1
 
-    final_score = (base_score + length_bonus) * tutorial_multiplier * recency_multiplier
+    final_score = (base_score + length_bonus + comm_bonus) * tutorial_multiplier * recency_multiplier
     return round(max(0.1, min(final_score, 1.5)), 2)
 
 def detect_difficulty(title: str, summary: str, howto: bool = True):

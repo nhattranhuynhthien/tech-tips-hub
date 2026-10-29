@@ -38,9 +38,9 @@ def main():
         print(f"[QA Error] Lỗi đọc JSON index.json: {e}")
         sys.exit(1)
 
-    items = list(data.values())
+    items = [it for it in data.values() if not it.get("hidden")]
     if not items:
-        print("[QA Error] data/index.json không có dữ liệu!")
+        print("[QA Error] data/index.json không có dữ liệu hiển thị (tất cả bị ẩn hoặc rỗng)!")
         sys.exit(1)
 
     problems = []

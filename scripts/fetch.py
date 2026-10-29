@@ -15,10 +15,11 @@ if hasattr(sys.stderr, "reconfigure"):
 
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
 
-def parse_hn_summary(raw_summary: str, min_score: int = 30) -> tuple[int, str, int, str]:
+def parse_hn_summary(raw_summary: str, min_score: int = 100) -> tuple[int, str, int, str]:
     """
     Trích xuất points, comments_url, comments_count từ feed Hacker News.
     Trả về (points, comments_url, comments_count, clean_summary).
+    Mặc định ngưỡng điểm tối thiểu là 100.
     """
     points = 0
     comments_url = ""
@@ -36,7 +37,7 @@ def parse_hn_summary(raw_summary: str, min_score: int = 30) -> tuple[int, str, i
     if cmt_count_match:
         comments_count = int(cmt_count_match.group(1))
 
-    # Tóm tắt sạch cho Hacker News
+    # Tóm tắt sạch cho Hacker News (không dùng boilerplate URL)
     clean_summary = f"Thảo luận trên Hacker News ({points} điểm, {comments_count} bình luận)."
     return points, comments_url, comments_count, clean_summary
 
@@ -45,7 +46,7 @@ def fetch_feed_items(source: dict, max_entries: int = 25) -> list[dict]:
     items = []
     source_type = source.get("type", "rss")
     feed_url = source["url"]
-    min_score = source.get("min_score", 0)
+    min_score = source.get("min_score", 100 if source["id"] == "hackernews" else 0)
 
     headers = {
         "User-Agent": USER_AGENT,
@@ -54,7 +55,7 @@ def fetch_feed_items(source: dict, max_entries: int = 25) -> list[dict]:
         "Cache-Control": "no-cache",
     }
 
-    # === Trường hợp 1: REST API (ví dụ Dev.to API) ===
+    # === Trường hợp 1: REST API (Dev.to API) ===
     if source_type in ["devto_api", "json_api"]:
         try:
             session = requests.Session()
@@ -70,6 +71,11 @@ def fetch_feed_items(source: dict, max_entries: int = 25) -> list[dict]:
                 link = a.get("url") or a.get("canonical_url")
                 raw_t = a.get("title")
                 if not link or not raw_t:
+                    continue
+
+                # Lọc bài Dev.to có lượt phản ứng quá thấp (< 3) để đảm bảo chất lượng
+                reactions = a.get("public_reactions_count", a.get("positive_reactions_count", 0))
+                if reactions is not None and reactions < 3:
                     continue
 
                 c_url = canonical_url(link)
@@ -101,6 +107,7 @@ def fetch_feed_items(source: dict, max_entries: int = 25) -> list[dict]:
                     "raw_title": title,
                     "raw_summary": summary,
                     "default_categories": source.get("categories", []),
+                    "reactions": reactions
                 })
             return items
         except Exception as e:
@@ -133,7 +140,7 @@ def fetch_feed_items(source: dict, max_entries: int = 25) -> list[dict]:
 
         raw_summary = getattr(entry, "summary", "") or getattr(entry, "description", "")
 
-        # Xử lý đặc biệt cho Hacker News
+        # Xử lý đặc thù Hacker News: lọc ngưỡng điểm và lưu riêng metadata
         hn_points = 0
         hn_comments_url = None
         if source["id"] == "hackernews":
@@ -147,10 +154,7 @@ def fetch_feed_items(source: dict, max_entries: int = 25) -> list[dict]:
         title = clean_text(raw_t, limit=160)
         summary = strip_title_prefix(summary, title)
 
-        # Ngày đăng
         published = getattr(entry, "published", "") or getattr(entry, "updated", "")
-        
-        # Tác giả nếu có
         author = getattr(entry, "author", None)
 
         item = {
