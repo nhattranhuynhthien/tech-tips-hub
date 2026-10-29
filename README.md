@@ -1,107 +1,112 @@
 # Tech Tips Hub 💡
 
-> **Web tự động tổng hợp trick và thủ thuật công nghệ từ khắp nơi trên thế giới, hiển thị song ngữ English / Tiếng Việt, luôn ghi nguồn gốc, chi phí vận hành 0đ.**
+> **Web tự động tổng hợp thủ thuật & mẹo công nghệ tinh chọn từ khắp nơi trên thế giới, hiển thị song ngữ VI/EN, tôn trọng bản quyền, chi phí vận hành 0đ.**
 
-[![CI Build & Test](https://github.com/your-username/tech-tips-hub/actions/workflows/ci.yml/badge.svg)](https://github.com/your-username/tech-tips-hub/actions/workflows/ci.yml)
-[![Update Tips](https://github.com/your-username/tech-tips-hub/actions/workflows/update.yml/badge.svg)](https://github.com/your-username/tech-tips-hub/actions/workflows/update.yml)
+[![Update Tips](https://github.com/nhattranhuynhthien/tech-tips-hub/actions/workflows/update.yml/badge.svg)](https://github.com/nhattranhuynhthien/tech-tips-hub/actions/workflows/update.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-amber.svg)](LICENSE)
-[![Operating Cost: 0đ](https://img.shields.io/badge/Chi_phí-0đ-success.svg)](https://techtipshub.pages.dev/vi/about)
+[![Operating Cost: 0đ](https://img.shields.io/badge/Chi_phí-0đ-success.svg)](https://tech-tips-hub.pages.dev/vi/about)
+[![Astro: 5.x](https://img.shields.io/badge/Frontend-Astro_SSG-FF5D01.svg)](https://astro.build)
 
 ---
 
 ## 📖 1. Giới thiệu
 
-**Tech Tips Hub** là trang web aggregator tổng hợp thủ thuật thực chiến cho:
-* **Hệ điều hành:** Windows, macOS, Linux, Android, iOS
-* **Công cụ làm việc:** Trình duyệt web, ứng dụng văn phòng (Excel, Docs, Sheets, Notion)
-* **Kỹ thuật & An toàn:** Bảo mật & Quyền riêng tư, Công cụ AI (Prompt, ChatGPT, Claude, Ollama), Lập trình & DevOps, Phần cứng & Mạng.
+**Tech Tips Hub** (`tips.hub`) là nền tảng tổng hợp (aggregator) thủ thuật công nghệ thực chiến, tối giản và tốc độ cao dành cho lập trình viên và người đam mê công nghệ:
+* **Hệ điều hành:** Windows, macOS, Linux, Android, iOS.
+* **Công cụ & Phần mềm:** Trình duyệt web (Chrome, Firefox, Edge, Safari), Công cụ văn phòng (Excel, Docs, Sheets, Notion).
+* **Kỹ thuật & An toàn:** Bảo mật & Quyền riêng tư, Công cụ AI (Prompt, ChatGPT, Claude, Ollama, DeepSeek), Lập trình & DevOps (Docker, Git, VS Code, Python), Phần cứng & Mạng (WiFi, SSD, GPU, RAM).
 
 ### 5 Nguyên tắc cốt lõi:
-1. **0đ tuyệt đối:** Hoạt động hoàn toàn trên các tầng miễn phí (Cloudflare Pages, GitHub Actions, Git storage). Không cần thẻ tín dụng.
-2. **Hợp pháp (Fair Use):** Chỉ lưu tiêu đề chuẩn hóa, tóm tắt ngắn (dưới 350 ký tự) và đường link trực tiếp về bài gốc. Không bao giờ cào toàn bộ nội dung.
-3. **Tôn trọng bản quyền:** Luôn ghi rõ tên nguồn, favicon, tác giả và tuân thủ `robots.txt`.
-4. **Tĩnh trước, động sau:** Sinh mã tĩnh (SSG) bằng Astro để đạt tốc độ tải cực nhanh (&lt; 1s), bảo mật cao, không lo sập database.
-5. **Chất lượng hơn số lượng:** Lọc trùng lặp tiêu đề, loại bỏ tin quảng cáo/deal/giảm giá bằng blocklist, chấm điểm thuật toán trước khi đăng.
+1. **0đ tuyệt đối:** Vận hành hoàn toàn bằng free tier của GitHub Actions, Cloudflare Pages / Vercel và Gemini Flash API. Không tốn bất kỳ chi phí duy trì hay thẻ tín dụng nào.
+2. **Nguyên tắc Fair Use:** Chỉ lưu trữ tiêu đề chuẩn hóa, tóm tắt cô đọng (~280–300 ký tự) và đường dẫn gốc. Tuyệt đối không đăng lại nguyên bài viết của tác giả.
+3. **Minh bạch & Tôn trọng bản quyền:** Luôn trích dẫn rõ nguồn, tên tác giả, ngày xuất bản; cung cấp cơ chế gỡ bài và báo cáo lỗi dịch thuật qua GitHub Issues.
+4. **Tĩnh trước, động sau:** Kiến trúc Static Site Generation (SSG) với Astro đạt chuẩn Lighthouse $\ge 90$, tải trang cực nhanh (&lt; 0.5s), không dùng cơ sở dữ liệu động.
+5. **Dữ liệu sạch & Kiểm định gắt gao:** Quy trình QA độc lập chạy trước mỗi lần cập nhật. Dữ liệu chỉ được commit nếu đạt chuẩn 100% tiêu chí.
 
 ---
 
-## ✨ 2. Tính năng nổi bật
+## 🏗️ 2. Kiến trúc Hệ thống
 
-* 🌐 **Song ngữ hoàn chỉnh (VI / EN):** Chuyển đổi ngôn ngữ mượt mà giữa `/vi` và `/en` giữ nguyên đường dẫn hiện tại.
-* ⚡ **Tìm kiếm tức thì (Instant Client Search):** Tìm kiếm toàn văn phía client qua phím tắt `/` hoặc `Ctrl + K`.
-* 🌙 **Dark mode & Light mode:** Thiết kế riêng theo phong cách *"Sổ tay thủ thuật của dân công nghệ"*, sử dụng CSS Variables, đạt chuẩn tương phản WCAG AA, không chớp trắng khi tải trang.
-* 🌟 **Trick of the Day:** Tự động chọn lọc thủ thuật hay nhất trong ngày đưa lên vị trí nổi bật.
-* 🔖 **Lưu bài xem sau (Bookmarks) & Đã đọc:** Lưu trữ cục bộ an toàn trong `localStorage` không cần đăng nhập hay backend.
-* 🏷️ **Phím tắt trực quan:** Tự động định dạng các tổ hợp phím như `<kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd>`.
-* 📡 **Nguồn cấp RSS riêng:** Cung cấp RSS 2.0 đầy đủ tại `/vi/rss.xml`, `/en/rss.xml` và `/rss.xml`.
-* 📋 **Minh bạch & Gỡ bài:** Trang danh sách toàn bộ nguồn tin theo dõi (`/sources`), chính sách bản quyền (`/copyright`) và bảo mật không cookie (`/privacy`).
+```mermaid
+flowchart LR
+    A[20+ RSS & APIs] --> B[scripts/fetch.py]
+    B --> C[scripts/textclean.py]
+    C --> D[scripts/filters.py]
+    D --> E[scripts/classify.py]
+    E --> F[scripts/score.py]
+    F --> G[scripts/translate.py]
+    G --> H[scripts/qa.py]
+    H -->|Đạt chuẩn 100%| I[(data/index.json)]
+    H -->|Thất bại| J[Hủy Commit & Cảnh báo]
+    I --> K[Astro Static Build]
+    K --> L[Cloudflare Pages / Vercel]
+```
+
+### Chi tiết các tầng xử lý:
+* **Làm sạch ([`scripts/textclean.py`](file:///d:/Random_v2/scripts/textclean.py)):** Giải mã HTML entities vòng lặp (kể cả mã hóa kép `&amp;ecirc;`), gỡ tag HTML, loại boilerplate quảng cáo, cắt gọt tóm tắt trùng tiêu đề.
+* **Bộ lọc ([`scripts/filters.py`](file:///d:/Random_v2/scripts/filters.py)):** Phân định nguồn `tips` vs `news`. Chặn toàn bộ bài viết deal, giảm giá, `[QC]`, tuyển dụng, trailer. Ghi nhận nhật ký loại bỏ vào `data/logs/rejected.jsonl`.
+* **Phân loại ([`scripts/classify.py`](file:///d:/Random_v2/scripts/classify.py)):** Phân loại 11 danh mục theo ranh giới từ `\b`. Nhân đôi trọng số tiêu đề; giới hạn tối đa 2 danh mục/bài.
+* **Chấm điểm ([`scripts/score.py`](file:///d:/Random_v2/scripts/score.py)):** Kết hợp trọng số nguồn, suy giảm theo độ mới (recency decay), hệ số how-to và tín hiệu cộng đồng (HN points, Dev.to reactions).
+* **Dịch song ngữ ([`scripts/translate.py`](file:///d:/Random_v2/scripts/translate.py)):** Dịch NGUYÊN CÂU theo lô qua giao diện `Translator`:
+  * *Chính:* Google Gemini API (`GEMINI_MODEL`, mặc định `gemini-2.5-flash`) kèm retry Exponential Backoff khi gặp lỗi 429.
+  * *Dự phòng:* Argos Translate chạy offline trong môi trường CI.
+  * Kiểm duyệt bằng `looks_vietnamese` và `is_mixed`. Không đạt hoặc không có key thì giữ nguyên bản gốc, không gắn nhãn dịch máy.
+* **Cổng kiểm định chất lượng ([`scripts/qa.py`](file:///d:/Random_v2/scripts/qa.py)):** Chặn commit nếu còn mã entity, câu trộn ngữ pháp, bài dán nhãn dịch giả dối, tóm tắt rỗng hoặc danh mục trung bình > 2.0. Đẩy báo cáo chi tiết vào **GitHub Job Summary**.
+* **Phân trang & Giao diện:** Phân trang Astro `paginate()` 20 bài/trang (`/vi/page/2`, `/en/page/2`), typography chuyên sâu (Lexend, Be Vietnam Pro, JetBrains Mono), chuẩn WCAG AA và Dark Terminal Hub phong cách.
 
 ---
 
-## 🏗️ 3. Cấu trúc thư mục
+## 📁 3. Cấu trúc Thư mục
 
 ```text
 tech-tips-hub/
 ├── .github/workflows/
-│   ├── update.yml              # Cronjob tự động thu thập mỗi 4 giờ
-│   └── ci.yml                  # Kiểm tra cú pháp script & build Astro
+│   └── update.yml              # Cron tự động 4 giờ / lần + QA gate
 ├── config/
-│   ├── sources.yml             # Danh mục 15+ nguồn RSS/API uy tín
-│   ├── categories.yml          # Định nghĩa 11 danh mục và từ khóa lọc
-│   └── blocklist.yml           # Từ khóa quảng cáo, deal, tên miền bị chặn
+│   ├── sources.yml             # Danh sách nguồn tin và cấu hình kind: tips/news
+│   ├── categories.yml          # Định nghĩa 11 danh mục và màu sắc
+│   └── blocklist.yml           # Danh sách từ khóa bị chặn
 ├── scripts/
-│   ├── fetch.py                # Thu thập dữ liệu từ các nguồn RSS
-│   ├── dedupe.py               # Chuẩn hóa URL, lọc trùng lặp & kiểm tra blocklist
-│   ├── score.py                # Chấm điểm độ hữu ích và phân loại tags
-│   ├── translate.py            # Dịch song ngữ (Gemini API + Offline rules) có cache
-│   ├── run_pipeline.py         # Điều phối toàn bộ quy trình thu thập
-│   └── requirements.txt        # Thư viện Python
+│   ├── fetch.py                # Thu thập dữ liệu RSS & API
+│   ├── textclean.py            # Giải mã entities và chuẩn hóa văn bản
+│   ├── filters.py              # Bộ lọc how-to & blocklist
+│   ├── classify.py             # Phân loại danh mục theo từ khóa
+│   ├── score.py                # Tính điểm chất lượng và độ khó
+│   ├── translate.py            # Động cơ dịch thuật (Gemini / Argos offline)
+│   ├── run_pipeline.py         # Điều phối toàn bộ quy trình
+│   ├── migrate.py              # Migration dữ liệu cũ an toàn
+│   └── qa.py                   # Kiểm định chất lượng và xuất Job Summary
+├── tests/
+│   └── test_translate.py       # Bộ unit test cho module dịch thuật
 ├── data/
-│   ├── index.json              # Kho dữ liệu thủ thuật đã chuẩn hóa
-│   └── cache/translations.json # Bộ nhớ cache bản dịch
+│   ├── index.json              # Kho dữ liệu thủ thuật đang hoạt động
+│   ├── history_featured.json   # Lịch sử Mẹo hay hôm nay (không lặp 14 ngày)
+│   ├── logs/rejected.jsonl     # Nhật ký bài viết bị loại
+│   └── cache/translations.json # Bộ nhớ cache bản dịch đã kiểm định
 ├── src/
 │   ├── i18n/                   # Từ điển giao diện EN / VI
-│   │   ├── en.json
-│   │   └── vi.json
-│   ├── layouts/
-│   │   └── Layout.astro        # Layout chính (Header, Footer, Theme, Meta)
-│   ├── components/
-│   │   ├── TipCard.astro       # Thẻ hiển thị thủ thuật
-│   │   ├── TrickOfTheDay.astro # Thẻ thủ thuật nổi bật trong ngày
-│   │   └── SearchModal.astro   # Hộp tìm kiếm tức thì
-│   ├── styles/
-│   │   └── global.css          # Design tokens, màu giấy ấm, WCAG AA
-│   └── pages/
-│       ├── index.astro         # Tự động nhận diện ngôn ngữ trình duyệt
-│       ├── 404.astro           # Trang lỗi 404 có cá tính
-│       ├── rss.xml.ts          # RSS XML chuẩn
-│       ├── api/tips.json.ts    # JSON Endpoint phục vụ tìm kiếm nhanh
-│       ├── vi/                 # Toàn bộ trang tiếng Việt
-│       └── en/                 # Toàn bộ trang tiếng Anh
-├── public/
-│   ├── favicon.svg             # Favicon thủ công nhận diện ở cỡ 16px
-│   ├── robots.txt              # Chỉ thị bọ tìm kiếm
-│   └── js/actions.js           # Xử lý bookmark & trạng thái đã xem
-├── astro.config.mjs
-├── tailwind.config.mjs
+│   ├── layouts/Layout.astro    # Khung giao diện chuẩn Terminal Dark
+│   ├── components/             # TipCard, TrickOfTheDay, Pagination, SearchModal
+│   ├── styles/global.css       # Design tokens, màu sắc WCAG AA
+│   └── pages/                  # Các route tĩnh VI/EN, phân trang, chi tiết bài
 ├── package.json
 └── README.md
 ```
 
 ---
 
-## 🚀 4. Hướng dẫn cài đặt và chạy thử cục bộ
+## 🚀 4. Hướng dẫn Chạy Cục bộ
 
-### Yêu cầu môi trường
-* **Node.js**: v18.0 trở lên (khuyến nghị v20+)
-* **Python**: 3.10 trở lên
+### Yêu cầu:
+* **Node.js**: v18.0+
+* **Python**: v3.10+
 
 ### Bước 1: Cài đặt dependencies
 ```bash
-# 1. Cài đặt các gói giao diện Astro
+# Cài đặt giao diện Astro
 npm install
 
-# 2. Cài đặt các gói Python
+# Khởi tạo và kích hoạt Python venv
 python -m venv .venv
 # Trên Windows:
 .\.venv\Scripts\activate
@@ -111,57 +116,47 @@ source .venv/bin/activate
 pip install -r scripts/requirements.txt
 ```
 
-### Bước 2: Chạy tiến trình thu thập dữ liệu (Tùy chọn nếu muốn lấy bài mới)
+### Bước 2: Chạy kiểm thử tự động
 ```bash
+# Chạy bộ unit test dịch thuật
+python tests/test_translate.py
+
+# Chạy kiểm định chất lượng dữ liệu (QA)
+python scripts/qa.py
+```
+
+### Bước 3: Thu thập và cập nhật dữ liệu mới (Tùy chọn)
+```bash
+# Thiết lập API key nếu có (tùy chọn)
+export GEMINI_API_KEY="your-gemini-key"
+export GEMINI_MODEL="gemini-2.5-flash"
+
 python scripts/run_pipeline.py
 ```
-> *(Tùy chọn)* Nếu có Google Gemini API Key, bạn có thể thiết lập:
-> ```bash
-> export GEMINI_API_KEY="your-gemini-key"  # hoặc $env:GEMINI_API_KEY="your-key"
-> ```
-> Nếu không có key, hệ thống vẫn tự động chuyển sang bộ dịch quy tắc ngoại tuyến mà không tốn 1 xu chi phí!
 
-### Bước 3: Khởi chạy môi trường xem trước (Dev Server)
+### Bước 4: Khởi chạy môi trường Dev
 ```bash
 npm run dev
 ```
-Truy cập trình duyệt tại: `http://localhost:4321/vi` hoặc `http://localhost:4321/en`.
+Truy cập trình duyệt: `http://localhost:4321/vi` hoặc `http://localhost:4321/en`.
 
-### Bước 4: Đóng gói bản Static Site (Production Build)
+### Bước 5: Build bản Production
 ```bash
 npm run build
 ```
-Thư mục `dist/` tạo ra sẵn sàng triển khai thẳng lên Cloudflare Pages hoặc GitHub Pages!
+Đầu ra tại thư mục `dist/` sẵn sàng triển khai thẳng lên Cloudflare Pages hoặc Vercel.
 
 ---
 
-## ⚙️ 5. Thêm nguồn tin mới
+## 🔐 5. Thiết lập Biến môi trường (CI/CD)
 
-Chỉ cần thêm vào file `config/sources.yml`:
-
-```yaml
-- id: ten_nguon
-  name: Tên Trang Tin
-  url: https://example.com/feed/
-  site_url: https://example.com
-  type: rss
-  lang: en # hoặc vi
-  weight: 1.1 # Trọng số tin cậy 0.5 - 1.5
-  categories: [windows, dev]
-  description: Mô tả ngắn gọn về nguồn tin
-```
-
-Sau đó chạy lại `python scripts/run_pipeline.py`, bài viết sẽ tự động xuất hiện trên web.
+Trong cài đặt GitHub Repository (**Settings > Secrets and variables > Actions**):
+* `GEMINI_API_KEY` *(Repository Secret)*: Khóa Google Gemini API miễn phí (lấy tại Google AI Studio).
+* `GEMINI_MODEL` *(Repository Variable - Tùy chọn)*: Tên model Gemini muốn dùng (mặc định: `gemini-2.5-flash`).
 
 ---
 
-## 🛡️ 6. Bản quyền và Pháp lý
+## 🛡️ 6. Giấy phép & Bản quyền
 
 * Mã nguồn được phát hành theo giấy phép **MIT License**.
-* Toàn bộ nội dung bài viết và nhãn hiệu thuộc về các tác giả và nhà xuất bản gốc.
-* Tech Tips Hub chỉ phục vụ mục đích học hỏi, dẫn link và tra cứu kiến thức công nghệ.
-
----
-
-*Xây dựng với niềm đam mê dành cho cộng đồng công nghệ.*
-
+* Toàn bộ nội dung bài viết, thương hiệu và hình ảnh thuộc về tác giả và trang tin gốc. Tech Tips Hub hoạt động như một công cụ lập chỉ mục hỗ trợ dẫn link về bài gốc.

@@ -28,7 +28,10 @@
     "score": 1.5,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Jadens JD-166 Review: Portable, Inkless Thermal Printer on Linux",
+    "raw_summary": "A small, portable printer that prints A4 papers without ink on Debian-based Linux distros.",
+    "hidden": false
   },
   "297510541102345d": {
     "id": "297510541102345d",
@@ -59,7 +62,10 @@
     "score": 1.5,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Local AI Weekly #7: Bubble or Not?",
+    "raw_summary": "China's AI stocks lost $480 billion. But SK Hynix posted record profits and says RAM stays scarce till 2030. Bubbles pop, prices don't.",
+    "hidden": false
   },
   "739c9f9103673d3c": {
     "id": "739c9f9103673d3c",
@@ -93,7 +99,10 @@
     "score": 1.47,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Firefox 159 released with Wayland Linux fixes",
+    "raw_summary": "Firefox 159 is out, with a fresh set of improvements and some Linux-specific fixes. Now that Mozilla’s browser hews to a faster release cadence, with two releases a month rather than one, some changelogs may look minor on their own, as they’re smaller, if more frequent slices. So what’s changed?…",
+    "hidden": false
   },
   "72c7ad11c062c24d": {
     "id": "72c7ad11c062c24d",
@@ -125,7 +134,10 @@
     "score": 1.5,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Ghostty 1.4 Is Faster and Uses Less RAM, but Drops Ubuntu 24.04 LTS Support",
+    "raw_summary": "The Ubuntu 24.04 support drop is thanks to the native builds requiring some newer dependencies. Anyhow, there’s more to this Ghostty release than that.",
+    "hidden": false
   },
   "51ae3dcde8c253db": {
     "id": "51ae3dcde8c253db",
@@ -159,7 +171,10 @@
     "score": 1.46,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Ghostty 1.4 released with big improvements",
+    "raw_summary": "A major new release of Ghostty, the open-source terminal emulator, has been released. Ghostty 1.4.0 brings a varied set of changes after 7 months of development. There are welcome performance optimisations on Linux and macOS, a more capable SHH implementation and an easier way to rearrange tab…",
+    "hidden": false
   },
   "bd9ce4e0e37eb114": {
     "id": "bd9ce4e0e37eb114",
@@ -190,7 +205,10 @@
     "score": 1.46,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Ubuntu Core Desktop ‘accelerating’ development ahead of 27.04",
+    "raw_summary": "Canonical has announced it’s ‘accelerating’ development of Ubuntu Core Desktop, its immutable, snap-based version of its desktop OS. Ubuntu Core Desktop was announced in 2023 and made available in preview for enthusiasts to try. But a lack of of obvious progress and direction (not to mention…",
+    "hidden": false
   },
   "4d429bba38d36917": {
     "id": "4d429bba38d36917",
@@ -221,7 +239,10 @@
     "score": 1.4,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Rocky Linux Creator Built a New \"Not Linux\" Kernel in 11 Days Using AI",
+    "raw_summary": "Ginux is not a Linux fork, yet it boots Rocky Linux 10 all the way to systemd. An OpenAI Codex agent wrote about 139,000 lines of it.",
+    "hidden": false
   },
   "01054830b2a9635b": {
     "id": "01054830b2a9635b",
@@ -252,7 +273,10 @@
     "score": 1.4,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "In a Setback to VMWare, Tesco is Looking to Migrate to Proxmox",
+    "raw_summary": "Tired of the rising licensing cost of VMWare, Tesco seems to be looking to switch to Proxmox.",
+    "hidden": false
   },
   "e724fb83679bba72": {
     "id": "e724fb83679bba72",
@@ -283,7 +307,10 @@
     "score": 1.34,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Ubuntu firmware HWE will prevent issues on older kernel",
+    "raw_summary": "Ubuntu is planning a new linux-firmware-hwe package, in an effort to reduce the risk of firmware updates for newer kernels causing problems for users running older ones. On Ubuntu long-term support (LTS) releases, you can stick with the standard (GA) kernel it was released with for the duration of…",
+    "hidden": false
   },
   "a649527bbaa9fadb": {
     "id": "a649527bbaa9fadb",
@@ -314,7 +341,10 @@
     "score": 1.4,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "BSD Users Can Now Enjoy Omarchy Flavor",
+    "raw_summary": "Daemonarchy keeps Omarchy’s installer and look, with FreeBSD handling the system underneath.",
+    "hidden": false
   },
   "108546ab436ee46a": {
     "id": "108546ab436ee46a",
@@ -345,7 +375,10 @@
     "score": 1.4,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Systemd Creator’s Startup Opens Signups for Private Preview of its Linux System",
+    "raw_summary": "Amutable Foundations is a read-only, image-based system where every machine produces signed reports of its own state.",
+    "hidden": false
   },
   "f6ba26099c5cb990": {
     "id": "f6ba26099c5cb990",
@@ -376,7 +409,10 @@
     "score": 1.34,
     "howto": true,
     "reading_time_min": 2,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Trash talking Ubuntu’s confusing British bin labels",
+    "raw_summary": "Every operating systems needs somewhere to put the files you delete (and give you chance to rummage through to find the ones you want to keep). But, if you’re a Brit using Ubuntu, the name of that place varies based on where you look. It seems Ubuntu’s UK English translation team don’t agree on…",
+    "hidden": false
   },
   "50540090dc1f9a17": {
     "id": "50540090dc1f9a17",
@@ -407,7 +443,10 @@
     "score": 1.38,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "22 Things to Do After Installing Ubuntu 26.10 Stonking Stingray",
+    "raw_summary": "Make Ubuntu 26.10 yours by following these tweaks and tips.",
+    "hidden": false
   },
   "d5d383be6d2d90ea": {
     "id": "d5d383be6d2d90ea",
@@ -438,7 +477,10 @@
     "score": 1.33,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "This Newly Proposed Linux Filesystem Can Fix Corrupted Data",
+    "raw_summary": "Aimed at hardware exposed to radiation, like satellites, BeamFS can repair data without keeping a second copy.",
+    "hidden": false
   },
   "513f9c14c838474f": {
     "id": "513f9c14c838474f",
@@ -469,7 +511,10 @@
     "score": 1.23,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Learn SSH",
+    "raw_summary": "SSH is how you log in to and work on remote Linux machines. Start with the basics, then secure your setup and fix the errors you are most likely to run into.",
+    "hidden": false
   },
   "d683cbeee4d0d8ac": {
     "id": "d683cbeee4d0d8ac",
@@ -501,7 +546,10 @@
     "score": 1.22,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Bottles Creator Mirko Brombin Wants Microsoft Office on Linux, Not Its Clones",
+    "raw_summary": "Mirko Brombin is working to get Microsoft Office running reliably on Linux. He also thinks the apps cloning Office and Photoshop pixel for pixel cross a line. We talked about both, plus AI agents, Vanilla OS and his new Sinty OS.",
+    "hidden": false
   },
   "a7dba8bb7ae409f1": {
     "id": "a7dba8bb7ae409f1",
@@ -532,7 +580,10 @@
     "score": 1.22,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "RAID Calculator",
+    "raw_summary": "Calculate usable capacity, fault tolerance, and storage efficiency for any RAID or ZFS layout. Also see if there are any risks associated with your rebuilds.",
+    "hidden": false
   },
   "fadd7467dc36644c": {
     "id": "fadd7467dc36644c",
@@ -560,10 +611,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.22,
+    "score": 1.09,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Word Counting Is Harder Than It Looks: A Dev's Guide",
+    "raw_summary": "Every developer has written the naive version at least once: const words =",
+    "hidden": false
   },
   "9b4da64b24df25e5": {
     "id": "9b4da64b24df25e5",
@@ -594,7 +648,10 @@
     "score": 1.22,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "These Projects are Keeping X11 Dream Alive on Linux",
+    "raw_summary": "The list covers desktops, X servers, and a Wayland-hosted X11 layer. Basically, projects that are resisting a Waylan-only Linux future.",
+    "hidden": false
   },
   "0a9a094c784de235": {
     "id": "0a9a094c784de235",
@@ -625,7 +682,10 @@
     "score": 1.22,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "ArmSoM Sige7s Puts the RK3588S on a Raspberry Pi-Sized Board, and There's a Compute Module Too",
+    "raw_summary": "The small SBC brings a 6 TOPS NPU, Wi-Fi 6, a Pi-compatible 40-pin header, and up to 32GB RAM, starting at $153.",
+    "hidden": false
   },
   "f4cb4a6778724aeb": {
     "id": "f4cb4a6778724aeb",
@@ -653,10 +713,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.22,
+    "score": 1.09,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "How to compress an image to an exact KB limit in the browser (canvas, binary search, and when to stop lowering quality)",
+    "raw_summary": "Upload forms for visas, exams and job portals often say \"photo must be under 100 KB\". A phone photo",
+    "hidden": false
   },
   "4189b4549c8cf284": {
     "id": "4189b4549c8cf284",
@@ -687,7 +750,10 @@
     "score": 1.22,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Red Hat Funded a Report That Found a Quarter of Incoming Pull Requests May Be AI Slop",
+    "raw_summary": "The Linux Foundation Research survey also found that only 35% of projects have a formal policy permitting AI contributions.",
+    "hidden": false
   },
   "6508908febf34a09": {
     "id": "6508908febf34a09",
@@ -715,10 +781,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.22,
+    "score": 1.09,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Building an MLOps Workflow: From Experiment to Production",
+    "raw_summary": "A practical guide to MLOps workflows, maturity levels, governance, monitoring, and the relationship between MLOps and DevOps.",
+    "hidden": false
   },
   "256c27b306f09301": {
     "id": "256c27b306f09301",
@@ -746,10 +815,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.22,
+    "score": 1.09,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "How to Plan a Game Vertical Slice in 7 Days with a One-Page GDD",
+    "raw_summary": "Most solo devs skip the game design document because it feels like homework. Then scope creep eats a",
+    "hidden": false
   },
   "1d22dd0edb251dbb": {
     "id": "1d22dd0edb251dbb",
@@ -782,7 +854,10 @@
     "score": 1.17,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Chrome 156 for Googlebook rolling out with 14 updates across sites, shortcuts, more",
+    "raw_summary": "Google is rolling out Chrome 156 for Googlebooks with a slew of improvements and bug fixes. This follows the last browser update two weeks ago.",
+    "hidden": false
   },
   "45c76ee61d860588": {
     "id": "45c76ee61d860588",
@@ -813,7 +888,10 @@
     "score": 1.17,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Ubuntu users can now file bugs against specific Launchpad PPAs",
+    "raw_summary": "Launchpad now offers bug tracking for personal package archives (PPAs), making it easier for users to report issues specific to software within a PPA. Why does that matter? Well, not all PPAs are maintained by their upstream counterparts – folks who, frankly, aren’t always minded to care about…",
+    "hidden": false
   },
   "178301a7ab9b01b0": {
     "id": "178301a7ab9b01b0",
@@ -844,7 +922,10 @@
     "score": 1.17,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "PHP2Shell scare sees SuperTuxKart pull its online server",
+    "raw_summary": "SuperTuxKart has taken several online services offline, having pulled the server that powers them rather than risk it being exploited by PHP2shell. The open-source karting game is not alone in ‘pitting’ to patch, with Wikimedia, DeviantArt, government websites and many more taking various systems…",
+    "hidden": false
   },
   "a07d8ae926f256fd": {
     "id": "a07d8ae926f256fd",
@@ -878,7 +959,10 @@
     "score": 1.13,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Command Conqueror",
+    "raw_summary": "Ten Linux command line puzzles, from hidden files to SUID privilege escalation. Free, no account needed, runs in Docker on your computer.",
+    "hidden": false
   },
   "ca31470603a5474e": {
     "id": "ca31470603a5474e",
@@ -910,7 +994,10 @@
     "score": 1.17,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Shader Effects is the coolest GNOME extension you’ll try this weekend",
+    "raw_summary": "Ever wondered what your Ubuntu desktop would look like if you were watching it on a chewed up VHS tape or an old monochrome CRT monitor? You probably haven’t, but a new GNOME Shell extension lets you find out anyway. The Shader Effects extension applies GPU-accelerated filters, things like scan…",
+    "hidden": false
   },
   "3371457e4c3a2604": {
     "id": "3371457e4c3a2604",
@@ -941,7 +1028,10 @@
     "score": 1.17,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Calibre 9.17 release brings faster ebook conversions",
+    "raw_summary": "Calibre 9.17 has been released with faster ebook conversion speeds and JPEG XL image support. The open-source ebook editor improves output compression speeds for MOBI, AZW3 and PDB files, which makes conversions to those formats quicker. Converting EPUB to MOBI is what I use Calibre for to read on…",
+    "hidden": false
   },
   "e0c4a27393065c73": {
     "id": "e0c4a27393065c73",
@@ -972,7 +1062,10 @@
     "score": 1.13,
     "howto": true,
     "reading_time_min": 2,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Đi nước ngoài được mang tối đa bao nhiêu USD tiền mặt?",
+    "raw_summary": "Bạn đọc Hoàng Thủy (Hưng Yên) hỏi: \"Tôi chuẩn bị đi du lịch nước ngoài và muốn mang theo một ít USD tiền mặt để chi tiêu. Xin hỏi, một người được mang tối đa bao nhiêu USD khi xuất cảnh từ Việt Nam? Nếu mang trên 5.000 USD thì có bị cấm hay phải làm thủ tục gì\"?",
+    "hidden": false
   },
   "8a2e6d2c33ee39b0": {
     "id": "8a2e6d2c33ee39b0",
@@ -1003,7 +1096,10 @@
     "score": 1.17,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Canonical dev mocks up an Ubuntu launcher that uses AI",
+    "raw_summary": "What would deeper AI integration on the Ubuntu desktop look like? Well, you don’t need to think too hard to find out. A Canonical engineer has published a prototype launcher that simulates how on-device AI could be used to enhance and aid users of the Ubuntu desktop. But the warty-prototype snap by…",
+    "hidden": false
   },
   "4f9a6a4a0665abf7": {
     "id": "4f9a6a4a0665abf7",
@@ -1034,7 +1130,10 @@
     "score": 1.17,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Epic’s new vibe-coded games launcher is available on Ubuntu",
+    "raw_summary": "Epic Games has confirmed that Fortnite is coming to Linux, and the launcher it will arrive through is available to try in preview on Ubuntu – a vibe-coded wonder that’s been royally roasted on the internet. The gaming company has also announced a rebuilt version of its anti-cheat tech for Linux…",
+    "hidden": false
   },
   "d3a089a79de6f388": {
     "id": "d3a089a79de6f388",
@@ -1065,7 +1164,10 @@
     "score": 1.12,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Malaysia seizes $12 million worth of advanced AI chips hidden inside 30 servers",
+    "raw_summary": "Malaysian customs seized 30 servers containing more than $12 million worth of advanced AI chips at Kuala Lumpur International Airport, as authorities investigate a suspected smuggling network linked to multiple previous seizures.",
+    "hidden": false
   },
   "8e99a2fd677f7950": {
     "id": "8e99a2fd677f7950",
@@ -1099,7 +1201,10 @@
     "score": 1.17,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "KeePassXC 2.8 released with Qt6, support for Wayland auto-type",
+    "raw_summary": "If KeePassXC is your password-management app of choice on Linux, the new 2.8.0 update is going to please. KeePassXC 2.8.0 sees some “long-awaited new features” arrive, including a Qt6 port of the main app interface, auto-type support on Wayland via XDG Desktop Portals, fingerprint unlock and a new…",
+    "hidden": false
   },
   "4a466fb18b4efea7": {
     "id": "4a466fb18b4efea7",
@@ -1129,10 +1234,13 @@
       "python"
     ],
     "difficulty": "medium",
-    "score": 1.11,
+    "score": 1.0,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Are You a Python Developer or a Python Expert? 7 Tests I Failed Building 3 Desktop Apps",
+    "raw_summary": "Description: Python security, screen capture, spring physics, HiDPI and PyInstaller .exe gotchas. 7",
+    "hidden": false
   },
   "8fb639d936f65def": {
     "id": "8fb639d936f65def",
@@ -1160,10 +1268,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.11,
+    "score": 1.0,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Building a Morse Code Practice Timer in JavaScript: Timing Dits, Dahs and Gaps",
+    "raw_summary": "Learning Morse code is not only about memorising dots and dashes. It is about rhythm. If your timing",
+    "hidden": false
   },
   "287908b3e087f501": {
     "id": "287908b3e087f501",
@@ -1194,7 +1305,10 @@
     "score": 1.09,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Ubuntu rolls out php2shell, eMudhra certificate fixes",
+    "raw_summary": "Ubuntu has released security updates for the php2shell PHP flaw that’s led to websites being taken offline, and a key compromise at the eMudhra certificate authority. Desktop Ubuntu isn’t directly affected by php2shell, since PHP isn’t installed by default. The certificate issue is more of a…",
+    "hidden": false
   },
   "c55a4eec3fa5eaad": {
     "id": "c55a4eec3fa5eaad",
@@ -1222,10 +1336,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.11,
+    "score": 1.0,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "3.5 x 4.5 cm is not a pixel size: converting cm and DPI for form photos",
+    "raw_summary": "A lot of application forms ask for a passport-style photo of \"3.5 x 4.5 cm\". An image file has no",
+    "hidden": false
   },
   "c989d358786f1ec1": {
     "id": "c989d358786f1ec1",
@@ -1253,10 +1370,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.11,
+    "score": 1.0,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Turn a WhatsApp Group Chat into a Weekly Summary with a Local LLM",
+    "raw_summary": "A project group can discuss a quotation on Monday, change its deadline on Wednesday, and confirm",
+    "hidden": false
   },
   "09c11f07e58f7e0b": {
     "id": "09c11f07e58f7e0b",
@@ -1289,7 +1409,10 @@
     "score": 1.09,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Firefox 158.0.1 brings eMudhra certificate security fixes",
+    "raw_summary": "Mozilla Firefox 158.0.1 is rolling out with some important security fixes. Now, I don’t tend to cover Firefox point releases as mainly ship minor fixes for things the majority of users won’t have noticed were wrong in the first place. The Firefox 158.0.1 update is more ‘meaty’ than usual fare.…",
+    "hidden": false
   },
   "e911f0d646627b9d": {
     "id": "e911f0d646627b9d",
@@ -1319,10 +1442,13 @@
       "python"
     ],
     "difficulty": "medium",
-    "score": 1.11,
+    "score": 1.0,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Find podcasts and their latest episodes with Python (iTunes Search API + RSS, no API key)",
+    "raw_summary": "Podcast guest outreach, sponsorship research, and \"new episode\" alerts all need the same two things:",
+    "hidden": false
   },
   "82587239bd94ad26": {
     "id": "82587239bd94ad26",
@@ -1350,10 +1476,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.11,
+    "score": 1.0,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Sri Lankan public holidays and Poya days as open data, and two date bugs to avoid",
+    "raw_summary": "An open JSON, CSV and iCalendar list of Sri Lanka's 2026 and 2027 holidays, where it comes from, and two date bugs to avoid when you use it.",
+    "hidden": false
   },
   "24667ebd409b6cab": {
     "id": "24667ebd409b6cab",
@@ -1387,7 +1516,10 @@
     "score": 1.09,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "BleachBit 6.0.6 fixes admin cleaning on Linux",
+    "raw_summary": "BleachBit, the free, open-source and cross-platform system cleaning utility has a new maintenance release out – with support for Ubuntu 26.10. BleachBit 6.0.6 introduces cleaners for the Helium browser and Docker Desktop (including its AI assistant). This update also boosts app startup times, and…",
+    "hidden": false
   },
   "7b0dcfffd55692e8": {
     "id": "7b0dcfffd55692e8",
@@ -1415,10 +1547,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.11,
+    "score": 1.0,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Pipes and Redirection: How >, >>, 2> and | Really Work",
+    "raw_summary": "Four small symbols move text between commands and files. Once you see the three streams behind them, shell one-liners stop looking like magic.",
+    "hidden": false
   },
   "843e2f5d387fbdbf": {
     "id": "843e2f5d387fbdbf",
@@ -1448,10 +1583,13 @@
       "powershell"
     ],
     "difficulty": "advanced",
-    "score": 1.11,
+    "score": 1.0,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "SteamOS or Windows 11: deciding with PowerShell before you partition",
+    "raw_summary": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11.",
+    "hidden": false
   },
   "37108c33863abd27": {
     "id": "37108c33863abd27",
@@ -1485,7 +1623,10 @@
     "score": 1.06,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Hate setting up eSIMs? Gemini might soon do it for you (APK teardown)",
+    "raw_summary": "We've spotted a new connector for Gemini, and it can already start the eSIM setup process with a few simple prompts.",
+    "hidden": false
   },
   "89542d4c2591aab7": {
     "id": "89542d4c2591aab7",
@@ -1513,10 +1654,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.11,
+    "score": 1.0,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "5 Common SQL Mistakes: WHERE, ORDER BY, AND/OR, and Top 3 Queries",
+    "raw_summary": "A SQL query can execute without errors and still produce an unexpected result. It might return the",
+    "hidden": false
   },
   "d78bc6b547af3975": {
     "id": "d78bc6b547af3975",
@@ -1546,10 +1690,13 @@
       "python"
     ],
     "difficulty": "medium",
-    "score": 1.11,
+    "score": 1.0,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Detect a website's tech stack from headers, HTML and cookies (JS + Python)",
+    "raw_summary": "Find a website's CMS, framework, analytics and hosting from one HTTP request. Learn the five clues, their limits, and two short scripts in Node and Python with no dependencies.",
+    "hidden": false
   },
   "6aaf671df097a150": {
     "id": "6aaf671df097a150",
@@ -1582,7 +1729,10 @@
     "score": 1.03,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Biến laptop thành máy dò camera ẩn trong phòng khách sạn bằng Claude Code",
+    "raw_summary": "Một mẹo sử dụng Claude Code được chia sẻ gần đây cho phép người dùng biến chiếc laptop thành một thiết bị an ninh kiểm",
+    "hidden": false
   },
   "923a56423901f094": {
     "id": "923a56423901f094",
@@ -1613,7 +1763,10 @@
     "score": 1.03,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "LHB Linux Digest #26.14: Free CTF, Special Permissions, Process Substitution and More",
+    "raw_summary": "Time to challenge yourself and test your Linux command line knowledge.",
+    "hidden": false
   },
   "0b6da1aaa6bf64d9": {
     "id": "0b6da1aaa6bf64d9",
@@ -1644,7 +1797,10 @@
     "score": 1.03,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Link Your CTF Handle to Your Linux Handbook Account",
+    "raw_summary": "Link your Linux Handbook CTF handle to your account to keep it on every computer and unlock members-only games.",
+    "hidden": false
   },
   "9024464754e15960": {
     "id": "9024464754e15960",
@@ -1675,7 +1831,10 @@
     "score": 1.03,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Tinhtelookback: Galaxy Z Fold8 sau 3 tháng đã thay đổi cách mình xem nội dung mỗi ngày",
+    "raw_summary": "Mình đã xài Samsung Galaxy Z Fold8 được khoảng 2-3 tháng rồi, và hôm nay mình đứng ngay bờ Hồ Gươm để chia sẻ lại cảm nhận thật của mình. Điểm mình thích nhất trên chiếc máy này chắc chắn là form",
+    "hidden": false
   },
   "8d7abd115b3eff9a": {
     "id": "8d7abd115b3eff9a",
@@ -1709,16 +1868,19 @@
     "score": 1.03,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Linux CTF Challenges",
+    "raw_summary": "Free capture-the-flag games that test your Linux command line skills. No account needed. The levels run in Docker on your own computer.",
+    "hidden": false
   },
   "494dec1bba8b15b8": {
     "id": "494dec1bba8b15b8",
     "url": "https://genk.vn/ky-nguyen-dien-anh-ai-nam-2026-su-that-ve-nhung-bo-phim-dai-hang-gio-va-cach-san-xuat-165261029113319504.chn",
     "source": {
       "id": "genk",
-      "name": "GenK",
+      "name": "GenK Thủ Thuật",
       "site_url": "https://genk.vn",
-      "kind": "news"
+      "kind": "tips"
     },
     "author": null,
     "published_at": "Thu, 29 Oct 2026 11:39:00 +07",
@@ -1737,10 +1899,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.03,
+    "score": 1.41,
     "howto": true,
     "reading_time_min": 2,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Kỷ nguyên điện ảnh AI năm 2026: Sự thật về những bộ phim dài hàng giờ và cách sản xuất",
+    "raw_summary": "Phim tạo bằng AI không còn dừng lại ở những đoạn video ngắn ngủi vô nghĩa. Năm 2026 chứng kiến sự bùng nổ của các tác phẩm điện ảnh dài hàng giờ, mở ra một kỷ nguyên mới cho ngành công nghiệp giải trí với những bước tiến công nghệ đột phá và đầy thách thức.",
+    "hidden": false
   },
   "c60bf0ed12d07979": {
     "id": "c60bf0ed12d07979",
@@ -1768,10 +1933,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.02,
+    "score": 0.92,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "From Code to Culture: Building 101 Indian Monuments in 3D",
+    "raw_summary": "101 Indian Monuments, Modelled in the Browser India's heritage has always fascinated me.",
+    "hidden": false
   },
   "2f1f3dcba6e12a09": {
     "id": "2f1f3dcba6e12a09",
@@ -1802,7 +1970,10 @@
     "score": 0.99,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "PS5 Linux hack now supports (some) newer firmware versions",
+    "raw_summary": "New PS5 Linux hack pLinux5-NG supports newer firmware, allowing Linux and Steam games to run on Sony's console. But not for long, welp. You're reading PS5 Linux hack now supports (some) newer firmware versions , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission.",
+    "hidden": false
   },
   "fc1520313d731b21": {
     "id": "fc1520313d731b21",
@@ -1834,7 +2005,10 @@
     "score": 0.99,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Give Nautilus file manager the ‘Computer’ view it lacks",
+    "raw_summary": "Nautilus My Computer brings a Windows-style Computer overview to the GNOME file manager, and extras like Miller columns and sidebar editing. You're reading Give Nautilus file manager the ‘Computer’ view it lacks , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission.",
+    "hidden": false
   },
   "2f60432befdab164": {
     "id": "2f60432befdab164",
@@ -1865,7 +2039,10 @@
     "score": 0.99,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "FOSS Weekly #26.43: Kernel 7.3, Non-Linux OS, de-Googled Phone, DuxOS, Podcasts, De-bloating TVs, KDE Dock and More",
+    "raw_summary": "A new kernel and a new Ubuntu release are here.",
+    "hidden": false
   },
   "d788112ac5f1a908": {
     "id": "d788112ac5f1a908",
@@ -1896,7 +2073,10 @@
     "score": 0.99,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Audacious 4.6.2 fills the last gaps in its Qt Winamp mode",
+    "raw_summary": "Audacious 4.6.2 lets you drop Winamp skin files onto the Qt window to install them, and adds keyboard navigation for toolbar buttons. You're reading Audacious 4.6.2 fills the last gaps in its Qt Winamp mode , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission.",
+    "hidden": false
   },
   "91283ff265261284": {
     "id": "91283ff265261284",
@@ -1930,7 +2110,10 @@
     "score": 0.99,
     "howto": true,
     "reading_time_min": 2,
-    "translated": {}
+    "translated": {},
+    "raw_title": "NordVPN 6.0 for Linux is coming – with ‘breaking’ changes",
+    "raw_summary": "NordVPN are updating their Linux app to offer a “cleaner, simpler way to manage VPN connections” from the command line. The NordVPN 6.0 update, which is coming soon (so not out yet), “cuts down” the number of commands that “overlap”. The company say this will make it easier for users to enable and…",
+    "hidden": false
   },
   "c1db73a21d9033c7": {
     "id": "c1db73a21d9033c7",
@@ -1963,7 +2146,10 @@
     "score": 0.99,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "LHB Linux Digest #26.16: Bash Arrays, mapfile, Self-hosted Linear Alternative and More",
+    "raw_summary": "One variable, many values.",
+    "hidden": false
   },
   "2d49c928424222e9": {
     "id": "2d49c928424222e9",
@@ -1994,7 +2180,10 @@
     "score": 0.99,
     "howto": true,
     "reading_time_min": 2,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Linux 7.3 is out, speeds up ext4 and low-VRAM AMD GPUs",
+    "raw_summary": "Linux 7.3 is out with faster ext4, better performance on AMD GPUs with low VRAM and a new cgroup scheduling mode. 2026 Steam Controller driver debuts. You're reading Linux 7.3 is out, speeds up ext4 and low-VRAM AMD GPUs , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission.",
+    "hidden": false
   },
   "b302cd56f6ec631a": {
     "id": "b302cd56f6ec631a",
@@ -2022,10 +2211,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.98,
+    "score": 0.87,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Understanding What AI just Created in the 500mph Landscape",
+    "raw_summary": "How to understand what AI wrote: For beginners! Avoid lack of dopamine, mental atrophy,",
+    "hidden": false
   },
   "d9c39429d489eec5": {
     "id": "d9c39429d489eec5",
@@ -2058,7 +2250,10 @@
     "score": 0.96,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Chapter 3: The Tmux Prefix Key & Essential Shortcuts",
+    "raw_summary": "In the previous chapter, you started tmux and saw that it still feels like a normal terminal. You can run commands, work with files, and use your shell just as you normally would. Now you need a way to tell tmux: \"I want you to do something, not my",
+    "hidden": false
   },
   "c83e4a34493e1229": {
     "id": "c83e4a34493e1229",
@@ -2089,7 +2284,10 @@
     "score": 0.96,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Lời khuyên dành cho tất cả những ai hay dùng Google Maps để tra đường",
+    "raw_summary": "Với những ai thường xuyên sử dụng, việc nắm rõ một vài thiết lập thông minh sẽ giúp bạn tối ưu hóa công năng của Google Maps.",
+    "hidden": false
   },
   "477baea26f15d800": {
     "id": "477baea26f15d800",
@@ -2120,7 +2318,10 @@
     "score": 0.95,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Hướng dẫn dùng iPhone Duo: vuốt back, xác nhận và các thao tác cơ bản",
+    "raw_summary": "iPhone Duo không có nút Home, không có Face ID, màn hình gập 7,6 inch — mọi thao tác đều bằng cử chỉ và nút bấm. Apple giữ nguyên logic vuốt back từ cạnh trái, nhưng thêm nút bấm ở cạnh màn hình",
+    "hidden": false
   },
   "ef9bb7c17bc1bce5": {
     "id": "ef9bb7c17bc1bce5",
@@ -2151,7 +2352,10 @@
     "score": 0.94,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Anh em dùng touchpad haptic trên máy tính Windows thì nên chỉnh lại một chút cho ngon",
+    "raw_summary": "So với touchpad cơ học truyền thống, touchpad haptic feedback cho trải nghiệm tốt hơn rất nhiều, nhưng để",
+    "hidden": false
   },
   "ca0f5a1a0dc47e76": {
     "id": "ca0f5a1a0dc47e76",
@@ -2182,16 +2386,19 @@
     "score": 0.9,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "A hidden ocean change near Antarctica could have global consequences",
+    "raw_summary": "Antarctic waters are getting saltier as sea-ice loss reshapes ocean circulation.",
+    "hidden": false
   },
   "0dd866e0bf3ef228": {
     "id": "0dd866e0bf3ef228",
     "url": "https://vnexpress.net/amazon-ai-mo-ra-thoi-ky-cua-nha-phat-trien-phuc-hung-5138051.html",
     "source": {
       "id": "vnexpress_sohoa",
-      "name": "VnExpress Số Hóa",
+      "name": "VnExpress Thủ Thuật",
       "site_url": "https://vnexpress.net/so-hoa",
-      "kind": "news"
+      "kind": "tips"
     },
     "author": null,
     "published_at": "Thu, 29 Oct 2026 10:00:00 +0700",
@@ -2210,10 +2417,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.9,
+    "score": 1.41,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Amazon: AI mở ra thời kỳ của nhà phát triển Phục hưng",
+    "raw_summary": "Amazon cho rằng AI đang làm thay đổi cách viết phần mềm, mở ra thời kỳ nhà phát triển có thể đảm nhiệm nhiều việc thay vì chuyên sâu một lĩnh vực.",
+    "hidden": false
   },
   "f335a5077f36cc12": {
     "id": "f335a5077f36cc12",
@@ -2244,7 +2454,10 @@
     "score": 0.9,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Cáp quang lập kỷ lục tải 20.000 bộ phim 4K trong 1 giây",
+    "raw_summary": "Các nhà nghiên cứu Trung Quốc vừa thiết lập kỷ lục truyền tải cáp quang thời gian thực với tốc độ 3,2 petabit mỗi giây trên khoảng cách 10,3 km.",
+    "hidden": false
   },
   "3b98c323d65c4307": {
     "id": "3b98c323d65c4307",
@@ -2277,7 +2490,10 @@
     "score": 0.9,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Tải ứng dụng Claude từ tên miền của Anthropic vẫn dính mã độc",
+    "raw_summary": "Tội phạm mạng đang dùng mánh khóe để dẫn dụ người dùng đến các trang hướng dẫn cài đặt Claude giả mạo nằm ngay trên tên miền claude.ai.",
+    "hidden": false
   },
   "0fa94f2e13af5ee4": {
     "id": "0fa94f2e13af5ee4",
@@ -2308,7 +2524,10 @@
     "score": 0.87,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "LHB Linux Digest #26.13: Know Your File, File-based Workspace Certifications and More",
+    "raw_summary": "Sometimes the fastest fix is just asking the right question first.",
+    "hidden": false
   },
   "8fe99075dd919c4e": {
     "id": "8fe99075dd919c4e",
@@ -2342,7 +2561,10 @@
     "score": 0.87,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Chapter 8: Build a Real Tmux Workflow",
+    "raw_summary": "So far, you have learned the individual building blocks of tmux. You know how to create sessions, organize work with windows, split windows into panes, move between panes, resize them, and use copy mode to work with terminal output. But knowing these features separately is different from actually…",
+    "hidden": false
   },
   "fa62f87463ae5def": {
     "id": "fa62f87463ae5def",
@@ -2373,7 +2595,10 @@
     "score": 0.87,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Lời khuyên cho người vừa chuyển khoản cho lừa đảo: Làm ngay 5 việc sau trong 30 phút đầu để hạn chế mất tiền",
+    "raw_summary": "Khi phát hiện dấu hiệu bị lừa đảo trên không gian mạng, người dân cần lập tức dừng giao dịch, liên hệ ngân hàng đề nghị ngăn chặn giao dịch đáng ngờ, bảo vệ các tài khoản cá nhân và trình báo cơ quan Công an.",
+    "hidden": false
   },
   "a4e4d2d959650d53": {
     "id": "a4e4d2d959650d53",
@@ -2407,7 +2632,10 @@
     "score": 0.87,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Chapter 7: Copy Mode - Scroll, Search and Copy Terminal Output",
+    "raw_summary": "So far, you've learned how to organize your tmux workspace using sessions, windows, and panes. But there's one problem you'll run into very quickly. Your terminal can produce a lot of output. Maybe you're checking application logs. Maybe a command printed hundreds",
+    "hidden": false
   },
   "790bba1903f6287d": {
     "id": "790bba1903f6287d",
@@ -2438,7 +2666,10 @@
     "score": 0.87,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Chapter 6: Panes - Split, Navigate, Resize and Zoom",
+    "raw_summary": "In the previous chapter, you learned how to use windows to organize different tasks inside a tmux session. Now let's make those windows more useful. Imagine you are working on a server and want to watch your application logs while running commands at the same time. Opening another",
+    "hidden": false
   },
   "3c45809cc7350ab1": {
     "id": "3c45809cc7350ab1",
@@ -2470,7 +2701,10 @@
     "score": 0.87,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "5 ứng dụng khiến iPhone hết pin nhanh",
+    "raw_summary": "Nhiều ứng dụng quen thuộc là nguyên nhân khiến pin iPhone tụt nhanh hơn người dùng nghĩ.",
+    "hidden": false
   },
   "f30f927ad9fb89ba": {
     "id": "f30f927ad9fb89ba",
@@ -2504,7 +2738,10 @@
     "score": 0.87,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Chapter 5: Windows - Organize Your Work Inside a Session",
+    "raw_summary": "In the previous chapter, you learned how to create, name, detach, and reattach tmux sessions. Now you already have the main workspace. But imagine you're working on a project and need to do several things at once. You want one terminal for your application, another for logs, another",
+    "hidden": false
   },
   "5ed54894df52864b": {
     "id": "5ed54894df52864b",
@@ -2535,7 +2772,10 @@
     "score": 0.87,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Chapter 4: Sessions - Create, Name, Detach and Reattach",
+    "raw_summary": "So far, you have installed tmux, started your first session, and learned how the prefix key works. Now we get to the feature that makes tmux genuinely useful. Sessions. A tmux session is a workspace that can keep running even after you leave it. This is what allows you to",
+    "hidden": false
   },
   "a3aec8177249f1ba": {
     "id": "a3aec8177249f1ba",
@@ -2566,7 +2806,10 @@
     "score": 0.87,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Lời khuyên quan trọng mà những người dùng Google Maps ngoại tuyến nên biết",
+    "raw_summary": "Google Maps ngoại tuyến không phải là một phiên bản hoàn hảo.",
+    "hidden": false
   },
   "7753818fe3523b4f": {
     "id": "7753818fe3523b4f",
@@ -2599,7 +2842,10 @@
     "score": 0.87,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Chapter 1: Why Tmux? Understanding Terminal Multiplexing",
+    "raw_summary": "If you have ever run a long command over SSH and lost it because your connection dropped, you already understand the pain tmux solves. Tmux is a terminal multiplexer. In plain language, it lets you run and manage multiple terminal workspaces inside one terminal environment, and it keeps those…",
+    "hidden": false
   },
   "de7b7e50d713f055": {
     "id": "de7b7e50d713f055",
@@ -2630,7 +2876,10 @@
     "score": 0.87,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Vì sao không nên sử dụng khuôn mặt, vân tay để mở khóa điện thoại?",
+    "raw_summary": "Sử dụng vân tay, khuôn mặt để mở khóa điện thoại tồn tại những rủi ro gì?",
+    "hidden": false
   },
   "7b15ec4f543529d7": {
     "id": "7b15ec4f543529d7",
@@ -2661,7 +2910,10 @@
     "score": 0.85,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Oura confirms Ring 4 sync bug, but the fix is simple",
+    "raw_summary": "Oura offers workaround for confirmed Ring 4 syncing bug.",
+    "hidden": false
   },
   "657c1b7c5a36fe10": {
     "id": "657c1b7c5a36fe10",
@@ -2692,7 +2944,10 @@
     "score": 0.84,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "LHB Linux Digest #26.15: Taming stderr, Cybersecurity Certification and More",
+    "raw_summary": "Errors are output too. Learn where they go.",
+    "hidden": false
   },
   "57f9e735d3ff4182": {
     "id": "57f9e735d3ff4182",
@@ -2723,7 +2978,10 @@
     "score": 0.83,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Sculpture re-creates odd optical effects of famed Lycurgus Cup",
+    "raw_summary": "University of Sheffield researchers figured out how to re-create the 1,600-year-old glass recipe.",
+    "hidden": false
   },
   "8f167c675f8edb5c": {
     "id": "8f167c675f8edb5c",
@@ -2754,7 +3012,10 @@
     "score": 0.83,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "How a Salon Website Gets Built in Lovable: A Build Walkthrough",
+    "raw_summary": "",
+    "hidden": true
   },
   "37e3f86581e7c941": {
     "id": "37e3f86581e7c941",
@@ -2785,7 +3046,10 @@
     "score": 0.83,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "5 thiết lập bí mật của BIOS giúp mở khóa toàn bộ sức mạnh máy tính",
+    "raw_summary": "Hệ thống BIOS trên bo mạch chủ ẩn chứa nhiều tùy chọn quan trọng giúp mở khóa tối đa hiệu năng phần cứng mà không tốn thêm chi phí.",
+    "hidden": false
   },
   "40b007b40ac9967f": {
     "id": "40b007b40ac9967f",
@@ -2816,7 +3080,10 @@
     "score": 0.83,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Những cách giúp smartphone dùng bền đến 7 năm",
+    "raw_summary": "Khoảng một thập kỷ trước, việc thay thế smartphone diễn ra thường xuyên nhờ vào những cải tiến công nghệ đáng kể.",
+    "hidden": false
   },
   "0f0bb852393de50b": {
     "id": "0f0bb852393de50b",
@@ -2844,10 +3111,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.83,
+    "score": 0.74,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Local embeddings with llamadart: how llamas share secrets",
+    "raw_summary": "Beyond chat with llamadart · Part 2 Llama Village, where five llamas share a world without sharing",
+    "hidden": false
   },
   "3cbe5eb393bebabf": {
     "id": "3cbe5eb393bebabf",
@@ -2877,19 +3147,22 @@
       "git"
     ],
     "difficulty": "medium",
-    "score": 0.83,
+    "score": 0.74,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "How to resolve merge conflicts in Git without guessing: markers, --ours/--theirs and the rebase flip",
+    "raw_summary": "You are rebasing your branch onto main. Git stops on a conflict in limits.py. You want to keep your",
+    "hidden": false
   },
   "6f7743a9465550a4": {
     "id": "6f7743a9465550a4",
     "url": "https://vnexpress.net/oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-5138064.html",
     "source": {
       "id": "vnexpress_sohoa",
-      "name": "VnExpress Số Hóa",
+      "name": "VnExpress Thủ Thuật",
       "site_url": "https://vnexpress.net/so-hoa",
-      "kind": "news"
+      "kind": "tips"
     },
     "author": null,
     "published_at": "Wed, 28 Oct 2026 22:27:00 +0700",
@@ -2908,12 +3181,15 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.82,
+    "score": 1.29,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
       "en": "machine"
-    }
+    },
+    "raw_title": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel",
+    "raw_summary": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh.",
+    "hidden": false
   },
   "c345484e72e039b1": {
     "id": "c345484e72e039b1",
@@ -2941,10 +3217,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.83,
+    "score": 0.74,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "How to Moderate Live Chat in Real Time with Jev and Composio (Discord + Twitch)",
+    "raw_summary": "Anyone who has moderated a live chat knows how fast things go wrong. Someone says something bad and",
+    "hidden": false
   },
   "3b1a643c22cd5cd6": {
     "id": "3b1a643c22cd5cd6",
@@ -2972,10 +3251,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.83,
+    "score": 0.74,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Stop Waiting for GitHub Actions: Make Your CI Faster Today",
+    "raw_summary": "A practical guide to canceling outdated runs, caching dependencies, reducing duplicate work, and getting faster feedback from GitHub Actions.",
+    "hidden": false
   },
   "70f0bde7899c6128": {
     "id": "70f0bde7899c6128",
@@ -3006,7 +3288,10 @@
     "score": 0.8,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Google Maps sẽ chỉ đường chính xác nhất khi bạn bật tính năng này trên điện thoại",
+    "raw_summary": "Hãy thử hai cách đơn giản sau để cải thiện độ chính xác của Google Maps.",
+    "hidden": false
   },
   "1702663f2c5c3a16": {
     "id": "1702663f2c5c3a16",
@@ -3040,7 +3325,10 @@
     "score": 0.79,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Chapter 9: Your First Tmux Configuration",
+    "raw_summary": "At this point, you can create sessions, organize them with windows, split windows into panes, navigate between them, resize and zoom panes, search terminal history, and build a complete tmux workspace. So why configure tmux at all? The answer is simple. After using tmux for a while, you'll",
+    "hidden": false
   },
   "67732ae88c2ca5d9": {
     "id": "67732ae88c2ca5d9",
@@ -3073,16 +3361,19 @@
     "score": 0.79,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Chapter 2: Get Tmux Running",
+    "raw_summary": "In the previous chapter, we looked at the problem tmux solves and why persistent terminal sessions are useful, especially when working over SSH. Now it's time to actually use tmux. In this chapter, we'll install tmux on your system, verify that everything is working, start your",
+    "hidden": false
   },
   "65a7831f485fdf8f": {
     "id": "65a7831f485fdf8f",
     "url": "https://vnexpress.net/chinh-sua-gene-bo-h-mong-xay-dung-thuong-hieu-cao-cap-cua-viet-nam-5137453.html",
     "source": {
       "id": "vnexpress_sohoa",
-      "name": "VnExpress Số Hóa",
+      "name": "VnExpress Thủ Thuật",
       "site_url": "https://vnexpress.net/so-hoa",
-      "kind": "news"
+      "kind": "tips"
     },
     "author": null,
     "published_at": "Tue, 27 Oct 2026 20:19:45 +0700",
@@ -3101,10 +3392,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.76,
+    "score": 1.18,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Chỉnh sửa gene bò H'Mông xây dựng thương hiệu cao cấp của Việt Nam",
+    "raw_summary": "Học viện Nông nghiệp Việt Nam tạo thành công 5 bê H'Mông bằng công nghệ chỉnh sửa gene MSTN, hướng tới xây dựng thương hiệu bò thịt cao cấp của Việt Nam.",
+    "hidden": false
   },
   "1ef8ba8857793b35": {
     "id": "1ef8ba8857793b35",
@@ -3138,7 +3432,10 @@
     "score": 0.79,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Tmux Fundamentals",
+    "raw_summary": "Never lose a terminal session again! Learn tmux sessions, panes, and windows in this free, beginner-friendly course. No signup required.",
+    "hidden": false
   },
   "40262c947ecb07ba": {
     "id": "40262c947ecb07ba",
@@ -3166,10 +3463,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.76,
+    "score": 0.68,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "The Ledger That Charged Twice: S3 Lambda Idempotency",
+    "raw_summary": "In the counting-houses of old Venice, a merchant's quiet terror was not the thief in the night. It",
+    "hidden": false
   },
   "32d4ae589455ae25": {
     "id": "32d4ae589455ae25",
@@ -3199,10 +3499,13 @@
       "claude"
     ],
     "difficulty": "medium",
-    "score": 0.76,
+    "score": 0.68,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Persistent Agent Teams: Recreating the Grok Bot Experience with Herdr, Claude Code and Pi",
+    "raw_summary": "Persistent agents and agent teams truly caught my attention when I tried Grok Bot. Publicly, Grok",
+    "hidden": false
   },
   "f73f11092849b85a": {
     "id": "f73f11092849b85a",
@@ -3234,7 +3537,10 @@
     "score": 0.74,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "How to continue a GitHub Copilot app session in VS Code",
+    "raw_summary": "Learn how to move an agent session from the GitHub Copilot app into VS Code without losing the conversation, code changes, or working context.",
+    "hidden": false
   },
   "bba44a7718a4d5e9": {
     "id": "bba44a7718a4d5e9",
@@ -3262,10 +3568,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.76,
+    "score": 0.68,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "AI Is Making Me Faster. I Don’t Want It to Make Me Worse.",
+    "raw_summary": "I use AI constantly when I code and when I write. I use it to research ideas, plan code, debug,",
+    "hidden": false
   },
   "7353fcec6f0b493e": {
     "id": "7353fcec6f0b493e",
@@ -3293,10 +3602,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.76,
+    "score": 0.68,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "One Glue Job, Zero Orchestrators — My First Spark Declarative Pipeline on AWS Glue",
+    "raw_summary": "Disclaimer This is an independent, personal write-up — not official AWS content, and",
+    "hidden": false
   },
   "acb868617334bc3b": {
     "id": "acb868617334bc3b",
@@ -3327,7 +3639,10 @@
     "score": 0.74,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+    "raw_summary": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright.",
+    "hidden": false
   },
   "16f4cd68e20165e0": {
     "id": "16f4cd68e20165e0",
@@ -3355,10 +3670,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.76,
+    "score": 0.68,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "The More Context You Give Your AI Coding Agent, the Worse It Can Get",
+    "raw_summary": "We keep hearing the same advice: Give the AI more context. Add the README. Add AGENTS.md. Add",
+    "hidden": false
   },
   "d1e102c84213e72a": {
     "id": "d1e102c84213e72a",
@@ -3386,10 +3704,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.76,
+    "score": 0.68,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Kubernetes RBAC Explained by Breaking It: Practice Roles and Bindings in Your Browser",
+    "raw_summary": "Your CI service account needs to read pods. Someone writes a ClusterRole called pod-reader, binds it",
+    "hidden": false
   },
   "df7f2e84081d3bfb": {
     "id": "df7f2e84081d3bfb",
@@ -3422,7 +3743,10 @@
     "score": 0.73,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Lời khuyên cho những gia đình hay tắt WiFi bằng cách rút phích cắm",
+    "raw_summary": "Rút phích cắm là cách nhiều gia đình vẫn dùng để tắt WiFi, nhưng có vài điều nên biết trước khi duy trì thói quen này hàng ngày.",
+    "hidden": false
   },
   "4f44c84843cbe970": {
     "id": "4f44c84843cbe970",
@@ -3450,10 +3774,13 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.76,
+    "score": 0.68,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Talk to my bots through Alexa: building an Alexa skill for Grok Bot",
+    "raw_summary": "Why I wanted this Grok Bot runs a lot of my day. I don't have one assistant, I have a team",
+    "hidden": false
   },
   "bdee3094bfd3973b": {
     "id": "bdee3094bfd3973b",
@@ -3483,10 +3810,13 @@
       "gemini"
     ],
     "difficulty": "medium",
-    "score": 0.76,
+    "score": 0.68,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Making cross-platform local AI easier with llamadart",
+    "raw_summary": "My writing assistant could talk to Gemini. The missing piece was using it without a connection. That",
+    "hidden": false
   },
   "47487520da62623a": {
     "id": "47487520da62623a",
@@ -3517,7 +3847,10 @@
     "score": 0.73,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Thông tin quan trọng trên VNeID, tất cả người dân đi máy bay cần biết",
+    "raw_summary": "Để giúp hành khách tiết kiệm thời gian làm thủ tục, lực lượng an ninh hàng không khuyến nghị hành khách chủ động thực hiện check-in online trước khi đến sân bay.",
+    "hidden": false
   },
   "7a82ad8fe469044c": {
     "id": "7a82ad8fe469044c",
@@ -3548,7 +3881,10 @@
     "score": 0.73,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Thông tin quan trọng đến tất cả người dùng iPhone",
+    "raw_summary": "Một thay đổi nhỏ trong cách sử dụng iPhone có thể tạo ra khác biệt lớn với người dùng.",
+    "hidden": false
   },
   "6af748521fe1dd69": {
     "id": "6af748521fe1dd69",
@@ -3579,7 +3915,10 @@
     "score": 0.71,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "LHB Linux Digest #26.12: Demystifying diff, Process Substitution, History Trick, and More",
+    "raw_summary": "Keep on Linux-ing :)",
+    "hidden": false
   },
   "2ad84ab401bee4f9": {
     "id": "2ad84ab401bee4f9",
@@ -3610,7 +3949,10 @@
     "score": 0.7,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Microsoft Patches More Than 1,400 Security Flaws",
+    "raw_summary": "Microsoft today issued updates to fix more than 1,400 security vulnerabilities in its Windows operating systems and other software. Today's epic patch batch dwarfs September's record of nearly 1,000 fixes, which was already about ten times the normal monthly patch load from Redmond.",
+    "hidden": false
   },
   "7c214f2efd884062": {
     "id": "7c214f2efd884062",
@@ -3643,7 +3985,10 @@
     "score": 0.67,
     "howto": true,
     "reading_time_min": 2,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Tài khoản Zalo đang bị theo dõi, bật ngay 3 tính năng này để ngăn chặn",
+    "raw_summary": "Zalo hiện là công cụ liên lạc của hàng triệu người dùng Việt Nam. Tuy nhiên, sự phổ biến này cũng kéo theo nguy cơ bị kẻ xấu nhắm đến để lừa đảo, đánh cắp thông tin hoặc chiếm quyền tài khoản. Dưới đây là những thiết lập bảo mật quan trọng bạn cần kích hoạt ngay.",
+    "hidden": false
   },
   "e3c4395bc7834f36": {
     "id": "e3c4395bc7834f36",
@@ -3674,7 +4019,10 @@
     "score": 0.67,
     "howto": true,
     "reading_time_min": 2,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Vì sao cần khởi động lại điện thoại sau mỗi lần cập nhật?",
+    "raw_summary": "Sau mỗi lần nâng cấp hệ điều hành, smartphone hay máy tính bảng thường sẽ tự động khởi động lại để hoàn tất quá trình thiết lập. Việc chủ động tắt nguồn và mở lại máy là một thao tác cực kỳ cần thiết để đảm bảo cả hiệu suất lẫn độ an toàn cho dữ liệu.",
+    "hidden": false
   },
   "41f219415183b9c6": {
     "id": "41f219415183b9c6",
@@ -3705,7 +4053,10 @@
     "score": 0.64,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "LHB Linux Digest #26.11: New Free Course, Named Pipes, Multi-kernel and More",
+    "raw_summary": "Enjoy the new course",
+    "hidden": false
   },
   "5b2af56ec8a3a001": {
     "id": "5b2af56ec8a3a001",
@@ -3738,7 +4089,10 @@
     "score": 0.67,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Phát hiện 5 thiết bị là “đại kỵ” làm chậm sóng WiFi, nhiều người đang để cạnh mà không hay biết",
+    "raw_summary": "Không ít người có xu hướng quy nguyên nhân Wi-Fi chậm, chập chờn cho nhà mạng.",
+    "hidden": false
   },
   "1f87f1f4b67002fe": {
     "id": "1f87f1f4b67002fe",
@@ -3770,7 +4124,10 @@
     "score": 0.67,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Từ iPhone 13 Pro lên đời Z Fold8: Hóa ra chuyển dữ liệu từ Apple sang Samsung giờ dễ thế này",
+    "raw_summary": "Dùng iPhone suốt nhiều năm khiến tôi từng ngần ngại đổi sang Galaxy vì nghĩ chuyển dữ liệu sẽ rất phiền, nhưng Smart Switch giúp mang theo phần lớn dữ liệu quen thuộc chỉ với vài bước.",
+    "hidden": false
   },
   "b62740fe7dece39d": {
     "id": "b62740fe7dece39d",
@@ -3801,7 +4158,10 @@
     "score": 0.53,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Đi tìm giải pháp cấp khí tươi cho Cafe Tinh tế 5.0",
+    "raw_summary": "Sau 20 năm cafe Tinh tế ở không gian mở thì mình đã chọn một không gian kín cho phiên bản Cafe Tinh tế 5.0. Ngoài chuyện xử lý cách âm, cách nhiệt thì mình cũng nghĩ đến chuyện cần một không gian",
+    "hidden": false
   },
   "7bc142ac7586d52e": {
     "id": "7bc142ac7586d52e",
@@ -3834,7 +4194,10 @@
     "score": 0.67,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Vì sao wifi trong nhà ở rất gần nhưng tín hiệu lại yếu hơn của hàng xóm?",
+    "raw_summary": "Liệu bộ định tuyến không dây của hàng xóm có thể ảnh hưởng đến cường độ Wi-Fi của bạn không?",
+    "hidden": false
   },
   "da96698ef028a283": {
     "id": "da96698ef028a283",
@@ -3865,7 +4228,10 @@
     "score": 0.67,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Tính năng trên Zalo giúp xem tin nhắn thoải mái, người gửi không biết người nhận đọc tin nhắn hay chưa",
+    "raw_summary": "Dưới đây là các bước đơn giản giúp người dùng đọc tin nhắn trên Zalo mà không hiển thị trạng thái đã xem cho người gửi.",
+    "hidden": false
   },
   "28c9ec341b6e3347": {
     "id": "28c9ec341b6e3347",
@@ -3896,7 +4262,10 @@
     "score": 0.47,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Viettel phải tìm và giải bài toán khó, bài toán lớn bằng sức mạnh toàn cầu",
+    "raw_summary": "Bộ trưởng Nguyễn Mạnh Hùng đề nghị lãnh đạo, cán bộ chủ chốt của Viettel thay đổi suy nghĩ, cách làm. Đó là, đi tìm bài toán khó, bài toán lớn và giải chúng bằng sức mạnh toàn cầu, thông qua hợp tác với các nước phát triển.",
+    "hidden": false
   },
   "5e6652c40b2a757d": {
     "id": "5e6652c40b2a757d",
@@ -3929,7 +4298,10 @@
     "score": 0.67,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Đặt wifi xuống sàn nhà có làm sao không? Hóa ra đây là lỗi nhiều gia đình đang mắc phải",
+    "raw_summary": "Vị trí đặt bộ định tuyến Wi-Fi đóng vai trò rất quan trọng đối với hiệu suất của nó.",
+    "hidden": false
   },
   "789154b52a9575e1": {
     "id": "789154b52a9575e1",
@@ -3960,7 +4332,10 @@
     "score": 0.67,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Tính năng trên điện thoại người dùng ngân hàng nên tắt ngay",
+    "raw_summary": "Người dùng ngân hàng được khuyến cáo kiểm tra và tắt một tính năng trên điện thoại nếu không cần sử dụng.",
+    "hidden": false
   },
   "d216bb3ff1d11d21": {
     "id": "d216bb3ff1d11d21",
@@ -3991,7 +4366,10 @@
     "score": 0.47,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "CMC hãy nhận việc lớn để góp sức đưa Việt Nam vào kỷ nguyên mới",
+    "raw_summary": "Nhận định đã đến lúc CMC cần tuyên bố mình là một doanh nghiệp công nghệ số đầu đàn, Bộ trưởng Bộ TT&TT Nguyễn Mạnh Hùng chỉ rõ, cách duy nhất để CMC lớn lên là nhận những việc lớn, gắn với sứ mệnh quốc gia và làm cho tới nơi.",
+    "hidden": false
   },
   "67792300585839e1": {
     "id": "67792300585839e1",
@@ -4022,7 +4400,10 @@
     "score": 0.67,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Lời khuyên cho những người đang dùng Android",
+    "raw_summary": "Nếu không kịp thời cập nhiều, người dùng có thể không xem được YouTube, bị hạn chế Gmail, hoặc một số ứng dụng có liên quan.",
+    "hidden": false
   },
   "f92547e7125a4981": {
     "id": "f92547e7125a4981",
@@ -4054,6 +4435,9 @@
     "score": 0.63,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Lời khuyên cho tất cả người dùng Android: Pin điện thoại có thể cộng thêm 2 giờ nếu bạn biết cách cài đặt",
+    "raw_summary": "Một vài thay đổi nhỏ sẽ giúp ích nhiều cho bạn.",
+    "hidden": false
   }
 }
