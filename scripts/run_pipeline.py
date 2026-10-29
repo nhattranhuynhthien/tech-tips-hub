@@ -16,7 +16,7 @@ from dedupe import is_duplicate_title, is_blocked
 from filters import accept, is_howto_match
 from classify import classify, extract_tags
 from score import calculate_score, detect_difficulty, parse_published_time
-from translate import load_cache, save_cache, process_item_bilingual
+from translate import load_cache, save_cache, process_item_bilingual, batch_translate_pending
 
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
@@ -193,14 +193,18 @@ def main():
             if score < 0.35:
                 continue
 
-            # Dịch song ngữ & tóm tắt
-            title_dict, summary_dict, trans_meta = process_item_bilingual(
-                item_id=iid,
-                orig_title=title,
-                orig_summary=summary,
-                orig_lang=raw_item["original_lang"],
-                cache=trans_cache
-            )
+            # Khởi tạo dữ liệu song ngữ từ cache nếu có
+            orig_l = raw_item["original_lang"]
+            target_l = "vi" if orig_l == "en" else "en"
+            if iid in trans_cache:
+                c_entry = trans_cache[iid]
+                title_dict = c_entry.get("title", {orig_l: title, target_l: title})
+                summary_dict = c_entry.get("summary", {orig_l: summary, target_l: summary})
+                trans_meta = c_entry.get("translated", {})
+            else:
+                title_dict = {orig_l: title, target_l: title}
+                summary_dict = {orig_l: summary, target_l: summary}
+                trans_meta = {}
 
             index[iid] = {
                 "id": iid,
@@ -234,12 +238,16 @@ def main():
 
         time.sleep(0.3)
 
-    # 4. Áp dụng giới hạn xen kẽ nguồn (diversify)
+    # 4. Dịch thuật theo lô cho các bài chưa có bản dịch (ưu tiên how-to và điểm cao)
+    print("\n-> Đang kiểm tra và dịch thuật theo lô...")
     all_items = list(index.values())
+    batch_translate_pending(all_items, trans_cache, batch_size=5)
+
+    # 5. Áp dụng giới hạn xen kẽ nguồn (diversify)
     diversified_items = diversify(all_items, max_run=2)
     reordered_index = {it["id"]: it for it in diversified_items}
 
-    # 5. Ghi dữ liệu, cập nhật featured history và cache
+    # 6. Ghi dữ liệu, cập nhật featured history và cache
     save_cache(trans_cache)
     INDEX_PATH.write_text(json.dumps(reordered_index, ensure_ascii=False, indent=2), encoding="utf-8")
     update_featured_history(diversified_items)

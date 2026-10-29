@@ -1,17 +1,23 @@
 # scripts/translate.py
 import os
+import sys
 import json
 import re
+import time
+from abc import ABC, abstractmethod
 from pathlib import Path
+import requests
 
 CACHE_FILE = Path("data/cache/translations.json")
 
+# Ký tự tiếng Việt có dấu chuẩn
 VI_CHARS = re.compile(
     r"[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡ"
     r"ùúụủũưừứựửữỳýỵỷỹđ]",
     re.IGNORECASE
 )
 
+# Từ tiếng Anh phổ biến dùng phát hiện câu trộn
 EN_COMMON_WORDS = re.compile(
     r"\b(the|and|for|with|that|this|to|in|of|on|is|are|from|by|how)\b",
     re.IGNORECASE
@@ -24,116 +30,292 @@ def looks_vietnamese(text: str) -> bool:
     return (len(VI_CHARS.findall(text)) / max(len(text), 1)) > 0.03
 
 def looks_english(text: str) -> bool:
-    """Kiểm tra văn bản hoàn toàn không chứa ký tự tiếng Việt có dấu."""
+    """Kiểm tra văn bản tiếng Anh hoàn toàn không chứa ký tự tiếng Việt có dấu."""
     if not text:
         return True
     return len(VI_CHARS.findall(text)) == 0
 
+VI_FUNCTION_WORDS = re.compile(
+    r"\b(của|và|cho|trong|được|này|đã|sẽ|như|thế|mình|bạn|với|sau|khi|làm|việc|người|hướng|dẫn|xem|nội|dung|ngày)\b",
+    re.IGNORECASE
+)
+
+EN_FUNCTION_WORDS = re.compile(
+    r"\b(the|and|for|with|that|this|to|in|of|on|is|are|from|by|a|an|how|can|your|you|it|its|at)\b",
+    re.IGNORECASE
+)
+
 def is_mixed(text: str) -> bool:
     """
-    Phát hiện câu trộn ngữ pháp (ví dụ có từ tiếng Việt thay thế nằm giữa câu tiếng Anh).
-    Bằng chứng: "This Newly Proposed Linux Filesystem Can Khắc phục Corrupted Data".
+    Phát hiện câu trộn ngữ pháp (từ tiếng Việt chắp vá nằm giữa câu tiếng Anh).
+    Bằng chứng: "Cách a Salon Website Gets Built in Lovable",
+                "This Newly Proposed Linux Filesystem Can Khắc phục Corrupted Data".
     """
     if not text:
         return False
-    has_vi_keyword = bool(re.search(r"\b(Cách|Khắc phục|Tối ưu hóa|Mẹo|Hướng dẫn|Thủ thuật)\b", text))
-    en_words_count = len(EN_COMMON_WORDS.findall(text))
-    return has_vi_keyword and en_words_count >= 2
+
+    # Kiểm tra có chứa từ khóa bị thay thế máy móc (viết hoa dạng tiêu đề)
+    has_injected_kw = bool(re.search(r"\b(Cách|Khắc phục|Tối ưu hóa)\b", text))
+    if not has_injected_kw:
+        return False
+
+    # Đếm từ chức năng tiếng Anh vs tiếng Việt
+    en_count = len(EN_FUNCTION_WORDS.findall(text))
+    vi_count = len(VI_FUNCTION_WORDS.findall(text))
+
+    # Nếu có từ tiếng Anh chức năng (the, and, in, a, this, can...) và không có từ ngữ pháp tiếng Việt
+    if en_count >= 2 and vi_count == 0:
+        return True
+
+    return False
 
 def load_cache() -> dict:
-    if CACHE_FILE.exists():
-        try:
-            return json.loads(CACHE_FILE.read_text(encoding="utf-8"))
-        except Exception:
-            return {}
-    return {}
+    """Đọc cache dịch thuật, tự động loại bỏ các bản dịch cũ bị trộn ngữ pháp hoặc chứa rác."""
+    if not CACHE_FILE.exists():
+        return {}
+    try:
+        raw_data = json.loads(CACHE_FILE.read_text(encoding="utf-8"))
+        cleaned_cache = {}
+        for iid, val in raw_data.items():
+            t_vi = val.get("title", {}).get("vi", "")
+            s_vi = val.get("summary", {}).get("vi", "")
+            if is_mixed(t_vi) or is_mixed(s_vi) or "[Bản dịch]" in t_vi or "[Bản dịch]" in s_vi:
+                continue
+            cleaned_cache[iid] = val
+        return cleaned_cache
+    except Exception as e:
+        print(f"[Cache Warning] Không thể đọc cache: {e}")
+        return {}
 
 def save_cache(cache: dict):
+    """Lưu cache bản dịch vào file JSON."""
     CACHE_FILE.parent.mkdir(parents=True, exist_ok=True)
     CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
 
-def translate_with_gemini(text: str, target_lang: str, is_summary: bool = False) -> str:
-    """
-    Dịch toàn câu bằng Google Gemini API khi có biến môi trường GEMINI_API_KEY.
-    Hoàn toàn không thay thế từ khóa chắp vá.
-    """
-    api_key = os.environ.get("GEMINI_API_KEY", "").strip()
-    if not api_key or not text:
-        return ""
-    try:
-        from google import genai
-        client = genai.Client(api_key=api_key)
-        target_name = "Tiếng Việt" if target_lang == "vi" else "English"
-        context = "Tóm tắt ngắn gọn và dịch sang" if is_summary else "Dịch trọn vẹn và tự nhiên tiêu đề thủ thuật công nghệ sang"
-        prompt = (
-            f"{context} {target_name}. Giữ nguyên thuật ngữ kỹ thuật phổ biến (như Git, Docker, Windows, Linux, SSD, RAM). "
-            f"Chỉ trả về duy nhất nội dung đã dịch, không giải thích thêm:\n\n{text}"
-        )
-        
-        response = client.models.generate_content(
-            model="gemini-2.5-flash",
-            contents=prompt
-        )
-        if response and response.text:
-            cleaned = response.text.strip().replace("\n", " ")
-            return cleaned
-    except Exception as e:
-        print(f"[Gemini API Warning]: {e}")
-    return ""
+# ==========================================
+# GIAO DIỆN VÀ CÁC BỘ DỊCH THUẬT (TRANSLATOR)
+# ==========================================
 
-def process_item_bilingual(item_id: str, orig_title: str, orig_summary: str, orig_lang: str, cache: dict) -> tuple[dict, dict, dict]:
+class Translator(ABC):
+    """Giao diện trừu tượng cho các nhà cung cấp dịch thuật."""
+    @abstractmethod
+    def translate_batch(self, items: list[dict], source_lang: str, target_lang: str) -> list[dict]:
+        """
+        Dịch nguyên câu một lô bài viết.
+        items: [{"id": str, "title": str, "summary": str}]
+        returns: [{"id": str, "title": str, "summary": str}]
+        """
+        pass
+
+class GeminiTranslator(Translator):
     """
-    Xử lý song ngữ an toàn và trung thực:
-    - Nếu có bản dịch máy đạt chuẩn (Gemini hoặc cache đã kiểm tra hợp lệ), gán nhãn machine.
-    - Nếu không dịch được hoặc bản dịch bị trộn ngôn ngữ, giữ nguyên bản gốc và KHÔNG gắn nhãn dịch giả dối.
-    - Tuyệt đối không gắn tiền tố '[Bản dịch]' vào văn bản.
+    Nhà cung cấp chính: Google Gemini API (free tier).
+    Dịch theo lô, hỗ trợ retry với exponential backoff khi gặp mã 429.
     """
-    # 1. Kiểm tra cache
+    def __init__(self):
+        self.api_key = os.environ.get("GEMINI_API_KEY", "").strip()
+        self.model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash").strip() or "gemini-2.5-flash"
+        self.endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/{self.model}:generateContent?key={self.api_key}"
+
+    def is_available(self) -> bool:
+        return bool(self.api_key)
+
+    def translate_batch(self, items: list[dict], source_lang: str, target_lang: str) -> list[dict]:
+        if not self.is_available() or not items:
+            return []
+
+        target_name = "tiếng Việt" if target_lang == "vi" else "English"
+        prompt = (
+            f"Bạn là chuyên gia dịch thuật công nghệ thông tin song ngữ Anh - Việt.\n"
+            f"Hãy dịch trọn vẹn cả câu danh sách thủ thuật sau sang {target_name}.\n\n"
+            f"QUY TẮC BẮT BUỘC:\n"
+            f"1. Dịch NGUYÊN CÂU, văn phong tự nhiên, súc tích. Tuyệt đối KHÔNG thay thế từ khóa chắp vá hay trộn tiếng.\n"
+            f"2. GIỮ NGUYÊN không dịch: tên phần mềm/sản phẩm (Chrome, Windows, Ubuntu, Docker, Git, VS Code...), "
+            f"lệnh shell, code, phím tắt (Ctrl+B, sudo, grep, apt, winget), phần cứng (SSD, RAM, GPU, CPU), API.\n"
+            f"3. Không thêm bớt thông tin ngoài bản gốc; không thêm tiền tố như '[Bản dịch]'.\n"
+            f"4. Trả về DUY NHẤT một mảng JSON hợp lệ chứa các đối tượng có thuộc tính [\"id\", \"title\", \"summary\"]. "
+            f"Không thêm bất kỳ lời bình hay định dạng nào khác.\n\n"
+            f"Dữ liệu đầu vào JSON:\n{json.dumps(items, ensure_ascii=False)}"
+        )
+
+        payload = {
+            "contents": [
+                {
+                    "parts": [{"text": prompt}]
+                }
+            ],
+            "generationConfig": {
+                "temperature": 0.2,
+                "responseMimeType": "application/json"
+            }
+        }
+        headers = {"Content-Type": "application/json"}
+
+        # Retry với Exponential Backoff khi gặp 429
+        max_retries = 3
+        delay = 2.0
+        session = requests.Session()
+
+        for attempt in range(max_retries):
+            try:
+                resp = session.post(self.endpoint, json=payload, headers=headers, timeout=40)
+                if resp.status_code == 429:
+                    print(f"[Gemini 429 Quota] Chờ {delay:.1f}s trước khi thử lại (lần {attempt + 1}/{max_retries})...")
+                    time.sleep(delay)
+                    delay *= 2
+                    continue
+                if resp.status_code != 200:
+                    print(f"[Gemini Warning] HTTP {resp.status_code}: {resp.text[:140]}")
+                    return []
+
+                data = resp.json()
+                candidates = data.get("candidates", [])
+                if not candidates:
+                    return []
+                parts = candidates[0].get("content", {}).get("parts", [])
+                if not parts:
+                    return []
+                
+                raw_text = parts[0].get("text", "").strip()
+                # Gỡ markdown code blocks nếu có
+                if raw_text.startswith("```"):
+                    raw_text = re.sub(r"^```(?:json)?\s*", "", raw_text)
+                    raw_text = re.sub(r"\s*```$", "", raw_text)
+                
+                translated_list = json.loads(raw_text)
+                if isinstance(translated_list, list):
+                    return translated_list
+                return []
+            except Exception as e:
+                print(f"[Gemini Exception (Lần {attempt + 1})]: {e}")
+                time.sleep(delay)
+                delay *= 2
+
+        return []
+
+class ArgosOfflineTranslator(Translator):
+    """
+    Nhà cung cấp dự phòng: Argos Translate chạy offline trong môi trường GitHub Actions / local.
+    Chỉ kích hoạt nếu thư viện argostranslate đã được cài đặt và có model tương ứng.
+    """
+    def __init__(self):
+        self._available = False
+        try:
+            import argostranslate.translate
+            self.argos = argostranslate.translate
+            self._available = True
+        except ImportError:
+            self.argos = None
+
+    def is_available(self) -> bool:
+        return self._available
+
+    def translate_batch(self, items: list[dict], source_lang: str, target_lang: str) -> list[dict]:
+        if not self.is_available() or not items:
+            return []
+        try:
+            installed_langs = self.argos.get_installed_languages()
+            lang_map = {l.code: l for l in installed_langs}
+            from_l = lang_map.get(source_lang)
+            to_l = lang_map.get(target_lang)
+            if not from_l or not to_l:
+                return []
+            translation = from_l.get_translation(to_l)
+            if not translation:
+                return []
+            
+            results = []
+            for it in items:
+                res_title = translation.translate(it["title"])
+                res_summ = translation.translate(it["summary"])
+                results.append({
+                    "id": it["id"],
+                    "title": res_title,
+                    "summary": res_summ
+                })
+            return results
+        except Exception as e:
+            print(f"[Argos Offline Warning]: {e}")
+            return []
+
+class CompositeTranslator(Translator):
+    """
+    Translator tổ hợp: Ưu tiên Gemini API; nếu hết quota (429) hoặc không có key thì chuyển sang Argos Translate.
+    """
+    def __init__(self):
+        self.gemini = GeminiTranslator()
+        self.argos = ArgosOfflineTranslator()
+
+    def translate_batch(self, items: list[dict], source_lang: str, target_lang: str) -> list[dict]:
+        if not items:
+            return []
+        # 1. Thử dùng Gemini trước
+        if self.gemini.is_available():
+            results = self.gemini.translate_batch(items, source_lang, target_lang)
+            if results:
+                return results
+        # 2. Dự phòng: Argos Translate offline
+        if self.argos.is_available():
+            print("[Translator] Chuyển sang mô hình dịch offline Argos Translate...")
+            results = self.argos.translate_batch(items, source_lang, target_lang)
+            if results:
+                return results
+        return []
+
+# Khởi tạo instance dùng chung
+DEFAULT_TRANSLATOR = CompositeTranslator()
+
+def process_item_bilingual(
+    item_id: str,
+    orig_title: str,
+    orig_summary: str,
+    orig_lang: str,
+    cache: dict,
+    translator: Translator = None
+) -> tuple[dict, dict, dict]:
+    """
+    Xử lý song ngữ an toàn, chính xác và trung thực:
+    - Nếu đã có trong cache đạt chuẩn (không trộn ngữ pháp, đúng ngôn ngữ), trả về ngay.
+    - Nếu dịch thành công và qua khâu nghiệm thu (looks_vietnamese / not is_mixed), gắn nhãn 'machine'.
+    - Nếu không dịch được hoặc lỗi, giữ nguyên bản gốc và KHÔNG gắn nhãn dịch máy.
+    - Tuyệt đối không gắn tiền tố '[Bản dịch]' vào tiêu đề hay tóm tắt.
+    """
+    translator = translator or DEFAULT_TRANSLATOR
+    target_lang = "vi" if orig_lang == "en" else "en"
+
+    # 1. Kiểm tra cache hợp lệ
     if item_id in cache:
         c = cache[item_id]
         t_vi = c.get("title", {}).get("vi", "")
         s_vi = c.get("summary", {}).get("vi", "")
-        # Nếu cache cũ chứa câu trộn hoặc rác thì hủy cache mục này
+        # Nếu cache không dính câu trộn hoặc rác
         if not is_mixed(t_vi) and not is_mixed(s_vi) and not ("[Bản dịch]" in s_vi or "[Bản dịch]" in t_vi):
             return c["title"], c["summary"], c.get("translated", {})
 
-    target_lang = "vi" if orig_lang == "en" else "en"
-
-    title_dict = {orig_lang: orig_title}
-    summary_dict = {orig_lang: orig_summary}
+    # 2. Khởi tạo cấu trúc mặc định
+    title_dict = {orig_lang: orig_title, target_lang: orig_title}
+    summary_dict = {orig_lang: orig_summary, target_lang: orig_summary}
     trans_meta = {}
 
-    # 2. Thử dịch bằng Gemini nếu có key
-    translated_title = translate_with_gemini(orig_title, target_lang, is_summary=False)
-    translated_summary = translate_with_gemini(orig_summary, target_lang, is_summary=True)
+    # 3. Tiến hành dịch nếu translator sẵn sàng
+    batch_input = [{"id": item_id, "title": orig_title, "summary": orig_summary}]
+    batch_res = translator.translate_batch(batch_input, source_lang=orig_lang, target_lang=target_lang)
+    
+    if batch_res:
+        t_obj = batch_res[0]
+        res_t = t_obj.get("title", "").strip()
+        res_s = t_obj.get("summary", "").strip()
 
-    # 3. Nghiệm thu chất lượng dịch thuật
-    if translated_title and translated_summary:
+        # Nghiệm thu chất lượng bản dịch
         if target_lang == "vi":
-            is_valid = (
-                looks_vietnamese(translated_title) and
-                not is_mixed(translated_title) and
-                not is_mixed(translated_summary)
-            )
+            is_valid = looks_vietnamese(res_t) and not is_mixed(res_t) and not is_mixed(res_s)
         else:
-            is_valid = (
-                looks_english(translated_title) and
-                not is_mixed(translated_title) and
-                not is_mixed(translated_summary)
-            )
+            is_valid = looks_english(res_t) and not is_mixed(res_t) and not is_mixed(res_s)
 
         if is_valid:
-            title_dict[target_lang] = translated_title
-            summary_dict[target_lang] = translated_summary
+            title_dict[target_lang] = res_t
+            summary_dict[target_lang] = res_s
             trans_meta[target_lang] = "machine"
-        else:
-            # Không đạt chuẩn: giữ nguyên bản gốc cho ngôn ngữ đích
-            title_dict[target_lang] = orig_title
-            summary_dict[target_lang] = orig_summary
-    else:
-        # Không có bản dịch: giữ nguyên bản gốc, KHÔNG gắn nhãn machine
-        title_dict[target_lang] = orig_title
-        summary_dict[target_lang] = orig_summary
 
     # Lưu cache
     cache[item_id] = {
@@ -141,5 +323,127 @@ def process_item_bilingual(item_id: str, orig_title: str, orig_summary: str, ori
         "summary": summary_dict,
         "translated": trans_meta
     }
-
     return title_dict, summary_dict, trans_meta
+
+def batch_translate_pending(
+    items: list[dict],
+    cache: dict,
+    translator: Translator = None,
+    batch_size: int = 5
+):
+    """
+    Dịch theo lô cho các bài viết chưa có bản dịch trong cache:
+    - Ưu tiên dịch bài how-to, bài có điểm cao và mới nhất trước.
+    - Cập nhật trực tiếp vào items và cache.
+    """
+    translator = translator or DEFAULT_TRANSLATOR
+    
+    # Tìm các bài chưa được dịch hợp lệ
+    pending_en_to_vi = []
+    pending_vi_to_en = []
+
+    for it in items:
+        iid = it["id"]
+        orig_lang = it.get("original_lang", "en")
+        target_lang = "vi" if orig_lang == "en" else "en"
+
+        # Nếu đã có bản dịch hợp lệ trong cache
+        if iid in cache and cache[iid].get("translated", {}).get(target_lang) == "machine":
+            c = cache[iid]
+            it["title"] = c["title"]
+            it["summary"] = c["summary"]
+            it["translated"] = c.get("translated", {})
+            continue
+
+        raw_t = it.get("raw_title") or it["title"].get(orig_lang, "")
+        raw_s = it.get("raw_summary") or it["summary"].get(orig_lang, "")
+
+        record = {
+            "id": iid,
+            "title": raw_t,
+            "summary": raw_s,
+            "score": it.get("score", 0),
+            "howto": it.get("howto", False),
+            "published_at": it.get("published_at", "")
+        }
+
+        if orig_lang == "en":
+            pending_en_to_vi.append(record)
+        else:
+            pending_vi_to_en.append(record)
+
+    # Ưu tiên: bài how-to, điểm cao, bài mới trước
+    pending_en_to_vi.sort(key=lambda x: (x["howto"], x["score"]), reverse=True)
+    pending_vi_to_en.sort(key=lambda x: (x["howto"], x["score"]), reverse=True)
+
+    items_map = {it["id"]: it for it in items}
+
+    # Xử lý dịch theo lô EN -> VI
+    for i in range(0, len(pending_en_to_vi), batch_size):
+        chunk = pending_en_to_vi[i:i + batch_size]
+        input_payload = [{"id": x["id"], "title": x["title"], "summary": x["summary"]} for x in chunk]
+        results = translator.translate_batch(input_payload, source_lang="en", target_lang="vi")
+
+        res_map = {r["id"]: r for r in results if "id" in r}
+        for orig in chunk:
+            iid = orig["id"]
+            it = items_map[iid]
+            orig_t = orig["title"]
+            orig_s = orig["summary"]
+
+            if iid in res_map:
+                res_item = res_map[iid]
+                trans_t = res_item.get("title", "").strip()
+                trans_s = res_item.get("summary", "").strip()
+
+                if looks_vietnamese(trans_t) and not is_mixed(trans_t) and not is_mixed(trans_s):
+                    it["title"]["vi"] = trans_t
+                    it["summary"]["vi"] = trans_s
+                    it.setdefault("translated", {})["vi"] = "machine"
+                else:
+                    it["title"]["vi"] = orig_t
+                    it["summary"]["vi"] = orig_s
+            else:
+                it["title"]["vi"] = orig_t
+                it["summary"]["vi"] = orig_s
+
+            cache[iid] = {
+                "title": it["title"],
+                "summary": it["summary"],
+                "translated": it.get("translated", {})
+            }
+
+    # Xử lý dịch theo lô VI -> EN
+    for i in range(0, len(pending_vi_to_en), batch_size):
+        chunk = pending_vi_to_en[i:i + batch_size]
+        input_payload = [{"id": x["id"], "title": x["title"], "summary": x["summary"]} for x in chunk]
+        results = translator.translate_batch(input_payload, source_lang="vi", target_lang="en")
+
+        res_map = {r["id"]: r for r in results if "id" in r}
+        for orig in chunk:
+            iid = orig["id"]
+            it = items_map[iid]
+            orig_t = orig["title"]
+            orig_s = orig["summary"]
+
+            if iid in res_map:
+                res_item = res_map[iid]
+                trans_t = res_item.get("title", "").strip()
+                trans_s = res_item.get("summary", "").strip()
+
+                if looks_english(trans_t) and not is_mixed(trans_t) and not is_mixed(trans_s):
+                    it["title"]["en"] = trans_t
+                    it["summary"]["en"] = trans_s
+                    it.setdefault("translated", {})["en"] = "machine"
+                else:
+                    it["title"]["en"] = orig_t
+                    it["summary"]["en"] = orig_s
+            else:
+                it["title"]["en"] = orig_t
+                it["summary"]["en"] = orig_s
+
+            cache[iid] = {
+                "title": it["title"],
+                "summary": it["summary"],
+                "translated": it.get("translated", {})
+            }

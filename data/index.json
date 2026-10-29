@@ -424,7 +424,7 @@
     "original_lang": "en",
     "title": {
       "en": "This Newly Proposed Linux Filesystem Can Fix Corrupted Data",
-      "vi": "This Newly Proposed Linux Filesystem Can Khắc phục Corrupted Data"
+      "vi": "This Newly Proposed Linux Filesystem Can Fix Corrupted Data"
     },
     "summary": {
       "en": "Aimed at hardware exposed to radiation, like satellites, BeamFS can repair data without keeping a second copy.",
@@ -438,9 +438,7 @@
     "score": 1.33,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    }
+    "translated": {}
   },
   "513f9c14c838474f": {
     "id": "513f9c14c838474f",
