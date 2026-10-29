@@ -247,41 +247,6 @@
     "hidden": false,
     "slug": "22-things-to-do-after-installing-ubuntu-2610-stonking-stingr-505400"
   },
-  "d5d383be6d2d90ea": {
-    "id": "d5d383be6d2d90ea",
-    "url": "https://feed.itsfoss.com/link/24361/17502832/beamfs-linux-filesystem-proposal",
-    "source": {
-      "id": "itsfoss",
-      "name": "It's FOSS",
-      "site_url": "https://itsfoss.com",
-      "kind": "tips"
-    },
-    "author": "Sourav Rudra",
-    "published_at": "Thu, 22 Oct 2026 20:09:35 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "This Newly Proposed Linux Filesystem Can Fix Corrupted Data",
-      "vi": "This Newly Proposed Linux Filesystem Can Fix Corrupted Data"
-    },
-    "summary": {
-      "en": "Aimed at hardware exposed to radiation, like satellites, BeamFS can repair data without keeping a second copy.",
-      "vi": "Aimed at hardware exposed to radiation, like satellites, BeamFS can repair data without keeping a second copy."
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.13,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "This Newly Proposed Linux Filesystem Can Fix Corrupted Data",
-    "raw_summary": "Aimed at hardware exposed to radiation, like satellites, BeamFS can repair data without keeping a second copy.",
-    "hidden": false,
-    "slug": "this-newly-proposed-linux-filesystem-can-fix-corrupted-data-d5d383"
-  },
   "6f7743a9465550a4": {
     "id": "6f7743a9465550a4",
     "url": "https://vnexpress.net/oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-5138064.html",
@@ -318,6 +283,38 @@
     "raw_summary": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh.",
     "hidden": false,
     "slug": "oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-6f7743"
+  },
+  "7e50ebb05b0da922": {
+    "id": "7e50ebb05b0da922",
+    "slug": "your-tvs-hdmi-cec-setting-can-control-more-than-you-think-7e50eb",
+    "url": "https://www.makeuseof.com/your-tvs-hdmi-cec-setting-can-control-more-than-you-think",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Kanika Gogia",
+    "published_at": "Thu, 29 Oct 2026 18:00:16 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Your TV's HDMI-CEC setting can control more than you think",
+      "vi": "Your TV's HDMI-CEC setting can control more than you think"
+    },
+    "summary": {
+      "en": "One overlooked feature could explain why your TV and connected devices behave the way they do.",
+      "vi": "One overlooked feature could explain why your TV and connected devices behave the way they do."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "131eaa65657ae221": {
     "id": "131eaa65657ae221",
@@ -713,6 +710,137 @@
     "hidden": false,
     "slug": "chrome-156-for-googlebook-rolling-out-with-14-updates-across-1d22dd"
   },
+  "e2eaf0b40e5a173e": {
+    "id": "e2eaf0b40e5a173e",
+    "slug": "heres-everything-new-in-android-17-qpr3-beta-3-gallery-e2eaf0",
+    "url": "https://9to5google.com/2026/10/29/android-17-qpr3-beta-3-everything-new",
+    "source": {
+      "id": "9to5google",
+      "name": "9to5Google",
+      "site_url": "https://9to5google.com",
+      "kind": "news"
+    },
+    "author": "Abner Li",
+    "published_at": "Thu, 29 Oct 2026 20:38:07 +0000",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Here’s everything new in Android 17 QPR3 Beta 3 [Gallery]",
+      "vi": "Here’s everything new in Android 17 QPR3 Beta 3 [Gallery]"
+    },
+    "summary": {
+      "en": "Google today rolled out a big Android 17 QPR3 Beta 3 with a number of fixes for Pixel devices.",
+      "vi": "Google today rolled out a big Android 17 QPR3 Beta 3 with a number of fixes for Pixel devices."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.16,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "d5d383be6d2d90ea": {
+    "id": "d5d383be6d2d90ea",
+    "url": "https://feed.itsfoss.com/link/24361/17502832/beamfs-linux-filesystem-proposal",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "Thu, 22 Oct 2026 20:09:35 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "This Newly Proposed Linux Filesystem Can Fix Corrupted Data",
+      "vi": "This Newly Proposed Linux Filesystem Can Fix Corrupted Data"
+    },
+    "summary": {
+      "en": "Aimed at hardware exposed to radiation, like satellites, BeamFS can repair data without keeping a second copy.",
+      "vi": "Aimed at hardware exposed to radiation, like satellites, BeamFS can repair data without keeping a second copy."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.13,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "This Newly Proposed Linux Filesystem Can Fix Corrupted Data",
+    "raw_summary": "Aimed at hardware exposed to radiation, like satellites, BeamFS can repair data without keeping a second copy.",
+    "hidden": false,
+    "slug": "this-newly-proposed-linux-filesystem-can-fix-corrupted-data-d5d383"
+  },
+  "5b524ac74503290a": {
+    "id": "5b524ac74503290a",
+    "slug": "android-17-qpr3-beta-3-rolling-out-with-26-pixel-fixes-5b524a",
+    "url": "https://9to5google.com/2026/10/29/android-17-qpr3-beta-3-pixel",
+    "source": {
+      "id": "9to5google",
+      "name": "9to5Google",
+      "site_url": "https://9to5google.com",
+      "kind": "news"
+    },
+    "author": "Abner Li",
+    "published_at": "Thu, 29 Oct 2026 20:21:06 +0000",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Android 17 QPR3 Beta 3 rolling out with 26 Pixel fixes",
+      "vi": "Android 17 QPR3 Beta 3 rolling out with 26 Pixel fixes"
+    },
+    "summary": {
+      "en": "Following last week’s release, Google is rolling out Android 17 QPR3 Beta 3 to Pixel devices today. It’s another big bug fixer.",
+      "vi": "Following last week’s release, Google is rolling out Android 17 QPR3 Beta 3 to Pixel devices today. It’s another big bug fixer."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.16,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "71b2a13220a98736": {
+    "id": "71b2a13220a98736",
+    "slug": "google-home-update-rolling-out-with-nest-cam-matter-energy-s-71b2a1",
+    "url": "https://9to5google.com/2026/10/29/google-home-update-nest-cam-matter-updates-fixes",
+    "source": {
+      "id": "9to5google",
+      "name": "9to5Google",
+      "site_url": "https://9to5google.com",
+      "kind": "news"
+    },
+    "author": "Ben Schoon",
+    "published_at": "Thu, 29 Oct 2026 18:30:00 +0000",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Google Home update rolling out with Nest Cam, Matter, energy-saving improvements & fixes",
+      "vi": "Google Home update rolling out with Nest Cam, Matter, energy-saving improvements & fixes"
+    },
+    "summary": {
+      "en": "There’s a new Google Home update rolling out that delivers improvements for Nest Cam owners, Matter devices, and more.",
+      "vi": "There’s a new Google Home update rolling out that delivers improvements for Nest Cam owners, Matter devices, and more."
+    },
+    "categories": [
+      "browser"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.16,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "72c7ad11c062c24d": {
     "id": "72c7ad11c062c24d",
     "url": "https://feed.itsfoss.com/link/24361/17508486/ghostty-1-4-release",
@@ -748,6 +876,38 @@
     "raw_summary": "The Ubuntu 24.04 support drop is thanks to the native builds requiring some newer dependencies. Anyhow, there’s more to this Ghostty release than that.",
     "hidden": false,
     "slug": "ghostty-14-is-faster-and-uses-less-ram-but-drops-ubuntu-2404-72c7ad"
+  },
+  "4bea0992c512d14b": {
+    "id": "4bea0992c512d14b",
+    "slug": "google-photos-update-fixes-the-bug-that-hid-edited-pictures-4bea09",
+    "url": "https://9to5google.com/2026/10/29/google-photos-edited-pictures-bug-fix",
+    "source": {
+      "id": "9to5google",
+      "name": "9to5Google",
+      "site_url": "https://9to5google.com",
+      "kind": "news"
+    },
+    "author": "Ben Schoon",
+    "published_at": "Thu, 29 Oct 2026 16:25:00 +0000",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Google Photos update fixes the bug that hid edited pictures",
+      "vi": "Google Photos update fixes the bug that hid edited pictures"
+    },
+    "summary": {
+      "en": "A bug in Google Photos has left edited pictures invisible to other Android apps, but Google has now rolled out a fix.",
+      "vi": "A bug in Google Photos has left edited pictures invisible to other Android apps, but Google has now rolled out a fix."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.16,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "4d429bba38d36917": {
     "id": "4d429bba38d36917",
@@ -924,41 +1084,6 @@
     "raw_summary": "Blinding white captions can dominate dark scenes on modern HDR sets and even cause mini LED bloom to flare during evening viewing.",
     "hidden": false,
     "slug": "your-hdr-movies-have-a-subtitle-problem-b25dac"
-  },
-  "108546ab436ee46a": {
-    "id": "108546ab436ee46a",
-    "url": "https://feed.itsfoss.com/link/24361/17506987/amutable-foundations-private-preview",
-    "source": {
-      "id": "itsfoss",
-      "name": "It's FOSS",
-      "site_url": "https://itsfoss.com",
-      "kind": "tips"
-    },
-    "author": "Sourav Rudra",
-    "published_at": "Mon, 26 Oct 2026 19:53:52 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Systemd Creator’s Startup Opens Signups for Private Preview of its Linux System",
-      "vi": "Systemd Creator’s Startup Opens Signups for Private Preview of its Linux System"
-    },
-    "summary": {
-      "en": "Amutable Foundations is a read-only, image-based system where every machine produces signed reports of its own state.",
-      "vi": "Amutable Foundations is a read-only, image-based system where every machine produces signed reports of its own state."
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.98,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Systemd Creator’s Startup Opens Signups for Private Preview of its Linux System",
-    "raw_summary": "Amutable Foundations is a read-only, image-based system where every machine produces signed reports of its own state.",
-    "hidden": false,
-    "slug": "systemd-creators-startup-opens-signups-for-private-preview-o-108546"
   },
   "55f3dda9cce6d5d1": {
     "id": "55f3dda9cce6d5d1",
@@ -1245,6 +1370,70 @@
     "hidden": false,
     "slug": "home-assistants-latest-update-makes-matter-leak-sensors-and-cfe726"
   },
+  "a0aaff79aaec41c6": {
+    "id": "a0aaff79aaec41c6",
+    "slug": "from-keys-to-dots-12-mystery-android-status-bar-icons-you-sh-a0aaff",
+    "url": "https://www.howtogeek.com/android-status-bar-icons-explained",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Namerah Saud Fatmi",
+    "published_at": "Thu, 29 Oct 2026 20:31:15 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "From keys to dots: 12 mystery Android status bar icons you should know",
+      "vi": "From keys to dots: 12 mystery Android status bar icons you should know"
+    },
+    "summary": {
+      "en": "Learn to identify and understand a dozen of the fundamental icons found in the Android status bar.",
+      "vi": "Learn to identify and understand a dozen of the fundamental icons found in the Android status bar."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.13,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "0afe18bea7e25376": {
+    "id": "0afe18bea7e25376",
+    "slug": "3-best-netflix-shows-to-watch-this-weekend-october-30-novemb-0afe18",
+    "url": "https://www.howtogeek.com/netflix-shows-watch-this-weekend-october-30",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Dan Girolamo",
+    "published_at": "Thu, 29 Oct 2026 20:16:15 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "3 best Netflix shows to watch this weekend (October 30-November 1)",
+      "vi": "3 best Netflix shows to watch this weekend (October 30-November 1)"
+    },
+    "summary": {
+      "en": "A quick-witted comedy and a critically acclaimed limited series highlight the list of shows to stream this weekend.",
+      "vi": "A quick-witted comedy and a critically acclaimed limited series highlight the list of shows to stream this weekend."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.13,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "fadd7467dc36644c": {
     "id": "fadd7467dc36644c",
     "url": "https://dev.to/bowentse/word-counting-is-harder-than-it-looks-a-devs-guide-1jpb",
@@ -1280,6 +1469,71 @@
     "hidden": false,
     "slug": "word-counting-is-harder-than-it-looks-a-devs-guide-fadd74"
   },
+  "b0afa6e775e3a21e": {
+    "id": "b0afa6e775e3a21e",
+    "slug": "bluetooth-auracast-is-the-best-android-audio-feature-nobody-b0afa6",
+    "url": "https://www.howtogeek.com/bluetooth-auracast-is-the-best-android-audio-feature-nobody-is-using",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Namerah Saud Fatmi",
+    "published_at": "Thu, 29 Oct 2026 19:00:15 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Bluetooth Auracast is the best Android audio feature nobody is using",
+      "vi": "Bluetooth Auracast is the best Android audio feature nobody is using"
+    },
+    "summary": {
+      "en": "Bluetooth Auracast is ready to use on the latest flagship Android phones. This is how you use it the way it was meant to be used.",
+      "vi": "Bluetooth Auracast is ready to use on the latest flagship Android phones. This is how you use it the way it was meant to be used."
+    },
+    "categories": [
+      "android",
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.13,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "e80e9c1b00b1c5dc": {
+    "id": "e80e9c1b00b1c5dc",
+    "slug": "you-dont-need-to-buy-a-nas-these-4-computers-do-the-job-for-e80e9c",
+    "url": "https://www.howtogeek.com/buying-nas-doesnt-make-sense-machines-can-do-same-for-less",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Nick Lewis",
+    "published_at": "Thu, 29 Oct 2026 18:30:15 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "You don’t need to buy a NAS. These 4 computers do the job for less",
+      "vi": "You don’t need to buy a NAS. These 4 computers do the job for less"
+    },
+    "summary": {
+      "en": "Skip the NAS and get a more powerful CPU with more RAM with fewer limits.",
+      "vi": "Skip the NAS and get a more powerful CPU with more RAM with fewer limits."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.13,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "f4cb4a6778724aeb": {
     "id": "f4cb4a6778724aeb",
     "url": "https://dev.to/toolsyhub/how-to-compress-an-image-to-an-exact-kb-limit-in-the-browser-canvas-binary-search-and-when-to-2d7i",
@@ -1314,6 +1568,38 @@
     "raw_summary": "Upload forms for visas, exams and job portals often say \"photo must be under 100 KB\". A phone photo",
     "hidden": false,
     "slug": "how-to-compress-an-image-to-an-exact-kb-limit-in-the-browser-f4cb4a"
+  },
+  "4fc3c087d8e3e232": {
+    "id": "4fc3c087d8e3e232",
+    "slug": "kodi-isnt-a-plex-replacement-they-work-better-when-you-use-t-4fc3c0",
+    "url": "https://www.howtogeek.com/kodi-isnt-a-plex-replacement-they-work-better-when-you-use-them-together",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Sydney Butler",
+    "published_at": "Thu, 29 Oct 2026 18:00:15 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Kodi isn't a Plex replacement: they work better when you use them together",
+      "vi": "Kodi isn't a Plex replacement: they work better when you use them together"
+    },
+    "summary": {
+      "en": "Mixing Kodi clients with a Plex server brings TV friendly playback and rich metadata without losing control.",
+      "vi": "Mixing Kodi clients with a Plex server brings TV friendly playback and rich metadata without losing control."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.13,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "287908b3e087f501": {
     "id": "287908b3e087f501",
@@ -1957,43 +2243,37 @@
     "hidden": false,
     "slug": "my-next-wi-fi-upgrade-wont-need-a-power-outlet-38c002"
   },
-  "89fc99ddb03996f5": {
-    "id": "89fc99ddb03996f5",
-    "url": "https://www.makeuseof.com/changed-android-settings-stopped-carrying-power-bank",
+  "20787988f085410c": {
+    "id": "20787988f085410c",
+    "slug": "why-64-bit-windows-needs-two-program-files-folders-207879",
+    "url": "https://www.makeuseof.com/why-windows-has-two-program-files-folders",
     "source": {
       "id": "makeuseof",
       "name": "MakeUseOf",
       "site_url": "https://www.makeuseof.com",
       "kind": "tips"
     },
-    "author": "Digvijay Kumar",
-    "published_at": "Wed, 28 Oct 2026 16:00:17 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "author": "Oluwademilade Afolabi",
+    "published_at": "Thu, 29 Oct 2026 19:30:16 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
     "original_lang": "en",
     "title": {
-      "en": "I changed 3 Android settings and stopped carrying a power bank everywhere",
-      "vi": "I changed 3 Android settings and stopped carrying a power bank everywhere"
+      "en": "Why 64-bit Windows needs two Program Files folders",
+      "vi": "Why 64-bit Windows needs two Program Files folders"
     },
     "summary": {
-      "en": "I found where my battery was actually going.",
-      "vi": "I found where my battery was actually going."
+      "en": "That weird “(x86)” folder has a better excuse than you think.",
+      "vi": "That weird “(x86)” folder has a better excuse than you think."
     },
     "categories": [
-      "android",
-      "hardware"
+      "windows"
     ],
-    "tags": [
-      "battery"
-    ],
-    "difficulty": "easy",
-    "score": 1.01,
-    "howto": true,
+    "tags": [],
+    "difficulty": null,
+    "score": 1.04,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "I changed 3 Android settings and stopped carrying a power bank everywhere",
-    "raw_summary": "I found where my battery was actually going.",
-    "hidden": false,
-    "slug": "i-changed-3-android-settings-and-stopped-carrying-a-power-ba-89fc99"
+    "translated": {}
   },
   "c989d358786f1ec1": {
     "id": "c989d358786f1ec1",
@@ -2029,40 +2309,69 @@
     "raw_summary": "A project group can discuss a quotation on Monday, change its deadline on Wednesday, and confirm",
     "hidden": true
   },
-  "435a65697245038d": {
-    "id": "435a65697245038d",
-    "url": "https://www.makeuseof.com/my-old-fire-tv-stick-was-throttling-itself-until-i-changed-these-settings",
+  "79567c1813154a92": {
+    "id": "79567c1813154a92",
+    "slug": "6-romantasy-book-series-that-deserve-tv-adaptations-more-tha-79567c",
+    "url": "https://www.makeuseof.com/fourth-wing-romantasy-adaptations",
     "source": {
       "id": "makeuseof",
       "name": "MakeUseOf",
       "site_url": "https://www.makeuseof.com",
       "kind": "tips"
     },
-    "author": "Suman Biswas",
-    "published_at": "Thu, 29 Oct 2026 12:00:16 GMT",
-    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
+    "author": "Dan Selcke",
+    "published_at": "Thu, 29 Oct 2026 19:00:16 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
     "original_lang": "en",
     "title": {
-      "en": "My old Fire TV Stick was throttling itself until I changed these 5 settings",
-      "vi": "My old Fire TV Stick was throttling itself until I changed these 5 settings"
+      "en": "6 romantasy book series that deserve TV adaptations more than Fourth Wing",
+      "vi": "6 romantasy book series that deserve TV adaptations more than Fourth Wing"
     },
     "summary": {
-      "en": "A cooler Fire TV Stick is a healthy Fire TV Stick.",
-      "vi": "A cooler Fire TV Stick is a healthy Fire TV Stick."
+      "en": "Get to know the romantasy genre before it becomes the next big thing in TV.",
+      "vi": "Get to know the romantasy genre before it becomes the next big thing in TV."
     },
     "categories": [
       "windows"
     ],
     "tags": [],
-    "difficulty": "easy",
-    "score": 1.01,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.04,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "My old Fire TV Stick was throttling itself until I changed these 5 settings",
-    "raw_summary": "A cooler Fire TV Stick is a healthy Fire TV Stick.",
-    "hidden": false,
-    "slug": "my-old-fire-tv-stick-was-throttling-itself-until-i-changed-t-435a65"
+    "translated": {}
+  },
+  "423389ff22ed21b7": {
+    "id": "423389ff22ed21b7",
+    "slug": "i-gave-my-galaxy-a-speed-boost-by-removing-these-preinstalle-423389",
+    "url": "https://www.makeuseof.com/remove-preinstalled-galaxy-apps",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Tashreef Shareef",
+    "published_at": "Thu, 29 Oct 2026 18:30:16 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I gave my Galaxy a speed boost by removing these preinstalled Galaxy apps",
+      "vi": "I gave my Galaxy a speed boost by removing these preinstalled Galaxy apps"
+    },
+    "summary": {
+      "en": "Removing just five preinstalled apps made the phone noticeably snappier.",
+      "vi": "Removing just five preinstalled apps made the phone noticeably snappier."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.04,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "843e2f5d387fbdbf": {
     "id": "843e2f5d387fbdbf",
@@ -2101,6 +2410,76 @@
     "hidden": false,
     "slug": "steamos-or-windows-11-deciding-with-powershell-before-you-pa-843e2f"
   },
+  "3dc4efcd06779d78": {
+    "id": "3dc4efcd06779d78",
+    "slug": "google-put-an-end-date-on-every-chromebook-and-some-wont-mak-3dc4ef",
+    "url": "https://www.makeuseof.com/google-put-an-end-date-on-every-chromebook-and-some-wont-make-it-to-googlebook-os",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Sara Heritage",
+    "published_at": "Thu, 29 Oct 2026 17:37:55 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Google put an end date on every Chromebook, and some won’t make it to Googlebook OS",
+      "vi": "Google put an end date on every Chromebook, and some won’t make it to Googlebook OS"
+    },
+    "summary": {
+      "en": "Older Chromebooks face feature losses and data wipes when enrolling in extended updates so back up important files first.",
+      "vi": "Older Chromebooks face feature losses and data wipes when enrolling in extended updates so back up important files first."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.04,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "89fc99ddb03996f5": {
+    "id": "89fc99ddb03996f5",
+    "url": "https://www.makeuseof.com/changed-android-settings-stopped-carrying-power-bank",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Digvijay Kumar",
+    "published_at": "Wed, 28 Oct 2026 16:00:17 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I changed 3 Android settings and stopped carrying a power bank everywhere",
+      "vi": "I changed 3 Android settings and stopped carrying a power bank everywhere"
+    },
+    "summary": {
+      "en": "I found where my battery was actually going.",
+      "vi": "I found where my battery was actually going."
+    },
+    "categories": [
+      "android",
+      "hardware"
+    ],
+    "tags": [
+      "battery"
+    ],
+    "difficulty": "easy",
+    "score": 1.01,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "I changed 3 Android settings and stopped carrying a power bank everywhere",
+    "raw_summary": "I found where my battery was actually going.",
+    "hidden": false,
+    "slug": "i-changed-3-android-settings-and-stopped-carrying-a-power-ba-89fc99"
+  },
   "85daa6a854746cd3": {
     "id": "85daa6a854746cd3",
     "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents",
@@ -2135,6 +2514,73 @@
     "raw_summary": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report.",
     "hidden": false,
     "slug": "octoverse-commits-pushes-reach-new-highs-in-2026-as-develope-85daa6"
+  },
+  "435a65697245038d": {
+    "id": "435a65697245038d",
+    "url": "https://www.makeuseof.com/my-old-fire-tv-stick-was-throttling-itself-until-i-changed-these-settings",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Suman Biswas",
+    "published_at": "Thu, 29 Oct 2026 12:00:16 GMT",
+    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "My old Fire TV Stick was throttling itself until I changed these 5 settings",
+      "vi": "My old Fire TV Stick was throttling itself until I changed these 5 settings"
+    },
+    "summary": {
+      "en": "A cooler Fire TV Stick is a healthy Fire TV Stick.",
+      "vi": "A cooler Fire TV Stick is a healthy Fire TV Stick."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 1.01,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "My old Fire TV Stick was throttling itself until I changed these 5 settings",
+    "raw_summary": "A cooler Fire TV Stick is a healthy Fire TV Stick.",
+    "hidden": false,
+    "slug": "my-old-fire-tv-stick-was-throttling-itself-until-i-changed-t-435a65"
+  },
+  "44714dfda358cc69": {
+    "id": "44714dfda358cc69",
+    "slug": "gpu-passthrough-to-your-virtual-machine-is-easy-and-makes-se-44714d",
+    "url": "https://www.makeuseof.com/gpu-passthrough-to-virtual-machine-is-easy-makes-setting-up-a-retro-gaming-vm-seamless",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Dipan Saha",
+    "published_at": "Thu, 29 Oct 2026 17:30:17 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "GPU passthrough to your virtual machine is easy, and makes setting up a retro gaming VM seamless",
+      "vi": "GPU passthrough to your virtual machine is easy, and makes setting up a retro gaming VM seamless"
+    },
+    "summary": {
+      "en": "Make a GPU-accelerated gaming VM in minutes.",
+      "vi": "Make a GPU-accelerated gaming VM in minutes."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 1.01,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "2f60432befdab164": {
     "id": "2f60432befdab164",
@@ -2205,6 +2651,41 @@
     "hidden": false,
     "slug": "audacious-462-fills-the-last-gaps-in-its-qt-winamp-mode-d78811"
   },
+  "108546ab436ee46a": {
+    "id": "108546ab436ee46a",
+    "url": "https://feed.itsfoss.com/link/24361/17506987/amutable-foundations-private-preview",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "Mon, 26 Oct 2026 19:53:52 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Systemd Creator’s Startup Opens Signups for Private Preview of its Linux System",
+      "vi": "Systemd Creator’s Startup Opens Signups for Private Preview of its Linux System"
+    },
+    "summary": {
+      "en": "Amutable Foundations is a read-only, image-based system where every machine produces signed reports of its own state.",
+      "vi": "Amutable Foundations is a read-only, image-based system where every machine produces signed reports of its own state."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.98,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Systemd Creator’s Startup Opens Signups for Private Preview of its Linux System",
+    "raw_summary": "Amutable Foundations is a read-only, image-based system where every machine produces signed reports of its own state.",
+    "hidden": false,
+    "slug": "systemd-creators-startup-opens-signups-for-private-preview-o-108546"
+  },
   "d683cbeee4d0d8ac": {
     "id": "d683cbeee4d0d8ac",
     "url": "https://feed.itsfoss.com/link/24361/17506301/mirko-brombin-raven",
@@ -2240,41 +2721,6 @@
     "raw_summary": "Mirko Brombin is working to get Microsoft Office running reliably on Linux. He also thinks the apps cloning Office and Photoshop pixel for pixel cross a line. We talked about both, plus AI agents, Vanilla OS and his new Sinty OS.",
     "hidden": false,
     "slug": "bottles-creator-mirko-brombin-wants-microsoft-office-on-linu-d683cb"
-  },
-  "a7dba8bb7ae409f1": {
-    "id": "a7dba8bb7ae409f1",
-    "url": "https://feed.itsfoss.com/link/24361/17505795/raid-calculator",
-    "source": {
-      "id": "itsfoss",
-      "name": "It's FOSS",
-      "site_url": "https://itsfoss.com",
-      "kind": "tips"
-    },
-    "author": "Abhishek Prakash",
-    "published_at": "Sat, 24 Oct 2026 11:43:58 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "RAID Calculator",
-      "vi": "RAID Calculator"
-    },
-    "summary": {
-      "en": "Calculate usable capacity, fault tolerance, and storage efficiency for any RAID or ZFS layout. Also see if there are any risks associated with your rebuilds.",
-      "vi": "Calculate usable capacity, fault tolerance, and storage efficiency for any RAID or ZFS layout. Also see if there are any risks associated with your rebuilds."
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.98,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "RAID Calculator",
-    "raw_summary": "Calculate usable capacity, fault tolerance, and storage efficiency for any RAID or ZFS layout. Also see if there are any risks associated with your rebuilds.",
-    "hidden": false,
-    "slug": "raid-calculator-a7dba8"
   },
   "d9c39429d489eec5": {
     "id": "d9c39429d489eec5",
@@ -2313,6 +2759,41 @@
     "hidden": false,
     "slug": "chapter-3-the-tmux-prefix-key-essential-shortcuts-d9c394"
   },
+  "a7dba8bb7ae409f1": {
+    "id": "a7dba8bb7ae409f1",
+    "url": "https://feed.itsfoss.com/link/24361/17505795/raid-calculator",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips"
+    },
+    "author": "Abhishek Prakash",
+    "published_at": "Sat, 24 Oct 2026 11:43:58 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "RAID Calculator",
+      "vi": "RAID Calculator"
+    },
+    "summary": {
+      "en": "Calculate usable capacity, fault tolerance, and storage efficiency for any RAID or ZFS layout. Also see if there are any risks associated with your rebuilds.",
+      "vi": "Calculate usable capacity, fault tolerance, and storage efficiency for any RAID or ZFS layout. Also see if there are any risks associated with your rebuilds."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.98,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "RAID Calculator",
+    "raw_summary": "Calculate usable capacity, fault tolerance, and storage efficiency for any RAID or ZFS layout. Also see if there are any risks associated with your rebuilds.",
+    "hidden": false,
+    "slug": "raid-calculator-a7dba8"
+  },
   "9b4da64b24df25e5": {
     "id": "9b4da64b24df25e5",
     "url": "https://feed.itsfoss.com/link/24361/17505238/projects-keeping-x11-alive",
@@ -2348,41 +2829,6 @@
     "hidden": false,
     "slug": "these-projects-are-keeping-x11-dream-alive-on-linux-9b4da6"
   },
-  "0a9a094c784de235": {
-    "id": "0a9a094c784de235",
-    "url": "https://feed.itsfoss.com/link/24361/17505121/armsom-sige7s",
-    "source": {
-      "id": "itsfoss",
-      "name": "It's FOSS",
-      "site_url": "https://itsfoss.com",
-      "kind": "tips"
-    },
-    "author": "Abhishek Prakash",
-    "published_at": "Fri, 23 Oct 2026 18:34:57 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "ArmSoM Sige7s Puts the RK3588S on a Raspberry Pi-Sized Board, and There's a Compute Module Too",
-      "vi": "ArmSoM Sige7s Puts the RK3588S on a Raspberry Pi-Sized Board, and There's a Compute Module Too"
-    },
-    "summary": {
-      "en": "The small SBC brings a 6 TOPS NPU, Wi-Fi 6, a Pi-compatible 40-pin header, and up to 32GB RAM, starting at $153.",
-      "vi": "The small SBC brings a 6 TOPS NPU, Wi-Fi 6, a Pi-compatible 40-pin header, and up to 32GB RAM, starting at $153."
-    },
-    "categories": [
-      "hardware"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.98,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "ArmSoM Sige7s Puts the RK3588S on a Raspberry Pi-Sized Board, and There's a Compute Module Too",
-    "raw_summary": "The small SBC brings a 6 TOPS NPU, Wi-Fi 6, a Pi-compatible 40-pin header, and up to 32GB RAM, starting at $153.",
-    "hidden": false,
-    "slug": "armsom-sige7s-puts-the-rk3588s-on-a-raspberry-pi-sized-board-0a9a09"
-  },
   "c83e4a34493e1229": {
     "id": "c83e4a34493e1229",
     "url": "https://genk.vn/loi-khuyen-danh-cho-tat-ca-nhung-ai-hay-dung-google-maps-de-tra-duong-165261010112912055.chn",
@@ -2417,6 +2863,41 @@
     "raw_summary": "Với những ai thường xuyên sử dụng, việc nắm rõ một vài thiết lập thông minh sẽ giúp bạn tối ưu hóa công năng của Google Maps.",
     "hidden": false,
     "slug": "loi-khuyen-danh-cho-tat-ca-nhung-ai-hay-dung-google-maps-de-c83e4a"
+  },
+  "0a9a094c784de235": {
+    "id": "0a9a094c784de235",
+    "url": "https://feed.itsfoss.com/link/24361/17505121/armsom-sige7s",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips"
+    },
+    "author": "Abhishek Prakash",
+    "published_at": "Fri, 23 Oct 2026 18:34:57 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "ArmSoM Sige7s Puts the RK3588S on a Raspberry Pi-Sized Board, and There's a Compute Module Too",
+      "vi": "ArmSoM Sige7s Puts the RK3588S on a Raspberry Pi-Sized Board, and There's a Compute Module Too"
+    },
+    "summary": {
+      "en": "The small SBC brings a 6 TOPS NPU, Wi-Fi 6, a Pi-compatible 40-pin header, and up to 32GB RAM, starting at $153.",
+      "vi": "The small SBC brings a 6 TOPS NPU, Wi-Fi 6, a Pi-compatible 40-pin header, and up to 32GB RAM, starting at $153."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.98,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "ArmSoM Sige7s Puts the RK3588S on a Raspberry Pi-Sized Board, and There's a Compute Module Too",
+    "raw_summary": "The small SBC brings a 6 TOPS NPU, Wi-Fi 6, a Pi-compatible 40-pin header, and up to 32GB RAM, starting at $153.",
+    "hidden": false,
+    "slug": "armsom-sige7s-puts-the-rk3588s-on-a-raspberry-pi-sized-board-0a9a09"
   },
   "4189b4549c8cf284": {
     "id": "4189b4549c8cf284",
@@ -2913,40 +3394,37 @@
     "hidden": false,
     "slug": "netflix-is-bringing-these-horror-movies-right-in-time-for-yo-43c516"
   },
-  "f335a5077f36cc12": {
-    "id": "f335a5077f36cc12",
-    "url": "https://thanhnien.vn/cap-quang-lap-ky-luc-tai-20000-bo-phim-4k-trong-1-giay-18526102909331657.htm",
+  "8e4bd3d9e1e92b58": {
+    "id": "8e4bd3d9e1e92b58",
+    "slug": "ring-finally-fixed-the-biggest-problem-with-smart-locks-and-8e4bd3",
+    "url": "https://www.makeuseof.com/ring-smart-lock-fixes-problem",
     "source": {
-      "id": "thanhnien_tech",
-      "name": "Thanh Niên Công Nghệ",
-      "site_url": "https://thanhnien.vn/cong-nghe",
-      "kind": "news"
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
     },
-    "author": null,
-    "published_at": "Thu, 29 Oct 26 10:09:00 +0700",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "vi",
+    "author": "Chris Hachey",
+    "published_at": "Thu, 29 Oct 2026 16:31:18 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
     "title": {
-      "vi": "Cáp quang lập kỷ lục tải 20.000 bộ phim 4K trong 1 giây",
-      "en": "Cáp quang lập kỷ lục tải 20.000 bộ phim 4K trong 1 giây"
+      "en": "Ring finally fixed the biggest problem with smart locks, and the solution is surprisingly simple",
+      "vi": "Ring finally fixed the biggest problem with smart locks, and the solution is surprisingly simple"
     },
     "summary": {
-      "vi": "Các nhà nghiên cứu Trung Quốc vừa thiết lập kỷ lục truyền tải cáp quang thời gian thực với tốc độ 3,2 petabit mỗi giây trên khoảng cách 10,3 km.",
-      "en": "Các nhà nghiên cứu Trung Quốc vừa thiết lập kỷ lục truyền tải cáp quang thời gian thực với tốc độ 3,2 petabit mỗi giây trên khoảng cách 10,3 km."
+      "en": "No key? No problem.",
+      "vi": "No key? No problem."
     },
     "categories": [
-      "ios"
+      "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.9,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.91,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Cáp quang lập kỷ lục tải 20.000 bộ phim 4K trong 1 giây",
-    "raw_summary": "Các nhà nghiên cứu Trung Quốc vừa thiết lập kỷ lục truyền tải cáp quang thời gian thực với tốc độ 3,2 petabit mỗi giây trên khoảng cách 10,3 km.",
-    "hidden": false,
-    "slug": "cap-quang-lap-ky-luc-tai-20000-bo-phim-4k-trong-1-giay-f335a5"
+    "translated": {}
   },
   "3b94f401db45eb9e": {
     "id": "3b94f401db45eb9e",
@@ -3018,43 +3496,37 @@
     "hidden": false,
     "slug": "5-google-maps-companion-apps-that-fill-its-biggest-gaps-29d0fd"
   },
-  "3b98c323d65c4307": {
-    "id": "3b98c323d65c4307",
-    "url": "https://thanhnien.vn/tai-ung-dung-claude-tu-ten-mien-cua-anthropic-van-dinh-ma-doc-185261028091151327.htm",
+  "3930d00ef77468d3": {
+    "id": "3930d00ef77468d3",
+    "slug": "wi-fi-8-is-finally-fixing-the-real-issues-with-wi-fi-and-its-3930d0",
+    "url": "https://www.xda-developers.com/wi-fi-8-fixing-real-issues-i-am-skipping-wi-fi-7",
     "source": {
-      "id": "thanhnien_tech",
-      "name": "Thanh Niên Công Nghệ",
-      "site_url": "https://thanhnien.vn/cong-nghe",
+      "id": "xdadevelopers",
+      "name": "XDA Developers",
+      "site_url": "https://www.xda-developers.com",
       "kind": "news"
     },
-    "author": null,
-    "published_at": "Wed, 28 Oct 26 10:48:00 +0700",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "vi",
+    "author": "Tanveer Singh",
+    "published_at": "Thu, 29 Oct 2026 17:00:21 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
     "title": {
-      "vi": "Tải ứng dụng Claude từ tên miền của Anthropic vẫn dính mã độc",
-      "en": "Tải ứng dụng Claude từ tên miền của Anthropic vẫn dính mã độc"
+      "en": "Wi-Fi 8 is finally fixing the real issues with Wi-Fi, and it's why I'm skipping Wi-Fi 7 entirely",
+      "vi": "Wi-Fi 8 is finally fixing the real issues with Wi-Fi, and it's why I'm skipping Wi-Fi 7 entirely"
     },
     "summary": {
-      "vi": "Tội phạm mạng đang dùng mánh khóe để dẫn dụ người dùng đến các trang hướng dẫn cài đặt Claude giả mạo nằm ngay trên tên miền claude.ai.",
-      "en": "Tội phạm mạng đang dùng mánh khóe để dẫn dụ người dùng đến các trang hướng dẫn cài đặt Claude giả mạo nằm ngay trên tên miền claude.ai."
+      "en": "Skipping Wi-Fi 7 means waiting for the real upgrade",
+      "vi": "Skipping Wi-Fi 7 means waiting for the real upgrade"
     },
     "categories": [
-      "ai",
-      "security"
+      "hardware"
     ],
-    "tags": [
-      "claude"
-    ],
-    "difficulty": "easy",
-    "score": 0.9,
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.91,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Tải ứng dụng Claude từ tên miền của Anthropic vẫn dính mã độc",
-    "raw_summary": "Tội phạm mạng đang dùng mánh khóe để dẫn dụ người dùng đến các trang hướng dẫn cài đặt Claude giả mạo nằm ngay trên tên miền claude.ai.",
-    "hidden": false,
-    "slug": "tai-ung-dung-claude-tu-ten-mien-cua-anthropic-van-dinh-ma-do-3b98c3"
+    "translated": {}
   },
   "9fd899d67bf7abfb": {
     "id": "9fd899d67bf7abfb",
@@ -3127,9 +3599,9 @@
     "hidden": false,
     "slug": "i-connected-home-assistant-to-a-retro-handheld-and-now-i-con-e590b3"
   },
-  "f74bf914fe0a2409": {
-    "id": "f74bf914fe0a2409",
-    "url": "https://thanhnien.vn/nhiet-do-bao-nhieu-la-nong-qua-suc-chiu-dung-cua-router-wi-fi-185261029111043269.htm",
+  "f335a5077f36cc12": {
+    "id": "f335a5077f36cc12",
+    "url": "https://thanhnien.vn/cap-quang-lap-ky-luc-tai-20000-bo-phim-4k-trong-1-giay-18526102909331657.htm",
     "source": {
       "id": "thanhnien_tech",
       "name": "Thanh Niên Công Nghệ",
@@ -3137,19 +3609,19 @@
       "kind": "news"
     },
     "author": null,
-    "published_at": "Thu, 29 Oct 26 14:51:00 +0700",
-    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
+    "published_at": "Thu, 29 Oct 26 10:09:00 +0700",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "vi",
     "title": {
-      "vi": "Nhiệt độ bao nhiêu là nóng 'quá sức chịu đựng' của router Wi-Fi?",
-      "en": "Nhiệt độ bao nhiêu là nóng 'quá sức chịu đựng' của router Wi-Fi?"
+      "vi": "Cáp quang lập kỷ lục tải 20.000 bộ phim 4K trong 1 giây",
+      "en": "Cáp quang lập kỷ lục tải 20.000 bộ phim 4K trong 1 giây"
     },
     "summary": {
-      "vi": "Người dùng nên nhận biết mức nhiệt độ an toàn của router Wi-Fi và cách xử lý sự cố khi thiết bị quá nóng.",
-      "en": "Người dùng nên nhận biết mức nhiệt độ an toàn của router Wi-Fi và cách xử lý sự cố khi thiết bị quá nóng."
+      "vi": "Các nhà nghiên cứu Trung Quốc vừa thiết lập kỷ lục truyền tải cáp quang thời gian thực với tốc độ 3,2 petabit mỗi giây trên khoảng cách 10,3 km.",
+      "en": "Các nhà nghiên cứu Trung Quốc vừa thiết lập kỷ lục truyền tải cáp quang thời gian thực với tốc độ 3,2 petabit mỗi giây trên khoảng cách 10,3 km."
     },
     "categories": [
-      "hardware"
+      "ios"
     ],
     "tags": [],
     "difficulty": "medium",
@@ -3157,10 +3629,10 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {},
-    "raw_title": "Nhiệt độ bao nhiêu là nóng 'quá sức chịu đựng' của router Wi-Fi?",
-    "raw_summary": "Người dùng nên nhận biết mức nhiệt độ an toàn của router Wi-Fi và cách xử lý sự cố khi thiết bị quá nóng.",
+    "raw_title": "Cáp quang lập kỷ lục tải 20.000 bộ phim 4K trong 1 giây",
+    "raw_summary": "Các nhà nghiên cứu Trung Quốc vừa thiết lập kỷ lục truyền tải cáp quang thời gian thực với tốc độ 3,2 petabit mỗi giây trên khoảng cách 10,3 km.",
     "hidden": false,
-    "slug": "nhiet-do-bao-nhieu-la-nong-qua-suc-chiu-dung-cua-router-wi-f-f74bf9"
+    "slug": "cap-quang-lap-ky-luc-tai-20000-bo-phim-4k-trong-1-giay-f335a5"
   },
   "f31034dae2dd9dde": {
     "id": "f31034dae2dd9dde",
@@ -3232,6 +3704,207 @@
     "raw_summary": "Versatile and affordable.",
     "hidden": false,
     "slug": "5-budget-friendly-makita-tools-under-150-that-are-actually-w-9aa5f9"
+  },
+  "3b98c323d65c4307": {
+    "id": "3b98c323d65c4307",
+    "url": "https://thanhnien.vn/tai-ung-dung-claude-tu-ten-mien-cua-anthropic-van-dinh-ma-doc-185261028091151327.htm",
+    "source": {
+      "id": "thanhnien_tech",
+      "name": "Thanh Niên Công Nghệ",
+      "site_url": "https://thanhnien.vn/cong-nghe",
+      "kind": "news"
+    },
+    "author": null,
+    "published_at": "Wed, 28 Oct 26 10:48:00 +0700",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Tải ứng dụng Claude từ tên miền của Anthropic vẫn dính mã độc",
+      "en": "Tải ứng dụng Claude từ tên miền của Anthropic vẫn dính mã độc"
+    },
+    "summary": {
+      "vi": "Tội phạm mạng đang dùng mánh khóe để dẫn dụ người dùng đến các trang hướng dẫn cài đặt Claude giả mạo nằm ngay trên tên miền claude.ai.",
+      "en": "Tội phạm mạng đang dùng mánh khóe để dẫn dụ người dùng đến các trang hướng dẫn cài đặt Claude giả mạo nằm ngay trên tên miền claude.ai."
+    },
+    "categories": [
+      "ai",
+      "security"
+    ],
+    "tags": [
+      "claude"
+    ],
+    "difficulty": "easy",
+    "score": 0.9,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Tải ứng dụng Claude từ tên miền của Anthropic vẫn dính mã độc",
+    "raw_summary": "Tội phạm mạng đang dùng mánh khóe để dẫn dụ người dùng đến các trang hướng dẫn cài đặt Claude giả mạo nằm ngay trên tên miền claude.ai.",
+    "hidden": false,
+    "slug": "tai-ung-dung-claude-tu-ten-mien-cua-anthropic-van-dinh-ma-do-3b98c3"
+  },
+  "a81dc2149bc8a997": {
+    "id": "a81dc2149bc8a997",
+    "slug": "these-3-free-microsoft-apps-will-completely-declutter-your-w-a81dc2",
+    "url": "https://www.howtogeek.com/these-3-windows-utilities-can-tame-a-desktop-thats-messy-beyond-belief",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Arol Wright",
+    "published_at": "Thu, 29 Oct 2026 20:00:15 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "These 3 free Microsoft apps will completely declutter your Windows PC",
+      "vi": "These 3 free Microsoft apps will completely declutter your Windows PC"
+    },
+    "summary": {
+      "en": "No need to fight alone.",
+      "vi": "No need to fight alone."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.91,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "afc8621767fb8933": {
+    "id": "afc8621767fb8933",
+    "slug": "mistral-is-taking-on-us-and-chinese-ai-giants-with-its-bigge-afc862",
+    "url": "https://www.howtogeek.com/mistral-large-4-weights-released",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Jefferson Mangubat",
+    "published_at": "Thu, 29 Oct 2026 19:36:10 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Mistral is taking on U.S. and Chinese AI giants with its biggest model yet",
+      "vi": "Mistral is taking on U.S. and Chinese AI giants with its biggest model yet"
+    },
+    "summary": {
+      "en": "Meet ‘Le Chonk’",
+      "vi": "Meet ‘Le Chonk’"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.91,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "f74bf914fe0a2409": {
+    "id": "f74bf914fe0a2409",
+    "url": "https://thanhnien.vn/nhiet-do-bao-nhieu-la-nong-qua-suc-chiu-dung-cua-router-wi-fi-185261029111043269.htm",
+    "source": {
+      "id": "thanhnien_tech",
+      "name": "Thanh Niên Công Nghệ",
+      "site_url": "https://thanhnien.vn/cong-nghe",
+      "kind": "news"
+    },
+    "author": null,
+    "published_at": "Thu, 29 Oct 26 14:51:00 +0700",
+    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Nhiệt độ bao nhiêu là nóng 'quá sức chịu đựng' của router Wi-Fi?",
+      "en": "Nhiệt độ bao nhiêu là nóng 'quá sức chịu đựng' của router Wi-Fi?"
+    },
+    "summary": {
+      "vi": "Người dùng nên nhận biết mức nhiệt độ an toàn của router Wi-Fi và cách xử lý sự cố khi thiết bị quá nóng.",
+      "en": "Người dùng nên nhận biết mức nhiệt độ an toàn của router Wi-Fi và cách xử lý sự cố khi thiết bị quá nóng."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.9,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Nhiệt độ bao nhiêu là nóng 'quá sức chịu đựng' của router Wi-Fi?",
+    "raw_summary": "Người dùng nên nhận biết mức nhiệt độ an toàn của router Wi-Fi và cách xử lý sự cố khi thiết bị quá nóng.",
+    "hidden": false,
+    "slug": "nhiet-do-bao-nhieu-la-nong-qua-suc-chiu-dung-cua-router-wi-f-f74bf9"
+  },
+  "a8ac721a3cafbae1": {
+    "id": "a8ac721a3cafbae1",
+    "slug": "these-are-the-most-efficient-ways-to-3d-print-multi-colored-a8ac72",
+    "url": "https://www.howtogeek.com/most-efficient-ways-3d-print-multi-colored-objects",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Tim Brookes",
+    "published_at": "Thu, 29 Oct 2026 19:30:15 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "These are the most efficient ways to 3D print multi-colored objects",
+      "vi": "These are the most efficient ways to 3D print multi-colored objects"
+    },
+    "summary": {
+      "en": "Want to waste less filament? Do this instead.",
+      "vi": "Want to waste less filament? Do this instead."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.91,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "b394caaea4801868": {
+    "id": "b394caaea4801868",
+    "slug": "google-admits-ai-search-makes-less-money-but-its-fixing-that-b394ca",
+    "url": "https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-fixing-that-with-more-ads",
+    "source": {
+      "id": "arstechnica",
+      "name": "Ars Technica",
+      "site_url": "https://arstechnica.com",
+      "kind": "news"
+    },
+    "author": "Ryan Whitwam",
+    "published_at": "Thu, 29 Oct 2026 16:24:55 +0000",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Google admits AI search makes less money, but it's fixing that with more ads",
+      "vi": "Google admits AI search makes less money, but it's fixing that with more ads"
+    },
+    "summary": {
+      "en": "Google's negative cash flow balloons to -$9.06 billion, and stock price tumbles following Q3 earnings.",
+      "vi": "Google's negative cash flow balloons to -$9.06 billion, and stock price tumbles following Q3 earnings."
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.9,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "b302cd56f6ec631a": {
     "id": "b302cd56f6ec631a",
@@ -3804,6 +4477,38 @@
     "hidden": false,
     "slug": "nhung-cach-giup-smartphone-dung-ben-den-7-nam-40b007"
   },
+  "1eee4bb3c08bb5fc": {
+    "id": "1eee4bb3c08bb5fc",
+    "slug": "your-esp32-can-talk-to-other-esp32s-without-a-router-and-it-1eee4b",
+    "url": "https://www.xda-developers.com/esp32-talk-to-other-esp32s-without-router-it-changes-what-you-can-build",
+    "source": {
+      "id": "xdadevelopers",
+      "name": "XDA Developers",
+      "site_url": "https://www.xda-developers.com",
+      "kind": "news"
+    },
+    "author": "Shekhar Vaidya",
+    "published_at": "Thu, 29 Oct 2026 19:30:21 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Your ESP32 can talk to other ESP32s without a router, and it changes what you can build",
+      "vi": "Your ESP32 can talk to other ESP32s without a router, and it changes what you can build"
+    },
+    "summary": {
+      "en": "Fewer middlemen, with a few catches.",
+      "vi": "Fewer middlemen, with a few catches."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.83,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "f370cc54cb497e18": {
     "id": "f370cc54cb497e18",
     "url": "https://www.makeuseof.com/replace-7-zip-winrar-with-nanazip",
@@ -4371,6 +5076,42 @@
     "hidden": false,
     "slug": "your-excel-spreadsheet-doesnt-need-more-colors-it-needs-a-be-8f2e77"
   },
+  "07a76fde9339273c": {
+    "id": "07a76fde9339273c",
+    "slug": "i-tried-the-browsers-privacy-fans-swear-by-on-android-and-on-07a76f",
+    "url": "https://www.makeuseof.com/tried-browsers-privacy-fans-swear-by-on-android-one-changed-how-i-browse",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Mahnoor Faisal",
+    "published_at": "Thu, 29 Oct 2026 20:31:16 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I tried the browsers privacy fans swear by on Android, and one changed how I browse",
+      "vi": "I tried the browsers privacy fans swear by on Android, and one changed how I browse"
+    },
+    "summary": {
+      "en": "Life doesn't end at Chrome",
+      "vi": "Life doesn't end at Chrome"
+    },
+    "categories": [
+      "android",
+      "security"
+    ],
+    "tags": [
+      "chrome",
+      "privacy"
+    ],
+    "difficulty": null,
+    "score": 0.81,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "7b0dcfffd55692e8": {
     "id": "7b0dcfffd55692e8",
     "url": "https://dev.to/systemcraftdev/pipes-and-redirection-how-2-and-really-work-12m3",
@@ -4405,6 +5146,72 @@
     "raw_summary": "Four small symbols move text between commands and files. Once you see the three streams behind them, shell one-liners stop looking like magic.",
     "hidden": false,
     "slug": "pipes-and-redirection-how-2-and-really-work-7b0dcf"
+  },
+  "61edf3cbed8ccf17": {
+    "id": "61edf3cbed8ccf17",
+    "slug": "your-browser-might-be-writing-more-to-your-ssd-than-windows-61edf3",
+    "url": "https://www.makeuseof.com/browser-writing-more-ssd-than-windows",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Yadullah Abidi",
+    "published_at": "Thu, 29 Oct 2026 20:00:16 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Your browser might be writing more to your SSD than Windows ever will",
+      "vi": "Your browser might be writing more to your SSD than Windows ever will"
+    },
+    "summary": {
+      "en": "You closed the tab. Your SSD is still doing the paperwork.",
+      "vi": "You closed the tab. Your SSD is still doing the paperwork."
+    },
+    "categories": [
+      "hardware",
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.81,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "9667e0ac7686bb5b": {
+    "id": "9667e0ac7686bb5b",
+    "slug": "i-dont-want-ai-on-my-phone-but-these-4-android-features-i-ca-9667e0",
+    "url": "https://www.makeuseof.com/best-ai-features-android-phone",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Pankil Shah",
+    "published_at": "Thu, 29 Oct 2026 17:00:16 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I don't want AI on my phone, but these 4 Android features I can't give up",
+      "vi": "I don't want AI on my phone, but these 4 Android features I can't give up"
+    },
+    "summary": {
+      "en": "Not every AI feature is a gimmick.",
+      "vi": "Not every AI feature is a gimmick."
+    },
+    "categories": [
+      "ai",
+      "android"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.81,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "fc1520313d731b21": {
     "id": "fc1520313d731b21",
@@ -5951,6 +6758,73 @@
     "hidden": false,
     "slug": "vi-sao-wifi-trong-nha-o-rat-gan-nhung-tin-hieu-lai-yeu-hon-c-7bc142"
   },
+  "b9478f42f4034fa8": {
+    "id": "b9478f42f4034fa8",
+    "slug": "progressive-disclosure-claude-code-hooks-events-and-telemetr-b9478f",
+    "url": "https://dev.to/reporails/progressive-disclosure-claude-code-hooks-events-and-telemetry-1fh8",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": " Gábor Mészáros",
+    "published_at": "2026-09-30T12:49:50Z",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Progressive Disclosure: Claude Code Hooks, Events and Telemetry",
+      "vi": "Progressive Disclosure: Claude Code Hooks, Events and Telemetry"
+    },
+    "summary": {
+      "en": "The last piece (Progressive Disclosure: Shaping Claude Code's Output) ended on one small move. Every",
+      "vi": "The last piece (Progressive Disclosure: Shaping Claude Code's Output) ended on one small move. Every"
+    },
+    "categories": [
+      "ai",
+      "dev"
+    ],
+    "tags": [
+      "claude"
+    ],
+    "difficulty": null,
+    "score": 0.55,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "9be260be063f9608": {
+    "id": "9be260be063f9608",
+    "slug": "i-tracked-a-scammer-for-72-hours-it-got-personal-9be260",
+    "url": "https://dev.to/numbpill3d/i-tracked-a-scammer-for-72-hours-it-got-personal-3dk9",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "v. Splicer",
+    "published_at": "2026-10-16T08:28:29Z",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I Tracked a Scammer For 72 Hours. It Got Personal.",
+      "vi": "I Tracked a Scammer For 72 Hours. It Got Personal."
+    },
+    "summary": {
+      "en": "It started with a text message at 11:47 PM. Your USPS package could not be delivered. Please",
+      "vi": "It started with a text message at 11:47 PM. Your USPS package could not be delivered. Please"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.55,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "da96698ef028a283": {
     "id": "da96698ef028a283",
     "url": "https://genk.vn/tinh-nang-tren-zalo-giup-xem-tin-nhan-thoai-mai-nguoi-gui-khong-biet-nguoi-nhan-doc-tin-nhan-hay-chua-165260813170550719.chn",
@@ -5985,41 +6859,6 @@
     "raw_summary": "Dưới đây là các bước đơn giản giúp người dùng đọc tin nhắn trên Zalo mà không hiển thị trạng thái đã xem cho người gửi.",
     "hidden": false,
     "slug": "tinh-nang-tren-zalo-giup-xem-tin-nhan-thoai-mai-nguoi-gui-kh-da9669"
-  },
-  "b62740fe7dece39d": {
-    "id": "b62740fe7dece39d",
-    "url": "https://tinhte.vn/thread/di-tim-giai-phap-cap-khi-tuoi-cho-cafe-tinh-te-5-0.4040527",
-    "source": {
-      "id": "tinhte",
-      "name": "Tinh tế",
-      "site_url": "https://tinhte.vn",
-      "kind": "news"
-    },
-    "author": "cuhiep",
-    "published_at": "Fri, 01 Aug 2025 02:14:00 +0000",
-    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
-    "original_lang": "vi",
-    "title": {
-      "vi": "Đi tìm giải pháp cấp khí tươi cho Cafe Tinh tế 5.0",
-      "en": "Đi tìm giải pháp cấp khí tươi cho Cafe Tinh tế 5.0"
-    },
-    "summary": {
-      "vi": "Sau 20 năm cafe Tinh tế ở không gian mở thì mình đã chọn một không gian kín cho phiên bản Cafe Tinh tế 5.0. Ngoài chuyện xử lý cách âm, cách nhiệt thì mình cũng nghĩ đến chuyện cần một không gian",
-      "en": "Sau 20 năm cafe Tinh tế ở không gian mở thì mình đã chọn một không gian kín cho phiên bản Cafe Tinh tế 5.0. Ngoài chuyện xử lý cách âm, cách nhiệt thì mình cũng nghĩ đến chuyện cần một không gian"
-    },
-    "categories": [
-      "ios"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.53,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "Đi tìm giải pháp cấp khí tươi cho Cafe Tinh tế 5.0",
-    "raw_summary": "Sau 20 năm cafe Tinh tế ở không gian mở thì mình đã chọn một không gian kín cho phiên bản Cafe Tinh tế 5.0. Ngoài chuyện xử lý cách âm, cách nhiệt thì mình cũng nghĩ đến chuyện cần một không gian",
-    "hidden": false,
-    "slug": "di-tim-giai-phap-cap-khi-tuoi-cho-cafe-tinh-te-50-b62740"
   },
   "5e6652c40b2a757d": {
     "id": "5e6652c40b2a757d",
@@ -6058,6 +6897,41 @@
     "hidden": false,
     "slug": "dat-wifi-xuong-san-nha-co-lam-sao-khong-hoa-ra-day-la-loi-nh-5e6652"
   },
+  "b62740fe7dece39d": {
+    "id": "b62740fe7dece39d",
+    "url": "https://tinhte.vn/thread/di-tim-giai-phap-cap-khi-tuoi-cho-cafe-tinh-te-5-0.4040527",
+    "source": {
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news"
+    },
+    "author": "cuhiep",
+    "published_at": "Fri, 01 Aug 2025 02:14:00 +0000",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Đi tìm giải pháp cấp khí tươi cho Cafe Tinh tế 5.0",
+      "en": "Đi tìm giải pháp cấp khí tươi cho Cafe Tinh tế 5.0"
+    },
+    "summary": {
+      "vi": "Sau 20 năm cafe Tinh tế ở không gian mở thì mình đã chọn một không gian kín cho phiên bản Cafe Tinh tế 5.0. Ngoài chuyện xử lý cách âm, cách nhiệt thì mình cũng nghĩ đến chuyện cần một không gian",
+      "en": "Sau 20 năm cafe Tinh tế ở không gian mở thì mình đã chọn một không gian kín cho phiên bản Cafe Tinh tế 5.0. Ngoài chuyện xử lý cách âm, cách nhiệt thì mình cũng nghĩ đến chuyện cần một không gian"
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.53,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "Đi tìm giải pháp cấp khí tươi cho Cafe Tinh tế 5.0",
+    "raw_summary": "Sau 20 năm cafe Tinh tế ở không gian mở thì mình đã chọn một không gian kín cho phiên bản Cafe Tinh tế 5.0. Ngoài chuyện xử lý cách âm, cách nhiệt thì mình cũng nghĩ đến chuyện cần một không gian",
+    "hidden": false,
+    "slug": "di-tim-giai-phap-cap-khi-tuoi-cho-cafe-tinh-te-50-b62740"
+  },
   "789154b52a9575e1": {
     "id": "789154b52a9575e1",
     "url": "https://genk.vn/tinh-nang-tren-dien-thoai-nguoi-dung-ngan-hang-nen-tat-ngay-165260804032037691.chn",
@@ -6093,41 +6967,6 @@
     "hidden": false,
     "slug": "tinh-nang-tren-dien-thoai-nguoi-dung-ngan-hang-nen-tat-ngay-789154"
   },
-  "41f219415183b9c6": {
-    "id": "41f219415183b9c6",
-    "url": "https://linuxhandbook.com/newsletter/26-11",
-    "source": {
-      "id": "linuxhandbook",
-      "name": "Linux Handbook",
-      "site_url": "https://linuxhandbook.com",
-      "kind": "tips"
-    },
-    "author": "Abhishek Prakash",
-    "published_at": "Fri, 04 Sep 2026 19:00:39 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "LHB Linux Digest #26.11: New Free Course, Named Pipes, Multi-kernel and More",
-      "vi": "LHB Linux Digest #26.11: New Free Course, Named Pipes, Multi-kernel and More"
-    },
-    "summary": {
-      "en": "Enjoy the new course",
-      "vi": "Enjoy the new course"
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.52,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {},
-    "raw_title": "LHB Linux Digest #26.11: New Free Course, Named Pipes, Multi-kernel and More",
-    "raw_summary": "Enjoy the new course",
-    "hidden": false,
-    "slug": "lhb-linux-digest-2611-new-free-course-named-pipes-multi-kern-41f219"
-  },
   "67792300585839e1": {
     "id": "67792300585839e1",
     "url": "https://genk.vn/loi-khuyen-cho-nhung-nguoi-dang-dung-android-165260729022159939.chn",
@@ -6162,6 +7001,41 @@
     "raw_summary": "Nếu không kịp thời cập nhiều, người dùng có thể không xem được YouTube, bị hạn chế Gmail, hoặc một số ứng dụng có liên quan.",
     "hidden": false,
     "slug": "loi-khuyen-cho-nhung-nguoi-dang-dung-android-677923"
+  },
+  "41f219415183b9c6": {
+    "id": "41f219415183b9c6",
+    "url": "https://linuxhandbook.com/newsletter/26-11",
+    "source": {
+      "id": "linuxhandbook",
+      "name": "Linux Handbook",
+      "site_url": "https://linuxhandbook.com",
+      "kind": "tips"
+    },
+    "author": "Abhishek Prakash",
+    "published_at": "Fri, 04 Sep 2026 19:00:39 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LHB Linux Digest #26.11: New Free Course, Named Pipes, Multi-kernel and More",
+      "vi": "LHB Linux Digest #26.11: New Free Course, Named Pipes, Multi-kernel and More"
+    },
+    "summary": {
+      "en": "Enjoy the new course",
+      "vi": "Enjoy the new course"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.52,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {},
+    "raw_title": "LHB Linux Digest #26.11: New Free Course, Named Pipes, Multi-kernel and More",
+    "raw_summary": "Enjoy the new course",
+    "hidden": false,
+    "slug": "lhb-linux-digest-2611-new-free-course-named-pipes-multi-kern-41f219"
   },
   "28c9ec341b6e3347": {
     "id": "28c9ec341b6e3347",
