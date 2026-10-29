@@ -2,6 +2,7 @@
 import type { Tip } from '../lib/data';
 import type { Locale } from '../lib/i18n';
 import { getTranslations } from '../lib/i18n';
+import { SITE_URL } from '../lib/constants';
 
 interface Props {
   tip: Tip;
@@ -19,7 +20,7 @@ try {
   sourceDomain = new URL(tip.url).hostname;
 } catch {}
 const faviconUrl = `https://www.google.com/s2/favicons?domain=${sourceDomain}&sz=32`;
-const tipCanonicalUrl = `https://tech-tips-hub.pages.dev/${lang}/tip/${tip.id}`;
+const tipCanonicalUrl = `${SITE_URL}/${lang}/tip/${tip.slug || tip.id}`;
 
 let formattedDate = '';
 try {
@@ -59,7 +60,7 @@ try {
     <!-- Title and tags -->
     <div class="min-w-0">
       <a
-        href={`/${lang}/tip/${tip.id}`}
+        href={`/${lang}/tip/${tip.slug || tip.id}`}
         class="text-sm font-serif font-bold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors truncate block"
       >
         {titleText}

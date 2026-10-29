@@ -3,6 +3,7 @@ import '../styles/global.css';
 import type { Locale } from '../lib/i18n';
 import { getTranslations } from '../lib/i18n';
 import { getAllTips } from '../lib/data';
+import { SITE_URL } from '../lib/constants';
 import SearchModal from '../components/SearchModal.astro';
 
 interface Props {
@@ -30,8 +31,8 @@ const pageDesc = description || t.site.description;
 
 const otherLang: Locale = lang === 'vi' ? 'en' : 'vi';
 const targetPath = canonicalPath.replace(new RegExp(`^/${lang}`), `/${otherLang}`);
-const alternateUrl = `https://tech-tips-hub.pages.dev${targetPath}`;
-const canonicalUrl = `https://tech-tips-hub.pages.dev${canonicalPath}`;
+const alternateUrl = `${SITE_URL}${targetPath}`;
+const canonicalUrl = `${SITE_URL}${canonicalPath}`;
 
 const isHome = canonicalPath === `/${lang}` || canonicalPath === `/${lang}/`;
 const isSaved = canonicalPath.includes('/saved');
@@ -49,7 +50,7 @@ const isAbout = canonicalPath.includes('/about');
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" hreflang={lang} href={canonicalUrl} />
     <link rel="alternate" hreflang={otherLang} href={alternateUrl} />
-    <link rel="alternate" hreflang="x-default" href="https://tech-tips-hub.pages.dev/vi" />
+    <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/vi`} />
     <link rel="alternate" type="application/rss+xml" title={`${t.site.title} RSS`} href={`/${lang}/rss.xml`} />
     {prevUrl && <link rel="prev" href={prevUrl} />}
     {nextUrl && <link rel="next" href={nextUrl} />}

@@ -1,6 +1,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import * as yaml from 'js-yaml';
+import { generateSeoSlug } from './slug';
 
 export interface Source {
   id: string;
@@ -16,6 +17,7 @@ export interface Source {
 
 export interface Tip {
   id: string;
+  slug?: string;
   url: string;
   source: {
     id: string;
@@ -79,6 +81,12 @@ export function getAllTips(includeHidden = false): Tip[] {
     const raw = fs.readFileSync(indexPath, 'utf-8');
     const map = JSON.parse(raw);
     const list: Tip[] = Object.values(map);
+    for (const t of list) {
+      if (!t.slug) {
+        const title = t.title?.vi || t.title?.en || '';
+        t.slug = generateSeoSlug(title, t.id);
+      }
+    }
     // Danh sách đã được xếp thứ tự đa dạng (diversify) từ pipeline
     cachedTips = list;
     return includeHidden ? cachedTips : cachedTips.filter((t) => !t.hidden);
@@ -88,9 +96,13 @@ export function getAllTips(includeHidden = false): Tip[] {
   }
 }
 
-export function getTipById(id: string): Tip | undefined {
+export function getTipById(idOrSlug: string): Tip | undefined {
   const tips = getAllTips(true);
-  return tips.find((t) => t.id === id);
+  if (!idOrSlug) return undefined;
+  return (
+    tips.find((t) => t.id === idOrSlug || t.slug === idOrSlug) ||
+    tips.find((t) => idOrSlug.endsWith(t.id.slice(0, 6)) || t.id.startsWith(idOrSlug))
+  );
 }
 
 export function getAllCategories(): Category[] {

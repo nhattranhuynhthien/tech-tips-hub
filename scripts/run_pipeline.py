@@ -16,6 +16,7 @@ from dedupe import is_duplicate_title, is_blocked
 from filters import accept, is_howto_match
 from classify import classify, extract_tags
 from score import calculate_score, detect_difficulty, parse_published_time
+from slug import generate_seo_slug
 from translate import load_cache, save_cache, process_item_bilingual, batch_translate_pending
 
 DATA_DIR = Path("data")
@@ -208,6 +209,7 @@ def main():
 
             index[iid] = {
                 "id": iid,
+                "slug": generate_seo_slug(title, iid),
                 "url": url,
                 "source": {
                     "id": raw_item["source"]["id"],

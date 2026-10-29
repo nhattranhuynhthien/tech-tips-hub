@@ -1,4 +1,5 @@
 import { getAllTips } from '../../lib/data';
+import { SITE_URL } from '../../lib/constants';
 
 export async function GET() {
   const tips = getAllTips().slice(0, 50);
@@ -8,7 +9,7 @@ export async function GET() {
       const title = tip.title.vi || tip.title.en || '';
       const desc = tip.summary.vi || tip.summary.en || '';
       const pubDate = new Date(tip.published_at || tip.fetched_at).toUTCString();
-      const link = `https://techtipshub.pages.dev/vi/tip/${tip.id}`;
+      const link = `${SITE_URL}/vi/tip/${tip.slug || tip.id}`;
 
       return `
     <item>
@@ -27,10 +28,10 @@ export async function GET() {
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tech Tips Hub (Tiếng Việt)</title>
-    <link>https://techtipshub.pages.dev/vi</link>
+    <link>${SITE_URL}/vi</link>
     <description>Sổ tay tổng hợp thủ thuật và mẹo công nghệ song ngữ, luôn ghi nguồn gốc</description>
     <language>vi-VN</language>
-    <atom:link href="https://techtipshub.pages.dev/vi/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="${SITE_URL}/vi/rss.xml" rel="self" type="application/rss+xml"/>
     ${itemsXml}
   </channel>
 </rss>`;

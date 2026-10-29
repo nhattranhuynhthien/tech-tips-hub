@@ -4,7 +4,7 @@
 
 [![Update Tips](https://github.com/nhattranhuynhthien/tech-tips-hub/actions/workflows/update.yml/badge.svg)](https://github.com/nhattranhuynhthien/tech-tips-hub/actions/workflows/update.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-amber.svg)](LICENSE)
-[![Operating Cost: 0đ](https://img.shields.io/badge/Chi_phí-0đ-success.svg)](https://tech-tips-hub.pages.dev/vi/about)
+[![Operating Cost: 0đ](https://img.shields.io/badge/Chi_phí-0đ-success.svg)](https://meocongnghe.vercel.app/vi/about)
 [![Astro: 5.x](https://img.shields.io/badge/Frontend-Astro_SSG-FF5D01.svg)](https://astro.build)
 
 ---

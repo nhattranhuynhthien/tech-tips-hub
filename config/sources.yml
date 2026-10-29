@@ -213,7 +213,7 @@
   lang: vi
   kind: tips
   weight: 1.0
-  categories: [android, ios, windows, hardware]
+  categories: [hardware, windows, ai]
   description: Chuyên mục Thủ thuật công nghệ và mẹo sử dụng thiết bị đời sống
 
 - id: tinhte

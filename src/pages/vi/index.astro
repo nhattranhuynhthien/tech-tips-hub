@@ -131,6 +131,36 @@ const sidebarCategories = [
         </div>
       </div>
 
+      <!-- 2.5 Ngôn ngữ nguồn (Task 3) -->
+      <div>
+        <h3 class="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-2.5">
+          NGÔN NGỮ NGUỒN
+        </h3>
+        <div class="flex items-center gap-1.5 flex-wrap" id="desktop-lang-filter-group">
+          <button
+            type="button"
+            class="lang-pill-btn px-2.5 py-1 rounded-lg border border-[var(--accent)] bg-[var(--accent-hero)] text-black font-semibold text-xs transition-all shadow-sm"
+            data-lang-filter="all"
+          >
+            Tất cả
+          </button>
+          <button
+            type="button"
+            class="lang-pill-btn px-2.5 py-1 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-xs transition-all"
+            data-lang-filter="vi"
+          >
+            Tiếng Việt
+          </button>
+          <button
+            type="button"
+            class="lang-pill-btn px-2.5 py-1 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-xs transition-all"
+            data-lang-filter="en"
+          >
+            Quốc tế [EN]
+          </button>
+        </div>
+      </div>
+
       <!-- 3. Sắp xếp -->
       <div>
         <h3 class="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-2.5">
@@ -199,6 +229,7 @@ const sidebarCategories = [
     let currentPage = 1;
     let currentCat = 'all';
     let currentDiff = 'all';
+    let currentLangFilter = 'all';
     let currentSort = 'best';
     let searchQuery = '';
 
@@ -211,6 +242,7 @@ const sidebarCategories = [
     const mobileCatBtns = document.querySelectorAll('.mobile-cat-btn');
     const desktopCatBtns = document.querySelectorAll('.desktop-cat-btn');
     const diffBtns = document.querySelectorAll('.diff-pill-btn');
+    const langBtns = document.querySelectorAll('.lang-pill-btn');
     const sortBtns = document.querySelectorAll('.sort-pill-btn');
     const mobileSearchInput = document.getElementById('mobile-search-input');
 
@@ -226,13 +258,15 @@ const sidebarCategories = [
       return cards.filter((c) => {
         const cats = c.getAttribute('data-category') || '';
         const diff = c.getAttribute('data-difficulty') || '';
+        const langDisp = c.getAttribute('data-lang-display') || 'vi';
         const text = c.textContent ? c.textContent.toLowerCase() : '';
 
         const matchCat = currentCat === 'all' || cats.split(' ').includes(currentCat);
         const matchDiff = currentDiff === 'all' || diff === currentDiff;
+        const matchLang = currentLangFilter === 'all' || langDisp === currentLangFilter;
         const matchSearch = !q || text.includes(q);
 
-        return matchCat && matchDiff && matchSearch;
+        return matchCat && matchDiff && matchLang && matchSearch;
       });
     }
 
@@ -418,15 +452,30 @@ const sidebarCategories = [
       });
     });
 
+    // Language Filter Buttons (Task 3)
+    langBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        langBtns.forEach((b) => {
+          b.className = 'lang-pill-btn px-2.5 py-1 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-xs transition-all';
+        });
+        btn.className = 'lang-pill-btn px-2.5 py-1 rounded-lg border border-[var(--accent)] bg-[var(--accent-hero)] text-black font-semibold text-xs transition-all shadow-sm';
+        currentLangFilter = btn.getAttribute('data-lang-filter') || 'all';
+        currentPage = 1;
+        updateView();
+      });
+    });
+
     // Reset Filters
     resetBtn?.addEventListener('click', () => {
       currentCat = 'all';
       currentDiff = 'all';
+      currentLangFilter = 'all';
       currentSort = 'best';
       searchQuery = '';
       if (mobileSearchInput) mobileSearchInput.value = '';
       desktopCatBtns[0]?.click();
       diffBtns[0]?.click();
+      langBtns[0]?.click();
       sortBtns[0]?.click();
     });
 

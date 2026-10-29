@@ -2,17 +2,17 @@
 import re
 
 CATS = {
-    "android":  ["android", "pixel", "galaxy", "one ui", "adb", "apk", "samsung"],
-    "ios":      ["ios", "iphone", "ipad", "icloud", "siri", "airpods", "airtag"],
-    "windows":  ["windows", "win11", "win10", "powershell", "wsl", "registry", "regedit", "winget", "copilot+"],
-    "macos":    ["macos", "macbook", "mac mini", "imac", "spotlight", "finder", "sequoia", "sonoma"],
-    "linux":    ["linux", "ubuntu", "debian", "fedora", "arch", "systemd", "bash", "wayland", "distro"],
+    "android":  ["android", "pixel", "google pixel", "galaxy", "samsung galaxy", "one ui", "adb", "apk", "play store"],
+    "ios":      ["ios", "iphone", "ipad", "icloud", "siri", "airpods", "airtag", "ios 18", "ios 17"],
+    "windows":  ["windows", "windows 11", "windows 10", "win11", "win10", "microsoft", "powershell", "wsl", "registry", "regedit", "winget", "copilot+", "powertoys", "bsod"],
+    "macos":    ["macos", "macbook", "mac mini", "imac", "apple", "spotlight", "finder", "sequoia", "sonoma", "homebrew"],
+    "linux":    ["linux", "ubuntu", "debian", "fedora", "arch", "systemd", "bash", "wayland", "distro", "kernel", "foss", "open source", "open-source", "gnome", "kde"],
     "browser":  ["chrome", "firefox", "edge", "safari", "brave", "extension", "trình duyệt", "tab"],
-    "office":   ["excel", "word", "outlook", "powerpoint", "google docs", "google sheets", "notion", "spreadsheet", "vlookup"],
-    "security": ["password", "mật khẩu", "2fa", "passkey", "vpn", "malware", "privacy", "riêng tư", "phishing", "firewall"],
-    "ai":       ["chatgpt", "gemini", "claude", "copilot", "llm", "prompt", "deepseek", "ollama"],
-    "dev":      ["git", "docker", "vs code", "vscode", "python", "javascript", "typescript", "api", "terminal", "devops", "kubernetes"],
-    "hardware": ["router", "wifi", "wi-fi", "ssd", "gpu", "pin", "battery", "bluetooth", "monitor", "ram", "cpu"],
+    "office":   ["excel", "word", "outlook", "powerpoint", "google docs", "google sheets", "notion", "spreadsheet", "vlookup", "văn phòng"],
+    "security": ["bảo mật", "mã độc", "hacker", "lỗ hổng", "cve", "ransomware", "password", "mật khẩu", "2fa", "passkey", "vpn", "malware", "privacy", "riêng tư", "phishing", "firewall"],
+    "ai":       ["ai", "artificial intelligence", "trí tuệ nhân tạo", "chatgpt", "gemini", "claude", "copilot", "llm", "llms", "openai", "machine learning", "prompt", "deepseek", "ollama", "học máy"],
+    "dev":      ["git", "docker", "vs code", "vscode", "python", "javascript", "typescript", "api", "terminal", "devops", "kubernetes", "lập trình", "code"],
+    "hardware": ["router", "wifi", "wi-fi", "ssd", "gpu", "pin", "battery", "bluetooth", "monitor", "ram", "cpu", "phần cứng"],
 }
 
 PATTERNS = {
@@ -45,7 +45,12 @@ def classify(title: str, summary: str, fallback: list[str] = None, max_cats: int
     top = [c for c, s in sorted(scores.items(), key=lambda x: -x[1]) if s > 0][:max_cats]
     if top:
         return top
-    return fallback[:1] if fallback else ["dev"]
+    
+    # Gỡ bỏ việc gán cứng android khi bài viết không có từ khóa liên quan
+    clean_fallback = [f for f in fallback if f != "android"]
+    if clean_fallback:
+        return clean_fallback[:1]
+    return ["general"]
 
 def extract_tags(title: str, summary: str, max_tags: int = 4) -> list[str]:
     """Trích xuất tags cụ thể từ tiêu đề và tóm tắt."""

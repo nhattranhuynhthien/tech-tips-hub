@@ -142,7 +142,7 @@ const t = getTranslations(lang);
           const title = tip.title[lang] || tip.title['en'] || '';
           const summ = tip.summary[lang] || tip.summary['en'] || '';
           return `
-            <a href="/${lang}/tip/${tip.id}" class="block p-3 rounded-xl hover:bg-[var(--bg-muted)] transition-colors group">
+            <a href="/${lang}/tip/${tip.slug || tip.id}" class="block p-3 rounded-xl hover:bg-[var(--bg-muted)] transition-colors group">
               <div class="flex items-center gap-2 text-[11px] font-mono text-[var(--text-muted)] mb-1">
                 <span class="text-[var(--text-secondary)]">${tip.source.name}</span>
                 <span>·</span>

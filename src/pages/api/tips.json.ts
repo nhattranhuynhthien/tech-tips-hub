@@ -5,6 +5,7 @@ export async function GET() {
   // Rút gọn trường để tải nhanh qua mạng (khoảng vài chục KB)
   const compact = tips.map((t) => ({
     id: t.id,
+    slug: t.slug || t.id,
     title: t.title,
     summary: t.summary,
     source: t.source,

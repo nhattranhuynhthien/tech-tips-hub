@@ -16,6 +16,7 @@ from filters import accept, is_howto_match
 from dedupe import is_blocked
 from classify import classify, extract_tags
 from score import calculate_score, detect_difficulty
+from slug import generate_seo_slug
 from translate import is_mixed, looks_vietnamese, looks_english, load_cache, save_cache
 
 DATA_DIR = Path("data")
@@ -133,6 +134,7 @@ def main():
         item["score"] = score
         item["howto"] = is_howto
         item["hidden"] = False
+        item["slug"] = generate_seo_slug(item["title"].get("vi") or item["title"].get("en") or clean_t, iid)
         item["translated"] = curr_trans
 
         # Cập nhật thông tin nguồn

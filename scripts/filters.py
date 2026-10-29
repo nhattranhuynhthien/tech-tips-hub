@@ -35,6 +35,11 @@ DEVTO_SELF_PROMO = re.compile(
     re.IGNORECASE
 )
 
+OUT_OF_SCOPE = re.compile(
+    r"\b(nông nghiệp|chăn nuôi|gene bò|bò h'mông|thực vật|khảo cổ|động vật hoang dã|gia súc|gia cầm|thời tiết|thiên tai|bệnh viện|y tế|thuốc lá|sốt xuất huyết|dịch sởi|ung thư|bệnh nhân|sản khoa|phụ sản|sinh học)\b",
+    re.IGNORECASE
+)
+
 def is_howto_match(title: str, summary: str = "") -> bool:
     """Kiểm tra bài viết có dấu hiệu là thủ thuật / hướng dẫn (how-to) hay không."""
     if EDITORIAL_OR_REVIEW.search(title):
@@ -75,6 +80,13 @@ def accept(item: dict, source: dict, enable_logging: bool = True) -> tuple[bool,
     if isinstance(summary, dict):
         summary = " ".join(str(v) for v in summary.values())
     
+    # 0. Kiểm tra bài viết ngoài phạm vi công nghệ (nông nghiệp, chăn nuôi, y tế...)
+    if OUT_OF_SCOPE.search(title) or OUT_OF_SCOPE.search(summary[:300]):
+        reason = "out-of-scope"
+        if enable_logging:
+            log_rejection(item, source, reason)
+        return False, reason
+
     # 1. Kiểm tra blocklist (quảng cáo, deal, khuyến mãi, tuyển dụng, trailer, review, weekly)
     if BLOCK.search(title) or EDITORIAL_OR_REVIEW.search(title):
         reason = "blocklist-title"
