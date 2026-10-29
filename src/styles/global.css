@@ -4,39 +4,44 @@
 
 @layer base {
   :root {
-    /* Sleek Dark Developer Hub Theme (Matching Wireframe Mockup) */
-    --bg-primary: #0e0f13;       /* Deep matte charcoal */
-    --bg-surface: #15161b;       /* Clean dark card surface */
-    --bg-surface-hover: #1c1d24; /* Card hover background */
-    --bg-muted: #1e2027;         /* Input & badge background */
-    --bg-subtle: #252832;        /* Pill inactive background */
+    /* Design Tokens from Phase C Specification */
+    --bg-primary: #0F1114;       /* --bg #0F1114 */
+    --bg-surface: #171A1E;       /* --panel #171A1E */
+    --bg-surface-hover: #1e2228;
+    --bg-muted: #23272D;         /* --chip #23272D */
+    --bg-subtle: #23272D;
     
-    --border-color: #232530;     /* Refined dark border */
-    --border-subtle: #1a1b22;
-    --border-strong: #323545;
+    --border-color: #2A2F35;     /* --border #2A2F35 */
+    --border-subtle: #23272D;
+    --border-strong: #3A4046;    /* --border-strong #3A4046 */
     
-    --text-primary: #f4f4f6;     /* Pure crisp white typography */
-    --text-secondary: #a1a1aa;   /* Muted readable light gray */
-    --text-muted: #71717a;       /* Monospace and metadata text */
+    --text-primary: #ECEAE4;     /* --text #ECEAE4 */
+    --text-secondary: #A3A8AD;   /* --muted #A3A8AD */
+    --text-muted: #7E848B;
     
-    --accent: #f59e0b;           /* Amber / Terminal Golden Orange */
-    --accent-hover: #fbbf24;
-    --accent-hero: #f5a742;      /* Warm golden yellow for Trick of the Day */
-    --accent-bg: rgba(245, 158, 11, 0.1);
-    --accent-border: rgba(245, 158, 11, 0.25);
+    --accent: #FFB547;           /* --accent #FFB547 */
+    --accent-hover: #ffbf5e;
+    --accent-hero: #FFB547;      /* --accent */
+    --on-accent: #15110A;        /* --on-accent #15110A */
+    --accent-bg: rgba(255, 181, 71, 0.12);
+    --accent-border: rgba(255, 181, 71, 0.28);
     
-    --kbd-bg: linear-gradient(180deg, #252932 0%, #1a1c23 100%);
-    --kbd-border: #363b48;
-    --kbd-shadow: #121318;
-    --kbd-text: #e4e4e7;
+    --radius-sm: 12px;           /* Bo góc 12px: nút, ô nhập */
+    --radius-md: 16px;           /* Bo góc 16px: thẻ */
+    --radius-lg: 20px;           /* Bo góc 20-24px: khối nổi bật */
+
+    --kbd-bg: linear-gradient(180deg, #2A2F35 0%, #171A1E 100%);
+    --kbd-border: #3A4046;
+    --kbd-shadow: #0F1114;
+    --kbd-text: #ECEAE4;
 
     --badge-easy-bg: rgba(74, 222, 128, 0.1);
     --badge-easy-text: #4ade80;
     --badge-easy-border: rgba(74, 222, 128, 0.25);
 
-    --badge-med-bg: rgba(245, 158, 11, 0.1);
-    --badge-med-text: #fbbf24;
-    --badge-med-border: rgba(245, 158, 11, 0.25);
+    --badge-med-bg: rgba(255, 181, 71, 0.12);
+    --badge-med-text: #FFB547;
+    --badge-med-border: rgba(255, 181, 71, 0.28);
 
     --badge-adv-bg: rgba(248, 113, 113, 0.1);
     --badge-adv-text: #f87171;
@@ -46,10 +51,20 @@
   body {
     background-color: var(--bg-primary);
     color: var(--text-primary);
+    font-family: "Be Vietnam Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Lexend", -apple-system, BlinkMacSystemFont, sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  code, kbd, pre, .font-mono {
+    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   }
 
   /* Tactile Physical Keyboard Key (<kbd>) */
@@ -61,21 +76,31 @@
     border: 1px solid var(--kbd-border);
     border-bottom: 2px solid var(--kbd-shadow);
     color: var(--kbd-text);
-    font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
     font-size: 0.72rem;
-    font-weight: 600;
-    padding: 0.1rem 0.4rem;
-    border-radius: 0.3rem;
+    font-weight: 500;
+    padding: 0.15rem 0.45rem;
+    border-radius: 6px;
     line-height: 1.2;
     vertical-align: middle;
     margin: 0 0.12rem;
-    letter-spacing: -0.01em;
   }
 
-  /* Focus visible */
+  /* Focus visible rõ ràng (outline 3px accent) */
   *:focus-visible {
-    outline: 2px solid var(--accent);
+    outline: 3px solid var(--accent);
     outline-offset: 2px;
+  }
+
+  /* Tôn trọng prefers-reduced-motion */
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
   }
 }
 

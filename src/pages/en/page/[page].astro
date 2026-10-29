@@ -1,0 +1,147 @@
+---
+import type { GetStaticPaths } from 'astro';
+import Layout from '../../../layouts/Layout.astro';
+import TipCard from '../../../components/TipCard.astro';
+import Pagination from '../../../components/Pagination.astro';
+import { getAllTips, getAllCategories } from '../../../lib/data';
+import { getTranslations } from '../../../lib/i18n';
+
+export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
+  const tips = getAllTips(false);
+  return paginate(tips, { pageSize: 20 });
+};
+
+const { page } = Astro.props;
+const lang = 'en';
+const t = getTranslations(lang);
+const allCategories = getAllCategories();
+
+const sidebarCategories = [
+  { id: 'all', label: '# all' },
+  { id: 'windows', label: '# windows' },
+  { id: 'macos', label: '# macos' },
+  { id: 'linux', label: '# linux' },
+  { id: 'android', label: '# android' },
+  { id: 'ios', label: '# ios' },
+  { id: 'security', label: '# security' },
+  { id: 'dev', label: '# dev' },
+  { id: 'hardware', label: '# hardware' },
+  { id: 'office', label: '# office' },
+  { id: 'ai', label: '# ai' },
+];
+
+const prevUrl = page.url.prev === '/en/page/1' ? '/en' : page.url.prev;
+const nextUrl = page.url.next;
+---
+
+<Layout
+  lang={lang}
+  title={`Page ${page.currentPage} — ${t.site.tagline}`}
+  canonicalPath={page.url.current}
+  prevUrl={prevUrl}
+  nextUrl={nextUrl}
+>
+  <!-- Mobile Search Bar -->
+  <div class="sm:hidden mb-4">
+    <div class="relative">
+      <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-[var(--accent)] font-mono font-bold">
+        $
+      </div>
+      <input
+        id="mobile-search-input"
+        type="search"
+        placeholder="Search tips..."
+        class="w-full pl-8 pr-4 py-2.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-sm text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:border-[var(--accent)] shadow-sm font-mono focus-visible:outline focus-visible:outline-3 focus-visible:outline-[var(--accent)]"
+      />
+    </div>
+  </div>
+
+  <!-- Mobile Horizontal Category Scroll -->
+  <div class="md:hidden flex items-center gap-2 overflow-x-auto pb-3 mb-6 scrollbar-none" id="mobile-category-bar">
+    {sidebarCategories.map((cat, idx) => (
+      <a
+        href={cat.id === 'all' ? `/${lang}` : `/${lang}/category/${cat.id}`}
+        class={`shrink-0 px-3.5 py-2 min-h-[44px] flex items-center rounded-xl text-xs font-mono font-semibold transition-all ${
+          idx === 0
+            ? 'bg-[var(--accent)] text-[var(--on-accent)] font-bold shadow-sm'
+            : 'border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)]'
+        }`}
+      >
+        {cat.id === 'all' ? 'all' : cat.id}
+      </a>
+    ))}
+  </div>
+
+  <!-- Main 2-Column Content Layout -->
+  <div class="flex flex-col md:flex-row items-start gap-8 lg:gap-12">
+    <!-- Left Sidebar: Categories, Difficulty, Sort (Desktop) -->
+    <aside class="w-48 lg:w-56 shrink-0 hidden md:block space-y-7 sticky top-20 text-xs font-mono">
+      <!-- 1. Categories -->
+      <div>
+        <h3 class="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-3">
+          CATEGORIES
+        </h3>
+        <ul class="space-y-1.5" id="desktop-category-list">
+          {sidebarCategories.map((cat, idx) => (
+            <li>
+              <a
+                href={cat.id === 'all' ? `/${lang}` : `/${lang}/category/${cat.id}`}
+                class={`text-left w-full py-1.5 flex items-center transition-colors ${
+                  idx === 0
+                    ? 'text-[var(--accent)] font-bold'
+                    : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                }`}
+              >
+                {cat.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- 2. Difficulty -->
+      <div>
+        <h3 class="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-2.5">
+          DIFFICULTY
+        </h3>
+        <div class="flex items-center gap-1.5 flex-wrap">
+          <a
+            href={`/${lang}`}
+            class="px-2.5 py-1.5 min-h-[36px] flex items-center rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-all"
+          >
+            All
+          </a>
+          <span class="px-2.5 py-1.5 min-h-[36px] flex items-center rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)]">
+            Easy
+          </span>
+          <span class="px-2.5 py-1.5 min-h-[36px] flex items-center rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)]">
+            Medium
+          </span>
+          <span class="px-2.5 py-1.5 min-h-[36px] flex items-center rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)]">
+            Advanced
+          </span>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Right Stream: Tips List & Pagination -->
+    <div class="flex-1 w-full min-w-0">
+      <!-- Tips List Container -->
+      <div id="tips-stream" class="space-y-4">
+        {page.data.map((tip) => (
+          <TipCard tip={tip} lang={lang} />
+        ))}
+      </div>
+
+      <!-- Astro Pagination Component -->
+      <Pagination
+        currentPage={page.currentPage}
+        lastPage={page.lastPage}
+        totalItems={page.total}
+        pageSize={20}
+        basePath={`/${lang}`}
+        lang={lang}
+      />
+    </div>
+  </div>
+</Layout>

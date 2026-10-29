@@ -10,6 +10,8 @@ interface Props {
   description?: string;
   lang: Locale;
   canonicalPath?: string;
+  prevUrl?: string;
+  nextUrl?: string;
 }
 
 const {
@@ -17,6 +19,8 @@ const {
   title,
   description,
   canonicalPath = Astro.url.pathname,
+  prevUrl,
+  nextUrl,
 } = Astro.props;
 
 const t = getTranslations(lang);
@@ -47,6 +51,8 @@ const isAbout = canonicalPath.includes('/about');
     <link rel="alternate" hreflang={otherLang} href={alternateUrl} />
     <link rel="alternate" hreflang="x-default" href="https://tech-tips-hub.pages.dev/vi" />
     <link rel="alternate" type="application/rss+xml" title={`${t.site.title} RSS`} href={`/${lang}/rss.xml`} />
+    {prevUrl && <link rel="prev" href={prevUrl} />}
+    {nextUrl && <link rel="next" href={nextUrl} />}
 
     <!-- Open Graph & Twitter -->
     <meta property="og:type" content="website" />
@@ -61,11 +67,11 @@ const isAbout = canonicalPath.includes('/about');
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <!-- Fonts -->
+    <!-- Google Fonts with Vietnamese Subset -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Lexend:wght@600;700&display=swap"
       rel="stylesheet"
     />
   </head>
@@ -133,17 +139,21 @@ const isAbout = canonicalPath.includes('/about');
             <kbd class="ml-2 text-[10px] bg-[var(--bg-muted)] border-[var(--border-subtle)]">/</kbd>
           </button>
 
-          <!-- Language Segmented Switcher Pill (VI | EN) -->
+          <!-- Language Segmented Switcher Pill (VI | EN) with localStorage persistence -->
           <div class="inline-flex items-center p-0.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-xs font-mono font-bold">
             <a
               href={lang === 'vi' ? '#' : targetPath}
-              class={`px-2.5 py-1 rounded-lg transition-all ${lang === 'vi' ? 'bg-[var(--accent-hero)] text-black font-extrabold shadow-sm' : 'text-[var(--text-muted)] hover:text-[var(--text-primary)]'}`}
+              onclick="localStorage.setItem('techtips_lang', 'vi')"
+              class={`px-3 py-1.5 min-h-[36px] flex items-center rounded-lg transition-all ${lang === 'vi' ? 'bg-[var(--accent-hero)] text-black font-extrabold shadow-sm' : 'text-[var(--text-muted)] hover:text-[var(--text-primary)]'}`}
+              aria-label="Chuyển sang Tiếng Việt"
             >
               VI
             </a>
             <a
               href={lang === 'en' ? '#' : targetPath}
-              class={`px-2.5 py-1 rounded-lg transition-all ${lang === 'en' ? 'bg-[var(--accent-hero)] text-black font-extrabold shadow-sm' : 'text-[var(--text-muted)] hover:text-[var(--text-primary)]'}`}
+              onclick="localStorage.setItem('techtips_lang', 'en')"
+              class={`px-3 py-1.5 min-h-[36px] flex items-center rounded-lg transition-all ${lang === 'en' ? 'bg-[var(--accent-hero)] text-black font-extrabold shadow-sm' : 'text-[var(--text-muted)] hover:text-[var(--text-primary)]'}`}
+              aria-label="Switch to English"
             >
               EN
             </a>
