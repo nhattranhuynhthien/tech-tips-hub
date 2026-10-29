@@ -152,8 +152,8 @@ def main():
         if BLOCKLIST_CHECK.search(it.get("title", {}).get("en", "")):
             problems.append(f"Chứa từ khóa bị chặn trong tiêu đề ({iid}): {it.get('title', {}).get('en', '')[:50]}")
 
-        # 6. Đếm bài howto
-        if it.get("howto") or it.get("difficulty"):
+        # 6. Đếm bài howto / thủ thuật từ nguồn chuyên tips
+        if it.get("howto") or it.get("difficulty") or it.get("source", {}).get("kind") == "tips":
             howto_count += 1
 
     avg_cats = cat_total / max(len(items), 1)

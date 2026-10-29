@@ -169,7 +169,7 @@ def main():
                 continue
 
             # Xác định bài viết có phải thủ thuật hay không
-            is_howto = (src.get("kind") == "tips") or is_howto_match(title, summary)
+            is_howto = is_howto_match(title, summary)
 
             # Phân loại danh mục dựa trên nội dung (tối đa 1-2 danh mục)
             cats = classify(title, summary, fallback=raw_item["default_categories"], max_cats=2)

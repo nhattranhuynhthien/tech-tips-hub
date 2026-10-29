@@ -86,7 +86,7 @@ def main():
             continue
 
         # 5. Xác định how-to & Phân loại lại danh mục
-        is_howto = (source_cfg.get("kind") == "tips") or is_howto_match(clean_t, clean_s)
+        is_howto = is_howto_match(clean_t, clean_s)
         cats = classify(clean_t, clean_s, fallback=source_cfg.get("categories", []), max_cats=2)
         tags = extract_tags(clean_t, clean_s, max_tags=3)
 

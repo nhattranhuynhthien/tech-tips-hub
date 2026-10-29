@@ -31,7 +31,7 @@
     "translated": {},
     "raw_title": "Jadens JD-166 Review: Portable, Inkless Thermal Printer on Linux",
     "raw_summary": "A small, portable printer that prints A4 papers without ink on Debian-based Linux distros.",
-    "hidden": false
+    "hidden": true
   },
   "297510541102345d": {
     "id": "297510541102345d",
@@ -65,7 +65,7 @@
     "translated": {},
     "raw_title": "Local AI Weekly #7: Bubble or Not?",
     "raw_summary": "China's AI stocks lost $480 billion. But SK Hynix posted record profits and says RAM stays scarce till 2030. Bubbles pop, prices don't.",
-    "hidden": false
+    "hidden": true
   },
   "131eaa65657ae221": {
     "id": "131eaa65657ae221",
@@ -94,11 +94,14 @@
     "tags": [
       "privacy"
     ],
-    "difficulty": "medium",
-    "score": 1.5,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "These 6 mistakes can turn Pi-hole into the least secure part of your home network",
+    "raw_summary": "Nothing says peace of mind like discovering your favorite privacy tool has a few secrets of its own!",
+    "hidden": false
   },
   "72c7ad11c062c24d": {
     "id": "72c7ad11c062c24d",
@@ -126,9 +129,9 @@
       "hardware"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.5,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.13,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Ghostty 1.4 Is Faster and Uses Less RAM, but Drops Ubuntu 24.04 LTS Support",
@@ -170,7 +173,7 @@
     "translated": {},
     "raw_title": "Firefox 159 released with Wayland Linux fixes",
     "raw_summary": "Firefox 159 is out, with a fresh set of improvements and some Linux-specific fixes. Now that Mozilla’s browser hews to a faster release cadence, with two releases a month rather than one, some changelogs may look minor on their own, as they’re smaller, if more frequent slices. So what’s changed?…",
-    "hidden": false
+    "hidden": true
   },
   "51ae3dcde8c253db": {
     "id": "51ae3dcde8c253db",
@@ -200,14 +203,14 @@
     "tags": [
       "terminal"
     ],
-    "difficulty": "advanced",
-    "score": 1.46,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.18,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Ghostty 1.4 released with big improvements",
     "raw_summary": "A major new release of Ghostty, the open-source terminal emulator, has been released. Ghostty 1.4.0 brings a varied set of changes after 7 months of development. There are welcome performance optimisations on Linux and macOS, a more capable SHH implementation and an easier way to rearrange tab…",
-    "hidden": false
+    "hidden": true
   },
   "494dec1bba8b15b8": {
     "id": "494dec1bba8b15b8",
@@ -268,9 +271,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.46,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.18,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Ubuntu Core Desktop ‘accelerating’ development ahead of 27.04",
@@ -336,9 +339,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "advanced",
-    "score": 1.4,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.13,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Rocky Linux Creator Built a New \"Not Linux\" Kernel in 11 Days Using AI",
@@ -370,9 +373,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.4,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.13,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "In a Setback to VMWare, Tesco is Looking to Migrate to Proxmox",
@@ -404,11 +407,14 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.4,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.13,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "This 3D print is designed to get destroyed, and it’s the most useful thing I make",
+    "raw_summary": "Sacrificial parts are where a 3D printer really earns its keep.",
+    "hidden": false
   },
   "a649527bbaa9fadb": {
     "id": "a649527bbaa9fadb",
@@ -435,9 +441,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.4,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.13,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "BSD Users Can Now Enjoy Omarchy Flavor",
@@ -469,9 +475,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.4,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.13,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Systemd Creator’s Startup Opens Signups for Private Preview of its Linux System",
@@ -503,11 +509,14 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.4,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.13,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Your HDR movies have a subtitle problem",
+    "raw_summary": "Blinding white captions can dominate dark scenes on modern HDR sets and even cause mini LED bloom to flare during evening viewing.",
+    "hidden": false
   },
   "55f3dda9cce6d5d1": {
     "id": "55f3dda9cce6d5d1",
@@ -534,11 +543,14 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.4,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.13,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Here's how I replicated 3 of the Googlebook's best features on a $60 Linux laptop",
+    "raw_summary": "Turns out, I didn't have to work hard to get a semi-Googlebook experience in Linux",
+    "hidden": false
   },
   "50540090dc1f9a17": {
     "id": "50540090dc1f9a17",
@@ -599,9 +611,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "advanced",
-    "score": 1.34,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.08,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Ubuntu firmware HWE will prevent issues on older kernel",
@@ -633,9 +645,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.34,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.08,
+    "howto": false,
     "reading_time_min": 2,
     "translated": {},
     "raw_title": "Trash talking Ubuntu’s confusing British bin labels",
@@ -737,11 +749,14 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.29,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.04,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "XPipe makes managing a home lab feel like it should",
+    "raw_summary": "My home server finally stopped feeling like a pile of chores.",
+    "hidden": false
   },
   "b5dd38c1b651141f": {
     "id": "b5dd38c1b651141f",
@@ -768,11 +783,14 @@
       "android"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.29,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.04,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Samsung Good Lock gave my Galaxy a feature I thought I needed a new phone for",
+    "raw_summary": "This Good Lock module makes split-screen multitasking feel more like a foldable",
+    "hidden": false
   },
   "513f9c14c838474f": {
     "id": "513f9c14c838474f",
@@ -834,9 +852,9 @@
       "android"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.22,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.98,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Bottles Creator Mirko Brombin Wants Microsoft Office on Linux, Not Its Clones",
@@ -868,9 +886,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.22,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.98,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "RAID Calculator",
@@ -936,9 +954,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.22,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.98,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "These Projects are Keeping X11 Dream Alive on Linux",
@@ -970,9 +988,9 @@
       "hardware"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.22,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.98,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "ArmSoM Sige7s Puts the RK3588S on a Raspberry Pi-Sized Board, and There's a Compute Module Too",
@@ -1040,9 +1058,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.22,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.98,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Red Hat Funded a Report That Found a Quarter of Incoming Pull Requests May Be AI Slop",
@@ -1074,9 +1092,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.17,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.94,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Ubuntu users can now file bugs against specific Launchpad PPAs",
@@ -1108,9 +1126,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.17,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.94,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "PHP2Shell scare sees SuperTuxKart pull its online server",
@@ -1180,9 +1198,9 @@
       "hardware"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.17,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.94,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Shader Effects is the coolest GNOME extension you’ll try this weekend",
@@ -1214,14 +1232,14 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.17,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.94,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Calibre 9.17 release brings faster ebook conversions",
     "raw_summary": "Calibre 9.17 has been released with faster ebook conversion speeds and JPEG XL image support. The open-source ebook editor improves output compression speeds for MOBI, AZW3 and PDB files, which makes conversions to those formats quicker. Converting EPUB to MOBI is what I use Calibre for to read on…",
-    "hidden": false
+    "hidden": true
   },
   "e0c4a27393065c73": {
     "id": "e0c4a27393065c73",
@@ -1248,9 +1266,9 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.13,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.93,
+    "howto": false,
     "reading_time_min": 2,
     "translated": {},
     "raw_title": "Đi nước ngoài được mang tối đa bao nhiêu USD tiền mặt?",
@@ -1282,9 +1300,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.17,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.94,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Canonical dev mocks up an Ubuntu launcher that uses AI",
@@ -1316,9 +1334,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.17,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.94,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Epic’s new vibe-coded games launcher is available on Ubuntu",
@@ -1387,14 +1405,14 @@
     "tags": [
       "password"
     ],
-    "difficulty": "medium",
-    "score": 1.17,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.94,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "KeePassXC 2.8 released with Qt6, support for Wayland auto-type",
     "raw_summary": "If KeePassXC is your password-management app of choice on Linux, the new 2.8.0 update is going to please. KeePassXC 2.8.0 sees some “long-awaited new features” arrive, including a Qt6 port of the main app interface, auto-type support on Wayland via XDG Desktop Portals, fingerprint unlock and a new…",
-    "hidden": false
+    "hidden": true
   },
   "5a5d0c990d338acb": {
     "id": "5a5d0c990d338acb",
@@ -1421,11 +1439,14 @@
       "android"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.12,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.91,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Here's how I added the Pixel 11's most exclusive feature to my Pixel 8a",
+    "raw_summary": "I'm a Rambler.",
+    "hidden": false
   },
   "5d2cddf1a4fd792d": {
     "id": "5d2cddf1a4fd792d",
@@ -1452,11 +1473,14 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.12,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.91,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "I put NFC tags on my appliances so I could stop searching for their manuals",
+    "raw_summary": "No more manual labor.",
+    "hidden": false
   },
   "fadd7467dc36644c": {
     "id": "fadd7467dc36644c",
@@ -1517,11 +1541,14 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.12,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.91,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Netflix is bringing these horror movies right in time for your Halloween watch party",
+    "raw_summary": "Keep the horror alive with these titles.",
+    "hidden": false
   },
   "3b94f401db45eb9e": {
     "id": "3b94f401db45eb9e",
@@ -1548,11 +1575,14 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.12,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.91,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "4 Photoshop plugins so essential they should be built-in",
+    "raw_summary": "Simple add-ons for smoother workflows",
+    "hidden": false
   },
   "f4cb4a6778724aeb": {
     "id": "f4cb4a6778724aeb",
@@ -1613,11 +1643,14 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.12,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.91,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "5 Google Maps companion apps that fill its biggest gaps",
+    "raw_summary": "Why settle for basic maps?",
+    "hidden": false
   },
   "6508908febf34a09": {
     "id": "6508908febf34a09",
@@ -1892,9 +1925,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.03,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "LHB Linux Digest #26.14: Free CTF, Special Permissions, Process Substitution and More",
@@ -1926,9 +1959,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.03,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Link Your CTF Handle to Your Linux Handbook Account",
@@ -1997,9 +2030,9 @@
     "tags": [
       "docker"
     ],
-    "difficulty": "advanced",
-    "score": 1.03,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Linux CTF Challenges",
@@ -2031,11 +2064,14 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.01,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.81,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "I ditched both 7-Zip and WinRAR for this alternative for this one reason",
+    "raw_summary": "My PC is now more secure, thanks to this change.",
+    "hidden": false
   },
   "024e8db1df02dbee": {
     "id": "024e8db1df02dbee",
@@ -2062,11 +2098,14 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.01,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.81,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "I built a subscription-free lossless music library with this affordable USB accessory",
+    "raw_summary": "Out with the new, in with the old.",
+    "hidden": false
   },
   "4a466fb18b4efea7": {
     "id": "4a466fb18b4efea7",
@@ -2095,9 +2134,9 @@
     "tags": [
       "python"
     ],
-    "difficulty": "medium",
-    "score": 1.0,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.74,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Are You a Python Developer or a Python Expert? 7 Tests I Failed Building 3 Desktop Apps",
@@ -2129,11 +2168,14 @@
       "hardware"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.01,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.81,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "The next big Wi-Fi upgrade is tackling something more important than speed",
+    "raw_summary": "Where we're going, we won't need faster Wi-Fi speeds.",
+    "hidden": false
   },
   "0f61e1e47dbe051e": {
     "id": "0f61e1e47dbe051e",
@@ -2160,11 +2202,14 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.01,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.81,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "IKEA has a better way to shop for furniture than scrolling product pages",
+    "raw_summary": "Take the tour around the room yourself.",
+    "hidden": false
   },
   "8fb639d936f65def": {
     "id": "8fb639d936f65def",
@@ -2191,9 +2236,9 @@
       "dev"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.0,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Building a Morse Code Practice Timer in JavaScript: Timing Dits, Dahs and Gaps",
@@ -2225,11 +2270,14 @@
       "hardware"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.01,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.81,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "Microsoft wants to make storage that lasts 10,000 years, and it's not an SSD",
+    "raw_summary": "We all need more lasers, that's for sure.",
+    "hidden": false
   },
   "8099aaefadc9434a": {
     "id": "8099aaefadc9434a",
@@ -2256,11 +2304,14 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.01,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.81,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "I learned what Windows “Reset this PC” actually keeps, and it’s not what I expected",
+    "raw_summary": "It's not as straightforward as you think.",
+    "hidden": false
   },
   "c55a4eec3fa5eaad": {
     "id": "c55a4eec3fa5eaad",
@@ -2287,9 +2338,9 @@
       "android"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.0,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "3.5 x 4.5 cm is not a pixel size: converting cm and DPI for form photos",
@@ -2328,7 +2379,10 @@
     "score": 1.01,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "I changed 3 Android settings and stopped carrying a power bank everywhere",
+    "raw_summary": "I found where my battery was actually going.",
+    "hidden": false
   },
   "e3b74b75e702204f": {
     "id": "e3b74b75e702204f",
@@ -2355,11 +2409,14 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.01,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.81,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "raw_title": "I do almost every annoying PDF job locally in my browser now",
+    "raw_summary": "I’m running out of reasons to open a dedicated PDF app.",
+    "hidden": false
   },
   "c989d358786f1ec1": {
     "id": "c989d358786f1ec1",
@@ -2393,7 +2450,7 @@
     "translated": {},
     "raw_title": "Turn a WhatsApp Group Chat into a Weekly Summary with a Local LLM",
     "raw_summary": "A project group can discuss a quotation on Monday, change its deadline on Wednesday, and confirm",
-    "hidden": false
+    "hidden": true
   },
   "e911f0d646627b9d": {
     "id": "e911f0d646627b9d",
@@ -2422,9 +2479,9 @@
     "tags": [
       "python"
     ],
-    "difficulty": "medium",
-    "score": 1.0,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Find podcasts and their latest episodes with Python (iTunes Search API + RSS, no API key)",
@@ -2456,9 +2513,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.99,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "PS5 Linux hack now supports (some) newer firmware versions",
@@ -2490,9 +2547,9 @@
       "dev"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.0,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Sri Lankan public holidays and Poya days as open data, and two date bugs to avoid",
@@ -2524,9 +2581,9 @@
       "dev"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.0,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Pipes and Redirection: How >, >>, 2> and | Really Work",
@@ -2559,9 +2616,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.99,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Give Nautilus file manager the ‘Computer’ view it lacks",
@@ -2629,9 +2686,9 @@
       "dev"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.0,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "5 Common SQL Mistakes: WHERE, ORDER BY, AND/OR, and Top 3 Queries",
@@ -2670,7 +2727,7 @@
     "translated": {},
     "raw_title": "FOSS Weekly #26.43: Kernel 7.3, Non-Linux OS, de-Googled Phone, DuxOS, Podcasts, De-bloating TVs, KDE Dock and More",
     "raw_summary": "A new kernel and a new Ubuntu release are here.",
-    "hidden": false
+    "hidden": true
   },
   "d78bc6b547af3975": {
     "id": "d78bc6b547af3975",
@@ -2699,9 +2756,9 @@
     "tags": [
       "python"
     ],
-    "difficulty": "medium",
-    "score": 1.0,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Detect a website's tech stack from headers, HTML and cookies (JS + Python)",
@@ -2770,9 +2827,9 @@
     "tags": [
       "vpn"
     ],
-    "difficulty": "easy",
-    "score": 0.99,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
     "reading_time_min": 2,
     "translated": {},
     "raw_title": "NordVPN 6.0 for Linux is coming – with ‘breaking’ changes",
@@ -2806,9 +2863,9 @@
     "tags": [
       "bash"
     ],
-    "difficulty": "advanced",
-    "score": 0.99,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "LHB Linux Digest #26.16: Bash Arrays, mapfile, Self-hosted Linear Alternative and More",
@@ -2840,9 +2897,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.99,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
     "reading_time_min": 2,
     "translated": {},
     "raw_title": "Linux 7.3 is out, speeds up ext4 and low-VRAM AMD GPUs",
@@ -3012,9 +3069,9 @@
       "dev"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.92,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.74,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "From Code to Culture: Building 101 Indian Monuments in 3D",
@@ -3047,7 +3104,7 @@
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.9,
+    "score": 0.83,
     "howto": true,
     "reading_time_min": 1,
     "translated": {},
@@ -3255,9 +3312,9 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.87,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.71,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Lời khuyên cho người vừa chuyển khoản cho lừa đảo: Làm ngay 5 việc sau trong 30 phút đầu để hạn chế mất tiền",
@@ -3361,9 +3418,9 @@
       "hardware"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.87,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.71,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "5 ứng dụng khiến iPhone hết pin nhanh",
@@ -3466,9 +3523,9 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.87,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.71,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Lời khuyên quan trọng mà những người dùng Google Maps ngoại tuyến nên biết",
@@ -3502,9 +3559,9 @@
     "tags": [
       "terminal"
     ],
-    "difficulty": "advanced",
-    "score": 0.87,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.71,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Chapter 1: Why Tmux? Understanding Terminal Multiplexing",
@@ -3536,9 +3593,9 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.87,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.71,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Vì sao không nên sử dụng khuôn mặt, vân tay để mở khóa điện thoại?",
@@ -3604,9 +3661,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.84,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.68,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "LHB Linux Digest #26.15: Taming stderr, Cybersecurity Certification and More",
@@ -3847,9 +3904,9 @@
     "tags": [
       "terminal"
     ],
-    "difficulty": "advanced",
-    "score": 0.79,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.64,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Chapter 2: Get Tmux Running",
@@ -3881,9 +3938,9 @@
       "dev"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.74,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.61,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Local embeddings with llamadart: how llamas share secrets",
@@ -3918,9 +3975,9 @@
     "tags": [
       "terminal"
     ],
-    "difficulty": "advanced",
-    "score": 0.79,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.64,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Tmux Fundamentals",
@@ -4161,9 +4218,9 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.73,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.6,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Thông tin quan trọng trên VNeID, tất cả người dân đi máy bay cần biết",
@@ -4297,9 +4354,9 @@
       "dev"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.68,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.55,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "The Ledger That Charged Twice: S3 Lambda Idempotency",
@@ -4333,9 +4390,9 @@
     "tags": [
       "claude"
     ],
-    "difficulty": "medium",
-    "score": 0.68,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.55,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Persistent Agent Teams: Recreating the Grok Bot Experience with Herdr, Claude Code and Pi",
@@ -4369,9 +4426,9 @@
     "tags": [
       "bảo mật"
     ],
-    "difficulty": "easy",
-    "score": 0.67,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.54,
+    "howto": false,
     "reading_time_min": 2,
     "translated": {},
     "raw_title": "Tài khoản Zalo đang bị theo dõi, bật ngay 3 tính năng này để ngăn chặn",
@@ -4403,9 +4460,9 @@
       "dev"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.68,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.55,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "AI Is Making Me Faster. I Don’t Want It to Make Me Worse.",
@@ -4437,9 +4494,9 @@
       "dev"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.68,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.55,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "One Glue Job, Zero Orchestrators — My First Spark Declarative Pipeline on AWS Glue",
@@ -4505,9 +4562,9 @@
       "dev"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.68,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.55,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "The More Context You Give Your AI Coding Agent, the Worse It Can Get",
@@ -4539,9 +4596,9 @@
       "dev"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.68,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.55,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Kubernetes RBAC Explained by Breaking It: Practice Roles and Bindings in Your Browser",
@@ -4575,9 +4632,9 @@
     "tags": [
       "wifi"
     ],
-    "difficulty": "medium",
-    "score": 0.67,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.54,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Phát hiện 5 thiết bị là “đại kỵ” làm chậm sóng WiFi, nhiều người đang để cạnh mà không hay biết",
@@ -4609,9 +4666,9 @@
       "dev"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.68,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.55,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Talk to my bots through Alexa: building an Alexa skill for Grok Bot",
@@ -4645,9 +4702,9 @@
     "tags": [
       "gemini"
     ],
-    "difficulty": "medium",
-    "score": 0.68,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.55,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Making cross-platform local AI easier with llamadart",
@@ -4680,9 +4737,9 @@
       "ios"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.67,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.54,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Từ iPhone 13 Pro lên đời Z Fold8: Hóa ra chuyển dữ liệu từ Apple sang Samsung giờ dễ thế này",
@@ -4716,9 +4773,9 @@
     "tags": [
       "wifi"
     ],
-    "difficulty": "medium",
-    "score": 0.67,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.54,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Vì sao wifi trong nhà ở rất gần nhưng tín hiệu lại yếu hơn của hàng xóm?",
@@ -4750,9 +4807,9 @@
       "linux"
     ],
     "tags": [],
-    "difficulty": "advanced",
-    "score": 0.64,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.52,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "LHB Linux Digest #26.11: New Free Course, Named Pipes, Multi-kernel and More",
@@ -4784,9 +4841,9 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.67,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.54,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Tính năng trên Zalo giúp xem tin nhắn thoải mái, người gửi không biết người nhận đọc tin nhắn hay chưa",
@@ -4820,9 +4877,9 @@
     "tags": [
       "wifi"
     ],
-    "difficulty": "medium",
-    "score": 0.67,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.54,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Đặt wifi xuống sàn nhà có làm sao không? Hóa ra đây là lỗi nhiều gia đình đang mắc phải",
@@ -4888,9 +4945,9 @@
       "windows"
     ],
     "tags": [],
-    "difficulty": "easy",
-    "score": 0.67,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.54,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Tính năng trên điện thoại người dùng ngân hàng nên tắt ngay",
@@ -4922,9 +4979,9 @@
       "android"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.67,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.54,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {},
     "raw_title": "Lời khuyên cho những người đang dùng Android",

@@ -11,7 +11,13 @@ REJECTED_LOG = LOG_DIR / "rejected.jsonl"
 HOWTO = re.compile(
     r"\b(how to|how-to|tips?|tricks?|guide|tutorial|fix(es|ing)?|set ?up|"
     r"enable|disable|hidden|settings?|shortcuts?|things to do|walkthrough|"
-    r"cách|mẹo|hướng dẫn|thủ thuật|sửa lỗi|thiết lập|chỉnh|phím tắt|tinh chỉnh)\b",
+    r"install|configure|build|create|optimize|speed up|"
+    r"cách|mẹo|hướng dẫn|thủ thuật|sửa lỗi|thiết lập|chỉnh|phím tắt|tinh chỉnh|cài đặt|tối ưu)\b",
+    re.IGNORECASE
+)
+
+EDITORIAL_OR_REVIEW = re.compile(
+    r"\b(weekly|reviews?|roundup|newsletter|edition|podcast|interview|released?|releases|announces?|announcing|unveils?|changelog|đánh giá|trên tay|tổng hợp tuần|ra mắt|phát hành)\b",
     re.IGNORECASE
 )
 
@@ -31,6 +37,8 @@ DEVTO_SELF_PROMO = re.compile(
 
 def is_howto_match(title: str, summary: str = "") -> bool:
     """Kiểm tra bài viết có dấu hiệu là thủ thuật / hướng dẫn (how-to) hay không."""
+    if EDITORIAL_OR_REVIEW.search(title):
+        return False
     return bool(HOWTO.search(title)) or bool(HOWTO.search(summary[:140]))
 
 def log_rejection(item: dict, source: dict, reason: str):
@@ -67,8 +75,8 @@ def accept(item: dict, source: dict, enable_logging: bool = True) -> tuple[bool,
     if isinstance(summary, dict):
         summary = " ".join(str(v) for v in summary.values())
     
-    # 1. Kiểm tra blocklist (quảng cáo, deal, khuyến mãi, tuyển dụng, trailer)
-    if BLOCK.search(title):
+    # 1. Kiểm tra blocklist (quảng cáo, deal, khuyến mãi, tuyển dụng, trailer, review, weekly)
+    if BLOCK.search(title) or EDITORIAL_OR_REVIEW.search(title):
         reason = "blocklist-title"
         if enable_logging:
             log_rejection(item, source, reason)
