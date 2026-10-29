@@ -41,7 +41,9 @@
     "mark_read": "Mark as read",
     "marked_read": "Read",
     "machine_translation": "Machine translated",
-    "machine_translation_tip": "This summary was auto-translated for convenience. Click 'Read Original' to view the full author's article."
+    "machine_translation_tip": "This summary was auto-translated for convenience. Click 'Read Original' to view the full author's article.",
+    "original_en": "Original in English",
+    "original_vi": "Original in Vietnamese"
   },
   "detail": {
     "published_by": "Source",

@@ -33,7 +33,7 @@ const trendingTags = [
       <div class="flex items-center gap-2">
         <span>$0 Operating Cost</span>
         <span>•</span>
-        <span>Archive: {tips.length} articles</span>
+        <span>Archive: {tips.length} tricks</span>
       </div>
     </div>
 
@@ -43,7 +43,7 @@ const trendingTags = [
       </h1>
 
       <p class="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed mb-6">
-        Curated practical hacks, tactile keyboard shortcuts, and troubleshooting guides for Windows, macOS, Linux, Android, iOS, and developer tools. Always credited to original authors, completely free.
+        Curated practical hacks, tactile keyboard shortcuts, and troubleshooting guides for Windows, macOS, Linux, Android, iOS, and developer tools. Always credited to original sources, completely free.
       </p>
 
       <!-- In-Hero Fast Search Bar -->
@@ -96,16 +96,34 @@ const trendingTags = [
         </p>
       </div>
 
-      <!-- Right Controls: View Mode Switcher & Difficulty Filter -->
-      <div class="flex items-center gap-3 text-xs flex-wrap">
+      <!-- Right Controls: Sort, View Mode Switcher & Difficulty Filter -->
+      <div class="flex items-center gap-2 sm:gap-3 text-xs flex-wrap">
+        <!-- Sort Toggle (Best / Newest) -->
+        <div class="inline-flex p-0.5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)]" id="sort-filter-group" title="Sort order">
+          <button
+            type="button"
+            class="sort-btn px-2.5 py-1 rounded text-xs font-mono font-medium transition-colors bg-[var(--accent)] text-white"
+            data-sort="best"
+          >
+            Best
+          </button>
+          <button
+            type="button"
+            class="sort-btn px-2.5 py-1 rounded text-xs font-mono font-medium transition-colors text-[var(--text-secondary)] hover:text-[var(--accent)]"
+            data-sort="newest"
+          >
+            Newest
+          </button>
+        </div>
+
         <!-- View Mode Switcher (Grid vs Compact List) -->
-        <div class="inline-flex items-center p-0.5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)]" title="Toggle layout mode">
+        <div class="inline-flex items-center p-0.5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)]" title="Toggle view density">
           <button
             id="view-grid-btn"
             type="button"
             class="view-mode-btn p-1.5 rounded-md border border-[var(--accent)] bg-[var(--accent)] text-white shadow-sm transition-all"
-            aria-label="Grid view"
-            title="Grid view"
+            aria-label="Grid card view"
+            title="Grid card view"
           >
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <rect width="7" height="7" x="3" y="3" rx="1"></rect>
@@ -118,8 +136,8 @@ const trendingTags = [
             id="view-compact-btn"
             type="button"
             class="view-mode-btn p-1.5 rounded-md border border-transparent bg-transparent text-[var(--text-secondary)] hover:text-[var(--accent)] transition-all"
-            aria-label="Compact list"
-            title="Compact list"
+            aria-label="Compact list view"
+            title="Compact list view"
           >
             <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <line x1="3" y1="6" x2="21" y2="6" stroke-width="2" stroke-linecap="round"></line>
@@ -198,6 +216,18 @@ const trendingTags = [
     ))}
   </div>
 
+  <!-- Load More Pagination Control -->
+  <div id="load-more-container" class="mt-10 text-center">
+    <button
+      id="load-more-btn"
+      type="button"
+      class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl font-mono text-xs font-bold border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:text-[var(--accent)] hover:bg-[var(--bg-muted)] transition-all shadow-sm"
+    >
+      <span>{t.home.load_more}</span>
+      <span id="load-more-count" class="text-[11px] text-[var(--text-muted)] font-normal"></span>
+    </button>
+  </div>
+
   <!-- Empty Search / Filter state -->
   <div id="empty-tips-msg" class="hidden py-16 text-center border border-dashed border-[var(--border-color)] rounded-xl bg-[var(--bg-surface)] mt-6">
     <div class="w-12 h-12 mx-auto rounded-full bg-[var(--bg-muted)] flex items-center justify-center text-[var(--text-muted)] mb-3">
@@ -210,7 +240,7 @@ const trendingTags = [
       {t.home.no_tips_found}
     </h3>
     <p class="text-xs text-[var(--text-muted)] mb-4">
-      Try selecting another category or clearing difficulty filters.
+      Try choosing a different category or clearing the difficulty filter.
     </p>
     <button
       id="reset-filter-btn"
@@ -224,24 +254,51 @@ const trendingTags = [
 
 <script is:inline>
   (function () {
+    const PAGE_SIZE = 24;
+    let visibleLimit = PAGE_SIZE;
     let currentCat = 'all';
     let currentDiff = 'all';
     let searchQuery = '';
+    let currentSort = 'best';
 
     const catButtons = document.querySelectorAll('.cat-btn');
     const diffButtons = document.querySelectorAll('.diff-btn');
+    const sortButtons = document.querySelectorAll('.sort-btn');
     const heroTags = document.querySelectorAll('.hero-tag-btn');
     const heroInput = document.getElementById('hero-search-input');
-    const cards = document.querySelectorAll('.tip-card');
-    const compactRows = document.querySelectorAll('.compact-tip-row');
+    const gridContainer = document.getElementById('tips-grid');
+    const listContainer = document.getElementById('tips-compact-list');
+    const cards = Array.from(document.querySelectorAll('.tip-card'));
+    const compactRows = Array.from(document.querySelectorAll('.compact-tip-row'));
     const emptyMsg = document.getElementById('empty-tips-msg');
     const resetBtn = document.getElementById('reset-filter-btn');
+    const loadMoreContainer = document.getElementById('load-more-container');
+    const loadMoreBtn = document.getElementById('load-more-btn');
+    const loadMoreCount = document.getElementById('load-more-count');
+
+    const viewGridBtn = document.getElementById('view-grid-btn');
+    const viewCompactBtn = document.getElementById('view-compact-btn');
+
+    // Switch View Mode
+    viewGridBtn?.addEventListener('click', () => {
+      gridContainer?.classList.remove('hidden');
+      listContainer?.classList.add('hidden');
+      viewGridBtn.className = 'view-mode-btn p-1.5 rounded-md border border-[var(--accent)] bg-[var(--accent)] text-white shadow-sm transition-all';
+      if (viewCompactBtn) viewCompactBtn.className = 'view-mode-btn p-1.5 rounded-md border border-transparent bg-transparent text-[var(--text-secondary)] hover:text-[var(--accent)] transition-all';
+    });
+
+    viewCompactBtn?.addEventListener('click', () => {
+      gridContainer?.classList.add('hidden');
+      listContainer?.classList.remove('hidden');
+      viewCompactBtn.className = 'view-mode-btn p-1.5 rounded-md border border-[var(--accent)] bg-[var(--accent)] text-white shadow-sm transition-all';
+      if (viewGridBtn) viewGridBtn.className = 'view-mode-btn p-1.5 rounded-md border border-transparent bg-transparent text-[var(--text-secondary)] hover:text-[var(--accent)] transition-all';
+    });
 
     function applyFilter() {
-      let visibleCount = 0;
+      let matchedCount = 0;
       const q = searchQuery.toLowerCase().trim();
 
-      const filterItem = (el) => {
+      const matchesFilter = (el) => {
         const cats = el.getAttribute('data-category') || '';
         const diff = el.getAttribute('data-difficulty') || '';
         const text = el.textContent ? el.textContent.toLowerCase() : '';
@@ -250,24 +307,41 @@ const trendingTags = [
         const matchDiff = currentDiff === 'all' || diff === currentDiff;
         const matchSearch = !q || text.includes(q);
 
-        if (matchCat && matchDiff && matchSearch) {
-          el.classList.remove('hidden');
-          return true;
-        } else {
-          el.classList.add('hidden');
-          return false;
-        }
+        return matchCat && matchDiff && matchSearch;
       };
 
-      cards.forEach((c) => {
-        if (filterItem(c)) visibleCount++;
-      });
-      compactRows.forEach((r) => {
-        filterItem(r);
+      cards.forEach((c, idx) => {
+        const r = compactRows[idx];
+        if (matchesFilter(c)) {
+          matchedCount++;
+          if (matchedCount <= visibleLimit) {
+            c.classList.remove('hidden');
+            if (r) r.classList.remove('hidden');
+          } else {
+            c.classList.add('hidden');
+            if (r) r.classList.add('hidden');
+          }
+        } else {
+          c.classList.add('hidden');
+          if (r) r.classList.add('hidden');
+        }
       });
 
+      // Load more button logic
+      if (loadMoreContainer) {
+        if (matchedCount > visibleLimit) {
+          loadMoreContainer.classList.remove('hidden');
+          if (loadMoreCount) {
+            loadMoreCount.textContent = `(${visibleLimit}/${matchedCount})`;
+          }
+        } else {
+          loadMoreContainer.classList.add('hidden');
+        }
+      }
+
+      // Empty state logic
       if (emptyMsg) {
-        if (visibleCount === 0) {
+        if (matchedCount === 0) {
           emptyMsg.classList.remove('hidden');
         } else {
           emptyMsg.classList.add('hidden');
@@ -275,20 +349,43 @@ const trendingTags = [
       }
     }
 
-    heroInput?.addEventListener('input', (e) => {
-      searchQuery = e.target.value;
+    loadMoreBtn?.addEventListener('click', () => {
+      visibleLimit += PAGE_SIZE;
       applyFilter();
     });
 
+    // Hero search input listener
+    heroInput?.addEventListener('input', (e) => {
+      searchQuery = e.target.value;
+      visibleLimit = PAGE_SIZE;
+      applyFilter();
+    });
+
+    // Trending Tag pills
     heroTags.forEach((btn) => {
       btn.addEventListener('click', () => {
         const tag = btn.getAttribute('data-tag');
         if (heroInput) heroInput.value = tag;
         searchQuery = tag;
+        visibleLimit = PAGE_SIZE;
         applyFilter();
       });
     });
 
+    // Sort buttons listener
+    sortButtons.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        sortButtons.forEach((b) => {
+          b.className = 'sort-btn px-2.5 py-1 rounded text-xs font-mono font-medium transition-colors text-[var(--text-secondary)] hover:text-[var(--accent)]';
+        });
+        btn.className = 'sort-btn px-2.5 py-1 rounded text-xs font-mono font-medium transition-colors bg-[var(--accent)] text-white';
+        currentSort = btn.getAttribute('data-sort');
+        visibleLimit = PAGE_SIZE;
+        applyFilter();
+      });
+    });
+
+    // Category buttons
     catButtons.forEach((btn) => {
       btn.addEventListener('click', () => {
         catButtons.forEach((b) => {
@@ -296,10 +393,12 @@ const trendingTags = [
         });
         btn.className = 'cat-btn shrink-0 px-3 py-1.5 rounded-lg text-xs font-semibold font-mono border transition-all border-[var(--accent)] bg-[var(--accent)] text-white shadow-sm';
         currentCat = btn.getAttribute('data-category');
+        visibleLimit = PAGE_SIZE;
         applyFilter();
       });
     });
 
+    // Difficulty buttons
     diffButtons.forEach((btn) => {
       btn.addEventListener('click', () => {
         diffButtons.forEach((b) => {
@@ -307,6 +406,7 @@ const trendingTags = [
         });
         btn.className = 'diff-btn px-2.5 py-1 rounded text-xs font-mono font-medium transition-colors bg-[var(--accent)] text-white';
         currentDiff = btn.getAttribute('data-diff');
+        visibleLimit = PAGE_SIZE;
         applyFilter();
       });
     });
@@ -315,9 +415,13 @@ const trendingTags = [
       currentCat = 'all';
       currentDiff = 'all';
       searchQuery = '';
+      visibleLimit = PAGE_SIZE;
       if (heroInput) heroInput.value = '';
       catButtons[0]?.click();
       diffButtons[0]?.click();
     });
+
+    // Initialize view
+    applyFilter();
   })();
 </script>

@@ -37,7 +37,7 @@ try {
   class="compact-tip-row group flex items-center justify-between gap-3 p-3 sm:px-4 bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-lg hover:border-[var(--accent)] hover:bg-[var(--bg-muted)] transition-all"
   data-tip-id={tip.id}
   data-category={tip.categories.join(' ')}
-  data-difficulty={tip.difficulty}
+  data-difficulty={tip.difficulty || ''}
 >
   <div class="flex items-center gap-3 min-w-0">
     <!-- Index number -->
@@ -64,10 +64,22 @@ try {
       >
         {titleText}
       </a>
-      <div class="flex items-center gap-2 text-[11px] font-mono text-[var(--text-muted)] mt-0.5">
+      <div class="flex items-center gap-2 text-[11px] font-mono text-[var(--text-muted)] mt-0.5 flex-wrap">
         <span class="text-[var(--text-secondary)]">{tip.source.name}</span>
+        {tip.author && (
+          <>
+            <span>·</span>
+            <span class="truncate max-w-[100px]">{tip.author}</span>
+          </>
+        )}
         <span>·</span>
         <span class="capitalize">#{tip.categories[0]}</span>
+        {tip.difficulty && (
+          <>
+            <span>·</span>
+            <span class="capitalize text-[var(--accent)]">{t.difficulty[tip.difficulty]}</span>
+          </>
+        )}
         {formattedDate && (
           <>
             <span>·</span>

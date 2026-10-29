@@ -1,0 +1,5 @@
+# .vercelignore
+scripts/
+.venv/
+data/cache/
+data/index.backup.json

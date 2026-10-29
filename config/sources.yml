@@ -1,5 +1,6 @@
 # config/sources.yml
 # Danh sách nguồn RSS / API uy tín tổng hợp thủ thuật công nghệ
+# kind: tips (nguồn chuyên hướng dẫn, nhận hầu hết bài) | news (nguồn tin tức, chỉ nhận bài qua bộ lọc howto)
 # Trọng số weight: 0.5 - 1.5 phản ánh độ tin cậy và chuyên sâu
 
 # === Nguồn Quốc tế (English) ===
@@ -9,7 +10,8 @@
   site_url: https://www.howtogeek.com
   type: rss
   lang: en
-  weight: 1.2
+  kind: tips
+  weight: 1.1
   categories: [windows, android, macos, browser, office, hardware]
   description: Hướng dẫn chuyên sâu và thủ thuật công nghệ cho mọi nền tảng
 
@@ -19,7 +21,8 @@
   site_url: https://www.bleepingcomputer.com
   type: rss
   lang: en
-  weight: 1.3
+  kind: news
+  weight: 0.85
   categories: [security, windows, linux]
   description: Tin tức bảo mật, phòng chống mã độc và thủ thuật khắc phục lỗi hệ thống
 
@@ -29,7 +32,8 @@
   site_url: https://www.xda-developers.com
   type: rss
   lang: en
-  weight: 1.1
+  kind: news
+  weight: 0.85
   categories: [android, windows, hardware, dev]
   description: Thủ thuật chuyên sâu cho Android, tinh chỉnh Windows và phần cứng PC
 
@@ -39,7 +43,8 @@
   site_url: https://9to5mac.com
   type: rss
   lang: en
-  weight: 1.1
+  kind: news
+  weight: 0.8
   categories: [ios, macos]
   description: Mẹo sử dụng iPhone, iPad, Mac và hệ sinh thái Apple
 
@@ -49,7 +54,8 @@
   site_url: https://9to5google.com
   type: rss
   lang: en
-  weight: 1.1
+  kind: news
+  weight: 0.8
   categories: [android, browser]
   description: Thủ thuật hệ điều hành Android, ChromeOS và dịch vụ Google
 
@@ -59,7 +65,8 @@
   site_url: https://arstechnica.com
   type: rss
   lang: en
-  weight: 1.2
+  kind: news
+  weight: 0.6
   categories: [linux, dev, security, hardware]
   description: Phân tích kỹ thuật, kiến trúc hệ thống và hướng dẫn công nghệ cao cấp
 
@@ -69,6 +76,7 @@
   site_url: https://www.makeuseof.com
   type: rss
   lang: en
+  kind: tips
   weight: 1.0
   categories: [windows, android, macos, browser, ai]
   description: Hướng dẫn người dùng phổ thông, mẹo sử dụng phần mềm và phím tắt
@@ -79,7 +87,8 @@
   site_url: https://www.androidauthority.com
   type: rss
   lang: en
-  weight: 1.0
+  kind: news
+  weight: 0.8
   categories: [android, hardware]
   description: Mẹo vặt Android, đánh giá tính năng mới và tối ưu thiết bị
 
@@ -89,7 +98,8 @@
   site_url: https://www.omgubuntu.co.uk
   type: rss
   lang: en
-  weight: 1.1
+  kind: tips
+  weight: 1.15
   categories: [linux, dev]
   description: Mẹo tùy biến Linux Ubuntu, dòng lệnh shell và ứng dụng mã nguồn mở
 
@@ -99,17 +109,20 @@
   site_url: https://github.blog
   type: rss
   lang: en
-  weight: 1.3
+  kind: news
+  weight: 0.75
   categories: [dev, ai]
   description: Kỹ năng Git, GitHub Actions, mẹo lập trình và Copilot AI
 
 - id: hackernews
   name: Hacker News
-  url: https://hnrss.org/frontpage
+  url: https://hnrss.org/frontpage?points=30
   site_url: https://news.ycombinator.com
   type: rss
   lang: en
-  weight: 1.2
+  kind: news
+  weight: 0.7
+  min_score: 30
   categories: [dev, security, ai]
   description: Cộng đồng lập trình viên thế giới chia sẻ bài viết kỹ thuật và thủ thuật
 
@@ -119,6 +132,7 @@
   site_url: https://itsfoss.com
   type: rss
   lang: en
+  kind: tips
   weight: 1.2
   categories: [linux, dev, browser]
   description: Cẩm nang hướng dẫn chuyên sâu cho Linux, phần mềm mã nguồn mở và lệnh terminal
@@ -129,17 +143,19 @@
   site_url: https://linuxhandbook.com
   type: rss
   lang: en
+  kind: tips
   weight: 1.2
   categories: [linux, dev, security]
   description: Lệnh bash script, mẹo quản trị máy chủ và thủ thuật terminal thực dụng
 
 - id: devto_tips
   name: Dev.to Tutorials
-  url: https://dev.to/api/articles?tag=tutorial&per_page=15
+  url: https://dev.to/api/articles?tag=tutorial&top=30&per_page=15
   site_url: https://dev.to
   type: devto_api
   lang: en
-  weight: 1.15
+  kind: tips
+  weight: 0.85
   categories: [dev, ai, browser]
   description: Cộng đồng lập trình viên thế giới chia sẻ mẹo code, Git, VS Code và DevOps
 
@@ -149,8 +165,9 @@
   site_url: https://krebsonsecurity.com
   type: rss
   lang: en
-  weight: 1.25
-  categories: [security, privacy]
+  kind: news
+  weight: 0.7
+  categories: [security]
   description: Chuyên trang phân tích an ninh mạng, cảnh báo mã độc và bảo vệ quyền riêng tư
 
 - id: tomshardware
@@ -159,18 +176,31 @@
   site_url: https://www.tomshardware.com
   type: rss
   lang: en
-  weight: 1.1
+  kind: news
+  weight: 0.7
   categories: [hardware, windows]
   description: Thủ thuật lắp ráp PC, ép xung, tối ưu nhiệt độ và cấu hình phần cứng
 
 # === Nguồn Việt Nam (Tiếng Việt) ===
+- id: quantrimang
+  name: Quản Trị Mạng
+  url: https://quantrimang.com/rss
+  site_url: https://quantrimang.com
+  type: rss
+  lang: vi
+  kind: tips
+  weight: 1.15
+  categories: [windows, linux, security, office, hardware]
+  description: Kho tàng hướng dẫn quản trị mạng, phím tắt phần mềm và thủ thuật văn phòng
+
 - id: tinhte
   name: Tinh tế
   url: https://tinhte.vn/rss
   site_url: https://tinhte.vn
   type: rss
   lang: vi
-  weight: 1.0
+  kind: news
+  weight: 0.7
   categories: [ios, android, macos, windows, hardware]
   description: Diễn đàn khoa học và công nghệ lớn nhất Việt Nam, nhiều thủ thuật thực tế
 
@@ -180,19 +210,10 @@
   site_url: https://genk.vn
   type: rss
   lang: vi
-  weight: 0.95
+  kind: news
+  weight: 0.7
   categories: [windows, android, ios, ai]
   description: Chuyên mục Thủ thuật công nghệ, mẹo hay cho máy tính và smartphone
-
-- id: quantrimang
-  name: Quản Trị Mạng
-  url: https://quantrimang.com/rss
-  site_url: https://quantrimang.com
-  type: rss
-  lang: vi
-  weight: 1.1
-  categories: [windows, linux, security, office, hardware]
-  description: Kho tàng hướng dẫn quản trị mạng, phím tắt phần mềm và thủ thuật văn phòng
 
 - id: vnexpress_sohoa
   name: VnExpress Số Hóa
@@ -200,7 +221,8 @@
   site_url: https://vnexpress.net/so-hoa
   type: rss
   lang: vi
-  weight: 0.9
+  kind: news
+  weight: 0.6
   categories: [android, ios, windows, hardware]
   description: Tin tức công nghệ đời sống và các mẹo sử dụng thiết bị cho người Việt
 
@@ -210,7 +232,8 @@
   site_url: https://thanhnien.vn/cong-nghe
   type: rss
   lang: vi
-  weight: 0.9
+  kind: news
+  weight: 0.6
   categories: [android, ios, security, ai]
   description: Mẹo sử dụng điện thoại, cập nhật phần mềm và mẹo phòng chống lừa đảo mạng
 
@@ -220,6 +243,7 @@
   site_url: https://vietnamnet.vn/cong-nghe
   type: rss
   lang: vi
-  weight: 0.9
+  kind: news
+  weight: 0.6
   categories: [windows, android, security, hardware]
   description: Thủ thuật thiết bị thông minh, an toàn số và ứng dụng thực tiễn cho người Việt

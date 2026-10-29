@@ -8,6 +8,7 @@ export interface Source {
   site_url?: string;
   url?: string;
   lang?: string;
+  kind?: 'tips' | 'news';
   weight?: number;
   categories?: string[];
   description?: string;
@@ -20,6 +21,7 @@ export interface Tip {
     id: string;
     name: string;
     site_url?: string;
+    kind?: string;
   };
   author?: string | null;
   published_at: string;
@@ -35,9 +37,12 @@ export interface Tip {
   };
   categories: string[];
   tags: string[];
-  difficulty: 'easy' | 'medium' | 'advanced';
+  difficulty?: 'easy' | 'medium' | 'advanced' | null;
   score: number;
+  howto?: boolean;
   reading_time_min: number;
+  hn_points?: number;
+  hn_comments_url?: string;
   translated?: {
     [key: string]: string;
   };
@@ -71,8 +76,7 @@ export function getAllTips(): Tip[] {
     const raw = fs.readFileSync(indexPath, 'utf-8');
     const map = JSON.parse(raw);
     const list: Tip[] = Object.values(map);
-    // Sắp xếp bài viết: bài có điểm cao và mới nhất lên trước
-    list.sort((a, b) => b.score - a.score);
+    // Danh sách đã được xếp thứ tự đa dạng (diversify) từ pipeline
     cachedTips = list;
     return list;
   } catch (err) {
@@ -119,17 +123,36 @@ export function getAllSources(): Source[] {
 export function getTrickOfTheDay(): Tip | null {
   const tips = getAllTips();
   if (tips.length === 0) return null;
-  // Lấy bài viết có điểm cao nhất hoặc chọn luân phiên theo ngày
-  const todayStr = new Date().toISOString().slice(0, 10);
-  let hash = 0;
-  for (let i = 0; i < todayStr.length; i++) {
-    hash = (hash << 5) - hash + todayStr.charCodeAt(i);
-    hash |= 0;
+
+  const now = new Date();
+  const maxAgeMs = 4 * 24 * 60 * 60 * 1000; // Trong vòng 4 ngày (96h)
+
+  // Chỉ chọn từ bài viết là thủ thuật thật (howto == true hoặc có difficulty)
+  const candidates = tips.filter((t) => {
+    if (!t.howto && !t.difficulty) return false;
+    try {
+      const pubDate = new Date(t.published_at);
+      if (!isNaN(pubDate.getTime()) && now.getTime() - pubDate.getTime() <= maxAgeMs) {
+        return true;
+      }
+    } catch {}
+    return false;
+  });
+
+  if (candidates.length > 0) {
+    // Sắp xếp ưu tiên nguồn chuyên tips và điểm score cao
+    candidates.sort((a, b) => {
+      const aTips = a.source?.kind === 'tips' ? 1 : 0;
+      const bTips = b.source?.kind === 'tips' ? 1 : 0;
+      if (bTips !== aTips) return bTips - aTips;
+      return b.score - a.score;
+    });
+    return candidates[0];
   }
-  // Lấy trong top 10 bài điểm cao nhất
-  const topCandidates = tips.slice(0, Math.min(10, tips.length));
-  const selectedIndex = Math.abs(hash) % topCandidates.length;
-  return topCandidates[selectedIndex] || tips[0];
+
+  // Dự phòng: bài howto điểm cao nhất trong kho
+  const fallback = tips.find((t) => t.howto || t.difficulty);
+  return fallback || null;
 }
 
 export function getCategoriesWithCounts(): Array<Category & { count: number }> {

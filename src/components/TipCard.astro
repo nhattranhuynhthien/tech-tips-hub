@@ -14,7 +14,7 @@ const t = getTranslations(lang);
 
 const titleText = tip.title[lang] || tip.title['en'] || Object.values(tip.title)[0] || '';
 const summaryText = tip.summary[lang] || tip.summary['en'] || Object.values(tip.summary)[0] || '';
-const isMachineTranslated = tip.translated && tip.translated[lang];
+const isMachineTranslated = tip.translated && tip.translated[lang] === 'machine';
 
 // Format ngày đăng
 let formattedDate = '';
@@ -47,46 +47,54 @@ const tipCanonicalUrl = `https://tech-tips-hub.pages.dev/${lang}/tip/${tip.id}`;
   }`}
   data-tip-id={tip.id}
   data-category={tip.categories.join(' ')}
-  data-difficulty={tip.difficulty}
+  data-difficulty={tip.difficulty || ''}
 >
   <div>
     <!-- Top Metadata Bar: Editorial Ledger Header -->
     <div class="flex items-center justify-between gap-2 mb-3 text-xs">
       <!-- Source Badge with clean typography -->
-      <a
-        href={`/${lang}/sources#${tip.source.id}`}
-        class="inline-flex items-center gap-1.5 font-medium text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors group/src"
-      >
-        <img
-          src={faviconUrl}
-          alt=""
-          width="16"
-          height="16"
-          loading="lazy"
-          class="w-4 h-4 rounded-sm shrink-0 border border-[var(--border-subtle)]"
-          onerror="this.style.display='none'"
-        />
-        <span class="truncate max-w-[130px] font-mono tracking-tight group-hover/src:underline">{tip.source.name}</span>
-      </a>
-
-      <!-- Right Meta: Difficulty shape badge + Date -->
-      <div class="flex items-center gap-2 shrink-0">
-        <!-- Difficulty with distinct geometric shape -->
-        <span
-          class={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[11px] font-mono font-medium border ${
-            tip.difficulty === 'easy'
-              ? 'bg-[var(--badge-easy-bg)] text-[var(--badge-easy-text)] border-[var(--badge-easy-border)]'
-              : tip.difficulty === 'advanced'
-                ? 'bg-[var(--badge-adv-bg)] text-[var(--badge-adv-text)] border-[var(--badge-adv-border)]'
-                : 'bg-[var(--badge-med-bg)] text-[var(--badge-med-text)] border-[var(--badge-med-border)]'
-          }`}
-          title={`${t.detail.difficulty}: ${t.difficulty[tip.difficulty]}`}
+      <div class="flex items-center gap-1.5 flex-wrap">
+        <a
+          href={`/${lang}/sources#${tip.source.id}`}
+          class="inline-flex items-center gap-1.5 font-medium text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors group/src"
         >
-          {tip.difficulty === 'easy' && <span class="w-1.5 h-1.5 rounded-full bg-current"></span>}
-          {tip.difficulty === 'medium' && <span class="w-1.5 h-1.5 rotate-45 bg-current"></span>}
-          {tip.difficulty === 'advanced' && <span class="w-0 h-0 border-l-[3px] border-l-transparent border-r-[3px] border-r-transparent border-b-[5px] border-b-current"></span>}
-          <span>{t.difficulty[tip.difficulty]}</span>
-        </span>
+          <img
+            src={faviconUrl}
+            alt=""
+            width="16"
+            height="16"
+            loading="lazy"
+            class="w-4 h-4 rounded-sm shrink-0 border border-[var(--border-subtle)]"
+            onerror="this.style.display='none'"
+          />
+          <span class="truncate max-w-[120px] font-mono tracking-tight group-hover/src:underline">{tip.source.name}</span>
+        </a>
+        {tip.author && (
+          <span class="text-[var(--text-muted)] text-[11px] font-mono truncate max-w-[110px]" title={tip.author}>
+            • {tip.author}
+          </span>
+        )}
+      </div>
+
+      <!-- Right Meta: Difficulty shape badge (only for howto) + Date -->
+      <div class="flex items-center gap-2 shrink-0">
+        {tip.difficulty && (
+          <span
+            class={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[11px] font-mono font-medium border ${
+              tip.difficulty === 'easy'
+                ? 'bg-[var(--badge-easy-bg)] text-[var(--badge-easy-text)] border-[var(--badge-easy-border)]'
+                : tip.difficulty === 'advanced'
+                  ? 'bg-[var(--badge-adv-bg)] text-[var(--badge-adv-text)] border-[var(--badge-adv-border)]'
+                  : 'bg-[var(--badge-med-bg)] text-[var(--badge-med-text)] border-[var(--badge-med-border)]'
+            }`}
+            title={`${t.detail.difficulty}: ${t.difficulty[tip.difficulty]}`}
+          >
+            {tip.difficulty === 'easy' && <span class="w-1.5 h-1.5 rounded-full bg-current"></span>}
+            {tip.difficulty === 'medium' && <span class="w-1.5 h-1.5 rotate-45 bg-current"></span>}
+            {tip.difficulty === 'advanced' && <span class="w-0 h-0 border-l-[3px] border-l-transparent border-r-[3px] border-r-transparent border-b-[5px] border-b-current"></span>}
+            <span>{t.difficulty[tip.difficulty]}</span>
+          </span>
+        )}
 
         {formattedDate && (
           <span class="text-[var(--text-muted)] text-[11px] font-mono hidden sm:inline">
@@ -110,8 +118,8 @@ const tipCanonicalUrl = `https://tech-tips-hub.pages.dev/${lang}/tip/${tip.id}`;
   </div>
 
   <div>
-    <!-- Machine Translation Micro-Badge -->
-    {isMachineTranslated && (
+    <!-- Translation Micro-Badge (truthful display) -->
+    {isMachineTranslated ? (
       <div class="mb-3 inline-flex items-center gap-1.5 text-[11px] text-[var(--text-muted)] font-mono bg-[var(--bg-muted)] px-2 py-0.5 rounded border border-[var(--border-subtle)]" title={t.card.machine_translation_tip}>
         <svg class="w-3 h-3 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path d="m5 8 6 6" stroke-width="2" stroke-linecap="round"></path>
@@ -123,9 +131,15 @@ const tipCanonicalUrl = `https://tech-tips-hub.pages.dev/${lang}/tip/${tip.id}`;
         </svg>
         <span>{t.card.machine_translation}</span>
       </div>
+    ) : (
+      tip.original_lang !== lang && (
+        <div class="mb-3 inline-flex items-center gap-1.5 text-[11px] text-[var(--text-muted)] font-mono bg-[var(--bg-muted)] px-2 py-0.5 rounded border border-[var(--border-subtle)]">
+          <span>{tip.original_lang === 'en' ? t.card.original_en : t.card.original_vi}</span>
+        </div>
+      )
     )}
 
-    <!-- Category Pills -->
+    <!-- Category Pills & HN Discussion Info -->
     <div class="flex flex-wrap items-center gap-1.5 mb-4">
       {tip.categories.map((cat) => (
         <a
@@ -135,6 +149,11 @@ const tipCanonicalUrl = `https://tech-tips-hub.pages.dev/${lang}/tip/${tip.id}`;
           #{cat}
         </a>
       ))}
+      {tip.hn_points && (
+        <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
+          HN: {tip.hn_points} pts
+        </span>
+      )}
       <span class="text-[10px] font-mono text-[var(--text-muted)] ml-auto">
         ~{tip.reading_time_min} {t.home.reading_time}
       </span>

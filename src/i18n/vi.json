@@ -41,7 +41,9 @@
     "mark_read": "Đánh dấu đã xem",
     "marked_read": "Đã xem",
     "machine_translation": "Bản dịch tự động",
-    "machine_translation_tip": "Nội dung được dịch máy để hỗ trợ đọc nhanh. Hãy bấm 'Đọc bài gốc' để xem bản chuẩn của tác giả."
+    "machine_translation_tip": "Nội dung được dịch máy để hỗ trợ đọc nhanh. Hãy bấm 'Đọc bài gốc' để xem bản chuẩn của tác giả.",
+    "original_en": "Bản gốc tiếng Anh",
+    "original_vi": "Bản gốc tiếng Việt"
   },
   "detail": {
     "published_by": "Nguồn",

@@ -6,51 +6,39 @@ from pathlib import Path
 
 CACHE_FILE = Path("data/cache/translations.json")
 
-# Từ điển ánh xạ cụm từ công nghệ thông dụng EN -> VI
-EN_TO_VI_PHRASES = [
-    (r"\bHow to\b", "Cách"),
-    (r"\bHow To\b", "Cách"),
-    (r"\bStep-by-step guide\b", "Hướng dẫn từng bước"),
-    (r"\bTips and tricks\b", "Thủ thuật và mẹo hay"),
-    (r"\bTips & Tricks\b", "Thủ thuật & mẹo hay"),
-    (r"\bTop (\d+) tricks\b", "Top \1 mẹo hay"),
-    (r"\bBest ways to\b", "Cách tốt nhất để"),
-    (r"\bFix\b", "Khắc phục"),
-    (r"\bTroubleshoot\b", "Sửa lỗi"),
-    (r"\bSpeed up\b", "Tăng tốc"),
-    (r"\bOptimize\b", "Tối ưu hóa"),
-    (r"\bHidden features\b", "Tính năng ẩn"),
-    (r"\bKeyboard shortcuts\b", "Phím tắt bàn phím"),
-    (r"\bBattery saver\b", "Tiết kiệm pin"),
-    (r"\bDark mode\b", "Chế độ nền tối"),
-    (r"\bClean install\b", "Cài đặt sạch"),
-    (r"\bTask Manager\b", "Trình quản lý tác vụ Task Manager"),
-    (r"\bCommand Prompt\b", "Cửa sổ lệnh Command Prompt"),
-    (r"\bon Windows 11\b", "trên Windows 11"),
-    (r"\bon Windows 10\b", "trên Windows 10"),
-    (r"\bon Mac\b", "trên máy Mac"),
-    (r"\bon iPhone\b", "trên iPhone"),
-    (r"\bon Android\b", "trên Android"),
-    (r"\bfor beginners\b", "cho người mới bắt đầu"),
-    (r"\bEverything you need to know\b", "Tất cả những gì bạn cần biết"),
-]
+VI_CHARS = re.compile(
+    r"[àáạảãâầấậẩẫăằắặẳẵèéẹẻẽêềếệểễìíịỉĩòóọỏõôồốộổỗơờớợởỡ"
+    r"ùúụủũưừứựửữỳýỵỷỹđ]",
+    re.IGNORECASE
+)
 
-# Từ điển ánh xạ cụm từ VI -> EN
-VI_TO_EN_PHRASES = [
-    (r"\bCách\b", "How to"),
-    (r"\bHướng dẫn\b", "Guide to"),
-    (r"\bThủ thuật\b", "Tricks for"),
-    (r"\bMẹo hay\b", "Smart tips for"),
-    (r"\bPhím tắt\b", "Keyboard shortcuts for"),
-    (r"\bTăng tốc\b", "Speed up"),
-    (r"\bTối ưu\b", "Optimize"),
-    (r"\bKhắc phục lỗi\b", "Fix errors in"),
-    (r"\bSửa lỗi\b", "Fix issue in"),
-    (r"\bTiết kiệm pin\b", "Save battery on"),
-    (r"\bTính năng ẩn\b", "Hidden features in"),
-    (r"\btrên máy tính\b", "on PC"),
-    (r"\btrên điện thoại\b", "on smartphone"),
-]
+EN_COMMON_WORDS = re.compile(
+    r"\b(the|and|for|with|that|this|to|in|of|on|is|are|from|by|how)\b",
+    re.IGNORECASE
+)
+
+def looks_vietnamese(text: str) -> bool:
+    """Kiểm tra văn bản có mật độ ký tự tiếng Việt chuẩn hay không (> 3%)."""
+    if not text:
+        return False
+    return (len(VI_CHARS.findall(text)) / max(len(text), 1)) > 0.03
+
+def looks_english(text: str) -> bool:
+    """Kiểm tra văn bản hoàn toàn không chứa ký tự tiếng Việt có dấu."""
+    if not text:
+        return True
+    return len(VI_CHARS.findall(text)) == 0
+
+def is_mixed(text: str) -> bool:
+    """
+    Phát hiện câu trộn ngữ pháp (ví dụ có từ tiếng Việt thay thế nằm giữa câu tiếng Anh).
+    Bằng chứng: "This Newly Proposed Linux Filesystem Can Khắc phục Corrupted Data".
+    """
+    if not text:
+        return False
+    has_vi_keyword = bool(re.search(r"\b(Cách|Khắc phục|Tối ưu hóa|Mẹo|Hướng dẫn|Thủ thuật)\b", text))
+    en_words_count = len(EN_COMMON_WORDS.findall(text))
+    return has_vi_keyword and en_words_count >= 2
 
 def load_cache() -> dict:
     if CACHE_FILE.exists():
@@ -65,81 +53,93 @@ def save_cache(cache: dict):
     CACHE_FILE.write_text(json.dumps(cache, ensure_ascii=False, indent=2), encoding="utf-8")
 
 def translate_with_gemini(text: str, target_lang: str, is_summary: bool = False) -> str:
-    """Sử dụng Gemini API nếu có GEMINI_API_KEY trong environment."""
+    """
+    Dịch toàn câu bằng Google Gemini API khi có biến môi trường GEMINI_API_KEY.
+    Hoàn toàn không thay thế từ khóa chắp vá.
+    """
     api_key = os.environ.get("GEMINI_API_KEY", "").strip()
-    if not api_key:
+    if not api_key or not text:
         return ""
     try:
         from google import genai
         client = genai.Client(api_key=api_key)
         target_name = "Tiếng Việt" if target_lang == "vi" else "English"
-        context = "Tóm tắt ngắn gọn và dịch sang" if is_summary else "Dịch tiêu đề thủ thuật công nghệ một cách tự nhiên sang"
-        prompt = f"{context} {target_name}. Giữ nguyên thuật ngữ kỹ thuật phổ biến. Chỉ trả về nội dung đã dịch, không giải thích thêm:\n\n{text}"
+        context = "Tóm tắt ngắn gọn và dịch sang" if is_summary else "Dịch trọn vẹn và tự nhiên tiêu đề thủ thuật công nghệ sang"
+        prompt = (
+            f"{context} {target_name}. Giữ nguyên thuật ngữ kỹ thuật phổ biến (như Git, Docker, Windows, Linux, SSD, RAM). "
+            f"Chỉ trả về duy nhất nội dung đã dịch, không giải thích thêm:\n\n{text}"
+        )
         
         response = client.models.generate_content(
             model="gemini-2.5-flash",
             contents=prompt
         )
         if response and response.text:
-            return response.text.strip().replace("\n", " ")
+            cleaned = response.text.strip().replace("\n", " ")
+            return cleaned
     except Exception as e:
         print(f"[Gemini API Warning]: {e}")
     return ""
 
-def rule_based_translate(text: str, source_lang: str, target_lang: str) -> str:
-    """Bộ dịch thông minh ngoại tuyến khi không dùng API bên ngoài (chi phí 0đ)."""
-    if not text:
-        return ""
-    translated = text
-    if source_lang == "en" and target_lang == "vi":
-        for pattern, repl in EN_TO_VI_PHRASES:
-            translated = re.sub(pattern, repl, translated, flags=re.IGNORECASE)
-        # Bổ sung tiền tố nếu là câu hướng dẫn
-        if translated.lower().startswith("how "):
-            translated = "Cách " + translated[4:]
-    elif source_lang == "vi" and target_lang == "en":
-        for pattern, repl in VI_TO_EN_PHRASES:
-            translated = re.sub(pattern, repl, translated, flags=re.IGNORECASE)
-
-    return translated.strip()
-
 def process_item_bilingual(item_id: str, orig_title: str, orig_summary: str, orig_lang: str, cache: dict) -> tuple[dict, dict, dict]:
     """
-    Xử lý song ngữ cho tiêu đề và tóm tắt của một bài viết:
-    Trả về (title_dict, summary_dict, translation_metadata)
+    Xử lý song ngữ an toàn và trung thực:
+    - Nếu có bản dịch máy đạt chuẩn (Gemini hoặc cache đã kiểm tra hợp lệ), gán nhãn machine.
+    - Nếu không dịch được hoặc bản dịch bị trộn ngôn ngữ, giữ nguyên bản gốc và KHÔNG gắn nhãn dịch giả dối.
+    - Tuyệt đối không gắn tiền tố '[Bản dịch]' vào văn bản.
     """
+    # 1. Kiểm tra cache
     if item_id in cache:
         c = cache[item_id]
-        return c["title"], c["summary"], c.get("translated", {})
+        t_vi = c.get("title", {}).get("vi", "")
+        s_vi = c.get("summary", {}).get("vi", "")
+        # Nếu cache cũ chứa câu trộn hoặc rác thì hủy cache mục này
+        if not is_mixed(t_vi) and not is_mixed(s_vi) and not ("[Bản dịch]" in s_vi or "[Bản dịch]" in t_vi):
+            return c["title"], c["summary"], c.get("translated", {})
 
     target_lang = "vi" if orig_lang == "en" else "en"
 
     title_dict = {orig_lang: orig_title}
     summary_dict = {orig_lang: orig_summary}
+    trans_meta = {}
 
-    # 1. Thử qua Gemini API nếu có cấu hình
+    # 2. Thử dịch bằng Gemini nếu có key
     translated_title = translate_with_gemini(orig_title, target_lang, is_summary=False)
     translated_summary = translate_with_gemini(orig_summary, target_lang, is_summary=True)
 
-    # 2. Dự phòng bằng rule-based nếu API rỗng hoặc không có key
-    if not translated_title:
-        translated_title = rule_based_translate(orig_title, orig_lang, target_lang)
-    if not translated_summary:
-        if orig_lang == "en":
-            translated_summary = f"[Bản dịch] {rule_based_translate(orig_summary, 'en', 'vi')}"
+    # 3. Nghiệm thu chất lượng dịch thuật
+    if translated_title and translated_summary:
+        if target_lang == "vi":
+            is_valid = (
+                looks_vietnamese(translated_title) and
+                not is_mixed(translated_title) and
+                not is_mixed(translated_summary)
+            )
         else:
-            translated_summary = f"[Summary] {rule_based_translate(orig_summary, 'vi', 'en')}"
+            is_valid = (
+                looks_english(translated_title) and
+                not is_mixed(translated_title) and
+                not is_mixed(translated_summary)
+            )
 
-    title_dict[target_lang] = translated_title
-    summary_dict[target_lang] = translated_summary
-    translated_meta = {target_lang: "machine"}
+        if is_valid:
+            title_dict[target_lang] = translated_title
+            summary_dict[target_lang] = translated_summary
+            trans_meta[target_lang] = "machine"
+        else:
+            # Không đạt chuẩn: giữ nguyên bản gốc cho ngôn ngữ đích
+            title_dict[target_lang] = orig_title
+            summary_dict[target_lang] = orig_summary
+    else:
+        # Không có bản dịch: giữ nguyên bản gốc, KHÔNG gắn nhãn machine
+        title_dict[target_lang] = orig_title
+        summary_dict[target_lang] = orig_summary
 
-    # Lưu vào cache
+    # Lưu cache
     cache[item_id] = {
         "title": title_dict,
         "summary": summary_dict,
-        "translated": translated_meta
+        "translated": trans_meta
     }
 
-    return title_dict, summary_dict, translated_meta
-
+    return title_dict, summary_dict, trans_meta
