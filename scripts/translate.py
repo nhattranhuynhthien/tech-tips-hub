@@ -81,6 +81,10 @@ def load_cache() -> dict:
             s_vi = val.get("summary", {}).get("vi", "")
             if is_mixed(t_vi) or is_mixed(s_vi) or "[Bản dịch]" in t_vi or "[Bản dịch]" in s_vi:
                 continue
+            # Chỉ nạp vào cache nếu bài viết thực sự đã có nhãn dịch máy thành công
+            trans = val.get("translated", {})
+            if trans.get("vi") != "machine" and trans.get("en") != "machine":
+                continue
             cleaned_cache[iid] = val
         return cleaned_cache
     except Exception as e:
@@ -114,8 +118,7 @@ class GeminiTranslator(Translator):
     """
     def __init__(self):
         self.api_key = os.environ.get("GEMINI_API_KEY", "").strip()
-        self.model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash").strip() or "gemini-2.5-flash"
-        self.endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/{self.model}:generateContent?key={self.api_key}"
+        self.model = os.environ.get("GEMINI_MODEL", "gemini-1.5-flash").strip() or "gemini-1.5-flash"
 
     def is_available(self) -> bool:
         return bool(self.api_key)
@@ -151,45 +154,57 @@ class GeminiTranslator(Translator):
         }
         headers = {"Content-Type": "application/json"}
 
-        # Retry với Exponential Backoff khi gặp 429
-        max_retries = 3
-        delay = 2.0
+        # Retry với Exponential Backoff khi gặp 429 hoặc model fallback
+        models_to_try = [self.model]
+        if self.model != "gemini-1.5-flash":
+            models_to_try.append("gemini-1.5-flash")
+        if "gemini-2.0-flash" not in models_to_try:
+            models_to_try.append("gemini-2.0-flash")
+
         session = requests.Session()
 
-        for attempt in range(max_retries):
-            try:
-                resp = session.post(self.endpoint, json=payload, headers=headers, timeout=40)
-                if resp.status_code == 429:
-                    print(f"[Gemini 429 Quota] Chờ {delay:.1f}s trước khi thử lại (lần {attempt + 1}/{max_retries})...")
+        for curr_model in models_to_try:
+            endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/{curr_model}:generateContent?key={self.api_key}"
+            max_retries = 3
+            delay = 2.0
+
+            for attempt in range(max_retries):
+                try:
+                    resp = session.post(endpoint, json=payload, headers=headers, timeout=40)
+                    if resp.status_code == 429:
+                        print(f"[Gemini 429 Quota] Chờ {delay:.1f}s trước khi thử lại (lần {attempt + 1}/{max_retries})...")
+                        time.sleep(delay)
+                        delay *= 2
+                        continue
+                    if resp.status_code == 404:
+                        print(f"[Gemini Warning] Model {curr_model} 404 Not Found, chuyển sang model dự phòng...")
+                        break
+                    if resp.status_code != 200:
+                        print(f"[Gemini Warning] HTTP {resp.status_code}: {resp.text[:140]}")
+                        return []
+
+                    data = resp.json()
+                    candidates = data.get("candidates", [])
+                    if not candidates:
+                        return []
+                    parts = candidates[0].get("content", {}).get("parts", [])
+                    if not parts:
+                        return []
+                    
+                    raw_text = parts[0].get("text", "").strip()
+                    # Gỡ markdown code blocks nếu có
+                    if raw_text.startswith("```"):
+                        raw_text = re.sub(r"^```(?:json)?\s*", "", raw_text)
+                        raw_text = re.sub(r"\s*```$", "", raw_text)
+                    
+                    translated_list = json.loads(raw_text)
+                    if isinstance(translated_list, list):
+                        return translated_list
+                    return []
+                except Exception as e:
+                    print(f"[Gemini Exception (Lần {attempt + 1})]: {e}")
                     time.sleep(delay)
                     delay *= 2
-                    continue
-                if resp.status_code != 200:
-                    print(f"[Gemini Warning] HTTP {resp.status_code}: {resp.text[:140]}")
-                    return []
-
-                data = resp.json()
-                candidates = data.get("candidates", [])
-                if not candidates:
-                    return []
-                parts = candidates[0].get("content", {}).get("parts", [])
-                if not parts:
-                    return []
-                
-                raw_text = parts[0].get("text", "").strip()
-                # Gỡ markdown code blocks nếu có
-                if raw_text.startswith("```"):
-                    raw_text = re.sub(r"^```(?:json)?\s*", "", raw_text)
-                    raw_text = re.sub(r"\s*```$", "", raw_text)
-                
-                translated_list = json.loads(raw_text)
-                if isinstance(translated_list, list):
-                    return translated_list
-                return []
-            except Exception as e:
-                print(f"[Gemini Exception (Lần {attempt + 1})]: {e}")
-                time.sleep(delay)
-                delay *= 2
 
         return []
 
@@ -283,14 +298,14 @@ def process_item_bilingual(
     translator = translator or DEFAULT_TRANSLATOR
     target_lang = "vi" if orig_lang == "en" else "en"
 
-    # 1. Kiểm tra cache hợp lệ
+    # 1. Kiểm tra cache hợp lệ (phải đã có nhãn dịch máy thực tế)
     if item_id in cache:
         c = cache[item_id]
-        t_vi = c.get("title", {}).get("vi", "")
-        s_vi = c.get("summary", {}).get("vi", "")
-        # Nếu cache không dính câu trộn hoặc rác
-        if not is_mixed(t_vi) and not is_mixed(s_vi) and not ("[Bản dịch]" in s_vi or "[Bản dịch]" in t_vi):
-            return c["title"], c["summary"], c.get("translated", {})
+        if c.get("translated", {}).get(target_lang) == "machine":
+            t_vi = c.get("title", {}).get("vi", "")
+            s_vi = c.get("summary", {}).get("vi", "")
+            if not is_mixed(t_vi) and not is_mixed(s_vi) and not ("[Bản dịch]" in s_vi or "[Bản dịch]" in t_vi):
+                return c["title"], c["summary"], c.get("translated", {})
 
     # 2. Khởi tạo cấu trúc mặc định
     title_dict = {orig_lang: orig_title, target_lang: orig_title}
@@ -316,13 +331,13 @@ def process_item_bilingual(
             title_dict[target_lang] = res_t
             summary_dict[target_lang] = res_s
             trans_meta[target_lang] = "machine"
+            # Chỉ lưu vào cache khi đã dịch thành công
+            cache[item_id] = {
+                "title": title_dict,
+                "summary": summary_dict,
+                "translated": trans_meta
+            }
 
-    # Lưu cache
-    cache[item_id] = {
-        "title": title_dict,
-        "summary": summary_dict,
-        "translated": trans_meta
-    }
     return title_dict, summary_dict, trans_meta
 
 def batch_translate_pending(
@@ -407,11 +422,12 @@ def batch_translate_pending(
                 it["title"]["vi"] = orig_t
                 it["summary"]["vi"] = orig_s
 
-            cache[iid] = {
-                "title": it["title"],
-                "summary": it["summary"],
-                "translated": it.get("translated", {})
-            }
+            if it.get("translated", {}).get("vi") == "machine":
+                cache[iid] = {
+                    "title": it["title"],
+                    "summary": it["summary"],
+                    "translated": it.get("translated", {})
+                }
 
     # Xử lý dịch theo lô VI -> EN
     for i in range(0, len(pending_vi_to_en), batch_size):
@@ -442,8 +458,9 @@ def batch_translate_pending(
                 it["title"]["en"] = orig_t
                 it["summary"]["en"] = orig_s
 
-            cache[iid] = {
-                "title": it["title"],
-                "summary": it["summary"],
-                "translated": it.get("translated", {})
-            }
+            if it.get("translated", {}).get("en") == "machine":
+                cache[iid] = {
+                    "title": it["title"],
+                    "summary": it["summary"],
+                    "translated": it.get("translated", {})
+                }
