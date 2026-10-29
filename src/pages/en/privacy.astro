@@ -6,55 +6,47 @@ const lang = 'en';
 const t = getTranslations(lang);
 ---
 
-<Layout lang={lang} title="Privacy Policy" description="Our cookieless, tracker-free commitment to visitor privacy and transparent local data usage.">
-  <article class="max-w-3xl mx-auto bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-2xl p-6 sm:p-10 shadow-craft mb-12">
-    <!-- Header -->
-    <header class="pb-6 border-b border-[var(--border-subtle)] mb-8">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[var(--accent-bg)] text-[var(--accent)] border border-[var(--accent-border)] text-xs font-mono font-semibold mb-3">
-        <span>🛡️ Trust & Privacy</span>
+<Layout lang={lang} title="Privacy Policy" description="Our 100% privacy commitment: 0 trackers, 0 third-party cookies, and 0 user profiling on tips.hub.">
+  <article class="max-w-4xl mx-auto space-y-8">
+    <header class="pb-6 border-b border-[var(--border-color)]">
+      <div class="text-xs font-mono font-bold text-[var(--accent)] mb-2">
+        $ security --privacy-statement
       </div>
-      <h1 class="text-3xl sm:text-4xl font-serif font-bold text-[var(--text-primary)] mb-3">
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-3">
         Privacy Policy
       </h1>
-      <p class="text-base text-[var(--text-secondary)] leading-relaxed">
-        Tech Tips Hub is built on a simple foundation: respect for the reader's right to private exploration.
+      <p class="text-sm text-[var(--text-secondary)] leading-relaxed font-mono">
+        tips.hub is built with an absolute privacy-first philosophy: zero trackers, zero tracking cookies, zero ads.
       </p>
     </header>
 
-    <div class="space-y-6 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed">
-      <section>
-        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
-          1. No Tracking Cookies, No Ads
+    <div class="space-y-6 text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed font-sans">
+      <section class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 space-y-3">
+        <h2 class="text-base font-bold text-[var(--text-primary)] font-mono">
+          # 1. No Personal Data Collection
         </h2>
         <p>
-          We do not deploy marketing cookies, ad tech scripts, fingerprinting pixels, or behavioral cross-site trackers. You browse anonymously with peace of mind.
+          We require no account registration, no email submissions, and we perform no behavioral profiling on our readers.
         </p>
       </section>
 
-      <section>
-        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
-          2. Client-Side Browser Storage (localStorage)
-        </h2>
-        <p class="mb-2">
-          Your browser solely preserves small UI state keys stored entirely on your device (never sent to our server):
-        </p>
-        <ul class="list-disc list-inside space-y-1 text-xs sm:text-sm pl-2">
-          <li><code class="font-mono">techtips_theme</code>: Remembers light or dark theme choice.</li>
-          <li><code class="font-mono">techtips_lang</code>: Remembers your preferred language selection.</li>
-          <li><code class="font-mono">techtips_saved</code>: Stores array of tip IDs bookmarked for reading later.</li>
-          <li><code class="font-mono">techtips_read</code>: Remembers which tips you marked as read.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
-          3. Cookieless Web Analytics
+      <section class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 space-y-3">
+        <h2 class="text-base font-bold text-[var(--text-primary)] font-mono">
+          # 2. Bookmarks are 100% Client-Side
         </h2>
         <p>
-          High-level traffic volume is monitored via privacy-preserving tools (e.g. Cloudflare Web Analytics) which do not store cookies, personal profiling identifiers, or IP addresses.
+          Your saved tips are stored exclusively in your browser's private <code>localStorage</code>. No reading lists are ever transmitted to any remote database.
+        </p>
+      </section>
+
+      <section class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 space-y-3">
+        <h2 class="text-base font-bold text-[var(--text-primary)] font-mono">
+          # 3. Privacy-Friendly CDN Metrics
+        </h2>
+        <p>
+          We rely only on standard edge aggregated request counters provided by Cloudflare / Vercel with zero cross-site cookie tracking.
         </p>
       </section>
     </div>
   </article>
 </Layout>
-

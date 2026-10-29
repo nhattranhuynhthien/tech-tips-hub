@@ -6,122 +6,79 @@ const lang = 'en';
 const t = getTranslations(lang);
 ---
 
-<Layout lang={lang} title="About Tech Tips Hub" description="Mission, zero-dollar operating model, and technical architecture behind Tech Tips Hub.">
-  <article class="max-w-3xl mx-auto bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-2xl p-6 sm:p-10 shadow-craft mb-12">
+<Layout lang={lang} title="About tips.hub" description="Learn about the mission, $0 operating architecture, and ethical aggregation philosophy of tips.hub.">
+  <article class="max-w-4xl mx-auto space-y-8">
     <!-- Header -->
-    <header class="pb-6 border-b border-[var(--border-subtle)] mb-8">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[var(--accent-bg)] text-[var(--accent)] border border-[var(--accent-border)] text-xs font-mono font-semibold mb-3">
-        <span>📖 Mission & Architecture</span>
+    <header class="pb-6 border-b border-[var(--border-color)]">
+      <div class="text-xs font-mono font-bold text-[var(--accent)] mb-2">
+        $ info tips.hub
       </div>
-      <h1 class="text-3xl sm:text-4xl font-serif font-bold text-[var(--text-primary)] mb-3">
-        About Tech Tips Hub
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-3">
+        About tips.hub
       </h1>
-      <p class="text-base text-[var(--text-secondary)] leading-relaxed">
-        An automated, bilingual aggregator of practical tech tricks and shortcuts, operated at $0 cost with full attribution.
+      <p class="text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed font-mono">
+        Bilingual automated tech notebook aggregating handcrafted tips, completely open source with $0 operating cost.
       </p>
     </header>
 
-    <div class="space-y-8 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed">
-      <!-- 1. The Why -->
-      <section>
-        <h2 class="text-xl font-serif font-bold text-[var(--text-primary)] mb-3 flex items-center gap-2">
-          <span>🎯 Why We Built This</span>
+    <div class="space-y-8 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed font-sans">
+      <!-- 1. Purpose -->
+      <section class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 space-y-3">
+        <h2 class="text-lg font-bold text-[var(--text-primary)] font-mono">
+          # The Mission
         </h2>
-        <p class="mb-3">
-          The internet is full of brilliant productivity hacks scattered across isolated platforms: a neat macOS command on social media, a Docker cleanup command on Reddit, a Windows troubleshooting step on BleepingComputer, or an Android optimization trick on XDA.
+        <p>
+          The web is full of brilliant developer tricks scattered across disparate silos: a tactile macOS shortcut on Twitter/X, a Linux disk cleanup one-liner on Reddit, a Windows troubleshooting tweak on BleepingComputer, or an ad-blocking guide on Hacker News.
         </p>
         <p>
-          <strong>Tech Tips Hub</strong> organizes these insights into a clean, searchable notebook: automatically filtering noise, extracting the actionable takeaway, providing dual-language summaries (<strong>English & Vietnamese</strong>), and always routing readers directly back to the original source.
+          <strong class="text-[var(--text-primary)]">tips.hub</strong> aggregates, curates, and summarizes practical how-to tips into an instant, searchable notebook — available in both <strong class="text-[var(--text-primary)]">English and Vietnamese</strong>, always linking back directly to original authors.
         </p>
       </section>
 
       <!-- 2. Core Principles -->
-      <section class="p-6 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-muted)] space-y-4">
-        <h3 class="text-base font-serif font-bold text-[var(--text-primary)]">
-          5 Core Principles
+      <section class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 space-y-4">
+        <h3 class="text-lg font-bold text-[var(--text-primary)] font-mono">
+          # Core Principles
         </h3>
-        <ol class="space-y-3 list-decimal list-inside text-xs sm:text-sm">
-          <li><strong>$0 Operating Cost:</strong> Entirely hosted and automated on stable free tiers (GitHub Actions, Cloudflare Pages, Git storage). No credit card required.</li>
-          <li><strong>Fair Use & Legality:</strong> We never copy whole articles. We only store normalized titles, short summaries (&lt; 350 chars), and direct links to original authors.</li>
-          <li><strong>Respect Creators:</strong> Clear attribution with publication names, favicons, author bylines, and polite request throttling honoring robots.txt.</li>
-          <li><strong>Static First:</strong> Built with Astro for sub-second page loads, zero database failure risks, and global CDN caching.</li>
-          <li><strong>Quality Over Quantity:</strong> Fuzzy deduplication, blocklist filtering of affiliate deals/sponsored spam, and algorithmic scoring.</li>
+        <ol class="space-y-3 list-decimal list-inside text-xs sm:text-sm text-[var(--text-secondary)] font-mono">
+          <li><strong class="text-[var(--text-primary)]">Strict $0 Cost:</strong> All infrastructure runs on permanently free tiers (GitHub Actions cron, Git repo storage, Astro static generation, Cloudflare / Vercel edge delivery) with zero credit cards required.</li>
+          <li><strong class="text-[var(--text-primary)]">Fair Use & Original Attribution:</strong> We never copy full article bodies. We store concise headlines and excerpts under 280 characters, pointing readers directly to original creators.</li>
+          <li><strong class="text-[var(--text-primary)]">Respect for Creators:</strong> Complete transparency with source domain badges, author credits, robots.txt compliance, and polite request rate limiting.</li>
+          <li><strong class="text-[var(--text-primary)]">Static-First Architecture:</strong> Pre-rendered static pages ensure sub-second latency, robust resilience, and zero database failure risks.</li>
+          <li><strong class="text-[var(--text-primary)]">Quality Over Volume:</strong> Automated deduplication, spam/deal blocklists, and automated QA verification before any content goes live.</li>
         </ol>
       </section>
 
-      <!-- 3. System Architecture -->
-      <section>
-        <h2 class="text-xl font-serif font-bold text-[var(--text-primary)] mb-3">
-          🛠️ System Architecture
+      <!-- 3. Architecture -->
+      <section class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 space-y-3">
+        <h2 class="text-lg font-bold text-[var(--text-primary)] font-mono">
+          # Technical Architecture
         </h2>
-        <div class="p-4 rounded-lg bg-[var(--bg-primary)] border border-[var(--border-color)] font-mono text-xs overflow-x-auto text-[var(--text-primary)] leading-normal">
+        <p class="text-xs sm:text-sm text-[var(--text-secondary)] font-mono mb-4">
+          Fully automated pipeline driven by scheduled GitHub Actions:
+        </p>
+        <div class="p-4 rounded-lg bg-[var(--bg-muted)] border border-[var(--border-color)] font-mono text-xs overflow-x-auto text-[var(--text-primary)] leading-normal">
 <pre>
 ┌────────────────────┐   cron every 4h
 │  GitHub Actions    │───────────────────────┐
 └────────────────────┘                       │
                                              ▼
-   RSS / API  ──►  fetch.py  ──►  dedupe  ──►  score  ──►  classify
- (15+ feeds)                                                    │
-                                                                ▼
-                                      bilingual summarize (cached)
-                                                                │
-                                                                ▼
-                                       data/*.json (Git commit)
-                                                                │
-                                                                ▼
-                                    Cloudflare Pages / GitHub Pages
-                                                                │
-                                                                ▼
-                                     Static bilingual site (/en, /vi)
+   RSS / API  ──►  fetch.py  ──►  dedupe.py  ──►  score.py  ──►  classify.py
+ (20+ sources)                                                         │
+                                                                       ▼
+                                            translate.py (no mixed language)
+                                                                       │
+                                                                       ▼
+                                             scripts/qa.py (100% validation)
+                                                                       │
+                                                                       ▼
+                                       Astro static build (Cloudflare / Vercel)
+                                                                       │
+                                                                       ▼
+                                            Bilingual Static Site (/vi, /en)
 </pre>
-        </div>
-      </section>
-
-      <!-- 4. Zero Dollar Breakdown -->
-      <section>
-        <h2 class="text-xl font-serif font-bold text-[var(--text-primary)] mb-3">
-          💰 Zero-Dollar Cost Table
-        </h2>
-        <div class="border border-[var(--border-color)] rounded-lg overflow-hidden text-xs">
-          <table class="w-full text-left border-collapse">
-            <thead class="bg-[var(--bg-muted)] border-b border-[var(--border-color)] font-mono text-[var(--text-muted)]">
-              <tr>
-                <th class="p-3">Component</th>
-                <th class="p-3">Service Tier</th>
-                <th class="p-3">Cost</th>
-              </tr>
-            </thead>
-            <tbody class="divide-y divide-[var(--border-subtle)] font-mono">
-              <tr>
-                <td class="p-3">Hosting & Global CDN</td>
-                <td class="p-3">Cloudflare Pages</td>
-                <td class="p-3 text-[var(--accent)] font-bold">$0.00</td>
-              </tr>
-              <tr>
-                <td class="p-3">Cron Automation</td>
-                <td class="p-3">GitHub Actions (public repo)</td>
-                <td class="p-3 text-[var(--accent)] font-bold">$0.00</td>
-              </tr>
-              <tr>
-                <td class="p-3">Database / Storage</td>
-                <td class="p-3">Git Repository (JSON flat file)</td>
-                <td class="p-3 text-[var(--accent)] font-bold">$0.00</td>
-              </tr>
-              <tr>
-                <td class="p-3">Translation & Summarization</td>
-                <td class="p-3">Gemini Free Allowance + Offline Rules</td>
-                <td class="p-3 text-[var(--accent)] font-bold">$0.00</td>
-              </tr>
-              <tr>
-                <td class="p-3">Full-text Search</td>
-                <td class="p-3">Client-side Instant Index</td>
-                <td class="p-3 text-[var(--accent)] font-bold">$0.00</td>
-              </tr>
-            </tbody>
-          </table>
         </div>
       </section>
     </div>
   </article>
 </Layout>
-

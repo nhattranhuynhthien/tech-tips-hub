@@ -10,44 +10,41 @@ const { lang } = Astro.props;
 const t = getTranslations(lang);
 ---
 
-<div id="search-modal" class="fixed inset-0 z-50 hidden bg-ink-950/60 backdrop-blur-sm transition-opacity" role="dialog" aria-modal="true" aria-label={t.nav.search}>
+<div id="search-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm transition-opacity font-mono" role="dialog" aria-modal="true" aria-label={t.nav.search}>
   <div class="min-h-screen px-4 text-center sm:block sm:p-0">
     <!-- Click backdrop to close -->
     <div id="search-backdrop" class="fixed inset-0" aria-hidden="true"></div>
 
-    <div class="inline-block w-full max-w-2xl my-12 overflow-hidden text-left align-middle transition-all transform bg-white dark:bg-[#1a1e24] border border-[#e5dcd0] dark:border-[#2d3540] rounded-xl shadow-2xl relative z-10">
+    <div class="inline-block w-full max-w-2xl my-12 overflow-hidden text-left align-middle transition-all transform bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-2xl shadow-2xl relative z-10">
       <!-- Search Input Header -->
-      <div class="flex items-center px-4 py-3 border-b border-[#e5dcd0] dark:border-[#2d3540] bg-[#faf7f2] dark:bg-[#15181d]">
-        <svg class="w-5 h-5 text-[#878074] dark:text-[#7d8897] mr-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <circle cx="11" cy="11" r="8" stroke-width="2"></circle>
-          <path d="m21 21-4.35-4.35" stroke-width="2" stroke-linecap="round"></path>
-        </svg>
+      <div class="flex items-center px-4 py-3 border-b border-[var(--border-color)] bg-[var(--bg-muted)]">
+        <span class="text-[var(--accent)] font-bold text-lg mr-3 select-none">$</span>
         <input
           id="search-input"
           type="search"
-          placeholder={t.nav.search_placeholder}
-          class="w-full bg-transparent text-lg text-[#1f1d1a] dark:text-[#f0ece3] placeholder-[#878074] dark:placeholder-[#7d8897] focus:outline-none"
+          placeholder={lang === 'vi' ? 'Tìm thủ thuật, phím tắt, terminal, Docker...' : 'Search tips, shortcuts, terminal, Docker...'}
+          class="w-full bg-transparent text-base text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:outline-none font-mono"
           autocomplete="off"
         />
-        <button id="search-close-btn" class="p-1 text-[#878074] hover:text-[#1f1d1a] dark:hover:text-[#f0ece3] rounded-md transition-colors" aria-label="Đóng tìm kiếm">
+        <button id="search-close-btn" class="p-1 text-[var(--text-muted)] hover:text-[var(--text-primary)] rounded-md transition-colors" aria-label="Đóng tìm kiếm">
           <kbd class="text-xs">Esc</kbd>
         </button>
       </div>
 
       <!-- Live Search Results List -->
-      <div id="search-results" class="max-h-96 overflow-y-auto p-3 space-y-2 divide-y divide-[#ece5da] dark:divide-[#242b35]">
-        <div id="search-empty-state" class="py-8 text-center text-sm text-[#878074] dark:text-[#7d8897]">
-          {lang === 'vi' ? 'Nhập từ khóa để tìm kiếm mẹo, phím tắt hoặc phần mềm...' : 'Type a query to search tips, keyboard shortcuts or tools...'}
+      <div id="search-results" class="max-h-96 overflow-y-auto p-3 space-y-2 divide-y divide-[var(--border-subtle)]">
+        <div id="search-empty-state" class="py-8 text-center text-xs text-[var(--text-muted)] font-mono">
+          {lang === 'vi' ? 'Nhập từ khóa để tìm kiếm thủ thuật tức thì...' : 'Type a query to search handcrafted tips instantly...'}
         </div>
       </div>
 
       <!-- Search Modal Footer -->
-      <div class="px-4 py-2 text-xs text-[#878074] dark:text-[#7d8897] bg-[#faf7f2] dark:bg-[#15181d] border-t border-[#e5dcd0] dark:border-[#2d3540] flex justify-between items-center">
+      <div class="px-4 py-2 text-xs text-[var(--text-muted)] bg-[var(--bg-muted)] border-t border-[var(--border-color)] flex justify-between items-center font-mono">
         <div class="flex items-center gap-2">
           <span><kbd class="text-[10px]">↑</kbd> <kbd class="text-[10px]">↓</kbd> {lang === 'vi' ? 'di chuyển' : 'navigate'}</span>
           <span><kbd class="text-[10px]">Enter</kbd> {lang === 'vi' ? 'chọn' : 'select'}</span>
         </div>
-        <span class="font-mono text-[11px] text-[#c85a17] dark:text-[#e07a38]">Tech Tips Hub Client Search</span>
+        <span class="text-[11px] text-[var(--accent)] font-bold">tips.hub instant search</span>
       </div>
     </div>
   </div>
@@ -60,102 +57,107 @@ const t = getTranslations(lang);
     const modal = document.getElementById('search-modal');
     const input = document.getElementById('search-input');
     const resultsContainer = document.getElementById('search-results');
-    const backdrop = document.getElementById('search-backdrop');
+    const openBtn = document.getElementById('open-search-btn');
     const closeBtn = document.getElementById('search-close-btn');
+    const backdrop = document.getElementById('search-backdrop');
 
-    async function loadData() {
+    async function loadTips() {
       if (isLoaded) return;
       try {
-        const res = await fetch('/api/tips.json');
-        if (res.ok) {
-          allTips = await res.json();
+        const resp = await fetch('/api/tips.json');
+        if (resp.ok) {
+          allTips = await resp.json();
           isLoaded = true;
         }
-      } catch (e) {
-        console.error('Failed to load search index:', e);
+      } catch (err) {
+        console.error('Failed to load tips for search:', err);
       }
     }
 
-    window.openSearchModal = function () {
-      modal.classList.remove('hidden');
-      loadData();
-      setTimeout(() => input.focus(), 50);
-    };
+    function openModal() {
+      modal?.classList.remove('hidden');
+      document.body.classList.add('overflow-hidden');
+      loadTips();
+      setTimeout(() => input?.focus(), 50);
+    }
 
-    window.closeSearchModal = function () {
-      modal.classList.add('hidden');
-      input.value = '';
-    };
-
-    backdrop?.addEventListener('click', window.closeSearchModal);
-    closeBtn?.addEventListener('click', window.closeSearchModal);
-
-    // Global keyboard listener (/ and Ctrl+K)
-    window.addEventListener('keydown', (e) => {
-      if ((e.key === '/' || (e.ctrlKey && e.key === 'k') || (e.metaKey && e.key === 'k')) && document.activeElement.tagName !== 'INPUT' && document.activeElement.tagName !== 'TEXTAREA') {
-        e.preventDefault();
-        window.openSearchModal();
+    function closeModal() {
+      modal?.classList.add('hidden');
+      document.body.classList.remove('overflow-hidden');
+      if (input) input.value = '';
+      if (resultsContainer) {
+        resultsContainer.innerHTML = `<div id="search-empty-state" class="py-8 text-center text-xs text-[var(--text-muted)] font-mono">${
+          lang === 'vi' ? 'Nhập từ khóa để tìm kiếm thủ thuật tức thì...' : 'Type a query to search handcrafted tips instantly...'
+        }</div>`;
       }
-      if (e.key === 'Escape' && !modal.classList.contains('hidden')) {
-        window.closeSearchModal();
+    }
+
+    // Keyboard Shortcuts (/ or Ctrl+K to open, Esc to close)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && !modal?.classList.contains('hidden')) {
+        closeModal();
+      } else if (
+        (e.key === '/' || ((e.metaKey || e.ctrlKey) && e.key === 'k')) &&
+        modal?.classList.contains('hidden') &&
+        document.activeElement?.tagName !== 'INPUT' &&
+        document.activeElement?.tagName !== 'TEXTAREA'
+      ) {
+        e.preventDefault();
+        openModal();
       }
     });
 
+    openBtn?.addEventListener('click', openModal);
+    closeBtn?.addEventListener('click', closeModal);
+    backdrop?.addEventListener('click', closeModal);
+
+    // Live search query matching
     input?.addEventListener('input', (e) => {
-      const q = e.target.value.trim().toLowerCase();
+      const q = e.target.value.toLowerCase().trim();
       if (!q) {
-        resultsContainer.innerHTML = `
-          <div class="py-8 text-center text-sm text-[#878074] dark:text-[#7d8897]">
-            ${lang === 'vi' ? 'Nhập từ khóa để tìm kiếm mẹo, phím tắt hoặc phần mềm...' : 'Type a query to search tips, keyboard shortcuts or tools...'}
-          </div>
-        `;
+        resultsContainer.innerHTML = `<div id="search-empty-state" class="py-8 text-center text-xs text-[var(--text-muted)] font-mono">${
+          lang === 'vi' ? 'Nhập từ khóa để tìm kiếm thủ thuật tức thì...' : 'Type a query to search handcrafted tips instantly...'
+        }</div>`;
         return;
       }
 
-      const words = q.split(/\s+/);
-      const matches = allTips.filter((item) => {
-        const titleText = (item.title[lang] || item.title['en'] || '').toLowerCase();
-        const summaryText = (item.summary[lang] || item.summary['en'] || '').toLowerCase();
-        const catsText = (item.categories || []).join(' ').toLowerCase();
-        const tagsText = (item.tags || []).join(' ').toLowerCase();
-        const sourceText = (item.source?.name || '').toLowerCase();
-        const combined = `${titleText} ${summaryText} ${catsText} ${tagsText} ${sourceText}`;
-        return words.every((w) => combined.includes(w));
-      }).slice(0, 15);
+      const matches = allTips
+        .filter((tip) => {
+          const tText = (tip.title[lang] || tip.title['en'] || '').toLowerCase();
+          const sText = (tip.summary[lang] || tip.summary['en'] || '').toLowerCase();
+          const cText = (tip.categories || []).join(' ').toLowerCase();
+          return tText.includes(q) || sText.includes(q) || cText.includes(q);
+        })
+        .slice(0, 8);
 
       if (matches.length === 0) {
-        resultsContainer.innerHTML = `
-          <div class="py-8 text-center text-sm text-[#878074] dark:text-[#7d8897]">
-            ${lang === 'vi' ? 'Không tìm thấy thủ thuật nào khớp với "' + q + '"' : 'No tips found for "' + q + '"'}
-          </div>
-        `;
+        resultsContainer.innerHTML = `<div class="py-8 text-center text-xs text-[var(--text-muted)] font-mono">${
+          lang === 'vi' ? 'Không tìm thấy thủ thuật nào khớp với từ khóa.' : 'No tips matched your query.'
+        }</div>`;
         return;
       }
 
-      resultsContainer.innerHTML = matches.map((item) => {
-        const itemTitle = item.title[lang] || item.title['en'];
-        const itemSummary = item.summary[lang] || item.summary['en'];
-        const detailUrl = `/${lang}/tip/${item.id}`;
-        return `
-          <a href="${detailUrl}" class="block p-3 rounded-lg hover:bg-[#faf7f2] dark:hover:bg-[#232932] transition-colors group">
-            <div class="flex items-center gap-2 mb-1">
-              <span class="text-xs font-semibold px-2 py-0.5 rounded border border-[#e5dcd0] dark:border-[#2e3642] bg-[#f4efe6] dark:bg-[#1b1f26] text-[#57524a] dark:text-[#bab2a5]">
-                ${item.source.name}
-              </span>
-              <span class="text-xs text-[#878074] dark:text-[#7d8897] capitalize">
-                ${item.categories.slice(0, 2).join(', ')}
-              </span>
-            </div>
-            <h4 class="text-sm font-semibold text-[#1f1d1a] dark:text-[#f0ece3] group-hover:text-[#c85a17] dark:group-hover:text-[#e07a38] transition-colors">
-              ${itemTitle}
-            </h4>
-            <p class="text-xs text-[#57524a] dark:text-[#bab2a5] line-clamp-1 mt-0.5">
-              ${itemSummary}
-            </p>
-          </a>
-        `;
-      }).join('');
+      resultsContainer.innerHTML = matches
+        .map((tip) => {
+          const title = tip.title[lang] || tip.title['en'] || '';
+          const summ = tip.summary[lang] || tip.summary['en'] || '';
+          return `
+            <a href="/${lang}/tip/${tip.id}" class="block p-3 rounded-xl hover:bg-[var(--bg-muted)] transition-colors group">
+              <div class="flex items-center gap-2 text-[11px] font-mono text-[var(--text-muted)] mb-1">
+                <span class="text-[var(--text-secondary)]">${tip.source.name}</span>
+                <span>·</span>
+                <span class="text-[var(--accent)] font-semibold">#${tip.categories[0] || 'tips'}</span>
+              </div>
+              <h4 class="text-sm font-bold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors leading-snug">
+                ${title}
+              </h4>
+              <p class="text-xs text-[var(--text-secondary)] line-clamp-1 mt-1">
+                ${summ}
+              </p>
+            </a>
+          `;
+        })
+        .join('');
     });
   })();
 </script>
-

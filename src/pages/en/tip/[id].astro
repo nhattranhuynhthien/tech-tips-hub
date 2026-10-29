@@ -1,8 +1,7 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
-import TipCard from '../../../components/TipCard.astro';
 import { getAllTips, type Tip } from '../../../lib/data';
-import { getTranslations, formatTemplate } from '../../../lib/i18n';
+import { getTranslations } from '../../../lib/i18n';
 
 export async function getStaticPaths() {
   const tips = getAllTips();
@@ -25,195 +24,248 @@ const relatedTips = allTips
   .filter((tItem) => tItem.id !== tip.id && tItem.categories.some((c) => tip.categories.includes(c)))
   .slice(0, 3);
 
-const titleText = tip.title[lang] || tip.title['vi'] || '';
-const summaryText = tip.summary[lang] || tip.summary['vi'] || '';
-const isMachineTranslated = tip.translated && tip.translated[lang];
+const titleText = tip.title[lang] || tip.title['en'] || Object.values(tip.title)[0] || '';
+const origTitle = tip.title[tip.original_lang] || tip.title['en'] || titleText;
 
-let sourceDomain = 'example.com';
-try {
-  sourceDomain = new URL(tip.url).hostname;
-} catch {}
-const faviconUrl = `https://www.google.com/s2/favicons?domain=${sourceDomain}&sz=32`;
+const summaryText = tip.summary[lang] || tip.summary['en'] || Object.values(tip.summary)[0] || '';
+const origSummary = tip.summary[tip.original_lang] || tip.summary['en'] || summaryText;
+
+const isMachineTranslated = tip.translated && tip.translated[lang] === 'machine';
 const pageCanonicalUrl = `https://tech-tips-hub.pages.dev/en/tip/${tip.id}`;
 
+// Format date
 let formattedDate = '';
 try {
   const d = new Date(tip.published_at);
   if (!isNaN(d.getTime())) {
-    formattedDate = d.toLocaleDateString('en-US', {
-      year: 'numeric',
-      month: 'long',
-      day: 'numeric',
-    });
+    const day = String(d.getDate()).padStart(2, '0');
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const year = d.getFullYear();
+    formattedDate = `${day}/${month}/${year}`;
   }
-} catch {}
+} catch {
+  formattedDate = '';
+}
+
+const primaryCat = tip.categories[0] || 'tips';
 ---
 
 <Layout lang={lang} title={titleText} description={summaryText}>
-  <!-- Editorial Breadcrumb -->
-  <nav class="mb-6 flex items-center gap-2 text-xs font-mono text-[var(--text-muted)]" aria-label="Breadcrumb">
-    <a href={`/${lang}`} class="hover:text-[var(--accent)] transition-colors">Notebook</a>
-    <span>/</span>
-    <a href={`/${lang}/category/${tip.categories[0]}`} class="capitalize hover:text-[var(--accent)] transition-colors">
-      #{tip.categories[0]}
-    </a>
-    <span>/</span>
-    <span class="truncate max-w-[200px] text-[var(--text-secondary)]">{tip.id}</span>
-  </nav>
-
-  <article class="max-w-3xl mx-auto bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-2xl p-6 sm:p-10 shadow-craft mb-12">
-    <!-- Masthead Ledger Info -->
-    <div class="flex flex-wrap items-center justify-between gap-3 pb-6 border-b border-[var(--border-subtle)] mb-6 text-xs font-mono">
-      <!-- Source Badge -->
-      <a
-        href={`/${lang}/sources#${tip.source.id}`}
-        class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-muted)] text-[var(--text-primary)] hover:border-[var(--accent)] transition-colors font-medium"
-      >
-        <img src={faviconUrl} alt="" width="16" height="16" class="w-4 h-4 rounded-sm border border-[var(--border-subtle)]" onerror="this.style.display='none'" />
-        <span>Source: <strong>{tip.source.name}</strong></span>
+  <div class="max-w-6xl mx-auto">
+    <!-- Breadcrumb with Back Arrow (Matching Mockup Page 6: ← tips / [category] /) -->
+    <nav class="mb-6 flex items-center gap-2 text-xs font-mono text-[var(--text-muted)]" aria-label="Breadcrumb">
+      <a href={`/${lang}`} class="hover:text-[var(--text-primary)] transition-colors flex items-center gap-1">
+        <span>←</span>
+        <span>tips</span>
       </a>
+      <span>/</span>
+      <span class="text-[var(--text-secondary)] lowercase">{primaryCat}</span>
+      <span>/</span>
+    </nav>
 
-      <!-- Date, Reading Time & Difficulty Badge -->
-      <div class="flex items-center gap-3">
-        <span class={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium border ${
-          tip.difficulty === 'easy'
-            ? 'bg-[var(--badge-easy-bg)] text-[var(--badge-easy-text)] border-[var(--badge-easy-border)]'
-            : tip.difficulty === 'advanced'
-              ? 'bg-[var(--badge-adv-bg)] text-[var(--badge-adv-text)] border-[var(--badge-adv-border)]'
-              : 'bg-[var(--badge-med-bg)] text-[var(--badge-med-text)] border-[var(--badge-med-border)]'
-        }`}>
-          {tip.difficulty === 'easy' && <span class="w-1.5 h-1.5 rounded-full bg-current"></span>}
-          {tip.difficulty === 'medium' && <span class="w-1.5 h-1.5 rotate-45 bg-current"></span>}
-          {tip.difficulty === 'advanced' && <span class="w-0 h-0 border-l-[3px] border-l-transparent border-r-[3px] border-r-transparent border-b-[5px] border-b-current"></span>}
-          <span>{t.difficulty[tip.difficulty]}</span>
-        </span>
+    <!-- Main Content & Sidebar Layout (Matching Mockup Page 6) -->
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-12 items-start">
+      <!-- Left 2 Cols: Main Tip Content -->
+      <article class="lg:col-span-2 space-y-6">
+        <!-- Meta Row: source · author · date -->
+        <div class="text-xs font-mono text-[var(--text-muted)] lowercase flex items-center gap-2 flex-wrap">
+          <span class="text-[var(--text-secondary)] font-medium">{tip.source.name}</span>
+          {tip.author && (
+            <>
+              <span>·</span>
+              <span>{tip.author}</span>
+            </>
+          )}
+          {formattedDate && (
+            <>
+              <span>·</span>
+              <span>{formattedDate}</span>
+            </>
+          )}
+        </div>
 
-        {formattedDate && (
-          <span class="text-[var(--text-muted)]">
-            {formattedDate}
-          </span>
+        <!-- Huge Headline -->
+        <h1 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight leading-snug" id="tip-headline">
+          {titleText}
+        </h1>
+
+        <!-- Tags & Difficulty -->
+        <div class="flex items-center gap-2.5 flex-wrap text-xs font-mono">
+          {tip.categories.map((cat) => (
+            <span class="text-[var(--text-muted)]">
+              #{cat}
+            </span>
+          ))}
+          {tip.tags.map((tag) => (
+            <span class="text-[var(--text-muted)]">
+              #{tag}
+            </span>
+          ))}
+          {tip.difficulty && (
+            <span class="text-[var(--text-secondary)] font-semibold ml-1">
+              Difficulty: {t.difficulty[tip.difficulty]}
+            </span>
+          )}
+        </div>
+
+        <!-- Bilingual Tabs Toggle -->
+        {tip.original_lang !== 'en' && (
+          <div class="inline-flex p-0.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-xs font-mono" id="bilingual-tabs">
+            <button
+              id="tab-en"
+              type="button"
+              class="px-3 py-1.5 rounded-lg transition-all bg-[var(--accent-hero)] text-black font-bold shadow-sm"
+            >
+              English {isMachineTranslated ? '(auto-translated)' : ''}
+            </button>
+            <button
+              id="tab-orig"
+              type="button"
+              class="px-3 py-1.5 rounded-lg transition-all text-[var(--text-muted)] hover:text-[var(--text-primary)]"
+            >
+              Original
+            </button>
+          </div>
         )}
-      </div>
-    </div>
 
-    <!-- Title in Large Serif -->
-    <h1 class="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[var(--text-primary)] leading-tight mb-6">
-      {titleText}
-    </h1>
-
-    <!-- Machine Translation Notice (Transparency rule) -->
-    {isMachineTranslated && (
-      <div class="mb-6 p-4 rounded-xl border border-[var(--accent-border)] bg-[var(--accent-bg)] text-xs text-[var(--accent)] flex items-start gap-3">
-        <svg class="w-4 h-4 shrink-0 mt-0.5 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <circle cx="12" cy="12" r="10" stroke-width="2"></circle>
-          <line x1="12" y1="8" x2="12" y2="12" stroke-width="2"></line>
-          <line x1="12" y1="16" x2="12.01" y2="16" stroke-width="2"></line>
-        </svg>
-        <div class="leading-relaxed">
-          <p class="font-bold mb-0.5 font-mono uppercase tracking-wide">Machine Translated</p>
-          <p class="text-[var(--text-secondary)]">
-            This title and excerpt were automatically translated to aid swift discovery. For definitive and complete walkthroughs, please open the original publication link below.
+        <!-- Summary Box -->
+        <div class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-5">
+          <h2 class="text-[11px] font-mono font-bold tracking-wider text-[var(--text-muted)] uppercase mb-2">
+            SUMMARY
+          </h2>
+          <p class="text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed" id="tip-summary-text">
+            {summaryText}
           </p>
         </div>
-      </div>
-    )}
 
-    <!-- Editorial Summary Content -->
-    <div class="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed space-y-4 mb-8">
-      <p>{summaryText}</p>
+        <!-- Big Golden Callout Box (Matching Mockup Page 6) -->
+        <div class="rounded-2xl bg-[var(--accent-hero)] text-[#0e0f13] p-6 sm:p-7 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5 shadow-sm">
+          <div class="space-y-1">
+            <h3 class="font-bold text-lg text-[#0e0f13]">
+              Full article available at original source
+            </h3>
+            <p class="text-xs sm:text-sm text-[#1c1d22] font-medium leading-relaxed max-w-md">
+              Read directly on {tip.source.name} to support the author and view complete steps.
+            </p>
+          </div>
+
+          <a
+            href={tip.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="shrink-0 px-5 py-2.5 rounded-xl bg-black text-white hover:bg-zinc-800 transition-colors font-bold text-xs inline-flex items-center gap-1.5 shadow-sm"
+          >
+            <span>Read on {tip.source.name} ↗</span>
+          </a>
+        </div>
+
+        <!-- Action Row -->
+        <div class="flex items-center gap-2 pt-2 text-xs font-mono flex-wrap">
+          <button
+            type="button"
+            class="bookmark-btn px-3 py-1.5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--border-strong)] transition-all inline-flex items-center gap-1.5"
+            data-id={tip.id}
+          >
+            <span>Save for later</span>
+          </button>
+
+          <button
+            type="button"
+            id="share-btn"
+            class="px-3 py-1.5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--border-strong)] transition-all"
+            data-url={pageCanonicalUrl}
+          >
+            Share
+          </button>
+
+          <a
+            href={`https://github.com/nhattranhuynhthien/tech-tips-hub/issues/new?title=Report+Issue+${tip.id}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="px-3 py-1.5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--border-strong)] transition-all"
+          >
+            Report issue
+          </a>
+        </div>
+
+        <!-- Giscus Comments Placeholder -->
+        <div class="mt-8 pt-8 border-t border-[var(--border-color)]">
+          <div class="rounded-xl border border-dashed border-[var(--border-color)] bg-[var(--bg-surface)] p-6 text-center text-xs font-mono text-[var(--text-muted)]">
+            [Giscus Discussion Box]
+          </div>
+        </div>
+      </article>
+
+      <!-- Right 1 Col: Sidebar -->
+      <aside class="space-y-6">
+        <!-- Box 1: RELATED TIPS -->
+        <div class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-5">
+          <h3 class="text-xs font-mono font-bold uppercase tracking-wider text-[var(--text-muted)] mb-4">
+            RELATED TIPS
+          </h3>
+          <ul class="space-y-4">
+            {relatedTips.map((r) => (
+              <li class="border-b border-[var(--border-subtle)] pb-3 last:border-b-0 last:pb-0">
+                <a
+                  href={`/${lang}/tip/${r.id}`}
+                  class="text-xs sm:text-sm font-bold text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors leading-snug block mb-1"
+                >
+                  {r.title[lang] || r.title['en']}
+                </a>
+                <span class="text-[11px] font-mono text-[var(--text-muted)]">
+                  {r.source.name}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <!-- Box 2: ABOUT THIS SUMMARY -->
+        <div class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-5">
+          <h3 class="text-xs font-mono font-bold uppercase tracking-wider text-[var(--text-muted)] mb-3">
+            ABOUT THIS SUMMARY
+          </h3>
+          <p class="text-xs font-mono text-[var(--text-secondary)] leading-relaxed">
+            Tech Tips Hub only stores headlines and concise excerpts. Translations may be machine generated; please refer to the original article for canonical details.
+          </p>
+        </div>
+      </aside>
     </div>
-
-    <!-- Category & Tags Metadata -->
-    <div class="flex flex-wrap items-center gap-2 mb-8 pt-4 border-t border-[var(--border-subtle)]">
-      <span class="text-xs text-[var(--text-muted)] font-mono">Topics:</span>
-      {tip.categories.map((c) => (
-        <a
-          href={`/${lang}/category/${c}`}
-          class="px-2.5 py-1 rounded-md text-xs font-mono font-medium bg-[var(--bg-muted)] border border-[var(--border-subtle)] text-[var(--text-secondary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors capitalize"
-        >
-          #{c}
-        </a>
-      ))}
-      {tip.tags.map((tg) => (
-        <span class="px-2 py-0.5 rounded text-xs font-mono text-[var(--text-muted)]">
-          #{tg}
-        </span>
-      ))}
-    </div>
-
-    <!-- Action Tools Bar: Read Original + Copy Link + Share -->
-    <div class="p-6 rounded-xl border-2 border-[var(--accent)] bg-[var(--bg-muted)] flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
-      <div>
-        <h4 class="text-base font-serif font-bold text-[var(--text-primary)] mb-1">
-          Read the full author's guide
-        </h4>
-        <p class="text-xs text-[var(--text-secondary)] max-w-md">
-          Head over to <strong>{tip.source.name}</strong> for original high-resolution screenshots, step-by-step videos, and reader discussions.
-        </p>
-      </div>
-
-      <div class="flex items-center gap-2 shrink-0">
-        <!-- Copy link button -->
-        <button
-          type="button"
-          class="copy-link-btn px-3 py-3 rounded-xl font-mono text-xs font-semibold border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
-          data-url={pageCanonicalUrl}
-          title="Copy link"
-        >
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" stroke-width="2"></rect>
-            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" stroke-width="2"></path>
-          </svg>
-        </button>
-
-        <!-- Read Original External Button -->
-        <a
-          href={tip.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-bold text-sm bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] transition-all shadow-sm"
-        >
-          <span>{formatTemplate(t.detail.original_link, { source: tip.source.name })}</span>
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-            <polyline points="15 3 21 3 21 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
-            <line x1="10" y1="14" x2="21" y2="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
-          </svg>
-        </a>
-      </div>
-    </div>
-
-    <!-- Legal & Attribution Box -->
-    <div class="p-4 rounded-lg border border-[var(--border-color)] bg-[var(--bg-primary)] text-xs text-[var(--text-muted)] leading-relaxed flex items-start justify-between gap-4">
-      <div>
-        <p class="font-semibold text-[var(--text-secondary)] mb-1">{t.detail.disclaimer_title}</p>
-        <p>{t.detail.disclaimer_body}</p>
-      </div>
-      <a
-        href={`/${lang}/copyright`}
-        class="shrink-0 text-[var(--accent)] hover:underline font-mono"
-      >
-        {t.detail.report_tip} →
-      </a>
-    </div>
-  </article>
-
-  <!-- Related Tips Section -->
-  {relatedTips.length > 0 && (
-    <section class="max-w-6xl mx-auto">
-      <div class="flex items-center justify-between mb-6">
-        <h3 class="text-xl font-serif font-bold text-[var(--text-primary)]">
-          {t.detail.related_tips}
-        </h3>
-        <a href={`/${lang}/category/${tip.categories[0]}`} class="text-xs font-mono text-[var(--accent)] hover:underline">
-          Explore more in #{tip.categories[0]} →
-        </a>
-      </div>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {relatedTips.map((rTip) => (
-          <TipCard tip={rTip} lang={lang} />
-        ))}
-      </div>
-    </section>
-  )}
+  </div>
 </Layout>
+
+<script is:inline define:vars={{ titleText, origTitle, summaryText, origSummary }}>
+  (function () {
+    const tabEn = document.getElementById('tab-en');
+    const tabOrig = document.getElementById('tab-orig');
+    const headline = document.getElementById('tip-headline');
+    const summary = document.getElementById('tip-summary-text');
+    const shareBtn = document.getElementById('share-btn');
+
+    tabEn?.addEventListener('click', () => {
+      tabEn.className = 'px-3 py-1.5 rounded-lg transition-all bg-[var(--accent-hero)] text-black font-bold shadow-sm';
+      if (tabOrig) tabOrig.className = 'px-3 py-1.5 rounded-lg transition-all text-[var(--text-muted)] hover:text-[var(--text-primary)]';
+      if (headline) headline.textContent = titleText;
+      if (summary) summary.textContent = summaryText;
+    });
+
+    tabOrig?.addEventListener('click', () => {
+      tabOrig.className = 'px-3 py-1.5 rounded-lg transition-all bg-[var(--accent-hero)] text-black font-bold shadow-sm';
+      if (tabEn) tabEn.className = 'px-3 py-1.5 rounded-lg transition-all text-[var(--text-muted)] hover:text-[var(--text-primary)]';
+      if (headline) headline.textContent = origTitle;
+      if (summary) summary.textContent = origSummary;
+    });
+
+    shareBtn?.addEventListener('click', () => {
+      const url = shareBtn.getAttribute('data-url') || window.location.href;
+      if (navigator.clipboard) {
+        navigator.clipboard.writeText(url).then(() => {
+          shareBtn.textContent = 'Link copied!';
+          setTimeout(() => {
+            shareBtn.textContent = 'Share';
+          }, 2000);
+        });
+      }
+    });
+  })();
+</script>

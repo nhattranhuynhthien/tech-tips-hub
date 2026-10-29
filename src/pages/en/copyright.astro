@@ -6,67 +6,60 @@ const lang = 'en';
 const t = getTranslations(lang);
 ---
 
-<Layout lang={lang} title="Copyright Policy & Takedown Requests" description="Fair use principles, ethical content aggregation standards, and instant removal guidelines.">
-  <article class="max-w-3xl mx-auto bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-2xl p-6 sm:p-10 shadow-craft mb-12">
-    <!-- Header -->
-    <header class="pb-6 border-b border-[var(--border-subtle)] mb-8">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[var(--accent-bg)] text-[var(--accent)] border border-[var(--accent-border)] text-xs font-mono font-semibold mb-3">
-        <span>⚖️ Legal Compliance & Fair Use</span>
+<Layout lang={lang} title="Copyright Policy & Takedown" description="Policies regarding original creator attribution, legal aggregation boundaries, and takedown procedures.">
+  <article class="max-w-4xl mx-auto space-y-8">
+    <header class="pb-6 border-b border-[var(--border-color)]">
+      <div class="text-xs font-mono font-bold text-[var(--accent)] mb-2">
+        $ legal --copyright-policy
       </div>
-      <h1 class="text-3xl sm:text-4xl font-serif font-bold text-[var(--text-primary)] mb-3">
-        Copyright Policy & Takedown Notice
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-3">
+        Copyright Policy & Takedown Procedure
       </h1>
-      <p class="text-base text-[var(--text-secondary)] leading-relaxed">
-        We firmly respect the intellectual property rights of creators, bloggers, and online publications.
+      <p class="text-sm text-[var(--text-secondary)] leading-relaxed font-mono">
+        We are deeply committed to respecting the intellectual property rights of creators and publishing organizations.
       </p>
     </header>
 
-    <div class="space-y-6 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed">
-      <section>
-        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
-          1. Aggregator Model (Fair Use & Direct Linking)
+    <div class="space-y-6 text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed font-sans">
+      <section class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 space-y-3">
+        <h2 class="text-base font-bold text-[var(--text-primary)] font-mono">
+          # 1. Aggregator Model (Fair Use & Direct Attribution)
         </h2>
-        <p class="mb-3">
-          Tech Tips Hub operates purely as an indexer and directory:
+        <p>
+          tips.hub operates strictly as an excerpt aggregator:
         </p>
-        <ul class="list-disc list-inside space-y-2 text-xs sm:text-sm pl-2">
-          <li><strong>No Full Article Reproduction:</strong> We never copy or reproduce entire articles. We store only brief excerpts (1-2 sentences) and normalized headlines.</li>
-          <li><strong>Direct Canonical Attribution:</strong> Every entry contains an explicit, prominent "Read Original" link driving readership directly back to the original publisher.</li>
-          <li><strong>No Media Scraping:</strong> We do not download or host original author images, attachments, or videos.</li>
-          <li><strong>Robots.txt & RSS Adherence:</strong> Our crawlers read public feeds and respect standard web etiquette and rate limits.</li>
+        <ul class="list-disc list-inside space-y-2 text-xs font-mono text-[var(--text-secondary)] pl-2">
+          <li><strong>No Full-Text Copying:</strong> We never reproduce full articles. Only standardized titles and short excerpts (under 280 characters) are indexed.</li>
+          <li><strong>Always Direct Links:</strong> Every tip links directly to the canonical source URL.</li>
+          <li><strong>No Image Re-hosting:</strong> We do not download or host source images.</li>
+          <li><strong>Robots.txt Adherence:</strong> Our crawlers only process public RSS/Atom feeds and honor crawl-delay guidelines.</li>
         </ul>
       </section>
 
-      <section>
-        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
-          2. Machine Translation Notice
+      <section class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 space-y-3">
+        <h2 class="text-base font-bold text-[var(--text-primary)] font-mono">
+          # 2. Machine Translations
         </h2>
         <p>
-          Bilingual titles and summaries are generated via automated machine translation models to aid cross-linguistic discovery. The original publication remains the authoritative, definitive reference for all technical instructions.
+          Translations are automated machine outputs to help developers across languages. If any nuance is lost, the author's original article is always the sole authority.
         </p>
       </section>
 
-      <section>
-        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
-          3. Takedown & Content Removal Requests
+      <section class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 space-y-3">
+        <h2 class="text-base font-bold text-[var(--text-primary)] font-mono">
+          # 3. Takedown Requests
         </h2>
-        <p class="mb-3">
-          If you are an author or publisher and prefer that your feed or specific articles not be referenced on Tech Tips Hub, we will swiftly honor your request:
+        <p>
+          If you are an author or publisher and prefer your content excluded from tips.hub, simply let us know:
         </p>
-        <div class="p-5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-muted)] space-y-3">
-          <p class="font-semibold text-xs sm:text-sm text-[var(--text-primary)]">
-            How to request removal:
-          </p>
-          <ul class="list-disc list-inside space-y-1.5 text-xs">
-            <li>Open a <strong>GitHub Issue</strong> on our public repository tagged with <code class="px-1.5 py-0.5 rounded bg-[var(--bg-surface)] font-mono">takedown-request</code>.</li>
-            <li>Specify the article URL or full domain you wish excluded.</li>
-          </ul>
-          <p class="text-xs text-[var(--text-muted)]">
-            Upon receipt, your domain or URL pattern will be appended to <code class="font-mono">config/blocklist.yml</code>, permanently pruning your content in the subsequent automated build.
-          </p>
-        </div>
+        <ul class="list-disc list-inside space-y-2 text-xs font-mono text-[var(--text-secondary)] pl-2">
+          <li>Open an Issue on our GitHub Repository: <code>[Takedown] &lt;URL or Source Name&gt;</code>.</li>
+          <li>Email our maintainers: <code>tips-admin@users.noreply.github.com</code>.</li>
+        </ul>
+        <p class="text-xs font-mono text-[var(--accent)] mt-2">
+          We guarantee removal within 24–48 business hours.
+        </p>
       </section>
     </div>
   </article>
 </Layout>
-

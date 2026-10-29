@@ -1,427 +1,458 @@
 ---
 import Layout from '../../layouts/Layout.astro';
 import TipCard from '../../components/TipCard.astro';
-import CompactTipRow from '../../components/CompactTipRow.astro';
 import TrickOfTheDay from '../../components/TrickOfTheDay.astro';
-import { getAllTips, getTrickOfTheDay, getCategoriesWithCounts } from '../../lib/data';
+import { getAllTips, getTrickOfTheDay, getAllCategories } from '../../lib/data';
 import { getTranslations } from '../../lib/i18n';
 
 const lang = 'vi';
 const t = getTranslations(lang);
 const tips = getAllTips();
 const trickOfDay = getTrickOfTheDay();
-const categoriesWithCounts = getCategoriesWithCounts();
+const allCategories = getAllCategories();
 
-// Trending tags
-const trendingTags = [
-  'windows11', 'shortcuts', 'terminal', 'docker', 'privacy', 'battery', 'ai', 'performance'
+// List of categories for sidebar matching Page 1
+const sidebarCategories = [
+  { id: 'all', label: '# tất cả' },
+  { id: 'windows', label: '# windows' },
+  { id: 'macos', label: '# macos' },
+  { id: 'linux', label: '# linux' },
+  { id: 'android', label: '# android' },
+  { id: 'ios', label: '# ios' },
+  { id: 'security', label: '# bảo mật' },
+  { id: 'dev', label: '# lập trình' },
+  { id: 'hardware', label: '# phần cứng' },
+  { id: 'office', label: '# văn phòng' },
+  { id: 'ai', label: '# ai' },
 ];
 ---
 
 <Layout lang={lang} title={t.site.tagline}>
-  <!-- Hero Section (Phong cách Sổ tay Tạp chí Kỹ thuật - Editorial Tech Journal) -->
-  <header class="mb-10 pb-8 border-b border-[var(--border-color)]">
-    <!-- Masthead Rule: Issue Details -->
-    <div class="flex items-center justify-between text-[11px] font-mono uppercase tracking-wider text-[var(--text-muted)] border-b border-[var(--border-subtle)] pb-2.5 mb-6 flex-wrap gap-2">
-      <div class="flex items-center gap-2">
-        <span class="font-bold text-[var(--accent)]">Tech Tips Hub</span>
-        <span>•</span>
-        <span>Ấn phẩm Sổ tay Số</span>
-        <span>•</span>
-        <span>Song ngữ EN / VI</span>
+  <!-- Mobile Search Bar (Matching Mockup Page 2) -->
+  <div class="sm:hidden mb-4">
+    <div class="relative">
+      <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-[var(--accent)] font-mono font-bold">
+        $
       </div>
-      <div class="flex items-center gap-2">
-        <span>Chi phí 0đ</span>
-        <span>•</span>
-        <span>Kho lưu trữ: {tips.length} thủ thuật</span>
-      </div>
+      <input
+        id="mobile-search-input"
+        type="search"
+        placeholder="Tìm thủ thuật..."
+        class="w-full pl-8 pr-4 py-2 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-sm text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:border-[var(--accent)] shadow-sm font-mono"
+      />
     </div>
+  </div>
 
-    <div class="max-w-3xl">
-      <h1 class="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-tight text-[var(--text-primary)] mb-4 leading-tight">
-        Sổ tay thủ thuật của dân công nghệ.
-      </h1>
+  <!-- Mobile Horizontal Category Scroll (Matching Mockup Page 2) -->
+  <div class="md:hidden flex items-center gap-2 overflow-x-auto pb-3 mb-6 scrollbar-none" id="mobile-category-bar">
+    {sidebarCategories.map((cat, idx) => (
+      <button
+        type="button"
+        class={`mobile-cat-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-semibold transition-all ${
+          idx === 0
+            ? 'bg-[var(--accent-hero)] text-black font-bold shadow-sm'
+            : 'border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)]'
+        }`}
+        data-category={cat.id}
+      >
+        {cat.id === 'all' ? 'tất cả' : cat.id}
+      </button>
+    ))}
+  </div>
 
-      <p class="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed mb-6">
-        Tuyển tập mẹo hay, phím tắt thực chiến và cẩm nang xử lý sự cố cho Windows, macOS, Linux, Android, iOS và công cụ phát triển. Luôn ghi nguồn gốc, tinh gọn và hoàn toàn miễn phí.
-      </p>
-
-      <!-- In-Hero Fast Search Bar -->
-      <div class="relative max-w-xl mb-4">
-        <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-[var(--text-muted)]">
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <circle cx="11" cy="11" r="8" stroke-width="2"></circle>
-            <path d="m21 21-4.35-4.35" stroke-width="2" stroke-linecap="round"></path>
-          </svg>
-        </div>
-        <input
-          id="hero-search-input"
-          type="search"
-          placeholder="Lọc nhanh: gõ từ khóa, phím tắt, Windows 11, Docker, terminal..."
-          class="w-full pl-10 pr-12 py-2.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-sm text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:border-[var(--accent)] focus:bg-[var(--bg-primary)] shadow-sm transition-all"
-        />
-        <div class="absolute inset-y-0 right-0 pr-3 flex items-center">
-          <kbd class="text-[10px]">/</kbd>
-        </div>
-      </div>
-
-      <!-- Trending Quick Filter Tags -->
-      <div class="flex flex-wrap items-center gap-1.5 text-xs font-mono">
-        <span class="text-[var(--text-muted)] font-medium">Xu hướng:</span>
-        {trendingTags.map((tag) => (
-          <button
-            type="button"
-            class="hero-tag-btn px-2 py-0.5 rounded text-[11px] border border-[var(--border-subtle)] bg-[var(--bg-muted)] text-[var(--text-secondary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
-            data-tag={tag}
-          >
-            #{tag}
-          </button>
-        ))}
-      </div>
-    </div>
-  </header>
-
-  <!-- Trick of the Day -->
+  <!-- Trick of the Day (Matching Mockup Page 1 & 2) -->
   {trickOfDay && <TrickOfTheDay tip={trickOfDay} lang={lang} />}
 
-  <!-- Main Content Controls: Filter Pills & View Mode Switcher -->
-  <section class="mb-8" aria-label="Bộ lọc thủ thuật">
-    <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
+  <!-- Main 2-Column Content Layout (Matching Mockup Page 1) -->
+  <div class="flex flex-col md:flex-row items-start gap-8 lg:gap-12">
+    <!-- Left Sidebar: Categories, Difficulty, Sort (Desktop) -->
+    <aside class="w-48 lg:w-56 shrink-0 hidden md:block space-y-7 sticky top-20 text-xs font-mono">
+      <!-- 1. Danh mục -->
       <div>
-        <h2 class="text-xl font-serif font-bold text-[var(--text-primary)]">
-          {t.home.latest_tips}
-        </h2>
-        <p class="text-xs text-[var(--text-muted)] font-mono mt-0.5">
-          {t.home.latest_tips_sub}
-        </p>
+        <h3 class="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-3">
+          DANH MỤC
+        </h3>
+        <ul class="space-y-1.5" id="desktop-category-list">
+          {sidebarCategories.map((cat, idx) => (
+            <li>
+              <button
+                type="button"
+                class={`desktop-cat-btn text-left w-full py-1 transition-colors ${
+                  idx === 0
+                    ? 'text-[var(--accent)] font-bold'
+                    : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                }`}
+                data-category={cat.id}
+              >
+                {cat.label}
+              </button>
+            </li>
+          ))}
+        </ul>
       </div>
 
-      <!-- Right Controls: Sort, View Mode Switcher & Difficulty Filter -->
-      <div class="flex items-center gap-2 sm:gap-3 text-xs flex-wrap">
-        <!-- Sort Toggle (Hay nhất / Mới nhất) -->
-        <div class="inline-flex p-0.5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)]" id="sort-filter-group" title="Sắp xếp danh sách">
+      <!-- 2. Độ khó -->
+      <div>
+        <h3 class="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-2.5">
+          ĐỘ KHÓ
+        </h3>
+        <div class="flex items-center gap-1.5 flex-wrap" id="desktop-diff-group">
           <button
             type="button"
-            class="sort-btn px-2.5 py-1 rounded text-xs font-mono font-medium transition-colors bg-[var(--accent)] text-white"
+            class="diff-pill-btn px-2.5 py-1 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-all"
+            data-diff="all"
+          >
+            Tất cả
+          </button>
+          <button
+            type="button"
+            class="diff-pill-btn px-2.5 py-1 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+            data-diff="easy"
+          >
+            Dễ
+          </button>
+          <button
+            type="button"
+            class="diff-pill-btn px-2.5 py-1 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+            data-diff="medium"
+          >
+            Vừa
+          </button>
+          <button
+            type="button"
+            class="diff-pill-btn px-2.5 py-1 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+            data-diff="advanced"
+          >
+            Nâng cao
+          </button>
+        </div>
+      </div>
+
+      <!-- 3. Sắp xếp -->
+      <div>
+        <h3 class="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-2.5">
+          SẮP XẾP
+        </h3>
+        <div class="inline-flex p-0.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-xs" id="desktop-sort-group">
+          <button
+            type="button"
+            class="sort-pill-btn px-3 py-1 rounded-lg transition-all bg-[var(--accent-hero)] text-black font-bold shadow-sm"
             data-sort="best"
           >
             Hay nhất
           </button>
           <button
             type="button"
-            class="sort-btn px-2.5 py-1 rounded text-xs font-mono font-medium transition-colors text-[var(--text-secondary)] hover:text-[var(--accent)]"
+            class="sort-pill-btn px-3 py-1 rounded-lg transition-all text-[var(--text-muted)] hover:text-[var(--text-primary)]"
             data-sort="newest"
           >
             Mới nhất
           </button>
         </div>
+      </div>
+    </aside>
 
-        <!-- View Mode Switcher (Grid vs Compact List) -->
-        <div class="inline-flex items-center p-0.5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)]" title="Chuyển chế độ hiển thị">
+    <!-- Right Stream: Tips List & Pagination -->
+    <div class="flex-1 w-full min-w-0">
+      <!-- Tips List Container -->
+      <div id="tips-stream" class="space-y-4">
+        {tips.map((tip) => (
+          <TipCard tip={tip} lang={lang} />
+        ))}
+      </div>
+
+      <!-- Empty state when search or filter has no match -->
+      <div id="empty-stream-msg" class="hidden py-16 text-center border border-dashed border-[var(--border-color)] rounded-xl bg-[var(--bg-surface)]">
+        <p class="text-sm font-mono text-[var(--text-secondary)] mb-3">
+          Không tìm thấy bài viết nào khớp với bộ lọc hiện tại.
+        </p>
+        <button
+          id="reset-filter-btn"
+          type="button"
+          class="px-4 py-2 rounded-xl text-xs font-mono font-bold bg-[var(--accent-hero)] text-black"
+        >
+          Xóa bộ lọc
+        </button>
+      </div>
+
+      <!-- Pagination (Matching Mockup Page 1 & Page 4) -->
+      <div id="pagination-wrapper" class="mt-8 pt-6 border-t border-[var(--border-color)] flex flex-col items-center gap-2">
+        <!-- Numbered Pagination Bar (Desktop & Mobile) -->
+        <div class="flex items-center gap-1.5 text-xs font-mono" id="pagination-controls">
           <button
-            id="view-grid-btn"
+            id="page-prev-btn"
             type="button"
-            class="view-mode-btn p-1.5 rounded-md border border-[var(--accent)] bg-[var(--accent)] text-white shadow-sm transition-all"
-            aria-label="Chế độ lưới thẻ (Grid view)"
-            title="Chế độ lưới thẻ (Grid view)"
+            class="px-3 py-1.5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--border-strong)] transition-all disabled:opacity-30 disabled:pointer-events-none"
           >
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <rect width="7" height="7" x="3" y="3" rx="1"></rect>
-              <rect width="7" height="7" x="14" y="3" rx="1"></rect>
-              <rect width="7" height="7" x="14" y="14" rx="1"></rect>
-              <rect width="7" height="7" x="3" y="14" rx="1"></rect>
-            </svg>
+            ← Trước
           </button>
+
+          <div id="page-numbers" class="flex items-center gap-1">
+            <!-- Dynamic page numbers generated by JS -->
+          </div>
+
           <button
-            id="view-compact-btn"
+            id="page-next-btn"
             type="button"
-            class="view-mode-btn p-1.5 rounded-md border border-transparent bg-transparent text-[var(--text-secondary)] hover:text-[var(--accent)] transition-all"
-            aria-label="Chế độ danh sách gọn (Compact list)"
-            title="Chế độ danh sách gọn (Compact list)"
+            class="px-3 py-1.5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--border-strong)] transition-all disabled:opacity-30 disabled:pointer-events-none"
           >
-            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <line x1="3" y1="6" x2="21" y2="6" stroke-width="2" stroke-linecap="round"></line>
-              <line x1="3" y1="12" x2="21" y2="12" stroke-width="2" stroke-linecap="round"></line>
-              <line x1="3" y1="18" x2="21" y2="18" stroke-width="2" stroke-linecap="round"></line>
-            </svg>
+            Sau →
           </button>
         </div>
 
-        <!-- Difficulty Filter -->
-        <div class="inline-flex p-1 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)]" id="difficulty-filter-group">
-          <button
-            type="button"
-            class="diff-btn px-2.5 py-1 rounded text-xs font-mono font-medium transition-colors bg-[var(--accent)] text-white"
-            data-diff="all"
-          >
-            {t.home.all_difficulties}
-          </button>
-          <button
-            type="button"
-            class="diff-btn px-2.5 py-1 rounded text-xs font-mono font-medium transition-colors text-[var(--text-secondary)] hover:text-[var(--accent)]"
-            data-diff="easy"
-          >
-            {t.difficulty.easy}
-          </button>
-          <button
-            type="button"
-            class="diff-btn px-2.5 py-1 rounded text-xs font-mono font-medium transition-colors text-[var(--text-secondary)] hover:text-[var(--accent)]"
-            data-diff="medium"
-          >
-            {t.difficulty.medium}
-          </button>
-          <button
-            type="button"
-            class="diff-btn px-2.5 py-1 rounded text-xs font-mono font-medium transition-colors text-[var(--text-secondary)] hover:text-[var(--accent)]"
-            data-diff="advanced"
-          >
-            {t.difficulty.advanced}
-          </button>
-        </div>
+        <!-- Subtext indicator -->
+        <p class="text-[11px] font-mono text-[var(--text-muted)] mt-1" id="pagination-subtext">
+          <!-- trang X / Y · 20 bài mỗi trang -->
+        </p>
       </div>
     </div>
-
-    <!-- Category Filter Pills -->
-    <div class="flex items-center gap-2 overflow-x-auto pb-2 scrollbar-none" id="category-filter-group">
-      <button
-        type="button"
-        class="cat-btn shrink-0 px-3 py-1.5 rounded-lg text-xs font-semibold font-mono border transition-all border-[var(--accent)] bg-[var(--accent)] text-white shadow-sm"
-        data-category="all"
-      >
-        Tất cả ({tips.length})
-      </button>
-      {categoriesWithCounts.map((cat) => (
-        <button
-          type="button"
-          class="cat-btn shrink-0 px-3 py-1.5 rounded-lg text-xs font-semibold font-mono border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all"
-          data-category={cat.id}
-        >
-          {cat.name.vi} ({cat.count})
-        </button>
-      ))}
-    </div>
-  </section>
-
-  <!-- Mode 1: Tips Grid (Card View) -->
-  <div id="tips-grid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    {tips.map((tip) => (
-      <TipCard tip={tip} lang={lang} />
-    ))}
-  </div>
-
-  <!-- Mode 2: Tips Compact List (High density view) -->
-  <div id="tips-compact-list" class="hidden space-y-2">
-    {tips.map((tip, idx) => (
-      <CompactTipRow tip={tip} lang={lang} index={idx} />
-    ))}
-  </div>
-
-  <!-- Load More Pagination Control -->
-  <div id="load-more-container" class="mt-10 text-center">
-    <button
-      id="load-more-btn"
-      type="button"
-      class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl font-mono text-xs font-bold border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:text-[var(--accent)] hover:bg-[var(--bg-muted)] transition-all shadow-sm"
-    >
-      <span>{t.home.load_more}</span>
-      <span id="load-more-count" class="text-[11px] text-[var(--text-muted)] font-normal"></span>
-    </button>
-  </div>
-
-  <!-- Empty Search / Filter state -->
-  <div id="empty-tips-msg" class="hidden py-16 text-center border border-dashed border-[var(--border-color)] rounded-xl bg-[var(--bg-surface)] mt-6">
-    <div class="w-12 h-12 mx-auto rounded-full bg-[var(--bg-muted)] flex items-center justify-center text-[var(--text-muted)] mb-3">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <circle cx="11" cy="11" r="8" stroke-width="2"></circle>
-        <path d="m21 21-4.35-4.35" stroke-width="2" stroke-linecap="round"></path>
-      </svg>
-    </div>
-    <h3 class="text-base font-serif font-bold text-[var(--text-primary)] mb-1">
-      {t.home.no_tips_found}
-    </h3>
-    <p class="text-xs text-[var(--text-muted)] mb-4">
-      Hãy thử chọn danh mục khác hoặc xóa bộ lọc độ khó.
-    </p>
-    <button
-      id="reset-filter-btn"
-      type="button"
-      class="px-4 py-2 rounded-lg text-xs font-semibold bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] transition-colors"
-    >
-      {t.home.clear_filters}
-    </button>
   </div>
 </Layout>
 
 <script is:inline>
   (function () {
-    const PAGE_SIZE = 24;
-    let visibleLimit = PAGE_SIZE;
+    const ITEMS_PER_PAGE = 20;
+    let currentPage = 1;
     let currentCat = 'all';
     let currentDiff = 'all';
-    let searchQuery = '';
     let currentSort = 'best';
+    let searchQuery = '';
 
-    const catButtons = document.querySelectorAll('.cat-btn');
-    const diffButtons = document.querySelectorAll('.diff-btn');
-    const sortButtons = document.querySelectorAll('.sort-btn');
-    const heroTags = document.querySelectorAll('.hero-tag-btn');
-    const heroInput = document.getElementById('hero-search-input');
-    const gridContainer = document.getElementById('tips-grid');
-    const listContainer = document.getElementById('tips-compact-list');
+    const stream = document.getElementById('tips-stream');
     const cards = Array.from(document.querySelectorAll('.tip-card'));
-    const compactRows = Array.from(document.querySelectorAll('.compact-tip-row'));
-    const emptyMsg = document.getElementById('empty-tips-msg');
+    const emptyMsg = document.getElementById('empty-stream-msg');
     const resetBtn = document.getElementById('reset-filter-btn');
-    const loadMoreContainer = document.getElementById('load-more-container');
-    const loadMoreBtn = document.getElementById('load-more-btn');
-    const loadMoreCount = document.getElementById('load-more-count');
 
-    const viewGridBtn = document.getElementById('view-grid-btn');
-    const viewCompactBtn = document.getElementById('view-compact-btn');
+    // Controls
+    const mobileCatBtns = document.querySelectorAll('.mobile-cat-btn');
+    const desktopCatBtns = document.querySelectorAll('.desktop-cat-btn');
+    const diffBtns = document.querySelectorAll('.diff-pill-btn');
+    const sortBtns = document.querySelectorAll('.sort-pill-btn');
+    const mobileSearchInput = document.getElementById('mobile-search-input');
 
-    // Switch View Mode
-    viewGridBtn?.addEventListener('click', () => {
-      gridContainer?.classList.remove('hidden');
-      listContainer?.classList.add('hidden');
-      viewGridBtn.className = 'view-mode-btn p-1.5 rounded-md border border-[var(--accent)] bg-[var(--accent)] text-white shadow-sm transition-all';
-      if (viewCompactBtn) viewCompactBtn.className = 'view-mode-btn p-1.5 rounded-md border border-transparent bg-transparent text-[var(--text-secondary)] hover:text-[var(--accent)] transition-all';
-    });
+    // Pagination elements
+    const pagePrevBtn = document.getElementById('page-prev-btn');
+    const pageNextBtn = document.getElementById('page-next-btn');
+    const pageNumbersContainer = document.getElementById('page-numbers');
+    const paginationSubtext = document.getElementById('pagination-subtext');
 
-    viewCompactBtn?.addEventListener('click', () => {
-      gridContainer?.classList.add('hidden');
-      listContainer?.classList.remove('hidden');
-      viewCompactBtn.className = 'view-mode-btn p-1.5 rounded-md border border-[var(--accent)] bg-[var(--accent)] text-white shadow-sm transition-all';
-      if (viewGridBtn) viewGridBtn.className = 'view-mode-btn p-1.5 rounded-md border border-transparent bg-transparent text-[var(--text-secondary)] hover:text-[var(--accent)] transition-all';
-    });
-
-    function applyFilter() {
-      let matchedCount = 0;
+    function getFilteredCards() {
       const q = searchQuery.toLowerCase().trim();
 
-      const matchesFilter = (el) => {
-        const cats = el.getAttribute('data-category') || '';
-        const diff = el.getAttribute('data-difficulty') || '';
-        const text = el.textContent ? el.textContent.toLowerCase() : '';
+      return cards.filter((c) => {
+        const cats = c.getAttribute('data-category') || '';
+        const diff = c.getAttribute('data-difficulty') || '';
+        const text = c.textContent ? c.textContent.toLowerCase() : '';
 
         const matchCat = currentCat === 'all' || cats.split(' ').includes(currentCat);
         const matchDiff = currentDiff === 'all' || diff === currentDiff;
         const matchSearch = !q || text.includes(q);
 
         return matchCat && matchDiff && matchSearch;
-      };
-
-      cards.forEach((c, idx) => {
-        const r = compactRows[idx];
-        if (matchesFilter(c)) {
-          matchedCount++;
-          if (matchedCount <= visibleLimit) {
-            c.classList.remove('hidden');
-            if (r) r.classList.remove('hidden');
-          } else {
-            c.classList.add('hidden');
-            if (r) r.classList.add('hidden');
-          }
-        } else {
-          c.classList.add('hidden');
-          if (r) r.classList.add('hidden');
-        }
       });
+    }
 
-      // Load more button logic
-      if (loadMoreContainer) {
-        if (matchedCount > visibleLimit) {
-          loadMoreContainer.classList.remove('hidden');
-          if (loadMoreCount) {
-            loadMoreCount.textContent = `(${visibleLimit}/${matchedCount})`;
-          }
+    function renderPagination(totalItems) {
+      const totalPages = Math.max(1, Math.ceil(totalItems / ITEMS_PER_PAGE));
+      if (currentPage > totalPages) currentPage = totalPages;
+      if (currentPage < 1) currentPage = 1;
+
+      // Update Prev / Next buttons
+      if (pagePrevBtn) pagePrevBtn.disabled = currentPage === 1;
+      if (pageNextBtn) pageNextBtn.disabled = currentPage === totalPages;
+
+      // Render page numbers
+      if (pageNumbersContainer) {
+        pageNumbersContainer.innerHTML = '';
+        const isMobile = window.innerWidth < 640;
+
+        if (isMobile) {
+          // Mobile display: "2 / 12"
+          const span = document.createElement('span');
+          span.className = 'px-3 py-1 font-mono text-xs font-bold text-[var(--text-primary)]';
+          span.textContent = `${currentPage} / ${totalPages}`;
+          pageNumbersContainer.appendChild(span);
         } else {
-          loadMoreContainer.classList.add('hidden');
+          // Desktop display: 1 2 3 4 ... 12
+          const pages = [];
+          for (let i = 1; i <= totalPages; i++) {
+            if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+              pages.push(i);
+            } else if (pages[pages.length - 1] !== '...') {
+              pages.push('...');
+            }
+          }
+
+          pages.forEach((p) => {
+            if (p === '...') {
+              const dots = document.createElement('span');
+              dots.className = 'px-1.5 py-1 text-[var(--text-muted)]';
+              dots.textContent = '…';
+              pageNumbersContainer.appendChild(dots);
+            } else {
+              const btn = document.createElement('button');
+              btn.type = 'button';
+              const isActive = p === currentPage;
+              btn.className = `w-7 h-7 rounded-lg text-xs font-mono font-bold transition-all ${
+                isActive
+                  ? 'bg-[var(--accent-hero)] text-black shadow-sm'
+                  : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+              }`;
+              btn.textContent = String(p);
+              btn.addEventListener('click', () => {
+                currentPage = p;
+                updateView();
+                window.scrollTo({ top: 300, behavior: 'smooth' });
+              });
+              pageNumbersContainer.appendChild(btn);
+            }
+          });
         }
       }
 
-      // Empty state logic
-      if (emptyMsg) {
-        if (matchedCount === 0) {
-          emptyMsg.classList.remove('hidden');
-        } else {
-          emptyMsg.classList.add('hidden');
-        }
+      // Update Subtext
+      if (paginationSubtext) {
+        paginationSubtext.textContent = `trang ${currentPage} / ${totalPages} · ${ITEMS_PER_PAGE} bài mỗi trang`;
       }
     }
 
-    loadMoreBtn?.addEventListener('click', () => {
-      visibleLimit += PAGE_SIZE;
-      applyFilter();
+    function updateView() {
+      const filtered = getFilteredCards();
+
+      // Sort filtered cards
+      if (currentSort === 'newest') {
+        filtered.sort((a, b) => {
+          const dateA = new Date(a.getAttribute('data-pub-date') || 0).getTime();
+          const dateB = new Date(b.getAttribute('data-pub-date') || 0).getTime();
+          return dateB - dateA;
+        });
+      } else {
+        filtered.sort((a, b) => {
+          const sA = parseFloat(a.getAttribute('data-score') || '0');
+          const sB = parseFloat(b.getAttribute('data-score') || '0');
+          return sB - sA;
+        });
+      }
+
+      // Hide all cards first
+      cards.forEach((c) => c.classList.add('hidden'));
+
+      if (filtered.length === 0) {
+        if (emptyMsg) emptyMsg.classList.remove('hidden');
+        document.getElementById('pagination-wrapper')?.classList.add('hidden');
+        return;
+      }
+
+      if (emptyMsg) emptyMsg.classList.add('hidden');
+      document.getElementById('pagination-wrapper')?.classList.remove('hidden');
+
+      // Slice for current page
+      const start = (currentPage - 1) * ITEMS_PER_PAGE;
+      const end = start + ITEMS_PER_PAGE;
+      const pageItems = filtered.slice(start, end);
+
+      // Re-order and show in DOM
+      pageItems.forEach((c) => {
+        stream?.appendChild(c);
+        c.classList.remove('hidden');
+      });
+
+      renderPagination(filtered.length);
+    }
+
+    // Prev / Next Page Listeners
+    pagePrevBtn?.addEventListener('click', () => {
+      if (currentPage > 1) {
+        currentPage--;
+        updateView();
+        window.scrollTo({ top: 300, behavior: 'smooth' });
+      }
     });
 
-    // Hero search input listener
-    heroInput?.addEventListener('input', (e) => {
+    pageNextBtn?.addEventListener('click', () => {
+      currentPage++;
+      updateView();
+      window.scrollTo({ top: 300, behavior: 'smooth' });
+    });
+
+    // Mobile Search Input
+    mobileSearchInput?.addEventListener('input', (e) => {
       searchQuery = e.target.value;
-      visibleLimit = PAGE_SIZE;
-      applyFilter();
+      currentPage = 1;
+      updateView();
     });
 
-    // Trending Tag pills
-    heroTags.forEach((btn) => {
+    // Mobile Category Buttons
+    mobileCatBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
-        const tag = btn.getAttribute('data-tag');
-        if (heroInput) heroInput.value = tag;
-        searchQuery = tag;
-        visibleLimit = PAGE_SIZE;
-        applyFilter();
-      });
-    });
-
-    // Sort buttons listener
-    sortButtons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        sortButtons.forEach((b) => {
-          b.className = 'sort-btn px-2.5 py-1 rounded text-xs font-mono font-medium transition-colors text-[var(--text-secondary)] hover:text-[var(--accent)]';
+        mobileCatBtns.forEach((b) => {
+          b.className = 'mobile-cat-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-semibold transition-all border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)]';
         });
-        btn.className = 'sort-btn px-2.5 py-1 rounded text-xs font-mono font-medium transition-colors bg-[var(--accent)] text-white';
-        currentSort = btn.getAttribute('data-sort');
-        visibleLimit = PAGE_SIZE;
-        applyFilter();
-      });
-    });
-
-    // Category buttons
-    catButtons.forEach((btn) => {
-      btn.addEventListener('click', () => {
-        catButtons.forEach((b) => {
-          b.className = 'cat-btn shrink-0 px-3 py-1.5 rounded-lg text-xs font-semibold font-mono border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all';
-        });
-        btn.className = 'cat-btn shrink-0 px-3 py-1.5 rounded-lg text-xs font-semibold font-mono border transition-all border-[var(--accent)] bg-[var(--accent)] text-white shadow-sm';
+        btn.className = 'mobile-cat-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-semibold transition-all bg-[var(--accent-hero)] text-black font-bold shadow-sm';
         currentCat = btn.getAttribute('data-category');
-        visibleLimit = PAGE_SIZE;
-        applyFilter();
+        currentPage = 1;
+        updateView();
       });
     });
 
-    // Difficulty buttons
-    diffButtons.forEach((btn) => {
+    // Desktop Category Buttons
+    desktopCatBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
-        diffButtons.forEach((b) => {
-          b.className = 'diff-btn px-2.5 py-1 rounded text-xs font-mono font-medium transition-colors text-[var(--text-secondary)] hover:text-[var(--accent)]';
+        desktopCatBtns.forEach((b) => {
+          b.className = 'desktop-cat-btn text-left w-full py-1 transition-colors text-[var(--text-secondary)] hover:text-[var(--text-primary)]';
         });
-        btn.className = 'diff-btn px-2.5 py-1 rounded text-xs font-mono font-medium transition-colors bg-[var(--accent)] text-white';
-        currentDiff = btn.getAttribute('data-diff');
-        visibleLimit = PAGE_SIZE;
-        applyFilter();
+        btn.className = 'desktop-cat-btn text-left w-full py-1 transition-colors text-[var(--accent)] font-bold';
+        currentCat = btn.getAttribute('data-category');
+        currentPage = 1;
+        updateView();
       });
     });
 
+    // Difficulty Buttons
+    diffBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        diffBtns.forEach((b) => {
+          b.className = 'diff-pill-btn px-2.5 py-1 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all';
+        });
+        btn.className = 'diff-pill-btn px-2.5 py-1 rounded-lg border border-[var(--accent)] bg-[var(--accent-bg)] text-[var(--accent)] font-bold transition-all';
+        currentDiff = btn.getAttribute('data-diff');
+        currentPage = 1;
+        updateView();
+      });
+    });
+
+    // Sort Buttons
+    sortBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        sortBtns.forEach((b) => {
+          b.className = 'sort-pill-btn px-3 py-1 rounded-lg transition-all text-[var(--text-muted)] hover:text-[var(--text-primary)]';
+        });
+        btn.className = 'sort-pill-btn px-3 py-1 rounded-lg transition-all bg-[var(--accent-hero)] text-black font-bold shadow-sm';
+        currentSort = btn.getAttribute('data-sort');
+        currentPage = 1;
+        updateView();
+      });
+    });
+
+    // Reset Filters
     resetBtn?.addEventListener('click', () => {
       currentCat = 'all';
       currentDiff = 'all';
+      currentSort = 'best';
       searchQuery = '';
-      visibleLimit = PAGE_SIZE;
-      if (heroInput) heroInput.value = '';
-      catButtons[0]?.click();
-      diffButtons[0]?.click();
+      if (mobileSearchInput) mobileSearchInput.value = '';
+      desktopCatBtns[0]?.click();
+      diffBtns[0]?.click();
+      sortBtns[0]?.click();
     });
 
-    // Initialize view
-    applyFilter();
+    // Window resize handler for mobile/desktop pagination
+    window.addEventListener('resize', () => {
+      const filtered = getFilteredCards();
+      renderPagination(filtered.length);
+    });
+
+    // Initial run
+    updateView();
   })();
 </script>

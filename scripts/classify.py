@@ -57,3 +57,4 @@ def extract_tags(title: str, summary: str, max_tags: int = 4) -> list[str]:
             if len(found) >= max_tags:
                 break
     return found
+

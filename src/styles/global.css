@@ -4,77 +4,43 @@
 
 @layer base {
   :root {
-    /* Editorial Paper Palette (Light Mode) */
-    --bg-primary: #fcfaf7;       /* Warm archival paper tone */
-    --bg-surface: #ffffff;       /* Pure parchment card */
-    --bg-muted: #f5f0e6;         /* Warm linen wash */
-    --bg-subtle: #efe7dc;        /* Subtle paper texture */
-    --border-color: #e6ded1;     /* Delicate notebook rule lines */
-    --border-subtle: #efe7dc;
-    --border-strong: #c8bcab;
+    /* Sleek Dark Developer Hub Theme (Matching Wireframe Mockup) */
+    --bg-primary: #0e0f13;       /* Deep matte charcoal */
+    --bg-surface: #15161b;       /* Clean dark card surface */
+    --bg-surface-hover: #1c1d24; /* Card hover background */
+    --bg-muted: #1e2027;         /* Input & badge background */
+    --bg-subtle: #252832;        /* Pill inactive background */
     
-    --text-primary: #1f1c19;     /* Deep printing ink */
-    --text-secondary: #57514a;   /* Graphite pencil tone */
-    --text-muted: #8a8276;       /* Subdued margin text */
+    --border-color: #232530;     /* Refined dark border */
+    --border-subtle: #1a1b22;
+    --border-strong: #323545;
     
-    --accent: #c45514;           /* Terracotta / Bookbinder ochre */
-    --accent-hover: #a3420b;
-    --accent-bg: #fef1e8;
-    --accent-border: #f4d0b2;
+    --text-primary: #f4f4f6;     /* Pure crisp white typography */
+    --text-secondary: #a1a1aa;   /* Muted readable light gray */
+    --text-muted: #71717a;       /* Monospace and metadata text */
     
-    --kbd-bg: linear-gradient(180deg, #ffffff 0%, #f4ede3 100%);
-    --kbd-border: #d2c7b7;
-    --kbd-shadow: #b4a794;
-    --kbd-text: #2c251e;
+    --accent: #f59e0b;           /* Amber / Terminal Golden Orange */
+    --accent-hover: #fbbf24;
+    --accent-hero: #f5a742;      /* Warm golden yellow for Trick of the Day */
+    --accent-bg: rgba(245, 158, 11, 0.1);
+    --accent-border: rgba(245, 158, 11, 0.25);
+    
+    --kbd-bg: linear-gradient(180deg, #252932 0%, #1a1c23 100%);
+    --kbd-border: #363b48;
+    --kbd-shadow: #121318;
+    --kbd-text: #e4e4e7;
 
-    --badge-easy-bg: #edf7ef;
-    --badge-easy-text: #1d733a;
-    --badge-easy-border: #c8e6ce;
-
-    --badge-med-bg: #fdf5e6;
-    --badge-med-text: #965a00;
-    --badge-med-border: #f6deb5;
-
-    --badge-adv-bg: #fdeded;
-    --badge-adv-text: #b52828;
-    --badge-adv-border: #f8cccc;
-  }
-
-  .dark {
-    /* Editorial Slate Parchment (Dark Mode) */
-    --bg-primary: #121518;       /* Midnight slate archival paper */
-    --bg-surface: #191d23;       /* Deep charcoal card surface */
-    --bg-muted: #21262f;         /* Slate wash */
-    --bg-subtle: #282f3a;
-    --border-color: #2b333e;     /* Charcoal etched lines */
-    --border-subtle: #222832;
-    --border-strong: #455060;
-
-    --text-primary: #f1ede4;     /* Crisp cream typography */
-    --text-secondary: #b6aba0;   /* Muted cream text */
-    --text-muted: #788494;       /* Subtle slate annotations */
-
-    --accent: #e27533;           /* Warm glowing terracotta */
-    --accent-hover: #f18a48;
-    --accent-bg: #2d1b0f;
-    --accent-border: #5b3318;
-
-    --kbd-bg: linear-gradient(180deg, #28303b 0%, #1d2229 100%);
-    --kbd-border: #3d4654;
-    --kbd-shadow: #14171d;
-    --kbd-text: #e6edf3;
-
-    --badge-easy-bg: #14271c;
+    --badge-easy-bg: rgba(74, 222, 128, 0.1);
     --badge-easy-text: #4ade80;
-    --badge-easy-border: #23492e;
+    --badge-easy-border: rgba(74, 222, 128, 0.25);
 
-    --badge-med-bg: #2d2210;
+    --badge-med-bg: rgba(245, 158, 11, 0.1);
     --badge-med-text: #fbbf24;
-    --badge-med-border: #4d3b18;
+    --badge-med-border: rgba(245, 158, 11, 0.25);
 
-    --badge-adv-bg: #2d1414;
+    --badge-adv-bg: rgba(248, 113, 113, 0.1);
     --badge-adv-text: #f87171;
-    --badge-adv-border: #522121;
+    --badge-adv-border: rgba(248, 113, 113, 0.25);
   }
 
   body {
@@ -96,35 +62,30 @@
     border-bottom: 2px solid var(--kbd-shadow);
     color: var(--kbd-text);
     font-family: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-    font-size: 0.75rem;
+    font-size: 0.72rem;
     font-weight: 600;
-    padding: 0.12rem 0.45rem;
-    border-radius: 0.35rem;
-    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    padding: 0.1rem 0.4rem;
+    border-radius: 0.3rem;
     line-height: 1.2;
     vertical-align: middle;
-    margin: 0 0.15rem;
+    margin: 0 0.12rem;
     letter-spacing: -0.01em;
-    transition: transform 0.1s ease, border-bottom-width 0.1s ease, box-shadow 0.1s ease;
   }
 
-  kbd:hover {
-    transform: translateY(1px);
-    border-bottom-width: 1px;
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0.12);
-  }
-
-  /* Accessible focus indicators */
+  /* Focus visible */
   *:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
   }
 }
 
-/* Journal paper stitch line */
-.journal-stitch {
-  background-image: radial-gradient(var(--border-strong) 1px, transparent 0);
-  background-size: 16px 16px;
+/* Custom scrollbars */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 /* Toast notification animation */
@@ -137,14 +98,4 @@
 
 .toast-animate {
   animation: toastFade 2.2s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-/* Reduced motion preference */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
 }

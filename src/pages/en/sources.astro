@@ -8,6 +8,7 @@ const t = getTranslations(lang);
 const sources = getAllSources();
 const tips = getAllTips();
 
+// Count tips per source
 const sourceCounts: Record<string, number> = {};
 tips.forEach((tip) => {
   const srcId = tip.source.id;
@@ -15,120 +16,171 @@ tips.forEach((tip) => {
 });
 ---
 
-<Layout lang={lang} title="Data Sources & Transparency" description="Complete registry of monitored technology blogs, communities, and technical publications.">
-  <!-- Header -->
-  <header class="mb-10 pb-6 border-b border-[var(--border-color)]">
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[var(--accent-bg)] text-[var(--accent)] border border-[var(--accent-border)] text-xs font-mono font-semibold mb-3">
-      <span>🌐 Monitored Feeds & Attributions</span>
-    </div>
-    <h1 class="text-3xl sm:text-4xl font-serif font-bold text-[var(--text-primary)] mb-3">
-      Tracked Sources
-    </h1>
-    <p class="text-sm sm:text-base text-[var(--text-secondary)] max-w-2xl leading-relaxed">
-      Tech Tips Hub collects excerpts from publicly accessible RSS feeds and technical APIs. Our engine strictly honors robots.txt, respects server rate limits, avoids storing third-party binary images, and always links directly back to the original author.
-    </p>
-  </header>
+<Layout lang={lang} title="Sources" description="List of tech tips RSS and API feeds monitored on Tech Tips Hub.">
+  <div class="max-w-5xl mx-auto">
+    <!-- Header with Command Prompt (Matching Mockup Page 5) -->
+    <header class="mb-8">
+      <div class="text-xs font-mono font-bold text-[var(--accent)] mb-2">
+        $ ls sources/
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-3">
+        Sources
+      </h1>
+      <p class="text-sm text-[var(--text-secondary)] leading-relaxed max-w-2xl font-mono">
+        Every article on Tech Tips Hub links directly to the original source. "Tips" sources receive most articles; "News" sources are strictly filtered for how-tos.
+      </p>
 
-  <!-- Sources Grid -->
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-    {sources.map((src) => {
-      let domain = 'example.com';
-      try {
-        domain = new URL(src.site_url || src.url || '').hostname;
-      } catch {}
-      const faviconUrl = `https://www.google.com/s2/favicons?domain=${domain}&sz=32`;
-      const tipCount = sourceCounts[src.id] || 0;
-
-      return (
-        <article
-          id={src.id}
-          class="bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-xl p-5 shadow-craft flex flex-col justify-between hover:border-[var(--accent)] transition-colors"
+      <!-- Filter Pills (Matching Mockup Page 5) -->
+      <div class="flex items-center gap-2 overflow-x-auto pt-6 pb-2 scrollbar-none" id="source-filter-group">
+        <button
+          type="button"
+          class="src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-bold bg-[var(--accent-hero)] text-black shadow-sm transition-all"
+          data-filter="all"
         >
-          <div>
-            <!-- Top info -->
-            <div class="flex items-center justify-between gap-2 mb-3">
-              <div class="flex items-center gap-2.5">
-                <img
-                  src={faviconUrl}
-                  alt=""
-                  width="20"
-                  height="20"
-                  class="w-5 h-5 rounded"
-                  onerror="this.style.display='none'"
-                />
-                <h3 class="text-base font-bold font-serif text-[var(--text-primary)]">
+          All
+        </button>
+        <button
+          type="button"
+          class="src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          data-filter="tips"
+        >
+          Tips
+        </button>
+        <button
+          type="button"
+          class="src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          data-filter="news"
+        >
+          News
+        </button>
+        <button
+          type="button"
+          class="src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          data-filter="en"
+        >
+          English
+        </button>
+        <button
+          type="button"
+          class="src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          data-filter="vi"
+        >
+          Vietnamese
+        </button>
+      </div>
+    </header>
+
+    <!-- Sources Grid (3 Columns on Desktop, matching Mockup Page 5) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 mb-12" id="sources-grid">
+      {sources.map((src) => {
+        const initial = src.name.charAt(0).toUpperCase();
+        const kindLabel = src.kind === 'tips' ? 'Tips' : 'News';
+        const langLabel = src.lang === 'vi' ? 'Vietnamese' : 'English';
+        const count = sourceCounts[src.id] || 0;
+
+        return (
+          <article
+            class="source-card bg-[var(--bg-surface)] border border-[var(--border-color)] hover:border-[var(--border-strong)] rounded-xl p-5 flex flex-col justify-between transition-all"
+            data-kind={src.kind || 'news'}
+            data-lang={src.lang || 'en'}
+          >
+            <div>
+              <!-- Top Row: Letter Avatar & Name -->
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-8 h-8 rounded-lg bg-[var(--bg-muted)] border border-[var(--border-color)] flex items-center justify-center font-mono font-extrabold text-sm text-[var(--accent)] shrink-0">
+                  {initial}
+                </div>
+                <h3 class="font-bold text-base text-[var(--text-primary)] leading-tight">
                   {src.name}
                 </h3>
               </div>
-              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[11px] font-mono font-semibold border border-[var(--border-color)] bg-[var(--bg-muted)] text-[var(--text-secondary)]">
-                {src.lang?.toUpperCase()}
-              </span>
-            </div>
 
-            <!-- Description -->
-            <p class="text-xs text-[var(--text-secondary)] leading-relaxed mb-4">
-              {src.description || 'Practical tech guides, system tweaks, and software tricks.'}
-            </p>
-
-            <!-- Categories -->
-            <div class="flex flex-wrap items-center gap-1.5 mb-4">
-              {(src.categories || []).map((cat) => (
-                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-[var(--bg-muted)] text-[var(--text-muted)] border border-[var(--border-subtle)]">
-                  #{cat}
+              <!-- Badges Row -->
+              <div class="flex items-center gap-1.5 mb-3 text-[11px] font-mono">
+                <span class="px-2 py-0.5 rounded border border-[var(--border-color)] bg-[var(--bg-muted)] text-[var(--text-secondary)]">
+                  {kindLabel}
                 </span>
-              ))}
-            </div>
-          </div>
+                <span class="px-2 py-0.5 rounded border border-[var(--border-color)] bg-[var(--bg-muted)] text-[var(--text-muted)]">
+                  {langLabel}
+                </span>
+              </div>
 
-          <!-- Bottom Meta & Links -->
-          <div class="pt-3 border-t border-[var(--border-subtle)] flex items-center justify-between text-xs">
-            <span class="font-mono text-[var(--text-muted)]">
-              {tipCount} tips indexed
-            </span>
-            <div class="flex items-center gap-3">
-              {src.site_url && (
-                <a
-                  href={src.site_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="font-mono text-[var(--accent)] hover:underline inline-flex items-center gap-1"
-                >
-                  <span>Website</span>
-                  <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <polyline points="15 3 21 3 21 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
-                  </svg>
-                </a>
-              )}
+              <!-- Description -->
+              <p class="text-xs text-[var(--text-secondary)] leading-relaxed mb-4">
+                {src.description || 'Curated high quality tech tips and troubleshooting articles.'}
+              </p>
             </div>
-          </div>
-        </article>
-      );
-    })}
+
+            <!-- Bottom Link -->
+            <div class="pt-3 border-t border-[var(--border-subtle)] flex items-center justify-between text-xs font-mono">
+              <span class="text-[var(--text-muted)] text-[11px]">
+                {count} articles
+              </span>
+              <a
+                href={src.site_url || src.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-[var(--accent)] hover:underline font-semibold inline-flex items-center gap-1"
+              >
+                <span>View on website →</span>
+              </a>
+            </div>
+          </article>
+        );
+      })}
+    </div>
+
+    <!-- Bottom Callout Box (Matching Mockup Page 5) -->
+    <div class="rounded-2xl border border-[var(--accent-border)] bg-[var(--bg-surface)] p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 shadow-sm">
+      <div class="space-y-1">
+        <h3 class="font-bold text-lg text-[var(--text-primary)]">
+          Know a great source?
+        </h3>
+        <p class="text-xs sm:text-sm text-[var(--text-secondary)] font-mono leading-relaxed max-w-xl">
+          Submit a suggestion via GitHub; we will verify the RSS feeds and terms before adding.
+        </p>
+      </div>
+
+      <a
+        href="https://github.com/nhattranhuynhthien/tech-tips-hub/issues/new?title=Suggest+Source"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="shrink-0 px-5 py-2.5 rounded-xl bg-[var(--accent-hero)] text-black hover:bg-[var(--accent)] transition-colors font-mono font-bold text-xs inline-flex items-center gap-1.5 shadow-sm"
+      >
+        <span>Suggest source ↗</span>
+      </a>
+    </div>
   </div>
-
-  <!-- Suggest New Source Box -->
-  <section class="p-6 rounded-2xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-center max-w-xl mx-auto shadow-craft">
-    <h3 class="font-serif font-bold text-lg text-[var(--text-primary)] mb-2">
-      Know a great tech RSS feed?
-    </h3>
-    <p class="text-xs text-[var(--text-secondary)] leading-relaxed mb-4">
-      If there is a high-quality blog or publication publishing helpful tips and tutorials, submit a quick Pull Request or GitHub Issue so we can include it!
-    </p>
-    <a
-      href="https://github.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-bold bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] transition-colors shadow-sm"
-    >
-      <span>Submit Source on GitHub</span>
-      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        <polyline points="15 3 21 3 21 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
-        <line x1="10" y1="14" x2="21" y2="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
-      </svg>
-    </a>
-  </section>
 </Layout>
 
+<script is:inline>
+  (function () {
+    const filterBtns = document.querySelectorAll('.src-filter-btn');
+    const cards = document.querySelectorAll('.source-card');
+
+    filterBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach((b) => {
+          b.className = 'src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all';
+        });
+        btn.className = 'src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-bold bg-[var(--accent-hero)] text-black shadow-sm transition-all';
+
+        const filter = btn.getAttribute('data-filter');
+        cards.forEach((card) => {
+          const k = card.getAttribute('data-kind');
+          const l = card.getAttribute('data-lang');
+
+          if (
+            filter === 'all' ||
+            filter === k ||
+            filter === l
+          ) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  })();
+</script>

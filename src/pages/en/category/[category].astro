@@ -28,65 +28,62 @@ const t = getTranslations(lang);
 const allCategories = getAllCategories();
 ---
 
-<Layout lang={lang} title={`${category.name.en} Tips & Tricks`} description={category.description.en}>
-  <!-- Breadcrumb -->
-  <nav class="mb-6 flex items-center gap-2 text-xs font-mono text-[var(--text-muted)]" aria-label="Breadcrumb">
-    <a href={`/${lang}`} class="hover:text-[var(--accent)] transition-colors">Home</a>
-    <span>/</span>
-    <span class="text-[var(--text-secondary)] capitalize">{category.name.en}</span>
-  </nav>
-
-  <!-- Category Header -->
-  <header class="mb-8 pb-6 border-b border-[var(--border-color)]">
-    <div class="flex items-center gap-3 mb-2">
-      <span class="px-3 py-1 rounded-lg text-sm font-bold font-mono uppercase bg-[var(--accent-bg)] text-[var(--accent)] border border-[var(--accent-border)]">
-        #{category.id}
-      </span>
-      <h1 class="text-3xl sm:text-4xl font-serif font-bold text-[var(--text-primary)]">
-        {category.name.en} Tips & Tricks
-      </h1>
-    </div>
-    <p class="text-sm sm:text-base text-[var(--text-secondary)] max-w-2xl mt-2 leading-relaxed">
-      {category.description.en}
-    </p>
-    <div class="mt-4 text-xs font-mono text-[var(--text-muted)]">
-      Showing {tips.length} high-quality tips in this topic
-    </div>
-  </header>
-
-  <!-- Other Categories Quick Links -->
-  <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none">
-    <a
-      href={`/${lang}`}
-      class="shrink-0 px-3 py-1.5 rounded-lg text-xs font-mono border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--accent)] transition-colors"
-    >
-      ← All Tips
-    </a>
-    {allCategories.map((c) => (
-      <a
-        href={`/${lang}/category/${c.id}`}
-        class={`shrink-0 px-3 py-1.5 rounded-lg text-xs font-mono border transition-colors ${
-          c.id === category.id
-            ? 'border-[var(--accent)] bg-[var(--accent)] text-white font-semibold'
-            : 'border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--accent)]'
-        }`}
-      >
-        {c.name.en}
+<Layout lang={lang} title={`${category.name.en} Tips`} description={category.description.en}>
+  <div class="max-w-4xl mx-auto">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 flex items-center gap-2 text-xs font-mono text-[var(--text-muted)]" aria-label="Breadcrumb">
+      <a href={`/${lang}`} class="hover:text-[var(--text-primary)] transition-colors flex items-center gap-1">
+        <span>←</span>
+        <span>tips</span>
       </a>
-    ))}
-  </div>
+      <span>/</span>
+      <span class="text-[var(--text-secondary)] lowercase">{category.id}</span>
+      <span>/</span>
+    </nav>
 
-  <!-- Tips Grid -->
-  {tips.length > 0 ? (
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Category Header -->
+    <header class="mb-8 pb-6 border-b border-[var(--border-color)]">
+      <div class="text-xs font-mono font-bold text-[var(--accent)] mb-2">
+        $ filter --category={category.id}
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-2">
+        {category.name.en} Tips
+      </h1>
+      <p class="text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed font-mono">
+        {category.description.en}
+      </p>
+      <div class="mt-3 text-xs font-mono text-[var(--text-muted)]">
+        {tips.length} curated articles in this category
+      </div>
+    </header>
+
+    <!-- Other Categories Quick Filter Pills -->
+    <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none font-mono text-xs">
+      <a
+        href={`/${lang}`}
+        class="shrink-0 px-3 py-1.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
+      >
+        ← All
+      </a>
+      {allCategories.map((c) => (
+        <a
+          href={`/${lang}/category/${c.id}`}
+          class={`shrink-0 px-3 py-1.5 rounded-xl border transition-colors ${
+            c.id === category.id
+              ? 'border-transparent bg-[var(--accent-hero)] text-black font-bold shadow-sm'
+              : 'border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+          }`}
+        >
+          #{c.id}
+        </a>
+      ))}
+    </div>
+
+    <!-- Tips Stream List -->
+    <div class="space-y-4">
       {tips.map((tip) => (
         <TipCard tip={tip} lang={lang} />
       ))}
     </div>
-  ) : (
-    <div class="py-16 text-center border border-dashed border-[var(--border-color)] rounded-xl bg-[var(--bg-surface)]">
-      <p class="text-sm text-[var(--text-muted)]">No tips currently indexed under this category.</p>
-    </div>
-  )}
+  </div>
 </Layout>
-

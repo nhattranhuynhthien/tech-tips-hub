@@ -29,64 +29,61 @@ const allCategories = getAllCategories();
 ---
 
 <Layout lang={lang} title={`Thủ thuật ${category.name.vi}`} description={category.description.vi}>
-  <!-- Breadcrumb -->
-  <nav class="mb-6 flex items-center gap-2 text-xs font-mono text-[var(--text-muted)]" aria-label="Breadcrumb">
-    <a href={`/${lang}`} class="hover:text-[var(--accent)] transition-colors">Trang chủ</a>
-    <span>/</span>
-    <span class="text-[var(--text-secondary)] capitalize">{category.name.vi}</span>
-  </nav>
+  <div class="max-w-4xl mx-auto">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 flex items-center gap-2 text-xs font-mono text-[var(--text-muted)]" aria-label="Breadcrumb">
+      <a href={`/${lang}`} class="hover:text-[var(--text-primary)] transition-colors flex items-center gap-1">
+        <span>←</span>
+        <span>thủ-thuật</span>
+      </a>
+      <span>/</span>
+      <span class="text-[var(--text-secondary)] lowercase">{category.id}</span>
+      <span>/</span>
+    </nav>
 
-  <!-- Category Header -->
-  <header class="mb-8 pb-6 border-b border-[var(--border-color)]">
-    <div class="flex items-center gap-3 mb-2">
-      <span class="px-3 py-1 rounded-lg text-sm font-bold font-mono uppercase bg-[var(--accent-bg)] text-[var(--accent)] border border-[var(--accent-border)]">
-        #{category.id}
-      </span>
-      <h1 class="text-3xl sm:text-4xl font-serif font-bold text-[var(--text-primary)]">
+    <!-- Category Header -->
+    <header class="mb-8 pb-6 border-b border-[var(--border-color)]">
+      <div class="text-xs font-mono font-bold text-[var(--accent)] mb-2">
+        $ filter --category={category.id}
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-2">
         Thủ thuật {category.name.vi}
       </h1>
-    </div>
-    <p class="text-sm sm:text-base text-[var(--text-secondary)] max-w-2xl mt-2 leading-relaxed">
-      {category.description.vi}
-    </p>
-    <div class="mt-4 text-xs font-mono text-[var(--text-muted)]">
-      Hiển thị {tips.length} thủ thuật chất lượng cao trong chuyên mục này
-    </div>
-  </header>
+      <p class="text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed font-mono">
+        {category.description.vi}
+      </p>
+      <div class="mt-3 text-xs font-mono text-[var(--text-muted)]">
+        {tips.length} bài viết đã chọn lọc trong danh mục
+      </div>
+    </header>
 
-  <!-- Other Categories Quick Links -->
-  <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none">
-    <a
-      href={`/${lang}`}
-      class="shrink-0 px-3 py-1.5 rounded-lg text-xs font-mono border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--accent)] transition-colors"
-    >
-      ← Tất cả
-    </a>
-    {allCategories.map((c) => (
+    <!-- Other Categories Quick Filter Pills -->
+    <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none font-mono text-xs">
       <a
-        href={`/${lang}/category/${c.id}`}
-        class={`shrink-0 px-3 py-1.5 rounded-lg text-xs font-mono border transition-colors ${
-          c.id === category.id
-            ? 'border-[var(--accent)] bg-[var(--accent)] text-white font-semibold'
-            : 'border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--accent)]'
-        }`}
+        href={`/${lang}`}
+        class="shrink-0 px-3 py-1.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
       >
-        {c.name.vi}
+        ← Tất cả
       </a>
-    ))}
-  </div>
+      {allCategories.map((c) => (
+        <a
+          href={`/${lang}/category/${c.id}`}
+          class={`shrink-0 px-3 py-1.5 rounded-xl border transition-colors ${
+            c.id === category.id
+              ? 'border-transparent bg-[var(--accent-hero)] text-black font-bold shadow-sm'
+              : 'border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+          }`}
+        >
+          #{c.id}
+        </a>
+      ))}
+    </div>
 
-  <!-- Tips Grid -->
-  {tips.length > 0 ? (
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Tips Stream List -->
+    <div class="space-y-4">
       {tips.map((tip) => (
         <TipCard tip={tip} lang={lang} />
       ))}
     </div>
-  ) : (
-    <div class="py-16 text-center border border-dashed border-[var(--border-color)] rounded-xl bg-[var(--bg-surface)]">
-      <p class="text-sm text-[var(--text-muted)]">Chưa có bài viết nào trong danh mục này.</p>
-    </div>
-  )}
+  </div>
 </Layout>
-

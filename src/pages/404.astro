@@ -3,32 +3,31 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout lang="vi" title="404 - Không tìm thấy trang">
-  <div class="py-16 sm:py-24 max-w-xl mx-auto text-center">
-    <!-- Stamp Badge -->
-    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-md bg-[var(--accent-bg)] text-[var(--accent)] border border-[var(--accent-border)] text-xs font-mono font-bold uppercase mb-6">
-      Lỗi 404 • Trang không tồn tại
+  <div class="py-16 sm:py-24 max-w-xl mx-auto text-center font-mono">
+    <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-[var(--bg-surface)] text-[var(--accent)] border border-[var(--border-color)] text-xs font-bold uppercase mb-6">
+      $ err: 404_not_found
     </div>
 
-    <h1 class="text-4xl sm:text-5xl font-serif font-bold text-[var(--text-primary)] mb-4">
+    <h1 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] mb-4 tracking-tight">
       Lạc bước khỏi sổ tay rồi!
     </h1>
 
-    <p class="text-base text-[var(--text-secondary)] leading-relaxed mb-8">
-      Trang bạn đang tìm kiếm có thể đã được chuyển sang danh mục khác, hoặc đường liên kết đã cũ. Đừng lo, các thủ thuật hay nhất vẫn đang chờ bạn ở trang chủ.
+    <p class="text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed mb-8">
+      Trang bạn đang tìm kiếm có thể đã được chuyển sang danh mục khác, hoặc đường liên kết đã cũ. Các thủ thuật hay nhất vẫn đang sẵn sàng ở trang chủ.
     </p>
 
     <!-- Shortcut helper box -->
-    <div class="p-4 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-xs font-mono text-[var(--text-muted)] mb-8 inline-block shadow-craft">
-      Gợi ý: Bấm phím <kbd>/</kbd> để mở nhanh thanh tìm kiếm toàn bộ thủ thuật.
+    <div class="p-3.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-xs text-[var(--text-muted)] mb-8 inline-block">
+      Gợi ý: Bấm phím <kbd>/</kbd> để mở thanh tìm kiếm thủ thuật tức thì.
     </div>
 
     <div>
       <a
         href="/vi"
-        class="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] transition-all shadow-sm"
+        class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl font-bold text-xs bg-[var(--accent-hero)] text-black shadow-sm"
       >
-        <span>Quay về trang chủ thủ thuật</span>
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <span>Quay về trang chủ tips.hub</span>
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path d="M5 12h14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           <path d="m12 5 7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
         </svg>
@@ -36,4 +35,3 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </div>
 </Layout>
-

@@ -11,87 +11,58 @@ interface Props {
 const { tip, lang } = Astro.props;
 const t = getTranslations(lang);
 
-const titleText = tip.title[lang] || tip.title['en'] || '';
-const summaryText = tip.summary[lang] || tip.summary['en'] || '';
+const titleText = tip.title[lang] || tip.title['en'] || Object.values(tip.title)[0] || '';
+const summaryText = tip.summary[lang] || tip.summary['en'] || Object.values(tip.summary)[0] || '';
 
-let sourceDomain = 'example.com';
+// Format date in DD/MM format matching mockup "TINH TẾ · 29/10"
+let formattedDate = '';
 try {
-  sourceDomain = new URL(tip.url).hostname;
-} catch {}
-const faviconUrl = `https://www.google.com/s2/favicons?domain=${sourceDomain}&sz=32`;
+  const d = new Date(tip.published_at);
+  if (!isNaN(d.getTime())) {
+    const day = String(d.getDate()).padStart(2, '0');
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    formattedDate = `${day}/${month}`;
+  }
+} catch {
+  formattedDate = '';
+}
+
+const sourceUpper = (tip.source.name || 'TECH TIPS').toUpperCase();
+const metaString = formattedDate
+  ? `${lang === 'vi' ? 'MẸO HAY HÔM NAY' : 'TRICK OF THE DAY'} · ${sourceUpper} · ${formattedDate}`
+  : `${lang === 'vi' ? 'MẸO HAY HÔM NAY' : 'TRICK OF THE DAY'} · ${sourceUpper}`;
 ---
 
-<section class="mb-12 relative overflow-hidden rounded-2xl border-2 border-[var(--accent)] bg-[var(--bg-surface)] p-6 sm:p-8 shadow-craft transition-colors">
-  <!-- Top Editorial Seal / Ribbon -->
-  <div class="flex items-center justify-between mb-5 flex-wrap gap-2 pb-4 border-b border-[var(--border-subtle)]">
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[var(--accent)] text-white text-xs font-mono font-bold tracking-wider uppercase shadow-sm">
-      <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path>
-      </svg>
-      <span>{t.home.trick_of_day}</span>
-    </div>
-
-    <!-- Source and Category Monospaced metadata -->
-    <div class="flex items-center gap-3 text-xs font-mono">
-      <div class="flex items-center gap-1.5 font-medium text-[var(--text-secondary)]">
-        <img src={faviconUrl} alt="" width="16" height="16" class="w-4 h-4 rounded-sm border border-[var(--border-subtle)]" onerror="this.style.display='none'" />
-        <span>{tip.source.name}</span>
+<section class="mb-10 relative overflow-hidden rounded-2xl bg-[var(--accent-hero)] text-[#0e0f13] p-6 sm:p-8 shadow-sm">
+  <div class="max-w-4xl flex flex-col md:flex-row md:items-center justify-between gap-6">
+    <div class="flex-1">
+      <!-- Top Meta Line: Uppercase & Monospace -->
+      <div class="text-[11px] sm:text-xs font-mono font-bold tracking-wider uppercase text-[#1c1d22]/80 mb-3">
+        {metaString}
       </div>
-      <span class="text-[var(--text-muted)]">·</span>
-      <span class="capitalize text-[var(--accent)] font-semibold">
-        #{tip.categories.join(', #')}
-      </span>
-    </div>
-  </div>
 
-  <!-- Large Editorial Serif Headline -->
-  <h2 class="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold leading-tight mb-4 text-[var(--text-primary)] hover:text-[var(--accent)] transition-colors">
-    <a href={`/${lang}/tip/${tip.id}`}>
-      “{titleText}”
-    </a>
-  </h2>
+      <!-- Large Bold Headline -->
+      <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-[#0e0f13] leading-snug mb-3">
+        <a href={`/${lang}/tip/${tip.id}`} class="hover:underline">
+          {titleText}
+        </a>
+      </h2>
 
-  <!-- Editorial Lead Excerpt -->
-  <p class="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed mb-6 max-w-3xl">
-    {summaryText}
-  </p>
-
-  <!-- Bottom Action Bar & Journal Metadata -->
-  <div class="flex flex-wrap items-center justify-between gap-4 pt-4 border-t border-[var(--border-subtle)]">
-    <div class="flex items-center gap-2 text-xs font-mono">
-      {tip.difficulty && (
-        <>
-          <span class="text-[var(--text-muted)]">{t.detail.difficulty}:</span>
-          <span class="font-semibold px-2.5 py-0.5 rounded border border-[var(--border-color)] bg-[var(--bg-muted)] text-[var(--text-secondary)]">
-            {t.difficulty[tip.difficulty]}
-          </span>
-          <span class="text-[var(--text-muted)] ml-2">·</span>
-        </>
-      )}
-      <span class="text-[var(--text-muted)]">
-        ~{tip.reading_time_min} {t.home.reading_time}
-      </span>
+      <!-- Lead Excerpt -->
+      <p class="text-sm sm:text-base text-[#1c1d22] leading-relaxed max-w-2xl font-medium">
+        {summaryText}
+      </p>
     </div>
 
-    <div class="flex items-center gap-3">
-      <a
-        href={`/${lang}/tip/${tip.id}`}
-        class="px-4 py-2 rounded-lg text-xs font-medium border border-[var(--border-color)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
-      >
-        {t.card.view_details}
-      </a>
+    <!-- Right Call To Action Button -->
+    <div class="shrink-0 flex items-center md:self-end">
       <a
         href={tip.url}
         target="_blank"
         rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-lg text-xs font-bold bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] transition-all shadow-sm"
+        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-black text-white hover:bg-zinc-800 transition-colors font-bold text-xs sm:text-sm shadow-md"
       >
-        <span>{t.card.read_original}</span>
-        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-          <polyline points="15 3 21 3 21 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
-          <line x1="10" y1="14" x2="21" y2="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
-        </svg>
+        <span>{lang === 'vi' ? 'Đọc bài gốc →' : 'Read original →'}</span>
       </a>
     </div>
   </div>

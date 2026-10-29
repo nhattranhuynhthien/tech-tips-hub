@@ -16,207 +16,94 @@ const titleText = tip.title[lang] || tip.title['en'] || Object.values(tip.title)
 const summaryText = tip.summary[lang] || tip.summary['en'] || Object.values(tip.summary)[0] || '';
 const isMachineTranslated = tip.translated && tip.translated[lang] === 'machine';
 
-// Format ngày đăng
+// Format ngày đăng: DD/MM
 let formattedDate = '';
 try {
   const d = new Date(tip.published_at);
   if (!isNaN(d.getTime())) {
-    formattedDate = d.toLocaleDateString(lang === 'vi' ? 'vi-VN' : 'en-US', {
-      year: 'numeric',
-      month: 'short',
-      day: 'numeric',
-    });
+    const day = String(d.getDate()).padStart(2, '0');
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    formattedDate = `${day}/${month}`;
   }
 } catch {
   formattedDate = '';
 }
 
-// Domain cho favicon
-let sourceDomain = 'example.com';
-try {
-  sourceDomain = new URL(tip.url).hostname;
-} catch {}
-
-const faviconUrl = `https://www.google.com/s2/favicons?domain=${sourceDomain}&sz=32`;
+// Extract primary category
+const primaryCat = tip.categories[0] || 'dev';
 const tipCanonicalUrl = `https://tech-tips-hub.pages.dev/${lang}/tip/${tip.id}`;
 ---
 
 <article
-  class={`tip-card group relative bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-xl p-5 transition-all duration-200 hover:shadow-craft-hover hover:border-[var(--accent)] flex flex-col justify-between ${
-    featured ? 'border-2 border-[var(--accent)] shadow-craft' : ''
-  }`}
+  class="tip-card group bg-[var(--bg-surface)] border border-[var(--border-color)] hover:border-[var(--border-strong)] rounded-xl p-5 transition-all duration-200 flex flex-col justify-between"
   data-tip-id={tip.id}
   data-category={tip.categories.join(' ')}
   data-difficulty={tip.difficulty || ''}
+  data-pub-date={tip.published_at}
+  data-score={tip.score}
 >
   <div>
-    <!-- Top Metadata Bar: Editorial Ledger Header -->
-    <div class="flex items-center justify-between gap-2 mb-3 text-xs">
-      <!-- Source Badge with clean typography -->
-      <div class="flex items-center gap-1.5 flex-wrap">
-        <a
-          href={`/${lang}/sources#${tip.source.id}`}
-          class="inline-flex items-center gap-1.5 font-medium text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors group/src"
-        >
-          <img
-            src={faviconUrl}
-            alt=""
-            width="16"
-            height="16"
-            loading="lazy"
-            class="w-4 h-4 rounded-sm shrink-0 border border-[var(--border-subtle)]"
-            onerror="this.style.display='none'"
-          />
-          <span class="truncate max-w-[120px] font-mono tracking-tight group-hover/src:underline">{tip.source.name}</span>
-        </a>
-        {tip.author && (
-          <span class="text-[var(--text-muted)] text-[11px] font-mono truncate max-w-[110px]" title={tip.author}>
-            • {tip.author}
-          </span>
-        )}
-      </div>
-
-      <!-- Right Meta: Difficulty shape badge (only for howto) + Date -->
-      <div class="flex items-center gap-2 shrink-0">
-        {tip.difficulty && (
-          <span
-            class={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[11px] font-mono font-medium border ${
-              tip.difficulty === 'easy'
-                ? 'bg-[var(--badge-easy-bg)] text-[var(--badge-easy-text)] border-[var(--badge-easy-border)]'
-                : tip.difficulty === 'advanced'
-                  ? 'bg-[var(--badge-adv-bg)] text-[var(--badge-adv-text)] border-[var(--badge-adv-border)]'
-                  : 'bg-[var(--badge-med-bg)] text-[var(--badge-med-text)] border-[var(--badge-med-border)]'
-            }`}
-            title={`${t.detail.difficulty}: ${t.difficulty[tip.difficulty]}`}
-          >
-            {tip.difficulty === 'easy' && <span class="w-1.5 h-1.5 rounded-full bg-current"></span>}
-            {tip.difficulty === 'medium' && <span class="w-1.5 h-1.5 rotate-45 bg-current"></span>}
-            {tip.difficulty === 'advanced' && <span class="w-0 h-0 border-l-[3px] border-l-transparent border-r-[3px] border-r-transparent border-b-[5px] border-b-current"></span>}
-            <span>{t.difficulty[tip.difficulty]}</span>
-          </span>
-        )}
-
-        {formattedDate && (
-          <span class="text-[var(--text-muted)] text-[11px] font-mono hidden sm:inline">
-            {formattedDate}
-          </span>
-        )}
-      </div>
+    <!-- Top Metadata Bar: source · date · category (Matching Mockup Page 1 & 3) -->
+    <div class="flex items-center gap-2 text-xs font-mono text-[var(--text-muted)] mb-2.5 flex-wrap">
+      <span class="text-[var(--text-secondary)] font-medium lowercase">{tip.source.name}</span>
+      {formattedDate && (
+        <>
+          <span>·</span>
+          <span>{formattedDate}</span>
+        </>
+      )}
+      <span>·</span>
+      <span class="lowercase text-[var(--text-muted)]">{primaryCat}</span>
     </div>
 
-    <!-- Title: Serif with elegant editorial leading -->
-    <h3 class="text-base sm:text-lg font-bold font-serif leading-snug mb-2 text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
+    <!-- Title: Bold White Heading -->
+    <h3 class="text-base sm:text-lg font-bold leading-snug mb-2 text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
       <a href={`/${lang}/tip/${tip.id}`} class="focus:outline-none">
         {titleText}
       </a>
     </h3>
 
-    <!-- Summary -->
-    <p class="text-sm text-[var(--text-secondary)] leading-relaxed mb-4 line-clamp-3">
+    <!-- Summary Paragraph -->
+    <p class="text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed mb-4 line-clamp-2">
       {summaryText}
     </p>
   </div>
 
-  <div>
-    <!-- Translation Micro-Badge (truthful display) -->
-    {isMachineTranslated ? (
-      <div class="mb-3 inline-flex items-center gap-1.5 text-[11px] text-[var(--text-muted)] font-mono bg-[var(--bg-muted)] px-2 py-0.5 rounded border border-[var(--border-subtle)]" title={t.card.machine_translation_tip}>
-        <svg class="w-3 h-3 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path d="m5 8 6 6" stroke-width="2" stroke-linecap="round"></path>
-          <path d="m4 14 6-6 2-3" stroke-width="2" stroke-linecap="round"></path>
-          <path d="M2 5h12" stroke-width="2" stroke-linecap="round"></path>
-          <path d="M7 2h1" stroke-width="2" stroke-linecap="round"></path>
-          <path d="m22 22-5-10-5 10" stroke-width="2" stroke-linecap="round"></path>
-          <path d="M14 18h6" stroke-width="2" stroke-linecap="round"></path>
-        </svg>
-        <span>{t.card.machine_translation}</span>
-      </div>
-    ) : (
-      tip.original_lang !== lang && (
-        <div class="mb-3 inline-flex items-center gap-1.5 text-[11px] text-[var(--text-muted)] font-mono bg-[var(--bg-muted)] px-2 py-0.5 rounded border border-[var(--border-subtle)]">
-          <span>{tip.original_lang === 'en' ? t.card.original_en : t.card.original_vi}</span>
-        </div>
-      )
-    )}
-
-    <!-- Category Pills & HN Discussion Info -->
-    <div class="flex flex-wrap items-center gap-1.5 mb-4">
-      {tip.categories.map((cat) => (
-        <a
-          href={`/${lang}/category/${cat}`}
-          class="px-2 py-0.5 rounded text-[11px] font-mono capitalize border border-[var(--border-subtle)] bg-[var(--bg-muted)] text-[var(--text-secondary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
-        >
-          #{cat}
-        </a>
-      ))}
-      {tip.hn_points && (
-        <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-amber-500/10 text-amber-600 dark:text-amber-400 border border-amber-500/20">
-          HN: {tip.hn_points} pts
+  <!-- Bottom Row: Badges on left, 'Đọc bài gốc ↗' on right -->
+  <div class="pt-3 border-t border-[var(--border-subtle)] flex items-center justify-between gap-2 text-xs font-mono">
+    <div class="flex items-center gap-2 flex-wrap">
+      <!-- Difficulty Badge -->
+      {tip.difficulty && (
+        <span class="px-2 py-0.5 rounded text-[11px] border border-[var(--border-color)] bg-[var(--bg-muted)] text-[var(--text-secondary)]">
+          {t.difficulty[tip.difficulty]}
         </span>
       )}
-      <span class="text-[10px] font-mono text-[var(--text-muted)] ml-auto">
-        ~{tip.reading_time_min} {t.home.reading_time}
-      </span>
+
+      <!-- Translation Micro-Badge -->
+      {isMachineTranslated && (
+        <span class="px-2 py-0.5 rounded text-[11px] border border-[var(--border-subtle)] bg-[var(--bg-muted)] text-[var(--text-muted)]">
+          {lang === 'vi' ? 'Bản dịch tự động' : 'Machine translated'}
+        </span>
+      )}
+
+      <!-- HN points micro-badge if available -->
+      {tip.hn_points && (
+        <span class="px-2 py-0.5 rounded text-[11px] border border-amber-500/20 bg-amber-500/10 text-amber-400">
+          HN: {tip.hn_points}
+        </span>
+      )}
     </div>
 
-    <!-- Bottom Actions: Read Original + Copy Link + Bookmark -->
-    <div class="pt-3 border-t border-[var(--border-subtle)] flex items-center justify-between gap-2">
-      <!-- Direct Link to Original Article -->
-      <a
-        href={tip.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-semibold bg-[var(--accent-bg)] text-[var(--accent)] hover:bg-[var(--accent)] hover:text-white border border-[var(--accent-border)] transition-colors"
-      >
-        <span>{t.card.read_original}</span>
-        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-          <polyline points="15 3 21 3 21 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
-          <line x1="10" y1="14" x2="21" y2="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
-        </svg>
-      </a>
-
-      <!-- Quick Actions -->
-      <div class="flex items-center gap-1">
-        <!-- Copy Link Button -->
-        <button
-          type="button"
-          class="copy-link-btn p-2 rounded-lg text-[var(--text-muted)] hover:text-[var(--accent)] hover:bg-[var(--bg-muted)] transition-colors"
-          data-url={tipCanonicalUrl}
-          title={lang === 'vi' ? 'Sao chép liên kết' : 'Copy link'}
-          aria-label={lang === 'vi' ? 'Sao chép liên kết' : 'Copy link'}
-        >
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" stroke-width="2"></rect>
-            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" stroke-width="2"></path>
-          </svg>
-        </button>
-
-        <!-- Bookmark Button -->
-        <button
-          type="button"
-          class="bookmark-btn p-2 rounded-lg text-[var(--text-muted)] hover:text-[var(--accent)] hover:bg-[var(--bg-muted)] transition-colors"
-          data-id={tip.id}
-          title={t.card.save_tip}
-          aria-label={t.card.save_tip}
-        >
-          <svg class="bookmark-icon w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-          </svg>
-        </button>
-
-        <!-- Details Link -->
-        <a
-          href={`/${lang}/tip/${tip.id}`}
-          class="p-2 rounded-lg text-[var(--text-muted)] hover:text-[var(--accent)] hover:bg-[var(--bg-muted)] transition-colors"
-          title={t.card.view_details}
-          aria-label={t.card.view_details}
-        >
-          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <polyline points="9 18 15 12 9 6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
-          </svg>
-        </a>
-      </div>
-    </div>
+    <!-- Read Original Link (Amber / Orange) -->
+    <a
+      href={tip.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="text-[var(--accent)] hover:underline font-semibold inline-flex items-center gap-1 shrink-0 ml-auto"
+    >
+      <span class="hidden sm:inline">{lang === 'vi' ? 'Đọc bài gốc' : 'Read original'}</span>
+      <span class="sm:hidden">{lang === 'vi' ? 'Bài gốc' : 'Original'}</span>
+      <span>↗</span>
+    </a>
   </div>
 </article>

@@ -16,120 +16,171 @@ tips.forEach((tip) => {
 });
 ---
 
-<Layout lang={lang} title="Nguồn dữ liệu & Minh bạch" description="Danh sách các trang tin, blog công nghệ uy tín đang được hệ thống theo dõi và tổng hợp tự động.">
-  <!-- Header -->
-  <header class="mb-10 pb-6 border-b border-[var(--border-color)]">
-    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[var(--accent-bg)] text-[var(--accent)] border border-[var(--accent-border)] text-xs font-mono font-semibold mb-3">
-      <span>🌐 Minh bạch nguồn cấp dữ liệu</span>
-    </div>
-    <h1 class="text-3xl sm:text-4xl font-serif font-bold text-[var(--text-primary)] mb-3">
-      Nguồn dữ liệu theo dõi
-    </h1>
-    <p class="text-sm sm:text-base text-[var(--text-secondary)] max-w-2xl leading-relaxed">
-      Tech Tips Hub thu thập thông tin từ các kênh RSS/API công khai của các trang tin công nghệ và cộng đồng kỹ thuật hàng đầu. Hệ thống tuân thủ nghiêm ngặt robots.txt, không cào tải ảnh lớn, giãn cách request lịch sự và luôn trỏ link trực tiếp về bài viết gốc của tác giả.
-    </p>
-  </header>
+<Layout lang={lang} title="Nguồn tin" description="Danh sách nguồn cấp dữ liệu thủ thuật được theo dõi trên Tech Tips Hub.">
+  <div class="max-w-5xl mx-auto">
+    <!-- Header with Command Prompt (Matching Mockup Page 5) -->
+    <header class="mb-8">
+      <div class="text-xs font-mono font-bold text-[var(--accent)] mb-2">
+        $ ls nguồn-tin/
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-3">
+        Nguồn tin
+      </h1>
+      <p class="text-sm text-[var(--text-secondary)] leading-relaxed max-w-2xl font-mono">
+        Mọi bài trên Tech Tips Hub đều dẫn về nguồn gốc. Nguồn "Thủ thuật" nhận hầu hết bài; nguồn "Tin tức" chỉ nhận bài qua bộ lọc hướng dẫn.
+      </p>
 
-  <!-- Sources Grid -->
-  <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
-    {sources.map((src) => {
-      let domain = 'example.com';
-      try {
-        domain = new URL(src.site_url || src.url || '').hostname;
-      } catch {}
-      const faviconUrl = `https://www.google.com/s2/favicons?domain=${domain}&sz=32`;
-      const tipCount = sourceCounts[src.id] || 0;
-
-      return (
-        <article
-          id={src.id}
-          class="bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-xl p-5 shadow-craft flex flex-col justify-between hover:border-[var(--accent)] transition-colors"
+      <!-- Filter Pills (Matching Mockup Page 5) -->
+      <div class="flex items-center gap-2 overflow-x-auto pt-6 pb-2 scrollbar-none" id="source-filter-group">
+        <button
+          type="button"
+          class="src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-bold bg-[var(--accent-hero)] text-black shadow-sm transition-all"
+          data-filter="all"
         >
-          <div>
-            <!-- Top info -->
-            <div class="flex items-center justify-between gap-2 mb-3">
-              <div class="flex items-center gap-2.5">
-                <img
-                  src={faviconUrl}
-                  alt=""
-                  width="20"
-                  height="20"
-                  class="w-5 h-5 rounded"
-                  onerror="this.style.display='none'"
-                />
-                <h3 class="text-base font-bold font-serif text-[var(--text-primary)]">
+          Tất cả
+        </button>
+        <button
+          type="button"
+          class="src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          data-filter="tips"
+        >
+          Thủ thuật
+        </button>
+        <button
+          type="button"
+          class="src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          data-filter="news"
+        >
+          Tin tức
+        </button>
+        <button
+          type="button"
+          class="src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          data-filter="vi"
+        >
+          Tiếng Việt
+        </button>
+        <button
+          type="button"
+          class="src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          data-filter="en"
+        >
+          English
+        </button>
+      </div>
+    </header>
+
+    <!-- Sources Grid (3 Columns on Desktop, matching Mockup Page 5) -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 mb-12" id="sources-grid">
+      {sources.map((src) => {
+        const initial = src.name.charAt(0).toUpperCase();
+        const kindLabel = src.kind === 'tips' ? 'Thủ thuật' : 'Tin tức';
+        const langLabel = src.lang === 'vi' ? 'Tiếng Việt' : 'English';
+        const count = sourceCounts[src.id] || 0;
+
+        return (
+          <article
+            class="source-card bg-[var(--bg-surface)] border border-[var(--border-color)] hover:border-[var(--border-strong)] rounded-xl p-5 flex flex-col justify-between transition-all"
+            data-kind={src.kind || 'news'}
+            data-lang={src.lang || 'en'}
+          >
+            <div>
+              <!-- Top Row: Letter Avatar & Name -->
+              <div class="flex items-center gap-3 mb-3">
+                <div class="w-8 h-8 rounded-lg bg-[var(--bg-muted)] border border-[var(--border-color)] flex items-center justify-center font-mono font-extrabold text-sm text-[var(--accent)] shrink-0">
+                  {initial}
+                </div>
+                <h3 class="font-bold text-base text-[var(--text-primary)] leading-tight">
                   {src.name}
                 </h3>
               </div>
-              <span class="inline-flex items-center gap-1 px-2 py-0.5 rounded text-[11px] font-mono font-semibold border border-[var(--border-color)] bg-[var(--bg-muted)] text-[var(--text-secondary)]">
-                {src.lang?.toUpperCase()}
-              </span>
-            </div>
 
-            <!-- Description -->
-            <p class="text-xs text-[var(--text-secondary)] leading-relaxed mb-4">
-              {src.description || 'Kênh chia sẻ thủ thuật và tin tức công nghệ thực tiễn.'}
-            </p>
-
-            <!-- Categories -->
-            <div class="flex flex-wrap items-center gap-1.5 mb-4">
-              {(src.categories || []).map((cat) => (
-                <span class="px-2 py-0.5 rounded text-[10px] font-mono bg-[var(--bg-muted)] text-[var(--text-muted)] border border-[var(--border-subtle)]">
-                  #{cat}
+              <!-- Badges Row -->
+              <div class="flex items-center gap-1.5 mb-3 text-[11px] font-mono">
+                <span class="px-2 py-0.5 rounded border border-[var(--border-color)] bg-[var(--bg-muted)] text-[var(--text-secondary)]">
+                  {kindLabel}
                 </span>
-              ))}
-            </div>
-          </div>
+                <span class="px-2 py-0.5 rounded border border-[var(--border-color)] bg-[var(--bg-muted)] text-[var(--text-muted)]">
+                  {langLabel}
+                </span>
+              </div>
 
-          <!-- Bottom Meta & Links -->
-          <div class="pt-3 border-t border-[var(--border-subtle)] flex items-center justify-between text-xs">
-            <span class="font-mono text-[var(--text-muted)]">
-              {tipCount} thủ thuật đang hiển thị
-            </span>
-            <div class="flex items-center gap-3">
-              {src.site_url && (
-                <a
-                  href={src.site_url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  class="font-mono text-[var(--accent)] hover:underline inline-flex items-center gap-1"
-                >
-                  <span>Website</span>
-                  <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                    <polyline points="15 3 21 3 21 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
-                  </svg>
-                </a>
-              )}
+              <!-- Description -->
+              <p class="text-xs text-[var(--text-secondary)] leading-relaxed mb-4">
+                {src.description || 'Chuyên trang chia sẻ thủ thuật và kiến thức công nghệ uy tín.'}
+              </p>
             </div>
-          </div>
-        </article>
-      );
-    })}
+
+            <!-- Bottom Link -->
+            <div class="pt-3 border-t border-[var(--border-subtle)] flex items-center justify-between text-xs font-mono">
+              <span class="text-[var(--text-muted)] text-[11px]">
+                {count} bài viết
+              </span>
+              <a
+                href={src.site_url || src.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-[var(--accent)] hover:underline font-semibold inline-flex items-center gap-1"
+              >
+                <span>Xem bài từ nguồn này →</span>
+              </a>
+            </div>
+          </article>
+        );
+      })}
+    </div>
+
+    <!-- Bottom Callout Box (Matching Mockup Page 5) -->
+    <div class="rounded-2xl border border-[var(--accent-border)] bg-[var(--bg-surface)] p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 shadow-sm">
+      <div class="space-y-1">
+        <h3 class="font-bold text-lg text-[var(--text-primary)]">
+          Biết một nguồn hay?
+        </h3>
+        <p class="text-xs sm:text-sm text-[var(--text-secondary)] font-mono leading-relaxed max-w-xl">
+          Gửi đề xuất qua GitHub, chúng mình sẽ kiểm tra điều khoản RSS trước khi thêm.
+        </p>
+      </div>
+
+      <a
+        href="https://github.com/nhattranhuynhthien/tech-tips-hub/issues/new?title=Suggest+Source"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="shrink-0 px-5 py-2.5 rounded-xl bg-[var(--accent-hero)] text-black hover:bg-[var(--accent)] transition-colors font-mono font-bold text-xs inline-flex items-center gap-1.5 shadow-sm"
+      >
+        <span>Đề xuất nguồn mới ↗</span>
+      </a>
+    </div>
   </div>
-
-  <!-- Suggest New Source Box -->
-  <section class="p-6 rounded-2xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-center max-w-xl mx-auto shadow-craft">
-    <h3 class="font-serif font-bold text-lg text-[var(--text-primary)] mb-2">
-      Đề xuất thêm nguồn RSS hữu ích?
-    </h3>
-    <p class="text-xs text-[var(--text-secondary)] leading-relaxed mb-4">
-      Bạn biết một trang blog công nghệ hoặc tác giả có nhiều bài viết chia sẻ thủ thuật hay? Hãy gửi pull request hoặc tạo issue trên GitHub để chúng mình bổ sung vào hệ thống!
-    </p>
-    <a
-      href="https://github.com"
-      target="_blank"
-      rel="noopener noreferrer"
-      class="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-xs font-bold bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] transition-colors shadow-sm"
-    >
-      <span>Đóng góp nguồn trên GitHub</span>
-      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-        <polyline points="15 3 21 3 21 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
-        <line x1="10" y1="14" x2="21" y2="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
-      </svg>
-    </a>
-  </section>
 </Layout>
 
+<script is:inline>
+  (function () {
+    const filterBtns = document.querySelectorAll('.src-filter-btn');
+    const cards = document.querySelectorAll('.source-card');
+
+    filterBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach((b) => {
+          b.className = 'src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all';
+        });
+        btn.className = 'src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-bold bg-[var(--accent-hero)] text-black shadow-sm transition-all';
+
+        const filter = btn.getAttribute('data-filter');
+        cards.forEach((card) => {
+          const k = card.getAttribute('data-kind');
+          const l = card.getAttribute('data-lang');
+
+          if (
+            filter === 'all' ||
+            filter === k ||
+            filter === l
+          ) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  })();
+</script>

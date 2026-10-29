@@ -6,55 +6,47 @@ const lang = 'vi';
 const t = getTranslations(lang);
 ---
 
-<Layout lang={lang} title="Chính sách Quyền riêng tư" description="Cam kết không theo dõi người dùng, không sử dụng cookie thu thập dữ liệu cá nhân của Tech Tips Hub.">
-  <article class="max-w-3xl mx-auto bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-2xl p-6 sm:p-10 shadow-craft mb-12">
-    <!-- Header -->
-    <header class="pb-6 border-b border-[var(--border-subtle)] mb-8">
-      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-[var(--accent-bg)] text-[var(--accent)] border border-[var(--accent-border)] text-xs font-mono font-semibold mb-3">
-        <span>🛡️ Minh bạch & Bảo mật</span>
+<Layout lang={lang} title="Chính sách Quyền riêng tư" description="Cam kết không theo dõi, không quảng cáo, tôn trọng 100% dữ liệu người dùng trên tips.hub.">
+  <article class="max-w-4xl mx-auto space-y-8">
+    <header class="pb-6 border-b border-[var(--border-color)]">
+      <div class="text-xs font-mono font-bold text-[var(--accent)] mb-2">
+        $ security --privacy-statement
       </div>
-      <h1 class="text-3xl sm:text-4xl font-serif font-bold text-[var(--text-primary)] mb-3">
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-3">
         Chính sách Quyền riêng tư
       </h1>
-      <p class="text-base text-[var(--text-secondary)] leading-relaxed">
-        Tech Tips Hub hoạt động với triết lý bảo vệ tối đa quyền riêng tư của độc giả.
+      <p class="text-sm text-[var(--text-secondary)] leading-relaxed font-mono">
+        tips.hub được xây dựng trên nguyên tắc tôn trọng quyền riêng tư tuyệt đối: 0 tracker, 0 cookies theo dõi, 0 quảng cáo.
       </p>
     </header>
 
-    <div class="space-y-6 text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed">
-      <section>
-        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
-          1. Không Cookie theo dõi, Không Quảng cáo
+    <div class="space-y-6 text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed font-sans">
+      <section class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 space-y-3">
+        <h2 class="text-base font-bold text-[var(--text-primary)] font-mono">
+          # 1. Không thu thập thông tin định danh
         </h2>
         <p>
-          Chúng tôi không đặt bất kỳ cookie quảng cáo hoặc pixel theo dõi hành vi người dùng nào. Bạn có thể duyệt web ẩn danh hoàn toàn mà không lo bị thu thập dữ liệu cá nhân.
+          Chúng tôi không yêu cầu đăng ký tài khoản, không yêu cầu địa chỉ email và không theo dõi hành vi cá nhân của bạn trên website.
         </p>
       </section>
 
-      <section>
-        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
-          2. Lưu trữ cục bộ (Local Storage)
-        </h2>
-        <p class="mb-2">
-          Trình duyệt của bạn chỉ lưu trữ các thông tin tùy chọn giao diện sau đây hoàn toàn trên máy của bạn (không gửi về máy chủ):
-        </p>
-        <ul class="list-disc list-inside space-y-1 text-xs sm:text-sm pl-2">
-          <li><code class="font-mono">techtips_theme</code>: Lựa chọn giao diện sáng hoặc tối (light / dark).</li>
-          <li><code class="font-mono">techtips_lang</code>: Lựa chọn ngôn ngữ hiển thị ưu tiên (vi / en).</li>
-          <li><code class="font-mono">techtips_saved</code>: Danh sách mã ID bài viết bạn đã bấm lưu để xem sau.</li>
-          <li><code class="font-mono">techtips_read</code>: Danh sách bài viết bạn đã bấm đánh dấu đã xem.</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 class="text-lg font-serif font-bold text-[var(--text-primary)] mb-2">
-          3. Thống kê truy cập không định danh
+      <section class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 space-y-3">
+        <h2 class="text-base font-bold text-[var(--text-primary)] font-mono">
+          # 2. Dữ liệu "Đã lưu" hoàn toàn cục bộ (Local Storage)
         </h2>
         <p>
-          Nếu có sử dụng công cụ thống kê (ví dụ Cloudflare Web Analytics), dữ liệu chỉ đo lường số lượt tải trang tổng quan ở cấp độ ẩn danh hoàn toàn, không sử dụng cookie hay lưu trữ địa chỉ IP của bạn.
+          Khi bạn bấm nút lưu thủ thuật xem sau, danh sách này chỉ được lưu trữ trên trình duyệt của chính bạn thông qua <code>localStorage</code>. Dữ liệu này không bao giờ được gửi về máy chủ.
+        </p>
+      </section>
+
+      <section class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 space-y-3">
+        <h2 class="text-base font-bold text-[var(--text-primary)] font-mono">
+          # 3. Phân tích truy cập ẩn danh (Privacy-friendly Analytics)
+        </h2>
+        <p>
+          Website chỉ sử dụng phân tích ẩn danh của Cloudflare / Vercel ở tầng CDN để thống kê số lượt truy cập tổng quan, không thu thập IP cá nhân và không dùng cookie cross-site.
         </p>
       </section>
     </div>
   </article>
 </Layout>
-
