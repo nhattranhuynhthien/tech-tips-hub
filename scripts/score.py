@@ -114,3 +114,4 @@ def extract_categories_and_tags(title: str, summary: str, configured_categories:
         matched_tags.add("performance")
 
     return sorted(list(matched_cats)), sorted(list(matched_tags))[:5]
+

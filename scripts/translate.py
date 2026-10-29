@@ -142,3 +142,4 @@ def process_item_bilingual(item_id: str, orig_title: str, orig_summary: str, ori
     }
 
     return title_dict, summary_dict, translated_meta
+

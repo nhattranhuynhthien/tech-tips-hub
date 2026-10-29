@@ -14,3 +14,4 @@ export function formatTemplate(template: string, vars: Record<string, string | n
   }
   return result;
 }
+

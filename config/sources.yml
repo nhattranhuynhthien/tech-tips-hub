@@ -113,6 +113,56 @@
   categories: [dev, security, ai]
   description: Cộng đồng lập trình viên thế giới chia sẻ bài viết kỹ thuật và thủ thuật
 
+- id: itsfoss
+  name: It's FOSS
+  url: https://itsfoss.com/feed/
+  site_url: https://itsfoss.com
+  type: rss
+  lang: en
+  weight: 1.2
+  categories: [linux, dev, browser]
+  description: Cẩm nang hướng dẫn chuyên sâu cho Linux, phần mềm mã nguồn mở và lệnh terminal
+
+- id: linuxhandbook
+  name: Linux Handbook
+  url: https://linuxhandbook.com/rss/
+  site_url: https://linuxhandbook.com
+  type: rss
+  lang: en
+  weight: 1.2
+  categories: [linux, dev, security]
+  description: Lệnh bash script, mẹo quản trị máy chủ và thủ thuật terminal thực dụng
+
+- id: devto_tips
+  name: Dev.to Tutorials
+  url: https://dev.to/api/articles?tag=tutorial&per_page=15
+  site_url: https://dev.to
+  type: devto_api
+  lang: en
+  weight: 1.15
+  categories: [dev, ai, browser]
+  description: Cộng đồng lập trình viên thế giới chia sẻ mẹo code, Git, VS Code và DevOps
+
+- id: krebsonsecurity
+  name: Krebs on Security
+  url: https://krebsonsecurity.com/feed/
+  site_url: https://krebsonsecurity.com
+  type: rss
+  lang: en
+  weight: 1.25
+  categories: [security, privacy]
+  description: Chuyên trang phân tích an ninh mạng, cảnh báo mã độc và bảo vệ quyền riêng tư
+
+- id: tomshardware
+  name: Tom's Hardware
+  url: https://www.tomshardware.com/feeds/all
+  site_url: https://www.tomshardware.com
+  type: rss
+  lang: en
+  weight: 1.1
+  categories: [hardware, windows]
+  description: Thủ thuật lắp ráp PC, ép xung, tối ưu nhiệt độ và cấu hình phần cứng
+
 # === Nguồn Việt Nam (Tiếng Việt) ===
 - id: tinhte
   name: Tinh tế
@@ -153,3 +203,23 @@
   weight: 0.9
   categories: [android, ios, windows, hardware]
   description: Tin tức công nghệ đời sống và các mẹo sử dụng thiết bị cho người Việt
+
+- id: thanhnien_tech
+  name: Thanh Niên Công Nghệ
+  url: https://thanhnien.vn/rss/cong-nghe.rss
+  site_url: https://thanhnien.vn/cong-nghe
+  type: rss
+  lang: vi
+  weight: 0.9
+  categories: [android, ios, security, ai]
+  description: Mẹo sử dụng điện thoại, cập nhật phần mềm và mẹo phòng chống lừa đảo mạng
+
+- id: vietnamnet_tech
+  name: VietNamNet Công Nghệ
+  url: https://vietnamnet.vn/rss/cong-nghe.rss
+  site_url: https://vietnamnet.vn/cong-nghe
+  type: rss
+  lang: vi
+  weight: 0.9
+  categories: [windows, android, security, hardware]
+  description: Thủ thuật thiết bị thông minh, an toàn số và ứng dụng thực tiễn cho người Việt

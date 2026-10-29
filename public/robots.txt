@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://techtipshub.pages.dev/sitemap.xml
+

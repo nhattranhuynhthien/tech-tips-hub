@@ -33,16 +33,63 @@ def clean_html(raw_html: str, max_chars: int = 350) -> str:
     return text
 
 def fetch_feed_items(source: dict, max_entries: int = 25) -> list[dict]:
-    """Tải và phân tích các bài viết mới từ một nguồn RSS/Atom."""
+    """Tải và phân tích các bài viết mới từ nguồn RSS/Atom hoặc REST API."""
     items = []
+    source_type = source.get("type", "rss")
     feed_url = source["url"]
     headers = {
         "User-Agent": USER_AGENT,
-        "Accept": "application/rss+xml, application/atom+xml, application/xml, text/xml, */*",
+        "Accept": "application/rss+xml, application/atom+xml, application/json, application/xml, text/xml, */*",
         "Accept-Language": "en-US,en;q=0.9,vi;q=0.8",
         "Cache-Control": "no-cache",
     }
 
+    # === Trường hợp 1: REST API (ví dụ Dev.to API) ===
+    if source_type in ["devto_api", "json_api"]:
+        try:
+            session = requests.Session()
+            resp = session.get(feed_url, headers=headers, timeout=10)
+            if resp.status_code != 200:
+                print(f"[Fetch Warning] API {source['id']} trả về status {resp.status_code}")
+                return []
+            articles = resp.json()
+            if not isinstance(articles, list):
+                articles = articles.get("articles", articles.get("items", []))
+
+            for a in articles[:max_entries]:
+                link = a.get("url") or a.get("canonical_url")
+                title = a.get("title")
+                if not link or not title:
+                    continue
+                c_url = canonical_url(link)
+                iid = generate_id(c_url)
+                summary = clean_html(a.get("description") or a.get("summary") or "")
+                published = a.get("published_at") or a.get("created_at") or ""
+                author_obj = a.get("user") or {}
+                author = author_obj.get("name") if isinstance(author_obj, dict) else a.get("author")
+
+                items.append({
+                    "id": iid,
+                    "url": c_url,
+                    "source": {
+                        "id": source["id"],
+                        "name": source["name"],
+                        "site_url": source.get("site_url", "")
+                    },
+                    "source_weight": source.get("weight", 1.0),
+                    "author": author,
+                    "published_at": published,
+                    "original_lang": source.get("lang", "en"),
+                    "raw_title": title.strip(),
+                    "raw_summary": summary,
+                    "default_categories": source.get("categories", []),
+                })
+            return items
+        except Exception as e:
+            print(f"[Fetch Warning] Lỗi tải API {source['id']}: {e}")
+            return []
+
+    # === Trường hợp 2: RSS / Atom Feed chuẩn ===
     try:
         session = requests.Session()
         resp = session.get(feed_url, headers=headers, timeout=10)

@@ -40,3 +40,4 @@ jobs:
           git add data
           git diff --staged --quiet || git commit -m "chore(data): auto-update tech tips [skip ci]"
           git push
+
