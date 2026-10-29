@@ -172,6 +172,40 @@
     "raw_summary": "Amazon cho rằng AI đang làm thay đổi cách viết phần mềm, mở ra thời kỳ nhà phát triển có thể đảm nhiệm nhiều việc thay vì chuyên sâu một lĩnh vực.",
     "hidden": false
   },
+  "f3634b9d6454e66b": {
+    "id": "f3634b9d6454e66b",
+    "url": "https://www.makeuseof.com/android-privacy-settings-easy-fixes",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Tashreef Shareef",
+    "published_at": "Thu, 29 Oct 2026 14:00:16 GMT",
+    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Three Android settings I avoided for years turned out to be the easiest privacy fixes on my phone",
+      "vi": "Three Android settings I avoided for years turned out to be the easiest privacy fixes on my phone"
+    },
+    "summary": {
+      "en": "Blocking Wi-Fi tracking and locking down theft protection took fewer taps than changing a theme.",
+      "vi": "Blocking Wi-Fi tracking and locking down theft protection took fewer taps than changing a theme."
+    },
+    "categories": [
+      "android",
+      "security"
+    ],
+    "tags": [
+      "privacy"
+    ],
+    "difficulty": "easy",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "50540090dc1f9a17": {
     "id": "50540090dc1f9a17",
     "url": "https://feed.itsfoss.com/link/24361/17507385/things-to-do-after-installing-ubuntu-26-10",
@@ -343,6 +377,37 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "6f35d28347aacf68": {
+    "id": "6f35d28347aacf68",
+    "url": "https://9to5mac.com/2026/10/29/ios-27-2-gives-shortcuts-app-these-new-and-improved-features",
+    "source": {
+      "id": "9to5mac",
+      "name": "9to5Mac",
+      "site_url": "https://9to5mac.com",
+      "kind": "news"
+    },
+    "author": "Ryan Christoffel",
+    "published_at": "Thu, 29 Oct 2026 14:16:33 +0000",
+    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "iOS 27.2 gives Shortcuts app these new and improved features",
+      "vi": "iOS 27.2 gives Shortcuts app these new and improved features"
+    },
+    "summary": {
+      "en": "iOS 27.2 launched this week with a variety of new features for Siri AI , FaceTime , Messages , and more, plus a handful of improvements for the Shortcuts app. Here’s everything new in Shortcuts.",
+      "vi": "iOS 27.2 launched this week with a variety of new features for Siri AI , FaceTime , Messages , and more, plus a handful of improvements for the Shortcuts app. Here’s everything new in Shortcuts."
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.26,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "513f9c14c838474f": {
     "id": "513f9c14c838474f",
     "url": "https://linuxhandbook.com/learn-ssh",
@@ -377,6 +442,40 @@
     "raw_summary": "SSH is how you log in to and work on remote Linux machines. Start with the basics, then secure your setup and fix the errors you are most likely to run into.",
     "hidden": false
   },
+  "52d1d63b9f8cb2ac": {
+    "id": "52d1d63b9f8cb2ac",
+    "url": "https://www.howtogeek.com/these-chrome-settings-are-why-your-browser-is-hogging-ram",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Diana Todea",
+    "published_at": "Thu, 29 Oct 2026 14:30:16 GMT",
+    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "5 simple Chrome settings to fix the browser's worst memory hogs",
+      "vi": "5 simple Chrome settings to fix the browser's worst memory hogs"
+    },
+    "summary": {
+      "en": "Find what's quitely eating up your RAM",
+      "vi": "Find what's quitely eating up your RAM"
+    },
+    "categories": [
+      "browser",
+      "hardware"
+    ],
+    "tags": [
+      "chrome"
+    ],
+    "difficulty": "easy",
+    "score": 1.23,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "f8c22dda71ed6073": {
     "id": "f8c22dda71ed6073",
     "url": "https://feed.itsfoss.com/link/24361/17510602/ubuntu-core-desktop-firmware-hwe",
@@ -405,6 +504,37 @@
     "difficulty": null,
     "score": 1.22,
     "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "99ccbb4073246879": {
+    "id": "99ccbb4073246879",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-remote-desktop-failures-caused-by-recent-windows-updates",
+    "source": {
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "site_url": "https://www.bleepingcomputer.com",
+      "kind": "news"
+    },
+    "author": "Sergiu Gatlan",
+    "published_at": "Thu, 29 Oct 2026 10:35:40 -0400",
+    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Microsoft fixes Remote Desktop failures caused by recent Windows updates",
+      "vi": "Microsoft fixes Remote Desktop failures caused by recent Windows updates"
+    },
+    "summary": {
+      "en": "Microsoft has resolved a known issue that prevents non-admin users from connecting to devices via Remote Desktop when the \"Administrator protection\" security feature is enabled.",
+      "vi": "Microsoft has resolved a known issue that prevents non-admin users from connecting to devices via Remote Desktop when the \"Administrator protection\" security feature is enabled."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.22,
+    "howto": true,
     "reading_time_min": 1,
     "translated": {}
   },
@@ -984,6 +1114,68 @@
     "difficulty": null,
     "score": 1.13,
     "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "f41d986e9b0178f9": {
+    "id": "f41d986e9b0178f9",
+    "url": "https://www.howtogeek.com/ways-a-raspberry-pi-can-cut-your-bills-this-weekend-starting-with-free-dvr-oct-30-nov-1",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Patrick Campanale",
+    "published_at": "Thu, 29 Oct 2026 14:00:15 GMT",
+    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "3 ways a Raspberry Pi can cut your bills this weekend, starting with free DVR (Oct 30 - Nov 1)",
+      "vi": "3 ways a Raspberry Pi can cut your bills this weekend, starting with free DVR (Oct 30 - Nov 1)"
+    },
+    "summary": {
+      "en": "Three small services that take over jobs you’re paying subscriptions for.",
+      "vi": "Three small services that take over jobs you’re paying subscriptions for."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.13,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "cfe726b59a7f0747": {
+    "id": "cfe726b59a7f0747",
+    "url": "https://www.xda-developers.com/home-assistants-latest-update-makes-matter-leak-sensors-and-locks-worth-setting-up",
+    "source": {
+      "id": "xdadevelopers",
+      "name": "XDA Developers",
+      "site_url": "https://www.xda-developers.com",
+      "kind": "news"
+    },
+    "author": "Joe Rice-Jones",
+    "published_at": "Thu, 29 Oct 2026 14:00:21 GMT",
+    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Home Assistant's latest update makes Matter leak sensors and locks worth setting up",
+      "vi": "Home Assistant's latest update makes Matter leak sensors and locks worth setting up"
+    },
+    "summary": {
+      "en": "They might have worked for a while now but the important features only just landed",
+      "vi": "They might have worked for a while now but the important features only just landed"
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 1.11,
+    "howto": true,
     "reading_time_min": 1,
     "translated": {}
   },
@@ -1629,6 +1821,37 @@
     "raw_summary": "Mình đã xài Samsung Galaxy Z Fold8 được khoảng 2-3 tháng rồi, và hôm nay mình đứng ngay bờ Hồ Gươm để chia sẻ lại cảm nhận thật của mình. Điểm mình thích nhất trên chiếc máy này chắc chắn là form",
     "hidden": false
   },
+  "38c002f3c5475354": {
+    "id": "38c002f3c5475354",
+    "url": "https://www.makeuseof.com/my-next-wi-fi-upgrade-wont-need-a-power-outlet",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Gregory Gibson",
+    "published_at": "Thu, 29 Oct 2026 14:30:17 GMT",
+    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "My next Wi-Fi upgrade won't need a power outlet",
+      "vi": "My next Wi-Fi upgrade won't need a power outlet"
+    },
+    "summary": {
+      "en": "My security cameras already showed me why I want power and data traveling down the same cable",
+      "vi": "My security cameras already showed me why I want power and data traveling down the same cable"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.04,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "89fc99ddb03996f5": {
     "id": "89fc99ddb03996f5",
     "url": "https://www.makeuseof.com/changed-android-settings-stopped-carrying-power-bank",
@@ -1666,37 +1889,6 @@
     "raw_summary": "I found where my battery was actually going.",
     "hidden": false
   },
-  "435a65697245038d": {
-    "id": "435a65697245038d",
-    "url": "https://www.makeuseof.com/my-old-fire-tv-stick-was-throttling-itself-until-i-changed-these-settings",
-    "source": {
-      "id": "makeuseof",
-      "name": "MakeUseOf",
-      "site_url": "https://www.makeuseof.com",
-      "kind": "tips"
-    },
-    "author": "Suman Biswas",
-    "published_at": "Thu, 29 Oct 2026 12:00:16 GMT",
-    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "My old Fire TV Stick was throttling itself until I changed these 5 settings",
-      "vi": "My old Fire TV Stick was throttling itself until I changed these 5 settings"
-    },
-    "summary": {
-      "en": "A cooler Fire TV Stick is a healthy Fire TV Stick.",
-      "vi": "A cooler Fire TV Stick is a healthy Fire TV Stick."
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": "easy",
-    "score": 1.01,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {}
-  },
   "c989d358786f1ec1": {
     "id": "c989d358786f1ec1",
     "url": "https://dev.to/selen_sherlock_64186c9222/turn-a-whatsapp-group-chat-into-a-weekly-summary-with-a-local-llm-1i3p",
@@ -1730,6 +1922,37 @@
     "raw_title": "Turn a WhatsApp Group Chat into a Weekly Summary with a Local LLM",
     "raw_summary": "A project group can discuss a quotation on Monday, change its deadline on Wednesday, and confirm",
     "hidden": true
+  },
+  "435a65697245038d": {
+    "id": "435a65697245038d",
+    "url": "https://www.makeuseof.com/my-old-fire-tv-stick-was-throttling-itself-until-i-changed-these-settings",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Suman Biswas",
+    "published_at": "Thu, 29 Oct 2026 12:00:16 GMT",
+    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "My old Fire TV Stick was throttling itself until I changed these 5 settings",
+      "vi": "My old Fire TV Stick was throttling itself until I changed these 5 settings"
+    },
+    "summary": {
+      "en": "A cooler Fire TV Stick is a healthy Fire TV Stick.",
+      "vi": "A cooler Fire TV Stick is a healthy Fire TV Stick."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 1.01,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "843e2f5d387fbdbf": {
     "id": "843e2f5d387fbdbf",
