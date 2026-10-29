@@ -34,6 +34,7 @@ try {
   sourceDomain = new URL(tip.url).hostname;
 } catch {}
 const faviconUrl = `https://www.google.com/s2/favicons?domain=${sourceDomain}&sz=32`;
+const pageCanonicalUrl = `https://tech-tips-hub.pages.dev/en/tip/${tip.id}`;
 
 let formattedDate = '';
 try {
@@ -49,30 +50,30 @@ try {
 ---
 
 <Layout lang={lang} title={titleText} description={summaryText}>
-  <!-- Breadcrumbs -->
+  <!-- Editorial Breadcrumb -->
   <nav class="mb-6 flex items-center gap-2 text-xs font-mono text-[var(--text-muted)]" aria-label="Breadcrumb">
-    <a href={`/${lang}`} class="hover:text-[var(--accent)] transition-colors">Home</a>
+    <a href={`/${lang}`} class="hover:text-[var(--accent)] transition-colors">Notebook</a>
     <span>/</span>
     <a href={`/${lang}/category/${tip.categories[0]}`} class="capitalize hover:text-[var(--accent)] transition-colors">
-      {tip.categories[0]}
+      #{tip.categories[0]}
     </a>
     <span>/</span>
     <span class="truncate max-w-[200px] text-[var(--text-secondary)]">{tip.id}</span>
   </nav>
 
   <article class="max-w-3xl mx-auto bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-2xl p-6 sm:p-10 shadow-craft mb-12">
-    <!-- Header Meta -->
-    <div class="flex flex-wrap items-center justify-between gap-3 pb-6 border-b border-[var(--border-subtle)] mb-6 text-xs">
+    <!-- Masthead Ledger Info -->
+    <div class="flex flex-wrap items-center justify-between gap-3 pb-6 border-b border-[var(--border-subtle)] mb-6 text-xs font-mono">
       <!-- Source Badge -->
       <a
         href={`/${lang}/sources#${tip.source.id}`}
         class="inline-flex items-center gap-2 px-3 py-1.5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-muted)] text-[var(--text-primary)] hover:border-[var(--accent)] transition-colors font-medium"
       >
-        <img src={faviconUrl} alt="" width="16" height="16" class="w-4 h-4 rounded-sm" onerror="this.style.display='none'" />
+        <img src={faviconUrl} alt="" width="16" height="16" class="w-4 h-4 rounded-sm border border-[var(--border-subtle)]" onerror="this.style.display='none'" />
         <span>Source: <strong>{tip.source.name}</strong></span>
       </a>
 
-      <!-- Date & Reading Time & Difficulty -->
+      <!-- Date, Reading Time & Difficulty Badge -->
       <div class="flex items-center gap-3">
         <span class={`inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-xs font-medium border ${
           tip.difficulty === 'easy'
@@ -81,46 +82,48 @@ try {
               ? 'bg-[var(--badge-adv-bg)] text-[var(--badge-adv-text)] border-[var(--badge-adv-border)]'
               : 'bg-[var(--badge-med-bg)] text-[var(--badge-med-text)] border-[var(--badge-med-border)]'
         }`}>
-          <span class="w-1.5 h-1.5 rounded-full bg-current"></span>
-          {t.difficulty[tip.difficulty]}
+          {tip.difficulty === 'easy' && <span class="w-1.5 h-1.5 rounded-full bg-current"></span>}
+          {tip.difficulty === 'medium' && <span class="w-1.5 h-1.5 rotate-45 bg-current"></span>}
+          {tip.difficulty === 'advanced' && <span class="w-0 h-0 border-l-[3px] border-l-transparent border-r-[3px] border-r-transparent border-b-[5px] border-b-current"></span>}
+          <span>{t.difficulty[tip.difficulty]}</span>
         </span>
 
         {formattedDate && (
-          <span class="text-[var(--text-muted)] font-mono">
+          <span class="text-[var(--text-muted)]">
             {formattedDate}
           </span>
         )}
       </div>
     </div>
 
-    <!-- Title -->
+    <!-- Title in Large Serif -->
     <h1 class="text-2xl sm:text-3xl lg:text-4xl font-serif font-bold text-[var(--text-primary)] leading-tight mb-6">
       {titleText}
     </h1>
 
-    <!-- Machine Translation Notice -->
+    <!-- Machine Translation Notice (Transparency rule) -->
     {isMachineTranslated && (
-      <div class="mb-6 p-3.5 rounded-lg border border-[var(--accent-border)] bg-[var(--accent-bg)] text-xs text-[var(--accent)] flex items-start gap-2.5">
-        <svg class="w-4 h-4 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <div class="mb-6 p-4 rounded-xl border border-[var(--accent-border)] bg-[var(--accent-bg)] text-xs text-[var(--accent)] flex items-start gap-3">
+        <svg class="w-4 h-4 shrink-0 mt-0.5 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <circle cx="12" cy="12" r="10" stroke-width="2"></circle>
           <line x1="12" y1="8" x2="12" y2="12" stroke-width="2"></line>
           <line x1="12" y1="16" x2="12.01" y2="16" stroke-width="2"></line>
         </svg>
         <div class="leading-relaxed">
-          <p class="font-semibold mb-0.5">Machine Translated</p>
+          <p class="font-bold mb-0.5 font-mono uppercase tracking-wide">Machine Translated</p>
           <p class="text-[var(--text-secondary)]">
-            This title and excerpt were automatically translated to facilitate quick reading. For complete and authentic technical guidance, please refer to the author's original article below.
+            This title and excerpt were automatically translated to aid swift discovery. For definitive and complete walkthroughs, please open the original publication link below.
           </p>
         </div>
       </div>
     )}
 
-    <!-- Summary Content -->
+    <!-- Editorial Summary Content -->
     <div class="text-base sm:text-lg text-[var(--text-secondary)] leading-relaxed space-y-4 mb-8">
       <p>{summaryText}</p>
     </div>
 
-    <!-- Categories & Tags -->
+    <!-- Category & Tags Metadata -->
     <div class="flex flex-wrap items-center gap-2 mb-8 pt-4 border-t border-[var(--border-subtle)]">
       <span class="text-xs text-[var(--text-muted)] font-mono">Topics:</span>
       {tip.categories.map((c) => (
@@ -138,29 +141,46 @@ try {
       ))}
     </div>
 
-    <!-- Big Action Box: Read Original -->
+    <!-- Action Tools Bar: Read Original + Copy Link + Share -->
     <div class="p-6 rounded-xl border-2 border-[var(--accent)] bg-[var(--bg-muted)] flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
       <div>
         <h4 class="text-base font-serif font-bold text-[var(--text-primary)] mb-1">
-          Read full original article
+          Read the full author's guide
         </h4>
         <p class="text-xs text-[var(--text-secondary)] max-w-md">
-          Visit <strong>{tip.source.name}</strong> for complete walkthroughs, original screenshots, step-by-step videos, and discussions.
+          Head over to <strong>{tip.source.name}</strong> for original high-resolution screenshots, step-by-step videos, and reader discussions.
         </p>
       </div>
-      <a
-        href={tip.url}
-        target="_blank"
-        rel="noopener noreferrer"
-        class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-bold text-sm bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] transition-all shadow-sm shrink-0"
-      >
-        <span>{formatTemplate(t.detail.original_link, { source: tip.source.name })}</span>
-        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-          <polyline points="15 3 21 3 21 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
-          <line x1="10" y1="14" x2="21" y2="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
-        </svg>
-      </a>
+
+      <div class="flex items-center gap-2 shrink-0">
+        <!-- Copy link button -->
+        <button
+          type="button"
+          class="copy-link-btn px-3 py-3 rounded-xl font-mono text-xs font-semibold border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+          data-url={pageCanonicalUrl}
+          title="Copy link"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" stroke-width="2"></rect>
+            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" stroke-width="2"></path>
+          </svg>
+        </button>
+
+        <!-- Read Original External Button -->
+        <a
+          href={tip.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-xl font-bold text-sm bg-[var(--accent)] text-white hover:bg-[var(--accent-hover)] transition-all shadow-sm"
+        >
+          <span>{formatTemplate(t.detail.original_link, { source: tip.source.name })}</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <polyline points="15 3 21 3 21 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+          </svg>
+        </a>
+      </div>
     </div>
 
     <!-- Legal & Attribution Box -->
@@ -197,4 +217,3 @@ try {
     </section>
   )}
 </Layout>
-

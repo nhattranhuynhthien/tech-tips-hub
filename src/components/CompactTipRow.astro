@@ -1,0 +1,122 @@
+---
+import type { Tip } from '../lib/data';
+import type { Locale } from '../lib/i18n';
+import { getTranslations } from '../lib/i18n';
+
+interface Props {
+  tip: Tip;
+  lang: Locale;
+  index: number;
+}
+
+const { tip, lang, index } = Astro.props;
+const t = getTranslations(lang);
+
+const titleText = tip.title[lang] || tip.title['en'] || Object.values(tip.title)[0] || '';
+
+let sourceDomain = 'example.com';
+try {
+  sourceDomain = new URL(tip.url).hostname;
+} catch {}
+const faviconUrl = `https://www.google.com/s2/favicons?domain=${sourceDomain}&sz=32`;
+const tipCanonicalUrl = `https://tech-tips-hub.pages.dev/${lang}/tip/${tip.id}`;
+
+let formattedDate = '';
+try {
+  const d = new Date(tip.published_at);
+  if (!isNaN(d.getTime())) {
+    formattedDate = d.toLocaleDateString(lang === 'vi' ? 'vi-VN' : 'en-US', {
+      month: 'short',
+      day: 'numeric',
+    });
+  }
+} catch {}
+---
+
+<div
+  class="compact-tip-row group flex items-center justify-between gap-3 p-3 sm:px-4 bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-lg hover:border-[var(--accent)] hover:bg-[var(--bg-muted)] transition-all"
+  data-tip-id={tip.id}
+  data-category={tip.categories.join(' ')}
+  data-difficulty={tip.difficulty}
+>
+  <div class="flex items-center gap-3 min-w-0">
+    <!-- Index number -->
+    <span class="w-6 text-right font-mono text-xs text-[var(--text-muted)] shrink-0 hidden sm:inline">
+      {String(index + 1).padStart(2, '0')}.
+    </span>
+
+    <!-- Source Icon -->
+    <img
+      src={faviconUrl}
+      alt=""
+      width="16"
+      height="16"
+      loading="lazy"
+      class="w-4 h-4 rounded shrink-0 border border-[var(--border-subtle)]"
+      onerror="this.style.display='none'"
+    />
+
+    <!-- Title and tags -->
+    <div class="min-w-0">
+      <a
+        href={`/${lang}/tip/${tip.id}`}
+        class="text-sm font-serif font-bold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors truncate block"
+      >
+        {titleText}
+      </a>
+      <div class="flex items-center gap-2 text-[11px] font-mono text-[var(--text-muted)] mt-0.5">
+        <span class="text-[var(--text-secondary)]">{tip.source.name}</span>
+        <span>·</span>
+        <span class="capitalize">#{tip.categories[0]}</span>
+        {formattedDate && (
+          <>
+            <span>·</span>
+            <span>{formattedDate}</span>
+          </>
+        )}
+      </div>
+    </div>
+  </div>
+
+  <!-- Right Actions: Read Original + Copy Link + Bookmark -->
+  <div class="flex items-center gap-2 shrink-0">
+    <a
+      href={tip.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="hidden md:inline-flex items-center gap-1 px-2.5 py-1 rounded text-xs font-mono font-semibold bg-[var(--accent-bg)] text-[var(--accent)] border border-[var(--accent-border)] hover:bg-[var(--accent)] hover:text-white transition-colors"
+      title={t.card.read_original}
+    >
+      <span>{t.card.read_original}</span>
+      <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        <polyline points="15 3 21 3 21 9" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+      </svg>
+    </a>
+
+    <!-- Copy Link -->
+    <button
+      type="button"
+      class="copy-link-btn p-1.5 rounded text-[var(--text-muted)] hover:text-[var(--accent)] hover:bg-[var(--bg-surface)] transition-colors"
+      data-url={tipCanonicalUrl}
+      title={lang === 'vi' ? 'Sao chép link' : 'Copy link'}
+    >
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <rect width="14" height="14" x="8" y="8" rx="2" ry="2" stroke-width="2"></rect>
+        <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" stroke-width="2"></path>
+      </svg>
+    </button>
+
+    <!-- Bookmark -->
+    <button
+      type="button"
+      class="bookmark-btn p-1.5 rounded text-[var(--text-muted)] hover:text-[var(--accent)] hover:bg-[var(--bg-surface)] transition-colors"
+      data-id={tip.id}
+      title={t.card.save_tip}
+    >
+      <svg class="bookmark-icon w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+    </button>
+  </div>
+</div>

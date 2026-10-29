@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import type { Locale } from '../lib/i18n';
 import { getTranslations } from '../lib/i18n';
+import { getAllTips } from '../lib/data';
 import SearchModal from '../components/SearchModal.astro';
 
 interface Props {
@@ -19,14 +20,14 @@ const {
 } = Astro.props;
 
 const t = getTranslations(lang);
+const totalTipsCount = getAllTips().length;
 const pageTitle = title ? `${title} — Tech Tips Hub` : t.site.title;
 const pageDesc = description || t.site.description;
 
-// Đường dẫn đối ứng sang ngôn ngữ còn lại
 const otherLang: Locale = lang === 'vi' ? 'en' : 'vi';
 const targetPath = canonicalPath.replace(new RegExp(`^/${lang}`), `/${otherLang}`);
-const alternateUrl = `https://techtipshub.pages.dev${targetPath}`;
-const canonicalUrl = `https://techtipshub.pages.dev${canonicalPath}`;
+const alternateUrl = `https://tech-tips-hub.pages.dev${targetPath}`;
+const canonicalUrl = `https://tech-tips-hub.pages.dev${canonicalPath}`;
 ---
 
 <!doctype html>
@@ -39,7 +40,7 @@ const canonicalUrl = `https://techtipshub.pages.dev${canonicalPath}`;
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" hreflang={lang} href={canonicalUrl} />
     <link rel="alternate" hreflang={otherLang} href={alternateUrl} />
-    <link rel="alternate" hreflang="x-default" href="https://techtipshub.pages.dev/vi" />
+    <link rel="alternate" hreflang="x-default" href="https://tech-tips-hub.pages.dev/vi" />
     <link rel="alternate" type="application/rss+xml" title={`${t.site.title} RSS`} href={`/${lang}/rss.xml`} />
 
     <!-- Open Graph & Twitter -->
@@ -55,15 +56,15 @@ const canonicalUrl = `https://techtipshub.pages.dev${canonicalPath}`;
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 
-    <!-- Web Fonts: Plus Jakarta Sans & Source Serif 4 with Vietnamese sub-sets -->
+    <!-- Editorial Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,400&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,600;0,8..60,700;1,8..60,400;1,8..60,600&family=JetBrains+Mono:wght@400;500;600&display=swap"
       rel="stylesheet"
     />
 
-    <!-- Theme initialization (Inline script to prevent flash of wrong theme) -->
+    <!-- Theme initialization (No white flash) -->
     <script is:inline>
       (function () {
         const storedTheme = localStorage.getItem('techtips_theme');
@@ -75,7 +76,7 @@ const canonicalUrl = `https://techtipshub.pages.dev${canonicalPath}`;
       })();
     </script>
   </head>
-  <body class="flex flex-col min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] font-sans selection:bg-[#f4d3bc] dark:selection:bg-[#5a351e]">
+  <body class="flex flex-col min-h-screen bg-[var(--bg-primary)] text-[var(--text-primary)] font-sans selection:bg-[#f4d0b2] dark:selection:bg-[#5b3318]">
     <!-- Accessibility Skip Link -->
     <a
       href="#main-content"
@@ -84,13 +85,13 @@ const canonicalUrl = `https://techtipshub.pages.dev${canonicalPath}`;
       {lang === 'vi' ? 'Bỏ qua và chuyển tới nội dung chính' : 'Skip to main content'}
     </a>
 
-    <!-- Top Navigation Header -->
+    <!-- Editorial Journal Top Masthead Header -->
     <header class="sticky top-0 z-40 bg-[var(--bg-primary)]/90 backdrop-blur-md border-b border-[var(--border-color)] transition-colors">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
-        <!-- Brand / Logo -->
+        <!-- Brand / Journal Masthead -->
         <div class="flex items-center gap-3">
-          <a href={`/${lang}`} class="flex items-center gap-2 group">
-            <div class="w-9 h-9 rounded-lg bg-[var(--accent)] text-white flex items-center justify-center font-serif font-bold text-xl shadow-sm transition-transform group-hover:scale-105">
+          <a href={`/${lang}`} class="flex items-center gap-2.5 group">
+            <div class="w-9 h-9 rounded-lg bg-[var(--accent)] text-white flex items-center justify-center font-serif font-bold text-xl shadow-sm transition-transform group-hover:scale-105 border border-[var(--accent-hover)]">
               T
             </div>
             <div class="flex flex-col">
@@ -98,13 +99,19 @@ const canonicalUrl = `https://techtipshub.pages.dev${canonicalPath}`;
                 Tech Tips Hub
               </span>
               <span class="text-[10px] font-mono tracking-wider uppercase text-[var(--text-muted)]">
-                {lang === 'vi' ? 'Sổ tay thủ thuật' : 'Tech Notebook'}
+                {lang === 'vi' ? 'Sổ tay thủ thuật • Bách khoa mẹo số' : 'Tech Journal • Handcrafted Tricks'}
               </span>
             </div>
           </a>
-          <span class="hidden md:inline-flex items-center px-2 py-0.5 rounded text-[11px] font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-muted)] text-[var(--text-secondary)]">
-            0đ • Open Source
-          </span>
+
+          <!-- Live Ingestion Status Pill -->
+          <div class="hidden lg:inline-flex items-center gap-2 px-2.5 py-1 rounded-full text-[11px] font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-muted)] text-[var(--text-secondary)]">
+            <span class="relative flex h-2 w-2">
+              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+              <span class="relative inline-flex rounded-full h-2 w-2 bg-emerald-500"></span>
+            </span>
+            <span>{totalTipsCount} {lang === 'vi' ? 'thủ thuật' : 'tips'} • {lang === 'vi' ? 'Cập nhật mỗi 4h' : 'Auto 4h'}</span>
+          </div>
         </div>
 
         <!-- Navigation Links -->
@@ -155,12 +162,12 @@ const canonicalUrl = `https://techtipshub.pages.dev${canonicalPath}`;
           <!-- Language Switcher (retains current route) -->
           <a
             href={targetPath}
-            class="px-2.5 py-1.5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-xs font-semibold text-[var(--text-secondary)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-colors flex items-center gap-1"
+            class="px-2.5 py-1.5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-xs font-semibold font-mono text-[var(--text-secondary)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-colors flex items-center gap-1"
             title={t.nav.language}
           >
-            <span class={lang === 'vi' ? 'text-[var(--accent)]' : ''}>VI</span>
+            <span class={lang === 'vi' ? 'text-[var(--accent)] font-bold' : ''}>VI</span>
             <span class="text-[var(--text-muted)]">/</span>
-            <span class={lang === 'en' ? 'text-[var(--accent)]' : ''}>EN</span>
+            <span class={lang === 'en' ? 'text-[var(--accent)] font-bold' : ''}>EN</span>
           </a>
 
           <!-- Dark / Light Theme Toggle -->
@@ -170,7 +177,6 @@ const canonicalUrl = `https://techtipshub.pages.dev${canonicalPath}`;
             class="p-2 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--accent)] hover:border-[var(--accent)] transition-colors"
             aria-label={t.nav.toggle_theme}
           >
-            <!-- Sun icon for light mode -->
             <svg id="theme-sun-icon" class="w-4 h-4 hidden dark:block" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <circle cx="12" cy="12" r="5" stroke-width="2"></circle>
               <line x1="12" y1="1" x2="12" y2="3" stroke-width="2" stroke-linecap="round"></line>
@@ -182,7 +188,6 @@ const canonicalUrl = `https://techtipshub.pages.dev${canonicalPath}`;
               <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" stroke-width="2" stroke-linecap="round"></line>
               <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" stroke-width="2" stroke-linecap="round"></line>
             </svg>
-            <!-- Moon icon for dark mode -->
             <svg id="theme-moon-icon" class="w-4 h-4 block dark:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
             </svg>
@@ -196,14 +201,14 @@ const canonicalUrl = `https://techtipshub.pages.dev${canonicalPath}`;
       <slot />
     </main>
 
-    <!-- Footer -->
+    <!-- Editorial Journal Footer -->
     <footer class="mt-auto border-t border-[var(--border-color)] bg-[var(--bg-muted)] transition-colors">
       <div class="max-w-6xl mx-auto px-4 sm:px-6 py-10">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <!-- Col 1: About Tech Tips Hub -->
           <div class="md:col-span-2 space-y-3">
             <div class="flex items-center gap-2">
-              <div class="w-6 h-6 rounded bg-[var(--accent)] text-white flex items-center justify-center font-serif font-bold text-xs">
+              <div class="w-6 h-6 rounded bg-[var(--accent)] text-white flex items-center justify-center font-serif font-bold text-xs border border-[var(--accent-hover)]">
                 T
               </div>
               <h3 class="font-serif font-bold text-base text-[var(--text-primary)]">Tech Tips Hub</h3>
@@ -243,7 +248,7 @@ const canonicalUrl = `https://techtipshub.pages.dev${canonicalPath}`;
               <li><a href={`/${lang}/copyright`} class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors">{t.nav.copyright}</a></li>
               <li><a href={`/${lang}/privacy`} class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors">{t.nav.privacy}</a></li>
               <li><a href={`/${lang}/about`} class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors">{t.nav.about}</a></li>
-              <li><a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors">GitHub Repository</a></li>
+              <li><a href="https://github.com/nhattranhuynhthien/tech-tips-hub" target="_blank" rel="noopener noreferrer" class="text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors">GitHub Repository</a></li>
             </ul>
           </div>
         </div>
@@ -258,7 +263,7 @@ const canonicalUrl = `https://techtipshub.pages.dev${canonicalPath}`;
     <!-- Search Modal Component -->
     <SearchModal lang={lang} />
 
-    <!-- Actions Handler (Bookmarks, Read Status) -->
+    <!-- Actions Handler (Bookmarks, Read Status, Toast, View Modes) -->
     <script src="/js/actions.js" defer></script>
 
     <!-- Script for Theme Toggle & Search Hook -->

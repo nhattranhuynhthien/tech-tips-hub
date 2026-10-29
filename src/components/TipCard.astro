@@ -38,6 +38,7 @@ try {
 } catch {}
 
 const faviconUrl = `https://www.google.com/s2/favicons?domain=${sourceDomain}&sz=32`;
+const tipCanonicalUrl = `https://tech-tips-hub.pages.dev/${lang}/tip/${tip.id}`;
 ---
 
 <article
@@ -49,12 +50,12 @@ const faviconUrl = `https://www.google.com/s2/favicons?domain=${sourceDomain}&sz
   data-difficulty={tip.difficulty}
 >
   <div>
-    <!-- Top Metadata Bar -->
+    <!-- Top Metadata Bar: Editorial Ledger Header -->
     <div class="flex items-center justify-between gap-2 mb-3 text-xs">
-      <!-- Source Badge -->
+      <!-- Source Badge with clean typography -->
       <a
         href={`/${lang}/sources#${tip.source.id}`}
-        class="inline-flex items-center gap-1.5 font-medium text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors"
+        class="inline-flex items-center gap-1.5 font-medium text-[var(--text-secondary)] hover:text-[var(--accent)] transition-colors group/src"
       >
         <img
           src={faviconUrl}
@@ -62,17 +63,17 @@ const faviconUrl = `https://www.google.com/s2/favicons?domain=${sourceDomain}&sz
           width="16"
           height="16"
           loading="lazy"
-          class="w-4 h-4 rounded-sm shrink-0"
+          class="w-4 h-4 rounded-sm shrink-0 border border-[var(--border-subtle)]"
           onerror="this.style.display='none'"
         />
-        <span class="truncate max-w-[140px]">{tip.source.name}</span>
+        <span class="truncate max-w-[130px] font-mono tracking-tight group-hover/src:underline">{tip.source.name}</span>
       </a>
 
-      <!-- Right Meta: Difficulty + Date -->
+      <!-- Right Meta: Difficulty shape badge + Date -->
       <div class="flex items-center gap-2 shrink-0">
-        <!-- Difficulty Badge with shape and text (Accessibility compliance 12.3) -->
+        <!-- Difficulty with distinct geometric shape -->
         <span
-          class={`inline-flex items-center gap-1 px-2 py-0.5 rounded-full text-[11px] font-medium border ${
+          class={`inline-flex items-center gap-1.5 px-2 py-0.5 rounded-full text-[11px] font-mono font-medium border ${
             tip.difficulty === 'easy'
               ? 'bg-[var(--badge-easy-bg)] text-[var(--badge-easy-text)] border-[var(--badge-easy-border)]'
               : tip.difficulty === 'advanced'
@@ -81,19 +82,21 @@ const faviconUrl = `https://www.google.com/s2/favicons?domain=${sourceDomain}&sz
           }`}
           title={`${t.detail.difficulty}: ${t.difficulty[tip.difficulty]}`}
         >
-          <span class="w-1.5 h-1.5 rounded-full bg-current"></span>
-          {t.difficulty[tip.difficulty]}
+          {tip.difficulty === 'easy' && <span class="w-1.5 h-1.5 rounded-full bg-current"></span>}
+          {tip.difficulty === 'medium' && <span class="w-1.5 h-1.5 rotate-45 bg-current"></span>}
+          {tip.difficulty === 'advanced' && <span class="w-0 h-0 border-l-[3px] border-l-transparent border-r-[3px] border-r-transparent border-b-[5px] border-b-current"></span>}
+          <span>{t.difficulty[tip.difficulty]}</span>
         </span>
 
         {formattedDate && (
-          <span class="text-[var(--text-muted)] text-[11px] hidden sm:inline">
+          <span class="text-[var(--text-muted)] text-[11px] font-mono hidden sm:inline">
             {formattedDate}
           </span>
         )}
       </div>
     </div>
 
-    <!-- Title -->
+    <!-- Title: Serif with elegant editorial leading -->
     <h3 class="text-base sm:text-lg font-bold font-serif leading-snug mb-2 text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors">
       <a href={`/${lang}/tip/${tip.id}`} class="focus:outline-none">
         {titleText}
@@ -107,7 +110,7 @@ const faviconUrl = `https://www.google.com/s2/favicons?domain=${sourceDomain}&sz
   </div>
 
   <div>
-    <!-- Machine Translation Label -->
+    <!-- Machine Translation Micro-Badge -->
     {isMachineTranslated && (
       <div class="mb-3 inline-flex items-center gap-1.5 text-[11px] text-[var(--text-muted)] font-mono bg-[var(--bg-muted)] px-2 py-0.5 rounded border border-[var(--border-subtle)]" title={t.card.machine_translation_tip}>
         <svg class="w-3 h-3 text-[var(--accent)]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -122,7 +125,7 @@ const faviconUrl = `https://www.google.com/s2/favicons?domain=${sourceDomain}&sz
       </div>
     )}
 
-    <!-- Category & Tags Chips -->
+    <!-- Category Pills -->
     <div class="flex flex-wrap items-center gap-1.5 mb-4">
       {tip.categories.map((cat) => (
         <a
@@ -132,14 +135,12 @@ const faviconUrl = `https://www.google.com/s2/favicons?domain=${sourceDomain}&sz
           #{cat}
         </a>
       ))}
-      {tip.tags.slice(0, 2).map((tg) => (
-        <span class="px-1.5 py-0.5 rounded text-[10px] text-[var(--text-muted)] font-mono">
-          · {tg}
-        </span>
-      ))}
+      <span class="text-[10px] font-mono text-[var(--text-muted)] ml-auto">
+        ~{tip.reading_time_min} {t.home.reading_time}
+      </span>
     </div>
 
-    <!-- Action Bar -->
+    <!-- Bottom Actions: Read Original + Copy Link + Bookmark -->
     <div class="pt-3 border-t border-[var(--border-subtle)] flex items-center justify-between gap-2">
       <!-- Direct Link to Original Article -->
       <a
@@ -156,8 +157,22 @@ const faviconUrl = `https://www.google.com/s2/favicons?domain=${sourceDomain}&sz
         </svg>
       </a>
 
-      <!-- Quick Actions: Save & Read Status -->
+      <!-- Quick Actions -->
       <div class="flex items-center gap-1">
+        <!-- Copy Link Button -->
+        <button
+          type="button"
+          class="copy-link-btn p-2 rounded-lg text-[var(--text-muted)] hover:text-[var(--accent)] hover:bg-[var(--bg-muted)] transition-colors"
+          data-url={tipCanonicalUrl}
+          title={lang === 'vi' ? 'Sao chép liên kết' : 'Copy link'}
+          aria-label={lang === 'vi' ? 'Sao chép liên kết' : 'Copy link'}
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <rect width="14" height="14" x="8" y="8" rx="2" ry="2" stroke-width="2"></rect>
+            <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2" stroke-width="2"></path>
+          </svg>
+        </button>
+
         <!-- Bookmark Button -->
         <button
           type="button"
@@ -186,4 +201,3 @@ const faviconUrl = `https://www.google.com/s2/favicons?domain=${sourceDomain}&sz
     </div>
   </div>
 </article>
-
