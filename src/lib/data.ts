@@ -94,6 +94,7 @@ export function getAllTips(includeHidden = false): Tip[] {
     for (const t of list) {
       const configuredSource = sourcesById.get(t.source?.id);
       if (!t.source.content_type) t.source.content_type = configuredSource?.contentType || 'article';
+      if (!t.source.kind) t.source.kind = configuredSource?.kind || (t.howto ? 'tips' : 'news');
       if (!t.slug) {
         const title = t.title?.vi || t.title?.en || '';
         t.slug = generateSeoSlug(title, t.id);

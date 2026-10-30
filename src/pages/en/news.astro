@@ -1,0 +1,23 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TipCard from '../../components/TipCard.astro';
+import { getAllTips, sortTipsForFeed } from '../../lib/data';
+
+const news = sortTipsForFeed(getAllTips().filter((tip) => tip.source.kind === 'news'));
+const labels = {
+  difficulty: { easy: 'Easy', medium: 'Medium', advanced: 'Advanced' },
+  contentTypes: { community: 'Community', video: 'Video', vendor: 'Technology vendor', article: 'Article' },
+  notTranslated: 'Not translated', machineTranslated: 'Machine translated', community: 'Community',
+  moreSources: 'more sources', updated: 'updated', readOriginal: 'Read original', original: 'Original',
+};
+---
+
+<Layout lang="en" title="Tech News" description="The latest technology news from trusted sources.">
+  <h1 class="text-2xl sm:text-3xl font-bold mb-2">Tech News</h1>
+  <p class="text-sm text-[var(--text-secondary)] mb-6">The latest technology updates, separate from how-to guides and practical tips.</p>
+  <p class="text-xs font-mono text-[var(--text-muted)] mb-4">{news.length} articles</p>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+    {news.map((tip) => <TipCard tip={tip} lang="en" labels={labels} />)}
+  </div>
+  {news.length === 0 && <p class="text-sm text-[var(--text-muted)]">No technology news yet.</p>}
+</Layout>

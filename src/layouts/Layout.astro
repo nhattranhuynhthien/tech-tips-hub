@@ -37,6 +37,7 @@ const alternateUrl = `${SITE_URL}${targetPath}`;
 const canonicalUrl = `${SITE_URL}${canonicalPath}`;
 
 const isHome = canonicalPath === `/${lang}` || canonicalPath === `/${lang}/`;
+const isNews = canonicalPath.includes('/news');
 const isSaved = canonicalPath.includes('/saved');
 const isSources = canonicalPath.includes('/sources');
 const isAbout = canonicalPath.includes('/about');
@@ -114,6 +115,12 @@ const isAbout = canonicalPath.includes('/about');
               class={`transition-colors hover:text-[var(--text-primary)] ${isHome ? 'text-[var(--text-primary)] font-bold' : 'text-[var(--text-muted)]'}`}
             >
               {t.nav.home}
+            </a>
+            <a
+              href={`/${lang}/news`}
+              class={`transition-colors hover:text-[var(--text-primary)] ${isNews ? 'text-[var(--text-primary)] font-bold' : 'text-[var(--text-muted)]'}`}
+            >
+              {lang === 'vi' ? 'Tin công nghệ' : 'Tech News'}
             </a>
             <a
               href={`/${lang}/saved`}
@@ -241,6 +248,14 @@ const isAbout = canonicalPath.includes('/about');
           <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
         </svg>
         <span>{t.nav.home}</span>
+      </a>
+
+      <a
+        href={`/${lang}/news`}
+        class={`flex flex-col items-center gap-0.5 py-1 px-3 rounded-lg transition-colors ${isNews ? 'text-[var(--accent)] font-bold' : 'text-[var(--text-muted)]'}`}
+      >
+        <span aria-hidden="true" class="text-sm">↗</span>
+        <span>{lang === 'vi' ? 'Tin tức' : 'News'}</span>
       </a>
 
       <a

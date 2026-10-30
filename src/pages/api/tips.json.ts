@@ -11,6 +11,8 @@ export async function GET() {
     summary: t.summary,
     source: t.source,
     source_type: t.source_type,
+    howto: t.howto,
+    kind: t.source.kind,
     categories: t.categories,
     tags: t.tags,
     difficulty: t.difficulty,

@@ -1,0 +1,23 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TipCard from '../../components/TipCard.astro';
+import { getAllTips, sortTipsForFeed } from '../../lib/data';
+
+const news = sortTipsForFeed(getAllTips().filter((tip) => tip.source.kind === 'news'));
+const labels = {
+  difficulty: { easy: 'Dễ', medium: 'Vừa', advanced: 'Nâng cao' },
+  contentTypes: { community: 'Cộng đồng', video: 'Video', vendor: 'Hãng công nghệ', article: 'Bài viết' },
+  notTranslated: 'Chưa dịch', machineTranslated: 'Bản dịch tự động', community: 'Cộng đồng',
+  moreSources: 'nguồn khác', updated: 'cập nhật', readOriginal: 'Đọc bài gốc', original: 'Bài gốc',
+};
+---
+
+<Layout lang="vi" title="Tin công nghệ" description="Tin công nghệ mới nhất từ các nguồn uy tín.">
+  <h1 class="text-2xl sm:text-3xl font-bold mb-2">Tin công nghệ</h1>
+  <p class="text-sm text-[var(--text-secondary)] mb-6">Cập nhật công nghệ mới nhất, tách riêng khỏi các bài hướng dẫn và thủ thuật.</p>
+  <p class="text-xs font-mono text-[var(--text-muted)] mb-4">{news.length} bài viết</p>
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+    {news.map((tip) => <TipCard tip={tip} lang="vi" labels={labels} />)}
+  </div>
+  {news.length === 0 && <p class="text-sm text-[var(--text-muted)]">Chưa có tin công nghệ.</p>}
+</Layout>
