@@ -227,6 +227,40 @@
     "hidden": false,
     "slug": "ba-cai-dat-android-ma-toi-da-tranh-trong-nhieu-nam-hoa-ra-la-f3634b"
   },
+  "76d2c86df350a67e": {
+    "id": "76d2c86df350a67e",
+    "slug": "gmail-stopped-being-a-nightmare-after-i-set-up-these-5-simpl-76d2c8",
+    "url": "https://www.howtogeek.com/gmail-stopped-being-nightmare-after-set-up-simple-automations",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Tony Phillips",
+    "published_at": "Thu, 29 Oct 2026 21:01:15 GMT",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Gmail stopped being a nightmare after I set up these 5 simple automations",
+      "vi": "Gmail không còn là cơn ác mộng sau khi tôi thiết lập 5 tính năng tự động hóa đơn giản này"
+    },
+    "summary": {
+      "en": "A few simple Gmail settings can simplify follow-ups, automate replies, redirect key messages, and organize your inbox.",
+      "vi": "Một số cài đặt Gmail đơn giản có thể đơn giản hóa việc theo dõi, tự động trả lời, chuyển hướng các thư chính và sắp xếp hộp thư đến của bạn."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 1.4,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
   "50540090dc1f9a17": {
     "id": "50540090dc1f9a17",
     "url": "https://feed.itsfoss.com/link/24361/17507385/things-to-do-after-installing-ubuntu-26-10",
@@ -264,43 +298,6 @@
     "hidden": false,
     "slug": "22-dieu-can-lam-sau-khi-cai-dat-ubuntu-2610-stonking-stingra-505400"
   },
-  "6f7743a9465550a4": {
-    "id": "6f7743a9465550a4",
-    "url": "https://vnexpress.net/oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-5138064.html",
-    "source": {
-      "id": "vnexpress_sohoa",
-      "name": "VnExpress Thủ Thuật",
-      "site_url": "https://vnexpress.net/so-hoa",
-      "kind": "tips"
-    },
-    "author": null,
-    "published_at": "Wed, 28 Oct 2026 22:27:00 +0700",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "vi",
-    "title": {
-      "vi": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel",
-      "en": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel"
-    },
-    "summary": {
-      "vi": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh.",
-      "en": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh."
-    },
-    "categories": [
-      "hardware"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.18,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "en": "machine"
-    },
-    "raw_title": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel",
-    "raw_summary": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh.",
-    "hidden": false,
-    "slug": "oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-6f7743"
-  },
   "7e50ebb05b0da922": {
     "id": "7e50ebb05b0da922",
     "slug": "cai-dat-hdmi-cec-cua-tv-co-the-kiem-soat-nhieu-hon-ban-nghi-7e50eb",
@@ -337,45 +334,6 @@
     "raw_title": "Your TV's HDMI-CEC setting can control more than you think",
     "raw_summary": "One overlooked feature could explain why your TV and connected devices behave the way they do.",
     "hidden": false
-  },
-  "131eaa65657ae221": {
-    "id": "131eaa65657ae221",
-    "url": "https://www.howtogeek.com/these-mistakes-can-turn-pi-hole-into-least-secure-part-your-home-network",
-    "source": {
-      "id": "howtogeek",
-      "name": "How-To Geek",
-      "site_url": "https://www.howtogeek.com",
-      "kind": "tips"
-    },
-    "author": "Umair Khurshid",
-    "published_at": "Wed, 28 Oct 2026 21:30:14 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "These 6 mistakes can turn Pi-hole into the least secure part of your home network",
-      "vi": "6 sai lầm này có thể biến Pi-hole trở thành phần kém an toàn nhất trong mạng gia đình của bạn"
-    },
-    "summary": {
-      "en": "Nothing says peace of mind like discovering your favorite privacy tool has a few secrets of its own!",
-      "vi": "Không có gì mang lại cảm giác an tâm bằng việc khám phá ra công cụ bảo mật yêu thích của bạn có một vài bí mật riêng!"
-    },
-    "categories": [
-      "security"
-    ],
-    "tags": [
-      "privacy"
-    ],
-    "difficulty": null,
-    "score": 1.17,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "These 6 mistakes can turn Pi-hole into the least secure part of your home network",
-    "raw_summary": "Nothing says peace of mind like discovering your favorite privacy tool has a few secrets of its own!",
-    "hidden": false,
-    "slug": "6-sai-lam-nay-co-the-bien-pi-hole-tro-thanh-phan-kem-an-toan-131eaa"
   },
   "604f9be9642ce51f": {
     "id": "604f9be9642ce51f",
@@ -529,6 +487,40 @@
     "hidden": false,
     "slug": "5-cai-dat-chrome-don-gian-de-khac-phuc-tinh-trang-ngon-bo-nh-52d1d6"
   },
+  "8713827b0e9b04ee": {
+    "id": "8713827b0e9b04ee",
+    "slug": "this-is-the-physical-keyboard-you-need-if-you-care-about-typ-871382",
+    "url": "https://www.howtogeek.com/this-physical-keyboard-you-need-if-you-care-about-typing-on-your-phone",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Bertel King",
+    "published_at": "Thu, 29 Oct 2026 23:00:15 GMT",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "This is the physical keyboard you need if you care about typing on your phone",
+      "vi": "Đây là bàn phím vật lý bạn cần nếu bạn quan tâm đến việc gõ trên điện thoại"
+    },
+    "summary": {
+      "en": "It's time your pocket PC setup felt more like a laptop.",
+      "vi": "Đã đến lúc thiết lập máy tính bỏ túi của bạn giống một chiếc máy tính xách tay hơn."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.23,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
   "f8c22dda71ed6073": {
     "id": "f8c22dda71ed6073",
     "url": "https://feed.itsfoss.com/link/24361/17510602/ubuntu-core-desktop-firmware-hwe",
@@ -603,6 +595,43 @@
     "hidden": false,
     "slug": "microsoft-sua-loi-remote-desktop-do-cac-ban-cap-nhat-windows-99ccbb"
   },
+  "6f7743a9465550a4": {
+    "id": "6f7743a9465550a4",
+    "url": "https://vnexpress.net/oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-5138064.html",
+    "source": {
+      "id": "vnexpress_sohoa",
+      "name": "VnExpress Thủ Thuật",
+      "site_url": "https://vnexpress.net/so-hoa",
+      "kind": "tips"
+    },
+    "author": null,
+    "published_at": "Wed, 28 Oct 2026 22:27:00 +0700",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel",
+      "en": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel"
+    },
+    "summary": {
+      "vi": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh.",
+      "en": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.18,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": "machine"
+    },
+    "raw_title": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel",
+    "raw_summary": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh.",
+    "hidden": false,
+    "slug": "oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-6f7743"
+  },
   "51ae3dcde8c253db": {
     "id": "51ae3dcde8c253db",
     "url": "https://www.omgubuntu.co.uk/2026/10/ghostty-1-4-released",
@@ -643,43 +672,6 @@
     "hidden": true,
     "slug": "ghostty-14-ra-mat-voi-nhieu-cai-tien-lon-51ae3d"
   },
-  "bd9ce4e0e37eb114": {
-    "id": "bd9ce4e0e37eb114",
-    "url": "https://www.omgubuntu.co.uk/2026/10/ubuntu-core-desktop-2704",
-    "source": {
-      "id": "omgubuntu",
-      "name": "OMG! Ubuntu!",
-      "site_url": "https://www.omgubuntu.co.uk",
-      "kind": "tips"
-    },
-    "author": "Joey Sneddon",
-    "published_at": "Wed, 28 Oct 2026 19:38:29 +0000",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Ubuntu Core Desktop ‘accelerating’ development ahead of 27.04",
-      "vi": "Ubuntu Core Desktop 'tăng tốc' phát triển trước ngày 27.04"
-    },
-    "summary": {
-      "en": "Canonical has announced it’s ‘accelerating’ development of Ubuntu Core Desktop, its immutable, snap-based version of its desktop OS. Ubuntu Core Desktop was announced in 2023 and made available in preview for enthusiasts to try. But a lack of of obvious progress and direction (not to mention…",
-      "vi": "Canonical đã công bố họ đang 'tăng tốc' phát triển Ubuntu Core Desktop, phiên bản hệ điều hành máy tính để bàn không thay đổi, dựa trên snap. Ubuntu Core Desktop được công bố vào năm 2023 và được cung cấp ở dạng bản xem trước cho những người đam mê dùng thử. Nhưng thiếu sự tiến bộ và định hướng rõ ràng (chưa kể…"
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 1.08,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "Ubuntu Core Desktop ‘accelerating’ development ahead of 27.04",
-    "raw_summary": "Canonical has announced it’s ‘accelerating’ development of Ubuntu Core Desktop, its immutable, snap-based version of its desktop OS. Ubuntu Core Desktop was announced in 2023 and made available in preview for enthusiasts to try. But a lack of of obvious progress and direction (not to mention…",
-    "hidden": false,
-    "slug": "ubuntu-core-desktop-tang-toc-phat-trien-truoc-ngay-2704-bd9ce4"
-  },
   "65a7831f485fdf8f": {
     "id": "65a7831f485fdf8f",
     "url": "https://vnexpress.net/chinh-sua-gene-bo-h-mong-xay-dung-thuong-hieu-cao-cap-cua-viet-nam-5137453.html",
@@ -716,44 +708,78 @@
     "raw_summary": "Học viện Nông nghiệp Việt Nam tạo thành công 5 bê H'Mông bằng công nghệ chỉnh sửa gene MSTN, hướng tới xây dựng thương hiệu bò thịt cao cấp của Việt Nam.",
     "hidden": true
   },
-  "1d22dd0edb251dbb": {
-    "id": "1d22dd0edb251dbb",
-    "url": "https://9to5google.com/2026/10/26/chrome-156-googlebooks",
+  "1c8f2197065ac11e": {
+    "id": "1c8f2197065ac11e",
+    "slug": "gelly-is-a-gtk-desktop-music-player-for-jellyfin-and-navidro-1c8f21",
+    "url": "https://www.omgubuntu.co.uk/2026/10/gelly-jellyfin-desktop-music-player-linux",
     "source": {
-      "id": "9to5google",
-      "name": "9to5Google",
-      "site_url": "https://9to5google.com",
-      "kind": "news"
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips"
     },
-    "author": "Abner Li",
-    "published_at": "Mon, 26 Oct 2026 19:58:11 +0000",
-    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
+    "author": "Joey Sneddon",
+    "published_at": "Thu, 29 Oct 2026 23:22:00 +0000",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Chrome 156 for Googlebook rolling out with 14 updates across sites, shortcuts, more",
-      "vi": "Chrome 156 cho Googlebook ra mắt với 14 bản cập nhật trên các trang web, lối tắt, v.v."
+      "en": "Gelly is a GTK desktop music player for Jellyfin and Navidrome",
+      "vi": "Gelly là trình phát nhạc trên máy tính để bàn GTK dành cho Jellyfin và Navidrome"
     },
     "summary": {
-      "en": "Google is rolling out Chrome 156 for Googlebooks with a slew of improvements and bug fixes. This follows the last browser update two weeks ago.",
-      "vi": "Google đang tung ra Chrome 156 dành cho Googlebooks với nhiều cải tiến và sửa lỗi. Điều này diễn ra sau bản cập nhật trình duyệt cuối cùng hai tuần trước."
+      "en": "If you run your own music streaming server using Jellyfin or Navidrome/Subsonic, and you want a solid desktop player to browse and stream your library in, Gelly is worth a look. It bills itself as a “native, lightweight music player” for the aforementioned streaming servers…",
+      "vi": "Nếu bạn chạy máy chủ phát nhạc trực tuyến của riêng mình bằng Jellyfin hoặc Navidrome/Subsonic và bạn muốn có một trình phát máy tính để bàn chắc chắn để duyệt và phát trực tuyến thư viện của mình, Gelly rất đáng để xem xét. Nó tự nhận mình là “trình phát nhạc nhẹ, gốc” cho các máy chủ phát trực tuyến nói trên…"
     },
     "categories": [
-      "browser"
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.18,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "131eaa65657ae221": {
+    "id": "131eaa65657ae221",
+    "url": "https://www.howtogeek.com/these-mistakes-can-turn-pi-hole-into-least-secure-part-your-home-network",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Umair Khurshid",
+    "published_at": "Wed, 28 Oct 2026 21:30:14 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "These 6 mistakes can turn Pi-hole into the least secure part of your home network",
+      "vi": "6 sai lầm này có thể biến Pi-hole trở thành phần kém an toàn nhất trong mạng gia đình của bạn"
+    },
+    "summary": {
+      "en": "Nothing says peace of mind like discovering your favorite privacy tool has a few secrets of its own!",
+      "vi": "Không có gì mang lại cảm giác an tâm bằng việc khám phá ra công cụ bảo mật yêu thích của bạn có một vài bí mật riêng!"
+    },
+    "categories": [
+      "security"
     ],
     "tags": [
-      "chrome"
+      "privacy"
     ],
-    "difficulty": "medium",
-    "score": 1.02,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
-    "raw_title": "Chrome 156 for Googlebook rolling out with 14 updates across sites, shortcuts, more",
-    "raw_summary": "Google is rolling out Chrome 156 for Googlebooks with a slew of improvements and bug fixes. This follows the last browser update two weeks ago.",
+    "raw_title": "These 6 mistakes can turn Pi-hole into the least secure part of your home network",
+    "raw_summary": "Nothing says peace of mind like discovering your favorite privacy tool has a few secrets of its own!",
     "hidden": false,
-    "slug": "chrome-156-cho-googlebook-ra-mat-voi-14-ban-cap-nhat-tren-ca-1d22dd"
+    "slug": "6-sai-lam-nay-co-the-bien-pi-hole-tro-thanh-phan-kem-an-toan-131eaa"
   },
   "e2eaf0b40e5a173e": {
     "id": "e2eaf0b40e5a173e",
@@ -792,43 +818,6 @@
     "raw_summary": "Google today rolled out a big Android 17 QPR3 Beta 3 with a number of fixes for Pixel devices.",
     "hidden": false
   },
-  "d5d383be6d2d90ea": {
-    "id": "d5d383be6d2d90ea",
-    "url": "https://feed.itsfoss.com/link/24361/17502832/beamfs-linux-filesystem-proposal",
-    "source": {
-      "id": "itsfoss",
-      "name": "It's FOSS",
-      "site_url": "https://itsfoss.com",
-      "kind": "tips"
-    },
-    "author": "Sourav Rudra",
-    "published_at": "Thu, 22 Oct 2026 20:09:35 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "This Newly Proposed Linux Filesystem Can Fix Corrupted Data",
-      "vi": "Hệ thống tập tin Linux mới được đề xuất này có thể sửa dữ liệu bị hỏng"
-    },
-    "summary": {
-      "en": "Aimed at hardware exposed to radiation, like satellites, BeamFS can repair data without keeping a second copy.",
-      "vi": "Nhắm vào phần cứng tiếp xúc với bức xạ, như vệ tinh, BeamFS có thể sửa chữa dữ liệu mà không cần giữ bản sao thứ hai."
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.13,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "This Newly Proposed Linux Filesystem Can Fix Corrupted Data",
-    "raw_summary": "Aimed at hardware exposed to radiation, like satellites, BeamFS can repair data without keeping a second copy.",
-    "hidden": false,
-    "slug": "he-thong-tap-tin-linux-moi-duoc-de-xuat-nay-co-the-sua-du-li-d5d383"
-  },
   "5b524ac74503290a": {
     "id": "5b524ac74503290a",
     "slug": "android-17-qpr3-beta-3-ra-mat-voi-26-ban-sua-loi-pixel-5b524a",
@@ -865,6 +854,43 @@
     "raw_title": "Android 17 QPR3 Beta 3 rolling out with 26 Pixel fixes",
     "raw_summary": "Following last week’s release, Google is rolling out Android 17 QPR3 Beta 3 to Pixel devices today. It’s another big bug fixer.",
     "hidden": false
+  },
+  "409e483d49f43dec": {
+    "id": "409e483d49f43dec",
+    "slug": "google-confirms-fix-is-in-the-works-for-pixel-watch-extreme-409e48",
+    "url": "https://www.androidauthority.com/pixel-watch-battery-fix-3729791",
+    "source": {
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news"
+    },
+    "author": "Stephen Schenck",
+    "published_at": "Fri, 30 Oct 2026 00:43:56 +0000",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Google confirms: Fix is in the works for Pixel Watch extreme battery drain issue",
+      "vi": "Google xác nhận: Đang tiến hành khắc phục sự cố hao pin quá mức của Pixel Watch"
+    },
+    "summary": {
+      "en": "Google says the issue only affects \"a small number\" of Pixel Watch owners.",
+      "vi": "Google cho biết vấn đề này chỉ ảnh hưởng đến \"một số lượng nhỏ\" người sở hữu Pixel Watch."
+    },
+    "categories": [
+      "android",
+      "hardware"
+    ],
+    "tags": [
+      "battery"
+    ],
+    "difficulty": "medium",
+    "score": 1.16,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
   },
   "71b2a13220a98736": {
     "id": "71b2a13220a98736",
@@ -903,44 +929,6 @@
     "raw_summary": "There’s a new Google Home update rolling out that delivers improvements for Nest Cam owners, Matter devices, and more.",
     "hidden": false
   },
-  "72c7ad11c062c24d": {
-    "id": "72c7ad11c062c24d",
-    "url": "https://feed.itsfoss.com/link/24361/17508486/ghostty-1-4-release",
-    "source": {
-      "id": "itsfoss",
-      "name": "It's FOSS",
-      "site_url": "https://itsfoss.com",
-      "kind": "tips"
-    },
-    "author": "Sourav Rudra",
-    "published_at": "Wed, 28 Oct 2026 15:39:27 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Ghostty 1.4 Is Faster and Uses Less RAM, but Drops Ubuntu 24.04 LTS Support",
-      "vi": "Ghostty 1.4 nhanh hơn và sử dụng ít RAM hơn nhưng không hỗ trợ Ubuntu 24.04 LTS"
-    },
-    "summary": {
-      "en": "The Ubuntu 24.04 support drop is thanks to the native builds requiring some newer dependencies. Anyhow, there’s more to this Ghostty release than that.",
-      "vi": "Việc giảm hỗ trợ Ubuntu 24.04 là do các bản dựng gốc yêu cầu một số phần phụ thuộc mới hơn. Dù sao đi nữa, bản phát hành Ghostty này còn có nhiều điều hơn thế."
-    },
-    "categories": [
-      "linux",
-      "hardware"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 1.13,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "Ghostty 1.4 Is Faster and Uses Less RAM, but Drops Ubuntu 24.04 LTS Support",
-    "raw_summary": "The Ubuntu 24.04 support drop is thanks to the native builds requiring some newer dependencies. Anyhow, there’s more to this Ghostty release than that.",
-    "hidden": false,
-    "slug": "ghostty-14-nhanh-hon-va-su-dung-it-ram-hon-nhung-khong-ho-tr-72c7ad"
-  },
   "4bea0992c512d14b": {
     "id": "4bea0992c512d14b",
     "slug": "ban-cap-nhat-google-photos-sua-loi-an-anh-da-chinh-sua-4bea09",
@@ -978,30 +966,101 @@
     "raw_summary": "A bug in Google Photos has left edited pictures invisible to other Android apps, but Google has now rolled out a fix.",
     "hidden": false
   },
-  "4d429bba38d36917": {
-    "id": "4d429bba38d36917",
-    "url": "https://feed.itsfoss.com/link/24361/17507740/ginux",
+  "c73d9301dbcc67bf": {
+    "id": "c73d9301dbcc67bf",
+    "slug": "google-is-cleaning-up-homes-messiest-bugs-with-fixes-for-cam-c73d93",
+    "url": "https://www.androidauthority.com/google-home-fixes-2-3729774",
+    "source": {
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news"
+    },
+    "author": "Stephen Schenck",
+    "published_at": "Thu, 29 Oct 2026 21:33:47 +0000",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Google is cleaning up Home’s messiest bugs, with fixes for cameras, Matter devices, and more",
+      "vi": "Google đang dọn dẹp những lỗi lộn xộn nhất của Home, với các bản sửa lỗi cho máy ảnh, thiết bị Matter, v.v."
+    },
+    "summary": {
+      "en": "Let's hope this goes a long way towards sorting out some of Google Home's performance issues.",
+      "vi": "Hãy hy vọng điều này sẽ giúp ích rất nhiều trong việc giải quyết một số vấn đề về hiệu suất của Google Home."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.16,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "d5d383be6d2d90ea": {
+    "id": "d5d383be6d2d90ea",
+    "url": "https://feed.itsfoss.com/link/24361/17502832/beamfs-linux-filesystem-proposal",
     "source": {
       "id": "itsfoss",
       "name": "It's FOSS",
       "site_url": "https://itsfoss.com",
       "kind": "tips"
     },
-    "author": "Abhishek Prakash",
-    "published_at": "Tue, 27 Oct 2026 21:01:43 +0530",
+    "author": "Sourav Rudra",
+    "published_at": "Thu, 22 Oct 2026 20:09:35 +0530",
     "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Rocky Linux Creator Built a New \"Not Linux\" Kernel in 11 Days Using AI",
-      "vi": "Rocky Linux Creator đã xây dựng hạt nhân \"Không phải Linux\" mới trong 11 ngày bằng AI"
+      "en": "This Newly Proposed Linux Filesystem Can Fix Corrupted Data",
+      "vi": "Hệ thống tập tin Linux mới được đề xuất này có thể sửa dữ liệu bị hỏng"
     },
     "summary": {
-      "en": "Ginux is not a Linux fork, yet it boots Rocky Linux 10 all the way to systemd. An OpenAI Codex agent wrote about 139,000 lines of it.",
-      "vi": "Ginux không phải là một nhánh của Linux, nhưng nó khởi động từ Rocky Linux 10 đến systemd. Một tác nhân OpenAI Codex đã viết khoảng 139.000 dòng về nó."
+      "en": "Aimed at hardware exposed to radiation, like satellites, BeamFS can repair data without keeping a second copy.",
+      "vi": "Nhắm vào phần cứng tiếp xúc với bức xạ, như vệ tinh, BeamFS có thể sửa chữa dữ liệu mà không cần giữ bản sao thứ hai."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.13,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "This Newly Proposed Linux Filesystem Can Fix Corrupted Data",
+    "raw_summary": "Aimed at hardware exposed to radiation, like satellites, BeamFS can repair data without keeping a second copy.",
+    "hidden": false,
+    "slug": "he-thong-tap-tin-linux-moi-duoc-de-xuat-nay-co-the-sua-du-li-d5d383"
+  },
+  "72c7ad11c062c24d": {
+    "id": "72c7ad11c062c24d",
+    "url": "https://feed.itsfoss.com/link/24361/17508486/ghostty-1-4-release",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "Wed, 28 Oct 2026 15:39:27 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Ghostty 1.4 Is Faster and Uses Less RAM, but Drops Ubuntu 24.04 LTS Support",
+      "vi": "Ghostty 1.4 nhanh hơn và sử dụng ít RAM hơn nhưng không hỗ trợ Ubuntu 24.04 LTS"
+    },
+    "summary": {
+      "en": "The Ubuntu 24.04 support drop is thanks to the native builds requiring some newer dependencies. Anyhow, there’s more to this Ghostty release than that.",
+      "vi": "Việc giảm hỗ trợ Ubuntu 24.04 là do các bản dựng gốc yêu cầu một số phần phụ thuộc mới hơn. Dù sao đi nữa, bản phát hành Ghostty này còn có nhiều điều hơn thế."
     },
     "categories": [
       "linux",
-      "ai"
+      "hardware"
     ],
     "tags": [],
     "difficulty": null,
@@ -1011,195 +1070,10 @@
     "translated": {
       "vi": "machine"
     },
-    "raw_title": "Rocky Linux Creator Built a New \"Not Linux\" Kernel in 11 Days Using AI",
-    "raw_summary": "Ginux is not a Linux fork, yet it boots Rocky Linux 10 all the way to systemd. An OpenAI Codex agent wrote about 139,000 lines of it.",
+    "raw_title": "Ghostty 1.4 Is Faster and Uses Less RAM, but Drops Ubuntu 24.04 LTS Support",
+    "raw_summary": "The Ubuntu 24.04 support drop is thanks to the native builds requiring some newer dependencies. Anyhow, there’s more to this Ghostty release than that.",
     "hidden": false,
-    "slug": "rocky-linux-creator-da-xay-dung-hat-nhan-khong-phai-linux-mo-4d429b"
-  },
-  "22665e7c7e5afa39": {
-    "id": "22665e7c7e5afa39",
-    "url": "https://www.howtogeek.com/this-3d-print-is-designed-to-get-destroyed-and-its-the-most-useful-thing-i-make",
-    "source": {
-      "id": "howtogeek",
-      "name": "How-To Geek",
-      "site_url": "https://www.howtogeek.com",
-      "kind": "tips"
-    },
-    "author": "Patrick Campanale",
-    "published_at": "Thu, 29 Oct 2026 00:00:15 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "This 3D print is designed to get destroyed, and it’s the most useful thing I make",
-      "vi": "Bản in 3D này được thiết kế để bị phá hủy và đó là thứ hữu ích nhất mà tôi tạo ra"
-    },
-    "summary": {
-      "en": "Sacrificial parts are where a 3D printer really earns its keep.",
-      "vi": "Các bộ phận hy sinh là nơi máy in 3D thực sự kiếm được tiền."
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 1.04,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "This 3D print is designed to get destroyed, and it’s the most useful thing I make",
-    "raw_summary": "Sacrificial parts are where a 3D printer really earns its keep.",
-    "hidden": false,
-    "slug": "ban-in-3d-nay-duoc-thiet-ke-de-bi-pha-huy-va-do-la-thu-huu-i-22665e"
-  },
-  "01054830b2a9635b": {
-    "id": "01054830b2a9635b",
-    "url": "https://feed.itsfoss.com/link/24361/17507469/tesco-vmware-exit",
-    "source": {
-      "id": "itsfoss",
-      "name": "It's FOSS",
-      "site_url": "https://itsfoss.com",
-      "kind": "tips"
-    },
-    "author": "Sourav Rudra",
-    "published_at": "Tue, 27 Oct 2026 15:18:41 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "In a Setback to VMWare, Tesco is Looking to Migrate to Proxmox",
-      "vi": "Trong bước lùi của VMWare, Tesco đang tìm cách chuyển sang Proxmox"
-    },
-    "summary": {
-      "en": "Tired of the rising licensing cost of VMWare, Tesco seems to be looking to switch to Proxmox.",
-      "vi": "Mệt mỏi vì chi phí cấp phép ngày càng tăng của VMWare, Tesco dường như đang tìm cách chuyển sang Proxmox."
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 1.13,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "In a Setback to VMWare, Tesco is Looking to Migrate to Proxmox",
-    "raw_summary": "Tired of the rising licensing cost of VMWare, Tesco seems to be looking to switch to Proxmox.",
-    "hidden": false,
-    "slug": "trong-buoc-lui-cua-vmware-tesco-dang-tim-cach-chuyen-sang-pr-010548"
-  },
-  "a649527bbaa9fadb": {
-    "id": "a649527bbaa9fadb",
-    "url": "https://feed.itsfoss.com/link/24361/17507094/daemonarchy-overview",
-    "source": {
-      "id": "itsfoss",
-      "name": "It's FOSS",
-      "site_url": "https://itsfoss.com",
-      "kind": "tips"
-    },
-    "author": "Sourav Rudra",
-    "published_at": "Mon, 26 Oct 2026 23:05:00 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "BSD Users Can Now Enjoy Omarchy Flavor",
-      "vi": "Người dùng BSD hiện có thể thưởng thức hương vị Omarchy"
-    },
-    "summary": {
-      "en": "Daemonarchy keeps Omarchy’s installer and look, with FreeBSD handling the system underneath.",
-      "vi": "Daemonarchy giữ trình cài đặt và giao diện của Omarchy, với FreeBSD xử lý hệ thống bên dưới."
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.98,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "BSD Users Can Now Enjoy Omarchy Flavor",
-    "raw_summary": "Daemonarchy keeps Omarchy’s installer and look, with FreeBSD handling the system underneath.",
-    "hidden": false,
-    "slug": "nguoi-dung-bsd-hien-co-the-thuong-thuc-huong-vi-omarchy-a64952"
-  },
-  "b25dac19ae9865bb": {
-    "id": "b25dac19ae9865bb",
-    "url": "https://www.howtogeek.com/your-hdr-movies-have-a-subtitle-problem",
-    "source": {
-      "id": "howtogeek",
-      "name": "How-To Geek",
-      "site_url": "https://www.howtogeek.com",
-      "kind": "tips"
-    },
-    "author": "Sydney Butler",
-    "published_at": "Wed, 28 Oct 2026 20:16:16 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Your HDR movies have a subtitle problem",
-      "vi": "Phim HDR của bạn có vấn đề về phụ đề"
-    },
-    "summary": {
-      "en": "Blinding white captions can dominate dark scenes on modern HDR sets and even cause mini LED bloom to flare during evening viewing.",
-      "vi": "Chú thích màu trắng chói mắt có thể lấn át các cảnh tối trên các bộ HDR hiện đại và thậm chí khiến đèn LED mini tỏa sáng khi xem buổi tối."
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 1.04,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "Your HDR movies have a subtitle problem",
-    "raw_summary": "Blinding white captions can dominate dark scenes on modern HDR sets and even cause mini LED bloom to flare during evening viewing.",
-    "hidden": false,
-    "slug": "phim-hdr-cua-ban-co-van-de-ve-phu-de-b25dac"
-  },
-  "55f3dda9cce6d5d1": {
-    "id": "55f3dda9cce6d5d1",
-    "url": "https://www.howtogeek.com/heres-how-i-replicated-3-of-the-googlebooks-best-features-on-a-60-dollar-linux-laptop",
-    "source": {
-      "id": "howtogeek",
-      "name": "How-To Geek",
-      "site_url": "https://www.howtogeek.com",
-      "kind": "tips"
-    },
-    "author": "Andrew Heinzman",
-    "published_at": "Wed, 28 Oct 2026 20:00:15 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Here's how I replicated 3 of the Googlebook's best features on a $60 Linux laptop",
-      "vi": "Đây là cách tôi sao chép 3 tính năng tốt nhất của Googlebook trên máy tính xách tay Linux giá 60 USD"
-    },
-    "summary": {
-      "en": "Turns out, I didn't have to work hard to get a semi-Googlebook experience in Linux",
-      "vi": "Hóa ra tôi không cần phải vất vả mới có được trải nghiệm bán Googlebook trên Linux"
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 1.04,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "Here's how I replicated 3 of the Googlebook's best features on a $60 Linux laptop",
-    "raw_summary": "Turns out, I didn't have to work hard to get a semi-Googlebook experience in Linux",
-    "hidden": false,
-    "slug": "day-la-cach-toi-sao-chep-3-tinh-nang-tot-nhat-cua-googlebook-55f3dd"
+    "slug": "ghostty-14-nhanh-hon-va-su-dung-it-ram-hon-nhung-khong-ho-tr-72c7ad"
   },
   "a07d8ae926f256fd": {
     "id": "a07d8ae926f256fd",
@@ -1240,6 +1114,81 @@
     "raw_summary": "Ten Linux command line puzzles, from hidden files to SUID privilege escalation. Free, no account needed, runs in Docker on your computer.",
     "hidden": false,
     "slug": "lenh-chinh-phuc-a07d8a"
+  },
+  "4d429bba38d36917": {
+    "id": "4d429bba38d36917",
+    "url": "https://feed.itsfoss.com/link/24361/17507740/ginux",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips"
+    },
+    "author": "Abhishek Prakash",
+    "published_at": "Tue, 27 Oct 2026 21:01:43 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Rocky Linux Creator Built a New \"Not Linux\" Kernel in 11 Days Using AI",
+      "vi": "Rocky Linux Creator đã xây dựng hạt nhân \"Không phải Linux\" mới trong 11 ngày bằng AI"
+    },
+    "summary": {
+      "en": "Ginux is not a Linux fork, yet it boots Rocky Linux 10 all the way to systemd. An OpenAI Codex agent wrote about 139,000 lines of it.",
+      "vi": "Ginux không phải là một nhánh của Linux, nhưng nó khởi động từ Rocky Linux 10 đến systemd. Một tác nhân OpenAI Codex đã viết khoảng 139.000 dòng về nó."
+    },
+    "categories": [
+      "linux",
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.13,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "Rocky Linux Creator Built a New \"Not Linux\" Kernel in 11 Days Using AI",
+    "raw_summary": "Ginux is not a Linux fork, yet it boots Rocky Linux 10 all the way to systemd. An OpenAI Codex agent wrote about 139,000 lines of it.",
+    "hidden": false,
+    "slug": "rocky-linux-creator-da-xay-dung-hat-nhan-khong-phai-linux-mo-4d429b"
+  },
+  "01054830b2a9635b": {
+    "id": "01054830b2a9635b",
+    "url": "https://feed.itsfoss.com/link/24361/17507469/tesco-vmware-exit",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "Tue, 27 Oct 2026 15:18:41 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "In a Setback to VMWare, Tesco is Looking to Migrate to Proxmox",
+      "vi": "Trong bước lùi của VMWare, Tesco đang tìm cách chuyển sang Proxmox"
+    },
+    "summary": {
+      "en": "Tired of the rising licensing cost of VMWare, Tesco seems to be looking to switch to Proxmox.",
+      "vi": "Mệt mỏi vì chi phí cấp phép ngày càng tăng của VMWare, Tesco dường như đang tìm cách chuyển sang Proxmox."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.13,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "In a Setback to VMWare, Tesco is Looking to Migrate to Proxmox",
+    "raw_summary": "Tired of the rising licensing cost of VMWare, Tesco seems to be looking to switch to Proxmox.",
+    "hidden": false,
+    "slug": "trong-buoc-lui-cua-vmware-tesco-dang-tim-cach-chuyen-sang-pr-010548"
   },
   "21aff877323bcda0": {
     "id": "21aff877323bcda0",
@@ -1316,42 +1265,42 @@
     "hidden": false,
     "slug": "toi-da-ngung-vut-bo-o-dia-flash-cu-va-phong-hoc-tai-nha-cua-ab22be"
   },
-  "d3a089a79de6f388": {
-    "id": "d3a089a79de6f388",
-    "url": "https://www.tomshardware.com/tech-industry/policy/malaysia-seizes-usd12-million-worth-of-advanced-ai-chips-hidden-inside-30-servers-customs-says-suspected-smuggling-network-used-the-country-as-a-transit-hub",
+  "cfe726b59a7f0747": {
+    "id": "cfe726b59a7f0747",
+    "url": "https://www.xda-developers.com/home-assistants-latest-update-makes-matter-leak-sensors-and-locks-worth-setting-up",
     "source": {
-      "id": "tomshardware",
-      "name": "Tom's Hardware",
-      "site_url": "https://www.tomshardware.com",
+      "id": "xdadevelopers",
+      "name": "XDA Developers",
+      "site_url": "https://www.xda-developers.com",
       "kind": "news"
     },
-    "author": "Etiido Uko",
-    "published_at": "Wed, 28 Oct 2026 17:02:14 +0000",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "Joe Rice-Jones",
+    "published_at": "Thu, 29 Oct 2026 14:00:21 GMT",
+    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Malaysia seizes $12 million worth of advanced AI chips hidden inside 30 servers",
-      "vi": "Malaysia tịch thu chip AI tiên tiến trị giá 12 triệu USD giấu trong 30 máy chủ"
+      "en": "Home Assistant's latest update makes Matter leak sensors and locks worth setting up",
+      "vi": "Bản cập nhật mới nhất của Home Assistant khiến các cảm biến và khóa rò rỉ Matter đáng được thiết lập"
     },
     "summary": {
-      "en": "Malaysian customs seized 30 servers containing more than $12 million worth of advanced AI chips at Kuala Lumpur International Airport, as authorities investigate a suspected smuggling network linked to multiple previous seizures.",
-      "vi": "Hải quan Malaysia đã thu giữ 30 máy chủ chứa chip AI tiên tiến trị giá hơn 12 triệu USD tại Sân bay Quốc tế Kuala Lumpur, khi nhà chức trách điều tra một mạng lưới buôn lậu bị nghi ngờ có liên quan đến nhiều vụ bắt giữ trước đó."
+      "en": "They might have worked for a while now but the important features only just landed",
+      "vi": "Chúng có thể đã hoạt động được một thời gian nhưng các tính năng quan trọng mới chỉ xuất hiện"
     },
     "categories": [
-      "ai"
+      "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.03,
+    "difficulty": "easy",
+    "score": 1.11,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
-    "raw_title": "Malaysia seizes $12 million worth of advanced AI chips hidden inside 30 servers",
-    "raw_summary": "Malaysian customs seized 30 servers containing more than $12 million worth of advanced AI chips at Kuala Lumpur International Airport, as authorities investigate a suspected smuggling network linked to multiple previous seizures.",
+    "raw_title": "Home Assistant's latest update makes Matter leak sensors and locks worth setting up",
+    "raw_summary": "They might have worked for a while now but the important features only just landed",
     "hidden": false,
-    "slug": "malaysia-tich-thu-chip-ai-tien-tien-tri-gia-12-trieu-usd-gia-d3a089"
+    "slug": "ban-cap-nhat-moi-nhat-cua-home-assistant-khien-cac-cam-bien-cfe726"
   },
   "3d98066ba762a96f": {
     "id": "3d98066ba762a96f",
@@ -1428,42 +1377,39 @@
     "hidden": false,
     "slug": "3-cach-raspberry-pi-co-the-cat-giam-hoa-don-cua-ban-vao-cuoi-f41d98"
   },
-  "cfe726b59a7f0747": {
-    "id": "cfe726b59a7f0747",
-    "url": "https://www.xda-developers.com/home-assistants-latest-update-makes-matter-leak-sensors-and-locks-worth-setting-up",
+  "005c915a5440a714": {
+    "id": "005c915a5440a714",
+    "slug": "magsafe-and-qi2-have-one-weakness-that-this-phone-mount-fina-005c91",
+    "url": "https://www.makeuseof.com/magsafe-qi2-one-weakness-fix",
     "source": {
-      "id": "xdadevelopers",
-      "name": "XDA Developers",
-      "site_url": "https://www.xda-developers.com",
-      "kind": "news"
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
     },
-    "author": "Joe Rice-Jones",
-    "published_at": "Thu, 29 Oct 2026 14:00:21 GMT",
-    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
+    "author": "Brady Snyder",
+    "published_at": "Thu, 29 Oct 2026 22:00:16 GMT",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Home Assistant's latest update makes Matter leak sensors and locks worth setting up",
-      "vi": "Bản cập nhật mới nhất của Home Assistant khiến các cảm biến và khóa rò rỉ Matter đáng được thiết lập"
+      "en": "MagSafe and Qi2 have one weakness that this phone mount finally fixes",
+      "vi": "MagSafe và Qi2 có một điểm yếu mà giá đỡ điện thoại này cuối cùng đã khắc phục được"
     },
     "summary": {
-      "en": "They might have worked for a while now but the important features only just landed",
-      "vi": "Chúng có thể đã hoạt động được một thời gian nhưng các tính năng quan trọng mới chỉ xuất hiện"
+      "en": "When magnets aren't enough, I turn to this mount.",
+      "vi": "Khi nam châm không đủ, tôi chuyển sang gắn kết này."
     },
     "categories": [
       "windows"
     ],
     "tags": [],
-    "difficulty": "easy",
-    "score": 1.11,
+    "difficulty": "medium",
+    "score": 1.1,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
-    },
-    "raw_title": "Home Assistant's latest update makes Matter leak sensors and locks worth setting up",
-    "raw_summary": "They might have worked for a while now but the important features only just landed",
-    "hidden": false,
-    "slug": "ban-cap-nhat-moi-nhat-cua-home-assistant-khien-cac-cam-bien-cfe726"
+    }
   },
   "a0aaff79aaec41c6": {
     "id": "a0aaff79aaec41c6",
@@ -1725,6 +1671,42 @@
     "raw_summary": "Mixing Kodi clients with a Plex server brings TV friendly playback and rich metadata without losing control.",
     "hidden": false
   },
+  "41a182d4b8e7b166": {
+    "id": "41a182d4b8e7b166",
+    "slug": "i-expected-docker-to-choke-on-my-old-raspberry-pi-but-kiwix-41a182",
+    "url": "https://www.howtogeek.com/i-tried-running-docker-on-a-raspberry-pi-heres-what-i-run-on-it",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "David J. Buck",
+    "published_at": "Fri, 30 Oct 2026 00:00:15 GMT",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I expected Docker to choke on my old Raspberry Pi, but Kiwix proved me wrong",
+      "vi": "Tôi đã mong đợi Docker sẽ làm hỏng Raspberry Pi cũ của tôi, nhưng Kiwix đã chứng minh tôi sai"
+    },
+    "summary": {
+      "en": "I wasn’t sure Docker would work on my old Raspberry Pi — it did, and now I have big plans.",
+      "vi": "Tôi không chắc Docker có hoạt động trên Raspberry Pi cũ của tôi không - nó đã hoạt động và bây giờ tôi có những kế hoạch lớn."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [
+      "docker"
+    ],
+    "difficulty": null,
+    "score": 1.13,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
   "287908b3e087f501": {
     "id": "287908b3e087f501",
     "url": "https://www.omgubuntu.co.uk/2026/10/ubuntu-php2shell-emudhra-security-fixes",
@@ -1761,6 +1743,40 @@
     "raw_summary": "Ubuntu has released security updates for the php2shell PHP flaw that’s led to websites being taken offline, and a key compromise at the eMudhra certificate authority. Desktop Ubuntu isn’t directly affected by php2shell, since PHP isn’t installed by default. The certificate issue is more of a…",
     "hidden": false,
     "slug": "ubuntu-tung-ra-ban-sua-loi-php2shell-chung-chi-emudhra-287908"
+  },
+  "1426e977a2f35bcc": {
+    "id": "1426e977a2f35bcc",
+    "slug": "3-entertaining-hbo-max-documentaries-you-can-binge-in-one-we-1426e9",
+    "url": "https://www.howtogeek.com/hbo-max-documentaries-you-can-binge-in-one-weekend-october-30",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Dan Girolamo",
+    "published_at": "Thu, 29 Oct 2026 22:00:15 GMT",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "3 entertaining HBO Max documentaries you can binge in one weekend (October 30-November 1)",
+      "vi": "3 bộ phim tài liệu giải trí HBO Max mà bạn có thể xem trong một ngày cuối tuần (30/10 - 1/11)"
+    },
+    "summary": {
+      "en": "The life and career of an iconic singer is one of our top HBO Max documentaries to stream this weekend.",
+      "vi": "Cuộc đời và sự nghiệp của một ca sĩ biểu tượng là một trong những bộ phim tài liệu HBO Max hàng đầu của chúng tôi sẽ phát sóng vào cuối tuần này."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.13,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
   },
   "6508908febf34a09": {
     "id": "6508908febf34a09",
@@ -1955,6 +1971,43 @@
     "hidden": false,
     "slug": "ban-ghet-viec-thiet-lap-esim-gemini-co-the-som-lam-dieu-do-c-37108c"
   },
+  "bd9ce4e0e37eb114": {
+    "id": "bd9ce4e0e37eb114",
+    "url": "https://www.omgubuntu.co.uk/2026/10/ubuntu-core-desktop-2704",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Wed, 28 Oct 2026 19:38:29 +0000",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Ubuntu Core Desktop ‘accelerating’ development ahead of 27.04",
+      "vi": "Ubuntu Core Desktop 'tăng tốc' phát triển trước ngày 27.04"
+    },
+    "summary": {
+      "en": "Canonical has announced it’s ‘accelerating’ development of Ubuntu Core Desktop, its immutable, snap-based version of its desktop OS. Ubuntu Core Desktop was announced in 2023 and made available in preview for enthusiasts to try. But a lack of of obvious progress and direction (not to mention…",
+      "vi": "Canonical đã công bố họ đang 'tăng tốc' phát triển Ubuntu Core Desktop, phiên bản hệ điều hành máy tính để bàn không thay đổi, dựa trên snap. Ubuntu Core Desktop được công bố vào năm 2023 và được cung cấp ở dạng bản xem trước cho những người đam mê dùng thử. Nhưng thiếu sự tiến bộ và định hướng rõ ràng (chưa kể…"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.08,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "Ubuntu Core Desktop ‘accelerating’ development ahead of 27.04",
+    "raw_summary": "Canonical has announced it’s ‘accelerating’ development of Ubuntu Core Desktop, its immutable, snap-based version of its desktop OS. Ubuntu Core Desktop was announced in 2023 and made available in preview for enthusiasts to try. But a lack of of obvious progress and direction (not to mention…",
+    "hidden": false,
+    "slug": "ubuntu-core-desktop-tang-toc-phat-trien-truoc-ngay-2704-bd9ce4"
+  },
   "e724fb83679bba72": {
     "id": "e724fb83679bba72",
     "url": "https://www.omgubuntu.co.uk/2026/10/ubuntu-firmware-hwe-effort-moving-forward",
@@ -1992,116 +2045,79 @@
     "hidden": false,
     "slug": "phan-mem-ubuntu-hwe-se-ngan-chan-cac-su-co-tren-kernel-cu-ho-e724fb"
   },
-  "f6ba26099c5cb990": {
-    "id": "f6ba26099c5cb990",
-    "url": "https://www.omgubuntu.co.uk/2026/10/trash-talk-ubuntu-uk-rubbish-bin-terminology",
+  "22665e7c7e5afa39": {
+    "id": "22665e7c7e5afa39",
+    "url": "https://www.howtogeek.com/this-3d-print-is-designed-to-get-destroyed-and-its-the-most-useful-thing-i-make",
     "source": {
-      "id": "omgubuntu",
-      "name": "OMG! Ubuntu!",
-      "site_url": "https://www.omgubuntu.co.uk",
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
       "kind": "tips"
     },
-    "author": "Joey Sneddon",
-    "published_at": "Mon, 26 Oct 2026 23:58:00 +0000",
-    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Trash talking Ubuntu’s confusing British bin labels",
-      "vi": "Nói chuyện rác rưởi Nhãn thùng rác kiểu Anh khó hiểu của Ubuntu"
-    },
-    "summary": {
-      "en": "Every operating systems needs somewhere to put the files you delete (and give you chance to rummage through to find the ones you want to keep). But, if you’re a Brit using Ubuntu, the name of that place varies based on where you look. It seems Ubuntu’s UK English translation team don’t agree on…",
-      "vi": "Mọi hệ điều hành đều cần một nơi nào đó để đặt các tệp bạn xóa (và cho bạn cơ hội lục lọi để tìm những tệp bạn muốn giữ lại). Tuy nhiên, nếu bạn là người Anh sử dụng Ubuntu thì tên của địa điểm đó sẽ thay đổi tùy theo nơi bạn nhìn. Có vẻ như nhóm dịch tiếng Anh sang Anh của Ubuntu không đồng ý với…"
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.94,
-    "howto": false,
-    "reading_time_min": 2,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "Trash talking Ubuntu’s confusing British bin labels",
-    "raw_summary": "Every operating systems needs somewhere to put the files you delete (and give you chance to rummage through to find the ones you want to keep). But, if you’re a Brit using Ubuntu, the name of that place varies based on where you look. It seems Ubuntu’s UK English translation team don’t agree on…",
-    "hidden": false,
-    "slug": "noi-chuyen-rac-ruoi-nhan-thung-rac-kieu-anh-kho-hieu-cua-ubu-f6ba26"
-  },
-  "4a8d15ba801ad04d": {
-    "id": "4a8d15ba801ad04d",
-    "url": "https://www.makeuseof.com/xpipe-open-source-app-a-shot-and-it-put-ssh-docker-proxmox-and-my-remote-files-in-one-place",
-    "source": {
-      "id": "makeuseof",
-      "name": "MakeUseOf",
-      "site_url": "https://www.makeuseof.com",
-      "kind": "tips"
-    },
-    "author": "Afam Onyimadu",
-    "published_at": "Wed, 28 Oct 2026 19:00:16 GMT",
+    "author": "Patrick Campanale",
+    "published_at": "Thu, 29 Oct 2026 00:00:15 GMT",
     "fetched_at": "2026-10-29T07:34:48.891250+00:00",
     "original_lang": "en",
     "title": {
-      "en": "XPipe makes managing a home lab feel like it should",
-      "vi": "XPipe làm cho việc quản lý phòng thí nghiệm tại nhà trở nên như ý muốn"
+      "en": "This 3D print is designed to get destroyed, and it’s the most useful thing I make",
+      "vi": "Bản in 3D này được thiết kế để bị phá hủy và đó là thứ hữu ích nhất mà tôi tạo ra"
     },
     "summary": {
-      "en": "My home server finally stopped feeling like a pile of chores.",
-      "vi": "Máy chủ gia đình của tôi cuối cùng đã không còn cảm giác như một đống công việc nữa."
+      "en": "Sacrificial parts are where a 3D printer really earns its keep.",
+      "vi": "Các bộ phận hy sinh là nơi máy in 3D thực sự kiếm được tiền."
     },
     "categories": [
       "windows"
     ],
     "tags": [],
     "difficulty": null,
-    "score": 0.95,
+    "score": 1.04,
     "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
-    "raw_title": "XPipe makes managing a home lab feel like it should",
-    "raw_summary": "My home server finally stopped feeling like a pile of chores.",
+    "raw_title": "This 3D print is designed to get destroyed, and it’s the most useful thing I make",
+    "raw_summary": "Sacrificial parts are where a 3D printer really earns its keep.",
     "hidden": false,
-    "slug": "xpipe-lam-cho-viec-quan-ly-phong-thi-nghiem-tai-nha-tro-nen-4a8d15"
+    "slug": "ban-in-3d-nay-duoc-thiet-ke-de-bi-pha-huy-va-do-la-thu-huu-i-22665e"
   },
-  "b5dd38c1b651141f": {
-    "id": "b5dd38c1b651141f",
-    "url": "https://www.makeuseof.com/samsung-good-lock-gave-my-galaxy-a-feature-i-thought-i-needed-a-new-phone-for",
+  "b25dac19ae9865bb": {
+    "id": "b25dac19ae9865bb",
+    "url": "https://www.howtogeek.com/your-hdr-movies-have-a-subtitle-problem",
     "source": {
-      "id": "makeuseof",
-      "name": "MakeUseOf",
-      "site_url": "https://www.makeuseof.com",
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
       "kind": "tips"
     },
-    "author": "Brandon Miniman",
-    "published_at": "Wed, 28 Oct 2026 18:30:16 GMT",
+    "author": "Sydney Butler",
+    "published_at": "Wed, 28 Oct 2026 20:16:16 GMT",
     "fetched_at": "2026-10-29T07:34:48.891250+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Samsung Good Lock gave my Galaxy a feature I thought I needed a new phone for",
-      "vi": "Samsung Good Lock đã mang đến cho chiếc Galaxy của tôi một tính năng mà tôi nghĩ tôi cần một chiếc điện thoại mới"
+      "en": "Your HDR movies have a subtitle problem",
+      "vi": "Phim HDR của bạn có vấn đề về phụ đề"
     },
     "summary": {
-      "en": "This Good Lock module makes split-screen multitasking feel more like a foldable",
-      "vi": "Mô-đun Good Lock này giúp đa nhiệm chia đôi màn hình giống như một màn hình có thể gập lại"
+      "en": "Blinding white captions can dominate dark scenes on modern HDR sets and even cause mini LED bloom to flare during evening viewing.",
+      "vi": "Chú thích màu trắng chói mắt có thể lấn át các cảnh tối trên các bộ HDR hiện đại và thậm chí khiến đèn LED mini tỏa sáng khi xem buổi tối."
     },
     "categories": [
-      "android"
+      "windows"
     ],
     "tags": [],
     "difficulty": null,
-    "score": 0.95,
+    "score": 1.04,
     "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
-    "raw_title": "Samsung Good Lock gave my Galaxy a feature I thought I needed a new phone for",
-    "raw_summary": "This Good Lock module makes split-screen multitasking feel more like a foldable",
+    "raw_title": "Your HDR movies have a subtitle problem",
+    "raw_summary": "Blinding white captions can dominate dark scenes on modern HDR sets and even cause mini LED bloom to flare during evening viewing.",
     "hidden": false,
-    "slug": "samsung-good-lock-da-mang-den-cho-chiec-galaxy-cua-toi-mot-t-b5dd38"
+    "slug": "phim-hdr-cua-ban-co-van-de-ve-phu-de-b25dac"
   },
   "0c65ea38b833d6ec": {
     "id": "0c65ea38b833d6ec",
@@ -2139,6 +2155,43 @@
     "raw_summary": "Khi iPhone hoặc iPad bị đánh cắp, người dùng cần kích hoạt chế độ mất và theo dõi vị trí thiết bị để bảo vệ thông tin cá nhân.",
     "hidden": false,
     "slug": "lam-gi-khi-iphone-ipad-bi-mat-hoac-bi-danh-cap-0c65ea"
+  },
+  "55f3dda9cce6d5d1": {
+    "id": "55f3dda9cce6d5d1",
+    "url": "https://www.howtogeek.com/heres-how-i-replicated-3-of-the-googlebooks-best-features-on-a-60-dollar-linux-laptop",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Andrew Heinzman",
+    "published_at": "Wed, 28 Oct 2026 20:00:15 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Here's how I replicated 3 of the Googlebook's best features on a $60 Linux laptop",
+      "vi": "Đây là cách tôi sao chép 3 tính năng tốt nhất của Googlebook trên máy tính xách tay Linux giá 60 USD"
+    },
+    "summary": {
+      "en": "Turns out, I didn't have to work hard to get a semi-Googlebook experience in Linux",
+      "vi": "Hóa ra tôi không cần phải vất vả mới có được trải nghiệm bán Googlebook trên Linux"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.04,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "Here's how I replicated 3 of the Googlebook's best features on a $60 Linux laptop",
+    "raw_summary": "Turns out, I didn't have to work hard to get a semi-Googlebook experience in Linux",
+    "hidden": false,
+    "slug": "day-la-cach-toi-sao-chep-3-tinh-nang-tot-nhat-cua-googlebook-55f3dd"
   },
   "d6b97ca773f4a0a4": {
     "id": "d6b97ca773f4a0a4",
@@ -2214,45 +2267,42 @@
     "hidden": false,
     "slug": "nhung-ung-dung-tien-ich-nay-giup-android-auto-10x-tro-nen-hu-73d75c"
   },
-  "6aaf671df097a150": {
-    "id": "6aaf671df097a150",
-    "url": "https://tinhte.vn/thread/bien-laptop-thanh-may-do-camera-an-trong-phong-khach-san-bang-claude-code.4187382",
+  "d3a089a79de6f388": {
+    "id": "d3a089a79de6f388",
+    "url": "https://www.tomshardware.com/tech-industry/policy/malaysia-seizes-usd12-million-worth-of-advanced-ai-chips-hidden-inside-30-servers-customs-says-suspected-smuggling-network-used-the-country-as-a-transit-hub",
     "source": {
-      "id": "tinhte",
-      "name": "Tinh tế",
-      "site_url": "https://tinhte.vn",
+      "id": "tomshardware",
+      "name": "Tom's Hardware",
+      "site_url": "https://www.tomshardware.com",
       "kind": "news"
     },
-    "author": "Pnghuy",
-    "published_at": "Tue, 27 Oct 2026 10:39:32 +0000",
-    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
-    "original_lang": "vi",
+    "author": "Etiido Uko",
+    "published_at": "Wed, 28 Oct 2026 17:02:14 +0000",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
     "title": {
-      "vi": "Biến laptop thành máy dò camera ẩn trong phòng khách sạn bằng Claude Code",
-      "en": "Turn your laptop into a hidden camera detector in a hotel room with Claude Code"
+      "en": "Malaysia seizes $12 million worth of advanced AI chips hidden inside 30 servers",
+      "vi": "Malaysia tịch thu chip AI tiên tiến trị giá 12 triệu USD giấu trong 30 máy chủ"
     },
     "summary": {
-      "vi": "Một mẹo sử dụng Claude Code được chia sẻ gần đây cho phép người dùng biến chiếc laptop thành một thiết bị an ninh kiểm",
-      "en": "A recently shared Claude Code trick allows users to turn their laptop into a security device"
+      "en": "Malaysian customs seized 30 servers containing more than $12 million worth of advanced AI chips at Kuala Lumpur International Airport, as authorities investigate a suspected smuggling network linked to multiple previous seizures.",
+      "vi": "Hải quan Malaysia đã thu giữ 30 máy chủ chứa chip AI tiên tiến trị giá hơn 12 triệu USD tại Sân bay Quốc tế Kuala Lumpur, khi nhà chức trách điều tra một mạng lưới buôn lậu bị nghi ngờ có liên quan đến nhiều vụ bắt giữ trước đó."
     },
     "categories": [
-      "ai",
-      "dev"
+      "ai"
     ],
-    "tags": [
-      "claude"
-    ],
+    "tags": [],
     "difficulty": "medium",
     "score": 1.03,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "en": "machine"
+      "vi": "machine"
     },
-    "raw_title": "Biến laptop thành máy dò camera ẩn trong phòng khách sạn bằng Claude Code",
-    "raw_summary": "Một mẹo sử dụng Claude Code được chia sẻ gần đây cho phép người dùng biến chiếc laptop thành một thiết bị an ninh kiểm",
+    "raw_title": "Malaysia seizes $12 million worth of advanced AI chips hidden inside 30 servers",
+    "raw_summary": "Malaysian customs seized 30 servers containing more than $12 million worth of advanced AI chips at Kuala Lumpur International Airport, as authorities investigate a suspected smuggling network linked to multiple previous seizures.",
     "hidden": false,
-    "slug": "bien-laptop-thanh-may-do-camera-an-trong-phong-khach-san-ban-6aaf67"
+    "slug": "malaysia-tich-thu-chip-ai-tien-tien-tri-gia-12-trieu-usd-gia-d3a089"
   },
   "c09e0a4abc10ff4e": {
     "id": "c09e0a4abc10ff4e",
@@ -2329,31 +2379,34 @@
     "hidden": false,
     "slug": "cuoi-cung-toi-da-tim-ra-muc-dich-thuc-su-cua-nhung-luoi-cua-4a2990"
   },
-  "9024464754e15960": {
-    "id": "9024464754e15960",
-    "url": "https://tinhte.vn/thread/tinhtelookback-galaxy-z-fold8-sau-3-thang-da-thay-doi-cach-minh-xem-noi-dung-moi-ngay.4187873",
+  "6aaf671df097a150": {
+    "id": "6aaf671df097a150",
+    "url": "https://tinhte.vn/thread/bien-laptop-thanh-may-do-camera-an-trong-phong-khach-san-bang-claude-code.4187382",
     "source": {
       "id": "tinhte",
       "name": "Tinh tế",
       "site_url": "https://tinhte.vn",
       "kind": "news"
     },
-    "author": "Anh Tú.",
-    "published_at": "Thu, 29 Oct 2026 04:10:20 +0000",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "Pnghuy",
+    "published_at": "Tue, 27 Oct 2026 10:39:32 +0000",
+    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
     "original_lang": "vi",
     "title": {
-      "vi": "Tinhtelookback: Galaxy Z Fold8 sau 3 tháng đã thay đổi cách mình xem nội dung mỗi ngày",
-      "en": "Tinhtelookback: After 3 months, Galaxy Z Fold8 has changed the way I view content every day"
+      "vi": "Biến laptop thành máy dò camera ẩn trong phòng khách sạn bằng Claude Code",
+      "en": "Turn your laptop into a hidden camera detector in a hotel room with Claude Code"
     },
     "summary": {
-      "vi": "Mình đã xài Samsung Galaxy Z Fold8 được khoảng 2-3 tháng rồi, và hôm nay mình đứng ngay bờ Hồ Gươm để chia sẻ lại cảm nhận thật của mình. Điểm mình thích nhất trên chiếc máy này chắc chắn là form",
-      "en": "I have been using the Samsung Galaxy Z Fold8 for about 2-3 months, and today I stand right on the shore of Hoan Kiem Lake to share my true feelings. The point I like most about this machine is definitely the form"
+      "vi": "Một mẹo sử dụng Claude Code được chia sẻ gần đây cho phép người dùng biến chiếc laptop thành một thiết bị an ninh kiểm",
+      "en": "A recently shared Claude Code trick allows users to turn their laptop into a security device"
     },
     "categories": [
-      "android"
+      "ai",
+      "dev"
     ],
-    "tags": [],
+    "tags": [
+      "claude"
+    ],
     "difficulty": "medium",
     "score": 1.03,
     "howto": true,
@@ -2361,10 +2414,10 @@
     "translated": {
       "en": "machine"
     },
-    "raw_title": "Tinhtelookback: Galaxy Z Fold8 sau 3 tháng đã thay đổi cách mình xem nội dung mỗi ngày",
-    "raw_summary": "Mình đã xài Samsung Galaxy Z Fold8 được khoảng 2-3 tháng rồi, và hôm nay mình đứng ngay bờ Hồ Gươm để chia sẻ lại cảm nhận thật của mình. Điểm mình thích nhất trên chiếc máy này chắc chắn là form",
+    "raw_title": "Biến laptop thành máy dò camera ẩn trong phòng khách sạn bằng Claude Code",
+    "raw_summary": "Một mẹo sử dụng Claude Code được chia sẻ gần đây cho phép người dùng biến chiếc laptop thành một thiết bị an ninh kiểm",
     "hidden": false,
-    "slug": "tinhtelookback-galaxy-z-fold8-sau-3-thang-da-thay-doi-cach-m-902446"
+    "slug": "bien-laptop-thanh-may-do-camera-an-trong-phong-khach-san-ban-6aaf67"
   },
   "38c002f3c5475354": {
     "id": "38c002f3c5475354",
@@ -2440,42 +2493,42 @@
     "raw_summary": "That weird “(x86)” folder has a better excuse than you think.",
     "hidden": false
   },
-  "c989d358786f1ec1": {
-    "id": "c989d358786f1ec1",
-    "url": "https://dev.to/selen_sherlock_64186c9222/turn-a-whatsapp-group-chat-into-a-weekly-summary-with-a-local-llm-1i3p",
+  "9024464754e15960": {
+    "id": "9024464754e15960",
+    "url": "https://tinhte.vn/thread/tinhtelookback-galaxy-z-fold8-sau-3-thang-da-thay-doi-cach-minh-xem-noi-dung-moi-ngay.4187873",
     "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news"
     },
-    "author": "Selen Sherlock",
-    "published_at": "2026-10-29T03:46:40Z",
+    "author": "Anh Tú.",
+    "published_at": "Thu, 29 Oct 2026 04:10:20 +0000",
     "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
+    "original_lang": "vi",
     "title": {
-      "en": "Turn a WhatsApp Group Chat into a Weekly Summary with a Local LLM",
-      "vi": "Biến Cuộc trò chuyện nhóm WhatsApp thành Bản tóm tắt hàng tuần với LLM địa phương"
+      "vi": "Tinhtelookback: Galaxy Z Fold8 sau 3 tháng đã thay đổi cách mình xem nội dung mỗi ngày",
+      "en": "Tinhtelookback: After 3 months, Galaxy Z Fold8 has changed the way I view content every day"
     },
     "summary": {
-      "en": "A project group can discuss a quotation on Monday, change its deadline on Wednesday, and confirm",
-      "vi": "Một nhóm dự án có thể thảo luận về báo giá vào thứ Hai, thay đổi thời hạn vào thứ Tư và xác nhận"
+      "vi": "Mình đã xài Samsung Galaxy Z Fold8 được khoảng 2-3 tháng rồi, và hôm nay mình đứng ngay bờ Hồ Gươm để chia sẻ lại cảm nhận thật của mình. Điểm mình thích nhất trên chiếc máy này chắc chắn là form",
+      "en": "I have been using the Samsung Galaxy Z Fold8 for about 2-3 months, and today I stand right on the shore of Hoan Kiem Lake to share my true feelings. The point I like most about this machine is definitely the form"
     },
     "categories": [
-      "ai"
+      "android"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.0,
+    "score": 1.03,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": "machine"
+      "en": "machine"
     },
-    "raw_title": "Turn a WhatsApp Group Chat into a Weekly Summary with a Local LLM",
-    "raw_summary": "A project group can discuss a quotation on Monday, change its deadline on Wednesday, and confirm",
-    "hidden": true,
-    "slug": "bien-cuoc-tro-chuyen-nhom-whatsapp-thanh-ban-tom-tat-hang-tu-c989d3"
+    "raw_title": "Tinhtelookback: Galaxy Z Fold8 sau 3 tháng đã thay đổi cách mình xem nội dung mỗi ngày",
+    "raw_summary": "Mình đã xài Samsung Galaxy Z Fold8 được khoảng 2-3 tháng rồi, và hôm nay mình đứng ngay bờ Hồ Gươm để chia sẻ lại cảm nhận thật của mình. Điểm mình thích nhất trên chiếc máy này chắc chắn là form",
+    "hidden": false,
+    "slug": "tinhtelookback-galaxy-z-fold8-sau-3-thang-da-thay-doi-cach-m-902446"
   },
   "79567c1813154a92": {
     "id": "79567c1813154a92",
@@ -2551,44 +2604,44 @@
     "raw_summary": "Removing just five preinstalled apps made the phone noticeably snappier.",
     "hidden": false
   },
-  "843e2f5d387fbdbf": {
-    "id": "843e2f5d387fbdbf",
-    "url": "https://dev.to/qunirice_verase_1ab0caeba/steamos-or-windows-11-deciding-with-powershell-before-you-partition-14hj",
+  "1d22dd0edb251dbb": {
+    "id": "1d22dd0edb251dbb",
+    "url": "https://9to5google.com/2026/10/26/chrome-156-googlebooks",
     "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
+      "id": "9to5google",
+      "name": "9to5Google",
+      "site_url": "https://9to5google.com",
+      "kind": "news"
     },
-    "author": "AI Release",
-    "published_at": "2026-10-29T03:23:06Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "Abner Li",
+    "published_at": "Mon, 26 Oct 2026 19:58:11 +0000",
+    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
     "original_lang": "en",
     "title": {
-      "en": "SteamOS or Windows 11: deciding with PowerShell before you partition",
-      "vi": "SteamOS hoặc Windows 11: quyết định sử dụng PowerShell trước khi phân vùng"
+      "en": "Chrome 156 for Googlebook rolling out with 14 updates across sites, shortcuts, more",
+      "vi": "Chrome 156 cho Googlebook ra mắt với 14 bản cập nhật trên các trang web, lối tắt, v.v."
     },
     "summary": {
-      "en": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11.",
-      "vi": "Hướng dẫn thực tế: kiểm tra UEFI, TPM và Secure Boot, kiểm kê thư viện trò chơi của bạn trên ProtonDB, sau đó quyết định giữa SteamOS và Windows 11."
+      "en": "Google is rolling out Chrome 156 for Googlebooks with a slew of improvements and bug fixes. This follows the last browser update two weeks ago.",
+      "vi": "Google đang tung ra Chrome 156 dành cho Googlebooks với nhiều cải tiến và sửa lỗi. Điều này diễn ra sau bản cập nhật trình duyệt cuối cùng hai tuần trước."
     },
     "categories": [
-      "windows"
+      "browser"
     ],
     "tags": [
-      "powershell"
+      "chrome"
     ],
-    "difficulty": "advanced",
-    "score": 1.0,
+    "difficulty": "medium",
+    "score": 1.02,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
-    "raw_title": "SteamOS or Windows 11: deciding with PowerShell before you partition",
-    "raw_summary": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11.",
+    "raw_title": "Chrome 156 for Googlebook rolling out with 14 updates across sites, shortcuts, more",
+    "raw_summary": "Google is rolling out Chrome 156 for Googlebooks with a slew of improvements and bug fixes. This follows the last browser update two weeks ago.",
     "hidden": false,
-    "slug": "steamos-hoac-windows-11-quyet-dinh-su-dung-powershell-truoc-843e2f"
+    "slug": "chrome-156-cho-googlebook-ra-mat-voi-14-ban-cap-nhat-tren-ca-1d22dd"
   },
   "3dc4efcd06779d78": {
     "id": "3dc4efcd06779d78",
@@ -2627,83 +2680,6 @@
     "raw_summary": "Older Chromebooks face feature losses and data wipes when enrolling in extended updates so back up important files first.",
     "hidden": false
   },
-  "89fc99ddb03996f5": {
-    "id": "89fc99ddb03996f5",
-    "url": "https://www.makeuseof.com/changed-android-settings-stopped-carrying-power-bank",
-    "source": {
-      "id": "makeuseof",
-      "name": "MakeUseOf",
-      "site_url": "https://www.makeuseof.com",
-      "kind": "tips"
-    },
-    "author": "Digvijay Kumar",
-    "published_at": "Wed, 28 Oct 2026 16:00:17 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "I changed 3 Android settings and stopped carrying a power bank everywhere",
-      "vi": "Tôi đã thay đổi 3 cài đặt Android và ngừng mang theo sạc dự phòng đi khắp nơi"
-    },
-    "summary": {
-      "en": "I found where my battery was actually going.",
-      "vi": "Tôi đã tìm thấy pin của tôi thực sự đang đi đâu."
-    },
-    "categories": [
-      "android",
-      "hardware"
-    ],
-    "tags": [
-      "battery"
-    ],
-    "difficulty": "easy",
-    "score": 0.93,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "I changed 3 Android settings and stopped carrying a power bank everywhere",
-    "raw_summary": "I found where my battery was actually going.",
-    "hidden": false,
-    "slug": "toi-da-thay-doi-3-cai-dat-android-va-ngung-mang-theo-sac-du-89fc99"
-  },
-  "85daa6a854746cd3": {
-    "id": "85daa6a854746cd3",
-    "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents",
-    "source": {
-      "id": "githubblog",
-      "name": "GitHub Blog",
-      "site_url": "https://github.blog",
-      "kind": "news"
-    },
-    "author": "GitHub Staff",
-    "published_at": "Wed, 28 Oct 2026 16:07:40 +0000",
-    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
-      "vi": "Octoverse: Cam kết, thúc đẩy, đạt những đỉnh cao mới vào năm 2026 khi các nhà phát triển xây dựng với các đại lý"
-    },
-    "summary": {
-      "en": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report.",
-      "vi": "Xem cách một năm tăng trưởng kỷ lục đến với mọi ngành, mọi lĩnh vực và mọi loại nhà xây dựng trong báo cáo Octoverse năm 2026."
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.92,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
-    "raw_summary": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report.",
-    "hidden": false,
-    "slug": "octoverse-cam-ket-thuc-day-dat-nhung-dinh-cao-moi-vao-nam-20-85daa6"
-  },
   "435a65697245038d": {
     "id": "435a65697245038d",
     "url": "https://www.makeuseof.com/my-old-fire-tv-stick-was-throttling-itself-until-i-changed-these-settings",
@@ -2741,6 +2717,43 @@
     "hidden": false,
     "slug": "fire-tv-stick-cu-cua-toi-tu-dieu-chinh-cho-den-khi-toi-thay-435a65"
   },
+  "c989d358786f1ec1": {
+    "id": "c989d358786f1ec1",
+    "url": "https://dev.to/selen_sherlock_64186c9222/turn-a-whatsapp-group-chat-into-a-weekly-summary-with-a-local-llm-1i3p",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Selen Sherlock",
+    "published_at": "2026-10-29T03:46:40Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Turn a WhatsApp Group Chat into a Weekly Summary with a Local LLM",
+      "vi": "Biến Cuộc trò chuyện nhóm WhatsApp thành Bản tóm tắt hàng tuần với LLM địa phương"
+    },
+    "summary": {
+      "en": "A project group can discuss a quotation on Monday, change its deadline on Wednesday, and confirm",
+      "vi": "Một nhóm dự án có thể thảo luận về báo giá vào thứ Hai, thay đổi thời hạn vào thứ Tư và xác nhận"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "Turn a WhatsApp Group Chat into a Weekly Summary with a Local LLM",
+    "raw_summary": "A project group can discuss a quotation on Monday, change its deadline on Wednesday, and confirm",
+    "hidden": true,
+    "slug": "bien-cuoc-tro-chuyen-nhom-whatsapp-thanh-ban-tom-tat-hang-tu-c989d3"
+  },
   "44714dfda358cc69": {
     "id": "44714dfda358cc69",
     "slug": "viec-truyen-gpu-toi-may-ao-cua-ban-that-de-dang-va-giup-viec-44714d",
@@ -2777,6 +2790,82 @@
     "raw_title": "GPU passthrough to your virtual machine is easy, and makes setting up a retro gaming VM seamless",
     "raw_summary": "Make a GPU-accelerated gaming VM in minutes.",
     "hidden": false
+  },
+  "cbcf319bc193c467": {
+    "id": "cbcf319bc193c467",
+    "slug": "your-pixel-battery-wont-charge-at-its-fastest-speed-unless-y-cbcf31",
+    "url": "https://www.makeuseof.com/google-pixel-battery-fastest-speed-setting",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Brady Snyder",
+    "published_at": "Thu, 29 Oct 2026 21:01:16 GMT",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Your Pixel battery won’t charge at its fastest speed unless you enable this setting",
+      "vi": "Pin Pixel của bạn sẽ không sạc ở tốc độ nhanh nhất trừ khi bạn bật cài đặt này"
+    },
+    "summary": {
+      "en": "It's time to try Extreme Charging Mode.",
+      "vi": "Đã đến lúc thử Chế độ sạc cực mạnh."
+    },
+    "categories": [
+      "android",
+      "hardware"
+    ],
+    "tags": [
+      "battery"
+    ],
+    "difficulty": "easy",
+    "score": 1.01,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "843e2f5d387fbdbf": {
+    "id": "843e2f5d387fbdbf",
+    "url": "https://dev.to/qunirice_verase_1ab0caeba/steamos-or-windows-11-deciding-with-powershell-before-you-partition-14hj",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "AI Release",
+    "published_at": "2026-10-29T03:23:06Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "SteamOS or Windows 11: deciding with PowerShell before you partition",
+      "vi": "SteamOS hoặc Windows 11: quyết định sử dụng PowerShell trước khi phân vùng"
+    },
+    "summary": {
+      "en": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11.",
+      "vi": "Hướng dẫn thực tế: kiểm tra UEFI, TPM và Secure Boot, kiểm kê thư viện trò chơi của bạn trên ProtonDB, sau đó quyết định giữa SteamOS và Windows 11."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [
+      "powershell"
+    ],
+    "difficulty": "advanced",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "SteamOS or Windows 11: deciding with PowerShell before you partition",
+    "raw_summary": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11.",
+    "hidden": false,
+    "slug": "steamos-hoac-windows-11-quyet-dinh-su-dung-powershell-truoc-843e2f"
   },
   "2f60432befdab164": {
     "id": "2f60432befdab164",
@@ -2852,6 +2941,43 @@
     "hidden": false,
     "slug": "audacious-462-lap-day-nhung-khoang-trong-cuoi-cung-trong-che-d78811"
   },
+  "a649527bbaa9fadb": {
+    "id": "a649527bbaa9fadb",
+    "url": "https://feed.itsfoss.com/link/24361/17507094/daemonarchy-overview",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "Mon, 26 Oct 2026 23:05:00 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "BSD Users Can Now Enjoy Omarchy Flavor",
+      "vi": "Người dùng BSD hiện có thể thưởng thức hương vị Omarchy"
+    },
+    "summary": {
+      "en": "Daemonarchy keeps Omarchy’s installer and look, with FreeBSD handling the system underneath.",
+      "vi": "Daemonarchy giữ trình cài đặt và giao diện của Omarchy, với FreeBSD xử lý hệ thống bên dưới."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.98,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "BSD Users Can Now Enjoy Omarchy Flavor",
+    "raw_summary": "Daemonarchy keeps Omarchy’s installer and look, with FreeBSD handling the system underneath.",
+    "hidden": false,
+    "slug": "nguoi-dung-bsd-hien-co-the-thuong-thuc-huong-vi-omarchy-a64952"
+  },
   "108546ab436ee46a": {
     "id": "108546ab436ee46a",
     "url": "https://feed.itsfoss.com/link/24361/17506987/amutable-foundations-private-preview",
@@ -2888,44 +3014,6 @@
     "raw_summary": "Amutable Foundations is a read-only, image-based system where every machine produces signed reports of its own state.",
     "hidden": false,
     "slug": "khoi-dong-cua-systemd-creator-mo-dang-ky-de-xem-truoc-rieng-108546"
-  },
-  "d683cbeee4d0d8ac": {
-    "id": "d683cbeee4d0d8ac",
-    "url": "https://feed.itsfoss.com/link/24361/17506301/mirko-brombin-raven",
-    "source": {
-      "id": "itsfoss",
-      "name": "It's FOSS",
-      "site_url": "https://itsfoss.com",
-      "kind": "tips"
-    },
-    "author": "Abhishek Prakash",
-    "published_at": "Sun, 25 Oct 2026 15:32:06 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Bottles Creator Mirko Brombin Wants Microsoft Office on Linux, Not Its Clones",
-      "vi": "Người sáng tạo chai Mirko Brombin muốn Microsoft Office trên Linux chứ không phải bản sao của nó"
-    },
-    "summary": {
-      "en": "Mirko Brombin is working to get Microsoft Office running reliably on Linux. He also thinks the apps cloning Office and Photoshop pixel for pixel cross a line. We talked about both, plus AI agents, Vanilla OS and his new Sinty OS.",
-      "vi": "Mirko Brombin đang nỗ lực để Microsoft Office chạy đáng tin cậy trên Linux. Anh ấy cũng cho rằng các ứng dụng sao chép pixel Office và Photoshop cho pixel vượt quá giới hạn. Chúng tôi đã nói về cả hai, cộng với các tác nhân AI, Vanilla OS và Sinty OS mới của anh ấy."
-    },
-    "categories": [
-      "windows",
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.98,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "Bottles Creator Mirko Brombin Wants Microsoft Office on Linux, Not Its Clones",
-    "raw_summary": "Mirko Brombin is working to get Microsoft Office running reliably on Linux. He also thinks the apps cloning Office and Photoshop pixel for pixel cross a line. We talked about both, plus AI agents, Vanilla OS and his new Sinty OS.",
-    "hidden": false,
-    "slug": "nguoi-sang-tao-chai-mirko-brombin-muon-microsoft-office-tren-d683cb"
   },
   "d9c39429d489eec5": {
     "id": "d9c39429d489eec5",
@@ -2966,6 +3054,44 @@
     "hidden": false,
     "slug": "chuong-3-khoa-tien-to-tmux-va-cac-phim-tat-can-thiet-d9c394"
   },
+  "d683cbeee4d0d8ac": {
+    "id": "d683cbeee4d0d8ac",
+    "url": "https://feed.itsfoss.com/link/24361/17506301/mirko-brombin-raven",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips"
+    },
+    "author": "Abhishek Prakash",
+    "published_at": "Sun, 25 Oct 2026 15:32:06 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Bottles Creator Mirko Brombin Wants Microsoft Office on Linux, Not Its Clones",
+      "vi": "Người sáng tạo chai Mirko Brombin muốn Microsoft Office trên Linux chứ không phải bản sao của nó"
+    },
+    "summary": {
+      "en": "Mirko Brombin is working to get Microsoft Office running reliably on Linux. He also thinks the apps cloning Office and Photoshop pixel for pixel cross a line. We talked about both, plus AI agents, Vanilla OS and his new Sinty OS.",
+      "vi": "Mirko Brombin đang nỗ lực để Microsoft Office chạy đáng tin cậy trên Linux. Anh ấy cũng cho rằng các ứng dụng sao chép pixel Office và Photoshop cho pixel vượt quá giới hạn. Chúng tôi đã nói về cả hai, cộng với các tác nhân AI, Vanilla OS và Sinty OS mới của anh ấy."
+    },
+    "categories": [
+      "windows",
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.98,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "Bottles Creator Mirko Brombin Wants Microsoft Office on Linux, Not Its Clones",
+    "raw_summary": "Mirko Brombin is working to get Microsoft Office running reliably on Linux. He also thinks the apps cloning Office and Photoshop pixel for pixel cross a line. We talked about both, plus AI agents, Vanilla OS and his new Sinty OS.",
+    "hidden": false,
+    "slug": "nguoi-sang-tao-chai-mirko-brombin-muon-microsoft-office-tren-d683cb"
+  },
   "a7dba8bb7ae409f1": {
     "id": "a7dba8bb7ae409f1",
     "url": "https://feed.itsfoss.com/link/24361/17505795/raid-calculator",
@@ -3002,43 +3128,6 @@
     "raw_summary": "Calculate usable capacity, fault tolerance, and storage efficiency for any RAID or ZFS layout. Also see if there are any risks associated with your rebuilds.",
     "hidden": false,
     "slug": "may-tinh-raid-a7dba8"
-  },
-  "9b4da64b24df25e5": {
-    "id": "9b4da64b24df25e5",
-    "url": "https://feed.itsfoss.com/link/24361/17505238/projects-keeping-x11-alive",
-    "source": {
-      "id": "itsfoss",
-      "name": "It's FOSS",
-      "site_url": "https://itsfoss.com",
-      "kind": "tips"
-    },
-    "author": "Sourav Rudra",
-    "published_at": "Fri, 23 Oct 2026 22:44:00 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "These Projects are Keeping X11 Dream Alive on Linux",
-      "vi": "Những dự án này đang giúp X11 Dream Alive trên Linux"
-    },
-    "summary": {
-      "en": "The list covers desktops, X servers, and a Wayland-hosted X11 layer. Basically, projects that are resisting a Waylan-only Linux future.",
-      "vi": "Danh sách này bao gồm máy tính để bàn, máy chủ X và lớp X11 được lưu trữ trên Wayland. Về cơ bản, các dự án đang chống lại tương lai chỉ có Waylan của Linux."
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.98,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "These Projects are Keeping X11 Dream Alive on Linux",
-    "raw_summary": "The list covers desktops, X servers, and a Wayland-hosted X11 layer. Basically, projects that are resisting a Waylan-only Linux future.",
-    "hidden": false,
-    "slug": "nhung-du-an-nay-dang-giup-x11-dream-alive-tren-linux-9b4da6"
   },
   "c83e4a34493e1229": {
     "id": "c83e4a34493e1229",
@@ -3077,6 +3166,43 @@
     "hidden": false,
     "slug": "loi-khuyen-danh-cho-tat-ca-nhung-ai-hay-dung-google-maps-de-c83e4a"
   },
+  "9b4da64b24df25e5": {
+    "id": "9b4da64b24df25e5",
+    "url": "https://feed.itsfoss.com/link/24361/17505238/projects-keeping-x11-alive",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "Fri, 23 Oct 2026 22:44:00 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "These Projects are Keeping X11 Dream Alive on Linux",
+      "vi": "Những dự án này đang giúp X11 Dream Alive trên Linux"
+    },
+    "summary": {
+      "en": "The list covers desktops, X servers, and a Wayland-hosted X11 layer. Basically, projects that are resisting a Waylan-only Linux future.",
+      "vi": "Danh sách này bao gồm máy tính để bàn, máy chủ X và lớp X11 được lưu trữ trên Wayland. Về cơ bản, các dự án đang chống lại tương lai chỉ có Waylan của Linux."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.98,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "These Projects are Keeping X11 Dream Alive on Linux",
+    "raw_summary": "The list covers desktops, X servers, and a Wayland-hosted X11 layer. Basically, projects that are resisting a Waylan-only Linux future.",
+    "hidden": false,
+    "slug": "nhung-du-an-nay-dang-giup-x11-dream-alive-tren-linux-9b4da6"
+  },
   "0a9a094c784de235": {
     "id": "0a9a094c784de235",
     "url": "https://feed.itsfoss.com/link/24361/17505121/armsom-sige7s",
@@ -3114,43 +3240,79 @@
     "hidden": false,
     "slug": "armsom-sige7s-dat-rk3588s-tren-bang-co-kich-thuoc-raspberry-0a9a09"
   },
-  "4189b4549c8cf284": {
-    "id": "4189b4549c8cf284",
-    "url": "https://feed.itsfoss.com/link/24361/17502941/red-hat-lf-research-ai-slop-report",
+  "4a8d15ba801ad04d": {
+    "id": "4a8d15ba801ad04d",
+    "url": "https://www.makeuseof.com/xpipe-open-source-app-a-shot-and-it-put-ssh-docker-proxmox-and-my-remote-files-in-one-place",
     "source": {
-      "id": "itsfoss",
-      "name": "It's FOSS",
-      "site_url": "https://itsfoss.com",
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
       "kind": "tips"
     },
-    "author": "Sourav Rudra",
-    "published_at": "Thu, 22 Oct 2026 23:20:00 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "Afam Onyimadu",
+    "published_at": "Wed, 28 Oct 2026 19:00:16 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Red Hat Funded a Report That Found a Quarter of Incoming Pull Requests May Be AI Slop",
-      "vi": "Red Hat đã tài trợ cho một báo cáo cho thấy 1/4 số yêu cầu kéo đến có thể bị AI sụt giảm"
+      "en": "XPipe makes managing a home lab feel like it should",
+      "vi": "XPipe làm cho việc quản lý phòng thí nghiệm tại nhà trở nên như ý muốn"
     },
     "summary": {
-      "en": "The Linux Foundation Research survey also found that only 35% of projects have a formal policy permitting AI contributions.",
-      "vi": "Cuộc khảo sát của Linux Foundation Research cũng cho thấy chỉ 35% dự án có chính sách chính thức cho phép đóng góp AI."
+      "en": "My home server finally stopped feeling like a pile of chores.",
+      "vi": "Máy chủ gia đình của tôi cuối cùng đã không còn cảm giác như một đống công việc nữa."
     },
     "categories": [
-      "ai",
-      "linux"
+      "windows"
     ],
     "tags": [],
     "difficulty": null,
-    "score": 0.83,
+    "score": 0.95,
     "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
-    "raw_title": "Red Hat Funded a Report That Found a Quarter of Incoming Pull Requests May Be AI Slop",
-    "raw_summary": "The Linux Foundation Research survey also found that only 35% of projects have a formal policy permitting AI contributions.",
+    "raw_title": "XPipe makes managing a home lab feel like it should",
+    "raw_summary": "My home server finally stopped feeling like a pile of chores.",
     "hidden": false,
-    "slug": "red-hat-da-tai-tro-cho-mot-bao-cao-cho-thay-14-so-yeu-cau-ke-4189b4"
+    "slug": "xpipe-lam-cho-viec-quan-ly-phong-thi-nghiem-tai-nha-tro-nen-4a8d15"
+  },
+  "b5dd38c1b651141f": {
+    "id": "b5dd38c1b651141f",
+    "url": "https://www.makeuseof.com/samsung-good-lock-gave-my-galaxy-a-feature-i-thought-i-needed-a-new-phone-for",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Brandon Miniman",
+    "published_at": "Wed, 28 Oct 2026 18:30:16 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Samsung Good Lock gave my Galaxy a feature I thought I needed a new phone for",
+      "vi": "Samsung Good Lock đã mang đến cho chiếc Galaxy của tôi một tính năng mà tôi nghĩ tôi cần một chiếc điện thoại mới"
+    },
+    "summary": {
+      "en": "This Good Lock module makes split-screen multitasking feel more like a foldable",
+      "vi": "Mô-đun Good Lock này giúp đa nhiệm chia đôi màn hình giống như một màn hình có thể gập lại"
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.95,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "Samsung Good Lock gave my Galaxy a feature I thought I needed a new phone for",
+    "raw_summary": "This Good Lock module makes split-screen multitasking feel more like a foldable",
+    "hidden": false,
+    "slug": "samsung-good-lock-da-mang-den-cho-chiec-galaxy-cua-toi-mot-t-b5dd38"
   },
   "477baea26f15d800": {
     "id": "477baea26f15d800",
@@ -3190,6 +3352,43 @@
     "hidden": false,
     "slug": "huong-dan-dung-iphone-duo-vuot-back-xac-nhan-va-cac-thao-tac-477bae"
   },
+  "f6ba26099c5cb990": {
+    "id": "f6ba26099c5cb990",
+    "url": "https://www.omgubuntu.co.uk/2026/10/trash-talk-ubuntu-uk-rubbish-bin-terminology",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Mon, 26 Oct 2026 23:58:00 +0000",
+    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Trash talking Ubuntu’s confusing British bin labels",
+      "vi": "Nói chuyện rác rưởi Nhãn thùng rác kiểu Anh khó hiểu của Ubuntu"
+    },
+    "summary": {
+      "en": "Every operating systems needs somewhere to put the files you delete (and give you chance to rummage through to find the ones you want to keep). But, if you’re a Brit using Ubuntu, the name of that place varies based on where you look. It seems Ubuntu’s UK English translation team don’t agree on…",
+      "vi": "Mọi hệ điều hành đều cần một nơi nào đó để đặt các tệp bạn xóa (và cho bạn cơ hội lục lọi để tìm những tệp bạn muốn giữ lại). Tuy nhiên, nếu bạn là người Anh sử dụng Ubuntu thì tên của địa điểm đó sẽ thay đổi tùy theo nơi bạn nhìn. Có vẻ như nhóm dịch tiếng Anh sang Anh của Ubuntu không đồng ý với…"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.94,
+    "howto": false,
+    "reading_time_min": 2,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "Trash talking Ubuntu’s confusing British bin labels",
+    "raw_summary": "Every operating systems needs somewhere to put the files you delete (and give you chance to rummage through to find the ones you want to keep). But, if you’re a Brit using Ubuntu, the name of that place varies based on where you look. It seems Ubuntu’s UK English translation team don’t agree on…",
+    "hidden": false,
+    "slug": "noi-chuyen-rac-ruoi-nhan-thung-rac-kieu-anh-kho-hieu-cua-ubu-f6ba26"
+  },
   "45c76ee61d860588": {
     "id": "45c76ee61d860588",
     "url": "https://www.omgubuntu.co.uk/2026/10/launchpad-ppa-dedicated-bug-tracker",
@@ -3227,43 +3426,6 @@
     "hidden": false,
     "slug": "nguoi-dung-ubuntu-hien-co-the-bao-loi-doi-voi-cac-ppa-cu-the-45c76e"
   },
-  "178301a7ab9b01b0": {
-    "id": "178301a7ab9b01b0",
-    "url": "https://www.omgubuntu.co.uk/2026/10/supertuxkart-goes-offline-php2shell",
-    "source": {
-      "id": "omgubuntu",
-      "name": "OMG! Ubuntu!",
-      "site_url": "https://www.omgubuntu.co.uk",
-      "kind": "tips"
-    },
-    "author": "Joey Sneddon",
-    "published_at": "Sun, 25 Oct 2026 05:05:13 +0000",
-    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "PHP2Shell scare sees SuperTuxKart pull its online server",
-      "vi": "PHP2Shell sợ hãi khi thấy SuperTuxKart kéo máy chủ trực tuyến của nó"
-    },
-    "summary": {
-      "en": "SuperTuxKart has taken several online services offline, having pulled the server that powers them rather than risk it being exploited by PHP2shell. The open-source karting game is not alone in ‘pitting’ to patch, with Wikimedia, DeviantArt, government websites and many more taking various systems…",
-      "vi": "SuperTuxKart đã đưa một số dịch vụ trực tuyến vào chế độ ngoại tuyến, đã rút máy chủ cung cấp năng lượng cho chúng thay vì có nguy cơ bị PHP2shell khai thác. Trò chơi đua xe mã nguồn mở không phải là trò chơi duy nhất 'rỗ' để vá lỗi, với Wikimedia, DeviantArt, các trang web của chính phủ và nhiều trò chơi khác sử dụng nhiều hệ thống khác nhau…"
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.94,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "PHP2Shell scare sees SuperTuxKart pull its online server",
-    "raw_summary": "SuperTuxKart has taken several online services offline, having pulled the server that powers them rather than risk it being exploited by PHP2shell. The open-source karting game is not alone in ‘pitting’ to patch, with Wikimedia, DeviantArt, government websites and many more taking various systems…",
-    "hidden": false,
-    "slug": "php2shell-so-hai-khi-thay-supertuxkart-keo-may-chu-truc-tuye-178301"
-  },
   "ef9bb7c17bc1bce5": {
     "id": "ef9bb7c17bc1bce5",
     "url": "https://tinhte.vn/thread/anh-em-dung-touchpad-haptic-tren-may-tinh-windows-thi-nen-chinh-lai-mot-chut-cho-ngon.4187788",
@@ -3300,6 +3462,43 @@
     "raw_summary": "So với touchpad cơ học truyền thống, touchpad haptic feedback cho trải nghiệm tốt hơn rất nhiều, nhưng để",
     "hidden": false,
     "slug": "anh-em-dung-touchpad-haptic-tren-may-tinh-windows-thi-nen-ch-ef9bb7"
+  },
+  "178301a7ab9b01b0": {
+    "id": "178301a7ab9b01b0",
+    "url": "https://www.omgubuntu.co.uk/2026/10/supertuxkart-goes-offline-php2shell",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Sun, 25 Oct 2026 05:05:13 +0000",
+    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "PHP2Shell scare sees SuperTuxKart pull its online server",
+      "vi": "PHP2Shell sợ hãi khi thấy SuperTuxKart kéo máy chủ trực tuyến của nó"
+    },
+    "summary": {
+      "en": "SuperTuxKart has taken several online services offline, having pulled the server that powers them rather than risk it being exploited by PHP2shell. The open-source karting game is not alone in ‘pitting’ to patch, with Wikimedia, DeviantArt, government websites and many more taking various systems…",
+      "vi": "SuperTuxKart đã đưa một số dịch vụ trực tuyến vào chế độ ngoại tuyến, đã rút máy chủ cung cấp năng lượng cho chúng thay vì có nguy cơ bị PHP2shell khai thác. Trò chơi đua xe mã nguồn mở không phải là trò chơi duy nhất 'rỗ' để vá lỗi, với Wikimedia, DeviantArt, các trang web của chính phủ và nhiều trò chơi khác sử dụng nhiều hệ thống khác nhau…"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.94,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "PHP2Shell scare sees SuperTuxKart pull its online server",
+    "raw_summary": "SuperTuxKart has taken several online services offline, having pulled the server that powers them rather than risk it being exploited by PHP2shell. The open-source karting game is not alone in ‘pitting’ to patch, with Wikimedia, DeviantArt, government websites and many more taking various systems…",
+    "hidden": false,
+    "slug": "php2shell-so-hai-khi-thay-supertuxkart-keo-may-chu-truc-tuye-178301"
   },
   "ca31470603a5474e": {
     "id": "ca31470603a5474e",
@@ -3339,6 +3538,40 @@
     "hidden": false,
     "slug": "shader-effects-la-tien-ich-mo-rong-gnome-thu-vi-nhat-ma-ban-ca3147"
   },
+  "2fbe963e7b5c9595": {
+    "id": "2fbe963e7b5c9595",
+    "slug": "intel-confirms-nova-lake-cpus-will-use-advanced-18a-p-node-m-2fbe96",
+    "url": "https://www.tomshardware.com/pc-components/cpus/intel-confirms-nova-lake-will-use-advanced-18a-p-node-more-details-at-ces-company-says-its-taking-panther-lake-capacity-offline-to-build-more-granite-rapids-data-center-cpus",
+    "source": {
+      "id": "tomshardware",
+      "name": "Tom's Hardware",
+      "site_url": "https://www.tomshardware.com",
+      "kind": "news"
+    },
+    "author": "Jake Roach",
+    "published_at": "Thu, 29 Oct 2026 21:55:48 +0000",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Intel confirms Nova Lake CPUs will use advanced 18A-P node, more details at CES — company says it's taking Panther Lake capacity offline to build more Granite…",
+      "vi": "Intel xác nhận CPU Nova Lake sẽ sử dụng nút 18A-P tiên tiến, thông tin chi tiết hơn tại CES - công ty cho biết họ đang sử dụng công suất của Panther Lake ở chế độ ngoại tuyến để xây dựng thêm Granite…"
+    },
+    "summary": {
+      "en": "Intel's next-gen Nova Lake desktop processors will be the first client product to use Intel's enhanced 18A-P node, CEO Lip-Bu Tan confirmed in the company's Q3 2026 earnings call.",
+      "vi": "Giám đốc điều hành Lip-Bu Tan đã xác nhận trong cuộc gọi báo cáo thu nhập quý 3 năm 2026 của công ty rằng bộ xử lý máy tính để bàn Nova Lake thế hệ tiếp theo của Intel sẽ là sản phẩm khách hàng đầu tiên sử dụng nút 18A-P nâng cao của Intel."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.94,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
   "3371457e4c3a2604": {
     "id": "3371457e4c3a2604",
     "url": "https://www.omgubuntu.co.uk/2026/10/calibre-9-17-faster-conversion",
@@ -3375,43 +3608,6 @@
     "raw_summary": "Calibre 9.17 has been released with faster ebook conversion speeds and JPEG XL image support. The open-source ebook editor improves output compression speeds for MOBI, AZW3 and PDB files, which makes conversions to those formats quicker. Converting EPUB to MOBI is what I use Calibre for to read on…",
     "hidden": true,
     "slug": "ban-phat-hanh-calibre-917-mang-lai-chuyen-doi-ebook-nhanh-ho-337145"
-  },
-  "e0c4a27393065c73": {
-    "id": "e0c4a27393065c73",
-    "url": "https://genk.vn/di-nuoc-ngoai-duoc-mang-toi-da-bao-nhieu-usd-tien-mat-165261024175952763.chn",
-    "source": {
-      "id": "genk",
-      "name": "GenK Thủ Thuật",
-      "site_url": "https://genk.vn",
-      "kind": "tips"
-    },
-    "author": null,
-    "published_at": "Sat, 24 Oct 2026 17:59:00 +07",
-    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
-    "original_lang": "vi",
-    "title": {
-      "vi": "Đi nước ngoài được mang tối đa bao nhiêu USD tiền mặt?",
-      "en": "How much USD can I bring abroad in cash?"
-    },
-    "summary": {
-      "vi": "Bạn đọc Hoàng Thủy (Hưng Yên) hỏi: \"Tôi chuẩn bị đi du lịch nước ngoài và muốn mang theo một ít USD tiền mặt để chi tiêu. Xin hỏi, một người được mang tối đa bao nhiêu USD khi xuất cảnh từ Việt Nam? Nếu mang trên 5.000 USD thì có bị cấm hay phải làm thủ tục gì\"?",
-      "en": "Reader Hoang Thuy (Hung Yen) asked: \"I'm preparing to travel abroad and want to bring some USD in cash to spend. Please tell me, how many USD can a person bring maximum when leaving Vietnam? If carrying more than 5,000 USD, is it banned or what procedures do I have to go through?\""
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.93,
-    "howto": false,
-    "reading_time_min": 2,
-    "translated": {
-      "en": "machine"
-    },
-    "raw_title": "Đi nước ngoài được mang tối đa bao nhiêu USD tiền mặt?",
-    "raw_summary": "Bạn đọc Hoàng Thủy (Hưng Yên) hỏi: \"Tôi chuẩn bị đi du lịch nước ngoài và muốn mang theo một ít USD tiền mặt để chi tiêu. Xin hỏi, một người được mang tối đa bao nhiêu USD khi xuất cảnh từ Việt Nam? Nếu mang trên 5.000 USD thì có bị cấm hay phải làm thủ tục gì\"?",
-    "hidden": false,
-    "slug": "di-nuoc-ngoai-duoc-mang-toi-da-bao-nhieu-usd-tien-mat-e0c4a2"
   },
   "8a2e6d2c33ee39b0": {
     "id": "8a2e6d2c33ee39b0",
@@ -3451,79 +3647,45 @@
     "hidden": false,
     "slug": "nha-phat-trien-canonical-mo-phong-trinh-khoi-chay-ubuntu-su-8a2e6d"
   },
-  "4f9a6a4a0665abf7": {
-    "id": "4f9a6a4a0665abf7",
-    "url": "https://www.omgubuntu.co.uk/2026/10/epic-confirm-fortnite-linux",
+  "89fc99ddb03996f5": {
+    "id": "89fc99ddb03996f5",
+    "url": "https://www.makeuseof.com/changed-android-settings-stopped-carrying-power-bank",
     "source": {
-      "id": "omgubuntu",
-      "name": "OMG! Ubuntu!",
-      "site_url": "https://www.omgubuntu.co.uk",
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
       "kind": "tips"
     },
-    "author": "Joey Sneddon",
-    "published_at": "Thu, 22 Oct 2026 22:59:55 +0000",
-    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Epic’s new vibe-coded games launcher is available on Ubuntu",
-      "vi": "Trình khởi chạy trò chơi mã hóa rung cảm mới của Epic có sẵn trên Ubuntu"
-    },
-    "summary": {
-      "en": "Epic Games has confirmed that Fortnite is coming to Linux, and the launcher it will arrive through is available to try in preview on Ubuntu – a vibe-coded wonder that’s been royally roasted on the internet. The gaming company has also announced a rebuilt version of its anti-cheat tech for Linux…",
-      "vi": "Epic Games đã xác nhận rằng Fortnite sẽ có mặt trên Linux và trình khởi chạy mà nó sẽ xuất hiện hiện có sẵn để dùng thử trong bản xem trước trên Ubuntu – một kỳ quan được mã hóa theo cảm xúc đã được tung ra một cách hoành tráng trên internet. Công ty game này cũng đã công bố phiên bản xây dựng lại của công nghệ chống gian lận cho Linux…"
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.8,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "Epic’s new vibe-coded games launcher is available on Ubuntu",
-    "raw_summary": "Epic Games has confirmed that Fortnite is coming to Linux, and the launcher it will arrive through is available to try in preview on Ubuntu – a vibe-coded wonder that’s been royally roasted on the internet. The gaming company has also announced a rebuilt version of its anti-cheat tech for Linux…",
-    "hidden": false,
-    "slug": "trinh-khoi-chay-tro-choi-ma-hoa-rung-cam-moi-cua-epic-co-san-4f9a6a"
-  },
-  "5a5d0c990d338acb": {
-    "id": "5a5d0c990d338acb",
-    "url": "https://www.howtogeek.com/heres-how-i-added-the-pixel-11s-most-exclusive-feature-to-my-pixel-8a",
-    "source": {
-      "id": "howtogeek",
-      "name": "How-To Geek",
-      "site_url": "https://www.howtogeek.com",
-      "kind": "tips"
-    },
-    "author": "Andrew Heinzman",
-    "published_at": "Wed, 28 Oct 2026 23:00:15 GMT",
+    "author": "Digvijay Kumar",
+    "published_at": "Wed, 28 Oct 2026 16:00:17 GMT",
     "fetched_at": "2026-10-29T07:34:48.891250+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Here's how I added the Pixel 11's most exclusive feature to my Pixel 8a",
-      "vi": "Đây là cách tôi thêm tính năng độc quyền nhất của Pixel 11 vào Pixel 8a của mình"
+      "en": "I changed 3 Android settings and stopped carrying a power bank everywhere",
+      "vi": "Tôi đã thay đổi 3 cài đặt Android và ngừng mang theo sạc dự phòng đi khắp nơi"
     },
     "summary": {
-      "en": "I'm a Rambler.",
-      "vi": "Tôi là một Rambler."
+      "en": "I found where my battery was actually going.",
+      "vi": "Tôi đã tìm thấy pin của tôi thực sự đang đi đâu."
     },
     "categories": [
-      "android"
+      "android",
+      "hardware"
     ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.83,
-    "howto": false,
+    "tags": [
+      "battery"
+    ],
+    "difficulty": "easy",
+    "score": 0.93,
+    "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
-    "raw_title": "Here's how I added the Pixel 11's most exclusive feature to my Pixel 8a",
-    "raw_summary": "I'm a Rambler.",
+    "raw_title": "I changed 3 Android settings and stopped carrying a power bank everywhere",
+    "raw_summary": "I found where my battery was actually going.",
     "hidden": false,
-    "slug": "day-la-cach-toi-them-tinh-nang-doc-quyen-nhat-cua-pixel-11-v-5a5d0c"
+    "slug": "toi-da-thay-doi-3-cai-dat-android-va-ngung-mang-theo-sac-du-89fc99"
   },
   "8e99a2fd677f7950": {
     "id": "8e99a2fd677f7950",
@@ -3565,79 +3727,79 @@
     "hidden": true,
     "slug": "keepassxc-28-duoc-phat-hanh-voi-qt6-ho-tro-kieu-tu-dong-wayl-8e99a2"
   },
-  "5d2cddf1a4fd792d": {
-    "id": "5d2cddf1a4fd792d",
-    "url": "https://www.howtogeek.com/nfc-tags-on-appliances-stops-searching-for-manuals",
+  "e0c4a27393065c73": {
+    "id": "e0c4a27393065c73",
+    "url": "https://genk.vn/di-nuoc-ngoai-duoc-mang-toi-da-bao-nhieu-usd-tien-mat-165261024175952763.chn",
     "source": {
-      "id": "howtogeek",
-      "name": "How-To Geek",
-      "site_url": "https://www.howtogeek.com",
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
       "kind": "tips"
     },
-    "author": "Adam Davidson",
-    "published_at": "Wed, 28 Oct 2026 22:30:15 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
+    "author": null,
+    "published_at": "Sat, 24 Oct 2026 17:59:00 +07",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
     "title": {
-      "en": "I put NFC tags on my appliances so I could stop searching for their manuals",
-      "vi": "Tôi gắn thẻ NFC vào các thiết bị của mình để có thể ngừng tìm kiếm hướng dẫn sử dụng chúng"
+      "vi": "Đi nước ngoài được mang tối đa bao nhiêu USD tiền mặt?",
+      "en": "How much USD can I bring abroad in cash?"
     },
     "summary": {
-      "en": "No more manual labor.",
-      "vi": "Không còn lao động chân tay."
+      "vi": "Bạn đọc Hoàng Thủy (Hưng Yên) hỏi: \"Tôi chuẩn bị đi du lịch nước ngoài và muốn mang theo một ít USD tiền mặt để chi tiêu. Xin hỏi, một người được mang tối đa bao nhiêu USD khi xuất cảnh từ Việt Nam? Nếu mang trên 5.000 USD thì có bị cấm hay phải làm thủ tục gì\"?",
+      "en": "Reader Hoang Thuy (Hung Yen) asked: \"I'm preparing to travel abroad and want to bring some USD in cash to spend. Please tell me, how many USD can a person bring maximum when leaving Vietnam? If carrying more than 5,000 USD, is it banned or what procedures do I have to go through?\""
     },
     "categories": [
       "windows"
     ],
     "tags": [],
     "difficulty": null,
-    "score": 0.83,
+    "score": 0.93,
     "howto": false,
-    "reading_time_min": 1,
+    "reading_time_min": 2,
     "translated": {
-      "vi": "machine"
+      "en": "machine"
     },
-    "raw_title": "I put NFC tags on my appliances so I could stop searching for their manuals",
-    "raw_summary": "No more manual labor.",
+    "raw_title": "Đi nước ngoài được mang tối đa bao nhiêu USD tiền mặt?",
+    "raw_summary": "Bạn đọc Hoàng Thủy (Hưng Yên) hỏi: \"Tôi chuẩn bị đi du lịch nước ngoài và muốn mang theo một ít USD tiền mặt để chi tiêu. Xin hỏi, một người được mang tối đa bao nhiêu USD khi xuất cảnh từ Việt Nam? Nếu mang trên 5.000 USD thì có bị cấm hay phải làm thủ tục gì\"?",
     "hidden": false,
-    "slug": "toi-gan-the-nfc-vao-cac-thiet-bi-cua-minh-de-co-the-ngung-ti-5d2cdd"
+    "slug": "di-nuoc-ngoai-duoc-mang-toi-da-bao-nhieu-usd-tien-mat-e0c4a2"
   },
-  "43c5160c744f7d57": {
-    "id": "43c5160c744f7d57",
-    "url": "https://www.howtogeek.com/netflix-horror-movies-to-stream-for-halloween-watch-party",
+  "85daa6a854746cd3": {
+    "id": "85daa6a854746cd3",
+    "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents",
     "source": {
-      "id": "howtogeek",
-      "name": "How-To Geek",
-      "site_url": "https://www.howtogeek.com",
-      "kind": "tips"
+      "id": "githubblog",
+      "name": "GitHub Blog",
+      "site_url": "https://github.blog",
+      "kind": "news"
     },
-    "author": "T.M. Amrita",
-    "published_at": "Wed, 28 Oct 2026 22:00:15 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "author": "GitHub Staff",
+    "published_at": "Wed, 28 Oct 2026 16:07:40 +0000",
+    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Netflix is bringing these horror movies right in time for your Halloween watch party",
-      "vi": "Netflix sẽ mang đến những bộ phim kinh dị này đúng lúc cho bữa tiệc xem Halloween của bạn"
+      "en": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+      "vi": "Octoverse: Cam kết, thúc đẩy, đạt những đỉnh cao mới vào năm 2026 khi các nhà phát triển xây dựng với các đại lý"
     },
     "summary": {
-      "en": "Keep the horror alive with these titles.",
-      "vi": "Giữ nỗi kinh hoàng sống động với những tựa game này."
+      "en": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report.",
+      "vi": "Xem cách một năm tăng trưởng kỷ lục đến với mọi ngành, mọi lĩnh vực và mọi loại nhà xây dựng trong báo cáo Octoverse năm 2026."
     },
     "categories": [
-      "windows"
+      "dev"
     ],
     "tags": [],
-    "difficulty": null,
-    "score": 0.83,
-    "howto": false,
+    "difficulty": "medium",
+    "score": 0.92,
+    "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
-    "raw_title": "Netflix is bringing these horror movies right in time for your Halloween watch party",
-    "raw_summary": "Keep the horror alive with these titles.",
+    "raw_title": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+    "raw_summary": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report.",
     "hidden": false,
-    "slug": "netflix-se-mang-den-nhung-bo-phim-kinh-di-nay-dung-luc-cho-b-43c516"
+    "slug": "octoverse-cam-ket-thuc-day-dat-nhung-dinh-cao-moi-vao-nam-20-85daa6"
   },
   "8e4bd3d9e1e92b58": {
     "id": "8e4bd3d9e1e92b58",
@@ -3675,80 +3837,6 @@
     "raw_title": "Ring finally fixed the biggest problem with smart locks, and the solution is surprisingly simple",
     "raw_summary": "No key? No problem.",
     "hidden": false
-  },
-  "3b94f401db45eb9e": {
-    "id": "3b94f401db45eb9e",
-    "url": "https://www.howtogeek.com/photoshop-plugins-so-essential-they-should-be-built-in",
-    "source": {
-      "id": "howtogeek",
-      "name": "How-To Geek",
-      "site_url": "https://www.howtogeek.com",
-      "kind": "tips"
-    },
-    "author": "Diana Todea",
-    "published_at": "Wed, 28 Oct 2026 21:00:15 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "4 Photoshop plugins so essential they should be built-in",
-      "vi": "4 plugin Photoshop rất cần thiết nên được tích hợp sẵn"
-    },
-    "summary": {
-      "en": "Simple add-ons for smoother workflows",
-      "vi": "Tiện ích bổ sung đơn giản giúp quy trình làm việc mượt mà hơn"
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.83,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "4 Photoshop plugins so essential they should be built-in",
-    "raw_summary": "Simple add-ons for smoother workflows",
-    "hidden": false,
-    "slug": "4-plugin-photoshop-rat-can-thiet-nen-duoc-tich-hop-san-3b94f4"
-  },
-  "29d0fd5470988252": {
-    "id": "29d0fd5470988252",
-    "url": "https://www.howtogeek.com/google-maps-companion-apps-that-fill-its-biggest-gaps",
-    "source": {
-      "id": "howtogeek",
-      "name": "How-To Geek",
-      "site_url": "https://www.howtogeek.com",
-      "kind": "tips"
-    },
-    "author": "Sanya Shah",
-    "published_at": "Wed, 28 Oct 2026 20:30:15 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "5 Google Maps companion apps that fill its biggest gaps",
-      "vi": "5 ứng dụng đồng hành của Google Maps lấp đầy khoảng trống lớn nhất của nó"
-    },
-    "summary": {
-      "en": "Why settle for basic maps?",
-      "vi": "Tại sao giải quyết cho các bản đồ cơ bản?"
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.83,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "5 Google Maps companion apps that fill its biggest gaps",
-    "raw_summary": "Why settle for basic maps?",
-    "hidden": false,
-    "slug": "5-ung-dung-dong-hanh-cua-google-maps-lap-day-khoang-trong-lo-29d0fd"
   },
   "3930d00ef77468d3": {
     "id": "3930d00ef77468d3",
@@ -4162,6 +4250,40 @@
     "raw_summary": "Want to waste less filament? Do this instead.",
     "hidden": false
   },
+  "c861769a0821841b": {
+    "id": "c861769a0821841b",
+    "slug": "this-2-model-is-the-most-practical-thing-i-3d-printed-in-oct-c86176",
+    "url": "https://www.howtogeek.com/most-practical-thing-3d-printed-october",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Tim Brookes",
+    "published_at": "Thu, 29 Oct 2026 22:31:15 GMT",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "This $2 model is the most practical thing I 3D printed in October",
+      "vi": "Mô hình trị giá 2 USD này là sản phẩm thiết thực nhất mà tôi in 3D vào tháng 10"
+    },
+    "summary": {
+      "en": "Small prints can make big differences.",
+      "vi": "Những bản in nhỏ có thể tạo ra sự khác biệt lớn."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.91,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
   "b394caaea4801868": {
     "id": "b394caaea4801868",
     "slug": "google-thua-nhan-tim-kiem-ai-kiem-duoc-it-tien-hon-nhung-dan-b394ca",
@@ -4198,6 +4320,74 @@
     "raw_title": "Google admits AI search makes less money, but it's fixing that with more ads",
     "raw_summary": "Google's negative cash flow balloons to -$9.06 billion, and stock price tumbles following Q3 earnings.",
     "hidden": false
+  },
+  "0bdd0d900328f106": {
+    "id": "0bdd0d900328f106",
+    "slug": "this-tiny-slider-is-tanking-your-gpu-performance-0bdd0d",
+    "url": "https://www.howtogeek.com/this-tiny-slider-is-tanking-your-gpu-performance",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Monica J. White",
+    "published_at": "Thu, 29 Oct 2026 21:30:16 GMT",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "This tiny slider is tanking your GPU performance",
+      "vi": "Thanh trượt nhỏ bé này đang làm giảm hiệu suất GPU của bạn"
+    },
+    "summary": {
+      "en": "You should try and make the most of your overpriced GPU.",
+      "vi": "Bạn nên thử và tận dụng tối đa GPU có giá quá cao của mình."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.91,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "b853919723a582d4": {
+    "id": "b853919723a582d4",
+    "slug": "microsoft-fixes-a-windows-11-annoyance-as-pc-revenue-decline-b85391",
+    "url": "https://arstechnica.com/gadgets/2026/10/windows-11-gets-right-click-menu-improvements-as-pc-revenue-slides",
+    "source": {
+      "id": "arstechnica",
+      "name": "Ars Technica",
+      "site_url": "https://arstechnica.com",
+      "kind": "news"
+    },
+    "author": "Nick Indge",
+    "published_at": "Thu, 29 Oct 2026 20:18:49 +0000",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Microsoft fixes a Windows 11 annoyance as PC revenue declines",
+      "vi": "Microsoft sửa lỗi khó chịu của Windows 11 khi doanh thu PC sụt giảm"
+    },
+    "summary": {
+      "en": "The latest update also brings a cloud recovery option for PCs that won't boot.",
+      "vi": "Bản cập nhật mới nhất cũng mang đến tùy chọn khôi phục đám mây cho những PC không khởi động được."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.9,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
   },
   "b302cd56f6ec631a": {
     "id": "b302cd56f6ec631a",
@@ -4313,42 +4503,39 @@
     "hidden": false,
     "slug": "chuong-8-xay-dung-quy-trinh-lam-viec-tmux-thuc-su-8fe990"
   },
-  "7b15ec4f543529d7": {
-    "id": "7b15ec4f543529d7",
-    "url": "https://www.androidauthority.com/oura-ring-4-sync-bug-3729281",
+  "dc0bac1a652bc82e": {
+    "id": "dc0bac1a652bc82e",
+    "slug": "android-17-qpr3-beta-3-brings-back-app-lock-and-fixes-dozens-dc0bac",
+    "url": "https://www.androidauthority.com/android-17-qpr3-beta-3-3729781",
     "source": {
       "id": "androidauthority",
       "name": "Android Authority",
       "site_url": "https://www.androidauthority.com",
       "kind": "news"
     },
-    "author": "Ryan McNeal",
-    "published_at": "Wed, 28 Oct 2026 17:16:08 +0000",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "Stephen Schenck",
+    "published_at": "Thu, 29 Oct 2026 20:51:36 +0000",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Oura confirms Ring 4 sync bug, but the fix is simple",
-      "vi": "Oura xác nhận lỗi đồng bộ hóa Ring 4, nhưng cách khắc phục rất đơn giản"
+      "en": "Android 17 QPR3 Beta 3 brings back app lock and fixes dozens of bugs",
+      "vi": "Android 17 QPR3 Beta 3 mang lại khóa ứng dụng và sửa hàng tá lỗi"
     },
     "summary": {
-      "en": "Oura offers workaround for confirmed Ring 4 syncing bug.",
-      "vi": "Oura đưa ra cách giải quyết cho lỗi đồng bộ hóa Ring 4 đã được xác nhận."
+      "en": "Plus new options for app bubbles, Quick Settings, and more.",
+      "vi": "Cùng với các tùy chọn mới cho bong bóng ứng dụng, Cài đặt nhanh, v.v."
     },
     "categories": [
-      "hardware"
+      "android"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.78,
+    "difficulty": "easy",
+    "score": 0.85,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
-    },
-    "raw_title": "Oura confirms Ring 4 sync bug, but the fix is simple",
-    "raw_summary": "Oura offers workaround for confirmed Ring 4 syncing bug.",
-    "hidden": false,
-    "slug": "oura-xac-nhan-loi-dong-bo-hoa-ring-4-nhung-cach-khac-phuc-ra-7b15ec"
+    }
   },
   "a4e4d2d959650d53": {
     "id": "a4e4d2d959650d53",
@@ -4427,42 +4614,43 @@
     "hidden": false,
     "slug": "chuong-6-cac-ngan-tach-dieu-huong-thay-doi-kich-thuoc-va-thu-790bba"
   },
-  "ca0f5a1a0dc47e76": {
-    "id": "ca0f5a1a0dc47e76",
-    "url": "https://arstechnica.com/science/2026/10/antarctic-sea-ice-loss-could-reshape-weather-far-beyond-the-pole",
+  "4189b4549c8cf284": {
+    "id": "4189b4549c8cf284",
+    "url": "https://feed.itsfoss.com/link/24361/17502941/red-hat-lf-research-ai-slop-report",
     "source": {
-      "id": "arstechnica",
-      "name": "Ars Technica",
-      "site_url": "https://arstechnica.com",
-      "kind": "news"
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips"
     },
-    "author": "Bob Berwyn, Inside Climate News",
-    "published_at": "Wed, 28 Oct 2026 13:38:53 +0000",
+    "author": "Sourav Rudra",
+    "published_at": "Thu, 22 Oct 2026 23:20:00 +0530",
     "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "A hidden ocean change near Antarctica could have global consequences",
-      "vi": "Một sự thay đổi đại dương tiềm ẩn gần Nam Cực có thể gây ra hậu quả toàn cầu"
+      "en": "Red Hat Funded a Report That Found a Quarter of Incoming Pull Requests May Be AI Slop",
+      "vi": "Red Hat đã tài trợ cho một báo cáo cho thấy 1/4 số yêu cầu kéo đến có thể bị AI sụt giảm"
     },
     "summary": {
-      "en": "Antarctic waters are getting saltier as sea-ice loss reshapes ocean circulation.",
-      "vi": "Vùng nước ở Nam Cực ngày càng mặn hơn khi mất băng biển định hình lại sự lưu thông của đại dương"
+      "en": "The Linux Foundation Research survey also found that only 35% of projects have a formal policy permitting AI contributions.",
+      "vi": "Cuộc khảo sát của Linux Foundation Research cũng cho thấy chỉ 35% dự án có chính sách chính thức cho phép đóng góp AI."
     },
     "categories": [
+      "ai",
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
+    "difficulty": null,
     "score": 0.83,
-    "howto": true,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
-    "raw_title": "A hidden ocean change near Antarctica could have global consequences",
-    "raw_summary": "Antarctic waters are getting saltier as sea-ice loss reshapes ocean circulation.",
+    "raw_title": "Red Hat Funded a Report That Found a Quarter of Incoming Pull Requests May Be AI Slop",
+    "raw_summary": "The Linux Foundation Research survey also found that only 35% of projects have a formal policy permitting AI contributions.",
     "hidden": false,
-    "slug": "mot-su-thay-doi-dai-duong-tiem-an-gan-nam-cuc-co-the-gay-ra-ca0f5a"
+    "slug": "red-hat-da-tai-tro-cho-mot-bao-cao-cho-thay-14-so-yeu-cau-ke-4189b4"
   },
   "f30f927ad9fb89ba": {
     "id": "f30f927ad9fb89ba",
@@ -4541,6 +4729,191 @@
     "hidden": false,
     "slug": "chuong-4-phien-tao-dat-ten-tach-va-gan-lai-5ed548"
   },
+  "5a5d0c990d338acb": {
+    "id": "5a5d0c990d338acb",
+    "url": "https://www.howtogeek.com/heres-how-i-added-the-pixel-11s-most-exclusive-feature-to-my-pixel-8a",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Andrew Heinzman",
+    "published_at": "Wed, 28 Oct 2026 23:00:15 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Here's how I added the Pixel 11's most exclusive feature to my Pixel 8a",
+      "vi": "Đây là cách tôi thêm tính năng độc quyền nhất của Pixel 11 vào Pixel 8a của mình"
+    },
+    "summary": {
+      "en": "I'm a Rambler.",
+      "vi": "Tôi là một Rambler."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "Here's how I added the Pixel 11's most exclusive feature to my Pixel 8a",
+    "raw_summary": "I'm a Rambler.",
+    "hidden": false,
+    "slug": "day-la-cach-toi-them-tinh-nang-doc-quyen-nhat-cua-pixel-11-v-5a5d0c"
+  },
+  "5d2cddf1a4fd792d": {
+    "id": "5d2cddf1a4fd792d",
+    "url": "https://www.howtogeek.com/nfc-tags-on-appliances-stops-searching-for-manuals",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Adam Davidson",
+    "published_at": "Wed, 28 Oct 2026 22:30:15 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I put NFC tags on my appliances so I could stop searching for their manuals",
+      "vi": "Tôi gắn thẻ NFC vào các thiết bị của mình để có thể ngừng tìm kiếm hướng dẫn sử dụng chúng"
+    },
+    "summary": {
+      "en": "No more manual labor.",
+      "vi": "Không còn lao động chân tay."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "I put NFC tags on my appliances so I could stop searching for their manuals",
+    "raw_summary": "No more manual labor.",
+    "hidden": false,
+    "slug": "toi-gan-the-nfc-vao-cac-thiet-bi-cua-minh-de-co-the-ngung-ti-5d2cdd"
+  },
+  "ca0f5a1a0dc47e76": {
+    "id": "ca0f5a1a0dc47e76",
+    "url": "https://arstechnica.com/science/2026/10/antarctic-sea-ice-loss-could-reshape-weather-far-beyond-the-pole",
+    "source": {
+      "id": "arstechnica",
+      "name": "Ars Technica",
+      "site_url": "https://arstechnica.com",
+      "kind": "news"
+    },
+    "author": "Bob Berwyn, Inside Climate News",
+    "published_at": "Wed, 28 Oct 2026 13:38:53 +0000",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "A hidden ocean change near Antarctica could have global consequences",
+      "vi": "Một sự thay đổi đại dương tiềm ẩn gần Nam Cực có thể gây ra hậu quả toàn cầu"
+    },
+    "summary": {
+      "en": "Antarctic waters are getting saltier as sea-ice loss reshapes ocean circulation.",
+      "vi": "Vùng nước ở Nam Cực ngày càng mặn hơn khi mất băng biển định hình lại sự lưu thông của đại dương"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.83,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "A hidden ocean change near Antarctica could have global consequences",
+    "raw_summary": "Antarctic waters are getting saltier as sea-ice loss reshapes ocean circulation.",
+    "hidden": false,
+    "slug": "mot-su-thay-doi-dai-duong-tiem-an-gan-nam-cuc-co-the-gay-ra-ca0f5a"
+  },
+  "43c5160c744f7d57": {
+    "id": "43c5160c744f7d57",
+    "url": "https://www.howtogeek.com/netflix-horror-movies-to-stream-for-halloween-watch-party",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "T.M. Amrita",
+    "published_at": "Wed, 28 Oct 2026 22:00:15 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Netflix is bringing these horror movies right in time for your Halloween watch party",
+      "vi": "Netflix sẽ mang đến những bộ phim kinh dị này đúng lúc cho bữa tiệc xem Halloween của bạn"
+    },
+    "summary": {
+      "en": "Keep the horror alive with these titles.",
+      "vi": "Giữ nỗi kinh hoàng sống động với những tựa game này."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "Netflix is bringing these horror movies right in time for your Halloween watch party",
+    "raw_summary": "Keep the horror alive with these titles.",
+    "hidden": false,
+    "slug": "netflix-se-mang-den-nhung-bo-phim-kinh-di-nay-dung-luc-cho-b-43c516"
+  },
+  "3b94f401db45eb9e": {
+    "id": "3b94f401db45eb9e",
+    "url": "https://www.howtogeek.com/photoshop-plugins-so-essential-they-should-be-built-in",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Diana Todea",
+    "published_at": "Wed, 28 Oct 2026 21:00:15 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "4 Photoshop plugins so essential they should be built-in",
+      "vi": "4 plugin Photoshop rất cần thiết nên được tích hợp sẵn"
+    },
+    "summary": {
+      "en": "Simple add-ons for smoother workflows",
+      "vi": "Tiện ích bổ sung đơn giản giúp quy trình làm việc mượt mà hơn"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "4 Photoshop plugins so essential they should be built-in",
+    "raw_summary": "Simple add-ons for smoother workflows",
+    "hidden": false,
+    "slug": "4-plugin-photoshop-rat-can-thiet-nen-duoc-tich-hop-san-3b94f4"
+  },
   "57f9e735d3ff4182": {
     "id": "57f9e735d3ff4182",
     "url": "https://arstechnica.com/science/2026/10/scientists-recreate-the-1600-year-old-recipe-of-lycurgus-cup",
@@ -4577,6 +4950,43 @@
     "raw_summary": "University of Sheffield researchers figured out how to re-create the 1,600-year-old glass recipe.",
     "hidden": false,
     "slug": "tac-pham-dieu-khac-tai-tao-hieu-ung-quang-hoc-ky-la-cua-lycu-57f9e7"
+  },
+  "29d0fd5470988252": {
+    "id": "29d0fd5470988252",
+    "url": "https://www.howtogeek.com/google-maps-companion-apps-that-fill-its-biggest-gaps",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Sanya Shah",
+    "published_at": "Wed, 28 Oct 2026 20:30:15 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "5 Google Maps companion apps that fill its biggest gaps",
+      "vi": "5 ứng dụng đồng hành của Google Maps lấp đầy khoảng trống lớn nhất của nó"
+    },
+    "summary": {
+      "en": "Why settle for basic maps?",
+      "vi": "Tại sao giải quyết cho các bản đồ cơ bản?"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "5 Google Maps companion apps that fill its biggest gaps",
+    "raw_summary": "Why settle for basic maps?",
+    "hidden": false,
+    "slug": "5-ung-dung-dong-hanh-cua-google-maps-lap-day-khoang-trong-lo-29d0fd"
   },
   "923a56423901f094": {
     "id": "923a56423901f094",
@@ -4837,379 +5247,6 @@
     "raw_summary": "Fewer middlemen, with a few catches.",
     "hidden": false
   },
-  "f370cc54cb497e18": {
-    "id": "f370cc54cb497e18",
-    "url": "https://www.makeuseof.com/replace-7-zip-winrar-with-nanazip",
-    "source": {
-      "id": "makeuseof",
-      "name": "MakeUseOf",
-      "site_url": "https://www.makeuseof.com",
-      "kind": "tips"
-    },
-    "author": "Pankil Shah",
-    "published_at": "Wed, 28 Oct 2026 20:00:16 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "I ditched both 7-Zip and WinRAR for this alternative for this one reason",
-      "vi": "Tôi đã bỏ cả 7-Zip và WinRAR cho giải pháp thay thế này vì lý do này"
-    },
-    "summary": {
-      "en": "My PC is now more secure, thanks to this change.",
-      "vi": "PC của tôi bây giờ an toàn hơn nhờ sự thay đổi này."
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.75,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "I ditched both 7-Zip and WinRAR for this alternative for this one reason",
-    "raw_summary": "My PC is now more secure, thanks to this change.",
-    "hidden": false,
-    "slug": "toi-da-bo-ca-7-zip-va-winrar-cho-giai-phap-thay-the-nay-vi-l-f370cc"
-  },
-  "024e8db1df02dbee": {
-    "id": "024e8db1df02dbee",
-    "url": "https://www.makeuseof.com/i-built-a-lossless-music-library",
-    "source": {
-      "id": "makeuseof",
-      "name": "MakeUseOf",
-      "site_url": "https://www.makeuseof.com",
-      "kind": "tips"
-    },
-    "author": "Brady Snyder",
-    "published_at": "Wed, 28 Oct 2026 19:30:16 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "I built a subscription-free lossless music library with this affordable USB accessory",
-      "vi": "Tôi đã xây dựng thư viện nhạc lossless không cần đăng ký bằng phụ kiện USB giá cả phải chăng này"
-    },
-    "summary": {
-      "en": "Out with the new, in with the old.",
-      "vi": "Ra đi với cái mới, vào với cái cũ."
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.75,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "I built a subscription-free lossless music library with this affordable USB accessory",
-    "raw_summary": "Out with the new, in with the old.",
-    "hidden": false,
-    "slug": "toi-da-xay-dung-thu-vien-nhac-lossless-khong-can-dang-ky-ban-024e8d"
-  },
-  "8fb639d936f65def": {
-    "id": "8fb639d936f65def",
-    "url": "https://dev.to/morsezone/building-a-morse-code-practice-timer-in-javascript-timing-dits-dahs-and-gaps-39ol",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Morse Zone",
-    "published_at": "2026-10-29T04:29:52Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Building a Morse Code Practice Timer in JavaScript: Timing Dits, Dahs and Gaps",
-      "vi": "Xây dựng bộ đếm thời gian thực hành mã Morse trong JavaScript: Thời gian, dấu gạch ngang và khoảng trống"
-    },
-    "summary": {
-      "en": "Learning Morse code is not only about memorising dots and dashes. It is about rhythm. If your timing",
-      "vi": "Học mã Morse không chỉ là ghi nhớ dấu chấm và dấu gạch ngang. Đó là về nhịp điệu. Nếu thời gian của bạn"
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.8,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "Building a Morse Code Practice Timer in JavaScript: Timing Dits, Dahs and Gaps",
-    "raw_summary": "Learning Morse code is not only about memorising dots and dashes. It is about rhythm. If your timing",
-    "hidden": false,
-    "slug": "xay-dung-bo-dem-thoi-gian-thuc-hanh-ma-morse-trong-javascrip-8fb639"
-  },
-  "10ef57b720dca9c5": {
-    "id": "10ef57b720dca9c5",
-    "url": "https://www.makeuseof.com/the-next-big-wi-fi-upgrade-is-tackling-something-more-important-than-speed",
-    "source": {
-      "id": "makeuseof",
-      "name": "MakeUseOf",
-      "site_url": "https://www.makeuseof.com",
-      "kind": "tips"
-    },
-    "author": "Gavin Phillips",
-    "published_at": "Wed, 28 Oct 2026 18:00:16 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "The next big Wi-Fi upgrade is tackling something more important than speed",
-      "vi": "Bản nâng cấp Wi-Fi lớn tiếp theo đang giải quyết một vấn đề quan trọng hơn tốc độ"
-    },
-    "summary": {
-      "en": "Where we're going, we won't need faster Wi-Fi speeds.",
-      "vi": "Nơi chúng ta tới, chúng ta sẽ không cần tốc độ Wi-Fi nhanh hơn."
-    },
-    "categories": [
-      "hardware"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.75,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "The next big Wi-Fi upgrade is tackling something more important than speed",
-    "raw_summary": "Where we're going, we won't need faster Wi-Fi speeds.",
-    "hidden": false,
-    "slug": "ban-nang-cap-wi-fi-lon-tiep-theo-dang-giai-quyet-mot-van-de-10ef57"
-  },
-  "0f61e1e47dbe051e": {
-    "id": "0f61e1e47dbe051e",
-    "url": "https://www.makeuseof.com/ikea-kreativ-home-furnishings",
-    "source": {
-      "id": "makeuseof",
-      "name": "MakeUseOf",
-      "site_url": "https://www.makeuseof.com",
-      "kind": "tips"
-    },
-    "author": "Chris Hachey",
-    "published_at": "Wed, 28 Oct 2026 17:30:16 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "IKEA has a better way to shop for furniture than scrolling product pages",
-      "vi": "IKEA có cách mua đồ nội thất tốt hơn là cuộn trang sản phẩm"
-    },
-    "summary": {
-      "en": "Take the tour around the room yourself.",
-      "vi": "Hãy tự mình đi tham quan quanh phòng."
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.75,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "IKEA has a better way to shop for furniture than scrolling product pages",
-    "raw_summary": "Take the tour around the room yourself.",
-    "hidden": false,
-    "slug": "ikea-co-cach-mua-do-noi-that-tot-hon-la-cuon-trang-san-pham-0f61e1"
-  },
-  "c55a4eec3fa5eaad": {
-    "id": "c55a4eec3fa5eaad",
-    "url": "https://dev.to/glinck/35-x-45-cm-is-not-a-pixel-size-converting-cm-and-dpi-for-form-photos-5l7",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Anuj Kabra",
-    "published_at": "2026-10-29T04:29:06Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "3.5 x 4.5 cm is not a pixel size: converting cm and DPI for form photos",
-      "vi": "3,5 x 4,5 cm không phải là kích thước pixel: chuyển đổi cm và dpi cho ảnh dạng"
-    },
-    "summary": {
-      "en": "A lot of application forms ask for a passport-style photo of \"3.5 x 4.5 cm\". An image file has no",
-      "vi": "Rất nhiều mẫu đơn yêu cầu ảnh kiểu hộ chiếu \"3,5 x 4,5 cm\". Một tập tin hình ảnh không có"
-    },
-    "categories": [
-      "android"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.8,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "3.5 x 4.5 cm is not a pixel size: converting cm and DPI for form photos",
-    "raw_summary": "A lot of application forms ask for a passport-style photo of \"3.5 x 4.5 cm\". An image file has no",
-    "hidden": false,
-    "slug": "35-x-45-cm-khong-phai-la-kich-thuoc-pixel-chuyen-doi-cm-va-d-c55a4e"
-  },
-  "51f8dcdc7f9b270d": {
-    "id": "51f8dcdc7f9b270d",
-    "url": "https://www.makeuseof.com/microsoft-wants-to-make-storage-that-lasts-10000-years-and-its-not-an-ssd",
-    "source": {
-      "id": "makeuseof",
-      "name": "MakeUseOf",
-      "site_url": "https://www.makeuseof.com",
-      "kind": "tips"
-    },
-    "author": "Gavin Phillips",
-    "published_at": "Wed, 28 Oct 2026 17:15:45 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Microsoft wants to make storage that lasts 10,000 years, and it's not an SSD",
-      "vi": "Microsoft muốn tạo ra bộ lưu trữ có tuổi thọ 10.000 năm và không phải là SSD"
-    },
-    "summary": {
-      "en": "We all need more lasers, that's for sure.",
-      "vi": "Tất cả chúng ta đều cần nhiều tia laser hơn, đó là điều chắc chắn."
-    },
-    "categories": [
-      "windows",
-      "hardware"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.75,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "Microsoft wants to make storage that lasts 10,000 years, and it's not an SSD",
-    "raw_summary": "We all need more lasers, that's for sure.",
-    "hidden": false,
-    "slug": "microsoft-muon-tao-ra-bo-luu-tru-co-tuoi-tho-10000-nam-va-kh-51f8dc"
-  },
-  "8099aaefadc9434a": {
-    "id": "8099aaefadc9434a",
-    "url": "https://www.makeuseof.com/windows-reset-options-explained",
-    "source": {
-      "id": "makeuseof",
-      "name": "MakeUseOf",
-      "site_url": "https://www.makeuseof.com",
-      "kind": "tips"
-    },
-    "author": "Pankil Shah",
-    "published_at": "Wed, 28 Oct 2026 16:30:18 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "I learned what Windows “Reset this PC” actually keeps, and it’s not what I expected",
-      "vi": "Tôi đã biết được tính năng “Đặt lại PC này” thực sự có trong Windows và đó không phải là điều tôi mong đợi"
-    },
-    "summary": {
-      "en": "It's not as straightforward as you think.",
-      "vi": "Nó không đơn giản như bạn nghĩ."
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.75,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "I learned what Windows “Reset this PC” actually keeps, and it’s not what I expected",
-    "raw_summary": "It's not as straightforward as you think.",
-    "hidden": false,
-    "slug": "toi-da-biet-duoc-tinh-nang-dat-lai-pc-nay-thuc-su-co-trong-w-8099aa"
-  },
-  "e911f0d646627b9d": {
-    "id": "e911f0d646627b9d",
-    "url": "https://dev.to/hi_hphanthanh_41c4083/find-podcasts-and-their-latest-episodes-with-python-itunes-search-api-rss-no-api-key-38p7",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Hải Hà Phan Thanh",
-    "published_at": "2026-10-29T03:20:19Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Find podcasts and their latest episodes with Python (iTunes Search API + RSS, no API key)",
-      "vi": "Tìm podcast và các tập mới nhất của chúng bằng Python (API tìm kiếm iTunes + RSS, không có khóa API)"
-    },
-    "summary": {
-      "en": "Podcast guest outreach, sponsorship research, and \"new episode\" alerts all need the same two things:",
-      "vi": "Tiếp cận khách hàng bằng podcast, nghiên cứu tài trợ và thông báo \"tập mới\" đều cần hai điều giống nhau:"
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [
-      "python"
-    ],
-    "difficulty": null,
-    "score": 0.8,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "Find podcasts and their latest episodes with Python (iTunes Search API + RSS, no API key)",
-    "raw_summary": "Podcast guest outreach, sponsorship research, and \"new episode\" alerts all need the same two things:",
-    "hidden": false,
-    "slug": "tim-podcast-va-cac-tap-moi-nhat-cua-chung-bang-python-api-ti-e911f0"
-  },
-  "e3b74b75e702204f": {
-    "id": "e3b74b75e702204f",
-    "url": "https://www.makeuseof.com/bentopdf-local-browser-pdf-tools",
-    "source": {
-      "id": "makeuseof",
-      "name": "MakeUseOf",
-      "site_url": "https://www.makeuseof.com",
-      "kind": "tips"
-    },
-    "author": "Oluwademilade Afolabi",
-    "published_at": "Wed, 28 Oct 2026 15:45:18 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "I do almost every annoying PDF job locally in my browser now",
-      "vi": "Bây giờ tôi thực hiện hầu hết mọi công việc PDF khó chịu trên trình duyệt của mình"
-    },
-    "summary": {
-      "en": "I’m running out of reasons to open a dedicated PDF app.",
-      "vi": "Tôi không còn lý do để mở một ứng dụng PDF chuyên dụng."
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.75,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "I do almost every annoying PDF job locally in my browser now",
-    "raw_summary": "I’m running out of reasons to open a dedicated PDF app.",
-    "hidden": false,
-    "slug": "bay-gio-toi-thuc-hien-hau-het-moi-cong-viec-pdf-kho-chiu-tre-e3b74b"
-  },
   "6353f89322ac67ed": {
     "id": "6353f89322ac67ed",
     "url": "https://www.makeuseof.com/wireless-headphones-expiration-logitech-zone-vibe-pro",
@@ -5246,43 +5283,6 @@
     "raw_summary": "All headsets should come with replaceable batteries.",
     "hidden": false,
     "slug": "tai-nghe-khong-day-cua-ban-co-ngay-het-han-nhung-cap-tai-ngh-6353f8"
-  },
-  "2f1f3dcba6e12a09": {
-    "id": "2f1f3dcba6e12a09",
-    "url": "https://www.omgubuntu.co.uk/2026/10/ps5-linux-hack-newer-firmware",
-    "source": {
-      "id": "omgubuntu",
-      "name": "OMG! Ubuntu!",
-      "site_url": "https://www.omgubuntu.co.uk",
-      "kind": "tips"
-    },
-    "author": "Joey Sneddon",
-    "published_at": "Wed, 21 Oct 2026 01:13:51 +0000",
-    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "PS5 Linux hack now supports (some) newer firmware versions",
-      "vi": "Bản hack PS5 Linux hiện hỗ trợ (một số) phiên bản phần sụn mới hơn"
-    },
-    "summary": {
-      "en": "New PS5 Linux hack pLinux5-NG supports newer firmware, allowing Linux and Steam games to run on Sony's console. But not for long, welp. You're reading PS5 Linux hack now supports (some) newer firmware versions , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission.",
-      "vi": "Bản hack PS5 Linux mới pLinux5-NG hỗ trợ chương trình cơ sở mới hơn, cho phép các trò chơi Linux và Steam chạy trên bảng điều khiển của Sony. Nhưng không lâu đâu, chào. Bạn đang đọc bản hack PS5 Linux hiện hỗ trợ (một số) phiên bản chương trình cơ sở mới hơn, một bài đăng trên blog từ OMG! Ubuntu . Không sao chép đi nơi khác khi chưa được phép."
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.8,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "PS5 Linux hack now supports (some) newer firmware versions",
-    "raw_summary": "New PS5 Linux hack pLinux5-NG supports newer firmware, allowing Linux and Steam games to run on Sony's console. But not for long, welp. You're reading PS5 Linux hack now supports (some) newer firmware versions , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission.",
-    "hidden": false,
-    "slug": "ban-hack-ps5-linux-hien-ho-tro-mot-so-phien-ban-phan-sun-moi-2f1f3d"
   },
   "60d519cdefb3958d": {
     "id": "60d519cdefb3958d",
@@ -5322,6 +5322,43 @@
     "hidden": false,
     "slug": "toi-da-dat-wi-fi-cua-minh-o-che-do-do-theo-luong-du-lieu-tro-60d519"
   },
+  "4f9a6a4a0665abf7": {
+    "id": "4f9a6a4a0665abf7",
+    "url": "https://www.omgubuntu.co.uk/2026/10/epic-confirm-fortnite-linux",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Thu, 22 Oct 2026 22:59:55 +0000",
+    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Epic’s new vibe-coded games launcher is available on Ubuntu",
+      "vi": "Trình khởi chạy trò chơi mã hóa rung cảm mới của Epic có sẵn trên Ubuntu"
+    },
+    "summary": {
+      "en": "Epic Games has confirmed that Fortnite is coming to Linux, and the launcher it will arrive through is available to try in preview on Ubuntu – a vibe-coded wonder that’s been royally roasted on the internet. The gaming company has also announced a rebuilt version of its anti-cheat tech for Linux…",
+      "vi": "Epic Games đã xác nhận rằng Fortnite sẽ có mặt trên Linux và trình khởi chạy mà nó sẽ xuất hiện hiện có sẵn để dùng thử trong bản xem trước trên Ubuntu – một kỳ quan được mã hóa theo cảm xúc đã được tung ra một cách hoành tráng trên internet. Công ty game này cũng đã công bố phiên bản xây dựng lại của công nghệ chống gian lận cho Linux…"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "Epic’s new vibe-coded games launcher is available on Ubuntu",
+    "raw_summary": "Epic Games has confirmed that Fortnite is coming to Linux, and the launcher it will arrive through is available to try in preview on Ubuntu – a vibe-coded wonder that’s been royally roasted on the internet. The gaming company has also announced a rebuilt version of its anti-cheat tech for Linux…",
+    "hidden": false,
+    "slug": "trinh-khoi-chay-tro-choi-ma-hoa-rung-cam-moi-cua-epic-co-san-4f9a6a"
+  },
   "25eaafa71e2783ee": {
     "id": "25eaafa71e2783ee",
     "url": "https://www.makeuseof.com/yes-linux-runs-microsofts-own-video-game-better-than-windows",
@@ -5359,43 +5396,6 @@
     "raw_summary": "How the turntables.",
     "hidden": false,
     "slug": "co-linux-chay-tro-choi-dien-tu-cua-microsoft-tot-hon-windows-25eaaf"
-  },
-  "82587239bd94ad26": {
-    "id": "82587239bd94ad26",
-    "url": "https://dev.to/hirantha_sandaruwan/sri-lankan-public-holidays-and-poya-days-as-open-data-and-two-date-bugs-to-avoid-3d2c",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Hirantha Sandaruwan Lakshan",
-    "published_at": "2026-10-29T02:53:48Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Sri Lankan public holidays and Poya days as open data, and two date bugs to avoid",
-      "vi": "Ngày nghỉ lễ của Sri Lanka và ngày Poya là dữ liệu mở và hai lỗi về ngày tháng cần tránh"
-    },
-    "summary": {
-      "en": "An open JSON, CSV and iCalendar list of Sri Lanka's 2026 and 2027 holidays, where it comes from, and two date bugs to avoid when you use it.",
-      "vi": "Danh sách JSON, CSV và iCalendar mở về các ngày lễ năm 2026 và 2027 của Sri Lanka, nguồn gốc của nó và hai lỗi ngày cần tránh khi bạn sử dụng."
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.8,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "Sri Lankan public holidays and Poya days as open data, and two date bugs to avoid",
-    "raw_summary": "An open JSON, CSV and iCalendar list of Sri Lanka's 2026 and 2027 holidays, where it comes from, and two date bugs to avoid when you use it.",
-    "hidden": false,
-    "slug": "ngay-nghi-le-cua-sri-lanka-va-ngay-poya-la-du-lieu-mo-va-hai-825872"
   },
   "8f2e770fee6ae2bc": {
     "id": "8f2e770fee6ae2bc",
@@ -5435,6 +5435,43 @@
     "raw_summary": "Make it read better before you make it look better.",
     "hidden": false,
     "slug": "bang-tinh-excel-cua-ban-khong-can-nhieu-mau-sac-hon-no-can-p-8f2e77"
+  },
+  "8fb639d936f65def": {
+    "id": "8fb639d936f65def",
+    "url": "https://dev.to/morsezone/building-a-morse-code-practice-timer-in-javascript-timing-dits-dahs-and-gaps-39ol",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Morse Zone",
+    "published_at": "2026-10-29T04:29:52Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Building a Morse Code Practice Timer in JavaScript: Timing Dits, Dahs and Gaps",
+      "vi": "Xây dựng bộ đếm thời gian thực hành mã Morse trong JavaScript: Thời gian, dấu gạch ngang và khoảng trống"
+    },
+    "summary": {
+      "en": "Learning Morse code is not only about memorising dots and dashes. It is about rhythm. If your timing",
+      "vi": "Học mã Morse không chỉ là ghi nhớ dấu chấm và dấu gạch ngang. Đó là về nhịp điệu. Nếu thời gian của bạn"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "Building a Morse Code Practice Timer in JavaScript: Timing Dits, Dahs and Gaps",
+    "raw_summary": "Learning Morse code is not only about memorising dots and dashes. It is about rhythm. If your timing",
+    "hidden": false,
+    "slug": "xay-dung-bo-dem-thoi-gian-thuc-hanh-ma-morse-trong-javascrip-8fb639"
   },
   "07a76fde9339273c": {
     "id": "07a76fde9339273c",
@@ -5477,43 +5514,6 @@
     "raw_summary": "Life doesn't end at Chrome",
     "hidden": false
   },
-  "7b0dcfffd55692e8": {
-    "id": "7b0dcfffd55692e8",
-    "url": "https://dev.to/systemcraftdev/pipes-and-redirection-how-2-and-really-work-12m3",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "SystemCraftDev",
-    "published_at": "2026-10-29T02:56:48Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Pipes and Redirection: How >, >>, 2> and | Really Work",
-      "vi": "Đường ống và chuyển hướng: Cách thức >, >>, 2> và | Thực sự làm việc"
-    },
-    "summary": {
-      "en": "Four small symbols move text between commands and files. Once you see the three streams behind them, shell one-liners stop looking like magic.",
-      "vi": "Bốn biểu tượng nhỏ di chuyển văn bản giữa các lệnh và tập tin. Khi bạn nhìn thấy ba luồng phía sau chúng, lớp vỏ một lớp sẽ không còn trông giống như phép thuật nữa."
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.8,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "Pipes and Redirection: How >, >>, 2> and | Really Work",
-    "raw_summary": "Four small symbols move text between commands and files. Once you see the three streams behind them, shell one-liners stop looking like magic.",
-    "hidden": false,
-    "slug": "duong-ong-va-chuyen-huong-cach-thuc-2-va-thuc-su-lam-viec-7b0dcf"
-  },
   "61edf3cbed8ccf17": {
     "id": "61edf3cbed8ccf17",
     "slug": "trinh-duyet-cua-ban-co-the-ghi-vao-o-ssd-nhieu-hon-windows-b-61edf3",
@@ -5552,6 +5552,43 @@
     "raw_summary": "You closed the tab. Your SSD is still doing the paperwork.",
     "hidden": false
   },
+  "c55a4eec3fa5eaad": {
+    "id": "c55a4eec3fa5eaad",
+    "url": "https://dev.to/glinck/35-x-45-cm-is-not-a-pixel-size-converting-cm-and-dpi-for-form-photos-5l7",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Anuj Kabra",
+    "published_at": "2026-10-29T04:29:06Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "3.5 x 4.5 cm is not a pixel size: converting cm and DPI for form photos",
+      "vi": "3,5 x 4,5 cm không phải là kích thước pixel: chuyển đổi cm và dpi cho ảnh dạng"
+    },
+    "summary": {
+      "en": "A lot of application forms ask for a passport-style photo of \"3.5 x 4.5 cm\". An image file has no",
+      "vi": "Rất nhiều mẫu đơn yêu cầu ảnh kiểu hộ chiếu \"3,5 x 4,5 cm\". Một tập tin hình ảnh không có"
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "3.5 x 4.5 cm is not a pixel size: converting cm and DPI for form photos",
+    "raw_summary": "A lot of application forms ask for a passport-style photo of \"3.5 x 4.5 cm\". An image file has no",
+    "hidden": false,
+    "slug": "35-x-45-cm-khong-phai-la-kich-thuoc-pixel-chuyen-doi-cm-va-d-c55a4e"
+  },
   "9667e0ac7686bb5b": {
     "id": "9667e0ac7686bb5b",
     "slug": "toi-khong-muon-co-ai-tren-dien-thoai-nhung-4-tinh-nang-andro-9667e0",
@@ -5589,6 +5626,156 @@
     "raw_title": "I don't want AI on my phone, but these 4 Android features I can't give up",
     "raw_summary": "Not every AI feature is a gimmick.",
     "hidden": false
+  },
+  "e911f0d646627b9d": {
+    "id": "e911f0d646627b9d",
+    "url": "https://dev.to/hi_hphanthanh_41c4083/find-podcasts-and-their-latest-episodes-with-python-itunes-search-api-rss-no-api-key-38p7",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Hải Hà Phan Thanh",
+    "published_at": "2026-10-29T03:20:19Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Find podcasts and their latest episodes with Python (iTunes Search API + RSS, no API key)",
+      "vi": "Tìm podcast và các tập mới nhất của chúng bằng Python (API tìm kiếm iTunes + RSS, không có khóa API)"
+    },
+    "summary": {
+      "en": "Podcast guest outreach, sponsorship research, and \"new episode\" alerts all need the same two things:",
+      "vi": "Tiếp cận khách hàng bằng podcast, nghiên cứu tài trợ và thông báo \"tập mới\" đều cần hai điều giống nhau:"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [
+      "python"
+    ],
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "Find podcasts and their latest episodes with Python (iTunes Search API + RSS, no API key)",
+    "raw_summary": "Podcast guest outreach, sponsorship research, and \"new episode\" alerts all need the same two things:",
+    "hidden": false,
+    "slug": "tim-podcast-va-cac-tap-moi-nhat-cua-chung-bang-python-api-ti-e911f0"
+  },
+  "2f1f3dcba6e12a09": {
+    "id": "2f1f3dcba6e12a09",
+    "url": "https://www.omgubuntu.co.uk/2026/10/ps5-linux-hack-newer-firmware",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Wed, 21 Oct 2026 01:13:51 +0000",
+    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "PS5 Linux hack now supports (some) newer firmware versions",
+      "vi": "Bản hack PS5 Linux hiện hỗ trợ (một số) phiên bản phần sụn mới hơn"
+    },
+    "summary": {
+      "en": "New PS5 Linux hack pLinux5-NG supports newer firmware, allowing Linux and Steam games to run on Sony's console. But not for long, welp. You're reading PS5 Linux hack now supports (some) newer firmware versions , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission.",
+      "vi": "Bản hack PS5 Linux mới pLinux5-NG hỗ trợ chương trình cơ sở mới hơn, cho phép các trò chơi Linux và Steam chạy trên bảng điều khiển của Sony. Nhưng không lâu đâu, chào. Bạn đang đọc bản hack PS5 Linux hiện hỗ trợ (một số) phiên bản chương trình cơ sở mới hơn, một bài đăng trên blog từ OMG! Ubuntu . Không sao chép đi nơi khác khi chưa được phép."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "PS5 Linux hack now supports (some) newer firmware versions",
+    "raw_summary": "New PS5 Linux hack pLinux5-NG supports newer firmware, allowing Linux and Steam games to run on Sony's console. But not for long, welp. You're reading PS5 Linux hack now supports (some) newer firmware versions , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission.",
+    "hidden": false,
+    "slug": "ban-hack-ps5-linux-hien-ho-tro-mot-so-phien-ban-phan-sun-moi-2f1f3d"
+  },
+  "82587239bd94ad26": {
+    "id": "82587239bd94ad26",
+    "url": "https://dev.to/hirantha_sandaruwan/sri-lankan-public-holidays-and-poya-days-as-open-data-and-two-date-bugs-to-avoid-3d2c",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Hirantha Sandaruwan Lakshan",
+    "published_at": "2026-10-29T02:53:48Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Sri Lankan public holidays and Poya days as open data, and two date bugs to avoid",
+      "vi": "Ngày nghỉ lễ của Sri Lanka và ngày Poya là dữ liệu mở và hai lỗi về ngày tháng cần tránh"
+    },
+    "summary": {
+      "en": "An open JSON, CSV and iCalendar list of Sri Lanka's 2026 and 2027 holidays, where it comes from, and two date bugs to avoid when you use it.",
+      "vi": "Danh sách JSON, CSV và iCalendar mở về các ngày lễ năm 2026 và 2027 của Sri Lanka, nguồn gốc của nó và hai lỗi ngày cần tránh khi bạn sử dụng."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "Sri Lankan public holidays and Poya days as open data, and two date bugs to avoid",
+    "raw_summary": "An open JSON, CSV and iCalendar list of Sri Lanka's 2026 and 2027 holidays, where it comes from, and two date bugs to avoid when you use it.",
+    "hidden": false,
+    "slug": "ngay-nghi-le-cua-sri-lanka-va-ngay-poya-la-du-lieu-mo-va-hai-825872"
+  },
+  "7b0dcfffd55692e8": {
+    "id": "7b0dcfffd55692e8",
+    "url": "https://dev.to/systemcraftdev/pipes-and-redirection-how-2-and-really-work-12m3",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "SystemCraftDev",
+    "published_at": "2026-10-29T02:56:48Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Pipes and Redirection: How >, >>, 2> and | Really Work",
+      "vi": "Đường ống và chuyển hướng: Cách thức >, >>, 2> và | Thực sự làm việc"
+    },
+    "summary": {
+      "en": "Four small symbols move text between commands and files. Once you see the three streams behind them, shell one-liners stop looking like magic.",
+      "vi": "Bốn biểu tượng nhỏ di chuyển văn bản giữa các lệnh và tập tin. Khi bạn nhìn thấy ba luồng phía sau chúng, lớp vỏ một lớp sẽ không còn trông giống như phép thuật nữa."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.8,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "Pipes and Redirection: How >, >>, 2> and | Really Work",
+    "raw_summary": "Four small symbols move text between commands and files. Once you see the three streams behind them, shell one-liners stop looking like magic.",
+    "hidden": false,
+    "slug": "duong-ong-va-chuyen-huong-cach-thuc-2-va-thuc-su-lam-viec-7b0dcf"
   },
   "fc1520313d731b21": {
     "id": "fc1520313d731b21",
@@ -5664,45 +5851,6 @@
     "raw_summary": "A SQL query can execute without errors and still produce an unexpected result. It might return the",
     "hidden": false,
     "slug": "5-loi-sql-pho-bien-where-order-by-andor-va-3-truy-van-hang-d-89542d"
-  },
-  "d78bc6b547af3975": {
-    "id": "d78bc6b547af3975",
-    "url": "https://dev.to/neorhapsody/detect-a-websites-tech-stack-from-headers-html-and-cookies-js-python-4fkc",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Fikri Marhan",
-    "published_at": "2026-10-29T02:22:07Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Detect a website's tech stack from headers, HTML and cookies (JS + Python)",
-      "vi": "Phát hiện ngăn xếp công nghệ của trang web từ tiêu đề, HTML và cookie (JS + Python)"
-    },
-    "summary": {
-      "en": "Find a website's CMS, framework, analytics and hosting from one HTTP request. Learn the five clues, their limits, and two short scripts in Node and Python with no dependencies.",
-      "vi": "Tìm CMS, khung, phân tích và lưu trữ của trang web từ một yêu cầu HTTP. Tìm hiểu năm manh mối, giới hạn của chúng và hai tập lệnh ngắn trong Node và Python mà không cần phụ thuộc."
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [
-      "python"
-    ],
-    "difficulty": null,
-    "score": 0.74,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "Detect a website's tech stack from headers, HTML and cookies (JS + Python)",
-    "raw_summary": "Find a website's CMS, framework, analytics and hosting from one HTTP request. Learn the five clues, their limits, and two short scripts in Node and Python with no dependencies.",
-    "hidden": false,
-    "slug": "phat-hien-ngan-xep-cong-nghe-cua-trang-web-tu-tieu-de-html-v-d78bc6"
   },
   "91283ff265261284": {
     "id": "91283ff265261284",
@@ -5897,6 +6045,230 @@
     "hidden": false,
     "slug": "chuong-9-cau-hinh-tmux-dau-tien-cua-ban-170266"
   },
+  "7b15ec4f543529d7": {
+    "id": "7b15ec4f543529d7",
+    "url": "https://www.androidauthority.com/oura-ring-4-sync-bug-3729281",
+    "source": {
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news"
+    },
+    "author": "Ryan McNeal",
+    "published_at": "Wed, 28 Oct 2026 17:16:08 +0000",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Oura confirms Ring 4 sync bug, but the fix is simple",
+      "vi": "Oura xác nhận lỗi đồng bộ hóa Ring 4, nhưng cách khắc phục rất đơn giản"
+    },
+    "summary": {
+      "en": "Oura offers workaround for confirmed Ring 4 syncing bug.",
+      "vi": "Oura đưa ra cách giải quyết cho lỗi đồng bộ hóa Ring 4 đã được xác nhận."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.78,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "Oura confirms Ring 4 sync bug, but the fix is simple",
+    "raw_summary": "Oura offers workaround for confirmed Ring 4 syncing bug.",
+    "hidden": false,
+    "slug": "oura-xac-nhan-loi-dong-bo-hoa-ring-4-nhung-cach-khac-phuc-ra-7b15ec"
+  },
+  "f370cc54cb497e18": {
+    "id": "f370cc54cb497e18",
+    "url": "https://www.makeuseof.com/replace-7-zip-winrar-with-nanazip",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Pankil Shah",
+    "published_at": "Wed, 28 Oct 2026 20:00:16 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I ditched both 7-Zip and WinRAR for this alternative for this one reason",
+      "vi": "Tôi đã bỏ cả 7-Zip và WinRAR cho giải pháp thay thế này vì lý do này"
+    },
+    "summary": {
+      "en": "My PC is now more secure, thanks to this change.",
+      "vi": "PC của tôi bây giờ an toàn hơn nhờ sự thay đổi này."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.75,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "I ditched both 7-Zip and WinRAR for this alternative for this one reason",
+    "raw_summary": "My PC is now more secure, thanks to this change.",
+    "hidden": false,
+    "slug": "toi-da-bo-ca-7-zip-va-winrar-cho-giai-phap-thay-the-nay-vi-l-f370cc"
+  },
+  "024e8db1df02dbee": {
+    "id": "024e8db1df02dbee",
+    "url": "https://www.makeuseof.com/i-built-a-lossless-music-library",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Brady Snyder",
+    "published_at": "Wed, 28 Oct 2026 19:30:16 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I built a subscription-free lossless music library with this affordable USB accessory",
+      "vi": "Tôi đã xây dựng thư viện nhạc lossless không cần đăng ký bằng phụ kiện USB giá cả phải chăng này"
+    },
+    "summary": {
+      "en": "Out with the new, in with the old.",
+      "vi": "Ra đi với cái mới, vào với cái cũ."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.75,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "I built a subscription-free lossless music library with this affordable USB accessory",
+    "raw_summary": "Out with the new, in with the old.",
+    "hidden": false,
+    "slug": "toi-da-xay-dung-thu-vien-nhac-lossless-khong-can-dang-ky-ban-024e8d"
+  },
+  "d78bc6b547af3975": {
+    "id": "d78bc6b547af3975",
+    "url": "https://dev.to/neorhapsody/detect-a-websites-tech-stack-from-headers-html-and-cookies-js-python-4fkc",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Fikri Marhan",
+    "published_at": "2026-10-29T02:22:07Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Detect a website's tech stack from headers, HTML and cookies (JS + Python)",
+      "vi": "Phát hiện ngăn xếp công nghệ của trang web từ tiêu đề, HTML và cookie (JS + Python)"
+    },
+    "summary": {
+      "en": "Find a website's CMS, framework, analytics and hosting from one HTTP request. Learn the five clues, their limits, and two short scripts in Node and Python with no dependencies.",
+      "vi": "Tìm CMS, khung, phân tích và lưu trữ của trang web từ một yêu cầu HTTP. Tìm hiểu năm manh mối, giới hạn của chúng và hai tập lệnh ngắn trong Node và Python mà không cần phụ thuộc."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [
+      "python"
+    ],
+    "difficulty": null,
+    "score": 0.74,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "Detect a website's tech stack from headers, HTML and cookies (JS + Python)",
+    "raw_summary": "Find a website's CMS, framework, analytics and hosting from one HTTP request. Learn the five clues, their limits, and two short scripts in Node and Python with no dependencies.",
+    "hidden": false,
+    "slug": "phat-hien-ngan-xep-cong-nghe-cua-trang-web-tu-tieu-de-html-v-d78bc6"
+  },
+  "10ef57b720dca9c5": {
+    "id": "10ef57b720dca9c5",
+    "url": "https://www.makeuseof.com/the-next-big-wi-fi-upgrade-is-tackling-something-more-important-than-speed",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Gavin Phillips",
+    "published_at": "Wed, 28 Oct 2026 18:00:16 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "The next big Wi-Fi upgrade is tackling something more important than speed",
+      "vi": "Bản nâng cấp Wi-Fi lớn tiếp theo đang giải quyết một vấn đề quan trọng hơn tốc độ"
+    },
+    "summary": {
+      "en": "Where we're going, we won't need faster Wi-Fi speeds.",
+      "vi": "Nơi chúng ta tới, chúng ta sẽ không cần tốc độ Wi-Fi nhanh hơn."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.75,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "The next big Wi-Fi upgrade is tackling something more important than speed",
+    "raw_summary": "Where we're going, we won't need faster Wi-Fi speeds.",
+    "hidden": false,
+    "slug": "ban-nang-cap-wi-fi-lon-tiep-theo-dang-giai-quyet-mot-van-de-10ef57"
+  },
+  "0f61e1e47dbe051e": {
+    "id": "0f61e1e47dbe051e",
+    "url": "https://www.makeuseof.com/ikea-kreativ-home-furnishings",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Chris Hachey",
+    "published_at": "Wed, 28 Oct 2026 17:30:16 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "IKEA has a better way to shop for furniture than scrolling product pages",
+      "vi": "IKEA có cách mua đồ nội thất tốt hơn là cuộn trang sản phẩm"
+    },
+    "summary": {
+      "en": "Take the tour around the room yourself.",
+      "vi": "Hãy tự mình đi tham quan quanh phòng."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.75,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "IKEA has a better way to shop for furniture than scrolling product pages",
+    "raw_summary": "Take the tour around the room yourself.",
+    "hidden": false,
+    "slug": "ikea-co-cach-mua-do-noi-that-tot-hon-la-cuon-trang-san-pham-0f61e1"
+  },
   "4a466fb18b4efea7": {
     "id": "4a466fb18b4efea7",
     "url": "https://dev.to/akhourianmolkumar/are-you-a-python-developer-or-a-python-expert-7-tests-i-failed-building-3-desktop-apps-2fp4",
@@ -5936,6 +6308,81 @@
     "hidden": false,
     "slug": "ban-la-nha-phat-trien-python-hay-chuyen-gia-python-7-thu-ngh-4a466f"
   },
+  "51f8dcdc7f9b270d": {
+    "id": "51f8dcdc7f9b270d",
+    "url": "https://www.makeuseof.com/microsoft-wants-to-make-storage-that-lasts-10000-years-and-its-not-an-ssd",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Gavin Phillips",
+    "published_at": "Wed, 28 Oct 2026 17:15:45 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Microsoft wants to make storage that lasts 10,000 years, and it's not an SSD",
+      "vi": "Microsoft muốn tạo ra bộ lưu trữ có tuổi thọ 10.000 năm và không phải là SSD"
+    },
+    "summary": {
+      "en": "We all need more lasers, that's for sure.",
+      "vi": "Tất cả chúng ta đều cần nhiều tia laser hơn, đó là điều chắc chắn."
+    },
+    "categories": [
+      "windows",
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.75,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "Microsoft wants to make storage that lasts 10,000 years, and it's not an SSD",
+    "raw_summary": "We all need more lasers, that's for sure.",
+    "hidden": false,
+    "slug": "microsoft-muon-tao-ra-bo-luu-tru-co-tuoi-tho-10000-nam-va-kh-51f8dc"
+  },
+  "8099aaefadc9434a": {
+    "id": "8099aaefadc9434a",
+    "url": "https://www.makeuseof.com/windows-reset-options-explained",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Pankil Shah",
+    "published_at": "Wed, 28 Oct 2026 16:30:18 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I learned what Windows “Reset this PC” actually keeps, and it’s not what I expected",
+      "vi": "Tôi đã biết được tính năng “Đặt lại PC này” thực sự có trong Windows và đó không phải là điều tôi mong đợi"
+    },
+    "summary": {
+      "en": "It's not as straightforward as you think.",
+      "vi": "Nó không đơn giản như bạn nghĩ."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.75,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "I learned what Windows “Reset this PC” actually keeps, and it’s not what I expected",
+    "raw_summary": "It's not as straightforward as you think.",
+    "hidden": false,
+    "slug": "toi-da-biet-duoc-tinh-nang-dat-lai-pc-nay-thuc-su-co-trong-w-8099aa"
+  },
   "c60bf0ed12d07979": {
     "id": "c60bf0ed12d07979",
     "url": "https://dev.to/amananandrai/101-indian-monuments-modelled-in-the-browser-g4f",
@@ -5972,6 +6419,43 @@
     "raw_summary": "101 Indian Monuments, Modelled in the Browser India's heritage has always fascinated me.",
     "hidden": false,
     "slug": "tu-mat-ma-den-van-hoa-xay-dung-101-di-tich-an-do-duoi-dang-3-c60bf0"
+  },
+  "e3b74b75e702204f": {
+    "id": "e3b74b75e702204f",
+    "url": "https://www.makeuseof.com/bentopdf-local-browser-pdf-tools",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Oluwademilade Afolabi",
+    "published_at": "Wed, 28 Oct 2026 15:45:18 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I do almost every annoying PDF job locally in my browser now",
+      "vi": "Bây giờ tôi thực hiện hầu hết mọi công việc PDF khó chịu trên trình duyệt của mình"
+    },
+    "summary": {
+      "en": "I’m running out of reasons to open a dedicated PDF app.",
+      "vi": "Tôi không còn lý do để mở một ứng dụng PDF chuyên dụng."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.75,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "I do almost every annoying PDF job locally in my browser now",
+    "raw_summary": "I’m running out of reasons to open a dedicated PDF app.",
+    "hidden": false,
+    "slug": "bay-gio-toi-thuc-hien-hau-het-moi-cong-viec-pdf-kho-chiu-tre-e3b74b"
   },
   "f73f11092849b85a": {
     "id": "f73f11092849b85a",
@@ -6123,43 +6607,6 @@
     "raw_summary": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright.",
     "hidden": false,
     "slug": "ung-dung-github-copilot-danh-cho-nguoi-moi-bat-dau-cach-day-acb868"
-  },
-  "3b1a643c22cd5cd6": {
-    "id": "3b1a643c22cd5cd6",
-    "url": "https://dev.to/johnnylemonny/stop-waiting-for-github-actions-make-your-ci-faster-today-a2l",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "𝗝𝗼𝗵𝗻",
-    "published_at": "2026-09-29T15:30:00Z",
-    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Stop Waiting for GitHub Actions: Make Your CI Faster Today",
-      "vi": "Ngừng chờ đợi các hành động GitHub: Giúp CI của bạn nhanh hơn ngay hôm nay"
-    },
-    "summary": {
-      "en": "A practical guide to canceling outdated runs, caching dependencies, reducing duplicate work, and getting faster feedback from GitHub Actions.",
-      "vi": "Hướng dẫn thực tế để hủy các lần chạy lỗi thời, lưu các phần phụ thuộc vào bộ nhớ đệm, giảm công việc trùng lặp và nhận phản hồi nhanh hơn từ Tác vụ GitHub."
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.57,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "Stop Waiting for GitHub Actions: Make Your CI Faster Today",
-    "raw_summary": "A practical guide to canceling outdated runs, caching dependencies, reducing duplicate work, and getting faster feedback from GitHub Actions.",
-    "hidden": false,
-    "slug": "ngung-cho-doi-cac-hanh-dong-github-giup-ci-cua-ban-nhanh-hon-3b1a64"
   },
   "df7f2e84081d3bfb": {
     "id": "df7f2e84081d3bfb",
@@ -6764,6 +7211,43 @@
     "hidden": false,
     "slug": "thong-tin-quan-trong-tren-vneid-tat-ca-nguoi-dan-di-may-bay-474875"
   },
+  "3b1a643c22cd5cd6": {
+    "id": "3b1a643c22cd5cd6",
+    "url": "https://dev.to/johnnylemonny/stop-waiting-for-github-actions-make-your-ci-faster-today-a2l",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "𝗝𝗼𝗵𝗻",
+    "published_at": "2026-09-29T15:30:00Z",
+    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Stop Waiting for GitHub Actions: Make Your CI Faster Today",
+      "vi": "Ngừng chờ đợi các hành động GitHub: Giúp CI của bạn nhanh hơn ngay hôm nay"
+    },
+    "summary": {
+      "en": "A practical guide to canceling outdated runs, caching dependencies, reducing duplicate work, and getting faster feedback from GitHub Actions.",
+      "vi": "Hướng dẫn thực tế để hủy các lần chạy lỗi thời, lưu các phần phụ thuộc vào bộ nhớ đệm, giảm công việc trùng lặp và nhận phản hồi nhanh hơn từ Tác vụ GitHub."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.57,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "Stop Waiting for GitHub Actions: Make Your CI Faster Today",
+    "raw_summary": "A practical guide to canceling outdated runs, caching dependencies, reducing duplicate work, and getting faster feedback from GitHub Actions.",
+    "hidden": false,
+    "slug": "ngung-cho-doi-cac-hanh-dong-github-giup-ci-cua-ban-nhanh-hon-3b1a64"
+  },
   "40262c947ecb07ba": {
     "id": "40262c947ecb07ba",
     "url": "https://dev.to/aws-builders/the-ledger-that-charged-twice-s3-lambda-idempotency-3d4g",
@@ -6800,46 +7284,6 @@
     "raw_summary": "In the counting-houses of old Venice, a merchant's quiet terror was not the thief in the night. It",
     "hidden": false,
     "slug": "so-cai-duoc-tinh-phi-hai-lan-s3-lambda-idempotency-40262c"
-  },
-  "32d4ae589455ae25": {
-    "id": "32d4ae589455ae25",
-    "url": "https://dev.to/maximsaplin/persistent-agent-teams-recreating-the-grok-bot-experience-with-herdr-claude-code-and-pi-2aea",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Maxim Saplin",
-    "published_at": "2026-10-19T15:23:07Z",
-    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Persistent Agent Teams: Recreating the Grok Bot Experience with Herdr, Claude Code and Pi",
-      "vi": "Nhóm đặc vụ liên tục: Tái tạo trải nghiệm Grok Bot với Herdr, Claude Code và Pi"
-    },
-    "summary": {
-      "en": "Persistent agents and agent teams truly caught my attention when I tried Grok Bot. Publicly, Grok",
-      "vi": "Các đại lý và nhóm đại lý kiên trì thực sự thu hút sự chú ý của tôi khi tôi dùng thử Grok Bot. Công khai, Grok"
-    },
-    "categories": [
-      "ai",
-      "dev"
-    ],
-    "tags": [
-      "claude"
-    ],
-    "difficulty": null,
-    "score": 0.55,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "raw_title": "Persistent Agent Teams: Recreating the Grok Bot Experience with Herdr, Claude Code and Pi",
-    "raw_summary": "Persistent agents and agent teams truly caught my attention when I tried Grok Bot. Publicly, Grok",
-    "hidden": false,
-    "slug": "nhom-dac-vu-lien-tuc-tai-tao-trai-nghiem-grok-bot-voi-herdr-32d4ae"
   },
   "7c214f2efd884062": {
     "id": "7c214f2efd884062",
@@ -6880,43 +7324,45 @@
     "hidden": false,
     "slug": "tai-khoan-zalo-dang-bi-theo-doi-bat-ngay-3-tinh-nang-nay-de-7c214f"
   },
-  "bba44a7718a4d5e9": {
-    "id": "bba44a7718a4d5e9",
-    "url": "https://dev.to/mikachu/ai-is-making-me-faster-i-dont-want-it-to-make-me-worse-3lc3",
+  "32d4ae589455ae25": {
+    "id": "32d4ae589455ae25",
+    "url": "https://dev.to/maximsaplin/persistent-agent-teams-recreating-the-grok-bot-experience-with-herdr-claude-code-and-pi-2aea",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
       "site_url": "https://dev.to",
       "kind": "tips"
     },
-    "author": "Mika Flowers",
-    "published_at": "2026-09-29T15:50:08Z",
+    "author": "Maxim Saplin",
+    "published_at": "2026-10-19T15:23:07Z",
     "fetched_at": "2026-10-29T06:11:44.609442+00:00",
     "original_lang": "en",
     "title": {
-      "en": "AI Is Making Me Faster. I Don’t Want It to Make Me Worse.",
-      "vi": "AI đang làm cho tôi nhanh hơn. Tôi không muốn nó làm tôi tồi tệ hơn."
+      "en": "Persistent Agent Teams: Recreating the Grok Bot Experience with Herdr, Claude Code and Pi",
+      "vi": "Nhóm đặc vụ liên tục: Tái tạo trải nghiệm Grok Bot với Herdr, Claude Code và Pi"
     },
     "summary": {
-      "en": "I use AI constantly when I code and when I write. I use it to research ideas, plan code, debug,",
-      "vi": "Tôi sử dụng AI liên tục khi viết mã và khi viết. Tôi sử dụng nó để nghiên cứu ý tưởng, lập kế hoạch mã, gỡ lỗi,"
+      "en": "Persistent agents and agent teams truly caught my attention when I tried Grok Bot. Publicly, Grok",
+      "vi": "Các đại lý và nhóm đại lý kiên trì thực sự thu hút sự chú ý của tôi khi tôi dùng thử Grok Bot. Công khai, Grok"
     },
     "categories": [
       "ai",
       "dev"
     ],
-    "tags": [],
+    "tags": [
+      "claude"
+    ],
     "difficulty": null,
-    "score": 0.42,
+    "score": 0.55,
     "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
-    "raw_title": "AI Is Making Me Faster. I Don’t Want It to Make Me Worse.",
-    "raw_summary": "I use AI constantly when I code and when I write. I use it to research ideas, plan code, debug,",
+    "raw_title": "Persistent Agent Teams: Recreating the Grok Bot Experience with Herdr, Claude Code and Pi",
+    "raw_summary": "Persistent agents and agent teams truly caught my attention when I tried Grok Bot. Publicly, Grok",
     "hidden": false,
-    "slug": "ai-dang-lam-cho-toi-nhanh-hon-toi-khong-muon-no-lam-toi-toi-bba44a"
+    "slug": "nhom-dac-vu-lien-tuc-tai-tao-trai-nghiem-grok-bot-voi-herdr-32d4ae"
   },
   "7353fcec6f0b493e": {
     "id": "7353fcec6f0b493e",
@@ -7595,5 +8041,43 @@
     "raw_summary": "Nhận định đã đến lúc CMC cần tuyên bố mình là một doanh nghiệp công nghệ số đầu đàn, Bộ trưởng Bộ TT&TT Nguyễn Mạnh Hùng chỉ rõ, cách duy nhất để CMC lớn lên là nhận những việc lớn, gắn với sứ mệnh quốc gia và làm cho tới nơi.",
     "hidden": false,
     "slug": "cmc-hay-nhan-viec-lon-de-gop-suc-dua-viet-nam-vao-ky-nguyen-d216bb"
+  },
+  "bba44a7718a4d5e9": {
+    "id": "bba44a7718a4d5e9",
+    "url": "https://dev.to/mikachu/ai-is-making-me-faster-i-dont-want-it-to-make-me-worse-3lc3",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Mika Flowers",
+    "published_at": "2026-09-29T15:50:08Z",
+    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "AI Is Making Me Faster. I Don’t Want It to Make Me Worse.",
+      "vi": "AI đang làm cho tôi nhanh hơn. Tôi không muốn nó làm tôi tồi tệ hơn."
+    },
+    "summary": {
+      "en": "I use AI constantly when I code and when I write. I use it to research ideas, plan code, debug,",
+      "vi": "Tôi sử dụng AI liên tục khi viết mã và khi viết. Tôi sử dụng nó để nghiên cứu ý tưởng, lập kế hoạch mã, gỡ lỗi,"
+    },
+    "categories": [
+      "ai",
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.42,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "raw_title": "AI Is Making Me Faster. I Don’t Want It to Make Me Worse.",
+    "raw_summary": "I use AI constantly when I code and when I write. I use it to research ideas, plan code, debug,",
+    "hidden": false,
+    "slug": "ai-dang-lam-cho-toi-nhanh-hon-toi-khong-muon-no-lam-toi-toi-bba44a"
   }
 }
