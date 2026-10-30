@@ -6,9 +6,10 @@ import { getTranslations } from '../lib/i18n';
 interface Props {
   tip: Tip;
   lang: Locale;
+  kind?: 'tips' | 'news';
 }
 
-const { tip, lang } = Astro.props;
+const { tip, lang, kind = 'tips' } = Astro.props;
 const t = getTranslations(lang);
 
 const titleText = tip.title[lang] || tip.title['en'] || Object.values(tip.title)[0] || '';
@@ -28,9 +29,12 @@ try {
 }
 
 const sourceUpper = (tip.source.name || 'TECH TIPS').toUpperCase();
+const featuredLabel = kind === 'news'
+  ? (lang === 'vi' ? 'TIN HOT TRONG NGÀY' : 'TECH NEWS OF THE DAY')
+  : (lang === 'vi' ? 'MẸO HAY HÔM NAY' : 'TRICK OF THE DAY');
 const metaString = formattedDate
-  ? `${lang === 'vi' ? 'MẸO HAY HÔM NAY' : 'TRICK OF THE DAY'} · ${sourceUpper} · ${formattedDate}`
-  : `${lang === 'vi' ? 'MẸO HAY HÔM NAY' : 'TRICK OF THE DAY'} · ${sourceUpper}`;
+  ? `${featuredLabel} · ${sourceUpper} · ${formattedDate}`
+  : `${featuredLabel} · ${sourceUpper}`;
 ---
 
 <section class="mb-10 relative overflow-hidden rounded-2xl bg-[var(--accent-hero)] text-[#0e0f13] p-6 sm:p-8 shadow-sm">

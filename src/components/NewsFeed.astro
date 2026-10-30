@@ -1,0 +1,126 @@
+---
+import TipCard from './TipCard.astro';
+import TrickOfTheDay from './TrickOfTheDay.astro';
+import { getAllCategories, getAllSources, getAllTips, getNewsOfTheDay, sortTipsForFeed } from '../lib/data';
+import type { Locale } from '../lib/i18n';
+
+interface Props { lang: Locale }
+const { lang } = Astro.props;
+const isVi = lang === 'vi';
+const sources = getAllSources();
+const categories = getAllCategories();
+const news = sortTipsForFeed(getAllTips().filter((tip) => tip.source.kind === 'news'));
+const hotNews = getNewsOfTheDay();
+const initialNews = news.filter((tip) => tip.id !== hotNews?.id).slice(0, 20);
+const labels = {
+  difficulty: { easy: isVi ? 'Dễ' : 'Easy', medium: isVi ? 'Vừa' : 'Medium', advanced: isVi ? 'Nâng cao' : 'Advanced' },
+  contentTypes: { community: isVi ? 'Cộng đồng' : 'Community', video: 'Video', vendor: isVi ? 'Hãng công nghệ' : 'Technology vendor', article: isVi ? 'Bài viết' : 'Article' },
+  notTranslated: isVi ? 'Chưa dịch' : 'Not translated', machineTranslated: isVi ? 'Bản dịch tự động' : 'Machine translated',
+  community: isVi ? 'Cộng đồng' : 'Community', moreSources: isVi ? 'nguồn khác' : 'more sources',
+  updated: isVi ? 'cập nhật' : 'updated', readOriginal: isVi ? 'Đọc bài gốc' : 'Read original', original: isVi ? 'Bài gốc' : 'Original',
+};
+const pageSize = 20;
+---
+
+<script is:inline src="/js/tip-card.js"></script>
+
+<h1 class="text-2xl sm:text-3xl font-bold mb-2">{isVi ? 'Tin công nghệ' : 'Tech News'}</h1>
+<p class="text-sm text-[var(--text-secondary)] mb-6">{isVi ? 'Tin công nghệ mới nhất từ các nguồn uy tín.' : 'The latest technology updates from trusted sources.'}</p>
+
+{hotNews && <TrickOfTheDay tip={hotNews} lang={lang} kind="news" />}
+
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-2 mb-4" aria-label={isVi ? 'Bộ lọc tin công nghệ' : 'Tech news filters'}>
+  <label class="text-[10px] font-mono text-[var(--text-muted)]">{isVi ? 'NGUỒN' : 'SOURCE'}
+    <select id="news-source" class="mt-1 w-full rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] p-2 text-xs text-[var(--text-primary)]">
+      <option value="all">{isVi ? 'Tất cả nguồn' : 'All sources'}</option>
+      {sources.map((source) => <option value={source.id}>{source.name}</option>)}
+    </select>
+  </label>
+  <label class="text-[10px] font-mono text-[var(--text-muted)]">{isVi ? 'LOẠI NỘI DUNG' : 'CONTENT TYPE'}
+    <select id="news-type" class="mt-1 w-full rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] p-2 text-xs text-[var(--text-primary)]">
+      <option value="all">{isVi ? 'Tất cả loại' : 'All types'}</option>
+      <option value="article">{isVi ? 'Bài viết' : 'Article'}</option><option value="video">Video</option>
+      <option value="vendor">{isVi ? 'Hãng công nghệ' : 'Technology vendor'}</option><option value="community">{isVi ? 'Cộng đồng' : 'Community'}</option>
+    </select>
+  </label>
+  <label class="text-[10px] font-mono text-[var(--text-muted)]">{isVi ? 'NỀN TẢNG' : 'PLATFORM'}
+    <select id="news-category" class="mt-1 w-full rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] p-2 text-xs text-[var(--text-primary)]">
+      <option value="all">{isVi ? 'Tất cả nền tảng' : 'All platforms'}</option>
+      {categories.map((category) => <option value={category.id}>{category.name[lang]}</option>)}
+    </select>
+  </label>
+  <label class="text-[10px] font-mono text-[var(--text-muted)]">{isVi ? 'NGÔN NGỮ GỐC' : 'ORIGINAL LANGUAGE'}
+    <select id="news-language" class="mt-1 w-full rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] p-2 text-xs text-[var(--text-primary)]">
+      <option value="all">{isVi ? 'Tất cả ngôn ngữ' : 'All languages'}</option><option value="vi">Tiếng Việt</option><option value="en">English</option>
+    </select>
+  </label>
+</div>
+
+<div class="flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between mb-4">
+  <input id="news-search" type="search" placeholder={isVi ? 'Tìm tin công nghệ...' : 'Search tech news...'} class="w-full sm:max-w-sm rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] px-3 py-2 text-xs text-[var(--text-primary)]" />
+  <div class="inline-flex self-start p-0.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-xs" aria-label={isVi ? 'Sắp xếp tin' : 'Sort news'}>
+    <button type="button" class="news-sort-btn px-3 py-1 rounded-lg bg-[var(--accent-hero)] text-black font-bold" data-sort="best">{isVi ? 'Hot nhất' : 'Trending'}</button>
+    <button type="button" class="news-sort-btn px-3 py-1 rounded-lg text-[var(--text-muted)]" data-sort="newest">{isVi ? 'Mới nhất' : 'Newest'}</button>
+  </div>
+</div>
+
+<p id="news-count" class="text-xs font-mono text-[var(--text-muted)] mb-4">{news.length} {isVi ? 'bài viết' : 'articles'}</p>
+<div id="news-stream" class="grid grid-cols-1 lg:grid-cols-2 gap-4">
+  {initialNews.map((tip) => <TipCard tip={tip} lang={lang} labels={labels} />)}
+</div>
+<p id="news-empty" class="hidden py-16 text-center text-sm text-[var(--text-muted)]">{isVi ? 'Không tìm thấy tin nào khớp với bộ lọc.' : 'No news match your filters.'}</p>
+<nav id="news-pagination" class="mt-8 flex items-center justify-center gap-4 font-mono text-xs" aria-label={isVi ? 'Phân trang tin công nghệ' : 'Tech news pagination'}>
+  <button id="news-prev" class="rounded-lg border border-[var(--border-color)] px-3 py-2 disabled:opacity-40" disabled>{isVi ? '← Trước' : '← Previous'}</button>
+  <span id="news-page" class="text-[var(--text-secondary)]">1 / {Math.max(1, Math.ceil(news.length / pageSize))}</span>
+  <button id="news-next" class="rounded-lg border border-[var(--border-color)] px-3 py-2 disabled:opacity-40">{isVi ? 'Sau →' : 'Next →'}</button>
+</nav>
+
+<script is:inline define:vars={{ lang, labels, pageSize, hotNewsId: hotNews?.id || '' }}>
+  (() => {
+    const $ = (id) => document.getElementById(id);
+    const source = $('news-source'), type = $('news-type'), category = $('news-category'), language = $('news-language'), search = $('news-search');
+    const stream = $('news-stream'), count = $('news-count'), empty = $('news-empty'), prev = $('news-prev'), next = $('news-next'), pageLabel = $('news-page'), pagination = $('news-pagination');
+    let allNews = null, page = 1, sort = 'best';
+    const timeOf = (tip) => new Date(tip.published_at || tip.fetched_at || 0).getTime() || 0;
+    function render() {
+      if (!allNews) return;
+      const query = search.value.trim().toLowerCase();
+      let items = allNews.filter((tip) => {
+        const categories = tip.categories || [];
+        const haystack = `${tip.title?.[lang] || tip.title?.en || ''} ${tip.summary?.[lang] || tip.summary?.en || ''} ${tip.source?.name || ''} ${categories.join(' ')}`.toLowerCase();
+        return (source.value === 'all' || tip.source?.id === source.value)
+          && (type.value === 'all' || (tip.source?.content_type || 'article') === type.value)
+          && (category.value === 'all' || categories.includes(category.value))
+          && (language.value === 'all' || tip.original_lang === language.value)
+          && (!query || haystack.includes(query));
+      });
+      items.sort((a, b) => sort === 'newest' ? timeOf(b) - timeOf(a) : (b.score || 0) - (a.score || 0) || timeOf(b) - timeOf(a));
+      const pages = Math.max(1, Math.ceil(items.length / pageSize));
+      page = Math.min(page, pages);
+      const visible = items.slice((page - 1) * pageSize, page * pageSize);
+      stream.replaceChildren(...visible.map((tip) => window.TipCardRenderer.create(tip, lang, labels)));
+      count.textContent = `${items.length} ${lang === 'vi' ? 'bài viết' : 'articles'}`;
+      empty.classList.toggle('hidden', items.length > 0);
+      pagination.classList.toggle('hidden', items.length <= pageSize);
+      pageLabel.textContent = `${page} / ${pages}`;
+      prev.disabled = page <= 1; next.disabled = page >= pages;
+    }
+    function load() {
+      if (allNews) return Promise.resolve();
+      return fetch('/api/tips.json').then((response) => response.json()).then((list) => {
+        allNews = (Array.isArray(list) ? list : []).filter((tip) => tip.source?.kind === 'news' && tip.id !== hotNewsId);
+      });
+    }
+    [source, type, category, language].forEach((control) => control.addEventListener('change', () => { page = 1; load().then(render); }));
+    search.addEventListener('input', () => { page = 1; load().then(render); });
+    document.querySelectorAll('.news-sort-btn').forEach((button) => button.addEventListener('click', () => {
+      sort = button.dataset.sort; page = 1;
+      document.querySelectorAll('.news-sort-btn').forEach((item) => item.className = 'news-sort-btn px-3 py-1 rounded-lg text-[var(--text-muted)]');
+      button.className = 'news-sort-btn px-3 py-1 rounded-lg bg-[var(--accent-hero)] text-black font-bold';
+      load().then(render);
+    }));
+    prev.addEventListener('click', () => { if (page > 1) { page--; render(); } });
+    next.addEventListener('click', () => { page++; render(); });
+    load().then(render).catch(() => { count.textContent = lang === 'vi' ? 'Không tải được danh sách tin.' : 'Could not load news.'; });
+  })();
+</script>

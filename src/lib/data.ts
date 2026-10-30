@@ -225,6 +225,17 @@ export function getTrickOfTheDay(): Tip | null {
   return null;
 }
 
+export function getNewsOfTheDay(): Tip | null {
+  const now = Date.now();
+  const dayMs = 24 * 60 * 60 * 1000;
+  const recentNews = getAllTips().filter((tip) => {
+    if (tip.source?.kind !== 'news') return false;
+    const publishedAt = new Date(tip.published_at || tip.fetched_at || 0).getTime();
+    return Number.isFinite(publishedAt) && publishedAt <= now && now - publishedAt <= dayMs;
+  });
+  return recentNews.sort((a, b) => (b.score ?? 0) - (a.score ?? 0) || Date.parse(b.published_at) - Date.parse(a.published_at))[0] || null;
+}
+
 export function getCategoriesWithCounts(): Array<Category & { count: number }> {
   const categories = getAllCategories();
   const tips = getAllTips();
