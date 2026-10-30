@@ -717,7 +717,7 @@
   },
   {
     "id": "vnexpress-sohoa-news",
-    "name": "VnExpress S? h?a",
+    "name": "VnExpress Số hóa",
     "type": "rss",
     "url": "https://vnexpress.net/rss/so-hoa.rss",
     "lang": "vi",
@@ -735,7 +735,7 @@
   },
   {
     "id": "dantri-smd",
-    "name": "D?n Tr? S?c m?nh s?",
+    "name": "Dân Trí Sức mạnh số",
     "type": "rss",
     "url": "https://dantri.com.vn/rss/suc-manh-so.rss",
     "lang": "vi",

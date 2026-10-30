@@ -93,6 +93,7 @@ export function getAllTips(includeHidden = false): Tip[] {
     const sourcesById = new Map(getAllSources().map((source) => [source.id, source]));
     for (const t of list) {
       const configuredSource = sourcesById.get(t.source?.id);
+      if (configuredSource?.name) t.source.name = configuredSource.name;
       if (!t.source.content_type) t.source.content_type = configuredSource?.contentType || 'article';
       if (!t.source.kind) t.source.kind = configuredSource?.kind || (t.howto ? 'tips' : 'news');
       if (!t.slug) {
