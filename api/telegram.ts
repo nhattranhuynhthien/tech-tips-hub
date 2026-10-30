@@ -91,20 +91,30 @@ async function telegram(method: string, payload: AnyRecord): Promise<any> {
 async function github(path: string, init: RequestInit = {}): Promise<any> {
   const token = env('GITHUB_TOKEN');
   if (!token) throw new Error('GitHub token is not configured');
-  let response: Response;
-  try {
-    response = await fetch(`${GITHUB_API}${path}`, {
-      ...init,
-      headers: {
-        accept: 'application/vnd.github+json', authorization: `Bearer ${token}`,
-        'x-github-api-version': '2022-11-28', 'content-type': 'application/json',
-        ...(init.headers || {}),
-      },
-      signal: AbortSignal.timeout(20000),
-    });
-  } catch (error) {
-    throw new Error(`GitHub API ${init.method || 'GET'} ${path.split('?')[0]} request failed: ${networkErrorDetail(error)}`);
+  const method = (init.method || 'GET').toUpperCase();
+  const retryable = method === 'GET';
+  let response: Response | undefined;
+  for (let attempt = 0; attempt < (retryable ? 3 : 1); attempt += 1) {
+    try {
+      response = await fetch(`${GITHUB_API}${path}`, {
+        ...init,
+        headers: {
+          accept: 'application/vnd.github+json', authorization: `Bearer ${token}`,
+          'x-github-api-version': '2022-11-28', 'content-type': 'application/json',
+          ...(init.headers || {}),
+        },
+        signal: AbortSignal.timeout(12000),
+      });
+      break;
+    } catch (error) {
+      if (retryable && attempt < 2) {
+        await new Promise((resolve) => setTimeout(resolve, 300 * (attempt + 1)));
+        continue;
+      }
+      throw new Error(`GitHub API ${method} ${path.split('?')[0]} request failed: ${networkErrorDetail(error)}`);
+    }
   }
+  if (!response) throw new Error(`GitHub API ${method} ${path.split('?')[0]} returned no response`);
   const body = await response.json().catch(() => ({}));
   if (!response.ok) throw new Error(`GitHub API request failed (${response.status})`);
   return body;
