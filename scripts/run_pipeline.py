@@ -11,7 +11,7 @@ if hasattr(sys.stdout, "reconfigure"):
 if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
-from fetch import fetch_feed_items
+from fetch import fetch_feed_items, SourceFetchError
 from dedupe import is_duplicate_title, is_blocked
 from filters import accept, is_howto_match
 from classify import classify, extract_tags
@@ -121,6 +121,8 @@ def main():
 
     trans_cache = load_cache()
     fetched_count = 0
+    successful_sources = 0
+    failed_sources = []
     new_added = 0
     blocked_count = 0
     duplicate_count = 0
@@ -131,7 +133,13 @@ def main():
     # 3. Quét từng nguồn
     for src in sources:
         print(f"-> Đang tải nguồn: {src['name']} ({src['id']}) [kind: {src.get('kind', 'news')}]...")
-        items = fetch_feed_items(src, max_entries=20)
+        try:
+            items = fetch_feed_items(src, max_entries=20)
+            successful_sources += 1
+        except SourceFetchError as e:
+            failed_sources.append(src["id"])
+            print(f"[Fetch Warning] {e}")
+            continue
         fetched_count += len(items)
 
         for raw_item in items:
@@ -240,10 +248,20 @@ def main():
 
         time.sleep(0.3)
 
+    if failed_sources:
+        print(f"[Fetch Warning] {len(failed_sources)}/{len(sources)} nguồn lỗi: {', '.join(failed_sources)}")
+    if sources and successful_sources == 0:
+        raise RuntimeError("Tất cả nguồn dữ liệu đều lỗi; dừng để tránh ghi đè bằng lượt quét thất bại.")
+
     # 4. Dịch thuật theo lô cho các bài chưa có bản dịch (ưu tiên how-to và điểm cao)
     print("\n-> Đang kiểm tra và dịch thuật theo lô...")
     all_items = list(index.values())
     batch_translate_pending(all_items, trans_cache, batch_size=5)
+
+    # Các trường này chỉ cần trong lúc xử lý; tiêu đề và tóm tắt gốc đã được lưu trong title/summary.
+    for item in all_items:
+        item.pop("raw_title", None)
+        item.pop("raw_summary", None)
 
     # 5. Áp dụng giới hạn xen kẽ nguồn (diversify)
     diversified_items = diversify(all_items, max_run=2)

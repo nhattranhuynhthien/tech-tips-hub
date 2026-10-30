@@ -166,7 +166,8 @@ export function getTrickOfTheDay(): Tip | null {
     if (featuredHistoryIds.has(t.id)) return false;
     try {
       const pubDate = new Date(t.published_at);
-      if (!isNaN(pubDate.getTime()) && now.getTime() - pubDate.getTime() <= maxAgeMs) {
+      const ageMs = now.getTime() - pubDate.getTime();
+      if (!isNaN(pubDate.getTime()) && ageMs >= 0 && ageMs <= maxAgeMs) {
         return true;
       }
     } catch {}

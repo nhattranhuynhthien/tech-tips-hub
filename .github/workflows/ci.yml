@@ -40,6 +40,6 @@ jobs:
         with:
           node-version: "20"
           cache: npm
-      - run: npm ci || npm install
+      - run: npm ci
       - name: Build site
         run: npm run build

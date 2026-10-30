@@ -15,6 +15,10 @@ if hasattr(sys.stderr, "reconfigure"):
 
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36"
 
+
+class SourceFetchError(RuntimeError):
+    """Raised when a source could not be fetched or parsed reliably."""
+
 def parse_hn_summary(raw_summary: str, min_score: int = 100) -> tuple[int, str, int, str]:
     """
     Trích xuất points, comments_url, comments_count từ feed Hacker News.
@@ -61,8 +65,7 @@ def fetch_feed_items(source: dict, max_entries: int = 25) -> list[dict]:
             session = requests.Session()
             resp = session.get(feed_url, headers=headers, timeout=12)
             if resp.status_code != 200:
-                print(f"[Fetch Warning] API {source['id']} trả về status {resp.status_code}")
-                return []
+                raise SourceFetchError(f"API {source['id']} trả về status {resp.status_code}")
             articles = resp.json()
             if not isinstance(articles, list):
                 articles = articles.get("articles", articles.get("items", []))
@@ -111,20 +114,24 @@ def fetch_feed_items(source: dict, max_entries: int = 25) -> list[dict]:
                 })
             return items
         except Exception as e:
-            print(f"[Fetch Warning] Lỗi tải API {source['id']}: {e}")
-            return []
+            if isinstance(e, SourceFetchError):
+                raise
+            raise SourceFetchError(f"Lỗi tải API {source['id']}: {e}") from e
 
     # === Trường hợp 2: RSS / Atom Feed chuẩn ===
     try:
         session = requests.Session()
         resp = session.get(feed_url, headers=headers, timeout=12)
         if resp.status_code != 200:
-            print(f"[Fetch Warning] Nguồn {source['id']} trả về status code {resp.status_code}")
-            return []
+            raise SourceFetchError(f"Nguồn {source['id']} trả về status code {resp.status_code}")
         feed = feedparser.parse(resp.content)
     except Exception as e:
-        print(f"[Fetch Warning] Lỗi tải nguồn {source['id']}: {e}")
-        return []
+        if isinstance(e, SourceFetchError):
+            raise
+        raise SourceFetchError(f"Lỗi tải nguồn {source['id']}: {e}") from e
+
+    if getattr(feed, "bozo", False) and not getattr(feed, "entries", []):
+        raise SourceFetchError(f"RSS/Atom {source['id']} không phân tích được: {feed.bozo_exception}")
 
     entries = feed.entries[:max_entries] if hasattr(feed, "entries") else []
     for entry in entries:

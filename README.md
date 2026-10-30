@@ -4,7 +4,7 @@
 
 [![Update Tips](https://github.com/nhattranhuynhthien/tech-tips-hub/actions/workflows/update.yml/badge.svg)](https://github.com/nhattranhuynhthien/tech-tips-hub/actions/workflows/update.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-amber.svg)](LICENSE)
-[![Operating Cost: 0đ](https://img.shields.io/badge/Chi_phí-0đ-success.svg)](https://meocongnghe.vercel.app/vi/about)
+[![Static Hosting](https://img.shields.io/badge/hosting-static-success.svg)](https://meocongnghe.vercel.app/vi/about)
 [![Astro: 5.x](https://img.shields.io/badge/Frontend-Astro_SSG-FF5D01.svg)](https://astro.build)
 
 ---
@@ -17,7 +17,7 @@
 * **Kỹ thuật & An toàn:** Bảo mật & Quyền riêng tư, Công cụ AI (Prompt, ChatGPT, Claude, Ollama, DeepSeek), Lập trình & DevOps (Docker, Git, VS Code, Python), Phần cứng & Mạng (WiFi, SSD, GPU, RAM).
 
 ### 5 Nguyên tắc cốt lõi:
-1. **0đ tuyệt đối:** Vận hành hoàn toàn bằng free tier của GitHub Actions, Cloudflare Pages / Vercel và Gemini Flash API. Không tốn bất kỳ chi phí duy trì hay thẻ tín dụng nào.
+1. **Ưu tiên chi phí thấp:** Dùng GitHub Actions và dịch vụ lưu trữ tĩnh. Chi phí của API bên thứ ba phụ thuộc hạn mức và chính sách hiện hành của nhà cung cấp.
 2. **Nguyên tắc Fair Use:** Chỉ lưu trữ tiêu đề chuẩn hóa, tóm tắt cô đọng (~280–300 ký tự) và đường dẫn gốc. Tuyệt đối không đăng lại nguyên bài viết của tác giả.
 3. **Minh bạch & Tôn trọng bản quyền:** Luôn trích dẫn rõ nguồn, tên tác giả, ngày xuất bản; cung cấp cơ chế gỡ bài và báo cáo lỗi dịch thuật qua GitHub Issues.
 4. **Tĩnh trước, động sau:** Kiến trúc Static Site Generation (SSG) với Astro đạt chuẩn Lighthouse $\ge 90$, tải trang cực nhanh (&lt; 0.5s), không dùng cơ sở dữ liệu động.
@@ -49,8 +49,9 @@ flowchart LR
 * **Chấm điểm ([`scripts/score.py`](file:///d:/Random_v2/scripts/score.py)):** Kết hợp trọng số nguồn, suy giảm theo độ mới (recency decay), hệ số how-to và tín hiệu cộng đồng (HN points, Dev.to reactions).
 * **Dịch song ngữ ([`scripts/translate.py`](file:///d:/Random_v2/scripts/translate.py)):** Dịch NGUYÊN CÂU theo lô qua giao diện `Translator`:
   * *Chính:* Google Gemini API (`GEMINI_MODEL`, mặc định `gemini-2.5-flash`) kèm retry Exponential Backoff khi gặp lỗi 429.
-  * *Dự phòng:* Argos Translate chạy offline trong môi trường CI.
-  * Kiểm duyệt bằng `looks_vietnamese` và `is_mixed`. Không đạt hoặc không có key thì giữ nguyên bản gốc, không gắn nhãn dịch máy.
+  * *Dự phòng:* Endpoint Google Translate công khai; Argos Translate offline là lớp dự phòng cuối nếu đã cài model.
+  * Tiêu đề và tóm tắt được gửi tới nhà cung cấp dịch thuật khi cần dịch; cân nhắc chính sách dữ liệu của nhà cung cấp khi vận hành.
+  * Kiểm duyệt bằng `looks_vietnamese` và `is_mixed`. Nếu dịch thất bại hoặc không đạt kiểm tra, giữ nguyên bản gốc và không gắn nhãn dịch máy.
 * **Cổng kiểm định chất lượng ([`scripts/qa.py`](file:///d:/Random_v2/scripts/qa.py)):** Chặn commit nếu còn mã entity, câu trộn ngữ pháp, bài dán nhãn dịch giả dối, tóm tắt rỗng hoặc danh mục trung bình > 2.0. Đẩy báo cáo chi tiết vào **GitHub Job Summary**.
 * **Phân trang & Giao diện:** Phân trang Astro `paginate()` 20 bài/trang (`/vi/page/2`, `/en/page/2`), typography chuyên sâu (Lexend, Be Vietnam Pro, JetBrains Mono), chuẩn WCAG AA và Dark Terminal Hub phong cách.
 

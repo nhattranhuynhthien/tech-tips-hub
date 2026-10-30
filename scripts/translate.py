@@ -120,7 +120,7 @@ class GeminiTranslator(Translator):
     """
     def __init__(self):
         self.api_key = os.environ.get("GEMINI_API_KEY", "").strip()
-        self.model = os.environ.get("GEMINI_MODEL", "gemini-1.5-flash").strip() or "gemini-1.5-flash"
+        self.model = os.environ.get("GEMINI_MODEL", "gemini-2.5-flash").strip() or "gemini-2.5-flash"
 
     def is_available(self) -> bool:
         return bool(self.api_key)
@@ -158,7 +158,7 @@ class GeminiTranslator(Translator):
 
         # Retry với Exponential Backoff khi gặp 429 hoặc model fallback
         models_to_try = [self.model]
-        if self.model != "gemini-1.5-flash":
+        if self.model != "gemini-2.5-flash":
             models_to_try.append("gemini-1.5-flash")
         if "gemini-2.0-flash" not in models_to_try:
             models_to_try.append("gemini-2.0-flash")

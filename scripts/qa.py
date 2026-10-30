@@ -158,6 +158,10 @@ def main():
 
     avg_cats = cat_total / max(len(items), 1)
     howto_ratio = howto_count / max(len(items), 1)
+    if avg_cats > 2.0:
+        problems.append(f"Số danh mục trung bình vượt ngưỡng ({avg_cats:.2f} > 2.00)")
+    if howto_ratio < 0.8:
+        problems.append(f"Tỷ lệ bài thủ thuật / hướng dẫn dưới ngưỡng ({howto_ratio * 100:.1f}% < 80.0%)")
 
     print("=== [Tech Tips Hub - Báo cáo chất lượng dữ liệu QA] ===")
     print(f"- Tổng số bài viết hiển thị: {len(items)}")
