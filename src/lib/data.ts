@@ -123,6 +123,16 @@ export function sortTipsForFeed(tips: Tip[]): Tip[] {
   });
 }
 
+export function sortTipsNewestFirst(tips: Tip[]): Tip[] {
+  return [...tips].sort((a, b) => {
+    const aTime = new Date(a.published_at || a.fetched_at || 0).getTime();
+    const bTime = new Date(b.published_at || b.fetched_at || 0).getTime();
+    const timeDiff = (isNaN(bTime) ? 0 : bTime) - (isNaN(aTime) ? 0 : aTime);
+    if (timeDiff !== 0) return timeDiff;
+    return String(a.id).localeCompare(String(b.id));
+  });
+}
+
 export function getTipById(idOrSlug: string): Tip | undefined {
   const tips = getAllTips(true);
   if (!idOrSlug) return undefined;
