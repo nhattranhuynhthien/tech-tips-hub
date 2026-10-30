@@ -133,11 +133,11 @@ async function ensureLabel(name: string, color = '6f42c1'): Promise<void> {
     if (!(error instanceof Error) || !error.message.includes('(422)')) throw error;
   }
 }
-async function listIssues(query: string): Promise<AnyRecord[]> {
-  const [owner] = repoParts();
-  const params = new URLSearchParams({ q: `repo:${owner}/${repoParts()[1]} is:issue ${query}`, per_page: '100', sort: 'created', order: 'desc' });
-  const result = await github(`/search/issues?${params}`);
-  return result.items || [];
+async function listIssues(options: { labels?: string[]; state?: 'open' | 'closed' | 'all'; since?: string } = {}): Promise<AnyRecord[]> {
+  const params = new URLSearchParams({ state: options.state || 'open', per_page: '100', sort: 'created', direction: 'desc' });
+  if (options.labels?.length) params.set('labels', options.labels.join(','));
+  if (options.since) params.set('since', options.since);
+  return github(repoPath(`/issues?${params}`));
 }
 async function getIssue(number: number): Promise<AnyRecord> { return github(repoPath(`/issues/${number}`)); }
 async function updateIssue(number: number, patch: AnyRecord): Promise<AnyRecord> {
@@ -232,14 +232,14 @@ async function submittedRecord(rawUrl: string, note: string, sourceName = '', or
 async function isDuplicate(id: string, url: string): Promise<boolean> {
   const community = await readCommunity();
   if (community.entries.some((entry) => entry.id === id || entry.url === url)) return true;
-  const issues = await listIssues(`in:title ${id}`);
-  return issues.length > 0;
+  const issues = await listIssues({ state: 'all' });
+  return issues.some((issue) => String(issue.title || '').includes(id));
 }
 async function createSubmission(record: AnyRecord, userId: string, chatId: number, lang: Lang): Promise<void> {
   const limit = Math.max(1, Math.min(100, Number(env('SUBMIT_LIMIT_PER_DAY', '10')) || 10));
   const oldest = new Date(Date.now() - 86400000);
   const since = oldest.toISOString().slice(0, 10);
-  const recent = await listIssues(`label:user-${userId} created:>=${since}`);
+  const recent = await listIssues({ labels: [`user-${userId}`], state: 'all', since });
   if (recent.filter((issue) => Date.parse(issue.created_at) >= oldest.getTime()).length >= limit) {
     await send(chatId, replyText(lang, 'Bạn đã đạt giới hạn gửi bài hôm nay. Hãy thử lại sau.', 'You have reached today’s submission limit. Please try again later.'));
     return;
@@ -263,7 +263,7 @@ async function createSubmission(record: AnyRecord, userId: string, chatId: numbe
 }
 
 async function pendingIssues(): Promise<AnyRecord[]> {
-  return listIssues('label:pending');
+  return listIssues({ labels: [PENDING], state: 'open' });
 }
 function isAdmin(userId: unknown): boolean { return env('ADMIN_IDS').split(',').map((value) => value.trim()).includes(String(userId)); }
 
@@ -358,7 +358,7 @@ async function onMessage(message: AnyRecord): Promise<void> {
     return;
   }
   if (command === 'trangthai') {
-    const issues = await listIssues(`label:user-${userId}`);
+    const issues = await listIssues({ labels: [`user-${userId}`], state: 'all' });
     const status = issues.slice(0, 10).map((issue) => `${issue.labels?.some((label: AnyRecord) => label.name === PENDING) ? '⏳ Chờ duyệt' : issue.labels?.some((label: AnyRecord) => label.name === 'approved') ? '✅ Đã đăng' : '⛔ Từ chối'} — ${cleanText(issue.title, 120)} (#${issue.number})`);
     await send(chatId, status.length ? status.join('\n') : replyText(lang, 'Bạn chưa gửi bài nào.', 'You have not submitted any tips yet.'));
     return;
