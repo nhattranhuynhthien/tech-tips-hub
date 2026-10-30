@@ -12,6 +12,14 @@ const ALLOWED_TAGS = new Set(['android', 'ios', 'windows', 'macos', 'linux', 'we
 export const config = { maxDuration: 60 };
 
 function env(name: string, fallback = ''): string { return runtime.process?.env[name]?.trim() || fallback; }
+
+// So sánh chuỗi theo thời gian hằng định để tránh lộ secret qua timing.
+function safeEqual(a: string, b: string): boolean {
+  if (a.length !== b.length) return false;
+  let diff = 0;
+  for (let i = 0; i < a.length; i += 1) diff |= a.charCodeAt(i) ^ b.charCodeAt(i);
+  return diff === 0;
+}
 function networkErrorDetail(error: unknown): string {
   const value = error as { name?: string; message?: string; cause?: { code?: string; message?: string } };
   const parts = [value?.name, value?.message, value?.cause?.code, value?.cause?.message].filter(Boolean);
@@ -134,10 +142,24 @@ async function ensureLabel(name: string, color = '6f42c1'): Promise<void> {
   }
 }
 async function listIssues(options: { labels?: string[]; state?: 'open' | 'closed' | 'all'; since?: string } = {}): Promise<AnyRecord[]> {
-  const params = new URLSearchParams({ state: options.state || 'open', per_page: '100', sort: 'created', direction: 'desc' });
-  if (options.labels?.length) params.set('labels', options.labels.join(','));
-  if (options.since) params.set('since', options.since);
-  return github(repoPath(`/issues?${params}`));
+  const results: AnyRecord[] = [];
+  // GitHub returns at most 100 items per page; walk pages until exhausted (capped).
+  for (let page = 1; page <= 10; page += 1) {
+    const params = new URLSearchParams({
+      state: options.state || 'open',
+      per_page: '100',
+      page: String(page),
+      sort: 'created',
+      direction: 'desc',
+    });
+    if (options.labels?.length) params.set('labels', options.labels.join(','));
+    if (options.since) params.set('since', options.since);
+    const batch = await github(repoPath(`/issues?${params}`));
+    if (!Array.isArray(batch) || batch.length === 0) break;
+    results.push(...batch);
+    if (batch.length < 100) break;
+  }
+  return results;
 }
 async function getIssue(number: number): Promise<AnyRecord> { return github(repoPath(`/issues/${number}`)); }
 async function updateIssue(number: number, patch: AnyRecord): Promise<AnyRecord> {
@@ -367,7 +389,27 @@ async function onMessage(message: AnyRecord): Promise<void> {
     if (!isAdmin(userId)) { await send(chatId, 'Không có quyền.'); return; }
     if (command === 'danhsach') {
       const issues = await pendingIssues();
-      await send(chatId, issues.length ? issues.slice(0, 10).map((issue) => `#${issue.number} ${cleanText(issue.title, 150)}`).join('\n') : 'Không có bài chờ duyệt.');
+      if (!issues.length) {
+        await send(chatId, 'Không có bài chờ duyệt.');
+        return;
+      }
+      for (const issue of issues.slice(0, 10)) {
+        let record: AnyRecord | undefined;
+        try {
+          record = parseIssueBody(issue.body || '');
+        } catch {
+          /* Fallback if body format is customized */
+        }
+        if (record) {
+          await sendAdminCard(issue, record);
+        } else {
+          const keyboard = { inline_keyboard: [[
+            { text: '✅ Duyệt', callback_data: `ap:${issue.number}` },
+            { text: '⛔ Từ chối', callback_data: `rj:${issue.number}` },
+          ]] };
+          await send(chatId, `#${issue.number} ${cleanText(issue.title, 150)}`, { reply_markup: keyboard });
+        }
+      }
     } else if (command === 'sua') await editIssue(message, args);
     else await tagIssue(message, args);
     return;
@@ -415,7 +457,8 @@ async function onMessage(message: AnyRecord): Promise<void> {
 export default async function handler(req: any, res: any): Promise<void> {
   if (req.method !== 'POST') { res.status(200).send('ok'); return; }
   const secret = env('TELEGRAM_WEBHOOK_SECRET');
-  if (!secret || req.headers?.['x-telegram-bot-api-secret-token'] !== secret) {
+  const provided = String(req.headers?.['x-telegram-bot-api-secret-token'] || '');
+  if (!secret || !safeEqual(provided, secret)) {
     res.status(401).send('unauthorized'); return;
   }
   
