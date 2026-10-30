@@ -7,6 +7,8 @@ import time
 from abc import ABC, abstractmethod
 from pathlib import Path
 import requests
+import urllib.request
+import urllib.parse
 
 CACHE_FILE = Path("data/cache/translations.json")
 
@@ -253,23 +255,72 @@ class ArgosOfflineTranslator(Translator):
             print(f"[Argos Offline Warning]: {e}")
             return []
 
+class GoogleWebTranslator(Translator):
+    """
+    Nhà cung cấp dịch thuật miễn phí 100%: Sử dụng Google Translate public endpoint (client=gtx).
+    Dịch câu trọn vẹn, chính xác, không cần API key và hoàn toàn 0đ.
+    """
+    def is_available(self) -> bool:
+        return True
+
+    def translate_text(self, text: str, source_lang: str, target_lang: str) -> str:
+        if not text or not text.strip():
+            return ""
+        try:
+            url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl={source_lang}&tl={target_lang}&dt=t&q=" + urllib.parse.quote(text)
+            req = urllib.request.Request(
+                url,
+                headers={"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36"}
+            )
+            with urllib.request.urlopen(req, timeout=15) as resp:
+                data = json.loads(resp.read().decode("utf-8"))
+                translated = "".join([part[0] for part in data[0] if part and part[0]])
+                return translated.strip()
+        except Exception as e:
+            return ""
+
+    def translate_batch(self, items: list[dict], source_lang: str, target_lang: str) -> list[dict]:
+        if not items:
+            return []
+        results = []
+        for it in items:
+            t = self.translate_text(it.get("title", ""), source_lang, target_lang)
+            s = self.translate_text(it.get("summary", ""), source_lang, target_lang)
+            if t and s:
+                results.append({
+                    "id": it["id"],
+                    "title": t,
+                    "summary": s
+                })
+            time.sleep(0.12)
+        return results
+
 class CompositeTranslator(Translator):
     """
-    Translator tổ hợp: Ưu tiên Gemini API; nếu hết quota (429) hoặc không có key thì chuyển sang Argos Translate.
+    Translator tổ hợp:
+    1. Ưu tiên Gemini API (nếu có cấu hình GEMINI_API_KEY).
+    2. Dự phòng 1: GoogleWebTranslator (0đ, không cần API key, dịch chuẩn tự nhiên).
+    3. Dự phòng 2: Argos Translate offline (nếu đã cài đặt model cục bộ).
     """
     def __init__(self):
         self.gemini = GeminiTranslator()
+        self.google_web = GoogleWebTranslator()
         self.argos = ArgosOfflineTranslator()
 
     def translate_batch(self, items: list[dict], source_lang: str, target_lang: str) -> list[dict]:
         if not items:
             return []
-        # 1. Thử dùng Gemini trước
+        # 1. Thử dùng Gemini trước nếu có key
         if self.gemini.is_available():
             results = self.gemini.translate_batch(items, source_lang, target_lang)
             if results:
                 return results
-        # 2. Dự phòng: Argos Translate offline
+        # 2. Dự phòng 1: Google Web Translator (không cần key, 0 VND)
+        if self.google_web.is_available():
+            results = self.google_web.translate_batch(items, source_lang, target_lang)
+            if results:
+                return results
+        # 3. Dự phòng 2: Argos Translate offline
         if self.argos.is_available():
             print("[Translator] Chuyển sang mô hình dịch offline Argos Translate...")
             results = self.argos.translate_batch(items, source_lang, target_lang)
