@@ -1,8 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "functions": {
-    "api/telegram.ts": { "maxDuration": 60 }
-  },
   "redirects": [
     {
       "source": "/",

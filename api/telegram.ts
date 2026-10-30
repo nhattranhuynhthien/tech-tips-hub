@@ -8,6 +8,9 @@ const PENDING = 'pending';
 const MAX_SUMMARY = 300;
 const ALLOWED_TAGS = new Set(['android', 'ios', 'windows', 'macos', 'linux', 'web', 'ai', 'khac']);
 
+// Node.js Vercel Functions read duration settings from this exported config.
+export const config = { maxDuration: 60 };
+
 function env(name: string, fallback = ''): string { return runtime.process?.env[name]?.trim() || fallback; }
 function decodeBase64Utf8(value: string): string {
   const binary = atob(value.replace(/\s/g, ''));
