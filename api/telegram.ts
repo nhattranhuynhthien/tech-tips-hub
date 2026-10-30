@@ -12,6 +12,11 @@ const ALLOWED_TAGS = new Set(['android', 'ios', 'windows', 'macos', 'linux', 'we
 export const config = { maxDuration: 60 };
 
 function env(name: string, fallback = ''): string { return runtime.process?.env[name]?.trim() || fallback; }
+function networkErrorDetail(error: unknown): string {
+  const value = error as { name?: string; message?: string; cause?: { code?: string; message?: string } };
+  const parts = [value?.name, value?.message, value?.cause?.code, value?.cause?.message].filter(Boolean);
+  return parts.join(' | ') || 'unknown network error';
+}
 function decodeBase64Utf8(value: string): string {
   const binary = atob(value.replace(/\s/g, ''));
   return new TextDecoder().decode(Uint8Array.from(binary, (character) => character.charCodeAt(0)));
@@ -76,8 +81,7 @@ async function telegram(method: string, payload: AnyRecord): Promise<any> {
       signal: AbortSignal.timeout(20000),
     });
   } catch (error) {
-    const detail = error instanceof Error ? error.message : 'unknown network error';
-    throw new Error(`Telegram API ${method} request failed: ${detail}`);
+    throw new Error(`Telegram API ${method} request failed: ${networkErrorDetail(error)}`);
   }
   const data = await response.json().catch(() => ({}));
   if (!response.ok || !data.ok) throw new Error(`Telegram API request failed (${response.status})`);
@@ -99,8 +103,7 @@ async function github(path: string, init: RequestInit = {}): Promise<any> {
       signal: AbortSignal.timeout(20000),
     });
   } catch (error) {
-    const detail = error instanceof Error ? error.message : 'unknown network error';
-    throw new Error(`GitHub API ${init.method || 'GET'} ${path.split('?')[0]} request failed: ${detail}`);
+    throw new Error(`GitHub API ${init.method || 'GET'} ${path.split('?')[0]} request failed: ${networkErrorDetail(error)}`);
   }
   const body = await response.json().catch(() => ({}));
   if (!response.ok) throw new Error(`GitHub API request failed (${response.status})`);
