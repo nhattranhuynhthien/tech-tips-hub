@@ -418,8 +418,7 @@ export default async function handler(req: any, res: any): Promise<void> {
   if (!secret || req.headers?.['x-telegram-bot-api-secret-token'] !== secret) {
     res.status(401).send('unauthorized'); return;
   }
-  // Acknowledge before doing network work so Telegram does not retry on a slow GitHub API call.
-  res.status(200).send('ok');
+  
   try {
     const update = typeof req.body === 'string' ? JSON.parse(req.body) : req.body;
     if (update?.callback_query) await onCallback(update.callback_query);
@@ -428,6 +427,11 @@ export default async function handler(req: any, res: any): Promise<void> {
     console.error('telegram handler error', error instanceof Error ? error.message : 'unknown error');
     for (const id of env('ADMIN_IDS').split(',').map((part) => part.trim()).filter(Boolean)) {
       try { await send(id, 'Có lỗi khi xử lý một cập nhật Telegram. Xem log function để kiểm tra.'); } catch { /* Best effort. */ }
+    }
+  } finally {
+    // Chỉ phản hồi HTTP 200 sau khi toàn bộ tác vụ gửi tin nhắn Telegram đã hoàn thành
+    if (!res.writableEnded) {
+      res.status(200).send('ok');
     }
   }
 }
