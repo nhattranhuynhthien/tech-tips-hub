@@ -2,6 +2,7 @@
 import sys
 import unittest
 from pathlib import Path
+from unittest.mock import Mock
 
 # Add scripts directory to path
 sys.path.insert(0, str(Path(__file__).parent.parent / "scripts"))
@@ -46,8 +47,9 @@ class TestTranslateModule(unittest.TestCase):
         self.assertTrue(hasattr(comp, "translate_batch"))
 
     def test_fallback_when_untranslated(self):
-        """Khi không có khóa API hoặc dịch thất bại, giữ nguyên bản gốc và KHÔNG gắn nhãn dịch máy."""
-        comp = CompositeTranslator()
+        """Giữ nguyên bản gốc nếu translator không trả kết quả, không gọi dịch vụ bên ngoài."""
+        translator = Mock()
+        translator.translate_batch.return_value = []
         cache = {}
         title, summ, trans = process_item_bilingual(
             item_id="test_sample_001",
@@ -55,10 +57,10 @@ class TestTranslateModule(unittest.TestCase):
             orig_summary="A complete step by step tutorial to setup Docker on Linux distributions.",
             orig_lang="en",
             cache=cache,
-            translator=comp
+            translator=translator
         )
 
-        # Vì không có API key trong môi trường test này, không được gắn nhãn machine
+        # Khi không có kết quả dịch, không được gắn nhãn machine.
         self.assertNotEqual(trans.get("vi"), "machine")
         self.assertEqual(title["en"], "How to configure Docker containers on Linux")
         self.assertEqual(title["vi"], "How to configure Docker containers on Linux")

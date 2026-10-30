@@ -1,7 +1,7 @@
 {
   "name": "tech-tips-hub",
   "version": "1.0.0",
-  "description": "Aggregator of tech tricks and tips from around the world - bilingual EN/VI - 0 VND operating cost",
+  "description": "Bilingual aggregator of practical tech tips with source attribution",
   "type": "module",
   "scripts": {
     "dev": "astro dev",

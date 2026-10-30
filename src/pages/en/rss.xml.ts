@@ -1,5 +1,6 @@
 import { getAllTips } from '../../lib/data';
 import { SITE_URL } from '../../lib/constants';
+import { escapeXml, xmlCdata } from '../../lib/xml';
 
 export async function GET() {
   const tips = getAllTips().slice(0, 50);
@@ -13,13 +14,13 @@ export async function GET() {
 
       return `
     <item>
-      <title><![CDATA[${title}]]></title>
-      <link>${link}</link>
-      <guid isPermaLink="true">${link}</guid>
-      <description><![CDATA[${desc}]]></description>
-      <pubDate>${pubDate}</pubDate>
-      <source url="${tip.url}">${tip.source.name}</source>
-      ${tip.categories.map((c) => `<category>${c}</category>`).join('\n      ')}
+      <title>${xmlCdata(title)}</title>
+      <link>${escapeXml(link)}</link>
+      <guid isPermaLink="true">${escapeXml(link)}</guid>
+      <description>${xmlCdata(desc)}</description>
+      <pubDate>${escapeXml(pubDate)}</pubDate>
+      <source url="${escapeXml(tip.url)}">${escapeXml(tip.source.name)}</source>
+      ${tip.categories.map((c) => `<category>${escapeXml(c)}</category>`).join('\n      ')}
     </item>`;
     })
     .join('');
@@ -28,10 +29,10 @@ export async function GET() {
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tech Tips Hub (English)</title>
-    <link>${SITE_URL}/en</link>
+    <link>${escapeXml(`${SITE_URL}/en`)}</link>
     <description>Handcrafted practical tech tricks and shortcuts from across the web</description>
     <language>en-US</language>
-    <atom:link href="${SITE_URL}/en/rss.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="${escapeXml(`${SITE_URL}/en/rss.xml`)}" rel="self" type="application/rss+xml"/>
     ${itemsXml}
   </channel>
 </rss>`;

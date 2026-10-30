@@ -6,7 +6,7 @@ const lang = 'en';
 const t = getTranslations(lang);
 ---
 
-<Layout lang={lang} title="About tips.hub" description="Learn about the mission, $0 operating architecture, and ethical aggregation philosophy of tips.hub.">
+<Layout lang={lang} title="About tips.hub" description="Learn about the mission, provider-dependent operating costs, and ethical aggregation philosophy of tips.hub.">
   <article class="max-w-4xl mx-auto space-y-8">
     <!-- Header -->
     <header class="pb-6 border-b border-[var(--border-color)]">
@@ -17,7 +17,7 @@ const t = getTranslations(lang);
         About tips.hub
       </h1>
       <p class="text-sm sm:text-base text-[var(--text-secondary)] leading-relaxed font-mono">
-        Bilingual automated tech notebook aggregating handcrafted tips, completely open source with $0 operating cost.
+        An open-source bilingual tech notebook that aggregates practical tips and clearly credits their sources. Infrastructure and translation costs depend on provider plans and usage.
       </p>
     </header>
 
@@ -41,7 +41,7 @@ const t = getTranslations(lang);
           # Core Principles
         </h3>
         <ol class="space-y-3 list-decimal list-inside text-xs sm:text-sm text-[var(--text-secondary)] font-mono">
-          <li><strong class="text-[var(--text-primary)]">Strict $0 Cost:</strong> All infrastructure runs on permanently free tiers (GitHub Actions cron, Git repo storage, Astro static generation, Cloudflare / Vercel edge delivery) with zero credit cards required.</li>
+          <li><strong class="text-[var(--text-primary)]">Low-cost infrastructure:</strong> Collection and static hosting use free tiers while within provider limits. Translation usage or provider policy changes may add costs.</li>
           <li><strong class="text-[var(--text-primary)]">Fair Use & Original Attribution:</strong> We never copy full article bodies. We store concise headlines and excerpts under 280 characters, pointing readers directly to original creators.</li>
           <li><strong class="text-[var(--text-primary)]">Respect for Creators:</strong> Complete transparency with source domain badges, author credits, robots.txt compliance, and polite request rate limiting.</li>
           <li><strong class="text-[var(--text-primary)]">Static-First Architecture:</strong> Pre-rendered static pages ensure sub-second latency, robust resilience, and zero database failure risks.</li>

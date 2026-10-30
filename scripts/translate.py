@@ -257,8 +257,8 @@ class ArgosOfflineTranslator(Translator):
 
 class GoogleWebTranslator(Translator):
     """
-    Nhà cung cấp dịch thuật miễn phí 100%: Sử dụng Google Translate public endpoint (client=gtx).
-    Dịch câu trọn vẹn, chính xác, không cần API key và hoàn toàn 0đ.
+    Sử dụng endpoint Google Translate công khai (client=gtx) làm lựa chọn dự phòng.
+    Endpoint không yêu cầu API key nhưng có thể bị giới hạn hoặc thay đổi.
     """
     def is_available(self) -> bool:
         return True
@@ -299,7 +299,7 @@ class CompositeTranslator(Translator):
     """
     Translator tổ hợp:
     1. Ưu tiên Gemini API (nếu có cấu hình GEMINI_API_KEY).
-    2. Dự phòng 1: GoogleWebTranslator (0đ, không cần API key, dịch chuẩn tự nhiên).
+    2. Dự phòng 1: GoogleWebTranslator (không cần API key; phụ thuộc endpoint công khai).
     3. Dự phòng 2: Argos Translate offline (nếu đã cài đặt model cục bộ).
     """
     def __init__(self):
@@ -315,7 +315,7 @@ class CompositeTranslator(Translator):
             results = self.gemini.translate_batch(items, source_lang, target_lang)
             if results:
                 return results
-        # 2. Dự phòng 1: Google Web Translator (không cần key, 0 VND)
+        # 2. Dự phòng 1: Google Web Translator (không cần key)
         if self.google_web.is_available():
             results = self.google_web.translate_batch(items, source_lang, target_lang)
             if results:

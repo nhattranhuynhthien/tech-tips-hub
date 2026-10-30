@@ -1,6 +1,6 @@
 # Tech Tips Hub 💡
 
-> **Web tự động tổng hợp thủ thuật & mẹo công nghệ tinh chọn từ khắp nơi trên thế giới, hiển thị song ngữ VI/EN, tôn trọng bản quyền, chi phí vận hành 0đ.**
+> **Web tự động tổng hợp thủ thuật & mẹo công nghệ tinh chọn từ khắp nơi trên thế giới, hiển thị song ngữ VI/EN và tôn trọng bản quyền. Chi phí phụ thuộc hạn mức và chính sách của nhà cung cấp dịch vụ.**
 
 [![Update Tips](https://github.com/nhattranhuynhthien/tech-tips-hub/actions/workflows/update.yml/badge.svg)](https://github.com/nhattranhuynhthien/tech-tips-hub/actions/workflows/update.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-amber.svg)](LICENSE)
