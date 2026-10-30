@@ -37,6 +37,13 @@ const contentTypeLabelMap: Record<string, string> = lang === 'vi'
   ? { community: 'Cộng đồng', video: 'Video', vendor: 'Hãng công nghệ', article: 'Bài viết' }
   : { community: 'Community', video: 'Video', vendor: 'Vendor', article: 'Article' };
 const contentTypeLabel = contentTypeLabelMap[tip.source.content_type || 'article'] || contentTypeLabelMap.article;
+const communitySourceLabel = tip.source_type === 'community-facebook'
+  ? (lang === 'vi' ? 'Facebook' : 'Facebook')
+  : tip.source_type === 'community-telegram'
+    ? 'Telegram'
+    : tip.source_type === 'community-web'
+      ? 'Web'
+      : '';
 const tipCanonicalUrl = `${SITE_URL}/${lang}/tip/${tip.slug || tip.id}`;
 const isActualVi = lang === 'vi' ? (tip.original_lang === 'vi' || isMachineTranslated) : true;
 const sourceDomain = (() => {
@@ -69,6 +76,7 @@ const formattedUpdatedAt = Number.isNaN(updatedAt.getTime())
     <div class="flex items-center gap-2 text-xs font-mono text-[var(--text-muted)] mb-2.5 flex-wrap">
       {sourceDomain && <img src={`https://www.google.com/s2/favicons?domain=${encodeURIComponent(sourceDomain)}&sz=32`} alt="" width="16" height="16" loading="lazy" class="w-4 h-4 rounded-sm" />}
       <span class="text-[var(--text-secondary)] font-medium lowercase">{tip.source.name}</span>
+      {communitySourceLabel && <span class="rounded border border-[var(--accent)]/30 px-1.5 py-0.5 text-[10px] text-[var(--accent)]">{lang === 'vi' ? 'Cộng đồng' : 'Community'} · {communitySourceLabel}</span>}
       {isUntranslated && (
         <span class="px-1.5 py-0.2 rounded text-[10px] font-mono font-bold border border-blue-500/30 bg-blue-500/10 text-blue-400">
           {lang === 'vi' ? 'Chưa dịch' : 'Not translated'}

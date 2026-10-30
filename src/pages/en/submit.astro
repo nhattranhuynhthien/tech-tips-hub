@@ -3,6 +3,8 @@ import Layout from '../../layouts/Layout.astro';
 import { getTranslations } from '../../lib/i18n';
 const lang = 'en';
 const t = getTranslations(lang);
+const botUsername = (import.meta.env.PUBLIC_TELEGRAM_BOT_USERNAME || '').replace(/^@/, '');
+const botUrl = botUsername ? `https://t.me/${botUsername}` : '';
 const issueUrl = 'https://github.com/nhattranhuynhthien/tech-tips-hub/issues/new?template=community-tip.yml';
 ---
 
@@ -10,8 +12,9 @@ const issueUrl = 'https://github.com/nhattranhuynhthien/tech-tips-hub/issues/new
   <article class="max-w-3xl mx-auto space-y-5">
     <p class="text-xs font-mono font-bold text-[var(--accent)]">$ community/inbox</p>
     <h1 class="text-3xl font-extrabold text-[var(--text-primary)]">Submit a tech tip</h1>
-    <p class="text-sm leading-relaxed text-[var(--text-secondary)]">Share a title, a short practical explanation, and the original source link when available. A moderator reviews each submission; unapproved tips will not appear on the site.</p>
-    <p class="text-sm leading-relaxed text-[var(--text-secondary)]">Do not paste full articles. A display name is optional, and the form lets you choose whether it may be shown as attribution.</p>
-    <a href={issueUrl} target="_blank" rel="noopener noreferrer" class="inline-flex rounded-xl bg-[var(--accent-hero)] px-4 py-2 text-sm font-bold text-black">Open the GitHub submission form ↗</a>
+    <p class="text-sm leading-relaxed text-[var(--text-secondary)]">Send a tip link from Telegram, Facebook, or the web with a short note in your own words. You can also forward a post from a public Telegram channel. A moderator reviews every submission before it appears on the site.</p>
+    <p class="text-sm leading-relaxed text-[var(--text-secondary)]">Do not paste full articles. For Facebook, the bot stores only your link and description; it does not fetch Facebook content. Submitter names are not shown on the site.</p>
+    {botUrl && <a href={botUrl} target="_blank" rel="noopener noreferrer" class="inline-flex rounded-xl bg-[var(--accent-hero)] px-4 py-2 text-sm font-bold text-black">Open Telegram bot ↗</a>}
+    <a href={issueUrl} target="_blank" rel="noopener noreferrer" class="inline-flex rounded-xl border border-[var(--border-color)] px-4 py-2 text-sm font-bold text-[var(--text-primary)]">Submit through GitHub ↗</a>
   </article>
 </Layout>

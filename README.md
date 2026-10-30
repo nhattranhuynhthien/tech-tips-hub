@@ -163,3 +163,5 @@ Trong cài đặt GitHub Repository (**Settings > Secrets and variables > Action
 
 * Mã nguồn được phát hành theo giấy phép **MIT License**.
 * Toàn bộ nội dung bài viết, thương hiệu và hình ảnh thuộc về tác giả và trang tin gốc. Tech Tips Hub hoạt động như một công cụ lập chỉ mục hỗ trợ dẫn link về bài gốc.
+
+Telegram inbox setup: [docs/telegram-inbox.md](docs/telegram-inbox.md).

@@ -57,6 +57,7 @@ export interface Tip {
     [key: string]: string | boolean;
   };
   alsoFrom?: Array<{ sourceName: string; url: string }>;
+  source_type?: 'community-telegram' | 'community-facebook' | 'community-web' | string;
 }
 
 export interface Category {

@@ -201,6 +201,7 @@ const sidebarCategories = [
         <label class="text-[10px] font-mono text-[var(--text-muted)]">NGUỒN
           <select id="source-filter" class="mt-1 w-full rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] p-2 text-xs text-[var(--text-primary)]">
             <option value="all">Tất cả nguồn</option>
+            <option value="community">Cộng đồng đóng góp</option>
             {sources.map((source) => <option value={source.id}>{source.name}</option>)}
           </select>
         </label>

@@ -44,5 +44,7 @@ jobs:
           node-version: "20"
           cache: npm
       - run: npm ci
+      - name: Type-check Telegram webhook
+        run: npm run check:telegram
       - name: Build site
         run: npm run build

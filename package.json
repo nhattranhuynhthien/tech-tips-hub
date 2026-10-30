@@ -10,7 +10,8 @@
     "preview": "astro preview",
     "astro": "astro",
     "fetch": "python scripts/run_pipeline.py",
-    "check-source": "python scripts/check_source.py"
+    "check-source": "python scripts/check_source.py",
+    "check:telegram": "tsc --noEmit --target ES2022 --module ESNext --moduleResolution bundler --skipLibCheck --lib ES2022,DOM api/telegram.ts"
   },
   "dependencies": {
     "@astrojs/tailwind": "6.0.2",

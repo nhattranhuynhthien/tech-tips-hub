@@ -61,6 +61,7 @@ try {
 }
 
 const primaryCat = tip.categories[0] || 'thủ-thuật';
+const communitySourceLabel = tip.source_type === 'community-facebook' ? 'Facebook' : tip.source_type === 'community-telegram' ? 'Telegram' : tip.source_type === 'community-web' ? 'Web' : '';
 ---
 
 <Layout lang={lang} title={titleText} description={summaryText}>
@@ -83,6 +84,7 @@ const primaryCat = tip.categories[0] || 'thủ-thuật';
         <!-- Meta Row: source · author · date -->
         <div class="text-xs font-mono text-[var(--text-muted)] lowercase flex items-center gap-2 flex-wrap">
           <span class="text-[var(--text-secondary)] font-medium">{tip.source.name}</span>
+          {communitySourceLabel && <span class="rounded border border-[var(--accent)]/30 px-1.5 py-0.5 text-[10px] text-[var(--accent)]">Cộng đồng đóng góp · {communitySourceLabel}</span>}
           {tip.alsoFrom?.map((source) => <a href={source.url} target="_blank" rel="noopener noreferrer" class="text-[var(--accent)] hover:underline">{source.sourceName}</a>)}
           {tip.author && (
             <>

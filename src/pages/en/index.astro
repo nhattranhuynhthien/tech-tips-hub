@@ -171,6 +171,7 @@ const sidebarCategories = [
         <label class="text-[10px] font-mono text-[var(--text-muted)]">SOURCE
           <select id="source-filter" class="mt-1 w-full rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] p-2 text-xs text-[var(--text-primary)]">
             <option value="all">All sources</option>
+            <option value="community">Community contributions</option>
             {sources.map((source) => <option value={source.id}>{source.name}</option>)}
           </select>
         </label>

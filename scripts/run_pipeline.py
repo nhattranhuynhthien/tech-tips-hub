@@ -25,6 +25,7 @@ DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
 INDEX_PATH = DATA_DIR / "index.json"
 STATE_PATH = DATA_DIR / "state.json"
+COMMUNITY_PATH = DATA_DIR / "community.json"
 
 def estimate_reading_time(text: str) -> int:
     """Ước lượng thời gian đọc (khoảng 150-200 từ/phút)."""
@@ -295,15 +296,89 @@ def main():
 
         time.sleep(0.3)
 
+    # 3b. Bài cộng đồng chỉ xuất hiện ở đây sau khi quản trị viên duyệt qua Telegram.
+    community_items = []
+    if COMMUNITY_PATH.exists():
+        try:
+            community_items = json.loads(COMMUNITY_PATH.read_text(encoding="utf-8"))
+            if not isinstance(community_items, list):
+                raise ValueError("data/community.json must contain an array")
+        except Exception as e:
+            raise RuntimeError(f"Không đọc được {COMMUNITY_PATH}; dừng để bảo toàn dữ liệu.") from e
+
+        for entry in community_items:
+            iid = str(entry.get("id", ""))
+            url = entry.get("url", "")
+            title = entry.get("title", {}).get(entry.get("originalLang", "vi"))
+            summary = entry.get("summary", {}).get(entry.get("originalLang", "vi"))
+            if not iid or not url or not title or iid in index:
+                continue
+            lang = entry.get("originalLang", "vi")
+            lang = lang if lang in ("vi", "en") else "vi"
+            summary = str(summary or title)[:300]
+            source_name = str(entry.get("sourceName") or "Cộng đồng đóng góp")[:100]
+            raw_item = {
+                "id": iid, "url": url, "raw_title": str(title)[:160],
+                "raw_summary": summary, "original_lang": lang,
+                "published_at": entry.get("publishedAt") or entry.get("approvedAt") or now_iso,
+                "source_weight": 1.0, "source_kind": "tips", "content_type": "community",
+                "author": entry.get("submittedBy") or "Cộng đồng đóng góp",
+                "default_categories": [], "source": {
+                    "id": "community", "name": source_name, "site_url": url,
+                    "kind": "tips", "content_type": "community"
+                }
+            }
+            is_ok, reason = accept(raw_item, {"id": "community", "kind": "tips"})
+            if not is_ok or is_blocked(title, summary, url, blocklist):
+                print(f"[Community] Bỏ qua {iid}: {reason if not is_ok else 'blocklist'}")
+                continue
+            duplicate = False
+            for existing in index.values():
+                existing_url = existing.get("url", "")
+                existing_title = existing.get("title", {}).get(lang, "")
+                if existing_url == url or is_duplicate_title(str(title), existing_title, threshold=0.9):
+                    existing.setdefault("alsoFrom", [])
+                    if not any(source.get("url") == url for source in existing["alsoFrom"]):
+                        existing["alsoFrom"].append({"sourceName": source_name, "url": url})
+                    duplicate = True
+                    break
+            if duplicate:
+                duplicate_count += 1
+                continue
+
+            target_lang = "en" if lang == "vi" else "vi"
+            provided_tags = entry.get("tags", [])
+            tags = [str(tag)[:32] for tag in provided_tags[:10]] if isinstance(provided_tags, list) else []
+            categories = [tag for tag in tags if tag in {
+                "android", "ios", "windows", "macos", "linux", "browser", "office", "security", "ai", "dev", "hardware"
+            }][:2]
+            if not categories:
+                categories = ["browser"]
+            index[iid] = {
+                "id": iid, "slug": generate_seo_slug(str(title), iid), "url": url,
+                "source": {"id": "community", "name": source_name, "site_url": url,
+                           "kind": "tips", "content_type": "community"},
+                "author": "Cộng đồng đóng góp", "published_at": raw_item["published_at"],
+                "fetched_at": now_iso, "original_lang": lang,
+                "title": {lang: str(title)[:160], target_lang: str(title)[:160]},
+                "summary": {lang: summary, target_lang: summary},
+                "categories": categories, "tags": tags, "difficulty": None,
+                "score": 0.75, "howto": True,
+                "reading_time_min": estimate_reading_time(summary), "translated": {},
+                "source_type": entry.get("sourceType", "community-web"),
+                "approved_at": entry.get("approvedAt", "")
+            }
+            new_added += 1
+
     if failed_sources:
         print(f"[Fetch Warning] {len(failed_sources)}/{len(sources)} nguồn lỗi: {', '.join(failed_sources)}")
     if paused_sources:
         print(f"[Fetch Paused] {len(paused_sources)} nguồn đang tạm dừng: {', '.join(paused_sources)}")
     STATE_PATH.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
-    if attempted_sources == 0:
+    if attempted_sources == 0 and not community_items:
         print("Không có nguồn đến hạn chạy; giữ nguyên kho hiện tại.")
         return
-    if successful_sources == 0:
+    if successful_sources == 0 and not community_items:
         raise RuntimeError("Tất cả nguồn dữ liệu đều lỗi; dừng để tránh ghi đè bằng lượt quét thất bại.")
 
     # 4. Dịch thuật theo lô cho các bài chưa có bản dịch (ưu tiên how-to và điểm cao)
