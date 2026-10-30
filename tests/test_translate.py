@@ -14,7 +14,8 @@ from translate import (
     GeminiTranslator,
     ArgosOfflineTranslator,
     CompositeTranslator,
-    process_item_bilingual
+    process_item_bilingual,
+    batch_translate_pending
 )
 
 class TestTranslateModule(unittest.TestCase):
@@ -35,6 +36,7 @@ class TestTranslateModule(unittest.TestCase):
         
         self.assertTrue(looks_english("How to speed up Windows 11 with simple tweaks"))
         self.assertFalse(looks_english("Thủ thuật tối ưu hóa Windows 11"))
+        self.assertFalse(looks_english("苹果发布新款 MacBook"))
 
     def test_translator_interface(self):
         """Kiểm tra tính nhất quán của Translator interface."""
@@ -45,6 +47,46 @@ class TestTranslateModule(unittest.TestCase):
         self.assertTrue(hasattr(gemini, "translate_batch"))
         self.assertTrue(hasattr(argos, "translate_batch"))
         self.assertTrue(hasattr(comp, "translate_batch"))
+
+    def test_chinese_item_gets_both_translations(self):
+        class FakeTranslator:
+            def __init__(self):
+                self.calls = []
+
+            def translate_batch(self, items, source_lang, target_lang):
+                self.calls.append((source_lang, target_lang))
+                if target_lang == "vi":
+                    title, summary = "Apple ra mắt máy tính mới", "Sản phẩm mới có chip nhanh hơn và thời lượng pin dài hơn."
+                else:
+                    title, summary = "Apple launches a new computer", "The new product has a faster chip and longer battery life."
+                return [{"id": item["id"], "title": title, "summary": summary} for item in items]
+
+        translator = FakeTranslator()
+        item = {
+            "id": "zh-item-1", "original_lang": "zh-CN", "title": {"zh-CN": "苹果发布新款 MacBook"},
+            "summary": {"zh-CN": "苹果今天发布了搭载新芯片的笔记本电脑。"}, "score": 0.8,
+        }
+        cache = {}
+        batch_translate_pending([item], cache, translator=translator, max_items=4)
+
+        self.assertEqual(translator.calls, [("zh-CN", "vi"), ("zh-CN", "en")])
+        self.assertEqual(item["translated"]["vi"], "machine")
+        self.assertEqual(item["translated"]["en"], "machine")
+        self.assertEqual(item["title"]["zh-CN"], "苹果发布新款 MacBook")
+
+    def test_chinese_translation_failure_keeps_original(self):
+        translator = Mock()
+        translator.translate_batch.return_value = []
+        item = {
+            "id": "zh-item-2", "original_lang": "zh-CN", "title": {"zh-CN": "苹果发布新款 MacBook"},
+            "summary": {"zh-CN": "苹果今天发布了搭载新芯片的笔记本电脑。"}, "score": 0.8,
+        }
+        batch_translate_pending([item], {}, translator=translator, max_items=4)
+
+        self.assertEqual(item["title"]["vi"], item["title"]["zh-CN"])
+        self.assertEqual(item["title"]["en"], item["title"]["zh-CN"])
+        self.assertFalse(item["translated"]["vi"])
+        self.assertFalse(item["translated"]["en"])
 
     def test_fallback_when_untranslated(self):
         """Giữ nguyên bản gốc nếu translator không trả kết quả, không gọi dịch vụ bên ngoài."""

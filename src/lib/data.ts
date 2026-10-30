@@ -11,6 +11,7 @@ export interface Source {
   url?: string;
   lang?: string;
   kind?: 'tips' | 'news';
+  allowNews?: boolean;
   contentType?: 'article' | 'community' | 'video' | 'vendor';
   enabled?: boolean;
   trust?: number;
@@ -36,14 +37,8 @@ export interface Tip {
   published_at: string;
   fetched_at: string;
   original_lang: string;
-  title: {
-    en: string;
-    vi: string;
-  };
-  summary: {
-    en: string;
-    vi: string;
-  };
+  title: Record<string, string> & { en: string; vi: string };
+  summary: Record<string, string> & { en: string; vi: string };
   categories: string[];
   tags: string[];
   difficulty?: 'easy' | 'medium' | 'advanced' | null;

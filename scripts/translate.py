@@ -35,7 +35,11 @@ def looks_english(text: str) -> bool:
     """Kiểm tra văn bản tiếng Anh hoàn toàn không chứa ký tự tiếng Việt có dấu."""
     if not text:
         return True
-    return len(VI_CHARS.findall(text)) == 0
+    if len(VI_CHARS.findall(text)) > 0 or re.search(r"[\u3400-\u9fff]", text):
+        return False
+    letters = re.findall(r"[A-Za-z]", text)
+    unicode_letters = re.findall(r"[^\W\d_]", text, re.UNICODE)
+    return len(letters) >= 3 and len(letters) / max(len(unicode_letters), 1) >= 0.5
 
 VI_FUNCTION_WORDS = re.compile(
     r"\b(của|và|cho|trong|được|này|đã|sẽ|như|thế|mình|bạn|với|sau|khi|làm|việc|người|hướng|dẫn|xem|nội|dung|ngày)\b",
@@ -130,9 +134,10 @@ class GeminiTranslator(Translator):
             return []
 
         target_name = "tiếng Việt" if target_lang == "vi" else "English"
+        source_name = {"zh-CN": "Simplified Chinese", "zh": "Chinese", "en": "English", "vi": "Vietnamese"}.get(source_lang, source_lang)
         prompt = (
-            f"Bạn là chuyên gia dịch thuật công nghệ thông tin song ngữ Anh - Việt.\n"
-            f"Hãy dịch trọn vẹn cả câu danh sách thủ thuật sau sang {target_name}.\n\n"
+            f"You are a professional technology translator. Translate the source text from {source_name} into {target_name}.\n"
+            f"Translate each title and summary naturally and completely.\n\n"
             f"QUY TẮC BẮT BUỘC:\n"
             f"1. Dịch NGUYÊN CÂU, văn phong tự nhiên, súc tích. Tuyệt đối KHÔNG thay thế từ khóa chắp vá hay trộn tiếng.\n"
             f"2. GIỮ NGUYÊN không dịch: tên phần mềm/sản phẩm (Chrome, Windows, Ubuntu, Docker, Git, VS Code...), "
@@ -418,6 +423,92 @@ def process_item_bilingual(
 
     return title_dict, summary_dict, trans_meta
 
+def _translate_chinese_items(
+    items: list[dict],
+    cache: dict,
+    translator: Translator,
+    batch_size: int,
+    max_items: int,
+) -> int:
+    pending = []
+    for item in items:
+        item_id = item["id"]
+        source_lang = item.get("original_lang", "zh-CN")
+        original_title = item.get("raw_title") or item.get("title", {}).get(source_lang, "")
+        original_summary = item.get("raw_summary") or item.get("summary", {}).get(source_lang, "")
+        item.setdefault("title", {})[source_lang] = original_title
+        item.setdefault("summary", {})[source_lang] = original_summary
+        item.setdefault("translated", {})
+
+        cached = cache.get(item_id, {})
+        for target_lang in ("vi", "en"):
+            if cached.get("translated", {}).get(target_lang) == "machine":
+                item["title"][target_lang] = cached.get("title", {}).get(target_lang, original_title)
+                item["summary"][target_lang] = cached.get("summary", {}).get(target_lang, original_summary)
+                item["translated"][target_lang] = "machine"
+
+        targets = []
+        for target_lang in ("vi", "en"):
+            if item["translated"].get(target_lang) == "machine":
+                continue
+            if int(_translation_attempts(item).get(target_lang, 0)) < MAX_TRANSLATE_ATTEMPTS:
+                targets.append(target_lang)
+        if targets:
+            pending.append({
+                "id": item_id,
+                "title": original_title,
+                "summary": original_summary,
+                "targets": targets,
+                "howto": item.get("howto", False),
+                "score": item.get("score", 0),
+                "published_at": item.get("published_at", ""),
+            })
+
+    pending.sort(key=lambda record: (record["howto"], record["score"], record["published_at"]), reverse=True)
+    pending = pending[:max_items]
+    processed_count = len(pending)
+    items_by_id = {item["id"]: item for item in items}
+
+    for target_lang in ("vi", "en"):
+        target_items = [record for record in pending if target_lang in record["targets"]]
+        for offset in range(0, len(target_items), batch_size):
+            chunk = target_items[offset:offset + batch_size]
+            payload = [{key: record[key] for key in ("id", "title", "summary")} for record in chunk]
+            results = translator.translate_batch(payload, source_lang="zh-CN", target_lang=target_lang)
+            result_map = {result["id"]: result for result in results if result.get("id")}
+
+            for record in chunk:
+                item = items_by_id[record["id"]]
+                original_title, original_summary = record["title"], record["summary"]
+                result = result_map.get(record["id"], {})
+                translated_title = (result.get("title") or "").strip()
+                translated_summary = (result.get("summary") or "").strip()
+                valid = bool(translated_title and translated_summary)
+                if target_lang == "vi":
+                    valid = valid and looks_vietnamese(translated_title) and looks_vietnamese(translated_summary)
+                else:
+                    valid = valid and looks_english(translated_title) and looks_english(translated_summary)
+                valid = valid and not is_mixed(translated_title) and not is_mixed(translated_summary)
+
+                if valid:
+                    item["title"][target_lang] = translated_title
+                    item["summary"][target_lang] = translated_summary
+                    item["translated"][target_lang] = "machine"
+                    _clear_translation_failure(item, target_lang)
+                else:
+                    item["title"][target_lang] = original_title
+                    item["summary"][target_lang] = original_summary
+                    item["translated"][target_lang] = False
+                    _record_translation_failure(item, target_lang)
+
+                cache[item["id"]] = {
+                    "title": item["title"],
+                    "summary": item["summary"],
+                    "translated": item["translated"],
+                }
+    return processed_count
+
+
 def batch_translate_pending(
     items: list[dict],
     cache: dict,
@@ -431,6 +522,11 @@ def batch_translate_pending(
     - Cập nhật trực tiếp vào items và cache.
     """
     translator = translator or DEFAULT_TRANSLATOR
+    chinese_items = [item for item in items if str(item.get("original_lang", "")).lower().startswith("zh")]
+    if chinese_items:
+        chinese_quota = min(10, max_items // 4)
+        processed_chinese = _translate_chinese_items(chinese_items, cache, translator, batch_size, chinese_quota)
+        max_items = max(0, max_items - processed_chinese)
     
     # Tìm các bài chưa được dịch hợp lệ
     pending_en_to_vi = []
@@ -439,6 +535,8 @@ def batch_translate_pending(
     for it in items:
         iid = it["id"]
         orig_lang = it.get("original_lang", "en")
+        if str(orig_lang).lower().startswith("zh"):
+            continue
         target_lang = "vi" if orig_lang == "en" else "en"
 
         # Nếu đã có bản dịch hợp lệ trong cache

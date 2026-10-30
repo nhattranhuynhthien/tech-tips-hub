@@ -138,6 +138,8 @@ def accept(item: dict, source: dict, enable_logging: bool = True) -> tuple[bool,
     kind = source.get("kind", "news") if isinstance(source, dict) else "news"
     if kind == "tips":
         return True, "tips-source"
+    if source.get("allowNews"):
+        return True, "news-source"
     
     # 4. Nguồn tin tức chung: bắt buộc phải khớp từ khóa how-to
     if HOWTO.search(title) or CONFIG_HOWTO.search(title) or HOWTO.search(summary[:140]) or CONFIG_HOWTO.search(summary[:140]):

@@ -251,15 +251,23 @@ def main():
 
             # Khởi tạo dữ liệu song ngữ từ cache nếu có
             orig_l = raw_item["original_lang"]
-            target_l = "vi" if orig_l == "en" else "en"
+            fallback_titles = {orig_l: title}
+            fallback_summaries = {orig_l: summary}
+            if str(orig_l).lower().startswith("zh"):
+                fallback_titles.update({"vi": title, "en": title})
+                fallback_summaries.update({"vi": summary, "en": summary})
+            else:
+                target_l = "vi" if orig_l == "en" else "en"
+                fallback_titles[target_l] = title
+                fallback_summaries[target_l] = summary
             if iid in trans_cache:
                 c_entry = trans_cache[iid]
-                title_dict = c_entry.get("title", {orig_l: title, target_l: title})
-                summary_dict = c_entry.get("summary", {orig_l: summary, target_l: summary})
+                title_dict = {**fallback_titles, **c_entry.get("title", {})}
+                summary_dict = {**fallback_summaries, **c_entry.get("summary", {})}
                 trans_meta = c_entry.get("translated", {})
             else:
-                title_dict = {orig_l: title, target_l: title}
-                summary_dict = {orig_l: summary, target_l: summary}
+                title_dict = fallback_titles
+                summary_dict = fallback_summaries
                 trans_meta = {}
 
             index[iid] = {

@@ -1,5 +1,70 @@
 [
   {
+    "id": "sspai-cn",
+    "name": "少数派",
+    "type": "rss",
+    "url": "https://sspai.com/feed",
+    "site_url": "https://sspai.com",
+    "lang": "zh-CN",
+    "categories": [
+      "dev",
+      "android",
+      "ios",
+      "macos",
+      "ai"
+    ],
+    "trust": 4,
+    "tipOnly": false,
+    "kind": "news",
+    "allowNews": true,
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 10
+  },
+  {
+    "id": "ithome-cn",
+    "name": "IT之家",
+    "type": "rss",
+    "url": "https://www.ithome.com/rss/",
+    "site_url": "https://www.ithome.com",
+    "lang": "zh-CN",
+    "categories": [
+      "hardware",
+      "android",
+      "windows",
+      "ai",
+      "dev"
+    ],
+    "trust": 4,
+    "tipOnly": false,
+    "kind": "news",
+    "allowNews": true,
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 12
+  },
+  {
+    "id": "36kr-cn",
+    "name": "36氪",
+    "type": "rss",
+    "url": "https://36kr.com/feed-article",
+    "site_url": "https://36kr.com",
+    "lang": "zh-CN",
+    "categories": [
+      "ai",
+      "dev",
+      "hardware",
+      "security"
+    ],
+    "trust": 4,
+    "tipOnly": false,
+    "kind": "news",
+    "allowNews": true,
+    "contentType": "article",
+    "enabled": false,
+    "maxPerRun": 12
+  },
+  {
     "id": "howtogeek",
     "name": "How-To Geek",
     "type": "rss",

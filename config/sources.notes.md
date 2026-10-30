@@ -30,3 +30,5 @@ Checked on 2026-10-30 with the configured bot User-Agent. Sources are enabled on
 ## Other checked sources
 
 The remaining enabled feeds in `config/sources.json` returned HTTP 200 and parsed at least one item with a title, link, and publication date during the check. Re-run `npm run check-source -- <id>` before enabling any source that later becomes disabled.
+
+- 2026-10-30 13:31 UTC: `36kr-cn` disabled by `check-source`: RSS/Atom 36kr-cn không phân tích được: <unknown>:11:168: not well-formed (invalid token)
