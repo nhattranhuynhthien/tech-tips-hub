@@ -87,15 +87,21 @@ async function telegram(method: string, payload: AnyRecord): Promise<any> {
 async function github(path: string, init: RequestInit = {}): Promise<any> {
   const token = env('GITHUB_TOKEN');
   if (!token) throw new Error('GitHub token is not configured');
-  const response = await fetch(`${GITHUB_API}${path}`, {
-    ...init,
-    headers: {
-      accept: 'application/vnd.github+json', authorization: `Bearer ${token}`,
-      'x-github-api-version': '2022-11-28', 'content-type': 'application/json',
-      ...(init.headers || {}),
-    },
-    signal: AbortSignal.timeout(10000),
-  });
+  let response: Response;
+  try {
+    response = await fetch(`${GITHUB_API}${path}`, {
+      ...init,
+      headers: {
+        accept: 'application/vnd.github+json', authorization: `Bearer ${token}`,
+        'x-github-api-version': '2022-11-28', 'content-type': 'application/json',
+        ...(init.headers || {}),
+      },
+      signal: AbortSignal.timeout(20000),
+    });
+  } catch (error) {
+    const detail = error instanceof Error ? error.message : 'unknown network error';
+    throw new Error(`GitHub API ${init.method || 'GET'} ${path.split('?')[0]} request failed: ${detail}`);
+  }
   const body = await response.json().catch(() => ({}));
   if (!response.ok) throw new Error(`GitHub API request failed (${response.status})`);
   return body;
