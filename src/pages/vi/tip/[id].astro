@@ -42,6 +42,7 @@ const summaryText = tip.summary[lang] || tip.summary['en'] || Object.values(tip.
 const origSummary = tip.summary[tip.original_lang] || tip.summary['en'] || summaryText;
 
 const isMachineTranslated = tip.translated && tip.translated[lang] === 'machine';
+const isUntranslated = tip.original_lang !== lang && !isMachineTranslated;
 const tipSlugOrId = tip.slug || tip.id;
 const pageCanonicalUrl = `${SITE_URL}/vi/tip/${tipSlugOrId}`;
 
@@ -82,6 +83,7 @@ const primaryCat = tip.categories[0] || 'thủ-thuật';
         <!-- Meta Row: source · author · date -->
         <div class="text-xs font-mono text-[var(--text-muted)] lowercase flex items-center gap-2 flex-wrap">
           <span class="text-[var(--text-secondary)] font-medium">{tip.source.name}</span>
+          {tip.alsoFrom?.map((source) => <a href={source.url} target="_blank" rel="noopener noreferrer" class="text-[var(--accent)] hover:underline">{source.sourceName}</a>)}
           {tip.author && (
             <>
               <span>·</span>
@@ -128,7 +130,7 @@ const primaryCat = tip.categories[0] || 'thủ-thuật';
               type="button"
               class="px-3 py-1.5 rounded-lg transition-all bg-[var(--accent-hero)] text-black font-bold shadow-sm"
             >
-              Tiếng Việt {isMachineTranslated ? '(dịch tự động)' : ''}
+              Tiếng Việt {isMachineTranslated ? '(dịch tự động)' : isUntranslated ? '(chưa dịch)' : ''}
             </button>
             <button
               id="tab-orig"

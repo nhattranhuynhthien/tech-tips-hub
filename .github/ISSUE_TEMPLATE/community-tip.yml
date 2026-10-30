@@ -1,0 +1,50 @@
+name: Submit a tech tip
+description: Suggest a short, sourced tip for the Tech Tips Hub community queue.
+title: "[Community tip]: "
+labels: [community-submission]
+body:
+  - type: input
+    id: title
+    attributes:
+      label: Tip title
+      description: Keep it concise and specific.
+    validations:
+      required: true
+  - type: textarea
+    id: tip
+    attributes:
+      label: Tip or short summary
+      description: Share the practical steps or a summary in your own words. Do not paste a full article.
+    validations:
+      required: true
+  - type: input
+    id: source_url
+    attributes:
+      label: Original source URL
+      description: Add the original reference when available.
+      placeholder: https://example.com/article
+    validations:
+      required: false
+  - type: dropdown
+    id: language
+    attributes:
+      label: Language
+      options:
+        - Vietnamese
+        - English
+    validations:
+      required: true
+  - type: input
+    id: display_name
+    attributes:
+      label: Display name (optional)
+      description: Leave blank to submit anonymously.
+    validations:
+      required: false
+  - type: checkboxes
+    id: attribution
+    attributes:
+      label: Attribution
+      options:
+        - label: I agree that my display name may be shown with this contribution.
+          required: false

@@ -1,7 +1,6 @@
 # scripts/migrate_data.py
 import sys
 import json
-import yaml
 import shutil
 import re
 from pathlib import Path
@@ -43,8 +42,8 @@ def main():
     print(f"-> Đã sao lưu dữ liệu gốc vào: {BACKUP_PATH}")
 
     # Đọc cấu hình nguồn
-    with open("config/sources.yml", "r", encoding="utf-8") as f:
-        sources_list = yaml.safe_load(f) or []
+    with open("config/sources.json", "r", encoding="utf-8") as f:
+        sources_list = json.load(f) or []
     sources_map = {s["id"]: s for s in sources_list}
 
     raw_data = json.loads(DATA_PATH.read_text(encoding="utf-8"))

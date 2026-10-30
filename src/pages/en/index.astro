@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import TipCard from '../../components/TipCard.astro';
 import TrickOfTheDay from '../../components/TrickOfTheDay.astro';
 import Pagination from '../../components/Pagination.astro';
-import { getAllTips, getTrickOfTheDay, getAllCategories } from '../../lib/data';
+import { getAllTips, getTrickOfTheDay, getAllCategories, getAllSources } from '../../lib/data';
 import { getTranslations } from '../../lib/i18n';
 
 const lang = 'en';
@@ -12,6 +12,14 @@ const rawTips = getAllTips(false);
 const trickOfDay = getTrickOfTheDay();
 const tips = trickOfDay ? rawTips.filter((t) => t.id !== trickOfDay.id) : rawTips;
 const allCategories = getAllCategories();
+const sources = getAllSources();
+const latestUpdate = rawTips.map((tip) => tip.fetched_at).filter(Boolean).sort().at(-1) || '';
+const contentTypes = [
+  { id: 'article', label: 'Articles' },
+  { id: 'community', label: 'Community' },
+  { id: 'video', label: 'Video' },
+  { id: 'vendor', label: 'Technology vendors' },
+];
 const totalPages = Math.ceil(tips.length / 20);
 
 // List of categories for sidebar matching Page 1
@@ -45,6 +53,8 @@ const sidebarCategories = [
       />
     </div>
   </div>
+
+  {latestUpdate && <p class="text-[11px] text-[var(--text-muted)] font-mono mb-4">Latest update: <time datetime={latestUpdate}>{new Date(latestUpdate).toLocaleString('en-US')}</time></p>}
 
   <!-- Mobile Horizontal Category Scroll (Matching Mockup Page 2) -->
   <div class="md:hidden flex items-center gap-2 overflow-x-auto pb-3 mb-6 scrollbar-none" id="mobile-category-bar">
@@ -157,6 +167,33 @@ const sidebarCategories = [
 
     <!-- Right Stream: Tips List & Pagination -->
     <div class="flex-1 w-full min-w-0">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-2 mb-4" aria-label="Article filters">
+        <label class="text-[10px] font-mono text-[var(--text-muted)]">SOURCE
+          <select id="source-filter" class="mt-1 w-full rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] p-2 text-xs text-[var(--text-primary)]">
+            <option value="all">All sources</option>
+            {sources.map((source) => <option value={source.id}>{source.name}</option>)}
+          </select>
+        </label>
+        <label class="text-[10px] font-mono text-[var(--text-muted)]">CONTENT TYPE
+          <select id="content-type-filter" class="mt-1 w-full rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] p-2 text-xs text-[var(--text-primary)]">
+            <option value="all">All types</option>
+            {contentTypes.map((type) => <option value={type.id}>{type.label}</option>)}
+          </select>
+        </label>
+        <label class="text-[10px] font-mono text-[var(--text-muted)]">PLATFORM
+          <select id="platform-filter" class="mt-1 w-full rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] p-2 text-xs text-[var(--text-primary)]">
+            <option value="all">All platforms</option>
+            {allCategories.map((category) => <option value={category.id}>{category.name.en}</option>)}
+          </select>
+        </label>
+        <label class="text-[10px] font-mono text-[var(--text-muted)]">ORIGINAL LANGUAGE
+          <select id="language-filter" class="mt-1 w-full rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] p-2 text-xs text-[var(--text-primary)]">
+            <option value="all">All languages</option>
+            <option value="en">English</option>
+            <option value="vi">Vietnamese</option>
+          </select>
+        </label>
+      </div>
       <!-- Tips List Container -->
       <div id="tips-stream" class="space-y-4">
         {tips.map((tip) => (
@@ -199,6 +236,9 @@ const sidebarCategories = [
     let currentPage = 1;
     let currentCat = 'all';
     let currentDiff = 'all';
+    let currentLangFilter = 'all';
+    let currentSource = 'all';
+    let currentType = 'all';
     let currentSort = 'best';
     let searchQuery = '';
 
@@ -213,6 +253,10 @@ const sidebarCategories = [
     const diffBtns = document.querySelectorAll('.diff-pill-btn');
     const sortBtns = document.querySelectorAll('.sort-pill-btn');
     const mobileSearchInput = document.getElementById('mobile-search-input');
+    const sourceFilter = document.getElementById('source-filter');
+    const typeFilter = document.getElementById('content-type-filter');
+    const platformFilter = document.getElementById('platform-filter');
+    const languageFilter = document.getElementById('language-filter');
 
     // Pagination elements
     const pagePrevBtn = document.getElementById('page-prev-btn');
@@ -226,13 +270,19 @@ const sidebarCategories = [
       return cards.filter((c) => {
         const cats = c.getAttribute('data-category') || '';
         const diff = c.getAttribute('data-difficulty') || '';
+        const originalLang = c.getAttribute('data-original-lang') || 'en';
+        const sourceId = c.getAttribute('data-source') || '';
+        const contentType = c.getAttribute('data-content-type') || 'article';
         const text = c.textContent ? c.textContent.toLowerCase() : '';
 
         const matchCat = currentCat === 'all' || cats.split(' ').includes(currentCat);
         const matchDiff = currentDiff === 'all' || diff === currentDiff;
+        const matchLang = currentLangFilter === 'all' || originalLang === currentLangFilter;
+        const matchSource = currentSource === 'all' || sourceId === currentSource;
+        const matchType = currentType === 'all' || contentType === currentType;
         const matchSearch = !q || text.includes(q);
 
-        return matchCat && matchDiff && matchSearch;
+        return matchCat && matchDiff && matchLang && matchSource && matchType && matchSearch;
       });
     }
 
@@ -366,6 +416,11 @@ const sidebarCategories = [
       updateView();
     });
 
+    sourceFilter?.addEventListener('change', (e) => { currentSource = e.target.value; currentPage = 1; updateView(); });
+    typeFilter?.addEventListener('change', (e) => { currentType = e.target.value; currentPage = 1; updateView(); });
+    platformFilter?.addEventListener('change', (e) => { currentCat = e.target.value; currentPage = 1; updateView(); });
+    languageFilter?.addEventListener('change', (e) => { currentLangFilter = e.target.value; currentPage = 1; updateView(); });
+
     // Mobile Category Buttons
     mobileCatBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
@@ -422,9 +477,16 @@ const sidebarCategories = [
     resetBtn?.addEventListener('click', () => {
       currentCat = 'all';
       currentDiff = 'all';
+      currentLangFilter = 'all';
+      currentSource = 'all';
+      currentType = 'all';
       currentSort = 'best';
       searchQuery = '';
       if (mobileSearchInput) mobileSearchInput.value = '';
+      if (sourceFilter) sourceFilter.value = 'all';
+      if (typeFilter) typeFilter.value = 'all';
+      if (platformFilter) platformFilter.value = 'all';
+      if (languageFilter) languageFilter.value = 'all';
       desktopCatBtns[0]?.click();
       diffBtns[0]?.click();
       sortBtns[0]?.click();

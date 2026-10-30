@@ -8,7 +8,9 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "fetch": "python scripts/run_pipeline.py",
+    "check-source": "python scripts/check_source.py"
   },
   "dependencies": {
     "@astrojs/tailwind": "6.0.2",

@@ -7,6 +7,22 @@ from datetime import datetime, timezone
 LOG_DIR = Path("data/logs")
 LOG_DIR.mkdir(parents=True, exist_ok=True)
 REJECTED_LOG = LOG_DIR / "rejected.jsonl"
+FILTER_CONFIG_PATH = Path("config/filters.json")
+try:
+    FILTER_CONFIG = json.loads(FILTER_CONFIG_PATH.read_text(encoding="utf-8"))
+except Exception:
+    FILTER_CONFIG = {}
+
+KEEP_TERMS = [term for values in FILTER_CONFIG.get("keepKeywords", {}).values() for term in values]
+BLOCK_TERMS = FILTER_CONFIG.get("blockKeywords", [])
+REVIEW_ALLOW_TERMS = FILTER_CONFIG.get("reviewAllowKeywords", ["tip", "mẹo"])
+MIN_TITLE_LENGTH = int(FILTER_CONFIG.get("minTitleLength", 15))
+
+
+def _term_pattern(terms: list[str]) -> re.Pattern:
+    if not terms:
+        return re.compile(r"(?!)")
+    return re.compile(r"(?:" + "|".join(re.escape(term) for term in sorted(terms, key=len, reverse=True)) + r")", re.IGNORECASE)
 
 HOWTO = re.compile(
     r"\b(how to|how-to|tips?|tricks?|guide|tutorial|fix(es|ing)?|set ?up|"
@@ -15,9 +31,13 @@ HOWTO = re.compile(
     r"cách|mẹo|hướng dẫn|thủ thuật|sửa lỗi|thiết lập|chỉnh|phím tắt|tinh chỉnh|cài đặt|tối ưu)\b",
     re.IGNORECASE
 )
+CONFIG_HOWTO = _term_pattern(KEEP_TERMS)
+CONFIG_BLOCK = _term_pattern(BLOCK_TERMS)
+REVIEW = re.compile(r"\breviews?\b", re.IGNORECASE)
+REVIEW_ALLOW = _term_pattern(REVIEW_ALLOW_TERMS)
 
 EDITORIAL_OR_REVIEW = re.compile(
-    r"\b(weekly|reviews?|roundup|newsletter|edition|podcast|interview|released?|releases|announces?|announcing|unveils?|changelog|đánh giá|trên tay|tổng hợp tuần|ra mắt|phát hành)\b",
+    r"\b(weekly|roundup|newsletter|edition|podcast|interview|released?|releases|announces?|announcing|unveils?|changelog|đánh giá|trên tay|tổng hợp tuần|ra mắt|phát hành)\b",
     re.IGNORECASE
 )
 
@@ -42,9 +62,9 @@ OUT_OF_SCOPE = re.compile(
 
 def is_howto_match(title: str, summary: str = "") -> bool:
     """Kiểm tra bài viết có dấu hiệu là thủ thuật / hướng dẫn (how-to) hay không."""
-    if EDITORIAL_OR_REVIEW.search(title):
+    if EDITORIAL_OR_REVIEW.search(title) or (REVIEW.search(title) and not REVIEW_ALLOW.search(title)):
         return False
-    return bool(HOWTO.search(title)) or bool(HOWTO.search(summary[:140]))
+    return bool(HOWTO.search(title) or CONFIG_HOWTO.search(title)) or bool(HOWTO.search(summary[:140]) or CONFIG_HOWTO.search(summary[:140]))
 
 def log_rejection(item: dict, source: dict, reason: str):
     """Ghi lại lý do bài bị loại vào data/logs/rejected.jsonl để tinh chỉnh bộ lọc sau."""
@@ -79,6 +99,12 @@ def accept(item: dict, source: dict, enable_logging: bool = True) -> tuple[bool,
     summary = item.get("raw_summary") or item.get("summary", "")
     if isinstance(summary, dict):
         summary = " ".join(str(v) for v in summary.values())
+
+    if len(title.strip()) < MIN_TITLE_LENGTH:
+        reason = "title-too-short"
+        if enable_logging:
+            log_rejection(item, source, reason)
+        return False, reason
     
     # 0. Kiểm tra bài viết ngoài phạm vi công nghệ (nông nghiệp, chăn nuôi, y tế...)
     if OUT_OF_SCOPE.search(title) or OUT_OF_SCOPE.search(summary[:300]):
@@ -88,13 +114,14 @@ def accept(item: dict, source: dict, enable_logging: bool = True) -> tuple[bool,
         return False, reason
 
     # 1. Kiểm tra blocklist (quảng cáo, deal, khuyến mãi, tuyển dụng, trailer, review, weekly)
-    if BLOCK.search(title) or EDITORIAL_OR_REVIEW.search(title):
+    review_exception = bool(REVIEW.search(title) and REVIEW_ALLOW.search(title))
+    if BLOCK.search(title) or CONFIG_BLOCK.search(title) or EDITORIAL_OR_REVIEW.search(title) or (REVIEW.search(title) and not review_exception):
         reason = "blocklist-title"
         if enable_logging:
             log_rejection(item, source, reason)
         return False, reason
 
-    if BLOCK.search(summary[:200]):
+    if BLOCK.search(summary[:200]) or CONFIG_BLOCK.search(summary[:200]):
         reason = "blocklist-summary"
         if enable_logging:
             log_rejection(item, source, reason)
@@ -113,7 +140,7 @@ def accept(item: dict, source: dict, enable_logging: bool = True) -> tuple[bool,
         return True, "tips-source"
     
     # 4. Nguồn tin tức chung: bắt buộc phải khớp từ khóa how-to
-    if HOWTO.search(title) or HOWTO.search(summary[:140]):
+    if HOWTO.search(title) or CONFIG_HOWTO.search(title) or HOWTO.search(summary[:140]) or CONFIG_HOWTO.search(summary[:140]):
         return True, "howto-match"
         
     reason = "not-howto"

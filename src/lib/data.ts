@@ -6,10 +6,16 @@ import { generateSeoSlug } from './slug';
 export interface Source {
   id: string;
   name: string;
+  type?: 'rss' | 'atom' | 'json-api' | 'reddit' | 'youtube' | 'telegram';
   site_url?: string;
   url?: string;
   lang?: string;
   kind?: 'tips' | 'news';
+  contentType?: 'article' | 'community' | 'video' | 'vendor';
+  enabled?: boolean;
+  trust?: number;
+  tipOnly?: boolean;
+  maxPerRun?: number;
   weight?: number;
   categories?: string[];
   description?: string;
@@ -24,6 +30,7 @@ export interface Tip {
     name: string;
     site_url?: string;
     kind?: string;
+    content_type?: string;
   };
   author?: string | null;
   published_at: string;
@@ -47,8 +54,9 @@ export interface Tip {
   hn_points?: number;
   hn_comments_url?: string;
   translated?: {
-    [key: string]: string;
+    [key: string]: string | boolean;
   };
+  alsoFrom?: Array<{ sourceName: string; url: string }>;
 }
 
 export interface Category {
@@ -81,7 +89,10 @@ export function getAllTips(includeHidden = false): Tip[] {
     const raw = fs.readFileSync(indexPath, 'utf-8');
     const map = JSON.parse(raw);
     const list: Tip[] = Object.values(map);
+    const sourcesById = new Map(getAllSources().map((source) => [source.id, source]));
     for (const t of list) {
+      const configuredSource = sourcesById.get(t.source?.id);
+      if (!t.source.content_type) t.source.content_type = configuredSource?.contentType || 'article';
       if (!t.slug) {
         const title = t.title?.vi || t.title?.en || '';
         t.slug = generateSeoSlug(title, t.id);
@@ -122,15 +133,15 @@ export function getAllCategories(): Category[] {
 
 export function getAllSources(): Source[] {
   if (cachedSources) return cachedSources;
-  const srcPath = path.resolve('./config/sources.yml');
+  const srcPath = path.resolve('./config/sources.json');
   if (!fs.existsSync(srcPath)) return [];
   try {
     const raw = fs.readFileSync(srcPath, 'utf-8');
-    const list = yaml.load(raw) as Source[];
-    cachedSources = list || [];
+    const list = JSON.parse(raw) as Source[];
+    cachedSources = (list || []).filter((source) => source.enabled === true);
     return cachedSources;
   } catch (err) {
-    console.error('Error reading sources.yml:', err);
+    console.error('Error reading sources.json:', err);
     return [];
   }
 }

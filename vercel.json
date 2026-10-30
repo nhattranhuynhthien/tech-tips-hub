@@ -1,0 +1,23 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "redirects": [
+    {
+      "source": "/",
+      "has": [{ "type": "cookie", "key": "techtips_lang", "value": "vi" }],
+      "destination": "/vi",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "cookie", "key": "techtips_lang", "value": "en" }],
+      "destination": "/en",
+      "permanent": false
+    },
+    {
+      "source": "/",
+      "has": [{ "type": "header", "key": "accept-language", "value": "^[eE][nN]([,-]|$).*" }],
+      "destination": "/en",
+      "permanent": false
+    }
+  ]
+}

@@ -28,6 +28,7 @@ jobs:
           python -m py_compile scripts/fetch.py
           python -m py_compile scripts/run_pipeline.py
           python -m py_compile scripts/qa.py
+          python -m py_compile scripts/check_source.py
       - name: Run Python unit tests
         run: python tests/test_translate.py
       - name: Run Quality Assurance on Existing Data

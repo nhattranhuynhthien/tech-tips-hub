@@ -19,6 +19,9 @@ __pycache__/
 .env.local
 .env.*.local
 
+# Persisted workflow cache state (stored via GitHub Actions cache)
+data/state.json
+
 # OS files
 .DS_Store
 Thumbs.db

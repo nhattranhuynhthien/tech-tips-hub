@@ -2,7 +2,7 @@
 
 > **Web tự động tổng hợp thủ thuật & mẹo công nghệ tinh chọn từ khắp nơi trên thế giới, hiển thị song ngữ VI/EN và tôn trọng bản quyền. Chi phí phụ thuộc hạn mức và chính sách của nhà cung cấp dịch vụ.**
 
-[![Update Tips](https://github.com/nhattranhuynhthien/tech-tips-hub/actions/workflows/update.yml/badge.svg)](https://github.com/nhattranhuynhthien/tech-tips-hub/actions/workflows/update.yml)
+[![Update Tips](https://github.com/nhattranhuynhthien/tech-tips-hub/actions/workflows/fetch.yml/badge.svg)](https://github.com/nhattranhuynhthien/tech-tips-hub/actions/workflows/fetch.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-amber.svg)](LICENSE)
 [![Static Hosting](https://img.shields.io/badge/hosting-static-success.svg)](https://meocongnghe.vercel.app/vi/about)
 [![Astro: 5.x](https://img.shields.io/badge/Frontend-Astro_SSG-FF5D01.svg)](https://astro.build)
@@ -62,9 +62,11 @@ flowchart LR
 ```text
 tech-tips-hub/
 ├── .github/workflows/
-│   └── update.yml              # Cron tự động 4 giờ / lần + QA gate
+│   └── fetch.yml               # Cron mỗi giờ + QA gate
 ├── config/
-│   ├── sources.yml             # Danh sách nguồn tin và cấu hình kind: tips/news
+│   ├── sources.json           # Danh sách nguồn, trạng thái bật/tắt và loại nội dung
+│   ├── filters.json           # Từ khóa giữ/loại và ngưỡng chất lượng
+│   ├── sources.notes.md       # Kết quả kiểm tra nguồn và lý do tắt
 │   ├── categories.yml          # Định nghĩa 11 danh mục và màu sắc
 │   └── blocklist.yml           # Danh sách từ khóa bị chặn
 ├── scripts/

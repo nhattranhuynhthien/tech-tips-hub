@@ -1,0 +1,43 @@
+{
+  "keepKeywords": {
+    "en": [
+      "how to",
+      "tip",
+      "trick",
+      "hack",
+      "hidden",
+      "guide",
+      "settings",
+      "shortcut",
+      "fix",
+      "secret",
+      "you can now"
+    ],
+    "vi": [
+      "c?ch",
+      "m?o",
+      "th? thu?t",
+      "b? quy?t",
+      "?n",
+      "ph?m t?t",
+      "s?a l?i",
+      "h??ng d?n"
+    ]
+  },
+  "blockKeywords": [
+    "deal",
+    "discount",
+    "sale",
+    "coupon",
+    "gi?m gi?",
+    "khuy?n m?i",
+    "sponsored"
+  ],
+  "reviewAllowKeywords": [
+    "tip",
+    "m?o"
+  ],
+  "minTitleLength": 15,
+  "redditMinScore": 50,
+  "hnMinScore": 50
+}

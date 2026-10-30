@@ -1,0 +1,805 @@
+[
+  {
+    "id": "howtogeek",
+    "name": "How-To Geek",
+    "type": "rss",
+    "url": "https://www.howtogeek.com/feed/",
+    "lang": "en",
+    "categories": [
+      "windows",
+      "android",
+      "macos",
+      "browser",
+      "office",
+      "hardware"
+    ],
+    "trust": 4,
+    "tipOnly": true,
+    "kind": "tips",
+    "contentType": "article",
+    "enabled": false,
+    "maxPerRun": 20,
+    "site_url": "https://www.howtogeek.com"
+  },
+  {
+    "id": "itsfoss",
+    "name": "It's FOSS",
+    "type": "rss",
+    "url": "https://itsfoss.com/feed/",
+    "lang": "en",
+    "categories": [
+      "linux",
+      "dev",
+      "browser"
+    ],
+    "trust": 4,
+    "tipOnly": true,
+    "kind": "tips",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20,
+    "site_url": "https://itsfoss.com"
+  },
+  {
+    "id": "linuxhandbook",
+    "name": "Linux Handbook",
+    "type": "rss",
+    "url": "https://linuxhandbook.com/rss/",
+    "lang": "en",
+    "categories": [
+      "linux",
+      "dev",
+      "security"
+    ],
+    "trust": 4,
+    "tipOnly": true,
+    "kind": "tips",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20,
+    "site_url": "https://linuxhandbook.com"
+  },
+  {
+    "id": "omgubuntu",
+    "name": "OMG! Ubuntu!",
+    "type": "rss",
+    "url": "https://www.omgubuntu.co.uk/feed",
+    "lang": "en",
+    "categories": [
+      "linux",
+      "dev"
+    ],
+    "trust": 4,
+    "tipOnly": true,
+    "kind": "tips",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20,
+    "site_url": "https://www.omgubuntu.co.uk"
+  },
+  {
+    "id": "makeuseof",
+    "name": "MakeUseOf",
+    "type": "rss",
+    "url": "https://www.makeuseof.com/feed/",
+    "lang": "en",
+    "categories": [
+      "windows",
+      "android",
+      "macos",
+      "browser",
+      "ai"
+    ],
+    "trust": 3,
+    "tipOnly": true,
+    "kind": "tips",
+    "contentType": "article",
+    "enabled": false,
+    "maxPerRun": 20,
+    "site_url": "https://www.makeuseof.com"
+  },
+  {
+    "id": "hackernews",
+    "name": "Hacker News",
+    "type": "rss",
+    "url": "https://hnrss.org/frontpage?points=100",
+    "lang": "en",
+    "categories": [
+      "dev",
+      "security",
+      "ai"
+    ],
+    "trust": 2,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "community",
+    "enabled": true,
+    "maxPerRun": 20,
+    "minScore": 100,
+    "site_url": "https://news.ycombinator.com"
+  },
+  {
+    "id": "devto_tips",
+    "name": "Dev.to Tutorials",
+    "type": "json-api",
+    "url": "https://dev.to/api/articles?tag=tutorial&top=30&per_page=15",
+    "lang": "en",
+    "categories": [
+      "dev",
+      "ai",
+      "browser"
+    ],
+    "trust": 2,
+    "tipOnly": true,
+    "kind": "tips",
+    "contentType": "community",
+    "enabled": true,
+    "maxPerRun": 20,
+    "api": "devto",
+    "site_url": "https://dev.to"
+  },
+  {
+    "id": "bleepingcomputer",
+    "name": "BleepingComputer",
+    "type": "rss",
+    "url": "https://www.bleepingcomputer.com/feed/",
+    "lang": "en",
+    "categories": [
+      "security",
+      "windows",
+      "linux"
+    ],
+    "trust": 3,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20,
+    "site_url": "https://www.bleepingcomputer.com"
+  },
+  {
+    "id": "xdadevelopers",
+    "name": "XDA Developers",
+    "type": "rss",
+    "url": "https://www.xda-developers.com/feed/",
+    "lang": "en",
+    "categories": [
+      "android",
+      "windows",
+      "hardware",
+      "dev"
+    ],
+    "trust": 3,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "article",
+    "enabled": false,
+    "maxPerRun": 20,
+    "site_url": "https://www.xda-developers.com"
+  },
+  {
+    "id": "9to5mac",
+    "name": "9to5Mac",
+    "type": "rss",
+    "url": "https://9to5mac.com/feed/",
+    "lang": "en",
+    "categories": [
+      "ios",
+      "macos"
+    ],
+    "trust": 3,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20,
+    "site_url": "https://9to5mac.com"
+  },
+  {
+    "id": "9to5google",
+    "name": "9to5Google",
+    "type": "rss",
+    "url": "https://9to5google.com/feed/",
+    "lang": "en",
+    "categories": [
+      "android",
+      "browser"
+    ],
+    "trust": 3,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20,
+    "site_url": "https://9to5google.com"
+  },
+  {
+    "id": "arstechnica",
+    "name": "Ars Technica",
+    "type": "rss",
+    "url": "https://feeds.arstechnica.com/arstechnica/index",
+    "lang": "en",
+    "categories": [
+      "linux",
+      "dev",
+      "security",
+      "hardware"
+    ],
+    "trust": 2,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20,
+    "site_url": "https://arstechnica.com"
+  },
+  {
+    "id": "androidauthority",
+    "name": "Android Authority",
+    "type": "rss",
+    "url": "https://www.androidauthority.com/feed/",
+    "lang": "en",
+    "categories": [
+      "android",
+      "hardware"
+    ],
+    "trust": 3,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20,
+    "site_url": "https://www.androidauthority.com"
+  },
+  {
+    "id": "githubblog",
+    "name": "GitHub Blog",
+    "type": "rss",
+    "url": "https://github.blog/feed/",
+    "lang": "en",
+    "categories": [
+      "dev",
+      "ai"
+    ],
+    "trust": 2,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "vendor",
+    "enabled": true,
+    "maxPerRun": 20,
+    "site_url": "https://github.blog"
+  },
+  {
+    "id": "krebsonsecurity",
+    "name": "Krebs on Security",
+    "type": "rss",
+    "url": "https://krebsonsecurity.com/feed/",
+    "lang": "en",
+    "categories": [
+      "security"
+    ],
+    "trust": 2,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20,
+    "site_url": "https://krebsonsecurity.com"
+  },
+  {
+    "id": "tomshardware",
+    "name": "Tom's Hardware",
+    "type": "rss",
+    "url": "https://www.tomshardware.com/feeds/all",
+    "lang": "en",
+    "categories": [
+      "hardware",
+      "windows"
+    ],
+    "trust": 2,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20,
+    "site_url": "https://www.tomshardware.com"
+  },
+  {
+    "id": "quantrimang",
+    "name": "Quản Trị Mạng",
+    "type": "rss",
+    "url": "https://quantrimang.com/rss",
+    "lang": "vi",
+    "categories": [
+      "windows",
+      "linux",
+      "security",
+      "office",
+      "hardware"
+    ],
+    "trust": 4,
+    "tipOnly": true,
+    "kind": "tips",
+    "contentType": "article",
+    "enabled": false,
+    "maxPerRun": 20,
+    "site_url": "https://quantrimang.com"
+  },
+  {
+    "id": "genk",
+    "name": "GenK Thủ Thuật",
+    "type": "rss",
+    "url": "https://genk.vn/rss/thu-thuat.rss",
+    "lang": "vi",
+    "categories": [
+      "windows",
+      "android",
+      "ios",
+      "ai"
+    ],
+    "trust": 3,
+    "tipOnly": true,
+    "kind": "tips",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20,
+    "site_url": "https://genk.vn"
+  },
+  {
+    "id": "vnexpress_sohoa",
+    "name": "VnExpress Thủ Thuật",
+    "type": "rss",
+    "url": "https://vnexpress.net/rss/thu-thuat.rss",
+    "lang": "vi",
+    "categories": [
+      "hardware",
+      "windows",
+      "ai"
+    ],
+    "trust": 3,
+    "tipOnly": true,
+    "kind": "tips",
+    "contentType": "article",
+    "enabled": false,
+    "maxPerRun": 20,
+    "site_url": "https://vnexpress.net"
+  },
+  {
+    "id": "tinhte",
+    "name": "Tinh tế",
+    "type": "rss",
+    "url": "https://tinhte.vn/rss",
+    "lang": "vi",
+    "categories": [
+      "ios",
+      "android",
+      "macos",
+      "windows",
+      "hardware"
+    ],
+    "trust": 2,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20,
+    "site_url": "https://tinhte.vn"
+  },
+  {
+    "id": "thanhnien_tech",
+    "name": "Thanh Niên Công Nghệ",
+    "type": "rss",
+    "url": "https://thanhnien.vn/rss/cong-nghe.rss",
+    "lang": "vi",
+    "categories": [
+      "android",
+      "ios",
+      "security",
+      "ai"
+    ],
+    "trust": 2,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20,
+    "site_url": "https://thanhnien.vn/cong-nghe"
+  },
+  {
+    "id": "vietnamnet_tech",
+    "name": "VietNamNet Công Nghệ",
+    "type": "rss",
+    "url": "https://vietnamnet.vn/rss/cong-nghe.rss",
+    "lang": "vi",
+    "categories": [
+      "windows",
+      "android",
+      "security",
+      "hardware"
+    ],
+    "trust": 2,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20,
+    "site_url": "https://vietnamnet.vn/cong-nghe"
+  },
+  {
+    "id": "reddit-lpt",
+    "name": "Reddit r/LifeProTips",
+    "type": "reddit",
+    "url": "https://www.reddit.com/r/LifeProTips/top/.rss?t=week",
+    "lang": "en",
+    "categories": [],
+    "trust": 2,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "community",
+    "enabled": true,
+    "maxPerRun": 20,
+    "minScore": 0
+  },
+  {
+    "id": "reddit-androidtips",
+    "name": "Reddit r/AndroidTips",
+    "type": "reddit",
+    "url": "https://www.reddit.com/r/AndroidTips/top/.rss?t=week",
+    "lang": "en",
+    "categories": [
+      "android"
+    ],
+    "trust": 3,
+    "tipOnly": true,
+    "kind": "tips",
+    "contentType": "community",
+    "enabled": false,
+    "maxPerRun": 20,
+    "minScore": 50
+  },
+  {
+    "id": "reddit-iostips",
+    "name": "Reddit r/ios",
+    "type": "reddit",
+    "url": "https://www.reddit.com/r/ios/top/.rss?t=week",
+    "lang": "en",
+    "categories": [
+      "ios"
+    ],
+    "trust": 3,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "community",
+    "enabled": false,
+    "maxPerRun": 20,
+    "minScore": 50
+  },
+  {
+    "id": "reddit-win11",
+    "name": "Reddit r/Windows11",
+    "type": "reddit",
+    "url": "https://www.reddit.com/r/Windows11/top/.rss?t=week",
+    "lang": "en",
+    "categories": [
+      "windows"
+    ],
+    "trust": 3,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "community",
+    "enabled": false,
+    "maxPerRun": 20,
+    "minScore": 50
+  },
+  {
+    "id": "reddit-excel",
+    "name": "Reddit r/excel",
+    "type": "reddit",
+    "url": "https://www.reddit.com/r/excel/top/.rss?t=week",
+    "lang": "en",
+    "categories": [
+      "office"
+    ],
+    "trust": 3,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "community",
+    "enabled": false,
+    "maxPerRun": 20,
+    "minScore": 50
+  },
+  {
+    "id": "reddit-selfhosted",
+    "name": "Reddit r/selfhosted",
+    "type": "reddit",
+    "url": "https://www.reddit.com/r/selfhosted/top/.rss?t=week",
+    "lang": "en",
+    "categories": [
+      "dev"
+    ],
+    "trust": 3,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "community",
+    "enabled": false,
+    "maxPerRun": 20,
+    "minScore": 50
+  },
+  {
+    "id": "reddit-linux4noobs",
+    "name": "Reddit r/linux4noobs",
+    "type": "reddit",
+    "url": "https://www.reddit.com/r/linux4noobs/top/.rss?t=week",
+    "lang": "en",
+    "categories": [
+      "linux"
+    ],
+    "trust": 3,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "community",
+    "enabled": false,
+    "maxPerRun": 20,
+    "minScore": 50
+  },
+  {
+    "id": "hn-algolia",
+    "name": "Hacker News (Algolia)",
+    "type": "json-api",
+    "api": "hn_algolia",
+    "url": "https://hn.algolia.com/api/v1/search_by_date?tags=story&query=tips",
+    "lang": "en",
+    "categories": [
+      "dev",
+      "security",
+      "ai"
+    ],
+    "trust": 4,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "community",
+    "enabled": true,
+    "maxPerRun": 20,
+    "minScore": 50
+  },
+  {
+    "id": "stack-superuser",
+    "name": "Super User",
+    "type": "json-api",
+    "api": "stackexchange",
+    "url": "https://api.stackexchange.com/2.3/questions?order=desc&sort=votes&site=superuser&filter=default",
+    "lang": "en",
+    "categories": [
+      "windows",
+      "dev"
+    ],
+    "trust": 4,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "community",
+    "enabled": false,
+    "maxPerRun": 20
+  },
+  {
+    "id": "devto-productivity",
+    "name": "Dev.to Productivity",
+    "type": "json-api",
+    "api": "devto",
+    "url": "https://dev.to/api/articles?tag=productivity&top=7",
+    "lang": "en",
+    "categories": [
+      "dev"
+    ],
+    "trust": 3,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "community",
+    "enabled": false,
+    "maxPerRun": 20
+  },
+  {
+    "id": "mastodon-techtips",
+    "name": "Mastodon #techtips",
+    "type": "rss",
+    "url": "https://mastodon.social/tags/techtips.rss",
+    "lang": "en",
+    "categories": [
+      "dev"
+    ],
+    "trust": 1,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "community",
+    "enabled": false,
+    "maxPerRun": 20
+  },
+  {
+    "id": "lifehacker",
+    "name": "Lifehacker",
+    "type": "rss",
+    "url": "https://lifehacker.com/feed/rss",
+    "lang": "en",
+    "categories": [
+      "windows",
+      "android",
+      "office"
+    ],
+    "trust": 3,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20
+  },
+  {
+    "id": "theverge",
+    "name": "The Verge",
+    "type": "atom",
+    "url": "https://www.theverge.com/rss/index.xml",
+    "lang": "en",
+    "categories": [
+      "hardware",
+      "ai",
+      "android"
+    ],
+    "trust": 3,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20
+  },
+  {
+    "id": "workspace-updates",
+    "name": "Google Workspace Updates",
+    "type": "atom",
+    "url": "https://workspaceupdates.googleblog.com/atom.xml",
+    "lang": "en",
+    "categories": [
+      "office"
+    ],
+    "trust": 5,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "vendor",
+    "enabled": true,
+    "maxPerRun": 20
+  },
+  {
+    "id": "android-dev",
+    "name": "Android Developers Blog",
+    "type": "atom",
+    "url": "https://android-developers.googleblog.com/atom.xml",
+    "lang": "en",
+    "categories": [
+      "android",
+      "dev"
+    ],
+    "trust": 5,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "vendor",
+    "enabled": true,
+    "maxPerRun": 20
+  },
+  {
+    "id": "windows-blog",
+    "name": "Windows Blogs",
+    "type": "rss",
+    "url": "https://blogs.windows.com/feed/",
+    "lang": "en",
+    "categories": [
+      "windows"
+    ],
+    "trust": 5,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "vendor",
+    "enabled": true,
+    "maxPerRun": 20
+  },
+  {
+    "id": "mozilla",
+    "name": "Mozilla Blog",
+    "type": "rss",
+    "url": "https://blog.mozilla.org/en/feed/",
+    "lang": "en",
+    "categories": [
+      "browser",
+      "security"
+    ],
+    "trust": 5,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "vendor",
+    "enabled": true,
+    "maxPerRun": 20
+  },
+  {
+    "id": "vnexpress-sohoa-news",
+    "name": "VnExpress S? h?a",
+    "type": "rss",
+    "url": "https://vnexpress.net/rss/so-hoa.rss",
+    "lang": "vi",
+    "categories": [
+      "ai",
+      "hardware",
+      "security"
+    ],
+    "trust": 4,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20
+  },
+  {
+    "id": "dantri-smd",
+    "name": "D?n Tr? S?c m?nh s?",
+    "type": "rss",
+    "url": "https://dantri.com.vn/rss/suc-manh-so.rss",
+    "lang": "vi",
+    "categories": [
+      "hardware",
+      "ai",
+      "security"
+    ],
+    "trust": 4,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20
+  },
+  {
+    "id": "tuoitre-nsso",
+    "name": "Tu?i Tr? Nh?p s?ng s?",
+    "type": "rss",
+    "url": "https://tuoitre.vn/rss/nhip-song-so.rss",
+    "lang": "vi",
+    "categories": [
+      "hardware",
+      "ai",
+      "security"
+    ],
+    "trust": 4,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "article",
+    "enabled": true,
+    "maxPerRun": 20
+  },
+  {
+    "id": "obsidian-release",
+    "name": "Obsidian Releases",
+    "type": "atom",
+    "url": "https://github.com/obsidianmd/obsidian-releases/releases.atom",
+    "lang": "en",
+    "categories": [
+      "dev"
+    ],
+    "trust": 4,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "vendor",
+    "enabled": true,
+    "maxPerRun": 20
+  },
+  {
+    "id": "powertoys-release",
+    "name": "Microsoft PowerToys Releases",
+    "type": "atom",
+    "url": "https://github.com/microsoft/PowerToys/releases.atom",
+    "lang": "en",
+    "categories": [
+      "windows",
+      "dev"
+    ],
+    "trust": 5,
+    "tipOnly": false,
+    "kind": "news",
+    "contentType": "vendor",
+    "enabled": true,
+    "maxPerRun": 20
+  }
+]

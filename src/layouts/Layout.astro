@@ -30,7 +30,7 @@ const pageTitle = title ? `${title} — tips.hub` : `tips.hub — ${t.site.title
 const pageDesc = description || t.site.description;
 
 const otherLang: Locale = lang === 'vi' ? 'en' : 'vi';
-const targetPath = canonicalPath.replace(new RegExp(`^/${lang}`), `/${otherLang}`);
+const targetPath = canonicalPath === '/' ? `/${otherLang}` : canonicalPath.replace(new RegExp(`^/${lang}`), `/${otherLang}`);
 const alternateUrl = `${SITE_URL}${targetPath}`;
 const canonicalUrl = `${SITE_URL}${canonicalPath}`;
 
@@ -51,7 +51,7 @@ const isAbout = canonicalPath.includes('/about');
     <link rel="alternate" hreflang={lang} href={canonicalUrl} />
     <link rel="alternate" hreflang={otherLang} href={alternateUrl} />
     <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/vi`} />
-    <link rel="alternate" type="application/rss+xml" title={`${t.site.title} RSS`} href={`/${lang}/rss.xml`} />
+    <link rel="alternate" type="application/rss+xml" title={`${t.site.title} RSS`} href={`/${lang}/feed.xml`} />
     {prevUrl && <link rel="prev" href={prevUrl} />}
     {nextUrl && <link rel="next" href={nextUrl} />}
 
@@ -144,7 +144,7 @@ const isAbout = canonicalPath.includes('/about');
           <div class="inline-flex items-center p-0.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-xs font-mono font-bold">
             <a
               href={lang === 'vi' ? '#' : targetPath}
-              onclick="localStorage.setItem('techtips_lang', 'vi')"
+              onclick="localStorage.setItem('techtips_lang', 'vi'); document.cookie='techtips_lang=vi;path=/;max-age=31536000;samesite=lax'"
               class={`px-3 py-1.5 min-h-[36px] flex items-center rounded-lg transition-all ${lang === 'vi' ? 'bg-[var(--accent-hero)] text-black font-extrabold shadow-sm' : 'text-[var(--text-muted)] hover:text-[var(--text-primary)]'}`}
               aria-label="Chuyển sang Tiếng Việt"
             >
@@ -152,7 +152,7 @@ const isAbout = canonicalPath.includes('/about');
             </a>
             <a
               href={lang === 'en' ? '#' : targetPath}
-              onclick="localStorage.setItem('techtips_lang', 'en')"
+              onclick="localStorage.setItem('techtips_lang', 'en'); document.cookie='techtips_lang=en;path=/;max-age=31536000;samesite=lax'"
               class={`px-3 py-1.5 min-h-[36px] flex items-center rounded-lg transition-all ${lang === 'en' ? 'bg-[var(--accent-hero)] text-black font-extrabold shadow-sm' : 'text-[var(--text-muted)] hover:text-[var(--text-primary)]'}`}
               aria-label="Switch to English"
             >

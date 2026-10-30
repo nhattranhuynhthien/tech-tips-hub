@@ -3,8 +3,10 @@ import sys
 import json
 import yaml
 import time
+import random
+from urllib.parse import urlsplit
 from pathlib import Path
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -22,6 +24,7 @@ from translate import load_cache, save_cache, process_item_bilingual, batch_tran
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
 INDEX_PATH = DATA_DIR / "index.json"
+STATE_PATH = DATA_DIR / "state.json"
 
 def estimate_reading_time(text: str) -> int:
     """Ước lượng thời gian đọc (khoảng 150-200 từ/phút)."""
@@ -103,12 +106,13 @@ def main():
     print("=== [Tech Tips Hub] Bắt đầu tiến trình thu thập và xử lý thủ thuật ===")
     
     # 1. Đọc cấu hình
-    with open("config/sources.yml", "r", encoding="utf-8") as f:
-        sources = yaml.safe_load(f) or []
+    with open("config/sources.json", "r", encoding="utf-8") as f:
+        sources = json.load(f) or []
+    sources = [source for source in sources if source.get("enabled", False)]
     with open("config/blocklist.yml", "r", encoding="utf-8") as f:
         blocklist = yaml.safe_load(f) or {}
-
-    sources_map = {s["id"]: s for s in sources}
+    if not sources:
+        raise RuntimeError("Không có nguồn nào được bật trong config/sources.json.")
 
     # 2. Đọc index hiện tại
     index = {}
@@ -117,12 +121,23 @@ def main():
             index = json.loads(INDEX_PATH.read_text(encoding="utf-8"))
         except Exception as e:
             print(f"Lỗi đọc index.json: {e}")
-            index = {}
+            raise RuntimeError("Dừng pipeline vì data/index.json lỗi; không ghi đè kho dữ liệu hiện tại.") from e
+
+    state = {}
+    if STATE_PATH.exists():
+        try:
+            state = json.loads(STATE_PATH.read_text(encoding="utf-8"))
+        except Exception as e:
+            print(f"[State Warning] Không đọc được state: {e}; khởi tạo state mới.")
+            state = {}
 
     trans_cache = load_cache()
     fetched_count = 0
     successful_sources = 0
     failed_sources = []
+    attempted_sources = 0
+    paused_sources = []
+    last_host = None
     new_added = 0
     blocked_count = 0
     duplicate_count = 0
@@ -133,11 +148,36 @@ def main():
     # 3. Quét từng nguồn
     for src in sources:
         print(f"-> Đang tải nguồn: {src['name']} ({src['id']}) [kind: {src.get('kind', 'news')}]...")
+        src_state = state.setdefault(src["id"], {})
+        paused_until = src_state.get("paused_until")
+        if paused_until:
+            try:
+                if datetime.fromisoformat(paused_until.replace("Z", "+00:00")) > datetime.now(timezone.utc):
+                    paused_sources.append(src["id"])
+                    print(f"[Fetch Paused] {src['id']} tạm dừng tới {paused_until}")
+                    continue
+            except ValueError:
+                src_state.pop("paused_until", None)
+
+        host = urlsplit(src.get("url", "")).hostname
+        if host and host == last_host:
+            time.sleep(random.uniform(0.2, 0.8))
+        last_host = host
+        attempted_sources += 1
         try:
-            items = fetch_feed_items(src, max_entries=20)
+            items = fetch_feed_items(src, max_entries=int(src.get("maxPerRun", 20)), state_entry=src_state)
             successful_sources += 1
+            src_state["failure_count"] = 0
+            src_state.pop("paused_until", None)
+            src_state.pop("last_error", None)
+            src_state["last_success"] = datetime.now(timezone.utc).isoformat()
         except SourceFetchError as e:
             failed_sources.append(src["id"])
+            src_state["failure_count"] = int(src_state.get("failure_count", 0)) + 1
+            src_state["last_error"] = str(e)[:300]
+            src_state["last_failure"] = datetime.now(timezone.utc).isoformat()
+            if src_state["failure_count"] >= 5:
+                src_state["paused_until"] = (datetime.now(timezone.utc) + timedelta(hours=24)).isoformat()
             print(f"[Fetch Warning] {e}")
             continue
         fetched_count += len(items)
@@ -166,11 +206,17 @@ def main():
             if iid in index:
                 continue
 
-            # Kiểm tra trùng lặp tiêu đề với các bài đã có (fuzzy deduplication)
+            # Gộp bài có tiêu đề gần giống trong 7 ngày, giữ nguồn bổ sung làm alsoFrom.
             is_dup = False
             for existing in index.values():
                 existing_title = existing["title"].get(raw_item["original_lang"], "")
-                if is_duplicate_title(title, existing_title):
+                existing_date = parse_published_time(existing.get("published_at", ""))
+                new_date = parse_published_time(raw_item.get("published_at", ""))
+                within_week = abs((new_date - existing_date).total_seconds()) <= 7 * 86400
+                if within_week and is_duplicate_title(title, existing_title, threshold=0.85):
+                    also_from = existing.setdefault("alsoFrom", [])
+                    if not any(entry.get("url") == url for entry in also_from):
+                        also_from.append({"sourceName": raw_item["source"]["name"], "url": url})
                     is_dup = True
                     break
             if is_dup:
@@ -223,7 +269,8 @@ def main():
                     "id": raw_item["source"]["id"],
                     "name": raw_item["source"]["name"],
                     "site_url": raw_item["source"].get("site_url", ""),
-                    "kind": src.get("kind", "news")
+                    "kind": src.get("kind", "tips" if src.get("tipOnly") else "news"),
+                    "content_type": src.get("contentType", "article")
                 },
                 "author": raw_item["author"],
                 "published_at": raw_item["published_at"],
@@ -250,7 +297,13 @@ def main():
 
     if failed_sources:
         print(f"[Fetch Warning] {len(failed_sources)}/{len(sources)} nguồn lỗi: {', '.join(failed_sources)}")
-    if sources and successful_sources == 0:
+    if paused_sources:
+        print(f"[Fetch Paused] {len(paused_sources)} nguồn đang tạm dừng: {', '.join(paused_sources)}")
+    STATE_PATH.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
+    if attempted_sources == 0:
+        print("Không có nguồn đến hạn chạy; giữ nguyên kho hiện tại.")
+        return
+    if successful_sources == 0:
         raise RuntimeError("Tất cả nguồn dữ liệu đều lỗi; dừng để tránh ghi đè bằng lượt quét thất bại.")
 
     # 4. Dịch thuật theo lô cho các bài chưa có bản dịch (ưu tiên how-to và điểm cao)
@@ -262,6 +315,23 @@ def main():
     for item in all_items:
         item.pop("raw_title", None)
         item.pop("raw_summary", None)
+
+    # Giữ kho hoạt động ở mức 2.000 bài; các bài cũ được chuyển vào archive theo tháng.
+    if len(all_items) > 2000:
+        all_items.sort(key=lambda it: parse_published_time(it.get("published_at", "")), reverse=True)
+        removed = all_items[2000:]
+        all_items = all_items[:2000]
+        archive_dir = DATA_DIR / "archive"
+        archive_dir.mkdir(parents=True, exist_ok=True)
+        archive_groups = {}
+        for item in removed:
+            month = parse_published_time(item.get("published_at", "")).strftime("%Y-%m")
+            archive_groups.setdefault(month, {})[item["id"]] = item
+        for month, group in archive_groups.items():
+            archive_path = archive_dir / f"{month}.json"
+            existing_archive = json.loads(archive_path.read_text(encoding="utf-8")) if archive_path.exists() else {}
+            existing_archive.update(group)
+            archive_path.write_text(json.dumps(existing_archive, ensure_ascii=False, indent=2), encoding="utf-8")
 
     # 5. Áp dụng giới hạn xen kẽ nguồn (diversify)
     diversified_items = diversify(all_items, max_run=2)

@@ -34,8 +34,8 @@ def main():
     print(f"-> Tạo bản sao lưu tại {BACKUP_PATH}...")
     shutil.copy2(INDEX_PATH, BACKUP_PATH)
 
-    with open("config/sources.yml", "r", encoding="utf-8") as f:
-        sources_list = yaml.safe_load(f) or []
+    with open("config/sources.json", "r", encoding="utf-8") as f:
+        sources_list = json.load(f) or []
     sources_map = {s["id"]: s for s in sources_list}
 
     with open("config/blocklist.yml", "r", encoding="utf-8") as f:

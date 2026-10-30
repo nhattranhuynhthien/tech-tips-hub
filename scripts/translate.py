@@ -395,7 +395,8 @@ def batch_translate_pending(
     items: list[dict],
     cache: dict,
     translator: Translator = None,
-    batch_size: int = 5
+    batch_size: int = 5,
+    max_items: int = 40
 ):
     """
     Dịch theo lô cho các bài viết chưa có bản dịch trong cache:
@@ -421,6 +422,9 @@ def batch_translate_pending(
             it["translated"] = c.get("translated", {})
             continue
 
+        if it.get("translated", {}).get(target_lang) is False:
+            continue
+
         raw_t = it.get("raw_title") or it["title"].get(orig_lang, "")
         raw_s = it.get("raw_summary") or it["summary"].get(orig_lang, "")
 
@@ -441,6 +445,17 @@ def batch_translate_pending(
     # Ưu tiên: bài how-to, điểm cao, bài mới trước
     pending_en_to_vi.sort(key=lambda x: (x["howto"], x["score"]), reverse=True)
     pending_vi_to_en.sort(key=lambda x: (x["howto"], x["score"]), reverse=True)
+
+    # Apply one shared per-run quota across both translation directions.
+    pending_all = sorted(
+        [("en", x) for x in pending_en_to_vi] + [("vi", x) for x in pending_vi_to_en],
+        key=lambda pair: (pair[1]["howto"], pair[1]["score"], pair[1]["published_at"]),
+        reverse=True,
+    )
+    allowed_ids = {entry["id"] for _, entry in pending_all[:max_items]}
+    pending_en_to_vi = [entry for entry in pending_en_to_vi if entry["id"] in allowed_ids]
+    pending_vi_to_en = [entry for entry in pending_vi_to_en if entry["id"] in allowed_ids]
+    print(f"[Translate] Đang xử lý tối đa {len(allowed_ids)} mục trong giới hạn {max_items}/lượt.")
 
     items_map = {it["id"]: it for it in items}
 
@@ -469,9 +484,11 @@ def batch_translate_pending(
                 else:
                     it["title"]["vi"] = orig_t
                     it["summary"]["vi"] = orig_s
+                    it.setdefault("translated", {})["vi"] = False
             else:
                 it["title"]["vi"] = orig_t
                 it["summary"]["vi"] = orig_s
+                it.setdefault("translated", {})["vi"] = False
 
             if it.get("translated", {}).get("vi") == "machine":
                 cache[iid] = {
@@ -505,9 +522,11 @@ def batch_translate_pending(
                 else:
                     it["title"]["en"] = orig_t
                     it["summary"]["en"] = orig_s
+                    it.setdefault("translated", {})["en"] = False
             else:
                 it["title"]["en"] = orig_t
                 it["summary"]["en"] = orig_s
+                it.setdefault("translated", {})["en"] = False
 
             if it.get("translated", {}).get("en") == "machine":
                 cache[iid] = {
