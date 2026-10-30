@@ -66,10 +66,16 @@ export function summarize(value: string): string {
 async function telegram(method: string, payload: AnyRecord): Promise<any> {
   const token = env('TELEGRAM_BOT_TOKEN');
   if (!token) throw new Error('Telegram bot is not configured');
-  const response = await fetch(`${API}/bot${token}/${method}`, {
-    method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(payload),
-    signal: AbortSignal.timeout(8000),
-  });
+  let response: Response;
+  try {
+    response = await fetch(`${API}/bot${token}/${method}`, {
+      method: 'POST', headers: { 'content-type': 'application/json' }, body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(20000),
+    });
+  } catch (error) {
+    const detail = error instanceof Error ? error.message : 'unknown network error';
+    throw new Error(`Telegram API ${method} request failed: ${detail}`);
+  }
   const data = await response.json().catch(() => ({}));
   if (!response.ok || !data.ok) throw new Error(`Telegram API request failed (${response.status})`);
   return data.result;
