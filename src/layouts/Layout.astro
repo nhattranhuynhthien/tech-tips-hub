@@ -13,6 +13,7 @@ interface Props {
   canonicalPath?: string;
   prevUrl?: string;
   nextUrl?: string;
+  noindex?: boolean;
 }
 
 const {
@@ -22,6 +23,7 @@ const {
   canonicalPath = Astro.url.pathname,
   prevUrl,
   nextUrl,
+  noindex = false,
 } = Astro.props;
 
 const t = getTranslations(lang);
@@ -47,6 +49,7 @@ const isAbout = canonicalPath.includes('/about');
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{pageTitle}</title>
     <meta name="description" content={pageDesc} />
+    {noindex && <meta name="robots" content="noindex, follow" />}
     <link rel="canonical" href={canonicalUrl} />
     <link rel="alternate" hreflang={lang} href={canonicalUrl} />
     <link rel="alternate" hreflang={otherLang} href={alternateUrl} />
@@ -61,11 +64,16 @@ const isAbout = canonicalPath.includes('/about');
     <meta property="og:description" content={pageDesc} />
     <meta property="og:url" content={canonicalUrl} />
     <meta property="og:site_name" content="tips.hub" />
-    <meta property="og:image" content={`${SITE_URL}/og-image.svg`} />
+    <meta property="og:image" content={`${SITE_URL}/og-image.png`} />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="tips.hub — Sổ tay thủ thuật & mẹo công nghệ" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={pageDesc} />
-    <meta name="twitter:image" content={`${SITE_URL}/og-image.svg`} />
+    <meta name="twitter:image" content={`${SITE_URL}/og-image.png`} />
+    <meta name="twitter:image:alt" content="tips.hub — Sổ tay thủ thuật & mẹo công nghệ" />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -140,6 +148,19 @@ const isAbout = canonicalPath.includes('/about');
             <span class="text-[var(--accent)] font-bold">$</span>
             <span>{lang === 'vi' ? 'Tìm thủ thuật...' : 'Search tips...'}</span>
             <kbd class="ml-2 text-[10px] bg-[var(--bg-muted)] border-[var(--border-subtle)]">/</kbd>
+          </button>
+
+          <!-- Search icon (mobile only) -->
+          <button
+            id="open-search-btn-mobile"
+            type="button"
+            class="sm:hidden inline-flex items-center justify-center w-9 h-9 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors"
+            aria-label={t.nav.search}
+          >
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <circle cx="11" cy="11" r="7" stroke-width="2"></circle>
+              <line x1="16.5" y1="16.5" x2="21" y2="21" stroke-width="2" stroke-linecap="round"></line>
+            </svg>
           </button>
 
           <!-- Language Segmented Switcher Pill (VI | EN) with localStorage persistence -->

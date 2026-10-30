@@ -4,7 +4,7 @@ const lang = 'vi';
 const botUsername = (import.meta.env.PUBLIC_TELEGRAM_BOT_USERNAME || '').replace(/^@/, '');
 const botUrl = botUsername ? `https://t.me/${botUsername}` : '';
 ---
-<Layout lang={lang} title="Gửi mẹo công nghệ" description="Gửi mẹo qua Telegram để quản trị viên xem xét.">
+<Layout lang={lang} title="Gửi mẹo công nghệ" description="Gửi mẹo qua Telegram để quản trị viên xem xét." canonicalPath="/vi/submit" noindex={true}>
   <article class="max-w-3xl mx-auto space-y-5">
     <p class="text-xs font-mono font-bold text-[var(--accent)]">$ community/inbox</p>
     <h1 class="text-3xl font-extrabold text-[var(--text-primary)]">Gửi mẹo công nghệ</h1>

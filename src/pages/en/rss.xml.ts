@@ -3,7 +3,14 @@ import { SITE_URL } from '../../lib/constants';
 import { escapeXml, xmlCdata } from '../../lib/xml';
 
 export async function GET() {
-  const tips = getAllTips().slice(0, 50);
+  const tips = getAllTips()
+    .slice()
+    .sort((a, b) => {
+      const aTime = new Date(a.published_at || a.fetched_at).getTime();
+      const bTime = new Date(b.published_at || b.fetched_at).getTime();
+      return (isNaN(bTime) ? 0 : bTime) - (isNaN(aTime) ? 0 : aTime);
+    })
+    .slice(0, 50);
 
   const itemsXml = tips
     .map((tip) => {

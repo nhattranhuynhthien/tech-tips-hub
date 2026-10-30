@@ -1,35 +1,23 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import TipCard from '../components/TipCard.astro';
-import { getAllTips } from '../lib/data';
-import { getTranslations } from '../lib/i18n';
+import { SITE_URL } from '../lib/constants';
 
-const lang = 'vi';
-const t = getTranslations(lang);
-const tips = getAllTips(false).slice(0, 20);
-const latestUpdate = tips.map((tip) => tip.fetched_at).filter(Boolean).sort().at(-1) || '';
+// Trang gốc chỉ đóng vai trò chuyển hướng sang bản tiếng Việt.
+// Nội dung thật nằm ở /vi và /en để tránh trùng lặp với trang chủ.
+const canonicalUrl = `${SITE_URL}/vi`;
 ---
 
-<Layout lang={lang} title={t.site.title} description={t.site.description} canonicalPath="/">
-  <section class="max-w-6xl mx-auto">
-    <header class="mb-6 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4">
-      <div>
-        <p class="text-xs font-mono font-bold text-[var(--accent)] mb-2">$ latest tech tips</p>
-        <h1 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight">Tech Tips Hub</h1>
-        <p class="mt-2 text-sm text-[var(--text-secondary)]">Mẹo công nghệ mới nhất, có ghi nguồn và link bài gốc.</p>
-        {latestUpdate && <p class="mt-2 text-[11px] text-[var(--text-muted)] font-mono">Cập nhật gần nhất: <time datetime={latestUpdate}>{new Date(latestUpdate).toLocaleString('vi-VN')}</time></p>}
-      </div>
-      <nav class="flex gap-2 text-xs font-mono" aria-label="Chọn ngôn ngữ">
-        <a href="/vi" class="rounded-lg bg-[var(--accent-hero)] px-3 py-2 font-bold text-black">Tiếng Việt</a>
-        <a href="/en" class="rounded-lg border border-[var(--border-color)] px-3 py-2 text-[var(--text-primary)]">English</a>
-      </nav>
-    </header>
-
-    <div class="space-y-4">
-      {tips.map((tip) => <TipCard tip={tip} lang="vi" />)}
-    </div>
-    <div class="mt-8 text-center">
-      <a href="/vi" class="inline-flex rounded-xl bg-[var(--accent-hero)] px-4 py-2 text-sm font-bold text-black">Xem toàn bộ thủ thuật</a>
-    </div>
-  </section>
-</Layout>
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tips.hub — Sổ tay thủ thuật công nghệ</title>
+    <link rel="canonical" href={canonicalUrl} />
+    <meta name="robots" content="noindex, follow" />
+    <meta http-equiv="refresh" content="0; url=/vi" />
+    <script is:inline>location.replace('/vi');</script>
+  </head>
+  <body style="background:#0F1114;color:#ECEAE4;font-family:system-ui,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center">
+    <p>Đang chuyển hướng tới <a href="/vi" style="color:#FFB547">/vi</a>…</p>
+  </body>
+</html>

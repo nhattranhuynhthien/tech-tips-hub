@@ -3,12 +3,16 @@ import type { GetStaticPaths } from 'astro';
 import Layout from '../../../layouts/Layout.astro';
 import TipCard from '../../../components/TipCard.astro';
 import Pagination from '../../../components/Pagination.astro';
-import { getAllTips, getAllCategories } from '../../../lib/data';
+import { getAllTips, getAllCategories, getTrickOfTheDay, sortTipsForFeed } from '../../../lib/data';
 import { getTranslations } from '../../../lib/i18n';
 
 export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
-  const tips = getAllTips(false);
-  return paginate(tips, { pageSize: 20 });
+  const allTips = getAllTips(false);
+  const trickOfDay = getTrickOfTheDay();
+  // Trang chủ loại "Mẹo hay hôm nay" khỏi danh sách, phân trang cũng phải khớp
+  const tips = trickOfDay ? allTips.filter((tip) => tip.id !== trickOfDay.id) : allTips;
+  // Cùng thứ tự với trang chủ (mặc định "Hay nhất")
+  return paginate(sortTipsForFeed(tips), { pageSize: 20 });
 };
 
 const { page } = Astro.props;
@@ -26,21 +30,25 @@ const sidebarCategories = [
   { id: 'security', label: '# bảo mật' },
   { id: 'dev', label: '# lập trình' },
   { id: 'hardware', label: '# phần cứng' },
+  { id: 'browser', label: '# trình duyệt' },
   { id: 'office', label: '# văn phòng' },
   { id: 'ai', label: '# ai' },
 ];
 
 const prevUrl = page.url.prev === '/vi/page/1' ? '/vi' : page.url.prev;
 const nextUrl = page.url.next;
+const canonicalPath = page.currentPage === 1 ? `/${lang}` : page.url.current;
 ---
 
 <Layout
   lang={lang}
   title={`Trang ${page.currentPage} — ${t.site.tagline}`}
-  canonicalPath={page.url.current}
+  canonicalPath={canonicalPath}
   prevUrl={prevUrl}
   nextUrl={nextUrl}
+  noindex={page.currentPage === 1}
 >
+  <h1 class="sr-only">Thủ thuật công nghệ — trang {page.currentPage}</h1>
   <!-- Mobile Search Bar -->
   <div class="sm:hidden mb-4">
     <div class="relative">

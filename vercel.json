@@ -19,6 +19,11 @@
       "has": [{ "type": "header", "key": "accept-language", "value": "^[eE][nN]([,-]|$).*" }],
       "destination": "/en",
       "permanent": false
+    },
+    {
+      "source": "/",
+      "destination": "/vi",
+      "permanent": false
     }
   ]
 }

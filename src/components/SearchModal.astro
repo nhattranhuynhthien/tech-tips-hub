@@ -114,8 +114,50 @@ const t = getTranslations(lang);
     });
 
     openBtn?.addEventListener('click', openModal);
+    document.getElementById('open-search-btn-mobile')?.addEventListener('click', openModal);
     closeBtn?.addEventListener('click', closeModal);
     backdrop?.addEventListener('click', closeModal);
+
+    // Keyboard navigation inside the result list
+    let activeIndex = -1;
+
+    function resultLinks() {
+      return Array.from(resultsContainer?.querySelectorAll('[data-search-result]') || []);
+    }
+
+    function setActive(index) {
+      const links = resultLinks();
+      if (!links.length) {
+        activeIndex = -1;
+        return;
+      }
+      activeIndex = (index + links.length) % links.length;
+      links.forEach((link, i) => {
+        if (i === activeIndex) {
+          link.classList.add('bg-[var(--bg-muted)]');
+          link.setAttribute('aria-selected', 'true');
+          link.scrollIntoView({ block: 'nearest' });
+        } else {
+          link.classList.remove('bg-[var(--bg-muted)]');
+          link.setAttribute('aria-selected', 'false');
+        }
+      });
+    }
+
+    input?.addEventListener('keydown', (e) => {
+      const links = resultLinks();
+      if (!links.length) return;
+      if (e.key === 'ArrowDown') {
+        e.preventDefault();
+        setActive(activeIndex + 1);
+      } else if (e.key === 'ArrowUp') {
+        e.preventDefault();
+        setActive(activeIndex - 1);
+      } else if (e.key === 'Enter' && activeIndex >= 0) {
+        e.preventDefault();
+        links[activeIndex].click();
+      }
+    });
 
     // Live search query matching
     input?.addEventListener('input', (e) => {
@@ -151,7 +193,7 @@ const t = getTranslations(lang);
           const category = escapeHtml(tip.categories[0] || 'tips');
           const slugOrId = encodeURIComponent(tip.slug || tip.id);
           return `
-            <a href="/${lang}/tip/${slugOrId}" class="block p-3 rounded-xl hover:bg-[var(--bg-muted)] transition-colors group">
+            <a href="/${lang}/tip/${slugOrId}" data-search-result="true" aria-selected="false" class="block p-3 rounded-xl hover:bg-[var(--bg-muted)] transition-colors group">
               <div class="flex items-center gap-2 text-[11px] font-mono text-[var(--text-muted)] mb-1">
                 <span class="text-[var(--text-secondary)]">${sourceName}</span>
                 <span>·</span>
@@ -167,6 +209,8 @@ const t = getTranslations(lang);
           `;
         })
         .join('');
+
+      activeIndex = -1;
     });
   })();
 </script>

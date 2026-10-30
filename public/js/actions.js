@@ -1,10 +1,9 @@
 // public/js/actions.js
-// Quản lý Bookmark, Trạng thái đã xem, Copy Link Toast và Chế độ xem Grid / Compact List
+// Quản lý Bookmark, trạng thái đã xem, Copy Link và Toast.
 
 (function () {
   const SAVED_KEY = 'techtips_saved';
   const READ_KEY = 'techtips_read';
-  const VIEW_KEY = 'techtips_view_mode';
 
   function getStored(key) {
     try {
@@ -32,15 +31,17 @@
       <svg class="w-4 h-4 text-[var(--accent)] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path d="M20 6 9 17l-5-5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
       </svg>
-      <span>${message}</span>
+      <span></span>
     `;
+    const label = toast.querySelector('span');
+    if (label) label.textContent = message;
     document.body.appendChild(toast);
     setTimeout(() => {
       if (toast.parentNode) toast.parentNode.removeChild(toast);
     }, 2300);
   }
 
-  // Update card bookmark and read statuses
+  // Update bookmark buttons and read state everywhere on the page.
   function updateCardsUI() {
     const saved = getStored(SAVED_KEY);
     const read = getStored(READ_KEY);
@@ -48,57 +49,28 @@
     document.querySelectorAll('.tip-card, .compact-tip-row').forEach((card) => {
       const id = card.getAttribute('data-tip-id');
       if (!id) return;
-
-      // Update bookmark state
-      const btn = card.querySelector('.bookmark-btn');
-      const icon = card.querySelector('.bookmark-icon');
-      if (btn && icon) {
-        if (saved.includes(id)) {
-          btn.classList.add('text-[var(--accent)]');
-          btn.classList.remove('text-[var(--text-muted)]');
-          icon.setAttribute('fill', 'currentColor');
-        } else {
-          btn.classList.remove('text-[var(--accent)]');
-          btn.classList.add('text-[var(--text-muted)]');
-          icon.setAttribute('fill', 'none');
-        }
-      }
-
-      // Update read state (subtle dimming)
-      if (read.includes(id)) {
-        card.classList.add('opacity-80');
-      }
+      if (read.includes(id)) card.classList.add('opacity-80');
     });
-  }
 
-  // View Mode: Grid vs Compact List
-  function applyViewMode(mode) {
-    const gridEl = document.getElementById('tips-grid');
-    const compactEl = document.getElementById('tips-compact-list');
-    const gridBtn = document.getElementById('view-grid-btn');
-    const compactBtn = document.getElementById('view-compact-btn');
+    document.querySelectorAll('.bookmark-btn[data-id]').forEach((btn) => {
+      const id = btn.getAttribute('data-id');
+      if (!id) return;
+      const isSaved = saved.includes(id);
+      const label = btn.querySelector('[data-bookmark-label]');
+      const neutralClass = label ? 'text-[var(--text-secondary)]' : 'text-[var(--text-muted)]';
+      const otherNeutralClass = label ? 'text-[var(--text-muted)]' : 'text-[var(--text-secondary)]';
 
-    if (!gridEl || !compactEl) return;
+      btn.classList.toggle('text-[var(--accent)]', isSaved);
+      btn.classList.toggle(neutralClass, !isSaved);
+      btn.classList.remove(otherNeutralClass);
+      btn.classList.toggle('border-[var(--accent)]', isSaved);
+      btn.setAttribute('aria-pressed', String(isSaved));
 
-    if (mode === 'compact') {
-      gridEl.classList.add('hidden');
-      compactEl.classList.remove('hidden');
-      if (compactBtn) {
-        compactBtn.className = 'view-mode-btn p-1.5 rounded-md border border-[var(--accent)] bg-[var(--accent)] text-white shadow-sm';
-      }
-      if (gridBtn) {
-        gridBtn.className = 'view-mode-btn p-1.5 rounded-md border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--accent)]';
-      }
-    } else {
-      compactEl.classList.add('hidden');
-      gridEl.classList.remove('hidden');
-      if (gridBtn) {
-        gridBtn.className = 'view-mode-btn p-1.5 rounded-md border border-[var(--accent)] bg-[var(--accent)] text-white shadow-sm';
-      }
-      if (compactBtn) {
-        compactBtn.className = 'view-mode-btn p-1.5 rounded-md border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--accent)]';
-      }
-    }
+      const icon = btn.querySelector('.bookmark-icon');
+      if (icon) icon.setAttribute('fill', isSaved ? 'currentColor' : 'none');
+
+      if (label) label.textContent = isSaved ? 'Đã lưu' : 'Lưu để xem sau';
+    });
   }
 
   // Delegated click handling
@@ -140,29 +112,10 @@
       }
       return;
     }
-
-    // 3. View mode buttons
-    const gridBtn = e.target.closest('#view-grid-btn');
-    if (gridBtn) {
-      e.preventDefault();
-      localStorage.setItem(VIEW_KEY, 'grid');
-      applyViewMode('grid');
-      return;
-    }
-
-    const compactBtn = e.target.closest('#view-compact-btn');
-    if (compactBtn) {
-      e.preventDefault();
-      localStorage.setItem(VIEW_KEY, 'compact');
-      applyViewMode('compact');
-      return;
-    }
   });
 
   function init() {
     updateCardsUI();
-    const savedMode = localStorage.getItem(VIEW_KEY) || 'grid';
-    applyViewMode(savedMode);
   }
 
   if (document.readyState === 'loading') {

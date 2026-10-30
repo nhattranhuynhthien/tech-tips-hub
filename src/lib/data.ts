@@ -108,6 +108,24 @@ export function getAllTips(includeHidden = false): Tip[] {
   }
 }
 
+/**
+ * Thứ tự chuẩn của danh sách tip trên trang chủ và các trang phân trang.
+ * Khớp với bộ sắp xếp mặc định "Hay nhất" phía client (score giảm dần).
+ */
+export function sortTipsForFeed(tips: Tip[]): Tip[] {
+  return [...tips].sort((a, b) => {
+    const scoreDiff = (b.score ?? 0) - (a.score ?? 0);
+    if (scoreDiff !== 0) return scoreDiff;
+    const aTime = new Date(a.published_at || a.fetched_at || 0).getTime();
+    const bTime = new Date(b.published_at || b.fetched_at || 0).getTime();
+    const timeDiff = (isNaN(bTime) ? 0 : bTime) - (isNaN(aTime) ? 0 : aTime);
+    if (timeDiff !== 0) return timeDiff;
+    const aId = String(a.id);
+    const bId = String(b.id);
+    return aId < bId ? -1 : aId > bId ? 1 : 0;
+  });
+}
+
 export function getTipById(idOrSlug: string): Tip | undefined {
   const tips = getAllTips(true);
   if (!idOrSlug) return undefined;
@@ -162,7 +180,11 @@ export function getTrickOfTheDay(): Tip | null {
       const historyData = JSON.parse(fs.readFileSync(historyPath, 'utf-8'));
       if (Array.isArray(historyData)) {
         const fourteenDaysAgo = now.getTime() - 14 * 24 * 60 * 60 * 1000;
+        const todayUtc = now.toISOString().slice(0, 10);
         for (const entry of historyData) {
+          const entryDate = entry.date || (entry.featured_at ? String(entry.featured_at).slice(0, 10) : '');
+          // Mục đã chọn trong hôm nay vẫn phải hiển thị, nếu không sẽ bị lệch sang bài kế tiếp
+          if (entryDate === todayUtc) continue;
           const entryTime = new Date(entry.featured_at || entry.date).getTime();
           if (!isNaN(entryTime) && entryTime >= fourteenDaysAgo) {
             featuredHistoryIds.add(entry.id);

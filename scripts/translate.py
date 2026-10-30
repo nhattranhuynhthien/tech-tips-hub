@@ -336,6 +336,28 @@ class CompositeTranslator(Translator):
 # Khởi tạo instance dùng chung
 DEFAULT_TRANSLATOR = CompositeTranslator()
 
+# Số lần thử dịch tối đa trước khi tạm bỏ qua một mục
+MAX_TRANSLATE_ATTEMPTS = 3
+
+
+def _translation_attempts(item: dict) -> dict:
+    attempts = item.get("translate_attempts")
+    return attempts if isinstance(attempts, dict) else {}
+
+
+def _record_translation_failure(item: dict, target_lang: str) -> None:
+    attempts = _translation_attempts(item)
+    attempts[target_lang] = int(attempts.get(target_lang, 0)) + 1
+    item["translate_attempts"] = attempts
+
+
+def _clear_translation_failure(item: dict, target_lang: str) -> None:
+    attempts = _translation_attempts(item)
+    if target_lang in attempts:
+        attempts[target_lang] = 0
+        item["translate_attempts"] = attempts
+
+
 def process_item_bilingual(
     item_id: str,
     orig_title: str,
@@ -428,7 +450,9 @@ def batch_translate_pending(
             continue
 
         if it.get("translated", {}).get(target_lang) is False:
-            continue
+            # Cho phép thử lại vài lần thay vì bỏ qua vĩnh viễn
+            if int(_translation_attempts(it).get(target_lang, 0)) >= MAX_TRANSLATE_ATTEMPTS:
+                continue
 
         raw_t = it.get("raw_title") or it["title"].get(orig_lang, "")
         raw_s = it.get("raw_summary") or it["summary"].get(orig_lang, "")
@@ -486,14 +510,17 @@ def batch_translate_pending(
                     it["title"]["vi"] = trans_t
                     it["summary"]["vi"] = trans_s
                     it.setdefault("translated", {})["vi"] = "machine"
+                    _clear_translation_failure(it, "vi")
                 else:
                     it["title"]["vi"] = orig_t
                     it["summary"]["vi"] = orig_s
                     it.setdefault("translated", {})["vi"] = False
+                    _record_translation_failure(it, "vi")
             else:
                 it["title"]["vi"] = orig_t
                 it["summary"]["vi"] = orig_s
                 it.setdefault("translated", {})["vi"] = False
+                _record_translation_failure(it, "vi")
 
             if it.get("translated", {}).get("vi") == "machine":
                 cache[iid] = {
@@ -524,14 +551,17 @@ def batch_translate_pending(
                     it["title"]["en"] = trans_t
                     it["summary"]["en"] = trans_s
                     it.setdefault("translated", {})["en"] = "machine"
+                    _clear_translation_failure(it, "en")
                 else:
                     it["title"]["en"] = orig_t
                     it["summary"]["en"] = orig_s
                     it.setdefault("translated", {})["en"] = False
+                    _record_translation_failure(it, "en")
             else:
                 it["title"]["en"] = orig_t
                 it["summary"]["en"] = orig_s
                 it.setdefault("translated", {})["en"] = False
+                _record_translation_failure(it, "en")
 
             if it.get("translated", {}).get("en") == "machine":
                 cache[iid] = {

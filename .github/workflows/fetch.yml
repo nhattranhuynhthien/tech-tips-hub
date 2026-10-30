@@ -50,6 +50,8 @@ jobs:
           git config user.email "bot@users.noreply.github.com"
           git add data/index.json
           if [ -d data/archive ]; then git add data/archive; fi
+          # Persist translation cache and featured history so runs stay consistent
+          git add data/cache/translations.json data/history_featured.json 2>/dev/null || true
           if git diff --cached --quiet; then
             echo "No tip data changed; skipping commit and deployment."
           else

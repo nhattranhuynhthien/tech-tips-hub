@@ -3,7 +3,7 @@
     "title": "Tech Tips Hub - Handcrafted Tech Tricks",
     "tagline": "A pocket notebook of tech tricks & practical tweaks",
     "description": "Curated practical tips for Windows, Mac, Linux, Android, iOS, browsers, and developer tools. Always credited, with costs subject to provider plans and usage.",
-    "subtext": "Automatically aggregated every 4 hours from 15+ trusted sources worldwide. Crisp summaries, direct links to original authors."
+    "subtext": "Automatically aggregated every hour from 20+ trusted sources worldwide. Crisp summaries, direct links to original authors."
   },
   "nav": {
     "home": "Tips",
@@ -72,7 +72,7 @@
   },
   "footer": {
     "statement": "Tech Tips Hub is an open-source project that prioritizes free service tiers within provider limits. No ads, no trackers.",
-    "built_with": "Powered by Astro, Cloudflare Pages, and GitHub Actions",
+    "built_with": "Powered by Astro, Vercel, and GitHub Actions",
     "rights": "All content rights belong to original authors.",
     "rss_feed": "RSS Feed"
   }

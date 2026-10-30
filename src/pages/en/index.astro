@@ -3,7 +3,7 @@ import Layout from '../../layouts/Layout.astro';
 import TipCard from '../../components/TipCard.astro';
 import TrickOfTheDay from '../../components/TrickOfTheDay.astro';
 import Pagination from '../../components/Pagination.astro';
-import { getAllTips, getTrickOfTheDay, getAllCategories, getAllSources } from '../../lib/data';
+import { getAllTips, getTrickOfTheDay, getAllCategories, getAllSources, sortTipsForFeed } from '../../lib/data';
 import { getTranslations } from '../../lib/i18n';
 
 const lang = 'en';
@@ -20,7 +20,22 @@ const contentTypes = [
   { id: 'video', label: 'Video' },
   { id: 'vendor', label: 'Technology vendors' },
 ];
-const totalPages = Math.ceil(tips.length / 20);
+// Only the first page is pre-rendered; the rest is loaded from /api/tips.json on interaction.
+const PAGE_SIZE = 20;
+const orderedTips = sortTipsForFeed(tips);
+const initialTips = orderedTips.slice(0, PAGE_SIZE);
+const totalPages = Math.ceil(orderedTips.length / PAGE_SIZE);
+const cardLabels = {
+  difficulty: t.difficulty,
+  contentTypes: { community: 'Community', video: 'Video', vendor: 'Vendor', article: 'Article' },
+  notTranslated: 'Not translated',
+  machineTranslated: 'Machine translated',
+  community: 'Community',
+  moreSources: 'more sources',
+  updated: 'updated',
+  readOriginal: 'Read original',
+  original: 'Original',
+};
 
 // List of categories for sidebar matching Page 1
 const sidebarCategories = [
@@ -40,6 +55,8 @@ const sidebarCategories = [
 ---
 
 <Layout lang={lang} title={t.site.tagline} nextUrl={totalPages > 1 ? `/${lang}/page/2` : undefined}>
+  <script is:inline src="/js/tip-card.js"></script>
+  <h1 class="sr-only">Tech Tips Hub — the latest practical tech tips and tricks</h1>
   <!-- Mobile Search Bar (Matching Mockup Page 2) -->
   <div class="sm:hidden mb-4">
     <div class="relative">
@@ -198,7 +215,7 @@ const sidebarCategories = [
       </div>
       <!-- Tips List Container -->
       <div id="tips-stream" class="space-y-4">
-        {tips.map((tip) => (
+        {initialTips.map((tip) => (
           <TipCard tip={tip} lang={lang} />
         ))}
       </div>
@@ -222,7 +239,7 @@ const sidebarCategories = [
         <Pagination
           currentPage={1}
           lastPage={totalPages}
-          totalItems={tips.length}
+          totalItems={orderedTips.length}
           pageSize={20}
           basePath={`/${lang}`}
           lang={lang}
@@ -254,9 +271,18 @@ const sidebarCategories = [
   </div>
 </Layout>
 
-<script is:inline>
+<script is:inline define:vars={{ lang, cardLabels, trickId: trickOfDay?.id || '', pageSize: PAGE_SIZE }}>
   (function () {
-    const ITEMS_PER_PAGE = 20;
+    const ITEMS_PER_PAGE = pageSize;
+    const LANG = lang;
+    const LABELS = cardLabels;
+
+    let allTips = null;
+    let loadPromise = null;
+    let clientMode = false;
+    let renderToken = 0;
+    let lastTotal = 0;
+
     let currentPage = 1;
     let currentCat = 'all';
     let currentDiff = 'all';
@@ -267,47 +293,99 @@ const sidebarCategories = [
     let searchQuery = '';
 
     const stream = document.getElementById('tips-stream');
-    const cards = Array.from(document.querySelectorAll('.tip-card'));
     const emptyMsg = document.getElementById('empty-stream-msg');
     const resetBtn = document.getElementById('reset-filter-btn');
+    const staticPagination = document.getElementById('static-pagination');
+    const dynamicPagination = document.getElementById('dynamic-pagination');
 
-    // Controls
-    const mobileCatBtns = document.querySelectorAll('.mobile-cat-btn');
-    const desktopCatBtns = document.querySelectorAll('.desktop-cat-btn');
-    const diffBtns = document.querySelectorAll('.diff-pill-btn');
-    const sortBtns = document.querySelectorAll('.sort-pill-btn');
+    const mobileCatBtns = Array.from(document.querySelectorAll('.mobile-cat-btn'));
+    const desktopCatBtns = Array.from(document.querySelectorAll('.desktop-cat-btn'));
+    const diffBtns = Array.from(document.querySelectorAll('.diff-pill-btn'));
+    const langBtns = Array.from(document.querySelectorAll('.lang-pill-btn'));
+    const sortBtns = Array.from(document.querySelectorAll('.sort-pill-btn'));
     const mobileSearchInput = document.getElementById('mobile-search-input');
     const sourceFilter = document.getElementById('source-filter');
     const typeFilter = document.getElementById('content-type-filter');
     const platformFilter = document.getElementById('platform-filter');
     const languageFilter = document.getElementById('language-filter');
 
-    // Pagination elements
     const pagePrevBtn = document.getElementById('page-prev-btn');
     const pageNextBtn = document.getElementById('page-next-btn');
     const pageNumbersContainer = document.getElementById('page-numbers');
     const paginationSubtext = document.getElementById('pagination-subtext');
 
-    function getFilteredCards() {
+    const CAT_MOBILE_BASE = 'mobile-cat-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-semibold transition-all border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)]';
+    const CAT_MOBILE_ACTIVE = 'mobile-cat-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-semibold transition-all bg-[var(--accent-hero)] text-black font-bold shadow-sm';
+    const CAT_DESKTOP_BASE = 'desktop-cat-btn text-left w-full py-1 transition-colors text-[var(--text-secondary)] hover:text-[var(--text-primary)]';
+    const CAT_DESKTOP_ACTIVE = 'desktop-cat-btn text-left w-full py-1 transition-colors text-[var(--accent)] font-bold';
+    const DIFF_BASE = 'diff-pill-btn px-2.5 py-1 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all';
+    const DIFF_ACTIVE = 'diff-pill-btn px-2.5 py-1 rounded-lg border border-[var(--accent)] bg-[var(--accent-bg)] text-[var(--accent)] font-bold transition-all';
+    const LANG_BASE = 'lang-pill-btn px-2.5 py-1 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-xs transition-all';
+    const LANG_ACTIVE = 'lang-pill-btn px-2.5 py-1 rounded-lg border border-[var(--accent)] bg-[var(--accent-hero)] text-black font-semibold text-xs transition-all shadow-sm';
+    const SORT_BASE = 'sort-pill-btn px-3 py-1 rounded-lg transition-all text-[var(--text-muted)] hover:text-[var(--text-primary)]';
+    const SORT_ACTIVE = 'sort-pill-btn px-3 py-1 rounded-lg transition-all bg-[var(--accent-hero)] text-black font-bold shadow-sm';
+
+    function timeOf(tip) {
+      return new Date(tip.published_at || tip.fetched_at || 0).getTime() || 0;
+    }
+
+    function compareFeed(a, b) {
+      const scoreDiff = (b.score || 0) - (a.score || 0);
+      if (scoreDiff !== 0) return scoreDiff;
+      const timeDiff = timeOf(b) - timeOf(a);
+      if (timeDiff !== 0) return timeDiff;
+      const aId = String(a.id || '');
+      const bId = String(b.id || '');
+      return aId < bId ? -1 : aId > bId ? 1 : 0;
+    }
+
+    function compareNewest(a, b) {
+      return timeOf(b) - timeOf(a);
+    }
+
+    function searchText(tip) {
+      const title = (tip.title && (tip.title[LANG] || tip.title.en)) || '';
+      const summary = (tip.summary && (tip.summary[LANG] || tip.summary.en)) || '';
+      const sourceName = (tip.source && tip.source.name) || '';
+      return `${title} ${summary} ${sourceName} ${(tip.categories || []).join(' ')}`.toLowerCase();
+    }
+
+    function matches(tip) {
       const q = searchQuery.toLowerCase().trim();
+      const cats = tip.categories || [];
+      const diff = tip.difficulty || '';
+      const originalLang = tip.original_lang || 'en';
+      const sourceId = (tip.source && tip.source.id) || '';
+      const contentType = (tip.source && tip.source.content_type) || 'article';
 
-      return cards.filter((c) => {
-        const cats = c.getAttribute('data-category') || '';
-        const diff = c.getAttribute('data-difficulty') || '';
-        const originalLang = c.getAttribute('data-original-lang') || 'en';
-        const sourceId = c.getAttribute('data-source') || '';
-        const contentType = c.getAttribute('data-content-type') || 'article';
-        const text = c.textContent ? c.textContent.toLowerCase() : '';
+      const matchCat = currentCat === 'all' || cats.indexOf(currentCat) !== -1;
+      const matchDiff = currentDiff === 'all' || diff === currentDiff;
+      const matchLang = currentLangFilter === 'all' || originalLang === currentLangFilter;
+      const matchSource = currentSource === 'all' || sourceId === currentSource;
+      const matchType = currentType === 'all' || contentType === currentType;
+      const matchSearch = !q || searchText(tip).indexOf(q) !== -1;
 
-        const matchCat = currentCat === 'all' || cats.split(' ').includes(currentCat);
-        const matchDiff = currentDiff === 'all' || diff === currentDiff;
-        const matchLang = currentLangFilter === 'all' || originalLang === currentLangFilter;
-        const matchSource = currentSource === 'all' || sourceId === currentSource;
-        const matchType = currentType === 'all' || contentType === currentType;
-        const matchSearch = !q || text.includes(q);
+      return matchCat && matchDiff && matchLang && matchSource && matchType && matchSearch;
+    }
 
-        return matchCat && matchDiff && matchLang && matchSource && matchType && matchSearch;
-      });
+    function ensureTips() {
+      if (allTips) return Promise.resolve(allTips);
+      if (!loadPromise) {
+        loadPromise = fetch('/api/tips.json')
+          .then((resp) => {
+            if (!resp.ok) throw new Error('HTTP ' + resp.status);
+            return resp.json();
+          })
+          .then((list) => {
+            allTips = (Array.isArray(list) ? list : []).filter((tip) => tip.id !== trickId);
+            return allTips;
+          })
+          .catch((err) => {
+            loadPromise = null;
+            throw err;
+          });
+      }
+      return loadPromise;
     }
 
     function renderPagination(totalItems) {
@@ -315,23 +393,19 @@ const sidebarCategories = [
       if (currentPage > totalPages) currentPage = totalPages;
       if (currentPage < 1) currentPage = 1;
 
-      // Update Prev / Next buttons
       if (pagePrevBtn) pagePrevBtn.disabled = currentPage === 1;
       if (pageNextBtn) pageNextBtn.disabled = currentPage === totalPages;
 
-      // Render page numbers
       if (pageNumbersContainer) {
         pageNumbersContainer.innerHTML = '';
         const isMobile = window.innerWidth < 640;
 
         if (isMobile) {
-          // Mobile display: "2 / 12"
           const span = document.createElement('span');
           span.className = 'px-3 py-1 font-mono text-xs font-bold text-[var(--text-primary)]';
           span.textContent = `${currentPage} / ${totalPages}`;
           pageNumbersContainer.appendChild(span);
         } else {
-          // Desktop display: 1 2 3 4 ... 12
           const pages = [];
           for (let i = 1; i <= totalPages; i++) {
             if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
@@ -359,8 +433,7 @@ const sidebarCategories = [
               btn.textContent = String(p);
               btn.addEventListener('click', () => {
                 currentPage = p;
-                updateView();
-                window.scrollTo({ top: 300, behavior: 'smooth' });
+                updateView({ scroll: true });
               });
               pageNumbersContainer.appendChild(btn);
             }
@@ -368,78 +441,72 @@ const sidebarCategories = [
         }
       }
 
-      // Update Subtext
       if (paginationSubtext) {
         paginationSubtext.textContent = `page ${currentPage} / ${totalPages} · ${ITEMS_PER_PAGE} tips per page`;
       }
     }
 
-    function updateView() {
-      const filtered = getFilteredCards();
-
-      // Sort filtered cards
-      if (currentSort === 'newest') {
-        filtered.sort((a, b) => {
-          const dateA = new Date(a.getAttribute('data-pub-date') || 0).getTime();
-          const dateB = new Date(b.getAttribute('data-pub-date') || 0).getTime();
-          return dateB - dateA;
-        });
-      } else {
-        filtered.sort((a, b) => {
-          const sA = parseFloat(a.getAttribute('data-score') || '0');
-          const sB = parseFloat(b.getAttribute('data-score') || '0');
-          return sB - sA;
-        });
+    async function updateView(options) {
+      const token = ++renderToken;
+      if (!window.TipCardRenderer) {
+        console.error('TipCardRenderer is missing; cannot render the list.');
+        return;
       }
+      let list;
+      try {
+        list = await ensureTips();
+      } catch (err) {
+        console.error('Could not load tips:', err);
+        if (paginationSubtext) paginationSubtext.textContent = 'Could not load the tip list. Please try again.';
+        return;
+      }
+      if (token !== renderToken) return;
 
-      // Hide all cards first
-      cards.forEach((c) => c.classList.add('hidden'));
+      clientMode = true;
+      if (staticPagination) staticPagination.classList.add('hidden');
 
-      const staticPag = document.getElementById('static-pagination');
-      const dynamicPag = document.getElementById('dynamic-pagination');
+      const filtered = list.filter(matches).sort(currentSort === 'newest' ? compareNewest : compareFeed);
+      lastTotal = filtered.length;
 
-      // Switch to dynamic client pagination once JS controls take over
-      if (staticPag) staticPag.classList.add('hidden');
+      const totalPages = Math.max(1, Math.ceil(filtered.length / ITEMS_PER_PAGE));
+      if (currentPage > totalPages) currentPage = totalPages;
+      if (currentPage < 1) currentPage = 1;
 
-      if (filtered.length === 0) {
+      if (!filtered.length) {
+        if (stream) stream.replaceChildren();
         if (emptyMsg) emptyMsg.classList.remove('hidden');
-        if (dynamicPag) dynamicPag.classList.add('hidden');
+        if (dynamicPagination) dynamicPagination.classList.add('hidden');
+        renderPagination(0);
         return;
       }
 
       if (emptyMsg) emptyMsg.classList.add('hidden');
-      if (dynamicPag) dynamicPag.classList.remove('hidden');
+      if (dynamicPagination) dynamicPagination.classList.remove('hidden');
 
-      // Slice for current page
       const start = (currentPage - 1) * ITEMS_PER_PAGE;
-      const end = start + ITEMS_PER_PAGE;
-      const pageItems = filtered.slice(start, end);
-
-      // Re-order and show in DOM
-      pageItems.forEach((c) => {
-        stream?.appendChild(c);
-        c.classList.remove('hidden');
+      const pageItems = filtered.slice(start, start + ITEMS_PER_PAGE);
+      const frag = document.createDocumentFragment();
+      pageItems.forEach((tip) => {
+        if (window.TipCardRenderer) frag.appendChild(window.TipCardRenderer.create(tip, LANG, LABELS));
       });
+      if (stream) stream.replaceChildren(frag);
 
       renderPagination(filtered.length);
+      if (options && options.scroll) window.scrollTo({ top: 300, behavior: 'smooth' });
     }
 
-    // Prev / Next Page Listeners
     pagePrevBtn?.addEventListener('click', () => {
       if (currentPage > 1) {
         currentPage--;
-        updateView();
-        window.scrollTo({ top: 300, behavior: 'smooth' });
+        updateView({ scroll: true });
       }
     });
 
     pageNextBtn?.addEventListener('click', () => {
       currentPage++;
-      updateView();
-      window.scrollTo({ top: 300, behavior: 'smooth' });
+      updateView({ scroll: true });
     });
 
-    // Mobile Search Input
     mobileSearchInput?.addEventListener('input', (e) => {
       searchQuery = e.target.value;
       currentPage = 1;
@@ -451,59 +518,56 @@ const sidebarCategories = [
     platformFilter?.addEventListener('change', (e) => { currentCat = e.target.value; currentPage = 1; updateView(); });
     languageFilter?.addEventListener('change', (e) => { currentLangFilter = e.target.value; currentPage = 1; updateView(); });
 
-    // Mobile Category Buttons
     mobileCatBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
-        mobileCatBtns.forEach((b) => {
-          b.className = 'mobile-cat-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-semibold transition-all border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)]';
-        });
-        btn.className = 'mobile-cat-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-semibold transition-all bg-[var(--accent-hero)] text-black font-bold shadow-sm';
+        mobileCatBtns.forEach((b) => { b.className = CAT_MOBILE_BASE; });
+        btn.className = CAT_MOBILE_ACTIVE;
         currentCat = btn.getAttribute('data-category');
         currentPage = 1;
         updateView();
       });
     });
 
-    // Desktop Category Buttons
     desktopCatBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
-        desktopCatBtns.forEach((b) => {
-          b.className = 'desktop-cat-btn text-left w-full py-1 transition-colors text-[var(--text-secondary)] hover:text-[var(--text-primary)]';
-        });
-        btn.className = 'desktop-cat-btn text-left w-full py-1 transition-colors text-[var(--accent)] font-bold';
+        desktopCatBtns.forEach((b) => { b.className = CAT_DESKTOP_BASE; });
+        btn.className = CAT_DESKTOP_ACTIVE;
         currentCat = btn.getAttribute('data-category');
         currentPage = 1;
         updateView();
       });
     });
 
-    // Difficulty Buttons
     diffBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
-        diffBtns.forEach((b) => {
-          b.className = 'diff-pill-btn px-2.5 py-1 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all';
-        });
-        btn.className = 'diff-pill-btn px-2.5 py-1 rounded-lg border border-[var(--accent)] bg-[var(--accent-bg)] text-[var(--accent)] font-bold transition-all';
+        diffBtns.forEach((b) => { b.className = DIFF_BASE; });
+        btn.className = DIFF_ACTIVE;
         currentDiff = btn.getAttribute('data-diff');
         currentPage = 1;
         updateView();
       });
     });
 
-    // Sort Buttons
     sortBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
-        sortBtns.forEach((b) => {
-          b.className = 'sort-pill-btn px-3 py-1 rounded-lg transition-all text-[var(--text-muted)] hover:text-[var(--text-primary)]';
-        });
-        btn.className = 'sort-pill-btn px-3 py-1 rounded-lg transition-all bg-[var(--accent-hero)] text-black font-bold shadow-sm';
+        sortBtns.forEach((b) => { b.className = SORT_BASE; });
+        btn.className = SORT_ACTIVE;
         currentSort = btn.getAttribute('data-sort');
         currentPage = 1;
         updateView();
       });
     });
 
-    // Reset Filters
+    langBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        langBtns.forEach((b) => { b.className = LANG_BASE; });
+        btn.className = LANG_ACTIVE;
+        currentLangFilter = btn.getAttribute('data-lang-filter') || 'all';
+        currentPage = 1;
+        updateView();
+      });
+    });
+
     resetBtn?.addEventListener('click', () => {
       currentCat = 'all';
       currentDiff = 'all';
@@ -512,23 +576,29 @@ const sidebarCategories = [
       currentType = 'all';
       currentSort = 'best';
       searchQuery = '';
+      currentPage = 1;
+
       if (mobileSearchInput) mobileSearchInput.value = '';
       if (sourceFilter) sourceFilter.value = 'all';
       if (typeFilter) typeFilter.value = 'all';
       if (platformFilter) platformFilter.value = 'all';
       if (languageFilter) languageFilter.value = 'all';
-      desktopCatBtns[0]?.click();
-      diffBtns[0]?.click();
-      sortBtns[0]?.click();
+
+      mobileCatBtns.forEach((b, i) => { b.className = i === 0 ? CAT_MOBILE_ACTIVE : CAT_MOBILE_BASE; });
+      desktopCatBtns.forEach((b, i) => { b.className = i === 0 ? CAT_DESKTOP_ACTIVE : CAT_DESKTOP_BASE; });
+      diffBtns.forEach((b, i) => { b.className = i === 0 ? DIFF_ACTIVE : DIFF_BASE; });
+      langBtns.forEach((b, i) => { b.className = i === 0 ? LANG_ACTIVE : LANG_BASE; });
+      sortBtns.forEach((b, i) => { b.className = i === 0 ? SORT_ACTIVE : SORT_BASE; });
+
+      updateView();
     });
 
-    // Window resize handler for mobile/desktop pagination
     window.addEventListener('resize', () => {
-      const filtered = getFilteredCards();
-      renderPagination(filtered.length);
+      if (!clientMode) return;
+      renderPagination(lastTotal);
     });
 
-    // Initial run
-    updateView();
+    // The first page is pre-rendered on the server. Client mode only kicks in
+    // once the visitor filters, sorts, searches, or changes page.
   })();
 </script>

@@ -1,12 +1,9 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import TipCard from '../../components/TipCard.astro';
-import { getAllTips } from '../../lib/data';
 import { getTranslations } from '../../lib/i18n';
 
 const lang = 'vi';
 const t = getTranslations(lang);
-const allTips = getAllTips();
 ---
 
 <Layout lang={lang} title="Thủ thuật đã lưu" description="Các mẹo và thủ thuật công nghệ bạn đã đánh dấu để xem lại.">
@@ -45,55 +42,117 @@ const allTips = getAllTips();
       </a>
     </div>
 
-    <!-- Cards Stream Container -->
-    <div id="saved-stream" class="space-y-4">
-      {allTips.map((tip) => (
-        <div class="saved-item-wrapper hidden" data-id={tip.id}>
-          <TipCard tip={tip} lang={lang} />
-        </div>
-      ))}
-    </div>
+    <!-- Cards are rendered client-side from localStorage + /api/tips.json -->
+    <div id="saved-stream" class="space-y-4"></div>
   </div>
 </Layout>
 
-<script is:inline>
+<script is:inline define:vars={{ lang }}>
   (function () {
     const SAVED_KEY = 'techtips_saved';
-    const wrappers = document.querySelectorAll('.saved-item-wrapper');
+    const stream = document.getElementById('saved-stream');
     const emptyState = document.getElementById('saved-empty-state');
     const counter = document.getElementById('saved-counter');
+    let tipsById = null;
 
-    function renderSaved() {
-      let saved = [];
+    function getSaved() {
       try {
-        saved = JSON.parse(localStorage.getItem(SAVED_KEY)) || [];
-      } catch {}
+        return JSON.parse(localStorage.getItem(SAVED_KEY)) || [];
+      } catch {
+        return [];
+      }
+    }
 
-      let visible = 0;
-      wrappers.forEach((el) => {
-        const id = el.getAttribute('data-id');
-        if (saved.includes(id)) {
-          el.classList.remove('hidden');
-          visible++;
-        } else {
-          el.classList.add('hidden');
-        }
-      });
+    async function loadTips() {
+      if (tipsById) return tipsById;
+      const resp = await fetch('/api/tips.json');
+      if (!resp.ok) throw new Error('Cannot load tips');
+      const list = await resp.json();
+      tipsById = new Map(list.map((tip) => [tip.id, tip]));
+      return tipsById;
+    }
 
-      if (counter) {
-        counter.textContent = `Bạn đang lưu trữ ${visible} thủ thuật cục bộ trong trình duyệt.`;
+    function createCard(tip) {
+      const article = document.createElement('article');
+      article.className = 'bg-[var(--bg-surface)] border border-[var(--border-color)] hover:border-[var(--border-strong)] rounded-xl p-5 transition-all flex flex-col gap-3';
+      article.setAttribute('data-tip-id', tip.id);
+
+      const meta = document.createElement('div');
+      meta.className = 'flex items-center gap-2 text-xs font-mono text-[var(--text-muted)] flex-wrap';
+
+      const source = document.createElement('span');
+      source.className = 'text-[var(--text-secondary)] font-medium lowercase';
+      source.textContent = tip.source?.name || '';
+
+      const dot = document.createElement('span');
+      dot.textContent = '·';
+
+      const category = document.createElement('span');
+      category.className = 'lowercase text-[var(--accent)]';
+      category.textContent = (tip.categories || [])[0] || 'tips';
+
+      meta.append(source, dot, category);
+
+      const heading = document.createElement('h2');
+      heading.className = 'text-base sm:text-lg font-bold leading-snug text-[var(--text-primary)]';
+
+      const link = document.createElement('a');
+      link.href = `/${lang}/tip/${encodeURIComponent(tip.slug || tip.id)}`;
+      link.className = 'hover:text-[var(--accent)] transition-colors';
+      link.textContent = tip.title?.[lang] || tip.title?.en || '';
+      heading.appendChild(link);
+
+      const summary = document.createElement('p');
+      summary.className = 'text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed line-clamp-2';
+      summary.textContent = tip.summary?.[lang] || tip.summary?.en || '';
+
+      const footer = document.createElement('div');
+      footer.className = 'pt-3 border-t border-[var(--border-subtle)] flex items-center justify-between gap-2 text-xs font-mono';
+
+      const detail = document.createElement('a');
+      detail.href = link.href;
+      detail.className = 'text-[var(--accent)] hover:underline font-semibold';
+      detail.textContent = 'Xem chi tiết →';
+
+      const remove = document.createElement('button');
+      remove.type = 'button';
+      remove.className = 'bookmark-btn px-2.5 py-1 rounded-lg border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--bg-muted)] transition-colors';
+      remove.setAttribute('data-id', tip.id);
+      remove.setAttribute('aria-pressed', 'true');
+      remove.textContent = 'Bỏ lưu';
+
+      footer.append(detail, remove);
+      article.append(meta, heading, summary, footer);
+      return article;
+    }
+
+    async function renderSaved() {
+      if (!stream || !emptyState || !counter) return;
+
+      const saved = getSaved();
+      stream.replaceChildren();
+      emptyState.classList.add('hidden');
+
+      if (!saved.length) {
+        counter.textContent = 'Bạn chưa lưu thủ thuật nào trong trình duyệt này.';
+        emptyState.classList.remove('hidden');
+        return;
       }
 
-      if (emptyState) {
-        if (visible === 0) {
-          emptyState.classList.remove('hidden');
-        } else {
-          emptyState.classList.add('hidden');
-        }
+      try {
+        const map = await loadTips();
+        const items = saved.map((id) => map.get(id)).filter(Boolean);
+        items.forEach((tip) => stream.appendChild(createCard(tip)));
+
+        counter.textContent = `Bạn đang lưu ${items.length} thủ thuật cục bộ trong trình duyệt.`;
+        if (!items.length) emptyState.classList.remove('hidden');
+      } catch {
+        counter.textContent = 'Không tải được danh sách thủ thuật. Vui lòng thử lại.';
       }
     }
 
     renderSaved();
     window.addEventListener('storage', renderSaved);
+    window.addEventListener('techtips:bookmark_changed', renderSaved);
   })();
 </script>

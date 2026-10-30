@@ -3,7 +3,7 @@
     "title": "Tech Tips Hub - Sổ tay thủ thuật công nghệ",
     "tagline": "Sổ tay thủ thuật & mẹo công nghệ tinh chọn từ khắp nơi",
     "description": "Tổng hợp thủ thuật thực tế cho Windows, Mac, Linux, Android, iOS, trình duyệt và công cụ lập trình. Luôn ghi nguồn, chi phí phụ thuộc hạn mức nhà cung cấp.",
-    "subtext": "Cập nhật tự động mỗi 4 giờ từ hơn 15 nguồn uy tín. Tiêu đề ngắn gọn, xem mẹo nhanh, bấm thẳng về bài viết gốc."
+    "subtext": "Cập nhật tự động mỗi giờ từ hơn 20 nguồn uy tín. Tiêu đề ngắn gọn, xem mẹo nhanh, bấm thẳng về bài viết gốc."
   },
   "nav": {
     "home": "Thủ thuật",
@@ -72,7 +72,7 @@
   },
   "footer": {
     "statement": "Tech Tips Hub là dự án mã nguồn mở, ưu tiên hạ tầng miễn phí trong hạn mức của nhà cung cấp. Không quảng cáo, không theo dõi người dùng.",
-    "built_with": "Vận hành bằng Astro, Cloudflare Pages và GitHub Actions",
+    "built_with": "Vận hành bằng Astro, Vercel và GitHub Actions",
     "rights": "Nội dung thuộc về các tác giả và trang tin gốc.",
     "rss_feed": "Nguồn cấp RSS"
   }

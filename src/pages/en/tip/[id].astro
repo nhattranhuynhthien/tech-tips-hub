@@ -8,25 +8,29 @@ export async function getStaticPaths() {
   const tips = getAllTips();
   const paths: any[] = [];
   for (const tip of tips) {
-    if (tip.slug) {
+    const slug = tip.slug || tip.id;
+    // Canonical URL uses the slug
+    paths.push({
+      params: { id: slug },
+      props: { tip, isCanonical: true },
+    });
+    // Keep legacy id URLs working, but noindex + canonical to the slug
+    if (slug !== tip.id) {
       paths.push({
-        params: { id: tip.slug },
-        props: { tip },
+        params: { id: tip.id },
+        props: { tip, isCanonical: false },
       });
     }
-    paths.push({
-      params: { id: tip.id },
-      props: { tip },
-    });
   }
   return paths;
 }
 
 interface Props {
   tip: Tip;
+  isCanonical: boolean;
 }
 
-const { tip } = Astro.props;
+const { tip, isCanonical } = Astro.props;
 const lang = 'en';
 const t = getTranslations(lang);
 
@@ -64,7 +68,7 @@ const primaryCat = tip.categories[0] || 'tips';
 const communitySourceLabel = tip.source_type === 'community-facebook' ? 'Facebook' : tip.source_type === 'community-telegram' ? 'Telegram' : tip.source_type === 'community-web' ? 'Web' : '';
 ---
 
-<Layout lang={lang} title={titleText} description={summaryText}>
+<Layout lang={lang} title={titleText} description={summaryText} canonicalPath={`/${lang}/tip/${tipSlugOrId}`} noindex={!isCanonical}>
   <div class="max-w-6xl mx-auto">
     <!-- Breadcrumb with Back Arrow (Matching Mockup Page 6: ← tips / [category] /) -->
     <nav class="mb-6 flex items-center gap-2 text-xs font-mono text-[var(--text-muted)]" aria-label="Breadcrumb">
@@ -182,7 +186,7 @@ const communitySourceLabel = tip.source_type === 'community-facebook' ? 'Faceboo
             class="bookmark-btn px-3 py-1.5 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--border-strong)] transition-all inline-flex items-center gap-1.5"
             data-id={tip.id}
           >
-            <span>Save for later</span>
+            <span data-bookmark-label>Save for later</span>
           </button>
 
           <button
