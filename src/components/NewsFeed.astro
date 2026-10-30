@@ -1,7 +1,7 @@
 ---
 import TipCard from './TipCard.astro';
 import TrickOfTheDay from './TrickOfTheDay.astro';
-import { getAllCategories, getAllSources, getAllTips, getNewsOfTheDay, sortTipsForFeed } from '../lib/data';
+import { getAllCategories, getAllSources, getAllTips, getNewsOfTheDay } from '../lib/data';
 import type { Locale } from '../lib/i18n';
 
 interface Props { lang: Locale }
@@ -9,7 +9,11 @@ const { lang } = Astro.props;
 const isVi = lang === 'vi';
 const sources = getAllSources();
 const categories = getAllCategories();
-const news = sortTipsForFeed(getAllTips().filter((tip) => tip.source.kind === 'news'));
+const news = getAllTips().filter((tip) => tip.source.kind === 'news').sort((a, b) => {
+  const aTime = new Date(a.published_at || a.fetched_at || 0).getTime() || 0;
+  const bTime = new Date(b.published_at || b.fetched_at || 0).getTime() || 0;
+  return bTime - aTime;
+});
 const hotNews = getNewsOfTheDay();
 const initialNews = news.filter((tip) => tip.id !== hotNews?.id).slice(0, 20);
 const labels = {
@@ -59,8 +63,8 @@ const pageSize = 20;
 <div class="flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between mb-4">
   <input id="news-search" type="search" placeholder={isVi ? 'Tìm tin công nghệ...' : 'Search tech news...'} class="w-full sm:max-w-sm rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] px-3 py-2 text-xs text-[var(--text-primary)]" />
   <div class="inline-flex self-start p-0.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-xs" aria-label={isVi ? 'Sắp xếp tin' : 'Sort news'}>
-    <button type="button" class="news-sort-btn px-3 py-1 rounded-lg bg-[var(--accent-hero)] text-black font-bold" data-sort="best">{isVi ? 'Hot nhất' : 'Trending'}</button>
-    <button type="button" class="news-sort-btn px-3 py-1 rounded-lg text-[var(--text-muted)]" data-sort="newest">{isVi ? 'Mới nhất' : 'Newest'}</button>
+    <button type="button" class="news-sort-btn px-3 py-1 rounded-lg text-[var(--text-muted)]" data-sort="best">{isVi ? 'Hot nhất' : 'Trending'}</button>
+    <button type="button" class="news-sort-btn px-3 py-1 rounded-lg bg-[var(--accent-hero)] text-black font-bold" data-sort="newest">{isVi ? 'Mới nhất' : 'Newest'}</button>
   </div>
 </div>
 
@@ -80,7 +84,7 @@ const pageSize = 20;
     const $ = (id) => document.getElementById(id);
     const source = $('news-source'), type = $('news-type'), category = $('news-category'), language = $('news-language'), search = $('news-search');
     const stream = $('news-stream'), count = $('news-count'), empty = $('news-empty'), prev = $('news-prev'), next = $('news-next'), pageLabel = $('news-page'), pagination = $('news-pagination');
-    let allNews = null, page = 1, sort = 'best';
+    let allNews = null, page = 1, sort = 'newest';
     const timeOf = (tip) => new Date(tip.published_at || tip.fetched_at || 0).getTime() || 0;
     function render() {
       if (!allNews) return;
