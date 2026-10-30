@@ -33,6 +33,7 @@ const sidebarCategories = [
   { id: 'security', label: '# security' },
   { id: 'dev', label: '# dev & devops' },
   { id: 'hardware', label: '# hardware' },
+  { id: 'browser', label: '# browser' },
   { id: 'office', label: '# office' },
   { id: 'ai', label: '# ai' },
 ];
@@ -227,6 +228,28 @@ const sidebarCategories = [
           lang={lang}
         />
       </div>
+
+      <!-- Client-side Dynamic Pagination Controls (Shown when JS active / filtering) -->
+      <nav id="dynamic-pagination" aria-label="Filtered pagination" class="hidden mt-12 flex flex-col items-center gap-3 font-mono text-xs">
+        <div class="flex items-center gap-2">
+          <button
+            id="page-prev-btn"
+            type="button"
+            class="h-11 px-4 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:text-[var(--accent)] disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center gap-1.5"
+          >
+            ← Prev
+          </button>
+          <div id="page-numbers" class="flex items-center gap-1"></div>
+          <button
+            id="page-next-btn"
+            type="button"
+            class="h-11 px-4 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:text-[var(--accent)] disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center gap-1.5"
+          >
+            Next →
+          </button>
+        </div>
+        <div id="pagination-subtext" class="text-[11px] text-[var(--text-muted)]"></div>
+      </nav>
     </div>
   </div>
 </Layout>
@@ -372,14 +395,20 @@ const sidebarCategories = [
       // Hide all cards first
       cards.forEach((c) => c.classList.add('hidden'));
 
+      const staticPag = document.getElementById('static-pagination');
+      const dynamicPag = document.getElementById('dynamic-pagination');
+
+      // Switch to dynamic client pagination once JS controls take over
+      if (staticPag) staticPag.classList.add('hidden');
+
       if (filtered.length === 0) {
         if (emptyMsg) emptyMsg.classList.remove('hidden');
-        document.getElementById('pagination-wrapper')?.classList.add('hidden');
+        if (dynamicPag) dynamicPag.classList.add('hidden');
         return;
       }
 
       if (emptyMsg) emptyMsg.classList.add('hidden');
-      document.getElementById('pagination-wrapper')?.classList.remove('hidden');
+      if (dynamicPag) dynamicPag.classList.remove('hidden');
 
       // Slice for current page
       const start = (currentPage - 1) * ITEMS_PER_PAGE;

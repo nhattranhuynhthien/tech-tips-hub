@@ -30,7 +30,7 @@ COMMUNITY_PATH = DATA_DIR / "community.json"
 def estimate_reading_time(text: str) -> int:
     """Ước lượng thời gian đọc (khoảng 150-200 từ/phút)."""
     words = len(text.split())
-    return max(1, round(words / 35))
+    return max(1, round(words / 175))
 
 def diversify(items: list[dict], max_run: int = 2) -> list[dict]:
     """

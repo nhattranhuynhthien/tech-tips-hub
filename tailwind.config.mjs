@@ -30,7 +30,7 @@ export default {
         },
         terracotta: {
           50: '#fdf6f0',
-          100: '#faebdE',
+          100: '#faebde',
           200: '#f4d3bc',
           300: '#ebb591',
           400: '#df8e60',
@@ -42,9 +42,9 @@ export default {
         }
       },
       fontFamily: {
-        serif: ['"Source Serif 4"', 'Lora', 'Georgia', 'Cambria', 'serif'],
-        sans: ['"Plus Jakarta Sans"', '"Be Vietnam Pro"', 'system-ui', '-apple-system', 'sans-serif'],
+        sans: ['"Be Vietnam Pro"', 'system-ui', '-apple-system', 'sans-serif'],
         mono: ['"JetBrains Mono"', 'ui-monospace', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+        display: ['"Lexend"', 'system-ui', 'sans-serif'],
       },
       boxShadow: {
         'kbd': '0 2px 0 var(--kbd-shadow)',

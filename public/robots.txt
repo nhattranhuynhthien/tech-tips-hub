@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://meocongnghe.vercel.app/sitemap.xml
+Sitemap: https://meocongnghe.vercel.app/sitemap-index.xml
 

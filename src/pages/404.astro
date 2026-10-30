@@ -2,31 +2,32 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout lang="vi" title="404 - Không tìm thấy trang">
+<Layout lang="vi" title="404 - Not Found / Không tìm thấy trang">
   <div class="py-16 sm:py-24 max-w-xl mx-auto text-center font-mono">
     <div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-xl bg-[var(--bg-surface)] text-[var(--accent)] border border-[var(--border-color)] text-xs font-bold uppercase mb-6">
       $ err: 404_not_found
     </div>
 
-    <h1 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] mb-4 tracking-tight">
+    <h1 id="error-title" class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] mb-4 tracking-tight">
       Lạc bước khỏi sổ tay rồi!
     </h1>
 
-    <p class="text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed mb-8">
+    <p id="error-desc" class="text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed mb-8">
       Trang bạn đang tìm kiếm có thể đã được chuyển sang danh mục khác, hoặc đường liên kết đã cũ. Các thủ thuật hay nhất vẫn đang sẵn sàng ở trang chủ.
     </p>
 
     <!-- Shortcut helper box -->
-    <div class="p-3.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-xs text-[var(--text-muted)] mb-8 inline-block">
+    <div id="error-hint" class="p-3.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-xs text-[var(--text-muted)] mb-8 inline-block">
       Gợi ý: Bấm phím <kbd>/</kbd> để mở thanh tìm kiếm thủ thuật tức thì.
     </div>
 
     <div>
       <a
+        id="error-home-link"
         href="/vi"
         class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl font-bold text-xs bg-[var(--accent-hero)] text-black shadow-sm"
       >
-        <span>Quay về trang chủ tips.hub</span>
+        <span id="error-home-text">Quay về trang chủ tips.hub</span>
         <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path d="M5 12h14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           <path d="m12 5 7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -35,3 +36,23 @@ import Layout from '../layouts/Layout.astro';
     </div>
   </div>
 </Layout>
+
+<script is:inline>
+  (function () {
+    const isEn = window.location.pathname.startsWith('/en') || localStorage.getItem('techtips_lang') === 'en';
+    if (isEn) {
+      document.title = '404 - Page Not Found · tips.hub';
+      const title = document.getElementById('error-title');
+      const desc = document.getElementById('error-desc');
+      const hint = document.getElementById('error-hint');
+      const link = document.getElementById('error-home-link');
+      const text = document.getElementById('error-home-text');
+
+      if (title) title.textContent = 'Lost in the notebook!';
+      if (desc) desc.textContent = 'The page you are looking for might have been moved or the link is outdated. Handcrafted tips are waiting on the homepage.';
+      if (hint) hint.innerHTML = 'Tip: Press <kbd class="px-1.5 py-0.5 bg-[var(--bg-muted)] border border-[var(--border-color)] rounded text-[11px]">/</kbd> to search tips immediately.';
+      if (link) link.setAttribute('href', '/en');
+      if (text) text.textContent = 'Back to tips.hub home';
+    }
+  })();
+</script>

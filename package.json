@@ -14,10 +14,10 @@
     "check:telegram": "tsc --noEmit --target ES2022 --module ESNext --moduleResolution bundler --skipLibCheck --lib ES2022,DOM api/telegram.ts"
   },
   "dependencies": {
+    "@astrojs/sitemap": "^3.7.4",
     "@astrojs/tailwind": "6.0.2",
     "astro": "5.18.2",
     "js-yaml": "5.5.0",
-    "lucide-astro": "0.556.0",
     "tailwindcss": "3.4.19"
   }
 }

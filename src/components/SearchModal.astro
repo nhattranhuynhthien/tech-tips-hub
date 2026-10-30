@@ -52,6 +52,12 @@ const t = getTranslations(lang);
 
 <script is:inline define:vars={{ lang }}>
   (function () {
+    function escapeHtml(str) {
+      const d = document.createElement('div');
+      d.appendChild(document.createTextNode(str || ''));
+      return d.innerHTML;
+    }
+
     let allTips = [];
     let isLoaded = false;
     const modal = document.getElementById('search-modal');
@@ -139,14 +145,17 @@ const t = getTranslations(lang);
 
       resultsContainer.innerHTML = matches
         .map((tip) => {
-          const title = tip.title[lang] || tip.title['en'] || '';
-          const summ = tip.summary[lang] || tip.summary['en'] || '';
+          const title = escapeHtml(tip.title[lang] || tip.title['en'] || '');
+          const summ = escapeHtml(tip.summary[lang] || tip.summary['en'] || '');
+          const sourceName = escapeHtml(tip.source?.name || '');
+          const category = escapeHtml(tip.categories[0] || 'tips');
+          const slugOrId = encodeURIComponent(tip.slug || tip.id);
           return `
-            <a href="/${lang}/tip/${tip.slug || tip.id}" class="block p-3 rounded-xl hover:bg-[var(--bg-muted)] transition-colors group">
+            <a href="/${lang}/tip/${slugOrId}" class="block p-3 rounded-xl hover:bg-[var(--bg-muted)] transition-colors group">
               <div class="flex items-center gap-2 text-[11px] font-mono text-[var(--text-muted)] mb-1">
-                <span class="text-[var(--text-secondary)]">${tip.source.name}</span>
+                <span class="text-[var(--text-secondary)]">${sourceName}</span>
                 <span>·</span>
-                <span class="text-[var(--accent)] font-semibold">#${tip.categories[0] || 'tips'}</span>
+                <span class="text-[var(--accent)] font-semibold">#${category}</span>
               </div>
               <h4 class="text-sm font-bold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors leading-snug">
                 ${title}

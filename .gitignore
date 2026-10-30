@@ -27,4 +27,5 @@ data/state.json
 Thumbs.db
 *.log
 *.backup.json
+data/logs/
 

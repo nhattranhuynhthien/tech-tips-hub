@@ -25,9 +25,7 @@ keywords:
   - quang cao
   - tai tro
 
-domains:
-  - spam-site.example.com
-  - affiliate-hub.example.com
+domains: []
 
 title_patterns:
   - "^deal alert:"
