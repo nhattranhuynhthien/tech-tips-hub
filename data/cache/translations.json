@@ -2793,5 +2793,512 @@
     "translated": {
       "vi": "machine"
     }
+  },
+  "89d08a8d990c7d0f": {
+    "title": {
+      "en": "Create, preview, and edit files directly in the Gemini app",
+      "vi": "Tạo, xem trước và chỉnh sửa tệp trực tiếp trong ứng dụng Gemini"
+    },
+    "summary": {
+      "en": "We’re introducing new ways to create and refine files and code in the Gemini app. You can now generate, preview, and edit files right within your Gemini app chat—expand to full screen to type edits directly, highlight text to ask questions, or have Gemini refine them. PDF…",
+      "vi": "Chúng tôi đang giới thiệu những cách mới để tạo và tinh chỉnh tệp cũng như mã trong ứng dụng Gemini. Giờ đây, bạn có thể tạo, xem trước và chỉnh sửa tệp ngay trong cuộc trò chuyện trong ứng dụng Gemini của mình—mở rộng ra toàn màn hình để nhập nội dung chỉnh sửa trực tiếp, đánh dấu văn bản để đặt câu hỏi hoặc yêu cầu Gemini tinh chỉnh chúng. PDF…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "321013c852318cc4": {
+    "title": {
+      "en": "The Signature 27 is Motorola’s last chance to get Android updates right",
+      "vi": "Signature 27 là cơ hội cuối cùng của Motorola để nhận được các bản cập nhật Android ngay"
+    },
+    "summary": {
+      "en": "After promising and failing multiple times, the Signature 27 has a lot to prove.",
+      "vi": "Sau nhiều lần hứa hẹn và thất bại, Signature 27 đã chứng tỏ được rất nhiều điều."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "a9fff2e73f92fb51": {
+    "title": {
+      "en": "This Google Photos bug made edited photos disappear, and there’s finally a fix",
+      "vi": "Lỗi Google Photos này khiến ảnh đã chỉnh sửa biến mất và cuối cùng cũng có cách khắc phục"
+    },
+    "summary": {
+      "en": "A simple photo edit could send Android apps on a wild goose chase.",
+      "vi": "Một chỉnh sửa ảnh đơn giản có thể khiến các ứng dụng Android phải chạy đua với nhau."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "a00f511771f17d70": {
+    "title": {
+      "en": "Patrick Stewart has died at age 86",
+      "vi": "Patrick Stewart qua đời ở tuổi 86"
+    },
+    "summary": {
+      "en": "Patrick Stewart, best known for his roles in Star Trek and X-Men, has died at age 86. A message posted to Stewart's Instagram account says the actor died in his Los Angeles home on Wednesday \"following a brief and poignant journey with Alzheimer's Disease and Lewy Body…",
+      "vi": "Patrick Stewart, nổi tiếng với vai diễn trong Star Trek và X-Men, đã qua đời ở tuổi 86. Một tin nhắn đăng trên tài khoản Instagram của Stewart cho biết nam diễn viên đã qua đời tại nhà riêng ở Los Angeles vào thứ Tư “sau một hành trình ngắn ngủi và sâu sắc với căn bệnh Alzheimer và cơ thể Lewy…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "7ed3162923ded4fa": {
+    "title": {
+      "en": "Publish interactive apps from the Gemini app to Google Sites",
+      "vi": "Xuất bản ứng dụng tương tác từ ứng dụng Gemini lên Google Sites"
+    },
+    "summary": {
+      "en": "You can now export interactive apps built in the Gemini app directly to Google Sites. With one click, your app is added to a new, private site draft — fully interactive and ready to customize. From there, you can add more content, publish the site, and share it just like any…",
+      "vi": "Giờ đây, bạn có thể xuất trực tiếp các ứng dụng tương tác được tích hợp trong ứng dụng Gemini sang Google Sites. Chỉ với một cú nhấp chuột, ứng dụng của bạn sẽ được thêm vào bản nháp trang web riêng tư mới — tương tác đầy đủ và sẵn sàng tùy chỉnh. Từ đó, bạn có thể thêm nhiều nội dung hơn, xuất bản trang web và chia sẻ nó giống như bất kỳ…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "bf8384cadd9e0aef": {
+    "title": {
+      "en": "Grab Reduces ANRs by 32% and improves startup time by 35% with R8 and Profile guided optimization",
+      "vi": "Grab Giảm 32% ANR và cải thiện thời gian khởi động thêm 35% với tính năng tối ưu hóa theo hướng dẫn của R8 và Profile"
+    },
+    "summary": {
+      "en": "Grab is Southeast Asia's leading superapp, offering deliveries, mobility, and financial services to millions of users across eight countries through a single app.",
+      "vi": "Grab là siêu ứng dụng hàng đầu Đông Nam Á, cung cấp dịch vụ giao hàng, di chuyển và tài chính cho hàng triệu người dùng trên tám quốc gia thông qua một ứng dụng duy nhất."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "f0df3a7dc26fda5a": {
+    "title": {
+      "en": "10 Hacks Every Fitbit Edge User Should Know",
+      "vi": "10 thủ thuật mà người dùng Fitbit Edge nên biết"
+    },
+    "summary": {
+      "en": "Including how to save battery, ignore the AI coach, and get a better look at that tiny screen.",
+      "vi": "Bao gồm cách tiết kiệm pin, bỏ qua huấn luyện viên AI và nhìn rõ hơn vào màn hình nhỏ bé đó."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "cadc909057c1a36d": {
+    "title": {
+      "en": "Five Hacks Every Wordle Player Should Know",
+      "vi": "Năm thủ thuật mọi người chơi Wordle nên biết"
+    },
+    "summary": {
+      "en": "Including how to get a perfect win percentage, even if you've lost a few games.",
+      "vi": "Bao gồm cả cách đạt được tỷ lệ thắng hoàn hảo, ngay cả khi bạn đã thua một vài trận."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "5e7d8cb43d08f163": {
+    "title": {
+      "en": "Binance probes potential $5.8 billion crypto-theft hack",
+      "vi": "Binance thăm dò vụ hack tiền điện tử trị giá 5,8 tỷ USD"
+    },
+    "summary": {
+      "en": "Cryptocurrency exchange Binance is investigating a potential security breach involving up to $5.8 billion in digital assets, in what could become the largest cryptocurrency hack in history.",
+      "vi": "Sàn giao dịch tiền điện tử Binance đang điều tra một vi phạm bảo mật tiềm ẩn liên quan đến tài sản kỹ thuật số lên tới 5,8 tỷ USD, có thể trở thành vụ hack tiền điện tử lớn nhất trong lịch sử."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "2595440a958c444e": {
+    "title": {
+      "en": "Polymarket halts trading after crypto-draining script breach, $2.5M traced",
+      "vi": "Polymarket tạm dừng giao dịch sau khi vi phạm tập lệnh rút tiền điện tử, truy tìm 2,5 triệu đô la"
+    },
+    "summary": {
+      "en": "Prediction market platform Polymarket temporarily suspended trading on Thursday after hackers compromised a third-party service to distribute cryptocurrency-draining JavaScript, with approximately $2.5 million in assets traced to a suspected attacker wallet.",
+      "vi": "Nền tảng thị trường dự đoán Polymarket đã tạm thời đình chỉ giao dịch vào thứ Năm sau khi tin tặc xâm phạm dịch vụ của bên thứ ba để phân phối JavaScript rút tiền điện tử, với khoảng 2,5 triệu đô la tài sản được truy tìm đến ví bị nghi ngờ là kẻ tấn công."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "83a14e063b99738e": {
+    "title": {
+      "en": "Hackers exploit Cisco SD-WAN flaw to deploy custom KeyDrift malware",
+      "vi": "Tin tặc khai thác lỗ hổng Cisco SD-WAN để triển khai phần mềm độc hại KeyDrift tùy chỉnh"
+    },
+    "summary": {
+      "en": "A newly identified advanced persistent threat (APT) group tracked as UAT-11473 was observed exploiting CVE-2026-20127, an authentication-bypass flaw in Cisco Catalyst SD-WAN Controllers, to deploy a custom malware framework called KeyDrift.",
+      "vi": "Một nhóm mối đe dọa liên tục nâng cao (APT) mới được xác định có tên UAT-11473 đã được quan sát thấy đang khai thác CVE-2026-20127, một lỗ hổng vượt qua xác thực trong Bộ điều khiển SD-WAN của Cisco Catalyst, để triển khai khung phần mềm độc hại tùy chỉnh có tên KeyDrift."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "b9575d2a92e5a9d4": {
+    "title": {
+      "en": "You can now spend between $1,999 and $14,549 on a MacBook Pro",
+      "vi": "Bây giờ bạn có thể chi từ 1.999 USD đến 14.549 USD cho MacBook Pro"
+    },
+    "summary": {
+      "en": "There weren’t too many surprises with yesterday’s launch of the first touchscreen Mac, the MacBook Pro with PROLED XDR display . But one of those was the option to spec the SSD to a massive 16TB. With the M6 MacBook Pro the new entry-level model, that means that you can now…",
+      "vi": "Không có quá nhiều bất ngờ với sự ra mắt của máy Mac màn hình cảm ứng đầu tiên, MacBook Pro với màn hình PROLED XDR ngày hôm qua. Nhưng một trong số đó là tùy chọn chỉ định SSD có dung lượng lớn 16TB. Với M6 MacBook Pro, model cấp thấp mới, điều đó có nghĩa là giờ đây bạn có thể…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "1a60dcb0643963f9": {
+    "title": {
+      "en": "Gemini’s latest integration can tell you if you’re getting faster, one run at a time",
+      "vi": "Sự tích hợp mới nhất của Gemini có thể cho bạn biết liệu bạn có nhanh hơn hay không, mỗi lần chạy một lần"
+    },
+    "summary": {
+      "en": "You can now connect Gemini and Strava for personalized fitness and training insights.",
+      "vi": "Giờ đây, bạn có thể kết nối Gemini và Strava để có thông tin chi tiết về hoạt động tập luyện và thể dục cá nhân."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "bcd4b1c040e9ef33": {
+    "title": {
+      "en": "Create box and whisker charts in Google Sheets",
+      "vi": "Tạo biểu đồ dạng hộp và biểu đồ dạng râu trong Google Trang tính"
+    },
+    "summary": {
+      "en": "Google Sheets now natively supports box and whisker charts, a statistical chart type that shows how a dataset is distributed. Select a range of raw numeric values and Sheets calculates the minimum, first quartile, median, third quartile, maximum, mean, and outliers for you, with…",
+      "vi": "Google Trang tính hiện hỗ trợ nguyên bản biểu đồ hộp và biểu đồ dạng râu, một loại biểu đồ thống kê cho biết cách phân phối tập dữ liệu. Chọn một phạm vi giá trị số thô và Trang tính sẽ tính toán giá trị tối thiểu, tứ phân vị thứ nhất, trung vị, tứ phân vị thứ ba, giá trị tối đa, giá trị trung bình và giá trị ngoại lệ cho bạn, cùng với…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "cbc392a551e81479": {
+    "title": {
+      "en": "Create structured documents using just your voice with Docs Live in Google Docs on mobile",
+      "vi": "Tạo tài liệu có cấu trúc chỉ bằng giọng nói của bạn với Docs Live trong Google Docs trên thiết bị di động"
+    },
+    "summary": {
+      "en": "Docs Live is now rolling out to eligible Workspace users of the Google Docs mobile app on Android and iOS. This new feature acts as a hands-free thought partner and co-writer that helps you build structured, context-aware documents on the fly using natural conversation. Starting…",
+      "vi": "Docs Live hiện đang được triển khai cho người dùng Workspace đủ điều kiện của ứng dụng Google Docs dành cho thiết bị di động trên Android và iOS. Tính năng mới này hoạt động như một đối tác tư duy rảnh tay và đồng tác giả giúp bạn xây dựng các tài liệu có cấu trúc, nhận biết ngữ cảnh một cách nhanh chóng bằng cách sử dụng cuộc trò chuyện tự nhiên. Bắt đầu…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "05fb638f4c93ea9c": {
+    "title": {
+      "en": "Teacher-led Gemini Notebook in Google Classroom now offers insight summaries for educators and updated sharing settings for admins, including trusted domains",
+      "vi": "Sổ ghi chép Gemini do giáo viên hướng dẫn trong Lớp học Google hiện cung cấp các bản tóm tắt chuyên sâu dành cho nhà giáo dục và cài đặt chia sẻ cập nhật cho quản trị viên, bao gồm cả các miền đáng tin cậy"
+    },
+    "summary": {
+      "en": "Following the launch of teacher-led Gemini Notebook in Google Classroom , we are introducing insight summaries for educators. This update provides teachers with greater visibility into how students interact with assigned notebooks, helping gauge instructional value and inform…",
+      "vi": "Sau khi ra mắt Sổ ghi chép Gemini do giáo viên hướng dẫn trong Lớp học Google, chúng tôi sẽ giới thiệu các bản tóm tắt chuyên sâu dành cho các nhà giáo dục. Bản cập nhật này cung cấp cho giáo viên cái nhìn rõ ràng hơn về cách học sinh tương tác với sổ ghi chép được giao, giúp đánh giá giá trị giảng dạy và thông báo…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "795d675161014bdb": {
+    "title": {
+      "en": "Gemini in Google Sheets is now available on iOS devices",
+      "vi": "Gemini trong Google Trang tính hiện có sẵn trên thiết bị iOS"
+    },
+    "summary": {
+      "en": "Building upon the power of Gemini in Sheets on the web and our recent launch on Android devices , we’re excited to announce that you can now use Gemini in Google Sheets on your iOS device to quickly analyze and understand your data while on the go. Simply tap on the Gemini spark…",
+      "vi": "Dựa trên sức mạnh của Gemini trong Trang tính trên web và lần ra mắt gần đây của chúng tôi trên thiết bị Android, chúng tôi vui mừng thông báo rằng giờ đây bạn có thể sử dụng Gemini trong Google Trang tính trên thiết bị iOS để nhanh chóng phân tích và hiểu dữ liệu của mình khi đang di chuyển. Chỉ cần chạm vào tia lửa Song Tử…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "87a83c38d77b3d1b": {
+    "title": {
+      "en": "v0.102.2883.0: CmdPal: don't save settings on load unless they changed (#51353)",
+      "vi": "v0.102.2883.0: CmdPal: không lưu cài đặt khi tải trừ khi chúng thay đổi (#51353)"
+    },
+    "summary": {
+      "en": "Looking at the logs from a debug startup and holy hell batman, it's so noisy. Looks like every time that we added a fallback command to a provider, we'd save the settings. Even if we'd already seen that fallback. In practice, this resulted in 46 saves, because of all the PT…",
+      "vi": "Nhìn vào nhật ký từ một công ty khởi động gỡ lỗi và thánh địa ngục Batman, nó ồn ào quá. Có vẻ như mỗi lần chúng tôi thêm lệnh dự phòng cho nhà cung cấp, chúng tôi sẽ lưu cài đặt. Ngay cả khi chúng tôi đã nhìn thấy dự phòng đó. Trên thực tế, điều này dẫn đến 46 pha cứu thua, vì tất cả PT…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "e9337c15641891f4": {
+    "title": {
+      "en": "Five Hacks Every Suunto Race 3S User Should Know",
+      "vi": "Năm thủ thuật mà người dùng Suunto Race 3S nên biết"
+    },
+    "summary": {
+      "en": "Suunto's \"Cadence Coach\" is giving me a lot of tough love already.",
+      "vi": "\"Huấn luyện viên Cadence\" của Suunto đang dành cho tôi rất nhiều tình yêu mãnh liệt rồi."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "1ffd1f6b6f1e33ff": {
+    "title": {
+      "en": "Patrick Stewart has died",
+      "vi": "Patrick Stewart đã qua đời"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (3012 điểm, 641 bình luận).",
+      "vi": "Thảo luận trên Hacker News (3012 điểm, 641 bình luận)."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "3bc1509c6bdcff93": {
+    "title": {
+      "en": "Android’s SMS of Death bug can knock out your phone, but a fix is coming soon",
+      "vi": "Lỗi SMS of Death của Android có thể đánh sập điện thoại của bạn, nhưng sắp có bản sửa lỗi"
+    },
+    "summary": {
+      "en": "Even emergency calls aren't safe from this silent threat.",
+      "vi": "Ngay cả những cuộc gọi khẩn cấp cũng không an toàn trước mối đe dọa thầm lặng này."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "4f4bed045acfcb54": {
+    "title": {
+      "en": "Trump ignored intel on China’s Nvidia spy to protect company’s stock, report says",
+      "vi": "Trump phớt lờ thông tin về gián điệp Nvidia của Trung Quốc để bảo vệ cổ phiếu của công ty, báo cáo cho biết"
+    },
+    "summary": {
+      "en": "Spy accused of exploiting Trump ties to Huang, funneling secrets to China.",
+      "vi": "Gián điệp bị buộc tội khai thác mối quan hệ của Trump với Huang, chuyển bí mật cho Trung Quốc"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "c5f175b56a347989": {
+    "title": {
+      "en": "LPT: If you're introverted, always look at social events in terms of the number of hours you'll be there; it makes the burden of showing up significantly…",
+      "vi": "LPT: Nếu bạn là người hướng nội, hãy luôn xem xét các sự kiện xã hội về số giờ bạn sẽ ở đó; nó làm cho gánh nặng phải xuất hiện trở nên đáng kể…"
+    },
+    "summary": {
+      "en": "The brain tends to plays tricks on us when we perceive a social event as a whole day affair. In the real sense, most social events last for a relatively short time and everyone is back to their business. Therefore, instead of looking at, say, a birthday/wedding invitation as an…",
+      "vi": "Bộ não có xu hướng đánh lừa chúng ta khi chúng ta coi một sự kiện xã hội là chuyện xảy ra cả ngày. Theo nghĩa thực tế, hầu hết các sự kiện xã hội đều diễn ra trong một thời gian tương đối ngắn và mọi người đều quay lại công việc kinh doanh của mình. Do đó, thay vì xem thiệp mời sinh nhật/đám cưới như một…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "6cfc8dc200b9be4e": {
+    "title": {
+      "en": "Android Bench 2.0: Pushing the frontier with challenging long-horizon tasks",
+      "vi": "Android Bench 2.0: Vượt xa giới hạn với những nhiệm vụ dài hạn đầy thử thách"
+    },
+    "summary": {
+      "en": "Today we’re releasing the first set of long-horizon tasks (LHT), which are tasks of great complexity that take an engineer multiple days or even a week to complete. We are also introducing agentic evaluation, starting with agents from corresponding model providers.",
+      "vi": "Hôm nay, chúng tôi sẽ phát hành nhóm nhiệm vụ dài hạn (LHT) đầu tiên, là những nhiệm vụ có độ phức tạp cao khiến kỹ sư phải mất nhiều ngày hoặc thậm chí một tuần để hoàn thành. Chúng tôi cũng đang giới thiệu đánh giá tác nhân, bắt đầu với các đại lý từ các nhà cung cấp mô hình tương ứng."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "4c4b30fd3641aca8": {
+    "title": {
+      "en": "Binance-hacker-1029 – $5.6B stolen from Binance",
+      "vi": "Binance-hacker-1029 – 5,6 tỷ USD bị đánh cắp từ Binance"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (1396 điểm, 891 bình luận).",
+      "vi": "Thảo luận trên Hacker News (1396 điểm, 891 bình luận)."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "72c27fdbb2d3b08f": {
+    "title": {
+      "en": "H.264 Is Magic (2016)",
+      "vi": "H.264 Là Phép Thuật (2016)"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (438 điểm, 150 bình luận).",
+      "vi": "Thảo luận trên Hacker News (438 điểm, 150 bình luận)."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "8ccea7e89b703086": {
+    "title": {
+      "en": "We're releasing the weights of Mistral Large 4",
+      "vi": "Chúng tôi đang công bố trọng lượng của Mistral Large 4"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (1497 điểm, 398 bình luận).",
+      "vi": "Thảo luận trên Hacker News (1497 điểm, 398 bình luận)."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "325db6061ae80454": {
+    "title": {
+      "en": "You can now easily find and add textbooks in Gemini Notebook",
+      "vi": "Bây giờ bạn có thể dễ dàng tìm và thêm sách giáo khoa vào Gemini Notebook"
+    },
+    "summary": {
+      "en": "Gemini Notebook could become even more useful for students.",
+      "vi": "Gemini Notebook có thể trở nên hữu ích hơn nữa cho sinh viên."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "fabd9eb4d1e11f1b": {
+    "title": {
+      "en": "10 Hacks Every iCloud User Should Know",
+      "vi": "10 thủ thuật mọi người dùng iCloud nên biết"
+    },
+    "summary": {
+      "en": "iCloud is more than just cloud storage.",
+      "vi": "iCloud không chỉ là lưu trữ đám mây."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "dc92cbbeb993972f": {
+    "title": {
+      "en": "Suspected North Korean hackers steal $5.6 billion in crypto in record-breaking cryptocurrency heist, Binance withdrawals frozen",
+      "vi": "Tin tặc bị nghi ngờ của Triều Tiên đã đánh cắp 5,6 tỷ đô la tiền điện tử trong vụ trộm tiền điện tử phá kỷ lục, việc rút tiền trên Binance bị đóng băng"
+    },
+    "summary": {
+      "en": "Binance withdrawals frozen after thieves run off with $5.6 billion in crypto — firm says it will cover losses as stablecoin networks move to freeze $2.4b in stolen assets",
+      "vi": "Việc rút tiền trên Binance bị đóng băng sau khi kẻ trộm lấy đi 5,6 tỷ đô la tiền điện tử - công ty cho biết họ sẽ bù lỗ khi mạng lưới stablecoin chuyển sang đóng băng 2,4 tỷ đô la tài sản bị đánh cắp"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "7dbc56da6e60531e": {
+    "title": {
+      "en": "LPT: How watching cooking videos tricked my brain into feeling full",
+      "vi": "LPT: Việc xem video nấu ăn khiến não tôi cảm thấy no như thế nào"
+    },
+    "summary": {
+      "en": "I want to post this because I think it might help others who are currently in a tough spot. It worked for me when things got difficult. I am an 18F student in college. I live in a dorm and I usually eat only one meal a day. Every human body is different so I am not saying this…",
+      "vi": "Tôi muốn đăng bài này vì tôi nghĩ nó có thể giúp ích cho những người khác hiện đang gặp khó khăn. Nó có tác dụng với tôi khi mọi việc trở nên khó khăn. Tôi là sinh viên 18F ở trường đại học. Tôi sống trong ký túc xá và thường chỉ ăn một bữa mỗi ngày. Cơ thể mỗi người đều khác nhau nên tôi không nói điều này…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "8fd8aa781238c9ff": {
+    "title": {
+      "en": "Build your way: Use any AI agent of your choice in Android Studio",
+      "vi": "Xây dựng theo cách của bạn: Sử dụng bất kỳ tác nhân AI nào bạn chọn trong Android Studio"
+    },
+    "summary": {
+      "en": "Last year, Android Studio opened up to any AI model. Today, we’re taking the next step by introducing support for your choice of coding agents.",
+      "vi": "Năm ngoái, Android Studio đã mở cửa cho mọi mô hình AI. Hôm nay, chúng tôi sẽ thực hiện bước tiếp theo bằng cách giới thiệu hỗ trợ cho sự lựa chọn của bạn về tác nhân mã hóa."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "810879474d98b541": {
+    "title": {
+      "en": "Introducing Fast and Reliable Wireless Debugging with Android Debug Bridge (ADB) Wi-Fi 2.0",
+      "vi": "Giới thiệu tính năng gỡ lỗi không dây nhanh chóng và đáng tin cậy với Wi-Fi 2.0 của Android Debug Bridge (ADB)"
+    },
+    "summary": {
+      "en": "Wireless debugging on Android is now faster, more reliable, and easier to set up than ever. With ADB Wi-Fi 2.0, we’ve introduced a new server stack and smarter network handling to directly address developer feedback around usability gaps.",
+      "vi": "Gỡ lỗi không dây trên Android giờ đây nhanh hơn, đáng tin cậy hơn và dễ cài đặt hơn bao giờ hết. Với ADB Wi-Fi 2.0, chúng tôi đã giới thiệu một hệ thống máy chủ mới và khả năng xử lý mạng thông minh hơn để giải quyết trực tiếp phản hồi của nhà phát triển về những khoảng trống trong khả năng sử dụng."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "a37126ae39270f18": {
+    "title": {
+      "en": "Leverage Android skills and Gemma 4 in Android Studio Quail 4",
+      "vi": "Tận dụng các kỹ năng Android và Gemma 4 trong Android Studio Quail 4"
+    },
+    "summary": {
+      "en": "This is the final stable release for Android Studio Quail. The new features in Android Studio enable you to build premium apps with AI efficiently and effectively.",
+      "vi": "Đây là bản phát hành ổn định cuối cùng cho Android Studio Quail. Các tính năng mới trong Android Studio cho phép bạn xây dựng các ứng dụng cao cấp bằng AI một cách hiệu quả và hiệu quả."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "7ba563d2739300de": {
+    "title": {
+      "vi": "Lượt truy cập báo chí giảm 40%, Google điều chỉnh kết quả tìm kiếm AI",
+      "en": "Newspaper visits decreased by 40%, Google adjusted AI search results"
+    },
+    "summary": {
+      "vi": "Google sẽ hiển thị đường dẫn đến trang web và bài báo nổi bật hơn trong câu trả lời do AI tạo ra, giữa lúc lượng truy cập từ Google đến các trang tin tức giảm 40%.",
+      "en": "Google will show links to websites and articles more prominently in AI-generated responses, as traffic from Google to news sites drops by 40%."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "3de8d5df6f454d1a": {
+    "title": {
+      "vi": "Stonehenge: người tiền sử di chuyển những khối đá hàng chục tấn bằng cách nào",
+      "en": "Stonehenge: how prehistoric people moved tens of tons of stone blocks"
+    },
+    "summary": {
+      "vi": "Trên đồng bằng Salisbury ở hạt Wiltshire, miền nam nước Anh, có một vòng đá khổng lồ đã đứng đó hơn 4.000 năm. Người dựng Stonehenge không để lại chữ viết, chưa dùng kim loại và chưa biết đến bánh",
+      "en": "On Salisbury Plain in Wiltshire, southern England, there is a giant ring of stones that has stood there for more than 4,000 years. The people who built Stonehenge left no writing, did not use metal and did not know about cake"
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "3b4a48ecfc59e52d": {
+    "title": {
+      "vi": "Binance mất 6,3 tỉ USD trong vụ hack lớn nhất lịch sử tiền số",
+      "en": "Binance lost 6.3 billion USD in the largest hack in cryptocurrency history"
+    },
+    "summary": {
+      "vi": "Binance vừa công bố nguyên nhân ban đầu của vụ tấn công lịch sử và thiệt hại ước tính lên đến 6,3 tỉ USD, trở thành vụ tấn công lớn nhất ngành công nghiệp tiền mã hóa.",
+      "en": "Binance has just announced the initial cause of the historic attack and estimated damage of up to 6.3 billion USD, becoming the largest attack in the cryptocurrency industry."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "fb97d40e1c505a6a": {
+    "title": {
+      "vi": "Binance bị hack, cả thị trường tiền mã hóa chao đảo",
+      "en": "Binance was hacked, the entire cryptocurrency market was shaken"
+    },
+    "summary": {
+      "vi": "Cả thị trường tiền mã hóa bị chao đảo sau khi sàn giao dịch hàng đầu thế giới Binance thừa nhận đang bị tấn công, buộc phải dừng tính năng nạp rút tiền và đóng băng 2,5 tỉ USD của người dùng.",
+      "en": "The entire cryptocurrency market was shaken after the world's leading exchange Binance admitted that it was being attacked, forced to stop the deposit and withdrawal feature and freeze 2.5 billion USD of users."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "60c36e3d8b7d0b47": {
+    "title": {
+      "vi": "Hướng dẫn cách đổi giấy phép lái xe trực tuyến ngay tại nhà",
+      "en": "Instructions on how to change your driver's license online right at home"
+    },
+    "summary": {
+      "vi": "(Dân trí) - Bài viết dưới đây sẽ hướng dẫn bạn cách thức để đăng ký hồ sơ đổi giấy phép lái xe thông qua mạng Internet, sau đó nhận GPLX được cấp mới ngay tại nhà.",
+      "en": "(Dan Tri) - The article below will guide you on how to register for a driver's license change via the Internet, then receive a new driving license right at home."
+    },
+    "translated": {
+      "en": "machine"
+    }
   }
 }
