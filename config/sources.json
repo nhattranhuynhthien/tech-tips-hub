@@ -494,12 +494,12 @@
     "id": "reddit-lpt",
     "name": "Reddit r/LifeProTips",
     "type": "reddit",
-    "url": "https://www.reddit.com/r/LifeProTips/top/.rss?t=week",
+    "url": "https://www.reddit.com/r/LifeProTips/new/.rss?limit=20",
     "lang": "en",
     "categories": [],
-    "trust": 2,
-    "tipOnly": false,
-    "kind": "news",
+    "trust": 3,
+    "tipOnly": true,
+    "kind": "tips",
     "contentType": "community",
     "enabled": true,
     "maxPerRun": 20,
@@ -509,7 +509,7 @@
     "id": "reddit-androidtips",
     "name": "Reddit r/AndroidTips",
     "type": "reddit",
-    "url": "https://www.reddit.com/r/AndroidTips/top/.rss?t=week",
+    "url": "https://www.reddit.com/r/AndroidTips/new/.rss?limit=20",
     "lang": "en",
     "categories": [
       "android"
@@ -518,94 +518,128 @@
     "tipOnly": true,
     "kind": "tips",
     "contentType": "community",
-    "enabled": false,
-    "maxPerRun": 20,
-    "minScore": 50
+    "enabled": true,
+    "maxPerRun": 10,
+    "minScore": 0
   },
   {
     "id": "reddit-iostips",
     "name": "Reddit r/ios",
     "type": "reddit",
-    "url": "https://www.reddit.com/r/ios/top/.rss?t=week",
+    "url": "https://www.reddit.com/r/ios/new/.rss?limit=20",
     "lang": "en",
     "categories": [
       "ios"
     ],
     "trust": 3,
-    "tipOnly": false,
-    "kind": "news",
+    "tipOnly": true,
+    "kind": "tips",
     "contentType": "community",
-    "enabled": false,
-    "maxPerRun": 20,
-    "minScore": 50
+    "enabled": true,
+    "maxPerRun": 10,
+    "minScore": 0
   },
   {
     "id": "reddit-win11",
     "name": "Reddit r/Windows11",
     "type": "reddit",
-    "url": "https://www.reddit.com/r/Windows11/top/.rss?t=week",
+    "url": "https://www.reddit.com/r/Windows11/new/.rss?limit=20",
     "lang": "en",
     "categories": [
       "windows"
     ],
     "trust": 3,
-    "tipOnly": false,
-    "kind": "news",
+    "tipOnly": true,
+    "kind": "tips",
     "contentType": "community",
-    "enabled": false,
-    "maxPerRun": 20,
-    "minScore": 50
+    "enabled": true,
+    "maxPerRun": 10,
+    "minScore": 0
   },
   {
     "id": "reddit-excel",
     "name": "Reddit r/excel",
     "type": "reddit",
-    "url": "https://www.reddit.com/r/excel/top/.rss?t=week",
+    "url": "https://www.reddit.com/r/excel/new/.rss?limit=20",
     "lang": "en",
     "categories": [
       "office"
     ],
     "trust": 3,
-    "tipOnly": false,
-    "kind": "news",
+    "tipOnly": true,
+    "kind": "tips",
     "contentType": "community",
-    "enabled": false,
-    "maxPerRun": 20,
-    "minScore": 50
+    "enabled": true,
+    "maxPerRun": 10,
+    "minScore": 0
   },
   {
     "id": "reddit-selfhosted",
     "name": "Reddit r/selfhosted",
     "type": "reddit",
-    "url": "https://www.reddit.com/r/selfhosted/top/.rss?t=week",
+    "url": "https://www.reddit.com/r/selfhosted/new/.rss?limit=20",
     "lang": "en",
     "categories": [
       "dev"
     ],
     "trust": 3,
-    "tipOnly": false,
-    "kind": "news",
+    "tipOnly": true,
+    "kind": "tips",
     "contentType": "community",
-    "enabled": false,
-    "maxPerRun": 20,
-    "minScore": 50
+    "enabled": true,
+    "maxPerRun": 10,
+    "minScore": 0
   },
   {
     "id": "reddit-linux4noobs",
     "name": "Reddit r/linux4noobs",
     "type": "reddit",
-    "url": "https://www.reddit.com/r/linux4noobs/top/.rss?t=week",
+    "url": "https://www.reddit.com/r/linux4noobs/new/.rss?limit=20",
     "lang": "en",
     "categories": [
       "linux"
     ],
     "trust": 3,
+    "tipOnly": true,
+    "kind": "tips",
+    "contentType": "community",
+    "enabled": true,
+    "maxPerRun": 10,
+    "minScore": 0
+  },
+  {
+    "id": "reddit-technology",
+    "name": "Reddit r/technology",
+    "type": "reddit",
+    "url": "https://www.reddit.com/r/technology/new/.rss?limit=20",
+    "site_url": "https://www.reddit.com/r/technology/",
+    "lang": "en",
+    "categories": ["ai", "hardware", "security", "dev"],
+    "trust": 3,
     "tipOnly": false,
     "kind": "news",
+    "allowNews": true,
     "contentType": "community",
-    "enabled": false,
-    "maxPerRun": 20,
-    "minScore": 50
+    "enabled": true,
+    "maxPerRun": 10,
+    "minScore": 0
+  },
+  {
+    "id": "reddit-gadgets",
+    "name": "Reddit r/gadgets",
+    "type": "reddit",
+    "url": "https://www.reddit.com/r/gadgets/new/.rss?limit=20",
+    "site_url": "https://www.reddit.com/r/gadgets/",
+    "lang": "en",
+    "categories": ["hardware", "android", "ios"],
+    "trust": 3,
+    "tipOnly": false,
+    "kind": "news",
+    "allowNews": true,
+    "contentType": "community",
+    "enabled": true,
+    "maxPerRun": 10,
+    "minScore": 0
   },
   {
     "id": "hn-algolia",

@@ -2,7 +2,7 @@
 
 Checked on 2026-10-30 with the configured bot User-Agent. Sources are enabled only when the URL returned HTTP 200 and at least one parsed item had a title, link, and publication date.
 
-## Disabled because the check failed
+## Disabled in the configuration during the 2026-10-30 verification
 
 | ID | Result | Reason |
 |---|---|---|
@@ -26,6 +26,10 @@ Checked on 2026-10-30 with the configured bot User-Agent. Sources are enabled on
 - YouTube: no channel IDs were entered or verified. Add only channels whose ID can be confirmed from the official channel page.
 - Telegram: No Telegram channel is enabled by default. Add a public channel as a `telegram` source in `config/sources.json` after an administrator chooses it.
 - Facebook: scraping and account-based access are intentionally unsupported.
+
+## Reddit feeds re-enabled
+
+The six previously configured Reddit communities for practical tips have been re-enabled and categorized as tips; `r/technology` and `r/gadgets` were added as technology-news sources. Reddit returned HTTP 429 for the six existing feeds during the earlier verification, so these feeds are configured for collection but their current availability still needs to be confirmed from pipeline logs. The fetcher pauses a source for 24 hours after five consecutive failures.
 
 ## Other checked sources
 
