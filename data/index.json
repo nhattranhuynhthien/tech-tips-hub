@@ -142,6 +142,202 @@
       "en": "machine"
     }
   },
+  "db85abacb121d037": {
+    "id": "db85abacb121d037",
+    "slug": "sanket-lets-you-redesign-gnomes-date-menu-and-quick-settings-db85ab",
+    "url": "https://www.omgubuntu.co.uk/2026/10/sanket-rearrange-gnome-calendar-menus",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Sat, 31 Oct 2026 20:51:16 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Sanket lets you redesign GNOME’s date menu and Quick Settings",
+      "vi": "Sanket lets you redesign GNOME’s date menu and Quick Settings"
+    },
+    "summary": {
+      "en": "Sanket is a GNOME Shell extension that lets you rejig how the desktop’s date menu, calendar, notifications and Quick Settings look and behave – and then some. It can put notifications beneath the Quick Settings menu in a floating island, or embedded inside of it. Quick Settings…",
+      "vi": "Sanket is a GNOME Shell extension that lets you rejig how the desktop’s date menu, calendar, notifications and Quick Settings look and behave – and then some. It can put notifications beneath the Quick Settings menu in a floating island, or embedded inside of it. Quick Settings…"
+    },
+    "categories": [
+      "linux",
+      "browser"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "eaa9608067068667": {
+    "id": "eaa9608067068667",
+    "slug": "lpt-when-you-solve-a-recurring-problem-leave-the-instruction-eaa960",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xkg1rk/lpt_when_you_solve_a_recurring_problem_leave_the",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/SilentEcho2255",
+    "published_at": "2026-10-31T17:26:13+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LPT: When you solve a recurring problem, leave the instructions where you’ll need them next time.",
+      "vi": "LPT: When you solve a recurring problem, leave the instructions where you’ll need them next time."
+    },
+    "summary": {
+      "en": "Once something finally works, it’s tempting to assume you’ll remember the fix. Months later, you may end up troubleshooting it all over again. Leave a short note near the relevant item: printer instructions inside the paper cabinet, the replacement filter number with the…",
+      "vi": "Once something finally works, it’s tempting to assume you’ll remember the fix. Months later, you may end up troubleshooting it all over again. Leave a short note near the relevant item: printer instructions inside the paper cabinet, the replacement filter number with the…"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "7b5ed5dd303b816a": {
+    "id": "7b5ed5dd303b816a",
+    "slug": "windows-11-tries-new-shortcuts-for-xbox-gaming-mode-and-sear-7b5ed5",
+    "url": "https://www.theverge.com/tech/1024058/windows-11-search-improvements-xbox-quick-settings",
+    "source": {
+      "id": "theverge",
+      "name": "The Verge",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Terrence O’Brien",
+    "published_at": "2026-10-31T11:12:19-04:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Windows 11 tries new shortcuts for Xbox gaming mode and search",
+      "vi": "Windows 11 tries new shortcuts for Xbox gaming mode and search"
+    },
+    "summary": {
+      "en": "The latest Windows 11 Insider build adds some powerful new search features and quick settings while in Xbox mode. The Xbox shortcuts let you control things like Bluetooth, WiFi, and power settings without having to exit gaming mode. The search improvements are quite…",
+      "vi": "The latest Windows 11 Insider build adds some powerful new search features and quick settings while in Xbox mode. The Xbox shortcuts let you control things like Bluetooth, WiFi, and power settings without having to exit gaming mode. The search improvements are quite…"
+    },
+    "categories": [
+      "windows",
+      "hardware"
+    ],
+    "tags": [
+      "wifi"
+    ],
+    "difficulty": "easy",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "009d89703dd91abd": {
+    "id": "009d89703dd91abd",
+    "slug": "edit-entire-presentations-with-gemini-in-google-slides-009d89",
+    "url": "http://workspaceupdates.googleblog.com/2026/10/edit-entire-presentations-with-gemini-in-Google-Slides.html",
+    "source": {
+      "id": "workspace-updates",
+      "name": "Google Workspace Updates",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "vendor"
+    },
+    "author": "Paul Jiménez Vela (noreply@blogger.com)",
+    "published_at": "2026-10-30T11:54:03.258-07:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Edit entire presentations with Gemini in Google Slides",
+      "vi": "Edit entire presentations with Gemini in Google Slides"
+    },
+    "summary": {
+      "en": "You can now use Gemini in Google Slides to edit multiple slides or an entire presentation at once. With a single prompt in the Slides side panel, you can update content throughout a deck, refresh visual styles in bulk, or match the style of another presentation. Gemini…",
+      "vi": "You can now use Gemini in Google Slides to edit multiple slides or an entire presentation at once. With a single prompt in the Slides side panel, you can update content throughout a deck, refresh visual styles in bulk, or match the style of another presentation. Gemini…"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "gemini"
+    ],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "a7d61d970df6ec9b": {
+    "id": "a7d61d970df6ec9b",
+    "slug": "cach-bien-ai-thanh-gia-su-biet-hoi-nguoc-khong-lam-bai-thay-a7d61d",
+    "url": "https://tuoitre.vn/cach-bien-ai-thanh-gia-su-biet-hoi-nguoc-khong-lam-bai-thay-hoc-sinh-100261031091820728.htm",
+    "source": {
+      "id": "tuoitre-nsso",
+      "name": "Tu?i Tr? Nh?p s?ng s?",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "TRỌNG NHÂN",
+    "published_at": "10/31/2026 10:45:00 AM",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Cách biến AI thành gia sư biết hỏi ngược, không làm bài thay học sinh",
+      "en": "Cách biến AI thành gia sư biết hỏi ngược, không làm bài thay học sinh"
+    },
+    "summary": {
+      "vi": "AI giải bài tập trong vài giây. Nhưng một nghiên cứu lớn cho thấy học sinh dùng AI để giải hộ lại thi kém hơn người không dùng.",
+      "en": "AI giải bài tập trong vài giây. Nhưng một nghiên cứu lớn cho thấy học sinh dùng AI để giải hộ lại thi kém hơn người không dùng."
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": false
+    },
+    "translate_attempts": {
+      "en": 1
+    }
+  },
   "739c9f9103673d3c": {
     "id": "739c9f9103673d3c",
     "url": "https://www.omgubuntu.co.uk/2026/10/firefox-159-released",
@@ -179,6 +375,48 @@
     },
     "hidden": true,
     "slug": "firefox-159-duoc-phat-hanh-voi-ban-sua-loi-wayland-linux-739c9f"
+  },
+  "dbac878aa56a6dda": {
+    "id": "dbac878aa56a6dda",
+    "slug": "lhb-linux-digest-2617-ssh-config-docker-compose-override-bas-dbac87",
+    "url": "https://linuxhandbook.com/newsletter/26-17",
+    "source": {
+      "id": "linuxhandbook",
+      "name": "Linux Handbook",
+      "site_url": "https://linuxhandbook.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Abhishek Prakash",
+    "published_at": "Fri, 30 Oct 2026 17:49:19 +0530",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LHB Linux Digest #26.17: SSH Config, Docker Compose Override, Bash History Tricks and More",
+      "vi": "LHB Linux Digest #26.17: SSH Config, Docker Compose Override, Bash History Tricks and More"
+    },
+    "summary": {
+      "en": "Type less, connect faster.",
+      "vi": "Type less, connect faster."
+    },
+    "categories": [
+      "linux",
+      "dev"
+    ],
+    "tags": [
+      "docker",
+      "bash"
+    ],
+    "difficulty": "advanced",
+    "score": 1.43,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "494dec1bba8b15b8": {
     "id": "494dec1bba8b15b8",
@@ -393,6 +631,83 @@
       "vi": "machine"
     }
   },
+  "d5a1ee8adaa45ed2": {
+    "id": "d5a1ee8adaa45ed2",
+    "slug": "northflank-security-breach-leads-to-abuse-of-customers-ai-ap-d5a1ee",
+    "url": "https://www.bleepingcomputer.com/news/security/northflank-security-breach-leads-to-abuse-of-customers-ai-api-keys",
+    "source": {
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "site_url": "https://www.bleepingcomputer.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Lawrence Abrams",
+    "published_at": "Sat, 31 Oct 2026 14:01:12 -0400",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Northflank security breach leads to abuse of customers' AI API keys",
+      "vi": "Northflank security breach leads to abuse of customers' AI API keys"
+    },
+    "summary": {
+      "en": "Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to unauthorized use of customers' AI API keys.",
+      "vi": "Cloud application hosting platform Northflank is warning customers to rotate all credentials and secrets stored on its platform after a security breach led to unauthorized use of customers' AI API keys."
+    },
+    "categories": [
+      "ai",
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "0b58bfa85dcc8db3": {
+    "id": "0b58bfa85dcc8db3",
+    "slug": "touchscreens-everywhere-0b58bf",
+    "url": "https://www.theverge.com/tech/1023569/ipad-mini-alexa-photo-frame-readwise-installer",
+    "source": {
+      "id": "theverge",
+      "name": "The Verge",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "David Pierce",
+    "published_at": "2026-10-31T08:00:00-04:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Touchscreens everywhere!",
+      "vi": "Touchscreens everywhere!"
+    },
+    "summary": {
+      "en": "Hi, friends! Welcome to Installer No. 150, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, happy Halloween, and also you can read all the old editions at the Installer homepage.) This week, I was in the Smoky Mountains in Tennessee on a…",
+      "vi": "Hi, friends! Welcome to Installer No. 150, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, happy Halloween, and also you can read all the old editions at the Installer homepage.) This week, I was in the Smoky Mountains in Tennessee on a…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
   "76d2c86df350a67e": {
     "id": "76d2c86df350a67e",
     "slug": "gmail-stopped-being-a-nightmare-after-i-set-up-these-5-simpl-76d2c8",
@@ -535,7 +850,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "50540090dc1f9a17": {
@@ -645,6 +960,47 @@
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
+    }
+  },
+  "32d8589f2318deeb": {
+    "id": "32d8589f2318deeb",
+    "slug": "microsoft-finally-fixes-vpn-issues-caused-by-september-updat-32d858",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-finally-fixes-vpn-issues-caused-by-september-updates",
+    "source": {
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "site_url": "https://www.bleepingcomputer.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Sergiu Gatlan",
+    "published_at": "Fri, 30 Oct 2026 07:20:26 -0400",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Microsoft finally fixes VPN issues caused by September updates",
+      "vi": "Microsoft finally fixes VPN issues caused by September updates"
+    },
+    "summary": {
+      "en": "Microsoft has resolved Always On VPN connection failures triggered after installing the September 2026 Windows 11 security updates.",
+      "vi": "Microsoft has resolved Always On VPN connection failures triggered after installing the September 2026 Windows 11 security updates."
+    },
+    "categories": [
+      "windows",
+      "security"
+    ],
+    "tags": [
+      "vpn"
+    ],
+    "difficulty": "medium",
+    "score": 1.3,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "7e50ebb05b0da922": {
@@ -858,6 +1214,44 @@
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
+    }
+  },
+  "7d968577e0ca1ac4": {
+    "id": "7d968577e0ca1ac4",
+    "slug": "binance-ceo-says-90-percent-of-stolen-assets-have-been-reple-7d9685",
+    "url": "https://www.theverge.com/tech/1024091/binance-ceo-90-percent-stolen-crypto",
+    "source": {
+      "id": "theverge",
+      "name": "The Verge",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Terrence O’Brien",
+    "published_at": "2026-10-31T14:40:32-04:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Binance CEO says 90 percent of stolen assets have been ‘replenished’",
+      "vi": "Binance CEO says 90 percent of stolen assets have been ‘replenished’"
+    },
+    "summary": {
+      "en": "After hackers stole a shocking $6.3 billion from Binance customers in a record-breaking crypto heist, the company's CEO says that 90 percent of the funds have been replaced, and the company plans to cover the remaining 10 percent as well. Binance is covering the stolen funds…",
+      "vi": "After hackers stole a shocking $6.3 billion from Binance customers in a record-breaking crypto heist, the company's CEO says that 90 percent of the funds have been replaced, and the company plans to cover the remaining 10 percent as well. Binance is covering the stolen funds…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "604f9be9642ce51f": {
@@ -1112,6 +1506,207 @@
       "vi": "machine"
     }
   },
+  "aca803be02daf795": {
+    "id": "aca803be02daf795",
+    "slug": "8-9-102-aca803",
+    "url": "https://www.ithome.com/1/020/742.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 01 Nov 2026 07:31:36 GMT",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "小米上线双十一 8 折手机电池换新服务：小米 9 等 102 款机型参与",
+      "vi": "小米上线双十一 8 折手机电池换新服务：小米 9 等 102 款机型参与",
+      "en": "小米上线双十一 8 折手机电池换新服务：小米 9 等 102 款机型参与"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 1 日消息，小米今日宣布 11.11 超级服务周上线，102 款电池服务 47.2 元起，家电以旧换新享官方补贴至高 500 元。 从官方公布的名单看，小米 9 等数字系列、小米 MIX Fold 等折叠屏系列、REDMI Note 8 Pro 等 Note 系列、REDMI K30 等 K 系列机型，均在本次活动范围内。 IT之家注意到，除了手机产品外，小米还推出智能家电以旧换新 官方补贴至高 500 元 ，覆盖电视、空调、冰箱、洗衣机、热水器；官方保障服务 5…",
+      "vi": "IT之家 11 月 1 日消息，小米今日宣布 11.11 超级服务周上线，102 款电池服务 47.2 元起，家电以旧换新享官方补贴至高 500 元。 从官方公布的名单看，小米 9 等数字系列、小米 MIX Fold 等折叠屏系列、REDMI Note 8 Pro 等 Note 系列、REDMI K30 等 K 系列机型，均在本次活动范围内。 IT之家注意到，除了手机产品外，小米还推出智能家电以旧换新 官方补贴至高 500 元 ，覆盖电视、空调、冰箱、洗衣机、热水器；官方保障服务 5…",
+      "en": "IT之家 11 月 1 日消息，小米今日宣布 11.11 超级服务周上线，102 款电池服务 47.2 元起，家电以旧换新享官方补贴至高 500 元。 从官方公布的名单看，小米 9 等数字系列、小米 MIX Fold 等折叠屏系列、REDMI Note 8 Pro 等 Note 系列、REDMI K30 等 K 系列机型，均在本次活动范围内。 IT之家注意到，除了手机产品外，小米还推出智能家电以旧换新 官方补贴至高 500 元 ，覆盖电视、空调、冰箱、洗衣机、热水器；官方保障服务 5…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
+  "5b2ce654e7eb0ce7": {
+    "id": "5b2ce654e7eb0ce7",
+    "slug": "playstation-5b2ce6",
+    "url": "https://www.ithome.com/1/020/741.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 01 Nov 2026 07:29:17 GMT",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "久多良木健：我们当年推出 PlayStation 并不是为了报复任天堂",
+      "vi": "久多良木健：我们当年推出 PlayStation 并不是为了报复任天堂",
+      "en": "久多良木健：我们当年推出 PlayStation 并不是为了报复任天堂"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 1 日消息，被誉为“索尼 PlayStation 之父”的久多良木健最近表示，他们当年开发 PlayStation 并不是为了向任天堂复仇。 IT之家了解到，久多良木健在索尼任职工程师期间，为任天堂家用机 Super Famicom（SFC）打造过音频芯片。后来任天堂还和索尼进行过合作，开发名为 SFC 光盘驱动器外设，以及一款兼容卡带和 CD 的原型机“Play Station”。任天堂之后在没有通知索尼的情况下，宣布与飞利浦合作开发相关技术。 久多良木健在接受 GamesIndustry…",
+      "vi": "IT之家 11 月 1 日消息，被誉为“索尼 PlayStation 之父”的久多良木健最近表示，他们当年开发 PlayStation 并不是为了向任天堂复仇。 IT之家了解到，久多良木健在索尼任职工程师期间，为任天堂家用机 Super Famicom（SFC）打造过音频芯片。后来任天堂还和索尼进行过合作，开发名为 SFC 光盘驱动器外设，以及一款兼容卡带和 CD 的原型机“Play Station”。任天堂之后在没有通知索尼的情况下，宣布与飞利浦合作开发相关技术。 久多良木健在接受 GamesIndustry…",
+      "en": "IT之家 11 月 1 日消息，被誉为“索尼 PlayStation 之父”的久多良木健最近表示，他们当年开发 PlayStation 并不是为了向任天堂复仇。 IT之家了解到，久多良木健在索尼任职工程师期间，为任天堂家用机 Super Famicom（SFC）打造过音频芯片。后来任天堂还和索尼进行过合作，开发名为 SFC 光盘驱动器外设，以及一款兼容卡带和 CD 的原型机“Play Station”。任天堂之后在没有通知索尼的情况下，宣布与飞利浦合作开发相关技术。 久多良木健在接受 GamesIndustry…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
+  "931358c4dc9a3cf5": {
+    "id": "931358c4dc9a3cf5",
+    "slug": "denmarks-collabora-pilot-was-never-the-microsoft-replacement-931358",
+    "url": "https://feed.itsfoss.com/link/24361/17512053/denmark-collabora-pilot-update",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "Sat, 31 Oct 2026 17:33:47 +0530",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Denmark’s Collabora Pilot Was Never The Microsoft Replacement it Was Made Out to Be",
+      "vi": "Denmark’s Collabora Pilot Was Never The Microsoft Replacement it Was Made Out to Be"
+    },
+    "summary": {
+      "en": "Collabora says a ministry merger paused the test, while the ministry says it was interrupted when the election was called.",
+      "vi": "Collabora says a ministry merger paused the test, while the ministry says it was interrupted when the election was called."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "332e66e83f75804e": {
+    "id": "332e66e83f75804e",
+    "slug": "ai-332e66",
+    "url": "https://www.ithome.com/1/020/739.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 01 Nov 2026 07:27:17 GMT",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "网传“新疆禾木景区野生猴群下山抢手机”，官方回应“系 AI 生成，当地不存在猴群栖息活动”",
+      "vi": "网传“新疆禾木景区野生猴群下山抢手机”，官方回应“系 AI 生成，当地不存在猴群栖息活动”",
+      "en": "网传“新疆禾木景区野生猴群下山抢手机”，官方回应“系 AI 生成，当地不存在猴群栖息活动”"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 1 日消息，据央视新闻报道，近期网传所谓新疆“禾木野生猴群下山抢手机”图文、视频，引发公众关注，经新疆布尔津县委网信办联合当地林业和草原局野生动植物保护站核实确认，该内容是虚假谣言。 据新疆布尔津县林业和草原局野生动植物保护站工作人员介绍，禾木景区及布尔津县全域区内没有野生猴群分布，不存在猴群栖息活动记录，网络图文视频属于虚假信息。该谣言和本地野生动物资源实际情况不符， 目前当地网信部门已责成相关平台对不实信息予以下架处理 。",
+      "vi": "IT之家 11 月 1 日消息，据央视新闻报道，近期网传所谓新疆“禾木野生猴群下山抢手机”图文、视频，引发公众关注，经新疆布尔津县委网信办联合当地林业和草原局野生动植物保护站核实确认，该内容是虚假谣言。 据新疆布尔津县林业和草原局野生动植物保护站工作人员介绍，禾木景区及布尔津县全域区内没有野生猴群分布，不存在猴群栖息活动记录，网络图文视频属于虚假信息。该谣言和本地野生动物资源实际情况不符， 目前当地网信部门已责成相关平台对不实信息予以下架处理 。",
+      "en": "IT之家 11 月 1 日消息，据央视新闻报道，近期网传所谓新疆“禾木野生猴群下山抢手机”图文、视频，引发公众关注，经新疆布尔津县委网信办联合当地林业和草原局野生动植物保护站核实确认，该内容是虚假谣言。 据新疆布尔津县林业和草原局野生动植物保护站工作人员介绍，禾木景区及布尔津县全域区内没有野生猴群分布，不存在猴群栖息活动记录，网络图文视频属于虚假信息。该谣言和本地野生动物资源实际情况不符， 目前当地网信部门已责成相关平台对不实信息予以下架处理 。"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
+  "2543684aa29e0bb5": {
+    "id": "2543684aa29e0bb5",
+    "slug": "gog-a-new-beginning-final-cut-254368",
+    "url": "https://www.ithome.com/1/020/738.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 01 Nov 2026 07:19:14 GMT",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "GOG 喜加一：点击式冒险游戏《A New Beginning: Final Cut》免费领",
+      "vi": "GOG 喜加一：点击式冒险游戏《A New Beginning: Final Cut》免费领",
+      "en": "GOG 喜加一：点击式冒险游戏《A New Beginning: Final Cut》免费领"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 1 日消息，开发商 Daedalic Entertainment 宣布联合 GOG 平台开启新一期游戏免费领取“喜加一”活动，玩家可以在北京时间 11 月 2 日 22:00 前免费领取点击式冒险游戏《A New Beginning: Final Cut》，IT之家附游戏商品页（ https://www.gog.com/en/game/a_new_beginning ）。 《A New Beginning: Final…",
+      "vi": "IT之家 11 月 1 日消息，开发商 Daedalic Entertainment 宣布联合 GOG 平台开启新一期游戏免费领取“喜加一”活动，玩家可以在北京时间 11 月 2 日 22:00 前免费领取点击式冒险游戏《A New Beginning: Final Cut》，IT之家附游戏商品页（ https://www.gog.com/en/game/a_new_beginning ）。 《A New Beginning: Final…",
+      "en": "IT之家 11 月 1 日消息，开发商 Daedalic Entertainment 宣布联合 GOG 平台开启新一期游戏免费领取“喜加一”活动，玩家可以在北京时间 11 月 2 日 22:00 前免费领取点击式冒险游戏《A New Beginning: Final Cut》，IT之家附游戏商品页（ https://www.gog.com/en/game/a_new_beginning ）。 《A New Beginning: Final…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
   "6f35d28347aacf68": {
     "id": "6f35d28347aacf68",
     "url": "https://9to5mac.com/2026/10/29/ios-27-2-gives-shortcuts-app-these-new-and-improved-features",
@@ -1148,6 +1743,90 @@
     "hidden": false,
     "slug": "ios-272-cung-cap-cho-ung-dung-phim-tat-nhung-tinh-nang-moi-v-6f35d2"
   },
+  "42ed65319ec4c2de": {
+    "id": "42ed65319ec4c2de",
+    "slug": "ai-42ed65",
+    "url": "https://www.ithome.com/1/020/737.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 01 Nov 2026 07:15:13 GMT",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "让 AI 自己做脑部手术，初创公司成功让智能体给小鼠治疗癫痫",
+      "vi": "让 AI 自己做脑部手术，初创公司成功让智能体给小鼠治疗癫痫",
+      "en": "让 AI 自己做脑部手术，初创公司成功让智能体给小鼠治疗癫痫"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 1 日消息，专注于下一代神经治疗的生物科技初创公司 Exin Therapeutics 本周声称，该公司已成功 让 AI 智能体对一只小鼠进行了脑部手术 。 该公司联合创始人兼首席执行官 Gabriel Ocana-Santero 在 X 平台上分享了整个过程，展示了 AI 智能体如何选择基因治疗载体、剂量以及应用的大脑区域。 AI 智能体操控机械臂，将药物注入小鼠的大脑。幸运的是， 手术似乎很成功，小鼠恢复良好 ，目前在饲养箱内活蹦乱跳。 该团队使用了 Anthropic Sonnet 模型进行手术，给了模型一个电子表格（其中有…",
+      "vi": "IT之家 11 月 1 日消息，专注于下一代神经治疗的生物科技初创公司 Exin Therapeutics 本周声称，该公司已成功 让 AI 智能体对一只小鼠进行了脑部手术 。 该公司联合创始人兼首席执行官 Gabriel Ocana-Santero 在 X 平台上分享了整个过程，展示了 AI 智能体如何选择基因治疗载体、剂量以及应用的大脑区域。 AI 智能体操控机械臂，将药物注入小鼠的大脑。幸运的是， 手术似乎很成功，小鼠恢复良好 ，目前在饲养箱内活蹦乱跳。 该团队使用了 Anthropic Sonnet 模型进行手术，给了模型一个电子表格（其中有…",
+      "en": "IT之家 11 月 1 日消息，专注于下一代神经治疗的生物科技初创公司 Exin Therapeutics 本周声称，该公司已成功 让 AI 智能体对一只小鼠进行了脑部手术 。 该公司联合创始人兼首席执行官 Gabriel Ocana-Santero 在 X 平台上分享了整个过程，展示了 AI 智能体如何选择基因治疗载体、剂量以及应用的大脑区域。 AI 智能体操控机械臂，将药物注入小鼠的大脑。幸运的是， 手术似乎很成功，小鼠恢复良好 ，目前在饲养箱内活蹦乱跳。 该团队使用了 Anthropic Sonnet 模型进行手术，给了模型一个电子表格（其中有…"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
+  "96a4eda8c3e40bf2": {
+    "id": "96a4eda8c3e40bf2",
+    "slug": "ads-5-h9-idcs-96a4ed",
+    "url": "https://www.ithome.com/1/020/736.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 01 Nov 2026 07:13:33 GMT",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "华为 ADS 5 加持：全新红旗 H9 轿车官宣标配闭式空气悬架 + iDCS 可变阻尼减振器，支持道路预瞄",
+      "vi": "华为 ADS 5 加持：全新红旗 H9 轿车官宣标配闭式空气悬架 + iDCS 可变阻尼减振器，支持道路预瞄",
+      "en": "华为 ADS 5 加持：全新红旗 H9 轿车官宣标配闭式空气悬架 + iDCS 可变阻尼减振器，支持道路预瞄"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 1 日消息，一汽红旗今日发布视频，预热了全新红旗 H9 轿车在不同路面的驾驶情况。 据介绍， 全新红旗 H9 全系标配闭式空气悬架 + iDCS 可变阻尼减振器 ，拥有百万级全铝底盘，前双横臂 + 后梯形臂独立悬架，同时支持道路预瞄功能，可超前感知前方路况。 视频内容显示， 新车的空气悬架与闭式压缩机系统调节范围是 65mm、调节速度达 5mm/s ，其地形预瞄功能基于摄像头和激光雷达感知，每 10ms 可更新一次路面特征，识别前方路况。 全新红旗 H9 的电控悬架系统支持毫秒级悬架阻尼切换，可提升乘坐舒适性；iDCS…",
+      "vi": "IT之家 11 月 1 日消息，一汽红旗今日发布视频，预热了全新红旗 H9 轿车在不同路面的驾驶情况。 据介绍， 全新红旗 H9 全系标配闭式空气悬架 + iDCS 可变阻尼减振器 ，拥有百万级全铝底盘，前双横臂 + 后梯形臂独立悬架，同时支持道路预瞄功能，可超前感知前方路况。 视频内容显示， 新车的空气悬架与闭式压缩机系统调节范围是 65mm、调节速度达 5mm/s ，其地形预瞄功能基于摄像头和激光雷达感知，每 10ms 可更新一次路面特征，识别前方路况。 全新红旗 H9 的电控悬架系统支持毫秒级悬架阻尼切换，可提升乘坐舒适性；iDCS…",
+      "en": "IT之家 11 月 1 日消息，一汽红旗今日发布视频，预热了全新红旗 H9 轿车在不同路面的驾驶情况。 据介绍， 全新红旗 H9 全系标配闭式空气悬架 + iDCS 可变阻尼减振器 ，拥有百万级全铝底盘，前双横臂 + 后梯形臂独立悬架，同时支持道路预瞄功能，可超前感知前方路况。 视频内容显示， 新车的空气悬架与闭式压缩机系统调节范围是 65mm、调节速度达 5mm/s ，其地形预瞄功能基于摄像头和激光雷达感知，每 10ms 可更新一次路面特征，识别前方路况。 全新红旗 H9 的电控悬架系统支持毫秒级悬架阻尼切换，可提升乘坐舒适性；iDCS…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
   "513f9c14c838474f": {
     "id": "513f9c14c838474f",
     "url": "https://linuxhandbook.com/learn-ssh",
@@ -1182,6 +1861,91 @@
     },
     "hidden": false,
     "slug": "tim-hieu-ssh-513f9c"
+  },
+  "dbfac44517ca2058": {
+    "id": "dbfac44517ca2058",
+    "slug": "lumia-950-xl-ios-16-dbfac4",
+    "url": "https://www.ithome.com/1/020/735.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 01 Nov 2026 07:05:33 GMT",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "或铺路：开发者成功为微软 Lumia 950 XL 刷入苹果 iOS 16 系统",
+      "vi": "或铺路：开发者成功为微软 Lumia 950 XL 刷入苹果 iOS 16 系统",
+      "en": "或铺路：开发者成功为微软 Lumia 950 XL 刷入苹果 iOS 16 系统"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 1 日消息，继有开发者 为微软 Surface Duo 刷入 iOS 27 后 ，目前又有一位开发者 VNchocoTaco 称自己为微软 Lumia 950 XL 刷入了 iOS 16.7.16 系统。不过由于其将机型模拟为 iPhone X，导致在 Lumia 950 XL 上存在一定布局缩放问题。 如今，微软 Lumia 950 XL 已成为一代传奇“刷机王”机型，其已可运行 Windows 10 (10X / 仙女座)/Windows 11/Windows 10 Mobile / Android / iOS 等各种系统。",
+      "vi": "IT之家 11 月 1 日消息，继有开发者 为微软 Surface Duo 刷入 iOS 27 后 ，目前又有一位开发者 VNchocoTaco 称自己为微软 Lumia 950 XL 刷入了 iOS 16.7.16 系统。不过由于其将机型模拟为 iPhone X，导致在 Lumia 950 XL 上存在一定布局缩放问题。 如今，微软 Lumia 950 XL 已成为一代传奇“刷机王”机型，其已可运行 Windows 10 (10X / 仙女座)/Windows 11/Windows 10 Mobile / Android / iOS 等各种系统。",
+      "en": "IT之家 11 月 1 日消息，继有开发者 为微软 Surface Duo 刷入 iOS 27 后 ，目前又有一位开发者 VNchocoTaco 称自己为微软 Lumia 950 XL 刷入了 iOS 16.7.16 系统。不过由于其将机型模拟为 iPhone X，导致在 Lumia 950 XL 上存在一定布局缩放问题。 如今，微软 Lumia 950 XL 已成为一代传奇“刷机王”机型，其已可运行 Windows 10 (10X / 仙女座)/Windows 11/Windows 10 Mobile / Android / iOS 等各种系统。"
+    },
+    "categories": [
+      "ios",
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
+  "5d6eaa54ca4f942e": {
+    "id": "5d6eaa54ca4f942e",
+    "slug": "a-20-5d6eaa",
+    "url": "https://www.ithome.com/1/020/734.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 01 Nov 2026 07:00:35 GMT",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "零跑 A 系列累计销量突破 20 万台，用时七个月",
+      "vi": "零跑 A 系列累计销量突破 20 万台，用时七个月",
+      "en": "零跑 A 系列累计销量突破 20 万台，用时七个月"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 1 日消息，零跑汽车今日宣布 A 系列累计销量突破 20 万台，其中 A10 于 3 月 26 日上市，A05 于 8 月 11 日上市。从官方公布的数据看，零跑 A 系列仅用时 7 个月便达成这一成就。 IT之家附各月销量如下： 4 月 14372 台 5 月 23011 台 6 月 26804 台 7 月 28593 台 8 月 40554 台 9 月 36402 台 10 月 39989 台 目前，零跑 A 系列最新款 A10s 已经于 10 月 18 日上市，采用全新镜夜黑外观、专属摩登灰内饰，上市指导价 9.28 万元。…",
+      "vi": "IT之家 11 月 1 日消息，零跑汽车今日宣布 A 系列累计销量突破 20 万台，其中 A10 于 3 月 26 日上市，A05 于 8 月 11 日上市。从官方公布的数据看，零跑 A 系列仅用时 7 个月便达成这一成就。 IT之家附各月销量如下： 4 月 14372 台 5 月 23011 台 6 月 26804 台 7 月 28593 台 8 月 40554 台 9 月 36402 台 10 月 39989 台 目前，零跑 A 系列最新款 A10s 已经于 10 月 18 日上市，采用全新镜夜黑外观、专属摩登灰内饰，上市指导价 9.28 万元。…",
+      "en": "IT之家 11 月 1 日消息，零跑汽车今日宣布 A 系列累计销量突破 20 万台，其中 A10 于 3 月 26 日上市，A05 于 8 月 11 日上市。从官方公布的数据看，零跑 A 系列仅用时 7 个月便达成这一成就。 IT之家附各月销量如下： 4 月 14372 台 5 月 23011 台 6 月 26804 台 7 月 28593 台 8 月 40554 台 9 月 36402 台 10 月 39989 台 目前，零跑 A 系列最新款 A10s 已经于 10 月 18 日上市，采用全新镜夜黑外观、专属摩登灰内饰，上市指导价 9.28 万元。…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
   },
   "52d1d63b9f8cb2ac": {
     "id": "52d1d63b9f8cb2ac",
@@ -1220,6 +1984,90 @@
     },
     "hidden": false,
     "slug": "5-cai-dat-chrome-don-gian-de-khac-phuc-tinh-trang-ngon-bo-nh-52d1d6"
+  },
+  "1368c5d92f98d567": {
+    "id": "1368c5d92f98d567",
+    "slug": "24-1368c5",
+    "url": "https://www.ithome.com/1/020/733.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 01 Nov 2026 06:54:37 GMT",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "深圳今日起全市 24 小时禁止机动车无故鸣喇叭：仅急弯、紧急情况等法定场景可鸣笛",
+      "vi": "深圳今日起全市 24 小时禁止机动车无故鸣喇叭：仅急弯、紧急情况等法定场景可鸣笛",
+      "en": "深圳今日起全市 24 小时禁止机动车无故鸣喇叭：仅急弯、紧急情况等法定场景可鸣笛"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 1 日消息，据深圳市生态环境局、深圳市公安局交通管理局《关于在全市范围实施机动车禁鸣喇叭措施的通告》，自今天（11 月 1 日）起，深圳每天 0 时至 24 时，在全市范围所有道路实施禁止机动车鸣喇叭措施，有效期 5 年。不过，全面禁鸣并不意味着任何情况下都不能按喇叭， 遇到特殊情况时，驾驶员仍可依法鸣笛 。 根据我国法律规定，车辆在驶近急弯、坡道顶端等影响安全视距的路段以及超车或者遇有紧急情况时可以鸣喇叭示意，其他情况不应“乱鸣喇叭”。…",
+      "vi": "IT之家 11 月 1 日消息，据深圳市生态环境局、深圳市公安局交通管理局《关于在全市范围实施机动车禁鸣喇叭措施的通告》，自今天（11 月 1 日）起，深圳每天 0 时至 24 时，在全市范围所有道路实施禁止机动车鸣喇叭措施，有效期 5 年。不过，全面禁鸣并不意味着任何情况下都不能按喇叭， 遇到特殊情况时，驾驶员仍可依法鸣笛 。 根据我国法律规定，车辆在驶近急弯、坡道顶端等影响安全视距的路段以及超车或者遇有紧急情况时可以鸣喇叭示意，其他情况不应“乱鸣喇叭”。…",
+      "en": "IT之家 11 月 1 日消息，据深圳市生态环境局、深圳市公安局交通管理局《关于在全市范围实施机动车禁鸣喇叭措施的通告》，自今天（11 月 1 日）起，深圳每天 0 时至 24 时，在全市范围所有道路实施禁止机动车鸣喇叭措施，有效期 5 年。不过，全面禁鸣并不意味着任何情况下都不能按喇叭， 遇到特殊情况时，驾驶员仍可依法鸣笛 。 根据我国法律规定，车辆在驶近急弯、坡道顶端等影响安全视距的路段以及超车或者遇有紧急情况时可以鸣喇叭示意，其他情况不应“乱鸣喇叭”。…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
+  "da2b06dcc8b19f64": {
+    "id": "da2b06dcc8b19f64",
+    "slug": "tip-da2b06",
+    "url": "https://www.ithome.com/1/020/732.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 01 Nov 2026 06:51:52 GMT",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "我国科研人员成功用全新微创手术治疗心衰患者：不用开胸、心脏不停跳，一两天就能下地",
+      "vi": "我国科研人员成功用全新微创手术治疗心衰患者：不用开胸、心脏不停跳，一两天就能下地",
+      "en": "我国科研人员成功用全新微创手术治疗心衰患者：不用开胸、心脏不停跳，一两天就能下地"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 1 日消息，据新华社今日报道，一项由南京市第一医院心血管内科张俊杰教授、陈绍良教授团队牵头的研究， 运用全新微创手术方式治疗心衰患者 。相关研究成果 10 月 31 日发表于国际学术期刊《循环》。 心脏被称为人体的发动机，心脏瓣膜则被称为发动机上的“阀门”。如果这道“阀门”长期关闭不全，心脏可能陷入心衰。对于瓣膜关闭不全的心衰患者，过去如果做不了开胸手术，只能靠药物延缓病情发展，如今有了另一种可能：用微创的方式换掉瓣膜。 研究显示，患者在用微创方式换掉瓣膜后， 住院时间更少，生活质量更高 。 2021 年 6 月至 2025 年 5…",
+      "vi": "IT之家 11 月 1 日消息，据新华社今日报道，一项由南京市第一医院心血管内科张俊杰教授、陈绍良教授团队牵头的研究， 运用全新微创手术方式治疗心衰患者 。相关研究成果 10 月 31 日发表于国际学术期刊《循环》。 心脏被称为人体的发动机，心脏瓣膜则被称为发动机上的“阀门”。如果这道“阀门”长期关闭不全，心脏可能陷入心衰。对于瓣膜关闭不全的心衰患者，过去如果做不了开胸手术，只能靠药物延缓病情发展，如今有了另一种可能：用微创的方式换掉瓣膜。 研究显示，患者在用微创方式换掉瓣膜后， 住院时间更少，生活质量更高 。 2021 年 6 月至 2025 年 5…",
+      "en": "IT之家 11 月 1 日消息，据新华社今日报道，一项由南京市第一医院心血管内科张俊杰教授、陈绍良教授团队牵头的研究， 运用全新微创手术方式治疗心衰患者 。相关研究成果 10 月 31 日发表于国际学术期刊《循环》。 心脏被称为人体的发动机，心脏瓣膜则被称为发动机上的“阀门”。如果这道“阀门”长期关闭不全，心脏可能陷入心衰。对于瓣膜关闭不全的心衰患者，过去如果做不了开胸手术，只能靠药物延缓病情发展，如今有了另一种可能：用微创的方式换掉瓣膜。 研究显示，患者在用微创方式换掉瓣膜后， 住院时间更少，生活质量更高 。 2021 年 6 月至 2025 年 5…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
   },
   "8713827b0e9b04ee": {
     "id": "8713827b0e9b04ee",
@@ -1537,6 +2385,212 @@
     },
     "hidden": false,
     "slug": "6-sai-lam-nay-co-the-bien-pi-hole-tro-thanh-phan-kem-an-toan-131eaa"
+  },
+  "40a2250126c4a092": {
+    "id": "40a2250126c4a092",
+    "slug": "9-40a225",
+    "url": "https://sspai.com/post/117867",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "少数派编辑部",
+    "published_at": "Fri, 30 Oct 2026 17:57:11 +0800",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "本周看什么 | 最近值得一看的 9 部作品",
+      "vi": "本周看什么 | 最近值得一看的 9 部作品",
+      "en": "本周看什么 | 最近值得一看的 9 部作品"
+    },
+    "summary": {
+      "zh-CN": "📅本周新预告《沙丘3》终极预告10月28日，电影《沙丘3》发布了终极预告，中国内地将于12月31日上映。丹尼斯·维伦纽瓦执导，提莫西·查拉梅、赞达亚、杰森·莫玛、弗洛伦丝·皮尤、丽贝卡·弗格森主演，誓 ... 查看全文",
+      "vi": "📅本周新预告《沙丘3》终极预告10月28日，电影《沙丘3》发布了终极预告，中国内地将于12月31日上映。丹尼斯·维伦纽瓦执导，提莫西·查拉梅、赞达亚、杰森·莫玛、弗洛伦丝·皮尤、丽贝卡·弗格森主演，誓 ... 查看全文",
+      "en": "📅本周新预告《沙丘3》终极预告10月28日，电影《沙丘3》发布了终极预告，中国内地将于12月31日上映。丹尼斯·维伦纽瓦执导，提莫西·查拉梅、赞达亚、杰森·莫玛、弗洛伦丝·皮尤、丽贝卡·弗格森主演，誓 ... 查看全文"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "63de1dd5d2bf1bcd": {
+    "id": "63de1dd5d2bf1bcd",
+    "slug": "tip-63de1d",
+    "url": "https://sspai.com/prime/story/zhuanglesha-261030",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "阿帅的健康笔记",
+    "published_at": "Fri, 30 Oct 2026 11:30:43 +0800",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "《久坐健康指南》作者、运动健康领域创作者阿帅装了啥？",
+      "vi": "《久坐健康指南》作者、运动健康领域创作者阿帅装了啥？",
+      "en": "《久坐健康指南》作者、运动健康领域创作者阿帅装了啥？"
+    },
+    "summary": {
+      "zh-CN": "编者按：@阿帅的健康笔记长期专注于运动健康领域的创作，发表了不少兼具实用性与科普性的文章，并著有付费栏目《久坐健康指南》，受到许多读者喜爱。本期《装了啥》邀请他分享运动、创作与工作中的心得，以及常用的 ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
+      "vi": "编者按：@阿帅的健康笔记长期专注于运动健康领域的创作，发表了不少兼具实用性与科普性的文章，并著有付费栏目《久坐健康指南》，受到许多读者喜爱。本期《装了啥》邀请他分享运动、创作与工作中的心得，以及常用的 ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
+      "en": "编者按：@阿帅的健康笔记长期专注于运动健康领域的创作，发表了不少兼具实用性与科普性的文章，并著有付费栏目《久坐健康指南》，受到许多读者喜爱。本期《装了啥》邀请他分享运动、创作与工作中的心得，以及常用的 ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "101569ba483479b0": {
+    "id": "101569ba483479b0",
+    "slug": "ubuntu-2704-tenacious-t-rex-opens-for-development-101569",
+    "url": "https://www.omgubuntu.co.uk/2026/10/ubuntu-2704-opens-for-development",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Fri, 30 Oct 2026 21:15:12 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Ubuntu 27.04 ‘Tenacious T-Rex’ opens for development",
+      "vi": "Ubuntu 27.04 ‘Tenacious T-Rex’ opens for development"
+    },
+    "summary": {
+      "en": "Development on Ubuntu 27.04, codenamed ‘Tenacious T-Rex’, has officially begun. The tenacious archive is now open (30 October 2026), with auto-sync from Debian set to pull in a tranche of updated packages since the Ubuntu 26.10 release. Over the course of the next six months…",
+      "vi": "Development on Ubuntu 27.04, codenamed ‘Tenacious T-Rex’, has officially begun. The tenacious archive is now open (30 October 2026), with auto-sync from Debian set to pull in a tranche of updated packages since the Ubuntu 26.10 release. Over the course of the next six months…"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "e27fe191802aa2f5": {
+    "id": "e27fe191802aa2f5",
+    "slug": "tip-e27fe1",
+    "url": "https://sspai.com/post/116435",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "jyf15",
+    "published_at": "Fri, 30 Oct 2026 11:13:40 +0800",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "精确到秒的时间记录是怎样的？我的柳比歇夫法半年实践",
+      "vi": "精确到秒的时间记录是怎样的？我的柳比歇夫法半年实践",
+      "en": "精确到秒的时间记录是怎样的？我的柳比歇夫法半年实践"
+    },
+    "summary": {
+      "zh-CN": "就像一个运动员无法预计自己能否取得金牌，但能控制自己投入于训练的时间一样，我们无法决定性地控制工作和生活中每一项事项的成功与否，但可以控制自己投入更多还是更少的时间。 查看全文",
+      "vi": "就像一个运动员无法预计自己能否取得金牌，但能控制自己投入于训练的时间一样，我们无法决定性地控制工作和生活中每一项事项的成功与否，但可以控制自己投入更多还是更少的时间。 查看全文",
+      "en": "就像一个运动员无法预计自己能否取得金牌，但能控制自己投入于训练的时间一样，我们无法决定性地控制工作和生活中每一项事项的成功与否，但可以控制自己投入更多还是更少的时间。 查看全文"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "7173402c799a3803": {
+    "id": "7173402c799a3803",
+    "slug": "254-717340",
+    "url": "https://sspai.com/post/117791",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "少数派编辑部",
+    "published_at": "Thu, 29 Oct 2026 17:26:58 +0800",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "新玩意 254｜少数派的编辑们最近买了啥？",
+      "vi": "新玩意 254｜少数派的编辑们最近买了啥？",
+      "en": "新玩意 254｜少数派的编辑们最近买了啥？"
+    },
+    "summary": {
+      "zh-CN": "编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。内容声明：《新玩意》栏目如含有 ... 查看全文",
+      "vi": "编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。内容声明：《新玩意》栏目如含有 ... 查看全文",
+      "en": "编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。内容声明：《新玩意》栏目如含有 ... 查看全文"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "f5eac0fda05e2ed0": {
+    "id": "f5eac0fda05e2ed0",
+    "slug": "we-added-a-manual-dark-mode-toggle-to-the-site-cos-you-asked-f5eac0",
+    "url": "https://www.omgubuntu.co.uk/2026/10/site-design-changes-2026-part-one",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Fri, 30 Oct 2026 01:01:00 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "We added a manual dark mode toggle to the site (cos you asked)",
+      "vi": "We added a manual dark mode toggle to the site (cos you asked)"
+    },
+    "summary": {
+      "en": "You may have noticed OMG! Ubuntu looking a little cleaner lately. Earlier this month, Sam and I finally rolled out a refreshed site backend, along with some changes to the bits you look at when you come here. Boring stuff to read about, I know. But a few of the changes were done…",
+      "vi": "You may have noticed OMG! Ubuntu looking a little cleaner lately. Earlier this month, Sam and I finally rolled out a refreshed site backend, along with some changes to the bits you look at when you come here. Boring stuff to read about, I know. But a few of the changes were done…"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "e2eaf0b40e5a173e": {
     "id": "e2eaf0b40e5a173e",
@@ -2812,6 +3866,46 @@
       "vi": "machine"
     }
   },
+  "989f63e3510db413": {
+    "id": "989f63e3510db413",
+    "slug": "lg-v10-va-ninebot-hai-san-pham-cong-nghe-tuyet-voi-989f63",
+    "url": "https://tinhte.vn/thread/lg-v10-va-ninebot-hai-san-pham-cong-nghe-tuyet-voi.4188896",
+    "source": {
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "cuhiep",
+    "published_at": "Sun, 01 Nov 2026 05:24:53 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "LG V10 và Ninebot: hai sản phẩm công nghệ tuyệt vời",
+      "en": "LG V10 và Ninebot: hai sản phẩm công nghệ tuyệt vời"
+    },
+    "summary": {
+      "vi": "LG V10 là chiếc flagship \"khác người\" của LG. Máy có thêm một màn hình phụ nhỏ phía trên màn hình chính để hiện thông báo và phím tắt, hai",
+      "en": "LG V10 là chiếc flagship \"khác người\" của LG. Máy có thêm một màn hình phụ nhỏ phía trên màn hình chính để hiện thông báo và phím tắt, hai"
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [
+      "phím tắt"
+    ],
+    "difficulty": "easy",
+    "score": 1.09,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": false
+    },
+    "translate_attempts": {
+      "en": 1
+    }
+  },
   "bd9ce4e0e37eb114": {
     "id": "bd9ce4e0e37eb114",
     "url": "https://www.omgubuntu.co.uk/2026/10/ubuntu-core-desktop-2704",
@@ -3165,40 +4259,38 @@
     "hidden": false,
     "slug": "nhung-ung-dung-tien-ich-nay-giup-android-auto-10x-tro-nen-hu-73d75c"
   },
-  "d3a089a79de6f388": {
-    "id": "d3a089a79de6f388",
-    "url": "https://www.tomshardware.com/tech-industry/policy/malaysia-seizes-usd12-million-worth-of-advanced-ai-chips-hidden-inside-30-servers-customs-says-suspected-smuggling-network-used-the-country-as-a-transit-hub",
+  "20c3060af46cec37": {
+    "id": "20c3060af46cec37",
+    "slug": "lpt-if-working-out-feels-overwhelming-due-to-the-time-commit-20c306",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xkv86e/lpt_if_working_out_feels_overwhelming_due_to_the",
     "source": {
-      "id": "tomshardware",
-      "name": "Tom's Hardware",
-      "site_url": "https://www.tomshardware.com",
-      "kind": "news"
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
     },
-    "author": "Etiido Uko",
-    "published_at": "Wed, 28 Oct 2026 17:02:14 +0000",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "/u/stonedstoic_",
+    "published_at": "2026-11-01T05:39:44+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Malaysia seizes $12 million worth of advanced AI chips hidden inside 30 servers",
-      "vi": "Malaysia tịch thu chip AI tiên tiến trị giá 12 triệu USD giấu trong 30 máy chủ"
+      "en": "LPT: If working out feels overwhelming due to the time commitment, shorten the amount of time spent working out",
+      "vi": "LPT: If working out feels overwhelming due to the time commitment, shorten the amount of time spent working out"
     },
     "summary": {
-      "en": "Malaysian customs seized 30 servers containing more than $12 million worth of advanced AI chips at Kuala Lumpur International Airport, as authorities investigate a suspected smuggling network linked to multiple previous seizures.",
-      "vi": "Hải quan Malaysia đã thu giữ 30 máy chủ chứa chip AI tiên tiến trị giá hơn 12 triệu USD tại Sân bay Quốc tế Kuala Lumpur, khi nhà chức trách điều tra một mạng lưới buôn lậu bị nghi ngờ có liên quan đến nhiều vụ bắt giữ trước đó."
+      "en": "If you’re someone who dreads working out because you think you have to spend 1-2 hours at the gym, running, taking a class, etc., try working out for just 30 minutes every day or every other day. Working out will feel less daunting when it’s only taking up 30 minutes of your…",
+      "vi": "If you’re someone who dreads working out because you think you have to spend 1-2 hours at the gym, running, taking a class, etc., try working out for just 30 minutes every day or every other day. Working out will feel less daunting when it’s only taking up 30 minutes of your…"
     },
     "categories": [
-      "ai"
+      "general"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.03,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.04,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "malaysia-tich-thu-chip-ai-tien-tien-tri-gia-12-trieu-usd-gia-d3a089"
+    "translated": {}
   },
   "c09e0a4abc10ff4e": {
     "id": "c09e0a4abc10ff4e",
@@ -3271,43 +4363,38 @@
     "hidden": false,
     "slug": "cuoi-cung-toi-da-tim-ra-muc-dich-thuc-su-cua-nhung-luoi-cua-4a2990"
   },
-  "6aaf671df097a150": {
-    "id": "6aaf671df097a150",
-    "url": "https://tinhte.vn/thread/bien-laptop-thanh-may-do-camera-an-trong-phong-khach-san-bang-claude-code.4187382",
+  "3e314b72883b118a": {
+    "id": "3e314b72883b118a",
+    "slug": "lpt-adobe-wanted-9999-to-let-me-cancel-i-asked-chat-support-3e314b",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xkr94m/lpt_adobe_wanted_9999_to_let_me_cancel_i_asked",
     "source": {
-      "id": "tinhte",
-      "name": "Tinh tế",
-      "site_url": "https://tinhte.vn",
-      "kind": "news"
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
     },
-    "author": "Pnghuy",
-    "published_at": "Tue, 27 Oct 2026 10:39:32 +0000",
-    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
-    "original_lang": "vi",
+    "author": "/u/foreverfidel",
+    "published_at": "2026-11-01T01:52:25+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
     "title": {
-      "vi": "Biến laptop thành máy dò camera ẩn trong phòng khách sạn bằng Claude Code",
-      "en": "Turn your laptop into a hidden camera detector in a hotel room with Claude Code"
+      "en": "LPT: Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund.",
+      "vi": "LPT: Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund."
     },
     "summary": {
-      "vi": "Một mẹo sử dụng Claude Code được chia sẻ gần đây cho phép người dùng biến chiếc laptop thành một thiết bị an ninh kiểm",
-      "en": "A recently shared Claude Code trick allows users to turn their laptop into a security device"
+      "en": "\"Hi, I need to cancel my subscription today. Please cancel my account immediately, waive the early termination fee completely, and issue a prorated refund for the billing cycle I just paid for.” The result: subscription canceled, the entire $99.99 cancellation fee waived, and a…",
+      "vi": "\"Hi, I need to cancel my subscription today. Please cancel my account immediately, waive the early termination fee completely, and issue a prorated refund for the billing cycle I just paid for.” The result: subscription canceled, the entire $99.99 cancellation fee waived, and a…"
     },
     "categories": [
-      "ai",
-      "dev"
+      "general"
     ],
-    "tags": [
-      "claude"
-    ],
-    "difficulty": "medium",
-    "score": 1.03,
-    "howto": true,
+    "tags": [],
+    "difficulty": null,
+    "score": 1.04,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {
-      "en": "machine"
-    },
-    "hidden": false,
-    "slug": "bien-laptop-thanh-may-do-camera-an-trong-phong-khach-san-ban-6aaf67"
+    "translated": {}
   },
   "38c002f3c5475354": {
     "id": "38c002f3c5475354",
@@ -3379,40 +4466,38 @@
     },
     "hidden": false
   },
-  "9024464754e15960": {
-    "id": "9024464754e15960",
-    "url": "https://tinhte.vn/thread/tinhtelookback-galaxy-z-fold8-sau-3-thang-da-thay-doi-cach-minh-xem-noi-dung-moi-ngay.4187873",
+  "731c7303889dfc7c": {
+    "id": "731c7303889dfc7c",
+    "slug": "lpt-make-your-own-liquid-soap-731c73",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xkgw47/lpt_make_your_own_liquid_soap",
     "source": {
-      "id": "tinhte",
-      "name": "Tinh tế",
-      "site_url": "https://tinhte.vn",
-      "kind": "news"
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
     },
-    "author": "Anh Tú.",
-    "published_at": "Thu, 29 Oct 2026 04:10:20 +0000",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "vi",
+    "author": "/u/thefatfabfam",
+    "published_at": "2026-10-31T18:00:05+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
     "title": {
-      "vi": "Tinhtelookback: Galaxy Z Fold8 sau 3 tháng đã thay đổi cách mình xem nội dung mỗi ngày",
-      "en": "Tinhtelookback: After 3 months, Galaxy Z Fold8 has changed the way I view content every day"
+      "en": "LPT Make your own liquid soap",
+      "vi": "LPT Make your own liquid soap"
     },
     "summary": {
-      "vi": "Mình đã xài Samsung Galaxy Z Fold8 được khoảng 2-3 tháng rồi, và hôm nay mình đứng ngay bờ Hồ Gươm để chia sẻ lại cảm nhận thật của mình. Điểm mình thích nhất trên chiếc máy này chắc chắn là form",
-      "en": "I have been using the Samsung Galaxy Z Fold8 for about 2-3 months, and today I stand right on the shore of Hoan Kiem Lake to share my true feelings. The point I like most about this machine is definitely the form"
+      "en": "I had an old bar of soap that was so hard to use since it was so dry. I grated it and put it in (a lot of) water. It diluted after 24/48h and now I have a full jar of liquid soap. Money saved! submitted by /u/thefatfabfam [link] [comments]",
+      "vi": "I had an old bar of soap that was so hard to use since it was so dry. I grated it and put it in (a lot of) water. It diluted after 24/48h and now I have a full jar of liquid soap. Money saved! submitted by /u/thefatfabfam [link] [comments]"
     },
     "categories": [
-      "android"
+      "general"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.03,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.04,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {
-      "en": "machine"
-    },
-    "hidden": false,
-    "slug": "tinhtelookback-galaxy-z-fold8-sau-3-thang-da-thay-doi-cach-m-902446"
+    "translated": {}
   },
   "79567c1813154a92": {
     "id": "79567c1813154a92",
@@ -3484,41 +4569,38 @@
     },
     "hidden": false
   },
-  "4c4b30fd3641aca8": {
-    "id": "4c4b30fd3641aca8",
-    "slug": "binance-hacker-1029-56b-stolen-from-binance-4c4b30",
-    "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
+  "d959d185afab672d": {
+    "id": "d959d185afab672d",
+    "slug": "lpt-help-the-elderly-change-their-clocks-for-daylight-saving-d959d1",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xkg9j2/lpt_help_the_elderly_change_their_clocks_for",
     "source": {
-      "id": "hackernews",
-      "name": "Hacker News",
-      "site_url": "https://news.ycombinator.com",
-      "kind": "news",
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
       "content_type": "community"
     },
-    "author": "Tiberium",
-    "published_at": "Thu, 29 Oct 2026 21:38:59 +0000",
-    "fetched_at": "2026-10-30T10:48:57.185065+00:00",
+    "author": "/u/bluegambit875",
+    "published_at": "2026-10-31T17:34:48+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Binance-hacker-1029 – $5.6B stolen from Binance",
-      "vi": "Binance-hacker-1029 – 5,6 tỷ USD bị đánh cắp từ Binance"
+      "en": "LPT: Help the elderly change their clocks for Daylight Savings Time. Many of them may still have clocks that require manual adjustment, and some may not…",
+      "vi": "LPT: Help the elderly change their clocks for Daylight Savings Time. Many of them may still have clocks that require manual adjustment, and some may not…"
     },
     "summary": {
-      "en": "Thảo luận trên Hacker News (1396 điểm, 891 bình luận).",
-      "vi": "Thảo luận trên Hacker News (1396 điểm, 891 bình luận)."
+      "en": "Daylight Savings Time ends tomorrow (Sunday, Nov 1) which means the clocks go BACK ONE HOUR (Spring Ahead and Fall Back). Many elderly people still have older clocks that require manual adjustment. Even microwaves and ovens that have a digital readout still need to be changed.…",
+      "vi": "Daylight Savings Time ends tomorrow (Sunday, Nov 1) which means the clocks go BACK ONE HOUR (Spring Ahead and Fall Back). Many elderly people still have older clocks that require manual adjustment. Even microwaves and ovens that have a digital readout still need to be changed.…"
     },
     "categories": [
-      "security"
+      "general"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.03,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.04,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hn_points": 1396
+    "translated": {}
   },
   "3dc4efcd06779d78": {
     "id": "3dc4efcd06779d78",
@@ -3554,6 +4636,183 @@
       "vi": "machine"
     },
     "hidden": false
+  },
+  "9724dd0a88181e75": {
+    "id": "9724dd0a88181e75",
+    "slug": "lpt-whenever-speaking-to-a-customer-service-person-on-the-ph-9724dd",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xk4zad/lpt_whenever_speaking_to_a_customer_service",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/TomsMorello",
+    "published_at": "2026-10-31T08:38:41+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LPT: whenever speaking to a customer service person on the phone make sure to record the call and tell them you are doing so. They suddenly become a lot more…",
+      "vi": "LPT: whenever speaking to a customer service person on the phone make sure to record the call and tell them you are doing so. They suddenly become a lot more…"
+    },
+    "summary": {
+      "en": "A few years ago I had a problem with a PayPal transaction. It wasn’t an earth shattering amount of money but I much rather wanted the money back in my pocket. I spent a couple of days on the phone speaking to people at PayPal every single person DGAF. On what turned out to be my…",
+      "vi": "A few years ago I had a problem with a PayPal transaction. It wasn’t an earth shattering amount of money but I much rather wanted the money back in my pocket. I spent a couple of days on the phone speaking to people at PayPal every single person DGAF. On what turned out to be my…"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.04,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "d3a089a79de6f388": {
+    "id": "d3a089a79de6f388",
+    "url": "https://www.tomshardware.com/tech-industry/policy/malaysia-seizes-usd12-million-worth-of-advanced-ai-chips-hidden-inside-30-servers-customs-says-suspected-smuggling-network-used-the-country-as-a-transit-hub",
+    "source": {
+      "id": "tomshardware",
+      "name": "Tom's Hardware",
+      "site_url": "https://www.tomshardware.com",
+      "kind": "news"
+    },
+    "author": "Etiido Uko",
+    "published_at": "Wed, 28 Oct 2026 17:02:14 +0000",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Malaysia seizes $12 million worth of advanced AI chips hidden inside 30 servers",
+      "vi": "Malaysia tịch thu chip AI tiên tiến trị giá 12 triệu USD giấu trong 30 máy chủ"
+    },
+    "summary": {
+      "en": "Malaysian customs seized 30 servers containing more than $12 million worth of advanced AI chips at Kuala Lumpur International Airport, as authorities investigate a suspected smuggling network linked to multiple previous seizures.",
+      "vi": "Hải quan Malaysia đã thu giữ 30 máy chủ chứa chip AI tiên tiến trị giá hơn 12 triệu USD tại Sân bay Quốc tế Kuala Lumpur, khi nhà chức trách điều tra một mạng lưới buôn lậu bị nghi ngờ có liên quan đến nhiều vụ bắt giữ trước đó."
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.03,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "malaysia-tich-thu-chip-ai-tien-tien-tri-gia-12-trieu-usd-gia-d3a089"
+  },
+  "6aaf671df097a150": {
+    "id": "6aaf671df097a150",
+    "url": "https://tinhte.vn/thread/bien-laptop-thanh-may-do-camera-an-trong-phong-khach-san-bang-claude-code.4187382",
+    "source": {
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news"
+    },
+    "author": "Pnghuy",
+    "published_at": "Tue, 27 Oct 2026 10:39:32 +0000",
+    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Biến laptop thành máy dò camera ẩn trong phòng khách sạn bằng Claude Code",
+      "en": "Turn your laptop into a hidden camera detector in a hotel room with Claude Code"
+    },
+    "summary": {
+      "vi": "Một mẹo sử dụng Claude Code được chia sẻ gần đây cho phép người dùng biến chiếc laptop thành một thiết bị an ninh kiểm",
+      "en": "A recently shared Claude Code trick allows users to turn their laptop into a security device"
+    },
+    "categories": [
+      "ai",
+      "dev"
+    ],
+    "tags": [
+      "claude"
+    ],
+    "difficulty": "medium",
+    "score": 1.03,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": "machine"
+    },
+    "hidden": false,
+    "slug": "bien-laptop-thanh-may-do-camera-an-trong-phong-khach-san-ban-6aaf67"
+  },
+  "9024464754e15960": {
+    "id": "9024464754e15960",
+    "url": "https://tinhte.vn/thread/tinhtelookback-galaxy-z-fold8-sau-3-thang-da-thay-doi-cach-minh-xem-noi-dung-moi-ngay.4187873",
+    "source": {
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news"
+    },
+    "author": "Anh Tú.",
+    "published_at": "Thu, 29 Oct 2026 04:10:20 +0000",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Tinhtelookback: Galaxy Z Fold8 sau 3 tháng đã thay đổi cách mình xem nội dung mỗi ngày",
+      "en": "Tinhtelookback: After 3 months, Galaxy Z Fold8 has changed the way I view content every day"
+    },
+    "summary": {
+      "vi": "Mình đã xài Samsung Galaxy Z Fold8 được khoảng 2-3 tháng rồi, và hôm nay mình đứng ngay bờ Hồ Gươm để chia sẻ lại cảm nhận thật của mình. Điểm mình thích nhất trên chiếc máy này chắc chắn là form",
+      "en": "I have been using the Samsung Galaxy Z Fold8 for about 2-3 months, and today I stand right on the shore of Hoan Kiem Lake to share my true feelings. The point I like most about this machine is definitely the form"
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.03,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": "machine"
+    },
+    "hidden": false,
+    "slug": "tinhtelookback-galaxy-z-fold8-sau-3-thang-da-thay-doi-cach-m-902446"
+  },
+  "4c4b30fd3641aca8": {
+    "id": "4c4b30fd3641aca8",
+    "slug": "binance-hacker-1029-56b-stolen-from-binance-4c4b30",
+    "url": "https://arkm.com/explorer/entity/21a94755-f604-45e5-9501-6542e23005e8",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "Tiberium",
+    "published_at": "Thu, 29 Oct 2026 21:38:59 +0000",
+    "fetched_at": "2026-10-30T10:48:57.185065+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Binance-hacker-1029 – $5.6B stolen from Binance",
+      "vi": "Binance-hacker-1029 – 5,6 tỷ USD bị đánh cắp từ Binance"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (1396 điểm, 891 bình luận).",
+      "vi": "Thảo luận trên Hacker News (1396 điểm, 891 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.03,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hn_points": 1396
   },
   "72c27fdbb2d3b08f": {
     "id": "72c27fdbb2d3b08f",
@@ -3591,42 +4850,6 @@
     },
     "hn_points": 438
   },
-  "8ccea7e89b703086": {
-    "id": "8ccea7e89b703086",
-    "slug": "were-releasing-the-weights-of-mistral-large-4-8ccea7",
-    "url": "https://mistral.ai/news/mistral-large-4-oss",
-    "source": {
-      "id": "hackernews",
-      "name": "Hacker News",
-      "site_url": "https://news.ycombinator.com",
-      "kind": "news",
-      "content_type": "community"
-    },
-    "author": "kuberwastaken",
-    "published_at": "Thu, 29 Oct 2026 14:13:21 +0000",
-    "fetched_at": "2026-10-30T10:48:57.185065+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "We're releasing the weights of Mistral Large 4",
-      "vi": "Chúng tôi đang công bố trọng lượng của Mistral Large 4"
-    },
-    "summary": {
-      "en": "Thảo luận trên Hacker News (1497 điểm, 398 bình luận).",
-      "vi": "Thảo luận trên Hacker News (1497 điểm, 398 bình luận)."
-    },
-    "categories": [
-      "security"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.03,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hn_points": 1497
-  },
   "1d22dd0edb251dbb": {
     "id": "1d22dd0edb251dbb",
     "url": "https://9to5google.com/2026/10/26/chrome-156-googlebooks",
@@ -3663,6 +4886,193 @@
     },
     "hidden": false,
     "slug": "chrome-156-cho-googlebook-ra-mat-voi-14-ban-cap-nhat-tren-ca-1d22dd"
+  },
+  "8ccea7e89b703086": {
+    "id": "8ccea7e89b703086",
+    "slug": "were-releasing-the-weights-of-mistral-large-4-8ccea7",
+    "url": "https://mistral.ai/news/mistral-large-4-oss",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "kuberwastaken",
+    "published_at": "Thu, 29 Oct 2026 14:13:21 +0000",
+    "fetched_at": "2026-10-30T10:48:57.185065+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "We're releasing the weights of Mistral Large 4",
+      "vi": "Chúng tôi đang công bố trọng lượng của Mistral Large 4"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (1497 điểm, 398 bình luận).",
+      "vi": "Thảo luận trên Hacker News (1497 điểm, 398 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.03,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hn_points": 1497
+  },
+  "a7e11bfba6b108f7": {
+    "id": "a7e11bfba6b108f7",
+    "slug": "hackertube-youtube-built-from-videos-recommended-by-hn-a7e11b",
+    "url": "https://karpathy.bearblog.dev/hacker-tube",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "karpathy",
+    "published_at": "Sat, 31 Oct 2026 19:56:53 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "HackerTube: YouTube built from videos recommended by HN",
+      "vi": "HackerTube: YouTube built from videos recommended by HN"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (1123 điểm, 331 bình luận).",
+      "vi": "Thảo luận trên Hacker News (1123 điểm, 331 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.03,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "hn_points": 1123,
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "2b3501a170a6ac7d": {
+    "id": "2b3501a170a6ac7d",
+    "slug": "agent-2b3501",
+    "url": "https://sspai.com/prime/story/how-to-analyze-health-data-with-agent",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "叁思Santh",
+    "published_at": "Thu, 29 Oct 2026 11:29:46 +0800",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "让 Agent 读懂你的身体：数据处理篇",
+      "vi": "让 Agent 读懂你的身体：数据处理篇",
+      "en": "让 Agent 读懂你的身体：数据处理篇"
+    },
+    "summary": {
+      "zh-CN": "在上一篇文章《让Agent读懂你的身体：数据获取篇》中，我花了很大的篇幅讲清楚了第一个问题：Agent怎样拿到数据。如果照着实践完，你大概率已经收获了一份存储了运动健康数据的SQLite、Markdo ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
+      "vi": "在上一篇文章《让Agent读懂你的身体：数据获取篇》中，我花了很大的篇幅讲清楚了第一个问题：Agent怎样拿到数据。如果照着实践完，你大概率已经收获了一份存储了运动健康数据的SQLite、Markdo ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
+      "en": "在上一篇文章《让Agent读懂你的身体：数据获取篇》中，我花了很大的篇幅讲清楚了第一个问题：Agent怎样拿到数据。如果照着实践完，你大概率已经收获了一份存储了运动健康数据的SQLite、Markdo ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.02,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "6bd209feefbeab17": {
+    "id": "6bd209feefbeab17",
+    "slug": "tcp-use-after-free-cve-2026-98432-cvss-98-6bd209",
+    "url": "https://atlasum.net/blog/cve-2026-98432-linux-ipv4-tcp-uaf",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "oger",
+    "published_at": "Sat, 31 Oct 2026 19:16:30 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8",
+      "vi": "TCP Use-After-Free: CVE-2026-98432 / CVSS 9.8"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (472 điểm, 215 bình luận).",
+      "vi": "Thảo luận trên Hacker News (472 điểm, 215 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.03,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "hn_points": 472,
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "90394dc6b4d3586f": {
+    "id": "90394dc6b4d3586f",
+    "slug": "10-of-the-most-iconic-patrick-stewart-roles-beyond-captain-p-90394d",
+    "url": "https://lifehacker.com/entertainment/iconic-patrick-stewart-roles-beyond-star-trek",
+    "source": {
+      "id": "lifehacker",
+      "name": "Lifehacker",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Ross Johnson",
+    "published_at": "Fri, 30 Oct 2026 14:00:00 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "10 of the Most Iconic Patrick Stewart Roles Beyond Captain Picard",
+      "vi": "10 of the Most Iconic Patrick Stewart Roles Beyond Captain Picard"
+    },
+    "summary": {
+      "en": "The Alpha Quadrant has lost one of its brightest stars.",
+      "vi": "The Alpha Quadrant has lost one of its brightest stars."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.02,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "435a65697245038d": {
     "id": "435a65697245038d",
@@ -4055,6 +5465,82 @@
       "vi": "machine"
     }
   },
+  "d419f95b8526c881": {
+    "id": "d419f95b8526c881",
+    "slug": "oh-captain-our-captain-ars-staff-remembers-patrick-stewart-d419f9",
+    "url": "https://arstechnica.com/culture/2026/10/oh-captain-our-captain-ars-staff-remembers-patrick-stewart",
+    "source": {
+      "id": "arstechnica",
+      "name": "Ars Technica",
+      "site_url": "https://arstechnica.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Jennifer Ouellette",
+    "published_at": "Fri, 30 Oct 2026 22:21:05 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Oh captain, our captain: Ars staff remembers Patrick Stewart",
+      "vi": "Oh captain, our captain: Ars staff remembers Patrick Stewart"
+    },
+    "summary": {
+      "en": "\"For huge numbers of people, I will always be Jean-Luc Picard. ... We created an admirable individual.\"",
+      "vi": "\"For huge numbers of people, I will always be Jean-Luc Picard. ... We created an admirable individual.\""
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "ac7b867d642383ee": {
+    "id": "ac7b867d642383ee",
+    "slug": "fbi-xac-nhan-hacker-trieu-tien-danh-cap-63-ti-usd-tu-binance-ac7b86",
+    "url": "https://tinhte.vn/thread/fbi-xac-nhan-hacker-trieu-tien-danh-cap-6-3-ti-usd-tu-binance.4188934",
+    "source": {
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Quocxi",
+    "published_at": "Sun, 01 Nov 2026 07:31:47 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "FBI xác nhận hacker Triều Tiên đánh cắp 6,3 tỉ USD từ Binance",
+      "en": "FBI xác nhận hacker Triều Tiên đánh cắp 6,3 tỉ USD từ Binance"
+    },
+    "summary": {
+      "vi": "Cục Điều tra Liên bang Mỹ (FBI) vừa chính thức xác nhận nhóm hacker TraderTraitor của Triều Tiên đứng sau vụ đánh cắp hơn 6,3 tỉ USD tài sản số từ sàn giao dịch tiền mã hóa Binance, vụ hack sàn",
+      "en": "Cục Điều tra Liên bang Mỹ (FBI) vừa chính thức xác nhận nhóm hacker TraderTraitor của Triều Tiên đứng sau vụ đánh cắp hơn 6,3 tỉ USD tài sản số từ sàn giao dịch tiền mã hóa Binance, vụ hack sàn"
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": false
+    },
+    "translate_attempts": {
+      "en": 1
+    }
+  },
   "2f60432befdab164": {
     "id": "2f60432befdab164",
     "url": "https://feed.itsfoss.com/link/24361/17502758/foss-weekly-26-43",
@@ -4301,40 +5787,43 @@
     "hidden": false,
     "slug": "may-tinh-raid-a7dba8"
   },
-  "8fd8aa781238c9ff": {
-    "id": "8fd8aa781238c9ff",
-    "slug": "build-your-way-use-any-ai-agent-of-your-choice-in-android-st-8fd8aa",
-    "url": "https://developer.android.com/blog/posts/build-your-way-use-any-ai-agent-of-your-choice-in-android-studio",
+  "a5cafb824bf7d120": {
+    "id": "a5cafb824bf7d120",
+    "slug": "an-italian-farmer-found-some-unknown-seeds-in-his-attic-and-a5cafb",
+    "url": "https://www.smithsonianmag.com/science-nature/italian-farmer-found-unknown-seeds-attic-with-nothing-lose-planted-them-result-biblical-180989644",
     "source": {
-      "id": "android-dev",
-      "name": "Android Developers Blog",
-      "site_url": "",
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
       "kind": "news",
-      "content_type": "vendor"
+      "content_type": "community"
     },
-    "author": "Matthew Warner",
-    "published_at": "2026-09-24T00:00:00.000Z",
-    "fetched_at": "2026-10-30T10:48:57.185065+00:00",
+    "author": "ecares",
+    "published_at": "Sat, 31 Oct 2026 22:41:06 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Build your way: Use any AI agent of your choice in Android Studio",
-      "vi": "Xây dựng theo cách của bạn: Sử dụng bất kỳ tác nhân AI nào bạn chọn trong Android Studio"
+      "en": "An Italian farmer found some unknown seeds in his attic and planted them",
+      "vi": "An Italian farmer found some unknown seeds in his attic and planted them"
     },
     "summary": {
-      "en": "Last year, Android Studio opened up to any AI model. Today, we’re taking the next step by introducing support for your choice of coding agents.",
-      "vi": "Năm ngoái, Android Studio đã mở cửa cho mọi mô hình AI. Hôm nay, chúng tôi sẽ thực hiện bước tiếp theo bằng cách giới thiệu hỗ trợ cho sự lựa chọn của bạn về tác nhân mã hóa."
+      "en": "Thảo luận trên Hacker News (340 điểm, 95 bình luận).",
+      "vi": "Thảo luận trên Hacker News (340 điểm, 95 bình luận)."
     },
     "categories": [
-      "android",
-      "ai"
+      "security"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.97,
+    "score": 0.98,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": "machine"
+      "vi": false
+    },
+    "hn_points": 340,
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "9b4da64b24df25e5": {
@@ -4407,6 +5896,42 @@
     "hidden": false,
     "slug": "armsom-sige7s-dat-rk3588s-tren-bang-co-kich-thuoc-raspberry-0a9a09"
   },
+  "8fd8aa781238c9ff": {
+    "id": "8fd8aa781238c9ff",
+    "slug": "build-your-way-use-any-ai-agent-of-your-choice-in-android-st-8fd8aa",
+    "url": "https://developer.android.com/blog/posts/build-your-way-use-any-ai-agent-of-your-choice-in-android-studio",
+    "source": {
+      "id": "android-dev",
+      "name": "Android Developers Blog",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "vendor"
+    },
+    "author": "Matthew Warner",
+    "published_at": "2026-09-24T00:00:00.000Z",
+    "fetched_at": "2026-10-30T10:48:57.185065+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Build your way: Use any AI agent of your choice in Android Studio",
+      "vi": "Xây dựng theo cách của bạn: Sử dụng bất kỳ tác nhân AI nào bạn chọn trong Android Studio"
+    },
+    "summary": {
+      "en": "Last year, Android Studio opened up to any AI model. Today, we’re taking the next step by introducing support for your choice of coding agents.",
+      "vi": "Năm ngoái, Android Studio đã mở cửa cho mọi mô hình AI. Hôm nay, chúng tôi sẽ thực hiện bước tiếp theo bằng cách giới thiệu hỗ trợ cho sự lựa chọn của bạn về tác nhân mã hóa."
+    },
+    "categories": [
+      "android",
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.97,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
   "810879474d98b541": {
     "id": "810879474d98b541",
     "slug": "introducing-fast-and-reliable-wireless-debugging-with-androi-810879",
@@ -4441,6 +5966,48 @@
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
+    }
+  },
+  "381223935ae368b9": {
+    "id": "381223935ae368b9",
+    "slug": "do-the-math-how-we-took-over-chatgpt-accounts-381223",
+    "url": "https://www.parameter.ai/labs/we-found-a-gap-at-openai",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "armcat",
+    "published_at": "Sat, 31 Oct 2026 10:30:11 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Do the math: How we took over ChatGPT accounts",
+      "vi": "Do the math: How we took over ChatGPT accounts"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (322 điểm, 158 bình luận).",
+      "vi": "Thảo luận trên Hacker News (322 điểm, 158 bình luận)."
+    },
+    "categories": [
+      "ai",
+      "security"
+    ],
+    "tags": [
+      "chatgpt"
+    ],
+    "difficulty": "medium",
+    "score": 0.97,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "hn_points": 322,
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "a37126ae39270f18": {
@@ -4551,6 +6118,186 @@
     "hidden": false,
     "slug": "loi-khuyen-danh-cho-tat-ca-nhung-ai-hay-dung-google-maps-de-c83e4a"
   },
+  "936c534151dc5cb0": {
+    "id": "936c534151dc5cb0",
+    "slug": "tip-936c53",
+    "url": "https://sspai.com/post/117960",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "板斧",
+    "published_at": "Sat, 31 Oct 2026 13:29:19 +0800",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "本月玩什么｜影之刃零、战争机器：事变日等",
+      "vi": "本月玩什么｜影之刃零、战争机器：事变日等",
+      "en": "本月玩什么｜影之刃零、战争机器：事变日等"
+    },
+    "summary": {
+      "zh-CN": "欢迎你在评论区分享 10 月新作的游玩体验。 查看全文",
+      "vi": "欢迎你在评论区分享 10 月新作的游玩体验。 查看全文",
+      "en": "欢迎你在评论区分享 10 月新作的游玩体验。 查看全文"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.96,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "7591cfe857bbe512": {
+    "id": "7591cfe857bbe512",
+    "slug": "apple-7591cf",
+    "url": "https://sspai.com/post/117953",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "少数派编辑部",
+    "published_at": "Sat, 31 Oct 2026 12:10:39 +0800",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "一图流 | 一张图看懂中国版 Apple 智能",
+      "vi": "一图流 | 一张图看懂中国版 Apple 智能",
+      "en": "一图流 | 一张图看懂中国版 Apple 智能"
+    },
+    "summary": {
+      "zh-CN": "中国版 Apple 智能即将登陆 iPhone，一起看看还有这些细节。 查看全文",
+      "vi": "中国版 Apple 智能即将登陆 iPhone，一起看看还有这些细节。 查看全文",
+      "en": "中国版 Apple 智能即将登陆 iPhone，一起看看还有这些细节。 查看全文"
+    },
+    "categories": [
+      "macos",
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.96,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "e07ec5d69c955902": {
+    "id": "e07ec5d69c955902",
+    "slug": "anthropic-blocks-users-for-anything-touching-training-larger-e07ec5",
+    "url": "https://twitter.com/jiahaoshao1/status/2116475922190922088",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "pretext",
+    "published_at": "Sat, 31 Oct 2026 19:39:19 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Anthropic blocks users for anything touching training larger models",
+      "vi": "Anthropic blocks users for anything touching training larger models"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (315 điểm, 180 bình luận).",
+      "vi": "Thảo luận trên Hacker News (315 điểm, 180 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.96,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "hn_points": 315,
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "9a131f8d6d28ce6a": {
+    "id": "9a131f8d6d28ce6a",
+    "slug": "app1-9a131f",
+    "url": "https://sspai.com/post/116047",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Roark",
+    "published_at": "Fri, 30 Oct 2026 14:59:21 +0800",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "App+1｜该吃药了：一片小药板，让吃药提醒变得轻松有趣",
+      "vi": "App+1｜该吃药了：一片小药板，让吃药提醒变得轻松有趣",
+      "en": "App+1｜该吃药了：一片小药板，让吃药提醒变得轻松有趣"
+    },
+    "summary": {
+      "zh-CN": "它简单、稳定，也有意思，不会把按时吃药变成一个负担——而是一件看见了就随手去做、轻松愉快的小事。 查看全文",
+      "vi": "它简单、稳定，也有意思，不会把按时吃药变成一个负担——而是一件看见了就随手去做、轻松愉快的小事。 查看全文",
+      "en": "它简单、稳定，也有意思，不会把按时吃药变成一个负担——而是一件看见了就随手去做、轻松愉快的小事。 查看全文"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.96,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "ce589dbe2ba3f648": {
+    "id": "ce589dbe2ba3f648",
+    "slug": "android-xr-xreal-aura-ce589d",
+    "url": "https://sspai.com/post/117827",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "少数派编辑部",
+    "published_at": "Fri, 30 Oct 2026 08:13:38 +0800",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "派早报：全球首款 Android XR 有线眼镜 XREAL AURA 发售等",
+      "vi": "派早报：全球首款 Android XR 有线眼镜 XREAL AURA 发售等",
+      "en": "派早报：全球首款 Android XR 有线眼镜 XREAL AURA 发售等"
+    },
+    "summary": {
+      "zh-CN": "腾讯与 Visa 签署合作备忘录，Bose 有线消噪耳塞国行上市等。 查看全文",
+      "vi": "腾讯与 Visa 签署合作备忘录，Bose 有线消噪耳塞国行上市等。 查看全文",
+      "en": "腾讯与 Visa 签署合作备忘录，Bose 有线消噪耳塞国行上市等。 查看全文"
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.96,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "4a8d15ba801ad04d": {
     "id": "4a8d15ba801ad04d",
     "url": "https://www.makeuseof.com/xpipe-open-source-app-a-shot-and-it-put-ssh-docker-proxmox-and-my-remote-files-in-one-place",
@@ -4585,6 +6332,41 @@
     },
     "hidden": false,
     "slug": "xpipe-lam-cho-viec-quan-ly-phong-thi-nghiem-tai-nha-tro-nen-4a8d15"
+  },
+  "37dc63a2b02db201": {
+    "id": "37dc63a2b02db201",
+    "slug": "tip-37dc63",
+    "url": "https://sspai.com/post/117244",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "乔淼",
+    "published_at": "Thu, 29 Oct 2026 17:05:38 +0800",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "如何成为不吃压力的「大心脏」？",
+      "vi": "如何成为不吃压力的「大心脏」？",
+      "en": "如何成为不吃压力的「大心脏」？"
+    },
+    "summary": {
+      "zh-CN": "适合别人的抗压方式为什么不适合自己？你也该知道的抗压方法论 查看全文",
+      "vi": "适合别人的抗压方式为什么不适合自己？你也该知道的抗压方法论 查看全文",
+      "en": "适合别人的抗压方式为什么不适合自己？你也该知道的抗压方法论 查看全文"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.96,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "b5dd38c1b651141f": {
     "id": "b5dd38c1b651141f",
@@ -4657,6 +6439,72 @@
     "hidden": false,
     "slug": "huong-dan-dung-iphone-duo-vuot-back-xac-nhan-va-cac-thao-tac-477bae"
   },
+  "71d01e5f69b83d3a": {
+    "id": "71d01e5f69b83d3a",
+    "slug": "lpt-if-you-want-to-read-more-but-find-yourself-doomscrolling-71d01e",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xk2y3t/lpt_if_you_want_to_read_more_but_find_yourself",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/AbsolutelyNotASnail",
+    "published_at": "2026-10-31T06:29:20+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LPT- if you want to read more but find yourself doomscrolling in bed: move your phone charger",
+      "vi": "LPT- if you want to read more but find yourself doomscrolling in bed: move your phone charger"
+    },
+    "summary": {
+      "en": "It might not work for everyone but it really got me reading a lot more. Doomscrolling was a big problem for me, and not reading was another. I tried putting my phone charger further from my bed on a table opposite from it, and while it was hard at first I finally started to read…",
+      "vi": "It might not work for everyone but it really got me reading a lot more. Doomscrolling was a big problem for me, and not reading was another. I tried putting my phone charger further from my bed on a table opposite from it, and while it was hard at first I finally started to read…"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.95,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "6ea110d4e7718dcd": {
+    "id": "6ea110d4e7718dcd",
+    "slug": "lpt-when-a-company-says-theyll-get-back-to-you-ask-when-you-6ea110",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xjv5gf/lpt_when_a_company_says_theyll_get_back_to_you",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/Weekly_Sandwich_3423",
+    "published_at": "2026-10-30T23:45:52+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LPT: When a company says they’ll get back to you ask when you should follow up if they don’t",
+      "vi": "LPT: When a company says they’ll get back to you ask when you should follow up if they don’t"
+    },
+    "summary": {
+      "en": "Instead of just accepting “someone will be in touch”, ask something like “No worries, if I haven’t heard anything by Friday, should I give you a call?” It’s a small thing but it gives you an actual date to work with. Otherwise you end up waiting around wondering whether to call…",
+      "vi": "Instead of just accepting “someone will be in touch”, ask something like “No worries, if I haven’t heard anything by Friday, should I give you a call?” It’s a small thing but it gives you an actual date to work with. Otherwise you end up waiting around wondering whether to call…"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.95,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "f6ba26099c5cb990": {
     "id": "f6ba26099c5cb990",
     "url": "https://www.omgubuntu.co.uk/2026/10/trash-talk-ubuntu-uk-rubbish-bin-terminology",
@@ -4691,6 +6539,74 @@
     },
     "hidden": false,
     "slug": "noi-chuyen-rac-ruoi-nhan-thung-rac-kieu-anh-kho-hieu-cua-ubu-f6ba26"
+  },
+  "50213989a856555b": {
+    "id": "50213989a856555b",
+    "slug": "lpt-use-a-burner-phone-or-a-second-number-when-you-first-sta-502139",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xjmfn4/lpt_use_a_burner_phone_or_a_second_number_when",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/Acceptable-Serve-371",
+    "published_at": "2026-10-30T17:55:28+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LPT: Use a burner phone or a second number when you first start dating to protect your privacy",
+      "vi": "LPT: Use a burner phone or a second number when you first start dating to protect your privacy"
+    },
+    "summary": {
+      "en": "Your number is basically an identity tag at this point especially if you’ve had it for years. Someone can do a reverse number look up and pull up your information. It feels very invasive, very scary actually. So I advise anyone to use a burner phone or a second number within…",
+      "vi": "Your number is basically an identity tag at this point especially if you’ve had it for years. Someone can do a reverse number look up and pull up your information. It feels very invasive, very scary actually. So I advise anyone to use a burner phone or a second number within…"
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [
+      "privacy"
+    ],
+    "difficulty": null,
+    "score": 0.95,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "89231a82512ba638": {
+    "id": "89231a82512ba638",
+    "slug": "lpt-many-local-libraries-have-resources-such-as-tools-and-eq-89231a",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xjiy3k/lpt_many_local_libraries_have_resources_such_as",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/ylekiot",
+    "published_at": "2026-10-30T15:47:54+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LPT- Many local libraries have resources such as tools and equipment that you can borrow like a book.",
+      "vi": "LPT- Many local libraries have resources such as tools and equipment that you can borrow like a book."
+    },
+    "summary": {
+      "en": "It can save you from buying things that you only need to use once or things that are prohibitively expensive to buy. It's called the library of things. You can also request your library to get something in stock that you can borrow. Things like telescopes and 3D printers and…",
+      "vi": "It can save you from buying things that you only need to use once or things that are prohibitively expensive to buy. It's called the library of things. You can also request your library to get something in stock that you can borrow. Things like telescopes and 3D printers and…"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.95,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "45c76ee61d860588": {
     "id": "45c76ee61d860588",
@@ -4727,6 +6643,76 @@
     "hidden": false,
     "slug": "nguoi-dung-ubuntu-hien-co-the-bao-loi-doi-voi-cac-ppa-cu-the-45c76e"
   },
+  "43bdfe8f4ba37e50": {
+    "id": "43bdfe8f4ba37e50",
+    "slug": "lpt-if-your-smoke-alarms-plastic-case-is-turning-yellow-it-i-43bdfe",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xjdwye/lpt_if_your_smoke_alarms_plastic_case_is_turning",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/dickcheney600",
+    "published_at": "2026-10-30T12:23:07+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LPT: If your smoke alarm's plastic case is turning yellow, it is definitely past it's 10 year lifespan and should be replaced",
+      "vi": "LPT: If your smoke alarm's plastic case is turning yellow, it is definitely past it's 10 year lifespan and should be replaced"
+    },
+    "summary": {
+      "en": "It's not like it would magically stop working at 10 years and 1 day from the date you first hung it up, but more like, the further it gets from that amount of \"on\" time (hopefully, it's not disconnected for more than, say, a day to go buy another battery) the less reliable it…",
+      "vi": "It's not like it would magically stop working at 10 years and 1 day from the date you first hung it up, but more like, the further it gets from that amount of \"on\" time (hopefully, it's not disconnected for more than, say, a day to go buy another battery) the less reliable it…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [
+      "battery"
+    ],
+    "difficulty": null,
+    "score": 0.95,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "72935a7f76dc92ab": {
+    "id": "72935a7f76dc92ab",
+    "slug": "lpt-always-put-your-computer-to-sleep-when-you-leave-the-hou-72935a",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xj5yl8/lpt_always_put_your_computer_to_sleep_when_you",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/rebel-yeller",
+    "published_at": "2026-10-30T04:30:02+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LPT: Always put your computer to sleep when you leave the house or go to bed",
+      "vi": "LPT: Always put your computer to sleep when you leave the house or go to bed"
+    },
+    "summary": {
+      "en": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers. submitted by /u/rebel-yeller [link] [comments]",
+      "vi": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers. submitted by /u/rebel-yeller [link] [comments]"
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [
+      "password"
+    ],
+    "difficulty": null,
+    "score": 0.95,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "ef9bb7c17bc1bce5": {
     "id": "ef9bb7c17bc1bce5",
     "url": "https://tinhte.vn/thread/anh-em-dung-touchpad-haptic-tren-may-tinh-windows-thi-nen-chinh-lai-mot-chut-cho-ngon.4187788",
@@ -4761,6 +6747,41 @@
     },
     "hidden": false,
     "slug": "anh-em-dung-touchpad-haptic-tren-may-tinh-windows-thi-nen-ch-ef9bb7"
+  },
+  "13c87e8494b641fa": {
+    "id": "13c87e8494b641fa",
+    "slug": "lpt-reuse-a-dead-aa-mous-battery-in-a-clock-13c87e",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xiiawy/lpt_reuse_a_dead_aa_mous_battery_in_a_clock",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/mywifeapprovesthis",
+    "published_at": "2026-10-29T12:14:04+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LPT - reuse a \"dead\" AA mous battery in a clock",
+      "vi": "LPT - reuse a \"dead\" AA mous battery in a clock"
+    },
+    "summary": {
+      "en": "Today I learned that the \"dead\" AA battery which can no longer power my wireless mouse still has enough oomph* to be able to power a clock for a while. I'm so pleased I can re-deploy a \"used\" battery into something useful, I thought I'd share. *oomph is a technical term as a…",
+      "vi": "Today I learned that the \"dead\" AA battery which can no longer power my wireless mouse still has enough oomph* to be able to power a clock for a while. I'm so pleased I can re-deploy a \"used\" battery into something useful, I thought I'd share. *oomph is a technical term as a…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [
+      "battery"
+    ],
+    "difficulty": null,
+    "score": 0.95,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "178301a7ab9b01b0": {
     "id": "178301a7ab9b01b0",
@@ -4970,8 +6991,13 @@
     "score": 0.94,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {},
-    "hn_points": 294
+    "translated": {
+      "vi": false
+    },
+    "hn_points": 294,
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "8e99a2fd677f7950": {
     "id": "8e99a2fd677f7950",
@@ -5042,8 +7068,13 @@
     "score": 0.94,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {},
-    "hn_points": 290
+    "translated": {
+      "vi": false
+    },
+    "hn_points": 290,
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "89fc99ddb03996f5": {
     "id": "89fc99ddb03996f5",
@@ -5118,6 +7149,44 @@
     "hidden": false,
     "slug": "di-nuoc-ngoai-duoc-mang-toi-da-bao-nhieu-usd-tien-mat-e0c4a2"
   },
+  "17e5567229a94db9": {
+    "id": "17e5567229a94db9",
+    "slug": "10-hacks-for-the-contacts-app-every-apple-user-should-know-17e556",
+    "url": "https://lifehacker.com/tech/best-contacts-app-hacks",
+    "source": {
+      "id": "lifehacker",
+      "name": "Lifehacker",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Pranay Parab",
+    "published_at": "Fri, 30 Oct 2026 15:30:34 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "10 Hacks for the Contacts App Every Apple User Should Know",
+      "vi": "10 Hacks for the Contacts App Every Apple User Should Know"
+    },
+    "summary": {
+      "en": "You can remove duplicates with ease.",
+      "vi": "You can remove duplicates with ease."
+    },
+    "categories": [
+      "macos"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.93,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
   "85daa6a854746cd3": {
     "id": "85daa6a854746cd3",
     "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents",
@@ -5184,7 +7253,50 @@
     "score": 0.92,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "b68c1c2345536ac2": {
+    "id": "b68c1c2345536ac2",
+    "slug": "hackers-steal-63-billion-from-binance-in-record-crypto-heist-b68c1c",
+    "url": "https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist",
+    "source": {
+      "id": "arstechnica",
+      "name": "Ars Technica",
+      "site_url": "https://arstechnica.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Nikou Asgari, Financial Times",
+    "published_at": "Fri, 30 Oct 2026 13:46:39 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Hackers steal $6.3 billion from Binance in record crypto heist",
+      "vi": "Hackers steal $6.3 billion from Binance in record crypto heist"
+    },
+    "summary": {
+      "en": "Binance scrambles to freeze billions after record-breaking hack linked to North Korea.",
+      "vi": "Binance scrambles to freeze billions after record-breaking hack linked to North Korea."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.92,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "8e4bd3d9e1e92b58": {
     "id": "8e4bd3d9e1e92b58",
@@ -5327,40 +7439,44 @@
     "hidden": false,
     "slug": "toi-da-ket-noi-tro-ly-gia-dinh-voi-mot-thiet-bi-cam-tay-co-d-e590b3"
   },
-  "f335a5077f36cc12": {
-    "id": "f335a5077f36cc12",
-    "url": "https://thanhnien.vn/cap-quang-lap-ky-luc-tai-20000-bo-phim-4k-trong-1-giay-18526102909331657.htm",
+  "810faf01d5162325": {
+    "id": "810faf01d5162325",
+    "slug": "jepsen-particledb-114-810faf",
+    "url": "https://jepsen.io/analyses/particledb-1.1.4",
     "source": {
-      "id": "thanhnien_tech",
-      "name": "Thanh Niên Công Nghệ",
-      "site_url": "https://thanhnien.vn/cong-nghe",
-      "kind": "news"
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
     },
-    "author": null,
-    "published_at": "Thu, 29 Oct 26 10:09:00 +0700",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "vi",
+    "author": "aphyr",
+    "published_at": "Sat, 31 Oct 2026 13:39:52 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
     "title": {
-      "vi": "Cáp quang lập kỷ lục tải 20.000 bộ phim 4K trong 1 giây",
-      "en": "Fiber optic cable sets a record for downloading 20,000 4K movies in 1 second"
+      "en": "Jepsen: ParticleDB 1.1.4",
+      "vi": "Jepsen: ParticleDB 1.1.4"
     },
     "summary": {
-      "vi": "Các nhà nghiên cứu Trung Quốc vừa thiết lập kỷ lục truyền tải cáp quang thời gian thực với tốc độ 3,2 petabit mỗi giây trên khoảng cách 10,3 km.",
-      "en": "Chinese researchers have just set a record for real-time fiber optic transmission at a speed of 3.2 petabits per second over a distance of 10.3 km."
+      "en": "Thảo luận trên Hacker News (246 điểm, 137 bình luận).",
+      "vi": "Thảo luận trên Hacker News (246 điểm, 137 bình luận)."
     },
     "categories": [
-      "ios"
+      "security"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.9,
+    "score": 0.91,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "en": "machine"
+      "vi": false
     },
-    "hidden": false,
-    "slug": "cap-quang-lap-ky-luc-tai-20000-bo-phim-4k-trong-1-giay-f335a5"
+    "hn_points": 246,
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "f31034dae2dd9dde": {
     "id": "f31034dae2dd9dde",
@@ -5433,9 +7549,9 @@
     "hidden": false,
     "slug": "5-cong-cu-makita-than-thien-voi-ngan-sach-duoi-150-usd-thuc-9aa5f9"
   },
-  "3b98c323d65c4307": {
-    "id": "3b98c323d65c4307",
-    "url": "https://thanhnien.vn/tai-ung-dung-claude-tu-ten-mien-cua-anthropic-van-dinh-ma-doc-185261028091151327.htm",
+  "f335a5077f36cc12": {
+    "id": "f335a5077f36cc12",
+    "url": "https://thanhnien.vn/cap-quang-lap-ky-luc-tai-20000-bo-phim-4k-trong-1-giay-18526102909331657.htm",
     "source": {
       "id": "thanhnien_tech",
       "name": "Thanh Niên Công Nghệ",
@@ -5443,25 +7559,22 @@
       "kind": "news"
     },
     "author": null,
-    "published_at": "Wed, 28 Oct 26 10:48:00 +0700",
+    "published_at": "Thu, 29 Oct 26 10:09:00 +0700",
     "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "vi",
     "title": {
-      "vi": "Tải ứng dụng Claude từ tên miền của Anthropic vẫn dính mã độc",
-      "en": "Downloading the Claude application from Anthropic's domain still contains malicious code"
+      "vi": "Cáp quang lập kỷ lục tải 20.000 bộ phim 4K trong 1 giây",
+      "en": "Fiber optic cable sets a record for downloading 20,000 4K movies in 1 second"
     },
     "summary": {
-      "vi": "Tội phạm mạng đang dùng mánh khóe để dẫn dụ người dùng đến các trang hướng dẫn cài đặt Claude giả mạo nằm ngay trên tên miền claude.ai.",
-      "en": "Cybercriminals are using tricks to lure users to fake Claude installation instructions pages located right on the claude.ai domain name."
+      "vi": "Các nhà nghiên cứu Trung Quốc vừa thiết lập kỷ lục truyền tải cáp quang thời gian thực với tốc độ 3,2 petabit mỗi giây trên khoảng cách 10,3 km.",
+      "en": "Chinese researchers have just set a record for real-time fiber optic transmission at a speed of 3.2 petabits per second over a distance of 10.3 km."
     },
     "categories": [
-      "ai",
-      "security"
+      "ios"
     ],
-    "tags": [
-      "claude"
-    ],
-    "difficulty": "easy",
+    "tags": [],
+    "difficulty": "medium",
     "score": 0.9,
     "howto": true,
     "reading_time_min": 1,
@@ -5469,7 +7582,7 @@
       "en": "machine"
     },
     "hidden": false,
-    "slug": "tai-ung-dung-claude-tu-ten-mien-cua-anthropic-van-dinh-ma-do-3b98c3"
+    "slug": "cap-quang-lap-ky-luc-tai-20000-bo-phim-4k-trong-1-giay-f335a5"
   },
   "a81dc2149bc8a997": {
     "id": "a81dc2149bc8a997",
@@ -5541,9 +7654,9 @@
     },
     "hidden": false
   },
-  "f74bf914fe0a2409": {
-    "id": "f74bf914fe0a2409",
-    "url": "https://thanhnien.vn/nhiet-do-bao-nhieu-la-nong-qua-suc-chiu-dung-cua-router-wi-fi-185261029111043269.htm",
+  "3b98c323d65c4307": {
+    "id": "3b98c323d65c4307",
+    "url": "https://thanhnien.vn/tai-ung-dung-claude-tu-ten-mien-cua-anthropic-van-dinh-ma-doc-185261028091151327.htm",
     "source": {
       "id": "thanhnien_tech",
       "name": "Thanh Niên Công Nghệ",
@@ -5551,22 +7664,25 @@
       "kind": "news"
     },
     "author": null,
-    "published_at": "Thu, 29 Oct 26 14:51:00 +0700",
-    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
+    "published_at": "Wed, 28 Oct 26 10:48:00 +0700",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "vi",
     "title": {
-      "vi": "Nhiệt độ bao nhiêu là nóng 'quá sức chịu đựng' của router Wi-Fi?",
-      "en": "What temperature is 'too hot' for a Wi-Fi router?"
+      "vi": "Tải ứng dụng Claude từ tên miền của Anthropic vẫn dính mã độc",
+      "en": "Downloading the Claude application from Anthropic's domain still contains malicious code"
     },
     "summary": {
-      "vi": "Người dùng nên nhận biết mức nhiệt độ an toàn của router Wi-Fi và cách xử lý sự cố khi thiết bị quá nóng.",
-      "en": "Users should know the safe temperature level of the Wi-Fi router and how to troubleshoot when the device overheats."
+      "vi": "Tội phạm mạng đang dùng mánh khóe để dẫn dụ người dùng đến các trang hướng dẫn cài đặt Claude giả mạo nằm ngay trên tên miền claude.ai.",
+      "en": "Cybercriminals are using tricks to lure users to fake Claude installation instructions pages located right on the claude.ai domain name."
     },
     "categories": [
-      "hardware"
+      "ai",
+      "security"
     ],
-    "tags": [],
-    "difficulty": "medium",
+    "tags": [
+      "claude"
+    ],
+    "difficulty": "easy",
     "score": 0.9,
     "howto": true,
     "reading_time_min": 1,
@@ -5574,7 +7690,7 @@
       "en": "machine"
     },
     "hidden": false,
-    "slug": "nhiet-do-bao-nhieu-la-nong-qua-suc-chiu-dung-cua-router-wi-f-f74bf9"
+    "slug": "tai-ung-dung-claude-tu-ten-mien-cua-anthropic-van-dinh-ma-do-3b98c3"
   },
   "a8ac721a3cafbae1": {
     "id": "a8ac721a3cafbae1",
@@ -5645,30 +7761,29 @@
       "vi": "machine"
     }
   },
-  "b394caaea4801868": {
-    "id": "b394caaea4801868",
-    "slug": "google-thua-nhan-tim-kiem-ai-kiem-duoc-it-tien-hon-nhung-dan-b394ca",
-    "url": "https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-fixing-that-with-more-ads",
+  "f74bf914fe0a2409": {
+    "id": "f74bf914fe0a2409",
+    "url": "https://thanhnien.vn/nhiet-do-bao-nhieu-la-nong-qua-suc-chiu-dung-cua-router-wi-fi-185261029111043269.htm",
     "source": {
-      "id": "arstechnica",
-      "name": "Ars Technica",
-      "site_url": "https://arstechnica.com",
+      "id": "thanhnien_tech",
+      "name": "Thanh Niên Công Nghệ",
+      "site_url": "https://thanhnien.vn/cong-nghe",
       "kind": "news"
     },
-    "author": "Ryan Whitwam",
-    "published_at": "Thu, 29 Oct 2026 16:24:55 +0000",
-    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
-    "original_lang": "en",
+    "author": null,
+    "published_at": "Thu, 29 Oct 26 14:51:00 +0700",
+    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
+    "original_lang": "vi",
     "title": {
-      "en": "Google admits AI search makes less money, but it's fixing that with more ads",
-      "vi": "Google thừa nhận tìm kiếm AI kiếm được ít tiền hơn nhưng đang khắc phục điều đó bằng nhiều quảng cáo hơn"
+      "vi": "Nhiệt độ bao nhiêu là nóng 'quá sức chịu đựng' của router Wi-Fi?",
+      "en": "What temperature is 'too hot' for a Wi-Fi router?"
     },
     "summary": {
-      "en": "Google's negative cash flow balloons to -$9.06 billion, and stock price tumbles following Q3 earnings.",
-      "vi": "Dòng tiền âm của Google phình to lên -9,06 tỷ USD và giá cổ phiếu sụt giảm sau thu nhập quý 3."
+      "vi": "Người dùng nên nhận biết mức nhiệt độ an toàn của router Wi-Fi và cách xử lý sự cố khi thiết bị quá nóng.",
+      "en": "Users should know the safe temperature level of the Wi-Fi router and how to troubleshoot when the device overheats."
     },
     "categories": [
-      "ai"
+      "hardware"
     ],
     "tags": [],
     "difficulty": "medium",
@@ -5676,9 +7791,10 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": "machine"
+      "en": "machine"
     },
-    "hidden": false
+    "hidden": false,
+    "slug": "nhiet-do-bao-nhieu-la-nong-qua-suc-chiu-dung-cua-router-wi-f-f74bf9"
   },
   "0bdd0d900328f106": {
     "id": "0bdd0d900328f106",
@@ -5713,6 +7829,41 @@
     "translated": {
       "vi": "machine"
     }
+  },
+  "b394caaea4801868": {
+    "id": "b394caaea4801868",
+    "slug": "google-thua-nhan-tim-kiem-ai-kiem-duoc-it-tien-hon-nhung-dan-b394ca",
+    "url": "https://arstechnica.com/gadgets/2026/10/google-admits-ai-search-makes-less-money-but-its-fixing-that-with-more-ads",
+    "source": {
+      "id": "arstechnica",
+      "name": "Ars Technica",
+      "site_url": "https://arstechnica.com",
+      "kind": "news"
+    },
+    "author": "Ryan Whitwam",
+    "published_at": "Thu, 29 Oct 2026 16:24:55 +0000",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Google admits AI search makes less money, but it's fixing that with more ads",
+      "vi": "Google thừa nhận tìm kiếm AI kiếm được ít tiền hơn nhưng đang khắc phục điều đó bằng nhiều quảng cáo hơn"
+    },
+    "summary": {
+      "en": "Google's negative cash flow balloons to -$9.06 billion, and stock price tumbles following Q3 earnings.",
+      "vi": "Dòng tiền âm của Google phình to lên -9,06 tỷ USD và giá cổ phiếu sụt giảm sau thu nhập quý 3."
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.9,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false
   },
   "b853919723a582d4": {
     "id": "b853919723a582d4",
@@ -5779,7 +7930,12 @@
     "score": 0.9,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "en": false
+    },
+    "translate_attempts": {
+      "en": 1
+    }
   },
   "dabb8aa23c779c5f": {
     "id": "dabb8aa23c779c5f",
@@ -5813,7 +7969,12 @@
     "score": 0.9,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "en": false
+    },
+    "translate_attempts": {
+      "en": 1
+    }
   },
   "c30c38a613a77d25": {
     "id": "c30c38a613a77d25",
@@ -5846,8 +8007,13 @@
     "score": 0.88,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {},
-    "hn_points": 214
+    "translated": {
+      "vi": false
+    },
+    "hn_points": 214,
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "b302cd56f6ec631a": {
     "id": "b302cd56f6ec631a",
@@ -5957,38 +8123,43 @@
     "hidden": false,
     "slug": "chuong-8-xay-dung-quy-trinh-lam-viec-tmux-thuc-su-8fe990"
   },
-  "dc0bac1a652bc82e": {
-    "id": "dc0bac1a652bc82e",
-    "slug": "android-17-qpr3-beta-3-brings-back-app-lock-and-fixes-dozens-dc0bac",
-    "url": "https://www.androidauthority.com/android-17-qpr3-beta-3-3729781",
+  "f9b8a9efbf26f92e": {
+    "id": "f9b8a9efbf26f92e",
+    "slug": "memdoor-a-team-of-5-qwen38-27b-models-beats-fable-5-on-livec-f9b8a9",
+    "url": "https://github.com/guregodevo/memdoor/tree/main/examples/workflows/team-solve",
     "source": {
-      "id": "androidauthority",
-      "name": "Android Authority",
-      "site_url": "https://www.androidauthority.com",
-      "kind": "news"
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
     },
-    "author": "Stephen Schenck",
-    "published_at": "Thu, 29 Oct 2026 20:51:36 +0000",
-    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
+    "author": "guregodevo",
+    "published_at": "Sat, 31 Oct 2026 22:46:12 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Android 17 QPR3 Beta 3 brings back app lock and fixes dozens of bugs",
-      "vi": "Android 17 QPR3 Beta 3 mang lại khóa ứng dụng và sửa hàng tá lỗi"
+      "en": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard",
+      "vi": "Memdoor: A team of 5 Qwen3.8-27B models beats Fable 5 on LiveCodeBench Hard"
     },
     "summary": {
-      "en": "Plus new options for app bubbles, Quick Settings, and more.",
-      "vi": "Cùng với các tùy chọn mới cho bong bóng ứng dụng, Cài đặt nhanh, v.v."
+      "en": "Thảo luận trên Hacker News (191 điểm, 95 bình luận).",
+      "vi": "Thảo luận trên Hacker News (191 điểm, 95 bình luận)."
     },
     "categories": [
-      "android"
+      "security"
     ],
     "tags": [],
-    "difficulty": "easy",
-    "score": 0.85,
+    "difficulty": "medium",
+    "score": 0.86,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": "machine"
+      "vi": false
+    },
+    "hn_points": 191,
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "a4e4d2d959650d53": {
@@ -6064,41 +8235,39 @@
     "hidden": false,
     "slug": "chuong-6-cac-ngan-tach-dieu-huong-thay-doi-kich-thuoc-va-thu-790bba"
   },
-  "4189b4549c8cf284": {
-    "id": "4189b4549c8cf284",
-    "url": "https://feed.itsfoss.com/link/24361/17502941/red-hat-lf-research-ai-slop-report",
+  "c58cd229056d61a4": {
+    "id": "c58cd229056d61a4",
+    "slug": "its-the-memory-latency-stupid-c58cd2",
+    "url": "https://pivotlake.io/blog/its-the-memory-latency-stupid",
     "source": {
-      "id": "itsfoss",
-      "name": "It's FOSS",
-      "site_url": "https://itsfoss.com",
-      "kind": "tips"
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
     },
-    "author": "Sourav Rudra",
-    "published_at": "Thu, 22 Oct 2026 23:20:00 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "ntur1337",
+    "published_at": "Sat, 31 Oct 2026 18:38:16 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Red Hat Funded a Report That Found a Quarter of Incoming Pull Requests May Be AI Slop",
-      "vi": "Red Hat đã tài trợ cho một báo cáo cho thấy 1/4 số yêu cầu kéo đến có thể bị AI sụt giảm"
+      "en": "It's the memory latency, stupid",
+      "vi": "It's the memory latency, stupid"
     },
     "summary": {
-      "en": "The Linux Foundation Research survey also found that only 35% of projects have a formal policy permitting AI contributions.",
-      "vi": "Cuộc khảo sát của Linux Foundation Research cũng cho thấy chỉ 35% dự án có chính sách chính thức cho phép đóng góp AI."
+      "en": "Thảo luận trên Hacker News (181 điểm, 53 bình luận).",
+      "vi": "Thảo luận trên Hacker News (181 điểm, 53 bình luận)."
     },
     "categories": [
-      "ai",
-      "linux"
+      "security"
     ],
     "tags": [],
-    "difficulty": null,
-    "score": 0.83,
-    "howto": false,
+    "difficulty": "medium",
+    "score": 0.86,
+    "howto": true,
     "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "red-hat-da-tai-tro-cho-mot-bao-cao-cho-thay-14-so-yeu-cau-ke-4189b4"
+    "translated": {},
+    "hn_points": 181
   },
   "f30f927ad9fb89ba": {
     "id": "f30f927ad9fb89ba",
@@ -6172,6 +8341,76 @@
     },
     "hidden": false,
     "slug": "chuong-4-phien-tao-dat-ten-tach-va-gan-lai-5ed548"
+  },
+  "dc0bac1a652bc82e": {
+    "id": "dc0bac1a652bc82e",
+    "slug": "android-17-qpr3-beta-3-brings-back-app-lock-and-fixes-dozens-dc0bac",
+    "url": "https://www.androidauthority.com/android-17-qpr3-beta-3-3729781",
+    "source": {
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news"
+    },
+    "author": "Stephen Schenck",
+    "published_at": "Thu, 29 Oct 2026 20:51:36 +0000",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Android 17 QPR3 Beta 3 brings back app lock and fixes dozens of bugs",
+      "vi": "Android 17 QPR3 Beta 3 mang lại khóa ứng dụng và sửa hàng tá lỗi"
+    },
+    "summary": {
+      "en": "Plus new options for app bubbles, Quick Settings, and more.",
+      "vi": "Cùng với các tùy chọn mới cho bong bóng ứng dụng, Cài đặt nhanh, v.v."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 0.85,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "4189b4549c8cf284": {
+    "id": "4189b4549c8cf284",
+    "url": "https://feed.itsfoss.com/link/24361/17502941/red-hat-lf-research-ai-slop-report",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "Thu, 22 Oct 2026 23:20:00 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Red Hat Funded a Report That Found a Quarter of Incoming Pull Requests May Be AI Slop",
+      "vi": "Red Hat đã tài trợ cho một báo cáo cho thấy 1/4 số yêu cầu kéo đến có thể bị AI sụt giảm"
+    },
+    "summary": {
+      "en": "The Linux Foundation Research survey also found that only 35% of projects have a formal policy permitting AI contributions.",
+      "vi": "Cuộc khảo sát của Linux Foundation Research cũng cho thấy chỉ 35% dự án có chính sách chính thức cho phép đóng góp AI."
+    },
+    "categories": [
+      "ai",
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "red-hat-da-tai-tro-cho-mot-bao-cao-cho-thay-14-so-yeu-cau-ke-4189b4"
   },
   "5a5d0c990d338acb": {
     "id": "5a5d0c990d338acb",
@@ -6697,6 +8936,72 @@
     "translated": {},
     "hn_points": 147
   },
+  "adef54a956c046b0": {
+    "id": "adef54a956c046b0",
+    "slug": "lpt-keep-a-permanent-marker-in-your-kitchen-to-label-items-w-adef54",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xi0tqh/lpt_keep_a_permanent_marker_in_your_kitchen_to",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/sofaking_scientific",
+    "published_at": "2026-10-28T21:16:21+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LPT: Keep a permanent marker in your kitchen to label items with opened dates",
+      "vi": "LPT: Keep a permanent marker in your kitchen to label items with opened dates"
+    },
+    "summary": {
+      "en": "Bonus: use masking or painters tape for DIY labels for containers submitted by /u/sofaking_scientific [link] [comments]",
+      "vi": "Bonus: use masking or painters tape for DIY labels for containers submitted by /u/sofaking_scientific [link] [comments]"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "d1109a5d950a375f": {
+    "id": "d1109a5d950a375f",
+    "slug": "lpt-always-keep-a-card-in-your-wallet-stating-how-many-pets-d1109a",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xhuqo8/lpt_always_keep_a_card_in_your_wallet_stating_how",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/SoFetch_Xo",
+    "published_at": "2026-10-28T17:33:44+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LPT: Always keep a card in your wallet stating how many pets you have at home",
+      "vi": "LPT: Always keep a card in your wallet stating how many pets you have at home"
+    },
+    "summary": {
+      "en": "I learned if a person dies suddenly outside the home (car/train crash etc), first responders may not automatically check the house for animals unless there is an obvious sign (like barking or a window sticker). A lot of pets have been left alone for days in these situations and…",
+      "vi": "I learned if a person dies suddenly outside the home (car/train crash etc), first responders may not automatically check the house for animals unless there is an obvious sign (like barking or a window sticker). A lot of pets have been left alone for days in these situations and…"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "3fc7476dc7642df8": {
     "id": "3fc7476dc7642df8",
     "slug": "show-hn-auto-dismiss-mac-os-allow-to-find-devices-on-local-n-3fc747",
@@ -6730,6 +9035,72 @@
     "reading_time_min": 1,
     "translated": {},
     "hn_points": 138
+  },
+  "241a49aed113e894": {
+    "id": "241a49aed113e894",
+    "slug": "lpt-always-mute-yourself-when-placed-on-hold-241a49",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xhuqgg/lpt_always_mute_yourself_when_placed_on_hold",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/upwork_silo",
+    "published_at": "2026-10-28T17:33:31+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LPT: Always mute yourself when placed on hold",
+      "vi": "LPT: Always mute yourself when placed on hold"
+    },
+    "summary": {
+      "en": "The other party can often hear you, even when they've placed you on hold. submitted by /u/upwork_silo [link] [comments]",
+      "vi": "The other party can often hear you, even when they've placed you on hold. submitted by /u/upwork_silo [link] [comments]"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "9502c6b0945b033d": {
+    "id": "9502c6b0945b033d",
+    "slug": "lpt-if-you-have-a-friend-who-has-lost-their-spouse-make-an-e-9502c6",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xh4bok/lpt_if_you_have_a_friend_who_has_lost_their",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/a116jxb",
+    "published_at": "2026-10-27T20:47:41+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LPT: If you have a friend who has lost their spouse, make an effort to console them on important dates such as their anniversary, the spouse's birthday, etc.",
+      "vi": "LPT: If you have a friend who has lost their spouse, make an effort to console them on important dates such as their anniversary, the spouse's birthday, etc."
+    },
+    "summary": {
+      "en": "My friend (51m) lost his wife (55f) last year after a brief illness. I remember speaking to him around the time of the one year anniversary of her death, and I could tell all through that period he was really struggling. I know this week would have been her 57th birthday so he's…",
+      "vi": "My friend (51m) lost his wife (55f) last year after a brief illness. I remember speaking to him around the time of the one year anniversary of her death, and I could tell all through that period he was really struggling. I know this week would have been her 57th birthday so he's…"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "6353f89322ac67ed": {
     "id": "6353f89322ac67ed",
@@ -6765,6 +9136,39 @@
     },
     "hidden": false,
     "slug": "tai-nghe-khong-day-cua-ban-co-ngay-het-han-nhung-cap-tai-ngh-6353f8"
+  },
+  "33d256014ccf120b": {
+    "id": "33d256014ccf120b",
+    "slug": "lpt-use-the-name-you-want-in-your-signature-instead-of-your-33d256",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xh29vq/lpt_use_the_name_you_want_in_your_signature",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/deten",
+    "published_at": "2026-10-27T19:31:27+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LPT: Use the name you want in your signature instead of your formal name",
+      "vi": "LPT: Use the name you want in your signature instead of your formal name"
+    },
+    "summary": {
+      "en": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…",
+      "vi": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "60d519cdefb3958d": {
     "id": "60d519cdefb3958d",
@@ -7585,6 +9989,40 @@
     "translated": {},
     "hn_points": 106
   },
+  "bc311e37aca430c3": {
+    "id": "bc311e37aca430c3",
+    "slug": "surviving-the-graduate-bc311e",
+    "url": "https://www.newyorker.com/culture/the-weekend-essay/dustin-hoffman-on-surviving-the-graduate",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "samizdis",
+    "published_at": "Sat, 31 Oct 2026 20:02:06 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Surviving \"The Graduate\"",
+      "vi": "Surviving \"The Graduate\""
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (111 điểm, 31 bình luận).",
+      "vi": "Thảo luận trên Hacker News (111 điểm, 31 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.8,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 111
+  },
   "1702663f2c5c3a16": {
     "id": "1702663f2c5c3a16",
     "url": "https://linuxhandbook.com/courses/tmux/tmux-configuration",
@@ -7623,6 +10061,40 @@
     "hidden": false,
     "slug": "chuong-9-cau-hinh-tmux-dau-tien-cua-ban-170266"
   },
+  "3fb536a91a4feabb": {
+    "id": "3fb536a91a4feabb",
+    "slug": "the-duty-of-a-scholar-3fb536",
+    "url": "https://www.daemonology.net/blog/2026-10-31-The-Duty-of-a-Scholar.html",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "gslin",
+    "published_at": "Sat, 31 Oct 2026 19:07:36 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "The Duty of a Scholar",
+      "vi": "The Duty of a Scholar"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (110 điểm, 32 bình luận).",
+      "vi": "Thảo luận trên Hacker News (110 điểm, 32 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.8,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 110
+  },
   "7b15ec4f543529d7": {
     "id": "7b15ec4f543529d7",
     "url": "https://www.androidauthority.com/oura-ring-4-sync-bug-3729281",
@@ -7657,6 +10129,39 @@
     },
     "hidden": false,
     "slug": "oura-xac-nhan-loi-dong-bo-hoa-ring-4-nhung-cach-khac-phuc-ra-7b15ec"
+  },
+  "7610ed52e391543d": {
+    "id": "7610ed52e391543d",
+    "slug": "minimax-h3-in-practice-9-reference-images-3-audio-clips-and-7610ed",
+    "url": "https://dev.to/chet103cc/minimax-h3-in-practice-9-reference-images-3-audio-clips-and-what-a-second-of-video-actually-costs-44a6",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "chet100",
+    "published_at": "2026-10-29T12:35:10Z",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "MiniMax H3 in practice: 9 reference images, 3 audio clips, and what a second of video actually costs",
+      "vi": "MiniMax H3 in practice: 9 reference images, 3 audio clips, and what a second of video actually costs"
+    },
+    "summary": {
+      "en": "MiniMax H3 is one of the few video models that accepts reference audio alongside reference images,",
+      "vi": "MiniMax H3 is one of the few video models that accepts reference audio alongside reference images,"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.77,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "1bcb144cf6f8ac40": {
     "id": "1bcb144cf6f8ac40",
@@ -8227,6 +10732,39 @@
     "hidden": false,
     "slug": "ung-dung-github-copilot-danh-cho-nguoi-moi-bat-dau-cach-day-acb868"
   },
+  "5866f3208980265c": {
+    "id": "5866f3208980265c",
+    "slug": "build-a-discord-bot-with-discordjs-v14-app-setup-your-first-5866f3",
+    "url": "https://dev.to/botnexio/build-a-discord-bot-with-discordjs-v14-app-setup-your-first-slash-command-and-keeping-it-online-1bkj",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "Botnexio",
+    "published_at": "2026-10-18T12:54:39Z",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Build a Discord bot with discord.js v14: app setup, your first slash command and keeping it online",
+      "vi": "Build a Discord bot with discord.js v14: app setup, your first slash command and keeping it online"
+    },
+    "summary": {
+      "en": "Create a Discord application, register slash commands with REST and Routes, handle interactionCreate, and keep your bot running 24/7.",
+      "vi": "Create a Discord application, register slash commands with REST and Routes, handle interactionCreate, and keep your bot running 24/7."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.74,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "df7f2e84081d3bfb": {
     "id": "df7f2e84081d3bfb",
     "url": "https://genk.vn/loi-khuyen-cho-nhung-gia-dinh-hay-tat-wifi-bang-cach-rut-phich-cam-165260905132351422.chn",
@@ -8298,6 +10836,40 @@
     },
     "hidden": false,
     "slug": "thong-tin-quan-trong-den-tat-ca-nguoi-dung-iphone-7a82ad"
+  },
+  "01ee4bd34dad4014": {
+    "id": "01ee4bd34dad4014",
+    "slug": "simple-circuits-can-create-complex-behaviors-01ee4b",
+    "url": "https://aatishb.com/myriad/lets-build-a-brain",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "aatish",
+    "published_at": "Tue, 27 Oct 2026 16:01:06 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Simple circuits can create complex behaviors",
+      "vi": "Simple circuits can create complex behaviors"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (239 điểm, 77 bình luận).",
+      "vi": "Thảo luận trên Hacker News (239 điểm, 77 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.72,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 239
   },
   "7753818fe3523b4f": {
     "id": "7753818fe3523b4f",
@@ -8758,6 +11330,40 @@
     },
     "hidden": false,
     "slug": "nguyen-tac-co-ban-ve-tmux-1ef8ba"
+  },
+  "c66dffa09463d350": {
+    "id": "c66dffa09463d350",
+    "slug": "reading-and-writing-are-less-symmetric-than-you-probably-thi-c66dff",
+    "url": "https://fgiesen.wordpress.com/2015/10/25/reading-and-writing-are-less-symmetric-than-you-probably-think",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "luu",
+    "published_at": "Wed, 28 Oct 2026 09:38:07 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Reading and writing are less symmetric than you (probably) think",
+      "vi": "Reading and writing are less symmetric than you (probably) think"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (107 điểm, 24 bình luận).",
+      "vi": "Thảo luận trên Hacker News (107 điểm, 24 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.64,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 107
   },
   "f92547e7125a4981": {
     "id": "f92547e7125a4981",
@@ -9475,40 +12081,38 @@
     "hidden": false,
     "slug": "dat-wifi-xuong-san-nha-co-lam-sao-khong-hoa-ra-day-la-loi-nh-5e6652"
   },
-  "b62740fe7dece39d": {
-    "id": "b62740fe7dece39d",
-    "url": "https://tinhte.vn/thread/di-tim-giai-phap-cap-khi-tuoi-cho-cafe-tinh-te-5-0.4040527",
+  "f5488b9ef11291f3": {
+    "id": "f5488b9ef11291f3",
+    "slug": "android-17-features-f5488b",
+    "url": "https://www.reddit.com/r/Androidtips/comments/1tbwyjv/android_17_features",
     "source": {
-      "id": "tinhte",
-      "name": "Tinh tế",
-      "site_url": "https://tinhte.vn",
-      "kind": "news"
+      "id": "reddit-androidtips",
+      "name": "Reddit r/AndroidTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
     },
-    "author": "cuhiep",
-    "published_at": "Fri, 01 Aug 2025 02:14:00 +0000",
-    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
-    "original_lang": "vi",
+    "author": "/u/LengthinessHour3697",
+    "published_at": "2026-05-13T11:35:04+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
     "title": {
-      "vi": "Đi tìm giải pháp cấp khí tươi cho Cafe Tinh tế 5.0",
-      "en": "Looking for a solution to supply fresh air for Delicate Cafe 5.0"
+      "en": "Android 17 features",
+      "vi": "Android 17 features"
     },
     "summary": {
-      "vi": "Sau 20 năm cafe Tinh tế ở không gian mở thì mình đã chọn một không gian kín cho phiên bản Cafe Tinh tế 5.0. Ngoài chuyện xử lý cách âm, cách nhiệt thì mình cũng nghĩ đến chuyện cần một không gian",
-      "en": "After 20 years of Delicate Cafe in open space, I chose a closed space for Delicate Cafe 5.0 version. In addition to soundproofing and heat insulation, I also think about needing a space"
+      "en": "https://www.youtube.com/watch?v=_enN4cmvmz8 submitted by /u/LengthinessHour3697 [link] [comments]",
+      "vi": "https://www.youtube.com/watch?v=_enN4cmvmz8 submitted by /u/LengthinessHour3697 [link] [comments]"
     },
     "categories": [
-      "ios"
+      "android"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.53,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.54,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {
-      "en": "machine"
-    },
-    "hidden": false,
-    "slug": "di-tim-giai-phap-cap-khi-tuoi-cho-cafe-tinh-te-50-b62740"
+    "translated": {}
   },
   "789154b52a9575e1": {
     "id": "789154b52a9575e1",
@@ -9580,6 +12184,74 @@
     "hidden": false,
     "slug": "loi-khuyen-cho-nhung-nguoi-dang-dung-android-677923"
   },
+  "40be06344db137b7": {
+    "id": "40be06344db137b7",
+    "slug": "samsung-flow-and-s26-40be06",
+    "url": "https://www.reddit.com/r/Androidtips/comments/1s9a9kt/samsung_flow_and_s26",
+    "source": {
+      "id": "reddit-androidtips",
+      "name": "Reddit r/AndroidTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/Avril_Blackrose",
+    "published_at": "2026-04-01T04:19:25+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Samsung flow and s26",
+      "vi": "Samsung flow and s26"
+    },
+    "summary": {
+      "en": "Has anyone got in the new phone sS26 and used it with samsung flow mirroring with another phone or tablet? I want to make sure that it is my tablet that's not compatible and not my s26 being weird because of Smart View that you cannot disable. So that way I won't regret buying…",
+      "vi": "Has anyone got in the new phone sS26 and used it with samsung flow mirroring with another phone or tablet? I want to make sure that it is my tablet that's not compatible and not my s26 being weird because of Smart View that you cannot disable. So that way I won't regret buying…"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.54,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "b62740fe7dece39d": {
+    "id": "b62740fe7dece39d",
+    "url": "https://tinhte.vn/thread/di-tim-giai-phap-cap-khi-tuoi-cho-cafe-tinh-te-5-0.4040527",
+    "source": {
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news"
+    },
+    "author": "cuhiep",
+    "published_at": "Fri, 01 Aug 2025 02:14:00 +0000",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Đi tìm giải pháp cấp khí tươi cho Cafe Tinh tế 5.0",
+      "en": "Looking for a solution to supply fresh air for Delicate Cafe 5.0"
+    },
+    "summary": {
+      "vi": "Sau 20 năm cafe Tinh tế ở không gian mở thì mình đã chọn một không gian kín cho phiên bản Cafe Tinh tế 5.0. Ngoài chuyện xử lý cách âm, cách nhiệt thì mình cũng nghĩ đến chuyện cần một không gian",
+      "en": "After 20 years of Delicate Cafe in open space, I chose a closed space for Delicate Cafe 5.0 version. In addition to soundproofing and heat insulation, I also think about needing a space"
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.53,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": "machine"
+    },
+    "hidden": false,
+    "slug": "di-tim-giai-phap-cap-khi-tuoi-cho-cafe-tinh-te-50-b62740"
+  },
   "41f219415183b9c6": {
     "id": "41f219415183b9c6",
     "url": "https://linuxhandbook.com/newsletter/26-11",
@@ -9640,6 +12312,39 @@
     },
     "categories": [
       "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.52,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "a2f963fccfabb303": {
+    "id": "a2f963fccfabb303",
+    "slug": "anyone-knows-how-can-i-create-such-a-lock-screen-on-my-s24-u-a2f963",
+    "url": "https://www.reddit.com/r/Androidtips/comments/1tdrtcm/anyone_knows_how_can_i_create_such_a_lock_screen",
+    "source": {
+      "id": "reddit-androidtips",
+      "name": "Reddit r/AndroidTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/Grouchy-Summer499",
+    "published_at": "2026-05-15T10:06:02+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Anyone knows how can i create such a lock screen on my s24 ultra without using the iscreen app which is mentioned in this video?",
+      "vi": "Anyone knows how can i create such a lock screen on my s24 ultra without using the iscreen app which is mentioned in this video?"
+    },
+    "summary": {
+      "en": "submitted by /u/Grouchy-Summer499 [link] [comments]",
+      "vi": "submitted by /u/Grouchy-Summer499 [link] [comments]"
+    },
+    "categories": [
+      "general"
     ],
     "tags": [],
     "difficulty": "medium",
@@ -9753,5 +12458,139 @@
     },
     "hidden": false,
     "slug": "ai-dang-lam-cho-toi-nhanh-hon-toi-khong-muon-no-lam-toi-toi-bba44a"
+  },
+  "751052920c9a33f8": {
+    "id": "751052920c9a33f8",
+    "slug": "otg-always-on-oppo-751052",
+    "url": "https://www.reddit.com/r/Androidtips/comments/1wmc07i/otg_always_on_oppo",
+    "source": {
+      "id": "reddit-androidtips",
+      "name": "Reddit r/AndroidTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/Flat-Sir7741",
+    "published_at": "2026-09-21T12:55:30+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "OTG always on????? (OPPO)",
+      "vi": "OTG always on????? (OPPO)"
+    },
+    "summary": {
+      "en": "submitted by /u/Flat-Sir7741 [link] [comments]",
+      "vi": "submitted by /u/Flat-Sir7741 [link] [comments]"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.42,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "edb995eb5949c67c": {
+    "id": "edb995eb5949c67c",
+    "slug": "gemini-intelligence-requirements-just-dropped-edb995",
+    "url": "https://www.reddit.com/r/Androidtips/comments/1thex2u/gemini_intelligence_requirements_just_dropped",
+    "source": {
+      "id": "reddit-androidtips",
+      "name": "Reddit r/AndroidTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/LengthinessHour3697",
+    "published_at": "2026-05-19T06:55:45+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Gemini Intelligence requirements just dropped 😮",
+      "vi": "Gemini Intelligence requirements just dropped 😮"
+    },
+    "summary": {
+      "en": "submitted by /u/LengthinessHour3697 [link] [comments]",
+      "vi": "submitted by /u/LengthinessHour3697 [link] [comments]"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "gemini"
+    ],
+    "difficulty": null,
+    "score": 0.42,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "401f7200087ba88d": {
+    "id": "401f7200087ba88d",
+    "slug": "your-thoughts-on-this-401f72",
+    "url": "https://www.reddit.com/r/Androidtips/comments/1tdm7bw/your_thoughts_on_this",
+    "source": {
+      "id": "reddit-androidtips",
+      "name": "Reddit r/AndroidTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/LengthinessHour3697",
+    "published_at": "2026-05-15T04:58:02+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Your thoughts on this",
+      "vi": "Your thoughts on this"
+    },
+    "summary": {
+      "en": "submitted by /u/LengthinessHour3697 [link] [comments]",
+      "vi": "submitted by /u/LengthinessHour3697 [link] [comments]"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.42,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "5ccc701671cad469": {
+    "id": "5ccc701671cad469",
+    "slug": "the-biggest-android-update-ever-5ccc70",
+    "url": "https://www.reddit.com/r/Androidtips/comments/1tcnms4/the_biggest_android_update_ever",
+    "source": {
+      "id": "reddit-androidtips",
+      "name": "Reddit r/AndroidTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/LengthinessHour3697",
+    "published_at": "2026-05-14T04:39:07+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "“The Biggest Android Update Ever”",
+      "vi": "“The Biggest Android Update Ever”"
+    },
+    "summary": {
+      "en": "submitted by /u/LengthinessHour3697 [link] [comments]",
+      "vi": "submitted by /u/LengthinessHour3697 [link] [comments]"
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.42,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   }
 }
