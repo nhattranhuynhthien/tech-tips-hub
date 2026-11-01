@@ -32,10 +32,12 @@ def estimate_reading_time(text: str) -> int:
     words = len(text.split())
     return max(1, round(words / 175))
 
-def diversify(items: list[dict], max_run: int = 2) -> list[dict]:
+def diversify(items: list[dict], max_run: int = 2, max_community_per_window: int = 3, window_size: int = 20) -> list[dict]:
     """
     Xen kẽ nguồn để danh sách đa dạng và hấp dẫn:
-    Không để quá max_run bài liên tiếp từ cùng một nguồn.
+    1. Không để quá max_run bài liên tiếp từ cùng một nguồn.
+    2. Giới hạn tỷ lệ nguồn Cộng đồng (Reddit, Telegram, Facebook...) không quá max_community_per_window
+       trong mỗi cửa sổ window_size bài (tối đa ~15% trang) để không lấn át báo chí công nghệ.
     """
     pending = sorted(items, key=lambda x: -x.get("score", 0))
     out = []
@@ -49,11 +51,17 @@ def diversify(items: list[dict], max_run: int = 2) -> list[dict]:
                     run += 1
                 else:
                     break
-            if run < max_run:
+            
+            # Kiểm tra tỷ lệ nguồn cộng đồng trong window_size gần nhất
+            is_community = it.get("content_type") == "community" or "reddit" in str(it.get("source", {}).get("id", ""))
+            recent_window = out[-(window_size - 1):] if len(out) >= (window_size - 1) else out
+            community_count = sum(1 for x in recent_window if x.get("content_type") == "community" or "reddit" in str(x.get("source", {}).get("id", "")))
+
+            if run < max_run and (not is_community or community_count < max_community_per_window):
                 out.append(pending.pop(idx))
                 break
         else:
-            # Nếu không còn lựa chọn nào khác nguồn, đành lấy phần tử đầu
+            # Nếu không tìm được phần tử thỏa mãn hoàn toàn, lấy phần tử đầu tiên
             out.append(pending.pop(0))
     return out
 
@@ -77,11 +85,16 @@ def update_featured_history(items: list[dict]):
     history_ids = {h["id"] for h in history}
 
     # Ứng viên: howto == True, <= 72h, không bị hidden, chưa từng featured trong 14 ngày
+    # VÀ BẮT BUỘC phải có bản dịch tiếng Việt hợp lệ nếu là nguồn quốc tế (tránh hiển thị tiếng Anh trên /vi/)
     candidates = []
     for it in items:
         if not it.get("howto") or it.get("hidden"):
             continue
         if it["id"] in history_ids:
+            continue
+        # Ưu tiên bài đã có tiếng Việt hoặc đã dịch tiếng Việt hoàn tất
+        has_vi = bool(it.get("original_lang") == "vi" or it.get("translated", {}).get("vi") == "machine")
+        if not has_vi:
             continue
         pub_dt = parse_published_time(it.get("published_at", ""))
         age_hours = (now_dt - pub_dt).total_seconds() / 3600.0

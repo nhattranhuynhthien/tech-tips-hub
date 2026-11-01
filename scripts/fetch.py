@@ -9,7 +9,7 @@ import requests
 import feedparser
 from bs4 import BeautifulSoup
 from dedupe import canonical_url, generate_id
-from textclean import clean_text, strip_title_prefix, unescape_all
+from textclean import clean_text, clean_title, strip_title_prefix, unescape_all
 
 if hasattr(sys.stdout, "reconfigure"):
     sys.stdout.reconfigure(encoding="utf-8", errors="replace")
@@ -158,7 +158,7 @@ def fetch_feed_items(source: dict, max_entries: int = 25, state_entry: dict | No
                 c_url = canonical_url(link)
                 iid = generate_id(c_url)
                 
-                title = clean_text(raw_t, limit=160)
+                title = clean_title(raw_t, limit=160)
                 summary = clean_text(raw_desc, limit=280)
                 summary = strip_title_prefix(summary, title)
 
@@ -257,7 +257,7 @@ def fetch_feed_items(source: dict, max_entries: int = 25, state_entry: dict | No
         else:
             summary = clean_text(raw_summary, limit=280)
 
-        title = clean_text(raw_t, limit=160)
+        title = clean_title(raw_t, limit=160)
         summary = strip_title_prefix(summary, title)
 
         published = getattr(entry, "published", "") or getattr(entry, "updated", "")

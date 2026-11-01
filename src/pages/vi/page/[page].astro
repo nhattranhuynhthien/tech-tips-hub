@@ -8,7 +8,7 @@ import { getTranslations } from '../../../lib/i18n';
 
 export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
   const allTips = getAllTips(false);
-  const trickOfDay = getTrickOfTheDay();
+  const trickOfDay = getTrickOfTheDay('vi');
   // Trang chủ loại "Mẹo hay hôm nay" khỏi danh sách, phân trang cũng phải khớp
   const tips = trickOfDay ? allTips.filter((tip) => tip.id !== trickOfDay.id) : allTips;
   // Cùng thứ tự với trang chủ (mặc định "Mới nhất")

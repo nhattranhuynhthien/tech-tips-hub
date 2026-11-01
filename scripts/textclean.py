@@ -6,6 +6,9 @@ BOILERPLATE = [
     r"The post .*? appeared first on .*?\.?$",
     r"Article URL:\s*https?://\S+(\s*Comments URL:\s*https?://\S+)?(\s*Points:\s*\d+)?(\s*#\s*Comments:\s*\d+)?",
     r"Originally published at \S+",
+    r"\s*submitted by\s+/u/\S+.*$",
+    r"\s*\[link\]\s*\[comments\].*$",
+    r"\s*\[comments\].*$",
     r"\s*more…\s*$",
     r"\s*\[(\.\.\.|…)\]\s*$",
     r"\s*\(\.\.\.\)\s*$",
@@ -42,6 +45,15 @@ def clean_text(t: str, limit: int = 300) -> str:
     if len(t) > limit:
         cut = t[:limit].rsplit(" ", 1)[0]
         t = cut.rstrip(",;:-–— ") + "…"
+    return t
+
+def clean_title(title: str, limit: int = 160) -> str:
+    """Làm sạch tiêu đề: loại bỏ tiền tố thừa như LPT:, chuẩn hóa khoảng trắng và độ dài."""
+    if not title:
+        return ""
+    t = clean_text(title, limit=limit)
+    # Loại bỏ tiền tố LPT:, LPT -, LPT
+    t = re.sub(r"^LPT\s*[:\-]?\s*", "", t, flags=re.IGNORECASE).strip()
     return t
 
 def strip_title_prefix(summary: str, title: str) -> str:

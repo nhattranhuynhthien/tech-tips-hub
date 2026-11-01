@@ -56,7 +56,13 @@ DEVTO_SELF_PROMO = re.compile(
 )
 
 OUT_OF_SCOPE = re.compile(
-    r"\b(nông nghiệp|chăn nuôi|gene bò|bò h'mông|thực vật|khảo cổ|động vật hoang dã|gia súc|gia cầm|thời tiết|thiên tai|bệnh viện|y tế|thuốc lá|sốt xuất huyết|dịch sởi|ung thư|bệnh nhân|sản khoa|phụ sản|sinh học)\b",
+    r"\b("
+    r"nông nghiệp|chăn nuôi|gene bò|bò h'mông|thực vật|khảo cổ|động vật hoang dã|gia súc|gia cầm|"
+    r"thời tiết|thiên tai|bệnh viện|y tế|thuốc lá|sốt xuất huyết|dịch sởi|ung thư|bệnh nhân|sản khoa|phụ sản|sinh học|"
+    r"liquid soap|bar of soap|workout|working out|weight loss|gym|dating|date night|elderly|daylight savings|"
+    r"smoke alarm|billiards|cooking|loss of spouse|introvert|introverted|social event|funeral|grief|pets at home|"
+    r"permanent marker in your kitchen|clean your oven|stain remover|dishwasher"
+    r")\b",
     re.IGNORECASE
 )
 

@@ -197,8 +197,8 @@
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "LPT: When you solve a recurring problem, leave the instructions where you’ll need them next time.",
-      "vi": "LPT: When you solve a recurring problem, leave the instructions where you’ll need them next time."
+      "en": "When you solve a recurring problem, leave the instructions where you’ll need them next time.",
+      "vi": "When you solve a recurring problem, leave the instructions where you’ll need them next time."
     },
     "summary": {
       "en": "Once something finally works, it’s tempting to assume you’ll remember the fix. Months later, you may end up troubleshooting it all over again. Leave a short note near the relevant item: printer instructions inside the paper cabinet, the replacement filter number with the…",
@@ -2246,40 +2246,6 @@
     "hidden": true,
     "slug": "ghostty-14-ra-mat-voi-nhieu-cai-tien-lon-51ae3d"
   },
-  "65a7831f485fdf8f": {
-    "id": "65a7831f485fdf8f",
-    "url": "https://vnexpress.net/chinh-sua-gene-bo-h-mong-xay-dung-thuong-hieu-cao-cap-cua-viet-nam-5137453.html",
-    "source": {
-      "id": "vnexpress_sohoa",
-      "name": "VnExpress Thủ Thuật",
-      "site_url": "https://vnexpress.net/so-hoa",
-      "kind": "tips"
-    },
-    "author": null,
-    "published_at": "Tue, 27 Oct 2026 20:19:45 +0700",
-    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
-    "original_lang": "vi",
-    "title": {
-      "vi": "Chỉnh sửa gene bò H'Mông xây dựng thương hiệu cao cấp của Việt Nam",
-      "en": "Gene editing of H'Mong cattle to build a high-end Vietnamese brand"
-    },
-    "summary": {
-      "vi": "Học viện Nông nghiệp Việt Nam tạo thành công 5 bê H'Mông bằng công nghệ chỉnh sửa gene MSTN, hướng tới xây dựng thương hiệu bò thịt cao cấp của Việt Nam.",
-      "en": "The Vietnam Academy of Agriculture successfully created 5 H'Mong calves using MSTN gene editing technology, aiming to build a high-end beef cattle brand in Vietnam."
-    },
-    "categories": [
-      "android"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.18,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "en": "machine"
-    },
-    "hidden": true
-  },
   "1c8f2197065ac11e": {
     "id": "1c8f2197065ac11e",
     "slug": "gelly-is-a-gtk-desktop-music-player-for-jellyfin-and-navidro-1c8f21",
@@ -3831,41 +3797,6 @@
       "en": "machine"
     }
   },
-  "c5f175b56a347989": {
-    "id": "c5f175b56a347989",
-    "slug": "lpt-if-youre-introverted-always-look-at-social-events-in-ter-c5f175",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xicwai/lpt_if_youre_introverted_always_look_at_social",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "",
-      "kind": "news",
-      "content_type": "community"
-    },
-    "author": "/u/Quantum_II",
-    "published_at": "2026-10-29T06:59:53+00:00",
-    "fetched_at": "2026-10-30T10:48:57.185065+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "LPT: If you're introverted, always look at social events in terms of the number of hours you'll be there; it makes the burden of showing up significantly…",
-      "vi": "LPT: Nếu bạn là người hướng nội, hãy luôn xem xét các sự kiện xã hội về số giờ bạn sẽ ở đó; nó làm cho gánh nặng phải xuất hiện trở nên đáng kể…"
-    },
-    "summary": {
-      "en": "The brain tends to plays tricks on us when we perceive a social event as a whole day affair. In the real sense, most social events last for a relatively short time and everyone is back to their business. Therefore, instead of looking at, say, a birthday/wedding invitation as an…",
-      "vi": "Bộ não có xu hướng đánh lừa chúng ta khi chúng ta coi một sự kiện xã hội là chuyện xảy ra cả ngày. Theo nghĩa thực tế, hầu hết các sự kiện xã hội đều diễn ra trong một thời gian tương đối ngắn và mọi người đều quay lại công việc kinh doanh của mình. Do đó, thay vì xem thiệp mời sinh nhật/đám cưới như một…"
-    },
-    "categories": [
-      "general"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.09,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    }
-  },
   "989f63e3510db413": {
     "id": "989f63e3510db413",
     "slug": "lg-v10-va-ninebot-hai-san-pham-cong-nghe-tuyet-voi-989f63",
@@ -4259,39 +4190,6 @@
     "hidden": false,
     "slug": "nhung-ung-dung-tien-ich-nay-giup-android-auto-10x-tro-nen-hu-73d75c"
   },
-  "20c3060af46cec37": {
-    "id": "20c3060af46cec37",
-    "slug": "lpt-if-working-out-feels-overwhelming-due-to-the-time-commit-20c306",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xkv86e/lpt_if_working_out_feels_overwhelming_due_to_the",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/stonedstoic_",
-    "published_at": "2026-11-01T05:39:44+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "LPT: If working out feels overwhelming due to the time commitment, shorten the amount of time spent working out",
-      "vi": "LPT: If working out feels overwhelming due to the time commitment, shorten the amount of time spent working out"
-    },
-    "summary": {
-      "en": "If you’re someone who dreads working out because you think you have to spend 1-2 hours at the gym, running, taking a class, etc., try working out for just 30 minutes every day or every other day. Working out will feel less daunting when it’s only taking up 30 minutes of your…",
-      "vi": "If you’re someone who dreads working out because you think you have to spend 1-2 hours at the gym, running, taking a class, etc., try working out for just 30 minutes every day or every other day. Working out will feel less daunting when it’s only taking up 30 minutes of your…"
-    },
-    "categories": [
-      "general"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 1.04,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {}
-  },
   "c09e0a4abc10ff4e": {
     "id": "c09e0a4abc10ff4e",
     "url": "https://www.makeuseof.com/iphone-still-cant-turn-off-2g",
@@ -4379,8 +4277,8 @@
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "LPT: Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund.",
-      "vi": "LPT: Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund."
+      "en": "Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund.",
+      "vi": "Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund."
     },
     "summary": {
       "en": "\"Hi, I need to cancel my subscription today. Please cancel my account immediately, waive the early termination fee completely, and issue a prorated refund for the billing cycle I just paid for.” The result: subscription canceled, the entire $99.99 cancellation fee waived, and a…",
@@ -4466,39 +4364,6 @@
     },
     "hidden": false
   },
-  "731c7303889dfc7c": {
-    "id": "731c7303889dfc7c",
-    "slug": "lpt-make-your-own-liquid-soap-731c73",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xkgw47/lpt_make_your_own_liquid_soap",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/thefatfabfam",
-    "published_at": "2026-10-31T18:00:05+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "LPT Make your own liquid soap",
-      "vi": "LPT Make your own liquid soap"
-    },
-    "summary": {
-      "en": "I had an old bar of soap that was so hard to use since it was so dry. I grated it and put it in (a lot of) water. It diluted after 24/48h and now I have a full jar of liquid soap. Money saved! submitted by /u/thefatfabfam [link] [comments]",
-      "vi": "I had an old bar of soap that was so hard to use since it was so dry. I grated it and put it in (a lot of) water. It diluted after 24/48h and now I have a full jar of liquid soap. Money saved! submitted by /u/thefatfabfam [link] [comments]"
-    },
-    "categories": [
-      "general"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 1.04,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {}
-  },
   "79567c1813154a92": {
     "id": "79567c1813154a92",
     "slug": "6-bo-truyen-lang-man-xung-dang-duoc-chuyen-the-truyen-hinh-h-79567c",
@@ -4569,39 +4434,6 @@
     },
     "hidden": false
   },
-  "d959d185afab672d": {
-    "id": "d959d185afab672d",
-    "slug": "lpt-help-the-elderly-change-their-clocks-for-daylight-saving-d959d1",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xkg9j2/lpt_help_the_elderly_change_their_clocks_for",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/bluegambit875",
-    "published_at": "2026-10-31T17:34:48+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "LPT: Help the elderly change their clocks for Daylight Savings Time. Many of them may still have clocks that require manual adjustment, and some may not…",
-      "vi": "LPT: Help the elderly change their clocks for Daylight Savings Time. Many of them may still have clocks that require manual adjustment, and some may not…"
-    },
-    "summary": {
-      "en": "Daylight Savings Time ends tomorrow (Sunday, Nov 1) which means the clocks go BACK ONE HOUR (Spring Ahead and Fall Back). Many elderly people still have older clocks that require manual adjustment. Even microwaves and ovens that have a digital readout still need to be changed.…",
-      "vi": "Daylight Savings Time ends tomorrow (Sunday, Nov 1) which means the clocks go BACK ONE HOUR (Spring Ahead and Fall Back). Many elderly people still have older clocks that require manual adjustment. Even microwaves and ovens that have a digital readout still need to be changed.…"
-    },
-    "categories": [
-      "general"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 1.04,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {}
-  },
   "3dc4efcd06779d78": {
     "id": "3dc4efcd06779d78",
     "slug": "google-dat-ngay-ket-thuc-tren-moi-chromebook-va-mot-so-se-kh-3dc4ef",
@@ -4653,8 +4485,8 @@
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "LPT: whenever speaking to a customer service person on the phone make sure to record the call and tell them you are doing so. They suddenly become a lot more…",
-      "vi": "LPT: whenever speaking to a customer service person on the phone make sure to record the call and tell them you are doing so. They suddenly become a lot more…"
+      "en": "whenever speaking to a customer service person on the phone make sure to record the call and tell them you are doing so. They suddenly become a lot more…",
+      "vi": "whenever speaking to a customer service person on the phone make sure to record the call and tell them you are doing so. They suddenly become a lot more…"
     },
     "summary": {
       "en": "A few years ago I had a problem with a PayPal transaction. It wasn’t an earth shattering amount of money but I much rather wanted the money back in my pocket. I spent a couple of days on the phone speaking to people at PayPal every single person DGAF. On what turned out to be my…",
@@ -5428,41 +5260,6 @@
     "reading_time_min": 1,
     "translated": {
       "en": "machine"
-    }
-  },
-  "7dbc56da6e60531e": {
-    "id": "7dbc56da6e60531e",
-    "slug": "lpt-how-watching-cooking-videos-tricked-my-brain-into-feelin-7dbc56",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xgrkbh/lpt_how_watching_cooking_videos_tricked_my_brain",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "",
-      "kind": "news",
-      "content_type": "community"
-    },
-    "author": "/u/Yeahyeahyeahweh",
-    "published_at": "2026-10-27T12:46:35+00:00",
-    "fetched_at": "2026-10-30T10:48:57.185065+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "LPT: How watching cooking videos tricked my brain into feeling full",
-      "vi": "LPT: Việc xem video nấu ăn khiến não tôi cảm thấy no như thế nào"
-    },
-    "summary": {
-      "en": "I want to post this because I think it might help others who are currently in a tough spot. It worked for me when things got difficult. I am an 18F student in college. I live in a dorm and I usually eat only one meal a day. Every human body is different so I am not saying this…",
-      "vi": "Tôi muốn đăng bài này vì tôi nghĩ nó có thể giúp ích cho những người khác hiện đang gặp khó khăn. Nó có tác dụng với tôi khi mọi việc trở nên khó khăn. Tôi là sinh viên 18F ở trường đại học. Tôi sống trong ký túc xá và thường chỉ ăn một bữa mỗi ngày. Cơ thể mỗi người đều khác nhau nên tôi không nói điều này…"
-    },
-    "categories": [
-      "general"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.0,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
     }
   },
   "d419f95b8526c881": {
@@ -6455,8 +6252,8 @@
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "LPT- if you want to read more but find yourself doomscrolling in bed: move your phone charger",
-      "vi": "LPT- if you want to read more but find yourself doomscrolling in bed: move your phone charger"
+      "en": "if you want to read more but find yourself doomscrolling in bed: move your phone charger",
+      "vi": "if you want to read more but find yourself doomscrolling in bed: move your phone charger"
     },
     "summary": {
       "en": "It might not work for everyone but it really got me reading a lot more. Doomscrolling was a big problem for me, and not reading was another. I tried putting my phone charger further from my bed on a table opposite from it, and while it was hard at first I finally started to read…",
@@ -6488,8 +6285,8 @@
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "LPT: When a company says they’ll get back to you ask when you should follow up if they don’t",
-      "vi": "LPT: When a company says they’ll get back to you ask when you should follow up if they don’t"
+      "en": "When a company says they’ll get back to you ask when you should follow up if they don’t",
+      "vi": "When a company says they’ll get back to you ask when you should follow up if they don’t"
     },
     "summary": {
       "en": "Instead of just accepting “someone will be in touch”, ask something like “No worries, if I haven’t heard anything by Friday, should I give you a call?” It’s a small thing but it gives you an actual date to work with. Otherwise you end up waiting around wondering whether to call…",
@@ -6540,41 +6337,6 @@
     "hidden": false,
     "slug": "noi-chuyen-rac-ruoi-nhan-thung-rac-kieu-anh-kho-hieu-cua-ubu-f6ba26"
   },
-  "50213989a856555b": {
-    "id": "50213989a856555b",
-    "slug": "lpt-use-a-burner-phone-or-a-second-number-when-you-first-sta-502139",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xjmfn4/lpt_use_a_burner_phone_or_a_second_number_when",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/Acceptable-Serve-371",
-    "published_at": "2026-10-30T17:55:28+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "LPT: Use a burner phone or a second number when you first start dating to protect your privacy",
-      "vi": "LPT: Use a burner phone or a second number when you first start dating to protect your privacy"
-    },
-    "summary": {
-      "en": "Your number is basically an identity tag at this point especially if you’ve had it for years. Someone can do a reverse number look up and pull up your information. It feels very invasive, very scary actually. So I advise anyone to use a burner phone or a second number within…",
-      "vi": "Your number is basically an identity tag at this point especially if you’ve had it for years. Someone can do a reverse number look up and pull up your information. It feels very invasive, very scary actually. So I advise anyone to use a burner phone or a second number within…"
-    },
-    "categories": [
-      "security"
-    ],
-    "tags": [
-      "privacy"
-    ],
-    "difficulty": null,
-    "score": 0.95,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {}
-  },
   "89231a82512ba638": {
     "id": "89231a82512ba638",
     "slug": "lpt-many-local-libraries-have-resources-such-as-tools-and-eq-89231a",
@@ -6591,8 +6353,8 @@
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "LPT- Many local libraries have resources such as tools and equipment that you can borrow like a book.",
-      "vi": "LPT- Many local libraries have resources such as tools and equipment that you can borrow like a book."
+      "en": "Many local libraries have resources such as tools and equipment that you can borrow like a book.",
+      "vi": "Many local libraries have resources such as tools and equipment that you can borrow like a book."
     },
     "summary": {
       "en": "It can save you from buying things that you only need to use once or things that are prohibitively expensive to buy. It's called the library of things. You can also request your library to get something in stock that you can borrow. Things like telescopes and 3D printers and…",
@@ -6643,41 +6405,6 @@
     "hidden": false,
     "slug": "nguoi-dung-ubuntu-hien-co-the-bao-loi-doi-voi-cac-ppa-cu-the-45c76e"
   },
-  "43bdfe8f4ba37e50": {
-    "id": "43bdfe8f4ba37e50",
-    "slug": "lpt-if-your-smoke-alarms-plastic-case-is-turning-yellow-it-i-43bdfe",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xjdwye/lpt_if_your_smoke_alarms_plastic_case_is_turning",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/dickcheney600",
-    "published_at": "2026-10-30T12:23:07+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "LPT: If your smoke alarm's plastic case is turning yellow, it is definitely past it's 10 year lifespan and should be replaced",
-      "vi": "LPT: If your smoke alarm's plastic case is turning yellow, it is definitely past it's 10 year lifespan and should be replaced"
-    },
-    "summary": {
-      "en": "It's not like it would magically stop working at 10 years and 1 day from the date you first hung it up, but more like, the further it gets from that amount of \"on\" time (hopefully, it's not disconnected for more than, say, a day to go buy another battery) the less reliable it…",
-      "vi": "It's not like it would magically stop working at 10 years and 1 day from the date you first hung it up, but more like, the further it gets from that amount of \"on\" time (hopefully, it's not disconnected for more than, say, a day to go buy another battery) the less reliable it…"
-    },
-    "categories": [
-      "hardware"
-    ],
-    "tags": [
-      "battery"
-    ],
-    "difficulty": null,
-    "score": 0.95,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {}
-  },
   "72935a7f76dc92ab": {
     "id": "72935a7f76dc92ab",
     "slug": "lpt-always-put-your-computer-to-sleep-when-you-leave-the-hou-72935a",
@@ -6694,12 +6421,12 @@
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "LPT: Always put your computer to sleep when you leave the house or go to bed",
-      "vi": "LPT: Always put your computer to sleep when you leave the house or go to bed"
+      "en": "Always put your computer to sleep when you leave the house or go to bed",
+      "vi": "Always put your computer to sleep when you leave the house or go to bed"
     },
     "summary": {
-      "en": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers. submitted by /u/rebel-yeller [link] [comments]",
-      "vi": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers. submitted by /u/rebel-yeller [link] [comments]"
+      "en": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers.",
+      "vi": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers."
     },
     "categories": [
       "security"
@@ -6764,8 +6491,8 @@
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "LPT - reuse a \"dead\" AA mous battery in a clock",
-      "vi": "LPT - reuse a \"dead\" AA mous battery in a clock"
+      "en": "reuse a \"dead\" AA mous battery in a clock",
+      "vi": "reuse a \"dead\" AA mous battery in a clock"
     },
     "summary": {
       "en": "Today I learned that the \"dead\" AA battery which can no longer power my wireless mouse still has enough oomph* to be able to power a clock for a while. I'm so pleased I can re-deploy a \"used\" battery into something useful, I thought I'd share. *oomph is a technical term as a…",
@@ -7238,12 +6965,12 @@
     "fetched_at": "2026-10-30T10:48:57.185065+00:00",
     "original_lang": "en",
     "title": {
-      "en": "LPT: Being Blunt",
-      "vi": "LPT: Being Blunt"
+      "en": "Being Blunt",
+      "vi": "Being Blunt"
     },
     "summary": {
-      "en": "The older I get, the more I realize that speaking your mind bluntly and directly is the fastest way to build relationships with the right people. submitted by /u/elavenile [link] [comments]",
-      "vi": "The older I get, the more I realize that speaking your mind bluntly and directly is the fastest way to build relationships with the right people. submitted by /u/elavenile [link] [comments]"
+      "en": "The older I get, the more I realize that speaking your mind bluntly and directly is the fastest way to build relationships with the right people.",
+      "vi": "The older I get, the more I realize that speaking your mind bluntly and directly is the fastest way to build relationships with the right people."
     },
     "categories": [
       "general"
@@ -8936,39 +8663,6 @@
     "translated": {},
     "hn_points": 147
   },
-  "adef54a956c046b0": {
-    "id": "adef54a956c046b0",
-    "slug": "lpt-keep-a-permanent-marker-in-your-kitchen-to-label-items-w-adef54",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xi0tqh/lpt_keep_a_permanent_marker_in_your_kitchen_to",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/sofaking_scientific",
-    "published_at": "2026-10-28T21:16:21+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "LPT: Keep a permanent marker in your kitchen to label items with opened dates",
-      "vi": "LPT: Keep a permanent marker in your kitchen to label items with opened dates"
-    },
-    "summary": {
-      "en": "Bonus: use masking or painters tape for DIY labels for containers submitted by /u/sofaking_scientific [link] [comments]",
-      "vi": "Bonus: use masking or painters tape for DIY labels for containers submitted by /u/sofaking_scientific [link] [comments]"
-    },
-    "categories": [
-      "general"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.83,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {}
-  },
   "d1109a5d950a375f": {
     "id": "d1109a5d950a375f",
     "slug": "lpt-always-keep-a-card-in-your-wallet-stating-how-many-pets-d1109a",
@@ -8985,8 +8679,8 @@
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "LPT: Always keep a card in your wallet stating how many pets you have at home",
-      "vi": "LPT: Always keep a card in your wallet stating how many pets you have at home"
+      "en": "Always keep a card in your wallet stating how many pets you have at home",
+      "vi": "Always keep a card in your wallet stating how many pets you have at home"
     },
     "summary": {
       "en": "I learned if a person dies suddenly outside the home (car/train crash etc), first responders may not automatically check the house for animals unless there is an obvious sign (like barking or a window sticker). A lot of pets have been left alone for days in these situations and…",
@@ -9052,12 +8746,12 @@
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "LPT: Always mute yourself when placed on hold",
-      "vi": "LPT: Always mute yourself when placed on hold"
+      "en": "Always mute yourself when placed on hold",
+      "vi": "Always mute yourself when placed on hold"
     },
     "summary": {
-      "en": "The other party can often hear you, even when they've placed you on hold. submitted by /u/upwork_silo [link] [comments]",
-      "vi": "The other party can often hear you, even when they've placed you on hold. submitted by /u/upwork_silo [link] [comments]"
+      "en": "The other party can often hear you, even when they've placed you on hold.",
+      "vi": "The other party can often hear you, even when they've placed you on hold."
     },
     "categories": [
       "general"
@@ -9085,8 +8779,8 @@
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "LPT: If you have a friend who has lost their spouse, make an effort to console them on important dates such as their anniversary, the spouse's birthday, etc.",
-      "vi": "LPT: If you have a friend who has lost their spouse, make an effort to console them on important dates such as their anniversary, the spouse's birthday, etc."
+      "en": "If you have a friend who has lost their spouse, make an effort to console them on important dates such as their anniversary, the spouse's birthday, etc.",
+      "vi": "If you have a friend who has lost their spouse, make an effort to console them on important dates such as their anniversary, the spouse's birthday, etc."
     },
     "summary": {
       "en": "My friend (51m) lost his wife (55f) last year after a brief illness. I remember speaking to him around the time of the one year anniversary of her death, and I could tell all through that period he was really struggling. I know this week would have been her 57th birthday so he's…",
@@ -9153,8 +8847,8 @@
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "LPT: Use the name you want in your signature instead of your formal name",
-      "vi": "LPT: Use the name you want in your signature instead of your formal name"
+      "en": "Use the name you want in your signature instead of your formal name",
+      "vi": "Use the name you want in your signature instead of your formal name"
     },
     "summary": {
       "en": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…",
@@ -10162,40 +9856,6 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {}
-  },
-  "1bcb144cf6f8ac40": {
-    "id": "1bcb144cf6f8ac40",
-    "slug": "im-so-bad-at-billiards-that-i-ended-up-in-the-hyperbolic-pla-1bcb14",
-    "url": "https://www.youtube.com/watch?v=kL9BTbIGxLg",
-    "source": {
-      "id": "hackernews",
-      "name": "Hacker News",
-      "site_url": "https://news.ycombinator.com",
-      "kind": "news",
-      "content_type": "community"
-    },
-    "author": "surprisetalk",
-    "published_at": "Wed, 28 Oct 2026 13:20:05 +0000",
-    "fetched_at": "2026-10-30T10:48:57.185065+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "I'm so bad at billiards that I ended up in the hyperbolic plane [video]",
-      "vi": "I'm so bad at billiards that I ended up in the hyperbolic plane [video]"
-    },
-    "summary": {
-      "en": "Thảo luận trên Hacker News (141 điểm, 18 bình luận).",
-      "vi": "Thảo luận trên Hacker News (141 điểm, 18 bình luận)."
-    },
-    "categories": [
-      "security"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.76,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "hn_points": 141
   },
   "badc57942b75dc97": {
     "id": "badc57942b75dc97",
@@ -12101,8 +11761,8 @@
       "vi": "Android 17 features"
     },
     "summary": {
-      "en": "https://www.youtube.com/watch?v=_enN4cmvmz8 submitted by /u/LengthinessHour3697 [link] [comments]",
-      "vi": "https://www.youtube.com/watch?v=_enN4cmvmz8 submitted by /u/LengthinessHour3697 [link] [comments]"
+      "en": "https://www.youtube.com/watch?v=_enN4cmvmz8",
+      "vi": "https://www.youtube.com/watch?v=_enN4cmvmz8"
     },
     "categories": [
       "android"
@@ -12320,39 +11980,6 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "a2f963fccfabb303": {
-    "id": "a2f963fccfabb303",
-    "slug": "anyone-knows-how-can-i-create-such-a-lock-screen-on-my-s24-u-a2f963",
-    "url": "https://www.reddit.com/r/Androidtips/comments/1tdrtcm/anyone_knows_how_can_i_create_such_a_lock_screen",
-    "source": {
-      "id": "reddit-androidtips",
-      "name": "Reddit r/AndroidTips",
-      "site_url": "",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/Grouchy-Summer499",
-    "published_at": "2026-05-15T10:06:02+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Anyone knows how can i create such a lock screen on my s24 ultra without using the iscreen app which is mentioned in this video?",
-      "vi": "Anyone knows how can i create such a lock screen on my s24 ultra without using the iscreen app which is mentioned in this video?"
-    },
-    "summary": {
-      "en": "submitted by /u/Grouchy-Summer499 [link] [comments]",
-      "vi": "submitted by /u/Grouchy-Summer499 [link] [comments]"
-    },
-    "categories": [
-      "general"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.52,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {}
-  },
   "28c9ec341b6e3347": {
     "id": "28c9ec341b6e3347",
     "url": "https://vietnamnet.vn/viettel-hay-thay-doi-suy-nghi-va-lam-tot-su-menh-dan-dat-2333411.html",
@@ -12458,139 +12085,5 @@
     },
     "hidden": false,
     "slug": "ai-dang-lam-cho-toi-nhanh-hon-toi-khong-muon-no-lam-toi-toi-bba44a"
-  },
-  "751052920c9a33f8": {
-    "id": "751052920c9a33f8",
-    "slug": "otg-always-on-oppo-751052",
-    "url": "https://www.reddit.com/r/Androidtips/comments/1wmc07i/otg_always_on_oppo",
-    "source": {
-      "id": "reddit-androidtips",
-      "name": "Reddit r/AndroidTips",
-      "site_url": "",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/Flat-Sir7741",
-    "published_at": "2026-09-21T12:55:30+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "OTG always on????? (OPPO)",
-      "vi": "OTG always on????? (OPPO)"
-    },
-    "summary": {
-      "en": "submitted by /u/Flat-Sir7741 [link] [comments]",
-      "vi": "submitted by /u/Flat-Sir7741 [link] [comments]"
-    },
-    "categories": [
-      "general"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.42,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {}
-  },
-  "edb995eb5949c67c": {
-    "id": "edb995eb5949c67c",
-    "slug": "gemini-intelligence-requirements-just-dropped-edb995",
-    "url": "https://www.reddit.com/r/Androidtips/comments/1thex2u/gemini_intelligence_requirements_just_dropped",
-    "source": {
-      "id": "reddit-androidtips",
-      "name": "Reddit r/AndroidTips",
-      "site_url": "",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/LengthinessHour3697",
-    "published_at": "2026-05-19T06:55:45+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Gemini Intelligence requirements just dropped 😮",
-      "vi": "Gemini Intelligence requirements just dropped 😮"
-    },
-    "summary": {
-      "en": "submitted by /u/LengthinessHour3697 [link] [comments]",
-      "vi": "submitted by /u/LengthinessHour3697 [link] [comments]"
-    },
-    "categories": [
-      "ai"
-    ],
-    "tags": [
-      "gemini"
-    ],
-    "difficulty": null,
-    "score": 0.42,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {}
-  },
-  "401f7200087ba88d": {
-    "id": "401f7200087ba88d",
-    "slug": "your-thoughts-on-this-401f72",
-    "url": "https://www.reddit.com/r/Androidtips/comments/1tdm7bw/your_thoughts_on_this",
-    "source": {
-      "id": "reddit-androidtips",
-      "name": "Reddit r/AndroidTips",
-      "site_url": "",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/LengthinessHour3697",
-    "published_at": "2026-05-15T04:58:02+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Your thoughts on this",
-      "vi": "Your thoughts on this"
-    },
-    "summary": {
-      "en": "submitted by /u/LengthinessHour3697 [link] [comments]",
-      "vi": "submitted by /u/LengthinessHour3697 [link] [comments]"
-    },
-    "categories": [
-      "general"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.42,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {}
-  },
-  "5ccc701671cad469": {
-    "id": "5ccc701671cad469",
-    "slug": "the-biggest-android-update-ever-5ccc70",
-    "url": "https://www.reddit.com/r/Androidtips/comments/1tcnms4/the_biggest_android_update_ever",
-    "source": {
-      "id": "reddit-androidtips",
-      "name": "Reddit r/AndroidTips",
-      "site_url": "",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/LengthinessHour3697",
-    "published_at": "2026-05-14T04:39:07+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "“The Biggest Android Update Ever”",
-      "vi": "“The Biggest Android Update Ever”"
-    },
-    "summary": {
-      "en": "submitted by /u/LengthinessHour3697 [link] [comments]",
-      "vi": "submitted by /u/LengthinessHour3697 [link] [comments]"
-    },
-    "categories": [
-      "android"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.42,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {}
   }
 }

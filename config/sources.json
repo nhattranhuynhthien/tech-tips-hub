@@ -494,15 +494,21 @@
     "id": "reddit-lpt",
     "name": "Reddit r/LifeProTips",
     "type": "reddit",
-    "url": "https://www.reddit.com/r/LifeProTips/new/.rss?limit=20",
+    "url": "https://www.reddit.com/r/LifeProTips/search.rss?q=flair%3AComputers&restrict_sr=on&sort=new&t=week",
     "lang": "en",
-    "categories": [],
+    "categories": [
+      "windows",
+      "macos",
+      "linux",
+      "browser",
+      "security"
+    ],
     "trust": 3,
     "tipOnly": true,
     "kind": "tips",
     "contentType": "community",
     "enabled": true,
-    "maxPerRun": 20,
+    "maxPerRun": 5,
     "minScore": 0
   },
   {
@@ -614,7 +620,12 @@
     "url": "https://www.reddit.com/r/technology/new/.rss?limit=20",
     "site_url": "https://www.reddit.com/r/technology/",
     "lang": "en",
-    "categories": ["ai", "hardware", "security", "dev"],
+    "categories": [
+      "ai",
+      "hardware",
+      "security",
+      "dev"
+    ],
     "trust": 3,
     "tipOnly": false,
     "kind": "news",
@@ -631,7 +642,11 @@
     "url": "https://www.reddit.com/r/gadgets/new/.rss?limit=20",
     "site_url": "https://www.reddit.com/r/gadgets/",
     "lang": "en",
-    "categories": ["hardware", "android", "ios"],
+    "categories": [
+      "hardware",
+      "android",
+      "ios"
+    ],
     "trust": 3,
     "tipOnly": false,
     "kind": "news",

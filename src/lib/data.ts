@@ -172,7 +172,7 @@ export function getAllSources(): Source[] {
   }
 }
 
-export function getTrickOfTheDay(): Tip | null {
+export function getTrickOfTheDay(lang: 'vi' | 'en' = 'vi'): Tip | null {
   const tips = getAllTips(false);
   if (tips.length === 0) return null;
 
@@ -205,6 +205,10 @@ export function getTrickOfTheDay(): Tip | null {
   const candidates = tips.filter((t) => {
     if (!t.howto) return false;
     if (featuredHistoryIds.has(t.id)) return false;
+    if (lang === 'vi') {
+      const hasVi = t.original_lang === 'vi' || t.translated?.vi === 'machine';
+      if (!hasVi) return false;
+    }
     try {
       const pubDate = new Date(t.published_at);
       const ageMs = now.getTime() - pubDate.getTime();
