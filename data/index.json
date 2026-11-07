@@ -178,7 +178,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "eaa9608067068667": {
@@ -216,7 +216,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "7b5ed5dd303b816a": {
@@ -257,7 +257,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "009d89703dd91abd": {
@@ -297,7 +297,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "a7d61d970df6ec9b": {
@@ -335,7 +335,476 @@
       "en": false
     },
     "translate_attempts": {
+      "en": 2
+    }
+  },
+  "73d60418285cd4ad": {
+    "id": "73d60418285cd4ad",
+    "slug": "firefox-has-a-hidden-snake-game-heres-how-to-play-it-73d604",
+    "url": "https://www.omgubuntu.co.uk/2026/11/firefox-snake-game-easter-egg",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Fri, 06 Nov 2026 03:57:00 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Firefox has a hidden snake game, here’s how to play it",
+      "vi": "Firefox has a hidden snake game, here’s how to play it"
+    },
+    "summary": {
+      "en": "If you get bored and fancy a quick game of something, you can play one in Firefox’s address bar – once you know how. Mozilla’s browser boasts an easter-egg, as spotted by Soeren Hentzschel, that is only triggered when using the address bar’s calculator feature. Normally, the sum…",
+      "vi": "If you get bored and fancy a quick game of something, you can play one in Firefox’s address bar – once you know how. Mozilla’s browser boasts an easter-egg, as spotted by Soeren Hentzschel, that is only triggered when using the address bar’s calculator feature. Normally, the sum…"
+    },
+    "categories": [
+      "browser"
+    ],
+    "tags": [
+      "firefox"
+    ],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "8304ef5f4f46473a": {
+    "id": "8304ef5f4f46473a",
+    "slug": "ubuntu-users-blast-canonical-for-slow-kernel-security-fix-8304ef",
+    "url": "https://www.omgubuntu.co.uk/2026/11/ubuntu-fix-tcp-bug-criticism",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Wed, 04 Nov 2026 23:47:18 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Ubuntu users blast Canonical for slow kernel security fix",
+      "vi": "Ubuntu users blast Canonical for slow kernel security fix"
+    },
+    "summary": {
+      "en": "Canonical is fixing a critical Linux kernel flaw in Ubuntu, weeks after Debian and other distros did – and users aren’t happy about the wait. As of 3 November, patched kernels for CVE-2026-98432 are in testing for Ubuntu 22.04, 24.04 and 26.04 LTS, but are yet to hit the stable…",
+      "vi": "Canonical is fixing a critical Linux kernel flaw in Ubuntu, weeks after Debian and other distros did – and users aren’t happy about the wait. As of 3 November, patched kernels for CVE-2026-98432 are in testing for Ubuntu 22.04, 24.04 and 26.04 LTS, but are yet to hit the stable…"
+    },
+    "categories": [
+      "linux",
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "advanced",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "86f92144e20a5795": {
+    "id": "86f92144e20a5795",
+    "slug": "google-is-quietly-reworking-geminis-sidebar-and-testing-a-ne-86f921",
+    "url": "https://www.androidauthority.com/google-gemini-ui-update-animation-you-tab-apk-teardown-3732589",
+    "source": {
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Chethan Rao",
+    "published_at": "Fri, 06 Nov 2026 16:18:13 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Google is quietly reworking Gemini’s sidebar and testing a new overlay animation",
+      "vi": "Google is quietly reworking Gemini’s sidebar and testing a new overlay animation"
+    },
+    "summary": {
+      "en": "Meanwhile, the Google app’s You tab could get a Shortcuts section to view or erase your search history.",
+      "vi": "Meanwhile, the Google app’s You tab could get a Shortcuts section to view or erase your search history."
+    },
+    "categories": [
+      "ai",
+      "browser"
+    ],
+    "tags": [
+      "gemini"
+    ],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "d0a47609c09c06f2": {
+    "id": "d0a47609c09c06f2",
+    "slug": "educators-can-now-add-guided-learning-to-assignments-in-goog-d0a476",
+    "url": "http://workspaceupdates.googleblog.com/2026/11/educators-can-now-add-guided-learning-to-assignments-in-Google-Classroom-to-help-students-get-extra-support.html",
+    "source": {
+      "id": "workspace-updates",
+      "name": "Google Workspace Updates",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "vendor"
+    },
+    "author": "Paul Jiménez Vela (noreply@blogger.com)",
+    "published_at": "2026-11-04T06:39:59.264-08:00",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Educators can now add Guided Learning to assignments in Google Classroom to help students get extra support",
+      "vi": "Educators can now add Guided Learning to assignments in Google Classroom to help students get extra support"
+    },
+    "summary": {
+      "en": "Building on our announcement earlier this year, a new Google Classroom integration that lets teachers add Guided Learning to any assignment is now rolling out globally in all Gemini-supported languages. Guided Learning is a mode in the Gemini app designed to help students deepen…",
+      "vi": "Building on our announcement earlier this year, a new Google Classroom integration that lets teachers add Guided Learning to any assignment is now rolling out globally in all Gemini-supported languages. Guided Learning is a mode in the Gemini app designed to help students deepen…"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "gemini"
+    ],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "62df8fdc1d26d162": {
+    "id": "62df8fdc1d26d162",
+    "slug": "build-for-an-expanding-lineup-of-android-xr-devices-with-pro-62df8f",
+    "url": "https://developer.android.com/blog/posts/build-android-xr-devices-tools",
+    "source": {
+      "id": "android-dev",
+      "name": "Android Developers Blog",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "vendor"
+    },
+    "author": "Vinny DaSilva",
+    "published_at": "2026-11-06T00:00:00.000Z",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Build for an expanding lineup of Android XR devices with production-ready tools from Android Developer Summit",
+      "vi": "Build for an expanding lineup of Android XR devices with production-ready tools from Android Developer Summit"
+    },
+    "summary": {
+      "en": "From full immersion at home to glanceable experiences on the go, building on Android XR lets you meet users at any moment across the entire spectrum of spatial applications. At Android Developer Summit, we marked an exciting milestone with the launch of XREAL AURA.",
+      "vi": "From full immersion at home to glanceable experiences on the go, building on Android XR lets you meet users at any moment across the entire spectrum of spatial applications. At Android Developer Summit, we marked an exciting milestone with the launch of XREAL AURA."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "f518388722c49905": {
+    "id": "f518388722c49905",
+    "slug": "raising-the-bar-for-8-gb-windows-11-pcs-whats-improved-and-h-f51838",
+    "url": "https://blogs.windows.com/windowsexperience/2026/11/03/raising-the-bar-for-8-gb-windows-11-pcs-whats-improved-and-how-to-get-it",
+    "source": {
+      "id": "windows-blog",
+      "name": "Windows Blogs",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "vendor"
+    },
+    "author": "Pavan Davuluri, Executive Vice President, Windows + Devices",
+    "published_at": "Tue, 03 Nov 2026 17:00:48 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Raising the bar for 8 GB Windows 11 PCs: what’s improved and how to get it",
+      "vi": "Raising the bar for 8 GB Windows 11 PCs: what’s improved and how to get it"
+    },
+    "summary": {
+      "en": "A great Windows experience starts with a simple expectation: your PC should respond when you need it to. You open Start. You launch an app. You switch back to the document or browser tab you left an hour ago and pick up whe",
+      "vi": "A great Windows experience starts with a simple expectation: your PC should respond when you need it to. You open Start. You launch an app. You switch back to the document or browser tab you left an hour ago and pick up whe"
+    },
+    "categories": [
+      "windows",
+      "browser"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "0adec608c081b3fb": {
+    "id": "0adec608c081b3fb",
+    "slug": "claude-giup-may-tinh-luong-tu-giam-hang-trieu-cong-tinh-toan-0adec6",
+    "url": "https://tuoitre.vn/claude-giup-may-tinh-luong-tu-giam-hang-trieu-cong-tinh-toan-100261106204646543.htm",
+    "source": {
+      "id": "tuoitre-nsso",
+      "name": "Tu?i Tr? Nh?p s?ng s?",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "NGUYỄN NHẬT MINH(chuyên gia)",
+    "published_at": "11/7/2026 8:26:00 AM",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Claude giúp máy tính lượng tử giảm hàng triệu cổng tính toán",
+      "en": "Claude giúp máy tính lượng tử giảm hàng triệu cổng tính toán"
+    },
+    "summary": {
+      "vi": "Thay vì phải lưu mọi kết quả trung gian, Claude tìm cách khôi phục chúng, giúp giảm khoảng 17 lần số cổng tính toán trong mạch lượng tử.",
+      "en": "Thay vì phải lưu mọi kết quả trung gian, Claude tìm cách khôi phục chúng, giúp giảm khoảng 17 lần số cổng tính toán trong mạch lượng tử."
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "claude"
+    ],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": false
+    },
+    "translate_attempts": {
       "en": 1
+    }
+  },
+  "178d633cd4c6cbe4": {
+    "id": "178d633cd4c6cbe4",
+    "slug": "phat-hien-ma-doc-moi-tinh-vi-tan-cong-he-dieu-hanh-windows-178d63",
+    "url": "https://tuoitre.vn/phat-hien-ma-doc-moi-tinh-vi-tan-cong-he-dieu-hanh-windows-100261105151024494.htm",
+    "source": {
+      "id": "tuoitre-nsso",
+      "name": "Tu?i Tr? Nh?p s?ng s?",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "ĐỨC THIỆN⭐",
+    "published_at": "11/5/2026 3:59:00 PM",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Phát hiện mã độc mới tinh vi tấn công hệ điều hành Windows",
+      "en": "Phát hiện mã độc mới tinh vi tấn công hệ điều hành Windows"
+    },
+    "summary": {
+      "vi": "Không phát tán tập tin đáng ngờ theo cách thông thường, tin tặc lợi dụng các chương trình hợp pháp để đưa mã độc vào hệ thống Windows của cơ quan chính phủ.",
+      "en": "Không phát tán tập tin đáng ngờ theo cách thông thường, tin tặc lợi dụng các chương trình hợp pháp để đưa mã độc vào hệ thống Windows của cơ quan chính phủ."
+    },
+    "categories": [
+      "windows",
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": false
+    },
+    "translate_attempts": {
+      "en": 1
+    }
+  },
+  "c1f69c982811cd7e": {
+    "id": "c1f69c982811cd7e",
+    "slug": "v01033052-builddeps-bump-actionssetup-dotnet-from-540-to-600-c1f69c",
+    "url": "https://github.com/microsoft/PowerToys/releases/tag/v0.103.3052",
+    "source": {
+      "id": "powertoys-release",
+      "name": "Microsoft PowerToys Releases",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "vendor"
+    },
+    "author": "dependabot[bot]",
+    "published_at": "2026-11-02T00:03:05Z",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "v0.103.3052: Build(deps): Bump actions/setup-dotnet from 5.4.0 to 6.0.0 (#49862)",
+      "vi": "v0.103.3052: Build(deps): Bump actions/setup-dotnet from 5.4.0 to 6.0.0 (#49862)"
+    },
+    "summary": {
+      "en": "Bumps actions/setup-dotnet from 5.4.0 to 6.0.0. Release notes Sourced from actions/setup-dotnet's releases . v6.0.0 What's Changed Migrate to ESM and upgrade dependencies by @​priyagupta108 in actions/setup-dotnet#752 Bump actions/checkout from 6.0.3 to 7.0.0 by @​dependabot…",
+      "vi": "Bumps actions/setup-dotnet from 5.4.0 to 6.0.0. Release notes Sourced from actions/setup-dotnet's releases . v6.0.0 What's Changed Migrate to ESM and upgrade dependencies by @​priyagupta108 in actions/setup-dotnet#752 Bump actions/checkout from 6.0.3 to 7.0.0 by @​dependabot…"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "2ba7b82c031be6d1": {
+    "id": "2ba7b82c031be6d1",
+    "slug": "upload-an-image-to-create-a-custom-avatar-in-google-vids-2ba7b8",
+    "url": "http://workspaceupdates.googleblog.com/2026/11/create-a-custom-avatar-google-vids.html",
+    "source": {
+      "id": "workspace-updates",
+      "name": "Google Workspace Updates",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "vendor"
+    },
+    "author": "Dan C (noreply@blogger.com)",
+    "published_at": "2026-11-02T09:48:25.398-08:00",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Upload an image to create a custom avatar in Google Vids",
+      "vi": "Upload an image to create a custom avatar in Google Vids"
+    },
+    "summary": {
+      "en": "Update: November 3, 2026: Rollout for this feature is paused. We will post an update when it resumes. We have updated the rollout timelines listed below in this post to reflect this change. Users can now upload images to create custom avatars directly within Google Vids . This…",
+      "vi": "Update: November 3, 2026: Rollout for this feature is paused. We will post an update when it resumes. We have updated the rollout timelines listed below in this post to reflect this change. Users can now upload images to create custom avatars directly within Google Vids . This…"
+    },
+    "categories": [
+      "office"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.49,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "41552834405f0066": {
+    "id": "41552834405f0066",
+    "slug": "build-for-every-screen-with-the-latest-jetpack-compose-updat-415528",
+    "url": "https://developer.android.com/blog/posts/build-for-every-screen-jetpack-compose-updates",
+    "source": {
+      "id": "android-dev",
+      "name": "Android Developers Blog",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "vendor"
+    },
+    "author": "Rebecca Gutteridge",
+    "published_at": "2026-11-04T00:00:00.000Z",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Build for every screen with the latest Jetpack Compose updates from Android Developer Summit",
+      "vi": "Build for every screen with the latest Jetpack Compose updates from Android Developer Summit"
+    },
+    "summary": {
+      "en": "The Android ecosystem is a multi-device reality that spans phones, foldables, tablets, wearables, in-car displays, XR, and Googlebook. In this landscape, adaptive development is foundational to reaching users wherever they are.",
+      "vi": "The Android ecosystem is a multi-device reality that spans phones, foldables, tablets, wearables, in-car displays, XR, and Googlebook. In this landscape, adaptive development is foundational to reaching users wherever they are."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.49,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "79d509c9c75856f8": {
+    "id": "79d509c9c75856f8",
+    "slug": "developing-for-today-50-new-developer-sessions-on-building-a-79d509",
+    "url": "https://developer.android.com/blog/posts/building-apps-developer-sessions",
+    "source": {
+      "id": "android-dev",
+      "name": "Android Developers Blog",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "vendor"
+    },
+    "author": "Florina Muntenescu",
+    "published_at": "2026-11-02T00:00:00.000Z",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Developing for Today: 50+ New Developer Sessions on Building Apps Today",
+      "vi": "Developing for Today: 50+ New Developer Sessions on Building Apps Today"
+    },
+    "summary": {
+      "en": "Over 900 attendees joined our event spaces for a keynote about our outlook on the future, demo sessions, dozens of workshops, a hackathon, and for community discussions focused on ideas and feedback on Android platform.",
+      "vi": "Over 900 attendees joined our event spaces for a keynote about our outlook on the future, demo sessions, dozens of workshops, a hackathon, and for community discussions focused on ideas and feedback on Android platform."
+    },
+    "categories": [
+      "android",
+      "office"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.49,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "739c9f9103673d3c": {
@@ -415,7 +884,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "494dec1bba8b15b8": {
@@ -667,7 +1136,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "0b58bfa85dcc8db3": {
@@ -695,6 +1164,276 @@
     },
     "categories": [
       "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 2
+    }
+  },
+  "bc17b8a3d859c596": {
+    "id": "bc17b8a3d859c596",
+    "slug": "sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-bc17b8",
+    "url": "https://www.bleepingcomputer.com/news/security/sonicwall-warns-of-new-ssl-vpn-mfa-bypass-flaw-exploited-in-attacks",
+    "source": {
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "site_url": "https://www.bleepingcomputer.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Lawrence Abrams",
+    "published_at": "Fri, 06 Nov 2026 19:00:55 -0500",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
+      "vi": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks"
+    },
+    "summary": {
+      "en": "SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks.",
+      "vi": "SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [
+      "vpn"
+    ],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "803a1f71a44e1479": {
+    "id": "803a1f71a44e1479",
+    "slug": "d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switch-803a1f",
+    "url": "https://www.bleepingcomputer.com/news/security/d-link-warns-of-multiple-zero-days-in-dgs-3130-series-switches",
+    "source": {
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "site_url": "https://www.bleepingcomputer.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Sergiu Gatlan",
+    "published_at": "Fri, 06 Nov 2026 07:37:22 -0500",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "D-Link warns of multiple zero-days in DGS-3130 Series switches",
+      "vi": "D-Link warns of multiple zero-days in DGS-3130 Series switches"
+    },
+    "summary": {
+      "en": "D-Link shared mitigation measures for multiple unpatched security flaws affecting DGS-3130 series managed Gigabit stackable switches.",
+      "vi": "D-Link shared mitigation measures for multiple unpatched security flaws affecting DGS-3130 series managed Gigabit stackable switches."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "4a41deae68542d95": {
+    "id": "4a41deae68542d95",
+    "slug": "googles-original-nest-doorbell-is-broken-for-many-right-now-4a41de",
+    "url": "https://9to5google.com/2026/11/06/google-nest-doorbell-live-view-broken-reports",
+    "source": {
+      "id": "9to5google",
+      "name": "9to5Google",
+      "site_url": "https://9to5google.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Ben Schoon",
+    "published_at": "Fri, 06 Nov 2026 23:15:00 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Google’s original Nest Doorbell is broken for many right now",
+      "vi": "Google’s original Nest Doorbell is broken for many right now"
+    },
+    "summary": {
+      "en": "An issue with Google’s original Nest Doorbell has left live view of the video feed broken for many owners, and there’s no word on a fix just yet.",
+      "vi": "An issue with Google’s original Nest Doorbell has left live view of the video feed broken for many owners, and there’s no word on a fix just yet."
+    },
+    "categories": [
+      "office"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "cf67ea80814ef9cb": {
+    "id": "cf67ea80814ef9cb",
+    "slug": "amazon-cuts-tcl-s55h-soundbar-to-near-all-time-low-cf67ea",
+    "url": "https://www.androidauthority.com/tcl-s55h-soundbar-deal-3732622",
+    "source": {
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Matt Horne",
+    "published_at": "Fri, 06 Nov 2026 17:04:38 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Amazon cuts TCL S55H soundbar to near all-time low",
+      "vi": "Amazon cuts TCL S55H soundbar to near all-time low"
+    },
+    "summary": {
+      "en": "Save $60 on the TCL S55H soundbar and get fuller TV sound, stronger bass, and a 4.5-star Amazon-rated setup for $99.99.",
+      "vi": "Save $60 on the TCL S55H soundbar and get fuller TV sound, stronger bass, and a 4.5-star Amazon-rated setup for $99.99."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "b013cda695e92f7d": {
+    "id": "b013cda695e92f7d",
+    "slug": "latest-google-app-reveals-gemini-lives-offline-mode-requires-b013cd",
+    "url": "https://www.androidauthority.com/gemini-live-offline-mode-caveats-apk-teardown-3732544",
+    "source": {
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Aamir Siddiqui",
+    "published_at": "Fri, 06 Nov 2026 14:14:19 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Latest Google app reveals Gemini Live’s offline mode requires an online setup",
+      "vi": "Latest Google app reveals Gemini Live’s offline mode requires an online setup"
+    },
+    "summary": {
+      "en": "You should also brace for a limited experience compared to online Gemini Live.",
+      "vi": "You should also brace for a limited experience compared to online Gemini Live."
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "gemini"
+    ],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "be862286aeb98279": {
+    "id": "be862286aeb98279",
+    "slug": "lame-duck-congress-might-actually-do-something-speed-up-ener-be8622",
+    "url": "https://www.theverge.com/policy/1028228/energy-infrastructure-permitting-reform-bill-congress-vote",
+    "source": {
+      "id": "theverge",
+      "name": "The Verge",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Justine Calma",
+    "published_at": "2026-11-06T13:42:30-05:00",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Lame-duck Congress might actually do something: speed up energy projects",
+      "vi": "Lame-duck Congress might actually do something: speed up energy projects"
+    },
+    "summary": {
+      "en": "A massive permitting bill that could help energy projects come online much quicker and potentially lower utility bills for Americans is advancing with bipartisan support. And while it could be a catalyst for lots of clean energy, it could also speed up polluting projects and…",
+      "vi": "A massive permitting bill that could help energy projects come online much quicker and potentially lower utility bills for Americans is advancing with bipartisan support. And while it could be a catalyst for lots of clean energy, it could also speed up polluting projects and…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "52e0623fab799a21": {
+    "id": "52e0623fab799a21",
+    "slug": "metas-muse-ai-can-create-custom-spaces-for-the-version-of-th-52e062",
+    "url": "https://www.theverge.com/tech/1028871/meta-muse-ai-spaces",
+    "source": {
+      "id": "theverge",
+      "name": "The Verge",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Emma Roth",
+    "published_at": "2026-11-06T13:10:10-05:00",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Meta’s Muse AI can create custom ‘spaces’ for the version of the app you need right now",
+      "vi": "Meta’s Muse AI can create custom ‘spaces’ for the version of the app you need right now"
+    },
+    "summary": {
+      "en": "Meta will now allow you to build customized, app-like experiences within Muse. The new feature, called \"spaces,\" allows its AI assistant to build things like a shopping hub, school dashboard, music tracker, trivia game, and more, which you can interact with directly in the Muse…",
+      "vi": "Meta will now allow you to build customized, app-like experiences within Muse. The new feature, called \"spaces,\" allows its AI assistant to build things like a shopping hub, school dashboard, music tracker, trivia game, and more, which you can interact with directly in the Muse…"
+    },
+    "categories": [
+      "ai"
     ],
     "tags": [],
     "difficulty": "medium",
@@ -850,7 +1589,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "50540090dc1f9a17": {
@@ -887,6 +1626,46 @@
     },
     "hidden": false,
     "slug": "22-dieu-can-lam-sau-khi-cai-dat-ubuntu-2610-stonking-stingra-505400"
+  },
+  "e470ae63e7d7714c": {
+    "id": "e470ae63e7d7714c",
+    "slug": "i-got-tired-of-remembering-ports-for-30-docker-apps-in-my-ho-e470ae",
+    "url": "https://feed.itsfoss.com/link/24361/17515094/tailscale-services",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Community",
+    "published_at": "Wed, 04 Nov 2026 12:06:35 +0530",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I Got Tired of Remembering Ports for 30 Docker Apps in My Homelab. Here's How I Fixed it",
+      "vi": "I Got Tired of Remembering Ports for 30 Docker Apps in My Homelab. Here's How I Fixed it"
+    },
+    "summary": {
+      "en": "Stop bookmarking IP:ports. Tailscale Services gives every Docker container in your homelab its own HTTPS name on your tailnet, without a reverse proxy or a sidecar per container.",
+      "vi": "Stop bookmarking IP:ports. Tailscale Services gives every Docker container in your homelab its own HTTPS name on your tailnet, without a reverse proxy or a sidecar per container."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [
+      "docker"
+    ],
+    "difficulty": "advanced",
+    "score": 1.38,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "f0df3a7dc26fda5a": {
     "id": "f0df3a7dc26fda5a",
@@ -1002,6 +1781,110 @@
     "translate_attempts": {
       "vi": 1
     }
+  },
+  "9d52b0bab9b23d08": {
+    "id": "9d52b0bab9b23d08",
+    "slug": "nearly-15-million-exposed-secrets-targeted-in-new-revocation-9d52b0",
+    "url": "https://www.bleepingcomputer.com/news/security/truffle-security-launches-program-to-revoke-14-million-live-secrets",
+    "source": {
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "site_url": "https://www.bleepingcomputer.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Bill Toulas",
+    "published_at": "Thu, 05 Nov 2026 15:15:08 -0500",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Nearly 1.5 million exposed secrets targeted in new revocation program",
+      "vi": "Nearly 1.5 million exposed secrets targeted in new revocation program"
+    },
+    "summary": {
+      "en": "Truffle Security has launched the Secrets Revocation Program, a free initiative that helps API key issuers revoke 1.4 million publicly exposed secrets that remain valid.",
+      "vi": "Truffle Security has launched the Secrets Revocation Program, a free initiative that helps API key issuers revoke 1.4 million publicly exposed secrets that remain valid."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.3,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "5e2ec67fb5b13f35": {
+    "id": "5e2ec67fb5b13f35",
+    "slug": "big-googlebook-november-update-rolling-out-with-31-fixes-imp-5e2ec6",
+    "url": "https://9to5google.com/2026/11/05/googlebook-november-update",
+    "source": {
+      "id": "9to5google",
+      "name": "9to5Google",
+      "site_url": "https://9to5google.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Abner Li",
+    "published_at": "Thu, 05 Nov 2026 23:41:44 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Big Googlebook November update rolling out with 31 fixes, improvements",
+      "vi": "Big Googlebook November update rolling out with 31 fixes, improvements"
+    },
+    "summary": {
+      "en": "Just over a month after the launch, Google is rolling out the “Googlebook November update” with “many bug fixes, stability improvements, and firmware updates.”",
+      "vi": "Just over a month after the launch, Google is rolling out the “Googlebook November update” with “many bug fixes, stability improvements, and firmware updates.”"
+    },
+    "categories": [
+      "browser"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.3,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "132e30491accd25f": {
+    "id": "132e30491accd25f",
+    "slug": "payday-aces-high-review-this-years-must-play-multiplayer-vr-132e30",
+    "url": "https://9to5google.com/2026/11/05/payday-aces-high-review-meta-quest",
+    "source": {
+      "id": "9to5google",
+      "name": "9to5Google",
+      "site_url": "https://9to5google.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Nicholas Sutrich",
+    "published_at": "Thu, 05 Nov 2026 21:00:00 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Payday Aces High review: This year’s must-play multiplayer VR game",
+      "vi": "Payday Aces High review: This year’s must-play multiplayer VR game"
+    },
+    "summary": {
+      "en": "Join up with three other heisters and get revenge on the billionaire who sent you to jail in the first place in Payday Aces High, now available on Meta Quest, SteamVR, and Steam Frame.",
+      "vi": "Join up with three other heisters and get revenge on the billionaire who sent you to jail in the first place in Payday Aces High, now available on Meta Quest, SteamVR, and Steam Frame."
+    },
+    "categories": [
+      "browser"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.3,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "7e50ebb05b0da922": {
     "id": "7e50ebb05b0da922",
@@ -1253,6 +2136,72 @@
     "translate_attempts": {
       "vi": 1
     }
+  },
+  "9f4a53a12c7a4a6c": {
+    "id": "9f4a53a12c7a4a6c",
+    "slug": "qnap-says-hackers-breaching-nas-devices-in-plex2shell-attack-9f4a53",
+    "url": "https://www.bleepingcomputer.com/news/security/qnap-says-hackers-breaching-nas-devices-in-plex2shell-attacks",
+    "source": {
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "site_url": "https://www.bleepingcomputer.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Bill Toulas",
+    "published_at": "Fri, 06 Nov 2026 12:04:23 -0500",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "QNAP says hackers breaching NAS devices in Plex2Shell attacks",
+      "vi": "QNAP says hackers breaching NAS devices in Plex2Shell attacks"
+    },
+    "summary": {
+      "en": "QNAP urges users to update Plex Media Server to the latest version available in the QNAP App Center, as hackers are exploiting the Plex2Shell vulnerability chain.",
+      "vi": "QNAP urges users to update Plex Media Server to the latest version available in the QNAP App Center, as hackers are exploiting the Plex2Shell vulnerability chain."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "2a9bc053acbf2508": {
+    "id": "2a9bc053acbf2508",
+    "slug": "just-about-anyone-can-rent-access-to-white-house-ip-addresse-2a9bc0",
+    "url": "https://www.theverge.com/tech/1028835/white-house-residential-proxy",
+    "source": {
+      "id": "theverge",
+      "name": "The Verge",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Emma Roth",
+    "published_at": "2026-11-06T12:40:06-05:00",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Just about anyone can rent access to White House IP addresses",
+      "vi": "Just about anyone can rent access to White House IP addresses"
+    },
+    "summary": {
+      "en": "Someone at the White House appears to be running software that could enable outsiders to rent access on the presidential network for just \"a few dollars,\" as reported by Krebs on Security and The Register. That's according to findings from the security firms Layer3 Intel and…",
+      "vi": "Someone at the White House appears to be running software that could enable outsiders to rent access on the presidential network for just \"a few dollars,\" as reported by Krebs on Security and The Register. That's according to findings from the security firms Layer3 Intel and…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "604f9be9642ce51f": {
     "id": "604f9be9642ce51f",
@@ -1544,8 +2493,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
   "5b2ce654e7eb0ce7": {
@@ -1586,8 +2535,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
   "931358c4dc9a3cf5": {
@@ -1661,8 +2610,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
   "2543684aa29e0bb5": {
@@ -1703,45 +2652,43 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
-  "6f35d28347aacf68": {
-    "id": "6f35d28347aacf68",
-    "url": "https://9to5mac.com/2026/10/29/ios-27-2-gives-shortcuts-app-these-new-and-improved-features",
+  "c2329d895dabfaad": {
+    "id": "c2329d895dabfaad",
+    "slug": "kitty-050-picks-up-where-you-left-off-after-a-system-restart-c2329d",
+    "url": "https://feed.itsfoss.com/link/24361/17516546/kitty-0-50-release",
     "source": {
-      "id": "9to5mac",
-      "name": "9to5Mac",
-      "site_url": "https://9to5mac.com",
-      "kind": "news"
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
     },
-    "author": "Ryan Christoffel",
-    "published_at": "Thu, 29 Oct 2026 14:16:33 +0000",
-    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
+    "author": "Sourav Rudra",
+    "published_at": "Fri, 06 Nov 2026 17:47:21 +0530",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
     "original_lang": "en",
     "title": {
-      "en": "iOS 27.2 gives Shortcuts app these new and improved features",
-      "vi": "iOS 27.2 cung cấp cho ứng dụng Phím tắt những tính năng mới và cải tiến này"
+      "en": "Kitty 0.50 Picks Up Where You Left Off After a System Restart",
+      "vi": "Kitty 0.50 Picks Up Where You Left Off After a System Restart"
     },
     "summary": {
-      "en": "iOS 27.2 launched this week with a variety of new features for Siri AI , FaceTime , Messages , and more, plus a handful of improvements for the Shortcuts app. Here’s everything new in Shortcuts.",
-      "vi": "iOS 27.2 ra mắt trong tuần này với nhiều tính năng mới cho Siri AI, FaceTime, Messages, v.v., cùng với một số cải tiến cho ứng dụng Phím tắt. Đây là mọi thứ mới trong Phím tắt."
+      "en": "The release also adds docked windows, three new cursor trail shaders, and touchscreen support on Wayland.",
+      "vi": "The release also adds docked windows, three new cursor trail shaders, and touchscreen support on Wayland."
     },
     "categories": [
-      "ios",
-      "ai"
+      "windows",
+      "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.26,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "ios-272-cung-cap-cho-ung-dung-phim-tat-nhung-tinh-nang-moi-v-6f35d2"
+    "translated": {}
   },
   "42ed65319ec4c2de": {
     "id": "42ed65319ec4c2de",
@@ -1781,8 +2728,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
   "96a4eda8c3e40bf2": {
@@ -1823,44 +2770,43 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
-  "513f9c14c838474f": {
-    "id": "513f9c14c838474f",
-    "url": "https://linuxhandbook.com/learn-ssh",
+  "fc6dfb9997af6c01": {
+    "id": "fc6dfb9997af6c01",
+    "slug": "global-menu-extension-puts-app-menus-in-gnomes-top-panel-fc6dfb",
+    "url": "https://www.omgubuntu.co.uk/2026/11/global-menu-gnome-extension",
     "source": {
-      "id": "linuxhandbook",
-      "name": "Linux Handbook",
-      "site_url": "https://linuxhandbook.com",
-      "kind": "tips"
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
     },
-    "author": "Abhishek Prakash",
-    "published_at": "Sat, 03 Oct 2026 19:31:57 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "Joey Sneddon",
+    "published_at": "Fri, 06 Nov 2026 17:43:39 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Learn SSH",
-      "vi": "Tìm hiểu SSH"
+      "en": "Global menu extension puts app menus in GNOME’s top panel",
+      "vi": "Global menu extension puts app menus in GNOME’s top panel"
     },
     "summary": {
-      "en": "SSH is how you log in to and work on remote Linux machines. Start with the basics, then secure your setup and fix the errors you are most likely to run into.",
-      "vi": "SSH là cách bạn đăng nhập và làm việc trên các máy Linux từ xa. Hãy bắt đầu với những điều cơ bản, sau đó bảo mật thiết lập của bạn và sửa các lỗi mà bạn có nhiều khả năng gặp phải nhất."
+      "en": "A new global menu extension for GNOME Shell was released this week, and unlike ones you may might tried (and given up on) in the past, this one seems to work well. Earlier global menu efforts have been scuppered by Wayland, API changes and the fact that many modern Linux apps no…",
+      "vi": "A new global menu extension for GNOME Shell was released this week, and unlike ones you may might tried (and given up on) in the past, this one seems to work well. Earlier global menu efforts have been scuppered by Wayland, API changes and the fact that many modern Linux apps no…"
     },
     "categories": [
-      "linux"
+      "linux",
+      "browser"
     ],
     "tags": [],
-    "difficulty": "advanced",
-    "score": 1.23,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "tim-hieu-ssh-513f9c"
+    "translated": {}
   },
   "dbfac44517ca2058": {
     "id": "dbfac44517ca2058",
@@ -1901,8 +2847,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
   "5d6eaa54ca4f942e": {
@@ -1943,47 +2889,45 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
-  "52d1d63b9f8cb2ac": {
-    "id": "52d1d63b9f8cb2ac",
-    "url": "https://www.howtogeek.com/these-chrome-settings-are-why-your-browser-is-hogging-ram",
+  "6f35d28347aacf68": {
+    "id": "6f35d28347aacf68",
+    "url": "https://9to5mac.com/2026/10/29/ios-27-2-gives-shortcuts-app-these-new-and-improved-features",
     "source": {
-      "id": "howtogeek",
-      "name": "How-To Geek",
-      "site_url": "https://www.howtogeek.com",
-      "kind": "tips"
+      "id": "9to5mac",
+      "name": "9to5Mac",
+      "site_url": "https://9to5mac.com",
+      "kind": "news"
     },
-    "author": "Diana Todea",
-    "published_at": "Thu, 29 Oct 2026 14:30:16 GMT",
+    "author": "Ryan Christoffel",
+    "published_at": "Thu, 29 Oct 2026 14:16:33 +0000",
     "fetched_at": "2026-10-29T14:41:51.400230+00:00",
     "original_lang": "en",
     "title": {
-      "en": "5 simple Chrome settings to fix the browser's worst memory hogs",
-      "vi": "5 cài đặt Chrome đơn giản để khắc phục tình trạng ngốn bộ nhớ nhất của trình duyệt"
+      "en": "iOS 27.2 gives Shortcuts app these new and improved features",
+      "vi": "iOS 27.2 cung cấp cho ứng dụng Phím tắt những tính năng mới và cải tiến này"
     },
     "summary": {
-      "en": "Find what's quitely eating up your RAM",
-      "vi": "Tìm những gì đang ngốn RAM của bạn"
+      "en": "iOS 27.2 launched this week with a variety of new features for Siri AI , FaceTime , Messages , and more, plus a handful of improvements for the Shortcuts app. Here’s everything new in Shortcuts.",
+      "vi": "iOS 27.2 ra mắt trong tuần này với nhiều tính năng mới cho Siri AI, FaceTime, Messages, v.v., cùng với một số cải tiến cho ứng dụng Phím tắt. Đây là mọi thứ mới trong Phím tắt."
     },
     "categories": [
-      "browser",
-      "hardware"
+      "ios",
+      "ai"
     ],
-    "tags": [
-      "chrome"
-    ],
-    "difficulty": "easy",
-    "score": 1.23,
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.26,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "5-cai-dat-chrome-don-gian-de-khac-phuc-tinh-trang-ngon-bo-nh-52d1d6"
+    "slug": "ios-272-cung-cap-cho-ung-dung-phim-tat-nhung-tinh-nang-moi-v-6f35d2"
   },
   "1368c5d92f98d567": {
     "id": "1368c5d92f98d567",
@@ -2023,8 +2967,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
   "da2b06dcc8b19f64": {
@@ -2065,9 +3009,222 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
+  },
+  "513f9c14c838474f": {
+    "id": "513f9c14c838474f",
+    "url": "https://linuxhandbook.com/learn-ssh",
+    "source": {
+      "id": "linuxhandbook",
+      "name": "Linux Handbook",
+      "site_url": "https://linuxhandbook.com",
+      "kind": "tips"
+    },
+    "author": "Abhishek Prakash",
+    "published_at": "Sat, 03 Oct 2026 19:31:57 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Learn SSH",
+      "vi": "Tìm hiểu SSH"
+    },
+    "summary": {
+      "en": "SSH is how you log in to and work on remote Linux machines. Start with the basics, then secure your setup and fix the errors you are most likely to run into.",
+      "vi": "SSH là cách bạn đăng nhập và làm việc trên các máy Linux từ xa. Hãy bắt đầu với những điều cơ bản, sau đó bảo mật thiết lập của bạn và sửa các lỗi mà bạn có nhiều khả năng gặp phải nhất."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": "advanced",
+    "score": 1.23,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "tim-hieu-ssh-513f9c"
+  },
+  "7cfe78e97e549a3f": {
+    "id": "7cfe78e97e549a3f",
+    "slug": "tip-7cfe78",
+    "url": "https://www.ithome.com/1/023/787.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 10:19:24 GMT",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "比尔 · 盖茨谈“亿万富翁税”：贫富差距不能指望靠“慈善捐赠”解决",
+      "vi": "比尔 · 盖茨谈“亿万富翁税”：贫富差距不能指望靠“慈善捐赠”解决",
+      "en": "比尔 · 盖茨谈“亿万富翁税”：贫富差距不能指望靠“慈善捐赠”解决"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日消息，据《财富》杂志 6 日报道，微软联合创始人比尔 · 盖茨认为，向富豪征收类似加州“亿万富翁税”的税款，或许是 AI 时代 最合适的办法 。 AI 及周边产业的企业创始人财富大幅增长，持有这些公司股份的家庭也有望获得可观的投资回报。财富不断积累，也让贫富差距问题更加突出。尤其值得关注的是，AI 会否加剧当前的 K 型经济分化，即高收入和低收入群体在经济状况及未来发展前景上的差距不断扩大。 盖茨指出， 不能指望富豪靠慈善捐赠解决贫富差距问题…",
+      "vi": "IT之家 11 月 7 日消息，据《财富》杂志 6 日报道，微软联合创始人比尔 · 盖茨认为，向富豪征收类似加州“亿万富翁税”的税款，或许是 AI 时代 最合适的办法 。 AI 及周边产业的企业创始人财富大幅增长，持有这些公司股份的家庭也有望获得可观的投资回报。财富不断积累，也让贫富差距问题更加突出。尤其值得关注的是，AI 会否加剧当前的 K 型经济分化，即高收入和低收入群体在经济状况及未来发展前景上的差距不断扩大。 盖茨指出， 不能指望富豪靠慈善捐赠解决贫富差距问题…",
+      "en": "IT之家 11 月 7 日消息，据《财富》杂志 6 日报道，微软联合创始人比尔 · 盖茨认为，向富豪征收类似加州“亿万富翁税”的税款，或许是 AI 时代 最合适的办法 。 AI 及周边产业的企业创始人财富大幅增长，持有这些公司股份的家庭也有望获得可观的投资回报。财富不断积累，也让贫富差距问题更加突出。尤其值得关注的是，AI 会否加剧当前的 K 型经济分化，即高收入和低收入群体在经济状况及未来发展前景上的差距不断扩大。 盖茨指出， 不能指望富豪靠慈善捐赠解决贫富差距问题…"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "eb3b6724af8f4cec": {
+    "id": "eb3b6724af8f4cec",
+    "slug": "ai-ai-eb3b67",
+    "url": "https://www.ithome.com/1/023/786.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 10:05:27 GMT",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "张艺谋谈 AI 冲击电影行业：AI 短视频产值已到几百亿，是很大的挑战",
+      "vi": "张艺谋谈 AI 冲击电影行业：AI 短视频产值已到几百亿，是很大的挑战",
+      "en": "张艺谋谈 AI 冲击电影行业：AI 短视频产值已到几百亿，是很大的挑战"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日消息，据电影频道融媒体中心报道，第 39 届中国电影金鸡奖金鸡・国际电影节展对话在厦门开讲，张艺谋以主嘉宾身份分享了自己对 AI 冲击电影行业的看法。 张艺谋称，AI 短视频产值已到几百亿，大量的人看，那还进电影院吗？他坦言， 这其实是一个很大的挑战 ，自己也不知道未来（比如五年、十年之后），当 AI 技术到了全面超越我们（人类）的时候该怎么办。 他寄语年轻导演做好自己，学习、积累、进步，用积极的生活态度，讲自己心中的故事，将自己心中最有感情、体会最深的初心。他表示， 这可能是我们唯一能做的 。 据IT之家昨日报道，11 月…",
+      "vi": "IT之家 11 月 7 日消息，据电影频道融媒体中心报道，第 39 届中国电影金鸡奖金鸡・国际电影节展对话在厦门开讲，张艺谋以主嘉宾身份分享了自己对 AI 冲击电影行业的看法。 张艺谋称，AI 短视频产值已到几百亿，大量的人看，那还进电影院吗？他坦言， 这其实是一个很大的挑战 ，自己也不知道未来（比如五年、十年之后），当 AI 技术到了全面超越我们（人类）的时候该怎么办。 他寄语年轻导演做好自己，学习、积累、进步，用积极的生活态度，讲自己心中的故事，将自己心中最有感情、体会最深的初心。他表示， 这可能是我们唯一能做的 。 据IT之家昨日报道，11 月…",
+      "en": "IT之家 11 月 7 日消息，据电影频道融媒体中心报道，第 39 届中国电影金鸡奖金鸡・国际电影节展对话在厦门开讲，张艺谋以主嘉宾身份分享了自己对 AI 冲击电影行业的看法。 张艺谋称，AI 短视频产值已到几百亿，大量的人看，那还进电影院吗？他坦言， 这其实是一个很大的挑战 ，自己也不知道未来（比如五年、十年之后），当 AI 技术到了全面超越我们（人类）的时候该怎么办。 他寄语年轻导演做好自己，学习、积累、进步，用积极的生活态度，讲自己心中的故事，将自己心中最有感情、体会最深的初心。他表示， 这可能是我们唯一能做的 。 据IT之家昨日报道，11 月…"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "52d1d63b9f8cb2ac": {
+    "id": "52d1d63b9f8cb2ac",
+    "url": "https://www.howtogeek.com/these-chrome-settings-are-why-your-browser-is-hogging-ram",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
+    },
+    "author": "Diana Todea",
+    "published_at": "Thu, 29 Oct 2026 14:30:16 GMT",
+    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "5 simple Chrome settings to fix the browser's worst memory hogs",
+      "vi": "5 cài đặt Chrome đơn giản để khắc phục tình trạng ngốn bộ nhớ nhất của trình duyệt"
+    },
+    "summary": {
+      "en": "Find what's quitely eating up your RAM",
+      "vi": "Tìm những gì đang ngốn RAM của bạn"
+    },
+    "categories": [
+      "browser",
+      "hardware"
+    ],
+    "tags": [
+      "chrome"
+    ],
+    "difficulty": "easy",
+    "score": 1.23,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "5-cai-dat-chrome-don-gian-de-khac-phuc-tinh-trang-ngon-bo-nh-52d1d6"
+  },
+  "789c5f46cc52eded": {
+    "id": "789c5f46cc52eded",
+    "slug": "100-215-pro-max-60-789c5f",
+    "url": "https://www.ithome.com/1/023/780.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 09:59:54 GMT",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "华为畅享 100 系列手机首销情况曝光：总量约 21.5 万台，Pro Max 机型约占 60%",
+      "vi": "华为畅享 100 系列手机首销情况曝光：总量约 21.5 万台，Pro Max 机型约占 60%",
+      "en": "华为畅享 100 系列手机首销情况曝光：总量约 21.5 万台，Pro Max 机型约占 60%"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日消息， 华为畅享 100 系列手机于 10 月 28 日发布，10 月 31 日 10:08 首销， 售价 1399 元起 。 ▲ 华为畅享 100 Pro Max 博主 @RD观测 今日曝光了系列新机的首销情况，以首销当日（10:08 开售）+ 后三天为标准， 华为畅享 100 系列的总量约 215K （21.5 万）。 其中： 华为畅享 100 Pro Max 约占 60% 华为畅享 100 Pro 约占 10% 华为畅享 100 约占 30% PS：第三方数据源，仅供参考。 IT之家附新机主要参数如下： 相关阅读： 《…",
+      "vi": "IT之家 11 月 7 日消息， 华为畅享 100 系列手机于 10 月 28 日发布，10 月 31 日 10:08 首销， 售价 1399 元起 。 ▲ 华为畅享 100 Pro Max 博主 @RD观测 今日曝光了系列新机的首销情况，以首销当日（10:08 开售）+ 后三天为标准， 华为畅享 100 系列的总量约 215K （21.5 万）。 其中： 华为畅享 100 Pro Max 约占 60% 华为畅享 100 Pro 约占 10% 华为畅享 100 约占 30% PS：第三方数据源，仅供参考。 IT之家附新机主要参数如下： 相关阅读： 《…",
+      "en": "IT之家 11 月 7 日消息， 华为畅享 100 系列手机于 10 月 28 日发布，10 月 31 日 10:08 首销， 售价 1399 元起 。 ▲ 华为畅享 100 Pro Max 博主 @RD观测 今日曝光了系列新机的首销情况，以首销当日（10:08 开售）+ 后三天为标准， 华为畅享 100 系列的总量约 215K （21.5 万）。 其中： 华为畅享 100 Pro Max 约占 60% 华为畅享 100 Pro 约占 10% 华为畅享 100 约占 30% PS：第三方数据源，仅供参考。 IT之家附新机主要参数如下： 相关阅读： 《…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "3de3d660c7ed81b2": {
+    "id": "3de3d660c7ed81b2",
+    "slug": "freebuds-se-5-max-52db-ios-3de3d6",
+    "url": "https://www.ithome.com/1/023/768.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 09:46:15 GMT",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "华为海外推出 FreeBuds SE 5 MAX 无线耳机：52dB 多模降噪，支持 iOS / 安卓 / 鸿蒙三系统",
+      "vi": "华为海外推出 FreeBuds SE 5 MAX 无线耳机：52dB 多模降噪，支持 iOS / 安卓 / 鸿蒙三系统",
+      "en": "华为海外推出 FreeBuds SE 5 MAX 无线耳机：52dB 多模降噪，支持 iOS / 安卓 / 鸿蒙三系统"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日消息，华为在海外推出了 FreeBuds SE 5 MAX 无线耳机，主打 80 小时综合续航、52dB 多模降噪和高解析度音频。 据介绍，华为 FreeBuds SE 5 MAX 无线耳机采用全新赛道椭圆形设计，耳机舱将磨砂哑光质感与通透外壳进行了结合。 耳机本体单耳仅重 4.3g ，提供 S / M / L 三种尺寸硅胶耳塞可选，方便不同用户佩戴。耳机拥有蓝、黑、白三色可选。 这款无线耳机单耳拥有 41mAh 电池，充电舱还有 920mAh 电池（使用 USB Type-C 有线充电）， 宣称一次充电最多可听 10…",
+      "vi": "IT之家 11 月 7 日消息，华为在海外推出了 FreeBuds SE 5 MAX 无线耳机，主打 80 小时综合续航、52dB 多模降噪和高解析度音频。 据介绍，华为 FreeBuds SE 5 MAX 无线耳机采用全新赛道椭圆形设计，耳机舱将磨砂哑光质感与通透外壳进行了结合。 耳机本体单耳仅重 4.3g ，提供 S / M / L 三种尺寸硅胶耳塞可选，方便不同用户佩戴。耳机拥有蓝、黑、白三色可选。 这款无线耳机单耳拥有 41mAh 电池，充电舱还有 920mAh 电池（使用 USB Type-C 有线充电）， 宣称一次充电最多可听 10…",
+      "en": "IT之家 11 月 7 日消息，华为在海外推出了 FreeBuds SE 5 MAX 无线耳机，主打 80 小时综合续航、52dB 多模降噪和高解析度音频。 据介绍，华为 FreeBuds SE 5 MAX 无线耳机采用全新赛道椭圆形设计，耳机舱将磨砂哑光质感与通透外壳进行了结合。 耳机本体单耳仅重 4.3g ，提供 S / M / L 三种尺寸硅胶耳塞可选，方便不同用户佩戴。耳机拥有蓝、黑、白三色可选。 这款无线耳机单耳拥有 41mAh 电池，充电舱还有 920mAh 电池（使用 USB Type-C 有线充电）， 宣称一次充电最多可听 10…"
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "8713827b0e9b04ee": {
     "id": "8713827b0e9b04ee",
@@ -2102,6 +3259,76 @@
     "translated": {
       "vi": "machine"
     }
+  },
+  "630e63647dbc7728": {
+    "id": "630e63647dbc7728",
+    "slug": "halo-6-360-91-630e63",
+    "url": "https://www.ithome.com/1/023/767.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 09:40:17 GMT",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "苹果披露人形机器人 HALO 系统：6 个未建图环境测试 360 次单项任务，平均成功率 91%",
+      "vi": "苹果披露人形机器人 HALO 系统：6 个未建图环境测试 360 次单项任务，平均成功率 91%",
+      "en": "苹果披露人形机器人 HALO 系统：6 个未建图环境测试 360 次单项任务，平均成功率 91%"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日消息，当地时间 11 月 4 日，苹果研究团队在预印本平台 arXiv 提交论文《Perceptive Humanoid Motion from Simulation》，披露了人形机器人自主控制系统 HALO。 研究团队还公开了数据生成、模型训练和部署代码，涵盖动作生成、动作跟踪、任务编排以及仿真和真实机器人运行等环节。 在落地阶段， 研究团队采用宇树科技 G1 人形机器人 ，背部加装了专用 3D 打印保护外壳， 内置一台 Mac mini （M4 Pro 芯片，64GB 统一内存），Mac mini…",
+      "vi": "IT之家 11 月 7 日消息，当地时间 11 月 4 日，苹果研究团队在预印本平台 arXiv 提交论文《Perceptive Humanoid Motion from Simulation》，披露了人形机器人自主控制系统 HALO。 研究团队还公开了数据生成、模型训练和部署代码，涵盖动作生成、动作跟踪、任务编排以及仿真和真实机器人运行等环节。 在落地阶段， 研究团队采用宇树科技 G1 人形机器人 ，背部加装了专用 3D 打印保护外壳， 内置一台 Mac mini （M4 Pro 芯片，64GB 统一内存），Mac mini…",
+      "en": "IT之家 11 月 7 日消息，当地时间 11 月 4 日，苹果研究团队在预印本平台 arXiv 提交论文《Perceptive Humanoid Motion from Simulation》，披露了人形机器人自主控制系统 HALO。 研究团队还公开了数据生成、模型训练和部署代码，涵盖动作生成、动作跟踪、任务编排以及仿真和真实机器人运行等环节。 在落地阶段， 研究团队采用宇树科技 G1 人形机器人 ，背部加装了专用 3D 打印保护外壳， 内置一台 Mac mini （M4 Pro 芯片，64GB 统一内存），Mac mini…"
+    },
+    "categories": [
+      "macos"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "596fe9bb477912af": {
+    "id": "596fe9bb477912af",
+    "slug": "2026-ai-596fe9",
+    "url": "https://www.ithome.com/1/023/766.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 09:29:23 GMT",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "中国科普作家协会发布 2026 年度十大科普热词，AI 相关占据七席",
+      "vi": "中国科普作家协会发布 2026 年度十大科普热词，AI 相关占据七席",
+      "en": "中国科普作家协会发布 2026 年度十大科普热词，AI 相关占据七席"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日消息，中国科普作家协会今天（7 日）发布了 2026 年度十大科普热词，人工智能相关占据七席，包括 “人工智能 +”“人机协同”“脑机接口”“智能体”“人形机器人”“词元”“具身智能” ，另三大科普热词分别是 “科学玩具”“科技伦理”“健康管理” 。 根据介绍，人工智能相关词汇成为本年度热词的重要组成部分。“人工智能 +”“智能体”“词元”等，反映人工智能 加快融入生产生活带来的新知识需求 ；“脑机接口”“人形机器人”“具身智能”等，为公众 理解前沿技术的原理、进展与应用场景 提供了切入点。…",
+      "vi": "IT之家 11 月 7 日消息，中国科普作家协会今天（7 日）发布了 2026 年度十大科普热词，人工智能相关占据七席，包括 “人工智能 +”“人机协同”“脑机接口”“智能体”“人形机器人”“词元”“具身智能” ，另三大科普热词分别是 “科学玩具”“科技伦理”“健康管理” 。 根据介绍，人工智能相关词汇成为本年度热词的重要组成部分。“人工智能 +”“智能体”“词元”等，反映人工智能 加快融入生产生活带来的新知识需求 ；“脑机接口”“人形机器人”“具身智能”等，为公众 理解前沿技术的原理、进展与应用场景 提供了切入点。…",
+      "en": "IT之家 11 月 7 日消息，中国科普作家协会今天（7 日）发布了 2026 年度十大科普热词，人工智能相关占据七席，包括 “人工智能 +”“人机协同”“脑机接口”“智能体”“人形机器人”“词元”“具身智能” ，另三大科普热词分别是 “科学玩具”“科技伦理”“健康管理” 。 根据介绍，人工智能相关词汇成为本年度热词的重要组成部分。“人工智能 +”“智能体”“词元”等，反映人工智能 加快融入生产生活带来的新知识需求 ；“脑机接口”“人形机器人”“具身智能”等，为公众 理解前沿技术的原理、进展与应用场景 提供了切入点。…"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "f8c22dda71ed6073": {
     "id": "f8c22dda71ed6073",
@@ -2138,6 +3365,78 @@
     "hidden": false,
     "slug": "tinh-bat-bien-cua-ubuntu-eyeing-co-phai-khong-canonical-khoi-f8c22d"
   },
+  "d5a9861d94f03e4d": {
+    "id": "d5a9861d94f03e4d",
+    "slug": "gemini-13-d5a986",
+    "url": "https://www.ithome.com/1/023/765.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 09:16:42 GMT",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "谷歌在美国遭家长起诉：Gemini 被指协助 13 岁女孩制定轻生计划",
+      "vi": "谷歌在美国遭家长起诉：Gemini 被指协助 13 岁女孩制定轻生计划",
+      "en": "谷歌在美国遭家长起诉：Gemini 被指协助 13 岁女孩制定轻生计划"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日消息，据彭博社报道，美国北卡罗来纳州的一对夫妇起诉谷歌。此前，其 13 岁的女儿在学校配发的 Chromebook 笔记本电脑上，连续数月使用该公司的人工智能工具探讨自杀念头。 诉状显示，这名女孩与谷歌旗舰人工智能模型 Gemini 进行了数千条信息交互， 其中大量内容涉及焦虑、抑郁以及自杀手法的详细探讨 。直到校方通知家长时，她与谷歌 AI 就此类话题的交流已持续数月，期间频繁使用了谷歌搜索中名为“AI 模式（AI Mode）”的功能。 诉状指控，谷歌在不断将 AI…",
+      "vi": "IT之家 11 月 7 日消息，据彭博社报道，美国北卡罗来纳州的一对夫妇起诉谷歌。此前，其 13 岁的女儿在学校配发的 Chromebook 笔记本电脑上，连续数月使用该公司的人工智能工具探讨自杀念头。 诉状显示，这名女孩与谷歌旗舰人工智能模型 Gemini 进行了数千条信息交互， 其中大量内容涉及焦虑、抑郁以及自杀手法的详细探讨 。直到校方通知家长时，她与谷歌 AI 就此类话题的交流已持续数月，期间频繁使用了谷歌搜索中名为“AI 模式（AI Mode）”的功能。 诉状指控，谷歌在不断将 AI…",
+      "en": "IT之家 11 月 7 日消息，据彭博社报道，美国北卡罗来纳州的一对夫妇起诉谷歌。此前，其 13 岁的女儿在学校配发的 Chromebook 笔记本电脑上，连续数月使用该公司的人工智能工具探讨自杀念头。 诉状显示，这名女孩与谷歌旗舰人工智能模型 Gemini 进行了数千条信息交互， 其中大量内容涉及焦虑、抑郁以及自杀手法的详细探讨 。直到校方通知家长时，她与谷歌 AI 就此类话题的交流已持续数月，期间频繁使用了谷歌搜索中名为“AI 模式（AI Mode）”的功能。 诉状指控，谷歌在不断将 AI…"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "gemini"
+    ],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "b68d5b52e75affe9": {
+    "id": "b68d5b52e75affe9",
+    "slug": "tip-b68d5b",
+    "url": "https://www.ithome.com/1/023/764.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 09:11:16 GMT",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "深蓝汽车“车载洗脚装置”专利公布：脚盆能直接塞到座椅底下",
+      "vi": "深蓝汽车“车载洗脚装置”专利公布：脚盆能直接塞到座椅底下",
+      "en": "深蓝汽车“车载洗脚装置”专利公布：脚盆能直接塞到座椅底下"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日消息，如今车内的“冰箱彩电大沙发”早已不稀奇，然而，把泡脚盆装进座舱可不常见。 IT之家从国家专利公布公告网站获悉，深蓝汽车科技有限公司今年 7 月申请的专利于 10 月 9 日公布，申请公布号为 CN122873858A。 该装置主要由脚盆和伸缩机构组成，平时可折叠收纳在 副驾驶座椅下方的专用空间内 ，需要泡脚时再伸出展开。不仅如此，脚盆内部还设计了 防溅水结构、导流孔和防晃结构 。脚盆通过快接接头与车身管路连接，可以随时拆卸，收纳空间内还可安装消毒组件。…",
+      "vi": "IT之家 11 月 7 日消息，如今车内的“冰箱彩电大沙发”早已不稀奇，然而，把泡脚盆装进座舱可不常见。 IT之家从国家专利公布公告网站获悉，深蓝汽车科技有限公司今年 7 月申请的专利于 10 月 9 日公布，申请公布号为 CN122873858A。 该装置主要由脚盆和伸缩机构组成，平时可折叠收纳在 副驾驶座椅下方的专用空间内 ，需要泡脚时再伸出展开。不仅如此，脚盆内部还设计了 防溅水结构、导流孔和防晃结构 。脚盆通过快接接头与车身管路连接，可以随时拆卸，收纳空间内还可安装消毒组件。…",
+      "en": "IT之家 11 月 7 日消息，如今车内的“冰箱彩电大沙发”早已不稀奇，然而，把泡脚盆装进座舱可不常见。 IT之家从国家专利公布公告网站获悉，深蓝汽车科技有限公司今年 7 月申请的专利于 10 月 9 日公布，申请公布号为 CN122873858A。 该装置主要由脚盆和伸缩机构组成，平时可折叠收纳在 副驾驶座椅下方的专用空间内 ，需要泡脚时再伸出展开。不仅如此，脚盆内部还设计了 防溅水结构、导流孔和防晃结构 。脚盆通过快接接头与车身管路连接，可以随时拆卸，收纳空间内还可安装消毒组件。…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "99ccbb4073246879": {
     "id": "99ccbb4073246879",
     "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-remote-desktop-failures-caused-by-recent-windows-updates",
@@ -2172,6 +3471,212 @@
     },
     "hidden": false,
     "slug": "microsoft-sua-loi-remote-desktop-do-cac-ban-cap-nhat-windows-99ccbb"
+  },
+  "e17841fce5ff3698": {
+    "id": "e17841fce5ff3698",
+    "slug": "18m-40-e17841",
+    "url": "https://www.ithome.com/1/023/763.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 09:07:26 GMT",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "我国自主研制新型模块化“移动暖屋”将登陆南极：单个建筑面积 18m²，适应零下 40℃ 低温",
+      "vi": "我国自主研制新型模块化“移动暖屋”将登陆南极：单个建筑面积 18m²，适应零下 40℃ 低温",
+      "en": "我国自主研制新型模块化“移动暖屋”将登陆南极：单个建筑面积 18m²，适应零下 40℃ 低温"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日消息，据新华社报道，由中国建筑第八工程局和绿色建筑全国重点实验室共同研发的南极应急宿舍舱，7 日随“雪龙 2”号出征南极。我国南极考察队员今后在野外进行科学考察时， 有望住上这种新型模块化“移动暖屋” 。 据介绍，“移动暖屋”采用钢结构模块体系， 实现了结构、围护、机电、内装、能源系统全工厂预制 ，出厂即成品，运抵南极后即可投入使用；底座采用标准集装箱角件接口，既能装船远洋运输，也能接上雪橇，在冰面雪地上拖行， 科考队员走到哪，“移动暖屋”就能跟到哪 。 “移动暖屋”还能像搭积木一样，串联、并联拼在一起…",
+      "vi": "IT之家 11 月 7 日消息，据新华社报道，由中国建筑第八工程局和绿色建筑全国重点实验室共同研发的南极应急宿舍舱，7 日随“雪龙 2”号出征南极。我国南极考察队员今后在野外进行科学考察时， 有望住上这种新型模块化“移动暖屋” 。 据介绍，“移动暖屋”采用钢结构模块体系， 实现了结构、围护、机电、内装、能源系统全工厂预制 ，出厂即成品，运抵南极后即可投入使用；底座采用标准集装箱角件接口，既能装船远洋运输，也能接上雪橇，在冰面雪地上拖行， 科考队员走到哪，“移动暖屋”就能跟到哪 。 “移动暖屋”还能像搭积木一样，串联、并联拼在一起…",
+      "en": "IT之家 11 月 7 日消息，据新华社报道，由中国建筑第八工程局和绿色建筑全国重点实验室共同研发的南极应急宿舍舱，7 日随“雪龙 2”号出征南极。我国南极考察队员今后在野外进行科学考察时， 有望住上这种新型模块化“移动暖屋” 。 据介绍，“移动暖屋”采用钢结构模块体系， 实现了结构、围护、机电、内装、能源系统全工厂预制 ，出厂即成品，运抵南极后即可投入使用；底座采用标准集装箱角件接口，既能装船远洋运输，也能接上雪橇，在冰面雪地上拖行， 科考队员走到哪，“移动暖屋”就能跟到哪 。 “移动暖屋”还能像搭积木一样，串联、并联拼在一起…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "07747afd508b5e3b": {
+    "id": "07747afd508b5e3b",
+    "slug": "newzoo-30-07747a",
+    "url": "https://www.ithome.com/1/023/762.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 09:00:41 GMT",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "Newzoo 调查：在核心玩家中，实体游戏约占主机付费游戏库的 30%",
+      "vi": "Newzoo 调查：在核心玩家中，实体游戏约占主机付费游戏库的 30%",
+      "en": "Newzoo 调查：在核心玩家中，实体游戏约占主机付费游戏库的 30%"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日消息，据 gamesradar+ 报道，研究机构 Newzoo 联合 G2A 发布的一项新调查显示，实体游戏占核心玩家所玩游戏的 11% 以上，甚至占所拥有的（付费）主机游戏的 30%。 Newzoo 研究总监 Alexis Pamboris 指出：“尽管有实体媒介走向消亡的预测，但实体形态仍然在这个行业版图中占据着一席之地。” 据悉，该报告共收集了来自美国、英国、德国、波兰、巴西和沙特阿拉伯这六大市场超过 6,000 名“核心玩家”的样本，各市场样本量分布均匀。 调查的实地调研期为 2026 年 8…",
+      "vi": "IT之家 11 月 7 日消息，据 gamesradar+ 报道，研究机构 Newzoo 联合 G2A 发布的一项新调查显示，实体游戏占核心玩家所玩游戏的 11% 以上，甚至占所拥有的（付费）主机游戏的 30%。 Newzoo 研究总监 Alexis Pamboris 指出：“尽管有实体媒介走向消亡的预测，但实体形态仍然在这个行业版图中占据着一席之地。” 据悉，该报告共收集了来自美国、英国、德国、波兰、巴西和沙特阿拉伯这六大市场超过 6,000 名“核心玩家”的样本，各市场样本量分布均匀。 调查的实地调研期为 2026 年 8…",
+      "en": "IT之家 11 月 7 日消息，据 gamesradar+ 报道，研究机构 Newzoo 联合 G2A 发布的一项新调查显示，实体游戏占核心玩家所玩游戏的 11% 以上，甚至占所拥有的（付费）主机游戏的 30%。 Newzoo 研究总监 Alexis Pamboris 指出：“尽管有实体媒介走向消亡的预测，但实体形态仍然在这个行业版图中占据着一席之地。” 据悉，该报告共收集了来自美国、英国、德国、波兰、巴西和沙特阿拉伯这六大市场超过 6,000 名“核心玩家”的样本，各市场样本量分布均匀。 调查的实地调研期为 2026 年 8…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "1ee03a3e671258f8": {
+    "id": "1ee03a3e671258f8",
+    "slug": "five-smartwatch-heart-rate-zone-hacks-every-runner-should-kn-1ee03a",
+    "url": "https://lifehacker.com/health/best-smartwatch-heart-rate-zone-training-hacks",
+    "source": {
+      "id": "lifehacker",
+      "name": "Lifehacker",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Meredith Dietz",
+    "published_at": "Fri, 06 Nov 2026 17:30:00 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Five Smartwatch Heart Rate Zone Hacks Every Runner Should Know",
+      "vi": "Five Smartwatch Heart Rate Zone Hacks Every Runner Should Know"
+    },
+    "summary": {
+      "en": "The best tips to keep you in the zone.",
+      "vi": "The best tips to keep you in the zone."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.2,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "8a23e34eb18998a7": {
+    "id": "8a23e34eb18998a7",
+    "slug": "it-1111-20-plus-day-80-ps5-slim-2298-8a23e3",
+    "url": "https://www.ithome.com/1/023/761.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 08:55:41 GMT",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "IT之家 11.11 严选好货：20 点 PLUS DAY 速抢 80 元神券，索尼 PS5 Slim 游戏主机仅 2298 元",
+      "vi": "IT之家 11.11 严选好货：20 点 PLUS DAY 速抢 80 元神券，索尼 PS5 Slim 游戏主机仅 2298 元",
+      "en": "IT之家 11.11 严选好货：20 点 PLUS DAY 速抢 80 元神券，索尼 PS5 Slim 游戏主机仅 2298 元"
+    },
+    "summary": {
+      "zh-CN": "全网 11.11 狂促继续，有需求的小伙伴可以蹲点抢哦。 京东 无门槛红包至高 26888 元 ，每天抽 3 次： 点此抽取 。 淘宝 无门槛红包至高 26888 元 ，每天 直接领 200 淘金币： 点此抽取 。 唯品会 无门槛红包至高 1111 元津贴 ，每天抽 3 次： 点此抽取 。 一键保价 京东一键保价没事就点点： 点此保价 。 PLUS 会员神券 京东 PLUS 会员 11 月 7 日 20:00 可 2 积分抢 800-80 元、1 积分抢 111-11 元券，券后皆好价： 点此兑券 。 游戏主机 索尼 PS5 Slim…",
+      "vi": "全网 11.11 狂促继续，有需求的小伙伴可以蹲点抢哦。 京东 无门槛红包至高 26888 元 ，每天抽 3 次： 点此抽取 。 淘宝 无门槛红包至高 26888 元 ，每天 直接领 200 淘金币： 点此抽取 。 唯品会 无门槛红包至高 1111 元津贴 ，每天抽 3 次： 点此抽取 。 一键保价 京东一键保价没事就点点： 点此保价 。 PLUS 会员神券 京东 PLUS 会员 11 月 7 日 20:00 可 2 积分抢 800-80 元、1 积分抢 111-11 元券，券后皆好价： 点此兑券 。 游戏主机 索尼 PS5 Slim…",
+      "en": "全网 11.11 狂促继续，有需求的小伙伴可以蹲点抢哦。 京东 无门槛红包至高 26888 元 ，每天抽 3 次： 点此抽取 。 淘宝 无门槛红包至高 26888 元 ，每天 直接领 200 淘金币： 点此抽取 。 唯品会 无门槛红包至高 1111 元津贴 ，每天抽 3 次： 点此抽取 。 一键保价 京东一键保价没事就点点： 点此保价 。 PLUS 会员神券 京东 PLUS 会员 11 月 7 日 20:00 可 2 积分抢 800-80 元、1 积分抢 111-11 元券，券后皆好价： 点此兑券 。 游戏主机 索尼 PS5 Slim…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "be95f9fb4c07ff2c": {
+    "id": "be95f9fb4c07ff2c",
+    "slug": "hyperos-4-xiaomi-17-be95f9",
+    "url": "https://www.ithome.com/1/023/760.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 08:52:00 GMT",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "小米澎湃 HyperOS 4 近期修复进展公布，Xiaomi 17 系列手机多个问题优化",
+      "vi": "小米澎湃 HyperOS 4 近期修复进展公布，Xiaomi 17 系列手机多个问题优化",
+      "en": "小米澎湃 HyperOS 4 近期修复进展公布，Xiaomi 17 系列手机多个问题优化"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日消息，小米员工昨日在小米社区发布了澎湃 HyperOS 4 近期的修复进展汇总。据介绍， 修复将随后续版本推送逐步生效，具体时间因机型及应用版本不同 ，以实际更新为准。其中提到，Xiaomi 17 系列手机多个问题优化。 ▲ IT之家开箱：小米 17 Pro / Pro Max 手机图赏 IT之家附小米澎湃 HyperOS 4 系统最新优化进展如下： Xiaomi 17 Pro Max 4.0.5.0 版本部分场景下自动任务执行异常的问题 Xiaomi 17 Pro Max 4.0.4.0…",
+      "vi": "IT之家 11 月 7 日消息，小米员工昨日在小米社区发布了澎湃 HyperOS 4 近期的修复进展汇总。据介绍， 修复将随后续版本推送逐步生效，具体时间因机型及应用版本不同 ，以实际更新为准。其中提到，Xiaomi 17 系列手机多个问题优化。 ▲ IT之家开箱：小米 17 Pro / Pro Max 手机图赏 IT之家附小米澎湃 HyperOS 4 系统最新优化进展如下： Xiaomi 17 Pro Max 4.0.5.0 版本部分场景下自动任务执行异常的问题 Xiaomi 17 Pro Max 4.0.4.0…",
+      "en": "IT之家 11 月 7 日消息，小米员工昨日在小米社区发布了澎湃 HyperOS 4 近期的修复进展汇总。据介绍， 修复将随后续版本推送逐步生效，具体时间因机型及应用版本不同 ，以实际更新为准。其中提到，Xiaomi 17 系列手机多个问题优化。 ▲ IT之家开箱：小米 17 Pro / Pro Max 手机图赏 IT之家附小米澎湃 HyperOS 4 系统最新优化进展如下： Xiaomi 17 Pro Max 4.0.5.0 版本部分场景下自动任务执行异常的问题 Xiaomi 17 Pro Max 4.0.4.0…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "8f88aafaa21088c5": {
+    "id": "8f88aafaa21088c5",
+    "slug": "chia-se-ban-lam-viec-cua-tho-chup-hinh-thich-setup-theo-phon-8f88aa",
+    "url": "https://tinhte.vn/thread/chia-se-ban-lam-viec-cua-tho-chup-hinh-thich-setup-theo-phong-cach-game-thu.3806345",
+    "source": {
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "HoangSong",
+    "published_at": "Fri, 06 Nov 2026 13:17:47 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Chia sẻ bàn làm việc của thợ chụp hình thích setup theo phong cách game thủ",
+      "en": "Chia sẻ bàn làm việc của thợ chụp hình thích setup theo phong cách game thủ"
+    },
+    "summary": {
+      "vi": "Chào mọi người, đầu tiên xin được giới thiệu sơ qua về công việc hiện tại của bản thân và lý do từ đâu mình có ý tưởng để makeup cho bàn làm việc của bản thân để nó không gây nhàm chán theo ý kiến",
+      "en": "Chào mọi người, đầu tiên xin được giới thiệu sơ qua về công việc hiện tại của bản thân và lý do từ đâu mình có ý tưởng để makeup cho bàn làm việc của bản thân để nó không gây nhàm chán theo ý kiến"
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.19,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "6f7743a9465550a4": {
     "id": "6f7743a9465550a4",
@@ -2315,6 +3820,73 @@
       "vi": "machine"
     }
   },
+  "66fcad3f7dcd0a0d": {
+    "id": "66fcad3f7dcd0a0d",
+    "slug": "fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-system-66fcad",
+    "url": "https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems",
+    "source": {
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "site_url": "https://www.bleepingcomputer.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Lawrence Abrams",
+    "published_at": "Thu, 05 Nov 2026 19:56:44 -0500",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "FBI, CISA warn of cyberattacks targeting refrigeration systems",
+      "vi": "FBI, CISA warn of cyberattacks targeting refrigeration systems"
+    },
+    "summary": {
+      "en": "The FBI and CISA warn that hackers are actively targeting industrial refrigeration and cold-chain monitoring systems worldwide, potentially causing food spoilage, equipment damage, and fire hazards.",
+      "vi": "The FBI and CISA warn that hackers are actively targeting industrial refrigeration and cold-chain monitoring systems worldwide, potentially causing food spoilage, equipment damage, and fire hazards."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.18,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "571eb31b3413a342": {
+    "id": "571eb31b3413a342",
+    "slug": "fake-openai-spacex-events-used-to-steal-microsoft-google-acc-571eb3",
+    "url": "https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts",
+    "source": {
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "site_url": "https://www.bleepingcomputer.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Lawrence Abrams",
+    "published_at": "Thu, 05 Nov 2026 16:30:30 -0500",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Fake OpenAI, SpaceX events used to steal Microsoft, Google accounts",
+      "vi": "Fake OpenAI, SpaceX events used to steal Microsoft, Google accounts"
+    },
+    "summary": {
+      "en": "Hackers are using fake OpenAI, SpaceX, and Anthropic event invitations to lure employees into phishing attacks, using two different phishing-as-a-service platforms to steal Microsoft and Google account credentials and authentication sessions.",
+      "vi": "Hackers are using fake OpenAI, SpaceX, and Anthropic event invitations to lure employees into phishing attacks, using two different phishing-as-a-service platforms to steal Microsoft and Google account credentials and authentication sessions."
+    },
+    "categories": [
+      "windows",
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.18,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "131eaa65657ae221": {
     "id": "131eaa65657ae221",
     "url": "https://www.howtogeek.com/these-mistakes-can-turn-pi-hole-into-least-secure-part-your-home-network",
@@ -2385,7 +3957,13 @@
     "score": 1.17,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "alsoFrom": [
+      {
+        "sourceName": "少数派",
+        "url": "https://sspai.com/post/118623"
+      }
+    ]
   },
   "63de1dd5d2bf1bcd": {
     "id": "63de1dd5d2bf1bcd",
@@ -2547,6 +4125,419 @@
     "summary": {
       "en": "You may have noticed OMG! Ubuntu looking a little cleaner lately. Earlier this month, Sam and I finally rolled out a refreshed site backend, along with some changes to the bits you look at when you come here. Boring stuff to read about, I know. But a few of the changes were done…",
       "vi": "You may have noticed OMG! Ubuntu looking a little cleaner lately. Earlier this month, Sam and I finally rolled out a refreshed site backend, along with some changes to the bits you look at when you come here. Boring stuff to read about, I know. But a few of the changes were done…"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "f48b45604923f341": {
+    "id": "f48b45604923f341",
+    "slug": "iphone-f48b45",
+    "url": "https://sspai.com/post/118250",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "张奕源Nick",
+    "published_at": "Fri, 06 Nov 2026 14:56:41 +0800",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "iPhone 变强了，但我没有",
+      "vi": "iPhone 变强了，但我没有",
+      "en": "iPhone 变强了，但我没有"
+    },
+    "summary": {
+      "zh-CN": "我们把 iPhone 18 Pro Max 带到了深圳、香港和吉隆坡，带入了形形色色的街头。在这个过程里，我们记录了使用 iPhone 拍到的美好画面，也借此描绘了自己的心情变化和生活感悟。 查看全文",
+      "vi": "我们把 iPhone 18 Pro Max 带到了深圳、香港和吉隆坡，带入了形形色色的街头。在这个过程里，我们记录了使用 iPhone 拍到的美好画面，也借此描绘了自己的心情变化和生活感悟。 查看全文",
+      "en": "我们把 iPhone 18 Pro Max 带到了深圳、香港和吉隆坡，带入了形形色色的街头。在这个过程里，我们记录了使用 iPhone 拍到的美好画面，也借此描绘了自己的心情变化和生活感悟。 查看全文"
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "7f80f602056cfa96": {
+    "id": "7f80f602056cfa96",
+    "slug": "m6-macbook-pro-7f80f6",
+    "url": "https://sspai.com/post/118570",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "张奕源Nick",
+    "published_at": "Fri, 06 Nov 2026 11:06:53 +0800",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "更高能效比，带来新惊喜：M6 款 MacBook Pro 初探",
+      "vi": "更高能效比，带来新惊喜：M6 款 MacBook Pro 初探",
+      "en": "更高能效比，带来新惊喜：M6 款 MacBook Pro 初探"
+    },
+    "summary": {
+      "zh-CN": "M6 芯片提供了足够的性能保障，无论修图、视频剪辑还是运行入门级的 AI 大模型，它都能应对。在此基础上，你原本可能需要加在 Pro 级 SoC 上的预算就能省下来，花给内存或者硬盘。 查看全文",
+      "vi": "M6 芯片提供了足够的性能保障，无论修图、视频剪辑还是运行入门级的 AI 大模型，它都能应对。在此基础上，你原本可能需要加在 Pro 级 SoC 上的预算就能省下来，花给内存或者硬盘。 查看全文",
+      "en": "M6 芯片提供了足够的性能保障，无论修图、视频剪辑还是运行入门级的 AI 大模型，它都能应对。在此基础上，你原本可能需要加在 Pro 级 SoC 上的预算就能省下来，花给内存或者硬盘。 查看全文"
+    },
+    "categories": [
+      "macos",
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "985ae8e7ed69a047": {
+    "id": "985ae8e7ed69a047",
+    "slug": "passbolt-is-an-open-source-password-manager-built-specially-985ae8",
+    "url": "https://feed.itsfoss.com/link/24361/17516378/passbolt-review",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "Fri, 06 Nov 2026 10:30:36 +0530",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Passbolt is an Open Source Password Manager Built Specially For Teams",
+      "vi": "Passbolt is an Open Source Password Manager Built Specially For Teams"
+    },
+    "summary": {
+      "en": "Passbolt offers both a free self-hosted edition and a managed cloud version of its team focused password management solution.",
+      "vi": "Passbolt offers both a free self-hosted edition and a managed cloud version of its team focused password management solution."
+    },
+    "categories": [
+      "security",
+      "linux"
+    ],
+    "tags": [
+      "password"
+    ],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "1f80020aad443b16": {
+    "id": "1f80020aad443b16",
+    "slug": "2027-1f8002",
+    "url": "https://sspai.com/post/118587",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "少数派编辑部",
+    "published_at": "Fri, 06 Nov 2026 08:24:39 +0800",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "派早报：国务院办公厅发布 2027 年部分节假日放假安排等",
+      "vi": "派早报：国务院办公厅发布 2027 年部分节假日放假安排等",
+      "en": "派早报：国务院办公厅发布 2027 年部分节假日放假安排等"
+    },
+    "summary": {
+      "zh-CN": "OpenAI 推出 Images 2.6 模型，Nothing CMF Speaker S/M 音箱国行上市等。 查看全文",
+      "vi": "OpenAI 推出 Images 2.6 模型，Nothing CMF Speaker S/M 音箱国行上市等。 查看全文",
+      "en": "OpenAI 推出 Images 2.6 模型，Nothing CMF Speaker S/M 音箱国行上市等。 查看全文"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "86809fee4f8cf7e7": {
+    "id": "86809fee4f8cf7e7",
+    "slug": "255-86809f",
+    "url": "https://sspai.com/post/118541",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "少数派编辑部",
+    "published_at": "Thu, 05 Nov 2026 17:11:28 +0800",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "新玩意 255｜少数派的编辑们最近买了啥？",
+      "vi": "新玩意 255｜少数派的编辑们最近买了啥？",
+      "en": "新玩意 255｜少数派的编辑们最近买了啥？"
+    },
+    "summary": {
+      "zh-CN": "编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。内容声明：《新玩意》栏目如含有 ... 查看全文",
+      "vi": "编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。内容声明：《新玩意》栏目如含有 ... 查看全文",
+      "en": "编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。内容声明：《新玩意》栏目如含有 ... 查看全文"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "c67a5293684d3325": {
+    "id": "c67a5293684d3325",
+    "slug": "this-overlooked-linux-mv-option-replaces-three-commands-with-c67a52",
+    "url": "https://feed.itsfoss.com/link/24361/17515859/mv-exchange",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Community",
+    "published_at": "Thu, 05 Nov 2026 16:10:11 +0530",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "This Overlooked Linux mv Option Replaces Three Commands With One",
+      "vi": "This Overlooked Linux mv Option Replaces Three Commands With One"
+    },
+    "summary": {
+      "en": "Still swapping Linux files with three commands and a temporary filename? The mv command has an option that does it in one step. It works for directories too, with one detail you need to get right.",
+      "vi": "Still swapping Linux files with three commands and a temporary filename? The mv command has an option that does it in one step. It works for directories too, with one detail you need to get right."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "2e2ee958cc998617": {
+    "id": "2e2ee958cc998617",
+    "slug": "hy4-google-k-12-ai-2e2ee9",
+    "url": "https://sspai.com/post/118498",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "少数派编辑部",
+    "published_at": "Thu, 05 Nov 2026 08:16:27 +0800",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "派早报：腾讯发布混元 Hy4 正式版，Google 调整 K-12 教育 AI 政策等",
+      "vi": "派早报：腾讯发布混元 Hy4 正式版，Google 调整 K-12 教育 AI 政策等",
+      "en": "派早报：腾讯发布混元 Hy4 正式版，Google 调整 K-12 教育 AI 政策等"
+    },
+    "summary": {
+      "zh-CN": "少数派的近期动态全新设计复古设备鼠标垫上架，会员可使用点数兑换。前往选购iPhone少数派共创配件上新，自由选择保护、充电、线缆和支架组合。欢迎选购你可能错过的文章国行Apple智能上手：这些功能已经 ... 查看全文",
+      "vi": "少数派的近期动态全新设计复古设备鼠标垫上架，会员可使用点数兑换。前往选购iPhone少数派共创配件上新，自由选择保护、充电、线缆和支架组合。欢迎选购你可能错过的文章国行Apple智能上手：这些功能已经 ... 查看全文",
+      "en": "少数派的近期动态全新设计复古设备鼠标垫上架，会员可使用点数兑换。前往选购iPhone少数派共创配件上新，自由选择保护、充电、线缆和支架组合。欢迎选购你可能错过的文章国行Apple智能上手：这些功能已经 ... 查看全文"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "2211a1987d741789": {
+    "id": "2211a1987d741789",
+    "slug": "systemd-wants-rust-in-but-its-core-will-have-to-wait-2211a1",
+    "url": "https://feed.itsfoss.com/link/24361/17515808/systemd-rust-support",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "Thu, 05 Nov 2026 15:42:32 +0530",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Systemd Wants Rust in, But its Core Will Have to Wait",
+      "vi": "Systemd Wants Rust in, But its Core Will Have to Wait"
+    },
+    "summary": {
+      "en": "The rustification is ongoing, with Rust-written programs now allowed and existing C code not being ported.",
+      "vi": "The rustification is ongoing, with Rust-written programs now allowed and existing C code not being ported."
+    },
+    "categories": [
+      "linux",
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "0fc00d14b922a9c3": {
+    "id": "0fc00d14b922a9c3",
+    "slug": "schools-that-say-no-to-googles-ai-will-be-saying-goodbye-to-0fc00d",
+    "url": "https://feed.itsfoss.com/link/24361/17515402/google-school-search-ai",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "Wed, 04 Nov 2026 20:36:00 +0530",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Schools That Say No to Google’s AI Will Be Saying Goodbye to its Search Too",
+      "vi": "Schools That Say No to Google’s AI Will Be Saying Goodbye to its Search Too"
+    },
+    "summary": {
+      "en": "Meanwhile, schools in six German states can choose an open source cloud solution.",
+      "vi": "Meanwhile, schools in six German states can choose an open source cloud solution."
+    },
+    "categories": [
+      "ai",
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "f1ccfb83e0fe9ae4": {
+    "id": "f1ccfb83e0fe9ae4",
+    "slug": "mpv-420-adds-support-for-dvd-blu-ray-menus-wayland-hdr-f1ccfb",
+    "url": "https://www.omgubuntu.co.uk/2026/11/mpv-4-20-released",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Thu, 05 Nov 2026 16:21:26 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "mpv 4.20 adds support for DVD & Blu-Ray menus, Wayland HDR",
+      "vi": "mpv 4.20 adds support for DVD & Blu-Ray menus, Wayland HDR"
+    },
+    "summary": {
+      "en": "A new version of mpv, the open-source command line media player is out. mpv v0.42 is now able to navigate DVD menus, and the two menu systems that Blu-ray discs use, HDMV and BD-J (the latter requires Java). DVD-Audio support was also added, a nich format that offers…",
+      "vi": "A new version of mpv, the open-source command line media player is out. mpv v0.42 is now able to navigate DVD menus, and the two menu systems that Blu-ray discs use, HDMV and BD-J (the latter requires Java). DVD-Audio support was also added, a nich format that offers…"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "d4dc54b67327a4f1": {
+    "id": "d4dc54b67327a4f1",
+    "slug": "linux-74s-merge-window-is-huge-and-linus-says-it-might-not-j-d4dc54",
+    "url": "https://feed.itsfoss.com/link/24361/17515167/linux-7-4-huge-merge-window",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "Wed, 04 Nov 2026 16:25:00 +0530",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Linux 7.4’s Merge Window is Huge, and Linus Says it Might Not Just Be AI",
+      "vi": "Linux 7.4’s Merge Window is Huge, and Linus Says it Might Not Just Be AI"
+    },
+    "summary": {
+      "en": "Another possible factor is that people expect 7.4 to be the next LTS release.",
+      "vi": "Another possible factor is that people expect 7.4 to be the next LTS release."
+    },
+    "categories": [
+      "linux",
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "51ee28c9070763ec": {
+    "id": "51ee28c9070763ec",
+    "slug": "ubuntu-refreshes-time-zone-data-for-canadian-clock-changes-51ee28",
+    "url": "https://www.omgubuntu.co.uk/2026/11/ubuntu-canada-timezone-changes-2026",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Thu, 05 Nov 2026 12:45:00 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Ubuntu refreshes time zone data for Canadian clock changes",
+      "vi": "Ubuntu refreshes time zone data for Canadian clock changes"
+    },
+    "summary": {
+      "en": "This time of the year, clocks spring forward and fall back across the globe, but some places are making permanent changes – and Ubuntu needs to keep pace. Over recent weeks, Canonical has refresh Ubuntu’s system time zone database package tzdata on all supported releases to…",
+      "vi": "This time of the year, clocks spring forward and fall back across the globe, but some places are making permanent changes – and Ubuntu needs to keep pace. Over recent weeks, Canonical has refresh Ubuntu’s system time zone database package tzdata on all supported releases to…"
     },
     "categories": [
       "linux"
@@ -2768,6 +4759,39 @@
     "translated": {
       "vi": "machine"
     }
+  },
+  "04205c205494c548": {
+    "id": "04205c205494c548",
+    "slug": "just-switch-to-bing-whenever-google-stops-you-with-their-cap-04205c",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xpvgzc/lpt_just_switch_to_bing_whenever_google_stops_you",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/huhuhahamwuah",
+    "published_at": "2026-11-07T02:43:33+00:00",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Just switch to Bing whenever Google stops you with their captcha",
+      "vi": "Just switch to Bing whenever Google stops you with their captcha"
+    },
+    "summary": {
+      "en": "I got annoyed whenever I do simple, basic search on Google then hit back with a roadblock called captcha. What I do? I just switch to their competitors because I cannot fathom to be mistaken for a robot when you correctly do what is asked, especially that multiple choices where…",
+      "vi": "I got annoyed whenever I do simple, basic search on Google then hit back with a roadblock called captcha. What I do? I just switch to their competitors because I cannot fathom to be mistaken for a robot when you correctly do what is asked, especially that multiple choices where…"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.16,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "d5d383be6d2d90ea": {
     "id": "d5d383be6d2d90ea",
@@ -3443,40 +5467,40 @@
       "vi": "machine"
     }
   },
-  "fadd7467dc36644c": {
-    "id": "fadd7467dc36644c",
-    "url": "https://dev.to/bowentse/word-counting-is-harder-than-it-looks-a-devs-guide-1jpb",
+  "ba4c801ac8517479": {
+    "id": "ba4c801ac8517479",
+    "slug": "gemini-prepares-to-let-parents-know-when-kids-discuss-self-h-ba4c80",
+    "url": "https://www.androidauthority.com/gemini-teens-self-harm-alert-3732603",
     "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news",
+      "content_type": "article"
     },
-    "author": "bowen Tse",
-    "published_at": "2026-10-29T02:58:56Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "Stephen Schenck",
+    "published_at": "Fri, 06 Nov 2026 17:18:33 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Word Counting Is Harder Than It Looks: A Dev's Guide",
-      "vi": "Đếm từ khó hơn vẻ ngoài của nó: Hướng dẫn dành cho nhà phát triển"
+      "en": "Gemini prepares to let parents know when kids discuss self-harm",
+      "vi": "Gemini prepares to let parents know when kids discuss self-harm"
     },
     "summary": {
-      "en": "Every developer has written the naive version at least once: const words =",
-      "vi": "Mọi nhà phát triển đều đã viết phiên bản ngây thơ ít nhất một lần: constwords ="
+      "en": "No more keeping secrets.",
+      "vi": "No more keeping secrets."
     },
     "categories": [
-      "office"
+      "ai"
     ],
-    "tags": [],
+    "tags": [
+      "gemini"
+    ],
     "difficulty": "medium",
-    "score": 1.09,
+    "score": 1.1,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "dem-tu-kho-hon-ve-ngoai-cua-no-huong-dan-danh-cho-nha-phat-t-fadd74"
+    "translated": {}
   },
   "1426e977a2f35bcc": {
     "id": "1426e977a2f35bcc",
@@ -3511,6 +5535,41 @@
     "translated": {
       "vi": "machine"
     }
+  },
+  "fadd7467dc36644c": {
+    "id": "fadd7467dc36644c",
+    "url": "https://dev.to/bowentse/word-counting-is-harder-than-it-looks-a-devs-guide-1jpb",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "bowen Tse",
+    "published_at": "2026-10-29T02:58:56Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Word Counting Is Harder Than It Looks: A Dev's Guide",
+      "vi": "Đếm từ khó hơn vẻ ngoài của nó: Hướng dẫn dành cho nhà phát triển"
+    },
+    "summary": {
+      "en": "Every developer has written the naive version at least once: const words =",
+      "vi": "Mọi nhà phát triển đều đã viết phiên bản ngây thơ ít nhất một lần: constwords ="
+    },
+    "categories": [
+      "office"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.09,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "dem-tu-kho-hon-ve-ngoai-cua-no-huong-dan-danh-cho-nha-phat-t-fadd74"
   },
   "f4cb4a6778724aeb": {
     "id": "f4cb4a6778724aeb",
@@ -3837,6 +5896,40 @@
       "en": 1
     }
   },
+  "5cecc12e376b047e": {
+    "id": "5cecc12e376b047e",
+    "slug": "beyond-code-generation-a-developers-guide-to-agentic-enginee-5cecc1",
+    "url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering",
+    "source": {
+      "id": "githubblog",
+      "name": "GitHub Blog",
+      "site_url": "https://github.blog",
+      "kind": "news",
+      "content_type": "vendor"
+    },
+    "author": "Nick Liffen",
+    "published_at": "Fri, 06 Nov 2026 22:15:59 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Beyond code generation: A developer’s guide to agentic engineering",
+      "vi": "Beyond code generation: A developer’s guide to agentic engineering"
+    },
+    "summary": {
+      "en": "Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with GitHub Copilot, and what work still needs your judgment.",
+      "vi": "Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with GitHub Copilot, and what work still needs your judgment."
+    },
+    "categories": [
+      "dev",
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.09,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "bd9ce4e0e37eb114": {
     "id": "bd9ce4e0e37eb114",
     "url": "https://www.omgubuntu.co.uk/2026/10/ubuntu-core-desktop-2704",
@@ -3979,6 +6072,41 @@
     },
     "hidden": false,
     "slug": "ban-ghet-viec-thiet-lap-esim-gemini-co-the-som-lam-dieu-do-c-37108c"
+  },
+  "36cdd515692bb5fd": {
+    "id": "36cdd515692bb5fd",
+    "slug": "05-36cdd5",
+    "url": "https://sspai.com/post/116750",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "星光都死了",
+    "published_at": "Sat, 07 Nov 2026 17:05:06 +0800",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "一个 05 后的个人数码编年史",
+      "vi": "一个 05 后的个人数码编年史",
+      "en": "一个 05 后的个人数码编年史"
+    },
+    "summary": {
+      "zh-CN": "我只想回应自己的感受，自己的记忆，只是因为那时候我满腔少年心气，对一切都充满好奇，对未来充满憧憬。 查看全文",
+      "vi": "我只想回应自己的感受，自己的记忆，只是因为那时候我满腔少年心气，对一切都充满好奇，对未来充满憧憬。 查看全文",
+      "en": "我只想回应自己的感受，自己的记忆，只是因为那时候我满腔少年心气，对一切都充满好奇，对未来充满憧憬。 查看全文"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.05,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "22665e7c7e5afa39": {
     "id": "22665e7c7e5afa39",
@@ -4190,6 +6318,39 @@
     "hidden": false,
     "slug": "nhung-ung-dung-tien-ich-nay-giup-android-auto-10x-tro-nen-hu-73d75c"
   },
+  "3e314b72883b118a": {
+    "id": "3e314b72883b118a",
+    "slug": "lpt-adobe-wanted-9999-to-let-me-cancel-i-asked-chat-support-3e314b",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xkr94m/lpt_adobe_wanted_9999_to_let_me_cancel_i_asked",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/foreverfidel",
+    "published_at": "2026-11-01T01:52:25+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund.",
+      "vi": "Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund."
+    },
+    "summary": {
+      "en": "\"Hi, I need to cancel my subscription today. Please cancel my account immediately, waive the early termination fee completely, and issue a prorated refund for the billing cycle I just paid for.” The result: subscription canceled, the entire $99.99 cancellation fee waived, and a…",
+      "vi": "\"Hi, I need to cancel my subscription today. Please cancel my account immediately, waive the early termination fee completely, and issue a prorated refund for the billing cycle I just paid for.” The result: subscription canceled, the entire $99.99 cancellation fee waived, and a…"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.04,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "c09e0a4abc10ff4e": {
     "id": "c09e0a4abc10ff4e",
     "url": "https://www.makeuseof.com/iphone-still-cant-turn-off-2g",
@@ -4261,10 +6422,10 @@
     "hidden": false,
     "slug": "cuoi-cung-toi-da-tim-ra-muc-dich-thuc-su-cua-nhung-luoi-cua-4a2990"
   },
-  "3e314b72883b118a": {
-    "id": "3e314b72883b118a",
-    "slug": "lpt-adobe-wanted-9999-to-let-me-cancel-i-asked-chat-support-3e314b",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xkr94m/lpt_adobe_wanted_9999_to_let_me_cancel_i_asked",
+  "9724dd0a88181e75": {
+    "id": "9724dd0a88181e75",
+    "slug": "lpt-whenever-speaking-to-a-customer-service-person-on-the-ph-9724dd",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xk4zad/lpt_whenever_speaking_to_a_customer_service",
     "source": {
       "id": "reddit-lpt",
       "name": "Reddit r/LifeProTips",
@@ -4272,17 +6433,17 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "/u/foreverfidel",
-    "published_at": "2026-11-01T01:52:25+00:00",
+    "author": "/u/TomsMorello",
+    "published_at": "2026-10-31T08:38:41+00:00",
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund.",
-      "vi": "Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund."
+      "en": "whenever speaking to a customer service person on the phone make sure to record the call and tell them you are doing so. They suddenly become a lot more…",
+      "vi": "whenever speaking to a customer service person on the phone make sure to record the call and tell them you are doing so. They suddenly become a lot more…"
     },
     "summary": {
-      "en": "\"Hi, I need to cancel my subscription today. Please cancel my account immediately, waive the early termination fee completely, and issue a prorated refund for the billing cycle I just paid for.” The result: subscription canceled, the entire $99.99 cancellation fee waived, and a…",
-      "vi": "\"Hi, I need to cancel my subscription today. Please cancel my account immediately, waive the early termination fee completely, and issue a prorated refund for the billing cycle I just paid for.” The result: subscription canceled, the entire $99.99 cancellation fee waived, and a…"
+      "en": "A few years ago I had a problem with a PayPal transaction. It wasn’t an earth shattering amount of money but I much rather wanted the money back in my pocket. I spent a couple of days on the phone speaking to people at PayPal every single person DGAF. On what turned out to be my…",
+      "vi": "A few years ago I had a problem with a PayPal transaction. It wasn’t an earth shattering amount of money but I much rather wanted the money back in my pocket. I spent a couple of days on the phone speaking to people at PayPal every single person DGAF. On what turned out to be my…"
     },
     "categories": [
       "general"
@@ -4364,6 +6525,41 @@
     },
     "hidden": false
   },
+  "d3a089a79de6f388": {
+    "id": "d3a089a79de6f388",
+    "url": "https://www.tomshardware.com/tech-industry/policy/malaysia-seizes-usd12-million-worth-of-advanced-ai-chips-hidden-inside-30-servers-customs-says-suspected-smuggling-network-used-the-country-as-a-transit-hub",
+    "source": {
+      "id": "tomshardware",
+      "name": "Tom's Hardware",
+      "site_url": "https://www.tomshardware.com",
+      "kind": "news"
+    },
+    "author": "Etiido Uko",
+    "published_at": "Wed, 28 Oct 2026 17:02:14 +0000",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Malaysia seizes $12 million worth of advanced AI chips hidden inside 30 servers",
+      "vi": "Malaysia tịch thu chip AI tiên tiến trị giá 12 triệu USD giấu trong 30 máy chủ"
+    },
+    "summary": {
+      "en": "Malaysian customs seized 30 servers containing more than $12 million worth of advanced AI chips at Kuala Lumpur International Airport, as authorities investigate a suspected smuggling network linked to multiple previous seizures.",
+      "vi": "Hải quan Malaysia đã thu giữ 30 máy chủ chứa chip AI tiên tiến trị giá hơn 12 triệu USD tại Sân bay Quốc tế Kuala Lumpur, khi nhà chức trách điều tra một mạng lưới buôn lậu bị nghi ngờ có liên quan đến nhiều vụ bắt giữ trước đó."
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.03,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "malaysia-tich-thu-chip-ai-tien-tien-tri-gia-12-trieu-usd-gia-d3a089"
+  },
   "79567c1813154a92": {
     "id": "79567c1813154a92",
     "slug": "6-bo-truyen-lang-man-xung-dang-duoc-chuyen-the-truyen-hinh-h-79567c",
@@ -4434,109 +6630,6 @@
     },
     "hidden": false
   },
-  "3dc4efcd06779d78": {
-    "id": "3dc4efcd06779d78",
-    "slug": "google-dat-ngay-ket-thuc-tren-moi-chromebook-va-mot-so-se-kh-3dc4ef",
-    "url": "https://www.makeuseof.com/google-put-an-end-date-on-every-chromebook-and-some-wont-make-it-to-googlebook-os",
-    "source": {
-      "id": "makeuseof",
-      "name": "MakeUseOf",
-      "site_url": "https://www.makeuseof.com",
-      "kind": "tips"
-    },
-    "author": "Sara Heritage",
-    "published_at": "Thu, 29 Oct 2026 17:37:55 GMT",
-    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Google put an end date on every Chromebook, and some won’t make it to Googlebook OS",
-      "vi": "Google đặt ngày kết thúc trên mọi Chromebook và một số sẽ không có trên Googlebook OS"
-    },
-    "summary": {
-      "en": "Older Chromebooks face feature losses and data wipes when enrolling in extended updates so back up important files first.",
-      "vi": "Chromebook cũ hơn sẽ bị mất tính năng và bị xóa dữ liệu khi đăng ký các bản cập nhật mở rộng, vì vậy trước tiên hãy sao lưu các tệp quan trọng."
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 1.04,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false
-  },
-  "9724dd0a88181e75": {
-    "id": "9724dd0a88181e75",
-    "slug": "lpt-whenever-speaking-to-a-customer-service-person-on-the-ph-9724dd",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xk4zad/lpt_whenever_speaking_to_a_customer_service",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/TomsMorello",
-    "published_at": "2026-10-31T08:38:41+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "whenever speaking to a customer service person on the phone make sure to record the call and tell them you are doing so. They suddenly become a lot more…",
-      "vi": "whenever speaking to a customer service person on the phone make sure to record the call and tell them you are doing so. They suddenly become a lot more…"
-    },
-    "summary": {
-      "en": "A few years ago I had a problem with a PayPal transaction. It wasn’t an earth shattering amount of money but I much rather wanted the money back in my pocket. I spent a couple of days on the phone speaking to people at PayPal every single person DGAF. On what turned out to be my…",
-      "vi": "A few years ago I had a problem with a PayPal transaction. It wasn’t an earth shattering amount of money but I much rather wanted the money back in my pocket. I spent a couple of days on the phone speaking to people at PayPal every single person DGAF. On what turned out to be my…"
-    },
-    "categories": [
-      "general"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 1.04,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {}
-  },
-  "d3a089a79de6f388": {
-    "id": "d3a089a79de6f388",
-    "url": "https://www.tomshardware.com/tech-industry/policy/malaysia-seizes-usd12-million-worth-of-advanced-ai-chips-hidden-inside-30-servers-customs-says-suspected-smuggling-network-used-the-country-as-a-transit-hub",
-    "source": {
-      "id": "tomshardware",
-      "name": "Tom's Hardware",
-      "site_url": "https://www.tomshardware.com",
-      "kind": "news"
-    },
-    "author": "Etiido Uko",
-    "published_at": "Wed, 28 Oct 2026 17:02:14 +0000",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Malaysia seizes $12 million worth of advanced AI chips hidden inside 30 servers",
-      "vi": "Malaysia tịch thu chip AI tiên tiến trị giá 12 triệu USD giấu trong 30 máy chủ"
-    },
-    "summary": {
-      "en": "Malaysian customs seized 30 servers containing more than $12 million worth of advanced AI chips at Kuala Lumpur International Airport, as authorities investigate a suspected smuggling network linked to multiple previous seizures.",
-      "vi": "Hải quan Malaysia đã thu giữ 30 máy chủ chứa chip AI tiên tiến trị giá hơn 12 triệu USD tại Sân bay Quốc tế Kuala Lumpur, khi nhà chức trách điều tra một mạng lưới buôn lậu bị nghi ngờ có liên quan đến nhiều vụ bắt giữ trước đó."
-    },
-    "categories": [
-      "ai"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.03,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "malaysia-tich-thu-chip-ai-tien-tien-tri-gia-12-trieu-usd-gia-d3a089"
-  },
   "6aaf671df097a150": {
     "id": "6aaf671df097a150",
     "url": "https://tinhte.vn/thread/bien-laptop-thanh-may-do-camera-an-trong-phong-khach-san-bang-claude-code.4187382",
@@ -4574,6 +6667,41 @@
     },
     "hidden": false,
     "slug": "bien-laptop-thanh-may-do-camera-an-trong-phong-khach-san-ban-6aaf67"
+  },
+  "3dc4efcd06779d78": {
+    "id": "3dc4efcd06779d78",
+    "slug": "google-dat-ngay-ket-thuc-tren-moi-chromebook-va-mot-so-se-kh-3dc4ef",
+    "url": "https://www.makeuseof.com/google-put-an-end-date-on-every-chromebook-and-some-wont-make-it-to-googlebook-os",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Sara Heritage",
+    "published_at": "Thu, 29 Oct 2026 17:37:55 GMT",
+    "fetched_at": "2026-10-29T20:42:13.630789+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Google put an end date on every Chromebook, and some won’t make it to Googlebook OS",
+      "vi": "Google đặt ngày kết thúc trên mọi Chromebook và một số sẽ không có trên Googlebook OS"
+    },
+    "summary": {
+      "en": "Older Chromebooks face feature losses and data wipes when enrolling in extended updates so back up important files first.",
+      "vi": "Chromebook cũ hơn sẽ bị mất tính năng và bị xóa dữ liệu khi đăng ký các bản cập nhật mở rộng, vì vậy trước tiên hãy sao lưu các tệp quan trọng."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.04,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false
   },
   "9024464754e15960": {
     "id": "9024464754e15960",
@@ -4682,42 +6810,41 @@
     },
     "hn_points": 438
   },
-  "1d22dd0edb251dbb": {
-    "id": "1d22dd0edb251dbb",
-    "url": "https://9to5google.com/2026/10/26/chrome-156-googlebooks",
+  "199c6768f8d178f7": {
+    "id": "199c6768f8d178f7",
+    "slug": "if-you-use-outlookcom-e-mail-service-create-completely-new-p-199c67",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xl0euc/lpt_if_you_use_outlookcom_email_service_create",
     "source": {
-      "id": "9to5google",
-      "name": "9to5Google",
-      "site_url": "https://9to5google.com",
-      "kind": "news"
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
     },
-    "author": "Abner Li",
-    "published_at": "Mon, 26 Oct 2026 19:58:11 +0000",
-    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
+    "author": "/u/Party-Cake5173",
+    "published_at": "2026-11-01T11:08:11+00:00",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Chrome 156 for Googlebook rolling out with 14 updates across sites, shortcuts, more",
-      "vi": "Chrome 156 cho Googlebook ra mắt với 14 bản cập nhật trên các trang web, lối tắt, v.v."
+      "en": "If you use Outlook.com e-mail service, create completely new pseudonym and set it as default and only address for accessing the account",
+      "vi": "If you use Outlook.com e-mail service, create completely new pseudonym and set it as default and only address for accessing the account"
     },
     "summary": {
-      "en": "Google is rolling out Chrome 156 for Googlebooks with a slew of improvements and bug fixes. This follows the last browser update two weeks ago.",
-      "vi": "Google đang tung ra Chrome 156 dành cho Googlebooks với nhiều cải tiến và sửa lỗi. Điều này diễn ra sau bản cập nhật trình duyệt cuối cùng hai tuần trước."
+      "en": "NEVER give that new e-mail address to anyone and DO NOT use it for registration anywhere. If your online accounts get breached, hacker knows your e-mail address and could use it to access your Outlook.com account (especially if you're using the same password). By using…",
+      "vi": "NEVER give that new e-mail address to anyone and DO NOT use it for registration anywhere. If your online accounts get breached, hacker knows your e-mail address and could use it to access your Outlook.com account (especially if you're using the same password). By using…"
     },
     "categories": [
-      "browser"
+      "office",
+      "security"
     ],
     "tags": [
-      "chrome"
+      "password"
     ],
     "difficulty": "medium",
-    "score": 1.02,
+    "score": 1.03,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "chrome-156-cho-googlebook-ra-mat-voi-14-ban-cap-nhat-tren-ca-1d22dd"
+    "translated": {}
   },
   "8ccea7e89b703086": {
     "id": "8ccea7e89b703086",
@@ -4794,40 +6921,42 @@
       "vi": 1
     }
   },
-  "2b3501a170a6ac7d": {
-    "id": "2b3501a170a6ac7d",
-    "slug": "agent-2b3501",
-    "url": "https://sspai.com/prime/story/how-to-analyze-health-data-with-agent",
+  "1d22dd0edb251dbb": {
+    "id": "1d22dd0edb251dbb",
+    "url": "https://9to5google.com/2026/10/26/chrome-156-googlebooks",
     "source": {
-      "id": "sspai-cn",
-      "name": "少数派",
-      "site_url": "https://sspai.com",
-      "kind": "news",
-      "content_type": "article"
+      "id": "9to5google",
+      "name": "9to5Google",
+      "site_url": "https://9to5google.com",
+      "kind": "news"
     },
-    "author": "叁思Santh",
-    "published_at": "Thu, 29 Oct 2026 11:29:46 +0800",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "zh-CN",
+    "author": "Abner Li",
+    "published_at": "Mon, 26 Oct 2026 19:58:11 +0000",
+    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
+    "original_lang": "en",
     "title": {
-      "zh-CN": "让 Agent 读懂你的身体：数据处理篇",
-      "vi": "让 Agent 读懂你的身体：数据处理篇",
-      "en": "让 Agent 读懂你的身体：数据处理篇"
+      "en": "Chrome 156 for Googlebook rolling out with 14 updates across sites, shortcuts, more",
+      "vi": "Chrome 156 cho Googlebook ra mắt với 14 bản cập nhật trên các trang web, lối tắt, v.v."
     },
     "summary": {
-      "zh-CN": "在上一篇文章《让Agent读懂你的身体：数据获取篇》中，我花了很大的篇幅讲清楚了第一个问题：Agent怎样拿到数据。如果照着实践完，你大概率已经收获了一份存储了运动健康数据的SQLite、Markdo ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
-      "vi": "在上一篇文章《让Agent读懂你的身体：数据获取篇》中，我花了很大的篇幅讲清楚了第一个问题：Agent怎样拿到数据。如果照着实践完，你大概率已经收获了一份存储了运动健康数据的SQLite、Markdo ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
-      "en": "在上一篇文章《让Agent读懂你的身体：数据获取篇》中，我花了很大的篇幅讲清楚了第一个问题：Agent怎样拿到数据。如果照着实践完，你大概率已经收获了一份存储了运动健康数据的SQLite、Markdo ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。"
+      "en": "Google is rolling out Chrome 156 for Googlebooks with a slew of improvements and bug fixes. This follows the last browser update two weeks ago.",
+      "vi": "Google đang tung ra Chrome 156 dành cho Googlebooks với nhiều cải tiến và sửa lỗi. Điều này diễn ra sau bản cập nhật trình duyệt cuối cùng hai tuần trước."
     },
     "categories": [
-      "dev"
+      "browser"
     ],
-    "tags": [],
-    "difficulty": null,
+    "tags": [
+      "chrome"
+    ],
+    "difficulty": "medium",
     "score": 1.02,
-    "howto": false,
+    "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "chrome-156-cho-googlebook-ra-mat-voi-14-ban-cap-nhat-tren-ca-1d22dd"
   },
   "6bd209feefbeab17": {
     "id": "6bd209feefbeab17",
@@ -4868,6 +6997,109 @@
       "vi": 1
     }
   },
+  "ef2a83f7f3a44d74": {
+    "id": "ef2a83f7f3a44d74",
+    "slug": "a-jev-that-can-ask-opus-for-help-gives-opus-accuracy-at-4x-l-ef2a83",
+    "url": "https://hightouch.com/blog/llm-judges-identity-resolution",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "theanomaly",
+    "published_at": "Fri, 06 Nov 2026 19:48:51 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost",
+      "vi": "A Jev that can ask Opus for help gives Opus accuracy at 4x lower cost"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (482 điểm, 110 bình luận).",
+      "vi": "Thảo luận trên Hacker News (482 điểm, 110 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.03,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 482
+  },
+  "2b3501a170a6ac7d": {
+    "id": "2b3501a170a6ac7d",
+    "slug": "agent-2b3501",
+    "url": "https://sspai.com/prime/story/how-to-analyze-health-data-with-agent",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "叁思Santh",
+    "published_at": "Thu, 29 Oct 2026 11:29:46 +0800",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "让 Agent 读懂你的身体：数据处理篇",
+      "vi": "让 Agent 读懂你的身体：数据处理篇",
+      "en": "让 Agent 读懂你的身体：数据处理篇"
+    },
+    "summary": {
+      "zh-CN": "在上一篇文章《让Agent读懂你的身体：数据获取篇》中，我花了很大的篇幅讲清楚了第一个问题：Agent怎样拿到数据。如果照着实践完，你大概率已经收获了一份存储了运动健康数据的SQLite、Markdo ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
+      "vi": "在上一篇文章《让Agent读懂你的身体：数据获取篇》中，我花了很大的篇幅讲清楚了第一个问题：Agent怎样拿到数据。如果照着实践完，你大概率已经收获了一份存储了运动健康数据的SQLite、Markdo ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
+      "en": "在上一篇文章《让Agent读懂你的身体：数据获取篇》中，我花了很大的篇幅讲清楚了第一个问题：Agent怎样拿到数据。如果照着实践完，你大概率已经收获了一份存储了运动健康数据的SQLite、Markdo ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.02,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "119dda2f4fb777b9": {
+    "id": "119dda2f4fb777b9",
+    "slug": "tesla-to-wind-down-cybertruck-production-119dda",
+    "url": "https://www.nbcnews.com/tech/tech-news/tesla-wind-cybertruck-production-years-poor-sales-markets-rcna607817",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "PLenz",
+    "published_at": "Fri, 06 Nov 2026 12:13:51 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Tesla to wind down Cybertruck production",
+      "vi": "Tesla to wind down Cybertruck production"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (1011 điểm, 1866 bình luận).",
+      "vi": "Thảo luận trên Hacker News (1011 điểm, 1866 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.03,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 1011
+  },
   "90394dc6b4d3586f": {
     "id": "90394dc6b4d3586f",
     "slug": "10-of-the-most-iconic-patrick-stewart-roles-beyond-captain-p-90394d",
@@ -4905,6 +7137,242 @@
     "translate_attempts": {
       "vi": 1
     }
+  },
+  "6a089d3b89f3ea56": {
+    "id": "6a089d3b89f3ea56",
+    "slug": "these-linux-distros-can-run-on-apple-silicon-mac-6a089d",
+    "url": "https://feed.itsfoss.com/link/24361/17514520/apple-silicon-linux-distros",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "Tue, 03 Nov 2026 19:36:00 +0530",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "These Linux Distros Can Run on Apple Silicon Mac",
+      "vi": "These Linux Distros Can Run on Apple Silicon Mac"
+    },
+    "summary": {
+      "en": "Here are a few distros that are making it possible for you to run Linux on Apple Mac. Read the fine prints though, as not all M processors are supported.",
+      "vi": "Here are a few distros that are making it possible for you to run Linux on Apple Mac. Read the fine prints though, as not all M processors are supported."
+    },
+    "categories": [
+      "macos",
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.02,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "3d9bd0593e5ecb0d": {
+    "id": "3d9bd0593e5ecb0d",
+    "slug": "schools-in-six-german-states-can-now-opt-for-a-nextcloud-bas-3d9bd0",
+    "url": "https://feed.itsfoss.com/link/24361/17514387/ionos-nextcloud-school-cloud",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "Tue, 03 Nov 2026 15:21:35 +0530",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Schools in Six German States Can Now Opt For a Nextcloud-Based Open Source Cloud Solution",
+      "vi": "Schools in Six German States Can Now Opt For a Nextcloud-Based Open Source Cloud Solution"
+    },
+    "summary": {
+      "en": "IONOS has been picked as a contractor, and the service would run inside data centers in Germany.",
+      "vi": "IONOS has been picked as a contractor, and the service would run inside data centers in Germany."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.02,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "1de5f126b47c775f": {
+    "id": "1de5f126b47c775f",
+    "slug": "canonical-adds-fido2-hardware-key-support-to-launchpad-1de5f1",
+    "url": "https://www.omgubuntu.co.uk/2026/11/launchpad-fido2-hardware-tokens",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Tue, 03 Nov 2026 17:05:51 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Canonical adds FIDO2 hardware key support to Launchpad",
+      "vi": "Canonical adds FIDO2 hardware key support to Launchpad"
+    },
+    "summary": {
+      "en": "Developers who use Launchpad can now use a USB FIDO2 security key to restrict API access, which makes any stolen login details useless without it. Launchpad is, as I’m sure you know, where Canonical builds Ubuntu’s package, hosts code, PPAs and many other things that end up on a…",
+      "vi": "Developers who use Launchpad can now use a USB FIDO2 security key to restrict API access, which makes any stolen login details useless without it. Launchpad is, as I’m sure you know, where Canonical builds Ubuntu’s package, hosts code, PPAs and many other things that end up on a…"
+    },
+    "categories": [
+      "dev",
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.02,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "f42736968bcfb887": {
+    "id": "f42736968bcfb887",
+    "slug": "i-came-for-this-new-linux-distros-aesthetic-looks-and-stayed-f42736",
+    "url": "https://feed.itsfoss.com/link/24361/17513978/pond-early-preview",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "Mon, 02 Nov 2026 23:22:00 +0530",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I Came for This New Linux Distro’s Aesthetic Looks and Stayed for its Window Tiling",
+      "vi": "I Came for This New Linux Distro’s Aesthetic Looks and Stayed for its Window Tiling"
+    },
+    "summary": {
+      "en": "It's still early in development, but it shows promise with what it offers.",
+      "vi": "It's still early in development, but it shows promise with what it offers."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.02,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "99c50540e5c92f12": {
+    "id": "99c50540e5c92f12",
+    "slug": "killed-by-ubuntu-linux-mint-is-bringing-this-classic-feature-99c505",
+    "url": "https://feed.itsfoss.com/link/24361/17513761/linux-mint-new-sleep-modes",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Abhishek Prakash",
+    "published_at": "Mon, 02 Nov 2026 19:04:48 +0530",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Killed by Ubuntu, Linux Mint is Bringing This Classic Feature Back",
+      "vi": "Killed by Ubuntu, Linux Mint is Bringing This Classic Feature Back"
+    },
+    "summary": {
+      "en": "Linux Mint is bringing back a feature most Linux distributions quietly gave up on years ago: hibernation.",
+      "vi": "Linux Mint is bringing back a feature most Linux distributions quietly gave up on years ago: hibernation."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.02,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "7bf7eb39d53de112": {
+    "id": "7bf7eb39d53de112",
+    "slug": "affinity-is-coming-to-linux-but-theres-no-eta-yet-7bf7eb",
+    "url": "https://www.omgubuntu.co.uk/2026/11/affinity-linux-release-confirmed",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Tue, 03 Nov 2026 03:33:52 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Affinity is coming to Linux (but there’s no ETA yet)",
+      "vi": "Affinity is coming to Linux (but there’s no ETA yet)"
+    },
+    "summary": {
+      "en": "Affinity, the free design suite made by Canva, is coming to Linux. No release date yet, but the company say the port is already in 'active development'. You're reading Affinity is coming to Linux (but there’s no ETA yet) , a blog post from OMG! Ubuntu . Do not reproduce…",
+      "vi": "Affinity, the free design suite made by Canva, is coming to Linux. No release date yet, but the company say the port is already in 'active development'. You're reading Affinity is coming to Linux (but there’s no ETA yet) , a blog post from OMG! Ubuntu . Do not reproduce…"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.02,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "dd08d75108704967": {
+    "id": "dd08d75108704967",
+    "slug": "linux-mint-is-bringing-back-hibernation-to-laptops-dd08d7",
+    "url": "https://www.omgubuntu.co.uk/2026/11/linux-mint-hibernation-sleep-mode",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Tue, 03 Nov 2026 00:00:03 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Linux Mint is ‘bringing back’ hibernation to laptops",
+      "vi": "Linux Mint is ‘bringing back’ hibernation to laptops"
+    },
+    "summary": {
+      "en": "Linux Mint’s next release will offer a hibernation mode, so you can close your laptop mid-session and not worry about returning to a drained battery. A new Sleep Modes page in the System Administration tool in Linux Mint 27, out this December, makes it easy to enable hibernation…",
+      "vi": "Linux Mint’s next release will offer a hibernation mode, so you can close your laptop mid-session and not worry about returning to a drained battery. A new Sleep Modes page in the System Administration tool in Linux Mint 27, out this December, makes it easy to enable hibernation…"
+    },
+    "categories": [
+      "linux",
+      "hardware"
+    ],
+    "tags": [
+      "battery"
+    ],
+    "difficulty": null,
+    "score": 1.02,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "435a65697245038d": {
     "id": "435a65697245038d",
@@ -5084,6 +7552,42 @@
     "translated": {
       "vi": "machine"
     }
+  },
+  "98429c255b62a883": {
+    "id": "98429c255b62a883",
+    "slug": "google-is-bringing-ios-style-settings-icons-to-chrome-for-an-98429c",
+    "url": "https://www.androidauthority.com/chrome-android-colorful-settings-icons-redesign-3732624",
+    "source": {
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Karandeep Singh Oberoi",
+    "published_at": "Fri, 06 Nov 2026 18:07:34 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Google is bringing iOS-style Settings icons to Chrome for Android",
+      "vi": "Google is bringing iOS-style Settings icons to Chrome for Android"
+    },
+    "summary": {
+      "en": "The UI makeover is taking shape in Canary.",
+      "vi": "The UI makeover is taking shape in Canary."
+    },
+    "categories": [
+      "android",
+      "ios"
+    ],
+    "tags": [
+      "chrome"
+    ],
+    "difficulty": "easy",
+    "score": 1.01,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "c989d358786f1ec1": {
     "id": "c989d358786f1ec1",
@@ -5338,6 +7842,106 @@
       "en": 1
     }
   },
+  "7ff4ba923ec06290": {
+    "id": "7ff4ba923ec06290",
+    "slug": "chainalysis-says-hackers-stole-credentials-and-tokens-for-al-7ff4ba",
+    "url": "https://arstechnica.com/security/2026/11/chainalysis-says-hackers-stole-credentials-and-tokens-for-all-of-its-customers",
+    "source": {
+      "id": "arstechnica",
+      "name": "Ars Technica",
+      "site_url": "https://arstechnica.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Dan Goodin",
+    "published_at": "Fri, 06 Nov 2026 20:56:41 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Chainalysis says hackers stole credentials and tokens for all of its customers",
+      "vi": "Chainalysis says hackers stole credentials and tokens for all of its customers"
+    },
+    "summary": {
+      "en": "Company said a \"multifront cyberattack\" included AI agents and an on-path data snatch.",
+      "vi": "Company said a \"multifront cyberattack\" included AI agents and an on-path data snatch."
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "dd02e525d518a3c9": {
+    "id": "dd02e525d518a3c9",
+    "slug": "india-targets-creating-homegrown-gpus-within-2-years-and-pla-dd02e5",
+    "url": "https://www.tomshardware.com/tech-industry/semiconductors/india-targets-creating-homegrown-gpus-within-2-years-and-plans-to-commercialize-indigenous-shakti-and-vega-risc-v-processors-sees-ai-boom-as-a-potential-repeat-of-the-y2k-opportunity-for-its-it-industry",
+    "source": {
+      "id": "tomshardware",
+      "name": "Tom's Hardware",
+      "site_url": "https://www.tomshardware.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Newton Gitonga",
+    "published_at": "Thu, 05 Nov 2026 18:00:00 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "India targets creating homegrown GPUs within 2 years and plans to commercialize indigenous SHAKTI and VEGA processors",
+      "vi": "India targets creating homegrown GPUs within 2 years and plans to commercialize indigenous SHAKTI and VEGA processors"
+    },
+    "summary": {
+      "en": "MeitY Secretary S. Krishnan says India plans to develop its own GPU under Semiconductor Mission 2.0, with a target of approximately two years. The country is also looking to commercialize its SHAKTI and VEGA RISC-V processors, expand domestic server production, and attract more…",
+      "vi": "MeitY Secretary S. Krishnan says India plans to develop its own GPU under Semiconductor Mission 2.0, with a target of approximately two years. The country is also looking to commercialize its SHAKTI and VEGA RISC-V processors, expand domestic server production, and attract more…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "0f128572b73d8b7d": {
+    "id": "0f128572b73d8b7d",
+    "slug": "tri-tue-nhan-tao-hoc-the-nao-chinh-hang-trieu-con-so-cho-toi-0f1285",
+    "url": "https://tinhte.vn/thread/tri-tue-nhan-tao-hoc-the-nao-chinh-hang-trieu-con-so-cho-toi-khi-bot-sai.4189879",
+    "source": {
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "sonradio",
+    "published_at": "Sat, 07 Nov 2026 01:45:54 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Trí tuệ nhân tạo học thế nào: chỉnh hàng triệu con số cho tới khi bớt sai",
+      "en": "Trí tuệ nhân tạo học thế nào: chỉnh hàng triệu con số cho tới khi bớt sai"
+    },
+    "summary": {
+      "vi": "Khi điện thoại nhận ra khuôn mặt trong ảnh hay dịch một câu sang tiếng Anh, không có lập trình viên nào viết sẵn quy tắc kiểu \"mắt nằm trên mũi\". Phần mềm tự rút ra quy tắc từ rất nhiều ví dụ.",
+      "en": "Khi điện thoại nhận ra khuôn mặt trong ảnh hay dịch một câu sang tiếng Anh, không có lập trình viên nào viết sẵn quy tắc kiểu \"mắt nằm trên mũi\". Phần mềm tự rút ra quy tắc từ rất nhiều ví dụ."
+    },
+    "categories": [
+      "ai",
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "2f60432befdab164": {
     "id": "2f60432befdab164",
     "url": "https://feed.itsfoss.com/link/24361/17502758/foss-weekly-26-43",
@@ -5511,7 +8115,13 @@
     "reading_time_min": 1,
     "translated": {
       "en": "machine"
-    }
+    },
+    "alsoFrom": [
+      {
+        "sourceName": "Dân Trí Sức mạnh số",
+        "url": "https://dantri.com.vn/suc-manh-so/huong-dan-cach-doi-giay-phep-lai-xe-truc-tuyen-ngay-tai-nha-20250215025935239.htm"
+      }
+    ]
   },
   "d683cbeee4d0d8ac": {
     "id": "d683cbeee4d0d8ac",
@@ -5692,6 +8302,43 @@
     },
     "hidden": false,
     "slug": "armsom-sige7s-dat-rk3588s-tren-bang-co-kich-thuoc-raspberry-0a9a09"
+  },
+  "d7e9e3e89ee778d6": {
+    "id": "d7e9e3e89ee778d6",
+    "slug": "gemini-omni-12-flash-d7e9e3",
+    "url": "https://blog.google/innovation-and-ai/technology/developers-tools/introducing-gemini-omni-1-2-flash",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "thisisauserid",
+    "published_at": "Fri, 06 Nov 2026 13:35:27 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Gemini Omni 1.2 Flash",
+      "vi": "Gemini Omni 1.2 Flash"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (337 điểm, 230 bình luận).",
+      "vi": "Thảo luận trên Hacker News (337 điểm, 230 bình luận)."
+    },
+    "categories": [
+      "ai",
+      "security"
+    ],
+    "tags": [
+      "gemini"
+    ],
+    "difficulty": "medium",
+    "score": 0.98,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 337
   },
   "8fd8aa781238c9ff": {
     "id": "8fd8aa781238c9ff",
@@ -6165,6 +8812,41 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "b85682977a4d508d": {
+    "id": "b85682977a4d508d",
+    "slug": "mac-macbook-pro-proled-xdr-b85682",
+    "url": "https://sspai.com/post/118546",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "waychane",
+    "published_at": "Thu, 05 Nov 2026 22:00:51 +0800",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "开启 Mac 的下一世代：MacBook Pro (PROLED XDR) 首发体验",
+      "vi": "开启 Mac 的下一世代：MacBook Pro (PROLED XDR) 首发体验",
+      "en": "开启 Mac 的下一世代：MacBook Pro (PROLED XDR) 首发体验"
+    },
+    "summary": {
+      "zh-CN": "全新 MacBook Pro，开启 Mac 的下一个世代。 查看全文",
+      "vi": "全新 MacBook Pro，开启 Mac 的下一个世代。 查看全文",
+      "en": "全新 MacBook Pro，开启 Mac 的下一个世代。 查看全文"
+    },
+    "categories": [
+      "macos"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.96,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "b5dd38c1b651141f": {
     "id": "b5dd38c1b651141f",
     "url": "https://www.makeuseof.com/samsung-good-lock-gave-my-galaxy-a-feature-i-thought-i-needed-a-new-phone-for",
@@ -6199,6 +8881,41 @@
     },
     "hidden": false,
     "slug": "samsung-good-lock-da-mang-den-cho-chiec-galaxy-cua-toi-mot-t-b5dd38"
+  },
+  "e6cc63b6a33b8c77": {
+    "id": "e6cc63b6a33b8c77",
+    "slug": "tip-e6cc63",
+    "url": "https://sspai.com/prime/story/30-easy-steamed-dishes",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "潘誉晗",
+    "published_at": "Thu, 05 Nov 2026 15:16:51 +0800",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "不用困在厨房也能做出好饭：三十道省事家常蒸菜",
+      "vi": "不用困在厨房也能做出好饭：三十道省事家常蒸菜",
+      "en": "不用困在厨房也能做出好饭：三十道省事家常蒸菜"
+    },
+    "summary": {
+      "zh-CN": "蒸锅真是懒人做饭好帮手。 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
+      "vi": "蒸锅真是懒人做饭好帮手。 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
+      "en": "蒸锅真是懒人做饭好帮手。 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.96,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "477baea26f15d800": {
     "id": "477baea26f15d800",
@@ -6302,6 +9019,74 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "5072f0d6af005438": {
+    "id": "5072f0d6af005438",
+    "slug": "ai-is-dramatically-accelerating-ai-research-5072f0",
+    "url": "https://www.planned-obsolescence.org/p/ai-is-dramatically-accelerating-ai",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "yurivish",
+    "published_at": "Fri, 06 Nov 2026 20:27:23 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "AI is dramatically accelerating AI research",
+      "vi": "AI is dramatically accelerating AI research"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (306 điểm, 259 bình luận).",
+      "vi": "Thảo luận trên Hacker News (306 điểm, 259 bình luận)."
+    },
+    "categories": [
+      "ai",
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.95,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 306
+  },
+  "89231a82512ba638": {
+    "id": "89231a82512ba638",
+    "slug": "lpt-many-local-libraries-have-resources-such-as-tools-and-eq-89231a",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xjiy3k/lpt_many_local_libraries_have_resources_such_as",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/ylekiot",
+    "published_at": "2026-10-30T15:47:54+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Many local libraries have resources such as tools and equipment that you can borrow like a book.",
+      "vi": "Many local libraries have resources such as tools and equipment that you can borrow like a book."
+    },
+    "summary": {
+      "en": "It can save you from buying things that you only need to use once or things that are prohibitively expensive to buy. It's called the library of things. You can also request your library to get something in stock that you can borrow. Things like telescopes and 3D printers and…",
+      "vi": "It can save you from buying things that you only need to use once or things that are prohibitively expensive to buy. It's called the library of things. You can also request your library to get something in stock that you can borrow. Things like telescopes and 3D printers and…"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.95,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "f6ba26099c5cb990": {
     "id": "f6ba26099c5cb990",
     "url": "https://www.omgubuntu.co.uk/2026/10/trash-talk-ubuntu-uk-rubbish-bin-terminology",
@@ -6336,39 +9121,6 @@
     },
     "hidden": false,
     "slug": "noi-chuyen-rac-ruoi-nhan-thung-rac-kieu-anh-kho-hieu-cua-ubu-f6ba26"
-  },
-  "89231a82512ba638": {
-    "id": "89231a82512ba638",
-    "slug": "lpt-many-local-libraries-have-resources-such-as-tools-and-eq-89231a",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xjiy3k/lpt_many_local_libraries_have_resources_such_as",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/ylekiot",
-    "published_at": "2026-10-30T15:47:54+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Many local libraries have resources such as tools and equipment that you can borrow like a book.",
-      "vi": "Many local libraries have resources such as tools and equipment that you can borrow like a book."
-    },
-    "summary": {
-      "en": "It can save you from buying things that you only need to use once or things that are prohibitively expensive to buy. It's called the library of things. You can also request your library to get something in stock that you can borrow. Things like telescopes and 3D printers and…",
-      "vi": "It can save you from buying things that you only need to use once or things that are prohibitively expensive to buy. It's called the library of things. You can also request your library to get something in stock that you can borrow. Things like telescopes and 3D printers and…"
-    },
-    "categories": [
-      "general"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.95,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {}
   },
   "45c76ee61d860588": {
     "id": "45c76ee61d860588",
@@ -6405,41 +9157,6 @@
     "hidden": false,
     "slug": "nguoi-dung-ubuntu-hien-co-the-bao-loi-doi-voi-cac-ppa-cu-the-45c76e"
   },
-  "72935a7f76dc92ab": {
-    "id": "72935a7f76dc92ab",
-    "slug": "lpt-always-put-your-computer-to-sleep-when-you-leave-the-hou-72935a",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xj5yl8/lpt_always_put_your_computer_to_sleep_when_you",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/rebel-yeller",
-    "published_at": "2026-10-30T04:30:02+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Always put your computer to sleep when you leave the house or go to bed",
-      "vi": "Always put your computer to sleep when you leave the house or go to bed"
-    },
-    "summary": {
-      "en": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers.",
-      "vi": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers."
-    },
-    "categories": [
-      "security"
-    ],
-    "tags": [
-      "password"
-    ],
-    "difficulty": null,
-    "score": 0.95,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {}
-  },
   "ef9bb7c17bc1bce5": {
     "id": "ef9bb7c17bc1bce5",
     "url": "https://tinhte.vn/thread/anh-em-dung-touchpad-haptic-tren-may-tinh-windows-thi-nen-chinh-lai-mot-chut-cho-ngon.4187788",
@@ -6474,41 +9191,6 @@
     },
     "hidden": false,
     "slug": "anh-em-dung-touchpad-haptic-tren-may-tinh-windows-thi-nen-ch-ef9bb7"
-  },
-  "13c87e8494b641fa": {
-    "id": "13c87e8494b641fa",
-    "slug": "lpt-reuse-a-dead-aa-mous-battery-in-a-clock-13c87e",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xiiawy/lpt_reuse_a_dead_aa_mous_battery_in_a_clock",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/mywifeapprovesthis",
-    "published_at": "2026-10-29T12:14:04+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "reuse a \"dead\" AA mous battery in a clock",
-      "vi": "reuse a \"dead\" AA mous battery in a clock"
-    },
-    "summary": {
-      "en": "Today I learned that the \"dead\" AA battery which can no longer power my wireless mouse still has enough oomph* to be able to power a clock for a while. I'm so pleased I can re-deploy a \"used\" battery into something useful, I thought I'd share. *oomph is a technical term as a…",
-      "vi": "Today I learned that the \"dead\" AA battery which can no longer power my wireless mouse still has enough oomph* to be able to power a clock for a while. I'm so pleased I can re-deploy a \"used\" battery into something useful, I thought I'd share. *oomph is a technical term as a…"
-    },
-    "categories": [
-      "hardware"
-    ],
-    "tags": [
-      "battery"
-    ],
-    "difficulty": null,
-    "score": 0.95,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {}
   },
   "178301a7ab9b01b0": {
     "id": "178301a7ab9b01b0",
@@ -6914,6 +9596,39 @@
       "vi": 1
     }
   },
+  "bae5b54de648f96d": {
+    "id": "bae5b54de648f96d",
+    "slug": "five-race-day-smartwatch-hacks-every-marathon-runner-should-bae5b5",
+    "url": "https://lifehacker.com/health/best-smartwatch-race-day-hacks",
+    "source": {
+      "id": "lifehacker",
+      "name": "Lifehacker",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Meredith Dietz",
+    "published_at": "Thu, 05 Nov 2026 22:00:00 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Five Race-Day Smartwatch Hacks Every Marathon Runner Should Know",
+      "vi": "Five Race-Day Smartwatch Hacks Every Marathon Runner Should Know"
+    },
+    "summary": {
+      "en": "You don't need the best Garmin to run a great race.",
+      "vi": "You don't need the best Garmin to run a great race."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.93,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "85daa6a854746cd3": {
     "id": "85daa6a854746cd3",
     "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents",
@@ -6948,6 +9663,114 @@
     },
     "hidden": false,
     "slug": "octoverse-cam-ket-thuc-day-dat-nhung-dinh-cao-moi-vao-nam-20-85daa6"
+  },
+  "72935a7f76dc92ab": {
+    "id": "72935a7f76dc92ab",
+    "slug": "lpt-always-put-your-computer-to-sleep-when-you-leave-the-hou-72935a",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xj5yl8/lpt_always_put_your_computer_to_sleep_when_you",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/rebel-yeller",
+    "published_at": "2026-10-30T04:30:02+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Always put your computer to sleep when you leave the house or go to bed",
+      "vi": "Always put your computer to sleep when you leave the house or go to bed"
+    },
+    "summary": {
+      "en": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers.",
+      "vi": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [
+      "password"
+    ],
+    "difficulty": null,
+    "score": 0.95,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "13c87e8494b641fa": {
+    "id": "13c87e8494b641fa",
+    "slug": "lpt-reuse-a-dead-aa-mous-battery-in-a-clock-13c87e",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xiiawy/lpt_reuse_a_dead_aa_mous_battery_in_a_clock",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/mywifeapprovesthis",
+    "published_at": "2026-10-29T12:14:04+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "reuse a \"dead\" AA mous battery in a clock",
+      "vi": "reuse a \"dead\" AA mous battery in a clock"
+    },
+    "summary": {
+      "en": "Today I learned that the \"dead\" AA battery which can no longer power my wireless mouse still has enough oomph* to be able to power a clock for a while. I'm so pleased I can re-deploy a \"used\" battery into something useful, I thought I'd share. *oomph is a technical term as a…",
+      "vi": "Today I learned that the \"dead\" AA battery which can no longer power my wireless mouse still has enough oomph* to be able to power a clock for a while. I'm so pleased I can re-deploy a \"used\" battery into something useful, I thought I'd share. *oomph is a technical term as a…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [
+      "battery"
+    ],
+    "difficulty": null,
+    "score": 0.95,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "b68c1c2345536ac2": {
+    "id": "b68c1c2345536ac2",
+    "slug": "hackers-steal-63-billion-from-binance-in-record-crypto-heist-b68c1c",
+    "url": "https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist",
+    "source": {
+      "id": "arstechnica",
+      "name": "Ars Technica",
+      "site_url": "https://arstechnica.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Nikou Asgari, Financial Times",
+    "published_at": "Fri, 30 Oct 2026 13:46:39 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Hackers steal $6.3 billion from Binance in record crypto heist",
+      "vi": "Hackers steal $6.3 billion from Binance in record crypto heist"
+    },
+    "summary": {
+      "en": "Binance scrambles to freeze billions after record-breaking hack linked to North Korea.",
+      "vi": "Binance scrambles to freeze billions after record-breaking hack linked to North Korea."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.92,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "4ace802c1f0cf8b7": {
     "id": "4ace802c1f0cf8b7",
@@ -6987,10 +9810,10 @@
       "vi": 1
     }
   },
-  "b68c1c2345536ac2": {
-    "id": "b68c1c2345536ac2",
-    "slug": "hackers-steal-63-billion-from-binance-in-record-crypto-heist-b68c1c",
-    "url": "https://arstechnica.com/security/2026/10/hackers-steal-6-3-billion-from-binance-in-record-crypto-heist",
+  "8424b8cbc8e88fa1": {
+    "id": "8424b8cbc8e88fa1",
+    "slug": "meet-sshole-the-vulnerability-that-lets-hackers-ssh-into-lin-8424b8",
+    "url": "https://arstechnica.com/security/2026/11/vulnerability-allows-attackers-to-log-into-some-linux-devices-sans-password",
     "source": {
       "id": "arstechnica",
       "name": "Ars Technica",
@@ -6998,32 +9821,27 @@
       "kind": "news",
       "content_type": "article"
     },
-    "author": "Nikou Asgari, Financial Times",
-    "published_at": "Fri, 30 Oct 2026 13:46:39 +0000",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "author": "Dan Goodin",
+    "published_at": "Thu, 05 Nov 2026 23:09:36 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Hackers steal $6.3 billion from Binance in record crypto heist",
-      "vi": "Hackers steal $6.3 billion from Binance in record crypto heist"
+      "en": "Meet *sshole, the vulnerability that lets hackers SSH into Linux devices",
+      "vi": "Meet *sshole, the vulnerability that lets hackers SSH into Linux devices"
     },
     "summary": {
-      "en": "Binance scrambles to freeze billions after record-breaking hack linked to North Korea.",
-      "vi": "Binance scrambles to freeze billions after record-breaking hack linked to North Korea."
+      "en": "Certain configurations of Alpine are affected. Other distros may be as well.",
+      "vi": "Certain configurations of Alpine are affected. Other distros may be as well."
     },
     "categories": [
       "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
+    "difficulty": "advanced",
     "score": 0.92,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 1
-    }
+    "translated": {}
   },
   "8e4bd3d9e1e92b58": {
     "id": "8e4bd3d9e1e92b58",
@@ -7701,7 +10519,150 @@
     },
     "translate_attempts": {
       "en": 1
-    }
+    },
+    "alsoFrom": [
+      {
+        "sourceName": "Dân Trí Sức mạnh số",
+        "url": "https://dantri.com.vn/suc-manh-so/galaxy-s26-se-co-nang-cap-quan-trong-ma-galaxy-s25-thieu-sot-20250212004637824.htm"
+      }
+    ]
+  },
+  "f441801c064cce85": {
+    "id": "f441801c064cce85",
+    "slug": "firecracker-vm-escape-pwnescape-part-2-f44180",
+    "url": "https://pwn.ai/blog/firecracker-escape",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "SerCe",
+    "published_at": "Fri, 06 Nov 2026 19:33:38 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Firecracker VM Escape: PwnEscape Part 2",
+      "vi": "Firecracker VM Escape: PwnEscape Part 2"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (240 điểm, 106 bình luận).",
+      "vi": "Thảo luận trên Hacker News (240 điểm, 106 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.9,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 240
+  },
+  "82db5536ec364f2f": {
+    "id": "82db5536ec364f2f",
+    "slug": "us-faa-says-it-will-phase-out-floppy-disks-from-air-traffic-82db55",
+    "url": "https://www.reuters.com/world/us/us-faa-says-it-will-phase-out-floppy-disks-air-traffic-control-by-2028-2026-11-05",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "ChrisArchitect",
+    "published_at": "Fri, 06 Nov 2026 04:00:28 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "US FAA says it will phase out floppy disks from air traffic control by 2028",
+      "vi": "US FAA says it will phase out floppy disks from air traffic control by 2028"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (339 điểm, 274 bình luận).",
+      "vi": "Thảo luận trên Hacker News (339 điểm, 274 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.9,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 339
+  },
+  "b302cd56f6ec631a": {
+    "id": "b302cd56f6ec631a",
+    "url": "https://dev.to/annavi11arrea1/understanding-what-ai-just-created-in-the-500mph-landscape-1m52",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "Anna Villarreal",
+    "published_at": "2026-10-23T15:59:05Z",
+    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Understanding What AI just Created in the 500mph Landscape",
+      "vi": "Hiểu những gì AI vừa tạo ra trong bối cảnh vận tốc 500 dặm/giờ"
+    },
+    "summary": {
+      "en": "How to understand what AI wrote: For beginners! Avoid lack of dopamine, mental atrophy,",
+      "vi": "Làm thế nào để hiểu những gì AI đã viết: Dành cho người mới bắt đầu! Tránh tình trạng thiếu dopamin, teo tâm thần,"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.87,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "hieu-nhung-gi-ai-vua-tao-ra-trong-boi-canh-van-toc-500-damgi-b302cd"
+  },
+  "20c1278149bb3591": {
+    "id": "20c1278149bb3591",
+    "slug": "first-steps-in-bare-metal-programming-using-uefi-20c127",
+    "url": "https://kevinboone.me/efitest_index.html",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "LaSombra",
+    "published_at": "Fri, 06 Nov 2026 16:50:29 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "First steps in bare-metal programming using UEFI",
+      "vi": "First steps in bare-metal programming using UEFI"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (221 điểm, 42 bình luận).",
+      "vi": "Thảo luận trên Hacker News (221 điểm, 42 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.89,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 221
   },
   "c30c38a613a77d25": {
     "id": "c30c38a613a77d25",
@@ -7741,41 +10702,6 @@
     "translate_attempts": {
       "vi": 1
     }
-  },
-  "b302cd56f6ec631a": {
-    "id": "b302cd56f6ec631a",
-    "url": "https://dev.to/annavi11arrea1/understanding-what-ai-just-created-in-the-500mph-landscape-1m52",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
-    },
-    "author": "Anna Villarreal",
-    "published_at": "2026-10-23T15:59:05Z",
-    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Understanding What AI just Created in the 500mph Landscape",
-      "vi": "Hiểu những gì AI vừa tạo ra trong bối cảnh vận tốc 500 dặm/giờ"
-    },
-    "summary": {
-      "en": "How to understand what AI wrote: For beginners! Avoid lack of dopamine, mental atrophy,",
-      "vi": "Làm thế nào để hiểu những gì AI đã viết: Dành cho người mới bắt đầu! Tránh tình trạng thiếu dopamin, teo tâm thần,"
-    },
-    "categories": [
-      "ai"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.87,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "hieu-nhung-gi-ai-vua-tao-ra-trong-boi-canh-van-toc-500-damgi-b302cd"
   },
   "0fa94f2e13af5ee4": {
     "id": "0fa94f2e13af5ee4",
@@ -8102,6 +11028,75 @@
     "translated": {
       "vi": "machine"
     }
+  },
+  "fe4697100c8e8c62": {
+    "id": "fe4697100c8e8c62",
+    "slug": "asahi-linux-progress-linux-73-fe4697",
+    "url": "https://asahilinux.org/2026/11/progress-report-7-3",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "ackyshake",
+    "published_at": "Sat, 07 Nov 2026 05:20:18 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Asahi Linux Progress Linux 7.3",
+      "vi": "Asahi Linux Progress Linux 7.3"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (175 điểm, 129 bình luận).",
+      "vi": "Thảo luận trên Hacker News (175 điểm, 129 bình luận)."
+    },
+    "categories": [
+      "linux",
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.85,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 175
+  },
+  "4714a96ad9d244f9": {
+    "id": "4714a96ad9d244f9",
+    "slug": "devvmdev-one-vm-for-every-project-4714a9",
+    "url": "https://devvm.dev/",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "luispa",
+    "published_at": "Fri, 06 Nov 2026 17:30:22 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Devvm.dev: One VM for every project",
+      "vi": "Devvm.dev: One VM for every project"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (156 điểm, 61 bình luận).",
+      "vi": "Thảo luận trên Hacker News (156 điểm, 61 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.84,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 156
   },
   "4189b4549c8cf284": {
     "id": "4189b4549c8cf284",
@@ -8696,6 +11691,109 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "241a49aed113e894": {
+    "id": "241a49aed113e894",
+    "slug": "lpt-always-mute-yourself-when-placed-on-hold-241a49",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xhuqgg/lpt_always_mute_yourself_when_placed_on_hold",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/upwork_silo",
+    "published_at": "2026-10-28T17:33:31+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Always mute yourself when placed on hold",
+      "vi": "Always mute yourself when placed on hold"
+    },
+    "summary": {
+      "en": "The other party can often hear you, even when they've placed you on hold.",
+      "vi": "The other party can often hear you, even when they've placed you on hold."
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "69af5f8a122011ad": {
+    "id": "69af5f8a122011ad",
+    "slug": "githubs-new-git-storage-architecture-69af5f",
+    "url": "https://github.blog/engineering/architecture-optimization/inside-githubs-new-git-storage-architecture",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "DAlperin",
+    "published_at": "Fri, 06 Nov 2026 19:24:21 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "GitHub's new Git storage architecture",
+      "vi": "GitHub's new Git storage architecture"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (147 điểm, 29 bình luận).",
+      "vi": "Thảo luận trên Hacker News (147 điểm, 29 bình luận)."
+    },
+    "categories": [
+      "dev",
+      "security"
+    ],
+    "tags": [
+      "git"
+    ],
+    "difficulty": "medium",
+    "score": 0.83,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 147
+  },
+  "9502c6b0945b033d": {
+    "id": "9502c6b0945b033d",
+    "slug": "lpt-if-you-have-a-friend-who-has-lost-their-spouse-make-an-e-9502c6",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xh4bok/lpt_if_you_have_a_friend_who_has_lost_their",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/a116jxb",
+    "published_at": "2026-10-27T20:47:41+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "If you have a friend who has lost their spouse, make an effort to console them on important dates such as their anniversary, the spouse's birthday, etc.",
+      "vi": "If you have a friend who has lost their spouse, make an effort to console them on important dates such as their anniversary, the spouse's birthday, etc."
+    },
+    "summary": {
+      "en": "My friend (51m) lost his wife (55f) last year after a brief illness. I remember speaking to him around the time of the one year anniversary of her death, and I could tell all through that period he was really struggling. I know this week would have been her 57th birthday so he's…",
+      "vi": "My friend (51m) lost his wife (55f) last year after a brief illness. I remember speaking to him around the time of the one year anniversary of her death, and I could tell all through that period he was really struggling. I know this week would have been her 57th birthday so he's…"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "3fc7476dc7642df8": {
     "id": "3fc7476dc7642df8",
     "slug": "show-hn-auto-dismiss-mac-os-allow-to-find-devices-on-local-n-3fc747",
@@ -8730,71 +11828,39 @@
     "translated": {},
     "hn_points": 138
   },
-  "241a49aed113e894": {
-    "id": "241a49aed113e894",
-    "slug": "lpt-always-mute-yourself-when-placed-on-hold-241a49",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xhuqgg/lpt_always_mute_yourself_when_placed_on_hold",
+  "b42d708d41086177": {
+    "id": "b42d708d41086177",
+    "slug": "realpage-rent-pricing-case-wraps-with-nearly-360m-to-renters-b42d70",
+    "url": "https://www.multifamilydive.com/news/realpage-rent-pricing-case-360m-renters/873553",
     "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "",
-      "kind": "tips",
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
       "content_type": "community"
     },
-    "author": "/u/upwork_silo",
-    "published_at": "2026-10-28T17:33:31+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "author": "raybb",
+    "published_at": "Fri, 06 Nov 2026 23:37:19 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Always mute yourself when placed on hold",
-      "vi": "Always mute yourself when placed on hold"
+      "en": "RealPage rent-pricing case wraps with nearly $360M to renters",
+      "vi": "RealPage rent-pricing case wraps with nearly $360M to renters"
     },
     "summary": {
-      "en": "The other party can often hear you, even when they've placed you on hold.",
-      "vi": "The other party can often hear you, even when they've placed you on hold."
+      "en": "Thảo luận trên Hacker News (127 điểm, 62 bình luận).",
+      "vi": "Thảo luận trên Hacker News (127 điểm, 62 bình luận)."
     },
     "categories": [
-      "general"
+      "security"
     ],
     "tags": [],
-    "difficulty": null,
-    "score": 0.83,
-    "howto": false,
+    "difficulty": "medium",
+    "score": 0.82,
+    "howto": true,
     "reading_time_min": 1,
-    "translated": {}
-  },
-  "9502c6b0945b033d": {
-    "id": "9502c6b0945b033d",
-    "slug": "lpt-if-you-have-a-friend-who-has-lost-their-spouse-make-an-e-9502c6",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xh4bok/lpt_if_you_have_a_friend_who_has_lost_their",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/a116jxb",
-    "published_at": "2026-10-27T20:47:41+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "If you have a friend who has lost their spouse, make an effort to console them on important dates such as their anniversary, the spouse's birthday, etc.",
-      "vi": "If you have a friend who has lost their spouse, make an effort to console them on important dates such as their anniversary, the spouse's birthday, etc."
-    },
-    "summary": {
-      "en": "My friend (51m) lost his wife (55f) last year after a brief illness. I remember speaking to him around the time of the one year anniversary of her death, and I could tell all through that period he was really struggling. I know this week would have been her 57th birthday so he's…",
-      "vi": "My friend (51m) lost his wife (55f) last year after a brief illness. I remember speaking to him around the time of the one year anniversary of her death, and I could tell all through that period he was really struggling. I know this week would have been her 57th birthday so he's…"
-    },
-    "categories": [
-      "general"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.83,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "hn_points": 127
   },
   "6353f89322ac67ed": {
     "id": "6353f89322ac67ed",
@@ -8831,38 +11897,39 @@
     "hidden": false,
     "slug": "tai-nghe-khong-day-cua-ban-co-ngay-het-han-nhung-cap-tai-ngh-6353f8"
   },
-  "33d256014ccf120b": {
-    "id": "33d256014ccf120b",
-    "slug": "lpt-use-the-name-you-want-in-your-signature-instead-of-your-33d256",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xh29vq/lpt_use_the_name_you_want_in_your_signature",
+  "7f1ae8a0ef661ee3": {
+    "id": "7f1ae8a0ef661ee3",
+    "slug": "restaurant-delivery-payment-skimming-campaign-7f1ae8",
+    "url": "https://www.infohawk.com/news/2026-11-05-scamwich-restaurant-skimming",
     "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "",
-      "kind": "tips",
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
       "content_type": "community"
     },
-    "author": "/u/deten",
-    "published_at": "2026-10-27T19:31:27+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "author": "fiej",
+    "published_at": "Fri, 06 Nov 2026 19:19:27 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Use the name you want in your signature instead of your formal name",
-      "vi": "Use the name you want in your signature instead of your formal name"
+      "en": "Restaurant Delivery Payment-Skimming Campaign",
+      "vi": "Restaurant Delivery Payment-Skimming Campaign"
     },
     "summary": {
-      "en": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…",
-      "vi": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…"
+      "en": "Thảo luận trên Hacker News (127 điểm, 62 bình luận).",
+      "vi": "Thảo luận trên Hacker News (127 điểm, 62 bình luận)."
     },
     "categories": [
-      "general"
+      "security"
     ],
     "tags": [],
-    "difficulty": null,
-    "score": 0.83,
-    "howto": false,
+    "difficulty": "medium",
+    "score": 0.82,
+    "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "hn_points": 127
   },
   "60d519cdefb3958d": {
     "id": "60d519cdefb3958d",
@@ -9186,6 +12253,40 @@
     },
     "hidden": false
   },
+  "f38a17de3acfd349": {
+    "id": "f38a17de3acfd349",
+    "slug": "i-toured-unitrees-factory-im-more-bullish-on-the-west-f38a17",
+    "url": "https://josef.cn/blog/unitree",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "josefchen",
+    "published_at": "Sat, 07 Nov 2026 01:05:16 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I toured Unitree's factory. I'm more bullish on the West",
+      "vi": "I toured Unitree's factory. I'm more bullish on the West"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (121 điểm, 84 bình luận).",
+      "vi": "Thảo luận trên Hacker News (121 điểm, 84 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.81,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 121
+  },
   "4f9a6a4a0665abf7": {
     "id": "4f9a6a4a0665abf7",
     "url": "https://www.omgubuntu.co.uk/2026/10/epic-confirm-fortnite-linux",
@@ -9255,6 +12356,39 @@
     },
     "hidden": false,
     "slug": "xay-dung-bo-dem-thoi-gian-thuc-hanh-ma-morse-trong-javascrip-8fb639"
+  },
+  "33d256014ccf120b": {
+    "id": "33d256014ccf120b",
+    "slug": "lpt-use-the-name-you-want-in-your-signature-instead-of-your-33d256",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xh29vq/lpt_use_the_name_you_want_in_your_signature",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/deten",
+    "published_at": "2026-10-27T19:31:27+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Use the name you want in your signature instead of your formal name",
+      "vi": "Use the name you want in your signature instead of your formal name"
+    },
+    "summary": {
+      "en": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…",
+      "vi": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "c55a4eec3fa5eaad": {
     "id": "c55a4eec3fa5eaad",
@@ -9789,6 +12923,40 @@
     "translated": {},
     "hn_points": 110
   },
+  "d482c20de9cd112d": {
+    "id": "d482c20de9cd112d",
+    "slug": "a-barbarian-tribes-mythic-origin-story-is-true-ancient-dna-r-d482c2",
+    "url": "https://www.science.org/content/article/barbarian-tribe-s-mythic-origin-story-true-ancient-dna-reveals",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "benbreen",
+    "published_at": "Sat, 07 Nov 2026 04:54:36 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "A barbarian tribe's mythic origin story is true, ancient DNA reveals",
+      "vi": "A barbarian tribe's mythic origin story is true, ancient DNA reveals"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (103 điểm, 62 bình luận).",
+      "vi": "Thảo luận trên Hacker News (103 điểm, 62 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.8,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 103
+  },
   "7b15ec4f543529d7": {
     "id": "7b15ec4f543529d7",
     "url": "https://www.androidauthority.com/oura-ring-4-sync-bug-3729281",
@@ -9964,42 +13132,39 @@
     "hidden": false,
     "slug": "toi-da-xay-dung-thu-vien-nhac-lossless-khong-can-dang-ky-ban-024e8d"
   },
-  "d78bc6b547af3975": {
-    "id": "d78bc6b547af3975",
-    "url": "https://dev.to/neorhapsody/detect-a-websites-tech-stack-from-headers-html-and-cookies-js-python-4fkc",
+  "a2e585ed9b09bee3": {
+    "id": "a2e585ed9b09bee3",
+    "slug": "chomsky-and-the-two-cultures-of-statistical-learning-2011-a2e585",
+    "url": "https://www.norvig.com/chomsky.html",
     "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips"
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
     },
-    "author": "Fikri Marhan",
-    "published_at": "2026-10-29T02:22:07Z",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "andsoitis",
+    "published_at": "Fri, 06 Nov 2026 08:18:36 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Detect a website's tech stack from headers, HTML and cookies (JS + Python)",
-      "vi": "Phát hiện ngăn xếp công nghệ của trang web từ tiêu đề, HTML và cookie (JS + Python)"
+      "en": "Chomsky and the two cultures of statistical learning (2011)",
+      "vi": "Chomsky and the two cultures of statistical learning (2011)"
     },
     "summary": {
-      "en": "Find a website's CMS, framework, analytics and hosting from one HTTP request. Learn the five clues, their limits, and two short scripts in Node and Python with no dependencies.",
-      "vi": "Tìm CMS, khung, phân tích và lưu trữ của trang web từ một yêu cầu HTTP. Tìm hiểu năm manh mối, giới hạn của chúng và hai tập lệnh ngắn trong Node và Python mà không cần phụ thuộc."
+      "en": "Thảo luận trên Hacker News (127 điểm, 102 bình luận).",
+      "vi": "Thảo luận trên Hacker News (127 điểm, 102 bình luận)."
     },
     "categories": [
-      "dev"
+      "security"
     ],
-    "tags": [
-      "python"
-    ],
-    "difficulty": null,
-    "score": 0.74,
-    "howto": false,
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.75,
+    "howto": true,
     "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "phat-hien-ngan-xep-cong-nghe-cua-trang-web-tu-tieu-de-html-v-d78bc6"
+    "translated": {},
+    "hn_points": 127
   },
   "10ef57b720dca9c5": {
     "id": "10ef57b720dca9c5",
@@ -10071,26 +13236,26 @@
     "hidden": false,
     "slug": "ikea-co-cach-mua-do-noi-that-tot-hon-la-cuon-trang-san-pham-0f61e1"
   },
-  "4a466fb18b4efea7": {
-    "id": "4a466fb18b4efea7",
-    "url": "https://dev.to/akhourianmolkumar/are-you-a-python-developer-or-a-python-expert-7-tests-i-failed-building-3-desktop-apps-2fp4",
+  "d78bc6b547af3975": {
+    "id": "d78bc6b547af3975",
+    "url": "https://dev.to/neorhapsody/detect-a-websites-tech-stack-from-headers-html-and-cookies-js-python-4fkc",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
       "site_url": "https://dev.to",
       "kind": "tips"
     },
-    "author": "Akhouri Anmol Kumar",
-    "published_at": "2026-10-28T10:13:29Z",
+    "author": "Fikri Marhan",
+    "published_at": "2026-10-29T02:22:07Z",
     "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Are You a Python Developer or a Python Expert? 7 Tests I Failed Building 3 Desktop Apps",
-      "vi": "Bạn là Nhà phát triển Python hay Chuyên gia Python? 7 thử nghiệm tôi đã thất bại khi xây dựng 3 ứng dụng dành cho máy tính để bàn"
+      "en": "Detect a website's tech stack from headers, HTML and cookies (JS + Python)",
+      "vi": "Phát hiện ngăn xếp công nghệ của trang web từ tiêu đề, HTML và cookie (JS + Python)"
     },
     "summary": {
-      "en": "Description: Python security, screen capture, spring physics, HiDPI and PyInstaller .exe gotchas. 7",
-      "vi": "Mô tả: Bảo mật Python, chụp màn hình, vật lý mùa xuân, các vấn đề về HiDPI và PyInstaller .exe. 7"
+      "en": "Find a website's CMS, framework, analytics and hosting from one HTTP request. Learn the five clues, their limits, and two short scripts in Node and Python with no dependencies.",
+      "vi": "Tìm CMS, khung, phân tích và lưu trữ của trang web từ một yêu cầu HTTP. Tìm hiểu năm manh mối, giới hạn của chúng và hai tập lệnh ngắn trong Node và Python mà không cần phụ thuộc."
     },
     "categories": [
       "dev"
@@ -10106,7 +13271,7 @@
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "ban-la-nha-phat-trien-python-hay-chuyen-gia-python-7-thu-ngh-4a466f"
+    "slug": "phat-hien-ngan-xep-cong-nghe-cua-trang-web-tu-tieu-de-html-v-d78bc6"
   },
   "51f8dcdc7f9b270d": {
     "id": "51f8dcdc7f9b270d",
@@ -10179,31 +13344,33 @@
     "hidden": false,
     "slug": "toi-da-biet-duoc-tinh-nang-dat-lai-pc-nay-thuc-su-co-trong-w-8099aa"
   },
-  "c60bf0ed12d07979": {
-    "id": "c60bf0ed12d07979",
-    "url": "https://dev.to/amananandrai/101-indian-monuments-modelled-in-the-browser-g4f",
+  "4a466fb18b4efea7": {
+    "id": "4a466fb18b4efea7",
+    "url": "https://dev.to/akhourianmolkumar/are-you-a-python-developer-or-a-python-expert-7-tests-i-failed-building-3-desktop-apps-2fp4",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
       "site_url": "https://dev.to",
       "kind": "tips"
     },
-    "author": "amananandrai",
-    "published_at": "2026-10-28T00:39:09Z",
-    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "author": "Akhouri Anmol Kumar",
+    "published_at": "2026-10-28T10:13:29Z",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "From Code to Culture: Building 101 Indian Monuments in 3D",
-      "vi": "Từ mật mã đến văn hóa: Xây dựng 101 di tích Ấn Độ dưới dạng 3D"
+      "en": "Are You a Python Developer or a Python Expert? 7 Tests I Failed Building 3 Desktop Apps",
+      "vi": "Bạn là Nhà phát triển Python hay Chuyên gia Python? 7 thử nghiệm tôi đã thất bại khi xây dựng 3 ứng dụng dành cho máy tính để bàn"
     },
     "summary": {
-      "en": "101 Indian Monuments, Modelled in the Browser India's heritage has always fascinated me.",
-      "vi": "101 di tích của Ấn Độ, được mô phỏng trong trình duyệt Di sản của Ấn Độ luôn mê hoặc tôi."
+      "en": "Description: Python security, screen capture, spring physics, HiDPI and PyInstaller .exe gotchas. 7",
+      "vi": "Mô tả: Bảo mật Python, chụp màn hình, vật lý mùa xuân, các vấn đề về HiDPI và PyInstaller .exe. 7"
     },
     "categories": [
       "dev"
     ],
-    "tags": [],
+    "tags": [
+      "python"
+    ],
     "difficulty": null,
     "score": 0.74,
     "howto": false,
@@ -10212,7 +13379,7 @@
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "tu-mat-ma-den-van-hoa-xay-dung-101-di-tich-an-do-duoi-dang-3-c60bf0"
+    "slug": "ban-la-nha-phat-trien-python-hay-chuyen-gia-python-7-thu-ngh-4a466f"
   },
   "e3b74b75e702204f": {
     "id": "e3b74b75e702204f",
@@ -10248,6 +13415,41 @@
     },
     "hidden": false,
     "slug": "bay-gio-toi-thuc-hien-hau-het-moi-cong-viec-pdf-kho-chiu-tre-e3b74b"
+  },
+  "c60bf0ed12d07979": {
+    "id": "c60bf0ed12d07979",
+    "url": "https://dev.to/amananandrai/101-indian-monuments-modelled-in-the-browser-g4f",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips"
+    },
+    "author": "amananandrai",
+    "published_at": "2026-10-28T00:39:09Z",
+    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "From Code to Culture: Building 101 Indian Monuments in 3D",
+      "vi": "Từ mật mã đến văn hóa: Xây dựng 101 di tích Ấn Độ dưới dạng 3D"
+    },
+    "summary": {
+      "en": "101 Indian Monuments, Modelled in the Browser India's heritage has always fascinated me.",
+      "vi": "101 di tích của Ấn Độ, được mô phỏng trong trình duyệt Di sản của Ấn Độ luôn mê hoặc tôi."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.74,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "tu-mat-ma-den-van-hoa-xay-dung-101-di-tich-an-do-duoi-dang-3-c60bf0"
   },
   "f73f11092849b85a": {
     "id": "f73f11092849b85a",
@@ -10422,6 +13624,42 @@
     "difficulty": "medium",
     "score": 0.74,
     "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "e32cca0294a7a503": {
+    "id": "e32cca0294a7a503",
+    "slug": "claude-code-ignoring-claudemd-see-whats-in-its-context-e32cca",
+    "url": "https://dev.to/reporails/claude-code-ignoring-claudemd-see-whats-in-its-context-3j8m",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": " Gábor Mészáros",
+    "published_at": "2026-11-05T17:44:23Z",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Claude Code Ignoring CLAUDE.md? See What's in Its Context",
+      "vi": "Claude Code Ignoring CLAUDE.md? See What's in Its Context"
+    },
+    "summary": {
+      "en": "When Claude Code ignores a rule, the usual move is to reword it. Start with the verb, use backticks",
+      "vi": "When Claude Code ignores a rule, the usual move is to reword it. Start with the verb, use backticks"
+    },
+    "categories": [
+      "ai",
+      "dev"
+    ],
+    "tags": [
+      "claude"
+    ],
+    "difficulty": null,
+    "score": 0.74,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {}
   },
@@ -10882,6 +14120,39 @@
     "hidden": false,
     "slug": "vi-sao-can-khoi-dong-lai-dien-thoai-sau-moi-lan-cap-nhat-e3c439"
   },
+  "85711c69d6ebafbd": {
+    "id": "85711c69d6ebafbd",
+    "slug": "are-you-a-web-developer-or-a-browser-expert-7-tests-i-failed-85711c",
+    "url": "https://dev.to/akhourianmolkumar/are-you-a-web-developer-or-a-browser-expert-7-tests-i-failed-building-a-photo-editor-that-never-2j97",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "Akhouri Anmol Kumar",
+    "published_at": "2026-11-01T05:18:13Z",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Are You a Web Developer or a Browser Expert? 7 Tests I Failed Building a Photo Editor That Never Uploads Your Photos",
+      "vi": "Are You a Web Developer or a Browser Expert? 7 Tests I Failed Building a Photo Editor That Never Uploads Your Photos"
+    },
+    "summary": {
+      "en": "Description: On-device AI, WASM threads, target-size compression, inpainting and 3D LUTs in",
+      "vi": "Description: On-device AI, WASM threads, target-size compression, inpainting and 3D LUTs in"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.67,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "abd68cdbf75b09c1": {
     "id": "abd68cdbf75b09c1",
     "slug": "cuis-the-modern-smalltalk-80-abd68c",
@@ -11024,6 +14295,40 @@
     "reading_time_min": 1,
     "translated": {},
     "hn_points": 107
+  },
+  "240180ffb53ab6d5": {
+    "id": "240180ffb53ab6d5",
+    "slug": "greece-has-its-own-pompeii-thera-buried-akrotiri-in-ash-17th-240180",
+    "url": "https://www.smithsonianmag.com/history/greece-has-its-own-pompeii-and-the-ruins-tell-a-captivating-story-of-a-sophisticated-seafaring-bronze-age-society-180989747",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "derbOac",
+    "published_at": "Wed, 04 Nov 2026 02:19:16 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Greece has its own Pompeii: Thera buried Akrotiri in ash 17th-16th century BCE",
+      "vi": "Greece has its own Pompeii: Thera buried Akrotiri in ash 17th-16th century BCE"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (105 điểm, 8 bình luận).",
+      "vi": "Thảo luận trên Hacker News (105 điểm, 8 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.64,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 105
   },
   "f92547e7125a4981": {
     "id": "f92547e7125a4981",
