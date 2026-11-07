@@ -178,7 +178,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "eaa9608067068667": {
@@ -216,7 +216,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "7b5ed5dd303b816a": {
@@ -257,7 +257,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "009d89703dd91abd": {
@@ -297,7 +297,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "a7d61d970df6ec9b": {
@@ -335,7 +335,7 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 2
+      "en": 3
     }
   },
   "73d60418285cd4ad": {
@@ -375,7 +375,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "8304ef5f4f46473a": {
@@ -414,7 +414,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "86f92144e20a5795": {
@@ -455,7 +455,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "d0a47609c09c06f2": {
@@ -495,7 +495,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "62df8fdc1d26d162": {
@@ -533,7 +533,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "f518388722c49905": {
@@ -572,7 +572,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "0adec608c081b3fb": {
@@ -612,7 +612,7 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 1
+      "en": 2
     }
   },
   "178d633cd4c6cbe4": {
@@ -651,7 +651,7 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 1
+      "en": 2
     }
   },
   "c1f69c982811cd7e": {
@@ -689,7 +689,45 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
+    }
+  },
+  "c4e1d1b246a1f699": {
+    "id": "c4e1d1b246a1f699",
+    "slug": "cach-dung-ai-tim-bang-chung-khoa-hoc-truoc-khi-viet-khoa-lua-c4e1d1",
+    "url": "https://tuoitre.vn/cach-dung-ai-tim-bang-chung-khoa-hoc-truoc-khi-viet-khoa-luan-100261107145906296.htm",
+    "source": {
+      "id": "tuoitre-nsso",
+      "name": "Tu?i Tr? Nh?p s?ng s?",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "TRỌNG NHÂN",
+    "published_at": "11/7/2026 4:06:00 PM",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Cách dùng AI tìm bằng chứng khoa học trước khi viết khóa luận",
+      "en": "Cách dùng AI tìm bằng chứng khoa học trước khi viết khóa luận"
+    },
+    "summary": {
+      "vi": "Câu 'nhiều nghiên cứu đã chứng minh' xuất hiện rất thường xuyên trong khóa luận, luận văn, thậm chí trong bài báo đại chúng. Không ít trường hợp người viết chưa từng thấy các nghiên cứu ấy.",
+      "en": "Câu 'nhiều nghiên cứu đã chứng minh' xuất hiện rất thường xuyên trong khóa luận, luận văn, thậm chí trong bài báo đại chúng. Không ít trường hợp người viết chưa từng thấy các nghiên cứu ấy."
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": false
+    },
+    "translate_attempts": {
+      "en": 1
     }
   },
   "2ba7b82c031be6d1": {
@@ -727,7 +765,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "41552834405f0066": {
@@ -765,7 +803,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "79d509c9c75856f8": {
@@ -804,7 +842,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "739c9f9103673d3c": {
@@ -884,7 +922,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "494dec1bba8b15b8": {
@@ -1136,7 +1174,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "0b58bfa85dcc8db3": {
@@ -1174,7 +1212,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "bc17b8a3d859c596": {
@@ -1214,7 +1252,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "803a1f71a44e1479": {
@@ -1252,7 +1290,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "4a41deae68542d95": {
@@ -1290,7 +1328,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "cf67ea80814ef9cb": {
@@ -1328,7 +1366,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "b013cda695e92f7d": {
@@ -1368,7 +1406,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "be862286aeb98279": {
@@ -1406,7 +1444,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "52e0623fab799a21": {
@@ -1434,6 +1472,83 @@
     },
     "categories": [
       "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 2
+    }
+  },
+  "5c065ab090712d1e": {
+    "id": "5c065ab090712d1e",
+    "slug": "apple-work-mac-admins-are-shipping-ai-written-code-with-mist-5c065a",
+    "url": "https://9to5mac.com/2026/11/07/mac-admins-are-shipping-ai-written-code-in-seconds-but-undoing-them-is-taking-days",
+    "source": {
+      "id": "9to5mac",
+      "name": "9to5Mac",
+      "site_url": "https://9to5mac.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Bradley C",
+    "published_at": "Sat, 07 Nov 2026 14:06:00 +0000",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Apple @ Work: Mac admins are shipping AI-written code with mistakes, but fixing the problems is taking days",
+      "vi": "Apple @ Work: Mac admins are shipping AI-written code with mistakes, but fixing the problems is taking days"
+    },
+    "summary": {
+      "en": "Apple @ Work is exclusively brought to you by Mosyle , the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional grade platform all the solutions necessary to seamlessly and automatically deploy, manage, and protect Apple devices at…",
+      "vi": "Apple @ Work is exclusively brought to you by Mosyle , the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional grade platform all the solutions necessary to seamlessly and automatically deploy, manage, and protect Apple devices at…"
+    },
+    "categories": [
+      "macos",
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "66f45ac4e630afea": {
+    "id": "66f45ac4e630afea",
+    "slug": "zelda-is-back-and-better-than-ever-66f45a",
+    "url": "https://www.theverge.com/tech/1028930/zelda-ocarina-godzilla-minus-zero-affinity-installer",
+    "source": {
+      "id": "theverge",
+      "name": "The Verge",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "David Pierce",
+    "published_at": "2026-11-07T08:49:01-05:00",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Zelda is back and better than ever",
+      "vi": "Zelda is back and better than ever"
+    },
+    "summary": {
+      "en": "Hi, friends! Welcome to Installer No. 151, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, get psyched because it's officially Bad Holiday Movie Season, and also you can read all the old editions at the Installer homepage.) This week, I've…",
+      "vi": "Hi, friends! Welcome to Installer No. 151, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, get psyched because it's officially Bad Holiday Movie Season, and also you can read all the old editions at the Installer homepage.) This week, I've…"
+    },
+    "categories": [
+      "hardware"
     ],
     "tags": [],
     "difficulty": "medium",
@@ -2203,6 +2318,72 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "6b876040a4ddb839": {
+    "id": "6b876040a4ddb839",
+    "slug": "hackers-pull-off-133-million-french-bank-heist-via-service-p-6b8760",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-pull-off-133-million-french-bank-heist-via-service-provider",
+    "source": {
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "site_url": "https://www.bleepingcomputer.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Bill Toulas",
+    "published_at": "Sat, 07 Nov 2026 10:25:35 -0500",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Hackers pull off $133 million French bank heist via service provider",
+      "vi": "Hackers pull off $133 million French bank heist via service provider"
+    },
+    "summary": {
+      "en": "French cooperative bank Crédit Mutuel Arkéa was targeted in a cyberattack that enabled fraudulent transactions of up to $133 million, forcing it to respond by suspending certain systems.v",
+      "vi": "French cooperative bank Crédit Mutuel Arkéa was targeted in a cyberattack that enabled fraudulent transactions of up to $133 million, forcing it to respond by suspending certain systems.v"
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "8879475e62b3793a": {
+    "id": "8879475e62b3793a",
+    "slug": "why-a-new-report-on-anthropic-automating-ai-development-is-a-887947",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1029126/anthropic-metr-report-accelerating-ai-development",
+    "source": {
+      "id": "theverge",
+      "name": "The Verge",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Robert Hart",
+    "published_at": "2026-11-07T07:30:00-05:00",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Why a new report on Anthropic automating AI development is alarming researchers",
+      "vi": "Why a new report on Anthropic automating AI development is alarming researchers"
+    },
+    "summary": {
+      "en": "Anthropic is using AI to build more powerful AI. And it appears to be working remarkably well, with the company's models improving roughly twice as quickly as a year ago, with little indication of slowing down. That's according to a new report published Thursday by the AI safety…",
+      "vi": "Anthropic is using AI to build more powerful AI. And it appears to be working remarkably well, with the company's models improving roughly twice as quickly as a year ago, with little indication of slowing down. That's according to a new report published Thursday by the AI safety…"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "604f9be9642ce51f": {
     "id": "604f9be9642ce51f",
     "url": "https://www.howtogeek.com/smartphone-might-be-better-running-local-llms-than-your-pc-mine-is",
@@ -2493,8 +2674,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 2,
-      "en": 2
+      "vi": 3,
+      "en": 3
     }
   },
   "5b2ce654e7eb0ce7": {
@@ -2535,8 +2716,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 2,
-      "en": 2
+      "vi": 3,
+      "en": 3
     }
   },
   "931358c4dc9a3cf5": {
@@ -2610,8 +2791,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 2,
-      "en": 2
+      "vi": 3,
+      "en": 3
     }
   },
   "2543684aa29e0bb5": {
@@ -2652,8 +2833,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 2,
-      "en": 2
+      "vi": 3,
+      "en": 3
     }
   },
   "c2329d895dabfaad": {
@@ -2728,8 +2909,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 2,
-      "en": 2
+      "vi": 3,
+      "en": 3
     }
   },
   "96a4eda8c3e40bf2": {
@@ -2770,8 +2951,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 2,
-      "en": 2
+      "vi": 3,
+      "en": 3
     }
   },
   "fc6dfb9997af6c01": {
@@ -2847,8 +3028,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 2,
-      "en": 2
+      "vi": 3,
+      "en": 3
     }
   },
   "5d6eaa54ca4f942e": {
@@ -2889,8 +3070,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 2,
-      "en": 2
+      "vi": 3,
+      "en": 3
     }
   },
   "6f35d28347aacf68": {
@@ -2967,8 +3148,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 2,
-      "en": 2
+      "vi": 3,
+      "en": 3
     }
   },
   "da2b06dcc8b19f64": {
@@ -3009,8 +3190,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 2,
-      "en": 2
+      "vi": 3,
+      "en": 3
     }
   },
   "513f9c14c838474f": {
@@ -3678,6 +3859,77 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "27c20eea9382a72f": {
+    "id": "27c20eea9382a72f",
+    "slug": "cool-x-wide-9991399-g99-720p-27c20e",
+    "url": "https://www.ithome.com/1/023/829.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 16:00:12 GMT",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "安卓阵营首款阔直板手机酷派 COOL X Wide 今日开售：999~1399 元，搭载联发科曦力 G99 芯片 + 720p 屏幕",
+      "vi": "安卓阵营首款阔直板手机酷派 COOL X Wide 今日开售：999~1399 元，搭载联发科曦力 G99 芯片 + 720p 屏幕",
+      "en": "安卓阵营首款阔直板手机酷派 COOL X Wide 今日开售：999~1399 元，搭载联发科曦力 G99 芯片 + 720p 屏幕"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 8 日消息，安卓阵营首款阔直板手机，也是酷派首款阔直板手机 Cool X Wide 今日正式开售。其中，8GB+128GB 版本 999 元，8GB+256GB 版本 1199 元，12GB+256GB 版本 1399 元。 这款新机搭载 6.38 英寸 16:10 屏幕，仅 720x1158 分辨率，还支持 90Hz 刷新率；有鎏白、岩黑、嫣红三种配色可选，机身尺寸为 150.3×94.5×8.95mm，后置 5000 万像素摄像头。 这款手机采用联发科曦力 G99 处理器，搭配 LPDDR4X 内存与 UFS 2.2 闪存，至高…",
+      "vi": "IT之家 11 月 8 日消息，安卓阵营首款阔直板手机，也是酷派首款阔直板手机 Cool X Wide 今日正式开售。其中，8GB+128GB 版本 999 元，8GB+256GB 版本 1199 元，12GB+256GB 版本 1399 元。 这款新机搭载 6.38 英寸 16:10 屏幕，仅 720x1158 分辨率，还支持 90Hz 刷新率；有鎏白、岩黑、嫣红三种配色可选，机身尺寸为 150.3×94.5×8.95mm，后置 5000 万像素摄像头。 这款手机采用联发科曦力 G99 处理器，搭配 LPDDR4X 内存与 UFS 2.2 闪存，至高…",
+      "en": "IT之家 11 月 8 日消息，安卓阵营首款阔直板手机，也是酷派首款阔直板手机 Cool X Wide 今日正式开售。其中，8GB+128GB 版本 999 元，8GB+256GB 版本 1199 元，12GB+256GB 版本 1399 元。 这款新机搭载 6.38 英寸 16:10 屏幕，仅 720x1158 分辨率，还支持 90Hz 刷新率；有鎏白、岩黑、嫣红三种配色可选，机身尺寸为 150.3×94.5×8.95mm，后置 5000 万像素摄像头。 这款手机采用联发科曦力 G99 处理器，搭配 LPDDR4X 内存与 UFS 2.2 闪存，至高…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "373ebc5f96bc9179": {
+    "id": "373ebc5f96bc9179",
+    "slug": "macbook-pro-harmonyos-6-373ebc",
+    "url": "https://www.ithome.com/1/023/828.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 15:40:44 GMT",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "又一梦幻组合实现：网友成功将苹果 MacBook Pro 刷入华为鸿蒙 HarmonyOS 6 系统",
+      "vi": "又一梦幻组合实现：网友成功将苹果 MacBook Pro 刷入华为鸿蒙 HarmonyOS 6 系统",
+      "en": "又一梦幻组合实现：网友成功将苹果 MacBook Pro 刷入华为鸿蒙 HarmonyOS 6 系统"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日消息，B站网友 @0x535A 发布视频，分享了自己的最新刷机成果 —— 为一台苹果 MacBook Pro 成功刷入了鸿蒙 HarmonyOS 6 系统， 实现在 Mac 物理机上把鸿蒙系统跑了起来 。 视频画面显示，这台苹果 MacBook Pro 刷入的是鸿蒙 HarmonyOS 6 系统，机型显示为华为擎云 L410，应用小窗、全屏等功能正常。网友表示， 还有很多问题没有解决，但嫁接 Linux 内核是非常好做法 。 据IT之家此前报道，今年 10 月，陆续有网友为第三方设备刷入了华为鸿蒙 HarmonyOS…",
+      "vi": "IT之家 11 月 7 日消息，B站网友 @0x535A 发布视频，分享了自己的最新刷机成果 —— 为一台苹果 MacBook Pro 成功刷入了鸿蒙 HarmonyOS 6 系统， 实现在 Mac 物理机上把鸿蒙系统跑了起来 。 视频画面显示，这台苹果 MacBook Pro 刷入的是鸿蒙 HarmonyOS 6 系统，机型显示为华为擎云 L410，应用小窗、全屏等功能正常。网友表示， 还有很多问题没有解决，但嫁接 Linux 内核是非常好做法 。 据IT之家此前报道，今年 10 月，陆续有网友为第三方设备刷入了华为鸿蒙 HarmonyOS…",
+      "en": "IT之家 11 月 7 日消息，B站网友 @0x535A 发布视频，分享了自己的最新刷机成果 —— 为一台苹果 MacBook Pro 成功刷入了鸿蒙 HarmonyOS 6 系统， 实现在 Mac 物理机上把鸿蒙系统跑了起来 。 视频画面显示，这台苹果 MacBook Pro 刷入的是鸿蒙 HarmonyOS 6 系统，机型显示为华为擎云 L410，应用小窗、全屏等功能正常。网友表示， 还有很多问题没有解决，但嫁接 Linux 内核是非常好做法 。 据IT之家此前报道，今年 10 月，陆续有网友为第三方设备刷入了华为鸿蒙 HarmonyOS…"
+    },
+    "categories": [
+      "macos",
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "6f7743a9465550a4": {
     "id": "6f7743a9465550a4",
     "url": "https://vnexpress.net/oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-5138064.html",
@@ -3712,6 +3964,76 @@
     },
     "hidden": false,
     "slug": "oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-6f7743"
+  },
+  "d5f9f62fd177ef88": {
+    "id": "d5f9f62fd177ef88",
+    "slug": "56-d5f9f6",
+    "url": "https://www.ithome.com/1/023/827.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 15:19:41 GMT",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "比亚迪超豪华行政旗舰轿车登场！仰望鼎曜行政版车长 5.6 米、续航破千公里",
+      "vi": "比亚迪超豪华行政旗舰轿车登场！仰望鼎曜行政版车长 5.6 米、续航破千公里",
+      "en": "比亚迪超豪华行政旗舰轿车登场！仰望鼎曜行政版车长 5.6 米、续航破千公里"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日现场消息，今晚，在阿布扎比，比亚迪旗下超豪华行政旗舰轿车 —— 仰望鼎曜迎来全球首秀。随后，官方公布了鼎曜行政版的具体配置信息。 IT之家从活动现场获悉，新车长宽高分别为 5600/2030/1590mm ，轴距更是达到了 3500mm。新车拥有鼎形前脸和鼎形钻切大灯，点阵式格栅内部 137 颗宝石随光影流转，甲骨文车标更是由 24K 真金打造，号称“鼎立东方，气韵自成”。 新车拥有首尾延展的 4.8 米贯穿式双腰线，并配备“中轴对开门”，前门开合角 80°，后门开合角 90°。…",
+      "vi": "IT之家 11 月 7 日现场消息，今晚，在阿布扎比，比亚迪旗下超豪华行政旗舰轿车 —— 仰望鼎曜迎来全球首秀。随后，官方公布了鼎曜行政版的具体配置信息。 IT之家从活动现场获悉，新车长宽高分别为 5600/2030/1590mm ，轴距更是达到了 3500mm。新车拥有鼎形前脸和鼎形钻切大灯，点阵式格栅内部 137 颗宝石随光影流转，甲骨文车标更是由 24K 真金打造，号称“鼎立东方，气韵自成”。 新车拥有首尾延展的 4.8 米贯穿式双腰线，并配备“中轴对开门”，前门开合角 80°，后门开合角 90°。…",
+      "en": "IT之家 11 月 7 日现场消息，今晚，在阿布扎比，比亚迪旗下超豪华行政旗舰轿车 —— 仰望鼎曜迎来全球首秀。随后，官方公布了鼎曜行政版的具体配置信息。 IT之家从活动现场获悉，新车长宽高分别为 5600/2030/1590mm ，轴距更是达到了 3500mm。新车拥有鼎形前脸和鼎形钻切大灯，点阵式格栅内部 137 颗宝石随光影流转，甲骨文车标更是由 24K 真金打造，号称“鼎立东方，气韵自成”。 新车拥有首尾延展的 4.8 米贯穿式双腰线，并配备“中轴对开门”，前门开合角 80°，后门开合角 90°。…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "f47a751167d12e19": {
+    "id": "f47a751167d12e19",
+    "slug": "tip-f47a75",
+    "url": "https://www.ithome.com/1/023/825.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 15:00:08 GMT",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "比亚迪仰望鼎曜「山河鼎韵」限量版轿车设计细节公布，拥有专属外观内饰「棕岩白玉」及高定配置",
+      "vi": "比亚迪仰望鼎曜「山河鼎韵」限量版轿车设计细节公布，拥有专属外观内饰「棕岩白玉」及高定配置",
+      "en": "比亚迪仰望鼎曜「山河鼎韵」限量版轿车设计细节公布，拥有专属外观内饰「棕岩白玉」及高定配置"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日现场消息，今晚，在阿布扎比，比亚迪旗下超豪华行政旗舰轿车 —— 仰望鼎曜迎来全球首秀。新车拥有东方底蕴与前沿科技，宣称“呈现超越寻常的旗舰豪华体验”。 仰望汽车官方刚刚公布了仰望鼎曜「山河鼎韵」限量版的设计细节， 该版本拥有专属外观内饰「棕岩白玉」及高定配置 ，宣称“展露动静皆圆融的东方气韵”。 IT之家已来到比亚迪仰望品牌海外首秀发布会现场，稍后将带来新车最新情报。目前，仰望鼎曜「山河鼎韵」限量版全球限量发售已开启， 定金 30 万元 。",
+      "vi": "IT之家 11 月 7 日现场消息，今晚，在阿布扎比，比亚迪旗下超豪华行政旗舰轿车 —— 仰望鼎曜迎来全球首秀。新车拥有东方底蕴与前沿科技，宣称“呈现超越寻常的旗舰豪华体验”。 仰望汽车官方刚刚公布了仰望鼎曜「山河鼎韵」限量版的设计细节， 该版本拥有专属外观内饰「棕岩白玉」及高定配置 ，宣称“展露动静皆圆融的东方气韵”。 IT之家已来到比亚迪仰望品牌海外首秀发布会现场，稍后将带来新车最新情报。目前，仰望鼎曜「山河鼎韵」限量版全球限量发售已开启， 定金 30 万元 。",
+      "en": "IT之家 11 月 7 日现场消息，今晚，在阿布扎比，比亚迪旗下超豪华行政旗舰轿车 —— 仰望鼎曜迎来全球首秀。新车拥有东方底蕴与前沿科技，宣称“呈现超越寻常的旗舰豪华体验”。 仰望汽车官方刚刚公布了仰望鼎曜「山河鼎韵」限量版的设计细节， 该版本拥有专属外观内饰「棕岩白玉」及高定配置 ，宣称“展露动静皆圆融的东方气韵”。 IT之家已来到比亚迪仰望品牌海外首秀发布会现场，稍后将带来新车最新情报。目前，仰望鼎曜「山河鼎韵」限量版全球限量发售已开启， 定金 30 万元 。"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "51ae3dcde8c253db": {
     "id": "51ae3dcde8c253db",
@@ -3751,6 +4073,80 @@
     "hidden": true,
     "slug": "ghostty-14-ra-mat-voi-nhieu-cai-tien-lon-51ae3d"
   },
+  "0386e52564ccd51b": {
+    "id": "0386e52564ccd51b",
+    "slug": "claude-max-anthropic-0386e5",
+    "url": "https://www.ithome.com/1/023/824.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 14:57:42 GMT",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "Claude Max 订阅套餐使用额度被指“虚标”，Anthropic 辩词未获法官采纳",
+      "vi": "Claude Max 订阅套餐使用额度被指“虚标”，Anthropic 辩词未获法官采纳",
+      "en": "Claude Max 订阅套餐使用额度被指“虚标”，Anthropic 辩词未获法官采纳"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日消息，美国联邦治安法官谢文辉（Alex Tse）裁定，Anthropic 必须继续应对 Claude Max 套餐使用额度涉嫌误导消费者的主要指控。据 Courthouse News 报道，谢文辉周五驳回了案件中的其他几项诉求。 Anthropic 宣传称，月费 100 美元 （IT之家注：现汇率约合 668.6 元人民币） 和 200 美元 （现汇率约合 1,337 元人民币） 的 Max 套餐，使用额度 分别是 Pro 套餐的 5 倍和 20 倍 。但今年 6 月提起诉讼的消费者指控，如果按整周计算，实际额度…",
+      "vi": "IT之家 11 月 7 日消息，美国联邦治安法官谢文辉（Alex Tse）裁定，Anthropic 必须继续应对 Claude Max 套餐使用额度涉嫌误导消费者的主要指控。据 Courthouse News 报道，谢文辉周五驳回了案件中的其他几项诉求。 Anthropic 宣传称，月费 100 美元 （IT之家注：现汇率约合 668.6 元人民币） 和 200 美元 （现汇率约合 1,337 元人民币） 的 Max 套餐，使用额度 分别是 Pro 套餐的 5 倍和 20 倍 。但今年 6 月提起诉讼的消费者指控，如果按整周计算，实际额度…",
+      "en": "IT之家 11 月 7 日消息，美国联邦治安法官谢文辉（Alex Tse）裁定，Anthropic 必须继续应对 Claude Max 套餐使用额度涉嫌误导消费者的主要指控。据 Courthouse News 报道，谢文辉周五驳回了案件中的其他几项诉求。 Anthropic 宣传称，月费 100 美元 （IT之家注：现汇率约合 668.6 元人民币） 和 200 美元 （现汇率约合 1,337 元人民币） 的 Max 套餐，使用额度 分别是 Pro 套餐的 5 倍和 20 倍 。但今年 6 月提起诉讼的消费者指控，如果按整周计算，实际额度…"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "claude"
+    ],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "4eb80af410bf8fe9": {
+    "id": "4eb80af410bf8fe9",
+    "slug": "github-git-5000-7200-4eb80a",
+    "url": "https://www.ithome.com/1/023/823.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 14:57:23 GMT",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "GitHub 推出新 Git 存储架构：内部测试单个代码仓库支持 5000 个智能体同时协作，每秒处理 7200 次推送",
+      "vi": "GitHub 推出新 Git 存储架构：内部测试单个代码仓库支持 5000 个智能体同时协作，每秒处理 7200 次推送",
+      "en": "GitHub 推出新 Git 存储架构：内部测试单个代码仓库支持 5000 个智能体同时协作，每秒处理 7200 次推送"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日消息，当地时间 11 月 5 日，GitHub 发布博文，称上周在 GitHub Universe 大会上，正式公布了全新的 Git 存储架构，代号“Rubicon”。 官方表示，该架构不仅具备每秒处理数千次写入的能力，还能实现读取按需水平扩展。经内部压力测试验证，新架构能够在保持极低读取延迟的同时， 支持单个代码仓库容纳 5000 个智能体（Agent）并发协作，并承受每秒高达 7200 次的代码推送 。 IT之家获悉，该架构目前已经开启 小范围定向内测（limited private preview） ，并计划于…",
+      "vi": "IT之家 11 月 7 日消息，当地时间 11 月 5 日，GitHub 发布博文，称上周在 GitHub Universe 大会上，正式公布了全新的 Git 存储架构，代号“Rubicon”。 官方表示，该架构不仅具备每秒处理数千次写入的能力，还能实现读取按需水平扩展。经内部压力测试验证，新架构能够在保持极低读取延迟的同时， 支持单个代码仓库容纳 5000 个智能体（Agent）并发协作，并承受每秒高达 7200 次的代码推送 。 IT之家获悉，该架构目前已经开启 小范围定向内测（limited private preview） ，并计划于…",
+      "en": "IT之家 11 月 7 日消息，当地时间 11 月 5 日，GitHub 发布博文，称上周在 GitHub Universe 大会上，正式公布了全新的 Git 存储架构，代号“Rubicon”。 官方表示，该架构不仅具备每秒处理数千次写入的能力，还能实现读取按需水平扩展。经内部压力测试验证，新架构能够在保持极低读取延迟的同时， 支持单个代码仓库容纳 5000 个智能体（Agent）并发协作，并承受每秒高达 7200 次的代码推送 。 IT之家获悉，该架构目前已经开启 小范围定向内测（limited private preview） ，并计划于…"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [
+      "git"
+    ],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "1c8f2197065ac11e": {
     "id": "1c8f2197065ac11e",
     "slug": "gelly-is-a-gtk-desktop-music-player-for-jellyfin-and-navidro-1c8f21",
@@ -3784,6 +4180,76 @@
     "translated": {
       "vi": "machine"
     }
+  },
+  "2b30d068a07bd43d": {
+    "id": "2b30d068a07bd43d",
+    "slug": "tip-2b30d0",
+    "url": "https://www.ithome.com/1/023/822.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 14:51:45 GMT",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "马斯克再次表白中国，称赞中国汽车工业水平高",
+      "vi": "马斯克再次表白中国，称赞中国汽车工业水平高",
+      "en": "马斯克再次表白中国，称赞中国汽车工业水平高"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日消息，据 RT今日俄罗斯 报道，当地时间 11 月 6 日，特斯拉 CEO 埃隆 · 马斯克接受投资者罗恩 · 巴伦采访时表示， 他热爱中国，并高度评价中国汽车工业的竞争力 。 “中国令人惊叹。顺便说一句， 我爱中国 。去那里旅行令人深受鼓舞，”马斯克在采访中说。他同时指出，在上海生产的特斯拉 Model Y 是中国最畅销的电动汽车，但强调实现这一成绩“并不容易”。 马斯克特别补充道：“ 中国汽车公司非常厉害。 ” 据IT之家此前报道，今年 9 月，马斯克接受了央视财经专访。当谈及 AI，他表示中国的 AI…",
+      "vi": "IT之家 11 月 7 日消息，据 RT今日俄罗斯 报道，当地时间 11 月 6 日，特斯拉 CEO 埃隆 · 马斯克接受投资者罗恩 · 巴伦采访时表示， 他热爱中国，并高度评价中国汽车工业的竞争力 。 “中国令人惊叹。顺便说一句， 我爱中国 。去那里旅行令人深受鼓舞，”马斯克在采访中说。他同时指出，在上海生产的特斯拉 Model Y 是中国最畅销的电动汽车，但强调实现这一成绩“并不容易”。 马斯克特别补充道：“ 中国汽车公司非常厉害。 ” 据IT之家此前报道，今年 9 月，马斯克接受了央视财经专访。当谈及 AI，他表示中国的 AI…",
+      "en": "IT之家 11 月 7 日消息，据 RT今日俄罗斯 报道，当地时间 11 月 6 日，特斯拉 CEO 埃隆 · 马斯克接受投资者罗恩 · 巴伦采访时表示， 他热爱中国，并高度评价中国汽车工业的竞争力 。 “中国令人惊叹。顺便说一句， 我爱中国 。去那里旅行令人深受鼓舞，”马斯克在采访中说。他同时指出，在上海生产的特斯拉 Model Y 是中国最畅销的电动汽车，但强调实现这一成绩“并不容易”。 马斯克特别补充道：“ 中国汽车公司非常厉害。 ” 据IT之家此前报道，今年 9 月，马斯克接受了央视财经专访。当谈及 AI，他表示中国的 AI…"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "bf686ba2d74ab87a": {
+    "id": "bf686ba2d74ab87a",
+    "slug": "tip-bf686b",
+    "url": "https://www.ithome.com/1/023/820.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 14:33:26 GMT",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "比亚迪仰望鼎曜超豪华行政旗舰轿车官图发布：对开车门带雨伞、四座布局后排设香槟杯座",
+      "vi": "比亚迪仰望鼎曜超豪华行政旗舰轿车官图发布：对开车门带雨伞、四座布局后排设香槟杯座",
+      "en": "比亚迪仰望鼎曜超豪华行政旗舰轿车官图发布：对开车门带雨伞、四座布局后排设香槟杯座"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日现场消息，今晚，在阿布扎比，比亚迪旗下超豪华行政旗舰轿车 —— 仰望鼎曜迎来全球首秀。新车拥有东方底蕴与前沿科技，宣称“呈现超越寻常的旗舰豪华体验”。 IT之家注意到，仰望汽车官方刚刚发布了仰望鼎曜的官图，展示了新车更多设计细节。画面显示，新车采用对开门设计，车门处暗藏有雨伞；车内为经典四座行政布局，扶手台处还设有香槟杯座。 IT之家已来到比亚迪仰望品牌海外首秀发布会现场，稍后将带来新车最新情报。",
+      "vi": "IT之家 11 月 7 日现场消息，今晚，在阿布扎比，比亚迪旗下超豪华行政旗舰轿车 —— 仰望鼎曜迎来全球首秀。新车拥有东方底蕴与前沿科技，宣称“呈现超越寻常的旗舰豪华体验”。 IT之家注意到，仰望汽车官方刚刚发布了仰望鼎曜的官图，展示了新车更多设计细节。画面显示，新车采用对开门设计，车门处暗藏有雨伞；车内为经典四座行政布局，扶手台处还设有香槟杯座。 IT之家已来到比亚迪仰望品牌海外首秀发布会现场，稍后将带来新车最新情报。",
+      "en": "IT之家 11 月 7 日现场消息，今晚，在阿布扎比，比亚迪旗下超豪华行政旗舰轿车 —— 仰望鼎曜迎来全球首秀。新车拥有东方底蕴与前沿科技，宣称“呈现超越寻常的旗舰豪华体验”。 IT之家注意到，仰望汽车官方刚刚发布了仰望鼎曜的官图，展示了新车更多设计细节。画面显示，新车采用对开门设计，车门处暗藏有雨伞；车内为经典四座行政布局，扶手台处还设有香槟杯座。 IT之家已来到比亚迪仰望品牌海外首秀发布会现场，稍后将带来新车最新情报。"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "e9337c15641891f4": {
     "id": "e9337c15641891f4",
@@ -3819,6 +4285,76 @@
     "translated": {
       "vi": "machine"
     }
+  },
+  "0e3c74ad88169176": {
+    "id": "0e3c74ad88169176",
+    "slug": "tiktok-0e3c74",
+    "url": "https://www.ithome.com/1/023/818.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 14:23:27 GMT",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "个性化推荐机制被欧盟初步判定违反《数字服务法》，TikTok 否认相关指控称调查结果失实",
+      "vi": "个性化推荐机制被欧盟初步判定违反《数字服务法》，TikTok 否认相关指控称调查结果失实",
+      "en": "个性化推荐机制被欧盟初步判定违反《数字服务法》，TikTok 否认相关指控称调查结果失实"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日消息，据美联社报道，欧盟初步调查结果显示，TikTok 违反了其《数字服务法》，称其算法向用户不间断推荐个性化视频流，其中包含欧盟认为可能损害心理健康与身材形象的内容。 欧盟委员会于当地时间周五表示，TikTok 必须更改其“为你推荐”（For You）信息流的算法设计，让用户在拒绝接收特定内容时拥有更多自主控制权。 监管机构表示，该平台未能评估其推荐机制如何诱使用户陷入危害身心健康的“兔子洞效应”（rabbit…",
+      "vi": "IT之家 11 月 7 日消息，据美联社报道，欧盟初步调查结果显示，TikTok 违反了其《数字服务法》，称其算法向用户不间断推荐个性化视频流，其中包含欧盟认为可能损害心理健康与身材形象的内容。 欧盟委员会于当地时间周五表示，TikTok 必须更改其“为你推荐”（For You）信息流的算法设计，让用户在拒绝接收特定内容时拥有更多自主控制权。 监管机构表示，该平台未能评估其推荐机制如何诱使用户陷入危害身心健康的“兔子洞效应”（rabbit…",
+      "en": "IT之家 11 月 7 日消息，据美联社报道，欧盟初步调查结果显示，TikTok 违反了其《数字服务法》，称其算法向用户不间断推荐个性化视频流，其中包含欧盟认为可能损害心理健康与身材形象的内容。 欧盟委员会于当地时间周五表示，TikTok 必须更改其“为你推荐”（For You）信息流的算法设计，让用户在拒绝接收特定内容时拥有更多自主控制权。 监管机构表示，该平台未能评估其推荐机制如何诱使用户陷入危害身心健康的“兔子洞效应”（rabbit…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "476424b9da5b7924": {
+    "id": "476424b9da5b7924",
+    "slug": "tip-476424",
+    "url": "https://www.ithome.com/1/023/817.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 07 Nov 2026 14:20:42 GMT",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "东方底蕴 + 前沿科技：比亚迪超豪华行政旗舰轿车“仰望鼎曜”全球首秀",
+      "vi": "东方底蕴 + 前沿科技：比亚迪超豪华行政旗舰轿车“仰望鼎曜”全球首秀",
+      "en": "东方底蕴 + 前沿科技：比亚迪超豪华行政旗舰轿车“仰望鼎曜”全球首秀"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日现场消息，今晚，在阿布扎比，比亚迪旗下超豪华行政旗舰轿车 —— 仰望鼎曜迎来全球首秀 。新车拥有东方底蕴与前沿科技，宣称“呈现超越寻常的旗舰豪华体验”。 据IT之家此前报道，预热信息显示，仰望鼎曜将采用对开门设计，并拥有近 90° 的宽大开合角度，为上下车带来更开阔的空间，也让进出座舱的姿态更加舒展。新车前脸采用点阵宝石格栅，宝石自上而下渐变排布，随着光线和角度的变化，折射出璀璨的火彩。 IT之家已来到比亚迪仰望品牌海外首秀发布会现场，稍后将带来新车最新情报。",
+      "vi": "IT之家 11 月 7 日现场消息，今晚，在阿布扎比，比亚迪旗下超豪华行政旗舰轿车 —— 仰望鼎曜迎来全球首秀 。新车拥有东方底蕴与前沿科技，宣称“呈现超越寻常的旗舰豪华体验”。 据IT之家此前报道，预热信息显示，仰望鼎曜将采用对开门设计，并拥有近 90° 的宽大开合角度，为上下车带来更开阔的空间，也让进出座舱的姿态更加舒展。新车前脸采用点阵宝石格栅，宝石自上而下渐变排布，随着光线和角度的变化，折射出璀璨的火彩。 IT之家已来到比亚迪仰望品牌海外首秀发布会现场，稍后将带来新车最新情报。",
+      "en": "IT之家 11 月 7 日现场消息，今晚，在阿布扎比，比亚迪旗下超豪华行政旗舰轿车 —— 仰望鼎曜迎来全球首秀 。新车拥有东方底蕴与前沿科技，宣称“呈现超越寻常的旗舰豪华体验”。 据IT之家此前报道，预热信息显示，仰望鼎曜将采用对开门设计，并拥有近 90° 的宽大开合角度，为上下车带来更开阔的空间，也让进出座舱的姿态更加舒展。新车前脸采用点阵宝石格栅，宝石自上而下渐变排布，随着光线和角度的变化，折射出璀璨的火彩。 IT之家已来到比亚迪仰望品牌海外首秀发布会现场，稍后将带来新车最新情报。"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "66fcad3f7dcd0a0d": {
     "id": "66fcad3f7dcd0a0d",
@@ -5930,6 +6466,39 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "449ca857f89317e8": {
+    "id": "449ca857f89317e8",
+    "slug": "ea-producer-found-20000-archival-media-assets-in-secret-phys-449ca8",
+    "url": "https://www.tomshardware.com/video-games/retro-gaming/ea-producer-found-20-000-archival-media-assets-in-secret-physical-vault-at-its-hq-betacam-vhs-and-d1-tapes-among-6000-assets-digitized-to-remaster-seven-classic-games",
+    "source": {
+      "id": "tomshardware",
+      "name": "Tom's Hardware",
+      "site_url": "https://www.tomshardware.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Jowi Morales",
+    "published_at": "Sat, 07 Nov 2026 11:30:00 +0000",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "EA producer found 20,000 archival media assets in secret physical vault at its HQ",
+      "vi": "EA producer found 20,000 archival media assets in secret physical vault at its HQ"
+    },
+    "summary": {
+      "en": "The discovery of thousands of archival media assets led to the creation of Anniversary Editions of some classic titles.",
+      "vi": "The discovery of thousands of archival media assets led to the creation of Anniversary Editions of some classic titles."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.09,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "bd9ce4e0e37eb114": {
     "id": "bd9ce4e0e37eb114",
     "url": "https://www.omgubuntu.co.uk/2026/10/ubuntu-core-desktop-2704",
@@ -7100,6 +7669,40 @@
     "translated": {},
     "hn_points": 1011
   },
+  "822aa1f84e507d81": {
+    "id": "822aa1f84e507d81",
+    "slug": "need-for-speed-underground-2-online-in-the-browser-822aa1",
+    "url": "https://nfsu2.xyz/",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "fluxusars",
+    "published_at": "Sat, 07 Nov 2026 09:36:36 +0000",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Need for Speed Underground 2 online in the browser",
+      "vi": "Need for Speed Underground 2 online in the browser"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (449 điểm, 142 bình luận).",
+      "vi": "Thảo luận trên Hacker News (449 điểm, 142 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.03,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 449
+  },
   "90394dc6b4d3586f": {
     "id": "90394dc6b4d3586f",
     "slug": "10-of-the-most-iconic-patrick-stewart-roles-beyond-captain-p-90394d",
@@ -7373,6 +7976,40 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {}
+  },
+  "5ec03af4da1d836d": {
+    "id": "5ec03af4da1d836d",
+    "slug": "every-mac-comes-with-an-undocumented-family-member-classifie-5ec03a",
+    "url": "https://8rank.ai/game/apple-intelligence-personal-knowledge-graph",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "infwhispers",
+    "published_at": "Sat, 07 Nov 2026 09:46:03 +0000",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Every Mac comes with an (undocumented) family member classifier",
+      "vi": "Every Mac comes with an (undocumented) family member classifier"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (387 điểm, 222 bình luận).",
+      "vi": "Thảo luận trên Hacker News (387 điểm, 222 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.02,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 387
   },
   "435a65697245038d": {
     "id": "435a65697245038d",
@@ -10630,6 +11267,41 @@
     "hidden": false,
     "slug": "hieu-nhung-gi-ai-vua-tao-ra-trong-boi-canh-van-toc-500-damgi-b302cd"
   },
+  "54de57d72b3bc6f8": {
+    "id": "54de57d72b3bc6f8",
+    "slug": "upload-your-ram-54de57",
+    "url": "https://uploadyourram.org/",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "susanthenerd",
+    "published_at": "Sat, 07 Nov 2026 10:15:26 +0000",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Upload Your RAM",
+      "vi": "Upload Your RAM"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (236 điểm, 220 bình luận).",
+      "vi": "Thảo luận trên Hacker News (236 điểm, 220 bình luận)."
+    },
+    "categories": [
+      "hardware",
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.9,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 236
+  },
   "20c1278149bb3591": {
     "id": "20c1278149bb3591",
     "slug": "first-steps-in-bare-metal-programming-using-uefi-20c127",
@@ -10663,6 +11335,41 @@
     "reading_time_min": 1,
     "translated": {},
     "hn_points": 221
+  },
+  "0fa94f2e13af5ee4": {
+    "id": "0fa94f2e13af5ee4",
+    "url": "https://linuxhandbook.com/newsletter/26-13",
+    "source": {
+      "id": "linuxhandbook",
+      "name": "Linux Handbook",
+      "site_url": "https://linuxhandbook.com",
+      "kind": "tips"
+    },
+    "author": "Abhishek Prakash",
+    "published_at": "Fri, 18 Sep 2026 18:17:47 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LHB Linux Digest #26.13: Know Your File, File-based Workspace Certifications and More",
+      "vi": "LHB Linux Digest #26.13: Biết tệp của bạn, Chứng chỉ không gian làm việc dựa trên tệp và hơn thế nữa"
+    },
+    "summary": {
+      "en": "Sometimes the fastest fix is just asking the right question first.",
+      "vi": "Đôi khi cách khắc phục nhanh nhất chỉ là đặt câu hỏi đúng trước."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.87,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "lhb-linux-digest-2613-biet-tep-cua-ban-chung-chi-khong-gian-0fa94f"
   },
   "c30c38a613a77d25": {
     "id": "c30c38a613a77d25",
@@ -10703,41 +11410,6 @@
       "vi": 1
     }
   },
-  "0fa94f2e13af5ee4": {
-    "id": "0fa94f2e13af5ee4",
-    "url": "https://linuxhandbook.com/newsletter/26-13",
-    "source": {
-      "id": "linuxhandbook",
-      "name": "Linux Handbook",
-      "site_url": "https://linuxhandbook.com",
-      "kind": "tips"
-    },
-    "author": "Abhishek Prakash",
-    "published_at": "Fri, 18 Sep 2026 18:17:47 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "LHB Linux Digest #26.13: Know Your File, File-based Workspace Certifications and More",
-      "vi": "LHB Linux Digest #26.13: Biết tệp của bạn, Chứng chỉ không gian làm việc dựa trên tệp và hơn thế nữa"
-    },
-    "summary": {
-      "en": "Sometimes the fastest fix is just asking the right question first.",
-      "vi": "Đôi khi cách khắc phục nhanh nhất chỉ là đặt câu hỏi đúng trước."
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.87,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "lhb-linux-digest-2613-biet-tep-cua-ban-chung-chi-khong-gian-0fa94f"
-  },
   "8fe99075dd919c4e": {
     "id": "8fe99075dd919c4e",
     "url": "https://linuxhandbook.com/courses/tmux/tmux-real-workflow",
@@ -10775,6 +11447,44 @@
     },
     "hidden": false,
     "slug": "chuong-8-xay-dung-quy-trinh-lam-viec-tmux-thuc-su-8fe990"
+  },
+  "a4e4d2d959650d53": {
+    "id": "a4e4d2d959650d53",
+    "url": "https://linuxhandbook.com/courses/tmux/tmux-copy-mode-2",
+    "source": {
+      "id": "linuxhandbook",
+      "name": "Linux Handbook",
+      "site_url": "https://linuxhandbook.com",
+      "kind": "tips"
+    },
+    "author": "Yash Kiran Patil",
+    "published_at": "Fri, 04 Sep 2026 16:39:43 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Chapter 7: Copy Mode - Scroll, Search and Copy Terminal Output",
+      "vi": "Chương 7: Chế độ sao chép - Cuộn, tìm kiếm và sao chép đầu ra thiết bị đầu cuối"
+    },
+    "summary": {
+      "en": "So far, you've learned how to organize your tmux workspace using sessions, windows, and panes. But there's one problem you'll run into very quickly. Your terminal can produce a lot of output. Maybe you're checking application logs. Maybe a command printed hundreds",
+      "vi": "Cho đến nay, bạn đã học cách tổ chức không gian làm việc tmux của mình bằng cách sử dụng phiên, cửa sổ và bảng. Nhưng có một vấn đề bạn sẽ nhanh chóng gặp phải. Thiết bị đầu cuối của bạn có thể tạo ra rất nhiều đầu ra. Có thể bạn đang kiểm tra nhật ký ứng dụng. Có lẽ một lệnh in hàng trăm"
+    },
+    "categories": [
+      "dev",
+      "windows"
+    ],
+    "tags": [
+      "terminal"
+    ],
+    "difficulty": "advanced",
+    "score": 0.87,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "chuong-7-che-do-sao-chep-cuon-tim-kiem-va-sao-chep-dau-ra-th-a4e4d2"
   },
   "f9b8a9efbf26f92e": {
     "id": "f9b8a9efbf26f92e",
@@ -10815,44 +11525,6 @@
       "vi": 1
     }
   },
-  "a4e4d2d959650d53": {
-    "id": "a4e4d2d959650d53",
-    "url": "https://linuxhandbook.com/courses/tmux/tmux-copy-mode-2",
-    "source": {
-      "id": "linuxhandbook",
-      "name": "Linux Handbook",
-      "site_url": "https://linuxhandbook.com",
-      "kind": "tips"
-    },
-    "author": "Yash Kiran Patil",
-    "published_at": "Fri, 04 Sep 2026 16:39:43 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Chapter 7: Copy Mode - Scroll, Search and Copy Terminal Output",
-      "vi": "Chương 7: Chế độ sao chép - Cuộn, tìm kiếm và sao chép đầu ra thiết bị đầu cuối"
-    },
-    "summary": {
-      "en": "So far, you've learned how to organize your tmux workspace using sessions, windows, and panes. But there's one problem you'll run into very quickly. Your terminal can produce a lot of output. Maybe you're checking application logs. Maybe a command printed hundreds",
-      "vi": "Cho đến nay, bạn đã học cách tổ chức không gian làm việc tmux của mình bằng cách sử dụng phiên, cửa sổ và bảng. Nhưng có một vấn đề bạn sẽ nhanh chóng gặp phải. Thiết bị đầu cuối của bạn có thể tạo ra rất nhiều đầu ra. Có thể bạn đang kiểm tra nhật ký ứng dụng. Có lẽ một lệnh in hàng trăm"
-    },
-    "categories": [
-      "dev",
-      "windows"
-    ],
-    "tags": [
-      "terminal"
-    ],
-    "difficulty": "advanced",
-    "score": 0.87,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "chuong-7-che-do-sao-chep-cuon-tim-kiem-va-sao-chep-dau-ra-th-a4e4d2"
-  },
   "790bba1903f6287d": {
     "id": "790bba1903f6287d",
     "url": "https://linuxhandbook.com/courses/tmux/tmux-panes",
@@ -10887,40 +11559,6 @@
     },
     "hidden": false,
     "slug": "chuong-6-cac-ngan-tach-dieu-huong-thay-doi-kich-thuoc-va-thu-790bba"
-  },
-  "c58cd229056d61a4": {
-    "id": "c58cd229056d61a4",
-    "slug": "its-the-memory-latency-stupid-c58cd2",
-    "url": "https://pivotlake.io/blog/its-the-memory-latency-stupid",
-    "source": {
-      "id": "hackernews",
-      "name": "Hacker News",
-      "site_url": "https://news.ycombinator.com",
-      "kind": "news",
-      "content_type": "community"
-    },
-    "author": "ntur1337",
-    "published_at": "Sat, 31 Oct 2026 18:38:16 +0000",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "It's the memory latency, stupid",
-      "vi": "It's the memory latency, stupid"
-    },
-    "summary": {
-      "en": "Thảo luận trên Hacker News (181 điểm, 53 bình luận).",
-      "vi": "Thảo luận trên Hacker News (181 điểm, 53 bình luận)."
-    },
-    "categories": [
-      "security"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.86,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "hn_points": 181
   },
   "f30f927ad9fb89ba": {
     "id": "f30f927ad9fb89ba",
@@ -10959,6 +11597,40 @@
     },
     "hidden": false,
     "slug": "chuong-5-windows-sap-xep-cong-viec-cua-ban-trong-mot-phien-f30f92"
+  },
+  "c58cd229056d61a4": {
+    "id": "c58cd229056d61a4",
+    "slug": "its-the-memory-latency-stupid-c58cd2",
+    "url": "https://pivotlake.io/blog/its-the-memory-latency-stupid",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "ntur1337",
+    "published_at": "Sat, 31 Oct 2026 18:38:16 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "It's the memory latency, stupid",
+      "vi": "It's the memory latency, stupid"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (181 điểm, 53 bình luận).",
+      "vi": "Thảo luận trên Hacker News (181 điểm, 53 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.86,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 181
   },
   "5ed54894df52864b": {
     "id": "5ed54894df52864b",
@@ -12287,6 +12959,40 @@
     "translated": {},
     "hn_points": 121
   },
+  "81e98a9f5568e303": {
+    "id": "81e98a9f5568e303",
+    "slug": "running-a-law-firm-on-free-software-81e98a",
+    "url": "https://decoded.legal/blog/2026/11/running-a-law-firm-on-free-software-2026-edition",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "DeepLogin",
+    "published_at": "Sat, 07 Nov 2026 09:39:06 +0000",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Running a law firm on Free software",
+      "vi": "Running a law firm on Free software"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (117 điểm, 54 bình luận).",
+      "vi": "Thảo luận trên Hacker News (117 điểm, 54 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.81,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 117
+  },
   "4f9a6a4a0665abf7": {
     "id": "4f9a6a4a0665abf7",
     "url": "https://www.omgubuntu.co.uk/2026/10/epic-confirm-fortnite-linux",
@@ -12322,6 +13028,73 @@
     "hidden": false,
     "slug": "trinh-khoi-chay-tro-choi-ma-hoa-rung-cam-moi-cua-epic-co-san-4f9a6a"
   },
+  "33d256014ccf120b": {
+    "id": "33d256014ccf120b",
+    "slug": "lpt-use-the-name-you-want-in-your-signature-instead-of-your-33d256",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xh29vq/lpt_use_the_name_you_want_in_your_signature",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/deten",
+    "published_at": "2026-10-27T19:31:27+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Use the name you want in your signature instead of your formal name",
+      "vi": "Use the name you want in your signature instead of your formal name"
+    },
+    "summary": {
+      "en": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…",
+      "vi": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "1bcbebc8cbf97a25": {
+    "id": "1bcbebc8cbf97a25",
+    "slug": "notes-on-san-marino-1bcbeb",
+    "url": "https://mattlakeman.org/2026/11/05/notes-on-san-marino",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "yorwba",
+    "published_at": "Fri, 06 Nov 2026 17:12:05 +0000",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Notes on San Marino",
+      "vi": "Notes on San Marino"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (115 điểm, 45 bình luận).",
+      "vi": "Thảo luận trên Hacker News (115 điểm, 45 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.81,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 115
+  },
   "8fb639d936f65def": {
     "id": "8fb639d936f65def",
     "url": "https://dev.to/morsezone/building-a-morse-code-practice-timer-in-javascript-timing-dits-dahs-and-gaps-39ol",
@@ -12356,39 +13129,6 @@
     },
     "hidden": false,
     "slug": "xay-dung-bo-dem-thoi-gian-thuc-hanh-ma-morse-trong-javascrip-8fb639"
-  },
-  "33d256014ccf120b": {
-    "id": "33d256014ccf120b",
-    "slug": "lpt-use-the-name-you-want-in-your-signature-instead-of-your-33d256",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xh29vq/lpt_use_the_name_you_want_in_your_signature",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/deten",
-    "published_at": "2026-10-27T19:31:27+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Use the name you want in your signature instead of your formal name",
-      "vi": "Use the name you want in your signature instead of your formal name"
-    },
-    "summary": {
-      "en": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…",
-      "vi": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…"
-    },
-    "categories": [
-      "general"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.83,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {}
   },
   "c55a4eec3fa5eaad": {
     "id": "c55a4eec3fa5eaad",
@@ -12991,6 +13731,40 @@
     },
     "hidden": false,
     "slug": "oura-xac-nhan-loi-dong-bo-hoa-ring-4-nhung-cach-khac-phuc-ra-7b15ec"
+  },
+  "594105e3c51985ed": {
+    "id": "594105e3c51985ed",
+    "slug": "the-components-of-agent-memory-594105",
+    "url": "https://www.anthropic.com/research/components-of-agent-memory",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "geoffbp",
+    "published_at": "Sat, 07 Nov 2026 06:39:04 +0000",
+    "fetched_at": "2026-11-07T16:54:03.975015+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "The Components of Agent Memory",
+      "vi": "The Components of Agent Memory"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (105 điểm, 60 bình luận).",
+      "vi": "Thảo luận trên Hacker News (105 điểm, 60 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.8,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 105
   },
   "7610ed52e391543d": {
     "id": "7610ed52e391543d",
