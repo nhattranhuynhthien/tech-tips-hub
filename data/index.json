@@ -375,7 +375,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "8304ef5f4f46473a": {
@@ -414,7 +414,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "86f92144e20a5795": {
@@ -455,7 +455,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "d0a47609c09c06f2": {
@@ -495,7 +495,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "62df8fdc1d26d162": {
@@ -533,7 +533,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "f518388722c49905": {
@@ -572,7 +572,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "0adec608c081b3fb": {
@@ -612,7 +612,7 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 2
+      "en": 3
     }
   },
   "178d633cd4c6cbe4": {
@@ -651,7 +651,7 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 2
+      "en": 3
     }
   },
   "c1f69c982811cd7e": {
@@ -689,7 +689,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "c4e1d1b246a1f699": {
@@ -720,6 +720,82 @@
     ],
     "tags": [],
     "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": false
+    },
+    "translate_attempts": {
+      "en": 2
+    }
+  },
+  "a7a4443eb612c81a": {
+    "id": "a7a4443eb612c81a",
+    "slug": "hate-chromium-well-theres-a-linux-desktop-based-on-it-now-a7a444",
+    "url": "https://feed.itsfoss.com/link/24361/17517784/domicile-desktop-overview",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "Sun, 08 Nov 2026 09:56:51 +0530",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Hate Chromium? Well, There’s a Linux Desktop Based on it Now",
+      "vi": "Hate Chromium? Well, There’s a Linux Desktop Based on it Now"
+    },
+    "summary": {
+      "en": "Domicile lets you build your desktop in React and CSS, with Manganese being included as the ready-made tiling option.",
+      "vi": "Domicile lets you build your desktop in React and CSS, with Manganese being included as the ready-made tiling option."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "8a43acce4b9913e2": {
+    "id": "8a43acce4b9913e2",
+    "slug": "cach-lay-lai-15gb-dung-luong-tren-iphone-8a43ac",
+    "url": "https://genk.vn/cach-lay-lai-15gb-dung-luong-tren-iphone-165261108005212893.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 08 Nov 2026 09:23:00 +07",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Cách lấy lại 15GB dung lượng trên iPhone",
+      "en": "Cách lấy lại 15GB dung lượng trên iPhone"
+    },
+    "summary": {
+      "vi": "Một thay đổi trong cài đặt có thể giúp người dùng iPhone lấy lại hàng chục GB bộ nhớ.",
+      "en": "Một thay đổi trong cài đặt có thể giúp người dùng iPhone lấy lại hàng chục GB bộ nhớ."
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": "easy",
     "score": 1.5,
     "howto": true,
     "reading_time_min": 1,
@@ -765,7 +841,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "41552834405f0066": {
@@ -803,7 +879,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "79d509c9c75856f8": {
@@ -842,7 +918,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "739c9f9103673d3c": {
@@ -1252,7 +1328,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "803a1f71a44e1479": {
@@ -1290,7 +1366,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "4a41deae68542d95": {
@@ -1328,7 +1404,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "cf67ea80814ef9cb": {
@@ -1366,7 +1442,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "b013cda695e92f7d": {
@@ -1406,7 +1482,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "be862286aeb98279": {
@@ -1444,7 +1520,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "52e0623fab799a21": {
@@ -1482,7 +1558,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "5c065ab090712d1e": {
@@ -1521,7 +1597,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "66f45ac4e630afea": {
@@ -1559,7 +1635,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "76d2c86df350a67e": {
@@ -1779,7 +1855,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "f0df3a7dc26fda5a": {
@@ -1894,7 +1970,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "9d52b0bab9b23d08": {
@@ -1928,7 +2004,12 @@
     "score": 1.3,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "5e2ec67fb5b13f35": {
     "id": "5e2ec67fb5b13f35",
@@ -1965,7 +2046,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "132e30491accd25f": {
@@ -1999,7 +2080,12 @@
     "score": 1.3,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "7e50ebb05b0da922": {
     "id": "7e50ebb05b0da922",
@@ -2383,6 +2469,44 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {}
+  },
+  "cbc470459f8e4735": {
+    "id": "cbc470459f8e4735",
+    "slug": "remove-your-personal-info-from-the-web-and-stop-it-coming-ba-cbc470",
+    "url": "https://9to5mac.com/2026/11/07/remove-your-personal-info-from-the-web-and-stop-it-coming-back",
+    "source": {
+      "id": "9to5mac",
+      "name": "9to5Mac",
+      "site_url": "https://9to5mac.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Sponsored Post",
+    "published_at": "Sat, 07 Nov 2026 17:00:00 +0000",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Remove your personal info from the web (and stop it coming back)",
+      "vi": "Remove your personal info from the web (and stop it coming back)"
+    },
+    "summary": {
+      "en": "It seems incredible that anyone can legally create a business which involves scraping your personal data from the web and then selling it, yet here we are. There are literally hundreds of data brokers doing just this. They also buy data from app developers, who use…",
+      "vi": "It seems incredible that anyone can legally create a business which involves scraping your personal data from the web and then selling it, yet here we are. There are literally hundreds of data brokers doing just this. They also buy data from app developers, who use…"
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "604f9be9642ce51f": {
     "id": "604f9be9642ce51f",
@@ -3074,41 +3198,47 @@
       "en": 3
     }
   },
-  "6f35d28347aacf68": {
-    "id": "6f35d28347aacf68",
-    "url": "https://9to5mac.com/2026/10/29/ios-27-2-gives-shortcuts-app-these-new-and-improved-features",
+  "c5031a75d4fd8625": {
+    "id": "c5031a75d4fd8625",
+    "slug": "tip-c5031a",
+    "url": "https://sspai.com/post/118114",
     "source": {
-      "id": "9to5mac",
-      "name": "9to5Mac",
-      "site_url": "https://9to5mac.com",
-      "kind": "news"
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
     },
-    "author": "Ryan Christoffel",
-    "published_at": "Thu, 29 Oct 2026 14:16:33 +0000",
-    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
-    "original_lang": "en",
+    "author": "CG艺术实验室",
+    "published_at": "Sun, 08 Nov 2026 11:18:54 +0800",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "zh-CN",
     "title": {
-      "en": "iOS 27.2 gives Shortcuts app these new and improved features",
-      "vi": "iOS 27.2 cung cấp cho ứng dụng Phím tắt những tính năng mới và cải tiến này"
+      "zh-CN": "苹果产品那些不够颠覆，却值得被学习的细节",
+      "vi": "苹果产品那些不够颠覆，却值得被学习的细节",
+      "en": "苹果产品那些不够颠覆，却值得被学习的细节"
     },
     "summary": {
-      "en": "iOS 27.2 launched this week with a variety of new features for Siri AI , FaceTime , Messages , and more, plus a handful of improvements for the Shortcuts app. Here’s everything new in Shortcuts.",
-      "vi": "iOS 27.2 ra mắt trong tuần này với nhiều tính năng mới cho Siri AI, FaceTime, Messages, v.v., cùng với một số cải tiến cho ứng dụng Phím tắt. Đây là mọi thứ mới trong Phím tắt."
+      "zh-CN": "Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ... 查看全文",
+      "vi": "Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ... 查看全文",
+      "en": "Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ... 查看全文"
     },
     "categories": [
-      "ios",
-      "ai"
+      "dev"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.26,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": "machine"
+      "vi": false,
+      "en": false
     },
-    "hidden": false,
-    "slug": "ios-272-cung-cap-cho-ung-dung-phim-tat-nhung-tinh-nang-moi-v-6f35d2"
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
   },
   "1368c5d92f98d567": {
     "id": "1368c5d92f98d567",
@@ -3194,40 +3324,41 @@
       "en": 3
     }
   },
-  "513f9c14c838474f": {
-    "id": "513f9c14c838474f",
-    "url": "https://linuxhandbook.com/learn-ssh",
+  "6f35d28347aacf68": {
+    "id": "6f35d28347aacf68",
+    "url": "https://9to5mac.com/2026/10/29/ios-27-2-gives-shortcuts-app-these-new-and-improved-features",
     "source": {
-      "id": "linuxhandbook",
-      "name": "Linux Handbook",
-      "site_url": "https://linuxhandbook.com",
-      "kind": "tips"
+      "id": "9to5mac",
+      "name": "9to5Mac",
+      "site_url": "https://9to5mac.com",
+      "kind": "news"
     },
-    "author": "Abhishek Prakash",
-    "published_at": "Sat, 03 Oct 2026 19:31:57 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "Ryan Christoffel",
+    "published_at": "Thu, 29 Oct 2026 14:16:33 +0000",
+    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Learn SSH",
-      "vi": "Tìm hiểu SSH"
+      "en": "iOS 27.2 gives Shortcuts app these new and improved features",
+      "vi": "iOS 27.2 cung cấp cho ứng dụng Phím tắt những tính năng mới và cải tiến này"
     },
     "summary": {
-      "en": "SSH is how you log in to and work on remote Linux machines. Start with the basics, then secure your setup and fix the errors you are most likely to run into.",
-      "vi": "SSH là cách bạn đăng nhập và làm việc trên các máy Linux từ xa. Hãy bắt đầu với những điều cơ bản, sau đó bảo mật thiết lập của bạn và sửa các lỗi mà bạn có nhiều khả năng gặp phải nhất."
+      "en": "iOS 27.2 launched this week with a variety of new features for Siri AI , FaceTime , Messages , and more, plus a handful of improvements for the Shortcuts app. Here’s everything new in Shortcuts.",
+      "vi": "iOS 27.2 ra mắt trong tuần này với nhiều tính năng mới cho Siri AI, FaceTime, Messages, v.v., cùng với một số cải tiến cho ứng dụng Phím tắt. Đây là mọi thứ mới trong Phím tắt."
     },
     "categories": [
-      "linux"
+      "ios",
+      "ai"
     ],
     "tags": [],
-    "difficulty": "advanced",
-    "score": 1.23,
+    "difficulty": "medium",
+    "score": 1.26,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "tim-hieu-ssh-513f9c"
+    "slug": "ios-272-cung-cap-cho-ung-dung-phim-tat-nhung-tinh-nang-moi-v-6f35d2"
   },
   "7cfe78e97e549a3f": {
     "id": "7cfe78e97e549a3f",
@@ -3299,35 +3430,32 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "52d1d63b9f8cb2ac": {
-    "id": "52d1d63b9f8cb2ac",
-    "url": "https://www.howtogeek.com/these-chrome-settings-are-why-your-browser-is-hogging-ram",
+  "513f9c14c838474f": {
+    "id": "513f9c14c838474f",
+    "url": "https://linuxhandbook.com/learn-ssh",
     "source": {
-      "id": "howtogeek",
-      "name": "How-To Geek",
-      "site_url": "https://www.howtogeek.com",
+      "id": "linuxhandbook",
+      "name": "Linux Handbook",
+      "site_url": "https://linuxhandbook.com",
       "kind": "tips"
     },
-    "author": "Diana Todea",
-    "published_at": "Thu, 29 Oct 2026 14:30:16 GMT",
-    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
+    "author": "Abhishek Prakash",
+    "published_at": "Sat, 03 Oct 2026 19:31:57 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "5 simple Chrome settings to fix the browser's worst memory hogs",
-      "vi": "5 cài đặt Chrome đơn giản để khắc phục tình trạng ngốn bộ nhớ nhất của trình duyệt"
+      "en": "Learn SSH",
+      "vi": "Tìm hiểu SSH"
     },
     "summary": {
-      "en": "Find what's quitely eating up your RAM",
-      "vi": "Tìm những gì đang ngốn RAM của bạn"
+      "en": "SSH is how you log in to and work on remote Linux machines. Start with the basics, then secure your setup and fix the errors you are most likely to run into.",
+      "vi": "SSH là cách bạn đăng nhập và làm việc trên các máy Linux từ xa. Hãy bắt đầu với những điều cơ bản, sau đó bảo mật thiết lập của bạn và sửa các lỗi mà bạn có nhiều khả năng gặp phải nhất."
     },
     "categories": [
-      "browser",
-      "hardware"
+      "linux"
     ],
-    "tags": [
-      "chrome"
-    ],
-    "difficulty": "easy",
+    "tags": [],
+    "difficulty": "advanced",
     "score": 1.23,
     "howto": true,
     "reading_time_min": 1,
@@ -3335,7 +3463,7 @@
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "5-cai-dat-chrome-don-gian-de-khac-phuc-tinh-trang-ngon-bo-nh-52d1d6"
+    "slug": "tim-hieu-ssh-513f9c"
   },
   "789c5f46cc52eded": {
     "id": "789c5f46cc52eded",
@@ -3407,39 +3535,43 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "8713827b0e9b04ee": {
-    "id": "8713827b0e9b04ee",
-    "slug": "this-is-the-physical-keyboard-you-need-if-you-care-about-typ-871382",
-    "url": "https://www.howtogeek.com/this-physical-keyboard-you-need-if-you-care-about-typing-on-your-phone",
+  "52d1d63b9f8cb2ac": {
+    "id": "52d1d63b9f8cb2ac",
+    "url": "https://www.howtogeek.com/these-chrome-settings-are-why-your-browser-is-hogging-ram",
     "source": {
       "id": "howtogeek",
       "name": "How-To Geek",
       "site_url": "https://www.howtogeek.com",
       "kind": "tips"
     },
-    "author": "Bertel King",
-    "published_at": "Thu, 29 Oct 2026 23:00:15 GMT",
-    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
+    "author": "Diana Todea",
+    "published_at": "Thu, 29 Oct 2026 14:30:16 GMT",
+    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
     "original_lang": "en",
     "title": {
-      "en": "This is the physical keyboard you need if you care about typing on your phone",
-      "vi": "Đây là bàn phím vật lý bạn cần nếu bạn quan tâm đến việc gõ trên điện thoại"
+      "en": "5 simple Chrome settings to fix the browser's worst memory hogs",
+      "vi": "5 cài đặt Chrome đơn giản để khắc phục tình trạng ngốn bộ nhớ nhất của trình duyệt"
     },
     "summary": {
-      "en": "It's time your pocket PC setup felt more like a laptop.",
-      "vi": "Đã đến lúc thiết lập máy tính bỏ túi của bạn giống một chiếc máy tính xách tay hơn."
+      "en": "Find what's quitely eating up your RAM",
+      "vi": "Tìm những gì đang ngốn RAM của bạn"
     },
     "categories": [
-      "windows"
+      "browser",
+      "hardware"
     ],
-    "tags": [],
-    "difficulty": "medium",
+    "tags": [
+      "chrome"
+    ],
+    "difficulty": "easy",
     "score": 1.23,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
-    }
+    },
+    "hidden": false,
+    "slug": "5-cai-dat-chrome-don-gian-de-khac-phuc-tinh-trang-ngon-bo-nh-52d1d6"
   },
   "630e63647dbc7728": {
     "id": "630e63647dbc7728",
@@ -3511,40 +3643,39 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "f8c22dda71ed6073": {
-    "id": "f8c22dda71ed6073",
-    "url": "https://feed.itsfoss.com/link/24361/17510602/ubuntu-core-desktop-firmware-hwe",
+  "8713827b0e9b04ee": {
+    "id": "8713827b0e9b04ee",
+    "slug": "this-is-the-physical-keyboard-you-need-if-you-care-about-typ-871382",
+    "url": "https://www.howtogeek.com/this-physical-keyboard-you-need-if-you-care-about-typing-on-your-phone",
     "source": {
-      "id": "itsfoss",
-      "name": "It's FOSS",
-      "site_url": "https://itsfoss.com",
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
       "kind": "tips"
     },
-    "author": "Sourav Rudra",
-    "published_at": "Thu, 29 Oct 2026 16:31:02 +0530",
-    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
+    "author": "Bertel King",
+    "published_at": "Thu, 29 Oct 2026 23:00:15 GMT",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Is Ubuntu Eyeing Immutability? Canonical Restarts Core Desktop and Eyes a Firmware Change for LTS",
-      "vi": "Tính bất biến của Ubuntu Eyeing có phải không? Canonical khởi động lại máy tính để bàn lõi và hướng tới thay đổi chương trình cơ sở cho LTS"
+      "en": "This is the physical keyboard you need if you care about typing on your phone",
+      "vi": "Đây là bàn phím vật lý bạn cần nếu bạn quan tâm đến việc gõ trên điện thoại"
     },
     "summary": {
-      "en": "Core Desktop could run apps that can’t run natively in a sandbox, while linux-firmware-hwe is proposed as a safeguard against newer firmware causing problems.",
-      "vi": "Core Desktop có thể chạy các ứng dụng không thể chạy tự nhiên trong hộp cát, trong khi linux-firmware-hwe được đề xuất như một biện pháp bảo vệ chống lại sự cố do phần sụn mới hơn gây ra."
+      "en": "It's time your pocket PC setup felt more like a laptop.",
+      "vi": "Đã đến lúc thiết lập máy tính bỏ túi của bạn giống một chiếc máy tính xách tay hơn."
     },
     "categories": [
-      "linux"
+      "windows"
     ],
     "tags": [],
-    "difficulty": null,
-    "score": 1.22,
-    "howto": false,
+    "difficulty": "medium",
+    "score": 1.23,
+    "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "tinh-bat-bien-cua-ubuntu-eyeing-co-phai-khong-canonical-khoi-f8c22d"
+    }
   },
   "d5a9861d94f03e4d": {
     "id": "d5a9861d94f03e4d",
@@ -3618,40 +3749,40 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "99ccbb4073246879": {
-    "id": "99ccbb4073246879",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-remote-desktop-failures-caused-by-recent-windows-updates",
+  "f8c22dda71ed6073": {
+    "id": "f8c22dda71ed6073",
+    "url": "https://feed.itsfoss.com/link/24361/17510602/ubuntu-core-desktop-firmware-hwe",
     "source": {
-      "id": "bleepingcomputer",
-      "name": "BleepingComputer",
-      "site_url": "https://www.bleepingcomputer.com",
-      "kind": "news"
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips"
     },
-    "author": "Sergiu Gatlan",
-    "published_at": "Thu, 29 Oct 2026 10:35:40 -0400",
-    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
+    "author": "Sourav Rudra",
+    "published_at": "Thu, 29 Oct 2026 16:31:02 +0530",
+    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Microsoft fixes Remote Desktop failures caused by recent Windows updates",
-      "vi": "Microsoft sửa lỗi Remote Desktop do các bản cập nhật Windows gần đây gây ra"
+      "en": "Is Ubuntu Eyeing Immutability? Canonical Restarts Core Desktop and Eyes a Firmware Change for LTS",
+      "vi": "Tính bất biến của Ubuntu Eyeing có phải không? Canonical khởi động lại máy tính để bàn lõi và hướng tới thay đổi chương trình cơ sở cho LTS"
     },
     "summary": {
-      "en": "Microsoft has resolved a known issue that prevents non-admin users from connecting to devices via Remote Desktop when the \"Administrator protection\" security feature is enabled.",
-      "vi": "Microsoft đã giải quyết một sự cố đã biết ngăn người dùng không phải quản trị viên kết nối với thiết bị qua Remote Desktop khi tính năng bảo mật \"Bảo vệ quản trị viên\" được bật."
+      "en": "Core Desktop could run apps that can’t run natively in a sandbox, while linux-firmware-hwe is proposed as a safeguard against newer firmware causing problems.",
+      "vi": "Core Desktop có thể chạy các ứng dụng không thể chạy tự nhiên trong hộp cát, trong khi linux-firmware-hwe được đề xuất như một biện pháp bảo vệ chống lại sự cố do phần sụn mới hơn gây ra."
     },
     "categories": [
-      "windows"
+      "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
+    "difficulty": null,
     "score": 1.22,
-    "howto": true,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "microsoft-sua-loi-remote-desktop-do-cac-ban-cap-nhat-windows-99ccbb"
+    "slug": "tinh-bat-bien-cua-ubuntu-eyeing-co-phai-khong-canonical-khoi-f8c22d"
   },
   "e17841fce5ff3698": {
     "id": "e17841fce5ff3698",
@@ -3723,38 +3854,40 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "1ee03a3e671258f8": {
-    "id": "1ee03a3e671258f8",
-    "slug": "five-smartwatch-heart-rate-zone-hacks-every-runner-should-kn-1ee03a",
-    "url": "https://lifehacker.com/health/best-smartwatch-heart-rate-zone-training-hacks",
+  "99ccbb4073246879": {
+    "id": "99ccbb4073246879",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-remote-desktop-failures-caused-by-recent-windows-updates",
     "source": {
-      "id": "lifehacker",
-      "name": "Lifehacker",
-      "site_url": "",
-      "kind": "news",
-      "content_type": "article"
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "site_url": "https://www.bleepingcomputer.com",
+      "kind": "news"
     },
-    "author": "Meredith Dietz",
-    "published_at": "Fri, 06 Nov 2026 17:30:00 +0000",
-    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "author": "Sergiu Gatlan",
+    "published_at": "Thu, 29 Oct 2026 10:35:40 -0400",
+    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Five Smartwatch Heart Rate Zone Hacks Every Runner Should Know",
-      "vi": "Five Smartwatch Heart Rate Zone Hacks Every Runner Should Know"
+      "en": "Microsoft fixes Remote Desktop failures caused by recent Windows updates",
+      "vi": "Microsoft sửa lỗi Remote Desktop do các bản cập nhật Windows gần đây gây ra"
     },
     "summary": {
-      "en": "The best tips to keep you in the zone.",
-      "vi": "The best tips to keep you in the zone."
+      "en": "Microsoft has resolved a known issue that prevents non-admin users from connecting to devices via Remote Desktop when the \"Administrator protection\" security feature is enabled.",
+      "vi": "Microsoft đã giải quyết một sự cố đã biết ngăn người dùng không phải quản trị viên kết nối với thiết bị qua Remote Desktop khi tính năng bảo mật \"Bảo vệ quản trị viên\" được bật."
     },
     "categories": [
       "windows"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.2,
+    "score": 1.22,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "microsoft-sua-loi-remote-desktop-do-cac-ban-cap-nhat-windows-99ccbb"
   },
   "8a23e34eb18998a7": {
     "id": "8a23e34eb18998a7",
@@ -3826,35 +3959,35 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "8f88aafaa21088c5": {
-    "id": "8f88aafaa21088c5",
-    "slug": "chia-se-ban-lam-viec-cua-tho-chup-hinh-thich-setup-theo-phon-8f88aa",
-    "url": "https://tinhte.vn/thread/chia-se-ban-lam-viec-cua-tho-chup-hinh-thich-setup-theo-phong-cach-game-thu.3806345",
+  "1ee03a3e671258f8": {
+    "id": "1ee03a3e671258f8",
+    "slug": "five-smartwatch-heart-rate-zone-hacks-every-runner-should-kn-1ee03a",
+    "url": "https://lifehacker.com/health/best-smartwatch-heart-rate-zone-training-hacks",
     "source": {
-      "id": "tinhte",
-      "name": "Tinh tế",
-      "site_url": "https://tinhte.vn",
+      "id": "lifehacker",
+      "name": "Lifehacker",
+      "site_url": "",
       "kind": "news",
       "content_type": "article"
     },
-    "author": "HoangSong",
-    "published_at": "Fri, 06 Nov 2026 13:17:47 +0000",
+    "author": "Meredith Dietz",
+    "published_at": "Fri, 06 Nov 2026 17:30:00 +0000",
     "fetched_at": "2026-11-07T10:25:58.721404+00:00",
-    "original_lang": "vi",
+    "original_lang": "en",
     "title": {
-      "vi": "Chia sẻ bàn làm việc của thợ chụp hình thích setup theo phong cách game thủ",
-      "en": "Chia sẻ bàn làm việc của thợ chụp hình thích setup theo phong cách game thủ"
+      "en": "Five Smartwatch Heart Rate Zone Hacks Every Runner Should Know",
+      "vi": "Five Smartwatch Heart Rate Zone Hacks Every Runner Should Know"
     },
     "summary": {
-      "vi": "Chào mọi người, đầu tiên xin được giới thiệu sơ qua về công việc hiện tại của bản thân và lý do từ đâu mình có ý tưởng để makeup cho bàn làm việc của bản thân để nó không gây nhàm chán theo ý kiến",
-      "en": "Chào mọi người, đầu tiên xin được giới thiệu sơ qua về công việc hiện tại của bản thân và lý do từ đâu mình có ý tưởng để makeup cho bàn làm việc của bản thân để nó không gây nhàm chán theo ý kiến"
+      "en": "The best tips to keep you in the zone.",
+      "vi": "The best tips to keep you in the zone."
     },
     "categories": [
-      "ios"
+      "windows"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.19,
+    "score": 1.2,
     "howto": true,
     "reading_time_min": 1,
     "translated": {}
@@ -3930,40 +4063,38 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "6f7743a9465550a4": {
-    "id": "6f7743a9465550a4",
-    "url": "https://vnexpress.net/oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-5138064.html",
+  "8f88aafaa21088c5": {
+    "id": "8f88aafaa21088c5",
+    "slug": "chia-se-ban-lam-viec-cua-tho-chup-hinh-thich-setup-theo-phon-8f88aa",
+    "url": "https://tinhte.vn/thread/chia-se-ban-lam-viec-cua-tho-chup-hinh-thich-setup-theo-phong-cach-game-thu.3806345",
     "source": {
-      "id": "vnexpress_sohoa",
-      "name": "VnExpress Thủ Thuật",
-      "site_url": "https://vnexpress.net/so-hoa",
-      "kind": "tips"
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news",
+      "content_type": "article"
     },
-    "author": null,
-    "published_at": "Wed, 28 Oct 2026 22:27:00 +0700",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "HoangSong",
+    "published_at": "Fri, 06 Nov 2026 13:17:47 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
     "original_lang": "vi",
     "title": {
-      "vi": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel",
-      "en": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel"
+      "vi": "Chia sẻ bàn làm việc của thợ chụp hình thích setup theo phong cách game thủ",
+      "en": "Chia sẻ bàn làm việc của thợ chụp hình thích setup theo phong cách game thủ"
     },
     "summary": {
-      "vi": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh.",
-      "en": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh."
+      "vi": "Chào mọi người, đầu tiên xin được giới thiệu sơ qua về công việc hiện tại của bản thân và lý do từ đâu mình có ý tưởng để makeup cho bàn làm việc của bản thân để nó không gây nhàm chán theo ý kiến",
+      "en": "Chào mọi người, đầu tiên xin được giới thiệu sơ qua về công việc hiện tại của bản thân và lý do từ đâu mình có ý tưởng để makeup cho bàn làm việc của bản thân để nó không gây nhàm chán theo ý kiến"
     },
     "categories": [
-      "hardware"
+      "ios"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.18,
+    "score": 1.19,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {
-      "en": "machine"
-    },
-    "hidden": false,
-    "slug": "oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-6f7743"
+    "translated": {}
   },
   "d5f9f62fd177ef88": {
     "id": "d5f9f62fd177ef88",
@@ -4035,43 +4166,41 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "51ae3dcde8c253db": {
-    "id": "51ae3dcde8c253db",
-    "url": "https://www.omgubuntu.co.uk/2026/10/ghostty-1-4-released",
+  "c06ec870b4e1dac0": {
+    "id": "c06ec870b4e1dac0",
+    "slug": "apple-huong-dan-tat-logo-phat-sang-tren-macbook-pro-moi-nhun-c06ec8",
+    "url": "https://tinhte.vn/thread/apple-huong-dan-tat-logo-phat-sang-tren-macbook-pro-moi-nhung-chi-co-cach-dung-terminal.4190606",
     "source": {
-      "id": "omgubuntu",
-      "name": "OMG! Ubuntu!",
-      "site_url": "https://www.omgubuntu.co.uk",
-      "kind": "tips"
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news",
+      "content_type": "article"
     },
-    "author": "Joey Sneddon",
-    "published_at": "Thu, 29 Oct 2026 04:08:04 +0000",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
+    "author": "nhatminhngo",
+    "published_at": "Sun, 08 Nov 2026 07:20:32 +0000",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "vi",
     "title": {
-      "en": "Ghostty 1.4 released with big improvements",
-      "vi": "Ghostty 1.4 ra mắt với nhiều cải tiến lớn"
+      "vi": "Apple hướng dẫn tắt logo phát sáng trên MacBook Pro mới, nhưng chỉ có cách dùng Terminal",
+      "en": "Apple hướng dẫn tắt logo phát sáng trên MacBook Pro mới, nhưng chỉ có cách dùng Terminal"
     },
     "summary": {
-      "en": "A major new release of Ghostty, the open-source terminal emulator, has been released. Ghostty 1.4.0 brings a varied set of changes after 7 months of development. There are welcome performance optimisations on Linux and macOS, a more capable SHH implementation and an easier way to rearrange tab…",
-      "vi": "Một bản phát hành mới của Ghostty, trình mô phỏng thiết bị đầu cuối nguồn mở, đã được phát hành. Ghostty 1.4.0 mang đến nhiều thay đổi đa dạng sau 7 tháng phát triển. Có các tính năng tối ưu hóa hiệu suất đáng hoan nghênh trên Linux và macOS, khả năng triển khai SHH hiệu quả hơn và cách sắp xếp lại tab dễ dàng hơn…"
+      "vi": "Logo quả táo phát sáng huyền thoại đã quay lại trên MacBook Pro mới với màn hình PROLED, lần đầu sau",
+      "en": "Logo quả táo phát sáng huyền thoại đã quay lại trên MacBook Pro mới với màn hình PROLED, lần đầu sau"
     },
     "categories": [
       "macos",
-      "linux"
+      "dev"
     ],
     "tags": [
       "terminal"
     ],
-    "difficulty": null,
-    "score": 1.18,
-    "howto": false,
+    "difficulty": "advanced",
+    "score": 1.19,
+    "howto": true,
     "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": true,
-    "slug": "ghostty-14-ra-mat-voi-nhieu-cai-tien-lon-51ae3d"
+    "translated": {}
   },
   "0386e52564ccd51b": {
     "id": "0386e52564ccd51b",
@@ -4147,39 +4276,40 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "1c8f2197065ac11e": {
-    "id": "1c8f2197065ac11e",
-    "slug": "gelly-is-a-gtk-desktop-music-player-for-jellyfin-and-navidro-1c8f21",
-    "url": "https://www.omgubuntu.co.uk/2026/10/gelly-jellyfin-desktop-music-player-linux",
+  "6f7743a9465550a4": {
+    "id": "6f7743a9465550a4",
+    "url": "https://vnexpress.net/oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-5138064.html",
     "source": {
-      "id": "omgubuntu",
-      "name": "OMG! Ubuntu!",
-      "site_url": "https://www.omgubuntu.co.uk",
+      "id": "vnexpress_sohoa",
+      "name": "VnExpress Thủ Thuật",
+      "site_url": "https://vnexpress.net/so-hoa",
       "kind": "tips"
     },
-    "author": "Joey Sneddon",
-    "published_at": "Thu, 29 Oct 2026 23:22:00 +0000",
-    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
-    "original_lang": "en",
+    "author": null,
+    "published_at": "Wed, 28 Oct 2026 22:27:00 +0700",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "vi",
     "title": {
-      "en": "Gelly is a GTK desktop music player for Jellyfin and Navidrome",
-      "vi": "Gelly là trình phát nhạc trên máy tính để bàn GTK dành cho Jellyfin và Navidrome"
+      "vi": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel",
+      "en": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel"
     },
     "summary": {
-      "en": "If you run your own music streaming server using Jellyfin or Navidrome/Subsonic, and you want a solid desktop player to browse and stream your library in, Gelly is worth a look. It bills itself as a “native, lightweight music player” for the aforementioned streaming servers…",
-      "vi": "Nếu bạn chạy máy chủ phát nhạc trực tuyến của riêng mình bằng Jellyfin hoặc Navidrome/Subsonic và bạn muốn có một trình phát máy tính để bàn chắc chắn để duyệt và phát trực tuyến thư viện của mình, Gelly rất đáng để xem xét. Nó tự nhận mình là “trình phát nhạc nhẹ, gốc” cho các máy chủ phát trực tuyến nói trên…"
+      "vi": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh.",
+      "en": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh."
     },
     "categories": [
-      "linux"
+      "hardware"
     ],
     "tags": [],
-    "difficulty": null,
+    "difficulty": "medium",
     "score": 1.18,
-    "howto": false,
+    "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": "machine"
-    }
+      "en": "machine"
+    },
+    "hidden": false,
+    "slug": "oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-6f7743"
   },
   "2b30d068a07bd43d": {
     "id": "2b30d068a07bd43d",
@@ -4251,40 +4381,43 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "e9337c15641891f4": {
-    "id": "e9337c15641891f4",
-    "slug": "five-hacks-every-suunto-race-3s-user-should-know-e9337c",
-    "url": "https://lifehacker.com/health/best-suunto-race-3s-hacks",
+  "51ae3dcde8c253db": {
+    "id": "51ae3dcde8c253db",
+    "url": "https://www.omgubuntu.co.uk/2026/10/ghostty-1-4-released",
     "source": {
-      "id": "lifehacker",
-      "name": "Lifehacker",
-      "site_url": "",
-      "kind": "news",
-      "content_type": "article"
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips"
     },
-    "author": "Meredith Dietz",
-    "published_at": "Wed, 28 Oct 2026 19:30:18 +0000",
-    "fetched_at": "2026-10-30T10:48:57.185065+00:00",
+    "author": "Joey Sneddon",
+    "published_at": "Thu, 29 Oct 2026 04:08:04 +0000",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Five Hacks Every Suunto Race 3S User Should Know",
-      "vi": "Năm thủ thuật mà người dùng Suunto Race 3S nên biết"
+      "en": "Ghostty 1.4 released with big improvements",
+      "vi": "Ghostty 1.4 ra mắt với nhiều cải tiến lớn"
     },
     "summary": {
-      "en": "Suunto's \"Cadence Coach\" is giving me a lot of tough love already.",
-      "vi": "\"Huấn luyện viên Cadence\" của Suunto đang dành cho tôi rất nhiều tình yêu mãnh liệt rồi."
+      "en": "A major new release of Ghostty, the open-source terminal emulator, has been released. Ghostty 1.4.0 brings a varied set of changes after 7 months of development. There are welcome performance optimisations on Linux and macOS, a more capable SHH implementation and an easier way to rearrange tab…",
+      "vi": "Một bản phát hành mới của Ghostty, trình mô phỏng thiết bị đầu cuối nguồn mở, đã được phát hành. Ghostty 1.4.0 mang đến nhiều thay đổi đa dạng sau 7 tháng phát triển. Có các tính năng tối ưu hóa hiệu suất đáng hoan nghênh trên Linux và macOS, khả năng triển khai SHH hiệu quả hơn và cách sắp xếp lại tab dễ dàng hơn…"
     },
     "categories": [
-      "windows"
+      "macos",
+      "linux"
     ],
-    "tags": [],
-    "difficulty": "medium",
+    "tags": [
+      "terminal"
+    ],
+    "difficulty": null,
     "score": 1.18,
-    "howto": true,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
-    }
+    },
+    "hidden": true,
+    "slug": "ghostty-14-ra-mat-voi-nhieu-cai-tien-lon-51ae3d"
   },
   "0e3c74ad88169176": {
     "id": "0e3c74ad88169176",
@@ -4356,6 +4489,244 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "1c8f2197065ac11e": {
+    "id": "1c8f2197065ac11e",
+    "slug": "gelly-is-a-gtk-desktop-music-player-for-jellyfin-and-navidro-1c8f21",
+    "url": "https://www.omgubuntu.co.uk/2026/10/gelly-jellyfin-desktop-music-player-linux",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Thu, 29 Oct 2026 23:22:00 +0000",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Gelly is a GTK desktop music player for Jellyfin and Navidrome",
+      "vi": "Gelly là trình phát nhạc trên máy tính để bàn GTK dành cho Jellyfin và Navidrome"
+    },
+    "summary": {
+      "en": "If you run your own music streaming server using Jellyfin or Navidrome/Subsonic, and you want a solid desktop player to browse and stream your library in, Gelly is worth a look. It bills itself as a “native, lightweight music player” for the aforementioned streaming servers…",
+      "vi": "Nếu bạn chạy máy chủ phát nhạc trực tuyến của riêng mình bằng Jellyfin hoặc Navidrome/Subsonic và bạn muốn có một trình phát máy tính để bàn chắc chắn để duyệt và phát trực tuyến thư viện của mình, Gelly rất đáng để xem xét. Nó tự nhận mình là “trình phát nhạc nhẹ, gốc” cho các máy chủ phát trực tuyến nói trên…"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.18,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "bf11d281416f1d84": {
+    "id": "bf11d281416f1d84",
+    "slug": "nasa-spacex-bf11d2",
+    "url": "https://www.ithome.com/1/023/907.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 08 Nov 2026 07:28:54 GMT",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "NASA 发布月球基地建设与核动力月球车发射新规划，SpaceX、蓝色起源等竞争百亿美元合同",
+      "vi": "NASA 发布月球基地建设与核动力月球车发射新规划，SpaceX、蓝色起源等竞争百亿美元合同",
+      "en": "NASA 发布月球基地建设与核动力月球车发射新规划，SpaceX、蓝色起源等竞争百亿美元合同"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 8 日消息，美国国家航空航天局（NASA）于当地时间周六公布最新规划，旨在拓展月球基地项目的探测、科研以及基础设施建设能力。NASA 正联合美国本土企业，计划在月球南极实现长期驻留；本次资金投入将用于推进商业机器人货运任务、名为 PROMISE 的核动力月球车、发射与轨道转移服务以及月面基础设施建设。 月球基地货运着陆器 首先来看月球基地货运着陆器，NASA 选定八家企业进入商业月球载荷服务计划（CLPS）下一阶段。这些企业将有资格在新版 CLPS 2 合同框架下，竞争后续月面送货任务： 蓝色起源（Blue Origin）…",
+      "vi": "IT之家 11 月 8 日消息，美国国家航空航天局（NASA）于当地时间周六公布最新规划，旨在拓展月球基地项目的探测、科研以及基础设施建设能力。NASA 正联合美国本土企业，计划在月球南极实现长期驻留；本次资金投入将用于推进商业机器人货运任务、名为 PROMISE 的核动力月球车、发射与轨道转移服务以及月面基础设施建设。 月球基地货运着陆器 首先来看月球基地货运着陆器，NASA 选定八家企业进入商业月球载荷服务计划（CLPS）下一阶段。这些企业将有资格在新版 CLPS 2 合同框架下，竞争后续月面送货任务： 蓝色起源（Blue Origin）…",
+      "en": "IT之家 11 月 8 日消息，美国国家航空航天局（NASA）于当地时间周六公布最新规划，旨在拓展月球基地项目的探测、科研以及基础设施建设能力。NASA 正联合美国本土企业，计划在月球南极实现长期驻留；本次资金投入将用于推进商业机器人货运任务、名为 PROMISE 的核动力月球车、发射与轨道转移服务以及月面基础设施建设。 月球基地货运着陆器 首先来看月球基地货运着陆器，NASA 选定八家企业进入商业月球载荷服务计划（CLPS）下一阶段。这些企业将有资格在新版 CLPS 2 合同框架下，竞争后续月面送货任务： 蓝色起源（Blue Origin）…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
+  "f54af6baf65ed6ba": {
+    "id": "f54af6baf65ed6ba",
+    "slug": "win11-26h2-8gb-ram-2021-16gb-ram-f54af6",
+    "url": "https://www.ithome.com/1/023/906.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 08 Nov 2026 07:17:23 GMT",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "微软：正持续优化 Win11 内存占用，26H2 版本下 8GB RAM 机型特定场景表现可“对标”2021 年 16GB RAM 机器",
+      "vi": "微软：正持续优化 Win11 内存占用，26H2 版本下 8GB RAM 机型特定场景表现可“对标”2021 年 16GB RAM 机器",
+      "en": "微软：正持续优化 Win11 内存占用，26H2 版本下 8GB RAM 机型特定场景表现可“对标”2021 年 16GB RAM 机器"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 8 日消息，微软发布博客文章，称 Windows 开发团队正在持续优化系统占用，如今安装了最新 Windows 11 26H2 版本、配备 8GB RAM 笔记本在多项日常及高负载任务中的表现已接近 2021 年 Windows 11 刚发布时的 16GB RAM 笔记本。 微软 Windows 业务负责人帕万・达武卢里（Pavan Davuluri）介绍称，Windows 多年来一直采用内存压缩技术，但微软如今针对 8GB RAM 电脑调整了压缩策略，以及将数据转移至速度较慢的存储设备的时机。经过调整后，Windows 最多可以在…",
+      "vi": "IT之家 11 月 8 日消息，微软发布博客文章，称 Windows 开发团队正在持续优化系统占用，如今安装了最新 Windows 11 26H2 版本、配备 8GB RAM 笔记本在多项日常及高负载任务中的表现已接近 2021 年 Windows 11 刚发布时的 16GB RAM 笔记本。 微软 Windows 业务负责人帕万・达武卢里（Pavan Davuluri）介绍称，Windows 多年来一直采用内存压缩技术，但微软如今针对 8GB RAM 电脑调整了压缩策略，以及将数据转移至速度较慢的存储设备的时机。经过调整后，Windows 最多可以在…",
+      "en": "IT之家 11 月 8 日消息，微软发布博客文章，称 Windows 开发团队正在持续优化系统占用，如今安装了最新 Windows 11 26H2 版本、配备 8GB RAM 笔记本在多项日常及高负载任务中的表现已接近 2021 年 Windows 11 刚发布时的 16GB RAM 笔记本。 微软 Windows 业务负责人帕万・达武卢里（Pavan Davuluri）介绍称，Windows 多年来一直采用内存压缩技术，但微软如今针对 8GB RAM 电脑调整了压缩策略，以及将数据转移至速度较慢的存储设备的时机。经过调整后，Windows 最多可以在…"
+    },
+    "categories": [
+      "windows",
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
+  "e9337c15641891f4": {
+    "id": "e9337c15641891f4",
+    "slug": "five-hacks-every-suunto-race-3s-user-should-know-e9337c",
+    "url": "https://lifehacker.com/health/best-suunto-race-3s-hacks",
+    "source": {
+      "id": "lifehacker",
+      "name": "Lifehacker",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Meredith Dietz",
+    "published_at": "Wed, 28 Oct 2026 19:30:18 +0000",
+    "fetched_at": "2026-10-30T10:48:57.185065+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Five Hacks Every Suunto Race 3S User Should Know",
+      "vi": "Năm thủ thuật mà người dùng Suunto Race 3S nên biết"
+    },
+    "summary": {
+      "en": "Suunto's \"Cadence Coach\" is giving me a lot of tough love already.",
+      "vi": "\"Huấn luyện viên Cadence\" của Suunto đang dành cho tôi rất nhiều tình yêu mãnh liệt rồi."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.18,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "f41e6fca375dd515": {
+    "id": "f41e6fca375dd515",
+    "slug": "openai-2030-6140-7500-f41e6f",
+    "url": "https://www.ithome.com/1/023/905.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 08 Nov 2026 07:14:15 GMT",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "伯恩斯坦：OpenAI 至 2030 年算力基础设施支出或达 6140 亿美元，低于此前 7500 亿美元传闻",
+      "vi": "伯恩斯坦：OpenAI 至 2030 年算力基础设施支出或达 6140 亿美元，低于此前 7500 亿美元传闻",
+      "en": "伯恩斯坦：OpenAI 至 2030 年算力基础设施支出或达 6140 亿美元，低于此前 7500 亿美元传闻"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 8 日消息，据智通财经报道，伯恩斯坦分析师 MarkMoerdler 估算，OpenAI 已披露的算力合作协议对应的基础设施支出， 到 2030 年累计可能达到 6,140 亿美元 （IT之家注：现汇率约合 4.11 万亿元人民币） ， 明显低于《华尔街日报》此前传出的 7,500 亿美元 （现汇率约合 5.02 万亿元人民币） 。…",
+      "vi": "IT之家 11 月 8 日消息，据智通财经报道，伯恩斯坦分析师 MarkMoerdler 估算，OpenAI 已披露的算力合作协议对应的基础设施支出， 到 2030 年累计可能达到 6,140 亿美元 （IT之家注：现汇率约合 4.11 万亿元人民币） ， 明显低于《华尔街日报》此前传出的 7,500 亿美元 （现汇率约合 5.02 万亿元人民币） 。…",
+      "en": "IT之家 11 月 8 日消息，据智通财经报道，伯恩斯坦分析师 MarkMoerdler 估算，OpenAI 已披露的算力合作协议对应的基础设施支出， 到 2030 年累计可能达到 6,140 亿美元 （IT之家注：现汇率约合 4.11 万亿元人民币） ， 明显低于《华尔街日报》此前传出的 7,500 亿美元 （现汇率约合 5.02 万亿元人民币） 。…"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
+  "72a299a158acd477": {
+    "id": "72a299a158acd477",
+    "slug": "rn0-100nm-720wh-72a299",
+    "url": "https://www.ithome.com/1/023/903.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 08 Nov 2026 07:12:30 GMT",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "本田首款高端电助力山地车 RN0 亮相：碳纤维车架、100Nm 扭矩、720Wh 电池",
+      "vi": "本田首款高端电助力山地车 RN0 亮相：碳纤维车架、100Nm 扭矩、720Wh 电池",
+      "en": "本田首款高端电助力山地车 RN0 亮相：碳纤维车架、100Nm 扭矩、720Wh 电池"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 8 日消息，在 2026 年米兰国际摩托车展上，本田首款高端电助力山地车 RN0 正式亮相。RN0 由本田与德国高端电助力山地车制造商 ROTWILD 联合开发，采用 专门设计的碳纤维单体壳车架和独特的鸥翼式后摇臂 ，后者设计灵感来自本田多年来积累的摩托车车架研发经验。 IT之家获悉，RN0 整车重约 24kg，是一款兼顾多种骑行场景的 电助力山地车 。前部配备 160mm 行程的 FOX 36 FLOAT Factory Kashima 前叉，后部则采用 FOX FLOAT X Factory Kashima 避震器。车辆采用…",
+      "vi": "IT之家 11 月 8 日消息，在 2026 年米兰国际摩托车展上，本田首款高端电助力山地车 RN0 正式亮相。RN0 由本田与德国高端电助力山地车制造商 ROTWILD 联合开发，采用 专门设计的碳纤维单体壳车架和独特的鸥翼式后摇臂 ，后者设计灵感来自本田多年来积累的摩托车车架研发经验。 IT之家获悉，RN0 整车重约 24kg，是一款兼顾多种骑行场景的 电助力山地车 。前部配备 160mm 行程的 FOX 36 FLOAT Factory Kashima 前叉，后部则采用 FOX FLOAT X Factory Kashima 避震器。车辆采用…",
+      "en": "IT之家 11 月 8 日消息，在 2026 年米兰国际摩托车展上，本田首款高端电助力山地车 RN0 正式亮相。RN0 由本田与德国高端电助力山地车制造商 ROTWILD 联合开发，采用 专门设计的碳纤维单体壳车架和独特的鸥翼式后摇臂 ，后者设计灵感来自本田多年来积累的摩托车车架研发经验。 IT之家获悉，RN0 整车重约 24kg，是一款兼顾多种骑行场景的 电助力山地车 。前部配备 160mm 行程的 FOX 36 FLOAT Factory Kashima 前叉，后部则采用 FOX FLOAT X Factory Kashima 避震器。车辆采用…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
   "66fcad3f7dcd0a0d": {
     "id": "66fcad3f7dcd0a0d",
     "slug": "fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-system-66fcad",
@@ -4388,6 +4759,90 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {}
+  },
+  "04592b03d353e0a6": {
+    "id": "04592b03d353e0a6",
+    "slug": "2029-04592b",
+    "url": "https://www.ithome.com/1/023/902.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 08 Nov 2026 07:11:48 GMT",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "消息称广汽人形机器人预计 2029 年形成万台产能",
+      "vi": "消息称广汽人形机器人预计 2029 年形成万台产能",
+      "en": "消息称广汽人形机器人预计 2029 年形成万台产能"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 8 日消息，11 月 5 日，广东慧仑科技有限公司与广汽集团动力业务单元（“广汽动力 BU”）正式签署具身智能机器人生产合作协议。 据第一财经报道，慧仑科技与广汽动力 BU 双方正按协议推进产线建设， 预计将于 2029 年形成万台级产能 。目前广汽人形机器人仍处于小批量应用阶段，累计运行数据超过 12 个月、6.3 万公里、18.9 万次。 据IT之家此前报道，2 月 26 日， 广汽集团宣布孵化成立广东慧仑科技有限公司 。慧仑科技以独立主体身份开展市场化运营， 全面承接广汽集团在具身智能领域的业务 。 今年 8 月，…",
+      "vi": "IT之家 11 月 8 日消息，11 月 5 日，广东慧仑科技有限公司与广汽集团动力业务单元（“广汽动力 BU”）正式签署具身智能机器人生产合作协议。 据第一财经报道，慧仑科技与广汽动力 BU 双方正按协议推进产线建设， 预计将于 2029 年形成万台级产能 。目前广汽人形机器人仍处于小批量应用阶段，累计运行数据超过 12 个月、6.3 万公里、18.9 万次。 据IT之家此前报道，2 月 26 日， 广汽集团宣布孵化成立广东慧仑科技有限公司 。慧仑科技以独立主体身份开展市场化运营， 全面承接广汽集团在具身智能领域的业务 。 今年 8 月，…",
+      "en": "IT之家 11 月 8 日消息，11 月 5 日，广东慧仑科技有限公司与广汽集团动力业务单元（“广汽动力 BU”）正式签署具身智能机器人生产合作协议。 据第一财经报道，慧仑科技与广汽动力 BU 双方正按协议推进产线建设， 预计将于 2029 年形成万台级产能 。目前广汽人形机器人仍处于小批量应用阶段，累计运行数据超过 12 个月、6.3 万公里、18.9 万次。 据IT之家此前报道，2 月 26 日， 广汽集团宣布孵化成立广东慧仑科技有限公司 。慧仑科技以独立主体身份开展市场化运营， 全面承接广汽集团在具身智能领域的业务 。 今年 8 月，…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
+  "21502f24ef038346": {
+    "id": "21502f24ef038346",
+    "slug": "openai-gpt-61-sol-21502f",
+    "url": "https://www.ithome.com/1/023/900.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 08 Nov 2026 07:05:49 GMT",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "OpenAI GPT-6.1 Sol 参与活体小鼠脑手术：连续操作三次，定位误差减半",
+      "vi": "OpenAI GPT-6.1 Sol 参与活体小鼠脑手术：连续操作三次，定位误差减半",
+      "en": "OpenAI GPT-6.1 Sol 参与活体小鼠脑手术：连续操作三次，定位误差减半"
+    },
+    "summary": {
+      "zh-CN": "北京时间 11 月 8 日，据《WIRED》此前报道及生物科技公司 Exin Therapeutics 最新披露，OpenAI 旗下 AI 模型 GPT-6.1 Sol 已被用于活体小鼠脑部手术实验，并在连续三次操作中，通过外科医生的反馈改善了定位表现。到第三次操作时，其识别关键解剖标志的耗时从 169 秒缩短至 86 秒，定位误差从 0.6 毫米降至 0.3 毫米。 Exin Therapeutics 联合创始人兼 CEO 加布里埃尔 · 奥卡尼亚-桑特罗 (Gabriel Ocana-Santero)11 月 5 日在社交平台 X…",
+      "vi": "北京时间 11 月 8 日，据《WIRED》此前报道及生物科技公司 Exin Therapeutics 最新披露，OpenAI 旗下 AI 模型 GPT-6.1 Sol 已被用于活体小鼠脑部手术实验，并在连续三次操作中，通过外科医生的反馈改善了定位表现。到第三次操作时，其识别关键解剖标志的耗时从 169 秒缩短至 86 秒，定位误差从 0.6 毫米降至 0.3 毫米。 Exin Therapeutics 联合创始人兼 CEO 加布里埃尔 · 奥卡尼亚-桑特罗 (Gabriel Ocana-Santero)11 月 5 日在社交平台 X…",
+      "en": "北京时间 11 月 8 日，据《WIRED》此前报道及生物科技公司 Exin Therapeutics 最新披露，OpenAI 旗下 AI 模型 GPT-6.1 Sol 已被用于活体小鼠脑部手术实验，并在连续三次操作中，通过外科医生的反馈改善了定位表现。到第三次操作时，其识别关键解剖标志的耗时从 169 秒缩短至 86 秒，定位误差从 0.6 毫米降至 0.3 毫米。 Exin Therapeutics 联合创始人兼 CEO 加布里埃尔 · 奥卡尼亚-桑特罗 (Gabriel Ocana-Santero)11 月 5 日在社交平台 X…"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
   },
   "571eb31b3413a342": {
     "id": "571eb31b3413a342",
@@ -4422,6 +4877,90 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {}
+  },
+  "846085d09b662045": {
+    "id": "846085d09b662045",
+    "slug": "tip-846085",
+    "url": "https://www.ithome.com/1/023/899.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 08 Nov 2026 07:05:07 GMT",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "京东物流“京碳惠”亮相进博会，快递减碳可以当钱花",
+      "vi": "京东物流“京碳惠”亮相进博会，快递减碳可以当钱花",
+      "en": "京东物流“京碳惠”亮相进博会，快递减碳可以当钱花"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 8 日消息，京东物流今日宣布，第九届中国国际进口博览会期间，由京东物流联合必维集团、上海市节能减排中心编制的《电子商务快递低碳运输》 碳普惠方法学 ，正式通过上海市相关部门组织的专家评审并被推荐为 Ⅰ 类方法学，标志着 首个电商场景碳普惠方法学落地上海。 下一步，“京碳惠”将正式接入上海碳普惠体系、服务近 2500 万上海市民的个人碳账户，让低碳消费有了记录和激励。 据介绍，过去快递减碳是供应链内部的一笔模糊账。如今，“京碳惠”将每一笔京东快递订单的减碳量算清楚、算准确，并记入京东消费者碳账户。消费者在京东 App…",
+      "vi": "IT之家 11 月 8 日消息，京东物流今日宣布，第九届中国国际进口博览会期间，由京东物流联合必维集团、上海市节能减排中心编制的《电子商务快递低碳运输》 碳普惠方法学 ，正式通过上海市相关部门组织的专家评审并被推荐为 Ⅰ 类方法学，标志着 首个电商场景碳普惠方法学落地上海。 下一步，“京碳惠”将正式接入上海碳普惠体系、服务近 2500 万上海市民的个人碳账户，让低碳消费有了记录和激励。 据介绍，过去快递减碳是供应链内部的一笔模糊账。如今，“京碳惠”将每一笔京东快递订单的减碳量算清楚、算准确，并记入京东消费者碳账户。消费者在京东 App…",
+      "en": "IT之家 11 月 8 日消息，京东物流今日宣布，第九届中国国际进口博览会期间，由京东物流联合必维集团、上海市节能减排中心编制的《电子商务快递低碳运输》 碳普惠方法学 ，正式通过上海市相关部门组织的专家评审并被推荐为 Ⅰ 类方法学，标志着 首个电商场景碳普惠方法学落地上海。 下一步，“京碳惠”将正式接入上海碳普惠体系、服务近 2500 万上海市民的个人碳账户，让低碳消费有了记录和激励。 据介绍，过去快递减碳是供应链内部的一笔模糊账。如今，“京碳惠”将每一笔京东快递订单的减碳量算清楚、算准确，并记入京东消费者碳账户。消费者在京东 App…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
+  "9ad15b1e4dece1e9": {
+    "id": "9ad15b1e4dece1e9",
+    "slug": "wendys-rpg-9ad15b",
+    "url": "https://www.ithome.com/1/023/898.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 08 Nov 2026 07:04:42 GMT",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "美式汉堡快餐品牌 Wendy's 推出复古风格 RPG 手游，玩游戏可兑换餐食",
+      "vi": "美式汉堡快餐品牌 Wendy's 推出复古风格 RPG 手游，玩游戏可兑换餐食",
+      "en": "美式汉堡快餐品牌 Wendy's 推出复古风格 RPG 手游，玩游戏可兑换餐食"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 8 日消息，美国连锁快餐品牌温蒂汉堡（Wendy's）近日推出一款免费复古风格 RPG 手游《WendyQuest》，玩家可以在游戏中获得奖励兑换码，用于在温蒂汉堡门店兑换薯条、汉堡等食品。 温蒂汉堡发言人表示，该品牌多年来一直积极参与游戏文化，曾与 Twitch、Fortnite 等平台及游戏展开合作，也推出过《Feast of Legends》等作品，而《WendyQuest》是品牌首款完全由温蒂汉堡自主拥有的电子游戏。 从实际体验来看，《WendyQuest》采用了类似 20 世纪 80 年代末至 90…",
+      "vi": "IT之家 11 月 8 日消息，美国连锁快餐品牌温蒂汉堡（Wendy's）近日推出一款免费复古风格 RPG 手游《WendyQuest》，玩家可以在游戏中获得奖励兑换码，用于在温蒂汉堡门店兑换薯条、汉堡等食品。 温蒂汉堡发言人表示，该品牌多年来一直积极参与游戏文化，曾与 Twitch、Fortnite 等平台及游戏展开合作，也推出过《Feast of Legends》等作品，而《WendyQuest》是品牌首款完全由温蒂汉堡自主拥有的电子游戏。 从实际体验来看，《WendyQuest》采用了类似 20 世纪 80 年代末至 90…",
+      "en": "IT之家 11 月 8 日消息，美国连锁快餐品牌温蒂汉堡（Wendy's）近日推出一款免费复古风格 RPG 手游《WendyQuest》，玩家可以在游戏中获得奖励兑换码，用于在温蒂汉堡门店兑换薯条、汉堡等食品。 温蒂汉堡发言人表示，该品牌多年来一直积极参与游戏文化，曾与 Twitch、Fortnite 等平台及游戏展开合作，也推出过《Feast of Legends》等作品，而《WendyQuest》是品牌首款完全由温蒂汉堡自主拥有的电子游戏。 从实际体验来看，《WendyQuest》采用了类似 20 世纪 80 年代末至 90…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
   },
   "131eaa65657ae221": {
     "id": "131eaa65657ae221",
@@ -4459,6 +4998,83 @@
     },
     "hidden": false,
     "slug": "6-sai-lam-nay-co-the-bien-pi-hole-tro-thanh-phan-kem-an-toan-131eaa"
+  },
+  "7b892a44fd9b93f4": {
+    "id": "7b892a44fd9b93f4",
+    "slug": "bmax-maxbook-x15-s-pro-8-i3-8109u-7b892a",
+    "url": "https://www.ithome.com/1/023/897.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 08 Nov 2026 07:03:04 GMT",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "Bmax 推出 MaxBook X15 S Pro 笔记本，搭载 8 年前的酷睿 i3-8109U",
+      "vi": "Bmax 推出 MaxBook X15 S Pro 笔记本，搭载 8 年前的酷睿 i3-8109U",
+      "en": "Bmax 推出 MaxBook X15 S Pro 笔记本，搭载 8 年前的酷睿 i3-8109U"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 8 日消息，制造商 Bmax 最近在海外推出 MaxBook X15 S Pro 笔记本。单看参数表可以发现， 这款产品搭载的处理器 ， 是 2018 年 4 季度推出的英特尔酷睿 i3-8109U 。 IT之家了解到，这款笔记本的处理器采用双核四线程设计，基础频率 3.0 GHz，最高睿频可达 3.6 GHz，拥有 4 MB Intel 智能缓存。这颗 8 年前的老 U，在 Cinebench R23 多核测试中仅能跑到 2000 分左右，比 N150 低了差不多 500 分。…",
+      "vi": "IT之家 11 月 8 日消息，制造商 Bmax 最近在海外推出 MaxBook X15 S Pro 笔记本。单看参数表可以发现， 这款产品搭载的处理器 ， 是 2018 年 4 季度推出的英特尔酷睿 i3-8109U 。 IT之家了解到，这款笔记本的处理器采用双核四线程设计，基础频率 3.0 GHz，最高睿频可达 3.6 GHz，拥有 4 MB Intel 智能缓存。这颗 8 年前的老 U，在 Cinebench R23 多核测试中仅能跑到 2000 分左右，比 N150 低了差不多 500 分。…",
+      "en": "IT之家 11 月 8 日消息，制造商 Bmax 最近在海外推出 MaxBook X15 S Pro 笔记本。单看参数表可以发现， 这款产品搭载的处理器 ， 是 2018 年 4 季度推出的英特尔酷睿 i3-8109U 。 IT之家了解到，这款笔记本的处理器采用双核四线程设计，基础频率 3.0 GHz，最高睿频可达 3.6 GHz，拥有 4 MB Intel 智能缓存。这颗 8 年前的老 U，在 Cinebench R23 多核测试中仅能跑到 2000 分左右，比 N150 低了差不多 500 分。…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
+  "d539aa2695a7a0aa": {
+    "id": "d539aa2695a7a0aa",
+    "slug": "iphone-1818e-x-4430mah-d539aa",
+    "url": "https://www.ithome.com/1/023/896.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 08 Nov 2026 06:50:06 GMT",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "苹果 iPhone 18/18e 系列机型 X 光图曝光：两款手机共用部分模具，搭 4430mAh 电池",
+      "vi": "苹果 iPhone 18/18e 系列机型 X 光图曝光：两款手机共用部分模具，搭 4430mAh 电池",
+      "en": "苹果 iPhone 18/18e 系列机型 X 光图曝光：两款手机共用部分模具，搭 4430mAh 电池"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 8 日消息，综合外媒 NoteBook Check 及高通吧“小 tree_666”，近期网络上流出所谓苹果 iPhone 18 标准版 / 18e 手机的 X 光图，相应机型代号分别为 Taycan（V67 K）和 Nevera（V69）。 参考 X 光图，可以看到 iPhone 18 标准版 / 18e 手机内部布局较为相似，两款机型主板、电池以及 MagSafe 无线充电线圈位置大致相同，这意味着苹果可能让 iPhone 18 标准版和 iPhone 18e 共用部分机身模具，以降低制造成本。 摄像头方面，iPhone 18…",
+      "vi": "IT之家 11 月 8 日消息，综合外媒 NoteBook Check 及高通吧“小 tree_666”，近期网络上流出所谓苹果 iPhone 18 标准版 / 18e 手机的 X 光图，相应机型代号分别为 Taycan（V67 K）和 Nevera（V69）。 参考 X 光图，可以看到 iPhone 18 标准版 / 18e 手机内部布局较为相似，两款机型主板、电池以及 MagSafe 无线充电线圈位置大致相同，这意味着苹果可能让 iPhone 18 标准版和 iPhone 18e 共用部分机身模具，以降低制造成本。 摄像头方面，iPhone 18…",
+      "en": "IT之家 11 月 8 日消息，综合外媒 NoteBook Check 及高通吧“小 tree_666”，近期网络上流出所谓苹果 iPhone 18 标准版 / 18e 手机的 X 光图，相应机型代号分别为 Taycan（V67 K）和 Nevera（V69）。 参考 X 光图，可以看到 iPhone 18 标准版 / 18e 手机内部布局较为相似，两款机型主板、电池以及 MagSafe 无线充电线圈位置大致相同，这意味着苹果可能让 iPhone 18 标准版和 iPhone 18e 共用部分机身模具，以降低制造成本。 摄像头方面，iPhone 18…"
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "40a2250126c4a092": {
     "id": "40a2250126c4a092",
@@ -4500,6 +5116,76 @@
         "url": "https://sspai.com/post/118623"
       }
     ]
+  },
+  "0702522b39b9b7d6": {
+    "id": "0702522b39b9b7d6",
+    "slug": "7-2800-070252",
+    "url": "https://www.ithome.com/1/023/895.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 08 Nov 2026 06:49:46 GMT",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "《死亡搁浅》系列游戏发售 7 年，全球累计玩家数突破 2800 万",
+      "vi": "《死亡搁浅》系列游戏发售 7 年，全球累计玩家数突破 2800 万",
+      "en": "《死亡搁浅》系列游戏发售 7 年，全球累计玩家数突破 2800 万"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 8 日消息，知名游戏制作人小岛秀夫表示，《死亡搁浅》系列游戏今日发售 7 周年， 全球累计玩家数量正式突破 2800 万 。 据IT之家了解，《死亡搁浅》是小岛秀夫脱离 KONAMI 后发布的首款游戏作品。本作以“链接”为主题，玩家需要在已经荒芜的美国，通过运送各种重要的货物来使美国各地重新相连。本作于 2019 年 11 月 8 日登陆 PS4 平台，后续于 2020 年 7 月 14 日登陆 Windows。 《死亡搁浅 2：冥滩之上》则是一款 2025 年 6 月 26…",
+      "vi": "IT之家 11 月 8 日消息，知名游戏制作人小岛秀夫表示，《死亡搁浅》系列游戏今日发售 7 周年， 全球累计玩家数量正式突破 2800 万 。 据IT之家了解，《死亡搁浅》是小岛秀夫脱离 KONAMI 后发布的首款游戏作品。本作以“链接”为主题，玩家需要在已经荒芜的美国，通过运送各种重要的货物来使美国各地重新相连。本作于 2019 年 11 月 8 日登陆 PS4 平台，后续于 2020 年 7 月 14 日登陆 Windows。 《死亡搁浅 2：冥滩之上》则是一款 2025 年 6 月 26…",
+      "en": "IT之家 11 月 8 日消息，知名游戏制作人小岛秀夫表示，《死亡搁浅》系列游戏今日发售 7 周年， 全球累计玩家数量正式突破 2800 万 。 据IT之家了解，《死亡搁浅》是小岛秀夫脱离 KONAMI 后发布的首款游戏作品。本作以“链接”为主题，玩家需要在已经荒芜的美国，通过运送各种重要的货物来使美国各地重新相连。本作于 2019 年 11 月 8 日登陆 PS4 平台，后续于 2020 年 7 月 14 日登陆 Windows。 《死亡搁浅 2：冥滩之上》则是一款 2025 年 6 月 26…"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "770aba34d6471888": {
+    "id": "770aba34d6471888",
+    "slug": "tip-770aba",
+    "url": "https://www.ithome.com/1/023/894.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 08 Nov 2026 06:48:13 GMT",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "比亚迪李柯回应收购玛莎拉蒂传闻：或许几年前兴趣更高，但现在我们已经走出属于自己的道路",
+      "vi": "比亚迪李柯回应收购玛莎拉蒂传闻：或许几年前兴趣更高，但现在我们已经走出属于自己的道路",
+      "en": "比亚迪李柯回应收购玛莎拉蒂传闻：或许几年前兴趣更高，但现在我们已经走出属于自己的道路"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 8 日消息，据新浪科技报道，比亚迪执行副总裁李柯在阿布扎比仰望 U9 Xtreme 速度纪录庆祝活动期间，被媒体再次问及收购玛莎拉蒂传闻。 李柯回应：“ 或许几年前我们兴趣更高。但现在我们已经走出属于自己的道路，方向正确 。况且如今全球最快的车就是我们的…… 也正因如此，仰望品牌成功落地，在这里路上也能越来越多看到我们的车。大家认可我们的产品， 自主打造品牌会更容易 。这个选择更契合未来，也更能发挥技术的价值。” 去年 5 月该消息热度很高，当时李柯曾表示玛莎拉蒂这类历史悠久的品牌“很有吸引力”， 但同时明确尚未启动实质性收购流程…",
+      "vi": "IT之家 11 月 8 日消息，据新浪科技报道，比亚迪执行副总裁李柯在阿布扎比仰望 U9 Xtreme 速度纪录庆祝活动期间，被媒体再次问及收购玛莎拉蒂传闻。 李柯回应：“ 或许几年前我们兴趣更高。但现在我们已经走出属于自己的道路，方向正确 。况且如今全球最快的车就是我们的…… 也正因如此，仰望品牌成功落地，在这里路上也能越来越多看到我们的车。大家认可我们的产品， 自主打造品牌会更容易 。这个选择更契合未来，也更能发挥技术的价值。” 去年 5 月该消息热度很高，当时李柯曾表示玛莎拉蒂这类历史悠久的品牌“很有吸引力”， 但同时明确尚未启动实质性收购流程…",
+      "en": "IT之家 11 月 8 日消息，据新浪科技报道，比亚迪执行副总裁李柯在阿布扎比仰望 U9 Xtreme 速度纪录庆祝活动期间，被媒体再次问及收购玛莎拉蒂传闻。 李柯回应：“ 或许几年前我们兴趣更高。但现在我们已经走出属于自己的道路，方向正确 。况且如今全球最快的车就是我们的…… 也正因如此，仰望品牌成功落地，在这里路上也能越来越多看到我们的车。大家认可我们的产品， 自主打造品牌会更容易 。这个选择更契合未来，也更能发挥技术的价值。” 去年 5 月该消息热度很高，当时李柯曾表示玛莎拉蒂这类历史悠久的品牌“很有吸引力”， 但同时明确尚未启动实质性收购流程…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "63de1dd5d2bf1bcd": {
     "id": "63de1dd5d2bf1bcd",
@@ -7741,6 +8427,75 @@
       "vi": 1
     }
   },
+  "e4da1fc3654cef88": {
+    "id": "e4da1fc3654cef88",
+    "slug": "what-i-run-on-my-10-usd-openstick-homelab-e4da1f",
+    "url": "https://blog.bosscher.ch/posts/openstick",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "LaurensBER",
+    "published_at": "Sat, 07 Nov 2026 18:12:12 +0000",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "What I run on my $10 USD OpenStick homelab",
+      "vi": "What I run on my $10 USD OpenStick homelab"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (516 điểm, 99 bình luận).",
+      "vi": "Thảo luận trên Hacker News (516 điểm, 99 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.03,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 516
+  },
+  "1eeaf5457cb1a01a": {
+    "id": "1eeaf5457cb1a01a",
+    "slug": "the-end-of-microsoft-researchs-ai-frontiers-group-1eeaf5",
+    "url": "https://hunch.net/?p=13764006",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "srean",
+    "published_at": "Sat, 07 Nov 2026 18:02:17 +0000",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "The end of Microsoft Research's AI Frontiers group",
+      "vi": "The end of Microsoft Research's AI Frontiers group"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (439 điểm, 263 bình luận).",
+      "vi": "Thảo luận trên Hacker News (439 điểm, 263 bình luận)."
+    },
+    "categories": [
+      "windows",
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.03,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 439
+  },
   "6a089d3b89f3ea56": {
     "id": "6a089d3b89f3ea56",
     "slug": "these-linux-distros-can-run-on-apple-silicon-mac-6a089d",
@@ -7774,6 +8529,41 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {}
+  },
+  "9c95d9f4cc46cae2": {
+    "id": "9c95d9f4cc46cae2",
+    "slug": "apples-grey-list-words-and-phrases-your-iphone-wont-help-you-9c95d9",
+    "url": "https://www.theguardian.com/technology/2026/nov/06/struggling-to-spell-male-chauvinist-pig-apple-grey-list-means-your-iphone-wont-help-you",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "user_7832",
+    "published_at": "Sat, 07 Nov 2026 17:06:36 +0000",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Apple’s grey list: Words and phrases your iPhone won’t help you spell",
+      "vi": "Apple’s grey list: Words and phrases your iPhone won’t help you spell"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (436 điểm, 282 bình luận).",
+      "vi": "Thảo luận trên Hacker News (436 điểm, 282 bình luận)."
+    },
+    "categories": [
+      "ios",
+      "macos"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.03,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 436
   },
   "3d9bd0593e5ecb0d": {
     "id": "3d9bd0593e5ecb0d",
@@ -9127,6 +9917,43 @@
       "vi": "machine"
     }
   },
+  "5186d80b7eef5626": {
+    "id": "5186d80b7eef5626",
+    "slug": "claude-codes-dont-ask-again-exposes-passwords-in-1122-public-5186d8",
+    "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "shmulc",
+    "published_at": "Sat, 07 Nov 2026 20:45:32 +0000",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "vi": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (332 điểm, 226 bình luận).",
+      "vi": "Thảo luận trên Hacker News (332 điểm, 226 bình luận)."
+    },
+    "categories": [
+      "ai",
+      "dev"
+    ],
+    "tags": [
+      "claude"
+    ],
+    "difficulty": "medium",
+    "score": 0.97,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 332
+  },
   "d9c39429d489eec5": {
     "id": "d9c39429d489eec5",
     "url": "https://linuxhandbook.com/courses/tmux/tmux-essential-shortcuts",
@@ -9724,6 +10551,41 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "f9f42d3a6e9f2eec": {
+    "id": "f9f42d3a6e9f2eec",
+    "slug": "every-windows-11-app-should-kill-electron-and-discord-just-s-f9f42d",
+    "url": "https://www.windowslatest.com/2026/11/06/every-windows-11-app-should-kill-electron-and-discord-just-showed-why-no-starting-screen-and-70-less-ram-even-with-two-accounts-signed-in",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "thunderbong",
+    "published_at": "Sat, 07 Nov 2026 11:11:15 +0000",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Every Windows 11 app should kill Electron, and Discord just showed why",
+      "vi": "Every Windows 11 app should kill Electron, and Discord just showed why"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (295 điểm, 255 bình luận).",
+      "vi": "Thảo luận trên Hacker News (295 điểm, 255 bình luận)."
+    },
+    "categories": [
+      "windows",
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.95,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 295
+  },
   "f6ba26099c5cb990": {
     "id": "f6ba26099c5cb990",
     "url": "https://www.omgubuntu.co.uk/2026/10/trash-talk-ubuntu-uk-rubbish-bin-terminology",
@@ -10266,41 +11128,6 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "85daa6a854746cd3": {
-    "id": "85daa6a854746cd3",
-    "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents",
-    "source": {
-      "id": "githubblog",
-      "name": "GitHub Blog",
-      "site_url": "https://github.blog",
-      "kind": "news"
-    },
-    "author": "GitHub Staff",
-    "published_at": "Wed, 28 Oct 2026 16:07:40 +0000",
-    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
-      "vi": "Octoverse: Cam kết, thúc đẩy, đạt những đỉnh cao mới vào năm 2026 khi các nhà phát triển xây dựng với các đại lý"
-    },
-    "summary": {
-      "en": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report.",
-      "vi": "Xem cách một năm tăng trưởng kỷ lục đến với mọi ngành, mọi lĩnh vực và mọi loại nhà xây dựng trong báo cáo Octoverse năm 2026."
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.92,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "octoverse-cam-ket-thuc-day-dat-nhung-dinh-cao-moi-vao-nam-20-85daa6"
-  },
   "72935a7f76dc92ab": {
     "id": "72935a7f76dc92ab",
     "slug": "lpt-always-put-your-computer-to-sleep-when-you-leave-the-hou-72935a",
@@ -10370,6 +11197,75 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {}
+  },
+  "f7fffb994d85a607": {
+    "id": "f7fffb994d85a607",
+    "slug": "maxxbench-nice-deepswe-score-but-is-it-true-f7fffb",
+    "url": "https://maxxbench.unlap.ai/research/why-maxxbench",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "antiuniverse",
+    "published_at": "Sat, 07 Nov 2026 17:19:00 +0000",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "MaxxBench – \"Nice DeepSWE score. But is it true?\"",
+      "vi": "MaxxBench – \"Nice DeepSWE score. But is it true?\""
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (276 điểm, 76 bình luận).",
+      "vi": "Thảo luận trên Hacker News (276 điểm, 76 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.93,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 276
+  },
+  "85daa6a854746cd3": {
+    "id": "85daa6a854746cd3",
+    "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents",
+    "source": {
+      "id": "githubblog",
+      "name": "GitHub Blog",
+      "site_url": "https://github.blog",
+      "kind": "news"
+    },
+    "author": "GitHub Staff",
+    "published_at": "Wed, 28 Oct 2026 16:07:40 +0000",
+    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Octoverse: Commits, pushes, reach new highs in 2026 as developers build with agents",
+      "vi": "Octoverse: Cam kết, thúc đẩy, đạt những đỉnh cao mới vào năm 2026 khi các nhà phát triển xây dựng với các đại lý"
+    },
+    "summary": {
+      "en": "See how a record year of growth reached every industry, every field, and every kind of builder in the 2026 Octoverse report.",
+      "vi": "Xem cách một năm tăng trưởng kỷ lục đến với mọi ngành, mọi lĩnh vực và mọi loại nhà xây dựng trong báo cáo Octoverse năm 2026."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.92,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "octoverse-cam-ket-thuc-day-dat-nhung-dinh-cao-moi-vao-nam-20-85daa6"
   },
   "b68c1c2345536ac2": {
     "id": "b68c1c2345536ac2",
@@ -11371,10 +12267,10 @@
     "hidden": false,
     "slug": "lhb-linux-digest-2613-biet-tep-cua-ban-chung-chi-khong-gian-0fa94f"
   },
-  "c30c38a613a77d25": {
-    "id": "c30c38a613a77d25",
-    "slug": "a-tiny-world-model-running-games-on-a-raspberry-pi-pico-2-w-c30c38",
-    "url": "https://github.com/SheepSeb/tinyworldformer",
+  "75033d6b18a04101": {
+    "id": "75033d6b18a04101",
+    "slug": "show-hn-coldframe-a-honeypot-that-poses-as-a-supermarket-fri-75033d",
+    "url": "https://github.com/hedgerow-dev/coldframe",
     "source": {
       "id": "hackernews",
       "name": "Hacker News",
@@ -11382,33 +12278,63 @@
       "kind": "news",
       "content_type": "community"
     },
-    "author": "airinei",
-    "published_at": "Thu, 29 Oct 2026 20:32:28 +0000",
-    "fetched_at": "2026-10-30T10:48:57.185065+00:00",
+    "author": "hedgerow-dev",
+    "published_at": "Sat, 07 Nov 2026 17:27:30 +0000",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
     "original_lang": "en",
     "title": {
-      "en": "A tiny world model running games on a Raspberry Pi Pico 2 W",
-      "vi": "A tiny world model running games on a Raspberry Pi Pico 2 W"
+      "en": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller",
+      "vi": "Show HN: Coldframe, a honeypot that poses as a supermarket fridge controller"
     },
     "summary": {
-      "en": "Thảo luận trên Hacker News (214 điểm, 15 bình luận).",
-      "vi": "Thảo luận trên Hacker News (214 điểm, 15 bình luận)."
+      "en": "Thảo luận trên Hacker News (219 điểm, 51 bình luận).",
+      "vi": "Thảo luận trên Hacker News (219 điểm, 51 bình luận)."
     },
     "categories": [
       "security"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.88,
+    "score": 0.89,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {
-      "vi": false
+    "translated": {},
+    "hn_points": 219
+  },
+  "077466db6c7b4aa4": {
+    "id": "077466db6c7b4aa4",
+    "slug": "the-8-linux-computer-2022-077466",
+    "url": "http://thelittleengineerthatcould.blogspot.com/2022/12/the-8-linux-computer.html",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
     },
-    "hn_points": 214,
-    "translate_attempts": {
-      "vi": 1
-    }
+    "author": "zenincognito",
+    "published_at": "Sat, 07 Nov 2026 14:00:20 +0000",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "The $8 Linux Computer (2022)",
+      "vi": "The $8 Linux Computer (2022)"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (220 điểm, 87 bình luận).",
+      "vi": "Thảo luận trên Hacker News (220 điểm, 87 bình luận)."
+    },
+    "categories": [
+      "linux",
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.89,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 220
   },
   "8fe99075dd919c4e": {
     "id": "8fe99075dd919c4e",
@@ -11448,6 +12374,45 @@
     "hidden": false,
     "slug": "chuong-8-xay-dung-quy-trinh-lam-viec-tmux-thuc-su-8fe990"
   },
+  "c30c38a613a77d25": {
+    "id": "c30c38a613a77d25",
+    "slug": "a-tiny-world-model-running-games-on-a-raspberry-pi-pico-2-w-c30c38",
+    "url": "https://github.com/SheepSeb/tinyworldformer",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "airinei",
+    "published_at": "Thu, 29 Oct 2026 20:32:28 +0000",
+    "fetched_at": "2026-10-30T10:48:57.185065+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "A tiny world model running games on a Raspberry Pi Pico 2 W",
+      "vi": "A tiny world model running games on a Raspberry Pi Pico 2 W"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (214 điểm, 15 bình luận).",
+      "vi": "Thảo luận trên Hacker News (214 điểm, 15 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.88,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "hn_points": 214,
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
   "a4e4d2d959650d53": {
     "id": "a4e4d2d959650d53",
     "url": "https://linuxhandbook.com/courses/tmux/tmux-copy-mode-2",
@@ -11485,6 +12450,41 @@
     },
     "hidden": false,
     "slug": "chuong-7-che-do-sao-chep-cuon-tim-kiem-va-sao-chep-dau-ra-th-a4e4d2"
+  },
+  "790bba1903f6287d": {
+    "id": "790bba1903f6287d",
+    "url": "https://linuxhandbook.com/courses/tmux/tmux-panes",
+    "source": {
+      "id": "linuxhandbook",
+      "name": "Linux Handbook",
+      "site_url": "https://linuxhandbook.com",
+      "kind": "tips"
+    },
+    "author": "Yash Kiran Patil",
+    "published_at": "Fri, 04 Sep 2026 16:38:39 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Chapter 6: Panes - Split, Navigate, Resize and Zoom",
+      "vi": "Chương 6: Các ngăn - Tách, điều hướng, thay đổi kích thước và thu phóng"
+    },
+    "summary": {
+      "en": "In the previous chapter, you learned how to use windows to organize different tasks inside a tmux session. Now let's make those windows more useful. Imagine you are working on a server and want to watch your application logs while running commands at the same time. Opening another",
+      "vi": "Trong chương trước, bạn đã học cách sử dụng cửa sổ để sắp xếp các tác vụ khác nhau trong phiên tmux. Bây giờ hãy làm cho những cửa sổ đó trở nên hữu ích hơn. Hãy tưởng tượng bạn đang làm việc trên một máy chủ và muốn xem nhật ký ứng dụng của mình trong khi chạy các lệnh cùng lúc. Mở cái khác"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.87,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "chuong-6-cac-ngan-tach-dieu-huong-thay-doi-kich-thuoc-va-thu-790bba"
   },
   "f9b8a9efbf26f92e": {
     "id": "f9b8a9efbf26f92e",
@@ -11525,41 +12525,6 @@
       "vi": 1
     }
   },
-  "790bba1903f6287d": {
-    "id": "790bba1903f6287d",
-    "url": "https://linuxhandbook.com/courses/tmux/tmux-panes",
-    "source": {
-      "id": "linuxhandbook",
-      "name": "Linux Handbook",
-      "site_url": "https://linuxhandbook.com",
-      "kind": "tips"
-    },
-    "author": "Yash Kiran Patil",
-    "published_at": "Fri, 04 Sep 2026 16:38:39 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Chapter 6: Panes - Split, Navigate, Resize and Zoom",
-      "vi": "Chương 6: Các ngăn - Tách, điều hướng, thay đổi kích thước và thu phóng"
-    },
-    "summary": {
-      "en": "In the previous chapter, you learned how to use windows to organize different tasks inside a tmux session. Now let's make those windows more useful. Imagine you are working on a server and want to watch your application logs while running commands at the same time. Opening another",
-      "vi": "Trong chương trước, bạn đã học cách sử dụng cửa sổ để sắp xếp các tác vụ khác nhau trong phiên tmux. Bây giờ hãy làm cho những cửa sổ đó trở nên hữu ích hơn. Hãy tưởng tượng bạn đang làm việc trên một máy chủ và muốn xem nhật ký ứng dụng của mình trong khi chạy các lệnh cùng lúc. Mở cái khác"
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.87,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "chuong-6-cac-ngan-tach-dieu-huong-thay-doi-kich-thuoc-va-thu-790bba"
-  },
   "f30f927ad9fb89ba": {
     "id": "f30f927ad9fb89ba",
     "url": "https://linuxhandbook.com/courses/tmux/tmux-windows",
@@ -11598,40 +12563,6 @@
     "hidden": false,
     "slug": "chuong-5-windows-sap-xep-cong-viec-cua-ban-trong-mot-phien-f30f92"
   },
-  "c58cd229056d61a4": {
-    "id": "c58cd229056d61a4",
-    "slug": "its-the-memory-latency-stupid-c58cd2",
-    "url": "https://pivotlake.io/blog/its-the-memory-latency-stupid",
-    "source": {
-      "id": "hackernews",
-      "name": "Hacker News",
-      "site_url": "https://news.ycombinator.com",
-      "kind": "news",
-      "content_type": "community"
-    },
-    "author": "ntur1337",
-    "published_at": "Sat, 31 Oct 2026 18:38:16 +0000",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "It's the memory latency, stupid",
-      "vi": "It's the memory latency, stupid"
-    },
-    "summary": {
-      "en": "Thảo luận trên Hacker News (181 điểm, 53 bình luận).",
-      "vi": "Thảo luận trên Hacker News (181 điểm, 53 bình luận)."
-    },
-    "categories": [
-      "security"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.86,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "hn_points": 181
-  },
   "5ed54894df52864b": {
     "id": "5ed54894df52864b",
     "url": "https://linuxhandbook.com/courses/tmux/tmux-sessions",
@@ -11666,6 +12597,40 @@
     },
     "hidden": false,
     "slug": "chuong-4-phien-tao-dat-ten-tach-va-gan-lai-5ed548"
+  },
+  "c58cd229056d61a4": {
+    "id": "c58cd229056d61a4",
+    "slug": "its-the-memory-latency-stupid-c58cd2",
+    "url": "https://pivotlake.io/blog/its-the-memory-latency-stupid",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "ntur1337",
+    "published_at": "Sat, 31 Oct 2026 18:38:16 +0000",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "It's the memory latency, stupid",
+      "vi": "It's the memory latency, stupid"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (181 điểm, 53 bình luận).",
+      "vi": "Thảo luận trên Hacker News (181 điểm, 53 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.86,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 181
   },
   "dc0bac1a652bc82e": {
     "id": "dc0bac1a652bc82e",
@@ -11736,10 +12701,10 @@
     "translated": {},
     "hn_points": 175
   },
-  "4714a96ad9d244f9": {
-    "id": "4714a96ad9d244f9",
-    "slug": "devvmdev-one-vm-for-every-project-4714a9",
-    "url": "https://devvm.dev/",
+  "e66f4eeac8f3ba07": {
+    "id": "e66f4eeac8f3ba07",
+    "slug": "goodbye-claude-hello-pi-e66f4e",
+    "url": "https://caleb.software/posts/claude-to-pi.html",
     "source": {
       "id": "hackernews",
       "name": "Hacker News",
@@ -11747,28 +12712,31 @@
       "kind": "news",
       "content_type": "community"
     },
-    "author": "luispa",
-    "published_at": "Fri, 06 Nov 2026 17:30:22 +0000",
-    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "author": "karagenit",
+    "published_at": "Sun, 08 Nov 2026 03:11:48 +0000",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Devvm.dev: One VM for every project",
-      "vi": "Devvm.dev: One VM for every project"
+      "en": "Goodbye Claude, Hello Pi",
+      "vi": "Goodbye Claude, Hello Pi"
     },
     "summary": {
-      "en": "Thảo luận trên Hacker News (156 điểm, 61 bình luận).",
-      "vi": "Thảo luận trên Hacker News (156 điểm, 61 bình luận)."
+      "en": "Thảo luận trên Hacker News (166 điểm, 93 bình luận).",
+      "vi": "Thảo luận trên Hacker News (166 điểm, 93 bình luận)."
     },
     "categories": [
+      "ai",
       "security"
     ],
-    "tags": [],
+    "tags": [
+      "claude"
+    ],
     "difficulty": "medium",
-    "score": 0.84,
+    "score": 0.85,
     "howto": true,
     "reading_time_min": 1,
     "translated": {},
-    "hn_points": 156
+    "hn_points": 166
   },
   "4189b4549c8cf284": {
     "id": "4189b4549c8cf284",
@@ -11805,6 +12773,40 @@
     },
     "hidden": false,
     "slug": "red-hat-da-tai-tro-cho-mot-bao-cao-cho-thay-14-so-yeu-cau-ke-4189b4"
+  },
+  "4714a96ad9d244f9": {
+    "id": "4714a96ad9d244f9",
+    "slug": "devvmdev-one-vm-for-every-project-4714a9",
+    "url": "https://devvm.dev/",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "luispa",
+    "published_at": "Fri, 06 Nov 2026 17:30:22 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Devvm.dev: One VM for every project",
+      "vi": "Devvm.dev: One VM for every project"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (156 điểm, 61 bình luận).",
+      "vi": "Thảo luận trên Hacker News (156 điểm, 61 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.84,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 156
   },
   "5a5d0c990d338acb": {
     "id": "5a5d0c990d338acb",
@@ -13095,6 +14097,40 @@
     "translated": {},
     "hn_points": 115
   },
+  "3bcdfa6e04aad911": {
+    "id": "3bcdfa6e04aad911",
+    "slug": "github-new-pull-request-overview-page-in-public-preview-3bcdfa",
+    "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "xiaoyu2006",
+    "published_at": "Sat, 07 Nov 2026 23:09:40 +0000",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "GitHub New pull request overview page in public preview",
+      "vi": "GitHub New pull request overview page in public preview"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (116 điểm, 81 bình luận).",
+      "vi": "Thảo luận trên Hacker News (116 điểm, 81 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.81,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 116
+  },
   "8fb639d936f65def": {
     "id": "8fb639d936f65def",
     "url": "https://dev.to/morsezone/building-a-morse-code-practice-timer-in-javascript-timing-dits-dahs-and-gaps-39ol",
@@ -13766,6 +14802,40 @@
     "translated": {},
     "hn_points": 105
   },
+  "15a5be954f3eb527": {
+    "id": "15a5be954f3eb527",
+    "slug": "making-any-integer-with-four-2s-2025-15a5be",
+    "url": "https://eli.thegreenplace.net/2025/making-any-integer-with-four-2s",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "germanrabbit",
+    "published_at": "Sat, 07 Nov 2026 22:38:58 +0000",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Making any integer with four 2s (2025)",
+      "vi": "Making any integer with four 2s (2025)"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (111 điểm, 28 bình luận).",
+      "vi": "Thảo luận trên Hacker News (111 điểm, 28 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.8,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 111
+  },
   "7610ed52e391543d": {
     "id": "7610ed52e391543d",
     "slug": "minimax-h3-in-practice-9-reference-images-3-audio-clips-and-7610ed",
@@ -13798,6 +14868,109 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {}
+  },
+  "e2ddf63848ab6457": {
+    "id": "e2ddf63848ab6457",
+    "slug": "five-memorable-books-about-programming-2008-e2ddf6",
+    "url": "https://prog21.dadgum.com/19.html",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "andsoitis",
+    "published_at": "Sat, 07 Nov 2026 17:30:49 +0000",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Five memorable books about programming (2008)",
+      "vi": "Five memorable books about programming (2008)"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (107 điểm, 66 bình luận).",
+      "vi": "Thảo luận trên Hacker News (107 điểm, 66 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.8,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 107
+  },
+  "d7778c9e4e9e6af1": {
+    "id": "d7778c9e4e9e6af1",
+    "slug": "every-processor-die-anyone-has-photographed-and-given-away-d7778c",
+    "url": "https://sheets.works/data-viz/cpu-dies",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "user_7832",
+    "published_at": "Sat, 07 Nov 2026 16:21:36 +0000",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Every processor die anyone has photographed and given away",
+      "vi": "Every processor die anyone has photographed and given away"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (109 điểm, 18 bình luận).",
+      "vi": "Thảo luận trên Hacker News (109 điểm, 18 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.8,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 109
+  },
+  "f370cc54cb497e18": {
+    "id": "f370cc54cb497e18",
+    "url": "https://www.makeuseof.com/replace-7-zip-winrar-with-nanazip",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips"
+    },
+    "author": "Pankil Shah",
+    "published_at": "Wed, 28 Oct 2026 20:00:16 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I ditched both 7-Zip and WinRAR for this alternative for this one reason",
+      "vi": "Tôi đã bỏ cả 7-Zip và WinRAR cho giải pháp thay thế này vì lý do này"
+    },
+    "summary": {
+      "en": "My PC is now more secure, thanks to this change.",
+      "vi": "PC của tôi bây giờ an toàn hơn nhờ sự thay đổi này."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.75,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "toi-da-bo-ca-7-zip-va-winrar-cho-giai-phap-thay-the-nay-vi-l-f370cc"
   },
   "badc57942b75dc97": {
     "id": "badc57942b75dc97",
@@ -13835,41 +15008,6 @@
     "reading_time_min": 1,
     "translated": {},
     "hn_points": 145
-  },
-  "f370cc54cb497e18": {
-    "id": "f370cc54cb497e18",
-    "url": "https://www.makeuseof.com/replace-7-zip-winrar-with-nanazip",
-    "source": {
-      "id": "makeuseof",
-      "name": "MakeUseOf",
-      "site_url": "https://www.makeuseof.com",
-      "kind": "tips"
-    },
-    "author": "Pankil Shah",
-    "published_at": "Wed, 28 Oct 2026 20:00:16 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "I ditched both 7-Zip and WinRAR for this alternative for this one reason",
-      "vi": "Tôi đã bỏ cả 7-Zip và WinRAR cho giải pháp thay thế này vì lý do này"
-    },
-    "summary": {
-      "en": "My PC is now more secure, thanks to this change.",
-      "vi": "PC của tôi bây giờ an toàn hơn nhờ sự thay đổi này."
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.75,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "toi-da-bo-ca-7-zip-va-winrar-cho-giai-phap-thay-the-nay-vi-l-f370cc"
   },
   "024e8db1df02dbee": {
     "id": "024e8db1df02dbee",
@@ -14437,6 +15575,40 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "e9262ebde8d56524": {
+    "id": "e9262ebde8d56524",
+    "slug": "uranium-cubes-reveal-why-the-german-nuclear-project-failed-e9262e",
+    "url": "https://arstechnica.com/science/2026/11/uranium-cubes-reveal-why-the-german-nuclear-project-failed",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "rbanffy",
+    "published_at": "Thu, 05 Nov 2026 10:52:04 +0000",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Uranium cubes reveal why the German nuclear project failed",
+      "vi": "Uranium cubes reveal why the German nuclear project failed"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (111 điểm, 77 bình luận).",
+      "vi": "Thảo luận trên Hacker News (111 điểm, 77 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.74,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 111
+  },
   "df7f2e84081d3bfb": {
     "id": "df7f2e84081d3bfb",
     "url": "https://genk.vn/loi-khuyen-cho-nhung-gia-dinh-hay-tat-wifi-bang-cach-rut-phich-cam-165260905132351422.chn",
@@ -14960,6 +16132,41 @@
     "reading_time_min": 1,
     "translated": {},
     "hn_points": 125
+  },
+  "e4972cd6d89b6668": {
+    "id": "e4972cd6d89b6668",
+    "slug": "what-building-a-tournament-bracket-engine-taught-me-about-ed-e4972c",
+    "url": "https://dev.to/cloudyergz/what-building-a-tournament-bracket-engine-taught-me-about-edge-cases-2e9c",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "cloudyer",
+    "published_at": "2026-11-05T04:33:07Z",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "What Building a Tournament Bracket Engine Taught Me About Edge Cases",
+      "vi": "What Building a Tournament Bracket Engine Taught Me About Edge Cases"
+    },
+    "summary": {
+      "en": "When I started building Rollare, a free bracket maker for local sports clubs, I thought the hard part",
+      "vi": "When I started building Rollare, a free bracket maker for local sports clubs, I thought the hard part"
+    },
+    "categories": [
+      "browser"
+    ],
+    "tags": [
+      "edge"
+    ],
+    "difficulty": null,
+    "score": 0.65,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "67732ae88c2ca5d9": {
     "id": "67732ae88c2ca5d9",
