@@ -765,7 +765,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "8a43acce4b9913e2": {
@@ -803,7 +803,45 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 2
+      "en": 3
+    }
+  },
+  "aac379d14b17d5ea": {
+    "id": "aac379d14b17d5ea",
+    "slug": "dev-preview-v010330990-aac379",
+    "url": "https://github.com/microsoft/PowerToys/releases/tag/v0.103.3099",
+    "source": {
+      "id": "powertoys-release",
+      "name": "Microsoft PowerToys Releases",
+      "site_url": "",
+      "kind": "news",
+      "content_type": "vendor"
+    },
+    "author": "LegendaryBlair",
+    "published_at": "2026-11-09T04:21:42Z",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Dev preview v0.103.3099.0",
+      "vi": "Dev preview v0.103.3099.0"
+    },
+    "summary": {
+      "en": "This development preview includes Command Palette, File Explorer, Keyboard Manager and Settings improvements, together with startup, packaging and test updates since v0.103.3062 . Installer Hashes Description Filename SHA256 Per user - x64…",
+      "vi": "This development preview includes Command Palette, File Explorer, Keyboard Manager and Settings improvements, together with startup, packaging and test updates since v0.103.3062 . Installer Hashes Description Filename SHA256 Per user - x64…"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "2ba7b82c031be6d1": {
@@ -1674,7 +1712,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "76c4989e4e21db73": {
@@ -1712,7 +1750,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "76d2c86df350a67e": {
@@ -2085,7 +2123,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "5e2ec67fb5b13f35": {
@@ -2161,7 +2199,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "7e50ebb05b0da922": {
@@ -2412,7 +2450,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "9f4a53a12c7a4a6c": {
@@ -2450,7 +2488,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "2a9bc053acbf2508": {
@@ -2488,7 +2526,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "6b876040a4ddb839": {
@@ -2526,7 +2564,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "8879475e62b3793a": {
@@ -2564,7 +2602,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "cbc470459f8e4735": {
@@ -2602,7 +2640,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
     }
   },
   "604f9be9642ce51f": {
@@ -3525,41 +3563,40 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "6f35d28347aacf68": {
-    "id": "6f35d28347aacf68",
-    "url": "https://9to5mac.com/2026/10/29/ios-27-2-gives-shortcuts-app-these-new-and-improved-features",
+  "2c821f57183a5686": {
+    "id": "2c821f57183a5686",
+    "slug": "cybertruck-2c821f",
+    "url": "https://sspai.com/post/118805",
     "source": {
-      "id": "9to5mac",
-      "name": "9to5Mac",
-      "site_url": "https://9to5mac.com",
-      "kind": "news"
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
     },
-    "author": "Ryan Christoffel",
-    "published_at": "Thu, 29 Oct 2026 14:16:33 +0000",
-    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
-    "original_lang": "en",
+    "author": "少数派编辑部",
+    "published_at": "Mon, 09 Nov 2026 06:41:56 +0800",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "zh-CN",
     "title": {
-      "en": "iOS 27.2 gives Shortcuts app these new and improved features",
-      "vi": "iOS 27.2 cung cấp cho ứng dụng Phím tắt những tính năng mới và cải tiến này"
+      "zh-CN": "派早报：特斯拉将停产 Cybertruck",
+      "vi": "派早报：特斯拉将停产 Cybertruck",
+      "en": "派早报：特斯拉将停产 Cybertruck"
     },
     "summary": {
-      "en": "iOS 27.2 launched this week with a variety of new features for Siri AI , FaceTime , Messages , and more, plus a handful of improvements for the Shortcuts app. Here’s everything new in Shortcuts.",
-      "vi": "iOS 27.2 ra mắt trong tuần này với nhiều tính năng mới cho Siri AI, FaceTime, Messages, v.v., cùng với một số cải tiến cho ứng dụng Phím tắt. Đây là mọi thứ mới trong Phím tắt."
+      "zh-CN": "特斯拉将停产 Cybertruck 深圳在 APEC 前夕整顿非法市场 美国数据中心股持续遭抛售，大量建设项目被取消 京津冀三地消协组织敦促航司、平台规范机票退改签 FBI 警告冰柜网络安全攻击风险 广电总局部署开展新一轮微短剧专项治理工作 看看就行的简讯 少数派的近期动态 你可能错过的好文章 查看全文",
+      "vi": "特斯拉将停产 Cybertruck 深圳在 APEC 前夕整顿非法市场 美国数据中心股持续遭抛售，大量建设项目被取消 京津冀三地消协组织敦促航司、平台规范机票退改签 FBI 警告冰柜网络安全攻击风险 广电总局部署开展新一轮微短剧专项治理工作 看看就行的简讯 少数派的近期动态 你可能错过的好文章 查看全文",
+      "en": "特斯拉将停产 Cybertruck 深圳在 APEC 前夕整顿非法市场 美国数据中心股持续遭抛售，大量建设项目被取消 京津冀三地消协组织敦促航司、平台规范机票退改签 FBI 警告冰柜网络安全攻击风险 广电总局部署开展新一轮微短剧专项治理工作 看看就行的简讯 少数派的近期动态 你可能错过的好文章 查看全文"
     },
     "categories": [
-      "ios",
-      "ai"
+      "dev"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.26,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
     "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "ios-272-cung-cap-cho-ung-dung-phim-tat-nhung-tinh-nang-moi-v-6f35d2"
+    "translated": {}
   },
   "789c5f46cc52eded": {
     "id": "789c5f46cc52eded",
@@ -3631,40 +3668,41 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "513f9c14c838474f": {
-    "id": "513f9c14c838474f",
-    "url": "https://linuxhandbook.com/learn-ssh",
+  "6f35d28347aacf68": {
+    "id": "6f35d28347aacf68",
+    "url": "https://9to5mac.com/2026/10/29/ios-27-2-gives-shortcuts-app-these-new-and-improved-features",
     "source": {
-      "id": "linuxhandbook",
-      "name": "Linux Handbook",
-      "site_url": "https://linuxhandbook.com",
-      "kind": "tips"
+      "id": "9to5mac",
+      "name": "9to5Mac",
+      "site_url": "https://9to5mac.com",
+      "kind": "news"
     },
-    "author": "Abhishek Prakash",
-    "published_at": "Sat, 03 Oct 2026 19:31:57 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "Ryan Christoffel",
+    "published_at": "Thu, 29 Oct 2026 14:16:33 +0000",
+    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Learn SSH",
-      "vi": "Tìm hiểu SSH"
+      "en": "iOS 27.2 gives Shortcuts app these new and improved features",
+      "vi": "iOS 27.2 cung cấp cho ứng dụng Phím tắt những tính năng mới và cải tiến này"
     },
     "summary": {
-      "en": "SSH is how you log in to and work on remote Linux machines. Start with the basics, then secure your setup and fix the errors you are most likely to run into.",
-      "vi": "SSH là cách bạn đăng nhập và làm việc trên các máy Linux từ xa. Hãy bắt đầu với những điều cơ bản, sau đó bảo mật thiết lập của bạn và sửa các lỗi mà bạn có nhiều khả năng gặp phải nhất."
+      "en": "iOS 27.2 launched this week with a variety of new features for Siri AI , FaceTime , Messages , and more, plus a handful of improvements for the Shortcuts app. Here’s everything new in Shortcuts.",
+      "vi": "iOS 27.2 ra mắt trong tuần này với nhiều tính năng mới cho Siri AI, FaceTime, Messages, v.v., cùng với một số cải tiến cho ứng dụng Phím tắt. Đây là mọi thứ mới trong Phím tắt."
     },
     "categories": [
-      "linux"
+      "ios",
+      "ai"
     ],
     "tags": [],
-    "difficulty": "advanced",
-    "score": 1.23,
+    "difficulty": "medium",
+    "score": 1.26,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "tim-hieu-ssh-513f9c"
+    "slug": "ios-272-cung-cap-cho-ung-dung-phim-tat-nhung-tinh-nang-moi-v-6f35d2"
   },
   "630e63647dbc7728": {
     "id": "630e63647dbc7728",
@@ -3736,35 +3774,32 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "52d1d63b9f8cb2ac": {
-    "id": "52d1d63b9f8cb2ac",
-    "url": "https://www.howtogeek.com/these-chrome-settings-are-why-your-browser-is-hogging-ram",
+  "513f9c14c838474f": {
+    "id": "513f9c14c838474f",
+    "url": "https://linuxhandbook.com/learn-ssh",
     "source": {
-      "id": "howtogeek",
-      "name": "How-To Geek",
-      "site_url": "https://www.howtogeek.com",
+      "id": "linuxhandbook",
+      "name": "Linux Handbook",
+      "site_url": "https://linuxhandbook.com",
       "kind": "tips"
     },
-    "author": "Diana Todea",
-    "published_at": "Thu, 29 Oct 2026 14:30:16 GMT",
-    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
+    "author": "Abhishek Prakash",
+    "published_at": "Sat, 03 Oct 2026 19:31:57 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "5 simple Chrome settings to fix the browser's worst memory hogs",
-      "vi": "5 cài đặt Chrome đơn giản để khắc phục tình trạng ngốn bộ nhớ nhất của trình duyệt"
+      "en": "Learn SSH",
+      "vi": "Tìm hiểu SSH"
     },
     "summary": {
-      "en": "Find what's quitely eating up your RAM",
-      "vi": "Tìm những gì đang ngốn RAM của bạn"
+      "en": "SSH is how you log in to and work on remote Linux machines. Start with the basics, then secure your setup and fix the errors you are most likely to run into.",
+      "vi": "SSH là cách bạn đăng nhập và làm việc trên các máy Linux từ xa. Hãy bắt đầu với những điều cơ bản, sau đó bảo mật thiết lập của bạn và sửa các lỗi mà bạn có nhiều khả năng gặp phải nhất."
     },
     "categories": [
-      "browser",
-      "hardware"
+      "linux"
     ],
-    "tags": [
-      "chrome"
-    ],
-    "difficulty": "easy",
+    "tags": [],
+    "difficulty": "advanced",
     "score": 1.23,
     "howto": true,
     "reading_time_min": 1,
@@ -3772,7 +3807,7 @@
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "5-cai-dat-chrome-don-gian-de-khac-phuc-tinh-trang-ngon-bo-nh-52d1d6"
+    "slug": "tim-hieu-ssh-513f9c"
   },
   "d5a9861d94f03e4d": {
     "id": "d5a9861d94f03e4d",
@@ -3846,39 +3881,43 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "8713827b0e9b04ee": {
-    "id": "8713827b0e9b04ee",
-    "slug": "this-is-the-physical-keyboard-you-need-if-you-care-about-typ-871382",
-    "url": "https://www.howtogeek.com/this-physical-keyboard-you-need-if-you-care-about-typing-on-your-phone",
+  "52d1d63b9f8cb2ac": {
+    "id": "52d1d63b9f8cb2ac",
+    "url": "https://www.howtogeek.com/these-chrome-settings-are-why-your-browser-is-hogging-ram",
     "source": {
       "id": "howtogeek",
       "name": "How-To Geek",
       "site_url": "https://www.howtogeek.com",
       "kind": "tips"
     },
-    "author": "Bertel King",
-    "published_at": "Thu, 29 Oct 2026 23:00:15 GMT",
-    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
+    "author": "Diana Todea",
+    "published_at": "Thu, 29 Oct 2026 14:30:16 GMT",
+    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
     "original_lang": "en",
     "title": {
-      "en": "This is the physical keyboard you need if you care about typing on your phone",
-      "vi": "Đây là bàn phím vật lý bạn cần nếu bạn quan tâm đến việc gõ trên điện thoại"
+      "en": "5 simple Chrome settings to fix the browser's worst memory hogs",
+      "vi": "5 cài đặt Chrome đơn giản để khắc phục tình trạng ngốn bộ nhớ nhất của trình duyệt"
     },
     "summary": {
-      "en": "It's time your pocket PC setup felt more like a laptop.",
-      "vi": "Đã đến lúc thiết lập máy tính bỏ túi của bạn giống một chiếc máy tính xách tay hơn."
+      "en": "Find what's quitely eating up your RAM",
+      "vi": "Tìm những gì đang ngốn RAM của bạn"
     },
     "categories": [
-      "windows"
+      "browser",
+      "hardware"
     ],
-    "tags": [],
-    "difficulty": "medium",
+    "tags": [
+      "chrome"
+    ],
+    "difficulty": "easy",
     "score": 1.23,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
-    }
+    },
+    "hidden": false,
+    "slug": "5-cai-dat-chrome-don-gian-de-khac-phuc-tinh-trang-ngon-bo-nh-52d1d6"
   },
   "e17841fce5ff3698": {
     "id": "e17841fce5ff3698",
@@ -3950,40 +3989,39 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "f8c22dda71ed6073": {
-    "id": "f8c22dda71ed6073",
-    "url": "https://feed.itsfoss.com/link/24361/17510602/ubuntu-core-desktop-firmware-hwe",
+  "8713827b0e9b04ee": {
+    "id": "8713827b0e9b04ee",
+    "slug": "this-is-the-physical-keyboard-you-need-if-you-care-about-typ-871382",
+    "url": "https://www.howtogeek.com/this-physical-keyboard-you-need-if-you-care-about-typing-on-your-phone",
     "source": {
-      "id": "itsfoss",
-      "name": "It's FOSS",
-      "site_url": "https://itsfoss.com",
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
       "kind": "tips"
     },
-    "author": "Sourav Rudra",
-    "published_at": "Thu, 29 Oct 2026 16:31:02 +0530",
-    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
+    "author": "Bertel King",
+    "published_at": "Thu, 29 Oct 2026 23:00:15 GMT",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Is Ubuntu Eyeing Immutability? Canonical Restarts Core Desktop and Eyes a Firmware Change for LTS",
-      "vi": "Tính bất biến của Ubuntu Eyeing có phải không? Canonical khởi động lại máy tính để bàn lõi và hướng tới thay đổi chương trình cơ sở cho LTS"
+      "en": "This is the physical keyboard you need if you care about typing on your phone",
+      "vi": "Đây là bàn phím vật lý bạn cần nếu bạn quan tâm đến việc gõ trên điện thoại"
     },
     "summary": {
-      "en": "Core Desktop could run apps that can’t run natively in a sandbox, while linux-firmware-hwe is proposed as a safeguard against newer firmware causing problems.",
-      "vi": "Core Desktop có thể chạy các ứng dụng không thể chạy tự nhiên trong hộp cát, trong khi linux-firmware-hwe được đề xuất như một biện pháp bảo vệ chống lại sự cố do phần sụn mới hơn gây ra."
+      "en": "It's time your pocket PC setup felt more like a laptop.",
+      "vi": "Đã đến lúc thiết lập máy tính bỏ túi của bạn giống một chiếc máy tính xách tay hơn."
     },
     "categories": [
-      "linux"
+      "windows"
     ],
     "tags": [],
-    "difficulty": null,
-    "score": 1.22,
-    "howto": false,
+    "difficulty": "medium",
+    "score": 1.23,
+    "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "tinh-bat-bien-cua-ubuntu-eyeing-co-phai-khong-canonical-khoi-f8c22d"
+    }
   },
   "8a23e34eb18998a7": {
     "id": "8a23e34eb18998a7",
@@ -4055,40 +4093,40 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "99ccbb4073246879": {
-    "id": "99ccbb4073246879",
-    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-remote-desktop-failures-caused-by-recent-windows-updates",
+  "f8c22dda71ed6073": {
+    "id": "f8c22dda71ed6073",
+    "url": "https://feed.itsfoss.com/link/24361/17510602/ubuntu-core-desktop-firmware-hwe",
     "source": {
-      "id": "bleepingcomputer",
-      "name": "BleepingComputer",
-      "site_url": "https://www.bleepingcomputer.com",
-      "kind": "news"
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips"
     },
-    "author": "Sergiu Gatlan",
-    "published_at": "Thu, 29 Oct 2026 10:35:40 -0400",
-    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
+    "author": "Sourav Rudra",
+    "published_at": "Thu, 29 Oct 2026 16:31:02 +0530",
+    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Microsoft fixes Remote Desktop failures caused by recent Windows updates",
-      "vi": "Microsoft sửa lỗi Remote Desktop do các bản cập nhật Windows gần đây gây ra"
+      "en": "Is Ubuntu Eyeing Immutability? Canonical Restarts Core Desktop and Eyes a Firmware Change for LTS",
+      "vi": "Tính bất biến của Ubuntu Eyeing có phải không? Canonical khởi động lại máy tính để bàn lõi và hướng tới thay đổi chương trình cơ sở cho LTS"
     },
     "summary": {
-      "en": "Microsoft has resolved a known issue that prevents non-admin users from connecting to devices via Remote Desktop when the \"Administrator protection\" security feature is enabled.",
-      "vi": "Microsoft đã giải quyết một sự cố đã biết ngăn người dùng không phải quản trị viên kết nối với thiết bị qua Remote Desktop khi tính năng bảo mật \"Bảo vệ quản trị viên\" được bật."
+      "en": "Core Desktop could run apps that can’t run natively in a sandbox, while linux-firmware-hwe is proposed as a safeguard against newer firmware causing problems.",
+      "vi": "Core Desktop có thể chạy các ứng dụng không thể chạy tự nhiên trong hộp cát, trong khi linux-firmware-hwe được đề xuất như một biện pháp bảo vệ chống lại sự cố do phần sụn mới hơn gây ra."
     },
     "categories": [
-      "windows"
+      "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
+    "difficulty": null,
     "score": 1.22,
-    "howto": true,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "microsoft-sua-loi-remote-desktop-do-cac-ban-cap-nhat-windows-99ccbb"
+    "slug": "tinh-bat-bien-cua-ubuntu-eyeing-co-phai-khong-canonical-khoi-f8c22d"
   },
   "27c20eea9382a72f": {
     "id": "27c20eea9382a72f",
@@ -4161,43 +4199,40 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "1ee03a3e671258f8": {
-    "id": "1ee03a3e671258f8",
-    "slug": "five-smartwatch-heart-rate-zone-hacks-every-runner-should-kn-1ee03a",
-    "url": "https://lifehacker.com/health/best-smartwatch-heart-rate-zone-training-hacks",
+  "99ccbb4073246879": {
+    "id": "99ccbb4073246879",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-remote-desktop-failures-caused-by-recent-windows-updates",
     "source": {
-      "id": "lifehacker",
-      "name": "Lifehacker",
-      "site_url": "",
-      "kind": "news",
-      "content_type": "article"
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "site_url": "https://www.bleepingcomputer.com",
+      "kind": "news"
     },
-    "author": "Meredith Dietz",
-    "published_at": "Fri, 06 Nov 2026 17:30:00 +0000",
-    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "author": "Sergiu Gatlan",
+    "published_at": "Thu, 29 Oct 2026 10:35:40 -0400",
+    "fetched_at": "2026-10-29T14:41:51.400230+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Five Smartwatch Heart Rate Zone Hacks Every Runner Should Know",
-      "vi": "Five Smartwatch Heart Rate Zone Hacks Every Runner Should Know"
+      "en": "Microsoft fixes Remote Desktop failures caused by recent Windows updates",
+      "vi": "Microsoft sửa lỗi Remote Desktop do các bản cập nhật Windows gần đây gây ra"
     },
     "summary": {
-      "en": "The best tips to keep you in the zone.",
-      "vi": "The best tips to keep you in the zone."
+      "en": "Microsoft has resolved a known issue that prevents non-admin users from connecting to devices via Remote Desktop when the \"Administrator protection\" security feature is enabled.",
+      "vi": "Microsoft đã giải quyết một sự cố đã biết ngăn người dùng không phải quản trị viên kết nối với thiết bị qua Remote Desktop khi tính năng bảo mật \"Bảo vệ quản trị viên\" được bật."
     },
     "categories": [
       "windows"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.2,
+    "score": 1.22,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
-    "translate_attempts": {
-      "vi": 1
-    }
+    "hidden": false,
+    "slug": "microsoft-sua-loi-remote-desktop-do-cac-ban-cap-nhat-windows-99ccbb"
   },
   "d5f9f62fd177ef88": {
     "id": "d5f9f62fd177ef88",
@@ -4269,42 +4304,42 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "8f88aafaa21088c5": {
-    "id": "8f88aafaa21088c5",
-    "slug": "chia-se-ban-lam-viec-cua-tho-chup-hinh-thich-setup-theo-phon-8f88aa",
-    "url": "https://tinhte.vn/thread/chia-se-ban-lam-viec-cua-tho-chup-hinh-thich-setup-theo-phong-cach-game-thu.3806345",
+  "1ee03a3e671258f8": {
+    "id": "1ee03a3e671258f8",
+    "slug": "five-smartwatch-heart-rate-zone-hacks-every-runner-should-kn-1ee03a",
+    "url": "https://lifehacker.com/health/best-smartwatch-heart-rate-zone-training-hacks",
     "source": {
-      "id": "tinhte",
-      "name": "Tinh tế",
-      "site_url": "https://tinhte.vn",
+      "id": "lifehacker",
+      "name": "Lifehacker",
+      "site_url": "",
       "kind": "news",
       "content_type": "article"
     },
-    "author": "HoangSong",
-    "published_at": "Fri, 06 Nov 2026 13:17:47 +0000",
+    "author": "Meredith Dietz",
+    "published_at": "Fri, 06 Nov 2026 17:30:00 +0000",
     "fetched_at": "2026-11-07T10:25:58.721404+00:00",
-    "original_lang": "vi",
+    "original_lang": "en",
     "title": {
-      "vi": "Chia sẻ bàn làm việc của thợ chụp hình thích setup theo phong cách game thủ",
-      "en": "Chia sẻ bàn làm việc của thợ chụp hình thích setup theo phong cách game thủ"
+      "en": "Five Smartwatch Heart Rate Zone Hacks Every Runner Should Know",
+      "vi": "Five Smartwatch Heart Rate Zone Hacks Every Runner Should Know"
     },
     "summary": {
-      "vi": "Chào mọi người, đầu tiên xin được giới thiệu sơ qua về công việc hiện tại của bản thân và lý do từ đâu mình có ý tưởng để makeup cho bàn làm việc của bản thân để nó không gây nhàm chán theo ý kiến",
-      "en": "Chào mọi người, đầu tiên xin được giới thiệu sơ qua về công việc hiện tại của bản thân và lý do từ đâu mình có ý tưởng để makeup cho bàn làm việc của bản thân để nó không gây nhàm chán theo ý kiến"
+      "en": "The best tips to keep you in the zone.",
+      "vi": "The best tips to keep you in the zone."
     },
     "categories": [
-      "ios"
+      "windows"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 1.19,
+    "score": 1.2,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "en": false
+      "vi": false
     },
     "translate_attempts": {
-      "en": 1
+      "vi": 2
     }
   },
   "0386e52564ccd51b": {
@@ -4381,10 +4416,10 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "c06ec870b4e1dac0": {
-    "id": "c06ec870b4e1dac0",
-    "slug": "apple-huong-dan-tat-logo-phat-sang-tren-macbook-pro-moi-nhun-c06ec8",
-    "url": "https://tinhte.vn/thread/apple-huong-dan-tat-logo-phat-sang-tren-macbook-pro-moi-nhung-chi-co-cach-dung-terminal.4190606",
+  "8f88aafaa21088c5": {
+    "id": "8f88aafaa21088c5",
+    "slug": "chia-se-ban-lam-viec-cua-tho-chup-hinh-thich-setup-theo-phon-8f88aa",
+    "url": "https://tinhte.vn/thread/chia-se-ban-lam-viec-cua-tho-chup-hinh-thich-setup-theo-phong-cach-game-thu.3806345",
     "source": {
       "id": "tinhte",
       "name": "Tinh tế",
@@ -4392,26 +4427,23 @@
       "kind": "news",
       "content_type": "article"
     },
-    "author": "nhatminhngo",
-    "published_at": "Sun, 08 Nov 2026 07:20:32 +0000",
-    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "author": "HoangSong",
+    "published_at": "Fri, 06 Nov 2026 13:17:47 +0000",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
     "original_lang": "vi",
     "title": {
-      "vi": "Apple hướng dẫn tắt logo phát sáng trên MacBook Pro mới, nhưng chỉ có cách dùng Terminal",
-      "en": "Apple hướng dẫn tắt logo phát sáng trên MacBook Pro mới, nhưng chỉ có cách dùng Terminal"
+      "vi": "Chia sẻ bàn làm việc của thợ chụp hình thích setup theo phong cách game thủ",
+      "en": "Chia sẻ bàn làm việc của thợ chụp hình thích setup theo phong cách game thủ"
     },
     "summary": {
-      "vi": "Logo quả táo phát sáng huyền thoại đã quay lại trên MacBook Pro mới với màn hình PROLED, lần đầu sau",
-      "en": "Logo quả táo phát sáng huyền thoại đã quay lại trên MacBook Pro mới với màn hình PROLED, lần đầu sau"
+      "vi": "Chào mọi người, đầu tiên xin được giới thiệu sơ qua về công việc hiện tại của bản thân và lý do từ đâu mình có ý tưởng để makeup cho bàn làm việc của bản thân để nó không gây nhàm chán theo ý kiến",
+      "en": "Chào mọi người, đầu tiên xin được giới thiệu sơ qua về công việc hiện tại của bản thân và lý do từ đâu mình có ý tưởng để makeup cho bàn làm việc của bản thân để nó không gây nhàm chán theo ý kiến"
     },
     "categories": [
-      "macos",
-      "dev"
+      "ios"
     ],
-    "tags": [
-      "terminal"
-    ],
-    "difficulty": "advanced",
+    "tags": [],
+    "difficulty": "medium",
     "score": 1.19,
     "howto": true,
     "reading_time_min": 1,
@@ -4419,7 +4451,7 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 1
+      "en": 2
     }
   },
   "2b30d068a07bd43d": {
@@ -4492,40 +4524,46 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "6f7743a9465550a4": {
-    "id": "6f7743a9465550a4",
-    "url": "https://vnexpress.net/oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-5138064.html",
+  "c06ec870b4e1dac0": {
+    "id": "c06ec870b4e1dac0",
+    "slug": "apple-huong-dan-tat-logo-phat-sang-tren-macbook-pro-moi-nhun-c06ec8",
+    "url": "https://tinhte.vn/thread/apple-huong-dan-tat-logo-phat-sang-tren-macbook-pro-moi-nhung-chi-co-cach-dung-terminal.4190606",
     "source": {
-      "id": "vnexpress_sohoa",
-      "name": "VnExpress Thủ Thuật",
-      "site_url": "https://vnexpress.net/so-hoa",
-      "kind": "tips"
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news",
+      "content_type": "article"
     },
-    "author": null,
-    "published_at": "Wed, 28 Oct 2026 22:27:00 +0700",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "nhatminhngo",
+    "published_at": "Sun, 08 Nov 2026 07:20:32 +0000",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
     "original_lang": "vi",
     "title": {
-      "vi": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel",
-      "en": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel"
+      "vi": "Apple hướng dẫn tắt logo phát sáng trên MacBook Pro mới, nhưng chỉ có cách dùng Terminal",
+      "en": "Apple hướng dẫn tắt logo phát sáng trên MacBook Pro mới, nhưng chỉ có cách dùng Terminal"
     },
     "summary": {
-      "vi": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh.",
-      "en": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh."
+      "vi": "Logo quả táo phát sáng huyền thoại đã quay lại trên MacBook Pro mới với màn hình PROLED, lần đầu sau",
+      "en": "Logo quả táo phát sáng huyền thoại đã quay lại trên MacBook Pro mới với màn hình PROLED, lần đầu sau"
     },
     "categories": [
-      "hardware"
+      "macos",
+      "dev"
     ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.18,
+    "tags": [
+      "terminal"
+    ],
+    "difficulty": "advanced",
+    "score": 1.19,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "en": "machine"
+      "en": false
     },
-    "hidden": false,
-    "slug": "oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-6f7743"
+    "translate_attempts": {
+      "en": 2
+    }
   },
   "0e3c74ad88169176": {
     "id": "0e3c74ad88169176",
@@ -4597,43 +4635,40 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "51ae3dcde8c253db": {
-    "id": "51ae3dcde8c253db",
-    "url": "https://www.omgubuntu.co.uk/2026/10/ghostty-1-4-released",
+  "6f7743a9465550a4": {
+    "id": "6f7743a9465550a4",
+    "url": "https://vnexpress.net/oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-5138064.html",
     "source": {
-      "id": "omgubuntu",
-      "name": "OMG! Ubuntu!",
-      "site_url": "https://www.omgubuntu.co.uk",
+      "id": "vnexpress_sohoa",
+      "name": "VnExpress Thủ Thuật",
+      "site_url": "https://vnexpress.net/so-hoa",
       "kind": "tips"
     },
-    "author": "Joey Sneddon",
-    "published_at": "Thu, 29 Oct 2026 04:08:04 +0000",
+    "author": null,
+    "published_at": "Wed, 28 Oct 2026 22:27:00 +0700",
     "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
+    "original_lang": "vi",
     "title": {
-      "en": "Ghostty 1.4 released with big improvements",
-      "vi": "Ghostty 1.4 ra mắt với nhiều cải tiến lớn"
+      "vi": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel",
+      "en": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel"
     },
     "summary": {
-      "en": "A major new release of Ghostty, the open-source terminal emulator, has been released. Ghostty 1.4.0 brings a varied set of changes after 7 months of development. There are welcome performance optimisations on Linux and macOS, a more capable SHH implementation and an easier way to rearrange tab…",
-      "vi": "Một bản phát hành mới của Ghostty, trình mô phỏng thiết bị đầu cuối nguồn mở, đã được phát hành. Ghostty 1.4.0 mang đến nhiều thay đổi đa dạng sau 7 tháng phát triển. Có các tính năng tối ưu hóa hiệu suất đáng hoan nghênh trên Linux và macOS, khả năng triển khai SHH hiệu quả hơn và cách sắp xếp lại tab dễ dàng hơn…"
+      "vi": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh.",
+      "en": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau cùng độ phân giải 200 megapixel, hỗ trợ chỉnh sửa ảnh bằng câu lệnh và thời lượng pin 8.000 mAh."
     },
     "categories": [
-      "macos",
-      "linux"
+      "hardware"
     ],
-    "tags": [
-      "terminal"
-    ],
-    "difficulty": null,
+    "tags": [],
+    "difficulty": "medium",
     "score": 1.18,
-    "howto": false,
+    "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": "machine"
+      "en": "machine"
     },
-    "hidden": true,
-    "slug": "ghostty-14-ra-mat-voi-nhieu-cai-tien-lon-51ae3d"
+    "hidden": false,
+    "slug": "oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-6f7743"
   },
   "bf11d281416f1d84": {
     "id": "bf11d281416f1d84",
@@ -4720,10 +4755,9 @@
       "en": 1
     }
   },
-  "1c8f2197065ac11e": {
-    "id": "1c8f2197065ac11e",
-    "slug": "gelly-is-a-gtk-desktop-music-player-for-jellyfin-and-navidro-1c8f21",
-    "url": "https://www.omgubuntu.co.uk/2026/10/gelly-jellyfin-desktop-music-player-linux",
+  "51ae3dcde8c253db": {
+    "id": "51ae3dcde8c253db",
+    "url": "https://www.omgubuntu.co.uk/2026/10/ghostty-1-4-released",
     "source": {
       "id": "omgubuntu",
       "name": "OMG! Ubuntu!",
@@ -4731,28 +4765,33 @@
       "kind": "tips"
     },
     "author": "Joey Sneddon",
-    "published_at": "Thu, 29 Oct 2026 23:22:00 +0000",
-    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
+    "published_at": "Thu, 29 Oct 2026 04:08:04 +0000",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Gelly is a GTK desktop music player for Jellyfin and Navidrome",
-      "vi": "Gelly là trình phát nhạc trên máy tính để bàn GTK dành cho Jellyfin và Navidrome"
+      "en": "Ghostty 1.4 released with big improvements",
+      "vi": "Ghostty 1.4 ra mắt với nhiều cải tiến lớn"
     },
     "summary": {
-      "en": "If you run your own music streaming server using Jellyfin or Navidrome/Subsonic, and you want a solid desktop player to browse and stream your library in, Gelly is worth a look. It bills itself as a “native, lightweight music player” for the aforementioned streaming servers…",
-      "vi": "Nếu bạn chạy máy chủ phát nhạc trực tuyến của riêng mình bằng Jellyfin hoặc Navidrome/Subsonic và bạn muốn có một trình phát máy tính để bàn chắc chắn để duyệt và phát trực tuyến thư viện của mình, Gelly rất đáng để xem xét. Nó tự nhận mình là “trình phát nhạc nhẹ, gốc” cho các máy chủ phát trực tuyến nói trên…"
+      "en": "A major new release of Ghostty, the open-source terminal emulator, has been released. Ghostty 1.4.0 brings a varied set of changes after 7 months of development. There are welcome performance optimisations on Linux and macOS, a more capable SHH implementation and an easier way to rearrange tab…",
+      "vi": "Một bản phát hành mới của Ghostty, trình mô phỏng thiết bị đầu cuối nguồn mở, đã được phát hành. Ghostty 1.4.0 mang đến nhiều thay đổi đa dạng sau 7 tháng phát triển. Có các tính năng tối ưu hóa hiệu suất đáng hoan nghênh trên Linux và macOS, khả năng triển khai SHH hiệu quả hơn và cách sắp xếp lại tab dễ dàng hơn…"
     },
     "categories": [
+      "macos",
       "linux"
     ],
-    "tags": [],
+    "tags": [
+      "terminal"
+    ],
     "difficulty": null,
     "score": 1.18,
     "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
-    }
+    },
+    "hidden": true,
+    "slug": "ghostty-14-ra-mat-voi-nhieu-cai-tien-lon-51ae3d"
   },
   "f41e6fca375dd515": {
     "id": "f41e6fca375dd515",
@@ -4838,36 +4877,35 @@
       "en": 1
     }
   },
-  "e9337c15641891f4": {
-    "id": "e9337c15641891f4",
-    "slug": "five-hacks-every-suunto-race-3s-user-should-know-e9337c",
-    "url": "https://lifehacker.com/health/best-suunto-race-3s-hacks",
+  "1c8f2197065ac11e": {
+    "id": "1c8f2197065ac11e",
+    "slug": "gelly-is-a-gtk-desktop-music-player-for-jellyfin-and-navidro-1c8f21",
+    "url": "https://www.omgubuntu.co.uk/2026/10/gelly-jellyfin-desktop-music-player-linux",
     "source": {
-      "id": "lifehacker",
-      "name": "Lifehacker",
-      "site_url": "",
-      "kind": "news",
-      "content_type": "article"
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips"
     },
-    "author": "Meredith Dietz",
-    "published_at": "Wed, 28 Oct 2026 19:30:18 +0000",
-    "fetched_at": "2026-10-30T10:48:57.185065+00:00",
+    "author": "Joey Sneddon",
+    "published_at": "Thu, 29 Oct 2026 23:22:00 +0000",
+    "fetched_at": "2026-10-30T03:03:38.917610+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Five Hacks Every Suunto Race 3S User Should Know",
-      "vi": "Năm thủ thuật mà người dùng Suunto Race 3S nên biết"
+      "en": "Gelly is a GTK desktop music player for Jellyfin and Navidrome",
+      "vi": "Gelly là trình phát nhạc trên máy tính để bàn GTK dành cho Jellyfin và Navidrome"
     },
     "summary": {
-      "en": "Suunto's \"Cadence Coach\" is giving me a lot of tough love already.",
-      "vi": "\"Huấn luyện viên Cadence\" của Suunto đang dành cho tôi rất nhiều tình yêu mãnh liệt rồi."
+      "en": "If you run your own music streaming server using Jellyfin or Navidrome/Subsonic, and you want a solid desktop player to browse and stream your library in, Gelly is worth a look. It bills itself as a “native, lightweight music player” for the aforementioned streaming servers…",
+      "vi": "Nếu bạn chạy máy chủ phát nhạc trực tuyến của riêng mình bằng Jellyfin hoặc Navidrome/Subsonic và bạn muốn có một trình phát máy tính để bàn chắc chắn để duyệt và phát trực tuyến thư viện của mình, Gelly rất đáng để xem xét. Nó tự nhận mình là “trình phát nhạc nhẹ, gốc” cho các máy chủ phát trực tuyến nói trên…"
     },
     "categories": [
-      "windows"
+      "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
+    "difficulty": null,
     "score": 1.18,
-    "howto": true,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
@@ -4957,31 +4995,31 @@
       "en": 1
     }
   },
-  "66fcad3f7dcd0a0d": {
-    "id": "66fcad3f7dcd0a0d",
-    "slug": "fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-system-66fcad",
-    "url": "https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems",
+  "e9337c15641891f4": {
+    "id": "e9337c15641891f4",
+    "slug": "five-hacks-every-suunto-race-3s-user-should-know-e9337c",
+    "url": "https://lifehacker.com/health/best-suunto-race-3s-hacks",
     "source": {
-      "id": "bleepingcomputer",
-      "name": "BleepingComputer",
-      "site_url": "https://www.bleepingcomputer.com",
+      "id": "lifehacker",
+      "name": "Lifehacker",
+      "site_url": "",
       "kind": "news",
       "content_type": "article"
     },
-    "author": "Lawrence Abrams",
-    "published_at": "Thu, 05 Nov 2026 19:56:44 -0500",
-    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "author": "Meredith Dietz",
+    "published_at": "Wed, 28 Oct 2026 19:30:18 +0000",
+    "fetched_at": "2026-10-30T10:48:57.185065+00:00",
     "original_lang": "en",
     "title": {
-      "en": "FBI, CISA warn of cyberattacks targeting refrigeration systems",
-      "vi": "FBI, CISA warn of cyberattacks targeting refrigeration systems"
+      "en": "Five Hacks Every Suunto Race 3S User Should Know",
+      "vi": "Năm thủ thuật mà người dùng Suunto Race 3S nên biết"
     },
     "summary": {
-      "en": "The FBI and CISA warn that hackers are actively targeting industrial refrigeration and cold-chain monitoring systems worldwide, potentially causing food spoilage, equipment damage, and fire hazards.",
-      "vi": "The FBI and CISA warn that hackers are actively targeting industrial refrigeration and cold-chain monitoring systems worldwide, potentially causing food spoilage, equipment damage, and fire hazards."
+      "en": "Suunto's \"Cadence Coach\" is giving me a lot of tough love already.",
+      "vi": "\"Huấn luyện viên Cadence\" của Suunto đang dành cho tôi rất nhiều tình yêu mãnh liệt rồi."
     },
     "categories": [
-      "security"
+      "windows"
     ],
     "tags": [],
     "difficulty": "medium",
@@ -4989,10 +5027,7 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 1
+      "vi": "machine"
     }
   },
   "846085d09b662045": {
@@ -5079,10 +5114,10 @@
       "en": 1
     }
   },
-  "571eb31b3413a342": {
-    "id": "571eb31b3413a342",
-    "slug": "fake-openai-spacex-events-used-to-steal-microsoft-google-acc-571eb3",
-    "url": "https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts",
+  "66fcad3f7dcd0a0d": {
+    "id": "66fcad3f7dcd0a0d",
+    "slug": "fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-system-66fcad",
+    "url": "https://www.bleepingcomputer.com/news/security/fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-systems",
     "source": {
       "id": "bleepingcomputer",
       "name": "BleepingComputer",
@@ -5091,20 +5126,19 @@
       "content_type": "article"
     },
     "author": "Lawrence Abrams",
-    "published_at": "Thu, 05 Nov 2026 16:30:30 -0500",
+    "published_at": "Thu, 05 Nov 2026 19:56:44 -0500",
     "fetched_at": "2026-11-07T10:25:58.721404+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Fake OpenAI, SpaceX events used to steal Microsoft, Google accounts",
-      "vi": "Fake OpenAI, SpaceX events used to steal Microsoft, Google accounts"
+      "en": "FBI, CISA warn of cyberattacks targeting refrigeration systems",
+      "vi": "FBI, CISA warn of cyberattacks targeting refrigeration systems"
     },
     "summary": {
-      "en": "Hackers are using fake OpenAI, SpaceX, and Anthropic event invitations to lure employees into phishing attacks, using two different phishing-as-a-service platforms to steal Microsoft and Google account credentials and authentication sessions.",
-      "vi": "Hackers are using fake OpenAI, SpaceX, and Anthropic event invitations to lure employees into phishing attacks, using two different phishing-as-a-service platforms to steal Microsoft and Google account credentials and authentication sessions."
+      "en": "The FBI and CISA warn that hackers are actively targeting industrial refrigeration and cold-chain monitoring systems worldwide, potentially causing food spoilage, equipment damage, and fire hazards.",
+      "vi": "The FBI and CISA warn that hackers are actively targeting industrial refrigeration and cold-chain monitoring systems worldwide, potentially causing food spoilage, equipment damage, and fire hazards."
     },
     "categories": [
-      "windows",
-      "ai"
+      "security"
     ],
     "tags": [],
     "difficulty": "medium",
@@ -5115,7 +5149,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "7b892a44fd9b93f4": {
@@ -5195,42 +5229,44 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "131eaa65657ae221": {
-    "id": "131eaa65657ae221",
-    "url": "https://www.howtogeek.com/these-mistakes-can-turn-pi-hole-into-least-secure-part-your-home-network",
+  "571eb31b3413a342": {
+    "id": "571eb31b3413a342",
+    "slug": "fake-openai-spacex-events-used-to-steal-microsoft-google-acc-571eb3",
+    "url": "https://www.bleepingcomputer.com/news/security/fake-openai-spacex-events-used-to-steal-microsoft-google-accounts",
     "source": {
-      "id": "howtogeek",
-      "name": "How-To Geek",
-      "site_url": "https://www.howtogeek.com",
-      "kind": "tips"
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "site_url": "https://www.bleepingcomputer.com",
+      "kind": "news",
+      "content_type": "article"
     },
-    "author": "Umair Khurshid",
-    "published_at": "Wed, 28 Oct 2026 21:30:14 GMT",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "author": "Lawrence Abrams",
+    "published_at": "Thu, 05 Nov 2026 16:30:30 -0500",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
     "original_lang": "en",
     "title": {
-      "en": "These 6 mistakes can turn Pi-hole into the least secure part of your home network",
-      "vi": "6 sai lầm này có thể biến Pi-hole trở thành phần kém an toàn nhất trong mạng gia đình của bạn"
+      "en": "Fake OpenAI, SpaceX events used to steal Microsoft, Google accounts",
+      "vi": "Fake OpenAI, SpaceX events used to steal Microsoft, Google accounts"
     },
     "summary": {
-      "en": "Nothing says peace of mind like discovering your favorite privacy tool has a few secrets of its own!",
-      "vi": "Không có gì mang lại cảm giác an tâm bằng việc khám phá ra công cụ bảo mật yêu thích của bạn có một vài bí mật riêng!"
+      "en": "Hackers are using fake OpenAI, SpaceX, and Anthropic event invitations to lure employees into phishing attacks, using two different phishing-as-a-service platforms to steal Microsoft and Google account credentials and authentication sessions.",
+      "vi": "Hackers are using fake OpenAI, SpaceX, and Anthropic event invitations to lure employees into phishing attacks, using two different phishing-as-a-service platforms to steal Microsoft and Google account credentials and authentication sessions."
     },
     "categories": [
-      "security"
+      "windows",
+      "ai"
     ],
-    "tags": [
-      "privacy"
-    ],
-    "difficulty": null,
-    "score": 1.17,
-    "howto": false,
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.18,
+    "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": "machine"
+      "vi": false
     },
-    "hidden": false,
-    "slug": "6-sai-lam-nay-co-the-bien-pi-hole-tro-thanh-phan-kem-an-toan-131eaa"
+    "translate_attempts": {
+      "vi": 2
+    }
   },
   "0702522b39b9b7d6": {
     "id": "0702522b39b9b7d6",
@@ -5302,46 +5338,42 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "40a2250126c4a092": {
-    "id": "40a2250126c4a092",
-    "slug": "9-40a225",
-    "url": "https://sspai.com/post/117867",
+  "131eaa65657ae221": {
+    "id": "131eaa65657ae221",
+    "url": "https://www.howtogeek.com/these-mistakes-can-turn-pi-hole-into-least-secure-part-your-home-network",
     "source": {
-      "id": "sspai-cn",
-      "name": "少数派",
-      "site_url": "https://sspai.com",
-      "kind": "news",
-      "content_type": "article"
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips"
     },
-    "author": "少数派编辑部",
-    "published_at": "Fri, 30 Oct 2026 17:57:11 +0800",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "zh-CN",
+    "author": "Umair Khurshid",
+    "published_at": "Wed, 28 Oct 2026 21:30:14 GMT",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
     "title": {
-      "zh-CN": "本周看什么 | 最近值得一看的 9 部作品",
-      "vi": "本周看什么 | 最近值得一看的 9 部作品",
-      "en": "本周看什么 | 最近值得一看的 9 部作品"
+      "en": "These 6 mistakes can turn Pi-hole into the least secure part of your home network",
+      "vi": "6 sai lầm này có thể biến Pi-hole trở thành phần kém an toàn nhất trong mạng gia đình của bạn"
     },
     "summary": {
-      "zh-CN": "📅本周新预告《沙丘3》终极预告10月28日，电影《沙丘3》发布了终极预告，中国内地将于12月31日上映。丹尼斯·维伦纽瓦执导，提莫西·查拉梅、赞达亚、杰森·莫玛、弗洛伦丝·皮尤、丽贝卡·弗格森主演，誓 ... 查看全文",
-      "vi": "📅本周新预告《沙丘3》终极预告10月28日，电影《沙丘3》发布了终极预告，中国内地将于12月31日上映。丹尼斯·维伦纽瓦执导，提莫西·查拉梅、赞达亚、杰森·莫玛、弗洛伦丝·皮尤、丽贝卡·弗格森主演，誓 ... 查看全文",
-      "en": "📅本周新预告《沙丘3》终极预告10月28日，电影《沙丘3》发布了终极预告，中国内地将于12月31日上映。丹尼斯·维伦纽瓦执导，提莫西·查拉梅、赞达亚、杰森·莫玛、弗洛伦丝·皮尤、丽贝卡·弗格森主演，誓 ... 查看全文"
+      "en": "Nothing says peace of mind like discovering your favorite privacy tool has a few secrets of its own!",
+      "vi": "Không có gì mang lại cảm giác an tâm bằng việc khám phá ra công cụ bảo mật yêu thích của bạn có một vài bí mật riêng!"
     },
     "categories": [
-      "dev"
+      "security"
     ],
-    "tags": [],
+    "tags": [
+      "privacy"
+    ],
     "difficulty": null,
     "score": 1.17,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {},
-    "alsoFrom": [
-      {
-        "sourceName": "少数派",
-        "url": "https://sspai.com/post/118623"
-      }
-    ]
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "6-sai-lam-nay-co-the-bien-pi-hole-tro-thanh-phan-kem-an-toan-131eaa"
   },
   "1318bc533061267e": {
     "id": "1318bc533061267e",
@@ -5382,8 +5414,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
   "0f7b2af743af3f71": {
@@ -5425,14 +5457,14 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
-  "63de1dd5d2bf1bcd": {
-    "id": "63de1dd5d2bf1bcd",
-    "slug": "tip-63de1d",
-    "url": "https://sspai.com/prime/story/zhuanglesha-261030",
+  "40a2250126c4a092": {
+    "id": "40a2250126c4a092",
+    "slug": "9-40a225",
+    "url": "https://sspai.com/post/117867",
     "source": {
       "id": "sspai-cn",
       "name": "少数派",
@@ -5440,19 +5472,19 @@
       "kind": "news",
       "content_type": "article"
     },
-    "author": "阿帅的健康笔记",
-    "published_at": "Fri, 30 Oct 2026 11:30:43 +0800",
+    "author": "少数派编辑部",
+    "published_at": "Fri, 30 Oct 2026 17:57:11 +0800",
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "zh-CN",
     "title": {
-      "zh-CN": "《久坐健康指南》作者、运动健康领域创作者阿帅装了啥？",
-      "vi": "《久坐健康指南》作者、运动健康领域创作者阿帅装了啥？",
-      "en": "《久坐健康指南》作者、运动健康领域创作者阿帅装了啥？"
+      "zh-CN": "本周看什么 | 最近值得一看的 9 部作品",
+      "vi": "本周看什么 | 最近值得一看的 9 部作品",
+      "en": "本周看什么 | 最近值得一看的 9 部作品"
     },
     "summary": {
-      "zh-CN": "编者按：@阿帅的健康笔记长期专注于运动健康领域的创作，发表了不少兼具实用性与科普性的文章，并著有付费栏目《久坐健康指南》，受到许多读者喜爱。本期《装了啥》邀请他分享运动、创作与工作中的心得，以及常用的 ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
-      "vi": "编者按：@阿帅的健康笔记长期专注于运动健康领域的创作，发表了不少兼具实用性与科普性的文章，并著有付费栏目《久坐健康指南》，受到许多读者喜爱。本期《装了啥》邀请他分享运动、创作与工作中的心得，以及常用的 ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
-      "en": "编者按：@阿帅的健康笔记长期专注于运动健康领域的创作，发表了不少兼具实用性与科普性的文章，并著有付费栏目《久坐健康指南》，受到许多读者喜爱。本期《装了啥》邀请他分享运动、创作与工作中的心得，以及常用的 ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。"
+      "zh-CN": "📅本周新预告《沙丘3》终极预告10月28日，电影《沙丘3》发布了终极预告，中国内地将于12月31日上映。丹尼斯·维伦纽瓦执导，提莫西·查拉梅、赞达亚、杰森·莫玛、弗洛伦丝·皮尤、丽贝卡·弗格森主演，誓 ... 查看全文",
+      "vi": "📅本周新预告《沙丘3》终极预告10月28日，电影《沙丘3》发布了终极预告，中国内地将于12月31日上映。丹尼斯·维伦纽瓦执导，提莫西·查拉梅、赞达亚、杰森·莫玛、弗洛伦丝·皮尤、丽贝卡·弗格森主演，誓 ... 查看全文",
+      "en": "📅本周新预告《沙丘3》终极预告10月28日，电影《沙丘3》发布了终极预告，中国内地将于12月31日上映。丹尼斯·维伦纽瓦执导，提莫西·查拉梅、赞达亚、杰森·莫玛、弗洛伦丝·皮尤、丽贝卡·弗格森主演，誓 ... 查看全文"
     },
     "categories": [
       "dev"
@@ -5462,7 +5494,13 @@
     "score": 1.17,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {},
+    "alsoFrom": [
+      {
+        "sourceName": "少数派",
+        "url": "https://sspai.com/post/118623"
+      }
+    ]
   },
   "21904cea1d46b939": {
     "id": "21904cea1d46b939",
@@ -5502,8 +5540,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
   "af1ceb2b852d6c61": {
@@ -5544,35 +5582,37 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
-  "101569ba483479b0": {
-    "id": "101569ba483479b0",
-    "slug": "ubuntu-2704-tenacious-t-rex-opens-for-development-101569",
-    "url": "https://www.omgubuntu.co.uk/2026/10/ubuntu-2704-opens-for-development",
+  "63de1dd5d2bf1bcd": {
+    "id": "63de1dd5d2bf1bcd",
+    "slug": "tip-63de1d",
+    "url": "https://sspai.com/prime/story/zhuanglesha-261030",
     "source": {
-      "id": "omgubuntu",
-      "name": "OMG! Ubuntu!",
-      "site_url": "https://www.omgubuntu.co.uk",
-      "kind": "tips",
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
       "content_type": "article"
     },
-    "author": "Joey Sneddon",
-    "published_at": "Fri, 30 Oct 2026 21:15:12 +0000",
+    "author": "阿帅的健康笔记",
+    "published_at": "Fri, 30 Oct 2026 11:30:43 +0800",
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
+    "original_lang": "zh-CN",
     "title": {
-      "en": "Ubuntu 27.04 ‘Tenacious T-Rex’ opens for development",
-      "vi": "Ubuntu 27.04 ‘Tenacious T-Rex’ opens for development"
+      "zh-CN": "《久坐健康指南》作者、运动健康领域创作者阿帅装了啥？",
+      "vi": "《久坐健康指南》作者、运动健康领域创作者阿帅装了啥？",
+      "en": "《久坐健康指南》作者、运动健康领域创作者阿帅装了啥？"
     },
     "summary": {
-      "en": "Development on Ubuntu 27.04, codenamed ‘Tenacious T-Rex’, has officially begun. The tenacious archive is now open (30 October 2026), with auto-sync from Debian set to pull in a tranche of updated packages since the Ubuntu 26.10 release. Over the course of the next six months…",
-      "vi": "Development on Ubuntu 27.04, codenamed ‘Tenacious T-Rex’, has officially begun. The tenacious archive is now open (30 October 2026), with auto-sync from Debian set to pull in a tranche of updated packages since the Ubuntu 26.10 release. Over the course of the next six months…"
+      "zh-CN": "编者按：@阿帅的健康笔记长期专注于运动健康领域的创作，发表了不少兼具实用性与科普性的文章，并著有付费栏目《久坐健康指南》，受到许多读者喜爱。本期《装了啥》邀请他分享运动、创作与工作中的心得，以及常用的 ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
+      "vi": "编者按：@阿帅的健康笔记长期专注于运动健康领域的创作，发表了不少兼具实用性与科普性的文章，并著有付费栏目《久坐健康指南》，受到许多读者喜爱。本期《装了啥》邀请他分享运动、创作与工作中的心得，以及常用的 ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
+      "en": "编者按：@阿帅的健康笔记长期专注于运动健康领域的创作，发表了不少兼具实用性与科普性的文章，并著有付费栏目《久坐健康指南》，受到许多读者喜爱。本期《装了啥》邀请他分享运动、创作与工作中的心得，以及常用的 ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。"
     },
     "categories": [
-      "linux"
+      "dev"
     ],
     "tags": [],
     "difficulty": null,
@@ -5619,8 +5659,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
   "5b730eeb2a867dcb": {
@@ -5661,37 +5701,35 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
-  "e27fe191802aa2f5": {
-    "id": "e27fe191802aa2f5",
-    "slug": "tip-e27fe1",
-    "url": "https://sspai.com/post/116435",
+  "101569ba483479b0": {
+    "id": "101569ba483479b0",
+    "slug": "ubuntu-2704-tenacious-t-rex-opens-for-development-101569",
+    "url": "https://www.omgubuntu.co.uk/2026/10/ubuntu-2704-opens-for-development",
     "source": {
-      "id": "sspai-cn",
-      "name": "少数派",
-      "site_url": "https://sspai.com",
-      "kind": "news",
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
       "content_type": "article"
     },
-    "author": "jyf15",
-    "published_at": "Fri, 30 Oct 2026 11:13:40 +0800",
+    "author": "Joey Sneddon",
+    "published_at": "Fri, 30 Oct 2026 21:15:12 +0000",
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "zh-CN",
+    "original_lang": "en",
     "title": {
-      "zh-CN": "精确到秒的时间记录是怎样的？我的柳比歇夫法半年实践",
-      "vi": "精确到秒的时间记录是怎样的？我的柳比歇夫法半年实践",
-      "en": "精确到秒的时间记录是怎样的？我的柳比歇夫法半年实践"
+      "en": "Ubuntu 27.04 ‘Tenacious T-Rex’ opens for development",
+      "vi": "Ubuntu 27.04 ‘Tenacious T-Rex’ opens for development"
     },
     "summary": {
-      "zh-CN": "就像一个运动员无法预计自己能否取得金牌，但能控制自己投入于训练的时间一样，我们无法决定性地控制工作和生活中每一项事项的成功与否，但可以控制自己投入更多还是更少的时间。 查看全文",
-      "vi": "就像一个运动员无法预计自己能否取得金牌，但能控制自己投入于训练的时间一样，我们无法决定性地控制工作和生活中每一项事项的成功与否，但可以控制自己投入更多还是更少的时间。 查看全文",
-      "en": "就像一个运动员无法预计自己能否取得金牌，但能控制自己投入于训练的时间一样，我们无法决定性地控制工作和生活中每一项事项的成功与否，但可以控制自己投入更多还是更少的时间。 查看全文"
+      "en": "Development on Ubuntu 27.04, codenamed ‘Tenacious T-Rex’, has officially begun. The tenacious archive is now open (30 October 2026), with auto-sync from Debian set to pull in a tranche of updated packages since the Ubuntu 26.10 release. Over the course of the next six months…",
+      "vi": "Development on Ubuntu 27.04, codenamed ‘Tenacious T-Rex’, has officially begun. The tenacious archive is now open (30 October 2026), with auto-sync from Debian set to pull in a tranche of updated packages since the Ubuntu 26.10 release. Over the course of the next six months…"
     },
     "categories": [
-      "dev"
+      "linux"
     ],
     "tags": [],
     "difficulty": null,
@@ -5738,8 +5776,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
   "689f32daff2e0460": {
@@ -5780,14 +5818,14 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
-  "7173402c799a3803": {
-    "id": "7173402c799a3803",
-    "slug": "254-717340",
-    "url": "https://sspai.com/post/117791",
+  "e27fe191802aa2f5": {
+    "id": "e27fe191802aa2f5",
+    "slug": "tip-e27fe1",
+    "url": "https://sspai.com/post/116435",
     "source": {
       "id": "sspai-cn",
       "name": "少数派",
@@ -5795,19 +5833,19 @@
       "kind": "news",
       "content_type": "article"
     },
-    "author": "少数派编辑部",
-    "published_at": "Thu, 29 Oct 2026 17:26:58 +0800",
+    "author": "jyf15",
+    "published_at": "Fri, 30 Oct 2026 11:13:40 +0800",
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "zh-CN",
     "title": {
-      "zh-CN": "新玩意 254｜少数派的编辑们最近买了啥？",
-      "vi": "新玩意 254｜少数派的编辑们最近买了啥？",
-      "en": "新玩意 254｜少数派的编辑们最近买了啥？"
+      "zh-CN": "精确到秒的时间记录是怎样的？我的柳比歇夫法半年实践",
+      "vi": "精确到秒的时间记录是怎样的？我的柳比歇夫法半年实践",
+      "en": "精确到秒的时间记录是怎样的？我的柳比歇夫法半年实践"
     },
     "summary": {
-      "zh-CN": "编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。内容声明：《新玩意》栏目如含有 ... 查看全文",
-      "vi": "编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。内容声明：《新玩意》栏目如含有 ... 查看全文",
-      "en": "编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。内容声明：《新玩意》栏目如含有 ... 查看全文"
+      "zh-CN": "就像一个运动员无法预计自己能否取得金牌，但能控制自己投入于训练的时间一样，我们无法决定性地控制工作和生活中每一项事项的成功与否，但可以控制自己投入更多还是更少的时间。 查看全文",
+      "vi": "就像一个运动员无法预计自己能否取得金牌，但能控制自己投入于训练的时间一样，我们无法决定性地控制工作和生活中每一项事项的成功与否，但可以控制自己投入更多还是更少的时间。 查看全文",
+      "en": "就像一个运动员无法预计自己能否取得金牌，但能控制自己投入于训练的时间一样，我们无法决定性地控制工作和生活中每一项事项的成功与否，但可以控制自己投入更多还是更少的时间。 查看全文"
     },
     "categories": [
       "dev"
@@ -5857,8 +5895,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
   "b5d886cf0938fbc4": {
@@ -5899,9 +5937,114 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
+  },
+  "7173402c799a3803": {
+    "id": "7173402c799a3803",
+    "slug": "254-717340",
+    "url": "https://sspai.com/post/117791",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "少数派编辑部",
+    "published_at": "Thu, 29 Oct 2026 17:26:58 +0800",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "新玩意 254｜少数派的编辑们最近买了啥？",
+      "vi": "新玩意 254｜少数派的编辑们最近买了啥？",
+      "en": "新玩意 254｜少数派的编辑们最近买了啥？"
+    },
+    "summary": {
+      "zh-CN": "编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。内容声明：《新玩意》栏目如含有 ... 查看全文",
+      "vi": "编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。内容声明：《新玩意》栏目如含有 ... 查看全文",
+      "en": "编注：很多读者都会好奇少数派的编辑们到底平时都「买了啥」。我们希望通过「编辑部的新玩意」介绍编辑部成员们最近在用的新奇产品，让他们自己来谈谈这些新玩意的使用体验究竟如何。内容声明：《新玩意》栏目如含有 ... 查看全文"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "f9d96794a3a3862d": {
+    "id": "f9d96794a3a3862d",
+    "slug": "tip-f9d967",
+    "url": "https://www.ithome.com/1/024/002.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sun, 08 Nov 2026 13:28:29 GMT",
+    "fetched_at": "2026-11-08T19:48:06.125027+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "奔驰要把屏幕“装”进车玻璃：后挡风能提醒注意路况，侧窗能告诉你汽车电量",
+      "vi": "奔驰要把屏幕“装”进车玻璃：后挡风能提醒注意路况，侧窗能告诉你汽车电量",
+      "en": "奔驰要把屏幕“装”进车玻璃：后挡风能提醒注意路况，侧窗能告诉你汽车电量"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 8 日消息，据外媒 Road&Track 报道，当地时间 3 日，奔驰展示了两项新技术，分别是 Intelligent Display in Glass 车窗智能显示 技术和 Holographic Display 全息显示 技术。 按照奔驰设想，后挡风玻璃可以 显示各种警告标志和交通信息 ，提醒后方司机。相比能提醒后车减速的普通刹车灯，奔驰的方案还能告诉后车为什么要减速，提示前方发生交通事故、有人过马路等信息。 奔驰为此考虑了两种 LED 技术。Mini LED 适合 后挡风玻璃等面积较大的显示区域 ，分辨率更高的 Micro…",
+      "vi": "IT之家 11 月 8 日消息，据外媒 Road&Track 报道，当地时间 3 日，奔驰展示了两项新技术，分别是 Intelligent Display in Glass 车窗智能显示 技术和 Holographic Display 全息显示 技术。 按照奔驰设想，后挡风玻璃可以 显示各种警告标志和交通信息 ，提醒后方司机。相比能提醒后车减速的普通刹车灯，奔驰的方案还能告诉后车为什么要减速，提示前方发生交通事故、有人过马路等信息。 奔驰为此考虑了两种 LED 技术。Mini LED 适合 后挡风玻璃等面积较大的显示区域 ，分辨率更高的 Micro…",
+      "en": "IT之家 11 月 8 日消息，据外媒 Road&Track 报道，当地时间 3 日，奔驰展示了两项新技术，分别是 Intelligent Display in Glass 车窗智能显示 技术和 Holographic Display 全息显示 技术。 按照奔驰设想，后挡风玻璃可以 显示各种警告标志和交通信息 ，提醒后方司机。相比能提醒后车减速的普通刹车灯，奔驰的方案还能告诉后车为什么要减速，提示前方发生交通事故、有人过马路等信息。 奔驰为此考虑了两种 LED 技术。Mini LED 适合 后挡风玻璃等面积较大的显示区域 ，分辨率更高的 Micro…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "be13f5de8106fed3": {
+    "id": "be13f5de8106fed3",
+    "slug": "stellantis-be13f5",
+    "url": "https://www.ithome.com/1/024/268.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Mon, 09 Nov 2026 06:44:59 GMT",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "消息称玛莎拉蒂与尊界新车外观确认，属华为、江淮和 Stellantis 三方合作项目",
+      "vi": "消息称玛莎拉蒂与尊界新车外观确认，属华为、江淮和 Stellantis 三方合作项目",
+      "en": "消息称玛莎拉蒂与尊界新车外观确认，属华为、江淮和 Stellantis 三方合作项目"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 9 日消息，据第一财经报道， 玛莎拉蒂与尊界的合作项目名为“玛莎拉蒂 Design” ，该项目为华为、江淮和 Stellantis 的三方合作。目前， 新车外观已确认 ，规划明年第四季度有进一步量产动态。 知情人士表示：“由于玛莎拉蒂国内生产资质问题，该项目将通过江淮进行制造，华为赋能的形式进行。”同时，该合作将分国内、国外两条路径走， 国内以“尊界”为销售主体，国外则仍以玛莎拉蒂标识出售 。 据财联社今日早些时候报道，知情人士透露， 尊界或将推出一个全新子品牌 ，定价区间在 40-50 万左右，车型主打…",
+      "vi": "IT之家 11 月 9 日消息，据第一财经报道， 玛莎拉蒂与尊界的合作项目名为“玛莎拉蒂 Design” ，该项目为华为、江淮和 Stellantis 的三方合作。目前， 新车外观已确认 ，规划明年第四季度有进一步量产动态。 知情人士表示：“由于玛莎拉蒂国内生产资质问题，该项目将通过江淮进行制造，华为赋能的形式进行。”同时，该合作将分国内、国外两条路径走， 国内以“尊界”为销售主体，国外则仍以玛莎拉蒂标识出售 。 据财联社今日早些时候报道，知情人士透露， 尊界或将推出一个全新子品牌 ，定价区间在 40-50 万左右，车型主打…",
+      "en": "IT之家 11 月 9 日消息，据第一财经报道， 玛莎拉蒂与尊界的合作项目名为“玛莎拉蒂 Design” ，该项目为华为、江淮和 Stellantis 的三方合作。目前， 新车外观已确认 ，规划明年第四季度有进一步量产动态。 知情人士表示：“由于玛莎拉蒂国内生产资质问题，该项目将通过江淮进行制造，华为赋能的形式进行。”同时，该合作将分国内、国外两条路径走， 国内以“尊界”为销售主体，国外则仍以玛莎拉蒂标识出售 。 据财联社今日早些时候报道，知情人士透露， 尊界或将推出一个全新子品牌 ，定价区间在 40-50 万左右，车型主打…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
   },
   "f5eac0fda05e2ed0": {
     "id": "f5eac0fda05e2ed0",
@@ -5936,10 +6079,10 @@
     "reading_time_min": 1,
     "translated": {}
   },
-  "f9d96794a3a3862d": {
-    "id": "f9d96794a3a3862d",
-    "slug": "tip-f9d967",
-    "url": "https://www.ithome.com/1/024/002.htm",
+  "0e19f3fc434babfc": {
+    "id": "0e19f3fc434babfc",
+    "slug": "2030-80-60-0e19f3",
+    "url": "https://www.ithome.com/1/024/267.htm",
     "source": {
       "id": "ithome-cn",
       "name": "IT之家",
@@ -5948,18 +6091,53 @@
       "content_type": "article"
     },
     "author": null,
-    "published_at": "Sun, 08 Nov 2026 13:28:29 GMT",
-    "fetched_at": "2026-11-08T19:48:06.125027+00:00",
+    "published_at": "Mon, 09 Nov 2026 06:43:59 GMT",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
     "original_lang": "zh-CN",
     "title": {
-      "zh-CN": "奔驰要把屏幕“装”进车玻璃：后挡风能提醒注意路况，侧窗能告诉你汽车电量",
-      "vi": "奔驰要把屏幕“装”进车玻璃：后挡风能提醒注意路况，侧窗能告诉你汽车电量",
-      "en": "奔驰要把屏幕“装”进车玻璃：后挡风能提醒注意路况，侧窗能告诉你汽车电量"
+      "zh-CN": "消息称英国拟将 2030 年电动汽车销售目标从 80% 下调至 60%，以缓解车企压力",
+      "vi": "消息称英国拟将 2030 年电动汽车销售目标从 80% 下调至 60%，以缓解车企压力",
+      "en": "消息称英国拟将 2030 年电动汽车销售目标从 80% 下调至 60%，以缓解车企压力"
     },
     "summary": {
-      "zh-CN": "IT之家 11 月 8 日消息，据外媒 Road&Track 报道，当地时间 3 日，奔驰展示了两项新技术，分别是 Intelligent Display in Glass 车窗智能显示 技术和 Holographic Display 全息显示 技术。 按照奔驰设想，后挡风玻璃可以 显示各种警告标志和交通信息 ，提醒后方司机。相比能提醒后车减速的普通刹车灯，奔驰的方案还能告诉后车为什么要减速，提示前方发生交通事故、有人过马路等信息。 奔驰为此考虑了两种 LED 技术。Mini LED 适合 后挡风玻璃等面积较大的显示区域 ，分辨率更高的 Micro…",
-      "vi": "IT之家 11 月 8 日消息，据外媒 Road&Track 报道，当地时间 3 日，奔驰展示了两项新技术，分别是 Intelligent Display in Glass 车窗智能显示 技术和 Holographic Display 全息显示 技术。 按照奔驰设想，后挡风玻璃可以 显示各种警告标志和交通信息 ，提醒后方司机。相比能提醒后车减速的普通刹车灯，奔驰的方案还能告诉后车为什么要减速，提示前方发生交通事故、有人过马路等信息。 奔驰为此考虑了两种 LED 技术。Mini LED 适合 后挡风玻璃等面积较大的显示区域 ，分辨率更高的 Micro…",
-      "en": "IT之家 11 月 8 日消息，据外媒 Road&Track 报道，当地时间 3 日，奔驰展示了两项新技术，分别是 Intelligent Display in Glass 车窗智能显示 技术和 Holographic Display 全息显示 技术。 按照奔驰设想，后挡风玻璃可以 显示各种警告标志和交通信息 ，提醒后方司机。相比能提醒后车减速的普通刹车灯，奔驰的方案还能告诉后车为什么要减速，提示前方发生交通事故、有人过马路等信息。 奔驰为此考虑了两种 LED 技术。Mini LED 适合 后挡风玻璃等面积较大的显示区域 ，分辨率更高的 Micro…"
+      "zh-CN": "IT之家 11 月 9 日消息，据英国《卫报》援引政府消息人士的说法报道称，英国政府预计将把 2030 年电动汽车销售目标下调约四分之一，从目前的 80% 降至约 60%。 据IT之家了解，英国于 2024 年推出的零排放汽车（ZEV）销售规定，要求汽车制造商逐年提高零排放汽车在年度新车销量中的占比。按照原定计划，这一比例在 2026 年应达到 33%，2030 年升至 80%，并于 2035 年达到 100%。 报道称，英国实际上的副首相路易丝 · 黑格（Louise Haigh）预计将在周三唐宁街会议结束后敲定相关方案。她可能批准将 2030…",
+      "vi": "IT之家 11 月 9 日消息，据英国《卫报》援引政府消息人士的说法报道称，英国政府预计将把 2030 年电动汽车销售目标下调约四分之一，从目前的 80% 降至约 60%。 据IT之家了解，英国于 2024 年推出的零排放汽车（ZEV）销售规定，要求汽车制造商逐年提高零排放汽车在年度新车销量中的占比。按照原定计划，这一比例在 2026 年应达到 33%，2030 年升至 80%，并于 2035 年达到 100%。 报道称，英国实际上的副首相路易丝 · 黑格（Louise Haigh）预计将在周三唐宁街会议结束后敲定相关方案。她可能批准将 2030…",
+      "en": "IT之家 11 月 9 日消息，据英国《卫报》援引政府消息人士的说法报道称，英国政府预计将把 2030 年电动汽车销售目标下调约四分之一，从目前的 80% 降至约 60%。 据IT之家了解，英国于 2024 年推出的零排放汽车（ZEV）销售规定，要求汽车制造商逐年提高零排放汽车在年度新车销量中的占比。按照原定计划，这一比例在 2026 年应达到 33%，2030 年升至 80%，并于 2035 年达到 100%。 报道称，英国实际上的副首相路易丝 · 黑格（Louise Haigh）预计将在周三唐宁街会议结束后敲定相关方案。她可能批准将 2030…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "902e811464296c2c": {
+    "id": "902e811464296c2c",
+    "slug": "2029-3-ast-902e81",
+    "url": "https://www.ithome.com/1/024/264.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Mon, 09 Nov 2026 06:42:51 GMT",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "目标 2029 年 3 月前推出手机直连卫星通信，日本乐天集团将与美国 AST 成立新公司",
+      "vi": "目标 2029 年 3 月前推出手机直连卫星通信，日本乐天集团将与美国 AST 成立新公司",
+      "en": "目标 2029 年 3 月前推出手机直连卫星通信，日本乐天集团将与美国 AST 成立新公司"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 9 日消息，据日媒 ITMedia 今天报道，日本乐天集团与美国 AST SpaceMobile 公司达成协议，双方将成立新公司“Rakuten AST”， 在日本建设低轨卫星（J-LEO）与智能手机之间的直连通信服务 。 据报道，两家公司的提案已入选日本总务省公开招募的“面向确保自主性的低轨卫星基础设施建设项目”，预计将在 3 年时间内，通过信息通信网络产业协会获得最高 1,480 亿日元 （IT之家注：现汇率约合 62.39 亿元人民币） 的补助。 同时，这家新公司将与 AST 合作负责部署、运营管理中频段卫星，目标是 2029…",
+      "vi": "IT之家 11 月 9 日消息，据日媒 ITMedia 今天报道，日本乐天集团与美国 AST SpaceMobile 公司达成协议，双方将成立新公司“Rakuten AST”， 在日本建设低轨卫星（J-LEO）与智能手机之间的直连通信服务 。 据报道，两家公司的提案已入选日本总务省公开招募的“面向确保自主性的低轨卫星基础设施建设项目”，预计将在 3 年时间内，通过信息通信网络产业协会获得最高 1,480 亿日元 （IT之家注：现汇率约合 62.39 亿元人民币） 的补助。 同时，这家新公司将与 AST 合作负责部署、运营管理中频段卫星，目标是 2029…",
+      "en": "IT之家 11 月 9 日消息，据日媒 ITMedia 今天报道，日本乐天集团与美国 AST SpaceMobile 公司达成协议，双方将成立新公司“Rakuten AST”， 在日本建设低轨卫星（J-LEO）与智能手机之间的直连通信服务 。 据报道，两家公司的提案已入选日本总务省公开招募的“面向确保自主性的低轨卫星基础设施建设项目”，预计将在 3 年时间内，通过信息通信网络产业协会获得最高 1,480 亿日元 （IT之家注：现汇率约合 62.39 亿元人民币） 的补助。 同时，这家新公司将与 AST 合作负责部署、运营管理中频段卫星，目标是 2029…"
     },
     "categories": [
       "hardware"
@@ -6006,6 +6184,77 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "d6816ad23a7e4991": {
+    "id": "d6816ad23a7e4991",
+    "slug": "ios-ipados-macos-28-2-d6816a",
+    "url": "https://www.ithome.com/1/024/256.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Mon, 09 Nov 2026 06:40:04 GMT",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "消息称苹果调整 iOS / iPadOS / macOS 28 初期开发流程，为工程师多腾出 2 周时间来探索创意",
+      "vi": "消息称苹果调整 iOS / iPadOS / macOS 28 初期开发流程，为工程师多腾出 2 周时间来探索创意",
+      "en": "消息称苹果调整 iOS / iPadOS / macOS 28 初期开发流程，为工程师多腾出 2 周时间来探索创意"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 9 日消息，据彭博社马克 · 古尔曼（Mark Gurman）透露，苹果正在调整 iOS / iPadOS 28 和 macOS 28 的初期开发流程，为工程师提供更多时间探索创意、研发新功能。 按照苹果以往安排，软件开发周期通常分为 M1、M2 和 M3 三个阶段。其中，每个阶段均包含“4 周功能编码”和“4 周功能整合”工作。 不过，对于 iOS / iPadOS 28、macOS 28，苹果计划调整 M1 阶段的时间分配，将原本用于功能编码和整合的时间比例从各 4 周改为 6 周和 2…",
+      "vi": "IT之家 11 月 9 日消息，据彭博社马克 · 古尔曼（Mark Gurman）透露，苹果正在调整 iOS / iPadOS 28 和 macOS 28 的初期开发流程，为工程师提供更多时间探索创意、研发新功能。 按照苹果以往安排，软件开发周期通常分为 M1、M2 和 M3 三个阶段。其中，每个阶段均包含“4 周功能编码”和“4 周功能整合”工作。 不过，对于 iOS / iPadOS 28、macOS 28，苹果计划调整 M1 阶段的时间分配，将原本用于功能编码和整合的时间比例从各 4 周改为 6 周和 2…",
+      "en": "IT之家 11 月 9 日消息，据彭博社马克 · 古尔曼（Mark Gurman）透露，苹果正在调整 iOS / iPadOS 28 和 macOS 28 的初期开发流程，为工程师提供更多时间探索创意、研发新功能。 按照苹果以往安排，软件开发周期通常分为 M1、M2 和 M3 三个阶段。其中，每个阶段均包含“4 周功能编码”和“4 周功能整合”工作。 不过，对于 iOS / iPadOS 28、macOS 28，苹果计划调整 M1 阶段的时间分配，将原本用于功能编码和整合的时间比例从各 4 周改为 6 周和 2…"
+    },
+    "categories": [
+      "ios",
+      "macos"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "1e880b6efe02eb2d": {
+    "id": "1e880b6efe02eb2d",
+    "slug": "11-24-1600-1e880b",
+    "url": "https://www.ithome.com/1/024/255.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Mon, 09 Nov 2026 06:39:45 GMT",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "卓威预热鼠标新品，11 月 24 日 16:00 发布",
+      "vi": "卓威预热鼠标新品，11 月 24 日 16:00 发布",
+      "en": "卓威预热鼠标新品，11 月 24 日 16:00 发布"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 9 日消息，明基 (BenQ) 旗下电竞外设品牌卓威 (ZOWIE) 近日预热鼠标新品，宣称可提供“快速的按键回弹、明确的点击反馈”。 该产品将于 11 月 24 日 16:00 发布 。 可以看到， 这款鼠标的左右键按键盖与掌托分离 ，一改卓威鼠标产品的传统。 另据上周末出席卓威线下活动的网友反馈，此次的新品归属 EW 系列，拥有包括 U2-EW 在内的一系列款式，配备集成屏幕的信号基站。",
+      "vi": "IT之家 11 月 9 日消息，明基 (BenQ) 旗下电竞外设品牌卓威 (ZOWIE) 近日预热鼠标新品，宣称可提供“快速的按键回弹、明确的点击反馈”。 该产品将于 11 月 24 日 16:00 发布 。 可以看到， 这款鼠标的左右键按键盖与掌托分离 ，一改卓威鼠标产品的传统。 另据上周末出席卓威线下活动的网友反馈，此次的新品归属 EW 系列，拥有包括 U2-EW 在内的一系列款式，配备集成屏幕的信号基站。",
+      "en": "IT之家 11 月 9 日消息，明基 (BenQ) 旗下电竞外设品牌卓威 (ZOWIE) 近日预热鼠标新品，宣称可提供“快速的按键回弹、明确的点击反馈”。 该产品将于 11 月 24 日 16:00 发布 。 可以看到， 这款鼠标的左右键按键盖与掌托分离 ，一改卓威鼠标产品的传统。 另据上周末出席卓威线下活动的网友反馈，此次的新品归属 EW 系列，拥有包括 U2-EW 在内的一系列款式，配备集成屏幕的信号基站。"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "7f80f602056cfa96": {
     "id": "7f80f602056cfa96",
     "slug": "m6-macbook-pro-7f80f6",
@@ -6042,6 +6291,76 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "d44888880116e83d": {
+    "id": "d44888880116e83d",
+    "slug": "gmail-d44888",
+    "url": "https://www.ithome.com/1/024/254.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Mon, 09 Nov 2026 06:37:48 GMT",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "澳大利亚拟推网络监管新规，谷歌警告未成年人或将无法使用 Gmail",
+      "vi": "澳大利亚拟推网络监管新规，谷歌警告未成年人或将无法使用 Gmail",
+      "en": "澳大利亚拟推网络监管新规，谷歌警告未成年人或将无法使用 Gmail"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 9 日消息，据路透社报道，谷歌一名负责政策事务的高管当地时间周一表示，澳大利亚拟议中的互联网监管法律可能迫使谷歌禁止未满 18 岁的用户使用 Gmail。 这项名为《数字注意义务法案》（Digital Duty of Care）的立法已经获得澳大利亚众议院通过，但仍需获得参议院跨党派支持才能正式通过。根据法案要求，互联网企业必须采取措施清除有害内容，否则可能面临最高 1.09 亿澳元 （IT之家注：现汇率约合 5 亿元人民币） 的罚款。…",
+      "vi": "IT之家 11 月 9 日消息，据路透社报道，谷歌一名负责政策事务的高管当地时间周一表示，澳大利亚拟议中的互联网监管法律可能迫使谷歌禁止未满 18 岁的用户使用 Gmail。 这项名为《数字注意义务法案》（Digital Duty of Care）的立法已经获得澳大利亚众议院通过，但仍需获得参议院跨党派支持才能正式通过。根据法案要求，互联网企业必须采取措施清除有害内容，否则可能面临最高 1.09 亿澳元 （IT之家注：现汇率约合 5 亿元人民币） 的罚款。…",
+      "en": "IT之家 11 月 9 日消息，据路透社报道，谷歌一名负责政策事务的高管当地时间周一表示，澳大利亚拟议中的互联网监管法律可能迫使谷歌禁止未满 18 岁的用户使用 Gmail。 这项名为《数字注意义务法案》（Digital Duty of Care）的立法已经获得澳大利亚众议院通过，但仍需获得参议院跨党派支持才能正式通过。根据法案要求，互联网企业必须采取措施清除有害内容，否则可能面临最高 1.09 亿澳元 （IT之家注：现汇率约合 5 亿元人民币） 的罚款。…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "8a3da19bf8545276": {
+    "id": "8a3da19bf8545276",
+    "slug": "huawei-ads-8a3da1",
+    "url": "https://www.ithome.com/1/024/251.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Mon, 09 Nov 2026 06:31:26 GMT",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "消息称赛力斯跟华为合作依旧紧密，工厂总装下线到路测全部依赖 HUAWEI ADS 跑无人测试",
+      "vi": "消息称赛力斯跟华为合作依旧紧密，工厂总装下线到路测全部依赖 HUAWEI ADS 跑无人测试",
+      "en": "消息称赛力斯跟华为合作依旧紧密，工厂总装下线到路测全部依赖 HUAWEI ADS 跑无人测试"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 9 日消息，鸿蒙智行今年 9 月发布声明， 宣布问界将在鸿蒙智行合作框架下探索新合作模式 ；今年 10 月， 鸿蒙智行官方又宣布华为与赛力斯达成新的五年合作 。 目前，关于华为与赛力斯之间合作也依旧是大家讨论的热点。IT之家注意到，博主 @旌旗超智能 今日发文，分享了双方合作的最新模式的具体情况。 博主表示，目前赛力斯跟华为的合作非常紧密，尤其是工厂总装下线到路测，全部依赖华为 ADS 跑无人测试 —— 几十台问界 M9 在工厂内部封闭道路， 全无人的状况之下，自己跑各种环线测试、高速测试 。 他提到，双方续签了 5 年合同之后，…",
+      "vi": "IT之家 11 月 9 日消息，鸿蒙智行今年 9 月发布声明， 宣布问界将在鸿蒙智行合作框架下探索新合作模式 ；今年 10 月， 鸿蒙智行官方又宣布华为与赛力斯达成新的五年合作 。 目前，关于华为与赛力斯之间合作也依旧是大家讨论的热点。IT之家注意到，博主 @旌旗超智能 今日发文，分享了双方合作的最新模式的具体情况。 博主表示，目前赛力斯跟华为的合作非常紧密，尤其是工厂总装下线到路测，全部依赖华为 ADS 跑无人测试 —— 几十台问界 M9 在工厂内部封闭道路， 全无人的状况之下，自己跑各种环线测试、高速测试 。 他提到，双方续签了 5 年合同之后，…",
+      "en": "IT之家 11 月 9 日消息，鸿蒙智行今年 9 月发布声明， 宣布问界将在鸿蒙智行合作框架下探索新合作模式 ；今年 10 月， 鸿蒙智行官方又宣布华为与赛力斯达成新的五年合作 。 目前，关于华为与赛力斯之间合作也依旧是大家讨论的热点。IT之家注意到，博主 @旌旗超智能 今日发文，分享了双方合作的最新模式的具体情况。 博主表示，目前赛力斯跟华为的合作非常紧密，尤其是工厂总装下线到路测，全部依赖华为 ADS 跑无人测试 —— 几十台问界 M9 在工厂内部封闭道路， 全无人的状况之下，自己跑各种环线测试、高速测试 。 他提到，双方续签了 5 年合同之后，…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "985ae8e7ed69a047": {
     "id": "985ae8e7ed69a047",
     "slug": "passbolt-is-an-open-source-password-manager-built-specially-985ae8",
@@ -6074,6 +6393,76 @@
     ],
     "difficulty": null,
     "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "46a013ade8840c8f": {
+    "id": "46a013ade8840c8f",
+    "slug": "token-plan-70-lite-essential-standard-46a013",
+    "url": "https://www.ithome.com/1/024/250.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Mon, 09 Nov 2026 06:31:04 GMT",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "阿里云 Token Plan 额度上调 70% 以上，Lite / Essential / Standard 三档套餐月费不变",
+      "vi": "阿里云 Token Plan 额度上调 70% 以上，Lite / Essential / Standard 三档套餐月费不变",
+      "en": "阿里云 Token Plan 额度上调 70% 以上，Lite / Essential / Standard 三档套餐月费不变"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 9 日消息，阿里云今天宣布上调 Token Plan 个人版订阅额度，Lite、Essential、Standard 三档套餐月费不变， 月度额度提升约 74% 至 78% 。 其中，Lite 套餐额度由 1.15 万 Credits 提升至 2 万 Credits，月费 39 元；Essential 套餐额度由 2.55 万提升至 4.5 万 Credits，月费 79 元；Standard 套餐额度由 4.5 万提升至 8 万 Credits，月费 139 元。 最高一档的 Pro 套餐同时调整了额度和价格：额度由 18…",
+      "vi": "IT之家 11 月 9 日消息，阿里云今天宣布上调 Token Plan 个人版订阅额度，Lite、Essential、Standard 三档套餐月费不变， 月度额度提升约 74% 至 78% 。 其中，Lite 套餐额度由 1.15 万 Credits 提升至 2 万 Credits，月费 39 元；Essential 套餐额度由 2.55 万提升至 4.5 万 Credits，月费 79 元；Standard 套餐额度由 4.5 万提升至 8 万 Credits，月费 139 元。 最高一档的 Pro 套餐同时调整了额度和价格：额度由 18…",
+      "en": "IT之家 11 月 9 日消息，阿里云今天宣布上调 Token Plan 个人版订阅额度，Lite、Essential、Standard 三档套餐月费不变， 月度额度提升约 74% 至 78% 。 其中，Lite 套餐额度由 1.15 万 Credits 提升至 2 万 Credits，月费 39 元；Essential 套餐额度由 2.55 万提升至 4.5 万 Credits，月费 79 元；Standard 套餐额度由 4.5 万提升至 8 万 Credits，月费 139 元。 最高一档的 Pro 套餐同时调整了额度和价格：额度由 18…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "22924e2f66b02755": {
+    "id": "22924e2f66b02755",
+    "slug": "700-ai-22924e",
+    "url": "https://www.ithome.com/1/024/249.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Mon, 09 Nov 2026 06:30:54 GMT",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "方飞：荣耀 700 全系搭载 AI 灵动背屏",
+      "vi": "方飞：荣耀 700 全系搭载 AI 灵动背屏",
+      "en": "方飞：荣耀 700 全系搭载 AI 灵动背屏"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 9 日消息，荣耀终端股份有限公司产品线总裁方飞今日发文，正式公布荣耀 700 系列的全新设计，并宣布该系列将全系搭载 AI 灵动背屏，称“设计大换代”。方飞表示，此次荣耀 700 系列迎来数字系列迄今最大的外观突破，希望通过设计和交互创新，让用户拥有更多表达自我的方式。 方飞称，荣耀 700 系列的设计进化，源于对用户生活需求的观察。上一代产品的磁吸副屏收获了不少用户喜爱，也让一些用户联想到曾经电子宠物带来的乐趣。在她看来，这类体验之所以能够跨越时代，核心在于满足了人们表达自己、获得陪伴两种朴素而持久的需求。 此次推出的 AI…",
+      "vi": "IT之家 11 月 9 日消息，荣耀终端股份有限公司产品线总裁方飞今日发文，正式公布荣耀 700 系列的全新设计，并宣布该系列将全系搭载 AI 灵动背屏，称“设计大换代”。方飞表示，此次荣耀 700 系列迎来数字系列迄今最大的外观突破，希望通过设计和交互创新，让用户拥有更多表达自我的方式。 方飞称，荣耀 700 系列的设计进化，源于对用户生活需求的观察。上一代产品的磁吸副屏收获了不少用户喜爱，也让一些用户联想到曾经电子宠物带来的乐趣。在她看来，这类体验之所以能够跨越时代，核心在于满足了人们表达自己、获得陪伴两种朴素而持久的需求。 此次推出的 AI…",
+      "en": "IT之家 11 月 9 日消息，荣耀终端股份有限公司产品线总裁方飞今日发文，正式公布荣耀 700 系列的全新设计，并宣布该系列将全系搭载 AI 灵动背屏，称“设计大换代”。方飞表示，此次荣耀 700 系列迎来数字系列迄今最大的外观突破，希望通过设计和交互创新，让用户拥有更多表达自我的方式。 方飞称，荣耀 700 系列的设计进化，源于对用户生活需求的观察。上一代产品的磁吸副屏收获了不少用户喜爱，也让一些用户联想到曾经电子宠物带来的乐趣。在她看来，这类体验之所以能够跨越时代，核心在于满足了人们表达自己、获得陪伴两种朴素而持久的需求。 此次推出的 AI…"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
     "howto": false,
     "reading_time_min": 1,
     "translated": {}
@@ -6373,6 +6762,39 @@
     "summary": {
       "en": "This time of the year, clocks spring forward and fall back across the globe, but some places are making permanent changes – and Ubuntu needs to keep pace. Over recent weeks, Canonical has refresh Ubuntu’s system time zone database package tzdata on all supported releases to…",
       "vi": "This time of the year, clocks spring forward and fall back across the globe, but some places are making permanent changes – and Ubuntu needs to keep pace. Over recent weeks, Canonical has refresh Ubuntu’s system time zone database package tzdata on all supported releases to…"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.17,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
+  "48bc73073a733a84": {
+    "id": "48bc73073a733a84",
+    "slug": "calibre-adds-new-sources-for-finding-free-books-journals-48bc73",
+    "url": "https://www.omgubuntu.co.uk/2026/11/calibre-update-new-sources",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "Sun, 08 Nov 2026 01:12:00 +0000",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Calibre adds new sources for finding free books & journals",
+      "vi": "Calibre adds new sources for finding free books & journals"
+    },
+    "summary": {
+      "en": "Another week, another set of features added to Calibre, the open-source ebook reader, converter and manager. Calibre 9.18 adds more accessibility tools to its editor, with Tools > Accessibility now letting you set the language for books and HTML files. Image descriptions…",
+      "vi": "Another week, another set of features added to Calibre, the open-source ebook reader, converter and manager. Calibre 9.18 adds more accessibility tools to its editor, with Tools > Accessibility now letting you set the language for books and HTML files. Image descriptions…"
     },
     "categories": [
       "linux"
@@ -7339,7 +7761,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "1426e977a2f35bcc": {
@@ -7414,7 +7836,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "fadd7467dc36644c": {
@@ -7774,7 +8196,7 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 2
+      "en": 3
     }
   },
   "5cecc12e376b047e": {
@@ -7813,7 +8235,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "449ca857f89317e8": {
@@ -7851,7 +8273,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "c992a5cde02478fc": {
@@ -7890,7 +8312,7 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 1
+      "en": 2
     }
   },
   "f18d65f7da2a2657": {
@@ -7918,6 +8340,44 @@
     },
     "categories": [
       "ios"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.09,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": false
+    },
+    "translate_attempts": {
+      "en": 2
+    }
+  },
+  "967cf2ee3354fa46": {
+    "id": "967cf2ee3354fa46",
+    "slug": "cach-singapore-lam-mat-van-phong-khong-can-dieu-hoa-truyen-t-967cf2",
+    "url": "https://thanhnien.vn/cach-singapore-lam-mat-van-phong-khong-can-dieu-hoa-truyen-thong-185261108093854858.htm",
+    "source": {
+      "id": "thanhnien_tech",
+      "name": "Thanh Niên Công Nghệ",
+      "site_url": "https://thanhnien.vn/cong-nghe",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Mon, 09 Nov 26 09:41:00 +0700",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Cách Singapore làm mát văn phòng không cần điều hòa truyền thống",
+      "en": "Cách Singapore làm mát văn phòng không cần điều hòa truyền thống"
+    },
+    "summary": {
+      "vi": "Singapore thúc đẩy công nghệ làm mát thay thế điều hòa, hướng đến giảm tiêu thụ điện và khí thải trong các tòa nhà.",
+      "en": "Singapore thúc đẩy công nghệ làm mát thay thế điều hòa, hướng đến giảm tiêu thụ điện và khí thải trong các tòa nhà."
+    },
+    "categories": [
+      "office"
     ],
     "tags": [],
     "difficulty": "medium",
@@ -8919,7 +9379,7 @@
     },
     "hn_points": 1123,
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "1d22dd0edb251dbb": {
@@ -8995,7 +9455,7 @@
     },
     "hn_points": 472,
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "ef2a83f7f3a44d74": {
@@ -9204,8 +9664,13 @@
     "score": 1.03,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {},
-    "hn_points": 516
+    "translated": {
+      "vi": false
+    },
+    "hn_points": 516,
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "1eeaf5457cb1a01a": {
     "id": "1eeaf5457cb1a01a",
@@ -9310,6 +9775,45 @@
     "reading_time_min": 1,
     "translated": {},
     "hn_points": 436
+  },
+  "9709ee9b2939f773": {
+    "id": "9709ee9b2939f773",
+    "slug": "nvidia-ceo-jensen-huangs-letter-to-staff-about-affair-9709ee",
+    "url": "https://nvidianews.nvidia.com/news/a-message-to-our-company",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "karimf",
+    "published_at": "Sun, 08 Nov 2026 22:20:09 +0000",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Nvidia CEO Jensen Huang's letter to staff about affair",
+      "vi": "Nvidia CEO Jensen Huang's letter to staff about affair"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (524 điểm, 560 bình luận).",
+      "vi": "Thảo luận trên Hacker News (524 điểm, 560 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.03,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "hn_points": 524,
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "3d9bd0593e5ecb0d": {
     "id": "3d9bd0593e5ecb0d",
@@ -9762,6 +10266,41 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "2fab79d06b7a4b4b": {
+    "id": "2fab79d06b7a4b4b",
+    "slug": "ketchup-open-source-sketchup-alternative-built-with-rust-and-2fab79",
+    "url": "https://ketchup3d.github.io/app",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "dcoulmbe",
+    "published_at": "Sun, 08 Nov 2026 22:35:35 +0000",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU",
+      "vi": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (375 điểm, 99 bình luận).",
+      "vi": "Thảo luận trên Hacker News (375 điểm, 99 bình luận)."
+    },
+    "categories": [
+      "linux",
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.01,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 375
+  },
   "c989d358786f1ec1": {
     "id": "c989d358786f1ec1",
     "url": "https://dev.to/selen_sherlock_64186c9222/turn-a-whatsapp-group-chat-into-a-weekly-summary-with-a-local-llm-1i3p",
@@ -10148,6 +10687,39 @@
     "reading_time_min": 1,
     "translated": {}
   },
+  "eb0a11d03219ea32": {
+    "id": "eb0a11d03219ea32",
+    "slug": "hacker-co-the-lam-duoc-gi-khi-nam-trong-tay-dia-chi-ip-cua-b-eb0a11",
+    "url": "https://thanhnien.vn/hacker-co-the-lam-duoc-gi-khi-nam-trong-tay-dia-chi-ip-cua-ban-185261109110400093.htm",
+    "source": {
+      "id": "thanhnien_tech",
+      "name": "Thanh Niên Công Nghệ",
+      "site_url": "https://thanhnien.vn/cong-nghe",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Mon, 09 Nov 26 13:23:00 +0700",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Hacker có thể làm được gì khi nắm trong tay địa chỉ IP của bạn?",
+      "en": "Hacker có thể làm được gì khi nắm trong tay địa chỉ IP của bạn?"
+    },
+    "summary": {
+      "vi": "Địa chỉ IP của nạn nhân vẫn có thể trở thành 'bàn đạp' để tin tặc thực hiện các hành vi phạm tội.",
+      "en": "Địa chỉ IP của nạn nhân vẫn có thể trở thành 'bàn đạp' để tin tặc thực hiện các hành vi phạm tội."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "2f60432befdab164": {
     "id": "2f60432befdab164",
     "url": "https://feed.itsfoss.com/link/24361/17502758/foss-weekly-26-43",
@@ -10217,6 +10789,41 @@
     },
     "hidden": false,
     "slug": "audacious-462-lap-day-nhung-khoang-trong-cuoi-cung-trong-che-d78811"
+  },
+  "ec6779b05ebb24a9": {
+    "id": "ec6779b05ebb24a9",
+    "slug": "outlookcom-is-rejecting-email-from-domains-without-dmarc-ec6779",
+    "url": "https://mailroute.net/blog/outlook-rejecting-email-without-dmarc",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "xmddmx",
+    "published_at": "Sun, 08 Nov 2026 19:20:32 +0000",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Outlook.com is rejecting email from domains without DMARC",
+      "vi": "Outlook.com is rejecting email from domains without DMARC"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (346 điểm, 257 bình luận).",
+      "vi": "Thảo luận trên Hacker News (346 điểm, 257 bình luận)."
+    },
+    "categories": [
+      "office",
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.99,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 346
   },
   "a649527bbaa9fadb": {
     "id": "a649527bbaa9fadb",
@@ -12475,40 +13082,40 @@
     "hidden": false,
     "slug": "5-cong-cu-makita-than-thien-voi-ngan-sach-duoi-150-usd-thuc-9aa5f9"
   },
-  "f335a5077f36cc12": {
-    "id": "f335a5077f36cc12",
-    "url": "https://thanhnien.vn/cap-quang-lap-ky-luc-tai-20000-bo-phim-4k-trong-1-giay-18526102909331657.htm",
+  "ddea982e4231abd2": {
+    "id": "ddea982e4231abd2",
+    "slug": "dux-free-open-source-wayland-desktop-shell-with-file-manager-ddea98",
+    "url": "https://duxlabs.dev/",
     "source": {
-      "id": "thanhnien_tech",
-      "name": "Thanh Niên Công Nghệ",
-      "site_url": "https://thanhnien.vn/cong-nghe",
-      "kind": "news"
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
     },
-    "author": null,
-    "published_at": "Thu, 29 Oct 26 10:09:00 +0700",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "vi",
+    "author": "indigodaddy",
+    "published_at": "Sun, 08 Nov 2026 19:08:51 +0000",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "en",
     "title": {
-      "vi": "Cáp quang lập kỷ lục tải 20.000 bộ phim 4K trong 1 giây",
-      "en": "Fiber optic cable sets a record for downloading 20,000 4K movies in 1 second"
+      "en": "Dux: Free, open-source Wayland desktop shell with file manager and theming",
+      "vi": "Dux: Free, open-source Wayland desktop shell with file manager and theming"
     },
     "summary": {
-      "vi": "Các nhà nghiên cứu Trung Quốc vừa thiết lập kỷ lục truyền tải cáp quang thời gian thực với tốc độ 3,2 petabit mỗi giây trên khoảng cách 10,3 km.",
-      "en": "Chinese researchers have just set a record for real-time fiber optic transmission at a speed of 3.2 petabits per second over a distance of 10.3 km."
+      "en": "Thảo luận trên Hacker News (250 điểm, 79 bình luận).",
+      "vi": "Thảo luận trên Hacker News (250 điểm, 79 bình luận)."
     },
     "categories": [
-      "ios"
+      "linux",
+      "security"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.9,
+    "score": 0.91,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {
-      "en": "machine"
-    },
-    "hidden": false,
-    "slug": "cap-quang-lap-ky-luc-tai-20000-bo-phim-4k-trong-1-giay-f335a5"
+    "translated": {},
+    "hn_points": 250
   },
   "a81dc2149bc8a997": {
     "id": "a81dc2149bc8a997",
@@ -12580,9 +13187,9 @@
     },
     "hidden": false
   },
-  "3b98c323d65c4307": {
-    "id": "3b98c323d65c4307",
-    "url": "https://thanhnien.vn/tai-ung-dung-claude-tu-ten-mien-cua-anthropic-van-dinh-ma-doc-185261028091151327.htm",
+  "f335a5077f36cc12": {
+    "id": "f335a5077f36cc12",
+    "url": "https://thanhnien.vn/cap-quang-lap-ky-luc-tai-20000-bo-phim-4k-trong-1-giay-18526102909331657.htm",
     "source": {
       "id": "thanhnien_tech",
       "name": "Thanh Niên Công Nghệ",
@@ -12590,25 +13197,22 @@
       "kind": "news"
     },
     "author": null,
-    "published_at": "Wed, 28 Oct 26 10:48:00 +0700",
+    "published_at": "Thu, 29 Oct 26 10:09:00 +0700",
     "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "vi",
     "title": {
-      "vi": "Tải ứng dụng Claude từ tên miền của Anthropic vẫn dính mã độc",
-      "en": "Downloading the Claude application from Anthropic's domain still contains malicious code"
+      "vi": "Cáp quang lập kỷ lục tải 20.000 bộ phim 4K trong 1 giây",
+      "en": "Fiber optic cable sets a record for downloading 20,000 4K movies in 1 second"
     },
     "summary": {
-      "vi": "Tội phạm mạng đang dùng mánh khóe để dẫn dụ người dùng đến các trang hướng dẫn cài đặt Claude giả mạo nằm ngay trên tên miền claude.ai.",
-      "en": "Cybercriminals are using tricks to lure users to fake Claude installation instructions pages located right on the claude.ai domain name."
+      "vi": "Các nhà nghiên cứu Trung Quốc vừa thiết lập kỷ lục truyền tải cáp quang thời gian thực với tốc độ 3,2 petabit mỗi giây trên khoảng cách 10,3 km.",
+      "en": "Chinese researchers have just set a record for real-time fiber optic transmission at a speed of 3.2 petabits per second over a distance of 10.3 km."
     },
     "categories": [
-      "ai",
-      "security"
+      "ios"
     ],
-    "tags": [
-      "claude"
-    ],
-    "difficulty": "easy",
+    "tags": [],
+    "difficulty": "medium",
     "score": 0.9,
     "howto": true,
     "reading_time_min": 1,
@@ -12616,7 +13220,7 @@
       "en": "machine"
     },
     "hidden": false,
-    "slug": "tai-ung-dung-claude-tu-ten-mien-cua-anthropic-van-dinh-ma-do-3b98c3"
+    "slug": "cap-quang-lap-ky-luc-tai-20000-bo-phim-4k-trong-1-giay-f335a5"
   },
   "a8ac721a3cafbae1": {
     "id": "a8ac721a3cafbae1",
@@ -12687,9 +13291,9 @@
       "vi": "machine"
     }
   },
-  "f74bf914fe0a2409": {
-    "id": "f74bf914fe0a2409",
-    "url": "https://thanhnien.vn/nhiet-do-bao-nhieu-la-nong-qua-suc-chiu-dung-cua-router-wi-fi-185261029111043269.htm",
+  "3b98c323d65c4307": {
+    "id": "3b98c323d65c4307",
+    "url": "https://thanhnien.vn/tai-ung-dung-claude-tu-ten-mien-cua-anthropic-van-dinh-ma-doc-185261028091151327.htm",
     "source": {
       "id": "thanhnien_tech",
       "name": "Thanh Niên Công Nghệ",
@@ -12697,22 +13301,25 @@
       "kind": "news"
     },
     "author": null,
-    "published_at": "Thu, 29 Oct 26 14:51:00 +0700",
-    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
+    "published_at": "Wed, 28 Oct 26 10:48:00 +0700",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "vi",
     "title": {
-      "vi": "Nhiệt độ bao nhiêu là nóng 'quá sức chịu đựng' của router Wi-Fi?",
-      "en": "What temperature is 'too hot' for a Wi-Fi router?"
+      "vi": "Tải ứng dụng Claude từ tên miền của Anthropic vẫn dính mã độc",
+      "en": "Downloading the Claude application from Anthropic's domain still contains malicious code"
     },
     "summary": {
-      "vi": "Người dùng nên nhận biết mức nhiệt độ an toàn của router Wi-Fi và cách xử lý sự cố khi thiết bị quá nóng.",
-      "en": "Users should know the safe temperature level of the Wi-Fi router and how to troubleshoot when the device overheats."
+      "vi": "Tội phạm mạng đang dùng mánh khóe để dẫn dụ người dùng đến các trang hướng dẫn cài đặt Claude giả mạo nằm ngay trên tên miền claude.ai.",
+      "en": "Cybercriminals are using tricks to lure users to fake Claude installation instructions pages located right on the claude.ai domain name."
     },
     "categories": [
-      "hardware"
+      "ai",
+      "security"
     ],
-    "tags": [],
-    "difficulty": "medium",
+    "tags": [
+      "claude"
+    ],
+    "difficulty": "easy",
     "score": 0.9,
     "howto": true,
     "reading_time_min": 1,
@@ -12720,7 +13327,7 @@
       "en": "machine"
     },
     "hidden": false,
-    "slug": "nhiet-do-bao-nhieu-la-nong-qua-suc-chiu-dung-cua-router-wi-f-f74bf9"
+    "slug": "tai-ung-dung-claude-tu-ten-mien-cua-anthropic-van-dinh-ma-do-3b98c3"
   },
   "0bdd0d900328f106": {
     "id": "0bdd0d900328f106",
@@ -12755,6 +13362,41 @@
     "translated": {
       "vi": "machine"
     }
+  },
+  "f74bf914fe0a2409": {
+    "id": "f74bf914fe0a2409",
+    "url": "https://thanhnien.vn/nhiet-do-bao-nhieu-la-nong-qua-suc-chiu-dung-cua-router-wi-fi-185261029111043269.htm",
+    "source": {
+      "id": "thanhnien_tech",
+      "name": "Thanh Niên Công Nghệ",
+      "site_url": "https://thanhnien.vn/cong-nghe",
+      "kind": "news"
+    },
+    "author": null,
+    "published_at": "Thu, 29 Oct 26 14:51:00 +0700",
+    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Nhiệt độ bao nhiêu là nóng 'quá sức chịu đựng' của router Wi-Fi?",
+      "en": "What temperature is 'too hot' for a Wi-Fi router?"
+    },
+    "summary": {
+      "vi": "Người dùng nên nhận biết mức nhiệt độ an toàn của router Wi-Fi và cách xử lý sự cố khi thiết bị quá nóng.",
+      "en": "Users should know the safe temperature level of the Wi-Fi router and how to troubleshoot when the device overheats."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.9,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": "machine"
+    },
+    "hidden": false,
+    "slug": "nhiet-do-bao-nhieu-la-nong-qua-suc-chiu-dung-cua-router-wi-f-f74bf9"
   },
   "b394caaea4801868": {
     "id": "b394caaea4801868",
@@ -13222,6 +13864,40 @@
     "hidden": false,
     "slug": "chuong-8-xay-dung-quy-trinh-lam-viec-tmux-thuc-su-8fe990"
   },
+  "b1fb5a70556bf824": {
+    "id": "b1fb5a70556bf824",
+    "slug": "unlocking-any-car-from-x-brand-in-most-of-the-world-b1fb5a",
+    "url": "https://shubs.io/unlocking-any-car-from-x-brand-in-most-of-the-world",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "infosecau",
+    "published_at": "Mon, 09 Nov 2026 00:10:50 +0000",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Unlocking any car from X brand in most of the world",
+      "vi": "Unlocking any car from X brand in most of the world"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (217 điểm, 77 bình luận).",
+      "vi": "Thảo luận trên Hacker News (217 điểm, 77 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.89,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 217
+  },
   "c30c38a613a77d25": {
     "id": "c30c38a613a77d25",
     "slug": "a-tiny-world-model-running-games-on-a-raspberry-pi-pico-2-w-c30c38",
@@ -13299,6 +13975,41 @@
     "hidden": false,
     "slug": "chuong-7-che-do-sao-chep-cuon-tim-kiem-va-sao-chep-dau-ra-th-a4e4d2"
   },
+  "45fb196cb1bb2b06": {
+    "id": "45fb196cb1bb2b06",
+    "slug": "how-i-fight-ai-brain-fry-45fb19",
+    "url": "https://sergeykuhne.com/blog/fighting-ai-brain-fry",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "kyunez",
+    "published_at": "Sun, 08 Nov 2026 19:37:42 +0000",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "How I Fight AI Brain Fry",
+      "vi": "How I Fight AI Brain Fry"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (213 điểm, 161 bình luận).",
+      "vi": "Thảo luận trên Hacker News (213 điểm, 161 bình luận)."
+    },
+    "categories": [
+      "ai",
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.88,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 213
+  },
   "790bba1903f6287d": {
     "id": "790bba1903f6287d",
     "url": "https://linuxhandbook.com/courses/tmux/tmux-panes",
@@ -13333,6 +14044,44 @@
     },
     "hidden": false,
     "slug": "chuong-6-cac-ngan-tach-dieu-huong-thay-doi-kich-thuoc-va-thu-790bba"
+  },
+  "f30f927ad9fb89ba": {
+    "id": "f30f927ad9fb89ba",
+    "url": "https://linuxhandbook.com/courses/tmux/tmux-windows",
+    "source": {
+      "id": "linuxhandbook",
+      "name": "Linux Handbook",
+      "site_url": "https://linuxhandbook.com",
+      "kind": "tips"
+    },
+    "author": "Yash Kiran Patil",
+    "published_at": "Fri, 04 Sep 2026 16:37:22 +0530",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Chapter 5: Windows - Organize Your Work Inside a Session",
+      "vi": "Chương 5: Windows - Sắp xếp công việc của bạn trong một phiên"
+    },
+    "summary": {
+      "en": "In the previous chapter, you learned how to create, name, detach, and reattach tmux sessions. Now you already have the main workspace. But imagine you're working on a project and need to do several things at once. You want one terminal for your application, another for logs, another",
+      "vi": "Trong chương trước, bạn đã học cách tạo, đặt tên, tách và gắn lại các phiên tmux. Bây giờ bạn đã có không gian làm việc chính. Nhưng hãy tưởng tượng bạn đang thực hiện một dự án và cần thực hiện nhiều việc cùng một lúc. Bạn muốn một thiết bị đầu cuối cho ứng dụng của mình, một thiết bị đầu cuối khác cho nhật ký, một thiết bị đầu cuối khác"
+    },
+    "categories": [
+      "windows",
+      "dev"
+    ],
+    "tags": [
+      "terminal"
+    ],
+    "difficulty": "advanced",
+    "score": 0.87,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "chuong-5-windows-sap-xep-cong-viec-cua-ban-trong-mot-phien-f30f92"
   },
   "f9b8a9efbf26f92e": {
     "id": "f9b8a9efbf26f92e",
@@ -13372,44 +14121,6 @@
     "translate_attempts": {
       "vi": 1
     }
-  },
-  "f30f927ad9fb89ba": {
-    "id": "f30f927ad9fb89ba",
-    "url": "https://linuxhandbook.com/courses/tmux/tmux-windows",
-    "source": {
-      "id": "linuxhandbook",
-      "name": "Linux Handbook",
-      "site_url": "https://linuxhandbook.com",
-      "kind": "tips"
-    },
-    "author": "Yash Kiran Patil",
-    "published_at": "Fri, 04 Sep 2026 16:37:22 +0530",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Chapter 5: Windows - Organize Your Work Inside a Session",
-      "vi": "Chương 5: Windows - Sắp xếp công việc của bạn trong một phiên"
-    },
-    "summary": {
-      "en": "In the previous chapter, you learned how to create, name, detach, and reattach tmux sessions. Now you already have the main workspace. But imagine you're working on a project and need to do several things at once. You want one terminal for your application, another for logs, another",
-      "vi": "Trong chương trước, bạn đã học cách tạo, đặt tên, tách và gắn lại các phiên tmux. Bây giờ bạn đã có không gian làm việc chính. Nhưng hãy tưởng tượng bạn đang thực hiện một dự án và cần thực hiện nhiều việc cùng một lúc. Bạn muốn một thiết bị đầu cuối cho ứng dụng của mình, một thiết bị đầu cuối khác cho nhật ký, một thiết bị đầu cuối khác"
-    },
-    "categories": [
-      "windows",
-      "dev"
-    ],
-    "tags": [
-      "terminal"
-    ],
-    "difficulty": "advanced",
-    "score": 0.87,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "chuong-5-windows-sap-xep-cong-viec-cua-ban-trong-mot-phien-f30f92"
   },
   "5ed54894df52864b": {
     "id": "5ed54894df52864b",
@@ -13479,6 +14190,40 @@
     "reading_time_min": 1,
     "translated": {},
     "hn_points": 181
+  },
+  "ef913a473bc5b247": {
+    "id": "ef913a473bc5b247",
+    "slug": "ask-hn-what-are-you-working-on-november-2026-ef913a",
+    "url": "https://news.ycombinator.com/item?id=50417407",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "david927",
+    "published_at": "Sun, 08 Nov 2026 21:20:20 +0000",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Ask HN: What are you working on? (November 2026)",
+      "vi": "Ask HN: What are you working on? (November 2026)"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (188 điểm, 633 bình luận).",
+      "vi": "Thảo luận trên Hacker News (188 điểm, 633 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.86,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 188
   },
   "dc0bac1a652bc82e": {
     "id": "dc0bac1a652bc82e",
@@ -13728,6 +14473,40 @@
     "hidden": false,
     "slug": "day-la-cach-toi-them-tinh-nang-doc-quyen-nhat-cua-pixel-11-v-5a5d0c"
   },
+  "8eab40c7ce416e4d": {
+    "id": "8eab40c7ce416e4d",
+    "slug": "chimera-vocal-synth-8eab40",
+    "url": "https://chimera-vocal-synth.vercel.app/",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "nmstoker",
+    "published_at": "Sun, 08 Nov 2026 22:36:03 +0000",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Chimera Vocal Synth",
+      "vi": "Chimera Vocal Synth"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (169 điểm, 23 bình luận).",
+      "vi": "Thảo luận trên Hacker News (169 điểm, 23 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.85,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 169
+  },
   "4714a96ad9d244f9": {
     "id": "4714a96ad9d244f9",
     "slug": "devvmdev-one-vm-for-every-project-4714a9",
@@ -13796,6 +14575,41 @@
     },
     "hidden": false,
     "slug": "toi-gan-the-nfc-vao-cac-thiet-bi-cua-minh-de-co-the-ngung-ti-5d2cdd"
+  },
+  "b4717b7762b78b19": {
+    "id": "b4717b7762b78b19",
+    "slug": "im-not-convinced-the-ai-bubble-exists-b4717b",
+    "url": "https://matteoraso.github.io/im-not-convinced-the-ai-bubble-exists.html",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "matteoraso",
+    "published_at": "Sun, 08 Nov 2026 23:44:36 +0000",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I'm not convinced the AI bubble exists",
+      "vi": "I'm not convinced the AI bubble exists"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (160 điểm, 213 bình luận).",
+      "vi": "Thảo luận trên Hacker News (160 điểm, 213 bình luận)."
+    },
+    "categories": [
+      "ai",
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.84,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 160
   },
   "ca0f5a1a0dc47e76": {
     "id": "ca0f5a1a0dc47e76",
@@ -14594,6 +15408,40 @@
     "hidden": false,
     "slug": "toi-da-dat-wi-fi-cua-minh-o-che-do-do-theo-luong-du-lieu-tro-60d519"
   },
+  "62b8c6bdaaf878d3": {
+    "id": "62b8c6bdaaf878d3",
+    "slug": "declarative-dragging-62b8c6",
+    "url": "https://declarative-dragging.github.io/",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "smusamashah",
+    "published_at": "Wed, 04 Nov 2026 17:05:07 +0000",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Declarative Dragging",
+      "vi": "Declarative Dragging"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (464 điểm, 62 bình luận).",
+      "vi": "Thảo luận trên Hacker News (464 điểm, 62 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.82,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 464
+  },
   "7cdc370132341c66": {
     "id": "7cdc370132341c66",
     "slug": "a-pig-the-state-and-war-porco-rosso-kurenai-no-buta-2014-7cdc37",
@@ -14914,6 +15762,39 @@
     "translated": {},
     "hn_points": 121
   },
+  "33d256014ccf120b": {
+    "id": "33d256014ccf120b",
+    "slug": "lpt-use-the-name-you-want-in-your-signature-instead-of-your-33d256",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xh29vq/lpt_use_the_name_you_want_in_your_signature",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/deten",
+    "published_at": "2026-10-27T19:31:27+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Use the name you want in your signature instead of your formal name",
+      "vi": "Use the name you want in your signature instead of your formal name"
+    },
+    "summary": {
+      "en": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…",
+      "vi": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…"
+    },
+    "categories": [
+      "general"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {}
+  },
   "81e98a9f5568e303": {
     "id": "81e98a9f5568e303",
     "slug": "running-a-law-firm-on-free-software-81e98a",
@@ -14947,39 +15828,6 @@
     "reading_time_min": 1,
     "translated": {},
     "hn_points": 117
-  },
-  "33d256014ccf120b": {
-    "id": "33d256014ccf120b",
-    "slug": "lpt-use-the-name-you-want-in-your-signature-instead-of-your-33d256",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xh29vq/lpt_use_the_name_you_want_in_your_signature",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/deten",
-    "published_at": "2026-10-27T19:31:27+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Use the name you want in your signature instead of your formal name",
-      "vi": "Use the name you want in your signature instead of your formal name"
-    },
-    "summary": {
-      "en": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…",
-      "vi": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…"
-    },
-    "categories": [
-      "general"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.83,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {}
   },
   "1bcbebc8cbf97a25": {
     "id": "1bcbebc8cbf97a25",
@@ -15015,40 +15863,6 @@
     "translated": {},
     "hn_points": 115
   },
-  "3bcdfa6e04aad911": {
-    "id": "3bcdfa6e04aad911",
-    "slug": "github-new-pull-request-overview-page-in-public-preview-3bcdfa",
-    "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview",
-    "source": {
-      "id": "hackernews",
-      "name": "Hacker News",
-      "site_url": "https://news.ycombinator.com",
-      "kind": "news",
-      "content_type": "community"
-    },
-    "author": "xiaoyu2006",
-    "published_at": "Sat, 07 Nov 2026 23:09:40 +0000",
-    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "GitHub New pull request overview page in public preview",
-      "vi": "GitHub New pull request overview page in public preview"
-    },
-    "summary": {
-      "en": "Thảo luận trên Hacker News (116 điểm, 81 bình luận).",
-      "vi": "Thảo luận trên Hacker News (116 điểm, 81 bình luận)."
-    },
-    "categories": [
-      "security"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.81,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {},
-    "hn_points": 116
-  },
   "4f9a6a4a0665abf7": {
     "id": "4f9a6a4a0665abf7",
     "url": "https://www.omgubuntu.co.uk/2026/10/epic-confirm-fortnite-linux",
@@ -15083,6 +15897,74 @@
     },
     "hidden": false,
     "slug": "trinh-khoi-chay-tro-choi-ma-hoa-rung-cam-moi-cua-epic-co-san-4f9a6a"
+  },
+  "3bcdfa6e04aad911": {
+    "id": "3bcdfa6e04aad911",
+    "slug": "github-new-pull-request-overview-page-in-public-preview-3bcdfa",
+    "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "xiaoyu2006",
+    "published_at": "Sat, 07 Nov 2026 23:09:40 +0000",
+    "fetched_at": "2026-11-08T07:29:00.549077+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "GitHub New pull request overview page in public preview",
+      "vi": "GitHub New pull request overview page in public preview"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (116 điểm, 81 bình luận).",
+      "vi": "Thảo luận trên Hacker News (116 điểm, 81 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.81,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 116
+  },
+  "c353641c8e4ce45c": {
+    "id": "c353641c8e4ce45c",
+    "slug": "the-web-is-more-than-enough-by-paul-ford-c35364",
+    "url": "https://ftrain.com/aboard-the-web-is-more-than-enough",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "edward",
+    "published_at": "Sun, 08 Nov 2026 19:48:32 +0000",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "The Web Is More Than Enough, by Paul Ford",
+      "vi": "The Web Is More Than Enough, by Paul Ford"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (118 điểm, 71 bình luận).",
+      "vi": "Thảo luận trên Hacker News (118 điểm, 71 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.81,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 118
   },
   "8fb639d936f65def": {
     "id": "8fb639d936f65def",
@@ -15923,6 +16805,40 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {}
+  },
+  "6964c43b4ad45c4d": {
+    "id": "6964c43b4ad45c4d",
+    "slug": "when-a-languages-creator-and-its-owners-strongly-disagree-pd-6964c4",
+    "url": "https://isocpp.org/files/papers/P4454R0.pdf",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "acossta",
+    "published_at": "Sun, 08 Nov 2026 23:28:01 +0000",
+    "fetched_at": "2026-11-09T06:50:39.277597+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "When a language's creator and its owners strongly disagree [pdf]",
+      "vi": "When a language's creator and its owners strongly disagree [pdf]"
+    },
+    "summary": {
+      "en": "Thảo luận trên Hacker News (106 điểm, 99 bình luận).",
+      "vi": "Thảo luận trên Hacker News (106 điểm, 99 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.8,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {},
+    "hn_points": 106
   },
   "badc57942b75dc97": {
     "id": "badc57942b75dc97",
