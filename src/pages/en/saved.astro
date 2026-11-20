@@ -8,17 +8,56 @@ const t = getTranslations(lang);
 
 <Layout lang={lang} title="Saved Tips" description="Tech tricks and articles bookmarked in your browser.">
   <div class="max-w-4xl mx-auto">
-    <!-- Header with Command Prompt -->
-    <header class="mb-8">
-      <div class="text-xs font-mono font-bold text-[var(--accent)] mb-2">
-        $ ls saved/
+    <!-- Header with Command Prompt & Export/Import Controls -->
+    <header class="mb-8 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+      <div>
+        <div class="text-xs font-mono font-bold text-[var(--accent)] mb-2">
+          $ ls saved/
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-2">
+          Saved Tips
+        </h1>
+        <p class="text-xs sm:text-sm text-[var(--text-secondary)] font-mono leading-relaxed max-w-xl" id="saved-counter">
+          Loading saved tips from your browser storage...
+        </p>
       </div>
-      <h1 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-2">
-        Saved Tips
-      </h1>
-      <p class="text-xs sm:text-sm text-[var(--text-secondary)] font-mono leading-relaxed max-w-xl" id="saved-counter">
-        Loading saved tips from your browser storage...
-      </p>
+
+      <!-- Export / Import JSON Bookmarks -->
+      <div class="flex items-center gap-2 shrink-0 text-xs font-mono">
+        <button
+          id="export-bookmarks-btn"
+          type="button"
+          class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--border-strong)] hover:text-[var(--text-primary)] transition-all"
+        >
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <polyline points="7 10 12 15 17 10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+          </svg>
+          <span>Export JSON</span>
+        </button>
+
+        <button
+          id="import-bookmarks-btn"
+          type="button"
+          class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--accent-border)] hover:text-[var(--accent)] transition-all"
+        >
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <polyline points="17 8 12 3 7 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+            <line x1="12" y1="3" x2="12" y2="15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+          </svg>
+          <span>Import JSON</span>
+        </button>
+
+        <input
+          id="import-bookmarks-input"
+          type="file"
+          accept="application/json,.json"
+          class="hidden"
+          aria-label="Import saved tips from a JSON file"
+        />
+      </div>
     </header>
 
     <!-- Empty State -->
@@ -42,7 +81,7 @@ const t = getTranslations(lang);
       </a>
     </div>
 
-    <!-- Cards are rendered client-side from localStorage + /api/tips.json -->
+    <!-- Cards are rendered client-side from localStorage + /api/all-en.json (fallback /api/tips.json) -->
     <div id="saved-stream" class="space-y-4"></div>
   </div>
 </Layout>
@@ -50,24 +89,65 @@ const t = getTranslations(lang);
 <script is:inline define:vars={{ lang }}>
   (function () {
     const SAVED_KEY = 'techtips_saved';
+    const READ_KEY = 'techtips_read';
+    const MAX_READ_ITEMS = 500;
+    const MAX_IMPORT_BYTES = 5 * 1024 * 1024;
+
     const stream = document.getElementById('saved-stream');
     const emptyState = document.getElementById('saved-empty-state');
     const counter = document.getElementById('saved-counter');
+    const exportBtn = document.getElementById('export-bookmarks-btn');
+    const importBtn = document.getElementById('import-bookmarks-btn');
+    const importInput = document.getElementById('import-bookmarks-input');
     let tipsById = null;
 
-    function getSaved() {
+    function notify(message, variant) {
+      if (window.TechTipsActions && typeof window.TechTipsActions.showToast === 'function') {
+        window.TechTipsActions.showToast(message, variant);
+      }
+    }
+
+    function sanitizeIdList(raw) {
+      if (!Array.isArray(raw)) return [];
+      const seen = new Set();
+      const result = [];
+      for (const item of raw) {
+        if (typeof item !== 'string') continue;
+        const trimmed = item.trim();
+        if (!trimmed || trimmed.length > 128 || seen.has(trimmed)) continue;
+        seen.add(trimmed);
+        result.push(trimmed);
+      }
+      return result;
+    }
+
+    function getStoredIds(key) {
       try {
-        return JSON.parse(localStorage.getItem(SAVED_KEY)) || [];
+        const parsed = JSON.parse(localStorage.getItem(key));
+        return sanitizeIdList(parsed);
       } catch {
         return [];
       }
     }
 
+    function setStoredIds(key, ids) {
+      localStorage.setItem(key, JSON.stringify(ids));
+    }
+
     async function loadTips() {
       if (tipsById) return tipsById;
-      const resp = await fetch('/api/tips.json');
+      let resp = null;
+      try {
+        resp = await fetch(`/api/all-${lang}.json`);
+      } catch {
+        resp = null;
+      }
+      if (!resp || !resp.ok) {
+        resp = await fetch('/api/tips.json');
+      }
       if (!resp.ok) throw new Error('Cannot load tips');
       const list = await resp.json();
+      if (!Array.isArray(list)) throw new Error('Invalid tips payload');
       tipsById = new Map(list.map((tip) => [tip.id, tip]));
       return tipsById;
     }
@@ -99,12 +179,12 @@ const t = getTranslations(lang);
       const link = document.createElement('a');
       link.href = `/${lang}/tip/${encodeURIComponent(tip.slug || tip.id)}`;
       link.className = 'hover:text-[var(--accent)] transition-colors';
-      link.textContent = tip.title?.[lang] || tip.title?.en || '';
+      link.textContent = tip.title?.[lang] || tip.title?.en || Object.values(tip.title || {})[0] || '';
       heading.appendChild(link);
 
       const summary = document.createElement('p');
       summary.className = 'text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed line-clamp-2';
-      summary.textContent = tip.summary?.[lang] || tip.summary?.en || '';
+      summary.textContent = tip.summary?.[lang] || tip.summary?.en || Object.values(tip.summary || {})[0] || '';
 
       const footer = document.createElement('div');
       footer.className = 'pt-3 border-t border-[var(--border-subtle)] flex items-center justify-between gap-2 text-xs font-mono';
@@ -129,7 +209,7 @@ const t = getTranslations(lang);
     async function renderSaved() {
       if (!stream || !emptyState || !counter) return;
 
-      const saved = getSaved();
+      const saved = getStoredIds(SAVED_KEY);
       stream.replaceChildren();
       emptyState.classList.add('hidden');
 
@@ -150,6 +230,94 @@ const t = getTranslations(lang);
         counter.textContent = 'Could not load saved tips. Please try again.';
       }
     }
+
+    function exportBookmarks() {
+      const payload = {
+        version: 1,
+        exported_at: new Date().toISOString(),
+        saved: getStoredIds(SAVED_KEY),
+        read: getStoredIds(READ_KEY),
+      };
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'techtips-bookmarks.json';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      notify(`Exported ${payload.saved.length} saved and ${payload.read.length} read tips`);
+    }
+
+    async function handleImportFile(file) {
+      if (!file) return;
+      if (file.size > MAX_IMPORT_BYTES) {
+        notify('JSON file is too large (max 5MB).', 'error');
+        return;
+      }
+
+      let parsed;
+      try {
+        const rawText = await file.text();
+        parsed = JSON.parse(rawText);
+      } catch {
+        notify('Invalid JSON file. Please check the file format.', 'error');
+        return;
+      }
+
+      const isPlainObject = parsed !== null && typeof parsed === 'object' && !Array.isArray(parsed);
+      const validVersion = parsed?.version === undefined || parsed.version === 1;
+      const hasSaved = isPlainObject && Object.prototype.hasOwnProperty.call(parsed, 'saved');
+      const hasRead = isPlainObject && Object.prototype.hasOwnProperty.call(parsed, 'read');
+      const validSavedField = !hasSaved || Array.isArray(parsed.saved);
+      const validReadField = !hasRead || Array.isArray(parsed.read);
+
+      if (!isPlainObject || !validVersion || (!hasSaved && !hasRead) || !validSavedField || !validReadField) {
+        notify('Invalid Tech Tips Hub bookmarks JSON structure.', 'error');
+        return;
+      }
+
+      const existingSaved = getStoredIds(SAVED_KEY);
+      const existingRead = getStoredIds(READ_KEY);
+      const incomingSaved = hasSaved ? sanitizeIdList(parsed.saved) : [];
+      const incomingRead = hasRead ? sanitizeIdList(parsed.read) : [];
+
+      const existingSavedSet = new Set(existingSaved);
+      const existingReadSet = new Set(existingRead);
+      const addedSaved = incomingSaved.filter((id) => !existingSavedSet.has(id)).length;
+      const addedRead = incomingRead.filter((id) => !existingReadSet.has(id)).length;
+
+      const mergedSaved = Array.from(new Set([...existingSaved, ...incomingSaved]));
+      let mergedRead = Array.from(new Set([...existingRead, ...incomingRead]));
+      if (mergedRead.length > MAX_READ_ITEMS) {
+        mergedRead = mergedRead.slice(mergedRead.length - MAX_READ_ITEMS);
+      }
+
+      try {
+        setStoredIds(SAVED_KEY, mergedSaved);
+        setStoredIds(READ_KEY, mergedRead);
+      } catch {
+        notify('Could not save bookmarks to browser storage.', 'error');
+        return;
+      }
+
+      await renderSaved();
+      window.TechTipsActions?.updateCardsUI?.();
+      notify(`Imported bookmarks (+${addedSaved} saved, +${addedRead} read)`);
+    }
+
+    exportBtn?.addEventListener('click', exportBookmarks);
+    importBtn?.addEventListener('click', () => importInput?.click());
+    importInput?.addEventListener('change', async (e) => {
+      const target = e.target;
+      const file = target && target.files && target.files[0];
+      try {
+        await handleImportFile(file);
+      } finally {
+        if (target) target.value = '';
+      }
+    });
 
     renderSaved();
     window.addEventListener('storage', renderSaved);

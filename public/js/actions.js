@@ -62,21 +62,34 @@
   }
 
   // Toast notification (tránh thanh điều hướng đáy h-14 trên mobile bằng bottom-20 md:bottom-6)
-  function showToast(message) {
+  function showToast(message, variant) {
     const existing = document.getElementById('techtips-toast');
     if (existing) existing.remove();
 
+    const isError = variant === 'error';
     const toast = document.createElement('div');
     toast.id = 'techtips-toast';
-    toast.className = 'fixed bottom-20 md:bottom-6 right-4 sm:right-6 z-50 flex items-center gap-2 px-4 py-2.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-primary)] text-xs font-mono font-semibold shadow-xl toast-animate';
-    toast.innerHTML = `
-      <svg class="w-4 h-4 text-[var(--accent)] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    toast.setAttribute('role', isError ? 'alert' : 'status');
+    toast.setAttribute('aria-live', isError ? 'assertive' : 'polite');
+    toast.className = `fixed bottom-20 md:bottom-6 right-4 sm:right-6 z-50 flex items-center gap-2 px-4 py-2.5 rounded-xl border ${
+      isError ? 'border-red-500/40' : 'border-[var(--border-color)]'
+    } bg-[var(--bg-surface)] text-[var(--text-primary)] text-xs font-mono font-semibold shadow-xl toast-animate`;
+    toast.innerHTML = isError
+      ? `
+      <svg class="w-4 h-4 text-red-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+        <circle cx="12" cy="12" r="9" stroke-width="2"></circle>
+        <path d="M12 8v5m0 3h.01" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"></path>
+      </svg>
+      <span></span>
+    `
+      : `
+      <svg class="w-4 h-4 text-[var(--accent)] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
         <path d="M20 6 9 17l-5-5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"></path>
       </svg>
       <span></span>
     `;
     const label = toast.querySelector('span');
-    if (label) label.textContent = message;
+    if (label) label.textContent = String(message ?? '');
     document.body.appendChild(toast);
     setTimeout(() => {
       if (toast.parentNode) toast.parentNode.removeChild(toast);
@@ -179,7 +192,7 @@
     updateCardsUI();
   }
 
-  window.TechTipsActions = { updateCardsUI, markRead };
+  window.TechTipsActions = { updateCardsUI, markRead, showToast };
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);

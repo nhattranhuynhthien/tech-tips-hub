@@ -84,8 +84,10 @@ const isAbout = canonicalPath.includes('/about');
     <meta name="twitter:image" content={`${SITE_URL}/og-image.png`} />
     <meta name="twitter:image:alt" content={ogImageAlt} />
 
-    <!-- Favicon -->
+    <!-- Favicon & PWA -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/manifest.webmanifest" />
+    <meta name="theme-color" content="#0F1114" />
 
     <!-- Google Fonts with Vietnamese Subset -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -307,5 +309,14 @@ const isAbout = canonicalPath.includes('/about');
 
     <!-- Global Actions: Bookmarks, Copy Link, Toast, View Mode -->
     <script src="/js/actions.js" is:inline></script>
+
+    <!-- Register PWA Service Worker -->
+    <script is:inline>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker.register('/sw.js').catch(() => {});
+        });
+      }
+    </script>
   </body>
 </html>

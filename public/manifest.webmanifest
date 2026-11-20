@@ -1,0 +1,25 @@
+{
+  "name": "Tech Tips Hub",
+  "short_name": "tips.hub",
+  "description": "Sổ tay thủ thuật & mẹo công nghệ thực chiến (song ngữ Việt / Anh)",
+  "start_url": "/vi",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#0F1114",
+  "theme_color": "#0F1114",
+  "lang": "vi",
+  "icons": [
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}

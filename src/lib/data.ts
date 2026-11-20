@@ -39,6 +39,7 @@ export interface Tip {
   original_lang: string;
   title: Record<string, string> & { en: string; vi: string };
   summary: Record<string, string> & { en: string; vi: string };
+  key_points?: Record<string, string[]>;
   categories: string[];
   tags: string[];
   difficulty?: 'easy' | 'medium' | 'advanced' | null;
