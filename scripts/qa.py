@@ -11,7 +11,7 @@ if hasattr(sys.stdout, "reconfigure"):
 if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
-from translate import is_mixed, looks_vietnamese, looks_english
+from translate import is_mixed, looks_vietnamese, looks_english, LANG_CODE_RE, RAW_HTML_TAG_RE
 
 ENTITY_REGEX = re.compile(r"&(#\d+|\w+);")
 MOJIBAKE_WORD_REGEX = re.compile(r"[A-Za-zÀ-ỹ]\?[A-Za-zÀ-ỹ]")
@@ -37,6 +37,53 @@ def load_valid_categories() -> set[str]:
         return set()
     doc = yaml.safe_load(cat_path.read_text(encoding="utf-8")) or {}
     return {c["id"] for c in doc.get("categories", []) if c.get("id")}
+
+
+def validate_key_points(item: dict) -> list[str]:
+    """Kiểm định trường key_points tùy chọn nếu có mặt trên bài viết."""
+    if "key_points" not in item:
+        return []
+
+    iid = item.get("id", "unknown")
+    kp = item.get("key_points")
+    errors: list[str] = []
+
+    if not isinstance(kp, dict):
+        errors.append(f"key_points phải là dict theo mã ngôn ngữ ({iid})")
+        return errors
+
+    if not kp:
+        errors.append(f"key_points không được là dict rỗng ({iid})")
+        return errors
+
+    for lang, points in kp.items():
+        if not isinstance(lang, str) or not LANG_CODE_RE.match(lang):
+            errors.append(f"Mã ngôn ngữ key_points không hợp lệ ({iid}): {lang!r}")
+            continue
+        if not isinstance(points, list):
+            errors.append(f"key_points [{lang}] phải là danh sách ({iid})")
+            continue
+        if len(points) == 0:
+            errors.append(f"key_points [{lang}] không được là danh sách rỗng ({iid})")
+            continue
+        if len(points) > 4:
+            errors.append(f"key_points [{lang}] có quá 4 mục ({len(points)} > 4) ({iid})")
+
+        for idx, point in enumerate(points):
+            if not isinstance(point, str):
+                errors.append(f"key_points [{lang}][{idx}] phải là chuỗi ({iid})")
+                continue
+            if not point.strip():
+                errors.append(f"key_points [{lang}][{idx}] rỗng ({iid})")
+                continue
+            if len(point) > 200:
+                errors.append(
+                    f"key_points [{lang}][{idx}] quá dài ({len(point)} ký tự > 200) ({iid}): {point[:50]}"
+                )
+            if RAW_HTML_TAG_RE.search(point):
+                errors.append(f"key_points [{lang}][{idx}] chứa thẻ HTML thô ({iid}): {point[:50]}")
+
+    return errors
 
 
 def summarize_rejections() -> str:
@@ -183,7 +230,10 @@ def main():
             if not looks_english(en_title):
                 problems.append(f"Gắn nhãn dịch máy tiếng Anh nhưng nội dung không phải tiếng Anh ({iid}): {en_title[:50]}")
 
-        # 5. Đếm bài howto / thủ thuật từ nguồn chuyên tips
+        # 5. Kiểm định key_points tùy chọn nếu có
+        problems.extend(validate_key_points(it))
+
+        # 6. Đếm bài howto / thủ thuật từ nguồn chuyên tips
         if it.get("howto") or it.get("difficulty") or src.get("kind") == "tips":
             howto_count += 1
 

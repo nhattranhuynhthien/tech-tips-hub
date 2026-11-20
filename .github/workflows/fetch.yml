@@ -59,3 +59,71 @@ jobs:
             git pull --rebase origin "${GITHUB_REF_NAME:-main}"
             git push
           fi
+
+      - name: Notify Telegram admins on failure
+        if: failure()
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          ADMIN_IDS: ${{ secrets.ADMIN_IDS || vars.ADMIN_IDS }}
+          GH_REPOSITORY: ${{ github.repository }}
+          GH_WORKFLOW: ${{ github.workflow }}
+          GH_REF_NAME: ${{ github.ref_name }}
+          GH_SHA: ${{ github.sha }}
+          GH_RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: |
+          python3 - <<'PY'
+          import json
+          import os
+          import sys
+          import urllib.error
+          import urllib.request
+
+          token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip()
+          raw_admins = os.environ.get("ADMIN_IDS", "")
+          admin_ids = [part.strip() for part in raw_admins.split(",") if part.strip()]
+
+          if not token or not admin_ids:
+              print("Telegram failure alert skipped: TELEGRAM_BOT_TOKEN or ADMIN_IDS not configured.")
+              sys.exit(0)
+
+          repo = os.environ.get("GH_REPOSITORY", "unknown")
+          workflow = os.environ.get("GH_WORKFLOW", "fetch-tips") or "fetch-tips"
+          ref_name = os.environ.get("GH_REF_NAME", "")
+          sha = os.environ.get("GH_SHA", "")[:7]
+          run_url = os.environ.get("GH_RUN_URL", "")
+          ref_info = f"{ref_name}@{sha}" if ref_name and sha else (ref_name or sha or "unknown")
+
+          message = (
+              f"[ALERT] Workflow failed: {workflow}\n"
+              f"Repo: {repo}\n"
+              f"Ref: {ref_info}\n"
+              f"Run: {run_url}"
+          )
+
+          api_url = f"https://api.telegram.org/bot{token}/sendMessage"
+          sent = 0
+          for chat_id in admin_ids:
+              payload = json.dumps(
+                  {
+                      "chat_id": chat_id,
+                      "text": message,
+                      "disable_web_page_preview": True,
+                  }
+              ).encode("utf-8")
+              req = urllib.request.Request(
+                  api_url,
+                  data=payload,
+                  headers={"Content-Type": "application/json"},
+                  method="POST",
+              )
+              try:
+                  with urllib.request.urlopen(req, timeout=15) as resp:
+                      if 200 <= resp.status < 300:
+                          sent += 1
+              except urllib.error.HTTPError as exc:
+                  print(f"Telegram alert failed for chat_id={chat_id}: HTTP {exc.code}")
+              except Exception as exc:
+                  print(f"Telegram alert failed for chat_id={chat_id}: {type(exc).__name__}")
+
+          print(f"Telegram failure alert dispatched to {sent}/{len(admin_ids)} admin(s).")
+          PY

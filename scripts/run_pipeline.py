@@ -19,7 +19,13 @@ from filters import accept, is_howto_match
 from classify import classify, extract_tags
 from score import calculate_score, detect_difficulty, parse_published_time
 from slug import generate_seo_slug
-from translate import load_cache, save_cache, process_item_bilingual, batch_translate_pending
+from translate import (
+    load_cache,
+    save_cache,
+    process_item_bilingual,
+    batch_translate_pending,
+    normalize_key_points_map,
+)
 
 DATA_DIR = Path("data")
 DATA_DIR.mkdir(exist_ok=True)
@@ -31,6 +37,16 @@ def estimate_reading_time(text: str) -> int:
     """Ước lượng thời gian đọc (khoảng 150-200 từ/phút)."""
     words = len(text.split())
     return max(1, round(words / 175))
+
+
+def sync_item_key_points(item: dict, cache_entry: dict | None = None) -> None:
+    """Bảo toàn và chuẩn hóa key_points từ kết quả dịch hoặc cache; bỏ hẳn trường nếu rỗng."""
+    merged = normalize_key_points_map((cache_entry or {}).get("key_points"))
+    merged.update(normalize_key_points_map(item.get("key_points")))
+    if merged:
+        item["key_points"] = merged
+    else:
+        item.pop("key_points", None)
 
 def diversify(items: list[dict], max_run: int = 2, max_community_per_window: int = 3, window_size: int = 20) -> list[dict]:
     """
@@ -280,11 +296,13 @@ def main():
                 c_entry = trans_cache[iid]
                 title_dict = {**fallback_titles, **c_entry.get("title", {})}
                 summary_dict = {**fallback_summaries, **c_entry.get("summary", {})}
-                trans_meta = c_entry.get("translated", {})
+                trans_meta = dict(c_entry.get("translated", {}))
+                cached_key_points = normalize_key_points_map(c_entry.get("key_points"))
             else:
                 title_dict = fallback_titles
                 summary_dict = fallback_summaries
                 trans_meta = {}
+                cached_key_points = {}
 
             index[iid] = {
                 "id": iid,
@@ -311,6 +329,8 @@ def main():
                 "reading_time_min": estimate_reading_time(summary),
                 "translated": trans_meta
             }
+            if cached_key_points:
+                index[iid]["key_points"] = cached_key_points
             if "hn_points" in raw_item:
                 index[iid]["hn_points"] = raw_item["hn_points"]
             if "hn_comments_url" in raw_item:
@@ -423,6 +443,7 @@ def main():
     for item in all_items:
         item.pop("raw_title", None)
         item.pop("raw_summary", None)
+        sync_item_key_points(item, trans_cache.get(item.get("id")))
         orig_lang = str(item.get("original_lang", "")).lower()
         curr_slug = item.get("slug") or ""
         is_zh = orig_lang.startswith("zh")
