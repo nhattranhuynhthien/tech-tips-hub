@@ -6,7 +6,10 @@ const API = 'https://api.telegram.org';
 const GITHUB_API = 'https://api.github.com';
 const PENDING = 'pending';
 const MAX_SUMMARY = 300;
-const ALLOWED_TAGS = new Set(['android', 'ios', 'windows', 'macos', 'linux', 'web', 'ai', 'khac']);
+const ALLOWED_TAGS = new Set([
+  'android', 'ios', 'windows', 'macos', 'linux', 'browser', 'office', 'security', 'ai', 'dev', 'hardware', 'web', 'khac',
+]);
+const TRACKING_PARAM_RE = /^(utm_.+|fbclid|gclid|msclkid|ref|source|mc_cid|mc_eid)$/i;
 
 // Node.js Vercel Functions read duration settings from this exported config.
 export const config = { maxDuration: 60 };
@@ -58,14 +61,23 @@ async function sha1(value: string): Promise<string> {
 export function normalizeUrl(input: string): string {
   const parsed = new URL(input);
   if (!['http:', 'https:'].includes(parsed.protocol) || parsed.username || parsed.password) throw new Error('Only public HTTP(S) links are accepted');
+  const host = parsed.hostname.toLowerCase();
+  if (
+    !host.includes('.') ||
+    host === 'localhost' ||
+    host.endsWith('.local') ||
+    host.startsWith('[') ||
+    /^(127\.|10\.|0\.|169\.254\.|192\.168\.|172\.(1[6-9]|2\d|3[01])\.)/.test(host)
+  ) {
+    throw new Error('Only public HTTP(S) links are accepted');
+  }
   const queryKeys: string[] = [];
   parsed.searchParams.forEach((_value, key) => queryKeys.push(key));
-  queryKeys.forEach((key) => { if (/^(utm_.+|fbclid)$/i.test(key)) parsed.searchParams.delete(key); });
+  queryKeys.forEach((key) => { if (TRACKING_PARAM_RE.test(key)) parsed.searchParams.delete(key); });
   parsed.hash = '';
   if (parsed.pathname !== '/') parsed.pathname = parsed.pathname.replace(/\/+$/, '');
-  else parsed.pathname = '';
   parsed.searchParams.sort();
-  return parsed.toString().replace(/\/$/, '');
+  return parsed.toString();
 }
 
 export function sourceFor(url: string, forwardedName = ''): { type: string; name: string } {
@@ -141,10 +153,11 @@ async function ensureLabel(name: string, color = '6f42c1'): Promise<void> {
     if (!(error instanceof Error) || !error.message.includes('(422)')) throw error;
   }
 }
-async function listIssues(options: { labels?: string[]; state?: 'open' | 'closed' | 'all'; since?: string } = {}): Promise<AnyRecord[]> {
+async function listIssues(options: { labels?: string[]; state?: 'open' | 'closed' | 'all'; since?: string; maxPages?: number } = {}): Promise<AnyRecord[]> {
   const results: AnyRecord[] = [];
+  const maxPages = options.maxPages ?? 5;
   // GitHub returns at most 100 items per page; walk pages until exhausted (capped).
-  for (let page = 1; page <= 10; page += 1) {
+  for (let page = 1; page <= maxPages; page += 1) {
     const params = new URLSearchParams({
       state: options.state || 'open',
       per_page: '100',
@@ -172,9 +185,10 @@ function parseIssueBody(body: string): AnyRecord {
   return JSON.parse(match[1]);
 }
 function makeIssueBody(record: AnyRecord, userId: string): string {
+  const safeJson = JSON.stringify({ ...record, telegramUserId: userId }, null, 2).replace(/`/g, '\\u0060');
   return [
     'Hộp thư cộng đồng Tech Tips Hub. Chỉ nội dung đã duyệt mới được đưa lên trang.',
-    '', '```json', JSON.stringify({ ...record, telegramUserId: userId }, null, 2), '```',
+    '', '```json', safeJson, '```',
   ].join('\n');
 }
 
@@ -232,9 +246,9 @@ async function sendAdminCard(issue: AnyRecord, record: AnyRecord): Promise<void>
 }
 
 function extractUrl(text: string): string | undefined {
-  const match = text.match(/https?:\/\/[^\s<>]+/i);
+  const match = text.match(/https?:\/\/[^\s<>"'`]+/i);
   if (!match) return undefined;
-  return match[0].replace(/[),.!?]+$/, '');
+  return match[0].replace(/[),.!?\]>'"]+$/, '');
 }
 async function submittedRecord(rawUrl: string, note: string, sourceName = '', originalLang?: Lang): Promise<AnyRecord> {
   const url = normalizeUrl(rawUrl);
@@ -244,7 +258,7 @@ async function submittedRecord(rawUrl: string, note: string, sourceName = '', or
   const title = cleanNote.split(/\r?\n/)[0]?.slice(0, 160) || new URL(url).hostname;
   const summary = summarize(cleanNote);
   return {
-    id: await sha1(url), title: { vi: lang === 'vi' ? title : null, en: lang === 'en' ? title : null },
+    id: (await sha1(url)).slice(0, 16), title: { vi: lang === 'vi' ? title : null, en: lang === 'en' ? title : null },
     summary: { vi: lang === 'vi' ? summary : null, en: lang === 'en' ? summary : null },
     url, sourceType: source.type, sourceName: source.name, originalLang: lang,
     submittedBy: 'Cộng đồng đóng góp', publishedAt: new Date().toISOString(), tags: [],
@@ -253,8 +267,8 @@ async function submittedRecord(rawUrl: string, note: string, sourceName = '', or
 
 async function isDuplicate(id: string, url: string): Promise<boolean> {
   const community = await readCommunity();
-  if (community.entries.some((entry) => entry.id === id || entry.url === url)) return true;
-  const issues = await listIssues({ state: 'all' });
+  if (community.entries.some((entry) => entry.id === id || entry.id?.startsWith(id) || entry.url === url)) return true;
+  const issues = await listIssues({ labels: [PENDING], state: 'open' });
   return issues.some((issue) => String(issue.title || '').includes(id));
 }
 async function createSubmission(record: AnyRecord, userId: string, chatId: number, lang: Lang): Promise<void> {
@@ -284,8 +298,8 @@ async function createSubmission(record: AnyRecord, userId: string, chatId: numbe
   await send(chatId, replyText(lang, 'Đã nhận. Bài sẽ được duyệt sớm.', 'Received. Your tip will be reviewed soon.'));
 }
 
-async function pendingIssues(): Promise<AnyRecord[]> {
-  return listIssues({ labels: [PENDING], state: 'open' });
+async function pendingIssues(maxPages = 2): Promise<AnyRecord[]> {
+  return listIssues({ labels: [PENDING], state: 'open', maxPages });
 }
 function isAdmin(userId: unknown): boolean { return env('ADMIN_IDS').split(',').map((value) => value.trim()).includes(String(userId)); }
 
@@ -337,7 +351,10 @@ async function onCallback(cb: AnyRecord): Promise<void> {
 async function editIssue(message: AnyRecord, args: string): Promise<void> {
   const match = args.match(/^(\d+)\s+([\s\S]+)$/);
   if (!match) throw new Error('Cú pháp: /sua <issue_id> tiêu đề | tóm tắt');
-  const [title, summary] = match[2].split('|').map((value) => cleanText(value, 1000));
+  const sepIdx = match[2].indexOf('|');
+  if (sepIdx === -1) throw new Error('Cần nhập cả tiêu đề và tóm tắt, ngăn cách bằng dấu |.');
+  const title = cleanText(match[2].slice(0, sepIdx), 1000);
+  const summary = cleanText(match[2].slice(sepIdx + 1), 1000);
   if (!title || !summary) throw new Error('Cần nhập cả tiêu đề và tóm tắt.');
   const issue = await getIssue(Number(match[1]));
   if (issue.state !== 'open' || !issue.labels?.some((label: AnyRecord) => label.name === PENDING)) throw new Error('Chỉ có thể sửa bài đang chờ duyệt.');
@@ -350,8 +367,8 @@ async function editIssue(message: AnyRecord, args: string): Promise<void> {
 }
 async function tagIssue(message: AnyRecord, args: string): Promise<void> {
   const match = args.match(/^(\d+)\s+(.+)$/);
-  if (!match) throw new Error('Cú pháp: /tag <issue_id> android,ios,windows,macos,linux,web,ai,khac');
-  const tags = [...new Set(match[2].split(',').map((tag) => tag.trim().toLowerCase()).filter((tag) => ALLOWED_TAGS.has(tag)))];
+  if (!match) throw new Error('Cú pháp: /tag <issue_id> android,ios,windows,macos,linux,browser,office,security,ai,dev,hardware');
+  const tags = [...new Set(match[2].split(',').map((tag) => tag.trim().toLowerCase()).filter((tag) => ALLOWED_TAGS.has(tag)).map((tag) => (tag === 'web' ? 'browser' : tag)))];
   if (!tags.length) throw new Error('Không có tag hợp lệ.');
   const issue = await getIssue(Number(match[1]));
   if (issue.state !== 'open' || !issue.labels?.some((label: AnyRecord) => label.name === PENDING)) throw new Error('Chỉ có thể gắn tag cho bài đang chờ duyệt.');
@@ -380,7 +397,7 @@ async function onMessage(message: AnyRecord): Promise<void> {
     return;
   }
   if (command === 'trangthai') {
-    const issues = await listIssues({ labels: [`user-${userId}`], state: 'all' });
+    const issues = await listIssues({ labels: [`user-${userId}`], state: 'all', maxPages: 1 });
     const status = issues.slice(0, 10).map((issue) => `${issue.labels?.some((label: AnyRecord) => label.name === PENDING) ? '⏳ Chờ duyệt' : issue.labels?.some((label: AnyRecord) => label.name === 'approved') ? '✅ Đã đăng' : '⛔ Từ chối'} — ${cleanText(issue.title, 120)} (#${issue.number})`);
     await send(chatId, status.length ? status.join('\n') : replyText(lang, 'Bạn chưa gửi bài nào.', 'You have not submitted any tips yet.'));
     return;
@@ -439,6 +456,14 @@ async function onMessage(message: AnyRecord): Promise<void> {
   }
   if (!rawUrl) {
     await send(chatId, replyText(lang, 'Mình chưa thấy link. Gửi /gui <link> <ghi chú> nhé.', 'I could not find a link. Send /gui <link> <short note>.'));
+    return;
+  }
+  if (cleanText(note, 1200).length < 8) {
+    await send(chatId, replyText(
+      lang,
+      'Vui lòng kèm tiêu đề hoặc ghi chú ngắn (ít nhất vài từ) mô tả mẹo công nghệ. Ví dụ: /gui https://... Cách tắt quảng cáo trên Windows 11',
+      'Please include a short title or note describing the tip. Example: /gui https://... How to disable ads on Windows 11',
+    ));
     return;
   }
   try {

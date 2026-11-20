@@ -1,12 +1,12 @@
 ---
 import Layout from '../../../layouts/Layout.astro';
 import TipCard from '../../../components/TipCard.astro';
-import { getAllTips, getAllCategories, type Category, type Tip } from '../../../lib/data';
+import { getAllTips, getAllCategories, sortTipsNewestFirst, type Category, type Tip } from '../../../lib/data';
 import { getTranslations } from '../../../lib/i18n';
 
 export async function getStaticPaths() {
   const categories = getAllCategories();
-  const tips = getAllTips();
+  const tips = sortTipsNewestFirst(getAllTips().filter((t) => t.source.kind !== 'news'));
 
   return categories.map((cat) => {
     const catTips = tips.filter((t) => t.categories.includes(cat.id));

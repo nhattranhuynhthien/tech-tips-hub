@@ -87,8 +87,8 @@ def parse_hn_summary(raw_summary: str, min_score: int = 100) -> tuple[int, str, 
     if cmt_count_match:
         comments_count = int(cmt_count_match.group(1))
 
-    # Tóm tắt sạch cho Hacker News (không dùng boilerplate URL)
-    clean_summary = f"Thảo luận trên Hacker News ({points} điểm, {comments_count} bình luận)."
+    # Tóm tắt sạch bằng tiếng Anh cho Hacker News (khớp với original_lang = "en", sẽ được dịch sang tiếng Việt ở bước translate)
+    clean_summary = f"Discussion on Hacker News ({points} points, {comments_count} comments)."
     return points, comments_url, comments_count, clean_summary
 
 def fetch_feed_items(source: dict, max_entries: int = 25, state_entry: dict | None = None) -> list[dict]:

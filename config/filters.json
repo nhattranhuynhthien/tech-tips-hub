@@ -5,6 +5,7 @@
       "tip",
       "trick",
       "hack",
+      "hacks",
       "hidden",
       "guide",
       "settings",
@@ -14,14 +15,25 @@
       "you can now"
     ],
     "vi": [
-      "c?ch",
-      "m?o",
-      "th? thu?t",
-      "b? quy?t",
-      "?n",
-      "ph?m t?t",
-      "s?a l?i",
-      "h??ng d?n"
+      "cách",
+      "mẹo",
+      "thủ thuật",
+      "bí quyết",
+      "ẩn",
+      "phím tắt",
+      "sửa lỗi",
+      "hướng dẫn"
+    ],
+    "zh": [
+      "教程",
+      "指南",
+      "技巧",
+      "攻略",
+      "如何",
+      "怎么",
+      "快捷键",
+      "修复",
+      "优化"
     ]
   },
   "blockKeywords": [
@@ -29,8 +41,8 @@
     "discount",
     "sale",
     "coupon",
-    "gi?m gi?",
-    "khuy?n m?i",
+    "giảm giá",
+    "khuyến mãi",
     "sponsored",
     "促销",
     "折扣",
@@ -39,11 +51,16 @@
     "直降",
     "国补",
     "降价",
-    "新低"
+    "新低",
+    "双十一",
+    "双11",
+    "喜加一",
+    "官方补贴"
   ],
   "reviewAllowKeywords": [
     "tip",
-    "m?o"
+    "mẹo",
+    "技巧"
   ],
   "minTitleLength": 15,
   "redditMinScore": 50,

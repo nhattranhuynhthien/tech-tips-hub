@@ -143,7 +143,7 @@ const communitySourceLabel = tip.source_type === 'community-facebook' ? 'Faceboo
               type="button"
               class="px-3 py-1.5 rounded-lg transition-all text-[var(--text-muted)] hover:text-[var(--text-primary)]"
             >
-              Original
+              {tip.original_lang?.startsWith('zh') ? 'Original (Chinese)' : 'Original (Vietnamese)'}
             </button>
           </div>
         )}
@@ -207,13 +207,6 @@ const communitySourceLabel = tip.source_type === 'community-facebook' ? 'Faceboo
             Report issue
           </a>
         </div>
-
-        <!-- Giscus Comments Placeholder -->
-        <div class="mt-8 pt-8 border-t border-[var(--border-color)]">
-          <div class="rounded-xl border border-dashed border-[var(--border-color)] bg-[var(--bg-surface)] p-6 text-center text-xs font-mono text-[var(--text-muted)]">
-            [Giscus Discussion Box]
-          </div>
-        </div>
       </article>
 
       <!-- Right 1 Col: Sidebar -->
@@ -254,8 +247,13 @@ const communitySourceLabel = tip.source_type === 'community-facebook' ? 'Faceboo
   </div>
 </Layout>
 
-<script is:inline define:vars={{ titleText, origTitle, summaryText, origSummary }}>
+<script is:inline define:vars={{ tipId: tip.id, titleText, origTitle, summaryText, origSummary }}>
   (function () {
+    if (window.TechTipsActions) {
+      window.TechTipsActions.markRead(tipId);
+    } else {
+      window.addEventListener('DOMContentLoaded', () => window.TechTipsActions?.markRead(tipId));
+    }
     const tabEn = document.getElementById('tab-en');
     const tabOrig = document.getElementById('tab-orig');
     const headline = document.getElementById('tip-headline');

@@ -7,7 +7,7 @@ import type { Locale } from '../lib/i18n';
 interface Props { lang: Locale }
 const { lang } = Astro.props;
 const isVi = lang === 'vi';
-const sources = getAllSources();
+const sources = getAllSources().filter((source) => source.kind === 'news');
 const categories = getAllCategories();
 const news = getAllTips().filter((tip) => tip.source.kind === 'news').sort((a, b) => {
   const aTime = new Date(a.published_at || a.fetched_at || 0).getTime() || 0;
@@ -15,7 +15,10 @@ const news = getAllTips().filter((tip) => tip.source.kind === 'news').sort((a, b
   return bTime - aTime;
 });
 const hotNews = getNewsOfTheDay();
-const initialNews = news.filter((tip) => tip.id !== hotNews?.id).slice(0, 20);
+const feedNews = hotNews ? news.filter((tip) => tip.id !== hotNews.id) : news;
+const pageSize = 20;
+const initialNews = feedNews.slice(0, pageSize);
+const totalPages = Math.max(1, Math.ceil(feedNews.length / pageSize));
 const labels = {
   difficulty: { easy: isVi ? 'Dễ' : 'Easy', medium: isVi ? 'Vừa' : 'Medium', advanced: isVi ? 'Nâng cao' : 'Advanced' },
   contentTypes: { community: isVi ? 'Cộng đồng' : 'Community', video: 'Video', vendor: isVi ? 'Hãng công nghệ' : 'Technology vendor', article: isVi ? 'Bài viết' : 'Article' },
@@ -23,7 +26,6 @@ const labels = {
   community: isVi ? 'Cộng đồng' : 'Community', moreSources: isVi ? 'nguồn khác' : 'more sources',
   updated: isVi ? 'cập nhật' : 'updated', readOriginal: isVi ? 'Đọc bài gốc' : 'Read original', original: isVi ? 'Bài gốc' : 'Original',
 };
-const pageSize = 20;
 ---
 
 <script is:inline src="/js/tip-card.js"></script>
@@ -68,15 +70,15 @@ const pageSize = 20;
   </div>
 </div>
 
-<p id="news-count" class="text-xs font-mono text-[var(--text-muted)] mb-4">{news.length} {isVi ? 'bài viết' : 'articles'}</p>
+<p id="news-count" class="text-xs font-mono text-[var(--text-muted)] mb-4">{feedNews.length} {isVi ? 'bài viết' : 'articles'}</p>
 <div id="news-stream" class="grid grid-cols-1 lg:grid-cols-2 gap-4">
-  {initialNews.map((tip) => <TipCard tip={tip} lang={lang} labels={labels} />)}
+  {initialNews.map((tip) => <TipCard tip={tip} lang={lang} />)}
 </div>
-<p id="news-empty" class="hidden py-16 text-center text-sm text-[var(--text-muted)]">{isVi ? 'Không tìm thấy tin nào khớp với bộ lọc.' : 'No news match your filters.'}</p>
-<nav id="news-pagination" class="mt-8 flex items-center justify-center gap-4 font-mono text-xs" aria-label={isVi ? 'Phân trang tin công nghệ' : 'Tech news pagination'}>
+<p id="news-empty" class={`${feedNews.length === 0 ? '' : 'hidden '}py-16 text-center text-sm text-[var(--text-muted)]`}>{isVi ? 'Không tìm thấy tin nào khớp với bộ lọc.' : 'No news match your filters.'}</p>
+<nav id="news-pagination" class={`${feedNews.length <= pageSize ? 'hidden ' : ''}mt-8 flex items-center justify-center gap-4 font-mono text-xs`} aria-label={isVi ? 'Phân trang tin công nghệ' : 'Tech news pagination'}>
   <button id="news-prev" class="rounded-lg border border-[var(--border-color)] px-3 py-2 disabled:opacity-40" disabled>{isVi ? '← Trước' : '← Previous'}</button>
-  <span id="news-page" class="text-[var(--text-secondary)]">1 / {Math.max(1, Math.ceil(news.length / pageSize))}</span>
-  <button id="news-next" class="rounded-lg border border-[var(--border-color)] px-3 py-2 disabled:opacity-40">{isVi ? 'Sau →' : 'Next →'}</button>
+  <span id="news-page" class="text-[var(--text-secondary)]">1 / {totalPages}</span>
+  <button id="news-next" class="rounded-lg border border-[var(--border-color)] px-3 py-2 disabled:opacity-40" disabled={totalPages <= 1}>{isVi ? 'Sau →' : 'Next →'}</button>
 </nav>
 
 <script is:inline define:vars={{ lang, labels, pageSize, hotNewsId: hotNews?.id || '' }}>
@@ -84,8 +86,26 @@ const pageSize = 20;
     const $ = (id) => document.getElementById(id);
     const source = $('news-source'), type = $('news-type'), category = $('news-category'), language = $('news-language'), search = $('news-search');
     const stream = $('news-stream'), count = $('news-count'), empty = $('news-empty'), prev = $('news-prev'), next = $('news-next'), pageLabel = $('news-page'), pagination = $('news-pagination');
-    let allNews = null, page = 1, sort = 'newest';
+    let allNews = null, loadPromise = null, page = 1, sort = 'newest';
     const timeOf = (tip) => new Date(tip.published_at || tip.fetched_at || 0).getTime() || 0;
+
+    function load() {
+      if (allNews) return Promise.resolve();
+      if (!loadPromise) {
+        loadPromise = fetch('/api/tips.json').then((response) => {
+          if (!response.ok) throw new Error('HTTP ' + response.status);
+          return response.json();
+        }).then((list) => {
+          allNews = (Array.isArray(list) ? list : []).filter((tip) => tip.source?.kind === 'news' && tip.id !== hotNewsId);
+        }).catch((err) => {
+          loadPromise = null;
+          count.textContent = lang === 'vi' ? 'Không tải được danh sách tin.' : 'Could not load news.';
+          throw err;
+        });
+      }
+      return loadPromise;
+    }
+
     function render() {
       if (!allNews) return;
       const query = search.value.trim().toLowerCase();
@@ -103,18 +123,14 @@ const pageSize = 20;
       page = Math.min(page, pages);
       const visible = items.slice((page - 1) * pageSize, page * pageSize);
       stream.replaceChildren(...visible.map((tip) => window.TipCardRenderer.create(tip, lang, labels)));
+      if (window.TechTipsActions) window.TechTipsActions.updateCardsUI();
       count.textContent = `${items.length} ${lang === 'vi' ? 'bài viết' : 'articles'}`;
       empty.classList.toggle('hidden', items.length > 0);
       pagination.classList.toggle('hidden', items.length <= pageSize);
       pageLabel.textContent = `${page} / ${pages}`;
       prev.disabled = page <= 1; next.disabled = page >= pages;
     }
-    function load() {
-      if (allNews) return Promise.resolve();
-      return fetch('/api/tips.json').then((response) => response.json()).then((list) => {
-        allNews = (Array.isArray(list) ? list : []).filter((tip) => tip.source?.kind === 'news' && tip.id !== hotNewsId);
-      });
-    }
+
     [source, type, category, language].forEach((control) => control.addEventListener('change', () => { page = 1; load().then(render); }));
     search.addEventListener('input', () => { page = 1; load().then(render); });
     document.querySelectorAll('.news-sort-btn').forEach((button) => button.addEventListener('click', () => {
@@ -123,8 +139,7 @@ const pageSize = 20;
       button.className = 'news-sort-btn px-3 py-1 rounded-lg bg-[var(--accent-hero)] text-black font-bold';
       load().then(render);
     }));
-    prev.addEventListener('click', () => { if (page > 1) { page--; render(); } });
-    next.addEventListener('click', () => { page++; render(); });
-    load().then(render).catch(() => { count.textContent = lang === 'vi' ? 'Không tải được danh sách tin.' : 'Could not load news.'; });
+    prev.addEventListener('click', () => { if (page > 1) { page--; load().then(render); } });
+    next.addEventListener('click', () => { page++; load().then(render); });
   })();
 </script>

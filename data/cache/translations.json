@@ -45,7 +45,7 @@
     },
     "summary": {
       "en": "Firefox 159 is out, with a fresh set of improvements and some Linux-specific fixes. Now that Mozilla’s browser hews to a faster release cadence, with two releases a month rather than one, some changelogs may look minor on their own, as they’re smaller, if more frequent slices. So what’s changed?…",
-      "vi": "Firefox 159 đã ra mắt với một loạt cải tiến mới và một số bản sửa lỗi dành riêng cho Linux. Giờ đây, trình duyệt của Mozilla có nhịp độ phát hành nhanh hơn, với hai bản phát hành mỗi tháng thay vì một, một số nhật ký thay đổi có thể trông không đáng kể vì chúng nhỏ hơn, nếu có nhiều lát cắt thường xuyên hơn. Vậy điều gì đã thay đổi?…"
+      "vi": "Firefox 159 đã ra mắt với một loạt cải tiến mới và một số bản sửa lỗi dành riêng cho Linux. Giờ đây, trình duyệt của Mozilla có nhịp độ phát hành nhanh hơn, với hai bản phát hành mỗi tháng thay vì một, một số nhật ký thay đổi có thể trông không đáng kể vì chúng nhỏ hơn, nếu có nhiều lát cắt thường xuyên hơn. Vậy điều…"
     },
     "translated": {
       "vi": "machine"
@@ -305,7 +305,7 @@
     },
     "summary": {
       "en": "Ubuntu has released security updates for the php2shell PHP flaw that’s led to websites being taken offline, and a key compromise at the eMudhra certificate authority. Desktop Ubuntu isn’t directly affected by php2shell, since PHP isn’t installed by default. The certificate issue is more of a…",
-      "vi": "Ubuntu đã phát hành các bản cập nhật bảo mật cho lỗ hổng php2shell PHP dẫn đến việc các trang web bị ngoại tuyến và một sự xâm phạm nghiêm trọng tại cơ quan cấp chứng chỉ eMudhra. Ubuntu dành cho máy tính để bàn không bị ảnh hưởng trực tiếp bởi php2shell vì PHP không được cài đặt theo mặc định. Vấn đề về chứng chỉ giống như một…"
+      "vi": "Ubuntu đã phát hành các bản cập nhật bảo mật cho lỗ hổng php2shell PHP dẫn đến việc các trang web bị ngoại tuyến và một sự xâm phạm nghiêm trọng tại cơ quan cấp chứng chỉ eMudhra. Ubuntu dành cho máy tính để bàn không bị ảnh hưởng trực tiếp bởi php2shell vì PHP không được cài đặt theo mặc định. Vấn đề về chứng chỉ…"
     },
     "translated": {
       "vi": "machine"
@@ -344,7 +344,7 @@
     },
     "summary": {
       "en": "Mozilla Firefox 158.0.1 is rolling out with some important security fixes. Now, I don’t tend to cover Firefox point releases as mainly ship minor fixes for things the majority of users won’t have noticed were wrong in the first place. The Firefox 158.0.1 update is more ‘meaty’ than usual fare.…",
-      "vi": "Mozilla Firefox 158.0.1 sắp được tung ra với một số bản sửa lỗi bảo mật quan trọng. Bây giờ, tôi không có xu hướng đề cập đến các bản phát hành điểm của Firefox vì chủ yếu đưa ra các bản sửa lỗi nhỏ cho những thứ mà phần lớn người dùng sẽ không nhận thấy là sai ngay từ đầu. Bản cập nhật Firefox 158.0.1 có nhiều chất liệu hơn bình thường.…"
+      "vi": "Mozilla Firefox 158.0.1 sắp được tung ra với một số bản sửa lỗi bảo mật quan trọng. Bây giờ, tôi không có xu hướng đề cập đến các bản phát hành điểm của Firefox vì chủ yếu đưa ra các bản sửa lỗi nhỏ cho những thứ mà phần lớn người dùng sẽ không nhận thấy là sai ngay từ đầu. Bản cập nhật Firefox 158.0.1 có nhiều chất…"
     },
     "translated": {
       "vi": "machine"
@@ -357,7 +357,7 @@
     },
     "summary": {
       "en": "BleachBit, the free, open-source and cross-platform system cleaning utility has a new maintenance release out – with support for Ubuntu 26.10. BleachBit 6.0.6 introduces cleaners for the Helium browser and Docker Desktop (including its AI assistant). This update also boosts app startup times, and…",
-      "vi": "BleachBit, tiện ích dọn dẹp hệ thống đa nền tảng, mã nguồn mở và miễn phí vừa ra mắt bản phát hành bảo trì mới – với sự hỗ trợ cho Ubuntu 26.10. BleachBit 6.0.6 giới thiệu các trình dọn dẹp cho trình duyệt Helium và Docker Desktop (bao gồm cả trợ lý AI của nó). Bản cập nhật này cũng tăng thời gian khởi động ứng dụng và…"
+      "vi": "BleachBit, tiện ích dọn dẹp hệ thống đa nền tảng, mã nguồn mở và miễn phí vừa ra mắt bản phát hành bảo trì mới – với sự hỗ trợ cho Ubuntu 26.10. BleachBit 6.0.6 giới thiệu các trình dọn dẹp cho trình duyệt Helium và Docker Desktop (bao gồm cả trợ lý AI của nó). Bản cập nhật này cũng tăng thời gian khởi động ứng dụng…"
     },
     "translated": {
       "vi": "machine"
@@ -474,7 +474,7 @@
     },
     "summary": {
       "en": "Audacious 4.6.2 lets you drop Winamp skin files onto the Qt window to install them, and adds keyboard navigation for toolbar buttons. You're reading Audacious 4.6.2 fills the last gaps in its Qt Winamp mode , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission.",
-      "vi": "Audacious 4.6.2 cho phép bạn thả các tập tin giao diện Winamp vào cửa sổ Qt để cài đặt chúng và thêm điều hướng bàn phím cho các nút thanh công cụ. Bạn đang đọc Audacity 4.6.2 lấp đầy những khoảng trống cuối cùng trong chế độ Qt Winamp của nó, một bài đăng trên blog từ OMG! Ubuntu . Không sao chép đi nơi khác khi chưa được phép."
+      "vi": "Audacious 4.6.2 cho phép bạn thả các tập tin giao diện Winamp vào cửa sổ Qt để cài đặt chúng và thêm điều hướng bàn phím cho các nút thanh công cụ. Bạn đang đọc Audacity 4.6.2 lấp đầy những khoảng trống cuối cùng trong chế độ Qt Winamp của nó, một bài đăng trên blog từ OMG! Ubuntu . Không sao chép đi nơi khác khi chưa…"
     },
     "translated": {
       "vi": "machine"
@@ -578,7 +578,7 @@
     },
     "summary": {
       "en": "So far, you have learned the individual building blocks of tmux. You know how to create sessions, organize work with windows, split windows into panes, move between panes, resize them, and use copy mode to work with terminal output. But knowing these features separately is different from actually…",
-      "vi": "Cho đến nay, bạn đã tìm hiểu các khối xây dựng riêng lẻ của tmux. Bạn biết cách tạo phiên, sắp xếp công việc với cửa sổ, chia cửa sổ thành các khung, di chuyển giữa các khung, thay đổi kích thước của chúng và sử dụng chế độ sao chép để làm việc với đầu ra của thiết bị đầu cuối. Nhưng việc biết riêng các tính năng này sẽ khác với thực tế…"
+      "vi": "Cho đến nay, bạn đã tìm hiểu các khối xây dựng riêng lẻ của tmux. Bạn biết cách tạo phiên, sắp xếp công việc với cửa sổ, chia cửa sổ thành các khung, di chuyển giữa các khung, thay đổi kích thước của chúng và sử dụng chế độ sao chép để làm việc với đầu ra của thiết bị đầu cuối. Nhưng việc biết riêng các tính năng này…"
     },
     "translated": {
       "vi": "machine"
@@ -617,7 +617,7 @@
     },
     "summary": {
       "en": "In the previous chapter, you learned how to create, name, detach, and reattach tmux sessions. Now you already have the main workspace. But imagine you're working on a project and need to do several things at once. You want one terminal for your application, another for logs, another",
-      "vi": "Trong chương trước, bạn đã học cách tạo, đặt tên, tách và gắn lại các phiên tmux. Bây giờ bạn đã có không gian làm việc chính. Nhưng hãy tưởng tượng bạn đang thực hiện một dự án và cần thực hiện nhiều việc cùng một lúc. Bạn muốn một thiết bị đầu cuối cho ứng dụng của mình, một thiết bị đầu cuối khác cho nhật ký, một thiết bị đầu cuối khác"
+      "vi": "Trong chương trước, bạn đã học cách tạo, đặt tên, tách và gắn lại các phiên tmux. Bây giờ bạn đã có không gian làm việc chính. Nhưng hãy tưởng tượng bạn đang thực hiện một dự án và cần thực hiện nhiều việc cùng một lúc. Bạn muốn một thiết bị đầu cuối cho ứng dụng của mình, một thiết bị đầu cuối khác cho nhật ký, một…"
     },
     "translated": {
       "vi": "machine"
@@ -682,7 +682,7 @@
     },
     "summary": {
       "en": "At this point, you can create sessions, organize them with windows, split windows into panes, navigate between them, resize and zoom panes, search terminal history, and build a complete tmux workspace. So why configure tmux at all? The answer is simple. After using tmux for a while, you'll",
-      "vi": "Tại thời điểm này, bạn có thể tạo phiên, sắp xếp chúng bằng cửa sổ, chia cửa sổ thành các ngăn, điều hướng giữa chúng, thay đổi kích thước và thu phóng các ngăn, tìm kiếm lịch sử thiết bị đầu cuối và xây dựng một không gian làm việc tmux hoàn chỉnh. Vậy tại sao phải cấu hình tmux? Câu trả lời rất đơn giản. Sau khi sử dụng tmux một thời gian, bạn sẽ"
+      "vi": "Tại thời điểm này, bạn có thể tạo phiên, sắp xếp chúng bằng cửa sổ, chia cửa sổ thành các ngăn, điều hướng giữa chúng, thay đổi kích thước và thu phóng các ngăn, tìm kiếm lịch sử thiết bị đầu cuối và xây dựng một không gian làm việc tmux hoàn chỉnh. Vậy tại sao phải cấu hình tmux? Câu trả lời rất đơn giản. Sau khi sử…"
     },
     "translated": {
       "vi": "machine"
@@ -1007,7 +1007,7 @@
     },
     "summary": {
       "en": "Ubuntu is planning a new linux-firmware-hwe package, in an effort to reduce the risk of firmware updates for newer kernels causing problems for users running older ones. On Ubuntu long-term support (LTS) releases, you can stick with the standard (GA) kernel it was released with for the duration of…",
-      "vi": "Ubuntu đang lên kế hoạch cho gói linux-firmware-hwe mới, trong nỗ lực giảm rủi ro cập nhật chương trình cơ sở cho các hạt nhân mới hơn gây ra sự cố cho người dùng chạy các phiên bản cũ hơn. Trên các bản phát hành hỗ trợ dài hạn (LTS) của Ubuntu, bạn có thể gắn bó với hạt nhân (GA) tiêu chuẩn mà nó đã được phát hành trong suốt thời gian…"
+      "vi": "Ubuntu đang lên kế hoạch cho gói linux-firmware-hwe mới, trong nỗ lực giảm rủi ro cập nhật chương trình cơ sở cho các hạt nhân mới hơn gây ra sự cố cho người dùng chạy các phiên bản cũ hơn. Trên các bản phát hành hỗ trợ dài hạn (LTS) của Ubuntu, bạn có thể gắn bó với hạt nhân (GA) tiêu chuẩn mà nó đã được phát hành…"
     },
     "translated": {
       "vi": "machine"
@@ -1293,7 +1293,7 @@
     },
     "summary": {
       "en": "Launchpad now offers bug tracking for personal package archives (PPAs), making it easier for users to report issues specific to software within a PPA. Why does that matter? Well, not all PPAs are maintained by their upstream counterparts – folks who, frankly, aren’t always minded to care about…",
-      "vi": "Launchpad hiện cung cấp tính năng theo dõi lỗi cho kho lưu trữ gói cá nhân (PPA), giúp người dùng báo cáo các sự cố cụ thể đối với phần mềm trong PPA dễ dàng hơn. Tại sao điều đó lại quan trọng? Chà, không phải tất cả các PPA đều được duy trì bởi các đối tác thượng nguồn của họ - những người, thành thật mà nói, không phải lúc nào cũng quan tâm đến…"
+      "vi": "Launchpad hiện cung cấp tính năng theo dõi lỗi cho kho lưu trữ gói cá nhân (PPA), giúp người dùng báo cáo các sự cố cụ thể đối với phần mềm trong PPA dễ dàng hơn. Tại sao điều đó lại quan trọng? Chà, không phải tất cả các PPA đều được duy trì bởi các đối tác thượng nguồn của họ - những người, thành thật mà nói, không…"
     },
     "translated": {
       "vi": "machine"
@@ -1306,7 +1306,7 @@
     },
     "summary": {
       "en": "SuperTuxKart has taken several online services offline, having pulled the server that powers them rather than risk it being exploited by PHP2shell. The open-source karting game is not alone in ‘pitting’ to patch, with Wikimedia, DeviantArt, government websites and many more taking various systems…",
-      "vi": "SuperTuxKart đã đưa một số dịch vụ trực tuyến vào chế độ ngoại tuyến, đã rút máy chủ cung cấp năng lượng cho chúng thay vì có nguy cơ bị PHP2shell khai thác. Trò chơi đua xe mã nguồn mở không phải là trò chơi duy nhất 'rỗ' để vá lỗi, với Wikimedia, DeviantArt, các trang web của chính phủ và nhiều trò chơi khác sử dụng nhiều hệ thống khác nhau…"
+      "vi": "SuperTuxKart đã đưa một số dịch vụ trực tuyến vào chế độ ngoại tuyến, đã rút máy chủ cung cấp năng lượng cho chúng thay vì có nguy cơ bị PHP2shell khai thác. Trò chơi đua xe mã nguồn mở không phải là trò chơi duy nhất 'rỗ' để vá lỗi, với Wikimedia, DeviantArt, các trang web của chính phủ và nhiều trò chơi khác sử dụng…"
     },
     "translated": {
       "vi": "machine"
@@ -1319,7 +1319,7 @@
     },
     "summary": {
       "en": "Ever wondered what your Ubuntu desktop would look like if you were watching it on a chewed up VHS tape or an old monochrome CRT monitor? You probably haven’t, but a new GNOME Shell extension lets you find out anyway. The Shader Effects extension applies GPU-accelerated filters, things like scan…",
-      "vi": "Bạn đã bao giờ tự hỏi máy tính để bàn Ubuntu của mình sẽ trông như thế nào nếu bạn xem nó trên băng VHS đã nhai kỹ hoặc màn hình CRT đơn sắc cũ chưa? Có thể bạn chưa biết, nhưng tiện ích mở rộng Gnome Shell mới vẫn cho phép bạn tìm hiểu. Tiện ích mở rộng Shader Effects áp dụng các bộ lọc được GPU tăng tốc, những thứ như quét…"
+      "vi": "Bạn đã bao giờ tự hỏi máy tính để bàn Ubuntu của mình sẽ trông như thế nào nếu bạn xem nó trên băng VHS đã nhai kỹ hoặc màn hình CRT đơn sắc cũ chưa? Có thể bạn chưa biết, nhưng tiện ích mở rộng Gnome Shell mới vẫn cho phép bạn tìm hiểu. Tiện ích mở rộng Shader Effects áp dụng các bộ lọc được GPU tăng tốc, những thứ…"
     },
     "translated": {
       "vi": "machine"
@@ -1345,7 +1345,7 @@
     },
     "summary": {
       "en": "What would deeper AI integration on the Ubuntu desktop look like? Well, you don’t need to think too hard to find out. A Canonical engineer has published a prototype launcher that simulates how on-device AI could be used to enhance and aid users of the Ubuntu desktop. But the warty-prototype snap by…",
-      "vi": "Việc tích hợp AI sâu hơn trên máy tính để bàn Ubuntu sẽ như thế nào? Chà, bạn không cần phải suy nghĩ quá nhiều để tìm hiểu. Một kỹ sư của Canonical đã xuất bản một trình khởi chạy nguyên mẫu mô phỏng cách AI trên thiết bị có thể được sử dụng để cải thiện và hỗ trợ người dùng máy tính để bàn Ubuntu. Nhưng nguyên mẫu mụn cóc đã xuất hiện…"
+      "vi": "Việc tích hợp AI sâu hơn trên máy tính để bàn Ubuntu sẽ như thế nào? Chà, bạn không cần phải suy nghĩ quá nhiều để tìm hiểu. Một kỹ sư của Canonical đã xuất bản một trình khởi chạy nguyên mẫu mô phỏng cách AI trên thiết bị có thể được sử dụng để cải thiện và hỗ trợ người dùng máy tính để bàn Ubuntu. Nhưng nguyên mẫu…"
     },
     "translated": {
       "vi": "machine"
@@ -1358,7 +1358,7 @@
     },
     "summary": {
       "en": "If KeePassXC is your password-management app of choice on Linux, the new 2.8.0 update is going to please. KeePassXC 2.8.0 sees some “long-awaited new features” arrive, including a Qt6 port of the main app interface, auto-type support on Wayland via XDG Desktop Portals, fingerprint unlock and a new…",
-      "vi": "Nếu KeePassXC là ứng dụng quản lý mật khẩu bạn chọn trên Linux thì bản cập nhật 2.8.0 mới sẽ làm bạn hài lòng. KeePassXC 2.8.0 sẽ xuất hiện một số “tính năng mới được chờ đợi từ lâu”, bao gồm cổng Qt6 của giao diện ứng dụng chính, hỗ trợ tự động gõ trên Wayland thông qua Cổng máy tính để bàn XDG, mở khóa bằng vân tay và…"
+      "vi": "Nếu KeePassXC là ứng dụng quản lý mật khẩu bạn chọn trên Linux thì bản cập nhật 2.8.0 mới sẽ làm bạn hài lòng. KeePassXC 2.8.0 sẽ xuất hiện một số “tính năng mới được chờ đợi từ lâu”, bao gồm cổng Qt6 của giao diện ứng dụng chính, hỗ trợ tự động gõ trên Wayland thông qua Cổng máy tính để bàn XDG, mở khóa bằng vân tay…"
     },
     "translated": {
       "vi": "machine"
@@ -1683,7 +1683,7 @@
     },
     "summary": {
       "en": "Epic Games has confirmed that Fortnite is coming to Linux, and the launcher it will arrive through is available to try in preview on Ubuntu – a vibe-coded wonder that’s been royally roasted on the internet. The gaming company has also announced a rebuilt version of its anti-cheat tech for Linux…",
-      "vi": "Epic Games đã xác nhận rằng Fortnite sẽ có mặt trên Linux và trình khởi chạy mà nó sẽ xuất hiện hiện có sẵn để dùng thử trong bản xem trước trên Ubuntu – một kỳ quan được mã hóa theo cảm xúc đã được tung ra một cách hoành tráng trên internet. Công ty game này cũng đã công bố phiên bản xây dựng lại của công nghệ chống gian lận cho Linux…"
+      "vi": "Epic Games đã xác nhận rằng Fortnite sẽ có mặt trên Linux và trình khởi chạy mà nó sẽ xuất hiện hiện có sẵn để dùng thử trong bản xem trước trên Ubuntu – một kỳ quan được mã hóa theo cảm xúc đã được tung ra một cách hoành tráng trên internet. Công ty game này cũng đã công bố phiên bản xây dựng lại của công nghệ chống…"
     },
     "translated": {
       "vi": "machine"
@@ -1735,7 +1735,7 @@
     },
     "summary": {
       "en": "New PS5 Linux hack pLinux5-NG supports newer firmware, allowing Linux and Steam games to run on Sony's console. But not for long, welp. You're reading PS5 Linux hack now supports (some) newer firmware versions , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission.",
-      "vi": "Bản hack PS5 Linux mới pLinux5-NG hỗ trợ chương trình cơ sở mới hơn, cho phép các trò chơi Linux và Steam chạy trên bảng điều khiển của Sony. Nhưng không lâu đâu, chào. Bạn đang đọc bản hack PS5 Linux hiện hỗ trợ (một số) phiên bản chương trình cơ sở mới hơn, một bài đăng trên blog từ OMG! Ubuntu . Không sao chép đi nơi khác khi chưa được phép."
+      "vi": "Bản hack PS5 Linux mới pLinux5-NG hỗ trợ chương trình cơ sở mới hơn, cho phép các trò chơi Linux và Steam chạy trên bảng điều khiển của Sony. Nhưng không lâu đâu, chào. Bạn đang đọc bản hack PS5 Linux hiện hỗ trợ (một số) phiên bản chương trình cơ sở mới hơn, một bài đăng trên blog từ OMG! Ubuntu . Không sao chép đi…"
     },
     "translated": {
       "vi": "machine"
@@ -1774,7 +1774,7 @@
     },
     "summary": {
       "en": "Nautilus My Computer brings a Windows-style Computer overview to the GNOME file manager, and extras like Miller columns and sidebar editing. You're reading Give Nautilus file manager the ‘Computer’ view it lacks , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without permission.",
-      "vi": "Nautilus My Computer mang đến cái nhìn tổng quan về Máy tính kiểu Windows cho trình quản lý tệp Gnome và các tính năng bổ sung như cột Miller và chỉnh sửa thanh bên. Bạn đang đọc Cung cấp cho trình quản lý tệp Nautilus chế độ xem 'Máy tính' mà nó thiếu, một bài đăng trên blog từ OMG! Ubuntu . Không sao chép đi nơi khác khi chưa được phép."
+      "vi": "Nautilus My Computer mang đến cái nhìn tổng quan về Máy tính kiểu Windows cho trình quản lý tệp Gnome và các tính năng bổ sung như cột Miller và chỉnh sửa thanh bên. Bạn đang đọc Cung cấp cho trình quản lý tệp Nautilus chế độ xem 'Máy tính' mà nó thiếu, một bài đăng trên blog từ OMG! Ubuntu . Không sao chép đi nơi…"
     },
     "translated": {
       "vi": "machine"
@@ -1969,7 +1969,7 @@
     },
     "summary": {
       "en": "If you have ever run a long command over SSH and lost it because your connection dropped, you already understand the pain tmux solves. Tmux is a terminal multiplexer. In plain language, it lets you run and manage multiple terminal workspaces inside one terminal environment, and it keeps those…",
-      "vi": "Nếu bạn đã từng chạy một lệnh dài qua SSH và bị mất nó do kết nối của bạn bị rớt, thì bạn đã hiểu được nỗi đau mà tmux có thể giải quyết. Tmux là một bộ ghép kênh đầu cuối. Bằng ngôn ngữ đơn giản, nó cho phép bạn chạy và quản lý nhiều không gian làm việc của thiết bị đầu cuối trong một môi trường thiết bị đầu cuối và nó giữ cho những…"
+      "vi": "Nếu bạn đã từng chạy một lệnh dài qua SSH và bị mất nó do kết nối của bạn bị rớt, thì bạn đã hiểu được nỗi đau mà tmux có thể giải quyết. Tmux là một bộ ghép kênh đầu cuối. Bằng ngôn ngữ đơn giản, nó cho phép bạn chạy và quản lý nhiều không gian làm việc của thiết bị đầu cuối trong một môi trường thiết bị đầu cuối và…"
     },
     "translated": {
       "vi": "machine"
@@ -2693,7 +2693,7 @@
   "2fbe963e7b5c9595": {
     "title": {
       "en": "Intel confirms Nova Lake CPUs will use advanced 18A-P node, more details at CES — company says it's taking Panther Lake capacity offline to build more Granite…",
-      "vi": "Intel xác nhận CPU Nova Lake sẽ sử dụng nút 18A-P tiên tiến, thông tin chi tiết hơn tại CES - công ty cho biết họ đang sử dụng công suất của Panther Lake ở chế độ ngoại tuyến để xây dựng thêm Granite…"
+      "vi": "Intel xác nhận CPU Nova Lake sẽ sử dụng nút 18A-P tiên tiến, thông tin chi tiết hơn tại CES - công ty cho biết họ đang sử dụng công suất của Panther Lake ở chế độ ngoại tuyến để…"
     },
     "summary": {
       "en": "Intel's next-gen Nova Lake desktop processors will be the first client product to use Intel's enhanced 18A-P node, CEO Lip-Bu Tan confirmed in the company's Q3 2026 earnings call.",
@@ -2801,7 +2801,7 @@
     },
     "summary": {
       "en": "We’re introducing new ways to create and refine files and code in the Gemini app. You can now generate, preview, and edit files right within your Gemini app chat—expand to full screen to type edits directly, highlight text to ask questions, or have Gemini refine them. PDF…",
-      "vi": "Chúng tôi đang giới thiệu những cách mới để tạo và tinh chỉnh tệp cũng như mã trong ứng dụng Gemini. Giờ đây, bạn có thể tạo, xem trước và chỉnh sửa tệp ngay trong cuộc trò chuyện trong ứng dụng Gemini của mình—mở rộng ra toàn màn hình để nhập nội dung chỉnh sửa trực tiếp, đánh dấu văn bản để đặt câu hỏi hoặc yêu cầu Gemini tinh chỉnh chúng. PDF…"
+      "vi": "Chúng tôi đang giới thiệu những cách mới để tạo và tinh chỉnh tệp cũng như mã trong ứng dụng Gemini. Giờ đây, bạn có thể tạo, xem trước và chỉnh sửa tệp ngay trong cuộc trò chuyện trong ứng dụng Gemini của mình—mở rộng ra toàn màn hình để nhập nội dung chỉnh sửa trực tiếp, đánh dấu văn bản để đặt câu hỏi hoặc yêu cầu…"
     },
     "translated": {
       "vi": "machine"
@@ -2853,7 +2853,7 @@
     },
     "summary": {
       "en": "You can now export interactive apps built in the Gemini app directly to Google Sites. With one click, your app is added to a new, private site draft — fully interactive and ready to customize. From there, you can add more content, publish the site, and share it just like any…",
-      "vi": "Giờ đây, bạn có thể xuất trực tiếp các ứng dụng tương tác được tích hợp trong ứng dụng Gemini sang Google Sites. Chỉ với một cú nhấp chuột, ứng dụng của bạn sẽ được thêm vào bản nháp trang web riêng tư mới — tương tác đầy đủ và sẵn sàng tùy chỉnh. Từ đó, bạn có thể thêm nhiều nội dung hơn, xuất bản trang web và chia sẻ nó giống như bất kỳ…"
+      "vi": "Giờ đây, bạn có thể xuất trực tiếp các ứng dụng tương tác được tích hợp trong ứng dụng Gemini sang Google Sites. Chỉ với một cú nhấp chuột, ứng dụng của bạn sẽ được thêm vào bản nháp trang web riêng tư mới — tương tác đầy đủ và sẵn sàng tùy chỉnh. Từ đó, bạn có thể thêm nhiều nội dung hơn, xuất bản trang web và chia…"
     },
     "translated": {
       "vi": "machine"
@@ -2970,7 +2970,7 @@
     },
     "summary": {
       "en": "Google Sheets now natively supports box and whisker charts, a statistical chart type that shows how a dataset is distributed. Select a range of raw numeric values and Sheets calculates the minimum, first quartile, median, third quartile, maximum, mean, and outliers for you, with…",
-      "vi": "Google Trang tính hiện hỗ trợ nguyên bản biểu đồ hộp và biểu đồ dạng râu, một loại biểu đồ thống kê cho biết cách phân phối tập dữ liệu. Chọn một phạm vi giá trị số thô và Trang tính sẽ tính toán giá trị tối thiểu, tứ phân vị thứ nhất, trung vị, tứ phân vị thứ ba, giá trị tối đa, giá trị trung bình và giá trị ngoại lệ cho bạn, cùng với…"
+      "vi": "Google Trang tính hiện hỗ trợ nguyên bản biểu đồ hộp và biểu đồ dạng râu, một loại biểu đồ thống kê cho biết cách phân phối tập dữ liệu. Chọn một phạm vi giá trị số thô và Trang tính sẽ tính toán giá trị tối thiểu, tứ phân vị thứ nhất, trung vị, tứ phân vị thứ ba, giá trị tối đa, giá trị trung bình và giá trị ngoại lệ…"
     },
     "translated": {
       "vi": "machine"
@@ -2983,7 +2983,7 @@
     },
     "summary": {
       "en": "Docs Live is now rolling out to eligible Workspace users of the Google Docs mobile app on Android and iOS. This new feature acts as a hands-free thought partner and co-writer that helps you build structured, context-aware documents on the fly using natural conversation. Starting…",
-      "vi": "Docs Live hiện đang được triển khai cho người dùng Workspace đủ điều kiện của ứng dụng Google Docs dành cho thiết bị di động trên Android và iOS. Tính năng mới này hoạt động như một đối tác tư duy rảnh tay và đồng tác giả giúp bạn xây dựng các tài liệu có cấu trúc, nhận biết ngữ cảnh một cách nhanh chóng bằng cách sử dụng cuộc trò chuyện tự nhiên. Bắt đầu…"
+      "vi": "Docs Live hiện đang được triển khai cho người dùng Workspace đủ điều kiện của ứng dụng Google Docs dành cho thiết bị di động trên Android và iOS. Tính năng mới này hoạt động như một đối tác tư duy rảnh tay và đồng tác giả giúp bạn xây dựng các tài liệu có cấu trúc, nhận biết ngữ cảnh một cách nhanh chóng bằng cách sử…"
     },
     "translated": {
       "vi": "machine"
@@ -2992,7 +2992,7 @@
   "05fb638f4c93ea9c": {
     "title": {
       "en": "Teacher-led Gemini Notebook in Google Classroom now offers insight summaries for educators and updated sharing settings for admins, including trusted domains",
-      "vi": "Sổ ghi chép Gemini do giáo viên hướng dẫn trong Lớp học Google hiện cung cấp các bản tóm tắt chuyên sâu dành cho nhà giáo dục và cài đặt chia sẻ cập nhật cho quản trị viên, bao gồm cả các miền đáng tin cậy"
+      "vi": "Sổ ghi chép Gemini do giáo viên hướng dẫn trong Lớp học Google hiện cung cấp các bản tóm tắt chuyên sâu dành cho nhà giáo dục và cài đặt chia sẻ cập nhật cho quản trị viên, bao…"
     },
     "summary": {
       "en": "Following the launch of teacher-led Gemini Notebook in Google Classroom , we are introducing insight summaries for educators. This update provides teachers with greater visibility into how students interact with assigned notebooks, helping gauge instructional value and inform…",
@@ -3009,7 +3009,7 @@
     },
     "summary": {
       "en": "Building upon the power of Gemini in Sheets on the web and our recent launch on Android devices , we’re excited to announce that you can now use Gemini in Google Sheets on your iOS device to quickly analyze and understand your data while on the go. Simply tap on the Gemini spark…",
-      "vi": "Dựa trên sức mạnh của Gemini trong Trang tính trên web và lần ra mắt gần đây của chúng tôi trên thiết bị Android, chúng tôi vui mừng thông báo rằng giờ đây bạn có thể sử dụng Gemini trong Google Trang tính trên thiết bị iOS để nhanh chóng phân tích và hiểu dữ liệu của mình khi đang di chuyển. Chỉ cần chạm vào tia lửa Song Tử…"
+      "vi": "Dựa trên sức mạnh của Gemini trong Trang tính trên web và lần ra mắt gần đây của chúng tôi trên thiết bị Android, chúng tôi vui mừng thông báo rằng giờ đây bạn có thể sử dụng Gemini trong Google Trang tính trên thiết bị iOS để nhanh chóng phân tích và hiểu dữ liệu của mình khi đang di chuyển. Chỉ cần chạm vào tia lửa…"
     },
     "translated": {
       "vi": "machine"
@@ -3047,7 +3047,7 @@
       "vi": "Patrick Stewart đã qua đời"
     },
     "summary": {
-      "en": "Thảo luận trên Hacker News (3012 điểm, 641 bình luận).",
+      "en": "Discussion on Hacker News (3012 points, 641 comments).",
       "vi": "Thảo luận trên Hacker News (3012 điểm, 641 bình luận)."
     },
     "translated": {
@@ -3112,7 +3112,7 @@
       "vi": "Binance-hacker-1029 – 5,6 tỷ USD bị đánh cắp từ Binance"
     },
     "summary": {
-      "en": "Thảo luận trên Hacker News (1396 điểm, 891 bình luận).",
+      "en": "Discussion on Hacker News (1396 points, 891 comments).",
       "vi": "Thảo luận trên Hacker News (1396 điểm, 891 bình luận)."
     },
     "translated": {
@@ -3125,7 +3125,7 @@
       "vi": "H.264 Là Phép Thuật (2016)"
     },
     "summary": {
-      "en": "Thảo luận trên Hacker News (438 điểm, 150 bình luận).",
+      "en": "Discussion on Hacker News (438 points, 150 comments).",
       "vi": "Thảo luận trên Hacker News (438 điểm, 150 bình luận)."
     },
     "translated": {
@@ -3138,7 +3138,7 @@
       "vi": "Chúng tôi đang công bố trọng lượng của Mistral Large 4"
     },
     "summary": {
-      "en": "Thảo luận trên Hacker News (1497 điểm, 398 bình luận).",
+      "en": "Discussion on Hacker News (1497 points, 398 comments).",
       "vi": "Thảo luận trên Hacker News (1497 điểm, 398 bình luận)."
     },
     "translated": {
@@ -3301,164 +3301,2009 @@
       "en": "machine"
     }
   },
+  "2b3501a170a6ac7d": {
+    "title": {
+      "zh-CN": "让 Agent 读懂你的身体：数据处理篇",
+      "vi": "Hãy để tác nhân đọc cơ thể bạn: Xử lý dữ liệu",
+      "en": "Let Agent Read Your Body: Data Processing"
+    },
+    "summary": {
+      "zh-CN": "在上一篇文章《让Agent读懂你的身体：数据获取篇》中，我花了很大的篇幅讲清楚了第一个问题：Agent怎样拿到数据。如果照着实践完，你大概率已经收获了一份存储了运动健康数据的SQLite、Markdo ... 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
+      "vi": "Trong bài viết trước \"Hãy để Tác nhân đọc cơ thể bạn: Thu thập dữ liệu\", tôi đã dành rất nhiều thời gian để giải thích câu hỏi đầu tiên: Làm thế nào Tác nhân lấy được dữ liệu. Nếu bạn làm theo cách thực hành này, rất có thể bạn sẽ có được một bản sao của SQLite và Markdo lưu trữ dữ liệu về thể thao và sức khỏe... Xem…",
+      "en": "In the previous article \"Let the Agent Read Your Body: Data Acquisition\", I spent a lot of time explaining the first question: how the Agent gets the data. If you follow the practice, you will most likely have obtained a copy of SQLite and Markdo that stores sports and health data... View full text This article is a…"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "5b2ce654e7eb0ce7": {
+    "title": {
+      "zh-CN": "久多良木健：我们当年推出 PlayStation 并不是为了报复任天堂",
+      "vi": "Ken Kutaragi: Chúng tôi ra mắt PlayStation không phải để trả thù Nintendo",
+      "en": "Ken Kutaragi: We didn’t launch PlayStation to get revenge on Nintendo"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 1 日消息，被誉为“索尼 PlayStation 之父”的久多良木健最近表示，他们当年开发 PlayStation 并不是为了向任天堂复仇。 IT之家了解到，久多良木健在索尼任职工程师期间，为任天堂家用机 Super Famicom（SFC）打造过音频芯片。后来任天堂还和索尼进行过合作，开发名为 SFC 光盘驱动器外设，以及一款兼容卡带和 CD 的原型机“Play Station”。任天堂之后在没有通知索尼的情况下，宣布与飞利浦合作开发相关技术。 久多良木健在接受 GamesIndustry…",
+      "vi": "IT House đưa tin vào ngày 1 tháng 11 rằng Ken Kutaragi, được mệnh danh là \"Cha đẻ của Sony PlayStation\", gần đây đã tuyên bố rằng họ không phát triển PlayStation để trả thù Nintendo. IT House biết được rằng Kutaragi đã chế tạo chip âm thanh cho máy chơi game gia đình Nintendo Super Famicom (SFC) khi ông còn là kỹ sư…",
+      "en": "IT House reported on November 1 that Ken Kutaragi, known as the \"Father of Sony PlayStation\", recently stated that they did not develop PlayStation to get revenge on Nintendo. IT House learned that Kutaragi built audio chips for the Nintendo home console Super Famicom (SFC) while he was an engineer at Sony. Later…"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "332e66e83f75804e": {
+    "title": {
+      "zh-CN": "网传“新疆禾木景区野生猴群下山抢手机”，官方回应“系 AI 生成，当地不存在猴群栖息活动”",
+      "vi": "Trên Internet đưa tin rằng \"một nhóm khỉ hoang dã xuống núi để lấy điện thoại di động ở Khu thắng cảnh Hemu của Tân Cương\", và phản hồi chính thức là \"nó được tạo ra bởi AI và…",
+      "en": "It was reported on the Internet that \"a group of wild monkeys came down the mountain to grab mobile phones in the Hemu Scenic Area of ​​Xinjiang\", and the official response was…"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 1 日消息，据央视新闻报道，近期网传所谓新疆“禾木野生猴群下山抢手机”图文、视频，引发公众关注，经新疆布尔津县委网信办联合当地林业和草原局野生动植物保护站核实确认，该内容是虚假谣言。 据新疆布尔津县林业和草原局野生动植物保护站工作人员介绍，禾木景区及布尔津县全域区内没有野生猴群分布，不存在猴群栖息活动记录，网络图文视频属于虚假信息。该谣言和本地野生动物资源实际情况不符， 目前当地网信部门已责成相关平台对不实信息予以下架处理 。",
+      "vi": "IT House ngày 1/11 đưa tin, theo CCTV News, hình ảnh, văn bản và video về cái gọi là \"khỉ hoang Hemu xuống núi giật điện thoại di động\" ở Tân Cương gần đây đã được lan truyền trên Internet, thu hút sự chú ý của dư luận. Sau khi được Văn phòng Các vấn đề Không gian mạng của Quận Tân Cương Burqin và Trạm Bảo vệ Động vật…",
+      "en": "IT House reported on November 1 that according to CCTV News, the so-called \"Hemu wild monkeys descending the mountain to grab mobile phones\" pictures, texts and videos in Xinjiang have recently been circulated on the Internet, which has attracted public attention. After verification and verification by the Xinjiang…"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "96a4eda8c3e40bf2": {
+    "title": {
+      "zh-CN": "华为 ADS 5 加持：全新红旗 H9 轿车官宣标配闭式空气悬架 + iDCS 可变阻尼减振器，支持道路预瞄",
+      "vi": "Phước lành Huawei ADS 5: Mẫu sedan Hongqi H9 mới chính thức được trang bị hệ thống treo khí nén kín + giảm xóc giảm chấn biến thiên iDCS tiêu chuẩn, hỗ trợ xem trước đường đi",
+      "en": "Huawei ADS 5 blessing: The new Hongqi H9 sedan is officially equipped with closed air suspension + iDCS variable damping shock absorber as standard, supporting road preview"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 1 日消息，一汽红旗今日发布视频，预热了全新红旗 H9 轿车在不同路面的驾驶情况。 据介绍， 全新红旗 H9 全系标配闭式空气悬架 + iDCS 可变阻尼减振器 ，拥有百万级全铝底盘，前双横臂 + 后梯形臂独立悬架，同时支持道路预瞄功能，可超前感知前方路况。 视频内容显示， 新车的空气悬架与闭式压缩机系统调节范围是 65mm、调节速度达 5mm/s ，其地形预瞄功能基于摄像头和激光雷达感知，每 10ms 可更新一次路面特征，识别前方路况。 全新红旗 H9 的电控悬架系统支持毫秒级悬架阻尼切换，可提升乘坐舒适性；iDCS…",
+      "vi": "IT House đưa tin vào ngày 1 tháng 11 rằng FAW Hongqi đã phát hành một video hôm nay để xem trước tình trạng lái của mẫu sedan Hongqi H9 mới trên các mặt đường khác nhau. Theo báo cáo, tất cả dòng Hongqi H9 mới đều được trang bị tiêu chuẩn hệ thống treo khí nén kín + giảm xóc giảm xóc biến thiên iDCS. Nó có khung gầm…",
+      "en": "IT House reported on November 1 that FAW Hongqi released a video today to preview the driving conditions of the new Hongqi H9 sedan on different road surfaces. According to reports, all new Hongqi H9 series are equipped with closed air suspension + iDCS variable damping shock absorber as standard. It has a…"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "dbfac44517ca2058": {
+    "title": {
+      "zh-CN": "或铺路：开发者成功为微软 Lumia 950 XL 刷入苹果 iOS 16 系统",
+      "vi": "Hoặc mở đường: Các nhà phát triển đã flash thành công hệ thống iOS 16 của Apple cho Microsoft Lumia 950 XL",
+      "en": "Or paving the way: Developers successfully flashed Apple’s iOS 16 system for Microsoft Lumia 950 XL"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 1 日消息，继有开发者 为微软 Surface Duo 刷入 iOS 27 后 ，目前又有一位开发者 VNchocoTaco 称自己为微软 Lumia 950 XL 刷入了 iOS 16.7.16 系统。不过由于其将机型模拟为 iPhone X，导致在 Lumia 950 XL 上存在一定布局缩放问题。 如今，微软 Lumia 950 XL 已成为一代传奇“刷机王”机型，其已可运行 Windows 10 (10X / 仙女座)/Windows 11/Windows 10 Mobile / Android / iOS 等各种系统。",
+      "vi": "IT House ngày 1/11 đưa tin sau khi một nhà phát triển flash iOS 27 cho Microsoft Surface Duo, một nhà phát triển khác là VNchocoTaco đã tự xưng là Microsoft Lumia 950 XL và flash hệ thống iOS 16.7.16. Tuy nhiên, vì nó mô phỏng mô hình như iPhone X nên có một số vấn đề nhất định về tỷ lệ bố cục trên Lumia 950 XL. Ngày…",
+      "en": "IT House reported on November 1 that after a developer flashed iOS 27 for Microsoft Surface Duo, another developer, VNchocoTaco, called himself Microsoft Lumia 950 XL and flashed iOS 16.7.16 system. However, because it simulates the model as iPhone X, there are certain layout scaling issues on Lumia 950 XL. Today…"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "5d6eaa54ca4f942e": {
+    "title": {
+      "zh-CN": "零跑 A 系列累计销量突破 20 万台，用时七个月",
+      "vi": "Doanh số tích lũy của dòng Leapmo A vượt quá 200.000 chiếc trong bảy tháng",
+      "en": "Cumulative sales of Leapmo A series exceeded 200,000 units in seven months"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 1 日消息，零跑汽车今日宣布 A 系列累计销量突破 20 万台，其中 A10 于 3 月 26 日上市，A05 于 8 月 11 日上市。从官方公布的数据看，零跑 A 系列仅用时 7 个月便达成这一成就。 IT之家附各月销量如下： 4 月 14372 台 5 月 23011 台 6 月 26804 台 7 月 28593 台 8 月 40554 台 9 月 36402 台 10 月 39989 台 目前，零跑 A 系列最新款 A10s 已经于 10 月 18 日上市，采用全新镜夜黑外观、专属摩登灰内饰，上市指导价 9.28 万元。…",
+      "vi": "IT House hôm 1/11 đưa tin Leapmotor hôm nay công bố doanh số cộng dồn của dòng A đã vượt 200.000 chiếc, trong đó A10 ra mắt ngày 26/3 và A05 ra mắt ngày 11/8. Theo số liệu chính thức, dòng Zero Run A chỉ mất 7 tháng để đạt được thành tích này. Doanh số hàng tháng của IT Home như sau: 14.372 căn Tháng 4 23.011 căn…",
+      "en": "IT House reported on November 1 that Leapmotor announced today that the cumulative sales of the A series exceeded 200,000 units, of which the A10 was launched on March 26 and the A05 was launched on August 11. According to official data, it took only 7 months for the Zero Run A series to achieve this achievement. IT…"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "e27fe191802aa2f5": {
+    "title": {
+      "zh-CN": "精确到秒的时间记录是怎样的？我的柳比歇夫法半年实践",
+      "vi": "Bản ghi thời gian chính xác đến giây là gì? Nửa năm thực hành phương pháp Lyubishev của tôi",
+      "en": "What is the time record accurate to the second? My half-year practice of Lyubishev method"
+    },
+    "summary": {
+      "zh-CN": "就像一个运动员无法预计自己能否取得金牌，但能控制自己投入于训练的时间一样，我们无法决定性地控制工作和生活中每一项事项的成功与否，但可以控制自己投入更多还是更少的时间。 查看全文",
+      "vi": "Giống như một vận động viên không thể dự đoán trước liệu mình có giành được huy chương vàng hay không, nhưng anh ta có thể kiểm soát được thời gian mình đầu tư cho việc tập luyện, chúng ta không thể kiểm soát một cách dứt khoát sự thành công của mọi việc trong công việc và cuộc sống, nhưng chúng ta có thể kiểm soát…",
+      "en": "Just like an athlete cannot predict whether he will win a gold medal, but he can control the time he invests in training, we cannot decisively control the success of everything in work and life, but we can control whether we invest more or less time. View full text"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "009d89703dd91abd": {
+    "title": {
+      "en": "Edit entire presentations with Gemini in Google Slides",
+      "vi": "Chỉnh sửa toàn bộ bản trình bày với Gemini trong Google Trang trình bày"
+    },
+    "summary": {
+      "en": "You can now use Gemini in Google Slides to edit multiple slides or an entire presentation at once. With a single prompt in the Slides side panel, you can update content throughout a deck, refresh visual styles in bulk, or match the style of another presentation. Gemini…",
+      "vi": "Giờ đây, bạn có thể sử dụng Gemini trong Google Trang trình bày để chỉnh sửa nhiều trang trình bày hoặc toàn bộ bản trình bày cùng một lúc. Với một lời nhắc duy nhất trong bảng điều khiển bên Trang trình bày, bạn có thể cập nhật nội dung trong toàn bộ bản trình bày, làm mới hàng loạt kiểu hình ảnh hoặc khớp với phong…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "aecfbef4d68b99b6": {
+    "title": {
+      "en": "v0.102.0: [Settings] Fix What's New caption and Markdown code contrast (#51431)",
+      "vi": "v0.102.0: [Cài đặt] Khắc phục độ tương phản của chú thích Có gì mới và mã Markdown (#51431)"
+    },
+    "summary": {
+      "en": "Summary of the Pull Request Fix unreadable caption-button glyphs and Markdown code in the separate What's New window when the PowerToys theme differs from Windows' default app mode. With Windows Dark and PowerToys Light, minimize/maximize/close glyphs and inline-code text can be…",
+      "vi": "Tóm tắt Yêu cầu Kéo Khắc phục các ký tự nút chú thích không thể đọc được và mã Markdown trong cửa sổ Có gì mới riêng biệt khi chủ đề PowerToys khác với chế độ ứng dụng mặc định của Windows. Với Windows Dark và PowerToys Light, việc thu nhỏ/phóng to/đóng glyph và văn bản mã nội tuyến có thể…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "db85abacb121d037": {
+    "title": {
+      "en": "Sanket lets you redesign GNOME’s date menu and Quick Settings",
+      "vi": "Sanket cho phép bạn thiết kế lại menu ngày và Cài đặt nhanh của Gnome"
+    },
+    "summary": {
+      "en": "Sanket is a GNOME Shell extension that lets you rejig how the desktop’s date menu, calendar, notifications and Quick Settings look and behave – and then some. It can put notifications beneath the Quick Settings menu in a floating island, or embedded inside of it. Quick Settings…",
+      "vi": "Sanket là một tiện ích mở rộng của Gnome Shell cho phép bạn điều chỉnh lại giao diện và hoạt động của menu ngày, lịch, thông báo và Cài đặt nhanh trên máy tính để bàn – và sau đó là một số. Nó có thể đặt thông báo bên dưới menu Cài đặt nhanh trên một hòn đảo nổi hoặc được nhúng bên trong nó. Cài đặt nhanh…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "dbac878aa56a6dda": {
+    "title": {
+      "en": "LHB Linux Digest #26.17: SSH Config, Docker Compose Override, Bash History Tricks and More",
+      "vi": "LHB Linux Digest #26.17: Cấu hình SSH, Ghi đè soạn thảo Docker, Thủ thuật lịch sử Bash và hơn thế nữa"
+    },
+    "summary": {
+      "en": "Type less, connect faster.",
+      "vi": "Nhập ít hơn, kết nối nhanh hơn."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "7b5ed5dd303b816a": {
+    "title": {
+      "en": "Windows 11 tries new shortcuts for Xbox gaming mode and search",
+      "vi": "Windows 11 thử các phím tắt mới cho chế độ chơi trò chơi Xbox và tìm kiếm"
+    },
+    "summary": {
+      "en": "The latest Windows 11 Insider build adds some powerful new search features and quick settings while in Xbox mode. The Xbox shortcuts let you control things like Bluetooth, WiFi, and power settings without having to exit gaming mode. The search improvements are quite…",
+      "vi": "Bản dựng Windows 11 Insider mới nhất bổ sung một số tính năng tìm kiếm mới mạnh mẽ và cài đặt nhanh khi ở chế độ Xbox. Các phím tắt Xbox cho phép bạn kiểm soát những thứ như Bluetooth, WiFi và cài đặt nguồn mà không cần phải thoát khỏi chế độ chơi trò chơi. Những cải tiến về tìm kiếm khá…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "0b58bfa85dcc8db3": {
+    "title": {
+      "en": "Touchscreens everywhere!",
+      "vi": "Màn hình cảm ứng ở khắp mọi nơi!"
+    },
+    "summary": {
+      "en": "Hi, friends! Welcome to Installer No. 150, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, happy Halloween, and also you can read all the old editions at the Installer homepage.) This week, I was in the Smoky Mountains in Tennessee on a…",
+      "vi": "Xin chào các bạn! Chào mừng bạn đến với Trình cài đặt số 150, hướng dẫn của bạn về những thứ tốt nhất và hấp dẫn nhất trên thế giới. (Nếu bạn là người mới ở đây, xin chào mừng bạn, Halloween vui vẻ và bạn cũng có thể đọc tất cả các ấn bản cũ tại trang chủ Trình cài đặt.) Tuần này, tôi đã đến Dãy núi Smoky ở Tennessee…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "32d8589f2318deeb": {
+    "title": {
+      "en": "Microsoft finally fixes VPN issues caused by September updates",
+      "vi": "Microsoft cuối cùng đã khắc phục các sự cố VPN do bản cập nhật tháng 9 gây ra"
+    },
+    "summary": {
+      "en": "Microsoft has resolved Always On VPN connection failures triggered after installing the September 2026 Windows 11 security updates.",
+      "vi": "Microsoft đã giải quyết lỗi kết nối VPN Luôn bật xảy ra sau khi cài đặt bản cập nhật bảo mật Windows 11 tháng 9 năm 2026."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "17e5567229a94db9": {
+    "title": {
+      "en": "10 Hacks for the Contacts App Every Apple User Should Know",
+      "vi": "10 thủ thuật cho ứng dụng Danh bạ mà mọi người dùng Apple nên biết"
+    },
+    "summary": {
+      "en": "You can remove duplicates with ease.",
+      "vi": "Bạn có thể loại bỏ các bản sao một cách dễ dàng."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "b68c1c2345536ac2": {
+    "title": {
+      "en": "Hackers steal $6.3 billion from Binance in record crypto heist",
+      "vi": "Tin tặc đánh cắp 6,3 tỷ USD từ Binance trong vụ trộm tiền điện tử kỷ lục"
+    },
+    "summary": {
+      "en": "Binance scrambles to freeze billions after record-breaking hack linked to North Korea.",
+      "vi": "Binance nỗ lực đóng băng hàng tỷ USD sau vụ hack kỷ lục có liên quan đến Triều Tiên"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "01ee4bd34dad4014": {
+    "title": {
+      "en": "Simple circuits can create complex behaviors",
+      "vi": "Các mạch đơn giản có thể tạo ra các hành vi phức tạp"
+    },
+    "summary": {
+      "en": "Discussion on Hacker News (239 points, 77 comments).",
+      "vi": "Thảo luận trên Hacker News (239 điểm, 77 bình luận)."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "5866f3208980265c": {
+    "title": {
+      "en": "Build a Discord bot with discord.js v14: app setup, your first slash command and keeping it online",
+      "vi": "Xây dựng bot Discord với discord.js v14: thiết lập ứng dụng, lệnh gạch chéo đầu tiên của bạn và giữ nó trực tuyến"
+    },
+    "summary": {
+      "en": "Create a Discord application, register slash commands with REST and Routes, handle interactionCreate, and keep your bot running 24/7.",
+      "vi": "Tạo ứng dụng Discord, đăng ký các lệnh gạch chéo với REST và Routes, xử lý tương tácTạo và giữ cho bot của bạn hoạt động 24/7."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "9af257b1b79dfc6b": {
+    "title": {
+      "en": "This app lets you manage Nothing & CMF earbuds on Linux",
+      "vi": "Ứng dụng này cho phép bạn quản lý tai nghe Nothing & CMF trên Linux"
+    },
+    "summary": {
+      "en": "Adjusting active noise cancellation (ANC) on Nothing or CMF earbuds means taking out your phone, opening the official mobile app and twiddling a setting there. EarA, a new open-source tool, aims to nix that palaver. It’s a GTK4 app (with a CLI for those who prefer the terminal)…",
+      "vi": "Điều chỉnh tính năng khử tiếng ồn chủ động (ANC) trên tai nghe Nothing hoặc CMF có nghĩa là bạn phải rút điện thoại ra, mở ứng dụng di động chính thức và thay đổi cài đặt ở đó. EarA, một công cụ nguồn mở mới, nhằm mục đích giải quyết vấn đề đó. Đó là ứng dụng GTK4 (có CLI dành cho những ai thích thiết bị đầu cuối)…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "931358c4dc9a3cf5": {
+    "title": {
+      "en": "Denmark’s Collabora Pilot Was Never The Microsoft Replacement it Was Made Out to Be",
+      "vi": "Thí điểm Collabora của Đan Mạch chưa bao giờ là sự thay thế của Microsoft như nó đã được tạo ra"
+    },
+    "summary": {
+      "en": "Collabora says a ministry merger paused the test, while the ministry says it was interrupted when the election was called.",
+      "vi": "Collabora cho biết việc sáp nhập Bộ đã tạm dừng cuộc thử nghiệm, trong khi Bộ cho biết nó đã bị gián đoạn khi cuộc bầu cử được triệu tập."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "101569ba483479b0": {
+    "title": {
+      "en": "Ubuntu 27.04 ‘Tenacious T-Rex’ opens for development",
+      "vi": "Ubuntu 27.04 'Tenacious T-Rex' mở cửa để phát triển"
+    },
+    "summary": {
+      "en": "Development on Ubuntu 27.04, codenamed ‘Tenacious T-Rex’, has officially begun. The tenacious archive is now open (30 October 2026), with auto-sync from Debian set to pull in a tranche of updated packages since the Ubuntu 26.10 release. Over the course of the next six months…",
+      "vi": "Quá trình phát triển trên Ubuntu 27.04, có tên mã là 'Tenacious T-Rex', đã chính thức bắt đầu. Kho lưu trữ bền bỉ hiện đã mở (ngày 30 tháng 10 năm 2026), với tính năng tự động đồng bộ hóa từ Debian được thiết lập để mang theo một loạt gói cập nhật kể từ khi phát hành Ubuntu 26.10. Trong suốt sáu tháng tiếp theo…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "f5eac0fda05e2ed0": {
+    "title": {
+      "en": "We added a manual dark mode toggle to the site (cos you asked)",
+      "vi": "Chúng tôi đã thêm chuyển đổi chế độ tối thủ công vào trang web (vì bạn đã yêu cầu)"
+    },
+    "summary": {
+      "en": "You may have noticed OMG! Ubuntu looking a little cleaner lately. Earlier this month, Sam and I finally rolled out a refreshed site backend, along with some changes to the bits you look at when you come here. Boring stuff to read about, I know. But a few of the changes were done…",
+      "vi": "Bạn có thể đã nhận thấy OMG! Gần đây Ubuntu trông sạch sẽ hơn một chút. Đầu tháng này, Sam và tôi cuối cùng đã triển khai một phần phụ trợ trang web được làm mới, cùng với một số thay đổi đối với một số chi tiết mà bạn sẽ xem xét khi đến đây. Những thứ nhàm chán để đọc, tôi biết. Nhưng một số thay đổi đã được thực…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "3e314b72883b118a": {
+    "title": {
+      "en": "Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund.",
+      "vi": "Adobe muốn 99,99 USD để tôi có thể hủy. Tôi đã yêu cầu hỗ trợ qua trò chuyện và nhận được miễn trừ cộng với khoản tiền hoàn lại theo tỷ lệ."
+    },
+    "summary": {
+      "en": "\"Hi, I need to cancel my subscription today. Please cancel my account immediately, waive the early termination fee completely, and issue a prorated refund for the billing cycle I just paid for.” The result: subscription canceled, the entire $99.99 cancellation fee waived, and a…",
+      "vi": "\"Xin chào, tôi cần hủy đăng ký ngay hôm nay. Vui lòng hủy tài khoản của tôi ngay lập tức, miễn hoàn toàn phí chấm dứt sớm và hoàn lại tiền theo tỷ lệ cho chu kỳ thanh toán mà tôi vừa thanh toán.\" Kết quả: đăng ký bị hủy, toàn bộ phí hủy 99,99 USD được miễn và…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "9724dd0a88181e75": {
+    "title": {
+      "en": "whenever speaking to a customer service person on the phone make sure to record the call and tell them you are doing so. They suddenly become a lot",
+      "vi": "bất cứ khi nào nói chuyện với nhân viên dịch vụ khách hàng qua điện thoại, hãy đảm bảo ghi âm cuộc gọi và cho họ biết bạn đang làm như vậy. Họ đột nhiên trở nên nhiều"
+    },
+    "summary": {
+      "en": "A few years ago I had a problem with a PayPal transaction. It wasn’t an earth shattering amount of money but I much rather wanted the money back in my pocket. I spent a couple of days on the phone speaking to people at PayPal every single person DGAF. On what turned out to be my…",
+      "vi": "Cách đây vài năm, tôi gặp vấn đề với giao dịch PayPal. Đó không phải là một số tiền khủng khiếp nhưng tôi muốn tiền trở lại túi của mình hơn. Tôi đã dành vài ngày nói chuyện qua điện thoại với mọi người ở PayPal từng người DGAF. Về những gì hóa ra là của tôi…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "71d01e5f69b83d3a": {
+    "title": {
+      "en": "if you want to read more but find yourself doomscrolling in bed: move your phone charger",
+      "vi": "nếu bạn muốn đọc thêm nhưng thấy mình đang cuộn mình trên giường: hãy di chuyển bộ sạc điện thoại của bạn"
+    },
+    "summary": {
+      "en": "It might not work for everyone but it really got me reading a lot more. Doomscrolling was a big problem for me, and not reading was another. I tried putting my phone charger further from my bed on a table opposite from it, and while it was hard at first I finally started to read…",
+      "vi": "Nó có thể không hiệu quả với tất cả mọi người nhưng nó thực sự khiến tôi đọc nhiều hơn. Doomscrolling là một vấn đề lớn đối với tôi, và không đọc lại là một vấn đề khác. Tôi đã thử đặt bộ sạc điện thoại của mình xa giường hơn trên một chiếc bàn đối diện với nó, và mặc dù lúc đầu thật khó khăn nhưng cuối cùng tôi cũng…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "72935a7f76dc92ab": {
+    "title": {
+      "en": "Always put your computer to sleep when you leave the house or go to bed",
+      "vi": "Luôn đặt máy tính ở chế độ ngủ khi ra khỏi nhà hoặc đi ngủ"
+    },
+    "summary": {
+      "en": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers.",
+      "vi": "Đảm bảo máy tính của bạn được bảo vệ bằng mật khẩu. Đặt nó vào chế độ ngủ ít nhất sẽ bảo vệ mọi tập tin hoặc dữ liệu cá nhân/bí mật nếu máy tính của bạn bị đánh cắp. Có vẻ như hầu hết những kẻ trộm đều không thân thiện với tin tặc máy tính."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "13c87e8494b641fa": {
+    "title": {
+      "en": "reuse a \"dead\" AA mous battery in a clock",
+      "vi": "tái sử dụng pin chuột AA \"đã chết\" trong đồng hồ"
+    },
+    "summary": {
+      "en": "Today I learned that the \"dead\" AA battery which can no longer power my wireless mouse still has enough oomph* to be able to power a clock for a while. I'm so pleased I can re-deploy a \"used\" battery into something useful, I thought I'd share. *oomph is a technical term as a…",
+      "vi": "Hôm nay tôi được biết rằng pin AA \"đã chết\" không còn có thể cung cấp năng lượng cho con chuột không dây của tôi vẫn còn đủ năng lượng* để có thể cung cấp năng lượng cho đồng hồ trong một thời gian. Tôi rất vui vì có thể tái triển khai cục pin \"đã qua sử dụng\" thành một thứ hữu ích, tôi nghĩ mình nên chia sẻ. *oomph…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "33d256014ccf120b": {
+    "title": {
+      "en": "Use the name you want in your signature instead of your formal name",
+      "vi": "Sử dụng tên bạn muốn trong chữ ký thay vì tên chính thức của bạn"
+    },
+    "summary": {
+      "en": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…",
+      "vi": "Tôi không thể tin được đã là năm 2026 và mọi người vẫn đang ký vào tin nhắn và email bằng những cái tên mà họ không thực sự sử dụng. Nếu tên bạn là Nicholas nhưng bạn muốn được gọi là Nick, hãy sử dụng Nick trong chữ ký của bạn. Tôi làm việc trong lĩnh vực bán hàng và liên tục phải gửi email hoặc gọi điện cho những…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "7610ed52e391543d": {
+    "title": {
+      "en": "MiniMax H3 in practice: 9 reference images, 3 audio clips, and what a second of video actually costs",
+      "vi": "MiniMax H3 trong thực tế: 9 hình ảnh tham khảo, 3 clip âm thanh và chi phí thực sự của một giây video"
+    },
+    "summary": {
+      "en": "MiniMax H3 is one of the few video models that accepts reference audio alongside reference images,",
+      "vi": "MiniMax H3 là một trong số ít mẫu video chấp nhận âm thanh tham chiếu cùng với hình ảnh tham chiếu,"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "40be06344db137b7": {
+    "title": {
+      "en": "Samsung flow and s26",
+      "vi": "Samsung flow và s26"
+    },
+    "summary": {
+      "en": "Has anyone got in the new phone sS26 and used it with samsung flow mirroring with another phone or tablet? I want to make sure that it is my tablet that's not compatible and not my s26 being weird because of Smart View that you cannot disable. So that way I won't regret buying…",
+      "vi": "Có ai đã sử dụng điện thoại mới sS26 và sử dụng nó với samsung flow mirroring với điện thoại hoặc máy tính bảng khác chưa? Tôi muốn đảm bảo rằng đó là máy tính bảng của tôi không tương thích chứ không phải chiếc s26 của tôi bị lạ vì Smart View mà bạn không thể tắt. Vì vậy, bằng cách đó tôi sẽ không hối tiếc khi mua…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "f5488b9ef11291f3": {
+    "title": {
+      "en": "Android 17 features",
+      "vi": "Tính năng của Android 17"
+    },
+    "summary": {
+      "en": "https://www.youtube.com/watch?v=_enN4cmvmz8",
+      "vi": "https://www.youtube.com/watch?v=_enN4cmvmz8"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "a7d61d970df6ec9b": {
+    "title": {
+      "vi": "Cách biến AI thành gia sư biết hỏi ngược, không làm bài thay học sinh",
+      "en": "How to turn AI into a tutor who can ask questions, not do the homework for students"
+    },
+    "summary": {
+      "vi": "AI giải bài tập trong vài giây. Nhưng một nghiên cứu lớn cho thấy học sinh dùng AI để giải hộ lại thi kém hơn người không dùng.",
+      "en": "AI solves exercises in seconds. But a large study shows that students who use AI to solve problems for them perform worse than those who don't."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "4bc6067c721914e3": {
+    "title": {
+      "vi": "Cô gái xinh đẹp \"khoe\" đã sinh đứa con thứ 13 cho Elon Musk",
+      "en": "The beautiful girl \"showed off\" giving birth to Elon Musk's 13th child"
+    },
+    "summary": {
+      "vi": "(Dân trí) - Ashley St. Clair, 26 tuổi, đã khiến nhiều người phải bất ngờ khi tuyên bố cô đã sinh đứa con thứ 13 cho tỷ phú Elon Musk cách đây 5 tháng.",
+      "en": "(Dan Tri) - Ashley St. Clair, 26 years old, surprised many people when she announced that she had given birth to billionaire Elon Musk's 13th child 5 months ago."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "dabb8aa23c779c5f": {
+    "title": {
+      "vi": "Galaxy S26 sẽ có nâng cấp quan trọng mà Galaxy S25 thiếu sót",
+      "en": "Galaxy S26 will have important upgrades that Galaxy S25 lacks"
+    },
+    "summary": {
+      "vi": "(Dân trí) - Samsung được cho là đang tìm cách gia tăng dung lượng pin trên dòng sản phẩm Galaxy S26. Để làm được điều này, công ty Hàn Quốc có thể sẽ áp dụng công nghệ pin Silicon-Carbon.",
+      "en": "(Dan Tri) - Samsung is said to be looking to increase battery capacity on the Galaxy S26 product line. To do this, the Korean company will likely apply Silicon-Carbon battery technology."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "989f63e3510db413": {
+    "title": {
+      "vi": "LG V10 và Ninebot: hai sản phẩm công nghệ tuyệt vời",
+      "en": "LG V10 and Ninebot: two great technology products"
+    },
+    "summary": {
+      "vi": "LG V10 là chiếc flagship \"khác người\" của LG. Máy có thêm một màn hình phụ nhỏ phía trên màn hình chính để hiện thông báo và phím tắt, hai",
+      "en": "LG V10 is LG's \"different\" flagship. The device has a small secondary screen above the main screen to display notifications and shortcuts, two"
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "f58b4a23562d7cee": {
+    "title": {
+      "zh-CN": "AMD 发布肾上腺素 26.11.1 可选驱动：修复 SSD 异常写入问题，公布多项已知游戏兼容问题",
+      "vi": "AMD phát hành trình điều khiển tùy chọn Adrenaline 26.11.1: khắc phục sự cố ghi bất thường của SSD, thông báo nhiều sự cố tương thích trò chơi đã biết",
+      "en": "AMD releases Adrenaline 26.11.1 optional driver: fixes SSD abnormal writing problem, announces multiple known game compatibility issues"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 13 日消息，AMD Software: Adrenalin Edition 26.11.1 可选版（Optional）显卡驱动现已发布，本次更新重点修复了此前广受关注的系统盘异常写入问题，同时公布了多项游戏与平台兼容方面的已知问题及临时解决方案。 问题修复 修复 Radeon RX 7000 系列及以上显卡在系统空闲时， 持续对系统盘进行异常写入 的问题；该问题此前被报道写入速率可达 0.3MB/s 至 5MB/s，单日累计写入量最高超 400GB，可能影响 SSD 寿命。 修复移动或调整应用窗口大小时，触发系统盘异常写入的问题。…",
+      "vi": "IT House đưa tin vào ngày 13 tháng 11 rằng AMD Software: Adrenalin Edition 26.11.1 Trình điều khiển card đồ họa tùy chọn đã được phát hành. Bản cập nhật này tập trung vào việc khắc phục sự cố ghi bất thường được quan tâm rộng rãi trước đây trên đĩa hệ thống, đồng thời công bố một số sự cố đã biết và giải pháp tạm thời…",
+      "en": "IT House reported on November 13 that AMD Software: Adrenalin Edition 26.11.1 Optional graphics card driver has been released. This update focuses on fixing the previously widely concerned abnormal writing problem of the system disk, and also announced a number of known issues and temporary solutions in terms of game…"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "82c7456d005919b5": {
+    "title": {
+      "zh-CN": "Mac 选购指南 2026 冬季版",
+      "vi": "Hướng dẫn mua máy Mac phiên bản mùa đông 2026",
+      "en": "Mac Buying Guide 2026 Winter Edition"
+    },
+    "summary": {
+      "zh-CN": "内存、存储涨价但又得换 Mac？记得收下这份选购指南。 查看全文",
+      "vi": "Giá bộ nhớ và lưu trữ đã tăng nhưng bạn vẫn cần chuyển sang máy Mac? Hãy nhớ chấp nhận hướng dẫn mua hàng này. Xem toàn văn",
+      "en": "Memory and storage prices have increased but you still need to switch to a Mac? Remember to accept this buying guide. View full text"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "f54af6baf65ed6ba": {
+    "title": {
+      "zh-CN": "微软：正持续优化 Win11 内存占用，26H2 版本下 8GB RAM 机型特定场景表现可“对标”2021 年 16GB RAM 机器",
+      "vi": "Microsoft: Chúng tôi đang tiếp tục tối ưu hóa việc sử dụng bộ nhớ của Win11. Hiệu năng của mẫu RAM 8GB ở phiên bản 26H2 trong các kịch bản cụ thể có thể “chuẩn mực” cho máy RAM…",
+      "en": "Microsoft: We are continuing to optimize the memory usage of Win11. The performance of the 8GB RAM model in the 26H2 version in specific scenarios can \"benchmark\" the 16GB RAM…"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 8 日消息，微软发布博客文章，称 Windows 开发团队正在持续优化系统占用，如今安装了最新 Windows 11 26H2 版本、配备 8GB RAM 笔记本在多项日常及高负载任务中的表现已接近 2021 年 Windows 11 刚发布时的 16GB RAM 笔记本。 微软 Windows 业务负责人帕万・达武卢里（Pavan Davuluri）介绍称，Windows 多年来一直采用内存压缩技术，但微软如今针对 8GB RAM 电脑调整了压缩策略，以及将数据转移至速度较慢的存储设备的时机。经过调整后，Windows 最多可以在…",
+      "vi": "Tin IT House ngày 8/11, Microsoft đã đăng tải một bài blog cho biết nhóm phát triển Windows đang tiếp tục tối ưu hóa việc sử dụng hệ thống. Giờ đây, hiệu năng của một notebook RAM 8GB được trang bị phiên bản Windows 11 26H2 mới nhất trong nhiều tác vụ hàng ngày và tải nặng đã gần bằng hiệu năng của một notebook RAM…",
+      "en": "IT House news on November 8, Microsoft released a blog post stating that the Windows development team is continuing to optimize system usage. Now the performance of an 8GB RAM notebook equipped with the latest Windows 11 26H2 version in many daily and high-load tasks is close to that of a 16GB RAM notebook when…"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "be95f9fb4c07ff2c": {
+    "title": {
+      "zh-CN": "小米澎湃 HyperOS 4 近期修复进展公布，Xiaomi 17 系列手机多个问题优化",
+      "vi": "Công bố tiến trình sửa chữa gần đây của Xiaomi ThePaper HyperOS 4, nhiều vấn đề được tối ưu hóa cho điện thoại di động dòng Xiaomi 17",
+      "en": "Xiaomi ThePaper HyperOS 4 recent repair progress announced, multiple issues optimized for Xiaomi 17 series mobile phones"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 7 日消息，小米员工昨日在小米社区发布了澎湃 HyperOS 4 近期的修复进展汇总。据介绍， 修复将随后续版本推送逐步生效，具体时间因机型及应用版本不同 ，以实际更新为准。其中提到，Xiaomi 17 系列手机多个问题优化。 ▲ IT之家开箱：小米 17 Pro / Pro Max 手机图赏 IT之家附小米澎湃 HyperOS 4 系统最新优化进展如下： Xiaomi 17 Pro Max 4.0.5.0 版本部分场景下自动任务执行异常的问题 Xiaomi 17 Pro Max 4.0.4.0…",
+      "vi": "IT House đưa tin vào ngày 7 tháng 11 rằng các nhân viên của Xiaomi đã công bố bản tóm tắt về tiến trình sửa chữa gần đây của ThePaper HyperOS 4 trên cộng đồng Xiaomi vào ngày hôm qua. Theo báo cáo, bản sửa lỗi sẽ dần dần có hiệu lực khi các phiên bản tiếp theo được tung ra. Thời gian cụ thể khác nhau tùy thuộc vào…",
+      "en": "IT House reported on November 7 that Xiaomi employees released a summary of the recent repair progress of ThePaper HyperOS 4 on the Xiaomi community yesterday. According to reports, the fix will gradually take effect as subsequent versions are pushed. The specific time varies depending on the model and application…"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
   "e4f5c3c7e64fe620": {
     "title": {
       "zh-CN": "Sensor Tower：《GTA6》预购收入突破 10 亿美元，销量达 1031 万份",
-      "vi": "Sensor Tower：《GTA6》预购收入突破 10 亿美元，销量达 1031 万份",
-      "en": "Sensor Tower：《GTA6》预购收入突破 10 亿美元，销量达 1031 万份"
+      "vi": "Tháp cảm biến: Doanh thu đặt trước \"GTA6\" vượt 1 tỷ USD, doanh số đạt 10,31 triệu bản",
+      "en": "Sensor Tower: \"GTA6\" pre-order revenue exceeded $1 billion, sales reached 10.31 million copies"
     },
     "summary": {
       "zh-CN": "IT之家 11 月 12 日消息，分析机构 Sensor Tower 预计， 《GTA6》游戏在 PS5 和 XBOX 平台的预购收入已经突破 10 亿美元 （IT之家注：现汇率约合 66.88 亿元人民币） ，销量约 1,031 万份。 该机构表示， 《GTA6》扣除退款后预购销量已达到 1,031 万份 ，PS5 版预计占据较大销售份额。Take-Two CEO 施特劳斯 · 泽尔尼克此前表示，本作预购表现远超预期，但游戏正式发售后的表现仍有待观察。…",
-      "vi": "IT之家 11 月 12 日消息，分析机构 Sensor Tower 预计， 《GTA6》游戏在 PS5 和 XBOX 平台的预购收入已经突破 10 亿美元 （IT之家注：现汇率约合 66.88 亿元人民币） ，销量约 1,031 万份。 该机构表示， 《GTA6》扣除退款后预购销量已达到 1,031 万份 ，PS5 版预计占据较大销售份额。Take-Two CEO 施特劳斯 · 泽尔尼克此前表示，本作预购表现远超预期，但游戏正式发售后的表现仍有待观察。…",
-      "en": "IT之家 11 月 12 日消息，分析机构 Sensor Tower 预计， 《GTA6》游戏在 PS5 和 XBOX 平台的预购收入已经突破 10 亿美元 （IT之家注：现汇率约合 66.88 亿元人民币） ，销量约 1,031 万份。 该机构表示， 《GTA6》扣除退款后预购销量已达到 1,031 万份 ，PS5 版预计占据较大销售份额。Take-Two CEO 施特劳斯 · 泽尔尼克此前表示，本作预购表现远超预期，但游戏正式发售后的表现仍有待观察。…"
+      "vi": "IT House đưa tin vào ngày 12 tháng 11, cơ quan phân tích Sensor Tower ước tính doanh thu đặt hàng trước của trò chơi \"GTA6\" trên nền tảng PS5 và XBOX đã vượt quá 1 tỷ đô la Mỹ (Lưu ý của IT House: tỷ giá hối đoái hiện tại là khoảng 6,688 tỷ nhân dân tệ), với doanh số xấp xỉ 10,31 triệu bản. Cơ quan này cho biết doanh…",
+      "en": "IT House reported on November 12 that the analysis agency Sensor Tower estimated that the pre-order revenue of the \"GTA6\" game on the PS5 and XBOX platforms has exceeded 1 billion US dollars (IT House note: the current exchange rate is approximately 6.688 billion yuan), with sales of approximately 10.31 million…"
     },
     "translated": {
-      "vi": false,
-      "en": false
+      "vi": "machine",
+      "en": "machine"
     }
   },
   "aec283a624b07718": {
     "title": {
       "zh-CN": "不仅一段婚外情，消息称英伟达正准备罢免 CEO 黄仁勋",
-      "vi": "不仅一段婚外情，消息称英伟达正准备罢免 CEO 黄仁勋",
-      "en": "不仅一段婚外情，消息称英伟达正准备罢免 CEO 黄仁勋"
+      "vi": "Không chỉ ngoại tình mà còn có tin Nvidia chuẩn bị sa thải CEO Jensen Huang",
+      "en": "Not only an extramarital affair, but also news that Nvidia is preparing to oust CEO Jensen Huang"
     },
     "summary": {
       "zh-CN": "IT之家 11 月 12 日消息，《华尔街日报》刚刚报道称，英伟达正准备罢免首席执行官黄仁勋。英伟达董事会计划最快于当地时间今日召开专项董事会议，对黄仁勋的去留问题开启投票表决。 另外《纽约时报》报道称，五名前英伟达员工指控他有第二次婚外情，这次的对象是一位曾向其汇报工作的公司高管，导致黄仁勋离职几率飙升，市场现在预测黄仁勋在 2027 年 7 月之前离职的概率为 80%。 同时，英伟达股价盘后跌幅一度扩大至 9%，截至IT之家发稿已回升至-7.74%。 知情人士称，这段此前从未被报道过的关系涉及英伟达医疗保健业务副总裁金伯利 ·…",
-      "vi": "IT之家 11 月 12 日消息，《华尔街日报》刚刚报道称，英伟达正准备罢免首席执行官黄仁勋。英伟达董事会计划最快于当地时间今日召开专项董事会议，对黄仁勋的去留问题开启投票表决。 另外《纽约时报》报道称，五名前英伟达员工指控他有第二次婚外情，这次的对象是一位曾向其汇报工作的公司高管，导致黄仁勋离职几率飙升，市场现在预测黄仁勋在 2027 年 7 月之前离职的概率为 80%。 同时，英伟达股价盘后跌幅一度扩大至 9%，截至IT之家发稿已回升至-7.74%。 知情人士称，这段此前从未被报道过的关系涉及英伟达医疗保健业务副总裁金伯利 ·…",
-      "en": "IT之家 11 月 12 日消息，《华尔街日报》刚刚报道称，英伟达正准备罢免首席执行官黄仁勋。英伟达董事会计划最快于当地时间今日召开专项董事会议，对黄仁勋的去留问题开启投票表决。 另外《纽约时报》报道称，五名前英伟达员工指控他有第二次婚外情，这次的对象是一位曾向其汇报工作的公司高管，导致黄仁勋离职几率飙升，市场现在预测黄仁勋在 2027 年 7 月之前离职的概率为 80%。 同时，英伟达股价盘后跌幅一度扩大至 9%，截至IT之家发稿已回升至-7.74%。 知情人士称，这段此前从未被报道过的关系涉及英伟达医疗保健业务副总裁金伯利 ·…"
+      "vi": "IT House News ngày 12/11, tờ Wall Street Journal vừa đưa tin Nvidia đang chuẩn bị sa thải CEO Jen-Hsun Huang. Hội đồng quản trị của Nvidia có kế hoạch tổ chức một cuộc họp hội đồng đặc biệt ngay hôm nay, giờ địa phương, để bỏ phiếu về sự ra đi của Huang Renxun. Ngoài ra, tờ New York Times còn đưa tin rằng 5 cựu nhân…",
+      "en": "IT House News on November 12, the Wall Street Journal just reported that Nvidia is preparing to remove CEO Jen-Hsun Huang. Nvidia's board of directors plans to hold a special board meeting as soon as today, local time, to vote on Huang Renxun's departure. In addition, the New York Times reported that five former…"
     },
     "translated": {
-      "vi": false,
-      "en": false
+      "vi": "machine",
+      "en": "machine"
     }
   },
   "b1c66f8a4af04598": {
     "title": {
       "zh-CN": "沈阳背景叙事解谜《Hope in the City》Steam 发售：首发特惠 ¥68.4，首日加入 XGP",
-      "vi": "沈阳背景叙事解谜《Hope in the City》Steam 发售：首发特惠 ¥68.4，首日加入 XGP",
-      "en": "沈阳背景叙事解谜《Hope in the City》Steam 发售：首发特惠 ¥68.4，首日加入 XGP"
+      "vi": "Câu đố tường thuật bối cảnh Thẩm Dương \"Hope in the City\" đang được giảm giá trên Steam: lần đầu ra mắt giá đặc biệt 68,4 yên, tham gia XGP vào ngày đầu tiên",
+      "en": "Shenyang background narrative puzzle \"Hope in the City\" is on sale on Steam: first launch special price ¥68.4, join XGP on the first day"
     },
     "summary": {
       "zh-CN": "IT之家 11 月 12 日消息，Lofty Sky Entertainment Inc. 开发、Lofty Sky Entertainment Inc. 与 NAGA Games 联合发行的叙事解谜游戏《Hope in the City》已于 11 月 11 日正式登陆 Steam 平台，国区现已开放购买，商品页（ https://store.steampowered.com/app/3610790/Hope_in_the_City/ ）已可访问，未锁国区。 游戏同步登陆 Xbox Series X|S 与 Xbox PC 商店，并于首日加入…",
-      "vi": "IT之家 11 月 12 日消息，Lofty Sky Entertainment Inc. 开发、Lofty Sky Entertainment Inc. 与 NAGA Games 联合发行的叙事解谜游戏《Hope in the City》已于 11 月 11 日正式登陆 Steam 平台，国区现已开放购买，商品页（ https://store.steampowered.com/app/3610790/Hope_in_the_City/ ）已可访问，未锁国区。 游戏同步登陆 Xbox Series X|S 与 Xbox PC 商店，并于首日加入…",
-      "en": "IT之家 11 月 12 日消息，Lofty Sky Entertainment Inc. 开发、Lofty Sky Entertainment Inc. 与 NAGA Games 联合发行的叙事解谜游戏《Hope in the City》已于 11 月 11 日正式登陆 Steam 平台，国区现已开放购买，商品页（ https://store.steampowered.com/app/3610790/Hope_in_the_City/ ）已可访问，未锁国区。 游戏同步登陆 Xbox Series X|S 与 Xbox PC 商店，并于首日加入…"
+      "vi": "IT House đã đưa tin vào ngày 12 tháng 11 rằng trò chơi giải đố tường thuật \"Hope in the City\" do Lofty Sky Entertainment Inc. phát triển và Lofty Sky Entertainment Inc. và NAGA Games đồng phát hành đã chính thức ra mắt trên nền tảng Steam vào ngày 11 tháng 11. Trò chơi hiện đã có sẵn để mua trong nước. Trang sản phẩm…",
+      "en": "IT House reported on November 12 that the narrative puzzle game \"Hope in the City\" developed by Lofty Sky Entertainment Inc. and jointly published by Lofty Sky Entertainment Inc. and NAGA Games has officially launched on the Steam platform on November 11. It is now available for purchase in the country. The product…"
     },
     "translated": {
-      "vi": false,
-      "en": false
-    }
-  },
-  "31f47d85113dbe78": {
-    "title": {
-      "zh-CN": "城市漫步指南 | 安特卫普，时尚就在生活中",
-      "vi": "城市漫步指南 | 安特卫普，时尚就在生活中",
-      "en": "城市漫步指南 | 安特卫普，时尚就在生活中"
-    },
-    "summary": {
-      "zh-CN": "原本今年夏天的旅行是要在佛罗伦萨结束的，但突发状况导致我不用上班了，就顺势使用了我的国际机票退改券，增加了一段安特卫普的行程。打卡安特卫普的理由跟意大利一样奇怪——因为这个地方举办过好几届体操世锦赛（ ... 查看全文",
-      "vi": "原本今年夏天的旅行是要在佛罗伦萨结束的，但突发状况导致我不用上班了，就顺势使用了我的国际机票退改券，增加了一段安特卫普的行程。打卡安特卫普的理由跟意大利一样奇怪——因为这个地方举办过好几届体操世锦赛（ ... 查看全文",
-      "en": "原本今年夏天的旅行是要在佛罗伦萨结束的，但突发状况导致我不用上班了，就顺势使用了我的国际机票退改券，增加了一段安特卫普的行程。打卡安特卫普的理由跟意大利一样奇怪——因为这个地方举办过好几届体操世锦赛（ ... 查看全文"
-    },
-    "translated": {
-      "vi": false,
-      "en": false
+      "vi": "machine",
+      "en": "machine"
     }
   },
   "79ecf6fd158bd2ec": {
     "title": {
       "zh-CN": "谷歌 DeepMind 发布 AlphaGenome 2 基因序列模型：识别致病变异能力提升近一倍",
-      "vi": "谷歌 DeepMind 发布 AlphaGenome 2 基因序列模型：识别致病变异能力提升近一倍",
-      "en": "谷歌 DeepMind 发布 AlphaGenome 2 基因序列模型：识别致病变异能力提升近一倍"
+      "vi": "Google DeepMind công bố mô hình trình tự gen AlphaGenome 2: tăng gần gấp đôi khả năng xác định các biến thể gây bệnh",
+      "en": "Google DeepMind releases AlphaGenome 2 gene sequence model: nearly doubled in ability to identify disease-causing variants"
     },
     "summary": {
       "zh-CN": "IT之家 11 月 11 日消息，谷歌 DeepMind 发布新一代 DNA 序列模型 AlphaGenome 2 ，可预测 DNA 序列及其变异对特定人体细胞类型的影响，为科研人员挖掘疾病的细胞驱动因素提供全新工具。 人体每个细胞携带相同的 DNA 蓝图，但不同细胞类型会通过开关不同基因完成特定功能。全球的人类细胞图谱项目已对数百万细胞的基因表达进行绘制，但预测细微 DNA 变异如何影响细胞基因表达，仍是尚未解决的难题。 此前谷歌已推出初代 AlphaGenome ，可预测 DNA 变异对宽泛组织的分子活性影响，并推出了覆盖人类基因组全部 90…",
-      "vi": "IT之家 11 月 11 日消息，谷歌 DeepMind 发布新一代 DNA 序列模型 AlphaGenome 2 ，可预测 DNA 序列及其变异对特定人体细胞类型的影响，为科研人员挖掘疾病的细胞驱动因素提供全新工具。 人体每个细胞携带相同的 DNA 蓝图，但不同细胞类型会通过开关不同基因完成特定功能。全球的人类细胞图谱项目已对数百万细胞的基因表达进行绘制，但预测细微 DNA 变异如何影响细胞基因表达，仍是尚未解决的难题。 此前谷歌已推出初代 AlphaGenome ，可预测 DNA 变异对宽泛组织的分子活性影响，并推出了覆盖人类基因组全部 90…",
-      "en": "IT之家 11 月 11 日消息，谷歌 DeepMind 发布新一代 DNA 序列模型 AlphaGenome 2 ，可预测 DNA 序列及其变异对特定人体细胞类型的影响，为科研人员挖掘疾病的细胞驱动因素提供全新工具。 人体每个细胞携带相同的 DNA 蓝图，但不同细胞类型会通过开关不同基因完成特定功能。全球的人类细胞图谱项目已对数百万细胞的基因表达进行绘制，但预测细微 DNA 变异如何影响细胞基因表达，仍是尚未解决的难题。 此前谷歌已推出初代 AlphaGenome ，可预测 DNA 变异对宽泛组织的分子活性影响，并推出了覆盖人类基因组全部 90…"
+      "vi": "IT House đã báo cáo vào ngày 11 tháng 11 rằng Google DeepMind đã phát hành mô hình trình tự DNA thế hệ mới AlphaGenome 2, có thể dự đoán tác động của trình tự DNA và các biến thể của chúng đối với các loại tế bào cụ thể của con người, cung cấp cho các nhà nghiên cứu một công cụ mới để khám phá các nguyên nhân gây bệnh…",
+      "en": "IT House reported on November 11 that Google DeepMind released a new generation of DNA sequence model AlphaGenome 2, which can predict the impact of DNA sequences and their variations on specific human cell types, providing researchers with a new tool to explore the cellular drivers of diseases. Every cell in the body…"
     },
     "translated": {
-      "vi": false,
-      "en": false
+      "vi": "machine",
+      "en": "machine"
     }
   },
   "c3917f85d073da47": {
     "title": {
       "zh-CN": "Xbox 版《GTA 6》预载文件出现 AMD FSR 4.1 线索，首发未必支持",
-      "vi": "Xbox 版《GTA 6》预载文件出现 AMD FSR 4.1 线索，首发未必支持",
-      "en": "Xbox 版《GTA 6》预载文件出现 AMD FSR 4.1 线索，首发未必支持"
+      "vi": "Tệp tải trước phiên bản Xbox của \"GTA 6\" chứa manh mối về AMD FSR 4.1, có thể không được hỗ trợ ở lần phát hành đầu tiên",
+      "en": "The Xbox version of \"GTA 6\" preload file contains clues about AMD FSR 4.1, which may not be supported at first release"
     },
     "summary": {
       "zh-CN": "IT之家 11 月 11 日消息，数据挖掘者最近一直在研究 Xbox 版《GTA 6》的预载文件，而近期发现的两项线索，让这款游戏的运行表现有了更多值得期待的地方。 IT之家注意到，在数据挖掘者 Tex2 分享的文件包中，出现了两个库文件，分别名为 amd_fidelityfx_loader_xbox.dll 和 amd_fidelityfx_upscaler_xbox.dll 。 这两个文件的名称与微软上周发布的 FSR 4.1 Xbox GDK 示例项目中的相关术语一致。 当然，这并不意味着 AMD 的 FSR 4.1 技术一定会在《GTA…",
-      "vi": "IT之家 11 月 11 日消息，数据挖掘者最近一直在研究 Xbox 版《GTA 6》的预载文件，而近期发现的两项线索，让这款游戏的运行表现有了更多值得期待的地方。 IT之家注意到，在数据挖掘者 Tex2 分享的文件包中，出现了两个库文件，分别名为 amd_fidelityfx_loader_xbox.dll 和 amd_fidelityfx_upscaler_xbox.dll 。 这两个文件的名称与微软上周发布的 FSR 4.1 Xbox GDK 示例项目中的相关术语一致。 当然，这并不意味着 AMD 的 FSR 4.1 技术一定会在《GTA…",
-      "en": "IT之家 11 月 11 日消息，数据挖掘者最近一直在研究 Xbox 版《GTA 6》的预载文件，而近期发现的两项线索，让这款游戏的运行表现有了更多值得期待的地方。 IT之家注意到，在数据挖掘者 Tex2 分享的文件包中，出现了两个库文件，分别名为 amd_fidelityfx_loader_xbox.dll 和 amd_fidelityfx_upscaler_xbox.dll 。 这两个文件的名称与微软上周发布的 FSR 4.1 Xbox GDK 示例项目中的相关术语一致。 当然，这并不意味着 AMD 的 FSR 4.1 技术一定会在《GTA…"
+      "vi": "IT House đã báo cáo vào ngày 11 tháng 11 rằng những người khai thác dữ liệu gần đây đã nghiên cứu các tệp tải trước của phiên bản Xbox của \"GTA 6\" và hai manh mối được phát hiện gần đây giúp hiệu suất chạy của trò chơi đáng mong đợi hơn. IT House nhận thấy rằng trong gói tệp được chia sẻ bởi công cụ khai thác dữ liệu…",
+      "en": "IT House reported on November 11 that data miners have been studying the preload files of the Xbox version of \"GTA 6\" recently, and two recently discovered clues give the game's running performance more to look forward to. IT House noticed that in the file package shared by data miner Tex2, two library files appeared…"
     },
     "translated": {
-      "vi": false,
-      "en": false
+      "vi": "machine",
+      "en": "machine"
     }
   },
   "5f89df33fc27df44": {
     "title": {
       "zh-CN": "保时捷 CEO 骆明楷批评特斯拉 Roadster 发布会：我们不想搞任何特效或表演",
-      "vi": "保时捷 CEO 骆明楷批评特斯拉 Roadster 发布会：我们不想搞任何特效或表演",
-      "en": "保时捷 CEO 骆明楷批评特斯拉 Roadster 发布会：我们不想搞任何特效或表演"
+      "vi": "CEO Porsche Luo Mingkai chỉ trích hội nghị ra mắt Tesla Roadster: Chúng tôi không muốn bất kỳ hiệu ứng hay màn trình diễn đặc biệt nào",
+      "en": "Porsche CEO Luo Mingkai criticizes Tesla Roadster launch conference: We don’t want any special effects or performances"
     },
     "summary": {
       "zh-CN": "IT之家 11 月 11 日消息，据彭博社今天（11 日）晚间报道，保时捷 CEO 骆明楷（Michael Leiters）批评特斯拉 Roadster 发布会过于追求噱头，并指出特斯拉展示的飞行汽车与保时捷 Mission S 概念车 面向不同的消费群体 。 骆明楷在柏林出席一场会议时直言：“我们不想搞任何特效或表演。”同时，他强调，保时捷希望通过新车 展示真正的技术创新 。 特斯拉与保时捷都在当地时间 10 月 15 日（IT之家注：北京时间均为 16 日上午）发布新车，但两场活动的风格截然不同。 特斯拉主打 炫目的展示效果 ，配备压缩空气推进器的…",
-      "vi": "IT之家 11 月 11 日消息，据彭博社今天（11 日）晚间报道，保时捷 CEO 骆明楷（Michael Leiters）批评特斯拉 Roadster 发布会过于追求噱头，并指出特斯拉展示的飞行汽车与保时捷 Mission S 概念车 面向不同的消费群体 。 骆明楷在柏林出席一场会议时直言：“我们不想搞任何特效或表演。”同时，他强调，保时捷希望通过新车 展示真正的技术创新 。 特斯拉与保时捷都在当地时间 10 月 15 日（IT之家注：北京时间均为 16 日上午）发布新车，但两场活动的风格截然不同。 特斯拉主打 炫目的展示效果 ，配备压缩空气推进器的…",
-      "en": "IT之家 11 月 11 日消息，据彭博社今天（11 日）晚间报道，保时捷 CEO 骆明楷（Michael Leiters）批评特斯拉 Roadster 发布会过于追求噱头，并指出特斯拉展示的飞行汽车与保时捷 Mission S 概念车 面向不同的消费群体 。 骆明楷在柏林出席一场会议时直言：“我们不想搞任何特效或表演。”同时，他强调，保时捷希望通过新车 展示真正的技术创新 。 特斯拉与保时捷都在当地时间 10 月 15 日（IT之家注：北京时间均为 16 日上午）发布新车，但两场活动的风格截然不同。 特斯拉主打 炫目的展示效果 ，配备压缩空气推进器的…"
+      "vi": "IT House News ngày 11/11, theo báo cáo của Bloomberg vào tối hôm nay (11), Giám đốc điều hành Porsche, Michael Leiters, đã chỉ trích hội nghị ra mắt Roadster của Tesla vì theo đuổi mánh lới quảng cáo quá nhiều, đồng thời chỉ ra rằng chiếc xe bay được Tesla trưng bày và mẫu xe ý tưởng Porsche Mission S là nhằm vào các…",
+      "en": "IT House News on November 11, according to a Bloomberg report today (11th) evening, Porsche CEO Michael Leiters criticized Tesla’s Roadster launch conference for pursuing gimmicks too much, and pointed out that the flying car displayed by Tesla and the Porsche Mission S concept car are aimed at different consumer…"
     },
     "translated": {
-      "vi": false,
-      "en": false
+      "vi": "machine",
+      "en": "machine"
     }
   },
-  "865d1068fd46a127": {
+  "77e32da8e58573a6": {
     "title": {
-      "zh-CN": "俄罗斯月球核电站新计划：明年选定方案、本世纪 30 年代中期运行",
-      "vi": "俄罗斯月球核电站新计划：明年选定方案、本世纪 30 年代中期运行",
-      "en": "俄罗斯月球核电站新计划：明年选定方案、本世纪 30 年代中期运行"
+      "en": "Organize and communicate complex information with numbered and nested lists in Google Chat",
+      "vi": "Sắp xếp và truyền đạt thông tin phức tạp bằng danh sách được đánh số và lồng nhau trong Google Chat"
     },
     "summary": {
-      "zh-CN": "IT之家 11 月 11 日消息，据央视新闻报道，当地时间 10 日，俄罗斯国家原子能公司首席执行官利哈乔夫表示，该公司计划于 2027 年选定月球核电站方案。 利哈乔夫在当日举行的政府航天发展战略会议后透露，俄罗斯国家原子能公司正在 研究 5 种月球核电站方案 ，将于 2027 年选定其中一种。当前，国家原子能公司、俄罗斯库尔恰托夫研究所与俄罗斯科学院正在联合研究相关课题。 他进一步表示：“这里说的是功率可达 10 千瓦的月球核电站，计划于 21 世纪 30 年代中期 开始运行。目前我们正在深入研究 5…",
-      "vi": "IT之家 11 月 11 日消息，据央视新闻报道，当地时间 10 日，俄罗斯国家原子能公司首席执行官利哈乔夫表示，该公司计划于 2027 年选定月球核电站方案。 利哈乔夫在当日举行的政府航天发展战略会议后透露，俄罗斯国家原子能公司正在 研究 5 种月球核电站方案 ，将于 2027 年选定其中一种。当前，国家原子能公司、俄罗斯库尔恰托夫研究所与俄罗斯科学院正在联合研究相关课题。 他进一步表示：“这里说的是功率可达 10 千瓦的月球核电站，计划于 21 世纪 30 年代中期 开始运行。目前我们正在深入研究 5…",
-      "en": "IT之家 11 月 11 日消息，据央视新闻报道，当地时间 10 日，俄罗斯国家原子能公司首席执行官利哈乔夫表示，该公司计划于 2027 年选定月球核电站方案。 利哈乔夫在当日举行的政府航天发展战略会议后透露，俄罗斯国家原子能公司正在 研究 5 种月球核电站方案 ，将于 2027 年选定其中一种。当前，国家原子能公司、俄罗斯库尔恰托夫研究所与俄罗斯科学院正在联合研究相关课题。 他进一步表示：“这里说的是功率可达 10 千瓦的月球核电站，计划于 21 世纪 30 年代中期 开始运行。目前我们正在深入研究 5…"
+      "en": "You can now use numbered lists and nested lists in your Google Chat messages. Numbered lists work well for step-by-step instructions, rankings, and agendas. Nested lists let you break a main point into smaller details, which helps for meeting notes, project plans, and status…",
+      "vi": "Giờ đây, bạn có thể sử dụng danh sách được đánh số và danh sách lồng nhau trong tin nhắn trên Google Chat. Danh sách được đánh số hoạt động tốt cho hướng dẫn từng bước, xếp hạng và chương trình làm việc. Danh sách lồng nhau cho phép bạn chia ý chính thành các chi tiết nhỏ hơn, giúp ghi chú cuộc họp, kế hoạch dự án và…"
     },
     "translated": {
-      "vi": false,
-      "en": false
+      "vi": "machine"
     }
   },
-  "5024f246bf2645ec": {
+  "3ee975b765ca6e11": {
     "title": {
-      "zh-CN": "Adobe 公布四项 AI 实验项目：照片秒变 3D 场景，还能通过聊天设计 AI 角色",
-      "vi": "Adobe 公布四项 AI 实验项目：照片秒变 3D 场景，还能通过聊天设计 AI 角色",
-      "en": "Adobe 公布四项 AI 实验项目：照片秒变 3D 场景，还能通过聊天设计 AI 角色"
+      "en": "Firefox’s free built-in VPN removes its data limit (until next year)",
+      "vi": "VPN tích hợp miễn phí của Firefox loại bỏ giới hạn dữ liệu của nó (cho đến năm sau)"
     },
     "summary": {
-      "zh-CN": "IT之家 11 月 11 日消息，每年举办的 Adobe MAX 大会上，Adobe 展示的最令人印象深刻的技术之一，往往是那些仍处于实验阶段、尚未正式推出的创新功能。今天，该公司公布了最新一批实验项目：它们能够将普通图片转换为可探索的 3D 场景，通过与 AI 角色对话来设计角色形象，还能让照片编辑变成简单的复制粘贴操作。 首先是非常奇特的 Project Screen Test 项目，其旨在让用户更轻松地创建 AI 生成角色，并将其应用于视频内容。…",
-      "vi": "IT之家 11 月 11 日消息，每年举办的 Adobe MAX 大会上，Adobe 展示的最令人印象深刻的技术之一，往往是那些仍处于实验阶段、尚未正式推出的创新功能。今天，该公司公布了最新一批实验项目：它们能够将普通图片转换为可探索的 3D 场景，通过与 AI 角色对话来设计角色形象，还能让照片编辑变成简单的复制粘贴操作。 首先是非常奇特的 Project Screen Test 项目，其旨在让用户更轻松地创建 AI 生成角色，并将其应用于视频内容。…",
-      "en": "IT之家 11 月 11 日消息，每年举办的 Adobe MAX 大会上，Adobe 展示的最令人印象深刻的技术之一，往往是那些仍处于实验阶段、尚未正式推出的创新功能。今天，该公司公布了最新一批实验项目：它们能够将普通图片转换为可探索的 3D 场景，通过与 AI 角色对话来设计角色形象，还能让照片编辑变成简单的复制粘贴操作。 首先是非常奇特的 Project Screen Test 项目，其旨在让用户更轻松地创建 AI 生成角色，并将其应用于视频内容。…"
+      "en": "Mozilla has lifted its 50GB data cap on Firefox’s built-in VPN until 31 January 2027. From 10 November, you can enable the free VPN in Firefox and browse as much as you like, for as long as you like, without needing to worry about reaching the fixed monthly limit. ‘Whether…",
+      "vi": "Mozilla đã nâng giới hạn dữ liệu 50GB trên VPN tích hợp của Firefox cho đến ngày 31 tháng 1 năm 2027. Từ ngày 10 tháng 11, bạn có thể kích hoạt VPN miễn phí trong Firefox và duyệt bao lâu tùy thích, bao lâu tùy thích mà không cần phải lo lắng về việc đạt đến giới hạn cố định hàng tháng. 'Liệu…"
     },
     "translated": {
-      "vi": false,
-      "en": false
+      "vi": "machine"
     }
   },
-  "eee48a4614136cba": {
+  "7df5534c95f3f7f5": {
     "title": {
-      "zh-CN": "贴脸开大：当着 XBOX 高层的面，前《铁拳》总监原田胜弘直言希望别再推出 XSS 这样的主机",
-      "vi": "贴脸开大：当着 XBOX 高层的面，前《铁拳》总监原田胜弘直言希望别再推出 XSS 这样的主机",
-      "en": "贴脸开大：当着 XBOX 高层的面，前《铁拳》总监原田胜弘直言希望别再推出 XSS 这样的主机"
+      "en": "Google Home update fixes Nest ‘Live View’ issues, improves Nest Hub and Gemini for speakers",
+      "vi": "Bản cập nhật Google Home khắc phục sự cố 'Chế độ xem trực tiếp' của Nest, cải thiện Nest Hub và Gemini cho loa"
     },
     "summary": {
-      "zh-CN": "IT之家 11 月 11 日消息，前《铁拳》系列总监、现任 VS Studio CEO 原田胜弘向来说话毫不客气。最近，他又在一场开发者座谈会上当着 XBOX 团队成员的面直言，希望微软别再推出 XBOX Series S 这样的主机。 当地时间 9 日，据外媒 Inven Global 报道，原田胜弘出席了在韩国举行的 2026 年主机游戏开发者大会。座谈会由前索尼总裁吉田修平主持，参与讨论的还有《剑星》开发商 Shift Up CTO 李东基、《弹丸论破》开发商 Too Kyo Games CEO 小高和刚、《赛博朋克 2077》开发商 CD…",
-      "vi": "IT之家 11 月 11 日消息，前《铁拳》系列总监、现任 VS Studio CEO 原田胜弘向来说话毫不客气。最近，他又在一场开发者座谈会上当着 XBOX 团队成员的面直言，希望微软别再推出 XBOX Series S 这样的主机。 当地时间 9 日，据外媒 Inven Global 报道，原田胜弘出席了在韩国举行的 2026 年主机游戏开发者大会。座谈会由前索尼总裁吉田修平主持，参与讨论的还有《剑星》开发商 Shift Up CTO 李东基、《弹丸论破》开发商 Too Kyo Games CEO 小高和刚、《赛博朋克 2077》开发商 CD…",
-      "en": "IT之家 11 月 11 日消息，前《铁拳》系列总监、现任 VS Studio CEO 原田胜弘向来说话毫不客气。最近，他又在一场开发者座谈会上当着 XBOX 团队成员的面直言，希望微软别再推出 XBOX Series S 这样的主机。 当地时间 9 日，据外媒 Inven Global 报道，原田胜弘出席了在韩国举行的 2026 年主机游戏开发者大会。座谈会由前索尼总裁吉田修平主持，参与讨论的还有《剑星》开发商 Shift Up CTO 李东基、《弹丸论破》开发商 Too Kyo Games CEO 小高和刚、《赛博朋克 2077》开发商 CD…"
+      "en": "A new Google Home update is rolling out with a fix for “Live View” issues affecting Nest Cam devices, improvements for the Nest Hub, upgrades for Gemini, and more.",
+      "vi": "Một bản cập nhật Google Home mới sắp ra mắt với bản sửa lỗi cho các sự cố “Chế độ xem trực tiếp” ảnh hưởng đến thiết bị Nest Cam, các cải tiến cho Nest Hub, các bản nâng cấp cho Gemini, v.v."
     },
     "translated": {
-      "vi": false,
-      "en": false
+      "vi": "machine"
+    }
+  },
+  "4280e51db786a571": {
+    "title": {
+      "en": "How to replace the battery on Pixel Tag [Video]",
+      "vi": "Cách thay pin trên Pixel Tag [Video]"
+    },
+    "summary": {
+      "en": "The battery on the Pixel Tag is rated for about a year, but what happens when you need to replace it? Here’s how to replace it.",
+      "vi": "Pin trên Pixel Tag được đánh giá là có tuổi thọ khoảng một năm, nhưng điều gì sẽ xảy ra khi bạn cần thay pin? Đây là cách để thay thế nó."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "2d8f602ac5a8eead": {
+    "title": {
+      "en": "Google’s Tabletop AI experiment lets you build custom collaboration apps",
+      "vi": "Thử nghiệm AI trên máy tính bảng của Google cho phép bạn xây dựng các ứng dụng cộng tác tùy chỉnh"
+    },
+    "summary": {
+      "en": "Google has cooked up a new experimental AI tool called Tabletop that generates customized collaborative hubs to help you coordinate with family, and friends. The Tabletop platform shares some visual similarities with workplace management apps like Asana and Monday, but with a…",
+      "vi": "Google đã phát triển một công cụ AI thử nghiệm mới có tên Tabletop nhằm tạo ra các trung tâm cộng tác tùy chỉnh để giúp bạn phối hợp với gia đình và bạn bè. Nền tảng Tabletop có một số điểm tương đồng về mặt hình ảnh với các ứng dụng quản lý nơi làm việc như Asana và Thứ Hai, nhưng với…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "0e7d9c07b64d127e": {
+    "title": {
+      "en": "Exclusive: Google’s hidden list of 134 apps that support Gemini task automation",
+      "vi": "Độc quyền: Danh sách ẩn gồm 134 ứng dụng của Google hỗ trợ tự động hóa tác vụ Gemini"
+    },
+    "summary": {
+      "en": "Android 17 QPR2 lists 114 apps, while Android Canary 2611 reveals 20 more in further testing.",
+      "vi": "Android 17 QPR2 liệt kê 114 ứng dụng, trong khi Android Canary 2611 tiết lộ thêm 20 ứng dụng nữa trong thử nghiệm sâu hơn."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "e697525464a27081": {
+    "title": {
+      "en": "YouTube Server Error 400 on Android is now fixed, Google confirms",
+      "vi": "Google xác nhận Lỗi máy chủ YouTube 400 trên Android hiện đã được sửa"
+    },
+    "summary": {
+      "en": "The second fix comes after Google's initial attempt failed to resolve the problem for everyone.",
+      "vi": "Bản sửa lỗi thứ hai được đưa ra sau nỗ lực ban đầu của Google không giải quyết được sự cố cho mọi người."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "9522c5d97ce1b1e9": {
+    "title": {
+      "en": "How to Make Sure an 'Onion' Site on the Dark Web Is Legitimate",
+      "vi": "Cách đảm bảo trang web 'Hành tây' trên Dark Web là hợp pháp"
+    },
+    "summary": {
+      "en": "Tor Browser has built-in signals that tell you if an onion site is legit.",
+      "vi": "Tor Browser có các tín hiệu tích hợp cho bạn biết liệu một trang web củ hành có hợp pháp hay không."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "2300a891d5e063b3": {
+    "title": {
+      "en": "iOS 27.3 adds new setting to bypass website cookie popups (eventually)",
+      "vi": "iOS 27.3 bổ sung cài đặt mới để bỏ qua cửa sổ bật lên cookie của trang web (cuối cùng)"
+    },
+    "summary": {
+      "en": "iOS 27.3 is currently in beta and packed with new features , including a ‘Global Privacy Control’ setting in Safari that could someday put an end to cookie consent pop-ups.",
+      "vi": "iOS 27.3 hiện đang ở giai đoạn thử nghiệm và được tích hợp nhiều tính năng mới, bao gồm cài đặt 'Kiểm soát quyền riêng tư toàn cầu' trong Safari mà một ngày nào đó có thể chấm dứt cửa sổ bật lên chấp thuận cookie."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "85d642bc02984b99": {
+    "title": {
+      "en": "You can now play Henry Cavill’s ‘Mustache Protocol’ game made on Googlebook [U]",
+      "vi": "Bây giờ bạn có thể chơi trò chơi 'Moustache Protocol' của Henry Cavill được thực hiện trên Googlebook [U]"
+    },
+    "summary": {
+      "en": "As teased before the launch, Henry Cavill has built a video game on Googlebook, and it’s called Mustache Protocol .",
+      "vi": "Như đã giới thiệu trước khi ra mắt, Henry Cavill đã xây dựng một trò chơi điện tử trên Googlebook và trò chơi này có tên là Mustache Protocol."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "0700d4902d53c230": {
+    "title": {
+      "en": "You can now buy the Pixel Tag, cases from Bellroy & Spigen available",
+      "vi": "Bây giờ bạn có thể mua Pixel Tag, có sẵn hộp đựng từ Bellroy & Spigen"
+    },
+    "summary": {
+      "en": "The Pixel Tag is now available for purchase at the Google Store and Amazon.",
+      "vi": "Thẻ Pixel hiện có sẵn để mua tại Google Store và Amazon."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "5f5de3b695d3378e": {
+    "title": {
+      "en": "Google reveals who can use Pixel’s Create My Widget, availability, and what it can access",
+      "vi": "Google tiết lộ ai có thể sử dụng tiện ích Tạo tiện ích của tôi của Pixel, tính sẵn có và những gì nó có thể truy cập"
+    },
+    "summary": {
+      "en": "Five countries, an English-only rollout, and a feature gap in the UK.",
+      "vi": "Năm quốc gia, triển khai chỉ bằng tiếng Anh và thiếu tính năng ở Vương quốc Anh."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "be907e6f364d6580": {
+    "title": {
+      "en": "10 Hacks Every Hulu User Should Know",
+      "vi": "10 thủ thuật mà người dùng Hulu nên biết"
+    },
+    "summary": {
+      "en": "Get the most out of your streaming and live TV subscription.",
+      "vi": "Tận dụng tối đa khả năng phát trực tuyến và đăng ký truyền hình trực tiếp của bạn."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "73aea5f2e0e77eb1": {
+    "title": {
+      "en": "10 Google Privacy Hacks Everyone Should Know",
+      "vi": "10 thủ thuật bảo mật của Google mà mọi người nên biết"
+    },
+    "summary": {
+      "en": "These hacks help reduce tracking and protect your Google account's data.",
+      "vi": "Những cách hack này giúp giảm việc theo dõi và bảo vệ dữ liệu tài khoản Google của bạn."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "2c8dc757d6a8546b": {
+    "title": {
+      "en": "Mount Thor raises $45 million to build Mac data centers for AI agents",
+      "vi": "Mount Thor huy động được 45 triệu USD để xây dựng trung tâm dữ liệu Mac cho các tác nhân AI"
+    },
+    "summary": {
+      "en": "Apple @ Work is exclusively brought to you by Mosyle , the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional-grade platform all the solutions necessary to seamlessly and automatically deploy, manage & protect Apple devices at work.…",
+      "vi": "Apple @ Work được Mosyle, Nền tảng hợp nhất duy nhất của Apple mang đến cho bạn độc quyền. Mosyle là giải pháp duy nhất tích hợp trong một nền tảng cấp chuyên nghiệp duy nhất tất cả các giải pháp cần thiết để triển khai, quản lý và bảo vệ các thiết bị Apple tại nơi làm việc một cách liền mạch và tự động.…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "d6a7aefd33114f62": {
+    "title": {
+      "en": "Microsoft confirms Windows security updates installation issues",
+      "vi": "Microsoft xác nhận sự cố cài đặt bản cập nhật bảo mật Windows"
+    },
+    "summary": {
+      "en": "Microsoft has confirmed reports that the November 2026 security updates are failing to install on Windows 11 systems with the October preview update.",
+      "vi": "Microsoft đã xác nhận các báo cáo rằng bản cập nhật bảo mật tháng 11 năm 2026 không cài đặt được trên các hệ thống Windows 11 với bản cập nhật xem trước tháng 10."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "d545fdc617b9aefd": {
+    "title": {
+      "en": "Oh, Palantir is ‘progressive’ now, is it?",
+      "vi": "Ồ, Palantir bây giờ đang 'cấp tiến' phải không?"
+    },
+    "summary": {
+      "en": "I had other things to do today, but Alex Karp's pathetic attempt to pivot back to the left gave me no choice but to put them on hold. Last week's elections were a bloodbath for the right, a problem for all the wannabe fash founders who had tied their political fortunes to a…",
+      "vi": "Tôi còn nhiều việc khác phải làm hôm nay, nhưng nỗ lực thảm hại của Alex Karp nhằm quay trở lại bên trái khiến tôi không còn lựa chọn nào khác ngoài việc tạm dừng chúng. Cuộc bầu cử tuần trước là một cuộc tắm máu cho phe cánh hữu, một vấn đề đối với tất cả những người muốn trở thành nhà sáng lập thời thượng, những…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "972eb5c163be44e3": {
+    "title": {
+      "en": "Microsoft fixes audio issues caused by September security updates",
+      "vi": "Microsoft khắc phục sự cố âm thanh do bản cập nhật bảo mật tháng 9 gây ra"
+    },
+    "summary": {
+      "en": "Microsoft says the November 2026 cumulative updates resolve USB audio issues plaguing Windows users who have installed security updates released since September.",
+      "vi": "Microsoft cho biết các bản cập nhật tích lũy tháng 11 năm 2026 giải quyết các vấn đề về âm thanh USB gây khó chịu cho người dùng Windows đã cài đặt các bản cập nhật bảo mật được phát hành kể từ tháng 9."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "ba110c77735afade": {
+    "title": {
+      "en": "Microsoft fixes Exchange sign-ins broken by Windows Server updates",
+      "vi": "Microsoft sửa lỗi đăng nhập Exchange bị hỏng do cập nhật Windows Server"
+    },
+    "summary": {
+      "en": "Microsoft has fixed Outlook sign-in and mail delivery issues on Exchange Server systems after installing the October 2026 Windows Server security updates.",
+      "vi": "Microsoft đã khắc phục sự cố đăng nhập và gửi thư Outlook trên hệ thống Exchange Server sau khi cài đặt bản cập nhật bảo mật Windows Server tháng 10 năm 2026."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "4e3de340b427e3b6": {
+    "title": {
+      "en": "Google’s November update is breaking Pixel cameras, but there’s an easy fix",
+      "vi": "Bản cập nhật tháng 11 của Google đang làm hỏng máy ảnh Pixel, nhưng có một cách khắc phục dễ dàng"
+    },
+    "summary": {
+      "en": "Cameras are going dark, literally.",
+      "vi": "Máy ảnh đang tối đi, theo nghĩa đen."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "c14e0f0a734d1070": {
+    "title": {
+      "en": "Fitbit Sense & Versa losing 3rd-party watch faces this month, existing downloads remain",
+      "vi": "Fitbit Sense & Versa mất mặt đồng hồ của bên thứ 3 trong tháng này, các bản tải xuống hiện có vẫn còn"
+    },
+    "summary": {
+      "en": "Google announced today that Fitbit Sense and Versa smartwatches will soon lose the ability to “install or update third-party apps and clocks.”",
+      "vi": "Hôm nay, Google đã thông báo rằng đồng hồ thông minh Fitbit Sense và Versa sẽ sớm mất khả năng “cài đặt hoặc cập nhật ứng dụng và đồng hồ của bên thứ ba”."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "0921b61b585bdf4e": {
+    "title": {
+      "en": "NASA's secret weapon in the lunar space race may be ... procurement reform?",
+      "vi": "Vũ khí bí mật của NASA trong cuộc chạy đua vào vũ trụ mặt trăng có thể là... cải cách mua sắm?"
+    },
+    "summary": {
+      "en": "\"The pace that's occurring, and the nature of the procurements, is unprecedented.\"",
+      "vi": "“Tốc độ đang diễn ra và tính chất của việc mua sắm là chưa từng có.”"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "2464a640b3fba604": {
+    "title": {
+      "en": "Big Walk used AI to fix a bug. Now the indie gaming world is having a reckoning.",
+      "vi": "Big Walk đã sử dụng AI để sửa lỗi. Giờ đây, thế giới game indie đang phải tính toán."
+    },
+    "summary": {
+      "en": "Any amount of AI coding is too much for many Independent Games Festival judges.",
+      "vi": "Đối với nhiều giám khảo của Liên hoan trò chơi độc lập, bất kỳ số lượng mã hóa AI nào cũng là quá nhiều."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "588bfac0a6020513": {
+    "title": {
+      "en": "Man's secret use of synthetic testosterone for cows nearly destroyed his heart",
+      "vi": "Người đàn ông bí mật sử dụng testosterone tổng hợp cho bò gần như phá hủy trái tim của anh ta"
+    },
+    "summary": {
+      "en": "Doctors warn that such life-threatening cases are becoming more common.",
+      "vi": "Các bác sĩ cảnh báo rằng những trường hợp nguy hiểm đến tính mạng như vậy đang trở nên phổ biến hơn."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "199c6768f8d178f7": {
+    "title": {
+      "en": "If you use Outlook.com e-mail service, create completely new pseudonym and set it as default and only address for accessing the account",
+      "vi": "Nếu bạn sử dụng dịch vụ e-mail Outlook.com, hãy tạo bút danh hoàn toàn mới và đặt nó làm địa chỉ mặc định và duy nhất để truy cập tài khoản"
+    },
+    "summary": {
+      "en": "NEVER give that new e-mail address to anyone and DO NOT use it for registration anywhere. If your online accounts get breached, hacker knows your e-mail address and could use it to access your Outlook.com account (especially if you're using the same password). By using…",
+      "vi": "KHÔNG BAO GIỜ cung cấp địa chỉ email mới đó cho bất kỳ ai và KHÔNG sử dụng nó để đăng ký ở bất cứ đâu. Nếu tài khoản trực tuyến của bạn bị xâm phạm, hacker sẽ biết địa chỉ email của bạn và có thể sử dụng địa chỉ đó để truy cập vào tài khoản Outlook.com của bạn (đặc biệt nếu bạn đang sử dụng cùng một mật khẩu). Bằng…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "6cc520c9004f9169": {
+    "title": {
+      "en": "Why Websites Show the Wrong Server Location When You Use a VPN",
+      "vi": "Tại sao trang web hiển thị sai vị trí máy chủ khi bạn sử dụng VPN"
+    },
+    "summary": {
+      "en": "How to fix those VPN-related location mismatches.",
+      "vi": "Cách khắc phục các vị trí không khớp liên quan đến VPN."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "d6c7fd14cac1a720": {
+    "title": {
+      "en": "10 Hacks Every Reddit User Should Know",
+      "vi": "10 thủ thuật mà mọi người dùng Reddit nên biết"
+    },
+    "summary": {
+      "en": "These hacks help you search, post, and lurk on Reddit.",
+      "vi": "Những thủ thuật này giúp bạn tìm kiếm, đăng bài và ẩn nấp trên Reddit."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "07935a3f8c21e28a": {
+    "title": {
+      "en": "Securing an EOL Host Against PHP2Shell",
+      "vi": "Bảo mật máy chủ EOL chống lại PHP2Shell"
+    },
+    "summary": {
+      "en": "This guide details how to decouple the PHP runtime from your host operating system. By running an",
+      "vi": "Hướng dẫn này nêu chi tiết cách tách thời gian chạy PHP khỏi hệ điều hành máy chủ của bạn. Bằng cách chạy một"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "ccb31534d9eef877": {
+    "title": {
+      "vi": "25 năm iPod lên kệ: 1.000 bài hát trong túi và cách Apple thay đổi việc nghe nhạc",
+      "en": "25 years of the iPod: 1,000 songs in your pocket and how Apple changed music listening"
+    },
+    "summary": {
+      "vi": "Hôm nay, muốn nghe một bài hát chỉ cần chạm vào tên nó, nhạc vang lên ngay. Không ai còn nghĩ về chuyện đó nữa, vì nó đã trở thành điều hiển nhiên. Nhưng 25 năm trước, nghe nhạc là chuyện mang",
+      "en": "Today, if you want to listen to a song, just touch its name and the music will play immediately. No one thinks about it anymore, because it has become obvious. But 25 years ago, listening to music was a thing"
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "de6b8908ed1c6df3": {
+    "title": {
+      "vi": "Windows 11 tháng 11: menu chuột phải tùy chỉnh, cài lại từ cloud, tự bật Memory Integrity",
+      "en": "Windows 11 November: custom right-click menu, reinstall from the cloud, automatically enable Memory Integrity"
+    },
+    "summary": {
+      "vi": "Bản cập nhật bảo mật tháng 11 của Windows 11 (KB5132061) đã phát hành từ ngày 10/11 theo giờ Mỹ, tức rạng sáng 11/11 giờ Việt Nam. Đây là bản bắt buộc, cài qua Windows Update như mọi tháng. Điểm",
+      "en": "Windows 11's November security update (KB5132061) was released on November 10 US time, the early morning of November 11 Vietnam time. This is a mandatory version, installed via Windows Update like every month. Point"
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "7c7fe080c1f9dbc7": {
+    "title": {
+      "zh-CN": "让老音箱焕发新生：Home Assistant Connect AUX-2 首发体验",
+      "vi": "Mang lại sức sống mới cho những chiếc loa cũ: Home Assistant Connect Trải nghiệm lần đầu ra mắt UX-2",
+      "en": "Give old speakers new life: Home Assistant Connect AUX-2 first launch experience"
+    },
+    "summary": {
+      "zh-CN": "玩智能家居这几年，灯光、传感器和开关基本已经靠着Matter和HomeAssistant打通了，唯独多房间音频（Multi-roomAudio）还停留在各自为战的阶段。想让客厅的HomePod、书房的 ... 查看全文",
+      "vi": "Trong vài năm chơi nhà thông minh, đèn, cảm biến và công tắc về cơ bản đã được kết nối thông qua Matter và HomeAssistant, nhưng âm thanh đa phòng (Multi-room Audio) vẫn đang trong giai đoạn tự đấu tranh. Bạn có muốn HomePod trong phòng khách và trong phòng học... Xem toàn văn",
+      "en": "In the past few years of playing smart home, lights, sensors and switches have basically been connected through Matter and HomeAssistant, but multi-room audio (Multi-room Audio) is still at the stage of fighting on its own. Do you want HomePod in the living room and in the study... View full text"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "531eedc828de0bde": {
+    "title": {
+      "zh-CN": "从优胜美地到金门大桥：跟着 macOS 游览加州",
+      "vi": "Từ Yosemite đến Cầu Cổng Vàng: Du lịch California với macOS",
+      "en": "From Yosemite to the Golden Gate Bridge: Travel California with macOS"
+    },
+    "summary": {
+      "zh-CN": "陪伴 Mac 用户十余年的加州风景，走出屏幕后究竟是什么模样？ 查看全文",
+      "vi": "Khung cảnh California đã đồng hành cùng người dùng Mac hơn chục năm, sau khi bước ra khỏi màn hình sẽ trông như thế nào? Xem toàn văn",
+      "en": "The California scenery that has accompanied Mac users for more than ten years, what does it look like after stepping out of the screen? View full text"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "e271f6088df4e0a0": {
+    "title": {
+      "zh-CN": "RetroSweeper Go：复古外观、更有手感的扫雷游戏",
+      "vi": "RetroSweeper Go: Một trò chơi quét mìn với ngoại hình cổ điển và cảm giác tốt hơn",
+      "en": "RetroSweeper Go: A minesweeper game with retro appearance and better feel"
+    },
+    "summary": {
+      "zh-CN": "复古游戏机风格的界面和「手柄」设计，希望可以唤起你的一些回忆。 查看全文",
+      "vi": "Giao diện theo phong cách retro của máy chơi game và thiết kế \"tay cầm\" hy vọng sẽ gợi lại một số kỷ niệm cho bạn. Xem toàn văn",
+      "en": "The retro game console style interface and \"handle\" design hope to evoke some memories for you. View full text"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "3004d3080b701fde": {
+    "title": {
+      "zh-CN": "报名人数创下新高，第十一届「移动应用创新赛」圆满落幕",
+      "vi": "Số lượng người đăng ký đạt mức cao mới và \"Cuộc thi đổi mới ứng dụng di động\" lần thứ 11 đã kết thúc thành công tốt đẹp",
+      "en": "The number of applicants reached a new high, and the 11th \"Mobile Application Innovation Competition\" concluded successfully"
+    },
+    "summary": {
+      "zh-CN": "北京时间11月8日，第十一届「移动应用创新赛」在浙江大学紫金港校区完成决赛评选并举行颁奖典礼。从2016年的161所高校开始，这项由全国高等学校计算机教育研究会主办、浙江大学与Apple联合承办的比赛 ... 查看全文",
+      "vi": "Vào ngày 8 tháng 11, giờ Bắc Kinh, \"Cuộc thi đổi mới ứng dụng di động\" lần thứ 11 đã hoàn thành vòng tuyển chọn cuối cùng và tổ chức lễ trao giải tại Cơ sở Zijingang của Đại học Chiết Giang. Bắt đầu từ 161 trường cao đẳng và đại học vào năm 2016, cuộc thi này được tài trợ bởi Hiệp hội Nghiên cứu Giáo dục Máy tính Đại…",
+      "en": "On November 8, Beijing time, the 11th \"Mobile Application Innovation Competition\" completed the final selection and held an awards ceremony at Zijingang Campus of Zhejiang University. Starting from 161 colleges and universities in 2016, this competition sponsored by the National College Computer Education Research…"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "b85682977a4d508d": {
+    "title": {
+      "zh-CN": "开启 Mac 的下一世代：MacBook Pro (PROLED XDR) 首发体验",
+      "vi": "Mở khóa thế hệ Mac tiếp theo: Trải nghiệm lần đầu ra mắt MacBook Pro (PROLED XDR)",
+      "en": "Unlocking the next generation of Mac: MacBook Pro (PROLED XDR) first launch experience"
+    },
+    "summary": {
+      "zh-CN": "全新 MacBook Pro，开启 Mac 的下一个世代。 查看全文",
+      "vi": "MacBook Pro mới mở ra thế hệ tiếp theo của Mac. Xem toàn văn",
+      "en": "The new MacBook Pro opens the next generation of Mac. View full text"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "e6cc63b6a33b8c77": {
+    "title": {
+      "zh-CN": "不用困在厨房也能做出好饭：三十道省事家常蒸菜",
+      "vi": "Làm bữa ăn ngon không bị kẹt trong bếp: 30 món hấp dễ làm tại nhà",
+      "en": "Make good meals without being stuck in the kitchen: 30 easy-to-make steamed dishes at home"
+    },
+    "summary": {
+      "zh-CN": "蒸锅真是懒人做饭好帮手。 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
+      "vi": "Nồi hấp thực sự là trợ thủ đắc lực cho những người lười nấu nướng. Xem toàn bộ nội dung Bài viết này là một bài viết thành viên từ \"Single Article\". Bạn có thể đọc toàn văn sau khi đăng ký.",
+      "en": "The steamer is really a great helper for lazy people when cooking. View the full text This article is a member article from \"Single Article\". You can read the full text after subscribing."
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "c5031a75d4fd8625": {
+    "title": {
+      "zh-CN": "苹果产品那些不够颠覆，却值得被学习的细节",
+      "vi": "Chi tiết sản phẩm Apple chưa đủ sức lật đổ nhưng đáng học hỏi",
+      "en": "Details of Apple products that are not subversive enough but worth learning from"
+    },
+    "summary": {
+      "zh-CN": "Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ... 查看全文",
+      "vi": "Được đề xuất trên trang chủ Matrix Matrix là một cộng đồng viết lách thiểu số. Chúng tôi chủ trương chia sẻ trải nghiệm thực tế về sản phẩm, kinh nghiệm và suy nghĩ thực tế. Đôi khi, chúng tôi sẽ chọn những bài viết chất lượng cao nhất của Matrix để giới thiệu những trải nghiệm và ý kiến ​​xác thực nhất từ ​​người…",
+      "en": "Recommended on Matrix home page Matrix is ​​a minority writing community. We advocate sharing real product experiences, practical experiences and thoughts. We will occasionally select Matrix's highest-quality articles to showcase the most authentic experiences and opinions from users. The article represents the…"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "36cdd515692bb5fd": {
+    "title": {
+      "zh-CN": "一个 05 后的个人数码编年史",
+      "vi": "Biên niên sử kỹ thuật số cá nhân của thế hệ sau năm 2005",
+      "en": "A personal digital chronicle of the post-2005 generation"
+    },
+    "summary": {
+      "zh-CN": "我只想回应自己的感受，自己的记忆，只是因为那时候我满腔少年心气，对一切都充满好奇，对未来充满憧憬。 查看全文",
+      "vi": "Tôi chỉ muốn đáp lại những cảm xúc và kỷ niệm của chính mình, chỉ vì lúc đó tôi tràn đầy tinh thần trẻ trung, đầy tò mò về mọi thứ và đầy khao khát về tương lai. Xem toàn văn",
+      "en": "I just want to respond to my own feelings and memories, just because at that time I was full of youthful spirit, full of curiosity about everything, and full of longing for the future. View full text"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "a1fe8bc6737ef5a3": {
+    "title": {
+      "zh-CN": "派评 | 近期值得关注的 App",
+      "vi": "Paiping | Những ứng dụng đáng quan tâm trong thời gian tới",
+      "en": "Paiping | Apps worthy of attention in the near future"
+    },
+    "summary": {
+      "zh-CN": ">下载少数派客户端、关注少数派公众号，解锁全新阅读体验📰>实用、好用的正版软件，少数派为你呈现🚀 查看全文",
+      "vi": ">Tải xuống ứng dụng khách Thiểu số, theo dõi tài khoản chính thức của Thiểu số và mở khóa trải nghiệm đọc mới📰>Phần mềm chính hãng thiết thực và dễ sử dụng, Quà tặng Thiểu số dành cho bạn🚀 Xem toàn văn",
+      "en": ">Download the Minority client, follow the Minority official account, and unlock a new reading experience📰>Practical and easy-to-use genuine software, Minority presents to you🚀 View full text"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "e7a0388e146e1f5a": {
+    "title": {
+      "zh-CN": "一家人的客厅，和一个人的深夜 — Sonos Beam Ultra 与 Ace Ultra 体验",
+      "vi": "Phòng khách của một gia đình và đêm khuya của một người - Trải nghiệm Sonos Beam Ultra và Ace Ultra",
+      "en": "A family's living room, and a person's late night - Sonos Beam Ultra and Ace Ultra experience"
+    },
+    "summary": {
+      "zh-CN": "本文是少数派联合Sonos发起的SonosPlay众测活动（第二期）「最佳体验官」奖项获奖文章，奖品为免费保留送测的SonosAceUltra。除本文外，本期获得优秀体验官的作者及文章是：mivans ... 查看全文",
+      "vi": "Bài viết này là bài viết đoạt giải \"Cán bộ trải nghiệm tốt nhất\" trong sự kiện thử nghiệm công khai SonosPlay (giai đoạn hai) do Minority Group và Sonos khởi xướng. Giải thưởng là một Sonos Ace Ultra miễn phí có thể được đặt trước để thử nghiệm. Ngoài bài viết này, các tác giả, bài viết đạt danh hiệu Cán bộ có kinh…",
+      "en": "This article is the winning article for the \"Best Experience Officer\" award in the SonosPlay public testing event (second phase) initiated by Minority Group and Sonos. The prize is a free Sonos Ace Ultra that can be reserved for testing. In addition to this article, the authors and articles that won the title of…"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "5a6897e680ca8af9": {
+    "title": {
+      "en": "Techie uses voltage glitching hack to turn $2,500 Nvidia 8GB cryptomining GPU into a full-fat $20,000 A100 with 80GB of VRAM",
+      "vi": "Techie sử dụng thủ thuật gây nhiễu điện áp để biến GPU khai thác tiền điện tử Nvidia 8GB trị giá 2.500 USD thành một chiếc A100 trị giá 20.000 USD với 80GB VRAM"
+    },
+    "summary": {
+      "en": "A techie turned a $2,500 CMP-170HX 8GB mining card into a full-fat $20,000 A100 80GB by carefully blowing onboard fuses to unlock entire VRAM and shader modules.",
+      "vi": "Một kỹ thuật viên đã biến thẻ khai thác CMP-170HX 8GB trị giá 2.500 USD thành A100 80GB trị giá 20.000 USD bằng cách cẩn thận thổi cầu chì tích hợp để mở khóa toàn bộ mô-đun VRAM và bộ đổ bóng."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "aa42eae91e38c303": {
+    "title": {
+      "en": "The best Android browser isn’t on the Play Store. Here’s how to install it",
+      "vi": "Trình duyệt Android tốt nhất không có trên Play Store. Đây là cách cài đặt nó"
+    },
+    "summary": {
+      "en": "Chrome who? This browser plays by different rules.",
+      "vi": "Chrome là ai? Trình duyệt này chơi theo các quy tắc khác nhau."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "dc46b7ae476678bc": {
+    "title": {
+      "en": "A Google TV Ambient Mode issue is causing repetitive photo slideshows and frozen screens",
+      "vi": "Sự cố ở Chế độ môi trường xung quanh của Google TV đang khiến trình chiếu ảnh lặp đi lặp lại và màn hình bị treo"
+    },
+    "summary": {
+      "en": "Rolling back recent updates appears to fix the problem.",
+      "vi": "Khôi phục các bản cập nhật gần đây có vẻ như khắc phục được sự cố."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "5cecc12e376b047e": {
+    "title": {
+      "en": "Beyond code generation: A developer’s guide to agentic engineering",
+      "vi": "Ngoài việc tạo mã: Hướng dẫn dành cho nhà phát triển về kỹ thuật tác tử"
+    },
+    "summary": {
+      "en": "Writing code got faster. The work around it didn't. See how you can plan, write code, review changes, and investigate production issues with GitHub Copilot, and what work still needs your judgment.",
+      "vi": "Viết mã nhanh hơn. Công việc xung quanh nó thì không. Xem cách bạn có thể lập kế hoạch, viết mã, xem xét các thay đổi và điều tra các vấn đề sản xuất với GitHub Copilot và công việc nào vẫn cần bạn phán xét."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "449ca857f89317e8": {
+    "title": {
+      "en": "EA producer found 20,000 archival media assets in secret physical vault at its HQ",
+      "vi": "Nhà sản xuất EA đã tìm thấy 20.000 tài sản truyền thông lưu trữ trong kho vật lý bí mật tại trụ sở chính của mình"
+    },
+    "summary": {
+      "en": "The discovery of thousands of archival media assets led to the creation of Anniversary Editions of some classic titles.",
+      "vi": "Việc phát hiện ra hàng nghìn tài sản phương tiện lưu trữ đã dẫn đến việc tạo ra Phiên bản kỷ niệm của một số tựa sách cổ điển."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "7d3da8f40037dca8": {
+    "title": {
+      "en": "Going deep on local AI performance benchmarking with Apple’s Mac Studio with M5 Ultra taking on Nvidia DGX Spark",
+      "vi": "Đi sâu vào việc đo điểm chuẩn hiệu suất AI cục bộ với Mac Studio của Apple với M5 Ultra cạnh tranh với Nvidia DGX Spark"
+    },
+    "summary": {
+      "en": "But if you're thinking about dropping over $10K for the purpose of building a local AI inference setup, is a Mac Studio right for you?",
+      "vi": "Nhưng nếu bạn đang nghĩ đến việc chi hơn 10 nghìn đô la cho mục đích xây dựng thiết lập suy luận AI cục bộ, thì Mac Studio có phù hợp với bạn không?"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "2dcde4b665668871": {
+    "title": {
+      "en": "What happens to mathematics when AI becomes an oracle?",
+      "vi": "Điều gì xảy ra với toán học khi AI trở thành nhà tiên tri?"
+    },
+    "summary": {
+      "en": "Mathematician Steven Strogatz discusses his new book, Big Math: The Hidden Codes That Run Our World .",
+      "vi": "Nhà toán học Steven Strogatz thảo luận về cuốn sách mới của ông, Big Math: The Hidden Codes That Run Our World."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "2551552469f4fa95": {
+    "title": {
+      "en": "Linus Torvalds says that AI fixes drove most of the progress in latest Linux kernel",
+      "vi": "Linus Torvalds nói rằng các bản sửa lỗi AI đã thúc đẩy phần lớn tiến bộ trong nhân Linux mới nhất"
+    },
+    "summary": {
+      "en": "Linus Torvalds thinks that AI fixes drove most of the progress in Linux kernel 7.4rc2 — BPF saw more AI-written fixes than bug reports, possibly indicating a tidal shift",
+      "vi": "Linus Torvalds cho rằng các bản sửa lỗi AI đã thúc đẩy phần lớn tiến bộ trong nhân Linux 7.4rc2 - BPF thấy nhiều bản sửa lỗi do AI viết hơn là các báo cáo lỗi, có thể cho thấy một sự thay đổi thủy triều"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "bda5de5f5ee664c9": {
+    "title": {
+      "en": "Microsoft Fixes Nearly 1,100 Security Vulnerabilities",
+      "vi": "Microsoft vá gần 1.100 lỗ hổng bảo mật"
+    },
+    "summary": {
+      "en": "Microsoft did another four-digit patch drop today, releasing updates to fix almost 1,100 security vulnerabilities in its Windows operating systems and supported software. This month's Patch Tuesday addresses 63 critical flaws -- including a zero-day in Microsoft Outlook -- and…",
+      "vi": "Hôm nay, Microsoft đã thực hiện một bản vá gồm bốn chữ số khác, phát hành các bản cập nhật để sửa gần 1.100 lỗ hổng bảo mật trong hệ điều hành Windows và phần mềm được hỗ trợ. Bản vá Thứ Ba của tháng này giải quyết 63 lỗi nghiêm trọng -- bao gồm cả lỗi 0 ngày trong Microsoft Outlook -- và…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "98429c255b62a883": {
+    "title": {
+      "en": "Google is bringing iOS-style Settings icons to Chrome for Android",
+      "vi": "Google đang đưa các biểu tượng Cài đặt kiểu iOS lên Chrome dành cho Android"
+    },
+    "summary": {
+      "en": "The UI makeover is taking shape in Canary.",
+      "vi": "Sự thay đổi giao diện người dùng đang được hình thành ở Canary."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "6539989807df13fb": {
+    "title": {
+      "en": "10 Hacks Every Waze User Should Know",
+      "vi": "10 thủ thuật mà mọi người dùng Waze nên biết"
+    },
+    "summary": {
+      "en": "Get the most out of this crowdsourced navigation app.",
+      "vi": "Tận dụng tối đa ứng dụng điều hướng có nguồn lực từ cộng đồng này."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "bae5b54de648f96d": {
+    "title": {
+      "en": "Five Race-Day Smartwatch Hacks Every Marathon Runner Should Know",
+      "vi": "Năm thủ thuật dành cho đồng hồ thông minh trong ngày đua mà mọi vận động viên chạy marathon nên biết"
+    },
+    "summary": {
+      "en": "You don't need the best Garmin to run a great race.",
+      "vi": "Bạn không cần chiếc Garmin tốt nhất để chạy một cuộc đua tuyệt vời."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "0ce0b41235fb1e8a": {
+    "title": {
+      "en": "Japanese arcades suffer week-long blackout following Sega server hack",
+      "vi": "Các trò chơi điện tử ở Nhật Bản bị mất điện kéo dài một tuần sau vụ hack máy chủ Sega"
+    },
+    "summary": {
+      "en": "The sensory overload in video game arcades in Japan was eerily absent from some venues this week.",
+      "vi": "Sự quá tải về cảm giác trong các trò chơi điện tử ở Nhật Bản đã vắng mặt một cách kỳ lạ ở một số địa điểm trong tuần này."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "c3e82675d569c730": {
+    "title": {
+      "en": "Grok Build coding agent leaks oodles of confidential info, some belonging to SpaceXSI",
+      "vi": "Tác nhân mã hóa Grok Build rò rỉ rất nhiều thông tin bí mật, một số thuộc về SpaceXSI"
+    },
+    "summary": {
+      "en": "Researcher finds 35,000 Grok Build apps wide open to anyone who looked for them.",
+      "vi": "Nhà nghiên cứu nhận thấy 35.000 ứng dụng Grok Build mở rộng cho bất kỳ ai tìm kiếm chúng."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "8cb32db05a65d2b9": {
+    "title": {
+      "en": "Pixel phones getting new icon styles, Create My Widget, and more in November Pixel Drop",
+      "vi": "Điện thoại Pixel nhận được các kiểu biểu tượng mới, Tạo tiện ích của tôi và hơn thế nữa trong tháng 11 Pixel Drop"
+    },
+    "summary": {
+      "en": "Spruce up your home screen with expanded custom icons and AI-generated widgets.",
+      "vi": "Làm nổi bật màn hình chính của bạn với các biểu tượng tùy chỉnh mở rộng và các tiện ích do AI tạo ra."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "84934b4fdd2aba87": {
+    "title": {
+      "en": "Elon Musk wants to build a s $24 billion gas-powered AI supercomputer in Texas company town",
+      "vi": "Elon Musk muốn xây dựng siêu máy tính AI chạy bằng khí đốt trị giá 24 tỷ USD tại thị trấn công ty Texas"
+    },
+    "summary": {
+      "en": "The city of Starbase, Texas, is set to vote on a proposed $24 billion data center to be built within its limits, but the SpaceX company town may not provide the friendly regulatory environment that owner Elon Musk might have hoped for.",
+      "vi": "Thành phố Starbase, Texas, chuẩn bị bỏ phiếu về một trung tâm dữ liệu trị giá 24 tỷ USD được đề xuất xây dựng trong giới hạn của nó, nhưng thị trấn công ty SpaceX có thể không cung cấp môi trường pháp lý thân thiện mà chủ sở hữu Elon Musk có thể hy vọng."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "f6ce9f0cc130556c": {
+    "title": {
+      "en": "Ukrainian drone operations squeezed by fiber optic cable shortage triggered by AI data center buildouts",
+      "vi": "Hoạt động của máy bay không người lái Ukraine bị hạn chế do thiếu cáp quang do xây dựng trung tâm dữ liệu AI"
+    },
+    "summary": {
+      "en": "Ukrainian drone manufacturer BlueBird Tech says that limited fiber optic supplies are making it harder to build jam-proof fiber optic drones.",
+      "vi": "Nhà sản xuất máy bay không người lái Ukraine BlueBird Tech cho biết nguồn cung cáp quang hạn chế đang khiến việc chế tạo máy bay không người lái bằng cáp quang chống kẹt trở nên khó khăn hơn."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "3c310eb5a856f1fa": {
+    "title": {
+      "en": "Hundreds of streaming services and nothing to watch",
+      "vi": "Hàng trăm dịch vụ phát trực tuyến và không có gì để xem"
+    },
+    "summary": {
+      "en": "Most viewers wish there was a TV Guide for streaming.",
+      "vi": "Hầu hết người xem đều mong muốn có Hướng dẫn truyền hình để phát trực tuyến."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "429d7bb9a857af21": {
+    "title": {
+      "en": "Learn Linux and Cybersecurity Skills With Hands-on Interactive Labs",
+      "vi": "Tìm hiểu các kỹ năng về Linux và an ninh mạng với Phòng thí nghiệm tương tác thực hành"
+    },
+    "summary": {
+      "en": "LabEx is an AI-assisted educational platform that focuses on learning-by-doing by providing you hands-on labs, flashcards, quizzes, and playgrounds to practice in simulated environment.",
+      "vi": "LabEx là một nền tảng giáo dục được AI hỗ trợ, tập trung vào việc vừa học vừa làm bằng cách cung cấp cho bạn các phòng thí nghiệm thực hành, thẻ nhớ, câu đố và sân chơi để thực hành trong môi trường mô phỏng."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "299ae40032fa98da": {
+    "title": {
+      "en": "Agent Name Service is Now Part of The Linux Foundation",
+      "vi": "Dịch vụ tên đại lý hiện là một phần của Quỹ Linux"
+    },
+    "summary": {
+      "en": "ANS lets AI agents prove who they are, much like a domain name and its certificate do for a website.",
+      "vi": "ANS cho phép các tác nhân AI chứng minh họ là ai, giống như tên miền và chứng chỉ của nó dành cho một trang web."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "4c3fc67588a16cb6": {
+    "title": {
+      "en": "Sprout Pi lets old iPods run Linux apps and stream Spotify",
+      "vi": "Sprout Pi cho phép iPod cũ chạy ứng dụng Linux và phát trực tuyến Spotify"
+    },
+    "summary": {
+      "en": "Sprout is an open source replacement motherboard for iPods that keeps the original screen and click wheel, but adds Wi-Fi, Bluetooth and streaming apps. You're reading Sprout Pi lets old iPods run Linux apps and stream Spotify , a blog post from OMG! Ubuntu . Do not reproduce…",
+      "vi": "Sprout là bo mạch chủ thay thế mã nguồn mở dành cho iPod, giữ nguyên màn hình và bánh xe bấm ban đầu nhưng bổ sung thêm các ứng dụng Wi-Fi, Bluetooth và phát trực tuyến. Bạn đang đọc Sprout Pi cho phép iPod cũ chạy ứng dụng Linux và phát trực tuyến Spotify, một bài đăng trên blog từ OMG! Ubuntu . Đừng tái hiện…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "c2329d895dabfaad": {
+    "title": {
+      "en": "Kitty 0.50 Picks Up Where You Left Off After a System Restart",
+      "vi": "Kitty 0.50 tiếp tục nơi bạn đã dừng lại sau khi khởi động lại hệ thống"
+    },
+    "summary": {
+      "en": "The release also adds docked windows, three new cursor trail shaders, and touchscreen support on Wayland.",
+      "vi": "Bản phát hành cũng bổ sung thêm các cửa sổ được gắn đế, ba trình đổ bóng con trỏ mới và hỗ trợ màn hình cảm ứng trên Wayland."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "fc6dfb9997af6c01": {
+    "title": {
+      "en": "Global menu extension puts app menus in GNOME’s top panel",
+      "vi": "Tiện ích mở rộng menu toàn cầu đặt các menu ứng dụng vào bảng trên cùng của Gnome"
+    },
+    "summary": {
+      "en": "A new global menu extension for GNOME Shell was released this week, and unlike ones you may might tried (and given up on) in the past, this one seems to work well. Earlier global menu efforts have been scuppered by Wayland, API changes and the fact that many modern Linux apps no…",
+      "vi": "Một tiện ích mở rộng menu toàn cầu mới cho Gnome Shell đã được phát hành trong tuần này và không giống như những tiện ích mở rộng mà bạn có thể đã thử (và từ bỏ) trước đây, tiện ích mở rộng menu này dường như hoạt động tốt. Những nỗ lực thực đơn toàn cầu trước đây đã bị thất bại bởi Wayland, những thay đổi về API và…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "adf86a07bea86c21": {
+    "title": {
+      "en": "Asahi Linux Drops MIT and Goes Full GPL After AI Tools Were Used to Steal Unreleased Code",
+      "vi": "Asahi Linux loại bỏ MIT và đạt GPL đầy đủ sau khi các công cụ AI được sử dụng để đánh cắp mã chưa được phát hành"
+    },
+    "summary": {
+      "en": "Every Asahi Linux repository is moving to GPL v2 or later, after bad actors lifted unreleased code and ran it through LLMs to hide where it came from.",
+      "vi": "Mọi kho lưu trữ Asahi Linux đều đang chuyển sang GPL v2 trở lên, sau khi kẻ xấu lấy đi mã chưa được phát hành và chạy nó qua LLM để che giấu nguồn gốc của nó."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "4b16c73a6f19f952": {
+    "title": {
+      "en": "The Company Behind GameOS is Now Building an AI Desktop OS Based on Linux",
+      "vi": "Công ty đằng sau GameOS hiện đang xây dựng hệ điều hành máy tính để bàn AI dựa trên Linux"
+    },
+    "summary": {
+      "en": "KORA is due in 2027 and will come to Snapdragon-powered PCs thanks to Qualcomm collaborating with the devs.",
+      "vi": "KORA dự kiến ​​ra mắt vào năm 2027 và sẽ xuất hiện trên PC chạy Snapdragon nhờ sự hợp tác của Qualcomm với các nhà phát triển."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "7d9408a944d06f63": {
+    "title": {
+      "en": "NeoVim Too Complex? Try Helix as Your First Modal Editor",
+      "vi": "NeoVim quá phức tạp? Hãy thử Helix làm Trình chỉnh sửa phương thức đầu tiên của bạn"
+    },
+    "summary": {
+      "en": "Helix is an underrated gem when it comes to modal editors like Vim and Neovim.",
+      "vi": "Helix là một viên ngọc quý bị đánh giá thấp khi nói đến các trình soạn thảo phương thức như Vim và Neovim."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "c3235b31ad6ad564": {
+    "title": {
+      "en": "I Tried The Weird New Mini Window Feature in Firefox 160",
+      "vi": "Tôi đã thử tính năng Cửa sổ nhỏ mới kỳ lạ trong Firefox 160"
+    },
+    "summary": {
+      "en": "An early version has arrived with Firefox 160, letting you move a tab or a selected part of a page into its own mini window. Does that serve any purpose?",
+      "vi": "Phiên bản đầu tiên đã xuất hiện cùng với Firefox 160, cho phép bạn di chuyển một tab hoặc một phần đã chọn của trang vào cửa sổ nhỏ của chính nó. Điều đó có phục vụ mục đích nào không?"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "df43f51ad39542a8": {
+    "title": {
+      "en": "\"First We Take Manhattan\": DHH on Omarchy, AI, Asahi and Winning the Linux Desktop",
+      "vi": "\"Đầu tiên chúng ta chiếm Manhattan\": DHH về Omarchy, AI, Asahi và giành được máy tính để bàn Linux"
+    },
+    "summary": {
+      "en": "Asahi’s licence change? Doesn’t matter. Vibe coded plugins? A feature. Critics? Their loss. DHH holds nothing back on Omarchy, AI and the future of the Linux desktop.",
+      "vi": "Giấy phép thay đổi của Asahi? Không quan trọng. Plugin mã hóa Vibe? Một tính năng. Các nhà phê bình? Sự mất mát của họ. DHH không ngần ngại gì về Omarchy, AI và tương lai của máy tính để bàn Linux."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "bcf6c89c93141a0c": {
+    "title": {
+      "en": "High Tide (Linux Tidal Client) adds playlist editing, artist blocking",
+      "vi": "High Tide (Linux Tidal Client) thêm tính năng chỉnh sửa danh sách phát, chặn nghệ sĩ"
+    },
+    "summary": {
+      "en": "A new version of High Tide, an unofficial TIDAL music streaming app for Linux built with GTK4/libdwaita, is out. Hight Tide 1.6.0 plumbs in support more features found in the paid streaming service’s official clients, including the ability to block artists and tracks for…",
+      "vi": "Phiên bản mới của High Tide, một ứng dụng phát nhạc trực tuyến TIDAL không chính thức dành cho Linux được xây dựng bằng GTK4/libdwaita, đã ra mắt. Hight Tide 1.6.0 hỗ trợ nhiều tính năng hơn có trong ứng dụng khách chính thức của dịch vụ phát trực tuyến trả phí, bao gồm khả năng chặn nghệ sĩ và bản nhạc cho…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "ba55e776ed4e6d29": {
+    "title": {
+      "en": "An easier way to enter characters with accent marks on Ubuntu",
+      "vi": "Cách dễ dàng hơn để nhập các ký tự có dấu trọng âm trên Ubuntu"
+    },
+    "summary": {
+      "en": "Typing accented characters on Ubuntu isn’t as easy as it is on macOS (or modern smartphone keyboards), where you just have to a key to see available characters appear in a pop-over, and then pick one. Accent Hold is a GNOME Shell extension that adds macOS-style press-and-hold…",
+      "vi": "Việc nhập các ký tự có dấu trên Ubuntu không dễ dàng như trên macOS (hoặc bàn phím điện thoại thông minh hiện đại), nơi bạn chỉ cần nhấn một phím để xem các ký tự có sẵn xuất hiện trong cửa sổ bật lên, sau đó chọn một ký tự. Accent Hold là một tiện ích mở rộng của Gnome Shell bổ sung tính năng nhấn và giữ kiểu macOS…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "b453085d006aabd3": {
+    "title": {
+      "en": "Nautilus file manager may be getting section headers",
+      "vi": "Trình quản lý tệp Nautilus có thể nhận được tiêu đề phần"
+    },
+    "summary": {
+      "en": "Nautilus could be getting a neater way to organise its file views, with section headers breaking up long lists of content into groups. You're reading Nautilus file manager may be getting section headers , a blog post from OMG! Ubuntu . Do not reproduce elsewhere without…",
+      "vi": "Nautilus có thể có một cách sắp xếp gọn gàng hơn các chế độ xem tệp của mình, với các tiêu đề phần chia danh sách nội dung dài thành các nhóm. Bạn đang đọc Trình quản lý tệp Nautilus có thể nhận được các tiêu đề phần, một bài đăng trên blog từ OMG! Ubuntu . Không sao chép đi nơi khác mà không…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "2d82f7ce06aa11f2": {
+    "title": {
+      "en": "The AI-Assisted Linux Driver for DisplayLink Gets Legal Notice",
+      "vi": "Trình điều khiển Linux được AI hỗ trợ cho DisplayLink nhận được thông báo pháp lý"
+    },
+    "summary": {
+      "en": "Mike Lothian got Vino working on three generations of DisplayLink docks, but Synaptics told him to take it down.",
+      "vi": "Mike Lothian đã nhờ Vino làm việc trên ba thế hệ đế cắm DisplayLink nhưng Synaptics đã yêu cầu anh ấy gỡ nó xuống."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "985ae8e7ed69a047": {
+    "title": {
+      "en": "Passbolt is an Open Source Password Manager Built Specially For Teams",
+      "vi": "Passbolt là Trình quản lý mật khẩu nguồn mở được xây dựng đặc biệt cho các nhóm"
+    },
+    "summary": {
+      "en": "Passbolt offers both a free self-hosted edition and a managed cloud version of its team focused password management solution.",
+      "vi": "Passbolt cung cấp cả phiên bản tự lưu trữ miễn phí và phiên bản đám mây được quản lý của giải pháp quản lý mật khẩu tập trung vào nhóm của mình."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "c67a5293684d3325": {
+    "title": {
+      "en": "This Overlooked Linux mv Option Replaces Three Commands With One",
+      "vi": "Tùy chọn mv Linux bị bỏ qua này thay thế ba lệnh bằng một lệnh"
+    },
+    "summary": {
+      "en": "Still swapping Linux files with three commands and a temporary filename? The mv command has an option that does it in one step. It works for directories too, with one detail you need to get right.",
+      "vi": "Bạn vẫn đang trao đổi các tệp Linux bằng ba lệnh và tên tệp tạm thời? Lệnh mv có một tùy chọn thực hiện việc đó trong một bước. Nó cũng hoạt động với các thư mục, với một chi tiết bạn cần hiểu đúng."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "2211a1987d741789": {
+    "title": {
+      "en": "Systemd Wants Rust in, But its Core Will Have to Wait",
+      "vi": "Systemd muốn có Rust, nhưng cốt lõi của nó sẽ phải chờ"
+    },
+    "summary": {
+      "en": "The rustification is ongoing, with Rust-written programs now allowed and existing C code not being ported.",
+      "vi": "Quá trình rỉ sét đang diễn ra, với các chương trình viết bằng Rust hiện đã được cho phép và mã C hiện tại không được chuyển."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "0fc00d14b922a9c3": {
+    "title": {
+      "en": "Schools That Say No to Google’s AI Will Be Saying Goodbye to its Search Too",
+      "vi": "Những trường học nói không với AI của Google cũng sẽ nói lời tạm biệt với công cụ tìm kiếm của Google"
+    },
+    "summary": {
+      "en": "Meanwhile, schools in six German states can choose an open source cloud solution.",
+      "vi": "Trong khi đó, các trường học ở sáu bang của Đức có thể chọn giải pháp đám mây nguồn mở."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "f1ccfb83e0fe9ae4": {
+    "title": {
+      "en": "mpv 4.20 adds support for DVD & Blu-Ray menus, Wayland HDR",
+      "vi": "mpv 4.20 bổ sung hỗ trợ cho menu DVD & Blu-Ray, Wayland HDR"
+    },
+    "summary": {
+      "en": "A new version of mpv, the open-source command line media player is out. mpv v0.42 is now able to navigate DVD menus, and the two menu systems that Blu-ray discs use, HDMV and BD-J (the latter requires Java). DVD-Audio support was also added, a nich format that offers…",
+      "vi": "Phiên bản mới của mpv, trình phát đa phương tiện dòng lệnh nguồn mở đã ra mắt. mpv v0.42 hiện có thể điều hướng các menu DVD và hai hệ thống menu mà đĩa Blu-ray sử dụng là HDMV và BD-J (hệ thống menu sau yêu cầu Java). Hỗ trợ DVD-Audio cũng đã được thêm vào, một định dạng thích hợp cung cấp…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "d4dc54b67327a4f1": {
+    "title": {
+      "en": "Linux 7.4’s Merge Window is Huge, and Linus Says it Might Not Just Be AI",
+      "vi": "Cửa sổ hợp nhất của Linux 7.4 rất lớn và Linus cho biết nó có thể không chỉ là AI"
+    },
+    "summary": {
+      "en": "Another possible factor is that people expect 7.4 to be the next LTS release.",
+      "vi": "Một yếu tố khác có thể là mọi người mong đợi 7.4 sẽ là bản phát hành LTS tiếp theo."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "51ee28c9070763ec": {
+    "title": {
+      "en": "Ubuntu refreshes time zone data for Canadian clock changes",
+      "vi": "Ubuntu làm mới dữ liệu múi giờ về những thay đổi của đồng hồ Canada"
+    },
+    "summary": {
+      "en": "This time of the year, clocks spring forward and fall back across the globe, but some places are making permanent changes – and Ubuntu needs to keep pace. Over recent weeks, Canonical has refresh Ubuntu’s system time zone database package tzdata on all supported releases to…",
+      "vi": "Vào thời điểm này trong năm, đồng hồ quay về phía trước và lùi lại trên toàn cầu, nhưng một số nơi đang thực hiện những thay đổi vĩnh viễn – và Ubuntu cần phải theo kịp. Trong những tuần gần đây, Canonical đã làm mới gói cơ sở dữ liệu múi giờ hệ thống tzdata của Ubuntu trên tất cả các bản phát hành được hỗ trợ để…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "48bc73073a733a84": {
+    "title": {
+      "en": "Calibre adds new sources for finding free books & journals",
+      "vi": "Calibre bổ sung các nguồn mới để tìm sách và tạp chí miễn phí"
+    },
+    "summary": {
+      "en": "Another week, another set of features added to Calibre, the open-source ebook reader, converter and manager. Calibre 9.18 adds more accessibility tools to its editor, with Tools > Accessibility now letting you set the language for books and HTML files. Image descriptions…",
+      "vi": "Một tuần nữa, một bộ tính năng khác được thêm vào Calibre, trình quản lý, chuyển đổi và đọc sách điện tử nguồn mở. Calibre 9.18 bổ sung thêm nhiều công cụ trợ năng hơn vào trình chỉnh sửa của nó, với Công cụ > Trợ năng hiện cho phép bạn đặt ngôn ngữ cho sách và tệp HTML. Mô tả hình ảnh…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "a076c8ff9293c884": {
+    "title": {
+      "en": "SuperPoD OS and Agentic Infra Take Center Stage at openEuler Summit 2026",
+      "vi": "Sân khấu trung tâm của SuperPoD OS và Agentic Infra tại Hội nghị thượng đỉnh openEuler 2026"
+    },
+    "summary": {
+      "en": "The November 13-14 event in Beijing will focus on SuperPoD OS, infrastructure for AI agents, and industry deployment experiences. All this under the theme \"Building Agentic Infra from the OS Up.\"",
+      "vi": "Sự kiện từ ngày 13 đến ngày 14 tháng 11 tại Bắc Kinh sẽ tập trung vào SuperPoD OS, cơ sở hạ tầng cho các tác nhân AI và trải nghiệm triển khai trong ngành. Tất cả điều này đều có chủ đề \"Xây dựng cơ sở hạ tầng tác nhân từ hệ điều hành\"."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "d625835e0adf375c": {
+    "title": {
+      "en": "Here's Everything New Coming to Linux Mint 27 This Christmas",
+      "vi": "Đây là mọi thứ mới sắp có trên Linux Mint 27 vào Giáng sinh này"
+    },
+    "summary": {
+      "en": "It is a release that has taken a year to develop, with major changes like a Wayland session that is no longer experimental.",
+      "vi": "Đây là một bản phát hành đã mất một năm để phát triển, với những thay đổi lớn như phiên Wayland không còn mang tính thử nghiệm."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "6a089d3b89f3ea56": {
+    "title": {
+      "en": "These Linux Distros Can Run on Apple Silicon Mac",
+      "vi": "Những bản phân phối Linux này có thể chạy trên Apple Silicon Mac"
+    },
+    "summary": {
+      "en": "Here are a few distros that are making it possible for you to run Linux on Apple Mac. Read the fine prints though, as not all M processors are supported.",
+      "vi": "Dưới đây là một số bản phân phối giúp bạn có thể chạy Linux trên Apple Mac. Tuy nhiên, hãy đọc các bản in đẹp vì không phải tất cả các bộ xử lý M đều được hỗ trợ."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "3d9bd0593e5ecb0d": {
+    "title": {
+      "en": "Schools in Six German States Can Now Opt For a Nextcloud-Based Open Source Cloud Solution",
+      "vi": "Các trường học ở sáu bang của Đức hiện có thể lựa chọn Giải pháp đám mây nguồn mở dựa trên Nextcloud"
+    },
+    "summary": {
+      "en": "IONOS has been picked as a contractor, and the service would run inside data centers in Germany.",
+      "vi": "IONOS đã được chọn làm nhà thầu và dịch vụ sẽ chạy bên trong các trung tâm dữ liệu ở Đức."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "1de5f126b47c775f": {
+    "title": {
+      "en": "Canonical adds FIDO2 hardware key support to Launchpad",
+      "vi": "Canonical bổ sung hỗ trợ khóa phần cứng FIDO2 cho Launchpad"
+    },
+    "summary": {
+      "en": "Developers who use Launchpad can now use a USB FIDO2 security key to restrict API access, which makes any stolen login details useless without it. Launchpad is, as I’m sure you know, where Canonical builds Ubuntu’s package, hosts code, PPAs and many other things that end up on a…",
+      "vi": "Các nhà phát triển sử dụng Launchpad hiện có thể sử dụng khóa bảo mật USB FIDO2 để hạn chế quyền truy cập API, điều này khiến mọi chi tiết đăng nhập bị đánh cắp sẽ trở nên vô dụng nếu không có khóa đó. Launchpad, như tôi chắc chắn bạn biết, là nơi Canonical xây dựng gói Ubuntu, mã máy chủ, PPA và nhiều thứ khác kết…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "f42736968bcfb887": {
+    "title": {
+      "en": "I Came for This New Linux Distro’s Aesthetic Looks and Stayed for its Window Tiling",
+      "vi": "Tôi đến vì vẻ ngoài thẩm mỹ của bản phân phối Linux mới này và ở lại vì ốp cửa sổ của nó"
+    },
+    "summary": {
+      "en": "It's still early in development, but it shows promise with what it offers.",
+      "vi": "Nó vẫn còn ở giai đoạn đầu phát triển nhưng nó cho thấy nhiều hứa hẹn với những gì nó mang lại."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "99c50540e5c92f12": {
+    "title": {
+      "en": "Killed by Ubuntu, Linux Mint is Bringing This Classic Feature Back",
+      "vi": "Bị Ubuntu giết chết, Linux Mint đang đưa tính năng cổ điển này trở lại"
+    },
+    "summary": {
+      "en": "Linux Mint is bringing back a feature most Linux distributions quietly gave up on years ago: hibernation.",
+      "vi": "Linux Mint đang mang trở lại một tính năng mà hầu hết các bản phân phối Linux đã lặng lẽ từ bỏ từ nhiều năm trước: chế độ ngủ đông."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "7bf7eb39d53de112": {
+    "title": {
+      "en": "Affinity is coming to Linux (but there’s no ETA yet)",
+      "vi": "Affinity sắp có mặt trên Linux (nhưng chưa có ETA)"
+    },
+    "summary": {
+      "en": "Affinity, the free design suite made by Canva, is coming to Linux. No release date yet, but the company say the port is already in 'active development'. You're reading Affinity is coming to Linux (but there’s no ETA yet) , a blog post from OMG! Ubuntu . Do not reproduce…",
+      "vi": "Affinity, bộ thiết kế miễn phí do Canva sản xuất, sắp có mặt trên Linux. Chưa có ngày phát hành, nhưng công ty cho biết cổng này đã được 'phát triển tích cực'. Bạn đang đọc Affinity sắp có trên Linux (nhưng chưa có ETA), một bài đăng trên blog từ OMG! Ubuntu . Đừng tái hiện…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "dd08d75108704967": {
+    "title": {
+      "en": "Linux Mint is ‘bringing back’ hibernation to laptops",
+      "vi": "Linux Mint đang 'đưa chế độ ngủ đông trở lại' cho máy tính xách tay"
+    },
+    "summary": {
+      "en": "Linux Mint’s next release will offer a hibernation mode, so you can close your laptop mid-session and not worry about returning to a drained battery. A new Sleep Modes page in the System Administration tool in Linux Mint 27, out this December, makes it easy to enable hibernation…",
+      "vi": "Bản phát hành tiếp theo của Linux Mint sẽ cung cấp chế độ ngủ đông, vì vậy bạn có thể đóng máy tính xách tay của mình giữa phiên mà không phải lo lắng về việc pin cạn kiệt. Trang Chế độ ngủ mới trong công cụ Quản trị hệ thống trong Linux Mint 27, ra mắt vào tháng 12 này, giúp bạn dễ dàng bật chế độ ngủ đông…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "04205c205494c548": {
+    "title": {
+      "en": "Just switch to Bing whenever Google stops you with their captcha",
+      "vi": "Chỉ cần chuyển sang Bing bất cứ khi nào Google chặn bạn bằng hình ảnh xác thực của họ"
+    },
+    "summary": {
+      "en": "I got annoyed whenever I do simple, basic search on Google then hit back with a roadblock called captcha. What I do? I just switch to their competitors because I cannot fathom to be mistaken for a robot when you correctly do what is asked, especially that multiple choices where…",
+      "vi": "Tôi cảm thấy khó chịu bất cứ khi nào tôi thực hiện tìm kiếm cơ bản, đơn giản trên Google rồi lại gặp phải rào cản gọi là hình ảnh xác thực. Tôi làm gì? Tôi chỉ chuyển sang đối thủ cạnh tranh của họ vì tôi không thể hiểu được việc bị nhầm với robot khi bạn thực hiện chính xác những gì được yêu cầu, đặc biệt là nhiều…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "e32cca0294a7a503": {
+    "title": {
+      "en": "Claude Code Ignoring CLAUDE.md? See What's in Its Context",
+      "vi": "Mã Claude Bỏ qua CLAUDE.md? Xem những gì trong bối cảnh của nó"
+    },
+    "summary": {
+      "en": "When Claude Code ignores a rule, the usual move is to reword it. Start with the verb, use backticks",
+      "vi": "Khi Claude Code bỏ qua một quy tắc, động thái thông thường là diễn đạt lại quy tắc đó. Bắt đầu bằng động từ, sử dụng backticks"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "85711c69d6ebafbd": {
+    "title": {
+      "en": "Are You a Web Developer or a Browser Expert? 7 Tests I Failed Building a Photo Editor That Never Uploads Your Photos",
+      "vi": "Bạn là nhà phát triển web hay chuyên gia về trình duyệt? 7 thử nghiệm tôi đã thất bại trong việc xây dựng trình chỉnh sửa ảnh không bao giờ tải ảnh của bạn lên"
+    },
+    "summary": {
+      "en": "Description: On-device AI, WASM threads, target-size compression, inpainting and 3D LUTs in",
+      "vi": "Mô tả: AI trên thiết bị, luồng WASM, nén kích thước mục tiêu, inpainting và 3D LUT trong"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "e4972cd6d89b6668": {
+    "title": {
+      "en": "What Building a Tournament Bracket Engine Taught Me About Edge Cases",
+      "vi": "Điều gì xây dựng một công cụ khung giải đấu đã dạy tôi về các trường hợp cạnh"
+    },
+    "summary": {
+      "en": "When I started building Rollare, a free bracket maker for local sports clubs, I thought the hard part",
+      "vi": "Khi tôi bắt đầu xây dựng Rollare, một công ty sản xuất khung miễn phí cho các câu lạc bộ thể thao địa phương, tôi nghĩ phần khó nhất là"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "cb44557e73392b6d": {
+    "title": {
+      "en": "MCP servers stopped working in July 2026 — here is the exact change (with a working diff)",
+      "vi": "Máy chủ MCP đã ngừng hoạt động vào tháng 7 năm 2026 - đây là thay đổi chính xác (với sự khác biệt về hoạt động)"
+    },
+    "summary": {
+      "en": "If you copied an MCP server example in the last year and it stopped working, you are not doing",
+      "vi": "Nếu bạn đã sao chép một ví dụ về máy chủ MCP vào năm ngoái và nó ngừng hoạt động thì bạn đang không làm việc đó."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "c992a5cde02478fc": {
+    "title": {
+      "vi": "The Verge so iPhone Duo với Android gập: phần cứng đã theo kịp, phần mềm còn hụt",
+      "en": "The Verge compares iPhone Duo with Android foldable: the hardware has kept up, the software is still lacking"
+    },
+    "summary": {
+      "vi": "Một chiếc điện thoại gập có màn hình lớn chưa chắc đã cho nhiều không gian sử dụng hơn. Với iPhone Duo, khoảng cách so với Android gập đang nằm khá rõ ở chỗ này: ứng dụng có tận dụng hết màn hình",
+      "en": "A folding phone with a large screen does not necessarily give more usable space. With the iPhone Duo, the gap with the folding Android is quite clear here: the application takes full advantage of the screen"
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "f18d65f7da2a2657": {
+    "title": {
+      "vi": "iPhone mất hàng chục GB bộ nhớ vì một mục ít người để ý",
+      "en": "iPhone loses dozens of gigabytes of memory because of an item that few people pay attention to"
+    },
+    "summary": {
+      "vi": "Khởi động lại iPhone là một trong những cách đơn giản giúp giải phóng bộ nhớ tạm đang bị dữ liệu hệ thống chiếm dụng.",
+      "en": "Restarting the iPhone is one of the simple ways to free up temporary memory that is being occupied by system data."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "967cf2ee3354fa46": {
+    "title": {
+      "vi": "Cách Singapore làm mát văn phòng không cần điều hòa truyền thống",
+      "en": "How Singapore cools offices without traditional air conditioning"
+    },
+    "summary": {
+      "vi": "Singapore thúc đẩy công nghệ làm mát thay thế điều hòa, hướng đến giảm tiêu thụ điện và khí thải trong các tòa nhà.",
+      "en": "Singapore promotes cooling technology to replace air conditioning, aiming to reduce electricity consumption and emissions in buildings."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "64bb151c75ac96d4": {
+    "title": {
+      "vi": "Robot học nghề từ video người thật: từ GR00T N1 năm 2025 đến GR00T 2",
+      "en": "Robots learn jobs from real human videos: from GR00T N1 in 2025 to GR00T 2"
+    },
+    "summary": {
+      "vi": "Muốn dạy robot lắp một món đồ chơi, cách phổ biến lâu nay là cho người điều khiển từ xa: đeo thiết bị, lái từng khớp tay của robot hàng trăm lần rồi ghi lại cho nó bắt chước. Cách làm này chậm và",
+      "en": "To teach a robot to assemble a toy, a long-standing popular way is for the remote controller to wear the device, drive each joint of the robot's arms hundreds of times, and then record it for the robot to imitate. This method is slow and"
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "0f128572b73d8b7d": {
+    "title": {
+      "vi": "Trí tuệ nhân tạo học thế nào: chỉnh hàng triệu con số cho tới khi bớt sai",
+      "en": "How artificial intelligence learns: tweaking millions of numbers until fewer mistakes"
+    },
+    "summary": {
+      "vi": "Khi điện thoại nhận ra khuôn mặt trong ảnh hay dịch một câu sang tiếng Anh, không có lập trình viên nào viết sẵn quy tắc kiểu \"mắt nằm trên mũi\". Phần mềm tự rút ra quy tắc từ rất nhiều ví dụ.",
+      "en": "When a phone recognizes a face in a photo or translates a sentence into English, no programmer has written a rule like \"eyes above nose.\" The software itself draws rules from many examples."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "7ed6df94e7174704": {
+    "title": {
+      "vi": "iOS 28 có thể chất lượng hơn nhờ thay đổi bất ngờ từ Apple",
+      "en": "iOS 28 may be better quality thanks to a surprise change from Apple"
+    },
+    "summary": {
+      "vi": "Apple điều chỉnh quy trình phát triển iOS 28, dành thêm thời gian nghiên cứu tính năng nhằm cải thiện chất lượng hệ điều hành.",
+      "en": "Apple adjusted the iOS 28 development process, spending more time researching features to improve the quality of the operating system."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "797472f5891e711e": {
+    "title": {
+      "vi": "Vì sao điện thoại tự ngắt Wi-Fi để chuyển sang 4G/5G?",
+      "en": "Why does the phone automatically disconnect Wi-Fi to switch to 4G/5G?"
+    },
+    "summary": {
+      "vi": "Một số thiết lập trên iPhone và Android khiến điện thoại tự ngắt Wi-Fi để chuyển sang dữ liệu di động khi kết nối kém.",
+      "en": "Some settings on iPhone and Android cause the phone to automatically disconnect Wi-Fi to switch to mobile data when the connection is poor."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "430caf4eb891b476": {
+    "title": {
+      "vi": "Apple mở rộng khả năng tùy chỉnh Siri AI cho nhà phát triển bên thứ ba",
+      "en": "Apple expands Siri AI customization to third-party developers"
+    },
+    "summary": {
+      "vi": "Apple vừa công bố một sáng kiến mới cho phép các nhà phát triển bên thứ ba tạo ra các kỹ năng ứng dụng chuyên sâu cho Siri",
+      "en": "Apple just announced a new initiative that allows third-party developers to create deep app skills for Siri"
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "16d638755f3b4490": {
+    "title": {
+      "vi": "Người dùng Android cảnh giác ngay: Nhận được tin nhắn này là điện thoại biến thành \"cục gạch\" ngay lập tức",
+      "en": "Android users should be alert immediately: Receiving this message will instantly turn your phone into a \"brick\"."
+    },
+    "summary": {
+      "vi": "Tin nhắn độc hại này có thể làm gián đoạn các cuộc gọi và khiến điện thoại Android bị kẹt trong vòng lặp khởi động lại mà chủ sở hữu không hề biết chuyện gì đã xảy ra.",
+      "en": "This malicious message can interrupt calls and leave Android phones stuck in a reboot loop without the owner even knowing what happened."
+    },
+    "translated": {
+      "en": "machine"
     }
   }
 }

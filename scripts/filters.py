@@ -15,36 +15,49 @@ except Exception:
 
 KEEP_TERMS = [term for values in FILTER_CONFIG.get("keepKeywords", {}).values() for term in values]
 BLOCK_TERMS = FILTER_CONFIG.get("blockKeywords", [])
-REVIEW_ALLOW_TERMS = FILTER_CONFIG.get("reviewAllowKeywords", ["tip", "mẹo"])
+REVIEW_ALLOW_TERMS = FILTER_CONFIG.get("reviewAllowKeywords", ["tip", "mẹo", "技巧"])
 MIN_TITLE_LENGTH = int(FILTER_CONFIG.get("minTitleLength", 15))
+
+CJK_RE = re.compile(r"[\u3400-\u9fff]")
 
 
 def _term_pattern(terms: list[str]) -> re.Pattern:
     if not terms:
         return re.compile(r"(?!)")
-    return re.compile(r"(?:" + "|".join(re.escape(term) for term in sorted(terms, key=len, reverse=True)) + r")", re.IGNORECASE)
+    parts = []
+    for term in sorted(terms, key=len, reverse=True):
+        escaped = re.escape(term)
+        if CJK_RE.search(term):
+            parts.append(escaped)
+        else:
+            parts.append(rf"\b{escaped}\b")
+    return re.compile(r"(?:" + "|".join(parts) + r")", re.IGNORECASE)
+
 
 HOWTO = re.compile(
-    r"\b(how to|how-to|tips?|tricks?|guide|tutorial|fix(es|ing)?|set ?up|"
+    r"(?:\b(?:how to|how-to|tips?|tricks?|hacks?|guide|tutorial|fix(?:es|ing)?|set ?up|"
     r"enable|disable|hidden|settings?|shortcuts?|things to do|walkthrough|"
     r"install|configure|build|create|optimize|speed up|"
-    r"cách|mẹo|hướng dẫn|thủ thuật|sửa lỗi|thiết lập|chỉnh|phím tắt|tinh chỉnh|cài đặt|tối ưu)\b",
+    r"cách|mẹo|hướng dẫn|thủ thuật|sửa lỗi|thiết lập|chỉnh|phím tắt|tinh chỉnh|cài đặt|tối ưu)\b|"
+    r"教程|指南|技巧|攻略|如何|怎么|快捷键|修复|优化)",
     re.IGNORECASE
 )
 CONFIG_HOWTO = _term_pattern(KEEP_TERMS)
 CONFIG_BLOCK = _term_pattern(BLOCK_TERMS)
-REVIEW = re.compile(r"\breviews?\b", re.IGNORECASE)
+REVIEW = re.compile(r"(?:\breviews?\b|评测)", re.IGNORECASE)
 REVIEW_ALLOW = _term_pattern(REVIEW_ALLOW_TERMS)
 
 EDITORIAL_OR_REVIEW = re.compile(
-    r"\b(weekly|roundup|newsletter|edition|podcast|interview|released?|releases|announces?|announcing|unveils?|changelog|đánh giá|trên tay|tổng hợp tuần|ra mắt|phát hành)\b",
+    r"(?:\b(?:weekly|roundup|newsletter|edition|podcast|interview|released?|releases|announces?|announcing|unveils?|changelog|đánh giá|trên tay|tổng hợp tuần|ra mắt|phát hành)\b|"
+    r"派早报|早报|周报|社区速递|本周看什么|本月玩什么|新玩意\s*\d*|一图流|购物清单)",
     re.IGNORECASE
 )
 
 BLOCK = re.compile(
     r"(\bdeals?\b|\bdiscount\b|\bcoupon\b|% off|\$\d+ off|drops to|price cut|"
-    r"\bsale\b|giảm giá|khuyến mãi|\[QC\]|sponsored|giveaway|"
-    r"is hiring|\bhiring\b|tuyển dụng|\btrailer\b|unboxing|đập hộp)",
+    r"\bsale\b|\bgiảm giá\b|\bkhuyến mãi\b|\[QC\]|\bsponsored\b|\bgiveaway\b|"
+    r"is hiring|\bhiring\b|\btuyển dụng\b|\btrailer\b|\bunboxing\b|\bđập hộp\b|"
+    r"双十一|双11|喜加一|官方补贴|严选好货|神券|到手价|立减|抢购|\d+(?:\.\d+)?\s*折(?!叠))",
     re.IGNORECASE
 )
 
@@ -56,21 +69,35 @@ DEVTO_SELF_PROMO = re.compile(
 )
 
 OUT_OF_SCOPE = re.compile(
-    r"\b("
+    r"(?:\b(?:"
     r"nông nghiệp|chăn nuôi|gene bò|bò h'mông|thực vật|khảo cổ|động vật hoang dã|gia súc|gia cầm|"
     r"thời tiết|thiên tai|bệnh viện|y tế|thuốc lá|sốt xuất huyết|dịch sởi|ung thư|bệnh nhân|sản khoa|phụ sản|sinh học|"
     r"liquid soap|bar of soap|workout|working out|weight loss|gym|dating|date night|elderly|daylight savings|"
-    r"smoke alarm|billiards|cooking|loss of spouse|introvert|introverted|social event|funeral|grief|pets at home|"
+    r"smoke alarm|billiards|cooking|loss of spouse|lost their spouse|introvert|introverted|social event|funeral|grief|pets at home|pets you have at home|"
     r"permanent marker in your kitchen|clean your oven|stain remover|dishwasher"
-    r")\b",
+    r")\b|"
+    r"微创手术|心衰|患者|临床|机动车|鸣喇叭|久坐健康|吃药提醒|治疗癫痫|不吃压力|"
+    r"轿车|洗脚装置|城市漫步|山地车|亿万富翁税|移动暖屋|轻生|销量突破)",
     re.IGNORECASE
 )
+
+REDDIT_LPT_TECH_SIGNAL = re.compile(
+    r"\b(computer|pc|mac|macbook|windows|linux|android|iphone|ipad|ios|phone|smartphone|laptop|"
+    r"browser|chrome|firefox|safari|edge|tab|tabs|bookmark|extension|website|url|search|google|"
+    r"wifi|wi-fi|router|bluetooth|usb|ssd|ram|gpu|cpu|battery|charger|cable|monitor|screen|keyboard|mouse|"
+    r"password|2fa|passkey|vpn|spam|scam|phishing|privacy|backup|cloud|file|folder|pdf|excel|spreadsheet|word|"
+    r"email|gmail|outlook|notification|settings?|shortcut|app|software|subscription|adobe|microsoft|apple|"
+    r"terminal|command|code|git|ai|chatgpt)\b",
+    re.IGNORECASE
+)
+
 
 def is_howto_match(title: str, summary: str = "") -> bool:
     """Kiểm tra bài viết có dấu hiệu là thủ thuật / hướng dẫn (how-to) hay không."""
     if EDITORIAL_OR_REVIEW.search(title) or (REVIEW.search(title) and not REVIEW_ALLOW.search(title)):
         return False
     return bool(HOWTO.search(title) or CONFIG_HOWTO.search(title)) or bool(HOWTO.search(summary[:140]) or CONFIG_HOWTO.search(summary[:140]))
+
 
 def log_rejection(item: dict, source: dict, reason: str):
     """Ghi lại lý do bài bị loại vào data/logs/rejected.jsonl để tinh chỉnh bộ lọc sau."""
@@ -80,7 +107,7 @@ def log_rejection(item: dict, source: dict, reason: str):
             title = " ".join(str(v) for v in title.values())
         url = item.get("url", "")
         src_id = source.get("id") if isinstance(source, dict) else str(source)
-        
+
         entry = {
             "timestamp": datetime.now(timezone.utc).isoformat(),
             "source": src_id,
@@ -93,6 +120,7 @@ def log_rejection(item: dict, source: dict, reason: str):
     except Exception:
         pass
 
+
 def accept(item: dict, source: dict, enable_logging: bool = True) -> tuple[bool, str]:
     """
     Quyết định nhận hay loại bài viết.
@@ -101,19 +129,30 @@ def accept(item: dict, source: dict, enable_logging: bool = True) -> tuple[bool,
     title = item.get("raw_title") or item.get("title", "")
     if isinstance(title, dict):
         title = " ".join(str(v) for v in title.values())
-    
+
     summary = item.get("raw_summary") or item.get("summary", "")
     if isinstance(summary, dict):
         summary = " ".join(str(v) for v in summary.values())
 
-    if len(title.strip()) < MIN_TITLE_LENGTH:
+    src_id = source.get("id", "") if isinstance(source, dict) else str(source)
+    kind = source.get("kind", "news") if isinstance(source, dict) else "news"
+    min_title_len = 8 if kind == "tips" else MIN_TITLE_LENGTH
+
+    if len(title.strip()) < min_title_len:
         reason = "title-too-short"
         if enable_logging:
             log_rejection(item, source, reason)
         return False, reason
-    
-    # 0. Kiểm tra bài viết ngoài phạm vi công nghệ (nông nghiệp, chăn nuôi, y tế...)
+
+    # 0. Kiểm tra bài viết ngoài phạm vi công nghệ (nông nghiệp, chăn nuôi, y tế, giao thông...)
     if OUT_OF_SCOPE.search(title) or OUT_OF_SCOPE.search(summary[:300]):
+        reason = "out-of-scope"
+        if enable_logging:
+            log_rejection(item, source, reason)
+        return False, reason
+
+    # 0b. Đặc thù r/LifeProTips: phải có tín hiệu công nghệ rõ ràng (tránh mẹo đời sống xã hội)
+    if src_id == "reddit-lpt" and not REDDIT_LPT_TECH_SIGNAL.search(f"{title} {summary}"):
         reason = "out-of-scope"
         if enable_logging:
             log_rejection(item, source, reason)
@@ -144,13 +183,13 @@ def accept(item: dict, source: dict, enable_logging: bool = True) -> tuple[bool,
     kind = source.get("kind", "news") if isinstance(source, dict) else "news"
     if kind == "tips":
         return True, "tips-source"
-    if source.get("allowNews"):
+    if isinstance(source, dict) and source.get("allowNews"):
         return True, "news-source"
-    
+
     # 4. Nguồn tin tức chung: bắt buộc phải khớp từ khóa how-to
     if HOWTO.search(title) or CONFIG_HOWTO.search(title) or HOWTO.search(summary[:140]) or CONFIG_HOWTO.search(summary[:140]):
         return True, "howto-match"
-        
+
     reason = "not-howto"
     if enable_logging:
         log_rejection(item, source, reason)

@@ -136,17 +136,32 @@ const formattedUpdatedAt = Number.isNaN(updatedAt.getTime())
       )}
     </div>
 
-    <!-- Read Original Link (Amber / Orange) - Task 4: Accessible and clean -->
-    <a
-      href={tip.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      aria-label={`${lang === 'vi' ? 'Đọc bài gốc' : 'Read original'}: ${titleText}`}
-      class="text-[var(--accent)] hover:underline font-semibold inline-flex items-center gap-1 shrink-0 ml-auto"
-    >
-      <span class="hidden sm:inline" aria-hidden="true">{lang === 'vi' ? 'Đọc bài gốc' : 'Read original'}</span>
-      <span class="sm:hidden" aria-hidden="true">{lang === 'vi' ? 'Bài gốc' : 'Original'}</span>
-      <span aria-hidden="true">↗</span>
-    </a>
+    <!-- Right Actions: Bookmark + Read Original Link -->
+    <div class="flex items-center gap-2 shrink-0 ml-auto">
+      <button
+        type="button"
+        class="bookmark-btn p-1.5 rounded-lg border border-transparent text-[var(--text-muted)] hover:text-[var(--accent)] hover:bg-[var(--bg-muted)] transition-colors"
+        data-id={tip.id}
+        aria-pressed="false"
+        aria-label={t.card.save_tip}
+        title={t.card.save_tip}
+      >
+        <svg class="bookmark-icon w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </button>
+
+      <a
+        href={tip.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-label={`${lang === 'vi' ? 'Đọc bài gốc' : 'Read original'}: ${titleText}`}
+        class="text-[var(--accent)] hover:underline font-semibold inline-flex items-center gap-1"
+      >
+        <span class="hidden sm:inline" aria-hidden="true">{lang === 'vi' ? 'Đọc bài gốc' : 'Read original'}</span>
+        <span class="sm:hidden" aria-hidden="true">{lang === 'vi' ? 'Bài gốc' : 'Original'}</span>
+        <span aria-hidden="true">↗</span>
+      </a>
+    </div>
   </div>
 </article>

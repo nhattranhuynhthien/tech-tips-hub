@@ -3,6 +3,8 @@ name: CI Build & Test
 on:
   push:
     branches: [main, master]
+    paths-ignore:
+      - 'data/**'
   pull_request:
     branches: [main, master]
 
@@ -46,5 +48,7 @@ jobs:
       - run: npm ci
       - name: Type-check Telegram webhook
         run: npm run check:telegram
+      - name: Run Telegram webhook unit & integration tests
+        run: npm run test:telegram
       - name: Build site
         run: npm run build

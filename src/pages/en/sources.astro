@@ -67,6 +67,13 @@ tips.forEach((tip) => {
         >
           Vietnamese
         </button>
+        <button
+          type="button"
+          class="src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          data-filter="zh-CN"
+        >
+          Chinese
+        </button>
       </div>
     </header>
 
@@ -75,7 +82,7 @@ tips.forEach((tip) => {
       {sources.map((src) => {
         const initial = src.name.charAt(0).toUpperCase();
         const kindLabel = src.kind === 'tips' ? 'Tips' : 'News';
-        const langLabel = src.lang === 'vi' ? 'Vietnamese' : 'English';
+        const langLabel = src.lang === 'vi' ? 'Vietnamese' : src.lang?.startsWith('zh') ? 'Chinese' : 'English';
         const count = sourceCounts[src.id] || 0;
 
         return (

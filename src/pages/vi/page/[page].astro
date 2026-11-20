@@ -7,9 +7,9 @@ import { getAllTips, getAllCategories, getTrickOfTheDay, sortTipsNewestFirst } f
 import { getTranslations } from '../../../lib/i18n';
 
 export const getStaticPaths: GetStaticPaths = async ({ paginate }) => {
-  const allTips = getAllTips(false);
+  const allTips = getAllTips(false).filter((tip) => tip.source.kind !== 'news');
   const trickOfDay = getTrickOfTheDay('vi');
-  // Trang chủ loại "Mẹo hay hôm nay" khỏi danh sách, phân trang cũng phải khớp
+  // Trang chủ loại "Mẹo hay hôm nay" và tin tức khỏi danh sách, phân trang cũng phải khớp
   const tips = trickOfDay ? allTips.filter((tip) => tip.id !== trickOfDay.id) : allTips;
   // Cùng thứ tự với trang chủ (mặc định "Mới nhất")
   return paginate(sortTipsNewestFirst(tips), { pageSize: 20 });
@@ -115,19 +115,28 @@ const canonicalPath = page.currentPage === 1 ? `/${lang}` : page.url.current;
         <div class="flex items-center gap-1.5 flex-wrap">
           <a
             href={`/${lang}`}
-            class="px-2.5 py-1.5 min-h-[36px] flex items-center rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-all"
+            class="px-2.5 py-1.5 min-h-[36px] flex items-center rounded-lg border border-[var(--accent)] bg-[var(--accent-bg)] text-[var(--accent)] font-bold transition-all"
           >
             Tất cả
           </a>
-          <span class="px-2.5 py-1.5 min-h-[36px] flex items-center rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)]">
+          <a
+            href={`/${lang}?diff=easy`}
+            class="px-2.5 py-1.5 min-h-[36px] flex items-center rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          >
             Dễ
-          </span>
-          <span class="px-2.5 py-1.5 min-h-[36px] flex items-center rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)]">
+          </a>
+          <a
+            href={`/${lang}?diff=medium`}
+            class="px-2.5 py-1.5 min-h-[36px] flex items-center rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          >
             Vừa
-          </span>
-          <span class="px-2.5 py-1.5 min-h-[36px] flex items-center rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)]">
+          </a>
+          <a
+            href={`/${lang}?diff=advanced`}
+            class="px-2.5 py-1.5 min-h-[36px] flex items-center rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          >
             Nâng cao
-          </span>
+          </a>
         </div>
       </div>
     </aside>
@@ -153,4 +162,17 @@ const canonicalPath = page.currentPage === 1 ? `/${lang}` : page.url.current;
     </div>
   </div>
 </Layout>
+
+<script is:inline>
+  (function () {
+    const mobileSearch = document.getElementById('mobile-search-input');
+    mobileSearch?.addEventListener('input', (e) => {
+      const q = e.target.value;
+      if (q && window.openTechTipsSearch) {
+        e.target.value = '';
+        window.openTechTipsSearch(q);
+      }
+    });
+  })();
+</script>
 

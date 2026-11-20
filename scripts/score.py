@@ -17,16 +17,18 @@ TUTORIAL_KEYWORDS = [
 ]
 
 def parse_published_time(date_str: str) -> datetime:
-    """Chuyển đổi chuỗi ngày tháng đa định dạng về datetime UTC."""
+    """Chuyển đổi chuỗi ngày tháng đa định dạng về datetime UTC (coi chuỗi không múi giờ là UTC)."""
     if not date_str:
         return datetime.now(timezone.utc)
     try:
-        return parsedate_to_datetime(date_str).astimezone(timezone.utc)
+        dt = parsedate_to_datetime(date_str)
+        return dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt.astimezone(timezone.utc)
     except Exception:
         pass
     try:
         clean_str = date_str.replace("Z", "+00:00")
-        return datetime.fromisoformat(clean_str).astimezone(timezone.utc)
+        dt = datetime.fromisoformat(clean_str)
+        return dt.replace(tzinfo=timezone.utc) if dt.tzinfo is None else dt.astimezone(timezone.utc)
     except Exception:
         pass
     return datetime.now(timezone.utc)

@@ -2,7 +2,8 @@ import { getAllTips } from '../../lib/data';
 import { SITE_URL } from '../../lib/constants';
 import { escapeXml, xmlCdata } from '../../lib/xml';
 
-export async function GET() {
+export async function GET(context?: { url?: URL }) {
+  const selfPath = context?.url?.pathname || '/vi/rss.xml';
   const tips = getAllTips()
     .slice()
     .sort((a, b) => {
@@ -39,7 +40,7 @@ export async function GET() {
     <link>${escapeXml(`${SITE_URL}/vi`)}</link>
     <description>Sổ tay tổng hợp thủ thuật và mẹo công nghệ song ngữ, luôn ghi nguồn gốc</description>
     <language>vi-VN</language>
-    <atom:link href="${escapeXml(`${SITE_URL}/vi/rss.xml`)}" rel="self" type="application/rss+xml"/>
+    <atom:link href="${escapeXml(`${SITE_URL}${selfPath}`)}" rel="self" type="application/rss+xml"/>
     ${itemsXml}
   </channel>
 </rss>`;

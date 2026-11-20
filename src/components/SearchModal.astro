@@ -26,7 +26,7 @@ const t = getTranslations(lang);
           class="w-full bg-transparent text-base text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:outline-none font-mono"
           autocomplete="off"
         />
-        <button id="search-close-btn" class="p-1 text-[var(--text-muted)] hover:text-[var(--text-primary)] rounded-md transition-colors" aria-label="Đóng tìm kiếm">
+        <button id="search-close-btn" class="p-1 text-[var(--text-muted)] hover:text-[var(--text-primary)] rounded-md transition-colors" aria-label={lang === 'vi' ? 'Đóng tìm kiếm' : 'Close search'}>
           <kbd class="text-xs">Esc</kbd>
         </button>
       </div>
@@ -58,8 +58,19 @@ const t = getTranslations(lang);
       return d.innerHTML;
     }
 
+    function normalizeSearch(str) {
+      return String(str || '')
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/đ/g, 'd');
+    }
+
     let allTips = [];
     let isLoaded = false;
+    let loadPromise = null;
+    let activeIndex = -1;
+
     const modal = document.getElementById('search-modal');
     const input = document.getElementById('search-input');
     const resultsContainer = document.getElementById('search-results');
@@ -67,59 +78,151 @@ const t = getTranslations(lang);
     const closeBtn = document.getElementById('search-close-btn');
     const backdrop = document.getElementById('search-backdrop');
 
-    async function loadTips() {
-      if (isLoaded) return;
-      try {
-        const resp = await fetch('/api/tips.json');
-        if (resp.ok) {
-          allTips = await resp.json();
-          isLoaded = true;
-        }
-      } catch (err) {
-        console.error('Failed to load tips for search:', err);
+    const emptyPromptHtml = `<div id="search-empty-state" class="py-8 text-center text-xs text-[var(--text-muted)] font-mono">${
+      lang === 'vi' ? 'Nhập từ khóa để tìm kiếm thủ thuật tức thì...' : 'Type a query to search handcrafted tips instantly...'
+    }</div>`;
+
+    const loadingHtml = `<div class="py-8 text-center text-xs text-[var(--text-muted)] font-mono">${
+      lang === 'vi' ? 'Đang tải kho thủ thuật...' : 'Loading tips index...'
+    }</div>`;
+
+    function loadTips() {
+      if (isLoaded) return Promise.resolve(allTips);
+      if (!loadPromise) {
+        loadPromise = fetch('/api/tips.json')
+          .then((resp) => {
+            if (!resp.ok) throw new Error('HTTP ' + resp.status);
+            return resp.json();
+          })
+          .then((data) => {
+            allTips = Array.isArray(data) ? data : [];
+            isLoaded = true;
+            if (input && input.value.trim()) {
+              renderResults(input.value);
+            }
+            return allTips;
+          })
+          .catch((err) => {
+            loadPromise = null;
+            console.error('Failed to load tips for search:', err);
+            return [];
+          });
       }
+      return loadPromise;
     }
 
-    function openModal() {
+    function renderResults(rawQuery) {
+      if (!resultsContainer) return;
+      const qRaw = String(rawQuery || '').toLowerCase().trim();
+      if (!qRaw) {
+        resultsContainer.innerHTML = emptyPromptHtml;
+        activeIndex = -1;
+        return;
+      }
+
+      if (!isLoaded) {
+        resultsContainer.innerHTML = loadingHtml;
+        loadTips();
+        return;
+      }
+
+      const qNorm = normalizeSearch(qRaw);
+      const matches = allTips
+        .filter((tip) => {
+          const tText = tip.title?.[lang] || tip.title?.en || '';
+          const sText = tip.summary?.[lang] || tip.summary?.en || '';
+          const cText = (tip.categories || []).join(' ');
+          const tagText = (tip.tags || []).join(' ');
+          const srcText = tip.source?.name || '';
+          const combined = `${tText} ${sText} ${cText} ${tagText} ${srcText}`;
+          return combined.toLowerCase().includes(qRaw) || normalizeSearch(combined).includes(qNorm);
+        })
+        .slice(0, 8);
+
+      if (matches.length === 0) {
+        resultsContainer.innerHTML = `<div class="py-8 text-center text-xs text-[var(--text-muted)] font-mono">${
+          lang === 'vi' ? 'Không tìm thấy thủ thuật nào khớp với từ khóa.' : 'No tips matched your query.'
+        }</div>`;
+        activeIndex = -1;
+        return;
+      }
+
+      resultsContainer.innerHTML = matches
+        .map((tip) => {
+          const title = escapeHtml(tip.title?.[lang] || tip.title?.en || '');
+          const summ = escapeHtml(tip.summary?.[lang] || tip.summary?.en || '');
+          const sourceName = escapeHtml(tip.source?.name || '');
+          const category = escapeHtml((tip.categories || [])[0] || 'tips');
+          const slugOrId = encodeURIComponent(tip.slug || tip.id);
+          return `
+            <a href="/${lang}/tip/${slugOrId}" data-search-result="true" aria-selected="false" class="block p-3 rounded-xl hover:bg-[var(--bg-muted)] transition-colors group">
+              <div class="flex items-center gap-2 text-[11px] font-mono text-[var(--text-muted)] mb-1">
+                <span class="text-[var(--text-secondary)]">${sourceName}</span>
+                <span>·</span>
+                <span class="text-[var(--accent)] font-semibold">#${category}</span>
+              </div>
+              <h4 class="text-sm font-bold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors leading-snug">
+                ${title}
+              </h4>
+              <p class="text-xs text-[var(--text-secondary)] line-clamp-1 mt-1">
+                ${summ}
+              </p>
+            </a>
+          `;
+        })
+        .join('');
+
+      activeIndex = -1;
+    }
+
+    function openModal(initialQuery) {
       modal?.classList.remove('hidden');
       document.body.classList.add('overflow-hidden');
-      loadTips();
+      const hasQuery = typeof initialQuery === 'string' && initialQuery.length > 0;
+      if (hasQuery && input) {
+        input.value = initialQuery;
+        renderResults(initialQuery);
+      } else {
+        loadTips();
+      }
       setTimeout(() => input?.focus(), 50);
     }
+
+    window.openTechTipsSearch = openModal;
 
     function closeModal() {
       modal?.classList.add('hidden');
       document.body.classList.remove('overflow-hidden');
       if (input) input.value = '';
-      if (resultsContainer) {
-        resultsContainer.innerHTML = `<div id="search-empty-state" class="py-8 text-center text-xs text-[var(--text-muted)] font-mono">${
-          lang === 'vi' ? 'Nhập từ khóa để tìm kiếm thủ thuật tức thì...' : 'Type a query to search handcrafted tips instantly...'
-        }</div>`;
-      }
+      if (resultsContainer) resultsContainer.innerHTML = emptyPromptHtml;
+      activeIndex = -1;
     }
 
     // Keyboard Shortcuts (/ or Ctrl+K to open, Esc to close)
     document.addEventListener('keydown', (e) => {
+      const activeEl = document.activeElement;
+      const inEditable =
+        activeEl &&
+        (activeEl.tagName === 'INPUT' ||
+          activeEl.tagName === 'TEXTAREA' ||
+          activeEl.tagName === 'SELECT' ||
+          activeEl.isContentEditable);
+
       if (e.key === 'Escape' && !modal?.classList.contains('hidden')) {
         closeModal();
       } else if (
-        (e.key === '/' || ((e.metaKey || e.ctrlKey) && e.key === 'k')) &&
         modal?.classList.contains('hidden') &&
-        document.activeElement?.tagName !== 'INPUT' &&
-        document.activeElement?.tagName !== 'TEXTAREA'
+        (((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') || (e.key === '/' && !inEditable))
       ) {
         e.preventDefault();
         openModal();
       }
     });
 
-    openBtn?.addEventListener('click', openModal);
-    document.getElementById('open-search-btn-mobile')?.addEventListener('click', openModal);
+    openBtn?.addEventListener('click', () => openModal());
+    document.getElementById('open-search-btn-mobile')?.addEventListener('click', () => openModal());
     closeBtn?.addEventListener('click', closeModal);
     backdrop?.addEventListener('click', closeModal);
-
-    // Keyboard navigation inside the result list
-    let activeIndex = -1;
 
     function resultLinks() {
       return Array.from(resultsContainer?.querySelectorAll('[data-search-result]') || []);
@@ -159,58 +262,8 @@ const t = getTranslations(lang);
       }
     });
 
-    // Live search query matching
     input?.addEventListener('input', (e) => {
-      const q = e.target.value.toLowerCase().trim();
-      if (!q) {
-        resultsContainer.innerHTML = `<div id="search-empty-state" class="py-8 text-center text-xs text-[var(--text-muted)] font-mono">${
-          lang === 'vi' ? 'Nhập từ khóa để tìm kiếm thủ thuật tức thì...' : 'Type a query to search handcrafted tips instantly...'
-        }</div>`;
-        return;
-      }
-
-      const matches = allTips
-        .filter((tip) => {
-          const tText = (tip.title[lang] || tip.title['en'] || '').toLowerCase();
-          const sText = (tip.summary[lang] || tip.summary['en'] || '').toLowerCase();
-          const cText = (tip.categories || []).join(' ').toLowerCase();
-          return tText.includes(q) || sText.includes(q) || cText.includes(q);
-        })
-        .slice(0, 8);
-
-      if (matches.length === 0) {
-        resultsContainer.innerHTML = `<div class="py-8 text-center text-xs text-[var(--text-muted)] font-mono">${
-          lang === 'vi' ? 'Không tìm thấy thủ thuật nào khớp với từ khóa.' : 'No tips matched your query.'
-        }</div>`;
-        return;
-      }
-
-      resultsContainer.innerHTML = matches
-        .map((tip) => {
-          const title = escapeHtml(tip.title[lang] || tip.title['en'] || '');
-          const summ = escapeHtml(tip.summary[lang] || tip.summary['en'] || '');
-          const sourceName = escapeHtml(tip.source?.name || '');
-          const category = escapeHtml(tip.categories[0] || 'tips');
-          const slugOrId = encodeURIComponent(tip.slug || tip.id);
-          return `
-            <a href="/${lang}/tip/${slugOrId}" data-search-result="true" aria-selected="false" class="block p-3 rounded-xl hover:bg-[var(--bg-muted)] transition-colors group">
-              <div class="flex items-center gap-2 text-[11px] font-mono text-[var(--text-muted)] mb-1">
-                <span class="text-[var(--text-secondary)]">${sourceName}</span>
-                <span>·</span>
-                <span class="text-[var(--accent)] font-semibold">#${category}</span>
-              </div>
-              <h4 class="text-sm font-bold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors leading-snug">
-                ${title}
-              </h4>
-              <p class="text-xs text-[var(--text-secondary)] line-clamp-1 mt-1">
-                ${summ}
-              </p>
-            </a>
-          `;
-        })
-        .join('');
-
-      activeIndex = -1;
+      renderResults(e.target.value);
     });
   })();
 </script>

@@ -12,7 +12,7 @@ const rawTips = getAllTips(false).filter((tip) => tip.source.kind !== 'news');
 const trickOfDay = getTrickOfTheDay('vi');
 const tips = trickOfDay ? rawTips.filter((t) => t.id !== trickOfDay.id) : rawTips;
 const allCategories = getAllCategories();
-const sources = getAllSources();
+const sources = getAllSources().filter((source) => source.kind !== 'news');
 const latestUpdate = rawTips.map((tip) => tip.fetched_at).filter(Boolean).sort().at(-1) || '';
 const contentTypes = [
   { id: 'article', label: 'Bài viết' },
@@ -130,7 +130,7 @@ const sidebarCategories = [
         <div class="flex items-center gap-1.5 flex-wrap" id="desktop-diff-group">
           <button
             type="button"
-            class="diff-pill-btn px-2.5 py-1 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-all"
+            class="diff-pill-btn px-2.5 py-1 rounded-lg border border-[var(--accent)] bg-[var(--accent-bg)] text-[var(--accent)] font-bold transition-all"
             data-diff="all"
           >
             Tất cả
@@ -186,6 +186,13 @@ const sidebarCategories = [
           >
             Quốc tế [EN]
           </button>
+          <button
+            type="button"
+            class="lang-pill-btn px-2.5 py-1 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] text-xs transition-all"
+            data-lang-filter="zh-CN"
+          >
+            Tiếng Trung
+          </button>
         </div>
       </div>
 
@@ -240,6 +247,7 @@ const sidebarCategories = [
             <option value="all">Tất cả ngôn ngữ</option>
             <option value="vi">Tiếng Việt</option>
             <option value="en">Tiếng Anh</option>
+            <option value="zh-CN">Tiếng Trung</option>
           </select>
         </label>
       </div>
@@ -520,9 +528,32 @@ const sidebarCategories = [
         if (window.TipCardRenderer) frag.appendChild(window.TipCardRenderer.create(tip, LANG, LABELS));
       });
       if (stream) stream.replaceChildren(frag);
+      if (window.TechTipsActions) window.TechTipsActions.updateCardsUI();
 
       renderPagination(filtered.length);
       if (options && options.scroll) window.scrollTo({ top: 300, behavior: 'smooth' });
+    }
+
+    function syncFilterControls() {
+      if (platformFilter) platformFilter.value = currentCat;
+      if (languageFilter) languageFilter.value = currentLangFilter;
+      if (sourceFilter) sourceFilter.value = currentSource;
+      if (typeFilter) typeFilter.value = currentType;
+      mobileCatBtns.forEach((b) => {
+        b.className = b.getAttribute('data-category') === currentCat ? CAT_MOBILE_ACTIVE : CAT_MOBILE_BASE;
+      });
+      desktopCatBtns.forEach((b) => {
+        b.className = b.getAttribute('data-category') === currentCat ? CAT_DESKTOP_ACTIVE : CAT_DESKTOP_BASE;
+      });
+      diffBtns.forEach((b) => {
+        b.className = b.getAttribute('data-diff') === currentDiff ? DIFF_ACTIVE : DIFF_BASE;
+      });
+      langBtns.forEach((b) => {
+        b.className = b.getAttribute('data-lang-filter') === currentLangFilter ? LANG_ACTIVE : LANG_BASE;
+      });
+      sortBtns.forEach((b) => {
+        b.className = b.getAttribute('data-sort') === currentSort ? SORT_ACTIVE : SORT_BASE;
+      });
     }
 
     pagePrevBtn?.addEventListener('click', () => {
@@ -543,57 +574,52 @@ const sidebarCategories = [
       updateView();
     });
 
-    sourceFilter?.addEventListener('change', (e) => { currentSource = e.target.value; currentPage = 1; updateView(); });
-    typeFilter?.addEventListener('change', (e) => { currentType = e.target.value; currentPage = 1; updateView(); });
-    platformFilter?.addEventListener('change', (e) => { currentCat = e.target.value; currentPage = 1; updateView(); });
-    languageFilter?.addEventListener('change', (e) => { currentLangFilter = e.target.value; currentPage = 1; updateView(); });
+    sourceFilter?.addEventListener('change', (e) => { currentSource = e.target.value; currentPage = 1; syncFilterControls(); updateView(); });
+    typeFilter?.addEventListener('change', (e) => { currentType = e.target.value; currentPage = 1; syncFilterControls(); updateView(); });
+    platformFilter?.addEventListener('change', (e) => { currentCat = e.target.value; currentPage = 1; syncFilterControls(); updateView(); });
+    languageFilter?.addEventListener('change', (e) => { currentLangFilter = e.target.value; currentPage = 1; syncFilterControls(); updateView(); });
 
     mobileCatBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
-        mobileCatBtns.forEach((b) => { b.className = CAT_MOBILE_BASE; });
-        btn.className = CAT_MOBILE_ACTIVE;
-        currentCat = btn.getAttribute('data-category');
+        currentCat = btn.getAttribute('data-category') || 'all';
         currentPage = 1;
+        syncFilterControls();
         updateView();
       });
     });
 
     desktopCatBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
-        desktopCatBtns.forEach((b) => { b.className = CAT_DESKTOP_BASE; });
-        btn.className = CAT_DESKTOP_ACTIVE;
-        currentCat = btn.getAttribute('data-category');
+        currentCat = btn.getAttribute('data-category') || 'all';
         currentPage = 1;
+        syncFilterControls();
         updateView();
       });
     });
 
     diffBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
-        diffBtns.forEach((b) => { b.className = DIFF_BASE; });
-        btn.className = DIFF_ACTIVE;
-        currentDiff = btn.getAttribute('data-diff');
+        currentDiff = btn.getAttribute('data-diff') || 'all';
         currentPage = 1;
+        syncFilterControls();
         updateView();
       });
     });
 
     sortBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
-        sortBtns.forEach((b) => { b.className = SORT_BASE; });
-        btn.className = SORT_ACTIVE;
-        currentSort = btn.getAttribute('data-sort');
+        currentSort = btn.getAttribute('data-sort') || 'newest';
         currentPage = 1;
+        syncFilterControls();
         updateView();
       });
     });
 
     langBtns.forEach((btn) => {
       btn.addEventListener('click', () => {
-        langBtns.forEach((b) => { b.className = LANG_BASE; });
-        btn.className = LANG_ACTIVE;
         currentLangFilter = btn.getAttribute('data-lang-filter') || 'all';
         currentPage = 1;
+        syncFilterControls();
         updateView();
       });
     });
@@ -609,17 +635,7 @@ const sidebarCategories = [
       currentPage = 1;
 
       if (mobileSearchInput) mobileSearchInput.value = '';
-      if (sourceFilter) sourceFilter.value = 'all';
-      if (typeFilter) typeFilter.value = 'all';
-      if (platformFilter) platformFilter.value = 'all';
-      if (languageFilter) languageFilter.value = 'all';
-
-      mobileCatBtns.forEach((b, i) => { b.className = i === 0 ? CAT_MOBILE_ACTIVE : CAT_MOBILE_BASE; });
-      desktopCatBtns.forEach((b, i) => { b.className = i === 0 ? CAT_DESKTOP_ACTIVE : CAT_DESKTOP_BASE; });
-      diffBtns.forEach((b, i) => { b.className = i === 0 ? DIFF_ACTIVE : DIFF_BASE; });
-      langBtns.forEach((b, i) => { b.className = i === 0 ? LANG_ACTIVE : LANG_BASE; });
-      sortBtns.forEach((b) => { b.className = b.getAttribute('data-sort') === 'newest' ? SORT_ACTIVE : SORT_BASE; });
-
+      syncFilterControls();
       updateView();
     });
 
@@ -627,6 +643,22 @@ const sidebarCategories = [
       if (!clientMode) return;
       renderPagination(lastTotal);
     });
+
+    // Hỗ trợ tham số URL (?diff=, ?cat=, ?q=) khi điều hướng từ trang phân trang về
+    const params = new URLSearchParams(window.location.search);
+    const initDiff = params.get('diff');
+    const initCat = params.get('cat');
+    const initQ = params.get('q');
+    if (initDiff || initCat || initQ) {
+      if (initDiff && ['easy', 'medium', 'advanced'].includes(initDiff)) currentDiff = initDiff;
+      if (initCat) currentCat = initCat;
+      if (initQ) {
+        searchQuery = initQ;
+        if (mobileSearchInput) mobileSearchInput.value = initQ;
+      }
+      syncFilterControls();
+      updateView();
+    }
 
     // Trang đầu đã được render sẵn ở server. Chỉ chuyển sang chế độ client
     // khi người dùng thực sự lọc / sắp xếp / tìm kiếm / chuyển trang.

@@ -9,6 +9,7 @@ from pathlib import Path
 import requests
 import urllib.request
 import urllib.parse
+from textclean import clean_text
 
 CACHE_FILE = Path("data/cache/translations.json")
 
@@ -32,14 +33,23 @@ def looks_vietnamese(text: str) -> bool:
     return (len(VI_CHARS.findall(text)) / max(len(text), 1)) > 0.03
 
 def looks_english(text: str) -> bool:
-    """Kiểm tra văn bản tiếng Anh hoàn toàn không chứa ký tự tiếng Việt có dấu."""
+    """Kiểm tra văn bản tiếng Anh hợp lệ (cho phép tỷ lệ rất nhỏ ký tự tên riêng gốc như Tinh tế, IT之家)."""
     if not text:
         return True
-    if len(VI_CHARS.findall(text)) > 0 or re.search(r"[\u3400-\u9fff]", text):
+    unicode_letters = re.findall(r"[^\W\d_]", text, re.UNICODE)
+    if not unicode_letters:
         return False
     letters = re.findall(r"[A-Za-z]", text)
-    unicode_letters = re.findall(r"[^\W\d_]", text, re.UNICODE)
-    return len(letters) >= 3 and len(letters) / max(len(unicode_letters), 1) >= 0.5
+    vi_chars = VI_CHARS.findall(text)
+    cjk_chars = re.findall(r"[\u3400-\u9fff]", text)
+    total_letters = len(unicode_letters)
+    if len(letters) < 3:
+        return False
+    if len(cjk_chars) / total_letters > 0.08:
+        return False
+    if len(vi_chars) / max(len(text), 1) > 0.03:
+        return False
+    return (len(letters) / total_letters) >= 0.75
 
 VI_FUNCTION_WORDS = re.compile(
     r"\b(của|và|cho|trong|được|này|đã|sẽ|như|thế|mình|bạn|với|sau|khi|làm|việc|người|hướng|dẫn|xem|nội|dung|ngày)\b",
@@ -140,8 +150,9 @@ class GeminiTranslator(Translator):
             f"Translate each title and summary naturally and completely.\n\n"
             f"QUY TẮC BẮT BUỘC:\n"
             f"1. Dịch NGUYÊN CÂU, văn phong tự nhiên, súc tích. Tuyệt đối KHÔNG thay thế từ khóa chắp vá hay trộn tiếng.\n"
-            f"2. GIỮ NGUYÊN không dịch: tên phần mềm/sản phẩm (Chrome, Windows, Ubuntu, Docker, Git, VS Code...), "
-            f"lệnh shell, code, phím tắt (Ctrl+B, sudo, grep, apt, winget), phần cứng (SSD, RAM, GPU, CPU), API.\n"
+            f"2. GIỮ NGUYÊN không dịch: tên phần mềm/sản phẩm quốc tế (Chrome, Windows, Ubuntu, Docker, Git, VS Code...), "
+            f"lệnh shell, code, phím tắt (Ctrl+B, sudo, grep, apt, winget), phần cứng (SSD, RAM, GPU, CPU), API. "
+            f"Với tên trang tin tiếng Trung hãy phiên âm sang Latin (ví dụ: IT之家 -> IT Home, 少数派 -> SSPai).\n"
             f"3. Không thêm bớt thông tin ngoài bản gốc; không thêm tiền tố như '[Bản dịch]'.\n"
             f"4. Trả về DUY NHẤT một mảng JSON hợp lệ chứa các đối tượng có thuộc tính [\"id\", \"title\", \"summary\"]. "
             f"Không thêm bất kỳ lời bình hay định dạng nào khác.\n\n"
@@ -401,8 +412,8 @@ def process_item_bilingual(
     
     if batch_res:
         t_obj = batch_res[0]
-        res_t = t_obj.get("title", "").strip()
-        res_s = t_obj.get("summary", "").strip()
+        res_t = clean_text(t_obj.get("title", "").strip(), limit=180)
+        res_s = clean_text(t_obj.get("summary", "").strip(), limit=320)
 
         # Nghiệm thu chất lượng bản dịch
         if target_lang == "vi":
@@ -481,8 +492,8 @@ def _translate_chinese_items(
                 item = items_by_id[record["id"]]
                 original_title, original_summary = record["title"], record["summary"]
                 result = result_map.get(record["id"], {})
-                translated_title = (result.get("title") or "").strip()
-                translated_summary = (result.get("summary") or "").strip()
+                translated_title = clean_text((result.get("title") or "").strip(), limit=180)
+                translated_summary = clean_text((result.get("summary") or "").strip(), limit=320)
                 valid = bool(translated_title and translated_summary)
                 if target_lang == "vi":
                     valid = valid and looks_vietnamese(translated_title) and looks_vietnamese(translated_summary)
@@ -501,11 +512,12 @@ def _translate_chinese_items(
                     item["translated"][target_lang] = False
                     _record_translation_failure(item, target_lang)
 
-                cache[item["id"]] = {
-                    "title": item["title"],
-                    "summary": item["summary"],
-                    "translated": item["translated"],
-                }
+                if item["translated"].get("vi") == "machine" or item["translated"].get("en") == "machine":
+                    cache[item["id"]] = {
+                        "title": item["title"],
+                        "summary": item["summary"],
+                        "translated": item["translated"],
+                    }
     return processed_count
 
 
@@ -601,8 +613,8 @@ def batch_translate_pending(
 
             if iid in res_map:
                 res_item = res_map[iid]
-                trans_t = res_item.get("title", "").strip()
-                trans_s = res_item.get("summary", "").strip()
+                trans_t = clean_text(res_item.get("title", "").strip(), limit=180)
+                trans_s = clean_text(res_item.get("summary", "").strip(), limit=320)
 
                 if looks_vietnamese(trans_t) and not is_mixed(trans_t) and not is_mixed(trans_s):
                     it["title"]["vi"] = trans_t
@@ -642,8 +654,8 @@ def batch_translate_pending(
 
             if iid in res_map:
                 res_item = res_map[iid]
-                trans_t = res_item.get("title", "").strip()
-                trans_s = res_item.get("summary", "").strip()
+                trans_t = clean_text(res_item.get("title", "").strip(), limit=180)
+                trans_s = clean_text(res_item.get("summary", "").strip(), limit=320)
 
                 if looks_english(trans_t) and not is_mixed(trans_t) and not is_mixed(trans_s):
                     it["title"]["en"] = trans_t

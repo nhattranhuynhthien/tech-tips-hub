@@ -38,7 +38,7 @@
     "trust": 4,
     "tipOnly": false,
     "kind": "news",
-    "allowNews": true,
+    "allowNews": false,
     "contentType": "article",
     "enabled": true,
     "maxPerRun": 12
@@ -867,7 +867,7 @@
   },
   {
     "id": "tuoitre-nsso",
-    "name": "Tu?i Tr? Nh?p s?ng s?",
+    "name": "Tuổi Trẻ Nhịp sống số",
     "type": "rss",
     "url": "https://tuoitre.vn/rss/nhip-song-so.rss",
     "lang": "vi",

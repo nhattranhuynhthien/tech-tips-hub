@@ -197,9 +197,24 @@
       );
     }
 
+    const rightActions = el('div', 'flex items-center gap-2 shrink-0 ml-auto');
+
+    const saveTitle = lang === 'vi' ? 'Lưu xem sau' : 'Save for later';
+    const bookmarkBtn = el(
+      'button',
+      'bookmark-btn p-1.5 rounded-lg border border-transparent text-[var(--text-muted)] hover:text-[var(--accent)] hover:bg-[var(--bg-muted)] transition-colors'
+    );
+    bookmarkBtn.type = 'button';
+    bookmarkBtn.setAttribute('data-id', tip.id);
+    bookmarkBtn.setAttribute('aria-pressed', 'false');
+    bookmarkBtn.setAttribute('aria-label', saveTitle);
+    bookmarkBtn.title = saveTitle;
+    bookmarkBtn.innerHTML =
+      '<svg class="bookmark-icon w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>';
+
     const readOriginal = el(
       'a',
-      'text-[var(--accent)] hover:underline font-semibold inline-flex items-center gap-1 shrink-0 ml-auto'
+      'text-[var(--accent)] hover:underline font-semibold inline-flex items-center gap-1'
     );
     readOriginal.href = tip.url || '#';
     readOriginal.target = '_blank';
@@ -212,7 +227,8 @@
     );
     readOriginal.querySelectorAll('span').forEach((span) => span.setAttribute('aria-hidden', 'true'));
 
-    footer.append(badges, readOriginal);
+    rightActions.append(bookmarkBtn, readOriginal);
+    footer.append(badges, rightActions);
     article.append(body, footer);
     return article;
   }

@@ -3,6 +3,7 @@ import os
 import sys
 import json
 import re
+import yaml
 from pathlib import Path
 
 if hasattr(sys.stdout, "reconfigure"):
@@ -10,9 +11,10 @@ if hasattr(sys.stdout, "reconfigure"):
 if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
-from translate import is_mixed, looks_vietnamese
+from translate import is_mixed, looks_vietnamese, looks_english
 
 ENTITY_REGEX = re.compile(r"&(#\d+|\w+);")
+MOJIBAKE_WORD_REGEX = re.compile(r"[A-Za-zÀ-ỹ]\?[A-Za-zÀ-ỹ]")
 BOILERPLATE_PATTERNS = [
     re.compile(r"Article URL:", re.IGNORECASE),
     re.compile(r"appeared first on", re.IGNORECASE),
@@ -23,16 +25,26 @@ BOILERPLATE_PATTERNS = [
 
 BLOCKLIST_CHECK = re.compile(
     r"(\bdeals?\b|\bdiscount\b|% off|\$\d+ off|drops to|price cut|"
-    r"\[QC\]|is hiring|\bhiring\b|tuyển dụng|\btrailer\b)",
+    r"\[QC\]|is hiring|\bhiring\b|\btuyển dụng\b|\btrailer\b|"
+    r"双十一|双11|喜加一|官方补贴|\d+(?:\.\d+)?\s*折(?!叠))",
     re.IGNORECASE
 )
+
+
+def load_valid_categories() -> set[str]:
+    cat_path = Path("config/categories.yml")
+    if not cat_path.exists():
+        return set()
+    doc = yaml.safe_load(cat_path.read_text(encoding="utf-8")) or {}
+    return {c["id"] for c in doc.get("categories", []) if c.get("id")}
+
 
 def summarize_rejections() -> str:
     """Tóm tắt dữ liệu từ chối bài viết từ data/logs/rejected.jsonl."""
     log_path = Path("data/logs/rejected.jsonl")
     if not log_path.exists():
         return "*(Chưa có bản ghi loại bỏ nào)*"
-    
+
     source_stats = {}
     reason_stats = {}
     total_rejected = 0
@@ -55,7 +67,7 @@ def summarize_rejections() -> str:
     if total_rejected == 0:
         return "*(Không có bài viết nào bị loại)*"
 
-    md = [f"**Tổng số bài bị loại trong đợt quét:** {total_rejected}\n"]
+    md = [f"**Tổng số bài bị loại ghi nhận trong nhật ký:** {total_rejected}\n"]
     md.append("| Lý do loại bỏ | Số lượng | Tỷ lệ |")
     md.append("|---|---|---|")
     for rsn, count in sorted(reason_stats.items(), key=lambda x: -x[1]):
@@ -71,6 +83,7 @@ def summarize_rejections() -> str:
 
     return "\n".join(md)
 
+
 def append_to_github_summary(content: str):
     """Ghi báo cáo Markdown vào GitHub Job Summary nếu đang chạy trên CI."""
     summary_path = os.environ.get("GITHUB_STEP_SUMMARY")
@@ -80,6 +93,7 @@ def append_to_github_summary(content: str):
                 f.write(content + "\n")
         except Exception as e:
             print(f"[QA Warning] Không thể ghi vào GITHUB_STEP_SUMMARY: {e}")
+
 
 def main():
     index_path = Path("data/index.json")
@@ -92,6 +106,8 @@ def main():
     except Exception as e:
         print(f"[QA Error] Lỗi đọc JSON index.json: {e}")
         sys.exit(1)
+
+    valid_categories = load_valid_categories()
 
     # Chỉ đánh giá các bài đang hiển thị (không bị ẩn)
     items = [it for it in data.values() if not it.get("hidden")]
@@ -107,23 +123,32 @@ def main():
 
     for it in items:
         iid = it.get("id", "unknown")
-        src_id = it.get("source", {}).get("id", "unknown")
+        src = it.get("source", {})
+        src_id = src.get("id", "unknown")
+        src_name = src.get("name", "")
         source_counts[src_id] = source_counts.get(src_id, 0) + 1
-        
-        # 1. Kiểm tra HTML entities & câu trộn trong tiêu đề
+
+        if MOJIBAKE_WORD_REGEX.search(src_name):
+            problems.append(f"Tên nguồn bị lỗi mã hóa '?' ({iid}): {src_name}")
+
+        # 1. Kiểm tra HTML entities, câu trộn & blocklist trong tiêu đề mọi ngôn ngữ
         for lang, text in it.get("title", {}).items():
             if not text or len(text.strip()) == 0:
                 problems.append(f"Tiêu đề rỗng [{lang}] ({iid})")
+                continue
             if ENTITY_REGEX.search(text):
                 problems.append(f"Mã HTML entity trong tiêu đề [{lang}] ({iid}): {text[:50]}")
             if is_mixed(text):
                 mixed_count += 1
                 problems.append(f"Câu trộn tiếng Anh-Việt trong tiêu đề ({iid}): {text[:60]}")
+            if BLOCKLIST_CHECK.search(text):
+                problems.append(f"Chứa từ khóa bị chặn trong tiêu đề [{lang}] ({iid}): {text[:50]}")
 
         # 2. Kiểm tra HTML entities, câu trộn & độ dài tóm tắt
         for lang, text in it.get("summary", {}).items():
             if not text or len(text.strip()) == 0:
                 problems.append(f"Tóm tắt rỗng [{lang}] ({iid})")
+                continue
             if len(text) > 500:
                 problems.append(f"Tóm tắt quá dài ({len(text)} ký tự > 500) [{lang}] ({iid}): {text[:60]}")
             if ENTITY_REGEX.search(text):
@@ -135,11 +160,17 @@ def main():
                 if bp.search(text):
                     problems.append(f"Boilerplate/rác trong tóm tắt [{lang}] ({iid}): {bp.pattern}")
 
-        # 3. Kiểm tra danh mục
+        # 3. Kiểm tra danh mục hợp lệ
         cats = it.get("categories", [])
         cat_total += len(cats)
+        if not cats:
+            problems.append(f"Bài không có danh mục ({iid})")
         if len(cats) > 2:
             problems.append(f"Bài có hơn 2 danh mục ({iid}): {cats}")
+        if valid_categories:
+            invalid_cats = [c for c in cats if c not in valid_categories]
+            if invalid_cats:
+                problems.append(f"Danh mục không hợp lệ ({iid}): {invalid_cats}")
 
         # 4. Kiểm tra nhãn dịch máy sai sự thật
         trans_meta = it.get("translated", {})
@@ -147,13 +178,13 @@ def main():
             vi_title = it.get("title", {}).get("vi", "")
             if not looks_vietnamese(vi_title):
                 problems.append(f"Gắn nhãn dịch máy tiếng Việt nhưng nội dung không phải tiếng Việt ({iid}): {vi_title[:50]}")
+        if trans_meta.get("en") == "machine":
+            en_title = it.get("title", {}).get("en", "")
+            if not looks_english(en_title):
+                problems.append(f"Gắn nhãn dịch máy tiếng Anh nhưng nội dung không phải tiếng Anh ({iid}): {en_title[:50]}")
 
-        # 5. Kiểm tra blocklist (quảng cáo, deal, tuyển dụng)
-        if BLOCKLIST_CHECK.search(it.get("title", {}).get("en", "")):
-            problems.append(f"Chứa từ khóa bị chặn trong tiêu đề ({iid}): {it.get('title', {}).get('en', '')[:50]}")
-
-        # 6. Đếm bài howto / thủ thuật từ nguồn chuyên tips
-        if it.get("howto") or it.get("difficulty") or it.get("source", {}).get("kind") == "tips":
+        # 5. Đếm bài howto / thủ thuật từ nguồn chuyên tips
+        if it.get("howto") or it.get("difficulty") or src.get("kind") == "tips":
             howto_count += 1
 
     avg_cats = cat_total / max(len(items), 1)
@@ -170,7 +201,6 @@ def main():
     print(f"- Số câu dịch trộn: {mixed_count} (chuẩn: 0)")
     print(f"- Tổng số lỗi vi phạm phát hiện: {len(problems)}")
 
-    # Tạo nội dung báo cáo cho GitHub Job Summary
     status_icon = "✅" if not problems and avg_cats <= 2.0 and howto_ratio >= 0.8 else "❌"
     summary_md = [
         f"## {status_icon} Tech Tips Hub — Báo cáo Kiểm định Dữ liệu (QA Report)\n",
@@ -201,6 +231,7 @@ def main():
 
     print("\n✅ QA THÀNH CÔNG: Dữ liệu đạt 100% tiêu chí chất lượng!")
     sys.exit(0)
+
 
 if __name__ == "__main__":
     main()

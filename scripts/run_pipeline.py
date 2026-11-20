@@ -166,7 +166,10 @@ def main():
         paused_until = src_state.get("paused_until")
         if paused_until:
             try:
-                if datetime.fromisoformat(paused_until.replace("Z", "+00:00")) > datetime.now(timezone.utc):
+                paused_dt = datetime.fromisoformat(paused_until.replace("Z", "+00:00"))
+                if paused_dt.tzinfo is None:
+                    paused_dt = paused_dt.replace(tzinfo=timezone.utc)
+                if paused_dt > datetime.now(timezone.utc):
                     paused_sources.append(src["id"])
                     print(f"[Fetch Paused] {src['id']} tạm dừng tới {paused_until}")
                     continue
@@ -369,12 +372,20 @@ def main():
 
             target_lang = "en" if lang == "vi" else "vi"
             provided_tags = entry.get("tags", [])
-            tags = [str(tag)[:32] for tag in provided_tags[:10]] if isinstance(provided_tags, list) else []
-            categories = [tag for tag in tags if tag in {
+            raw_tags = [str(tag).strip().lower()[:32] for tag in provided_tags[:10]] if isinstance(provided_tags, list) else []
+            mapped_tags = ["browser" if tag == "web" else tag for tag in raw_tags if tag != "khac"]
+            valid_cat_ids = {
                 "android", "ios", "windows", "macos", "linux", "browser", "office", "security", "ai", "dev", "hardware"
-            }][:2]
+            }
+            categories = []
+            for tag in mapped_tags:
+                if tag in valid_cat_ids and tag not in categories:
+                    categories.append(tag)
+                if len(categories) >= 2:
+                    break
             if not categories:
-                categories = ["browser"]
+                categories = classify(str(title), summary, fallback=[], max_cats=2)
+            tags = [tag for tag in mapped_tags if tag not in categories][:4]
             index[iid] = {
                 "id": iid, "slug": generate_seo_slug(str(title), iid), "url": url,
                 "source": {"id": "community", "name": source_name, "site_url": url,
@@ -408,9 +419,23 @@ def main():
     batch_translate_pending(all_items, trans_cache, batch_size=5)
 
     # Các trường này chỉ cần trong lúc xử lý; tiêu đề và tóm tắt gốc đã được lưu trong title/summary.
+    # Đồng thời cập nhật lại SEO slug cho bài mới hoặc bài tiếng Trung sau khi đã có bản dịch Latin.
     for item in all_items:
         item.pop("raw_title", None)
         item.pop("raw_summary", None)
+        orig_lang = str(item.get("original_lang", "")).lower()
+        curr_slug = item.get("slug") or ""
+        is_zh = orig_lang.startswith("zh")
+        has_latin_trans = item.get("translated", {}).get("vi") == "machine" or item.get("translated", {}).get("en") == "machine"
+        if not curr_slug or curr_slug.startswith("tip-") or (is_zh and has_latin_trans):
+            best_title = (
+                (item.get("title", {}).get("vi") if item.get("translated", {}).get("vi") == "machine" else None)
+                or (item.get("title", {}).get("en") if item.get("translated", {}).get("en") == "machine" else None)
+                or item.get("title", {}).get("vi")
+                or item.get("title", {}).get("en")
+                or ""
+            )
+            item["slug"] = generate_seo_slug(best_title, item["id"])
 
     # Giữ kho hoạt động ở mức 2.000 bài; các bài cũ được chuyển vào archive theo tháng.
     if len(all_items) > 2000:

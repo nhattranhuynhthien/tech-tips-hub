@@ -18,12 +18,18 @@ keywords:
   - prime day
   - cyber monday
   - giam gia
+  - giảm giá
   - khuyen mai
+  - khuyến mãi
   - ma giam gia
+  - mã giảm giá
   - gia re
+  - giá rẻ
   - ban chay
   - quang cao
+  - quảng cáo
   - tai tro
+  - tài trợ
   - "促销"
   - "折扣"
   - "优惠"
@@ -32,6 +38,15 @@ keywords:
   - "国补"
   - "降价"
   - "新低"
+  - "双十一"
+  - "双11"
+  - "喜加一"
+  - "官方补贴"
+  - "严选好货"
+  - "神券"
+  - "到手价"
+  - "立减"
+  - "抢购"
 
 domains: []
 
@@ -41,4 +56,4 @@ title_patterns:
   - "save \\$\\d+ on"
   - "\\d+% off"
   - "săn sale"
-
+  - "\\d+(?:\\.\\d+)?\\s*折(?!叠)"

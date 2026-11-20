@@ -242,7 +242,7 @@ export function getNewsOfTheDay(): Tip | null {
     const publishedAt = new Date(tip.published_at || tip.fetched_at || 0).getTime();
     return Number.isFinite(publishedAt) && publishedAt <= now && now - publishedAt <= dayMs;
   });
-  return recentNews.sort((a, b) => (b.score ?? 0) - (a.score ?? 0) || Date.parse(b.published_at) - Date.parse(a.published_at))[0] || null;
+  return recentNews.sort((a, b) => (b.score ?? 0) - (a.score ?? 0) || (Date.parse(b.published_at) || 0) - (Date.parse(a.published_at) || 0))[0] || null;
 }
 
 export function getCategoriesWithCounts(): Array<Category & { count: number }> {

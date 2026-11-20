@@ -32,9 +32,17 @@ const pageTitle = title ? `${title} — tips.hub` : `tips.hub — ${t.site.title
 const pageDesc = description || t.site.description;
 
 const otherLang: Locale = lang === 'vi' ? 'en' : 'vi';
-const targetPath = canonicalPath === '/' ? `/${otherLang}` : canonicalPath.replace(new RegExp(`^/${lang}`), `/${otherLang}`);
+const hasLocalizedCounterpart = /^\/(vi|en)(\/|$)/.test(canonicalPath);
+const targetPath = canonicalPath === '/'
+  ? `/${otherLang}`
+  : hasLocalizedCounterpart
+    ? canonicalPath.replace(new RegExp(`^/${lang}`), `/${otherLang}`)
+    : `/${otherLang}`;
 const alternateUrl = `${SITE_URL}${targetPath}`;
 const canonicalUrl = `${SITE_URL}${canonicalPath}`;
+const ogImageAlt = lang === 'vi'
+  ? 'tips.hub — Sổ tay thủ thuật & mẹo công nghệ'
+  : 'tips.hub — Practical tech tips & tricks notebook';
 
 const isHome = canonicalPath === `/${lang}` || canonicalPath === `/${lang}/`;
 const isNews = canonicalPath.includes('/news');
@@ -52,9 +60,9 @@ const isAbout = canonicalPath.includes('/about');
     <meta name="description" content={pageDesc} />
     {noindex && <meta name="robots" content="noindex, follow" />}
     <link rel="canonical" href={canonicalUrl} />
-    <link rel="alternate" hreflang={lang} href={canonicalUrl} />
-    <link rel="alternate" hreflang={otherLang} href={alternateUrl} />
-    <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/vi`} />
+    {hasLocalizedCounterpart && <link rel="alternate" hreflang={lang} href={canonicalUrl} />}
+    {hasLocalizedCounterpart && <link rel="alternate" hreflang={otherLang} href={alternateUrl} />}
+    {hasLocalizedCounterpart && <link rel="alternate" hreflang="x-default" href={`${SITE_URL}/vi`} />}
     <link rel="alternate" type="application/rss+xml" title={`${t.site.title} RSS`} href={`/${lang}/feed.xml`} />
     {prevUrl && <link rel="prev" href={prevUrl} />}
     {nextUrl && <link rel="next" href={nextUrl} />}
@@ -69,12 +77,12 @@ const isAbout = canonicalPath.includes('/about');
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="tips.hub — Sổ tay thủ thuật & mẹo công nghệ" />
+    <meta property="og:image:alt" content={ogImageAlt} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={pageTitle} />
     <meta name="twitter:description" content={pageDesc} />
     <meta name="twitter:image" content={`${SITE_URL}/og-image.png`} />
-    <meta name="twitter:image:alt" content="tips.hub — Sổ tay thủ thuật & mẹo công nghệ" />
+    <meta name="twitter:image:alt" content={ogImageAlt} />
 
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
@@ -173,7 +181,8 @@ const isAbout = canonicalPath.includes('/about');
           <!-- Language Segmented Switcher Pill (VI | EN) with localStorage persistence -->
           <div class="inline-flex items-center p-0.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-xs font-mono font-bold">
             <a
-              href={lang === 'vi' ? '#' : targetPath}
+              href={lang === 'vi' ? canonicalPath : targetPath}
+              aria-current={lang === 'vi' ? 'page' : undefined}
               onclick="localStorage.setItem('techtips_lang', 'vi'); document.cookie='techtips_lang=vi;path=/;max-age=31536000;samesite=lax'"
               class={`px-3 py-1.5 min-h-[36px] flex items-center rounded-lg transition-all ${lang === 'vi' ? 'bg-[var(--accent-hero)] text-black font-extrabold shadow-sm' : 'text-[var(--text-muted)] hover:text-[var(--text-primary)]'}`}
               aria-label="Chuyển sang Tiếng Việt"
@@ -181,7 +190,8 @@ const isAbout = canonicalPath.includes('/about');
               VI
             </a>
             <a
-              href={lang === 'en' ? '#' : targetPath}
+              href={lang === 'en' ? canonicalPath : targetPath}
+              aria-current={lang === 'en' ? 'page' : undefined}
               onclick="localStorage.setItem('techtips_lang', 'en'); document.cookie='techtips_lang=en;path=/;max-age=31536000;samesite=lax'"
               class={`px-3 py-1.5 min-h-[36px] flex items-center rounded-lg transition-all ${lang === 'en' ? 'bg-[var(--accent-hero)] text-black font-extrabold shadow-sm' : 'text-[var(--text-muted)] hover:text-[var(--text-primary)]'}`}
               aria-label="Switch to English"

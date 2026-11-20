@@ -43,16 +43,16 @@ flowchart LR
 ```
 
 ### Chi tiết các tầng xử lý:
-* **Làm sạch ([`scripts/textclean.py`](file:///d:/Random_v2/scripts/textclean.py)):** Giải mã HTML entities vòng lặp (kể cả mã hóa kép `&amp;ecirc;`), gỡ tag HTML, loại boilerplate quảng cáo, cắt gọt tóm tắt trùng tiêu đề.
-* **Bộ lọc ([`scripts/filters.py`](file:///d:/Random_v2/scripts/filters.py)):** Phân định nguồn `tips` vs `news`. Chặn toàn bộ bài viết deal, giảm giá, `[QC]`, tuyển dụng, trailer. Ghi nhận nhật ký loại bỏ vào `data/logs/rejected.jsonl`.
-* **Phân loại ([`scripts/classify.py`](file:///d:/Random_v2/scripts/classify.py)):** Phân loại 11 danh mục theo ranh giới từ `\b`. Nhân đôi trọng số tiêu đề; giới hạn tối đa 2 danh mục/bài.
-* **Chấm điểm ([`scripts/score.py`](file:///d:/Random_v2/scripts/score.py)):** Kết hợp trọng số nguồn, suy giảm theo độ mới (recency decay), hệ số how-to và tín hiệu cộng đồng (HN points, Dev.to reactions).
-* **Dịch song ngữ ([`scripts/translate.py`](file:///d:/Random_v2/scripts/translate.py)):** Dịch NGUYÊN CÂU theo lô qua giao diện `Translator`:
+* **Làm sạch ([`scripts/textclean.py`](scripts/textclean.py)):** Giải mã HTML entities vòng lặp (kể cả mã hóa kép `&amp;ecirc;`), gỡ tag HTML, loại boilerplate quảng cáo, cắt gọt tóm tắt trùng tiêu đề.
+* **Bộ lọc ([`scripts/filters.py`](scripts/filters.py)):** Phân định nguồn `tips` vs `news`. Chặn toàn bộ bài viết deal, giảm giá, `[QC]`, tuyển dụng, trailer. Ghi nhận nhật ký loại bỏ vào `data/logs/rejected.jsonl`.
+* **Phân loại ([`scripts/classify.py`](scripts/classify.py)):** Phân loại 11 danh mục theo ranh giới từ `\b`. Nhân đôi trọng số tiêu đề; giới hạn tối đa 2 danh mục/bài.
+* **Chấm điểm ([`scripts/score.py`](scripts/score.py)):** Kết hợp trọng số nguồn, suy giảm theo độ mới (recency decay), hệ số how-to và tín hiệu cộng đồng (HN points, Dev.to reactions).
+* **Dịch song ngữ ([`scripts/translate.py`](scripts/translate.py)):** Dịch NGUYÊN CÂU theo lô qua giao diện `Translator`:
   * *Chính:* Google Gemini API (`GEMINI_MODEL`, mặc định `gemini-2.5-flash`) kèm retry Exponential Backoff khi gặp lỗi 429.
   * *Dự phòng:* Endpoint Google Translate công khai; Argos Translate offline là lớp dự phòng cuối nếu đã cài model.
   * Tiêu đề và tóm tắt được gửi tới nhà cung cấp dịch thuật khi cần dịch; cân nhắc chính sách dữ liệu của nhà cung cấp khi vận hành.
   * Kiểm duyệt bằng `looks_vietnamese` và `is_mixed`. Nếu dịch thất bại hoặc không đạt kiểm tra, giữ nguyên bản gốc và không gắn nhãn dịch máy.
-* **Cổng kiểm định chất lượng ([`scripts/qa.py`](file:///d:/Random_v2/scripts/qa.py)):** Chặn commit nếu còn mã entity, câu trộn ngữ pháp, bài dán nhãn dịch giả dối, tóm tắt rỗng hoặc danh mục trung bình > 2.0. Đẩy báo cáo chi tiết vào **GitHub Job Summary**.
+* **Cổng kiểm định chất lượng ([`scripts/qa.py`](scripts/qa.py)):** Chặn commit nếu còn mã entity, câu trộn ngữ pháp, bài dán nhãn dịch giả dối, tóm tắt rỗng hoặc danh mục trung bình > 2.0. Đẩy báo cáo chi tiết vào **GitHub Job Summary**.
 * **Phân trang & Giao diện:** Phân trang Astro `paginate()` 20 bài/trang (`/vi/page/2`, `/en/page/2`), typography chuyên sâu (Lexend, Be Vietnam Pro, JetBrains Mono), chuẩn WCAG AA và Dark Terminal Hub phong cách.
 
 ---
