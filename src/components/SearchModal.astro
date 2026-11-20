@@ -86,10 +86,15 @@ const t = getTranslations(lang);
       lang === 'vi' ? 'Đang tải kho thủ thuật...' : 'Loading tips index...'
     }</div>`;
 
+    function pickText(field, activeLang, origLang) {
+      if (!field) return '';
+      return field[activeLang] || (origLang && field[origLang]) || field.en || Object.values(field)[0] || '';
+    }
+
     function loadTips() {
       if (isLoaded) return Promise.resolve(allTips);
       if (!loadPromise) {
-        loadPromise = fetch('/api/tips.json')
+        loadPromise = fetch(`/api/all-${lang}.json`)
           .then((resp) => {
             if (!resp.ok) throw new Error('HTTP ' + resp.status);
             return resp.json();
@@ -129,12 +134,16 @@ const t = getTranslations(lang);
       const qNorm = normalizeSearch(qRaw);
       const matches = allTips
         .filter((tip) => {
-          const tText = tip.title?.[lang] || tip.title?.en || '';
-          const sText = tip.summary?.[lang] || tip.summary?.en || '';
+          const tText = pickText(tip.title, lang, tip.original_lang);
+          const origTitle =
+            tip.original_lang && tip.title?.[tip.original_lang] && tip.title[tip.original_lang] !== tText
+              ? tip.title[tip.original_lang]
+              : '';
+          const sText = pickText(tip.summary, lang, tip.original_lang);
           const cText = (tip.categories || []).join(' ');
           const tagText = (tip.tags || []).join(' ');
           const srcText = tip.source?.name || '';
-          const combined = `${tText} ${sText} ${cText} ${tagText} ${srcText}`;
+          const combined = `${tText} ${origTitle} ${sText} ${cText} ${tagText} ${srcText}`;
           return combined.toLowerCase().includes(qRaw) || normalizeSearch(combined).includes(qNorm);
         })
         .slice(0, 8);
@@ -149,8 +158,8 @@ const t = getTranslations(lang);
 
       resultsContainer.innerHTML = matches
         .map((tip) => {
-          const title = escapeHtml(tip.title?.[lang] || tip.title?.en || '');
-          const summ = escapeHtml(tip.summary?.[lang] || tip.summary?.en || '');
+          const title = escapeHtml(pickText(tip.title, lang, tip.original_lang));
+          const summ = escapeHtml(pickText(tip.summary, lang, tip.original_lang));
           const sourceName = escapeHtml(tip.source?.name || '');
           const category = escapeHtml((tip.categories || [])[0] || 'tips');
           const slugOrId = encodeURIComponent(tip.slug || tip.id);

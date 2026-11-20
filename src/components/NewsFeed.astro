@@ -88,11 +88,12 @@ const labels = {
     const stream = $('news-stream'), count = $('news-count'), empty = $('news-empty'), prev = $('news-prev'), next = $('news-next'), pageLabel = $('news-page'), pagination = $('news-pagination');
     let allNews = null, loadPromise = null, page = 1, sort = 'newest';
     const timeOf = (tip) => new Date(tip.published_at || tip.fetched_at || 0).getTime() || 0;
+    const pickText = (field, origLang) => (field && (field[lang] || (origLang && field[origLang]) || field.en || Object.values(field)[0])) || '';
 
     function load() {
       if (allNews) return Promise.resolve();
       if (!loadPromise) {
-        loadPromise = fetch('/api/tips.json').then((response) => {
+        loadPromise = fetch(`/api/news-${lang}.json`).then((response) => {
           if (!response.ok) throw new Error('HTTP ' + response.status);
           return response.json();
         }).then((list) => {
@@ -111,7 +112,9 @@ const labels = {
       const query = search.value.trim().toLowerCase();
       let items = allNews.filter((tip) => {
         const categories = tip.categories || [];
-        const haystack = `${tip.title?.[lang] || tip.title?.en || ''} ${tip.summary?.[lang] || tip.summary?.en || ''} ${tip.source?.name || ''} ${categories.join(' ')}`.toLowerCase();
+        const title = pickText(tip.title, tip.original_lang);
+        const origTitle = tip.original_lang && tip.title?.[tip.original_lang] && tip.title[tip.original_lang] !== title ? tip.title[tip.original_lang] : '';
+        const haystack = `${title} ${origTitle} ${pickText(tip.summary, tip.original_lang)} ${tip.source?.name || ''} ${categories.join(' ')}`.toLowerCase();
         return (source.value === 'all' || tip.source?.id === source.value)
           && (type.value === 'all' || (tip.source?.content_type || 'article') === type.value)
           && (category.value === 'all' || categories.includes(category.value))

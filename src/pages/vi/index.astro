@@ -20,7 +20,7 @@ const contentTypes = [
   { id: 'video', label: 'Video' },
   { id: 'vendor', label: 'Hãng công nghệ' },
 ];
-// Chỉ render sẵn trang đầu; phần còn lại tải từ /api/tips.json khi người dùng lọc/phân trang.
+// Chỉ render sẵn trang đầu; phần còn lại tải từ /api/tips-vi.json khi người dùng lọc/phân trang.
 const PAGE_SIZE = 20;
 const orderedTips = sortTipsNewestFirst(tips);
 const initialTips = orderedTips.slice(0, PAGE_SIZE);
@@ -381,11 +381,20 @@ const sidebarCategories = [
       return timeOf(b) - timeOf(a);
     }
 
+    function pickText(field, origLang) {
+      if (!field) return '';
+      return field[LANG] || (origLang && field[origLang]) || field.en || Object.values(field)[0] || '';
+    }
+
     function searchText(tip) {
-      const title = (tip.title && (tip.title[LANG] || tip.title.en)) || '';
-      const summary = (tip.summary && (tip.summary[LANG] || tip.summary.en)) || '';
+      const title = pickText(tip.title, tip.original_lang);
+      const origTitle =
+        tip.original_lang && tip.title && tip.title[tip.original_lang] && tip.title[tip.original_lang] !== title
+          ? tip.title[tip.original_lang]
+          : '';
+      const summary = pickText(tip.summary, tip.original_lang);
       const sourceName = (tip.source && tip.source.name) || '';
-      return `${title} ${summary} ${sourceName} ${(tip.categories || []).join(' ')}`.toLowerCase();
+      return `${title} ${origTitle} ${summary} ${sourceName} ${(tip.categories || []).join(' ')}`.toLowerCase();
     }
 
     function matches(tip) {
@@ -409,7 +418,7 @@ const sidebarCategories = [
     function ensureTips() {
       if (allTips) return Promise.resolve(allTips);
       if (!loadPromise) {
-        loadPromise = fetch('/api/tips.json')
+        loadPromise = fetch('/api/tips-vi.json')
           .then((resp) => {
             if (!resp.ok) throw new Error('HTTP ' + resp.status);
             return resp.json();
