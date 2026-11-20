@@ -80,7 +80,7 @@ tips.forEach((tip) => {
     <!-- Sources Grid (3 Columns on Desktop, matching Mockup Page 5) -->
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 mb-12" id="sources-grid">
       {sources.map((src) => {
-        const initial = src.name.charAt(0).toUpperCase();
+        const faviconSrc = `/favicons/${encodeURIComponent(src.id)}.png`;
         const kindLabel = src.kind === 'tips' ? 'Thủ thuật' : 'Tin tức';
         const langLabel = src.lang === 'vi' ? 'Tiếng Việt' : src.lang?.startsWith('zh') ? 'Tiếng Trung' : 'English';
         const count = sourceCounts[src.id] || 0;
@@ -92,10 +92,18 @@ tips.forEach((tip) => {
             data-lang={src.lang || 'en'}
           >
             <div>
-              <!-- Top Row: Letter Avatar & Name -->
+              <!-- Top Row: Source Favicon & Name -->
               <div class="flex items-center gap-3 mb-3">
-                <div class="w-8 h-8 rounded-lg bg-[var(--bg-muted)] border border-[var(--border-color)] flex items-center justify-center font-mono font-extrabold text-sm text-[var(--accent)] shrink-0">
-                  {initial}
+                <div class="w-8 h-8 rounded-lg bg-[var(--bg-muted)] border border-[var(--border-color)] flex items-center justify-center shrink-0 overflow-hidden">
+                  <img
+                    src={faviconSrc}
+                    onerror="this.onerror=null;this.src='/favicons/default.svg'"
+                    alt=""
+                    width="20"
+                    height="20"
+                    loading="lazy"
+                    class="w-5 h-5 rounded-sm object-contain"
+                  />
                 </div>
                 <h3 class="font-bold text-base text-[var(--text-primary)] leading-tight">
                   {src.name}

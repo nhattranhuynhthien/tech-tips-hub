@@ -36,14 +36,6 @@
     }
   }
 
-  function sourceDomain(tip) {
-    try {
-      return new URL(tip.source?.site_url || tip.url).hostname;
-    } catch {
-      return '';
-    }
-  }
-
   function create(tip, lang, labels) {
     const source = tip.source || {};
     const titleText = localized(tip.title, lang);
@@ -84,16 +76,20 @@
       'flex items-center gap-2 text-xs font-mono text-[var(--text-muted)] mb-2.5 flex-wrap'
     );
 
-    const domain = sourceDomain(tip);
-    if (domain) {
-      const favicon = el('img', 'w-4 h-4 rounded-sm');
-      favicon.src = `https://www.google.com/s2/favicons?domain=${encodeURIComponent(domain)}&sz=32`;
-      favicon.alt = '';
-      favicon.width = 16;
-      favicon.height = 16;
-      favicon.loading = 'lazy';
-      meta.appendChild(favicon);
-    }
+    const sourceId = source.id ? String(source.id).trim() : '';
+    const favicon = el('img', 'w-4 h-4 rounded-sm shrink-0');
+    favicon.onerror = function () {
+      this.onerror = null;
+      this.src = '/favicons/default.svg';
+    };
+    favicon.src = sourceId
+      ? `/favicons/${encodeURIComponent(sourceId)}.png`
+      : '/favicons/default.svg';
+    favicon.alt = '';
+    favicon.width = 16;
+    favicon.height = 16;
+    favicon.loading = 'lazy';
+    meta.appendChild(favicon);
 
     meta.appendChild(el('span', 'text-[var(--text-secondary)] font-medium lowercase', source.name || ''));
 
