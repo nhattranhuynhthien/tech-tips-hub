@@ -1,6 +1,7 @@
 # scripts/run_pipeline.py
 import sys
 import json
+import math
 import yaml
 import time
 import random
@@ -14,11 +15,12 @@ if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
 from fetch import fetch_feed_items, SourceFetchError
-from dedupe import is_duplicate_title, is_blocked
-from filters import accept, is_howto_match
+from dedupe import canonical_url, is_duplicate_title, is_blocked
+from filters import accept, is_howto_match, log_rejection
 from classify import classify, extract_tags
-from score import calculate_score, detect_difficulty, parse_published_time
+from score import calculate_score, detect_difficulty, parse_published_time, normalize_published_iso
 from slug import generate_seo_slug
+from textclean import clean_text, clean_title
 from translate import (
     load_cache,
     save_cache,
@@ -32,6 +34,7 @@ DATA_DIR.mkdir(exist_ok=True)
 INDEX_PATH = DATA_DIR / "index.json"
 STATE_PATH = DATA_DIR / "state.json"
 COMMUNITY_PATH = DATA_DIR / "community.json"
+HEALTH_PATH = DATA_DIR / "health.json"
 
 def estimate_reading_time(text: str) -> int:
     """Ước lượng thời gian đọc (khoảng 150-200 từ/phút)."""
@@ -48,6 +51,26 @@ def sync_item_key_points(item: dict, cache_entry: dict | None = None) -> None:
     else:
         item.pop("key_points", None)
 
+def _is_community_item(item: dict) -> bool:
+    """Kiểm tra bài viết có thuộc nguồn cộng đồng (Reddit, HN, Dev.to, Community...) hay không."""
+    src = item.get("source") or {}
+    return (
+        src.get("content_type") == "community"
+        or item.get("content_type") == "community"
+        or "reddit" in str(src.get("id", "")).lower()
+    )
+
+
+def _safe_score(item: dict) -> float:
+    """Chuyển điểm số về float hữu hạn an toàn (chống score=None/NaN/Inf gây lỗi sắp xếp)."""
+    val = item.get("score")
+    try:
+        f = float(val)
+        return f if math.isfinite(f) else 0.0
+    except (TypeError, ValueError):
+        return 0.0
+
+
 def diversify(items: list[dict], max_run: int = 2, max_community_per_window: int = 3, window_size: int = 20) -> list[dict]:
     """
     Xen kẽ nguồn để danh sách đa dạng và hấp dẫn:
@@ -55,7 +78,7 @@ def diversify(items: list[dict], max_run: int = 2, max_community_per_window: int
     2. Giới hạn tỷ lệ nguồn Cộng đồng (Reddit, Telegram, Facebook...) không quá max_community_per_window
        trong mỗi cửa sổ window_size bài (tối đa ~15% trang) để không lấn át báo chí công nghệ.
     """
-    pending = sorted(items, key=lambda x: -x.get("score", 0))
+    pending = sorted(items, key=lambda x: -_safe_score(x))
     out = []
     while pending:
         for idx, it in enumerate(pending):
@@ -69,9 +92,9 @@ def diversify(items: list[dict], max_run: int = 2, max_community_per_window: int
                     break
             
             # Kiểm tra tỷ lệ nguồn cộng đồng trong window_size gần nhất
-            is_community = it.get("content_type") == "community" or "reddit" in str(it.get("source", {}).get("id", ""))
-            recent_window = out[-(window_size - 1):] if len(out) >= (window_size - 1) else out
-            community_count = sum(1 for x in recent_window if x.get("content_type") == "community" or "reddit" in str(x.get("source", {}).get("id", "")))
+            is_community = _is_community_item(it)
+            recent_window = out[-(window_size - 1):] if window_size > 1 else []
+            community_count = sum(1 for x in recent_window if _is_community_item(x))
 
             if run < max_run and (not is_community or community_count < max_community_per_window):
                 out.append(pending.pop(idx))
@@ -80,6 +103,63 @@ def diversify(items: list[dict], max_run: int = 2, max_community_per_window: int
             # Nếu không tìm được phần tử thỏa mãn hoàn toàn, lấy phần tử đầu tiên
             out.append(pending.pop(0))
     return out
+
+
+def write_health_report(
+    sources: list[dict],
+    state: dict,
+    now_dt: datetime | None = None,
+    path: Path = HEALTH_PATH,
+) -> dict:
+    """Ghi báo cáo sức khỏe các nguồn đang bật vào data/health.json theo đặc tả SPEC.md."""
+    now_dt = now_dt or datetime.now(timezone.utc)
+    report_sources: dict[str, dict] = {}
+
+    for src in sources:
+        sid = src["id"]
+        st = state.get(sid) if isinstance(state.get(sid), dict) else {}
+        failure_count = int(st.get("failure_count", 0) or 0)
+        last_success = st.get("last_success") or None
+        last_failure = st.get("last_failure") or None
+        paused_until = st.get("paused_until") or None
+        last_error = st.get("last_error") or None
+
+        is_paused = False
+        if paused_until:
+            try:
+                paused_dt = datetime.fromisoformat(str(paused_until).replace("Z", "+00:00"))
+                if paused_dt.tzinfo is None:
+                    paused_dt = paused_dt.replace(tzinfo=timezone.utc)
+                if paused_dt > now_dt:
+                    is_paused = True
+                else:
+                    paused_until = None
+            except ValueError:
+                paused_until = None
+
+        if is_paused:
+            status = "paused"
+        elif failure_count > 0:
+            status = "degraded"
+        else:
+            status = "ok"
+
+        report_sources[sid] = {
+            "status": status,
+            "failure_count": failure_count,
+            "last_success": last_success,
+            "last_failure": last_failure,
+            "paused_until": paused_until,
+            "last_error": last_error,
+        }
+
+    report = {
+        "updated_at": now_dt.replace(microsecond=0).isoformat(),
+        "sources": report_sources,
+    }
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding="utf-8")
+    return report
 
 def update_featured_history(items: list[dict]):
     """Cập nhật lịch sử 'Mẹo hay hôm nay' để không lặp lại trong 14 ngày."""
@@ -221,6 +301,12 @@ def main():
             summary = raw_item["raw_summary"]
             url = raw_item["url"]
 
+            # Chặn sớm tóm tắt rỗng trước khi nạp vào index (tránh làm hỏng qa.py)
+            if not summary or not summary.strip():
+                log_rejection(raw_item, src, "empty-summary")
+                rejected_non_howto += 1
+                continue
+
             # Kiểm tra bộ lọc chấp nhận (Section 3: filters.accept)
             is_ok, reason = accept(raw_item, src)
             if not is_ok:
@@ -239,9 +325,11 @@ def main():
             if iid in index:
                 continue
 
-            # Gộp bài có tiêu đề gần giống trong 7 ngày, giữ nguồn bổ sung làm alsoFrom.
+            # Gộp bài có tiêu đề gần giống trong 7 ngày (bỏ qua bài hidden để không nuốt bài hợp lệ mới).
             is_dup = False
             for existing in index.values():
+                if existing.get("hidden"):
+                    continue
                 existing_title = existing["title"].get(raw_item["original_lang"], "")
                 existing_date = parse_published_time(existing.get("published_at", ""))
                 new_date = parse_published_time(raw_item.get("published_at", ""))
@@ -351,36 +439,36 @@ def main():
             raise RuntimeError(f"Không đọc được {COMMUNITY_PATH}; dừng để bảo toàn dữ liệu.") from e
 
         for entry in community_items:
-            iid = str(entry.get("id", ""))
-            url = entry.get("url", "")
-            title = entry.get("title", {}).get(entry.get("originalLang", "vi"))
-            summary = entry.get("summary", {}).get(entry.get("originalLang", "vi"))
-            if not iid or not url or not title or iid in index:
-                continue
+            iid = str(entry.get("id", "")).strip()
+            url = canonical_url(str(entry.get("url", "")))
             lang = entry.get("originalLang", "vi")
             lang = lang if lang in ("vi", "en") else "vi"
-            summary = str(summary or title)[:300]
-            source_name = str(entry.get("sourceName") or "Cộng đồng đóng góp")[:100]
-            raw_item = {
-                "id": iid, "url": url, "raw_title": str(title)[:160],
-                "raw_summary": summary, "original_lang": lang,
-                "published_at": entry.get("publishedAt") or entry.get("approvedAt") or now_iso,
-                "source_weight": 1.0, "source_kind": "tips", "content_type": "community",
-                "author": entry.get("submittedBy") or "Cộng đồng đóng góp",
-                "default_categories": [], "source": {
-                    "id": "community", "name": source_name, "site_url": url,
-                    "kind": "tips", "content_type": "community"
-                }
-            }
-            is_ok, reason = accept(raw_item, {"id": "community", "kind": "tips"})
-            if not is_ok or is_blocked(title, summary, url, blocklist):
-                print(f"[Community] Bỏ qua {iid}: {reason if not is_ok else 'blocklist'}")
+            raw_title_map = entry.get("title") if isinstance(entry.get("title"), dict) else {}
+            raw_summary_map = entry.get("summary") if isinstance(entry.get("summary"), dict) else {}
+            title = clean_title(str(raw_title_map.get(lang) or ""), limit=160)
+            summary = clean_text(str(raw_summary_map.get(lang) or ""), limit=300)
+            if not iid or not url or not title or not summary or iid in index:
                 continue
+            default_author = "Community" if lang == "en" else "Cộng đồng đóng góp"
+            author = clean_text(str(entry.get("submittedBy") or ""), limit=80) or default_author
+            source_name = clean_text(str(entry.get("sourceName") or default_author), limit=100) or default_author
+            published_at = normalize_published_iso(
+                entry.get("publishedAt") or entry.get("approvedAt") or now_iso
+            ) or now_iso
+
+            # Bài cộng đồng đã qua quản trị viên duyệt: chỉ chặn các tên miền bị cấm cứng (không chặn từ khóa biên tập/khuyến mãi)
+            domain_blocklist = {"domains": blocklist.get("domains", [])}
+            if is_blocked("", "", url, domain_blocklist):
+                print(f"[Community] Bỏ qua {iid}: blocked-domain")
+                continue
+
             duplicate = False
             for existing in index.values():
+                if existing.get("hidden"):
+                    continue
                 existing_url = existing.get("url", "")
                 existing_title = existing.get("title", {}).get(lang, "")
-                if existing_url == url or is_duplicate_title(str(title), existing_title, threshold=0.9):
+                if existing_url == url or is_duplicate_title(title, existing_title, threshold=0.9):
                     existing.setdefault("alsoFrom", [])
                     if not any(source.get("url") == url for source in existing["alsoFrom"]):
                         existing["alsoFrom"].append({"sourceName": source_name, "url": url})
@@ -404,15 +492,15 @@ def main():
                 if len(categories) >= 2:
                     break
             if not categories:
-                categories = classify(str(title), summary, fallback=[], max_cats=2)
+                categories = classify(title, summary, fallback=[], max_cats=2)
             tags = [tag for tag in mapped_tags if tag not in categories][:4]
             index[iid] = {
-                "id": iid, "slug": generate_seo_slug(str(title), iid), "url": url,
+                "id": iid, "slug": generate_seo_slug(title, iid), "url": url,
                 "source": {"id": "community", "name": source_name, "site_url": url,
                            "kind": "tips", "content_type": "community"},
-                "author": "Cộng đồng đóng góp", "published_at": raw_item["published_at"],
+                "author": author, "published_at": published_at,
                 "fetched_at": now_iso, "original_lang": lang,
-                "title": {lang: str(title)[:160], target_lang: str(title)[:160]},
+                "title": {lang: title, target_lang: title},
                 "summary": {lang: summary, target_lang: summary},
                 "categories": categories, "tags": tags, "difficulty": None,
                 "score": 0.75, "howto": True,
@@ -427,22 +515,27 @@ def main():
     if paused_sources:
         print(f"[Fetch Paused] {len(paused_sources)} nguồn đang tạm dừng: {', '.join(paused_sources)}")
     STATE_PATH.write_text(json.dumps(state, ensure_ascii=False, indent=2), encoding="utf-8")
+    write_health_report(sources, state)
     if attempted_sources == 0 and not community_items:
         print("Không có nguồn đến hạn chạy; giữ nguyên kho hiện tại.")
         return
     if successful_sources == 0 and not community_items:
         raise RuntimeError("Tất cả nguồn dữ liệu đều lỗi; dừng để tránh ghi đè bằng lượt quét thất bại.")
 
-    # 4. Dịch thuật theo lô cho các bài chưa có bản dịch (ưu tiên how-to và điểm cao)
+    # 4. Dịch thuật theo lô CHỈ cho các bài đang hiển thị (không tiêu tốn hạn mức vào bài hidden)
     print("\n-> Đang kiểm tra và dịch thuật theo lô...")
     all_items = list(index.values())
-    batch_translate_pending(all_items, trans_cache, batch_size=5)
+    visible_items = [it for it in all_items if not it.get("hidden")]
+    hidden_items = [it for it in all_items if it.get("hidden")]
+    batch_translate_pending(visible_items, trans_cache, batch_size=5)
 
     # Các trường này chỉ cần trong lúc xử lý; tiêu đề và tóm tắt gốc đã được lưu trong title/summary.
     # Đồng thời cập nhật lại SEO slug cho bài mới hoặc bài tiếng Trung sau khi đã có bản dịch Latin.
     for item in all_items:
         item.pop("raw_title", None)
         item.pop("raw_summary", None)
+        if item.get("hidden"):
+            continue
         sync_item_key_points(item, trans_cache.get(item.get("id")))
         orig_lang = str(item.get("original_lang", "")).lower()
         curr_slug = item.get("slug") or ""
@@ -458,11 +551,11 @@ def main():
             )
             item["slug"] = generate_seo_slug(best_title, item["id"])
 
-    # Giữ kho hoạt động ở mức 2.000 bài; các bài cũ được chuyển vào archive theo tháng.
-    if len(all_items) > 2000:
-        all_items.sort(key=lambda it: parse_published_time(it.get("published_at", "")), reverse=True)
-        removed = all_items[2000:]
-        all_items = all_items[:2000]
+    # Chỉ tính bài hiển thị vào ngưỡng 2.000 bài hoạt động; các bài cũ hơn được chuyển vào archive theo tháng.
+    if len(visible_items) > 2000:
+        visible_items.sort(key=lambda it: parse_published_time(it.get("published_at", "")), reverse=True)
+        removed = visible_items[2000:]
+        visible_items = visible_items[:2000]
         archive_dir = DATA_DIR / "archive"
         archive_dir.mkdir(parents=True, exist_ok=True)
         archive_groups = {}
@@ -475,14 +568,23 @@ def main():
             existing_archive.update(group)
             archive_path.write_text(json.dumps(existing_archive, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    # 5. Áp dụng giới hạn xen kẽ nguồn (diversify)
-    diversified_items = diversify(all_items, max_run=2)
-    reordered_index = {it["id"]: it for it in diversified_items}
+    # Giữ tối đa 2.000 mục hidden mới nhất làm tombstone chống quét trùng mà không ảnh hưởng giới hạn bài hiển thị.
+    if len(hidden_items) > 2000:
+        hidden_items.sort(
+            key=lambda it: parse_published_time(it.get("fetched_at") or it.get("published_at", "")),
+            reverse=True,
+        )
+        hidden_items = hidden_items[:2000]
 
-    # 6. Ghi dữ liệu, cập nhật featured history và cache
+    # 5. Áp dụng giới hạn xen kẽ nguồn (diversify) trên các bài đang hiển thị
+    diversified_items = diversify(visible_items, max_run=2)
+    reordered_index = {it["id"]: it for it in diversified_items + hidden_items}
+
+    # 6. Ghi dữ liệu, cập nhật featured history, health report và cache
     save_cache(trans_cache)
     INDEX_PATH.write_text(json.dumps(reordered_index, ensure_ascii=False, indent=2), encoding="utf-8")
     update_featured_history(diversified_items)
+    write_health_report(sources, state)
 
     print("\n=== [Kết quả tổng hợp] ===")
     print(f"Tổng số mục quét: {fetched_count}")

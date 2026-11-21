@@ -4,6 +4,7 @@ import sys
 import json
 import re
 import yaml
+from datetime import datetime
 from pathlib import Path
 
 if hasattr(sys.stdout, "reconfigure"):
@@ -11,10 +12,21 @@ if hasattr(sys.stdout, "reconfigure"):
 if hasattr(sys.stderr, "reconfigure"):
     sys.stderr.reconfigure(encoding="utf-8", errors="replace")
 
-from translate import is_mixed, looks_vietnamese, looks_english, LANG_CODE_RE, RAW_HTML_TAG_RE
+from dedupe import canonical_url
+from textclean import RAW_HTML_TAG_RE, is_url_only_text
+from translate import (
+    is_mixed,
+    looks_vietnamese,
+    looks_english,
+    non_url_alpha_count,
+    LANG_CODE_RE,
+    DANGEROUS_URI_RE,
+)
 
 ENTITY_REGEX = re.compile(r"&(#\d+|\w+);")
 MOJIBAKE_WORD_REGEX = re.compile(r"[A-Za-zÀ-ỹ]\?[A-Za-zÀ-ỹ]")
+URL_ONLY_REGEX = re.compile(r"^\s*https?://\S+\s*$", re.IGNORECASE)
+ISO_DATE_REGEX = re.compile(r"^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:\.\d+)?(?:Z|[+-]\d{2}:\d{2})$")
 BOILERPLATE_PATTERNS = [
     re.compile(r"Article URL:", re.IGNORECASE),
     re.compile(r"appeared first on", re.IGNORECASE),
@@ -37,6 +49,51 @@ def load_valid_categories() -> set[str]:
         return set()
     doc = yaml.safe_load(cat_path.read_text(encoding="utf-8")) or {}
     return {c["id"] for c in doc.get("categories", []) if c.get("id")}
+
+
+def validate_machine_translation(item: dict) -> list[str]:
+    """Kiểm định tính trung thực của nhãn translated[lang] == 'machine' trên cả tiêu đề và tóm tắt."""
+    iid = item.get("id", "unknown")
+    orig_lang = str(item.get("original_lang") or "").strip()
+    trans_meta = item.get("translated") if isinstance(item.get("translated"), dict) else {}
+    titles = item.get("title") if isinstance(item.get("title"), dict) else {}
+    summaries = item.get("summary") if isinstance(item.get("summary"), dict) else {}
+    errors: list[str] = []
+
+    for lang in ("vi", "en"):
+        if trans_meta.get(lang) != "machine":
+            continue
+        t = str(titles.get(lang) or "")
+        s = str(summaries.get(lang) or "")
+
+        if orig_lang and orig_lang.lower() != lang:
+            orig_t = str(titles.get(orig_lang) or "")
+            orig_s = str(summaries.get(orig_lang) or "")
+            if t.strip() == orig_t.strip() and s.strip() == orig_s.strip():
+                errors.append(
+                    f"Gắn nhãn dịch máy [{lang}] nhưng nội dung giống hệt bản gốc [{orig_lang}] ({iid}): {t[:50]}"
+                )
+
+        if lang == "vi":
+            if not looks_vietnamese(t):
+                errors.append(
+                    f"Gắn nhãn dịch máy tiếng Việt nhưng nội dung không phải tiếng Việt ({iid}): {t[:50]}"
+                )
+            if non_url_alpha_count(s) >= 15 and not looks_vietnamese(s):
+                errors.append(
+                    f"Gắn nhãn dịch máy tiếng Việt nhưng tóm tắt không phải tiếng Việt ({iid}): {s[:60]}"
+                )
+        else:
+            if not looks_english(t):
+                errors.append(
+                    f"Gắn nhãn dịch máy tiếng Anh nhưng nội dung không phải tiếng Anh ({iid}): {t[:50]}"
+                )
+            if non_url_alpha_count(s) >= 15 and not looks_english(s):
+                errors.append(
+                    f"Gắn nhãn dịch máy tiếng Anh nhưng tóm tắt không phải tiếng Anh ({iid}): {s[:60]}"
+                )
+
+    return errors
 
 
 def validate_key_points(item: dict) -> list[str]:
@@ -82,6 +139,8 @@ def validate_key_points(item: dict) -> list[str]:
                 )
             if RAW_HTML_TAG_RE.search(point):
                 errors.append(f"key_points [{lang}][{idx}] chứa thẻ HTML thô ({iid}): {point[:50]}")
+            if DANGEROUS_URI_RE.search(point):
+                errors.append(f"key_points [{lang}][{idx}] chứa URI nguy hiểm ({iid}): {point[:50]}")
 
     return errors
 
@@ -178,34 +237,62 @@ def main():
         if MOJIBAKE_WORD_REGEX.search(src_name):
             problems.append(f"Tên nguồn bị lỗi mã hóa '?' ({iid}): {src_name}")
 
-        # 1. Kiểm tra HTML entities, câu trộn & blocklist trong tiêu đề mọi ngôn ngữ
-        for lang, text in it.get("title", {}).items():
-            if not text or len(text.strip()) == 0:
-                problems.append(f"Tiêu đề rỗng [{lang}] ({iid})")
-                continue
-            if ENTITY_REGEX.search(text):
-                problems.append(f"Mã HTML entity trong tiêu đề [{lang}] ({iid}): {text[:50]}")
-            if is_mixed(text):
-                mixed_count += 1
-                problems.append(f"Câu trộn tiếng Anh-Việt trong tiêu đề ({iid}): {text[:60]}")
-            if BLOCKLIST_CHECK.search(text):
-                problems.append(f"Chứa từ khóa bị chặn trong tiêu đề [{lang}] ({iid}): {text[:50]}")
+        # 0. Kiểm tra URL hợp lệ (chỉ chấp nhận http/https) và định dạng ngày xuất bản ISO-8601
+        item_url = str(it.get("url") or "").strip()
+        if not canonical_url(item_url):
+            problems.append(f"URL không hợp lệ hoặc giao thức không an toàn ({iid}): {item_url!r}")
 
-        # 2. Kiểm tra HTML entities, câu trộn & độ dài tóm tắt
-        for lang, text in it.get("summary", {}).items():
-            if not text or len(text.strip()) == 0:
-                problems.append(f"Tóm tắt rỗng [{lang}] ({iid})")
-                continue
-            if len(text) > 500:
-                problems.append(f"Tóm tắt quá dài ({len(text)} ký tự > 500) [{lang}] ({iid}): {text[:60]}")
-            if ENTITY_REGEX.search(text):
-                problems.append(f"Mã HTML entity trong tóm tắt [{lang}] ({iid}): {text[:50]}")
-            if is_mixed(text):
-                mixed_count += 1
-                problems.append(f"Câu trộn tiếng Anh-Việt trong tóm tắt ({iid}): {text[:60]}")
-            for bp in BOILERPLATE_PATTERNS:
-                if bp.search(text):
-                    problems.append(f"Boilerplate/rác trong tóm tắt [{lang}] ({iid}): {bp.pattern}")
+        pub_at = str(it.get("published_at") or "").strip()
+        if not ISO_DATE_REGEX.match(pub_at):
+            problems.append(f"Ngày published_at không đúng chuẩn ISO-8601 ({iid}): {pub_at!r}")
+        else:
+            try:
+                datetime.fromisoformat(pub_at.replace("Z", "+00:00"))
+            except ValueError:
+                problems.append(f"Ngày published_at không phân tích được ({iid}): {pub_at!r}")
+
+        # 1. Kiểm tra cấu trúc, HTML thô, HTML entities, câu trộn & blocklist trong tiêu đề mọi ngôn ngữ
+        titles_map = it.get("title")
+        if not isinstance(titles_map, dict) or not titles_map:
+            problems.append(f"Thiếu hoặc rỗng trường title ({iid})")
+        else:
+            for lang, text in titles_map.items():
+                if not isinstance(text, str) or not text.strip():
+                    problems.append(f"Tiêu đề rỗng [{lang}] ({iid})")
+                    continue
+                if RAW_HTML_TAG_RE.search(text):
+                    problems.append(f"Chứa thẻ HTML thô trong tiêu đề [{lang}] ({iid}): {text[:50]}")
+                if ENTITY_REGEX.search(text):
+                    problems.append(f"Mã HTML entity trong tiêu đề [{lang}] ({iid}): {text[:50]}")
+                if is_mixed(text):
+                    mixed_count += 1
+                    problems.append(f"Câu trộn tiếng Anh-Việt trong tiêu đề ({iid}): {text[:60]}")
+                if BLOCKLIST_CHECK.search(text):
+                    problems.append(f"Chứa từ khóa bị chặn trong tiêu đề [{lang}] ({iid}): {text[:50]}")
+
+        # 2. Kiểm tra cấu trúc, HTML thô, HTML entities, câu trộn, URL trần & độ dài tóm tắt
+        summaries_map = it.get("summary")
+        if not isinstance(summaries_map, dict) or not summaries_map:
+            problems.append(f"Thiếu hoặc rỗng trường summary ({iid})")
+        else:
+            for lang, text in summaries_map.items():
+                if not isinstance(text, str) or not text.strip():
+                    problems.append(f"Tóm tắt rỗng [{lang}] ({iid})")
+                    continue
+                if RAW_HTML_TAG_RE.search(text):
+                    problems.append(f"Chứa thẻ HTML thô trong tóm tắt [{lang}] ({iid}): {text[:50]}")
+                if is_url_only_text(text):
+                    problems.append(f"Tóm tắt chỉ chứa URL trần [{lang}] ({iid}): {text[:60]}")
+                if len(text) > 500:
+                    problems.append(f"Tóm tắt quá dài ({len(text)} ký tự > 500) [{lang}] ({iid}): {text[:60]}")
+                if ENTITY_REGEX.search(text):
+                    problems.append(f"Mã HTML entity trong tóm tắt [{lang}] ({iid}): {text[:50]}")
+                if is_mixed(text):
+                    mixed_count += 1
+                    problems.append(f"Câu trộn tiếng Anh-Việt trong tóm tắt ({iid}): {text[:60]}")
+                for bp in BOILERPLATE_PATTERNS:
+                    if bp.search(text):
+                        problems.append(f"Boilerplate/rác trong tóm tắt [{lang}] ({iid}): {bp.pattern}")
 
         # 3. Kiểm tra danh mục hợp lệ
         cats = it.get("categories", [])
@@ -219,16 +306,8 @@ def main():
             if invalid_cats:
                 problems.append(f"Danh mục không hợp lệ ({iid}): {invalid_cats}")
 
-        # 4. Kiểm tra nhãn dịch máy sai sự thật
-        trans_meta = it.get("translated", {})
-        if trans_meta.get("vi") == "machine":
-            vi_title = it.get("title", {}).get("vi", "")
-            if not looks_vietnamese(vi_title):
-                problems.append(f"Gắn nhãn dịch máy tiếng Việt nhưng nội dung không phải tiếng Việt ({iid}): {vi_title[:50]}")
-        if trans_meta.get("en") == "machine":
-            en_title = it.get("title", {}).get("en", "")
-            if not looks_english(en_title):
-                problems.append(f"Gắn nhãn dịch máy tiếng Anh nhưng nội dung không phải tiếng Anh ({iid}): {en_title[:50]}")
+        # 4. Kiểm tra nhãn dịch máy sai sự thật (cả tiêu đề, tóm tắt & bản sao nguyên văn)
+        problems.extend(validate_machine_translation(it))
 
         # 5. Kiểm định key_points tùy chọn nếu có
         problems.extend(validate_key_points(it))

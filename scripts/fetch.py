@@ -4,11 +4,12 @@ import re
 import html
 import json
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timedelta, timezone
 import requests
 import feedparser
 from bs4 import BeautifulSoup
 from dedupe import canonical_url, generate_id
+from score import normalize_published_iso, parse_published_time
 from textclean import clean_text, clean_title, strip_title_prefix, unescape_all
 
 if hasattr(sys.stdout, "reconfigure"):
@@ -21,6 +22,21 @@ USER_AGENT = "TechTipsHubBot/1.0 (+https://meocongnghe.vercel.app)"
 
 class SourceFetchError(RuntimeError):
     """Raised when a source could not be fetched or parsed reliably."""
+
+
+def _normalize_feed_published(raw_published: str, parsed_struct=None, default_offset_hours: int = 0) -> str:
+    """Chuẩn hóa ngày xuất bản của nguồn và loại bỏ ngày tương lai bất thường (> 1 ngày so với hiện tại)."""
+    iso = normalize_published_iso(
+        raw_published,
+        parsed_struct=parsed_struct,
+        default_offset_hours=default_offset_hours,
+    )
+    if not iso:
+        return ""
+    pub_dt = parse_published_time(iso)
+    if pub_dt > datetime.now(timezone.utc) + timedelta(days=1):
+        return ""
+    return iso
 
 
 def source_weight(source: dict) -> float:
@@ -39,30 +55,30 @@ def _get_response(url: str, headers: dict, state_entry: dict | None = None):
     if state_entry.get("last_modified"):
         request_headers["If-Modified-Since"] = state_entry["last_modified"]
 
-    session = requests.Session()
     last_error = None
-    for attempt in range(3):
-        try:
-            response = session.get(url, headers=request_headers, timeout=10)
-            if response.status_code == 304:
-                state_entry["not_modified"] = True
-                return response
-            if response.status_code == 200:
-                state_entry["not_modified"] = False
-                if response.headers.get("ETag"):
-                    state_entry["etag"] = response.headers["ETag"]
-                if response.headers.get("Last-Modified"):
-                    state_entry["last_modified"] = response.headers["Last-Modified"]
-                return response
-            if response.status_code != 429 and response.status_code < 500:
-                raise SourceFetchError(f"HTTP {response.status_code}")
-            last_error = f"HTTP {response.status_code}"
-        except SourceFetchError:
-            raise
-        except requests.RequestException as e:
-            last_error = str(e)
-        if attempt < 2:
-            time.sleep(0.5 * (2 ** attempt))
+    with requests.Session() as session:
+        for attempt in range(3):
+            try:
+                response = session.get(url, headers=request_headers, timeout=10)
+                if response.status_code == 304:
+                    state_entry["not_modified"] = True
+                    return response
+                if response.status_code == 200:
+                    state_entry["not_modified"] = False
+                    if response.headers.get("ETag"):
+                        state_entry["etag"] = response.headers["ETag"]
+                    if response.headers.get("Last-Modified"):
+                        state_entry["last_modified"] = response.headers["Last-Modified"]
+                    return response
+                if response.status_code != 429 and response.status_code < 500:
+                    raise SourceFetchError(f"HTTP {response.status_code}")
+                last_error = f"HTTP {response.status_code}"
+            except SourceFetchError:
+                raise
+            except requests.RequestException as e:
+                last_error = str(e)
+            if attempt < 2:
+                time.sleep(0.5 * (2 ** attempt))
     raise SourceFetchError(last_error or "Request thất bại")
 
 def parse_hn_summary(raw_summary: str, min_score: int = 100) -> tuple[int, str, int, str]:
@@ -97,6 +113,7 @@ def fetch_feed_items(source: dict, max_entries: int = 25, state_entry: dict | No
     source_type = source.get("type", "rss")
     feed_url = source["url"]
     min_score = source.get("minScore", source.get("min_score", 100 if source["id"] == "hackernews" else 0))
+    default_offset_hours = 7 if source.get("lang") == "vi" else 0
 
     headers = {
         "User-Agent": USER_AGENT,
@@ -121,6 +138,7 @@ def fetch_feed_items(source: dict, max_entries: int = 25, state_entry: dict | No
                 raise ValueError("API response does not contain an item list")
 
             for a in articles[:max_entries]:
+                points = 0
                 if api == "hn_algolia":
                     raw_t = a.get("story_title") or a.get("title")
                     link = a.get("story_url") or a.get("url")
@@ -148,6 +166,7 @@ def fetch_feed_items(source: dict, max_entries: int = 25, state_entry: dict | No
                     reactions = a.get("public_reactions_count", a.get("positive_reactions_count", 0)) or 0
                 if not link or not raw_t:
                     continue
+                published = _normalize_feed_published(published, default_offset_hours=default_offset_hours)
                 if not published:
                     continue
 
@@ -156,13 +175,15 @@ def fetch_feed_items(source: dict, max_entries: int = 25, state_entry: dict | No
                     continue
 
                 c_url = canonical_url(link)
+                if not c_url:
+                    continue
                 iid = generate_id(c_url)
                 
                 title = clean_title(raw_t, limit=160)
                 summary = clean_text(raw_desc, limit=280)
                 summary = strip_title_prefix(summary, title)
 
-                items.append({
+                item = {
                     "id": iid,
                     "url": c_url,
                     "source": {
@@ -181,7 +202,10 @@ def fetch_feed_items(source: dict, max_entries: int = 25, state_entry: dict | No
                     "raw_summary": summary,
                     "default_categories": source.get("categories", []),
                     "reactions": reactions
-                })
+                }
+                if api == "hn_algolia" and points > 0:
+                    item["hn_points"] = points
+                items.append(item)
             return items
         except Exception as e:
             if isinstance(e, SourceFetchError):
@@ -213,6 +237,7 @@ def fetch_feed_items(source: dict, max_entries: int = 25, state_entry: dict | No
                 time_node = date_node.select_one("time")
                 if time_node:
                     published = time_node.get("datetime", "")
+                published = _normalize_feed_published(published, default_offset_hours=default_offset_hours)
                 url = canonical_url(date_node["href"])
                 if not title or not url or not published:
                     continue
@@ -260,7 +285,13 @@ def fetch_feed_items(source: dict, max_entries: int = 25, state_entry: dict | No
         title = clean_title(raw_t, limit=160)
         summary = strip_title_prefix(summary, title)
 
-        published = getattr(entry, "published", "") or getattr(entry, "updated", "")
+        raw_published = getattr(entry, "published", "") or getattr(entry, "updated", "")
+        parsed_struct = getattr(entry, "published_parsed", None) or getattr(entry, "updated_parsed", None)
+        published = _normalize_feed_published(
+            raw_published,
+            parsed_struct=parsed_struct,
+            default_offset_hours=default_offset_hours,
+        )
         if source_type == "reddit" and min_score > 0:
             score = getattr(entry, "reddit_score", None) or getattr(entry, "score", None)
             if score is None:

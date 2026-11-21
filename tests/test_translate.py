@@ -3,7 +3,9 @@ import json
 import os
 import sys
 import tempfile
+import time
 import unittest
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 from unittest.mock import Mock, patch
 
@@ -15,6 +17,7 @@ from translate import (
     looks_vietnamese,
     looks_english,
     is_mixed,
+    is_valid_translation,
     sanitize_key_points,
     normalize_key_points_map,
     parse_gemini_response,
@@ -24,14 +27,16 @@ from translate import (
     CompositeTranslator,
     process_item_bilingual,
     batch_translate_pending,
+    _can_attempt_translation,
+    _record_translation_failure,
 )
-from qa import validate_key_points
-from run_pipeline import sync_item_key_points
-from filters import accept
-from dedupe import is_blocked
+from qa import validate_key_points, validate_machine_translation
+from run_pipeline import sync_item_key_points, diversify, write_health_report
+from filters import accept, is_howto_match
+from dedupe import is_blocked, canonical_url
 from classify import classify, VALID_CATEGORIES
 from textclean import clean_text, clean_title
-from score import parse_published_time
+from score import parse_published_time, normalize_published_iso
 from fetch import parse_hn_summary
 
 
@@ -556,6 +561,352 @@ class TestTranslateModule(unittest.TestCase):
             with self.subTest(case_id=case["id"]):
                 errors = validate_key_points(case)
                 self.assertTrue(len(errors) > 0, f"Expected QA errors for {case['id']}")
+
+    def test_date_normalization_tuoitre_short_tz_and_struct(self):
+        """Chuẩn hóa ngày kiểu Tuổi Trẻ (\\u202fAM/PM), offset ngắn +07, struct_time và chuỗi lỗi."""
+        tz_vn = timezone(timedelta(hours=7))
+        dt_am = parse_published_time("10/16/2026 8:42:00\u202fAM", default_tz=tz_vn)
+        self.assertEqual(dt_am, datetime(2026, 10, 16, 1, 42, 0, tzinfo=timezone.utc))
+
+        iso_am = normalize_published_iso("10/16/2026 8:42:00\u202fAM", default_offset_hours=7)
+        self.assertEqual(iso_am, "2026-10-16T01:42:00+00:00")
+
+        iso_pm = normalize_published_iso("11/5/2026 3:59:00\u00a0PM", default_offset_hours=7)
+        self.assertEqual(iso_pm, "2026-11-05T08:59:00+00:00")
+
+        # Offset 2 chữ số của GenK (+07) phải được hiểu là +07:00, KHÔNG phải +00:07
+        iso_genk = normalize_published_iso("Sun, 08 Nov 2026 09:23:00 +07")
+        self.assertEqual(iso_genk, "2026-11-08T02:23:00+00:00")
+
+        # Dự phòng bằng time.struct_time của feedparser
+        struct = time.struct_time((2026, 11, 10, 14, 30, 0, 1, 314, 0))
+        self.assertEqual(normalize_published_iso("", parsed_struct=struct), "2026-11-10T14:30:00+00:00")
+
+        # Chuỗi hoàn toàn không phân tích được trả về rỗng
+        self.assertEqual(normalize_published_iso("not-a-valid-date"), "")
+
+    def test_canonical_url_strips_all_utm_params(self):
+        """Loại bỏ mọi tham số utm_* tương đồng với api/telegram.ts."""
+        cleaned = canonical_url("https://example.com/post/?utm_id=99&utm_reader=rss&UTM_Custom=1&fbclid=abc&page=2")
+        self.assertEqual(cleaned, "https://example.com/post?page=2")
+
+    def test_batch_translate_skips_hidden_items(self):
+        """batch_translate_pending phải bỏ qua tuyệt đối các bài hidden: True (cả EN/VI và ZH)."""
+        translator = Mock()
+        translator.translate_batch.return_value = [
+            {
+                "id": "vis-1",
+                "title": "Cách tăng tốc khởi động Linux",
+                "summary": "Tắt các dịch vụ không cần thiết để giảm thời gian khởi động hệ thống.",
+            }
+        ]
+        items = [
+            {
+                "id": "hid-en",
+                "hidden": True,
+                "original_lang": "en",
+                "title": {"en": "Hidden English tip", "vi": "Hidden English tip"},
+                "summary": {"en": "Should never be sent to translator.", "vi": "Should never be sent to translator."},
+                "score": 1.5,
+                "howto": True,
+            },
+            {
+                "id": "hid-zh",
+                "hidden": True,
+                "original_lang": "zh-CN",
+                "title": {"zh-CN": "隐藏的中文文章"},
+                "summary": {"zh-CN": "不应该消耗翻译配额。"},
+                "score": 1.5,
+                "howto": True,
+            },
+            {
+                "id": "vis-1",
+                "hidden": False,
+                "original_lang": "en",
+                "title": {"en": "How to speed up Linux boot", "vi": "How to speed up Linux boot"},
+                "summary": {"en": "Disable unused services to boot faster.", "vi": "Disable unused services to boot faster."},
+                "score": 0.8,
+                "howto": True,
+            },
+        ]
+        cache = {}
+        batch_translate_pending(items, cache, translator=translator, max_items=10)
+
+        self.assertEqual(translator.translate_batch.call_count, 1)
+        sent_ids = [x["id"] for x in translator.translate_batch.call_args.args[0]]
+        self.assertEqual(sent_ids, ["vis-1"])
+        self.assertNotIn("hid-en", cache)
+        self.assertNotIn("hid-zh", cache)
+        self.assertEqual(items[2]["translated"]["vi"], "machine")
+
+    def test_is_valid_translation_rejects_bad_outputs(self):
+        """is_valid_translation phải từ chối bản sao nguyên văn, tóm tắt rỗng và tóm tắt sai ngôn ngữ."""
+        # Bản sao nguyên văn giữa 2 ngôn ngữ khác nhau (case 6f7743a9465550a4)
+        self.assertFalse(
+            is_valid_translation(
+                "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel",
+                "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau.",
+                "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel",
+                "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau.",
+                "vi",
+                "en",
+            )
+        )
+        # Tóm tắt rỗng
+        self.assertFalse(
+            is_valid_translation(
+                "How to speed up Windows",
+                "Disable startup apps in Task Manager.",
+                "Cách tăng tốc Windows",
+                "",
+                "en",
+                "vi",
+            )
+        )
+        # Tiêu đề đúng tiếng Việt nhưng tóm tắt vẫn giữ tiếng Anh (>= 15 chữ cái)
+        self.assertFalse(
+            is_valid_translation(
+                "How to speed up Windows",
+                "Disable startup applications in Task Manager to improve boot time.",
+                "Cách tăng tốc Windows nhanh chóng",
+                "Disable startup applications in Task Manager to improve boot time.",
+                "en",
+                "vi",
+            )
+        )
+        # Tiêu đề đúng tiếng Anh nhưng tóm tắt vẫn là tiếng Việt (>= 15 chữ cái)
+        self.assertFalse(
+            is_valid_translation(
+                "Mẹo tối ưu pin điện thoại",
+                "Tắt ứng dụng chạy nền để tiết kiệm pin điện thoại mỗi ngày.",
+                "Tips to optimize phone battery",
+                "Tắt ứng dụng chạy nền để tiết kiệm pin điện thoại mỗi ngày.",
+                "vi",
+                "en",
+            )
+        )
+        # Bản dịch hợp lệ đạt cả tiêu đề lẫn tóm tắt
+        self.assertTrue(
+            is_valid_translation(
+                "How to speed up Windows",
+                "Disable startup apps in Task Manager to improve boot time.",
+                "Cách tăng tốc khởi động Windows",
+                "Tắt ứng dụng khởi động cùng hệ thống trong Task Manager để mở máy nhanh hơn.",
+                "en",
+                "vi",
+            )
+        )
+
+    def test_translation_retry_cooldown_and_clearing(self):
+        """Hết 3 lần thất bại thì chờ 24h thay vì đóng băng vĩnh viễn; đạt trần 9 thì dừng; thành công thì xóa sạch."""
+        t0 = datetime(2026, 11, 20, 0, 0, 0, tzinfo=timezone.utc)
+        item = {
+            "id": "retry-1",
+            "original_lang": "en",
+            "title": {"en": "Speed up Git", "vi": "Speed up Git"},
+            "summary": {"en": "Enable fsmonitor on large repos.", "vi": "Enable fsmonitor on large repos."},
+        }
+        # 2 lần lỗi đầu chưa vào cooldown
+        _record_translation_failure(item, "vi", now=t0)
+        self.assertTrue(_can_attempt_translation(item, "vi", now=t0))
+        self.assertNotIn("translate_next_retry", item)
+        _record_translation_failure(item, "vi", now=t0)
+        self.assertTrue(_can_attempt_translation(item, "vi", now=t0))
+
+        # Lần lỗi thứ 3 -> đặt cooldown 24h
+        _record_translation_failure(item, "vi", now=t0)
+        self.assertEqual(item["translate_attempts"]["vi"], 3)
+        self.assertIn("vi", item["translate_next_retry"])
+        self.assertFalse(_can_attempt_translation(item, "vi", now=t0 + timedelta(hours=12)))
+        self.assertTrue(_can_attempt_translation(item, "vi", now=t0 + timedelta(hours=25)))
+
+        # Khi phục hồi thành công từ cache, xóa sạch cả translate_attempts và translate_next_retry
+        cache = {
+            "retry-1": {
+                "title": {"en": "Speed up Git", "vi": "Cách tăng tốc Git hiệu quả"},
+                "summary": {"en": "Enable fsmonitor on large repos.", "vi": "Bật fsmonitor để tăng tốc kho mã nguồn lớn."},
+                "translated": {"vi": "machine"},
+            }
+        }
+        batch_translate_pending([item], cache, translator=Mock(), max_items=5)
+        self.assertEqual(item["translated"]["vi"], "machine")
+        self.assertNotIn("translate_attempts", item)
+        self.assertNotIn("translate_next_retry", item)
+
+        # Kiểm tra chạm trần trọn đời 9 lần sẽ dừng hẳn
+        doomed = {"id": "doomed-1"}
+        for i in range(9):
+            _record_translation_failure(doomed, "vi", now=t0 + timedelta(days=i))
+        self.assertFalse(_can_attempt_translation(doomed, "vi", now=t0 + timedelta(days=30)))
+
+    def test_gemini_thinking_budget_5xx_retry_and_fallback_models(self):
+        """Gemini 2.5 bật thinkingBudget=0, thử lại khi gặp 503 và dùng fallback 2.5-flash-lite."""
+        resp_503 = Mock(status_code=503, text="Service Unavailable")
+        resp_404 = Mock(status_code=404, text="Not Found")
+        resp_200 = Mock(status_code=200)
+        resp_200.json.return_value = {
+            "candidates": [{
+                "content": {
+                    "parts": [{
+                        "text": json.dumps([{
+                            "id": "g-retry",
+                            "title": "Cách cấu hình SSH nhanh gọn",
+                            "summary": "Sử dụng khóa ed25519 để tăng bảo mật khi đăng nhập máy chủ.",
+                        }])
+                    }]
+                }
+            }]
+        }
+
+        with patch.dict(os.environ, {"GEMINI_API_KEY": "secret-k", "GEMINI_MODEL": "gemini-2.5-flash"}):
+            translator = GeminiTranslator()
+            with patch("translate.time.sleep") as _mock_sleep:
+                with patch("translate.requests.Session.post", side_effect=[resp_503, resp_404, resp_200]) as mock_post:
+                    res = translator.translate_batch(
+                        [{"id": "g-retry", "title": "Configure SSH", "summary": "Use ed25519 keys."}],
+                        source_lang="en",
+                        target_lang="vi",
+                    )
+
+        self.assertEqual(len(res), 1)
+        self.assertEqual(mock_post.call_count, 3)
+        # Payload gửi tới gemini-2.5-* phải có thinkingConfig.thinkingBudget == 0
+        first_payload = mock_post.call_args_list[0].kwargs["json"]
+        self.assertEqual(first_payload["generationConfig"].get("thinkingConfig"), {"thinkingBudget": 0})
+        # Model dự phòng là gemini-2.5-flash-lite (không còn model cũ 1.5/2.0)
+        third_url = mock_post.call_args_list[2].args[0]
+        self.assertIn("gemini-2.5-flash-lite", third_url)
+
+    def test_diversify_limits_nested_source_content_type_community(self):
+        """diversify() phải giới hạn nguồn có source.content_type == 'community' (như HN, Dev.to, Community)."""
+        items = []
+        # 6 bài cộng đồng điểm rất cao (không có content_type ở cấp root, chỉ ở source.content_type)
+        for i in range(6):
+            items.append({
+                "id": f"comm-{i}",
+                "score": 1.4 - i * 0.01,
+                "source": {"id": f"hn-src-{i}", "content_type": "community"},
+            })
+        # 10 bài báo chí công nghệ điểm thấp hơn
+        for i in range(10):
+            items.append({
+                "id": f"art-{i}",
+                "score": 0.9 - i * 0.01,
+                "source": {"id": f"press-{i}", "content_type": "article"},
+            })
+
+        out = diversify(items, max_run=2, max_community_per_window=2, window_size=10)
+        first_ten = out[:10]
+        comm_in_first_ten = sum(1 for x in first_ten if x["source"]["content_type"] == "community")
+        self.assertLessEqual(comm_in_first_ten, 2)
+
+    def test_filters_reject_release_noise_and_url_only_summary(self):
+        """filters.accept() và is_howto_match() phải chặn Dependabot/Dev preview và tóm tắt chỉ có URL trần."""
+        noise_titles = [
+            "v0.103.3052: Build(deps): Bump actions/setup-dotnet from 5.4.0 to 6.0.0 (#49862)",
+            "chore(deps): Bump typescript from 5.7.0 to 5.8.0",
+            "Dev preview v0.103.3099.0",
+        ]
+        for nt in noise_titles:
+            ok, reason = accept(
+                {"raw_title": nt, "raw_summary": "Automated release notes for dependency update."},
+                {"id": "powertoys-release", "kind": "tips"},
+                enable_logging=False,
+            )
+            self.assertFalse(ok)
+            self.assertEqual(reason, "release-noise")
+            self.assertFalse(is_howto_match(nt, "How to fix settings"))
+
+        ok_url, reason_url = accept(
+            {
+                "raw_title": "Android 17 features and hidden tips",
+                "raw_summary": "https://www.youtube.com/watch?v=_enN4cmvmz8",
+            },
+            {"id": "reddit-androidtips", "kind": "tips"},
+            enable_logging=False,
+        )
+        self.assertFalse(ok_url)
+        self.assertEqual(reason_url, "url-only-summary")
+
+    def test_qa_validate_machine_translation_catches_false_summary_and_verbatim(self):
+        """qa.py phải bắt được bản dịch máy sai ngôn ngữ ở tóm tắt và bản sao nguyên văn."""
+        # 1. Bản sao nguyên văn (6f7743a9465550a4)
+        verbatim_item = {
+            "id": "qa-verbatim",
+            "original_lang": "vi",
+            "title": {
+                "vi": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel",
+                "en": "Oppo Find X10 Pro Max - smartphone có ba camera 200 megapixel",
+            },
+            "summary": {
+                "vi": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau.",
+                "en": "Oppo Find X10 Pro Max là điện thoại đầu tiên trang bị ba camera sau.",
+            },
+            "translated": {"en": "machine"},
+        }
+        self.assertTrue(len(validate_machine_translation(verbatim_item)) > 0)
+
+        # 2. Tiêu đề đã dịch sang tiếng Anh nhưng tóm tắt vẫn còn tiếng Việt
+        bad_summary_item = {
+            "id": "qa-bad-summ",
+            "original_lang": "vi",
+            "title": {
+                "vi": "Cách tăng tốc trình duyệt Chrome",
+                "en": "How to speed up Chrome browser",
+            },
+            "summary": {
+                "vi": "Bật tính năng tiết kiệm bộ nhớ để giảm tiêu thụ RAM khi mở nhiều tab.",
+                "en": "Bật tính năng tiết kiệm bộ nhớ để giảm tiêu thụ RAM khi mở nhiều tab.",
+            },
+            "translated": {"en": "machine"},
+        }
+        errs = validate_machine_translation(bad_summary_item)
+        self.assertTrue(any("tóm tắt" in e for e in errs))
+
+        # 3. Bản dịch chuẩn cả tiêu đề và tóm tắt phải vượt qua kiểm định
+        good_item = {
+            "id": "qa-good",
+            "original_lang": "vi",
+            "title": {
+                "vi": "Cách tăng tốc trình duyệt Chrome",
+                "en": "How to speed up Chrome browser",
+            },
+            "summary": {
+                "vi": "Bật tính năng tiết kiệm bộ nhớ để giảm tiêu thụ RAM.",
+                "en": "Enable Memory Saver to reduce RAM usage across open tabs.",
+            },
+            "translated": {"en": "machine"},
+        }
+        self.assertEqual(validate_machine_translation(good_item), [])
+
+    def test_write_health_report_statuses(self):
+        """write_health_report xuất chuẩn schema health.json với trạng thái ok/degraded/paused."""
+        now = datetime(2026, 11, 21, 8, 0, 0, tzinfo=timezone.utc)
+        sources = [
+            {"id": "src-ok"},
+            {"id": "src-deg"},
+            {"id": "src-paused"},
+        ]
+        state = {
+            "src-ok": {"failure_count": 0, "last_success": "2026-11-21T07:00:00+00:00"},
+            "src-deg": {"failure_count": 2, "last_failure": "2026-11-21T07:30:00+00:00", "last_error": "HTTP 429"},
+            "src-paused": {
+                "failure_count": 5,
+                "last_failure": "2026-11-21T07:45:00+00:00",
+                "paused_until": "2026-11-22T07:45:00+00:00",
+                "last_error": "HTTP 503",
+            },
+        }
+        with tempfile.TemporaryDirectory() as tmpdir:
+            out_path = Path(tmpdir) / "health.json"
+            report = write_health_report(sources, state, now_dt=now, path=out_path)
+            loaded = json.loads(out_path.read_text(encoding="utf-8"))
+
+        self.assertEqual(loaded, report)
+        self.assertEqual(loaded["updated_at"], "2026-11-21T08:00:00+00:00")
+        self.assertEqual(loaded["sources"]["src-ok"]["status"], "ok")
+        self.assertEqual(loaded["sources"]["src-deg"]["status"], "degraded")
+        self.assertEqual(loaded["sources"]["src-paused"]["status"], "paused")
 
 
 if __name__ == "__main__":

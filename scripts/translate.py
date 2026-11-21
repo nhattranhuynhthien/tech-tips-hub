@@ -5,11 +5,12 @@ import json
 import re
 import time
 from abc import ABC, abstractmethod
+from datetime import datetime, timedelta, timezone
 from pathlib import Path
 import requests
 import urllib.request
 import urllib.parse
-from textclean import clean_text
+from textclean import clean_text, RAW_HTML_TAG_RE, strip_html_tags, is_url_only_text
 
 CACHE_FILE = Path("data/cache/translations.json")
 
@@ -17,13 +18,8 @@ MAX_KEY_POINTS = 3
 MAX_KEY_POINT_LEN = 160
 LANG_CODE_RE = re.compile(r"^[a-zA-Z]{2,3}(?:-[a-zA-Z0-9]{2,8})*$")
 BULLET_PREFIX_RE = re.compile(r"^(?:[-*•–—]+|\d+[.)])\s+")
-RAW_HTML_TAG_RE = re.compile(
-    r"<!--.*?-->|"
-    r"</\s*[a-zA-Z][a-zA-Z0-9-]*\s*>|"
-    r"<\s*(?:a|abbr|article|aside|b|blockquote|body|br|button|code|dd|del|details|div|dl|dt|em|figcaption|figure|footer|form|h[1-6]|head|header|hr|html|i|iframe|img|input|ins|kbd|label|li|link|main|mark|meta|nav|noscript|ol|option|p|picture|pre|q|s|script|section|select|small|source|span|strong|style|sub|summary|sup|svg|table|tbody|td|textarea|tfoot|th|thead|title|tr|u|ul|video)\b(?:\s+[^<>]*)?/?>|"
-    r"<\s*[a-zA-Z][a-zA-Z0-9-]*\s+[a-zA-Z_:][a-zA-Z0-9_.:-]*\s*=\s*(?:\"[^\"]*\"|'[^']*'|[^\s<>]+)[^<>]*>",
-    re.IGNORECASE | re.DOTALL,
-)
+BAN_DICH_RE = re.compile(r"\[bản dịch\]", re.IGNORECASE)
+DANGEROUS_URI_RE = re.compile(r"(?:javascript|vbscript)\s*:|data\s*:\s*text/html", re.IGNORECASE)
 
 # Ký tự tiếng Việt có dấu chuẩn
 VI_CHARS = re.compile(
@@ -73,29 +69,89 @@ EN_FUNCTION_WORDS = re.compile(
     re.IGNORECASE
 )
 
+URL_RE = re.compile(r"https?://\S+", re.IGNORECASE)
+
+
+def non_url_alpha_count(text: str) -> int:
+    """Đếm số ký tự chữ cái (Unicode) sau khi loại bỏ các URL khỏi văn bản."""
+    stripped = URL_RE.sub("", text or "")
+    return len(re.findall(r"[^\W\d_]", stripped, re.UNICODE))
+
+
+INJECTED_VI_KW_RE = re.compile(
+    r"\b(cách|khắc phục|tối ưu(?: hóa)?|sửa lỗi|hướng dẫn|thủ thuật|mẹo)\b",
+    re.IGNORECASE,
+)
+
+
 def is_mixed(text: str) -> bool:
     """
-    Phát hiện câu trộn ngữ pháp (từ tiếng Việt chắp vá nằm giữa câu tiếng Anh).
+    Phát hiện câu trộn ngữ pháp (từ tiếng Việt chắp vá nằm giữa câu tiếng Anh, cả viết hoa lẫn viết thường).
     Bằng chứng: "Cách a Salon Website Gets Built in Lovable",
-                "This Newly Proposed Linux Filesystem Can Khắc phục Corrupted Data".
+                "This Newly Proposed Linux Filesystem Can Khắc phục Corrupted Data",
+                "How to sửa lỗi Wi-Fi connection on this Windows PC".
     """
     if not text:
         return False
 
-    # Kiểm tra có chứa từ khóa bị thay thế máy móc (viết hoa dạng tiêu đề)
-    has_injected_kw = bool(re.search(r"\b(Cách|Khắc phục|Tối ưu hóa)\b", text))
-    if not has_injected_kw:
+    # Kiểm tra có chứa từ khóa tiếng Việt bị chèn giữa câu tiếng Anh (không phân biệt hoa/thường)
+    if not INJECTED_VI_KW_RE.search(text):
         return False
 
     # Đếm từ chức năng tiếng Anh vs tiếng Việt
     en_count = len(EN_FUNCTION_WORDS.findall(text))
     vi_count = len(VI_FUNCTION_WORDS.findall(text))
 
-    # Nếu có từ tiếng Anh chức năng (the, and, in, a, this, can...) và không có từ ngữ pháp tiếng Việt
+    # Nếu có từ tiếng Anh chức năng (the, and, in, a, this, can, how, to...) và không có từ ngữ pháp tiếng Việt
     if en_count >= 2 and vi_count == 0:
         return True
 
     return False
+
+
+def is_valid_translation(
+    orig_t: str,
+    orig_s: str,
+    trans_t: str,
+    trans_s: str,
+    source_lang: str,
+    target_lang: str,
+) -> bool:
+    """
+    Nghiệm thu toàn diện một bản dịch (cả tiêu đề và tóm tắt):
+    - Cả trans_t và trans_s đều không rỗng và tóm tắt không được chỉ chứa URL trần.
+    - Không trộn ngữ pháp EN/VI và không chứa '[Bản dịch]' (không phân biệt hoa/thường).
+    - Khớp ngôn ngữ đích (vi/en) cho cả tiêu đề và tóm tắt (nếu tóm tắt có >= 15 ký tự chữ không phải URL).
+    - Khi source_lang != target_lang, từ chối bản sao nguyên văn chưa hề được dịch.
+    """
+    if not isinstance(trans_t, str) or not isinstance(trans_s, str):
+        return False
+    t_clean = trans_t.strip()
+    s_clean = trans_s.strip()
+    if not t_clean or not s_clean:
+        return False
+    if is_url_only_text(s_clean):
+        return False
+    if is_mixed(t_clean) or is_mixed(s_clean):
+        return False
+    if BAN_DICH_RE.search(t_clean) or BAN_DICH_RE.search(s_clean):
+        return False
+
+    src_l = (source_lang or "").strip().lower()
+    tgt_l = (target_lang or "").strip().lower()
+    orig_t_clean = (orig_t or "").strip() if isinstance(orig_t, str) else ""
+    orig_s_clean = (orig_s or "").strip() if isinstance(orig_s, str) else ""
+
+    if src_l and tgt_l and src_l != tgt_l:
+        if t_clean == orig_t_clean and s_clean == orig_s_clean:
+            return False
+
+    s_alpha = non_url_alpha_count(s_clean)
+    if tgt_l == "vi":
+        return looks_vietnamese(t_clean) and (looks_vietnamese(s_clean) or s_alpha < 15)
+    if tgt_l == "en":
+        return looks_english(t_clean) and (looks_english(s_clean) or s_alpha < 15)
+    return True
 
 def sanitize_key_points(
     raw_points,
@@ -103,7 +159,7 @@ def sanitize_key_points(
     max_items: int = MAX_KEY_POINTS,
     max_len: int = MAX_KEY_POINT_LEN,
 ) -> list[str]:
-    """Làm sạch danh sách key_points qua clean_text(limit=160), bỏ HTML/trùng lặp và giới hạn tối đa 3 mục."""
+    """Làm sạch danh sách key_points qua clean_text(limit=160), bỏ HTML/URI nguy hiểm/trùng lặp và giới hạn tối đa 3 mục."""
     if not isinstance(raw_points, list):
         return []
     cleaned_points: list[str] = []
@@ -112,7 +168,7 @@ def sanitize_key_points(
         if not isinstance(raw, str):
             continue
         text = clean_text(raw, limit=max_len)
-        text = RAW_HTML_TAG_RE.sub(" ", text)
+        text = strip_html_tags(text)
         text = re.sub(r"\s+", " ", text).strip()
         text = BULLET_PREFIX_RE.sub("", text).strip()
         if len(text) > max_len:
@@ -122,7 +178,7 @@ def sanitize_key_points(
             text = cut.rstrip(",;:-–—、，。 ") + "…"
         if not text:
             continue
-        if "[Bản dịch]" in text or is_mixed(text):
+        if BAN_DICH_RE.search(text) or is_mixed(text) or DANGEROUS_URI_RE.search(text):
             continue
         norm_key = text.casefold()
         if norm_key in seen:
@@ -191,7 +247,7 @@ def parse_gemini_response(raw_text: str, target_lang: str | None = None) -> list
     if not cleaned:
         return []
     if cleaned.startswith("```"):
-        cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned)
+        cleaned = re.sub(r"^```(?:json)?\s*", "", cleaned, flags=re.IGNORECASE)
         cleaned = re.sub(r"\s*```$", "", cleaned).strip()
 
     try:
@@ -236,7 +292,7 @@ def parse_gemini_response(raw_text: str, target_lang: str | None = None) -> list
 
 
 def load_cache() -> dict:
-    """Đọc cache dịch thuật, tự động loại bỏ các bản dịch cũ bị trộn ngữ pháp hoặc chứa rác."""
+    """Đọc cache dịch thuật, tự động loại bỏ các bản dịch cũ bị trộn ngữ pháp, sai ngôn ngữ hoặc chứa rác."""
     if not CACHE_FILE.exists():
         return {}
     try:
@@ -247,21 +303,46 @@ def load_cache() -> dict:
         for iid, val in raw_data.items():
             if not isinstance(val, dict):
                 continue
-            t_vi = val.get("title", {}).get("vi", "")
-            s_vi = val.get("summary", {}).get("vi", "")
-            if is_mixed(t_vi) or is_mixed(s_vi) or "[Bản dịch]" in t_vi or "[Bản dịch]" in s_vi:
-                continue
-            # Chỉ nạp vào cache nếu bài viết thực sự đã có nhãn dịch máy thành công
-            trans = val.get("translated", {})
+            titles = val.get("title") if isinstance(val.get("title"), dict) else {}
+            summaries = val.get("summary") if isinstance(val.get("summary"), dict) else {}
+            raw_trans = val.get("translated") if isinstance(val.get("translated"), dict) else {}
+            trans = dict(raw_trans)
+
+            for lang in ("vi", "en"):
+                if trans.get(lang) != "machine":
+                    continue
+                if "zh-CN" in titles:
+                    inferred_src = "zh-CN"
+                elif "zh" in titles:
+                    inferred_src = "zh"
+                elif lang == "vi" and "en" in titles:
+                    inferred_src = "en"
+                elif lang == "en" and "vi" in titles:
+                    inferred_src = "vi"
+                else:
+                    inferred_src = ""
+                if not is_valid_translation(
+                    titles.get(inferred_src, ""),
+                    summaries.get(inferred_src, ""),
+                    titles.get(lang, ""),
+                    summaries.get(lang, ""),
+                    inferred_src,
+                    lang,
+                ):
+                    trans.pop(lang, None)
+
+            # Chỉ nạp vào cache nếu bài viết thực sự còn nhãn dịch máy hợp lệ
             if trans.get("vi") != "machine" and trans.get("en") != "machine":
                 continue
-            if "key_points" in val:
-                norm_kp = normalize_key_points_map(val.get("key_points"))
+
+            entry = {**val, "translated": trans}
+            if "key_points" in entry:
+                norm_kp = normalize_key_points_map(entry.get("key_points"))
                 if norm_kp:
-                    val = {**val, "key_points": norm_kp}
+                    entry["key_points"] = norm_kp
                 else:
-                    val = {k: v for k, v in val.items() if k != "key_points"}
-            cleaned_cache[iid] = val
+                    entry.pop("key_points", None)
+            cleaned_cache[iid] = entry
         return cleaned_cache
     except Exception as e:
         print(f"[Cache Warning] Không thể đọc cache: {e}")
@@ -356,66 +437,76 @@ class GeminiTranslator(Translator):
 
         prompt = self.build_prompt(items, source_lang=source_lang, target_lang=target_lang)
 
-        payload = {
-            "contents": [
-                {
-                    "parts": [{"text": prompt}]
-                }
-            ],
-            "generationConfig": {
-                "temperature": 0.2,
-                "responseMimeType": "application/json"
-            }
-        }
         headers = {
             "Content-Type": "application/json",
             "x-goog-api-key": self.api_key,
         }
 
-        # Retry với Exponential Backoff khi gặp 429 hoặc model fallback
-        models_to_try = [self.model]
-        if self.model != "gemini-2.5-flash":
-            models_to_try.append("gemini-1.5-flash")
-        if "gemini-2.0-flash" not in models_to_try:
-            models_to_try.append("gemini-2.0-flash")
+        # Danh sách model thử nghiệm & dự phòng (loại bỏ các model đã ngừng hỗ trợ)
+        models_to_try = []
+        for candidate in (self.model, "gemini-2.5-flash", "gemini-2.5-flash-lite"):
+            if candidate and candidate not in models_to_try:
+                models_to_try.append(candidate)
 
-        session = requests.Session()
+        transient_statuses = {429, 500, 502, 503, 504}
 
-        for curr_model in models_to_try:
-            endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/{curr_model}:generateContent"
-            max_retries = 3
-            delay = 2.0
+        with requests.Session() as session:
+            for curr_model in models_to_try:
+                endpoint = f"https://generativelanguage.googleapis.com/v1beta/models/{curr_model}:generateContent"
+                generation_config = {
+                    "temperature": 0.2,
+                    "responseMimeType": "application/json",
+                }
+                if curr_model.startswith("gemini-2.5"):
+                    generation_config["thinkingConfig"] = {"thinkingBudget": 0}
 
-            for attempt in range(max_retries):
-                try:
-                    resp = session.post(endpoint, json=payload, headers=headers, timeout=40)
-                    if resp.status_code == 429:
-                        print(f"[Gemini 429 Quota] Chờ {delay:.1f}s trước khi thử lại (lần {attempt + 1}/{max_retries})...")
-                        time.sleep(delay)
-                        delay *= 2
-                        continue
-                    if resp.status_code == 404:
-                        print(f"[Gemini Warning] Model {curr_model} 404 Not Found, chuyển sang model dự phòng...")
-                        break
-                    if resp.status_code != 200:
-                        print(f"[Gemini Warning] HTTP {resp.status_code}: {resp.text[:140]}")
-                        return []
+                payload = {
+                    "contents": [
+                        {
+                            "parts": [{"text": prompt}]
+                        }
+                    ],
+                    "generationConfig": generation_config,
+                }
 
-                    data = resp.json()
-                    candidates = data.get("candidates", [])
-                    if not candidates:
-                        return []
-                    parts = candidates[0].get("content", {}).get("parts", [])
-                    if not parts:
-                        return []
+                max_retries = 3
+                delay = 2.0
 
-                    raw_text = parts[0].get("text", "")
-                    return self.parse_response(raw_text, target_lang=target_lang)
-                except Exception as e:
-                    safe_err = str(e).replace(self.api_key, "[REDACTED]") if self.api_key else str(e)
-                    print(f"[Gemini Exception (Lần {attempt + 1})]: {safe_err}")
-                    time.sleep(delay)
-                    delay *= 2
+                for attempt in range(max_retries):
+                    try:
+                        resp = session.post(endpoint, json=payload, headers=headers, timeout=40)
+                        if resp.status_code in transient_statuses:
+                            print(
+                                f"[Gemini {resp.status_code}] Chờ {delay:.1f}s trước khi thử lại "
+                                f"model {curr_model} (lần {attempt + 1}/{max_retries})..."
+                            )
+                            if attempt < max_retries - 1:
+                                time.sleep(delay)
+                                delay *= 2
+                            continue
+                        if resp.status_code == 404:
+                            print(f"[Gemini Warning] Model {curr_model} 404 Not Found, chuyển sang model dự phòng...")
+                            break
+                        if resp.status_code != 200:
+                            print(f"[Gemini Warning] HTTP {resp.status_code}: {resp.text[:140]}")
+                            return []
+
+                        data = resp.json()
+                        candidates = data.get("candidates", [])
+                        if not candidates:
+                            return []
+                        parts = candidates[0].get("content", {}).get("parts", [])
+                        if not parts:
+                            return []
+
+                        raw_text = parts[0].get("text", "")
+                        return self.parse_response(raw_text, target_lang=target_lang)
+                    except Exception as e:
+                        safe_err = str(e).replace(self.api_key, "[REDACTED]") if self.api_key else str(e)
+                        print(f"[Gemini Exception (Lần {attempt + 1})]: {safe_err}")
+                        if attempt < max_retries - 1:
+                            time.sleep(delay)
+                            delay *= 2
 
         return []
 
@@ -540,8 +631,10 @@ class CompositeTranslator(Translator):
 # Khởi tạo instance dùng chung
 DEFAULT_TRANSLATOR = CompositeTranslator()
 
-# Số lần thử dịch tối đa trước khi tạm bỏ qua một mục
+# Số lần thử dịch liên tiếp trước khi vào thời gian chờ (cooldown 24h) và giới hạn trọn đời
 MAX_TRANSLATE_ATTEMPTS = 3
+MAX_LIFETIME_TRANSLATE_ATTEMPTS = 9
+TRANSLATE_RETRY_COOLDOWN_HOURS = 24
 
 
 def _translation_attempts(item: dict) -> dict:
@@ -549,17 +642,72 @@ def _translation_attempts(item: dict) -> dict:
     return attempts if isinstance(attempts, dict) else {}
 
 
-def _record_translation_failure(item: dict, target_lang: str) -> None:
-    attempts = _translation_attempts(item)
-    attempts[target_lang] = int(attempts.get(target_lang, 0)) + 1
+def _translation_next_retries(item: dict) -> dict:
+    retries = item.get("translate_next_retry")
+    return retries if isinstance(retries, dict) else {}
+
+
+def _safe_int(val, default: int = 0) -> int:
+    try:
+        return int(val)
+    except (TypeError, ValueError):
+        return default
+
+
+def _can_attempt_translation(item: dict, target_lang: str, now: datetime | None = None) -> bool:
+    """Cho phép thử dịch nếu chưa vượt quá trần trọn đời và không nằm trong thời gian chờ cooldown."""
+    attempts = _safe_int(_translation_attempts(item).get(target_lang, 0), 0)
+    if attempts >= MAX_LIFETIME_TRANSLATE_ATTEMPTS:
+        return False
+    next_retry_raw = _translation_next_retries(item).get(target_lang)
+    if next_retry_raw:
+        now_dt = now or datetime.now(timezone.utc)
+        try:
+            retry_dt = datetime.fromisoformat(str(next_retry_raw).replace("Z", "+00:00"))
+            if retry_dt.tzinfo is None:
+                retry_dt = retry_dt.replace(tzinfo=timezone.utc)
+            if now_dt < retry_dt:
+                return False
+        except ValueError:
+            pass
+    return True
+
+
+def _record_translation_failure(item: dict, target_lang: str, now: datetime | None = None) -> None:
+    attempts = dict(_translation_attempts(item))
+    new_count = _safe_int(attempts.get(target_lang, 0), 0) + 1
+    attempts[target_lang] = new_count
     item["translate_attempts"] = attempts
+
+    retries = dict(_translation_next_retries(item))
+    if new_count >= MAX_LIFETIME_TRANSLATE_ATTEMPTS:
+        retries.pop(target_lang, None)
+    elif new_count >= MAX_TRANSLATE_ATTEMPTS:
+        now_dt = now or datetime.now(timezone.utc)
+        next_retry = (now_dt + timedelta(hours=TRANSLATE_RETRY_COOLDOWN_HOURS)).replace(microsecond=0).isoformat()
+        retries[target_lang] = next_retry
+
+    if retries:
+        item["translate_next_retry"] = retries
+    else:
+        item.pop("translate_next_retry", None)
 
 
 def _clear_translation_failure(item: dict, target_lang: str) -> None:
-    attempts = _translation_attempts(item)
+    attempts = dict(_translation_attempts(item))
     if target_lang in attempts:
-        attempts[target_lang] = 0
-        item["translate_attempts"] = attempts
+        attempts.pop(target_lang, None)
+        if attempts:
+            item["translate_attempts"] = attempts
+        else:
+            item.pop("translate_attempts", None)
+    retries = dict(_translation_next_retries(item))
+    if target_lang in retries:
+        retries.pop(target_lang, None)
+        if retries:
+            item["translate_next_retry"] = retries
+        else:
+            item.pop("translate_next_retry", None)
 
 
 def process_item_bilingual(
@@ -573,7 +721,7 @@ def process_item_bilingual(
     """
     Xử lý song ngữ an toàn, chính xác và trung thực:
     - Nếu đã có trong cache đạt chuẩn (không trộn ngữ pháp, đúng ngôn ngữ), trả về ngay.
-    - Nếu dịch thành công và qua khâu nghiệm thu (looks_vietnamese / not is_mixed), gắn nhãn 'machine'.
+    - Nếu dịch thành công và qua khâu nghiệm thu (is_valid_translation), gắn nhãn 'machine'.
     - Nếu không dịch được hoặc lỗi, giữ nguyên bản gốc và KHÔNG gắn nhãn dịch máy.
     - Tuyệt đối không gắn tiền tố '[Bản dịch]' vào tiêu đề hay tóm tắt.
     """
@@ -584,9 +732,9 @@ def process_item_bilingual(
     if item_id in cache:
         c = cache[item_id]
         if c.get("translated", {}).get(target_lang) == "machine":
-            t_vi = c.get("title", {}).get("vi", "")
-            s_vi = c.get("summary", {}).get("vi", "")
-            if not is_mixed(t_vi) and not is_mixed(s_vi) and not ("[Bản dịch]" in s_vi or "[Bản dịch]" in t_vi):
+            c_t = c.get("title", {}).get(target_lang, "")
+            c_s = c.get("summary", {}).get(target_lang, "")
+            if is_valid_translation(orig_title, orig_summary, c_t, c_s, orig_lang, target_lang):
                 return c["title"], c["summary"], c.get("translated", {})
 
     # 2. Khởi tạo cấu trúc mặc định
@@ -603,13 +751,8 @@ def process_item_bilingual(
         res_t = clean_text((t_obj.get("title") or "").strip(), limit=180)
         res_s = clean_text((t_obj.get("summary") or "").strip(), limit=320)
 
-        # Nghiệm thu chất lượng bản dịch
-        if target_lang == "vi":
-            is_valid = looks_vietnamese(res_t) and not is_mixed(res_t) and not is_mixed(res_s)
-        else:
-            is_valid = looks_english(res_t) and not is_mixed(res_t) and not is_mixed(res_s)
-
-        if is_valid:
+        # Nghiệm thu chất lượng bản dịch toàn diện
+        if is_valid_translation(orig_title, orig_summary, res_t, res_s, orig_lang, target_lang):
             title_dict[target_lang] = res_t
             summary_dict[target_lang] = res_s
             trans_meta[target_lang] = "machine"
@@ -634,6 +777,8 @@ def _translate_chinese_items(
 ) -> int:
     pending = []
     for item in items:
+        if item.get("hidden"):
+            continue
         item_id = item["id"]
         source_lang = item.get("original_lang", "zh-CN")
         original_title = item.get("raw_title") or item.get("title", {}).get(source_lang, "")
@@ -646,23 +791,32 @@ def _translate_chinese_items(
         cached_kp = normalize_key_points_map(cached.get("key_points"))
         for target_lang in ("vi", "en"):
             if cached.get("translated", {}).get(target_lang) == "machine":
-                item["title"][target_lang] = cached.get("title", {}).get(target_lang, original_title)
-                item["summary"][target_lang] = cached.get("summary", {}).get(target_lang, original_summary)
-                item["translated"][target_lang] = "machine"
-                if target_lang in cached_kp:
-                    _set_item_key_points(item, target_lang, cached_kp[target_lang])
+                c_t = cached.get("title", {}).get(target_lang, "")
+                c_s = cached.get("summary", {}).get(target_lang, "")
+                if is_valid_translation(original_title, original_summary, c_t, c_s, source_lang, target_lang):
+                    item["title"][target_lang] = c_t
+                    item["summary"][target_lang] = c_s
+                    item["translated"][target_lang] = "machine"
+                    _clear_translation_failure(item, target_lang)
+                    if target_lang in cached_kp:
+                        _set_item_key_points(item, target_lang, cached_kp[target_lang])
 
         targets = []
         for target_lang in ("vi", "en"):
             if item["translated"].get(target_lang) == "machine":
-                continue
-            if int(_translation_attempts(item).get(target_lang, 0)) < MAX_TRANSLATE_ATTEMPTS:
+                curr_t = item["title"].get(target_lang, "")
+                curr_s = item["summary"].get(target_lang, "")
+                if is_valid_translation(original_title, original_summary, curr_t, curr_s, source_lang, target_lang):
+                    _clear_translation_failure(item, target_lang)
+                    continue
+            if _can_attempt_translation(item, target_lang):
                 targets.append(target_lang)
         if targets:
             pending.append({
                 "id": item_id,
                 "title": original_title,
                 "summary": original_summary,
+                "source_lang": source_lang,
                 "targets": targets,
                 "howto": item.get("howto", False),
                 "score": item.get("score", 0),
@@ -672,7 +826,7 @@ def _translate_chinese_items(
     pending.sort(key=lambda record: (record["howto"], record["score"], record["published_at"]), reverse=True)
     pending = pending[:max_items]
     processed_count = len(pending)
-    items_by_id = {item["id"]: item for item in items}
+    items_by_id = {item["id"]: item for item in items if not item.get("hidden")}
 
     for target_lang in ("vi", "en"):
         target_items = [record for record in pending if target_lang in record["targets"]]
@@ -688,12 +842,14 @@ def _translate_chinese_items(
                 result = result_map.get(record["id"], {})
                 translated_title = clean_text((result.get("title") or "").strip(), limit=180)
                 translated_summary = clean_text((result.get("summary") or "").strip(), limit=320)
-                valid = bool(translated_title and translated_summary)
-                if target_lang == "vi":
-                    valid = valid and looks_vietnamese(translated_title) and looks_vietnamese(translated_summary)
-                else:
-                    valid = valid and looks_english(translated_title) and looks_english(translated_summary)
-                valid = valid and not is_mixed(translated_title) and not is_mixed(translated_summary)
+                valid = is_valid_translation(
+                    original_title,
+                    original_summary,
+                    translated_title,
+                    translated_summary,
+                    record["source_lang"],
+                    target_lang,
+                )
 
                 if valid:
                     item["title"][target_lang] = translated_title
@@ -726,12 +882,15 @@ def batch_translate_pending(
     max_items: int = 40
 ):
     """
-    Dịch theo lô cho các bài viết chưa có bản dịch trong cache:
+    Dịch theo lô cho các bài viết hiển thị chưa có bản dịch trong cache:
+    - Bỏ qua tuyệt đối các bài đã ẩn (hidden: True).
     - Ưu tiên dịch bài how-to, bài có điểm cao và mới nhất trước.
     - Cập nhật trực tiếp vào items và cache.
     """
     translator = translator or DEFAULT_TRANSLATOR
-    chinese_items = [item for item in items if str(item.get("original_lang", "")).lower().startswith("zh")]
+    visible_items = [it for it in items if not it.get("hidden")]
+
+    chinese_items = [item for item in visible_items if str(item.get("original_lang", "")).lower().startswith("zh")]
     if chinese_items:
         chinese_quota = min(10, max_items // 4)
         processed_chinese = _translate_chinese_items(chinese_items, cache, translator, batch_size, chinese_quota)
@@ -741,33 +900,45 @@ def batch_translate_pending(
     pending_en_to_vi = []
     pending_vi_to_en = []
 
-    for it in items:
+    for it in visible_items:
+        if it.get("hidden"):
+            continue
         iid = it["id"]
         orig_lang = it.get("original_lang", "en")
         if str(orig_lang).lower().startswith("zh"):
             continue
         target_lang = "vi" if orig_lang == "en" else "en"
 
+        raw_t = it.get("raw_title") or it.get("title", {}).get(orig_lang, "")
+        raw_s = it.get("raw_summary") or it.get("summary", {}).get(orig_lang, "")
+
         # Nếu đã có bản dịch hợp lệ trong cache
         if iid in cache and cache[iid].get("translated", {}).get(target_lang) == "machine":
             c = cache[iid]
-            it["title"] = dict(c["title"])
-            it["summary"] = dict(c["summary"])
-            it["translated"] = dict(c.get("translated", {}))
-            cached_kp = normalize_key_points_map(c.get("key_points"))
-            if cached_kp:
-                merged_kp = normalize_key_points_map(it.get("key_points"))
-                merged_kp.update(cached_kp)
-                it["key_points"] = merged_kp
-            continue
-
-        if it.get("translated", {}).get(target_lang) is False:
-            # Cho phép thử lại vài lần thay vì bỏ qua vĩnh viễn
-            if int(_translation_attempts(it).get(target_lang, 0)) >= MAX_TRANSLATE_ATTEMPTS:
+            c_t = c.get("title", {}).get(target_lang, "")
+            c_s = c.get("summary", {}).get(target_lang, "")
+            if is_valid_translation(raw_t, raw_s, c_t, c_s, orig_lang, target_lang):
+                it["title"] = dict(c["title"])
+                it["summary"] = dict(c["summary"])
+                it["translated"] = dict(c.get("translated", {}))
+                _clear_translation_failure(it, target_lang)
+                cached_kp = normalize_key_points_map(c.get("key_points"))
+                if cached_kp:
+                    merged_kp = normalize_key_points_map(it.get("key_points"))
+                    merged_kp.update(cached_kp)
+                    it["key_points"] = merged_kp
                 continue
 
-        raw_t = it.get("raw_title") or it["title"].get(orig_lang, "")
-        raw_s = it.get("raw_summary") or it["summary"].get(orig_lang, "")
+        # Nếu bản thân item đã có bản dịch máy hợp lệ
+        if it.get("translated", {}).get(target_lang) == "machine":
+            curr_t = it.get("title", {}).get(target_lang, "")
+            curr_s = it.get("summary", {}).get(target_lang, "")
+            if is_valid_translation(raw_t, raw_s, curr_t, curr_s, orig_lang, target_lang):
+                _clear_translation_failure(it, target_lang)
+                continue
+
+        if not _can_attempt_translation(it, target_lang):
+            continue
 
         record = {
             "id": iid,
@@ -798,7 +969,7 @@ def batch_translate_pending(
     pending_vi_to_en = [entry for entry in pending_vi_to_en if entry["id"] in allowed_ids]
     print(f"[Translate] Đang xử lý tối đa {len(allowed_ids)} mục trong giới hạn {max_items}/lượt.")
 
-    items_map = {it["id"]: it for it in items}
+    items_map = {it["id"]: it for it in visible_items}
 
     # Xử lý dịch theo lô EN -> VI
     for i in range(0, len(pending_en_to_vi), batch_size):
@@ -818,7 +989,7 @@ def batch_translate_pending(
                 trans_t = clean_text((res_item.get("title") or "").strip(), limit=180)
                 trans_s = clean_text((res_item.get("summary") or "").strip(), limit=320)
 
-                if looks_vietnamese(trans_t) and not is_mixed(trans_t) and not is_mixed(trans_s):
+                if is_valid_translation(orig_t, orig_s, trans_t, trans_s, "en", "vi"):
                     it["title"]["vi"] = trans_t
                     it["summary"]["vi"] = trans_s
                     it.setdefault("translated", {})["vi"] = "machine"
@@ -862,7 +1033,7 @@ def batch_translate_pending(
                 trans_t = clean_text((res_item.get("title") or "").strip(), limit=180)
                 trans_s = clean_text((res_item.get("summary") or "").strip(), limit=320)
 
-                if looks_english(trans_t) and not is_mixed(trans_t) and not is_mixed(trans_s):
+                if is_valid_translation(orig_t, orig_s, trans_t, trans_s, "vi", "en"):
                     it["title"]["en"] = trans_t
                     it["summary"]["en"] = trans_s
                     it.setdefault("translated", {})["en"] = "machine"

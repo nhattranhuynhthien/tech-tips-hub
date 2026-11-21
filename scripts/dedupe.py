@@ -12,17 +12,36 @@ CJK_RE = re.compile(r"[\u3400-\u9fff]")
 
 
 def canonical_url(url: str) -> str:
-    """Chuẩn hóa URL, loại bỏ toàn bộ tham số tracking và trailing slash."""
-    if not url:
+    """Chuẩn hóa URL: chỉ chấp nhận http/https có hostname hợp lệ, gỡ cổng mặc định (:80/:443), tracking params và trailing slash."""
+    if not url or not isinstance(url, str):
         return ""
     p = urlsplit(url.strip())
-    q = [(k, v) for k, v in parse_qsl(p.query, keep_blank_values=False) if k.lower() not in TRACKING_PARAMS]
+    scheme = p.scheme.lower()
+    if scheme not in ("http", "https"):
+        return ""
+    hostname = (p.hostname or "").lower()
+    if not hostname:
+        return ""
+    try:
+        port = p.port
+    except ValueError:
+        return ""
+    if (scheme == "https" and port == 443) or (scheme == "http" and port == 80):
+        port = None
+    host_part = f"[{hostname}]" if ":" in hostname else hostname
+    netloc = f"{host_part}:{port}" if port is not None else host_part
+
+    q = [
+        (k, v)
+        for k, v in parse_qsl(p.query, keep_blank_values=False)
+        if k.lower() not in TRACKING_PARAMS and not k.lower().startswith("utm_")
+    ]
     q.sort()
     clean_query = urlencode(q)
     clean_path = p.path.rstrip("/")
     if not clean_path:
         clean_path = "/"
-    return urlunsplit((p.scheme.lower(), p.netloc.lower(), clean_path, clean_query, ""))
+    return urlunsplit((scheme, netloc, clean_path, clean_query, ""))
 
 
 def generate_id(url: str) -> str:

@@ -509,7 +509,8 @@
     "contentType": "community",
     "enabled": true,
     "maxPerRun": 5,
-    "minScore": 0
+    "minScore": 0,
+    "site_url": "https://www.reddit.com/r/LifeProTips/"
   },
   {
     "id": "reddit-androidtips",
@@ -526,7 +527,8 @@
     "contentType": "community",
     "enabled": true,
     "maxPerRun": 10,
-    "minScore": 0
+    "minScore": 0,
+    "site_url": "https://www.reddit.com/r/AndroidTips/"
   },
   {
     "id": "reddit-iostips",
@@ -543,7 +545,8 @@
     "contentType": "community",
     "enabled": true,
     "maxPerRun": 10,
-    "minScore": 0
+    "minScore": 0,
+    "site_url": "https://www.reddit.com/r/ios/"
   },
   {
     "id": "reddit-win11",
@@ -560,7 +563,8 @@
     "contentType": "community",
     "enabled": true,
     "maxPerRun": 10,
-    "minScore": 0
+    "minScore": 0,
+    "site_url": "https://www.reddit.com/r/Windows11/"
   },
   {
     "id": "reddit-excel",
@@ -577,7 +581,8 @@
     "contentType": "community",
     "enabled": true,
     "maxPerRun": 10,
-    "minScore": 0
+    "minScore": 0,
+    "site_url": "https://www.reddit.com/r/excel/"
   },
   {
     "id": "reddit-selfhosted",
@@ -594,7 +599,8 @@
     "contentType": "community",
     "enabled": true,
     "maxPerRun": 10,
-    "minScore": 0
+    "minScore": 0,
+    "site_url": "https://www.reddit.com/r/selfhosted/"
   },
   {
     "id": "reddit-linux4noobs",
@@ -611,7 +617,8 @@
     "contentType": "community",
     "enabled": true,
     "maxPerRun": 10,
-    "minScore": 0
+    "minScore": 0,
+    "site_url": "https://www.reddit.com/r/linux4noobs/"
   },
   {
     "id": "reddit-technology",
@@ -674,7 +681,8 @@
     "contentType": "community",
     "enabled": true,
     "maxPerRun": 20,
-    "minScore": 50
+    "minScore": 50,
+    "site_url": "https://news.ycombinator.com"
   },
   {
     "id": "stack-superuser",
@@ -692,7 +700,8 @@
     "kind": "news",
     "contentType": "community",
     "enabled": false,
-    "maxPerRun": 20
+    "maxPerRun": 20,
+    "site_url": "https://superuser.com"
   },
   {
     "id": "devto-productivity",
@@ -709,7 +718,8 @@
     "kind": "news",
     "contentType": "community",
     "enabled": false,
-    "maxPerRun": 20
+    "maxPerRun": 20,
+    "site_url": "https://dev.to/t/productivity"
   },
   {
     "id": "mastodon-techtips",
@@ -725,7 +735,8 @@
     "kind": "news",
     "contentType": "community",
     "enabled": false,
-    "maxPerRun": 20
+    "maxPerRun": 20,
+    "site_url": "https://mastodon.social/tags/techtips"
   },
   {
     "id": "lifehacker",
@@ -743,7 +754,8 @@
     "kind": "news",
     "contentType": "article",
     "enabled": true,
-    "maxPerRun": 20
+    "maxPerRun": 20,
+    "site_url": "https://lifehacker.com"
   },
   {
     "id": "theverge",
@@ -761,7 +773,8 @@
     "kind": "news",
     "contentType": "article",
     "enabled": true,
-    "maxPerRun": 20
+    "maxPerRun": 20,
+    "site_url": "https://www.theverge.com"
   },
   {
     "id": "workspace-updates",
@@ -777,7 +790,8 @@
     "kind": "news",
     "contentType": "vendor",
     "enabled": true,
-    "maxPerRun": 20
+    "maxPerRun": 20,
+    "site_url": "https://workspaceupdates.googleblog.com"
   },
   {
     "id": "android-dev",
@@ -794,7 +808,8 @@
     "kind": "news",
     "contentType": "vendor",
     "enabled": true,
-    "maxPerRun": 20
+    "maxPerRun": 20,
+    "site_url": "https://android-developers.googleblog.com"
   },
   {
     "id": "windows-blog",
@@ -810,7 +825,8 @@
     "kind": "news",
     "contentType": "vendor",
     "enabled": true,
-    "maxPerRun": 20
+    "maxPerRun": 20,
+    "site_url": "https://blogs.windows.com"
   },
   {
     "id": "mozilla",
@@ -827,7 +843,8 @@
     "kind": "news",
     "contentType": "vendor",
     "enabled": true,
-    "maxPerRun": 20
+    "maxPerRun": 20,
+    "site_url": "https://blog.mozilla.org"
   },
   {
     "id": "vnexpress-sohoa-news",
@@ -845,7 +862,8 @@
     "kind": "news",
     "contentType": "article",
     "enabled": true,
-    "maxPerRun": 20
+    "maxPerRun": 20,
+    "site_url": "https://vnexpress.net/so-hoa"
   },
   {
     "id": "dantri-smd",
@@ -863,7 +881,8 @@
     "kind": "news",
     "contentType": "article",
     "enabled": true,
-    "maxPerRun": 20
+    "maxPerRun": 20,
+    "site_url": "https://dantri.com.vn/suc-manh-so.htm"
   },
   {
     "id": "tuoitre-nsso",
@@ -881,7 +900,8 @@
     "kind": "news",
     "contentType": "article",
     "enabled": true,
-    "maxPerRun": 20
+    "maxPerRun": 20,
+    "site_url": "https://tuoitre.vn/nhip-song-so.htm"
   },
   {
     "id": "obsidian-release",
@@ -897,7 +917,8 @@
     "kind": "news",
     "contentType": "vendor",
     "enabled": true,
-    "maxPerRun": 20
+    "maxPerRun": 20,
+    "site_url": "https://github.com/obsidianmd/obsidian-releases/releases"
   },
   {
     "id": "powertoys-release",
@@ -914,6 +935,7 @@
     "kind": "news",
     "contentType": "vendor",
     "enabled": true,
-    "maxPerRun": 20
+    "maxPerRun": 20,
+    "site_url": "https://github.com/microsoft/PowerToys/releases"
   }
 ]

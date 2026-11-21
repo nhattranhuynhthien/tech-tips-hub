@@ -3,6 +3,7 @@ import re
 import json
 from pathlib import Path
 from datetime import datetime, timezone
+from textclean import is_url_only_text
 
 LOG_DIR = Path("data/logs")
 LOG_DIR.mkdir(parents=True, exist_ok=True)
@@ -91,9 +92,21 @@ REDDIT_LPT_TECH_SIGNAL = re.compile(
     re.IGNORECASE
 )
 
+URL_ONLY_SUMMARY = re.compile(r"^\s*https?://\S+\s*$", re.IGNORECASE)
+
+RELEASE_NOISE = re.compile(
+    r"(?:(?:build|chore|fix|ci|deps)\(deps(?:-[a-z0-9_-]+)?\)\s*:|"
+    r"Bump\s+.+?\s+from\s+\d|"
+    r"^Dev\s+preview\s+v\d|"
+    r"^(?:[A-Za-z0-9][A-Za-z0-9 ._-]{0,40}\s+)?v\d+\.\d+(?:\.\d+)*(?:-[A-Za-z0-9._-]+)?$)",
+    re.IGNORECASE,
+)
+
 
 def is_howto_match(title: str, summary: str = "") -> bool:
     """Kiểm tra bài viết có dấu hiệu là thủ thuật / hướng dẫn (how-to) hay không."""
+    if RELEASE_NOISE.search(title):
+        return False
     if EDITORIAL_OR_REVIEW.search(title) or (REVIEW.search(title) and not REVIEW_ALLOW.search(title)):
         return False
     return bool(HOWTO.search(title) or CONFIG_HOWTO.search(title)) or bool(HOWTO.search(summary[:140]) or CONFIG_HOWTO.search(summary[:140]))
@@ -140,6 +153,19 @@ def accept(item: dict, source: dict, enable_logging: bool = True) -> tuple[bool,
 
     if len(title.strip()) < min_title_len:
         reason = "title-too-short"
+        if enable_logging:
+            log_rejection(item, source, reason)
+        return False, reason
+
+    # 0a. Loại bỏ tóm tắt chỉ có đường dẫn trần và nhiễu release/Dependabot từ GitHub
+    if is_url_only_text(summary):
+        reason = "url-only-summary"
+        if enable_logging:
+            log_rejection(item, source, reason)
+        return False, reason
+
+    if RELEASE_NOISE.search(title):
+        reason = "release-noise"
         if enable_logging:
             log_rejection(item, source, reason)
         return False, reason

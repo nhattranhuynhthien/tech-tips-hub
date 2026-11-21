@@ -15,9 +15,9 @@ from textclean import clean_text, strip_title_prefix
 from filters import accept, is_howto_match
 from dedupe import is_blocked
 from classify import classify, extract_tags
-from score import calculate_score, detect_difficulty
+from score import calculate_score, detect_difficulty, normalize_published_iso
 from slug import generate_seo_slug
-from translate import is_mixed, looks_vietnamese, looks_english
+from translate import is_mixed, is_valid_translation
 
 DATA_DIR = Path("data")
 INDEX_PATH = DATA_DIR / "index.json"
@@ -110,6 +110,12 @@ def main():
             hidden_count += 1
             continue
 
+        # 6b. Chuẩn hóa published_at về ISO-8601 UTC
+        default_offset = 7 if orig_lang == "vi" or src_id == "tuoitre-nsso" else 0
+        norm_pub = normalize_published_iso(item.get("published_at", ""), default_offset_hours=default_offset)
+        if norm_pub:
+            item["published_at"] = norm_pub
+
         # 7. Xử lý bản dịch an toàn cho cả EN, VI và ZH-CN
         curr_trans = item.get("translated", {}) or {}
         item.setdefault("title", {})[orig_lang] = clean_t
@@ -122,7 +128,7 @@ def main():
             bad_mix = is_mixed(curr_t) or is_mixed(curr_s) or "[Bản dịch]" in curr_t or "[Bản dịch]" in curr_s
             bad_machine = (
                 curr_trans.get(t_lang) == "machine"
-                and ((t_lang == "vi" and not looks_vietnamese(curr_t)) or (t_lang == "en" and not looks_english(curr_t)))
+                and not is_valid_translation(clean_t, clean_s, curr_t, curr_s, orig_lang, t_lang)
             )
             if bad_mix or bad_machine or not curr_t or not curr_s:
                 item["title"][t_lang] = clean_t
