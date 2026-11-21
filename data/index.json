@@ -793,7 +793,12 @@
     "score": 1.42,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "7edc04edbf10f662": {
     "id": "7edc04edbf10f662",
@@ -826,7 +831,12 @@
     "score": 1.42,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "9b755754b5efea43": {
     "id": "9b755754b5efea43",
@@ -968,6 +978,82 @@
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
+    }
+  },
+  "a2111881efdb036a": {
+    "id": "a2111881efdb036a",
+    "slug": "cach-do-khoang-cach-dien-tich-dat-bang-google-maps-a21118",
+    "url": "https://genk.vn/cach-do-khoang-cach-dien-tich-dat-bang-google-maps-165261121174225952.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "2026-11-21T11:32:00+00:00",
+    "fetched_at": "2026-11-21T19:27:35.867239+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Cách đo khoảng cách, diện tích đất bằng Google Maps",
+      "en": "Cách đo khoảng cách, diện tích đất bằng Google Maps"
+    },
+    "summary": {
+      "vi": "Google Maps có công cụ đo khoảng cách miễn phí, giúp người dùng ước tính kích thước sân vườn, chiều dài hàng rào hoặc khuôn viên nhà thông qua ảnh vệ tinh.",
+      "en": "Google Maps có công cụ đo khoảng cách miễn phí, giúp người dùng ước tính kích thước sân vườn, chiều dài hàng rào hoặc khuôn viên nhà thông qua ảnh vệ tinh."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": false
+    },
+    "translate_attempts": {
+      "en": 1
+    }
+  },
+  "c1d86eadf669c9b2": {
+    "id": "c1d86eadf669c9b2",
+    "slug": "the-game-of-the-year-is-finally-here-c1d86e",
+    "url": "https://www.theverge.com/tech/1039433/gta-vi-alfred-6-clockwisetv-installer",
+    "source": {
+      "id": "theverge",
+      "name": "The Verge",
+      "site_url": "https://www.theverge.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "David Pierce",
+    "published_at": "2026-11-21T13:00:00+00:00",
+    "fetched_at": "2026-11-21T19:27:35.867239+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "The game of the year is finally here",
+      "vi": "The game of the year is finally here"
+    },
+    "summary": {
+      "en": "Hi, friends! Welcome to Installer No. 153, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, thank you for tearing yourself away from GTA to be here, and also you can read all the old editions at the Installer homepage.) This week, I've been…",
+      "vi": "Hi, friends! Welcome to Installer No. 153, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, thank you for tearing yourself away from GTA to be here, and also you can read all the old editions at the Installer homepage.) This week, I've been…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "009d89703dd91abd": {
@@ -1307,7 +1393,12 @@
     "score": 1.31,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "776f5abe5fb88ecb": {
     "id": "776f5abe5fb88ecb",
@@ -1447,6 +1538,44 @@
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
+    }
+  },
+  "e9776a8605c6087b": {
+    "id": "e9776a8605c6087b",
+    "slug": "the-fbi-and-usda-were-reportedly-hacked-e9776a",
+    "url": "https://www.theverge.com/tech/1039543/fbi-usda-hacked",
+    "source": {
+      "id": "theverge",
+      "name": "The Verge",
+      "site_url": "https://www.theverge.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Terrence O’Brien",
+    "published_at": "2026-11-21T17:42:27+00:00",
+    "fetched_at": "2026-11-21T19:27:35.867239+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "The FBI and USDA were reportedly hacked",
+      "vi": "The FBI and USDA were reportedly hacked"
+    },
+    "summary": {
+      "en": "Friday, it was reported that both the US Department of Agriculture (USDA) and the FBI were hacked. In reporting on the FBI hack, CNN noted that this is the second such attack on the agency in the last few months, this time targeting the National Crime Information Center (NCIC)…",
+      "vi": "Friday, it was reported that both the US Department of Agriculture (USDA) and the FBI were hacked. In reporting on the FBI hack, CNN noted that this is the second such attack on the agency in the last few months, this time targeting the National Crime Information Center (NCIC)…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "73d60418285cd4ad": {
@@ -1940,7 +2069,12 @@
     "score": 1.27,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "6f16a7d9ab1b6067": {
     "id": "6f16a7d9ab1b6067",
@@ -1973,7 +2107,12 @@
     "score": 1.27,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "d8c954bf3f853794": {
     "id": "d8c954bf3f853794",
@@ -2006,7 +2145,12 @@
     "score": 1.27,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "4f619429a980a2f7": {
     "id": "4f619429a980a2f7",
@@ -2077,7 +2221,12 @@
     "score": 1.27,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "34eed4964366b6fc": {
     "id": "34eed4964366b6fc",
@@ -2114,7 +2263,12 @@
     "score": 1.27,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "bdbeddfb85020a8c": {
     "id": "bdbeddfb85020a8c",
@@ -2148,7 +2302,50 @@
     "score": 1.27,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "520c82ccf41b03d1": {
+    "id": "520c82ccf41b03d1",
+    "slug": "owl-os-is-a-new-kali-linux-competitor-520c82",
+    "url": "https://feed.itsfoss.com/link/24361/17536916/owl-os-launch",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "2026-11-21T17:01:00+00:00",
+    "fetched_at": "2026-11-21T19:27:35.867239+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Owl OS is a New Kali Linux Competitor",
+      "vi": "Owl OS is a New Kali Linux Competitor"
+    },
+    "summary": {
+      "en": "The ISO ships with a claimed 275+ tools, but the included README calls it proprietary.",
+      "vi": "The ISO ships with a claimed 275+ tools, but the included README calls it proprietary."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "c80c5fcac2e3fe98": {
     "id": "c80c5fcac2e3fe98",
@@ -2402,7 +2599,12 @@
     "score": 1.17,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "24667ebd409b6cab": {
     "id": "24667ebd409b6cab",
@@ -2513,7 +2715,12 @@
     "score": 1.17,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "a30cefc1e3e6ed9f": {
     "id": "a30cefc1e3e6ed9f",
@@ -2588,7 +2795,12 @@
     "score": 1.17,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "0d5647ba57feb748": {
     "id": "0d5647ba57feb748",
@@ -2729,7 +2941,12 @@
     "score": 1.17,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "38ad85f05b209a3c": {
     "id": "38ad85f05b209a3c",
@@ -3127,6 +3344,82 @@
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
+    }
+  },
+  "7bf34d5b42bc4beb": {
+    "id": "7bf34d5b42bc4beb",
+    "slug": "hagia-sophia-mai-vom-32-m-dat-len-khoi-nha-vuong-bang-cach-n-7bf34d",
+    "url": "https://tinhte.vn/thread/hagia-sophia-mai-vom-32-m-dat-len-khoi-nha-vuong-bang-cach-nao-ma-dung-gan-1-500-nam.4194498",
+    "source": {
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Quocxi",
+    "published_at": "2026-11-21T16:29:17+00:00",
+    "fetched_at": "2026-11-21T19:27:35.867239+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Hagia Sophia: mái vòm 32 m đặt lên khối nhà vuông bằng cách nào mà đứng gần 1.500 năm",
+      "en": "Hagia Sophia: mái vòm 32 m đặt lên khối nhà vuông bằng cách nào mà đứng gần 1.500 năm"
+    },
+    "summary": {
+      "vi": "Hagia Sophia ở Istanbul đặt một mái vòm tròn rộng khoảng 32 m lên một khoảng không gian vuông, chỉ dựa vào bốn trụ lớn ở bốn góc. Thứ làm được việc này là pendentive, tức vòm buồm: bốn mảnh cong",
+      "en": "Hagia Sophia ở Istanbul đặt một mái vòm tròn rộng khoảng 32 m lên một khoảng không gian vuông, chỉ dựa vào bốn trụ lớn ở bốn góc. Thứ làm được việc này là pendentive, tức vòm buồm: bốn mảnh cong"
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.09,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": false
+    },
+    "translate_attempts": {
+      "en": 1
+    }
+  },
+  "8c90d3066df4a2be": {
+    "id": "8c90d3066df4a2be",
+    "slug": "samsung-gay-to-mo-ve-thiet-ke-bi-an-tren-galaxy-s27-ultra-8c90d3",
+    "url": "https://thanhnien.vn/samsung-gay-to-mo-ve-thiet-ke-bi-an-tren-galaxy-s27-ultra-185261121161808051.htm",
+    "source": {
+      "id": "thanhnien_tech",
+      "name": "Thanh Niên Công Nghệ",
+      "site_url": "https://thanhnien.vn/cong-nghe",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "2026-11-21T12:15:00+00:00",
+    "fetched_at": "2026-11-21T19:27:35.867239+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Samsung gây tò mò về thiết kế bí ẩn trên Galaxy S27 Ultra",
+      "en": "Samsung gây tò mò về thiết kế bí ẩn trên Galaxy S27 Ultra"
+    },
+    "summary": {
+      "vi": "Loạt mô hình Galaxy S27 Ultra mới nhất đưa ra những hình dung trái ngược, khiến thiết kế camera flagship này tiếp tục trở thành bí ẩn.",
+      "en": "Loạt mô hình Galaxy S27 Ultra mới nhất đưa ra những hình dung trái ngược, khiến thiết kế camera flagship này tiếp tục trở thành bí ẩn."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.09,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": false
+    },
+    "translate_attempts": {
+      "en": 1
     }
   },
   "db85abacb121d037": {
@@ -4546,6 +4839,83 @@
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
+    }
+  },
+  "95067d171bc4ab81": {
+    "id": "95067d171bc4ab81",
+    "slug": "trump-wants-to-ban-us-companies-from-building-overseas-data-95067d",
+    "url": "https://www.tomshardware.com/tech-industry/data-centers/trump-wants-to-ban-us-companies-from-building-overseas-data-centers-as-bans-slow-development-also-considers-putting-a-tremendous-tax-in-lieu-of-prohibition",
+    "source": {
+      "id": "tomshardware",
+      "name": "Tom's Hardware",
+      "site_url": "https://www.tomshardware.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Jowi Morales",
+    "published_at": "2026-11-21T16:29:39+00:00",
+    "fetched_at": "2026-11-21T19:27:35.867239+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Trump wants to ban US companies from building overseas data centers as bans slow development",
+      "vi": "Trump wants to ban US companies from building overseas data centers as bans slow development"
+    },
+    "summary": {
+      "en": "The president wants U.S. data center companies to stay within U.S. borders or pay a hefty fee if they want to build in foreign countries.",
+      "vi": "The president wants U.S. data center companies to stay within U.S. borders or pay a hefty fee if they want to build in foreign countries."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "a8b9571f5922480c": {
+    "id": "a8b9571f5922480c",
+    "slug": "homelabbers-second-gen-optane-build-uses-two-rtx-3090s-to-ru-a8b957",
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/homelabbers-second-gen-optane-build-runs-2-8-trillion-parameter-kimi-k3-at-3-11-tokens-per-second-after-adding-two-rtx-3090s-moving-nearly-half-the-model-into-a-ram-drive-boosted-performance-by-41-percent",
+    "source": {
+      "id": "tomshardware",
+      "name": "Tom's Hardware",
+      "site_url": "https://www.tomshardware.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Shane Downing",
+    "published_at": "2026-11-21T12:00:00+00:00",
+    "fetched_at": "2026-11-21T19:27:35.867239+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Homelabber’s second-gen Optane build uses two RTX 3090s to run 2.8-trillion-parameter Kimi AI model at 3.11 tokens per second",
+      "vi": "Homelabber’s second-gen Optane build uses two RTX 3090s to run 2.8-trillion-parameter Kimi AI model at 3.11 tokens per second"
+    },
+    "summary": {
+      "en": "A Reddit homelabber’s Optane PMem 200 server now runs Moonshot AI’s Kimi K3 at 3.11 tokens/s with two RTX 3090s and a RAM drive.",
+      "vi": "A Reddit homelabber’s Optane PMem 200 server now runs Moonshot AI’s Kimi K3 at 3.11 tokens/s with two RTX 3090s and a RAM drive."
+    },
+    "categories": [
+      "ai",
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "d9c39429d489eec5": {
@@ -7034,9 +7404,12 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 3
+      "vi": 4
     },
-    "hidden": false
+    "hidden": false,
+    "translate_next_retry": {
+      "vi": "2026-11-22T19:28:27+00:00"
+    }
   },
   "8879475e62b3793a": {
     "id": "8879475e62b3793a",
@@ -7073,9 +7446,12 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 3
+      "vi": 4
     },
-    "hidden": false
+    "hidden": false,
+    "translate_next_retry": {
+      "vi": "2026-11-22T19:28:32+00:00"
+    }
   },
   "cbc470459f8e4735": {
     "id": "cbc470459f8e4735",
@@ -7112,9 +7488,12 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 3
+      "vi": 4
     },
-    "hidden": false
+    "hidden": false,
+    "translate_next_retry": {
+      "vi": "2026-11-22T19:28:32+00:00"
+    }
   },
   "16a1528631dc2501": {
     "id": "16a1528631dc2501",
@@ -7151,9 +7530,12 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 3
+      "vi": 4
     },
-    "hidden": false
+    "hidden": false,
+    "translate_next_retry": {
+      "vi": "2026-11-22T19:28:32+00:00"
+    }
   },
   "ac80ab5279f0a454": {
     "id": "ac80ab5279f0a454",
@@ -7190,9 +7572,12 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 3
+      "vi": 4
     },
-    "hidden": false
+    "hidden": false,
+    "translate_next_retry": {
+      "vi": "2026-11-22T19:28:32+00:00"
+    }
   },
   "3580f27471445fcb": {
     "id": "3580f27471445fcb",
@@ -7230,9 +7615,12 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 3
+      "vi": 4
     },
-    "hidden": false
+    "hidden": false,
+    "translate_next_retry": {
+      "vi": "2026-11-22T19:28:32+00:00"
+    }
   },
   "c14e0f0a734d1070": {
     "id": "c14e0f0a734d1070",
@@ -7305,9 +7693,12 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 3
+      "vi": 4
     },
-    "hidden": false
+    "hidden": false,
+    "translate_next_retry": {
+      "vi": "2026-11-22T19:28:36+00:00"
+    }
   },
   "ed92cce55db567e8": {
     "id": "ed92cce55db567e8",
@@ -7344,9 +7735,12 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 3
+      "vi": 4
     },
-    "hidden": false
+    "hidden": false,
+    "translate_next_retry": {
+      "vi": "2026-11-22T19:28:36+00:00"
+    }
   },
   "d317b9a45d00622a": {
     "id": "d317b9a45d00622a",
@@ -7386,9 +7780,12 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 3
+      "vi": 4
     },
-    "hidden": false
+    "hidden": false,
+    "translate_next_retry": {
+      "vi": "2026-11-22T19:28:36+00:00"
+    }
   },
   "c40d9ac220e1b1de": {
     "id": "c40d9ac220e1b1de",
@@ -7428,9 +7825,12 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 3
+      "vi": 4
     },
-    "hidden": false
+    "hidden": false,
+    "translate_next_retry": {
+      "vi": "2026-11-22T19:28:36+00:00"
+    }
   },
   "5495c1febb178a14": {
     "id": "5495c1febb178a14",
@@ -7467,9 +7867,12 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 3
+      "vi": 4
     },
-    "hidden": false
+    "hidden": false,
+    "translate_next_retry": {
+      "vi": "2026-11-22T19:28:36+00:00"
+    }
   },
   "6f7743a9465550a4": {
     "id": "6f7743a9465550a4",
@@ -7501,9 +7904,14 @@
     "score": 0.87,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {},
+    "translated": {
+      "en": false
+    },
     "hidden": false,
-    "slug": "oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-6f7743"
+    "slug": "oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-6f7743",
+    "translate_attempts": {
+      "en": 1
+    }
   },
   "e9337c15641891f4": {
     "id": "e9337c15641891f4",
@@ -10704,8 +11112,13 @@
     "score": 0.84,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {},
-    "hn_points": 304
+    "translated": {
+      "vi": false
+    },
+    "hn_points": 304,
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "fc1520313d731b21": {
     "id": "fc1520313d731b21",
@@ -10818,9 +11231,12 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 3
+      "vi": 4
     },
-    "hidden": false
+    "hidden": false,
+    "translate_next_retry": {
+      "vi": "2026-11-22T19:28:41+00:00"
+    }
   },
   "cf61c804dd9bbfb6": {
     "id": "cf61c804dd9bbfb6",
@@ -10968,9 +11384,12 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 3
+      "en": 4
     },
-    "hidden": false
+    "hidden": false,
+    "translate_next_retry": {
+      "en": "2026-11-22T19:29:00+00:00"
+    }
   },
   "c06ec870b4e1dac0": {
     "id": "c06ec870b4e1dac0",
@@ -11010,9 +11429,12 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 3
+      "en": 4
     },
-    "hidden": false
+    "hidden": false,
+    "translate_next_retry": {
+      "en": "2026-11-22T19:29:01+00:00"
+    }
   },
   "d3a089a79de6f388": {
     "id": "d3a089a79de6f388",
@@ -12760,7 +13182,12 @@
     "score": 0.74,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "5f14c29ca41dcbe8": {
     "id": "5f14c29ca41dcbe8",
@@ -12903,7 +13330,12 @@
     "score": 0.72,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "7a82ad8fe469044c": {
     "id": "7a82ad8fe469044c",
@@ -13049,41 +13481,38 @@
     "hidden": false,
     "slug": "nhung-ung-dung-tien-ich-nay-giup-android-auto-10x-tro-nen-hu-73d75c"
   },
-  "3e314b72883b118a": {
-    "id": "3e314b72883b118a",
-    "slug": "adobe-muon-9999-usd-de-toi-co-the-huy-toi-da-yeu-cau-ho-tro-3e314b",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xkr94m/lpt_adobe_wanted_9999_to_let_me_cancel_i_asked",
+  "4b544d4f2401d22a": {
+    "id": "4b544d4f2401d22a",
+    "slug": "turn-any-image-into-a-3d-scene-25d-and-gaussian-splats-4b544d",
+    "url": "https://dev.to/hiper2d/turn-any-image-into-a-3d-scene-25d-and-gaussian-splats-37i3",
     "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "https://www.reddit.com/r/LifeProTips/",
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "/u/foreverfidel",
-    "published_at": "2026-11-01T01:52:25+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "author": "Aliaksei Zelianouski",
+    "published_at": "2026-11-20T13:25:01+00:00",
+    "fetched_at": "2026-11-21T19:27:35.867239+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund.",
-      "vi": "Adobe muốn 99,99 USD để tôi có thể hủy. Tôi đã yêu cầu hỗ trợ qua trò chuyện và nhận được miễn trừ cộng với khoản tiền hoàn lại theo tỷ lệ."
+      "en": "Turn Any Image into a 3D Scene: 2.5D and Gaussian Splats",
+      "vi": "Turn Any Image into a 3D Scene: 2.5D and Gaussian Splats"
     },
     "summary": {
-      "en": "\"Hi, I need to cancel my subscription today. Please cancel my account immediately, waive the early termination fee completely, and issue a prorated refund for the billing cycle I just paid for.” The result: subscription canceled, the entire $99.99 cancellation fee waived, and a…",
-      "vi": "\"Xin chào, tôi cần hủy đăng ký ngay hôm nay. Vui lòng hủy tài khoản của tôi ngay lập tức, miễn hoàn toàn phí chấm dứt sớm và hoàn lại tiền theo tỷ lệ cho chu kỳ thanh toán mà tôi vừa thanh toán.\" Kết quả: đăng ký bị hủy, toàn bộ phí hủy 99,99 USD được miễn và…"
+      "en": "One still image, a camera that moves through it, lights that go out, a room that burns into embers.",
+      "vi": "One still image, a camera that moves through it, lights that go out, a room that burns into embers."
     },
     "categories": [
-      "windows"
+      "dev"
     ],
     "tags": [],
     "difficulty": null,
-    "score": 0.71,
+    "score": 0.74,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false
+    "translated": {}
   },
   "c09e0a4abc10ff4e": {
     "id": "c09e0a4abc10ff4e",
@@ -13303,10 +13732,10 @@
     "hidden": false,
     "slug": "quen-microsoft-word-day-la-ly-do-tai-sao-toi-viet-tat-ca-ban-9fd899"
   },
-  "9724dd0a88181e75": {
-    "id": "9724dd0a88181e75",
-    "slug": "bat-cu-khi-nao-noi-chuyen-voi-nhan-vien-dich-vu-khach-hang-q-9724dd",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xk4zad/lpt_whenever_speaking_to_a_customer_service",
+  "3e314b72883b118a": {
+    "id": "3e314b72883b118a",
+    "slug": "adobe-muon-9999-usd-de-toi-co-the-huy-toi-da-yeu-cau-ho-tro-3e314b",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xkr94m/lpt_adobe_wanted_9999_to_let_me_cancel_i_asked",
     "source": {
       "id": "reddit-lpt",
       "name": "Reddit r/LifeProTips",
@@ -13314,17 +13743,17 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "/u/TomsMorello",
-    "published_at": "2026-10-31T08:38:41+00:00",
+    "author": "/u/foreverfidel",
+    "published_at": "2026-11-01T01:52:25+00:00",
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "whenever speaking to a customer service person on the phone make sure to record the call and tell them you are doing so. They suddenly become a lot",
-      "vi": "bất cứ khi nào nói chuyện với nhân viên dịch vụ khách hàng qua điện thoại, hãy đảm bảo ghi âm cuộc gọi và cho họ biết bạn đang làm như vậy. Họ đột nhiên trở nên nhiều"
+      "en": "Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund.",
+      "vi": "Adobe muốn 99,99 USD để tôi có thể hủy. Tôi đã yêu cầu hỗ trợ qua trò chuyện và nhận được miễn trừ cộng với khoản tiền hoàn lại theo tỷ lệ."
     },
     "summary": {
-      "en": "A few years ago I had a problem with a PayPal transaction. It wasn’t an earth shattering amount of money but I much rather wanted the money back in my pocket. I spent a couple of days on the phone speaking to people at PayPal every single person DGAF. On what turned out to be my…",
-      "vi": "Cách đây vài năm, tôi gặp vấn đề với giao dịch PayPal. Đó không phải là một số tiền khủng khiếp nhưng tôi muốn tiền trở lại túi của mình hơn. Tôi đã dành vài ngày nói chuyện qua điện thoại với mọi người ở PayPal từng người DGAF. Về những gì hóa ra là của tôi…"
+      "en": "\"Hi, I need to cancel my subscription today. Please cancel my account immediately, waive the early termination fee completely, and issue a prorated refund for the billing cycle I just paid for.” The result: subscription canceled, the entire $99.99 cancellation fee waived, and a…",
+      "vi": "\"Xin chào, tôi cần hủy đăng ký ngay hôm nay. Vui lòng hủy tài khoản của tôi ngay lập tức, miễn hoàn toàn phí chấm dứt sớm và hoàn lại tiền theo tỷ lệ cho chu kỳ thanh toán mà tôi vừa thanh toán.\" Kết quả: đăng ký bị hủy, toàn bộ phí hủy 99,99 USD được miễn và…"
     },
     "categories": [
       "windows"
@@ -13483,10 +13912,10 @@
     },
     "hidden": false
   },
-  "71d01e5f69b83d3a": {
-    "id": "71d01e5f69b83d3a",
-    "slug": "neu-ban-muon-doc-them-nhung-thay-minh-dang-cuon-minh-tren-gi-71d01e",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xk2y3t/lpt_if_you_want_to_read_more_but_find_yourself",
+  "9724dd0a88181e75": {
+    "id": "9724dd0a88181e75",
+    "slug": "bat-cu-khi-nao-noi-chuyen-voi-nhan-vien-dich-vu-khach-hang-q-9724dd",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xk4zad/lpt_whenever_speaking_to_a_customer_service",
     "source": {
       "id": "reddit-lpt",
       "name": "Reddit r/LifeProTips",
@@ -13494,17 +13923,17 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "/u/AbsolutelyNotASnail",
-    "published_at": "2026-10-31T06:29:20+00:00",
+    "author": "/u/TomsMorello",
+    "published_at": "2026-10-31T08:38:41+00:00",
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "if you want to read more but find yourself doomscrolling in bed: move your phone charger",
-      "vi": "nếu bạn muốn đọc thêm nhưng thấy mình đang cuộn mình trên giường: hãy di chuyển bộ sạc điện thoại của bạn"
+      "en": "whenever speaking to a customer service person on the phone make sure to record the call and tell them you are doing so. They suddenly become a lot",
+      "vi": "bất cứ khi nào nói chuyện với nhân viên dịch vụ khách hàng qua điện thoại, hãy đảm bảo ghi âm cuộc gọi và cho họ biết bạn đang làm như vậy. Họ đột nhiên trở nên nhiều"
     },
     "summary": {
-      "en": "It might not work for everyone but it really got me reading a lot more. Doomscrolling was a big problem for me, and not reading was another. I tried putting my phone charger further from my bed on a table opposite from it, and while it was hard at first I finally started to read…",
-      "vi": "Nó có thể không hiệu quả với tất cả mọi người nhưng nó thực sự khiến tôi đọc nhiều hơn. Doomscrolling là một vấn đề lớn đối với tôi, và không đọc lại là một vấn đề khác. Tôi đã thử đặt bộ sạc điện thoại của mình xa giường hơn trên một chiếc bàn đối diện với nó, và mặc dù lúc đầu thật khó khăn nhưng cuối cùng tôi cũng…"
+      "en": "A few years ago I had a problem with a PayPal transaction. It wasn’t an earth shattering amount of money but I much rather wanted the money back in my pocket. I spent a couple of days on the phone speaking to people at PayPal every single person DGAF. On what turned out to be my…",
+      "vi": "Cách đây vài năm, tôi gặp vấn đề với giao dịch PayPal. Đó không phải là một số tiền khủng khiếp nhưng tôi muốn tiền trở lại túi của mình hơn. Tôi đã dành vài ngày nói chuyện qua điện thoại với mọi người ở PayPal từng người DGAF. Về những gì hóa ra là của tôi…"
     },
     "categories": [
       "windows"
@@ -13774,10 +14203,10 @@
     "hidden": false,
     "slug": "fire-tv-stick-cu-cua-toi-tu-dieu-chinh-cho-den-khi-toi-thay-435a65"
   },
-  "72935a7f76dc92ab": {
-    "id": "72935a7f76dc92ab",
-    "slug": "luon-dat-may-tinh-o-che-do-ngu-khi-ra-khoi-nha-hoac-di-ngu-72935a",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xj5yl8/lpt_always_put_your_computer_to_sleep_when_you",
+  "71d01e5f69b83d3a": {
+    "id": "71d01e5f69b83d3a",
+    "slug": "neu-ban-muon-doc-them-nhung-thay-minh-dang-cuon-minh-tren-gi-71d01e",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xk2y3t/lpt_if_you_want_to_read_more_but_find_yourself",
     "source": {
       "id": "reddit-lpt",
       "name": "Reddit r/LifeProTips",
@@ -13785,24 +14214,22 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "/u/rebel-yeller",
-    "published_at": "2026-10-30T04:30:02+00:00",
+    "author": "/u/AbsolutelyNotASnail",
+    "published_at": "2026-10-31T06:29:20+00:00",
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Always put your computer to sleep when you leave the house or go to bed",
-      "vi": "Luôn đặt máy tính ở chế độ ngủ khi ra khỏi nhà hoặc đi ngủ"
+      "en": "if you want to read more but find yourself doomscrolling in bed: move your phone charger",
+      "vi": "nếu bạn muốn đọc thêm nhưng thấy mình đang cuộn mình trên giường: hãy di chuyển bộ sạc điện thoại của bạn"
     },
     "summary": {
-      "en": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers.",
-      "vi": "Đảm bảo máy tính của bạn được bảo vệ bằng mật khẩu. Đặt nó vào chế độ ngủ ít nhất sẽ bảo vệ mọi tập tin hoặc dữ liệu cá nhân/bí mật nếu máy tính của bạn bị đánh cắp. Có vẻ như hầu hết những kẻ trộm đều không thân thiện với tin tặc máy tính."
+      "en": "It might not work for everyone but it really got me reading a lot more. Doomscrolling was a big problem for me, and not reading was another. I tried putting my phone charger further from my bed on a table opposite from it, and while it was hard at first I finally started to read…",
+      "vi": "Nó có thể không hiệu quả với tất cả mọi người nhưng nó thực sự khiến tôi đọc nhiều hơn. Doomscrolling là một vấn đề lớn đối với tôi, và không đọc lại là một vấn đề khác. Tôi đã thử đặt bộ sạc điện thoại của mình xa giường hơn trên một chiếc bàn đối diện với nó, và mặc dù lúc đầu thật khó khăn nhưng cuối cùng tôi cũng…"
     },
     "categories": [
-      "security"
+      "windows"
     ],
-    "tags": [
-      "password"
-    ],
+    "tags": [],
     "difficulty": null,
     "score": 0.71,
     "howto": false,
@@ -14030,10 +14457,10 @@
     },
     "hidden": false
   },
-  "13c87e8494b641fa": {
-    "id": "13c87e8494b641fa",
-    "slug": "tai-su-dung-pin-chuot-aa-da-chet-trong-dong-ho-13c87e",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xiiawy/lpt_reuse_a_dead_aa_mous_battery_in_a_clock",
+  "72935a7f76dc92ab": {
+    "id": "72935a7f76dc92ab",
+    "slug": "luon-dat-may-tinh-o-che-do-ngu-khi-ra-khoi-nha-hoac-di-ngu-72935a",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xj5yl8/lpt_always_put_your_computer_to_sleep_when_you",
     "source": {
       "id": "reddit-lpt",
       "name": "Reddit r/LifeProTips",
@@ -14041,23 +14468,23 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "/u/mywifeapprovesthis",
-    "published_at": "2026-10-29T12:14:04+00:00",
+    "author": "/u/rebel-yeller",
+    "published_at": "2026-10-30T04:30:02+00:00",
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "reuse a \"dead\" AA mous battery in a clock",
-      "vi": "tái sử dụng pin chuột AA \"đã chết\" trong đồng hồ"
+      "en": "Always put your computer to sleep when you leave the house or go to bed",
+      "vi": "Luôn đặt máy tính ở chế độ ngủ khi ra khỏi nhà hoặc đi ngủ"
     },
     "summary": {
-      "en": "Today I learned that the \"dead\" AA battery which can no longer power my wireless mouse still has enough oomph* to be able to power a clock for a while. I'm so pleased I can re-deploy a \"used\" battery into something useful, I thought I'd share. *oomph is a technical term as a…",
-      "vi": "Hôm nay tôi được biết rằng pin AA \"đã chết\" không còn có thể cung cấp năng lượng cho con chuột không dây của tôi vẫn còn đủ năng lượng* để có thể cung cấp năng lượng cho đồng hồ trong một thời gian. Tôi rất vui vì có thể tái triển khai cục pin \"đã qua sử dụng\" thành một thứ hữu ích, tôi nghĩ mình nên chia sẻ. *oomph…"
+      "en": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers.",
+      "vi": "Đảm bảo máy tính của bạn được bảo vệ bằng mật khẩu. Đặt nó vào chế độ ngủ ít nhất sẽ bảo vệ mọi tập tin hoặc dữ liệu cá nhân/bí mật nếu máy tính của bạn bị đánh cắp. Có vẻ như hầu hết những kẻ trộm đều không thân thiện với tin tặc máy tính."
     },
     "categories": [
-      "hardware"
+      "security"
     ],
     "tags": [
-      "battery"
+      "password"
     ],
     "difficulty": null,
     "score": 0.71,
@@ -14215,10 +14642,10 @@
     "hidden": false,
     "slug": "netflix-se-mang-den-nhung-bo-phim-kinh-di-nay-dung-luc-cho-b-43c516"
   },
-  "33d256014ccf120b": {
-    "id": "33d256014ccf120b",
-    "slug": "su-dung-ten-ban-muon-trong-chu-ky-thay-vi-ten-chinh-thuc-cua-33d256",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xh29vq/lpt_use_the_name_you_want_in_your_signature",
+  "13c87e8494b641fa": {
+    "id": "13c87e8494b641fa",
+    "slug": "tai-su-dung-pin-chuot-aa-da-chet-trong-dong-ho-13c87e",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xiiawy/lpt_reuse_a_dead_aa_mous_battery_in_a_clock",
     "source": {
       "id": "reddit-lpt",
       "name": "Reddit r/LifeProTips",
@@ -14226,22 +14653,24 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "/u/deten",
-    "published_at": "2026-10-27T19:31:27+00:00",
+    "author": "/u/mywifeapprovesthis",
+    "published_at": "2026-10-29T12:14:04+00:00",
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Use the name you want in your signature instead of your formal name",
-      "vi": "Sử dụng tên bạn muốn trong chữ ký thay vì tên chính thức của bạn"
+      "en": "reuse a \"dead\" AA mous battery in a clock",
+      "vi": "tái sử dụng pin chuột AA \"đã chết\" trong đồng hồ"
     },
     "summary": {
-      "en": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…",
-      "vi": "Tôi không thể tin được đã là năm 2026 và mọi người vẫn đang ký vào tin nhắn và email bằng những cái tên mà họ không thực sự sử dụng. Nếu tên bạn là Nicholas nhưng bạn muốn được gọi là Nick, hãy sử dụng Nick trong chữ ký của bạn. Tôi làm việc trong lĩnh vực bán hàng và liên tục phải gửi email hoặc gọi điện cho những…"
+      "en": "Today I learned that the \"dead\" AA battery which can no longer power my wireless mouse still has enough oomph* to be able to power a clock for a while. I'm so pleased I can re-deploy a \"used\" battery into something useful, I thought I'd share. *oomph is a technical term as a…",
+      "vi": "Hôm nay tôi được biết rằng pin AA \"đã chết\" không còn có thể cung cấp năng lượng cho con chuột không dây của tôi vẫn còn đủ năng lượng* để có thể cung cấp năng lượng cho đồng hồ trong một thời gian. Tôi rất vui vì có thể tái triển khai cục pin \"đã qua sử dụng\" thành một thứ hữu ích, tôi nghĩ mình nên chia sẻ. *oomph…"
     },
     "categories": [
-      "windows"
+      "hardware"
     ],
-    "tags": [],
+    "tags": [
+      "battery"
+    ],
     "difficulty": null,
     "score": 0.71,
     "howto": false,
@@ -14509,6 +14938,42 @@
     },
     "hidden": false
   },
+  "33d256014ccf120b": {
+    "id": "33d256014ccf120b",
+    "slug": "su-dung-ten-ban-muon-trong-chu-ky-thay-vi-ten-chinh-thuc-cua-33d256",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xh29vq/lpt_use_the_name_you_want_in_your_signature",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "https://www.reddit.com/r/LifeProTips/",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/deten",
+    "published_at": "2026-10-27T19:31:27+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Use the name you want in your signature instead of your formal name",
+      "vi": "Sử dụng tên bạn muốn trong chữ ký thay vì tên chính thức của bạn"
+    },
+    "summary": {
+      "en": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…",
+      "vi": "Tôi không thể tin được đã là năm 2026 và mọi người vẫn đang ký vào tin nhắn và email bằng những cái tên mà họ không thực sự sử dụng. Nếu tên bạn là Nicholas nhưng bạn muốn được gọi là Nick, hãy sử dụng Nick trong chữ ký của bạn. Tôi làm việc trong lĩnh vực bán hàng và liên tục phải gửi email hoặc gọi điện cho những…"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.71,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false
+  },
   "bae5b54de648f96d": {
     "id": "bae5b54de648f96d",
     "slug": "five-race-day-smartwatch-hacks-every-marathon-runner-should-bae5b5",
@@ -14580,44 +15045,6 @@
       "vi": "machine"
     },
     "hidden": false
-  },
-  "843e2f5d387fbdbf": {
-    "id": "843e2f5d387fbdbf",
-    "url": "https://dev.to/qunirice_verase_1ab0caeba/steamos-or-windows-11-deciding-with-powershell-before-you-partition-14hj",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "AI Release",
-    "published_at": "2026-10-29T03:23:06+00:00",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "SteamOS or Windows 11: deciding with PowerShell before you partition",
-      "vi": "SteamOS hoặc Windows 11: quyết định sử dụng PowerShell trước khi phân vùng"
-    },
-    "summary": {
-      "en": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11.",
-      "vi": "Hướng dẫn thực tế: kiểm tra UEFI, TPM và Secure Boot, kiểm kê thư viện trò chơi của bạn trên ProtonDB, sau đó quyết định giữa SteamOS và Windows 11."
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [
-      "powershell"
-    ],
-    "difficulty": "advanced",
-    "score": 0.68,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "steamos-hoac-windows-11-quyet-dinh-su-dung-powershell-truoc-843e2f"
   },
   "3b4a48ecfc59e52d": {
     "id": "3b4a48ecfc59e52d",
@@ -14763,6 +15190,44 @@
       "vi": "machine"
     },
     "hidden": false
+  },
+  "843e2f5d387fbdbf": {
+    "id": "843e2f5d387fbdbf",
+    "url": "https://dev.to/qunirice_verase_1ab0caeba/steamos-or-windows-11-deciding-with-powershell-before-you-partition-14hj",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "AI Release",
+    "published_at": "2026-10-29T03:23:06+00:00",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "SteamOS or Windows 11: deciding with PowerShell before you partition",
+      "vi": "SteamOS hoặc Windows 11: quyết định sử dụng PowerShell trước khi phân vùng"
+    },
+    "summary": {
+      "en": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11.",
+      "vi": "Hướng dẫn thực tế: kiểm tra UEFI, TPM và Secure Boot, kiểm kê thư viện trò chơi của bạn trên ProtonDB, sau đó quyết định giữa SteamOS và Windows 11."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [
+      "powershell"
+    ],
+    "difficulty": "advanced",
+    "score": 0.68,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "steamos-hoac-windows-11-quyet-dinh-su-dung-powershell-truoc-843e2f"
   },
   "7ed6df94e7174704": {
     "id": "7ed6df94e7174704",
@@ -16880,7 +17345,12 @@
     "score": 0.57,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "da96698ef028a283": {
     "id": "da96698ef028a283",
