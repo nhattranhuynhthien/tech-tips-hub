@@ -31,8 +31,14 @@ jobs:
           python -m py_compile scripts/run_pipeline.py
           python -m py_compile scripts/qa.py
           python -m py_compile scripts/check_source.py
+          python -m py_compile scripts/slug.py
+          python -m py_compile scripts/migrate.py
+          python -m py_compile scripts/translate_all.py
+          python -m py_compile scripts/sync_favicons.py
       - name: Run Python unit tests
         run: python tests/test_translate.py
+      - name: Run Python Red-Team adversarial tests
+        run: python -m unittest tests/test_red_team_pipeline.py -v
       - name: Run Quality Assurance on Existing Data
         run: python scripts/qa.py
 
@@ -50,5 +56,11 @@ jobs:
         run: npm run check:telegram
       - name: Run Telegram webhook unit & integration tests
         run: npm run test:telegram
+      - name: Run Telegram Red-Team adversarial tests
+        run: node tests/test_red_team_telegram.mjs
+      - name: Type-check Astro project
+        run: npm run check
       - name: Build site
         run: npm run build
+      - name: Run Frontend, SEO & PWA Red-Team tests
+        run: node tests/test_red_team_frontend.mjs
