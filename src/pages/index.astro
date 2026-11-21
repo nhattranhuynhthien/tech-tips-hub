@@ -1,8 +1,7 @@
 ---
 import { SITE_URL } from '../lib/constants';
 
-// Trang gốc chỉ đóng vai trò chuyển hướng sang bản tiếng Việt.
-// Nội dung thật nằm ở /vi và /en để tránh trùng lặp với trang chủ.
+// Root index redirects to preferred locale (/en if saved in localStorage, else /vi).
 const canonicalUrl = `${SITE_URL}/vi`;
 ---
 
@@ -15,7 +14,17 @@ const canonicalUrl = `${SITE_URL}/vi`;
     <link rel="canonical" href={canonicalUrl} />
     <meta name="robots" content="noindex, follow" />
     <meta http-equiv="refresh" content="0; url=/vi" />
-    <script is:inline>location.replace('/vi');</script>
+    <script is:inline>
+      (function () {
+        var target = '/vi';
+        try {
+          if (localStorage.getItem('techtips_lang') === 'en') {
+            target = '/en';
+          }
+        } catch (e) {}
+        window.location.replace(target);
+      })();
+    </script>
   </head>
   <body style="background:#0F1114;color:#ECEAE4;font-family:system-ui,sans-serif;display:flex;min-height:100vh;align-items:center;justify-content:center">
     <p>Đang chuyển hướng tới <a href="/vi" style="color:#FFB547">/vi</a>…</p>

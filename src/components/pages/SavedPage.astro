@@ -1,0 +1,527 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import type { Locale } from '../../lib/i18n';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const isVi = lang === 'vi';
+---
+
+<Layout
+  lang={lang}
+  title={isVi ? 'Thủ thuật đã lưu' : 'Saved Tips'}
+  description={isVi
+    ? 'Các mẹo và thủ thuật công nghệ bạn đã đánh dấu để xem lại.'
+    : 'Tech tricks and shortcuts you have bookmarked for quick reference.'}
+  canonicalPath={`/${lang}/saved`}
+>
+  <div class="max-w-4xl mx-auto">
+    <!-- Header with Command Prompt & Export/Import Controls -->
+    <header class="mb-6 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
+      <div>
+        <div class="text-xs font-mono font-bold text-[var(--accent)] mb-2">
+          {isVi ? '$ ls đã-lưu/' : '$ ls saved/'}
+        </div>
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-2">
+          {isVi ? 'Thủ thuật đã lưu' : 'Saved Tips'}
+        </h1>
+        <p class="text-xs sm:text-sm text-[var(--text-secondary)] font-mono leading-relaxed max-w-xl tabular-nums" id="saved-counter">
+          {isVi ? 'Đang tải danh sách đã lưu từ trình duyệt của bạn...' : 'Loading your saved items from local storage...'}
+        </p>
+      </div>
+
+      <!-- Export / Import JSON Bookmarks -->
+      <div class="flex items-center gap-2 shrink-0 text-xs font-mono">
+        <button
+          id="export-bookmarks-btn"
+          type="button"
+          class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--border-strong)] hover:text-[var(--text-primary)] transition-all"
+        >
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <polyline points="7 10 12 15 17 10" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+            <line x1="12" y1="15" x2="12" y2="3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+          </svg>
+          <span>{isVi ? 'Xuất JSON' : 'Export JSON'}</span>
+        </button>
+
+        <button
+          id="import-bookmarks-btn"
+          type="button"
+          class="inline-flex items-center gap-1.5 px-3 py-2 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--accent-border)] hover:text-[var(--accent)] transition-all"
+        >
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+            <polyline points="17 8 12 3 7 8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></polyline>
+            <line x1="12" y1="3" x2="12" y2="15" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></line>
+          </svg>
+          <span>{isVi ? 'Nhập JSON' : 'Import JSON'}</span>
+        </button>
+
+        <input
+          id="import-bookmarks-input"
+          type="file"
+          accept="application/json,.json"
+          class="hidden"
+          aria-label={isVi ? 'Nhập danh sách thủ thuật từ tệp JSON' : 'Import saved tips from a JSON file'}
+        />
+      </div>
+    </header>
+
+    <!-- Quick Search Filter (Visible when user has saved items) -->
+    <div id="saved-search-wrap" class="hidden mb-5">
+      <div class="relative max-w-md">
+        <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-[var(--accent)] font-mono font-bold">
+          $
+        </div>
+        <input
+          id="saved-search-input"
+          type="search"
+          placeholder={isVi ? 'Lọc nhanh trong danh sách đã lưu...' : 'Filter your saved tips...'}
+          class="w-full pl-8 pr-4 py-2 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-xs sm:text-sm text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:border-[var(--accent)] font-mono"
+        />
+      </div>
+    </div>
+
+    <!-- Stale / Unavailable Saved Items Banner -->
+    <div
+      id="saved-stale-banner"
+      class="hidden mb-5 p-4 rounded-xl border border-[var(--accent-border)] bg-[var(--accent-bg)] flex flex-col sm:flex-row sm:items-center justify-between gap-3 text-xs font-mono"
+    >
+      <div class="flex items-start gap-2.5 text-[var(--text-primary)]">
+        <svg class="w-4 h-4 text-[var(--accent)] shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="12" cy="12" r="9" stroke-width="2"></circle>
+          <path d="M12 8v4m0 4h.01" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+        <span id="saved-stale-text"></span>
+      </div>
+      <button
+        id="clean-stale-btn"
+        type="button"
+        class="shrink-0 self-start sm:self-auto px-3 py-1.5 rounded-lg bg-[var(--accent-hero)] text-[#15110A] font-bold hover:opacity-90 transition-opacity"
+      >
+        {isVi ? 'Dọn bài cũ' : 'Clean unavailable'}
+      </button>
+    </div>
+
+    <!-- Empty State -->
+    <div id="saved-empty-state" class="hidden py-16 text-center border border-dashed border-[var(--border-color)] rounded-xl bg-[var(--bg-surface)]">
+      <div class="w-12 h-12 mx-auto rounded-full bg-[var(--bg-muted)] flex items-center justify-center text-[var(--text-muted)] mb-3">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+        </svg>
+      </div>
+      <h2 class="text-base font-bold text-[var(--text-primary)] mb-2 font-mono">
+        {isVi ? 'Chưa có thủ thuật nào được lưu' : 'No saved tips yet'}
+      </h2>
+      <p class="text-xs text-[var(--text-muted)] font-mono mb-4">
+        {isVi
+          ? 'Hãy bấm biểu tượng lưu ở các bài viết để đọc lại bất kỳ lúc nào.'
+          : 'Click the bookmark icon on any tip to save it here for quick reference.'}
+      </p>
+      <a
+        href={`/${lang}`}
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-xl text-xs font-mono font-bold bg-[var(--accent-hero)] text-[#15110A] shadow-sm"
+      >
+        <span>{isVi ? 'Khám phá ngay' : 'Explore tips'}</span>
+      </a>
+    </div>
+
+    <!-- Empty Filter Match State -->
+    <div id="saved-no-match" class="hidden py-12 text-center border border-dashed border-[var(--border-color)] rounded-xl bg-[var(--bg-surface)] text-xs font-mono text-[var(--text-muted)]">
+      {isVi ? 'Không có bài đã lưu nào khớp với từ khóa tìm kiếm.' : 'No saved tips match your search query.'}
+    </div>
+
+    <!-- Saved Cards Stream -->
+    <div id="saved-stream" class="space-y-4"></div>
+  </div>
+</Layout>
+
+<script is:inline define:vars={{ lang }}>
+  (function () {
+    const IS_VI = lang === 'vi';
+    const SAVED_KEY = 'techtips_saved';
+    const READ_KEY = 'techtips_read';
+    const MAX_SAVED_ITEMS = 1000;
+    const MAX_READ_ITEMS = 500;
+    const MAX_IMPORT_BYTES = 5 * 1024 * 1024;
+
+    const stream = document.getElementById('saved-stream');
+    const emptyState = document.getElementById('saved-empty-state');
+    const noMatchState = document.getElementById('saved-no-match');
+    const counter = document.getElementById('saved-counter');
+    const searchWrap = document.getElementById('saved-search-wrap');
+    const searchInput = document.getElementById('saved-search-input');
+    const staleBanner = document.getElementById('saved-stale-banner');
+    const staleText = document.getElementById('saved-stale-text');
+    const cleanStaleBtn = document.getElementById('clean-stale-btn');
+    const exportBtn = document.getElementById('export-bookmarks-btn');
+    const importBtn = document.getElementById('import-bookmarks-btn');
+    const importInput = document.getElementById('import-bookmarks-input');
+
+    let tipsById = null;
+    let loadPromise = null;
+    let renderToken = 0;
+    let currentStaleIds = [];
+
+    function normalizeSearch(str) {
+      return String(str || '')
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/đ/g, 'd');
+    }
+
+    function notify(message, variant) {
+      if (window.TechTipsActions && typeof window.TechTipsActions.showToast === 'function') {
+        window.TechTipsActions.showToast(message, variant);
+      }
+    }
+
+    function sanitizeIdList(raw) {
+      if (!Array.isArray(raw)) return [];
+      const seen = new Set();
+      const result = [];
+      for (const item of raw) {
+        if (typeof item !== 'string') continue;
+        const trimmed = item.trim();
+        if (!trimmed || trimmed.length > 128 || seen.has(trimmed)) continue;
+        seen.add(trimmed);
+        result.push(trimmed);
+      }
+      return result;
+    }
+
+    function getStoredIds(key) {
+      try {
+        const parsed = JSON.parse(localStorage.getItem(key));
+        return sanitizeIdList(parsed);
+      } catch {
+        return [];
+      }
+    }
+
+    function setStoredIds(key, ids) {
+      localStorage.setItem(key, JSON.stringify(ids));
+    }
+
+    async function loadTips() {
+      if (tipsById) return tipsById;
+      if (!loadPromise) {
+        loadPromise = (async () => {
+          let resp = null;
+          try {
+            resp = await fetch(`/api/all-${lang}.json`);
+          } catch {
+            resp = null;
+          }
+          if (!resp || !resp.ok) {
+            resp = await fetch('/api/tips.json');
+          }
+          if (!resp.ok) throw new Error('Cannot load tips');
+          const list = await resp.json();
+          if (!Array.isArray(list)) throw new Error('Invalid tips payload');
+          tipsById = new Map(list.map((tip) => [tip.id, tip]));
+          return tipsById;
+        })().catch((err) => {
+          loadPromise = null;
+          throw err;
+        });
+      }
+      return loadPromise;
+    }
+
+    function createCard(tip) {
+      const article = document.createElement('article');
+      article.className = 'bg-[var(--bg-surface)] border border-[var(--border-color)] hover:border-[var(--border-strong)] rounded-xl p-5 transition-all flex flex-col gap-3';
+      article.setAttribute('data-tip-id', tip.id);
+
+      const meta = document.createElement('div');
+      meta.className = 'flex items-center gap-2 text-xs font-mono text-[var(--text-muted)] flex-wrap';
+
+      const source = document.createElement('span');
+      source.className = 'text-[var(--text-secondary)] font-medium lowercase';
+      source.textContent = tip.source?.name || '';
+
+      const dot = document.createElement('span');
+      dot.textContent = '·';
+
+      const category = document.createElement('span');
+      category.className = 'lowercase text-[var(--accent)]';
+      category.textContent = (tip.categories || [])[0] || 'tips';
+
+      meta.append(source, dot, category);
+
+      const heading = document.createElement('h2');
+      heading.className = 'text-base sm:text-lg font-bold leading-snug text-[var(--text-primary)]';
+
+      const link = document.createElement('a');
+      link.href = `/${lang}/tip/${encodeURIComponent(tip.slug || tip.id)}`;
+      link.className = 'hover:text-[var(--accent)] transition-colors';
+      link.textContent = tip.title?.[lang] || tip.title?.en || Object.values(tip.title || {})[0] || '';
+      heading.appendChild(link);
+
+      const summary = document.createElement('p');
+      summary.className = 'text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed line-clamp-2';
+      summary.textContent = tip.summary?.[lang] || tip.summary?.en || Object.values(tip.summary || {})[0] || '';
+
+      const footer = document.createElement('div');
+      footer.className = 'pt-3 border-t border-[var(--border-subtle)] flex items-center justify-between gap-2 text-xs font-mono';
+
+      const detail = document.createElement('a');
+      detail.href = link.href;
+      detail.className = 'text-[var(--accent)] hover:underline font-semibold';
+      detail.textContent = IS_VI ? 'Xem chi tiết →' : 'View details →';
+
+      const remove = document.createElement('button');
+      remove.type = 'button';
+      remove.className = 'bookmark-btn px-2.5 py-1 rounded-lg border border-[var(--accent)] text-[var(--accent)] hover:bg-[var(--bg-muted)] transition-colors';
+      remove.setAttribute('data-id', tip.id);
+      remove.setAttribute('aria-pressed', 'true');
+      remove.textContent = IS_VI ? 'Bỏ lưu' : 'Remove';
+
+      footer.append(detail, remove);
+      article.append(meta, heading, summary, footer);
+      return article;
+    }
+
+    function matchesSavedSearch(tip, rawQuery) {
+      const qRaw = String(rawQuery || '').toLowerCase().trim();
+      if (!qRaw) return true;
+      const qNorm = normalizeSearch(qRaw);
+      const title = tip.title?.[lang] || tip.title?.en || Object.values(tip.title || {})[0] || '';
+      const summary = tip.summary?.[lang] || tip.summary?.en || Object.values(tip.summary || {})[0] || '';
+      const cats = Array.isArray(tip.categories) ? tip.categories.join(' ') : '';
+      const tags = Array.isArray(tip.tags) ? tip.tags.join(' ') : '';
+      const combined = `${title} ${summary} ${tip.source?.name || ''} ${cats} ${tags}`;
+      return (
+        combined.toLowerCase().includes(qRaw) ||
+        (qNorm.length > 0 && normalizeSearch(combined).includes(qNorm))
+      );
+    }
+
+    async function renderSaved() {
+      if (!stream || !emptyState || !counter) return;
+      const token = ++renderToken;
+
+      const saved = getStoredIds(SAVED_KEY);
+      if (!saved.length) {
+        currentStaleIds = [];
+        stream.replaceChildren();
+        emptyState.classList.remove('hidden');
+        noMatchState?.classList.add('hidden');
+        staleBanner?.classList.add('hidden');
+        searchWrap?.classList.add('hidden');
+        counter.textContent = IS_VI
+          ? 'Bạn chưa lưu thủ thuật nào trong trình duyệt này.'
+          : 'You have no saved tips in this browser.';
+        return;
+      }
+
+      try {
+        const map = await loadTips();
+        if (token !== renderToken) return;
+
+        const nextStaleIds = [];
+        const availableItems = [];
+        for (const id of saved) {
+          const item = map.get(id);
+          if (item) {
+            availableItems.push(item);
+          } else {
+            nextStaleIds.push(id);
+          }
+        }
+        currentStaleIds = nextStaleIds;
+
+        stream.replaceChildren();
+        emptyState.classList.add('hidden');
+        noMatchState?.classList.add('hidden');
+        staleBanner?.classList.add('hidden');
+
+        if (currentStaleIds.length > 0 && staleBanner && staleText) {
+          staleText.textContent = IS_VI
+            ? `Có ${currentStaleIds.length} mục đã lưu không còn trong kho dữ liệu hiện tại (đã lưu trữ hoặc gỡ bỏ).`
+            : `${currentStaleIds.length} saved ${currentStaleIds.length === 1 ? 'item is' : 'items are'} no longer in the active index (archived or removed).`;
+          staleBanner.classList.remove('hidden');
+        }
+
+        if (!availableItems.length) {
+          searchWrap?.classList.add('hidden');
+          counter.textContent = IS_VI
+            ? 'Không còn bài viết khả dụng nào trong danh sách đã lưu.'
+            : 'No available tips remain in your saved list.';
+          emptyState.classList.remove('hidden');
+          return;
+        }
+
+        searchWrap?.classList.remove('hidden');
+        const q = searchInput ? searchInput.value : '';
+        const visibleItems = availableItems.filter((tip) => matchesSavedSearch(tip, q));
+
+        const frag = document.createDocumentFragment();
+        visibleItems.forEach((tip) => frag.appendChild(createCard(tip)));
+        stream.replaceChildren(frag);
+
+        if (q.trim()) {
+          counter.textContent = IS_VI
+            ? `Hiển thị ${visibleItems.length} / ${availableItems.length} thủ thuật đã lưu.`
+            : `Showing ${visibleItems.length} of ${availableItems.length} saved tips.`;
+          if (!visibleItems.length) noMatchState?.classList.remove('hidden');
+        } else {
+          counter.textContent = IS_VI
+            ? `Bạn đang lưu ${availableItems.length} thủ thuật cục bộ trong trình duyệt.`
+            : `You have ${availableItems.length} saved ${availableItems.length === 1 ? 'tip' : 'tips'} stored locally in this browser.`;
+        }
+      } catch {
+        if (token !== renderToken) return;
+        counter.textContent = IS_VI
+          ? 'Không tải được danh sách thủ thuật. Vui lòng thử lại.'
+          : 'Could not load saved tips. Please try again.';
+      }
+    }
+
+    function cleanStaleBookmarks() {
+      if (!currentStaleIds.length) return;
+      const staleSet = new Set(currentStaleIds);
+      const saved = getStoredIds(SAVED_KEY);
+      const cleaned = saved.filter((id) => !staleSet.has(id));
+      const removedCount = saved.length - cleaned.length;
+      try {
+        setStoredIds(SAVED_KEY, cleaned);
+      } catch {
+        notify(
+          IS_VI
+            ? 'Không thể cập nhật bộ nhớ trình duyệt. Vui lòng thử lại.'
+            : 'Could not update browser storage. Please try again.',
+          'error'
+        );
+        return;
+      }
+      window.TechTipsActions?.updateCardsUI?.();
+      renderSaved();
+      notify(
+        IS_VI
+          ? `Đã dọn ${removedCount} bài cũ khỏi danh sách đã lưu`
+          : `Removed ${removedCount} unavailable ${removedCount === 1 ? 'item' : 'items'}`
+      );
+    }
+
+    function exportBookmarks() {
+      const payload = {
+        version: 1,
+        exported_at: new Date().toISOString(),
+        saved: getStoredIds(SAVED_KEY),
+        read: getStoredIds(READ_KEY),
+      };
+      const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement('a');
+      a.href = url;
+      a.download = 'techtips-bookmarks.json';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 1000);
+      notify(
+        IS_VI
+          ? `Đã xuất ${payload.saved.length} thủ thuật đã lưu và ${payload.read.length} đã đọc`
+          : `Exported ${payload.saved.length} saved and ${payload.read.length} read items`
+      );
+    }
+
+    async function handleImportFile(file) {
+      if (!file) return;
+      if (file.size > MAX_IMPORT_BYTES) {
+        notify(IS_VI ? 'Tệp JSON quá lớn (tối đa 5MB).' : 'JSON file is too large (max 5MB).', 'error');
+        return;
+      }
+
+      let parsed;
+      try {
+        const rawText = await file.text();
+        parsed = JSON.parse(rawText);
+      } catch {
+        notify(
+          IS_VI ? 'Tệp JSON không hợp lệ. Vui lòng kiểm tra lại định dạng.' : 'Invalid JSON file. Please check the file format.',
+          'error'
+        );
+        return;
+      }
+
+      const isPlainObject = parsed !== null && typeof parsed === 'object' && !Array.isArray(parsed);
+      const validVersion = parsed?.version === undefined || parsed.version === 1;
+      const hasSaved = isPlainObject && Object.prototype.hasOwnProperty.call(parsed, 'saved');
+      const hasRead = isPlainObject && Object.prototype.hasOwnProperty.call(parsed, 'read');
+      const validSavedField = !hasSaved || Array.isArray(parsed.saved);
+      const validReadField = !hasRead || Array.isArray(parsed.read);
+
+      if (!isPlainObject || !validVersion || (!hasSaved && !hasRead) || !validSavedField || !validReadField) {
+        notify(
+          IS_VI ? 'Cấu trúc tệp JSON không đúng định dạng Tech Tips Hub.' : 'JSON structure does not match Tech Tips Hub format.',
+          'error'
+        );
+        return;
+      }
+
+      const existingSaved = getStoredIds(SAVED_KEY);
+      const existingRead = getStoredIds(READ_KEY);
+      const incomingSaved = hasSaved ? sanitizeIdList(parsed.saved) : [];
+      const incomingRead = hasRead ? sanitizeIdList(parsed.read) : [];
+
+      const existingSavedSet = new Set(existingSaved);
+      const existingReadSet = new Set(existingRead);
+      const addedSaved = incomingSaved.filter((id) => !existingSavedSet.has(id)).length;
+      const addedRead = incomingRead.filter((id) => !existingReadSet.has(id)).length;
+
+      let mergedSaved = Array.from(new Set([...existingSaved, ...incomingSaved]));
+      if (mergedSaved.length > MAX_SAVED_ITEMS) {
+        mergedSaved = mergedSaved.slice(mergedSaved.length - MAX_SAVED_ITEMS);
+      }
+      let mergedRead = Array.from(new Set([...existingRead, ...incomingRead]));
+      if (mergedRead.length > MAX_READ_ITEMS) {
+        mergedRead = mergedRead.slice(mergedRead.length - MAX_READ_ITEMS);
+      }
+
+      try {
+        setStoredIds(SAVED_KEY, mergedSaved);
+        setStoredIds(READ_KEY, mergedRead);
+      } catch {
+        notify(
+          IS_VI ? 'Không thể lưu vào trình duyệt. Bộ nhớ cục bộ có thể đã đầy.' : 'Unable to save to local storage. Storage may be full.',
+          'error'
+        );
+        return;
+      }
+
+      await renderSaved();
+      window.TechTipsActions?.updateCardsUI?.();
+      notify(
+        IS_VI
+          ? `Đã nhập thành công (+${addedSaved} đã lưu, +${addedRead} đã đọc)`
+          : `Imported successfully (+${addedSaved} saved, +${addedRead} read)`
+      );
+    }
+
+    searchInput?.addEventListener('input', renderSaved);
+    cleanStaleBtn?.addEventListener('click', cleanStaleBookmarks);
+    exportBtn?.addEventListener('click', exportBookmarks);
+    importBtn?.addEventListener('click', () => importInput?.click());
+    importInput?.addEventListener('change', async (e) => {
+      const target = e.target;
+      const file = target && target.files && target.files[0];
+      try {
+        await handleImportFile(file);
+      } finally {
+        if (target) target.value = '';
+      }
+    });
+
+    renderSaved();
+    window.addEventListener('storage', renderSaved);
+    window.addEventListener('techtips:bookmark_changed', renderSaved);
+  })();
+</script>

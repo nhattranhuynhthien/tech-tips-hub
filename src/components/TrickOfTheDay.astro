@@ -1,7 +1,8 @@
 ---
 import type { Tip } from '../lib/data';
 import type { Locale } from '../lib/i18n';
-import { getTranslations } from '../lib/i18n';
+import { formatShortDate } from '../lib/dates';
+import { safeExternalUrl } from '../lib/url';
 
 interface Props {
   tip: Tip;
@@ -10,23 +11,10 @@ interface Props {
 }
 
 const { tip, lang, kind = 'tips' } = Astro.props;
-const t = getTranslations(lang);
 
 const titleText = tip.title[lang] || tip.title['en'] || Object.values(tip.title)[0] || '';
 const summaryText = tip.summary[lang] || tip.summary['en'] || Object.values(tip.summary)[0] || '';
-
-// Format date in DD/MM format matching mockup "TINH TẾ · 29/10"
-let formattedDate = '';
-try {
-  const d = new Date(tip.published_at);
-  if (!isNaN(d.getTime())) {
-    const day = String(d.getDate()).padStart(2, '0');
-    const month = String(d.getMonth() + 1).padStart(2, '0');
-    formattedDate = `${day}/${month}`;
-  }
-} catch {
-  formattedDate = '';
-}
+const formattedDate = formatShortDate(tip.published_at, lang);
 
 const sourceUpper = (tip.source.name || 'TECH TIPS').toUpperCase();
 const featuredLabel = kind === 'news'
@@ -41,13 +29,13 @@ const metaString = formattedDate
   <div class="max-w-4xl flex flex-col md:flex-row md:items-center justify-between gap-6">
     <div class="flex-1">
       <!-- Top Meta Line: Uppercase & Monospace -->
-      <div class="text-[11px] sm:text-xs font-mono font-bold tracking-wider uppercase text-[#1c1d22]/80 mb-3">
+      <div class="text-[11px] sm:text-xs font-mono font-bold tracking-wider uppercase text-[#1c1d22]/85 mb-3 tabular-nums">
         {metaString}
       </div>
 
       <!-- Large Bold Headline -->
       <h2 class="text-2xl sm:text-3xl lg:text-4xl font-extrabold tracking-tight text-[#0e0f13] leading-snug mb-3">
-        <a href={`/${lang}/tip/${tip.slug || tip.id}`} class="hover:underline">
+        <a href={`/${lang}/tip/${encodeURIComponent(tip.slug || tip.id)}`} class="hover:underline">
           {titleText}
         </a>
       </h2>
@@ -61,10 +49,10 @@ const metaString = formattedDate
     <!-- Right Call To Action Button -->
     <div class="shrink-0 flex items-center md:self-end">
       <a
-        href={tip.url}
+        href={safeExternalUrl(tip.url)}
         target="_blank"
         rel="noopener noreferrer"
-        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-black text-white hover:bg-zinc-800 transition-colors font-bold text-xs sm:text-sm shadow-md"
+        class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#0e0f13] text-white hover:bg-zinc-800 transition-colors font-bold text-xs sm:text-sm shadow-md"
       >
         <span>{lang === 'vi' ? 'Đọc bài gốc →' : 'Read original →'}</span>
       </a>

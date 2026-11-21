@@ -4,31 +4,33 @@
 
 @layer base {
   :root {
-    /* Design Tokens from Phase C Specification */
-    --bg-primary: #0F1114;       /* --bg #0F1114 */
-    --bg-surface: #171A1E;       /* --panel #171A1E */
-    --bg-surface-hover: #1e2228;
-    --bg-muted: #23272D;         /* --chip #23272D */
+    color-scheme: dark;
+
+    /* Dark Terminal Identity (Default) */
+    --bg-primary: #0F1114;
+    --bg-surface: #171A1E;
+    --bg-surface-hover: #1E2228;
+    --bg-muted: #23272D;
     --bg-subtle: #23272D;
-    
-    --border-color: #2A2F35;     /* --border #2A2F35 */
+
+    --border-color: #2A2F35;
     --border-subtle: #23272D;
-    --border-strong: #3A4046;    /* --border-strong #3A4046 */
-    
-    --text-primary: #ECEAE4;     /* --text #ECEAE4 */
-    --text-secondary: #A3A8AD;   /* --muted #A3A8AD */
-    --text-muted: #7E848B;
-    
-    --accent: #FFB547;           /* --accent #FFB547 */
-    --accent-hover: #ffbf5e;
-    --accent-hero: #FFB547;      /* --accent */
-    --on-accent: #15110A;        /* --on-accent #15110A */
+    --border-strong: #3A4046;
+
+    --text-primary: #ECEAE4;
+    --text-secondary: #A3A8AD;
+    --text-muted: #8E959E;
+
+    --accent: #FFB547;
+    --accent-hover: #FFBF5E;
+    --accent-hero: #FFB547;
+    --on-accent: #15110A;
     --accent-bg: rgba(255, 181, 71, 0.12);
     --accent-border: rgba(255, 181, 71, 0.28);
-    
-    --radius-sm: 12px;           /* Bo góc 12px: nút, ô nhập */
-    --radius-md: 16px;           /* Bo góc 16px: thẻ */
-    --radius-lg: 20px;           /* Bo góc 20-24px: khối nổi bật */
+
+    --radius-sm: 12px;
+    --radius-md: 16px;
+    --radius-lg: 20px;
 
     --kbd-bg: linear-gradient(180deg, #2A2F35 0%, #171A1E 100%);
     --kbd-border: #3A4046;
@@ -36,7 +38,7 @@
     --kbd-text: #ECEAE4;
 
     --badge-easy-bg: rgba(74, 222, 128, 0.1);
-    --badge-easy-text: #4ade80;
+    --badge-easy-text: #4ADE80;
     --badge-easy-border: rgba(74, 222, 128, 0.25);
 
     --badge-med-bg: rgba(255, 181, 71, 0.12);
@@ -44,8 +46,75 @@
     --badge-med-border: rgba(255, 181, 71, 0.28);
 
     --badge-adv-bg: rgba(248, 113, 113, 0.1);
-    --badge-adv-text: #f87171;
+    --badge-adv-text: #F87171;
     --badge-adv-border: rgba(248, 113, 113, 0.25);
+
+    --badge-info-bg: rgba(96, 165, 250, 0.12);
+    --badge-info-text: #93C5FD;
+    --badge-info-border: rgba(96, 165, 250, 0.3);
+
+    --badge-hn-bg: rgba(255, 181, 71, 0.12);
+    --badge-hn-text: #FFB547;
+    --badge-hn-border: rgba(255, 181, 71, 0.28);
+
+    --scrollbar-track: #0F1114;
+    --scrollbar-thumb: #2A2F35;
+    --scrollbar-thumb-hover: #3A4046;
+  }
+
+  /* Refined Warm-Stone Editorial Light Mode (WCAG AA >= 4.5:1 across all surfaces) */
+  [data-theme="light"] {
+    color-scheme: light;
+
+    --bg-primary: #F7F6F2;
+    --bg-surface: #FFFFFF;
+    --bg-surface-hover: #F1EFEA;
+    --bg-muted: #ECEAE3;
+    --bg-subtle: #ECEAE3;
+
+    --border-color: #DCD8CE;
+    --border-subtle: #E7E4DC;
+    --border-strong: #C2BDB1;
+
+    --text-primary: #17191C;
+    --text-secondary: #4A4F57;
+    --text-muted: #5C636B;
+
+    --accent: #9A4406;
+    --accent-hover: #7C3605;
+    --accent-hero: #FFB547;
+    --on-accent: #FFFFFF;
+    --accent-bg: rgba(154, 68, 6, 0.09);
+    --accent-border: rgba(154, 68, 6, 0.28);
+
+    --kbd-bg: linear-gradient(180deg, #FFFFFF 0%, #ECEAE3 100%);
+    --kbd-border: #C2BDB1;
+    --kbd-shadow: #BDB7AA;
+    --kbd-text: #17191C;
+
+    --badge-easy-bg: #ECFDF5;
+    --badge-easy-text: #15803D;
+    --badge-easy-border: #BBF7D0;
+
+    --badge-med-bg: rgba(154, 68, 6, 0.09);
+    --badge-med-text: #9A4406;
+    --badge-med-border: rgba(154, 68, 6, 0.28);
+
+    --badge-adv-bg: #FEF2F2;
+    --badge-adv-text: #B91C1C;
+    --badge-adv-border: #FECACA;
+
+    --badge-info-bg: #EFF6FF;
+    --badge-info-text: #1D4ED8;
+    --badge-info-border: #BFDBFE;
+
+    --badge-hn-bg: #FEF3C7;
+    --badge-hn-text: #9A4406;
+    --badge-hn-border: #FDE68A;
+
+    --scrollbar-track: #F7F6F2;
+    --scrollbar-thumb: #CBC6BA;
+    --scrollbar-thumb-hover: #AEA89B;
   }
 
   body {
@@ -56,6 +125,18 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     min-height: 100vh;
+    caret-color: var(--accent);
+  }
+
+  ::selection {
+    background-color: var(--accent-hero);
+    color: #15110A;
+  }
+
+  input,
+  textarea,
+  select {
+    caret-color: var(--accent);
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -91,6 +172,30 @@
     outline-offset: 2px;
   }
 
+  /* Subtle browser scrollbars matching active theme */
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--scrollbar-thumb);
+    border-radius: 9999px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--scrollbar-thumb-hover);
+  }
+
   /* Tôn trọng prefers-reduced-motion */
   @media (prefers-reduced-motion: reduce) {
     *,
@@ -104,7 +209,26 @@
   }
 }
 
-/* Custom scrollbars */
+/* Numeric alignment utility for counters, timestamps, and pagination */
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+/* Theme toggle icon swap without FOUC */
+[data-theme-icon="sun"] {
+  display: block;
+}
+[data-theme-icon="moon"] {
+  display: none;
+}
+[data-theme="light"] [data-theme-icon="sun"] {
+  display: none;
+}
+[data-theme="light"] [data-theme-icon="moon"] {
+  display: block;
+}
+
+/* Custom hidden scrollbars for horizontal chip strips */
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }

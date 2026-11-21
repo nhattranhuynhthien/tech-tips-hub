@@ -1,0 +1,892 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TipCard from '../TipCard.astro';
+import TrickOfTheDay from '../TrickOfTheDay.astro';
+import Pagination from '../Pagination.astro';
+import { getAllTips, getTrickOfTheDay, getAllSources, sortTipsNewestFirst } from '../../lib/data';
+import { getTranslations, type Locale } from '../../lib/i18n';
+import { formatLatestTimestamp } from '../../lib/dates';
+import { SITE_URL } from '../../lib/constants';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const isVi = lang === 'vi';
+const t = getTranslations(lang);
+const rawTips = getAllTips(false).filter((tip) => tip.source.kind !== 'news');
+const trickOfDay = getTrickOfTheDay(lang);
+const tips = trickOfDay ? rawTips.filter((item) => item.id !== trickOfDay.id) : rawTips;
+const sources = getAllSources().filter((source) => source.kind !== 'news');
+const latestUpdate = rawTips.map((tip) => tip.fetched_at).filter(Boolean).sort().at(-1) || '';
+const formattedLatestUpdate = formatLatestTimestamp(latestUpdate, lang);
+
+const contentTypes = isVi
+  ? [
+      { id: 'article', label: 'Bài viết' },
+      { id: 'community', label: 'Cộng đồng' },
+      { id: 'video', label: 'Video' },
+      { id: 'vendor', label: 'Hãng công nghệ' },
+    ]
+  : [
+      { id: 'article', label: 'Article' },
+      { id: 'community', label: 'Community' },
+      { id: 'video', label: 'Video' },
+      { id: 'vendor', label: 'Technology vendor' },
+    ];
+
+const PAGE_SIZE = 20;
+const orderedTips = sortTipsNewestFirst(tips);
+const initialTips = orderedTips.slice(0, PAGE_SIZE);
+const totalPages = Math.max(1, Math.ceil(orderedTips.length / PAGE_SIZE));
+
+const cardLabels = {
+  difficulty: t.difficulty,
+  contentTypes: isVi
+    ? { community: 'Cộng đồng', video: 'Video', vendor: 'Hãng công nghệ', article: 'Bài viết' }
+    : { community: 'Community', video: 'Video', vendor: 'Technology vendor', article: 'Article' },
+  notTranslated: isVi ? 'Chưa dịch' : 'Not translated',
+  machineTranslated: isVi ? 'Bản dịch tự động' : 'Machine translated',
+  community: isVi ? 'Cộng đồng' : 'Community',
+  moreSources: isVi ? 'nguồn khác' : 'more sources',
+  updated: isVi ? 'cập nhật' : 'updated',
+  readOriginal: isVi ? 'Đọc bài gốc' : 'Read original',
+  original: isVi ? 'Bài gốc' : 'Original',
+};
+
+const sidebarCategories = isVi
+  ? [
+      { id: 'all', label: '# tất cả', short: 'tất cả' },
+      { id: 'windows', label: '# windows', short: 'windows' },
+      { id: 'macos', label: '# macos', short: 'macos' },
+      { id: 'linux', label: '# linux', short: 'linux' },
+      { id: 'android', label: '# android', short: 'android' },
+      { id: 'ios', label: '# ios', short: 'ios' },
+      { id: 'security', label: '# bảo mật', short: 'bảo mật' },
+      { id: 'dev', label: '# lập trình', short: 'lập trình' },
+      { id: 'hardware', label: '# phần cứng', short: 'phần cứng' },
+      { id: 'browser', label: '# trình duyệt', short: 'trình duyệt' },
+      { id: 'office', label: '# văn phòng', short: 'văn phòng' },
+      { id: 'ai', label: '# ai', short: 'ai' },
+    ]
+  : [
+      { id: 'all', label: '# all', short: 'all' },
+      { id: 'windows', label: '# windows', short: 'windows' },
+      { id: 'macos', label: '# macos', short: 'macos' },
+      { id: 'linux', label: '# linux', short: 'linux' },
+      { id: 'android', label: '# android', short: 'android' },
+      { id: 'ios', label: '# ios', short: 'ios' },
+      { id: 'security', label: '# security', short: 'security' },
+      { id: 'dev', label: '# dev', short: 'dev' },
+      { id: 'hardware', label: '# hardware', short: 'hardware' },
+      { id: 'browser', label: '# browser', short: 'browser' },
+      { id: 'office', label: '# office', short: 'office' },
+      { id: 'ai', label: '# ai', short: 'ai' },
+    ];
+
+const difficulties = [
+  { id: 'all', label: isVi ? 'Tất cả' : 'All' },
+  { id: 'easy', label: t.difficulty.easy },
+  { id: 'medium', label: t.difficulty.medium },
+  { id: 'advanced', label: t.difficulty.advanced },
+];
+
+const websiteJsonLd = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: 'Tech Tips Hub (tips.hub)',
+  url: `${SITE_URL}/${lang}`,
+  inLanguage: isVi ? 'vi-VN' : 'en-US',
+  description: t.site.description,
+  potentialAction: {
+    '@type': 'SearchAction',
+    target: {
+      '@type': 'EntryPoint',
+      urlTemplate: `${SITE_URL}/${lang}?q={search_term_string}`,
+    },
+    'query-input': 'required name=search_term_string',
+  },
+};
+---
+
+<Layout
+  lang={lang}
+  title={t.site.tagline}
+  canonicalPath={`/${lang}`}
+  nextUrl={totalPages > 1 ? `/${lang}/page/2` : undefined}
+  jsonLd={websiteJsonLd}
+>
+  <script is:inline src="/js/tip-card.js"></script>
+  <h1 class="sr-only">
+    {isVi ? 'Tech Tips Hub — thủ thuật và mẹo công nghệ mới nhất' : 'Tech Tips Hub — latest practical tech tips and tricks'}
+  </h1>
+
+  <!-- Mobile Search Bar -->
+  <div class="sm:hidden mb-4">
+    <div class="relative">
+      <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-[var(--accent)] font-mono font-bold">
+        $
+      </div>
+      <input
+        id="mobile-search-input"
+        type="search"
+        placeholder={isVi ? 'Tìm thủ thuật, từ khóa...' : 'Search tips, tags...'}
+        class="w-full pl-8 pr-4 py-2 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-sm text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:border-[var(--accent)] shadow-sm font-mono"
+      />
+    </div>
+  </div>
+
+  {formattedLatestUpdate && (
+    <p class="text-[11px] text-[var(--text-muted)] font-mono mb-4 tabular-nums">
+      {isVi ? 'Cập nhật gần nhất:' : 'Last updated:'}{' '}
+      <time datetime={latestUpdate}>{formattedLatestUpdate}</time>
+    </p>
+  )}
+
+  <!-- Mobile Horizontal Category Scroll -->
+  <div class="md:hidden flex items-center gap-2 overflow-x-auto pb-2.5 mb-3 scrollbar-none" id="mobile-category-bar">
+    {sidebarCategories.map((cat, idx) => (
+      <button
+        type="button"
+        class={`mobile-cat-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-semibold transition-all ${
+          idx === 0
+            ? 'bg-[var(--accent-hero)] text-[#15110A] font-bold shadow-sm'
+            : 'border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)]'
+        }`}
+        data-category={cat.id}
+      >
+        {cat.short}
+      </button>
+    ))}
+  </div>
+
+  <!-- Mobile Difficulty & Sort Controls -->
+  <div class="md:hidden flex items-center justify-between gap-2 flex-wrap mb-6 text-xs font-mono" id="mobile-controls-bar">
+    <div class="flex items-center gap-1.5 overflow-x-auto scrollbar-none" aria-label={isVi ? 'Độ khó' : 'Difficulty'}>
+      {difficulties.map((d, idx) => (
+        <button
+          type="button"
+          class={`diff-pill-btn shrink-0 px-2.5 py-1 rounded-lg border transition-all ${
+            idx === 0
+              ? 'border-[var(--accent)] bg-[var(--accent-bg)] text-[var(--accent)] font-bold'
+              : 'border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+          }`}
+          data-diff={d.id}
+        >
+          {d.label}
+        </button>
+      ))}
+    </div>
+
+    <div class="inline-flex p-0.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] shrink-0" aria-label={isVi ? 'Sắp xếp' : 'Sort'}>
+      <button
+        type="button"
+        class="sort-pill-btn px-2.5 py-1 rounded-lg transition-all text-[var(--text-muted)] hover:text-[var(--text-primary)]"
+        data-sort="best"
+      >
+        {isVi ? 'Hay nhất' : 'Best'}
+      </button>
+      <button
+        type="button"
+        class="sort-pill-btn px-2.5 py-1 rounded-lg transition-all bg-[var(--accent-hero)] text-[#15110A] font-bold shadow-sm"
+        data-sort="newest"
+      >
+        {isVi ? 'Mới nhất' : 'Newest'}
+      </button>
+    </div>
+  </div>
+
+  <!-- Trick of the Day Hero -->
+  {trickOfDay && <TrickOfTheDay tip={trickOfDay} lang={lang} />}
+
+  <!-- Main 2-Column Content Layout -->
+  <div class="flex flex-col md:flex-row items-start gap-8 lg:gap-12">
+    <!-- Left Sidebar: Categories, Difficulty, Sort (Desktop Only — zero duplicate controls) -->
+    <aside class="w-48 lg:w-56 shrink-0 hidden md:block space-y-7 sticky top-20 text-xs font-mono">
+      <!-- 1. Categories -->
+      <div>
+        <h2 class="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-3">
+          {isVi ? 'DANH MỤC' : 'CATEGORIES'}
+        </h2>
+        <ul class="space-y-1.5" id="desktop-category-list">
+          {sidebarCategories.map((cat, idx) => (
+            <li>
+              <button
+                type="button"
+                class={`desktop-cat-btn text-left w-full py-1 transition-colors ${
+                  idx === 0
+                    ? 'text-[var(--accent)] font-bold'
+                    : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                }`}
+                data-category={cat.id}
+              >
+                {cat.label}
+              </button>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <!-- 2. Difficulty -->
+      <div>
+        <h2 class="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-2.5">
+          {isVi ? 'ĐỘ KHÓ' : 'DIFFICULTY'}
+        </h2>
+        <div class="flex items-center gap-1.5 flex-wrap" id="desktop-diff-group">
+          {difficulties.map((d, idx) => (
+            <button
+              type="button"
+              class={`diff-pill-btn px-2.5 py-1 rounded-lg border transition-all ${
+                idx === 0
+                  ? 'border-[var(--accent)] bg-[var(--accent-bg)] text-[var(--accent)] font-bold'
+                  : 'border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+              }`}
+              data-diff={d.id}
+            >
+              {d.label}
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <!-- 3. Sort -->
+      <div>
+        <h2 class="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-2.5">
+          {isVi ? 'SẮP XẾP' : 'SORT'}
+        </h2>
+        <div class="inline-flex p-0.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-xs" id="desktop-sort-group">
+          <button
+            type="button"
+            class="sort-pill-btn px-3 py-1 rounded-lg transition-all text-[var(--text-muted)] hover:text-[var(--text-primary)]"
+            data-sort="best"
+          >
+            {isVi ? 'Hay nhất' : 'Best'}
+          </button>
+          <button
+            type="button"
+            class="sort-pill-btn px-3 py-1 rounded-lg transition-all bg-[var(--accent-hero)] text-[#15110A] font-bold shadow-sm"
+            data-sort="newest"
+          >
+            {isVi ? 'Mới nhất' : 'Newest'}
+          </button>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Right Stream: Top Filter Bar + Tips List + Pagination -->
+    <div class="flex-1 w-full min-w-0">
+      <!-- Top Filter Bar: Source, Content Type, Original Language (no redundant Platform/Language controls) -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-2.5 mb-4" aria-label={isVi ? 'Bộ lọc bài viết' : 'Article filters'}>
+        <label class="text-[10px] font-mono text-[var(--text-muted)]">
+          {isVi ? 'NGUỒN' : 'SOURCE'}
+          <select id="source-filter" class="mt-1 w-full rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] p-2 text-xs text-[var(--text-primary)]">
+            <option value="all">{isVi ? 'Tất cả nguồn' : 'All sources'}</option>
+            <option value="community">{isVi ? 'Cộng đồng đóng góp' : 'Community submissions'}</option>
+            {sources.map((source) => <option value={source.id}>{source.name}</option>)}
+          </select>
+        </label>
+        <label class="text-[10px] font-mono text-[var(--text-muted)]">
+          {isVi ? 'LOẠI NỘI DUNG' : 'CONTENT TYPE'}
+          <select id="content-type-filter" class="mt-1 w-full rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] p-2 text-xs text-[var(--text-primary)]">
+            <option value="all">{isVi ? 'Tất cả loại' : 'All types'}</option>
+            {contentTypes.map((type) => <option value={type.id}>{type.label}</option>)}
+          </select>
+        </label>
+        <label class="text-[10px] font-mono text-[var(--text-muted)]">
+          {isVi ? 'NGÔN NGỮ GỐC' : 'ORIGINAL LANGUAGE'}
+          <select id="language-filter" class="mt-1 w-full rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] p-2 text-xs text-[var(--text-primary)]">
+            <option value="all">{isVi ? 'Tất cả ngôn ngữ' : 'All languages'}</option>
+            <option value="vi">Tiếng Việt</option>
+            <option value="en">{isVi ? 'Tiếng Anh' : 'English'}</option>
+            <option value="zh-CN">{isVi ? 'Tiếng Trung' : '中文'}</option>
+          </select>
+        </label>
+      </div>
+
+      <!-- Active Query Chip (Shown when filtered by ?q= from tag links) -->
+      <div id="active-query-bar" class="hidden mb-4 flex items-center justify-between gap-2 px-3 py-2 rounded-xl border border-[var(--accent-border)] bg-[var(--accent-bg)] text-xs font-mono">
+        <span class="text-[var(--text-primary)]">
+          {isVi ? 'Đang lọc từ khóa:' : 'Filtering query:'}{' '}
+          <strong id="active-query-value" class="text-[var(--accent)]"></strong>
+        </span>
+        <button
+          id="clear-query-btn"
+          type="button"
+          class="text-[var(--accent)] hover:underline font-bold"
+        >
+          {isVi ? 'Xóa' : 'Clear'}
+        </button>
+      </div>
+
+      <!-- Tips List Container -->
+      <div id="tips-stream" class="space-y-4">
+        {initialTips.map((tip) => (
+          <TipCard tip={tip} lang={lang} />
+        ))}
+      </div>
+
+      <!-- Empty state when search or filter has no match -->
+      <div id="empty-stream-msg" class="hidden py-16 text-center border border-dashed border-[var(--border-color)] rounded-xl bg-[var(--bg-surface)]">
+        <p class="text-sm font-mono text-[var(--text-secondary)] mb-3">
+          {isVi ? 'Không tìm thấy bài viết nào khớp với bộ lọc hiện tại.' : 'No tips matched your current filter.'}
+        </p>
+        <button
+          id="reset-filter-btn"
+          type="button"
+          class="px-4 py-2 rounded-xl text-xs font-mono font-bold bg-[var(--accent-hero)] text-[#15110A]"
+        >
+          {isVi ? 'Xóa bộ lọc' : 'Clear filters'}
+        </button>
+      </div>
+
+      <!-- Server-rendered Pagination -->
+      <div id="static-pagination">
+        <Pagination
+          currentPage={1}
+          lastPage={totalPages}
+          pageSize={PAGE_SIZE}
+          basePath={`/${lang}`}
+          lang={lang}
+        />
+      </div>
+
+      <!-- Client-side Dynamic Pagination Controls -->
+      <nav id="dynamic-pagination" aria-label={isVi ? 'Phân trang lọc' : 'Filtered pagination'} class="hidden mt-12 flex flex-col items-center gap-3 font-mono text-xs tabular-nums">
+        <div class="flex items-center gap-2">
+          <button
+            id="page-prev-btn"
+            type="button"
+            class="h-11 px-4 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:text-[var(--accent)] disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center gap-1.5"
+          >
+            {isVi ? '← Trước' : '← Prev'}
+          </button>
+          <div id="page-numbers" class="flex items-center gap-1"></div>
+          <button
+            id="page-next-btn"
+            type="button"
+            class="h-11 px-4 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:text-[var(--accent)] disabled:opacity-50 disabled:cursor-not-allowed transition-all flex items-center gap-1.5"
+          >
+            {isVi ? 'Sau →' : 'Next →'}
+          </button>
+        </div>
+        <div id="pagination-subtext" class="text-[11px] text-[var(--text-muted)]"></div>
+      </nav>
+    </div>
+  </div>
+</Layout>
+
+<script is:inline define:vars={{ lang, cardLabels, trickId: trickOfDay?.id || '', pageSize: PAGE_SIZE }}>
+  (function () {
+    const ITEMS_PER_PAGE = pageSize;
+    const LANG = lang;
+    const LABELS = cardLabels;
+    const IS_VI = LANG === 'vi';
+
+    let allTips = null;
+    let loadPromise = null;
+    let clientMode = false;
+    let renderToken = 0;
+    let lastTotal = 0;
+
+    let currentPage = 1;
+    let currentCat = 'all';
+    let currentDiff = 'all';
+    let currentLangFilter = 'all';
+    let currentSource = 'all';
+    let currentType = 'all';
+    let currentSort = 'newest';
+    let searchQuery = '';
+
+    const stream = document.getElementById('tips-stream');
+    const emptyMsg = document.getElementById('empty-stream-msg');
+    const resetBtn = document.getElementById('reset-filter-btn');
+    const staticPagination = document.getElementById('static-pagination');
+    const dynamicPagination = document.getElementById('dynamic-pagination');
+    const activeQueryBar = document.getElementById('active-query-bar');
+    const activeQueryValue = document.getElementById('active-query-value');
+    const clearQueryBtn = document.getElementById('clear-query-btn');
+
+    const mobileCatBtns = Array.from(document.querySelectorAll('.mobile-cat-btn'));
+    const desktopCatBtns = Array.from(document.querySelectorAll('.desktop-cat-btn'));
+    const diffBtns = Array.from(document.querySelectorAll('.diff-pill-btn'));
+    const sortBtns = Array.from(document.querySelectorAll('.sort-pill-btn'));
+    const mobileSearchInput = document.getElementById('mobile-search-input');
+    const sourceFilter = document.getElementById('source-filter');
+    const typeFilter = document.getElementById('content-type-filter');
+    const languageFilter = document.getElementById('language-filter');
+
+    const pagePrevBtn = document.getElementById('page-prev-btn');
+    const pageNextBtn = document.getElementById('page-next-btn');
+    const pageNumbersContainer = document.getElementById('page-numbers');
+    const paginationSubtext = document.getElementById('pagination-subtext');
+
+    const CAT_MOBILE_BASE = 'mobile-cat-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-semibold transition-all border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)]';
+    const CAT_MOBILE_ACTIVE = 'mobile-cat-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-semibold transition-all bg-[var(--accent-hero)] text-[#15110A] font-bold shadow-sm';
+    const CAT_DESKTOP_BASE = 'desktop-cat-btn text-left w-full py-1 transition-colors text-[var(--text-secondary)] hover:text-[var(--text-primary)]';
+    const CAT_DESKTOP_ACTIVE = 'desktop-cat-btn text-left w-full py-1 transition-colors text-[var(--accent)] font-bold';
+    const DIFF_BASE = 'diff-pill-btn shrink-0 px-2.5 py-1 rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all';
+    const DIFF_ACTIVE = 'diff-pill-btn shrink-0 px-2.5 py-1 rounded-lg border border-[var(--accent)] bg-[var(--accent-bg)] text-[var(--accent)] font-bold transition-all';
+    const SORT_BASE = 'sort-pill-btn px-2.5 sm:px-3 py-1 rounded-lg transition-all text-[var(--text-muted)] hover:text-[var(--text-primary)]';
+    const SORT_ACTIVE = 'sort-pill-btn px-2.5 sm:px-3 py-1 rounded-lg transition-all bg-[var(--accent-hero)] text-[#15110A] font-bold shadow-sm';
+
+    function normalizeSearch(str) {
+      return String(str || '')
+        .toLowerCase()
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .replace(/đ/g, 'd');
+    }
+
+    function timeOf(tip) {
+      return new Date(tip.published_at || tip.fetched_at || 0).getTime() || 0;
+    }
+
+    function compareFeed(a, b) {
+      const scoreDiff = (b.score || 0) - (a.score || 0);
+      if (scoreDiff !== 0) return scoreDiff;
+      const timeDiff = timeOf(b) - timeOf(a);
+      if (timeDiff !== 0) return timeDiff;
+      const aId = String(a.id || '');
+      const bId = String(b.id || '');
+      return aId < bId ? -1 : aId > bId ? 1 : 0;
+    }
+
+    function compareNewest(a, b) {
+      return timeOf(b) - timeOf(a);
+    }
+
+    function pickText(field, origLang) {
+      if (!field) return '';
+      return field[LANG] || (origLang && field[origLang]) || field.en || Object.values(field)[0] || '';
+    }
+
+    function searchText(tip) {
+      const title = pickText(tip.title, tip.original_lang);
+      const origTitle =
+        tip.original_lang && tip.title && tip.title[tip.original_lang] && tip.title[tip.original_lang] !== title
+          ? tip.title[tip.original_lang]
+          : '';
+      const summary = pickText(tip.summary, tip.original_lang);
+      const sourceName = (tip.source && tip.source.name) || '';
+      const cats = (tip.categories || []).join(' ');
+      const tags = (tip.tags || []).join(' ');
+      return `${title} ${origTitle} ${summary} ${sourceName} ${cats} ${tags}`;
+    }
+
+    function matches(tip) {
+      const qRaw = searchQuery.toLowerCase().trim();
+      const qNorm = normalizeSearch(qRaw);
+      const cats = tip.categories || [];
+      const diff = tip.difficulty || '';
+      const originalLang = tip.original_lang || 'en';
+      const sourceId = (tip.source && tip.source.id) || '';
+      const contentType = (tip.source && tip.source.content_type) || 'article';
+
+      const matchCat = currentCat === 'all' || cats.includes(currentCat);
+      const matchDiff = currentDiff === 'all' || diff === currentDiff;
+      const matchLang = currentLangFilter === 'all' || originalLang === currentLangFilter;
+      const matchSource =
+        currentSource === 'all' ||
+        sourceId === currentSource ||
+        (currentSource === 'community' && String(tip.source_type || '').startsWith('community'));
+      const matchType = currentType === 'all' || contentType === currentType;
+      let matchSearch = true;
+      if (qRaw) {
+        const hay = searchText(tip);
+        matchSearch =
+          hay.toLowerCase().includes(qRaw) ||
+          (qNorm.length > 0 && normalizeSearch(hay).includes(qNorm));
+      }
+
+      return matchCat && matchDiff && matchLang && matchSource && matchType && matchSearch;
+    }
+
+    function syncUrl() {
+      try {
+        const params = new URLSearchParams();
+        if (searchQuery.trim()) params.set('q', searchQuery.trim());
+        if (currentCat !== 'all') params.set('cat', currentCat);
+        if (currentDiff !== 'all') params.set('diff', currentDiff);
+        if (currentSource !== 'all') params.set('source', currentSource);
+        if (currentType !== 'all') params.set('type', currentType);
+        if (currentLangFilter !== 'all') params.set('lang', currentLangFilter);
+        if (currentSort !== 'newest') params.set('sort', currentSort);
+        if (currentPage > 1) params.set('page', String(currentPage));
+        const qs = params.toString();
+        const nextUrl = qs ? `${window.location.pathname}?${qs}` : window.location.pathname;
+        window.history.replaceState(null, '', nextUrl);
+      } catch {}
+    }
+
+    function ensureTips() {
+      if (allTips) return Promise.resolve(allTips);
+      if (!loadPromise) {
+        loadPromise = fetch(`/api/tips-${LANG}.json`)
+          .then((resp) => {
+            if (!resp.ok) throw new Error('HTTP ' + resp.status);
+            return resp.json();
+          })
+          .then((list) => {
+            allTips = (Array.isArray(list) ? list : []).filter(
+              (tip) => tip.id !== trickId && tip.source?.kind !== 'news'
+            );
+            return allTips;
+          })
+          .catch((err) => {
+            loadPromise = null;
+            throw err;
+          });
+      }
+      return loadPromise;
+    }
+
+    function renderPagination(totalItems) {
+      const totalPages = Math.max(1, Math.ceil(totalItems / ITEMS_PER_PAGE));
+      if (currentPage > totalPages) currentPage = totalPages;
+      if (currentPage < 1) currentPage = 1;
+
+      if (pagePrevBtn) pagePrevBtn.disabled = currentPage === 1;
+      if (pageNextBtn) pageNextBtn.disabled = currentPage === totalPages;
+
+      if (pageNumbersContainer) {
+        pageNumbersContainer.replaceChildren();
+        const isMobile = window.innerWidth < 640;
+
+        if (isMobile) {
+          const span = document.createElement('span');
+          span.className = 'px-3 py-1 font-mono text-xs font-bold text-[var(--text-primary)]';
+          span.textContent = `${currentPage} / ${totalPages}`;
+          pageNumbersContainer.appendChild(span);
+        } else {
+          const pages = [];
+          for (let i = 1; i <= totalPages; i++) {
+            if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+              pages.push(i);
+            } else if (pages[pages.length - 1] !== '...') {
+              pages.push('...');
+            }
+          }
+
+          pages.forEach((p) => {
+            if (p === '...') {
+              const dots = document.createElement('span');
+              dots.className = 'px-1.5 py-1 text-[var(--text-muted)]';
+              dots.textContent = '…';
+              pageNumbersContainer.appendChild(dots);
+            } else {
+              const btn = document.createElement('button');
+              btn.type = 'button';
+              const isActive = p === currentPage;
+              btn.className = `w-8 h-8 rounded-lg text-xs font-mono font-bold transition-all ${
+                isActive
+                  ? 'bg-[var(--accent-hero)] text-[#15110A] shadow-sm'
+                  : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+              }`;
+              btn.textContent = String(p);
+              btn.addEventListener('click', () => {
+                currentPage = p;
+                updateView({ scroll: true });
+              });
+              pageNumbersContainer.appendChild(btn);
+            }
+          });
+        }
+      }
+
+      if (paginationSubtext) {
+        paginationSubtext.textContent = IS_VI
+          ? `trang ${currentPage} / ${totalPages} · ${ITEMS_PER_PAGE} bài mỗi trang`
+          : `page ${currentPage} / ${totalPages} · ${ITEMS_PER_PAGE} items per page`;
+      }
+    }
+
+    function syncFilterControls() {
+      if (languageFilter) languageFilter.value = currentLangFilter;
+      if (sourceFilter) sourceFilter.value = currentSource;
+      if (typeFilter) typeFilter.value = currentType;
+
+      const hasQuery = Boolean(searchQuery.trim());
+      if (activeQueryBar && activeQueryValue) {
+        activeQueryBar.classList.toggle('hidden', !hasQuery);
+        activeQueryValue.textContent = searchQuery.trim();
+      }
+
+      mobileCatBtns.forEach((b) => {
+        b.className = b.getAttribute('data-category') === currentCat ? CAT_MOBILE_ACTIVE : CAT_MOBILE_BASE;
+      });
+      desktopCatBtns.forEach((b) => {
+        b.className = b.getAttribute('data-category') === currentCat ? CAT_DESKTOP_ACTIVE : CAT_DESKTOP_BASE;
+      });
+      diffBtns.forEach((b) => {
+        b.className = b.getAttribute('data-diff') === currentDiff ? DIFF_ACTIVE : DIFF_BASE;
+      });
+      sortBtns.forEach((b) => {
+        b.className = b.getAttribute('data-sort') === currentSort ? SORT_ACTIVE : SORT_BASE;
+      });
+    }
+
+    async function updateView(options) {
+      const token = ++renderToken;
+      if (!window.TipCardRenderer) return;
+      let list;
+      try {
+        list = await ensureTips();
+      } catch (err) {
+        console.error('Failed to load tips:', err);
+        if (paginationSubtext) {
+          paginationSubtext.textContent = IS_VI
+            ? 'Không tải được danh sách. Vui lòng thử lại.'
+            : 'Could not load tips. Please try again.';
+        }
+        return;
+      }
+      if (token !== renderToken) return;
+
+      clientMode = true;
+      if (staticPagination) staticPagination.classList.add('hidden');
+
+      const filtered = list.filter(matches).sort(currentSort === 'newest' ? compareNewest : compareFeed);
+      lastTotal = filtered.length;
+
+      const totalPages = Math.max(1, Math.ceil(filtered.length / ITEMS_PER_PAGE));
+      if (currentPage > totalPages) currentPage = totalPages;
+      if (currentPage < 1) currentPage = 1;
+
+      syncUrl();
+
+      if (!filtered.length) {
+        if (stream) stream.replaceChildren();
+        if (emptyMsg) emptyMsg.classList.remove('hidden');
+        if (dynamicPagination) dynamicPagination.classList.add('hidden');
+        renderPagination(0);
+        return;
+      }
+
+      if (emptyMsg) emptyMsg.classList.add('hidden');
+      if (dynamicPagination) dynamicPagination.classList.remove('hidden');
+
+      const start = (currentPage - 1) * ITEMS_PER_PAGE;
+      const pageItems = filtered.slice(start, start + ITEMS_PER_PAGE);
+      const frag = document.createDocumentFragment();
+      pageItems.forEach((tip) => {
+        frag.appendChild(window.TipCardRenderer.create(tip, LANG, LABELS));
+      });
+      if (stream) stream.replaceChildren(frag);
+      if (window.TechTipsActions) window.TechTipsActions.updateCardsUI();
+
+      renderPagination(filtered.length);
+      if (options && options.scroll) window.scrollTo({ top: 280, behavior: 'smooth' });
+    }
+
+    function hasSelectOption(selectEl, value) {
+      return Boolean(selectEl && Array.from(selectEl.options).some((opt) => opt.value === value));
+    }
+
+    pagePrevBtn?.addEventListener('click', () => {
+      if (currentPage > 1) {
+        currentPage--;
+        updateView({ scroll: true });
+      }
+    });
+
+    pageNextBtn?.addEventListener('click', () => {
+      currentPage++;
+      updateView({ scroll: true });
+    });
+
+    mobileSearchInput?.addEventListener('input', (e) => {
+      searchQuery = e.target.value;
+      currentPage = 1;
+      syncFilterControls();
+      updateView();
+    });
+
+    clearQueryBtn?.addEventListener('click', () => {
+      searchQuery = '';
+      currentPage = 1;
+      if (mobileSearchInput) mobileSearchInput.value = '';
+      syncFilterControls();
+      updateView();
+    });
+
+    sourceFilter?.addEventListener('change', (e) => {
+      currentSource = e.target.value;
+      currentPage = 1;
+      syncFilterControls();
+      updateView();
+    });
+
+    typeFilter?.addEventListener('change', (e) => {
+      currentType = e.target.value;
+      currentPage = 1;
+      syncFilterControls();
+      updateView();
+    });
+
+    languageFilter?.addEventListener('change', (e) => {
+      currentLangFilter = e.target.value;
+      currentPage = 1;
+      syncFilterControls();
+      updateView();
+    });
+
+    mobileCatBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        currentCat = btn.getAttribute('data-category') || 'all';
+        currentPage = 1;
+        syncFilterControls();
+        updateView();
+      });
+    });
+
+    desktopCatBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        currentCat = btn.getAttribute('data-category') || 'all';
+        currentPage = 1;
+        syncFilterControls();
+        updateView();
+      });
+    });
+
+    diffBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        currentDiff = btn.getAttribute('data-diff') || 'all';
+        currentPage = 1;
+        syncFilterControls();
+        updateView();
+      });
+    });
+
+    sortBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        currentSort = btn.getAttribute('data-sort') || 'newest';
+        currentPage = 1;
+        syncFilterControls();
+        updateView();
+      });
+    });
+
+    resetBtn?.addEventListener('click', () => {
+      currentCat = 'all';
+      currentDiff = 'all';
+      currentLangFilter = 'all';
+      currentSource = 'all';
+      currentType = 'all';
+      currentSort = 'newest';
+      searchQuery = '';
+      currentPage = 1;
+
+      if (mobileSearchInput) mobileSearchInput.value = '';
+      syncFilterControls();
+      updateView();
+    });
+
+    window.addEventListener('resize', () => {
+      if (!clientMode) return;
+      renderPagination(lastTotal);
+    });
+
+    // Hydrate state from URL query parameters (?q=, ?cat=, ?diff=, ?source=, ?type=, ?lang=, ?sort=, ?page=)
+    const validCategories = new Set(
+      [...desktopCatBtns, ...mobileCatBtns]
+        .map((btn) => btn.getAttribute('data-category'))
+        .filter((id) => typeof id === 'string' && id.length > 0 && id !== 'all')
+    );
+
+    const params = new URLSearchParams(window.location.search);
+    const initQ = params.get('q');
+    const initCat = params.get('cat');
+    const initDiff = params.get('diff');
+    const initSource = params.get('source');
+    const initType = params.get('type');
+    const initLang = params.get('lang');
+    const initSort = params.get('sort');
+    const initPageRaw = params.get('page');
+    const initPage = parseInt(initPageRaw || '', 10);
+
+    let hasInitParams = false;
+    let hadInvalidParams = false;
+
+    if (initQ && initQ.trim()) {
+      searchQuery = initQ;
+      if (mobileSearchInput) mobileSearchInput.value = initQ;
+      hasInitParams = true;
+    } else if (params.has('q')) {
+      hadInvalidParams = true;
+    }
+
+    if (initCat !== null) {
+      if (validCategories.has(initCat)) {
+        currentCat = initCat;
+        hasInitParams = true;
+      } else {
+        hadInvalidParams = true;
+      }
+    }
+
+    if (initDiff !== null) {
+      if (['easy', 'medium', 'advanced'].includes(initDiff)) {
+        currentDiff = initDiff;
+        hasInitParams = true;
+      } else {
+        hadInvalidParams = true;
+      }
+    }
+
+    if (initSource !== null) {
+      if (initSource !== 'all' && hasSelectOption(sourceFilter, initSource)) {
+        currentSource = initSource;
+        hasInitParams = true;
+      } else {
+        hadInvalidParams = true;
+      }
+    }
+
+    if (initType !== null) {
+      if (initType !== 'all' && hasSelectOption(typeFilter, initType)) {
+        currentType = initType;
+        hasInitParams = true;
+      } else {
+        hadInvalidParams = true;
+      }
+    }
+
+    if (initLang !== null) {
+      if (initLang !== 'all' && hasSelectOption(languageFilter, initLang)) {
+        currentLangFilter = initLang;
+        hasInitParams = true;
+      } else {
+        hadInvalidParams = true;
+      }
+    }
+
+    if (initSort !== null) {
+      if (initSort === 'best') {
+        currentSort = 'best';
+        hasInitParams = true;
+      } else if (initSort === 'newest') {
+        currentSort = 'newest';
+        hadInvalidParams = true;
+      } else {
+        hadInvalidParams = true;
+      }
+    }
+
+    if (initPageRaw !== null) {
+      if (Number.isFinite(initPage) && initPage > 1) {
+        currentPage = initPage;
+        hasInitParams = true;
+      } else {
+        hadInvalidParams = true;
+      }
+    }
+
+    if (hasInitParams) {
+      syncFilterControls();
+      updateView();
+    } else if (hadInvalidParams) {
+      syncUrl();
+    }
+  })();
+</script>

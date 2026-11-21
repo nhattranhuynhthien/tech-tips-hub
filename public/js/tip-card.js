@@ -1,6 +1,6 @@
 // public/js/tip-card.js
-// Renderer dùng chung cho các thẻ tip được tạo phía client.
-// Giữ cấu trúc markup khớp với src/components/TipCard.astro.
+// Shared client-side TipCard renderer matching src/components/TipCard.astro
+// and deterministic Asia/Ho_Chi_Minh (vi) / UTC (en) date formatting in src/lib/dates.ts.
 
 (function () {
   function el(tag, className, text) {
@@ -15,25 +15,72 @@
     return value[lang] || value.en || Object.values(value)[0] || '';
   }
 
-  function formatDate(value) {
+  function safeExternalUrl(url) {
+    if (typeof url !== 'string') return '#';
+    const trimmed = url.trim();
+    if (!trimmed) return '#';
+    try {
+      const parsed = new URL(trimmed);
+      if (parsed.protocol === 'http:' || parsed.protocol === 'https:') {
+        return parsed.toString();
+      }
+    } catch {}
+    return '#';
+  }
+
+  function getDateParts(value, lang, options) {
+    if (!value) return null;
     const d = new Date(value);
-    if (isNaN(d.getTime())) return '';
-    return `${String(d.getDate()).padStart(2, '0')}/${String(d.getMonth() + 1).padStart(2, '0')}`;
+    if (Number.isNaN(d.getTime())) return null;
+    try {
+      const formatter = new Intl.DateTimeFormat(lang === 'vi' ? 'vi-VN' : 'en-US', {
+        timeZone: lang === 'vi' ? 'Asia/Ho_Chi_Minh' : 'UTC',
+        ...options,
+      });
+      const parts = {};
+      for (const part of formatter.formatToParts(d)) {
+        if (part.type !== 'literal') parts[part.type] = part.value;
+      }
+      if (parts.hour === '24') parts.hour = '00';
+      return parts;
+    } catch {
+      return null;
+    }
+  }
+
+  function formatDate(value, lang) {
+    const parts = getDateParts(value, lang, { day: '2-digit', month: '2-digit' });
+    if (!parts || !parts.day || !parts.month) return '';
+    return `${parts.day}/${parts.month}`;
   }
 
   function formatUpdated(value, lang) {
-    const d = new Date(value);
-    if (isNaN(d.getTime())) return '';
-    try {
-      return new Intl.DateTimeFormat(lang === 'vi' ? 'vi-VN' : 'en-US', {
-        day: '2-digit',
-        month: '2-digit',
-        hour: '2-digit',
-        minute: '2-digit',
-      }).format(d);
-    } catch {
-      return '';
-    }
+    const parts = getDateParts(value, lang, {
+      day: '2-digit',
+      month: '2-digit',
+      hour: '2-digit',
+      minute: '2-digit',
+      hourCycle: 'h23',
+    });
+    if (!parts || !parts.day || !parts.month || !parts.hour || !parts.minute) return '';
+    return `${parts.day}/${parts.month} ${parts.hour}:${parts.minute}`;
+  }
+
+  function createBookmarkIcon() {
+    const svgNS = 'http://www.w3.org/2000/svg';
+    const svg = document.createElementNS(svgNS, 'svg');
+    svg.setAttribute('class', 'bookmark-icon w-3.5 h-3.5');
+    svg.setAttribute('fill', 'none');
+    svg.setAttribute('stroke', 'currentColor');
+    svg.setAttribute('viewBox', '0 0 24 24');
+    svg.setAttribute('aria-hidden', 'true');
+    const path = document.createElementNS(svgNS, 'path');
+    path.setAttribute('d', 'M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z');
+    path.setAttribute('stroke-width', '2');
+    path.setAttribute('stroke-linecap', 'round');
+    path.setAttribute('stroke-linejoin', 'round');
+    svg.appendChild(path);
+    return svg;
   }
 
   function create(tip, lang, labels) {
@@ -73,15 +120,12 @@
     const body = el('div');
     const meta = el(
       'div',
-      'flex items-center gap-2 text-xs font-mono text-[var(--text-muted)] mb-2.5 flex-wrap'
+      'flex items-center gap-2 text-xs font-mono text-[var(--text-muted)] mb-2.5 flex-wrap tabular-nums'
     );
 
     const sourceId = source.id ? String(source.id).trim() : '';
     const favicon = el('img', 'w-4 h-4 rounded-sm shrink-0');
-    favicon.onerror = function () {
-      this.onerror = null;
-      this.src = '/favicons/default.svg';
-    };
+    favicon.setAttribute('data-fallback-src', '/favicons/default.svg');
     favicon.src = sourceId
       ? `/favicons/${encodeURIComponent(sourceId)}.png`
       : '/favicons/default.svg';
@@ -97,7 +141,7 @@
       meta.appendChild(
         el(
           'span',
-          'rounded border border-[var(--accent)]/30 px-1.5 py-0.5 text-[10px] text-[var(--accent)]',
+          'rounded border border-[var(--accent-border)] bg-[var(--accent-bg)] px-1.5 py-0.5 text-[10px] text-[var(--accent)]',
           `${labels.community} · ${communitySourceLabel}`
         )
       );
@@ -107,7 +151,7 @@
       meta.appendChild(
         el(
           'span',
-          'px-1.5 py-0.2 rounded text-[10px] font-mono font-bold border border-blue-500/30 bg-blue-500/10 text-blue-400',
+          'px-1.5 py-0.5 rounded text-[10px] font-mono font-bold border border-[var(--badge-info-border)] bg-[var(--badge-info-bg)] text-[var(--badge-info-text)]',
           labels.notTranslated
         )
       );
@@ -119,7 +163,7 @@
       );
     }
 
-    const dateText = formatDate(tip.published_at);
+    const dateText = formatDate(tip.published_at, lang);
     if (dateText) {
       meta.appendChild(el('span', '', '·'));
       meta.appendChild(el('span', '', dateText));
@@ -137,8 +181,8 @@
       'h3',
       'text-base sm:text-lg font-bold leading-snug mb-2 text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors'
     );
-    const titleLink = el('a', 'focus:outline-none', titleText);
-    titleLink.href = `/${lang}/tip/${slugOrId}`;
+    const titleLink = el('a', 'block focus:outline-none', titleText);
+    titleLink.href = `/${lang}/tip/${encodeURIComponent(slugOrId)}`;
     heading.appendChild(titleLink);
 
     const summary = el(
@@ -187,7 +231,7 @@
       badges.appendChild(
         el(
           'span',
-          'px-2 py-0.5 rounded text-[11px] border border-amber-500/20 bg-amber-500/10 text-amber-400',
+          'px-2 py-0.5 rounded text-[11px] border border-[var(--badge-hn-border)] bg-[var(--badge-hn-bg)] text-[var(--badge-hn-text)] tabular-nums',
           `HN: ${tip.hn_points}`
         )
       );
@@ -205,14 +249,13 @@
     bookmarkBtn.setAttribute('aria-pressed', 'false');
     bookmarkBtn.setAttribute('aria-label', saveTitle);
     bookmarkBtn.title = saveTitle;
-    bookmarkBtn.innerHTML =
-      '<svg class="bookmark-icon w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>';
+    bookmarkBtn.appendChild(createBookmarkIcon());
 
     const readOriginal = el(
       'a',
       'text-[var(--accent)] hover:underline font-semibold inline-flex items-center gap-1'
     );
-    readOriginal.href = tip.url || '#';
+    readOriginal.href = safeExternalUrl(tip.url);
     readOriginal.target = '_blank';
     readOriginal.rel = 'noopener noreferrer';
     readOriginal.setAttribute('aria-label', `${labels.readOriginal}: ${titleText}`);

@@ -21,22 +21,3 @@ export function generateSeoSlug(title: string, id: string): string {
   const shortHash = (id || '').slice(0, 6);
   return `${cleanTitle || 'tip'}-${shortHash}`;
 }
-
-export function matchTipBySlugOrId(param: string, tips: Array<{ id: string; slug?: string }>) {
-  if (!param) return undefined;
-  
-  // 1. Khớp chính xác slug hoặc ID đầy đủ
-  const exact = tips.find((t) => t.slug === param || t.id === param);
-  if (exact) return exact;
-
-  // 2. Khớp 6 ký tự hash ở cuối slug (ví dụ: ...-494dec)
-  const parts = param.split('-');
-  const possibleHash = parts[parts.length - 1];
-  if (possibleHash && possibleHash.length >= 6) {
-    const byHash = tips.find((t) => t.id.startsWith(possibleHash));
-    if (byHash) return byHash;
-  }
-
-  return undefined;
-}
-

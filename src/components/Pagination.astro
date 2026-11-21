@@ -2,16 +2,14 @@
 interface Props {
   currentPage: number;
   lastPage: number;
-  totalItems: number;
   pageSize?: number;
-  basePath: string; // e.g. "/vi" or "/en"
+  basePath: string;
   lang?: string;
 }
 
 const {
   currentPage,
   lastPage,
-  totalItems,
   pageSize = 20,
   basePath,
   lang = 'vi',
@@ -24,12 +22,13 @@ if (lastPage <= 1) {
 const isVi = lang === 'vi';
 const prevText = isVi ? 'Trước' : 'Prev';
 const nextText = isVi ? 'Sau' : 'Next';
-const pageOfText = isVi ? `trang ${currentPage} / ${lastPage} · ${pageSize} bài mỗi trang` : `page ${currentPage} / ${lastPage} · ${pageSize} items per page`;
+const pageOfText = isVi
+  ? `trang ${currentPage} / ${lastPage} · ${pageSize} bài mỗi trang`
+  : `page ${currentPage} / ${lastPage} · ${pageSize} items per page`;
 
 const prevUrl = currentPage > 1 ? (currentPage === 2 ? `${basePath}` : `${basePath}/page/${currentPage - 1}`) : null;
 const nextUrl = currentPage < lastPage ? `${basePath}/page/${currentPage + 1}` : null;
 
-// Thuật toán sinh danh sách số trang kèm dấu ...
 function getPageNumbers(current: number, total: number): (number | '...')[] {
   if (total <= 7) {
     return Array.from({ length: total }, (_, i) => i + 1);
@@ -54,14 +53,14 @@ function getPageNumbers(current: number, total: number): (number | '...')[] {
 const pageNumbers = getPageNumbers(currentPage, lastPage);
 ---
 
-<nav aria-label={isVi ? 'Phân trang' : 'Pagination'} class="mt-12 flex flex-col items-center gap-3">
+<nav aria-label={isVi ? 'Phân trang' : 'Pagination'} class="mt-12 flex flex-col items-center gap-3 tabular-nums">
   <!-- Desktop Pagination Links (Touch target >= 44x44px) -->
   <div class="hidden sm:flex items-center gap-2 font-mono text-xs">
     {prevUrl ? (
       <a
         href={prevUrl}
         rel="prev"
-        class="h-11 px-4 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all flex items-center gap-1.5 focus-visible:outline focus-visible:outline-3 focus-visible:outline-[var(--accent)]"
+        class="h-11 px-4 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all flex items-center gap-1.5"
       >
         <span>←</span>
         <span>{prevText}</span>
@@ -87,7 +86,7 @@ const pageNumbers = getPageNumbers(currentPage, lastPage);
             isCurrent
               ? 'bg-[var(--accent)] text-[var(--on-accent)] font-bold shadow-sm'
               : 'border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:border-[var(--accent)] hover:text-[var(--text-primary)]'
-          } focus-visible:outline focus-visible:outline-3 focus-visible:outline-[var(--accent)]`}
+          }`}
         >
           {p}
         </a>
@@ -98,7 +97,7 @@ const pageNumbers = getPageNumbers(currentPage, lastPage);
       <a
         href={nextUrl}
         rel="next"
-        class="h-11 px-4 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all flex items-center gap-1.5 focus-visible:outline focus-visible:outline-3 focus-visible:outline-[var(--accent)]"
+        class="h-11 px-4 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-primary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-all flex items-center gap-1.5"
       >
         <span>{nextText}</span>
         <span>→</span>
@@ -111,7 +110,7 @@ const pageNumbers = getPageNumbers(currentPage, lastPage);
     )}
   </div>
 
-  <!-- Mobile Compact Pagination: ← Trước | N / TỔNG | Sau → -->
+  <!-- Mobile Compact Pagination -->
   <div class="sm:hidden flex items-center justify-between w-full max-w-xs font-mono text-xs border border-[var(--border-color)] bg-[var(--bg-surface)] rounded-xl p-1 shadow-sm">
     {prevUrl ? (
       <a href={prevUrl} rel="prev" class="h-11 px-3.5 flex items-center rounded-lg text-[var(--text-primary)] hover:bg-[var(--bg-muted)] transition-colors">
@@ -138,9 +137,8 @@ const pageNumbers = getPageNumbers(currentPage, lastPage);
     )}
   </div>
 
-  <!-- Subtitle Line: trang N / TỔNG · 20 bài mỗi trang -->
+  <!-- Subtitle Line -->
   <div class="text-[11px] font-mono text-[var(--text-muted)]">
     {pageOfText}
   </div>
 </nav>
-

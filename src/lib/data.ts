@@ -22,6 +22,15 @@ export interface Source {
   description?: string;
 }
 
+export interface SourceHealth {
+  status: 'ok' | 'degraded' | 'paused';
+  failure_count: number;
+  last_success: string | null;
+  last_failure: string | null;
+  paused_until: string | null;
+  last_error: string | null;
+}
+
 export interface Tip {
   id: string;
   slug?: string;
@@ -75,6 +84,16 @@ export interface Category {
 let cachedTips: Tip[] | null = null;
 let cachedCategories: Category[] | null = null;
 let cachedSources: Source[] | null = null;
+let cachedHealth: Record<string, SourceHealth> | null = null;
+
+function tipTimestampMs(tip: Tip): number {
+  const ts = new Date(tip.published_at || tip.fetched_at || 0).getTime();
+  return Number.isFinite(ts) ? ts : 0;
+}
+
+function isViReady(tip: Tip): boolean {
+  return tip.original_lang === 'vi' || tip.translated?.vi === 'machine';
+}
 
 export function getAllTips(includeHidden = false): Tip[] {
   if (cachedTips) {
@@ -97,7 +116,6 @@ export function getAllTips(includeHidden = false): Tip[] {
         t.slug = generateSeoSlug(title, t.id);
       }
     }
-    // Danh sách đã được xếp thứ tự đa dạng (diversify) từ pipeline
     cachedTips = list;
     return includeHidden ? cachedTips : cachedTips.filter((t) => !t.hidden);
   } catch (err) {
@@ -106,41 +124,12 @@ export function getAllTips(includeHidden = false): Tip[] {
   }
 }
 
-/**
- * Thứ tự chuẩn của danh sách tip trên trang chủ và các trang phân trang.
- * Khớp với bộ sắp xếp mặc định "Hay nhất" phía client (score giảm dần).
- */
-export function sortTipsForFeed(tips: Tip[]): Tip[] {
-  return [...tips].sort((a, b) => {
-    const scoreDiff = (b.score ?? 0) - (a.score ?? 0);
-    if (scoreDiff !== 0) return scoreDiff;
-    const aTime = new Date(a.published_at || a.fetched_at || 0).getTime();
-    const bTime = new Date(b.published_at || b.fetched_at || 0).getTime();
-    const timeDiff = (isNaN(bTime) ? 0 : bTime) - (isNaN(aTime) ? 0 : aTime);
-    if (timeDiff !== 0) return timeDiff;
-    const aId = String(a.id);
-    const bId = String(b.id);
-    return aId < bId ? -1 : aId > bId ? 1 : 0;
-  });
-}
-
 export function sortTipsNewestFirst(tips: Tip[]): Tip[] {
   return [...tips].sort((a, b) => {
-    const aTime = new Date(a.published_at || a.fetched_at || 0).getTime();
-    const bTime = new Date(b.published_at || b.fetched_at || 0).getTime();
-    const timeDiff = (isNaN(bTime) ? 0 : bTime) - (isNaN(aTime) ? 0 : aTime);
+    const timeDiff = tipTimestampMs(b) - tipTimestampMs(a);
     if (timeDiff !== 0) return timeDiff;
     return String(a.id).localeCompare(String(b.id));
   });
-}
-
-export function getTipById(idOrSlug: string): Tip | undefined {
-  const tips = getAllTips(true);
-  if (!idOrSlug) return undefined;
-  return (
-    tips.find((t) => t.id === idOrSlug || t.slug === idOrSlug) ||
-    tips.find((t) => idOrSlug.endsWith(t.id.slice(0, 6)) || t.id.startsWith(idOrSlug))
-  );
 }
 
 export function getAllCategories(): Category[] {
@@ -173,84 +162,129 @@ export function getAllSources(): Source[] {
   }
 }
 
-export function getTrickOfTheDay(lang: 'vi' | 'en' = 'vi'): Tip | null {
-  const tips = getAllTips(false);
-  if (tips.length === 0) return null;
+export function getSourceHealth(): Record<string, SourceHealth> {
+  if (cachedHealth) return cachedHealth;
+  const healthPath = path.resolve('./data/health.json');
+  if (!fs.existsSync(healthPath)) {
+    cachedHealth = {};
+    return cachedHealth;
+  }
+  try {
+    const raw = fs.readFileSync(healthPath, 'utf-8');
+    const parsed = JSON.parse(raw) as { sources?: Record<string, Partial<SourceHealth>> };
+    const rawSources = parsed && typeof parsed === 'object' && parsed.sources && typeof parsed.sources === 'object'
+      ? parsed.sources
+      : {};
+    const validStatuses = new Set<SourceHealth['status']>(['ok', 'degraded', 'paused']);
+    const result: Record<string, SourceHealth> = {};
+    for (const [id, entry] of Object.entries(rawSources)) {
+      if (!entry || typeof entry !== 'object') continue;
+      const status: SourceHealth['status'] =
+        entry.status && validStatuses.has(entry.status) ? entry.status : 'ok';
+      result[id] = {
+        status,
+        failure_count: typeof entry.failure_count === 'number' && Number.isFinite(entry.failure_count)
+          ? entry.failure_count
+          : 0,
+        last_success: typeof entry.last_success === 'string' ? entry.last_success : null,
+        last_failure: typeof entry.last_failure === 'string' ? entry.last_failure : null,
+        paused_until: typeof entry.paused_until === 'string' ? entry.paused_until : null,
+        last_error: typeof entry.last_error === 'string' ? entry.last_error : null,
+      };
+    }
+    cachedHealth = result;
+    return cachedHealth;
+  } catch {
+    cachedHealth = {};
+    return cachedHealth;
+  }
+}
 
-  const now = new Date();
-  const maxAgeMs = 72 * 60 * 60 * 1000; // Trong vòng 72 giờ theo đặc tả
-
-  // Đọc danh sách đã nổi bật trong 14 ngày từ data/history_featured.json
+function loadRecentFeaturedIds(now: Date): Set<string> {
   const featuredHistoryIds = new Set<string>();
   try {
     const historyPath = path.resolve('./data/history_featured.json');
-    if (fs.existsSync(historyPath)) {
-      const historyData = JSON.parse(fs.readFileSync(historyPath, 'utf-8'));
-      if (Array.isArray(historyData)) {
-        const fourteenDaysAgo = now.getTime() - 14 * 24 * 60 * 60 * 1000;
-        const todayUtc = now.toISOString().slice(0, 10);
-        for (const entry of historyData) {
-          const entryDate = entry.date || (entry.featured_at ? String(entry.featured_at).slice(0, 10) : '');
-          // Mục đã chọn trong hôm nay vẫn phải hiển thị, nếu không sẽ bị lệch sang bài kế tiếp
-          if (entryDate === todayUtc) continue;
-          const entryTime = new Date(entry.featured_at || entry.date).getTime();
-          if (!isNaN(entryTime) && entryTime >= fourteenDaysAgo) {
-            featuredHistoryIds.add(entry.id);
-          }
-        }
-      }
-    }
-  } catch {}
+    if (!fs.existsSync(historyPath)) return featuredHistoryIds;
+    const historyData = JSON.parse(fs.readFileSync(historyPath, 'utf-8'));
+    if (!Array.isArray(historyData)) return featuredHistoryIds;
 
-  // Chỉ chọn từ bài viết là thủ thuật thật (howto == true), trong 72 giờ, và chưa nổi bật trong 14 ngày
-  const candidates = tips.filter((t) => {
-    if (!t.howto) return false;
-    if (featuredHistoryIds.has(t.id)) return false;
-    if (lang === 'vi') {
-      const hasVi = t.original_lang === 'vi' || t.translated?.vi === 'machine';
-      if (!hasVi) return false;
-    }
-    try {
-      const pubDate = new Date(t.published_at);
-      const ageMs = now.getTime() - pubDate.getTime();
-      if (!isNaN(pubDate.getTime()) && ageMs >= 0 && ageMs <= maxAgeMs) {
-        return true;
+    const fourteenDaysAgo = now.getTime() - 14 * 24 * 60 * 60 * 1000;
+    const todayUtc = now.toISOString().slice(0, 10);
+    for (const entry of historyData) {
+      const entryDate = entry.date || (entry.featured_at ? String(entry.featured_at).slice(0, 10) : '');
+      if (entryDate === todayUtc) continue;
+      const entryTime = new Date(entry.featured_at || entry.date).getTime();
+      if (!Number.isNaN(entryTime) && entryTime >= fourteenDaysAgo && typeof entry.id === 'string') {
+        featuredHistoryIds.add(entry.id);
       }
-    } catch {}
-    return false;
+    }
+  } catch {
+    return featuredHistoryIds;
+  }
+  return featuredHistoryIds;
+}
+
+function compareFeaturedCandidates(a: Tip, b: Tip, lang: 'vi' | 'en'): number {
+  if (lang === 'vi') {
+    const aVi = isViReady(a) ? 1 : 0;
+    const bVi = isViReady(b) ? 1 : 0;
+    if (bVi !== aVi) return bVi - aVi;
+  }
+  const aTips = a.source?.kind === 'tips' ? 1 : 0;
+  const bTips = b.source?.kind === 'tips' ? 1 : 0;
+  if (bTips !== aTips) return bTips - aTips;
+  const scoreDiff = (b.score ?? 0) - (a.score ?? 0);
+  if (scoreDiff !== 0) return scoreDiff;
+  return tipTimestampMs(b) - tipTimestampMs(a);
+}
+
+export function getTrickOfTheDay(lang: 'vi' | 'en' = 'vi'): Tip | null {
+  const tips = getAllTips(false).filter((t) => Boolean(t.howto));
+  if (tips.length === 0) return null;
+
+  const now = new Date();
+  const maxAgeMs = 72 * 60 * 60 * 1000;
+  const featuredHistoryIds = loadRecentFeaturedIds(now);
+
+  // 1. Primary pool: howto items within 72h not featured in past 14 days (preferring VI-ready on vi)
+  const freshUnfeatured = tips.filter((t) => {
+    if (featuredHistoryIds.has(t.id)) return false;
+    const pubMs = new Date(t.published_at).getTime();
+    const ageMs = now.getTime() - pubMs;
+    return Number.isFinite(pubMs) && ageMs >= 0 && ageMs <= maxAgeMs;
   });
 
-  if (candidates.length > 0) {
-    // Sắp xếp ưu tiên nguồn chuyên tips và điểm score cao
-    candidates.sort((a, b) => {
-      const aTips = a.source?.kind === 'tips' ? 1 : 0;
-      const bTips = b.source?.kind === 'tips' ? 1 : 0;
-      if (bTips !== aTips) return bTips - aTips;
-      return b.score - a.score;
-    });
-    return candidates[0];
+  if (freshUnfeatured.length > 0) {
+    const preferred = lang === 'vi' ? freshUnfeatured.filter(isViReady) : freshUnfeatured;
+    const pool = preferred.length > 0 ? preferred : freshUnfeatured;
+    return [...pool].sort((a, b) => compareFeaturedCandidates(a, b, lang))[0];
   }
 
-  // Không có bài đủ điều kiện trong 72 giờ thì ẩn khối này
-  return null;
+  // 2. Graceful fallback: highest-scoring unfeatured howto item so Hero never disappears when feed is quiet
+  const unfeaturedAll = tips.filter((t) => !featuredHistoryIds.has(t.id));
+  const fallbackPool = unfeaturedAll.length > 0 ? unfeaturedAll : tips;
+  return [...fallbackPool].sort((a, b) => compareFeaturedCandidates(a, b, lang))[0] || null;
 }
 
 export function getNewsOfTheDay(): Tip | null {
+  const allNews = getAllTips(false).filter((tip) => tip.source?.kind === 'news');
+  if (allNews.length === 0) return null;
+
   const now = Date.now();
   const dayMs = 24 * 60 * 60 * 1000;
-  const recentNews = getAllTips().filter((tip) => {
-    if (tip.source?.kind !== 'news') return false;
-    const publishedAt = new Date(tip.published_at || tip.fetched_at || 0).getTime();
-    return Number.isFinite(publishedAt) && publishedAt <= now && now - publishedAt <= dayMs;
+  const recentNews = allNews.filter((tip) => {
+    const publishedAt = tipTimestampMs(tip);
+    return publishedAt > 0 && publishedAt <= now && now - publishedAt <= dayMs;
   });
-  return recentNews.sort((a, b) => (b.score ?? 0) - (a.score ?? 0) || (Date.parse(b.published_at) || 0) - (Date.parse(a.published_at) || 0))[0] || null;
-}
 
-export function getCategoriesWithCounts(): Array<Category & { count: number }> {
-  const categories = getAllCategories();
-  const tips = getAllTips();
-  return categories.map((cat) => {
-    const count = tips.filter((t) => t.categories.includes(cat.id)).length;
-    return { ...cat, count };
-  });
+  if (recentNews.length > 0) {
+    return [...recentNews].sort(
+      (a, b) => (b.score ?? 0) - (a.score ?? 0) || tipTimestampMs(b) - tipTimestampMs(a),
+    )[0];
+  }
+
+  // Graceful fallback: newest / highest-scoring news article so News Hero never disappears
+  return [...allNews].sort(
+    (a, b) => tipTimestampMs(b) - tipTimestampMs(a) || (b.score ?? 0) - (a.score ?? 0),
+  )[0];
 }

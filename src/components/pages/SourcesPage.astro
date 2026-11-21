@@ -1,0 +1,287 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getAllSources, getAllTips, getSourceHealth, type Source } from '../../lib/data';
+import type { Locale } from '../../lib/i18n';
+import { safeExternalUrl } from '../../lib/url';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const isVi = lang === 'vi';
+const sources = getAllSources();
+const tips = getAllTips();
+const healthMap = getSourceHealth();
+
+const sourceCounts: Record<string, number> = {};
+for (const tip of tips) {
+  const srcId = tip.source.id;
+  sourceCounts[srcId] = (sourceCounts[srcId] || 0) + 1;
+}
+
+function resolveExternalHomepage(src: Source): string {
+  const siteSafe = safeExternalUrl(src.site_url);
+  if (siteSafe !== '#') return siteSafe;
+  const feedSafe = safeExternalUrl(src.url);
+  if (feedSafe !== '#') {
+    try {
+      return new URL(feedSafe).origin;
+    } catch {
+      return '#';
+    }
+  }
+  return '#';
+}
+
+function getHealthBadge(srcId: string) {
+  const record = healthMap[srcId];
+  const status = record?.status;
+  if (status === 'paused') {
+    return {
+      dotClass: 'bg-[var(--badge-adv-text)]',
+      label: isVi ? 'tạm dừng' : 'paused',
+      textClass: 'text-[var(--badge-adv-text)]',
+    };
+  }
+  if (status === 'degraded') {
+    return {
+      dotClass: 'bg-[var(--badge-med-text)]',
+      label: isVi ? 'chập chờn' : 'degraded',
+      textClass: 'text-[var(--badge-med-text)]',
+    };
+  }
+  if (status === 'ok') {
+    return {
+      dotClass: 'bg-[var(--badge-easy-text)]',
+      label: isVi ? 'ổn định' : 'ok',
+      textClass: 'text-[var(--badge-easy-text)]',
+    };
+  }
+  return {
+    dotClass: 'bg-[var(--badge-easy-text)] opacity-75',
+    label: isVi ? 'đang theo dõi' : 'active',
+    textClass: 'text-[var(--text-muted)]',
+  };
+}
+---
+
+<Layout
+  lang={lang}
+  title={isVi ? 'Nguồn tin' : 'Sources'}
+  description={isVi
+    ? 'Danh sách nguồn cấp dữ liệu thủ thuật được theo dõi trên Tech Tips Hub.'
+    : 'Trusted publications and RSS feeds aggregated on Tech Tips Hub.'}
+  canonicalPath={`/${lang}/sources`}
+>
+  <div class="max-w-5xl mx-auto">
+    <!-- Header with Command Prompt -->
+    <header class="mb-8">
+      <div class="text-xs font-mono font-bold text-[var(--accent)] mb-2">
+        {isVi ? '$ ls nguồn-tin/' : '$ ls sources/'}
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-3">
+        {isVi ? 'Nguồn tin' : 'Sources'}
+      </h1>
+      <p class="text-sm text-[var(--text-secondary)] leading-relaxed max-w-2xl font-mono">
+        {isVi
+          ? 'Mọi bài trên Tech Tips Hub đều dẫn về nguồn gốc. Nguồn "Thủ thuật" nhận hầu hết bài; nguồn "Tin tức" chỉ nhận bài qua bộ lọc hướng dẫn.'
+          : 'Every entry on Tech Tips Hub links directly to its original author. "Tips" sources focus on practical guides; "News" sources track verified technology updates.'}
+      </p>
+
+      <!-- Filter Pills -->
+      <div class="flex items-center gap-2 overflow-x-auto pt-6 pb-2 scrollbar-none" id="source-filter-group">
+        <button
+          type="button"
+          class="src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-bold bg-[var(--accent-hero)] text-[#15110A] shadow-sm transition-all"
+          data-filter="all"
+        >
+          {isVi ? 'Tất cả' : 'All'}
+        </button>
+        <button
+          type="button"
+          class="src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          data-filter="tips"
+        >
+          {isVi ? 'Thủ thuật' : 'Tips'}
+        </button>
+        <button
+          type="button"
+          class="src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          data-filter="news"
+        >
+          {isVi ? 'Tin tức' : 'News'}
+        </button>
+        <button
+          type="button"
+          class="src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          data-filter="vi"
+        >
+          Tiếng Việt
+        </button>
+        <button
+          type="button"
+          class="src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          data-filter="en"
+        >
+          English
+        </button>
+        <button
+          type="button"
+          class="src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          data-filter="zh-CN"
+        >
+          {isVi ? 'Tiếng Trung' : 'Chinese'}
+        </button>
+      </div>
+    </header>
+
+    <!-- Sources Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-5 mb-12" id="sources-grid">
+      {sources.map((src) => {
+        const faviconSrc = `/favicons/${encodeURIComponent(src.id)}.png`;
+        const kindLabel = src.kind === 'tips' ? (isVi ? 'Thủ thuật' : 'Tips') : (isVi ? 'Tin tức' : 'News');
+        const langLabel = src.lang === 'vi'
+          ? 'Tiếng Việt'
+          : src.lang?.startsWith('zh')
+            ? (isVi ? 'Tiếng Trung' : 'Chinese')
+            : 'English';
+        const count = sourceCounts[src.id] || 0;
+        const internalFilterHref =
+          src.kind === 'news'
+            ? `/${lang}/news?source=${encodeURIComponent(src.id)}`
+            : `/${lang}?source=${encodeURIComponent(src.id)}`;
+        const externalHref = resolveExternalHomepage(src);
+        const health = getHealthBadge(src.id);
+
+        return (
+          <article
+            class="source-card bg-[var(--bg-surface)] border border-[var(--border-color)] hover:border-[var(--border-strong)] rounded-xl p-5 flex flex-col justify-between transition-all"
+            data-kind={src.kind || 'news'}
+            data-lang={src.lang || 'en'}
+          >
+            <div>
+              <!-- Top Row: Favicon, Name, Health Indicator -->
+              <div class="flex items-start justify-between gap-2 mb-3">
+                <div class="flex items-center gap-3 min-w-0">
+                  <div class="w-8 h-8 rounded-lg bg-[var(--bg-muted)] border border-[var(--border-color)] flex items-center justify-center shrink-0 overflow-hidden">
+                    <img
+                      src={faviconSrc}
+                      data-fallback-src="/favicons/default.svg"
+                      alt=""
+                      width="20"
+                      height="20"
+                      loading="lazy"
+                      class="w-5 h-5 rounded-sm object-contain"
+                    />
+                  </div>
+                  <h2 class="font-bold text-base text-[var(--text-primary)] leading-tight truncate">
+                    {src.name}
+                  </h2>
+                </div>
+
+                <span
+                  class={`inline-flex items-center gap-1.5 shrink-0 text-[10px] font-mono ${health.textClass}`}
+                  title={isVi ? `Trạng thái nguồn: ${health.label}` : `Feed status: ${health.label}`}
+                >
+                  <span class={`w-1.5 h-1.5 rounded-full ${health.dotClass}`} aria-hidden="true"></span>
+                  <span>{health.label}</span>
+                </span>
+              </div>
+
+              <!-- Badges Row -->
+              <div class="flex items-center gap-1.5 mb-3 text-[11px] font-mono">
+                <span class="px-2 py-0.5 rounded border border-[var(--border-color)] bg-[var(--bg-muted)] text-[var(--text-secondary)]">
+                  {kindLabel}
+                </span>
+                <span class="px-2 py-0.5 rounded border border-[var(--border-color)] bg-[var(--bg-muted)] text-[var(--text-muted)]">
+                  {langLabel}
+                </span>
+              </div>
+
+              <!-- Description -->
+              <p class="text-xs text-[var(--text-secondary)] leading-relaxed mb-4">
+                {src.description ||
+                  (isVi
+                    ? 'Chuyên trang chia sẻ thủ thuật và kiến thức công nghệ uy tín.'
+                    : 'Trusted publication for practical technology tutorials and updates.')}
+              </p>
+            </div>
+
+            <!-- Dual Action Footer: Internal tips.hub Filter + External Homepage -->
+            <div class="pt-3 border-t border-[var(--border-subtle)] flex items-center justify-between gap-3 text-xs font-mono tabular-nums">
+              <a
+                href={internalFilterHref}
+                class="text-[var(--accent)] hover:underline font-semibold inline-flex items-center gap-1"
+              >
+                <span>{isVi ? `Xem bài (${count})` : `View articles (${count})`}</span>
+              </a>
+
+              <a
+                href={externalHref}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text-[var(--text-muted)] hover:text-[var(--text-primary)] transition-colors inline-flex items-center gap-1 shrink-0"
+                aria-label={`${isVi ? 'Trang gốc' : 'Source site'}: ${src.name}`}
+              >
+                <span>{isVi ? 'Trang gốc' : 'Source site'}</span>
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+          </article>
+        );
+      })}
+    </div>
+
+    <!-- Bottom Callout Box -->
+    <div class="rounded-2xl border border-[var(--accent-border)] bg-[var(--bg-surface)] p-6 sm:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 shadow-sm">
+      <div class="space-y-1">
+        <h2 class="font-bold text-lg text-[var(--text-primary)]">
+          {isVi ? 'Biết một nguồn hay?' : 'Know a great tech source?'}
+        </h2>
+        <p class="text-xs sm:text-sm text-[var(--text-secondary)] font-mono leading-relaxed max-w-xl">
+          {isVi
+            ? 'Gửi đề xuất qua GitHub, chúng mình sẽ kiểm tra điều khoản RSS trước khi thêm.'
+            : 'Suggest it on GitHub and we will verify its RSS terms before adding it to the directory.'}
+        </p>
+      </div>
+
+      <a
+        href="https://github.com/nhattranhuynhthien/tech-tips-hub/issues/new?title=Suggest+Source"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="shrink-0 px-5 py-2.5 rounded-xl bg-[var(--accent-hero)] text-[#15110A] hover:opacity-90 transition-opacity font-mono font-bold text-xs inline-flex items-center gap-1.5 shadow-sm"
+      >
+        <span>{isVi ? 'Đề xuất nguồn mới ↗' : 'Suggest a source ↗'}</span>
+      </a>
+    </div>
+  </div>
+</Layout>
+
+<script is:inline>
+  (function () {
+    const filterBtns = document.querySelectorAll('.src-filter-btn');
+    const cards = document.querySelectorAll('.source-card');
+
+    filterBtns.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach((b) => {
+          b.className = 'src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-medium border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all';
+        });
+        btn.className = 'src-filter-btn shrink-0 px-3.5 py-1.5 rounded-xl text-xs font-mono font-bold bg-[var(--accent-hero)] text-[#15110A] shadow-sm transition-all';
+
+        const filter = btn.getAttribute('data-filter');
+        cards.forEach((card) => {
+          const k = card.getAttribute('data-kind');
+          const l = card.getAttribute('data-lang');
+
+          if (filter === 'all' || filter === k || filter === l) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        });
+      });
+    });
+  })();
+</script>

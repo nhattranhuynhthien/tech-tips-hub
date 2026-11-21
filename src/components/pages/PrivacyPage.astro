@@ -1,0 +1,84 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import type { Locale } from '../../lib/i18n';
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const isVi = lang === 'vi';
+---
+
+<Layout
+  lang={lang}
+  title={isVi ? 'Chính sách Quyền riêng tư' : 'Privacy Policy'}
+  description={isVi
+    ? 'Cam kết không theo dõi, không quảng cáo, tôn trọng 100% dữ liệu người dùng trên tips.hub.'
+    : 'Our privacy commitment: zero trackers, zero third-party cookies, and zero user profiling on tips.hub.'}
+  canonicalPath={`/${lang}/privacy`}
+>
+  <article class="max-w-4xl mx-auto space-y-8">
+    <header class="pb-6 border-b border-[var(--border-color)]">
+      <div class="text-xs font-mono font-bold text-[var(--accent)] mb-2">
+        $ security --privacy-statement
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-3">
+        {isVi ? 'Chính sách Quyền riêng tư' : 'Privacy Policy'}
+      </h1>
+      <p class="text-sm text-[var(--text-secondary)] leading-relaxed font-mono">
+        {isVi
+          ? 'tips.hub được xây dựng trên nguyên tắc tôn trọng quyền riêng tư tuyệt đối: 0 tracker, 0 cookies theo dõi, 0 quảng cáo.'
+          : 'tips.hub is built with a privacy-first philosophy: zero trackers, zero tracking cookies, zero ads.'}
+      </p>
+    </header>
+
+    <div class="space-y-6 text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed font-sans">
+      <section class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 space-y-3">
+        <h2 class="text-base font-bold text-[var(--text-primary)] font-mono">
+          {isVi ? '# 1. Không thu thập thông tin định danh' : '# 1. No Personal Data Collection'}
+        </h2>
+        <p>
+          {isVi
+            ? 'Chúng tôi không yêu cầu đăng ký tài khoản, không yêu cầu địa chỉ email và không theo dõi hành vi cá nhân của bạn trên website.'
+            : 'We require no account registration, no email submissions, and we perform no behavioral profiling on our readers.'}
+        </p>
+      </section>
+
+      <section class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 space-y-3">
+        <h2 class="text-base font-bold text-[var(--text-primary)] font-mono">
+          {isVi ? '# 2. Dữ liệu "Đã lưu" hoàn toàn cục bộ (Local Storage)' : '# 2. Bookmarks are 100% Client-Side'}
+        </h2>
+        <p>
+          {isVi ? (
+            <>Khi bạn bấm nút lưu thủ thuật xem sau, danh sách này chỉ được lưu trữ trên trình duyệt của chính bạn thông qua <code>localStorage</code>. Dữ liệu này không bao giờ được gửi về máy chủ.</>
+          ) : (
+            <>Your saved tips are stored exclusively in your browser's private <code>localStorage</code>. No reading lists are ever transmitted to any remote database.</>
+          )}
+        </p>
+      </section>
+
+      <section class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 space-y-3">
+        <h2 class="text-base font-bold text-[var(--text-primary)] font-mono">
+          {isVi ? '# 3. Phân tích truy cập ẩn danh (Privacy-friendly Analytics)' : '# 3. Privacy-Friendly CDN Metrics'}
+        </h2>
+        <p>
+          {isVi
+            ? 'Website chỉ sử dụng phân tích ẩn danh của Vercel ở tầng CDN để thống kê số lượt truy cập tổng quan, không thu thập IP cá nhân và không dùng cookie cross-site.'
+            : 'We rely only on standard edge aggregated request counters provided by Vercel with zero cross-site cookie tracking.'}
+        </p>
+      </section>
+
+      <section class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 space-y-3">
+        <h2 class="text-base font-bold text-[var(--text-primary)] font-mono">
+          {isVi ? '# 4. Gửi bài qua Telegram' : '# 4. Telegram Submissions'}
+        </h2>
+        <p>
+          {isVi
+            ? 'Khi bạn gửi bài qua bot Telegram, hàng chờ GitHub lưu Telegram numeric ID cùng link và ghi chú để giới hạn spam, tra trạng thái và duyệt bài. Quản trị viên repo có thể xem nội dung Issue; khả năng hiển thị tuân theo chế độ công khai/riêng tư của repo. ID này không được đưa vào dữ liệu bài đã duyệt trên website; username và số điện thoại không được lưu.'
+            : 'When you submit through the Telegram bot, the GitHub queue stores your numeric Telegram ID with the link and note for spam limits, status checks, and moderation. Repository maintainers can view the Issue; its visibility follows the repository\'s public or private settings. The ID is removed from approved website records. Usernames and phone numbers are not stored.'}
+        </p>
+      </section>
+    </div>
+  </article>
+</Layout>

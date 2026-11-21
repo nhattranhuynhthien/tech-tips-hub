@@ -1,20 +1,18 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
-import TipCard from '../../../components/TipCard.astro';
-import { getAllTips, getAllCategories, sortTipsNewestFirst, type Category, type Tip } from '../../../lib/data';
-import { getTranslations } from '../../../lib/i18n';
+import CategoryPage from '../../../components/pages/CategoryPage.astro';
+import { getAllCategories, getAllTips, sortTipsNewestFirst, type Category, type Tip } from '../../../lib/data';
 
 export async function getStaticPaths() {
   const categories = getAllCategories();
   const tips = sortTipsNewestFirst(getAllTips().filter((t) => t.source.kind !== 'news'));
 
-  return categories.map((cat) => {
-    const catTips = tips.filter((t) => t.categories.includes(cat.id));
-    return {
-      params: { category: cat.id },
-      props: { category: cat, tips: catTips },
-    };
-  });
+  return categories.map((cat) => ({
+    params: { category: cat.id },
+    props: {
+      category: cat,
+      tips: tips.filter((t) => t.categories.includes(cat.id)),
+    },
+  }));
 }
 
 interface Props {
@@ -23,67 +21,6 @@ interface Props {
 }
 
 const { category, tips } = Astro.props;
-const lang = 'en';
-const t = getTranslations(lang);
-const allCategories = getAllCategories();
 ---
 
-<Layout lang={lang} title={`${category.name.en} Tips`} description={category.description.en}>
-  <div class="max-w-4xl mx-auto">
-    <!-- Breadcrumb -->
-    <nav class="mb-6 flex items-center gap-2 text-xs font-mono text-[var(--text-muted)]" aria-label="Breadcrumb">
-      <a href={`/${lang}`} class="hover:text-[var(--text-primary)] transition-colors flex items-center gap-1">
-        <span>←</span>
-        <span>tips</span>
-      </a>
-      <span>/</span>
-      <span class="text-[var(--text-secondary)] lowercase">{category.id}</span>
-      <span>/</span>
-    </nav>
-
-    <!-- Category Header -->
-    <header class="mb-8 pb-6 border-b border-[var(--border-color)]">
-      <div class="text-xs font-mono font-bold text-[var(--accent)] mb-2">
-        $ filter --category={category.id}
-      </div>
-      <h1 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-2">
-        {category.name.en} Tips
-      </h1>
-      <p class="text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed font-mono">
-        {category.description.en}
-      </p>
-      <div class="mt-3 text-xs font-mono text-[var(--text-muted)]">
-        {tips.length} curated articles in this category
-      </div>
-    </header>
-
-    <!-- Other Categories Quick Filter Pills -->
-    <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none font-mono text-xs">
-      <a
-        href={`/${lang}`}
-        class="shrink-0 px-3 py-1.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
-      >
-        ← All
-      </a>
-      {allCategories.map((c) => (
-        <a
-          href={`/${lang}/category/${c.id}`}
-          class={`shrink-0 px-3 py-1.5 rounded-xl border transition-colors ${
-            c.id === category.id
-              ? 'border-transparent bg-[var(--accent-hero)] text-black font-bold shadow-sm'
-              : 'border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
-          }`}
-        >
-          #{c.id}
-        </a>
-      ))}
-    </div>
-
-    <!-- Tips Stream List -->
-    <div class="space-y-4">
-      {tips.map((tip) => (
-        <TipCard tip={tip} lang={lang} />
-      ))}
-    </div>
-  </div>
-</Layout>
+<CategoryPage lang="en" category={category} tips={tips} />

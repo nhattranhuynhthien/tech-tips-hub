@@ -15,9 +15,12 @@ export async function GET(context?: { url?: URL }) {
 
   const itemsXml = tips
     .map((tip) => {
-      const title = tip.title.vi || tip.title.en || '';
-      const desc = tip.summary.vi || tip.summary.en || '';
-      const pubDate = new Date(tip.published_at || tip.fetched_at).toUTCString();
+      const title = tip.title.vi || tip.title.en || Object.values(tip.title)[0] || '';
+      const desc = tip.summary.vi || tip.summary.en || Object.values(tip.summary)[0] || '';
+      const parsedDate = new Date(tip.published_at || tip.fetched_at || '');
+      const pubDateTag = Number.isNaN(parsedDate.getTime())
+        ? ''
+        : `\n      <pubDate>${escapeXml(parsedDate.toUTCString())}</pubDate>`;
       const link = `${SITE_URL}/vi/tip/${tip.slug || tip.id}`;
 
       return `
@@ -25,8 +28,7 @@ export async function GET(context?: { url?: URL }) {
       <title>${xmlCdata(title)}</title>
       <link>${escapeXml(link)}</link>
       <guid isPermaLink="true">${escapeXml(link)}</guid>
-      <description>${xmlCdata(desc)}</description>
-      <pubDate>${escapeXml(pubDate)}</pubDate>
+      <description>${xmlCdata(desc)}</description>${pubDateTag}
       <source url="${escapeXml(tip.url)}">${escapeXml(tip.source.name)}</source>
       ${tip.categories.map((c) => `<category>${escapeXml(c)}</category>`).join('\n      ')}
     </item>`;

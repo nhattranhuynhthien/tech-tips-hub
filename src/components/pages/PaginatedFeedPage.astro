@@ -1,0 +1,185 @@
+---
+import type { Page } from 'astro';
+import Layout from '../../layouts/Layout.astro';
+import TipCard from '../TipCard.astro';
+import Pagination from '../Pagination.astro';
+import type { Tip } from '../../lib/data';
+import { getTranslations, type Locale } from '../../lib/i18n';
+
+interface Props {
+  lang: Locale;
+  page: Page<Tip>;
+}
+
+const { lang, page } = Astro.props;
+const isVi = lang === 'vi';
+const t = getTranslations(lang);
+
+const sidebarCategories = isVi
+  ? [
+      { id: 'all', label: '# tất cả', short: 'tất cả' },
+      { id: 'windows', label: '# windows', short: 'windows' },
+      { id: 'macos', label: '# macos', short: 'macos' },
+      { id: 'linux', label: '# linux', short: 'linux' },
+      { id: 'android', label: '# android', short: 'android' },
+      { id: 'ios', label: '# ios', short: 'ios' },
+      { id: 'security', label: '# bảo mật', short: 'bảo mật' },
+      { id: 'dev', label: '# lập trình', short: 'lập trình' },
+      { id: 'hardware', label: '# phần cứng', short: 'phần cứng' },
+      { id: 'browser', label: '# trình duyệt', short: 'trình duyệt' },
+      { id: 'office', label: '# văn phòng', short: 'văn phòng' },
+      { id: 'ai', label: '# ai', short: 'ai' },
+    ]
+  : [
+      { id: 'all', label: '# all', short: 'all' },
+      { id: 'windows', label: '# windows', short: 'windows' },
+      { id: 'macos', label: '# macos', short: 'macos' },
+      { id: 'linux', label: '# linux', short: 'linux' },
+      { id: 'android', label: '# android', short: 'android' },
+      { id: 'ios', label: '# ios', short: 'ios' },
+      { id: 'security', label: '# security', short: 'security' },
+      { id: 'dev', label: '# dev', short: 'dev' },
+      { id: 'hardware', label: '# hardware', short: 'hardware' },
+      { id: 'browser', label: '# browser', short: 'browser' },
+      { id: 'office', label: '# office', short: 'office' },
+      { id: 'ai', label: '# ai', short: 'ai' },
+    ];
+
+const prevUrl = page.url.prev === `/${lang}/page/1` ? `/${lang}` : page.url.prev;
+const nextUrl = page.url.next;
+const canonicalPath = page.currentPage === 1 ? `/${lang}` : page.url.current;
+---
+
+<Layout
+  lang={lang}
+  title={`${isVi ? 'Trang' : 'Page'} ${page.currentPage} — ${t.site.tagline}`}
+  canonicalPath={canonicalPath}
+  prevUrl={prevUrl}
+  nextUrl={nextUrl}
+  noindex={page.currentPage === 1}
+>
+  <h1 class="sr-only">
+    {isVi ? `Thủ thuật công nghệ — trang ${page.currentPage}` : `Tech tips — page ${page.currentPage}`}
+  </h1>
+
+  <!-- Mobile Search Bar -->
+  <div class="sm:hidden mb-4">
+    <div class="relative">
+      <div class="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-[var(--accent)] font-mono font-bold">
+        $
+      </div>
+      <input
+        id="mobile-search-input"
+        type="search"
+        placeholder={isVi ? 'Tìm thủ thuật...' : 'Search tips...'}
+        class="w-full pl-8 pr-4 py-2.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-sm text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:border-[var(--accent)] shadow-sm font-mono"
+      />
+    </div>
+  </div>
+
+  <!-- Mobile Horizontal Category Scroll -->
+  <div class="md:hidden flex items-center gap-2 overflow-x-auto pb-3 mb-6 scrollbar-none" id="mobile-category-bar">
+    {sidebarCategories.map((cat, idx) => (
+      <a
+        href={cat.id === 'all' ? `/${lang}` : `/${lang}/category/${cat.id}`}
+        class={`shrink-0 px-3.5 py-2 min-h-[44px] flex items-center rounded-xl text-xs font-mono font-semibold transition-all ${
+          idx === 0
+            ? 'bg-[var(--accent)] text-[var(--on-accent)] font-bold shadow-sm'
+            : 'border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)]'
+        }`}
+      >
+        {cat.short}
+      </a>
+    ))}
+  </div>
+
+  <!-- Main 2-Column Content Layout -->
+  <div class="flex flex-col md:flex-row items-start gap-8 lg:gap-12">
+    <!-- Left Sidebar -->
+    <aside class="w-48 lg:w-56 shrink-0 hidden md:block space-y-7 sticky top-20 text-xs font-mono">
+      <div>
+        <h2 class="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-3">
+          {isVi ? 'DANH MỤC' : 'CATEGORIES'}
+        </h2>
+        <ul class="space-y-1.5" id="desktop-category-list">
+          {sidebarCategories.map((cat, idx) => (
+            <li>
+              <a
+                href={cat.id === 'all' ? `/${lang}` : `/${lang}/category/${cat.id}`}
+                class={`text-left w-full py-1.5 flex items-center transition-colors ${
+                  idx === 0
+                    ? 'text-[var(--accent)] font-bold'
+                    : 'text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+                }`}
+              >
+                {cat.label}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-[11px] font-bold uppercase tracking-wider text-[var(--text-muted)] mb-2.5">
+          {isVi ? 'ĐỘ KHÓ' : 'DIFFICULTY'}
+        </h2>
+        <div class="flex items-center gap-1.5 flex-wrap">
+          <a
+            href={`/${lang}`}
+            class="px-2.5 py-1.5 min-h-[36px] flex items-center rounded-lg border border-[var(--accent)] bg-[var(--accent-bg)] text-[var(--accent)] font-bold transition-all"
+          >
+            {isVi ? 'Tất cả' : 'All'}
+          </a>
+          <a
+            href={`/${lang}?diff=easy`}
+            class="px-2.5 py-1.5 min-h-[36px] flex items-center rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          >
+            {t.difficulty.easy}
+          </a>
+          <a
+            href={`/${lang}?diff=medium`}
+            class="px-2.5 py-1.5 min-h-[36px] flex items-center rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          >
+            {t.difficulty.medium}
+          </a>
+          <a
+            href={`/${lang}?diff=advanced`}
+            class="px-2.5 py-1.5 min-h-[36px] flex items-center rounded-lg border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-all"
+          >
+            {t.difficulty.advanced}
+          </a>
+        </div>
+      </div>
+    </aside>
+
+    <!-- Right Stream -->
+    <div class="flex-1 w-full min-w-0">
+      <div id="tips-stream" class="space-y-4">
+        {page.data.map((tip) => (
+          <TipCard tip={tip} lang={lang} />
+        ))}
+      </div>
+
+      <Pagination
+        currentPage={page.currentPage}
+        lastPage={page.lastPage}
+        pageSize={20}
+        basePath={`/${lang}`}
+        lang={lang}
+      />
+    </div>
+  </div>
+</Layout>
+
+<script is:inline>
+  (function () {
+    const mobileSearch = document.getElementById('mobile-search-input');
+    mobileSearch?.addEventListener('input', (e) => {
+      const q = e.target.value;
+      if (q && window.openTechTipsSearch) {
+        e.target.value = '';
+        window.openTechTipsSearch(q);
+      }
+    });
+  })();
+</script>

@@ -1,0 +1,111 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import TipCard from '../TipCard.astro';
+import { getAllCategories, type Category, type Tip } from '../../lib/data';
+import type { Locale } from '../../lib/i18n';
+import { SITE_URL } from '../../lib/constants';
+
+interface Props {
+  lang: Locale;
+  category: Category;
+  tips: Tip[];
+}
+
+const { lang, category, tips } = Astro.props;
+const isVi = lang === 'vi';
+const allCategories = getAllCategories();
+const catName = category.name[lang];
+const catDesc = category.description[lang];
+const canonicalPath = `/${lang}/category/${encodeURIComponent(category.id)}`;
+const pageHeading = isVi ? `Thủ thuật ${catName}` : `${catName} Tips`;
+
+const categoryJsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: pageHeading,
+    description: catDesc,
+    url: `${SITE_URL}${canonicalPath}`,
+    inLanguage: isVi ? 'vi-VN' : 'en-US',
+    numberOfItems: tips.length,
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: isVi ? 'Thủ thuật' : 'Tips',
+        item: `${SITE_URL}/${lang}`,
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: catName,
+        item: `${SITE_URL}${canonicalPath}`,
+      },
+    ],
+  },
+];
+---
+
+<Layout lang={lang} title={pageHeading} description={catDesc} canonicalPath={canonicalPath} jsonLd={categoryJsonLd}>
+  <div class="max-w-4xl mx-auto">
+    <!-- Breadcrumb -->
+    <nav class="mb-6 flex items-center gap-2 text-xs font-mono text-[var(--text-muted)]" aria-label="Breadcrumb">
+      <a href={`/${lang}`} class="hover:text-[var(--text-primary)] transition-colors flex items-center gap-1">
+        <span>←</span>
+        <span>{isVi ? 'thủ-thuật' : 'tips'}</span>
+      </a>
+      <span>/</span>
+      <span class="text-[var(--text-secondary)] lowercase">{category.id}</span>
+      <span>/</span>
+    </nav>
+
+    <!-- Category Header -->
+    <header class="mb-8 pb-6 border-b border-[var(--border-color)]">
+      <div class="text-xs font-mono font-bold text-[var(--accent)] mb-2">
+        $ filter --category={category.id}
+      </div>
+      <h1 class="text-3xl sm:text-4xl font-extrabold text-[var(--text-primary)] tracking-tight mb-2">
+        {pageHeading}
+      </h1>
+      <p class="text-xs sm:text-sm text-[var(--text-secondary)] leading-relaxed font-mono">
+        {catDesc}
+      </p>
+      <div class="mt-3 text-xs font-mono text-[var(--text-muted)] tabular-nums">
+        {isVi ? `${tips.length} bài viết đã chọn lọc trong danh mục` : `${tips.length} curated articles in this category`}
+      </div>
+    </header>
+
+    <!-- Other Categories Quick Filter Pills -->
+    <div class="flex items-center gap-2 overflow-x-auto pb-4 mb-8 scrollbar-none font-mono text-xs">
+      <a
+        href={`/${lang}`}
+        class="shrink-0 px-3 py-1.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] transition-colors"
+      >
+        {isVi ? '← Tất cả' : '← All'}
+      </a>
+      {allCategories.map((c) => (
+        <a
+          href={`/${lang}/category/${c.id}`}
+          class={`shrink-0 px-3 py-1.5 rounded-xl border transition-colors ${
+            c.id === category.id
+              ? 'border-transparent bg-[var(--accent-hero)] text-[#15110A] font-bold shadow-sm'
+              : 'border-[var(--border-color)] bg-[var(--bg-surface)] text-[var(--text-secondary)] hover:text-[var(--text-primary)]'
+          }`}
+        >
+          #{c.id}
+        </a>
+      ))}
+    </div>
+
+    <!-- Tips Stream List -->
+    <div class="space-y-4">
+      {tips.map((tip) => (
+        <TipCard tip={tip} lang={lang} />
+      ))}
+    </div>
+  </div>
+</Layout>

@@ -18,17 +18,19 @@ import Layout from '../layouts/Layout.astro';
 
     <!-- Shortcut helper box -->
     <div id="error-hint" class="p-3.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] text-xs text-[var(--text-muted)] mb-8 inline-block">
-      Gợi ý: Bấm phím <kbd>/</kbd> để mở thanh tìm kiếm thủ thuật tức thì.
+      <span id="error-hint-prefix">Gợi ý: Bấm phím </span>
+      <kbd>/</kbd>
+      <span id="error-hint-suffix"> để mở thanh tìm kiếm thủ thuật tức thì.</span>
     </div>
 
     <div>
       <a
         id="error-home-link"
         href="/vi"
-        class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl font-bold text-xs bg-[var(--accent-hero)] text-black shadow-sm"
+        class="inline-flex items-center gap-2 px-6 py-2.5 rounded-xl font-bold text-xs bg-[var(--accent-hero)] text-[#15110A] shadow-sm"
       >
         <span id="error-home-text">Quay về trang chủ tips.hub</span>
-        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
           <path d="M5 12h14" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
           <path d="m12 5 7 7-7 7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
         </svg>
@@ -39,20 +41,29 @@ import Layout from '../layouts/Layout.astro';
 
 <script is:inline>
   (function () {
-    const isEn = window.location.pathname.startsWith('/en') || localStorage.getItem('techtips_lang') === 'en';
+    let isEn = window.location.pathname.startsWith('/en');
+    if (!isEn) {
+      try {
+        isEn = localStorage.getItem('techtips_lang') === 'en';
+      } catch {}
+    }
     if (isEn) {
+      document.documentElement.lang = 'en';
       document.title = '404 - Page Not Found · tips.hub';
       const title = document.getElementById('error-title');
       const desc = document.getElementById('error-desc');
-      const hint = document.getElementById('error-hint');
+      const prefix = document.getElementById('error-hint-prefix');
+      const suffix = document.getElementById('error-hint-suffix');
       const link = document.getElementById('error-home-link');
       const text = document.getElementById('error-home-text');
 
       if (title) title.textContent = 'Lost in the notebook!';
-      if (desc) desc.textContent = 'The page you are looking for might have been moved or the link is outdated. Handcrafted tips are waiting on the homepage.';
-      if (hint) hint.innerHTML = 'Tip: Press <kbd class="px-1.5 py-0.5 bg-[var(--bg-muted)] border border-[var(--border-color)] rounded text-[11px]">/</kbd> to search tips immediately.';
+      if (desc) desc.textContent = 'The page you are looking for might have been moved or the link is outdated. Practical tips are waiting on the homepage.';
+      if (prefix) prefix.textContent = 'Tip: Press ';
+      if (suffix) suffix.textContent = ' to search tips immediately.';
       if (link) link.setAttribute('href', '/en');
       if (text) text.textContent = 'Back to tips.hub home';
+      window.TechTipsActions?.syncThemeUI?.();
     }
   })();
 </script>

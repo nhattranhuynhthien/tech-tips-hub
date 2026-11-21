@@ -1,0 +1,69 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import type { Locale } from '../../lib/i18n';
+
+interface Props {
+  lang: Locale;
+  canonicalPath?: string;
+  noindex?: boolean;
+}
+
+const { lang, canonicalPath = `/${lang}/submit`, noindex = false } = Astro.props;
+const isVi = lang === 'vi';
+const botUsername = (import.meta.env.PUBLIC_TELEGRAM_BOT_USERNAME || '').replace(/^@/, '');
+const botUrl = botUsername ? `https://t.me/${botUsername}` : '';
+const issueUrl = 'https://github.com/nhattranhuynhthien/tech-tips-hub/issues/new?template=community-tip.yml';
+---
+
+<Layout
+  lang={lang}
+  title={isVi ? 'Gửi mẹo công nghệ' : 'Submit a tech tip'}
+  description={isVi
+    ? 'Đóng góp một mẹo công nghệ ngắn có nguồn để quản trị viên xem xét.'
+    : 'Suggest a short, sourced technology tip for moderator review.'}
+  canonicalPath={canonicalPath}
+  noindex={noindex}
+>
+  <article class="max-w-3xl mx-auto space-y-6">
+    <header class="pb-5 border-b border-[var(--border-color)] space-y-2">
+      <p class="text-xs font-mono font-bold text-[var(--accent)]">$ community/inbox</p>
+      <h1 class="text-3xl font-extrabold text-[var(--text-primary)] tracking-tight">
+        {isVi ? 'Gửi mẹo công nghệ' : 'Submit a tech tip'}
+      </h1>
+    </header>
+
+    <div class="rounded-xl border border-[var(--border-color)] bg-[var(--bg-surface)] p-6 space-y-4 text-sm leading-relaxed text-[var(--text-secondary)]">
+      <p>
+        {isVi
+          ? 'Gửi link mẹo từ Telegram, Facebook hoặc web kèm ghi chú do bạn tự viết. Bạn cũng có thể forward bài từ một kênh Telegram công khai. Quản trị viên duyệt thủ công trước khi bài xuất hiện trên trang.'
+          : 'Send a tip link from Telegram, Facebook, or the web with a short note in your own words. You can also forward a post from a public Telegram channel. A moderator reviews every submission before it appears on the site.'}
+      </p>
+      <p>
+        {isVi
+          ? 'Không gửi toàn văn bài viết. Với Facebook, bot chỉ lưu link và mô tả bạn cung cấp, không tải nội dung trang. Tên người gửi không hiển thị công khai trên site.'
+          : 'Do not paste full articles. For Facebook, the bot stores only your link and description; it does not fetch Facebook content. Submitter names are not displayed publicly on the site.'}
+      </p>
+
+      <div class="pt-2 flex items-center gap-3 flex-wrap font-mono text-xs">
+        {botUrl ? (
+          <a
+            href={botUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center gap-1.5 rounded-xl bg-[var(--accent-hero)] px-4 py-2.5 font-bold text-[#15110A] hover:opacity-90 transition-opacity"
+          >
+            <span>{isVi ? 'Mở Telegram bot ↗' : 'Open Telegram bot ↗'}</span>
+          </a>
+        ) : null}
+        <a
+          href={issueUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 rounded-xl border border-[var(--border-color)] bg-[var(--bg-muted)] px-4 py-2.5 font-bold text-[var(--text-primary)] hover:border-[var(--accent)] hover:text-[var(--accent)] transition-colors"
+        >
+          <span>{isVi ? 'Gửi qua GitHub ↗' : 'Submit through GitHub ↗'}</span>
+        </a>
+      </div>
+    </div>
+  </article>
+</Layout>

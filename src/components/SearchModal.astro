@@ -10,7 +10,13 @@ const { lang } = Astro.props;
 const t = getTranslations(lang);
 ---
 
-<div id="search-modal" class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm transition-opacity font-mono" role="dialog" aria-modal="true" aria-label={t.nav.search}>
+<div
+  id="search-modal"
+  class="fixed inset-0 z-50 hidden bg-black/80 backdrop-blur-sm transition-opacity font-mono"
+  role="dialog"
+  aria-modal="true"
+  aria-label={t.nav.search}
+>
   <div class="min-h-screen px-4 text-center sm:block sm:p-0">
     <!-- Click backdrop to close -->
     <div id="search-backdrop" class="fixed inset-0" aria-hidden="true"></div>
@@ -18,7 +24,7 @@ const t = getTranslations(lang);
     <div class="inline-block w-full max-w-2xl my-12 overflow-hidden text-left align-middle transition-all transform bg-[var(--bg-surface)] border border-[var(--border-color)] rounded-2xl shadow-2xl relative z-10">
       <!-- Search Input Header -->
       <div class="flex items-center px-4 py-3 border-b border-[var(--border-color)] bg-[var(--bg-muted)]">
-        <span class="text-[var(--accent)] font-bold text-lg mr-3 select-none">$</span>
+        <span class="text-[var(--accent)] font-bold text-lg mr-3 select-none" aria-hidden="true">$</span>
         <input
           id="search-input"
           type="search"
@@ -26,7 +32,12 @@ const t = getTranslations(lang);
           class="w-full bg-transparent text-base text-[var(--text-primary)] placeholder-[var(--text-muted)] focus:outline-none font-mono"
           autocomplete="off"
         />
-        <button id="search-close-btn" class="p-1 text-[var(--text-muted)] hover:text-[var(--text-primary)] rounded-md transition-colors" aria-label={lang === 'vi' ? 'Đóng tìm kiếm' : 'Close search'}>
+        <button
+          id="search-close-btn"
+          type="button"
+          class="p-1 text-[var(--text-muted)] hover:text-[var(--text-primary)] rounded-md transition-colors"
+          aria-label={lang === 'vi' ? 'Đóng tìm kiếm' : 'Close search'}
+        >
           <kbd class="text-xs">Esc</kbd>
         </button>
       </div>
@@ -50,229 +61,4 @@ const t = getTranslations(lang);
   </div>
 </div>
 
-<script is:inline define:vars={{ lang }}>
-  (function () {
-    function escapeHtml(str) {
-      const d = document.createElement('div');
-      d.appendChild(document.createTextNode(str || ''));
-      return d.innerHTML;
-    }
-
-    function normalizeSearch(str) {
-      return String(str || '')
-        .toLowerCase()
-        .normalize('NFD')
-        .replace(/[\u0300-\u036f]/g, '')
-        .replace(/đ/g, 'd');
-    }
-
-    let allTips = [];
-    let isLoaded = false;
-    let loadPromise = null;
-    let activeIndex = -1;
-
-    const modal = document.getElementById('search-modal');
-    const input = document.getElementById('search-input');
-    const resultsContainer = document.getElementById('search-results');
-    const openBtn = document.getElementById('open-search-btn');
-    const closeBtn = document.getElementById('search-close-btn');
-    const backdrop = document.getElementById('search-backdrop');
-
-    const emptyPromptHtml = `<div id="search-empty-state" class="py-8 text-center text-xs text-[var(--text-muted)] font-mono">${
-      lang === 'vi' ? 'Nhập từ khóa để tìm kiếm thủ thuật tức thì...' : 'Type a query to search handcrafted tips instantly...'
-    }</div>`;
-
-    const loadingHtml = `<div class="py-8 text-center text-xs text-[var(--text-muted)] font-mono">${
-      lang === 'vi' ? 'Đang tải kho thủ thuật...' : 'Loading tips index...'
-    }</div>`;
-
-    function pickText(field, activeLang, origLang) {
-      if (!field) return '';
-      return field[activeLang] || (origLang && field[origLang]) || field.en || Object.values(field)[0] || '';
-    }
-
-    function loadTips() {
-      if (isLoaded) return Promise.resolve(allTips);
-      if (!loadPromise) {
-        loadPromise = fetch(`/api/all-${lang}.json`)
-          .then((resp) => {
-            if (!resp.ok) throw new Error('HTTP ' + resp.status);
-            return resp.json();
-          })
-          .then((data) => {
-            allTips = Array.isArray(data) ? data : [];
-            isLoaded = true;
-            if (input && input.value.trim()) {
-              renderResults(input.value);
-            }
-            return allTips;
-          })
-          .catch((err) => {
-            loadPromise = null;
-            console.error('Failed to load tips for search:', err);
-            return [];
-          });
-      }
-      return loadPromise;
-    }
-
-    function renderResults(rawQuery) {
-      if (!resultsContainer) return;
-      const qRaw = String(rawQuery || '').toLowerCase().trim();
-      if (!qRaw) {
-        resultsContainer.innerHTML = emptyPromptHtml;
-        activeIndex = -1;
-        return;
-      }
-
-      if (!isLoaded) {
-        resultsContainer.innerHTML = loadingHtml;
-        loadTips();
-        return;
-      }
-
-      const qNorm = normalizeSearch(qRaw);
-      const matches = allTips
-        .filter((tip) => {
-          const tText = pickText(tip.title, lang, tip.original_lang);
-          const origTitle =
-            tip.original_lang && tip.title?.[tip.original_lang] && tip.title[tip.original_lang] !== tText
-              ? tip.title[tip.original_lang]
-              : '';
-          const sText = pickText(tip.summary, lang, tip.original_lang);
-          const cText = (tip.categories || []).join(' ');
-          const tagText = (tip.tags || []).join(' ');
-          const srcText = tip.source?.name || '';
-          const combined = `${tText} ${origTitle} ${sText} ${cText} ${tagText} ${srcText}`;
-          return combined.toLowerCase().includes(qRaw) || normalizeSearch(combined).includes(qNorm);
-        })
-        .slice(0, 8);
-
-      if (matches.length === 0) {
-        resultsContainer.innerHTML = `<div class="py-8 text-center text-xs text-[var(--text-muted)] font-mono">${
-          lang === 'vi' ? 'Không tìm thấy thủ thuật nào khớp với từ khóa.' : 'No tips matched your query.'
-        }</div>`;
-        activeIndex = -1;
-        return;
-      }
-
-      resultsContainer.innerHTML = matches
-        .map((tip) => {
-          const title = escapeHtml(pickText(tip.title, lang, tip.original_lang));
-          const summ = escapeHtml(pickText(tip.summary, lang, tip.original_lang));
-          const sourceName = escapeHtml(tip.source?.name || '');
-          const category = escapeHtml((tip.categories || [])[0] || 'tips');
-          const slugOrId = encodeURIComponent(tip.slug || tip.id);
-          return `
-            <a href="/${lang}/tip/${slugOrId}" data-search-result="true" aria-selected="false" class="block p-3 rounded-xl hover:bg-[var(--bg-muted)] transition-colors group">
-              <div class="flex items-center gap-2 text-[11px] font-mono text-[var(--text-muted)] mb-1">
-                <span class="text-[var(--text-secondary)]">${sourceName}</span>
-                <span>·</span>
-                <span class="text-[var(--accent)] font-semibold">#${category}</span>
-              </div>
-              <h4 class="text-sm font-bold text-[var(--text-primary)] group-hover:text-[var(--accent)] transition-colors leading-snug">
-                ${title}
-              </h4>
-              <p class="text-xs text-[var(--text-secondary)] line-clamp-1 mt-1">
-                ${summ}
-              </p>
-            </a>
-          `;
-        })
-        .join('');
-
-      activeIndex = -1;
-    }
-
-    function openModal(initialQuery) {
-      modal?.classList.remove('hidden');
-      document.body.classList.add('overflow-hidden');
-      const hasQuery = typeof initialQuery === 'string' && initialQuery.length > 0;
-      if (hasQuery && input) {
-        input.value = initialQuery;
-        renderResults(initialQuery);
-      } else {
-        loadTips();
-      }
-      setTimeout(() => input?.focus(), 50);
-    }
-
-    window.openTechTipsSearch = openModal;
-
-    function closeModal() {
-      modal?.classList.add('hidden');
-      document.body.classList.remove('overflow-hidden');
-      if (input) input.value = '';
-      if (resultsContainer) resultsContainer.innerHTML = emptyPromptHtml;
-      activeIndex = -1;
-    }
-
-    // Keyboard Shortcuts (/ or Ctrl+K to open, Esc to close)
-    document.addEventListener('keydown', (e) => {
-      const activeEl = document.activeElement;
-      const inEditable =
-        activeEl &&
-        (activeEl.tagName === 'INPUT' ||
-          activeEl.tagName === 'TEXTAREA' ||
-          activeEl.tagName === 'SELECT' ||
-          activeEl.isContentEditable);
-
-      if (e.key === 'Escape' && !modal?.classList.contains('hidden')) {
-        closeModal();
-      } else if (
-        modal?.classList.contains('hidden') &&
-        (((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') || (e.key === '/' && !inEditable))
-      ) {
-        e.preventDefault();
-        openModal();
-      }
-    });
-
-    openBtn?.addEventListener('click', () => openModal());
-    document.getElementById('open-search-btn-mobile')?.addEventListener('click', () => openModal());
-    closeBtn?.addEventListener('click', closeModal);
-    backdrop?.addEventListener('click', closeModal);
-
-    function resultLinks() {
-      return Array.from(resultsContainer?.querySelectorAll('[data-search-result]') || []);
-    }
-
-    function setActive(index) {
-      const links = resultLinks();
-      if (!links.length) {
-        activeIndex = -1;
-        return;
-      }
-      activeIndex = (index + links.length) % links.length;
-      links.forEach((link, i) => {
-        if (i === activeIndex) {
-          link.classList.add('bg-[var(--bg-muted)]');
-          link.setAttribute('aria-selected', 'true');
-          link.scrollIntoView({ block: 'nearest' });
-        } else {
-          link.classList.remove('bg-[var(--bg-muted)]');
-          link.setAttribute('aria-selected', 'false');
-        }
-      });
-    }
-
-    input?.addEventListener('keydown', (e) => {
-      const links = resultLinks();
-      if (!links.length) return;
-      if (e.key === 'ArrowDown') {
-        e.preventDefault();
-        setActive(activeIndex + 1);
-      } else if (e.key === 'ArrowUp') {
-        e.preventDefault();
-        setActive(activeIndex - 1);
-      } else if (e.key === 'Enter' && activeIndex >= 0) {
-        e.preventDefault();
-        links[activeIndex].click();
-      }
-    });
-
-    input?.addEventListener('input', (e) => {
-      renderResults(e.target.value);
-    });
-  })();
-</script>
+<script is:inline src="/js/search.js" defer></script>
