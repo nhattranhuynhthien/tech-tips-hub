@@ -40,5 +40,11 @@
     "title": "Bây giờ Nginx có lỗ hổng nghiêm trọng",
     "featured_at": "2026-11-20T13:12:01.996596+00:00",
     "date": "2026-11-20"
+  },
+  {
+    "id": "c380359255265543",
+    "title": "4 GB nhật ký mỗi phút: Một sự cố giám sát Kafka có 20 phút dự phòng",
+    "featured_at": "2026-11-21T02:31:10.663863+00:00",
+    "date": "2026-11-21"
   }
 ]

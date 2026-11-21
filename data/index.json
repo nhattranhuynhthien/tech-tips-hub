@@ -782,6 +782,85 @@
       "vi": "machine"
     }
   },
+  "28ef8751b948fc15": {
+    "id": "28ef8751b948fc15",
+    "slug": "unisoc-launches-multi-dimensional-smart-storage-engine-techn-28ef87",
+    "url": "https://www.ithome.com/1/030/317.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "Sat, 21 Nov 2026 01:40:39 GMT",
+    "fetched_at": "2026-11-21T02:28:48.412864+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "紫光展锐推出多维智存引擎技术：灵活扩展 UFS 闪存空间，支持多档位扩容",
+      "vi": "紫光展锐推出多维智存引擎技术：灵活扩展 UFS 闪存空间，支持多档位扩容",
+      "en": "UNISOC launches multi-dimensional smart storage engine technology: flexibly expands UFS flash memory space and supports multi-level expansion"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 21 日消息，紫光展锐昨晚宣布推出 UNISOC UniSwap Ultra Engine 多维智存引擎，通过芯片级深度优化与软硬件深度协同设计，在有限的物理内存基础上，灵活扩展 UFS 闪存空间，支持多档位灵活扩容，显著提升多应用体验流畅度。 据官方介绍，依托紫光展锐 UNISOC UniSwap Ultra Engine 多维智存引擎，打破物理内存容量束缚， 智能调用部分存储空间拓展可用内存 ，搭配精细调度算法，带来接近原生物理内存的流畅表现。官方称，搭载该技术的 4GB 内存手机在日常使用中，流畅度可媲美传统 6GB…",
+      "vi": "IT之家 11 月 21 日消息，紫光展锐昨晚宣布推出 UNISOC UniSwap Ultra Engine 多维智存引擎，通过芯片级深度优化与软硬件深度协同设计，在有限的物理内存基础上，灵活扩展 UFS 闪存空间，支持多档位灵活扩容，显著提升多应用体验流畅度。 据官方介绍，依托紫光展锐 UNISOC UniSwap Ultra Engine 多维智存引擎，打破物理内存容量束缚， 智能调用部分存储空间拓展可用内存 ，搭配精细调度算法，带来接近原生物理内存的流畅表现。官方称，搭载该技术的 4GB 内存手机在日常使用中，流畅度可媲美传统 6GB…",
+      "en": "IT House reported on November 21 that UNISOC Uniswap Ultra Engine last night announced the launch of UNISOC UniSwap Ultra Engine, a multi-dimensional smart storage engine. Through deep chip-level optimization and deep software and hardware co-design, it can flexibly expand UFS flash memory space based on limited…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": "machine"
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "9e73091c37a9ddaf": {
+    "id": "9e73091c37a9ddaf",
+    "slug": "ai-automation-with-n8n-9e7309",
+    "url": "https://linuxhandbook.com/courses/n8n",
+    "source": {
+      "id": "linuxhandbook",
+      "name": "Linux Handbook",
+      "site_url": "https://linuxhandbook.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Yash Kiran Patil",
+    "published_at": "Fri, 20 Nov 2026 19:47:51 +0530",
+    "fetched_at": "2026-11-20T21:16:19.029843+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "AI Automation with n8n",
+      "vi": "Tự động hóa AI với n8n"
+    },
+    "summary": {
+      "en": "Learn n8n from scratch: install it, build your first workflow, then create a personal AI agent that works with Gmail, Drive and Discord.",
+      "vi": "Tìm hiểu n8n từ đầu: cài đặt nó, xây dựng quy trình làm việc đầu tiên của bạn, sau đó tạo tác nhân AI cá nhân hoạt động với Gmail, Drive và Discord."
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "translate_attempts": {
+      "vi": 0
+    }
+  },
   "77e32da8e58573a6": {
     "id": "77e32da8e58573a6",
     "slug": "sap-xep-va-truyen-dat-thong-tin-phuc-tap-bang-danh-sach-duoc-77e32d",
@@ -820,44 +899,6 @@
       "vi": 0
     },
     "hidden": false
-  },
-  "9e73091c37a9ddaf": {
-    "id": "9e73091c37a9ddaf",
-    "slug": "ai-automation-with-n8n-9e7309",
-    "url": "https://linuxhandbook.com/courses/n8n",
-    "source": {
-      "id": "linuxhandbook",
-      "name": "Linux Handbook",
-      "site_url": "https://linuxhandbook.com",
-      "kind": "tips",
-      "content_type": "article"
-    },
-    "author": "Yash Kiran Patil",
-    "published_at": "Fri, 20 Nov 2026 19:47:51 +0530",
-    "fetched_at": "2026-11-20T21:16:19.029843+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "AI Automation with n8n",
-      "vi": "AI Automation with n8n"
-    },
-    "summary": {
-      "en": "Learn n8n from scratch: install it, build your first workflow, then create a personal AI agent that works with Gmail, Drive and Discord.",
-      "vi": "Learn n8n from scratch: install it, build your first workflow, then create a personal AI agent that works with Gmail, Drive and Discord."
-    },
-    "categories": [
-      "ai"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 1.5,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 1
-    }
   },
   "79d509c9c75856f8": {
     "id": "79d509c9c75856f8",
@@ -4203,6 +4244,41 @@
       "vi": "machine"
     }
   },
+  "6cbe051d67674bdd": {
+    "id": "6cbe051d67674bdd",
+    "slug": "tu-thang-42027-app-android-khong-toi-uu-cho-may-gap-se-khong-6cbe05",
+    "url": "https://tinhte.vn/thread/tu-thang-4-2027-app-android-khong-toi-uu-cho-may-gap-se-khong-duoc-cap-nhat-tren-google-play.4194421",
+    "source": {
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Anh Tú.",
+    "published_at": "Sat, 21 Nov 2026 02:15:14 +0000",
+    "fetched_at": "2026-11-21T02:28:48.412864+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Từ tháng 4/2027, app Android không tối ưu cho máy gập sẽ không được cập nhật trên Google Play",
+      "en": "From April 2027, Android apps that are not optimized for folding devices will not be updated on Google Play"
+    },
+    "summary": {
+      "vi": "Google vừa chốt: từ tháng 4/2027, app nào trên Google Play không đạt chuẩn tối ưu tối thiểu cho máy gập (Tier 3) sẽ không được phát hành hay cập nhật nữa, còn có thể bị giảm hiển thị trên cửa",
+      "en": "Google has just finalized: from April 2027, any app on Google Play that does not meet the minimum optimization standards for folding devices (Tier 3) will no longer be released or updated, and may also have its display on the store reduced."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.19,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": "machine"
+    }
+  },
   "66fcad3f7dcd0a0d": {
     "id": "66fcad3f7dcd0a0d",
     "slug": "fbi-cisa-warn-of-cyberattacks-targeting-refrigeration-system-66fcad",
@@ -7309,11 +7385,11 @@
     "original_lang": "en",
     "title": {
       "en": "Tesla to wind down Cybertruck production",
-      "vi": "Tesla to wind down Cybertruck production"
+      "vi": "Tesla ngừng sản xuất Cybertruck"
     },
     "summary": {
       "en": "Discussion on Hacker News (1011 points, 1866 comments).",
-      "vi": "Thảo luận trên Hacker News (1011 điểm, 1866 bình luận)."
+      "vi": "Thảo luận về Hacker News (1011 điểm, 1866 bình luận)."
     },
     "categories": [
       "security"
@@ -8121,7 +8197,7 @@
   },
   "865d1068fd46a127": {
     "id": "865d1068fd46a127",
-    "slug": "30-865d10",
+    "slug": "ke-hoach-moi-cho-nha-may-dien-hat-nhan-mat-trang-cua-nga-ke-865d10",
     "url": "https://www.ithome.com/1/025/817.htm",
     "source": {
       "id": "ithome-cn",
@@ -8136,13 +8212,13 @@
     "original_lang": "zh-CN",
     "title": {
       "zh-CN": "俄罗斯月球核电站新计划：明年选定方案、本世纪 30 年代中期运行",
-      "vi": "俄罗斯月球核电站新计划：明年选定方案、本世纪 30 年代中期运行",
-      "en": "俄罗斯月球核电站新计划：明年选定方案、本世纪 30 年代中期运行"
+      "vi": "Kế hoạch mới cho nhà máy điện hạt nhân mặt trăng của Nga: Kế hoạch được chọn vào năm tới, vận hành vào giữa những năm 2030",
+      "en": "New plan for Russia’s lunar nuclear power plant: Plan selected next year, operational in mid-2030s"
     },
     "summary": {
       "zh-CN": "IT之家 11 月 11 日消息，据央视新闻报道，当地时间 10 日，俄罗斯国家原子能公司首席执行官利哈乔夫表示，该公司计划于 2027 年选定月球核电站方案。 利哈乔夫在当日举行的政府航天发展战略会议后透露，俄罗斯国家原子能公司正在 研究 5 种月球核电站方案 ，将于 2027 年选定其中一种。当前，国家原子能公司、俄罗斯库尔恰托夫研究所与俄罗斯科学院正在联合研究相关课题。 他进一步表示：“这里说的是功率可达 10 千瓦的月球核电站，计划于 21 世纪 30 年代中期 开始运行。目前我们正在深入研究 5…",
-      "vi": "IT之家 11 月 11 日消息，据央视新闻报道，当地时间 10 日，俄罗斯国家原子能公司首席执行官利哈乔夫表示，该公司计划于 2027 年选定月球核电站方案。 利哈乔夫在当日举行的政府航天发展战略会议后透露，俄罗斯国家原子能公司正在 研究 5 种月球核电站方案 ，将于 2027 年选定其中一种。当前，国家原子能公司、俄罗斯库尔恰托夫研究所与俄罗斯科学院正在联合研究相关课题。 他进一步表示：“这里说的是功率可达 10 千瓦的月球核电站，计划于 21 世纪 30 年代中期 开始运行。目前我们正在深入研究 5…",
-      "en": "IT之家 11 月 11 日消息，据央视新闻报道，当地时间 10 日，俄罗斯国家原子能公司首席执行官利哈乔夫表示，该公司计划于 2027 年选定月球核电站方案。 利哈乔夫在当日举行的政府航天发展战略会议后透露，俄罗斯国家原子能公司正在 研究 5 种月球核电站方案 ，将于 2027 年选定其中一种。当前，国家原子能公司、俄罗斯库尔恰托夫研究所与俄罗斯科学院正在联合研究相关课题。 他进一步表示：“这里说的是功率可达 10 千瓦的月球核电站，计划于 21 世纪 30 年代中期 开始运行。目前我们正在深入研究 5…"
+      "vi": "IT House News ngày 11/11, theo CCTV News, ngày 10 giờ địa phương, Giám đốc điều hành Rosatom Likhachev cho biết công ty có kế hoạch lựa chọn giải pháp nhà máy điện hạt nhân mặt trăng vào năm 2027. Likhachev tiết lộ sau cuộc họp chiến lược phát triển không gian của chính phủ ngày hôm đó rằng Rosatom đang nghiên cứu 5…",
+      "en": "IT House News on November 11, according to CCTV News, on the 10th local time, Rosatom CEO Likhachev said that the company plans to select a lunar nuclear power plant solution in 2027. Likhachev revealed after the government’s space development strategy meeting that day that Rosatom is studying five lunar nuclear power…"
     },
     "categories": [
       "hardware"
@@ -8153,12 +8229,12 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false,
-      "en": false
+      "vi": "machine",
+      "en": "machine"
     },
     "translate_attempts": {
-      "vi": 2,
-      "en": 2
+      "vi": 0,
+      "en": 0
     },
     "hidden": true
   },
@@ -8179,11 +8255,11 @@
     "original_lang": "en",
     "title": {
       "en": "10 of the Most Iconic Patrick Stewart Roles Beyond Captain Picard",
-      "vi": "10 of the Most Iconic Patrick Stewart Roles Beyond Captain Picard"
+      "vi": "10 vai diễn mang tính biểu tượng nhất của Patrick Stewart ngoài thuyền trưởng Picard"
     },
     "summary": {
       "en": "The Alpha Quadrant has lost one of its brightest stars.",
-      "vi": "The Alpha Quadrant has lost one of its brightest stars."
+      "vi": "Góc phần tư Alpha đã mất đi một trong những ngôi sao sáng nhất của nó."
     },
     "categories": [
       "windows"
@@ -8194,16 +8270,16 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 0
     },
     "hidden": true
   },
   "103ecc12f9bb8818": {
     "id": "103ecc12f9bb8818",
-    "slug": "gemini-4-hydrogen-token-15-103ecc",
+    "slug": "google-phat-hanh-mo-hinh-gemini-4-hydrogen-tap-trung-vao-lap-103ecc",
     "url": "https://www.ithome.com/1/026/446.htm",
     "source": {
       "id": "ithome-cn",
@@ -8218,13 +8294,13 @@
     "original_lang": "zh-CN",
     "title": {
       "zh-CN": "谷歌发布 Gemini 4 Hydrogen 模型：主打日常编程与智能体工作流，百万 Token 输入 1.5 美元",
-      "vi": "谷歌发布 Gemini 4 Hydrogen 模型：主打日常编程与智能体工作流，百万 Token 输入 1.5 美元",
-      "en": "谷歌发布 Gemini 4 Hydrogen 模型：主打日常编程与智能体工作流，百万 Token 输入 1.5 美元"
+      "vi": "Google phát hành mô hình Gemini 4 Hydrogen: tập trung vào lập trình hàng ngày và quy trình làm việc của đại lý, với một triệu Token đầu vào trị giá 1,5 USD",
+      "en": "Google releases Gemini 4 Hydrogen model: focusing on daily programming and agent workflow, with a million Token input of US$1.5"
     },
     "summary": {
       "zh-CN": "IT之家 11 月 13 日消息，谷歌正式推出 Gemini 4 Hydrogen 模型，主打快速执行与高效运行，面向日常编码和智能体工作流场景，将 Gemini 4 系列能力全面下放至所有层级用户。 输入：每百万 Tokens 1.50 美元 （IT之家注：现汇率约合 10.0 元人民币） 输出：每百万 Tokens 7.50 美元 （现汇率约合 50.1 元人民币） 该定价覆盖 全 100 万 Token 上下文窗口 ，无分段阶梯计价。在 Artificial Analysis 智能指数中，Hydrogen 默认高思考档位得分 51，高于…",
-      "vi": "IT之家 11 月 13 日消息，谷歌正式推出 Gemini 4 Hydrogen 模型，主打快速执行与高效运行，面向日常编码和智能体工作流场景，将 Gemini 4 系列能力全面下放至所有层级用户。 输入：每百万 Tokens 1.50 美元 （IT之家注：现汇率约合 10.0 元人民币） 输出：每百万 Tokens 7.50 美元 （现汇率约合 50.1 元人民币） 该定价覆盖 全 100 万 Token 上下文窗口 ，无分段阶梯计价。在 Artificial Analysis 智能指数中，Hydrogen 默认高思考档位得分 51，高于…",
-      "en": "IT之家 11 月 13 日消息，谷歌正式推出 Gemini 4 Hydrogen 模型，主打快速执行与高效运行，面向日常编码和智能体工作流场景，将 Gemini 4 系列能力全面下放至所有层级用户。 输入：每百万 Tokens 1.50 美元 （IT之家注：现汇率约合 10.0 元人民币） 输出：每百万 Tokens 7.50 美元 （现汇率约合 50.1 元人民币） 该定价覆盖 全 100 万 Token 上下文窗口 ，无分段阶梯计价。在 Artificial Analysis 智能指数中，Hydrogen 默认高思考档位得分 51，高于…"
+      "vi": "IT House đưa tin vào ngày 13 tháng 11 rằng Google đã chính thức ra mắt mô hình Gemini 4 Hydrogen, tập trung vào việc thực thi nhanh chóng và vận hành hiệu quả. Nó hướng tới các kịch bản quy trình làm việc của tác nhân và mã hóa hàng ngày, đồng thời ủy quyền đầy đủ các khả năng của dòng Gemini 4 cho mọi cấp độ người…",
+      "en": "IT House reported on November 13 that Google officially launched the Gemini 4 Hydrogen model, which focuses on fast execution and efficient operation. It is oriented to daily coding and agent workflow scenarios and fully delegates the capabilities of the Gemini 4 series to all levels of users. Input: US$1.50 per…"
     },
     "categories": [
       "ai",
@@ -8237,12 +8313,15 @@
     "score": 1.02,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {},
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    },
     "hidden": true
   },
   "dbdf4c7eada9c878": {
     "id": "dbdf4c7eada9c878",
-    "slug": "ceo-dbdf4c",
+    "slug": "sau-khi-jensen-huang-tu-chuc-trump-keu-goi-chu-tich-dieu-han-dbdf4c",
     "url": "https://www.ithome.com/1/026/439.htm",
     "source": {
       "id": "ithome-cn",
@@ -8257,13 +8336,13 @@
     "original_lang": "zh-CN",
     "title": {
       "zh-CN": "黄仁勋辞职后，特朗普呼吁苹果执行董事长库克接任英伟达 CEO",
-      "vi": "黄仁勋辞职后，特朗普呼吁苹果执行董事长库克接任英伟达 CEO",
-      "en": "黄仁勋辞职后，特朗普呼吁苹果执行董事长库克接任英伟达 CEO"
+      "vi": "Sau khi Jensen Huang từ chức, Trump kêu gọi Chủ tịch điều hành Apple Cook đảm nhận vị trí CEO Nvidia",
+      "en": "After Jensen Huang resigned, Trump called on Apple executive chairman Cook to take over as Nvidia CEO"
     },
     "summary": {
       "zh-CN": "IT之家 11 月 12 日消息，黄仁勋离任英伟达 CEO 后，美国总统特朗普随即呼吁苹果执行董事长蒂姆 · 库克接掌英伟达。 今天（12 日）晚间，特朗普在 Truth Social 发文称， 能够接替黄仁勋的人“只有一个”—— 苹果公司的蒂姆 · 库克 。“一位传奇来接替另一位传奇！” 据IT之家了解，卸任苹果 CEO 后，库克改任执行董事长。 黄仁勋辞去总裁、首席执行官及董事会成员职务后，英伟达任命执行副总裁兼首席财务官科莱特 · 克雷斯（Colette Kress）为临时 CEO。…",
-      "vi": "IT之家 11 月 12 日消息，黄仁勋离任英伟达 CEO 后，美国总统特朗普随即呼吁苹果执行董事长蒂姆 · 库克接掌英伟达。 今天（12 日）晚间，特朗普在 Truth Social 发文称， 能够接替黄仁勋的人“只有一个”—— 苹果公司的蒂姆 · 库克 。“一位传奇来接替另一位传奇！” 据IT之家了解，卸任苹果 CEO 后，库克改任执行董事长。 黄仁勋辞去总裁、首席执行官及董事会成员职务后，英伟达任命执行副总裁兼首席财务官科莱特 · 克雷斯（Colette Kress）为临时 CEO。…",
-      "en": "IT之家 11 月 12 日消息，黄仁勋离任英伟达 CEO 后，美国总统特朗普随即呼吁苹果执行董事长蒂姆 · 库克接掌英伟达。 今天（12 日）晚间，特朗普在 Truth Social 发文称， 能够接替黄仁勋的人“只有一个”—— 苹果公司的蒂姆 · 库克 。“一位传奇来接替另一位传奇！” 据IT之家了解，卸任苹果 CEO 后，库克改任执行董事长。 黄仁勋辞去总裁、首席执行官及董事会成员职务后，英伟达任命执行副总裁兼首席财务官科莱特 · 克雷斯（Colette Kress）为临时 CEO。…"
+      "vi": "IT House ngày 12/11 đưa tin sau khi Huang Renxun từ chức CEO Nvidia, Tổng thống Mỹ Trump đã ngay lập tức kêu gọi Chủ tịch điều hành Apple Tim Cook tiếp quản Nvidia. Tối hôm nay (12), Trump đăng trên Truth Social rằng “chỉ có một” người có thể kế nhiệm Huang Jen-Hsun—Tim Cook của Apple. \"Một huyền thoại đến để thay thế…",
+      "en": "IT House reported on November 12 that after Huang Renxun resigned as Nvidia CEO, US President Trump immediately called on Apple Executive Chairman Tim Cook to take over Nvidia. Today (12th) evening, Trump posted on Truth Social that there is “only one” person who can succeed Huang Jen-Hsun—Tim Cook of Apple. \"One…"
     },
     "categories": [
       "macos"
@@ -8273,7 +8352,10 @@
     "score": 1.02,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {},
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    },
     "hidden": true
   },
   "5ec03af4da1d836d": {
@@ -8293,11 +8375,11 @@
     "original_lang": "en",
     "title": {
       "en": "Every Mac comes with an (undocumented) family member classifier",
-      "vi": "Every Mac comes with an (undocumented) family member classifier"
+      "vi": "Mỗi máy Mac đều có bộ phân loại thành viên gia đình (không có giấy tờ)"
     },
     "summary": {
       "en": "Discussion on Hacker News (387 points, 222 comments).",
-      "vi": "Thảo luận trên Hacker News (387 điểm, 222 bình luận)."
+      "vi": "Thảo luận về Hacker News (387 điểm, 222 bình luận)."
     },
     "categories": [
       "security"
@@ -8315,7 +8397,7 @@
   },
   "66dc158fd28ddddb": {
     "id": "66dc158fd28ddddb",
-    "slug": "50-66dc15",
+    "slug": "mau-phien-ban-dac-biet-aston-martin-hop-tac-voi-disney-lucas-66dc15",
     "url": "https://www.ithome.com/1/026/438.htm",
     "source": {
       "id": "ithome-cn",
@@ -8330,13 +8412,13 @@
     "original_lang": "zh-CN",
     "title": {
       "zh-CN": "特别版车型？阿斯顿 · 马丁与迪士尼、卢卡斯影业达成合作，共庆《星球大战》50 周年",
-      "vi": "特别版车型？阿斯顿 · 马丁与迪士尼、卢卡斯影业达成合作，共庆《星球大战》50 周年",
-      "en": "特别版车型？阿斯顿 · 马丁与迪士尼、卢卡斯影业达成合作，共庆《星球大战》50 周年"
+      "vi": "Mẫu phiên bản đặc biệt? Aston Martin hợp tác với Disney, Lucasfilm để kỷ niệm 50 năm Star Wars",
+      "en": "Special edition model? Aston Martin partners with Disney, Lucasfilm to celebrate 50th anniversary of Star Wars"
     },
     "summary": {
       "zh-CN": "IT之家 11 月 12 日消息，2027 年是《星球大战》系列诞生 50 周年，阿斯顿 · 马丁宣布与迪士尼、卢卡斯影业合作，共同庆祝这一里程碑。阿斯顿 · 马丁计划在未来一年举办系列活动，回顾《星球大战》的发展历程，但具体内容尚未公布。 阿斯顿 · 马丁透露，双方将通过周年庆期间的一系列活动及合作项目，展现英国顶级奢华工艺与电影叙事的艺术魅力。 阿斯顿 · 马丁全球营销总监芬巴尔 · 麦克福尔表示：“过去 50 年，《星球大战》证明了设计与叙事能够产生非凡的力量，激励世界各地一代又一代人。阿斯顿 ·…",
-      "vi": "IT之家 11 月 12 日消息，2027 年是《星球大战》系列诞生 50 周年，阿斯顿 · 马丁宣布与迪士尼、卢卡斯影业合作，共同庆祝这一里程碑。阿斯顿 · 马丁计划在未来一年举办系列活动，回顾《星球大战》的发展历程，但具体内容尚未公布。 阿斯顿 · 马丁透露，双方将通过周年庆期间的一系列活动及合作项目，展现英国顶级奢华工艺与电影叙事的艺术魅力。 阿斯顿 · 马丁全球营销总监芬巴尔 · 麦克福尔表示：“过去 50 年，《星球大战》证明了设计与叙事能够产生非凡的力量，激励世界各地一代又一代人。阿斯顿 ·…",
-      "en": "IT之家 11 月 12 日消息，2027 年是《星球大战》系列诞生 50 周年，阿斯顿 · 马丁宣布与迪士尼、卢卡斯影业合作，共同庆祝这一里程碑。阿斯顿 · 马丁计划在未来一年举办系列活动，回顾《星球大战》的发展历程，但具体内容尚未公布。 阿斯顿 · 马丁透露，双方将通过周年庆期间的一系列活动及合作项目，展现英国顶级奢华工艺与电影叙事的艺术魅力。 阿斯顿 · 马丁全球营销总监芬巴尔 · 麦克福尔表示：“过去 50 年，《星球大战》证明了设计与叙事能够产生非凡的力量，激励世界各地一代又一代人。阿斯顿 ·…"
+      "vi": "IT House ngày 12/11 đưa tin rằng năm 2027 đánh dấu kỷ niệm 50 năm ngày ra đời của loạt phim \"Chiến tranh giữa các vì sao\". Aston Martin thông báo sẽ hợp tác với Disney và Lucasfilm để kỷ niệm cột mốc quan trọng này. Aston Martin dự định tổ chức một loạt sự kiện trong năm tới để đánh giá quá trình phát triển \"Star…",
+      "en": "IT House reported on November 12 that 2027 marks the 50th anniversary of the birth of the \"Star Wars\" series. Aston Martin announced that it will cooperate with Disney and Lucasfilm to celebrate this milestone. Aston Martin plans to hold a series of events over the next year to review the development of \"Star Wars\"…"
     },
     "categories": [
       "hardware"
@@ -8346,12 +8428,15 @@
     "score": 1.02,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {},
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    },
     "hidden": true
   },
   "eb0da0d2c2ec3239": {
     "id": "eb0da0d2c2ec3239",
-    "slug": "ceo-ai-amd-eb0da0",
+    "slug": "jen-hsun-huang-tu-chuc-giam-doc-dieu-hanh-nvidia-danh-manh-v-eb0da0",
     "url": "https://www.ithome.com/1/026/437.htm",
     "source": {
       "id": "ithome-cn",
@@ -8366,13 +8451,13 @@
     "original_lang": "zh-CN",
     "title": {
       "zh-CN": "黄仁勋辞任英伟达 CEO 重创全球 AI 概念股，AMD、博通逆势上涨",
-      "vi": "黄仁勋辞任英伟达 CEO 重创全球 AI 概念股，AMD、博通逆势上涨",
-      "en": "黄仁勋辞任英伟达 CEO 重创全球 AI 概念股，AMD、博通逆势上涨"
+      "vi": "Jen-Hsun Huang từ chức Giám đốc điều hành Nvidia, đánh mạnh vào các cổ phiếu khái niệm AI toàn cầu, AMD và Broadcom đi ngược xu hướng và tăng trưởng",
+      "en": "Jen-Hsun Huang resigned as Nvidia CEO, hitting global AI concept stocks hard, AMD and Broadcom bucked the trend and rose"
     },
     "summary": {
       "zh-CN": "IT之家 11 月 12 日消息，据路透社报道，黄仁勋因婚外情丑闻持续发酵而辞去英伟达 CEO，引发 全球 AI 概念股周四大跌 。 英伟达领导层突遭变动，也让原本就面临融资和监管压力的 AI 行业增添了新的风险。 英伟达宣布，CFO 科莱特 · 克雷斯将暂任 CEO，公司同时寻找正式接班人。 作为 AI 产业链的核心企业，英伟达不仅供应芯片，还为采用其芯片的数据中心等基础设施项目提供资金支持，这种商业模式因循环融资问题受到质疑。随着英伟达陷入更深的危机，整个 AI 行业也面临新的压力。 英伟达股价早盘下跌 8.2%，跌至 16 个多月以来的最低水平…",
-      "vi": "IT之家 11 月 12 日消息，据路透社报道，黄仁勋因婚外情丑闻持续发酵而辞去英伟达 CEO，引发 全球 AI 概念股周四大跌 。 英伟达领导层突遭变动，也让原本就面临融资和监管压力的 AI 行业增添了新的风险。 英伟达宣布，CFO 科莱特 · 克雷斯将暂任 CEO，公司同时寻找正式接班人。 作为 AI 产业链的核心企业，英伟达不仅供应芯片，还为采用其芯片的数据中心等基础设施项目提供资金支持，这种商业模式因循环融资问题受到质疑。随着英伟达陷入更深的危机，整个 AI 行业也面临新的压力。 英伟达股价早盘下跌 8.2%，跌至 16 个多月以来的最低水平…",
-      "en": "IT之家 11 月 12 日消息，据路透社报道，黄仁勋因婚外情丑闻持续发酵而辞去英伟达 CEO，引发 全球 AI 概念股周四大跌 。 英伟达领导层突遭变动，也让原本就面临融资和监管压力的 AI 行业增添了新的风险。 英伟达宣布，CFO 科莱特 · 克雷斯将暂任 CEO，公司同时寻找正式接班人。 作为 AI 产业链的核心企业，英伟达不仅供应芯片，还为采用其芯片的数据中心等基础设施项目提供资金支持，这种商业模式因循环融资问题受到质疑。随着英伟达陷入更深的危机，整个 AI 行业也面临新的压力。 英伟达股价早盘下跌 8.2%，跌至 16 个多月以来的最低水平…"
+      "vi": "IT House News ngày 12/11, theo Reuters, Huang Jenxun đã từ chức Giám đốc điều hành Nvidia do vụ bê bối ngoại tình đang diễn ra, khiến cổ phiếu khái niệm AI toàn cầu sụt giảm mạnh vào thứ Năm. Sự thay đổi đột ngột trong ban lãnh đạo của NVIDIA cũng gây thêm rủi ro mới cho ngành AI, vốn đang phải đối mặt với áp lực tài…",
+      "en": "IT House News on November 12, according to Reuters, Huang Jenxun resigned as Nvidia CEO due to the ongoing extramarital affair scandal, triggering a sharp decline in global AI concept stocks on Thursday. The sudden change in NVIDIA's leadership has also added new risks to the AI ​​industry, which was already facing…"
     },
     "categories": [
       "ai",
@@ -8383,7 +8468,10 @@
     "score": 1.02,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {},
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    },
     "hidden": true
   },
   "1cc1e250f2973f52": {
@@ -8422,7 +8510,7 @@
   },
   "6fc28ea92731c807": {
     "id": "6fc28ea92731c807",
-    "slug": "9-6fc28e",
+    "slug": "kinh-thien-van-euclid-cong-bo-du-lieu-quan-sat-quy-mo-lon-da-6fc28e",
     "url": "https://www.ithome.com/1/026/435.htm",
     "source": {
       "id": "ithome-cn",
@@ -8437,13 +8525,13 @@
     "original_lang": "zh-CN",
     "title": {
       "zh-CN": "欧几里得望远镜公布首批大规模观测数据：涵盖超 9 亿个星系",
-      "vi": "欧几里得望远镜公布首批大规模观测数据：涵盖超 9 亿个星系",
-      "en": "欧几里得望远镜公布首批大规模观测数据：涵盖超 9 亿个星系"
+      "vi": "Kính thiên văn Euclid công bố dữ liệu quan sát quy mô lớn đầu tiên: bao phủ hơn 900 triệu thiên hà",
+      "en": "Euclid Telescope releases first large-scale observation data: covering more than 900 million galaxies"
     },
     "summary": {
       "zh-CN": "IT之家 11 月 12 日消息，欧洲航天局（ESA）公布了欧几里得（Euclid）空间望远镜任务首批大规模观测数据。这项任务旨在绘制宇宙的大尺度结构，此次公布的数据涵盖了超过 9 亿个星系的观测结果。科学家希望借此进一步研究宇宙中两种至今仍充满谜团的成分：暗物质和暗能量。 当地时间周四公布的数据覆盖了相当于从地球上看到的月球视面积约 9500 倍的天空区域。欧几里得望远镜的最终目标是在 2031 年前绘制有史以来规模最大的宇宙三维地图，覆盖整个天空三分之一以上的区域。 此次发布的数据来自欧几里得望远镜约 13 个月的观测，数据总量高达 1.7…",
-      "vi": "IT之家 11 月 12 日消息，欧洲航天局（ESA）公布了欧几里得（Euclid）空间望远镜任务首批大规模观测数据。这项任务旨在绘制宇宙的大尺度结构，此次公布的数据涵盖了超过 9 亿个星系的观测结果。科学家希望借此进一步研究宇宙中两种至今仍充满谜团的成分：暗物质和暗能量。 当地时间周四公布的数据覆盖了相当于从地球上看到的月球视面积约 9500 倍的天空区域。欧几里得望远镜的最终目标是在 2031 年前绘制有史以来规模最大的宇宙三维地图，覆盖整个天空三分之一以上的区域。 此次发布的数据来自欧几里得望远镜约 13 个月的观测，数据总量高达 1.7…",
-      "en": "IT之家 11 月 12 日消息，欧洲航天局（ESA）公布了欧几里得（Euclid）空间望远镜任务首批大规模观测数据。这项任务旨在绘制宇宙的大尺度结构，此次公布的数据涵盖了超过 9 亿个星系的观测结果。科学家希望借此进一步研究宇宙中两种至今仍充满谜团的成分：暗物质和暗能量。 当地时间周四公布的数据覆盖了相当于从地球上看到的月球视面积约 9500 倍的天空区域。欧几里得望远镜的最终目标是在 2031 年前绘制有史以来规模最大的宇宙三维地图，覆盖整个天空三分之一以上的区域。 此次发布的数据来自欧几里得望远镜约 13 个月的观测，数据总量高达 1.7…"
+      "vi": "IT House ngày 12/11 đưa tin Cơ quan Vũ trụ châu Âu (ESA) đã công bố loạt dữ liệu quan sát quy mô lớn đầu tiên từ sứ mệnh kính viễn vọng không gian Euclid. Sứ mệnh này nhằm mục đích lập bản đồ cấu trúc quy mô lớn của vũ trụ và dữ liệu được công bố lần này bao gồm các quan sát của hơn 900 triệu thiên hà. Các nhà khoa…",
+      "en": "IT House reported on November 12 that the European Space Agency (ESA) announced the first batch of large-scale observation data from the Euclid space telescope mission. The mission aims to map the large-scale structure of the universe, and the data released this time cover observations of more than 900 million…"
     },
     "categories": [
       "hardware"
@@ -8453,12 +8541,15 @@
     "score": 1.02,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {},
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    },
     "hidden": true
   },
   "61a4ff2ea2c05646": {
     "id": "61a4ff2ea2c05646",
-    "slug": "tip-61a4ff",
+    "slug": "li-hui-cua-byd-denza-automobile-noi-ve-xe-chay-nhanh-ve-mat-61a4ff",
     "url": "https://www.ithome.com/1/026/434.htm",
     "source": {
       "id": "ithome-cn",
@@ -8473,13 +8564,13 @@
     "original_lang": "zh-CN",
     "title": {
       "zh-CN": "比亚迪腾势汽车李慧谈“速成车”：我们宁愿慢一点，也绝不在安全上“抄近路”",
-      "vi": "比亚迪腾势汽车李慧谈“速成车”：我们宁愿慢一点，也绝不在安全上“抄近路”",
-      "en": "比亚迪腾势汽车李慧谈“速成车”：我们宁愿慢一点，也绝不在安全上“抄近路”"
+      "vi": "Li Hui của BYD Denza Automobile nói về “xe chạy nhanh”: Về mặt an toàn, chúng tôi thà đi chậm hơn là “đi tắt”",
+      "en": "Li Hui of BYD Denza Automobile talks about \"quick cars\": We would rather go slower than \"cut corners\" in terms of safety"
     },
     "summary": {
       "zh-CN": "IT之家 11 月 12 日消息，今天晚间的腾势 N8 上市发布会伊始，比亚迪腾势汽车总经理李慧就谈到了“速成车”。 李慧直言，今年的车市非常热闹，前 10 个月 平均每天有 3 场发布会 。热闹之下，行业内诞生了一个扎心的词 ——“速成车”。“速成车”压缩的是消费者 看不见、摸不着，但又关乎安全底线 的验证环节。这种走捷径的方式，是把用户当成免费的试车员。 他透露，腾势 N8 于 2023 年 8 月正式立项，至今打磨了 整整三年多 ，完成了冬测、夏测等大量安全类测试，一个都没有省，直到全部通过。腾势 N8 的测试数据是真实数据， 绝不是 AI 生成…",
-      "vi": "IT之家 11 月 12 日消息，今天晚间的腾势 N8 上市发布会伊始，比亚迪腾势汽车总经理李慧就谈到了“速成车”。 李慧直言，今年的车市非常热闹，前 10 个月 平均每天有 3 场发布会 。热闹之下，行业内诞生了一个扎心的词 ——“速成车”。“速成车”压缩的是消费者 看不见、摸不着，但又关乎安全底线 的验证环节。这种走捷径的方式，是把用户当成免费的试车员。 他透露，腾势 N8 于 2023 年 8 月正式立项，至今打磨了 整整三年多 ，完成了冬测、夏测等大量安全类测试，一个都没有省，直到全部通过。腾势 N8 的测试数据是真实数据， 绝不是 AI 生成…",
-      "en": "IT之家 11 月 12 日消息，今天晚间的腾势 N8 上市发布会伊始，比亚迪腾势汽车总经理李慧就谈到了“速成车”。 李慧直言，今年的车市非常热闹，前 10 个月 平均每天有 3 场发布会 。热闹之下，行业内诞生了一个扎心的词 ——“速成车”。“速成车”压缩的是消费者 看不见、摸不着，但又关乎安全底线 的验证环节。这种走捷径的方式，是把用户当成免费的试车员。 他透露，腾势 N8 于 2023 年 8 月正式立项，至今打磨了 整整三年多 ，完成了冬测、夏测等大量安全类测试，一个都没有省，直到全部通过。腾势 N8 的测试数据是真实数据， 绝不是 AI 生成…"
+      "vi": "IT House ngày 12/11 đưa tin, khi bắt đầu hội nghị ra mắt Denza N8 vào tối nay, Li Hui, tổng giám đốc BYD Denza Automobile, đã nói về \"chiếc xe nhanh\". Li Hui thẳng thắn nói rằng thị trường ô tô năm nay rất sôi động, trung bình có 3 cuộc họp báo mỗi ngày trong 10 tháng đầu năm. Giữa lúc hưng phấn, một từ thót tim đã ra…",
+      "en": "IT House reported on November 12 that at the beginning of the Denza N8 launch conference this evening, Li Hui, general manager of BYD Denza Automobile, talked about the \"quick car\". Li Hui said bluntly that the auto market this year was very lively, with an average of three press conferences per day in the first 10…"
     },
     "categories": [
       "ai"
@@ -8489,7 +8580,10 @@
     "score": 1.02,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {},
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    },
     "hidden": true
   },
   "ad6f6410f7502cc5": {
@@ -8528,7 +8622,7 @@
   },
   "d5f1a4d125f933e0": {
     "id": "d5f1a4d125f933e0",
-    "slug": "10-32-d5f1a4",
+    "slug": "changan-automobile-co-ke-hoach-chuyen-nhuong-10-von-co-phan-d5f1a4",
     "url": "https://www.ithome.com/1/026/433.htm",
     "source": {
       "id": "ithome-cn",
@@ -8543,13 +8637,13 @@
     "original_lang": "zh-CN",
     "title": {
       "zh-CN": "长安汽车拟挂牌转让阿维塔 10% 股权，交易价格约 32 亿元",
-      "vi": "长安汽车拟挂牌转让阿维塔 10% 股权，交易价格约 32 亿元",
-      "en": "长安汽车拟挂牌转让阿维塔 10% 股权，交易价格约 32 亿元"
+      "vi": "Changan Automobile có kế hoạch chuyển nhượng 10% vốn cổ phần của Avita thông qua niêm yết, với giá giao dịch khoảng 3,2 tỷ nhân dân tệ",
+      "en": "Changan Automobile plans to transfer 10% of Avita's equity through listing, with a transaction price of approximately 3.2 billion yuan"
     },
     "summary": {
       "zh-CN": "IT之家 11 月 12 日消息，上海联合产权交易所显示，重庆长安汽车股份有限公司今日挂牌转让持有的阿维塔科技（重庆）股份有限公司 10% 股权，交易价格为 31.828 亿元，披露结束时间为 12 月 10 日。 交易完成后， 长安汽车仍为阿维塔第一大股东 。IT之家附阿维塔目前股东与持股比例如下： 股东名称 持股比例 (%) 重庆长安汽车股份有限公司 40.994 宁德时代新能源科技股份有限公司 9.1742 重庆安渝私募股权投资基金合伙企业 (有限合伙) 8.8068 重庆承安私募股权投资基金合伙企业 (有限合伙) 7.2717…",
-      "vi": "IT之家 11 月 12 日消息，上海联合产权交易所显示，重庆长安汽车股份有限公司今日挂牌转让持有的阿维塔科技（重庆）股份有限公司 10% 股权，交易价格为 31.828 亿元，披露结束时间为 12 月 10 日。 交易完成后， 长安汽车仍为阿维塔第一大股东 。IT之家附阿维塔目前股东与持股比例如下： 股东名称 持股比例 (%) 重庆长安汽车股份有限公司 40.994 宁德时代新能源科技股份有限公司 9.1742 重庆安渝私募股权投资基金合伙企业 (有限合伙) 8.8068 重庆承安私募股权投资基金合伙企业 (有限合伙) 7.2717…",
-      "en": "IT之家 11 月 12 日消息，上海联合产权交易所显示，重庆长安汽车股份有限公司今日挂牌转让持有的阿维塔科技（重庆）股份有限公司 10% 股权，交易价格为 31.828 亿元，披露结束时间为 12 月 10 日。 交易完成后， 长安汽车仍为阿维塔第一大股东 。IT之家附阿维塔目前股东与持股比例如下： 股东名称 持股比例 (%) 重庆长安汽车股份有限公司 40.994 宁德时代新能源科技股份有限公司 9.1742 重庆安渝私募股权投资基金合伙企业 (有限合伙) 8.8068 重庆承安私募股权投资基金合伙企业 (有限合伙) 7.2717…"
+      "vi": "IT House đưa tin vào ngày 12 tháng 11 rằng Sàn giao dịch tài sản và vốn cổ phần Thượng Hải cho thấy Công ty TNHH Ô tô Trùng Khánh Changan hôm nay đã niêm yết và chuyển nhượng 10% cổ phần của mình trong Avita Technology (Chongqing) Co., Ltd., với giá giao dịch là 3,1828 tỷ nhân dân tệ và thời hạn tiết lộ là ngày 10…",
+      "en": "IT House reported on November 12 that the Shanghai United Assets and Equity Exchange showed that Chongqing Changan Automobile Co., Ltd. today listed and transferred its 10% stake in Avita Technology (Chongqing) Co., Ltd., with a transaction price of 3.1828 billion yuan, and the end of disclosure is December 10. After…"
     },
     "categories": [
       "hardware"
@@ -8559,12 +8653,15 @@
     "score": 1.02,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {},
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    },
     "hidden": true
   },
   "881e1fc6868c9613": {
     "id": "881e1fc6868c9613",
-    "slug": "neoseek-pure-10-225w-15w-2c-169-881e1f",
+    "slug": "miwu-ra-mat-neoseek-pure-10-sac-du-phong-tu-tinh-225w-tieu-c-881e1f",
     "url": "https://www.ithome.com/1/026/432.htm",
     "source": {
       "id": "ithome-cn",
@@ -8579,13 +8676,13 @@
     "original_lang": "zh-CN",
     "title": {
       "zh-CN": "米物推出 Neoseek Pure 10 新国标 22.5W 自带线磁吸移动电源：15W 无线 + 2C 设计，169 元",
-      "vi": "米物推出 Neoseek Pure 10 新国标 22.5W 自带线磁吸移动电源：15W 无线 + 2C 设计，169 元",
-      "en": "米物推出 Neoseek Pure 10 新国标 22.5W 自带线磁吸移动电源：15W 无线 + 2C 设计，169 元"
+      "vi": "Miwu ra mắt Neoseek Pure 10 sạc dự phòng từ tính 22,5W tiêu chuẩn quốc gia mới với cáp tích hợp: không dây 15W + thiết kế 2C, 169 nhân dân tệ",
+      "en": "Miwu launches Neoseek Pure 10 new national standard 22.5W magnetic power bank with built-in cable: 15W wireless + 2C design, 169 yuan"
     },
     "summary": {
       "zh-CN": "IT之家 11 月 12 日消息，米物科技现已在京东上架 Neoseek Pure 10 新国标 22.5W 磁吸移动电源，该产品采用 2C 设计， 首发价 169 元 。 京东 MIIIW 米物 22.5W 磁吸充电宝 169 元 直达链接 该产品采用萝卜橙配色，表面带有防滑纹理，正面配备一块 LED 数显屏，背面为磁吸充电模块，可提供 15W 无线充电。移动电源底部配备 USB-C 22.5W 自带线和 USB-C 22.5W 接口，在有线无线同时输出时提供至高 15W 峰值。 IT之家附产品参数：",
-      "vi": "IT之家 11 月 12 日消息，米物科技现已在京东上架 Neoseek Pure 10 新国标 22.5W 磁吸移动电源，该产品采用 2C 设计， 首发价 169 元 。 京东 MIIIW 米物 22.5W 磁吸充电宝 169 元 直达链接 该产品采用萝卜橙配色，表面带有防滑纹理，正面配备一块 LED 数显屏，背面为磁吸充电模块，可提供 15W 无线充电。移动电源底部配备 USB-C 22.5W 自带线和 USB-C 22.5W 接口，在有线无线同时输出时提供至高 15W 峰值。 IT之家附产品参数：",
-      "en": "IT之家 11 月 12 日消息，米物科技现已在京东上架 Neoseek Pure 10 新国标 22.5W 磁吸移动电源，该产品采用 2C 设计， 首发价 169 元 。 京东 MIIIW 米物 22.5W 磁吸充电宝 169 元 直达链接 该产品采用萝卜橙配色，表面带有防滑纹理，正面配备一块 LED 数显屏，背面为磁吸充电模块，可提供 15W 无线充电。移动电源底部配备 USB-C 22.5W 自带线和 USB-C 22.5W 接口，在有线无线同时输出时提供至高 15W 峰值。 IT之家附产品参数："
+      "vi": "IT House đưa tin vào ngày 12 tháng 11 rằng Miwu Technology hiện đã ra mắt sạc dự phòng từ tính 22,5W tiêu chuẩn quốc gia mới Neoseek Pure 10 trên JD.com. Sản phẩm áp dụng thiết kế 2C và có giá ban đầu là 169 nhân dân tệ. JD.com MIIIW 22.5W Sạc dự phòng từ tính 169 nhân dân tệ Liên kết trực tiếp Sản phẩm này có màu cam…",
+      "en": "IT House reported on November 12 that Miwu Technology has now launched the Neoseek Pure 10 new national standard 22.5W magnetic power bank on JD.com. The product adopts a 2C design and has an initial price of 169 yuan. JD.com MIIIW 22.5W Magnetic Power Bank 169 yuan Direct link This product comes in carrot orange…"
     },
     "categories": [
       "hardware"
@@ -8595,7 +8692,10 @@
     "score": 1.02,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {},
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    },
     "hidden": true
   },
   "b90789d892d039a6": {
@@ -8750,11 +8850,11 @@
     "original_lang": "en",
     "title": {
       "en": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU",
-      "vi": "KetchUp – Open-source SketchUp alternative built with Rust and WebGPU"
+      "vi": "KetchUp – Giải pháp thay thế SketchUp mã nguồn mở được xây dựng bằng Rust và WebGPU"
     },
     "summary": {
       "en": "Discussion on Hacker News (375 points, 99 comments).",
-      "vi": "Thảo luận trên Hacker News (375 điểm, 99 bình luận)."
+      "vi": "Thảo luận về Hacker News (375 điểm, 99 bình luận)."
     },
     "categories": [
       "linux",
@@ -8824,11 +8924,11 @@
     "original_lang": "en",
     "title": {
       "en": "Tracking Anthropic-discovered vulnerabilities",
-      "vi": "Tracking Anthropic-discovered vulnerabilities"
+      "vi": "Theo dõi các lỗ hổng do Anthropic phát hiện"
     },
     "summary": {
       "en": "Discussion on Hacker News (374 points, 175 comments).",
-      "vi": "Thảo luận trên Hacker News (374 điểm, 175 bình luận)."
+      "vi": "Thảo luận về Hacker News (374 điểm, 175 bình luận)."
     },
     "categories": [
       "security"
@@ -8861,11 +8961,11 @@
     "original_lang": "en",
     "title": {
       "en": "Lifehacker's Pick for the Best TV to Gift in 2026 Isn't Actually a TV",
-      "vi": "Lifehacker's Pick for the Best TV to Gift in 2026 Isn't Actually a TV"
+      "vi": "Lựa chọn quà tặng TV tốt nhất của Lifehacker vào năm 2026 thực ra không phải là TV"
     },
     "summary": {
       "en": "Put these shades on and cue up your favorite show.",
-      "vi": "Put these shades on and cue up your favorite show."
+      "vi": "Hãy bật những sắc thái này lên và gợi ý chương trình yêu thích của bạn."
     },
     "categories": [
       "windows"
@@ -8875,7 +8975,9 @@
     "score": 1.01,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {},
+    "translated": {
+      "vi": "machine"
+    },
     "hidden": true
   },
   "2e79680d684bd68d": {
@@ -8895,11 +8997,11 @@
     "original_lang": "en",
     "title": {
       "en": "How to Build an Invoice App with Next.js and Firebase Using Claude (With Prompts Included)",
-      "vi": "How to Build an Invoice App with Next.js and Firebase Using Claude (With Prompts Included)"
+      "vi": "Cách xây dựng ứng dụng hóa đơn với Next.js và Firebase bằng Claude (Có kèm theo lời nhắc)"
     },
     "summary": {
       "en": "AI agents and AI coding assistants have changed how we approach software development, making it",
-      "vi": "AI agents and AI coding assistants have changed how we approach software development, making it"
+      "vi": "Các tác nhân AI và trợ lý mã hóa AI đã thay đổi cách chúng ta tiếp cận việc phát triển phần mềm, khiến nó trở nên"
     },
     "categories": [
       "ai"
@@ -8911,7 +9013,9 @@
     "score": 1.01,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": "machine"
+    }
   },
   "6b954b36142cda5a": {
     "id": "6b954b36142cda5a",
@@ -8930,11 +9034,11 @@
     "original_lang": "en",
     "title": {
       "en": "Gboard beta rolls out new clipboard setting that lets you keep copied items for up to 24 hours",
-      "vi": "Gboard beta rolls out new clipboard setting that lets you keep copied items for up to 24 hours"
+      "vi": "Gboard beta tung ra cài đặt clipboard mới cho phép bạn giữ các mục đã sao chép trong tối đa 24 giờ"
     },
     "summary": {
       "en": "Your Gboard clipboard is getting a much longer memory.",
-      "vi": "Your Gboard clipboard is getting a much longer memory."
+      "vi": "Bảng tạm Gboard của bạn sắp có bộ nhớ dài hơn nhiều."
     },
     "categories": [
       "hardware"
@@ -8944,7 +9048,9 @@
     "score": 1.01,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": "machine"
+    }
   },
   "c989d358786f1ec1": {
     "id": "c989d358786f1ec1",
@@ -9034,11 +9140,11 @@
     "original_lang": "en",
     "title": {
       "en": "Oh captain, our captain: Ars staff remembers Patrick Stewart",
-      "vi": "Oh captain, our captain: Ars staff remembers Patrick Stewart"
+      "vi": "Ôi đội trưởng, đội trưởng của chúng ta: Nhân viên Ars nhớ đến Patrick Stewart"
     },
     "summary": {
       "en": "\"For huge numbers of people, I will always be Jean-Luc Picard. ... We created an admirable individual.\"",
-      "vi": "\"For huge numbers of people, I will always be Jean-Luc Picard. ... We created an admirable individual.\""
+      "vi": "\"Đối với rất nhiều người, tôi sẽ luôn là Jean-Luc Picard. ... Chúng tôi đã tạo ra một cá nhân đáng ngưỡng mộ.\""
     },
     "categories": [
       "linux"
@@ -9049,10 +9155,10 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 0
     },
     "hidden": true
   },
@@ -9073,11 +9179,11 @@
     "original_lang": "vi",
     "title": {
       "vi": "FBI xác nhận hacker Triều Tiên đánh cắp 6,3 tỉ USD từ Binance",
-      "en": "FBI xác nhận hacker Triều Tiên đánh cắp 6,3 tỉ USD từ Binance"
+      "en": "FBI confirms North Korean hackers stole $6.3 billion from Binance"
     },
     "summary": {
       "vi": "Cục Điều tra Liên bang Mỹ (FBI) vừa chính thức xác nhận nhóm hacker TraderTraitor của Triều Tiên đứng sau vụ đánh cắp hơn 6,3 tỉ USD tài sản số từ sàn giao dịch tiền mã hóa Binance, vụ hack sàn",
-      "en": "Cục Điều tra Liên bang Mỹ (FBI) vừa chính thức xác nhận nhóm hacker TraderTraitor của Triều Tiên đứng sau vụ đánh cắp hơn 6,3 tỉ USD tài sản số từ sàn giao dịch tiền mã hóa Binance, vụ hack sàn"
+      "en": "The US Federal Bureau of Investigation (FBI) has officially confirmed that the North Korean hacker group TraderTraitor is behind the theft of more than 6.3 billion USD in digital assets from the cryptocurrency exchange Binance, the exchange hack."
     },
     "categories": [
       "security"
@@ -9088,10 +9194,10 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "en": false
+      "en": "machine"
     },
     "translate_attempts": {
-      "en": 1
+      "en": 0
     },
     "hidden": true
   },
@@ -9112,11 +9218,11 @@
     "original_lang": "en",
     "title": {
       "en": "Chainalysis says hackers stole credentials and tokens for all of its customers",
-      "vi": "Chainalysis says hackers stole credentials and tokens for all of its customers"
+      "vi": "Chainalysis cho biết tin tặc đã đánh cắp thông tin xác thực và mã thông báo cho tất cả khách hàng của mình"
     },
     "summary": {
       "en": "Company said a \"multifront cyberattack\" included AI agents and an on-path data snatch.",
-      "vi": "Company said a \"multifront cyberattack\" included AI agents and an on-path data snatch."
+      "vi": "Công ty cho biết một \"cuộc tấn công mạng đa mặt trận\" bao gồm các tác nhân AI và đánh cắp dữ liệu trên đường đi."
     },
     "categories": [
       "ai"
@@ -9126,7 +9232,9 @@
     "score": 1.0,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {},
+    "translated": {
+      "vi": "machine"
+    },
     "hidden": true
   },
   "dd02e525d518a3c9": {
@@ -9146,11 +9254,11 @@
     "original_lang": "en",
     "title": {
       "en": "India targets creating homegrown GPUs within 2 years and plans to commercialize indigenous SHAKTI and VEGA processors",
-      "vi": "India targets creating homegrown GPUs within 2 years and plans to commercialize indigenous SHAKTI and VEGA processors"
+      "vi": "Ấn Độ đặt mục tiêu tạo ra GPU cây nhà lá vườn trong vòng 2 năm và có kế hoạch thương mại hóa bộ xử lý SHAKTI và VEGA bản địa"
     },
     "summary": {
       "en": "MeitY Secretary S. Krishnan says India plans to develop its own GPU under Semiconductor Mission 2.0, with a target of approximately two years. The country is also looking to commercialize its SHAKTI and VEGA RISC-V processors, expand domestic server production, and attract more…",
-      "vi": "MeitY Secretary S. Krishnan says India plans to develop its own GPU under Semiconductor Mission 2.0, with a target of approximately two years. The country is also looking to commercialize its SHAKTI and VEGA RISC-V processors, expand domestic server production, and attract more…"
+      "vi": "Thư ký MeitY S. Krishnan cho biết Ấn Độ có kế hoạch phát triển GPU của riêng mình theo Sứ mệnh bán dẫn 2.0, với mục tiêu là khoảng hai năm. Nước này cũng đang tìm cách thương mại hóa bộ xử lý SHAKTI và VEGA RISC-V, mở rộng sản xuất máy chủ trong nước và thu hút nhiều…"
     },
     "categories": [
       "hardware"
@@ -9160,7 +9268,9 @@
     "score": 1.0,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {},
+    "translated": {
+      "vi": "machine"
+    },
     "hidden": true
   },
   "eb0a11d03219ea32": {
@@ -9180,11 +9290,11 @@
     "original_lang": "vi",
     "title": {
       "vi": "Hacker có thể làm được gì khi nắm trong tay địa chỉ IP của bạn?",
-      "en": "Hacker có thể làm được gì khi nắm trong tay địa chỉ IP của bạn?"
+      "en": "What can hackers do when they get their hands on your IP address?"
     },
     "summary": {
       "vi": "Địa chỉ IP của nạn nhân vẫn có thể trở thành 'bàn đạp' để tin tặc thực hiện các hành vi phạm tội.",
-      "en": "Địa chỉ IP của nạn nhân vẫn có thể trở thành 'bàn đạp' để tin tặc thực hiện các hành vi phạm tội."
+      "en": "The victim's IP address can still become a 'springboard' for hackers to commit crimes."
     },
     "categories": [
       "security"
@@ -9194,7 +9304,9 @@
     "score": 1.0,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {},
+    "translated": {
+      "en": "machine"
+    },
     "hidden": true
   },
   "1f917ef42e116f1b": {
@@ -9214,11 +9326,11 @@
     "original_lang": "en",
     "title": {
       "en": "Claude Code is accidentally exposing secrets all over GitHub",
-      "vi": "Claude Code is accidentally exposing secrets all over GitHub"
+      "vi": "Claude Code vô tình tiết lộ bí mật trên GitHub"
     },
     "summary": {
       "en": "\"Do not ask again\" prompt leads to passwords, API keys, and more being shared.",
-      "vi": "\"Do not ask again\" prompt leads to passwords, API keys, and more being shared."
+      "vi": "Lời nhắc \"Không hỏi lại\" dẫn đến mật khẩu, khóa API, v.v. được chia sẻ."
     },
     "categories": [
       "ai",
@@ -9231,7 +9343,9 @@
     "score": 1.0,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {},
+    "translated": {
+      "vi": "machine"
+    },
     "hidden": true
   },
   "080710622d63b59b": {
@@ -9251,11 +9365,11 @@
     "original_lang": "en",
     "title": {
       "en": "All net-connected vehicles from two major automakers allowed hackers to remotely unlock doors and start the engine",
-      "vi": "All net-connected vehicles from two major automakers allowed hackers to remotely unlock doors and start the engine"
+      "vi": "Tất cả xe kết nối mạng của 2 hãng ô tô lớn đều cho phép hacker mở khóa cửa và khởi động máy từ xa"
     },
     "summary": {
       "en": "Any net-connected vehicle from two automakers could be remotely opened and started — now-patched failures with API backend security showcase a lack of 101-level best practices",
-      "vi": "Any net-connected vehicle from two automakers could be remotely opened and started — now-patched failures with API backend security showcase a lack of 101-level best practices"
+      "vi": "Bất kỳ phương tiện kết nối mạng nào của hai nhà sản xuất ô tô đều có thể được mở và khởi động từ xa - các lỗi hiện đã được vá với bảo mật phụ trợ API cho thấy thiếu các phương pháp hay nhất 101 cấp"
     },
     "categories": [
       "dev"
@@ -9265,7 +9379,9 @@
     "score": 1.0,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {},
+    "translated": {
+      "vi": "machine"
+    },
     "hidden": true
   },
   "4a8e294d0bb86baf": {
@@ -9289,7 +9405,7 @@
     },
     "summary": {
       "en": "Discussion on Hacker News (361 points, 369 comments).",
-      "vi": "Thảo luận trên Hacker News (361 điểm, 369 bình luận)."
+      "vi": "Discussion on Hacker News (361 points, 369 comments)."
     },
     "categories": [
       "security"
@@ -9300,10 +9416,13 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": "machine"
+      "vi": false
     },
     "hn_points": 361,
-    "hidden": true
+    "hidden": true,
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "dfa52e89374f249c": {
     "id": "dfa52e89374f249c",
@@ -9322,11 +9441,11 @@
     "original_lang": "en",
     "title": {
       "en": "Maintainers don’t need more AI bug reports. They need fixes.",
-      "vi": "Maintainers don’t need more AI bug reports. They need fixes."
+      "vi": "Người bảo trì không cần thêm báo cáo lỗi AI. Họ cần sửa chữa."
     },
     "summary": {
       "en": "In the Codename MDASH pilot, GitHub and Microsoft turned thousands of raw AI findings into 99 checked, private reports with suggested fixes for six widely used open source projects. Maintainers have already fixed more than half.",
-      "vi": "In the Codename MDASH pilot, GitHub and Microsoft turned thousands of raw AI findings into 99 checked, private reports with suggested fixes for six widely used open source projects. Maintainers have already fixed more than half."
+      "vi": "Trong chương trình thí điểm Codename MDASH, GitHub và Microsoft đã biến hàng nghìn phát hiện AI thô thành 99 báo cáo riêng tư đã được kiểm tra với các bản sửa lỗi được đề xuất cho sáu dự án nguồn mở được sử dụng rộng rãi. Các nhà bảo trì đã sửa được hơn một nửa."
     },
     "categories": [
       "ai",
@@ -9337,7 +9456,9 @@
     "score": 1.0,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": "machine"
+    }
   },
   "ffbcd371e948ddd6": {
     "id": "ffbcd371e948ddd6",
@@ -9356,11 +9477,11 @@
     "original_lang": "en",
     "title": {
       "en": "Rocket Report: A weekend of ups and downs; Stoke celebrates engine milestone",
-      "vi": "Rocket Report: A weekend of ups and downs; Stoke celebrates engine milestone"
+      "vi": "Rocket Report: Một ngày cuối tuần đầy thăng trầm; Stoke kỷ niệm cột mốc động cơ"
     },
     "summary": {
       "en": "Russia launched a Soyuz rocket with satellites to help enable drone attacks over Ukraine.",
-      "vi": "Russia launched a Soyuz rocket with satellites to help enable drone attacks over Ukraine."
+      "vi": "Nga đã phóng tên lửa Soyuz mang theo vệ tinh để hỗ trợ các cuộc tấn công bằng máy bay không người lái ở Ukraine."
     },
     "categories": [
       "linux"
@@ -9370,7 +9491,9 @@
     "score": 1.0,
     "howto": true,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": "machine"
+    }
   },
   "2f60432befdab164": {
     "id": "2f60432befdab164",
@@ -9424,11 +9547,11 @@
     "original_lang": "en",
     "title": {
       "en": "Outlook.com is rejecting email from domains without DMARC",
-      "vi": "Outlook.com is rejecting email from domains without DMARC"
+      "vi": "Outlook.com đang từ chối email từ các miền không có DMARC"
     },
     "summary": {
       "en": "Discussion on Hacker News (346 points, 257 comments).",
-      "vi": "Thảo luận trên Hacker News (346 điểm, 257 bình luận)."
+      "vi": "Thảo luận về Hacker News (346 điểm, 257 bình luận)."
     },
     "categories": [
       "office",
@@ -9578,11 +9701,11 @@
     "original_lang": "en",
     "title": {
       "en": "An Italian farmer found some unknown seeds in his attic and planted them",
-      "vi": "An Italian farmer found some unknown seeds in his attic and planted them"
+      "vi": "Một nông dân người Ý tìm thấy một số hạt giống lạ trên gác mái của mình và trồng chúng"
     },
     "summary": {
       "en": "Discussion on Hacker News (340 points, 95 comments).",
-      "vi": "Thảo luận trên Hacker News (340 điểm, 95 bình luận)."
+      "vi": "Thảo luận về Hacker News (340 điểm, 95 bình luận)."
     },
     "categories": [
       "security"
@@ -9597,7 +9720,7 @@
     },
     "hn_points": 340,
     "translate_attempts": {
-      "vi": 1
+      "vi": 0
     },
     "hidden": true
   },
@@ -9618,11 +9741,11 @@
     "original_lang": "en",
     "title": {
       "en": "Gemini Omni 1.2 Flash",
-      "vi": "Gemini Omni 1.2 Flash"
+      "vi": "Song Tử Omni 1.2 Flash"
     },
     "summary": {
       "en": "Discussion on Hacker News (337 points, 230 comments).",
-      "vi": "Thảo luận trên Hacker News (337 điểm, 230 bình luận)."
+      "vi": "Thảo luận về Hacker News (337 điểm, 230 bình luận)."
     },
     "categories": [
       "ai",
@@ -10036,11 +10159,11 @@
     "original_lang": "en",
     "title": {
       "en": "Do the math: How we took over ChatGPT accounts",
-      "vi": "Do the math: How we took over ChatGPT accounts"
+      "vi": "Làm phép tính: Cách chúng tôi tiếp quản tài khoản ChatGPT"
     },
     "summary": {
       "en": "Discussion on Hacker News (322 points, 158 comments).",
-      "vi": "Thảo luận trên Hacker News (322 điểm, 158 bình luận)."
+      "vi": "Thảo luận về Hacker News (322 điểm, 158 bình luận)."
     },
     "categories": [
       "ai",
@@ -10058,7 +10181,7 @@
     },
     "hn_points": 322,
     "translate_attempts": {
-      "vi": 1
+      "vi": 0
     },
     "hidden": true
   },
@@ -10116,11 +10239,11 @@
     "original_lang": "en",
     "title": {
       "en": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
-      "vi": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files"
+      "vi": "\"Đừng hỏi lại\" của Claude Code để lộ mật khẩu trong 1.122 tệp GitHub công khai"
     },
     "summary": {
       "en": "Discussion on Hacker News (332 points, 226 comments).",
-      "vi": "Thảo luận trên Hacker News (332 điểm, 226 bình luận)."
+      "vi": "Thảo luận về Hacker News (332 điểm, 226 bình luận)."
     },
     "categories": [
       "ai",
@@ -10156,11 +10279,11 @@
     "original_lang": "en",
     "title": {
       "en": "AI usage generates a fragile codebase",
-      "vi": "AI usage generates a fragile codebase"
+      "vi": "Việc sử dụng AI tạo ra một cơ sở mã dễ vỡ"
     },
     "summary": {
       "en": "Discussion on Hacker News (331 points, 376 comments).",
-      "vi": "Thảo luận trên Hacker News (331 điểm, 376 bình luận)."
+      "vi": "Thảo luận về Hacker News (331 điểm, 376 bình luận)."
     },
     "categories": [
       "ai",
@@ -10230,11 +10353,11 @@
     "original_lang": "en",
     "title": {
       "en": "Gemini 4 Hydrogen",
-      "vi": "Gemini 4 Hydrogen"
+      "vi": "Song Tử 4 Hydro"
     },
     "summary": {
       "en": "Discussion on Hacker News (332 points, 229 comments).",
-      "vi": "Thảo luận trên Hacker News (332 điểm, 229 bình luận)."
+      "vi": "Thảo luận về Hacker News (332 điểm, 229 bình luận)."
     },
     "categories": [
       "ai",
@@ -10270,11 +10393,11 @@
     "original_lang": "en",
     "title": {
       "en": "Why Writing Correct Software Is Hard",
-      "vi": "Why Writing Correct Software Is Hard"
+      "vi": "Tại sao viết phần mềm đúng lại khó"
     },
     "summary": {
       "en": "Discussion on Hacker News (321 points, 143 comments).",
-      "vi": "Thảo luận trên Hacker News (321 điểm, 143 bình luận)."
+      "vi": "Thảo luận về Hacker News (321 điểm, 143 bình luận)."
     },
     "categories": [
       "security"
@@ -11733,11 +11856,11 @@
     "original_lang": "en",
     "title": {
       "en": "Anthropic blocks users for anything touching training larger models",
-      "vi": "Anthropic blocks users for anything touching training larger models"
+      "vi": "Anthropic chặn người dùng vì bất cứ điều gì liên quan đến việc đào tạo các mô hình lớn hơn"
     },
     "summary": {
       "en": "Discussion on Hacker News (315 points, 180 comments).",
-      "vi": "Thảo luận trên Hacker News (315 điểm, 180 bình luận)."
+      "vi": "Thảo luận về Hacker News (315 điểm, 180 bình luận)."
     },
     "categories": [
       "security"
@@ -11752,7 +11875,7 @@
     },
     "hn_points": 315,
     "translate_attempts": {
-      "vi": 1
+      "vi": 0
     },
     "hidden": true
   },
@@ -12060,11 +12183,11 @@
     "original_lang": "en",
     "title": {
       "en": "Locating the source of a mysterious beep",
-      "vi": "Locating the source of a mysterious beep"
+      "vi": "Xác định nguồn gốc của tiếng bíp bí ẩn"
     },
     "summary": {
       "en": "Discussion on Hacker News (304 points, 156 comments).",
-      "vi": "Thảo luận trên Hacker News (304 điểm, 156 bình luận)."
+      "vi": "Thảo luận về Hacker News (304 điểm, 156 bình luận)."
     },
     "categories": [
       "security"
