@@ -6514,16 +6514,16 @@
   "28ef8751b948fc15": {
     "title": {
       "zh-CN": "紫光展锐推出多维智存引擎技术：灵活扩展 UFS 闪存空间，支持多档位扩容",
-      "vi": "紫光展锐推出多维智存引擎技术：灵活扩展 UFS 闪存空间，支持多档位扩容",
+      "vi": "UNISOC ra mắt công nghệ công cụ lưu trữ thông minh đa chiều: mở rộng linh hoạt không gian bộ nhớ flash UFS và hỗ trợ mở rộng đa cấp",
       "en": "UNISOC launches multi-dimensional smart storage engine technology: flexibly expands UFS flash memory space and supports multi-level expansion"
     },
     "summary": {
       "zh-CN": "IT之家 11 月 21 日消息，紫光展锐昨晚宣布推出 UNISOC UniSwap Ultra Engine 多维智存引擎，通过芯片级深度优化与软硬件深度协同设计，在有限的物理内存基础上，灵活扩展 UFS 闪存空间，支持多档位灵活扩容，显著提升多应用体验流畅度。 据官方介绍，依托紫光展锐 UNISOC UniSwap Ultra Engine 多维智存引擎，打破物理内存容量束缚， 智能调用部分存储空间拓展可用内存 ，搭配精细调度算法，带来接近原生物理内存的流畅表现。官方称，搭载该技术的 4GB 内存手机在日常使用中，流畅度可媲美传统 6GB…",
-      "vi": "IT之家 11 月 21 日消息，紫光展锐昨晚宣布推出 UNISOC UniSwap Ultra Engine 多维智存引擎，通过芯片级深度优化与软硬件深度协同设计，在有限的物理内存基础上，灵活扩展 UFS 闪存空间，支持多档位灵活扩容，显著提升多应用体验流畅度。 据官方介绍，依托紫光展锐 UNISOC UniSwap Ultra Engine 多维智存引擎，打破物理内存容量束缚， 智能调用部分存储空间拓展可用内存 ，搭配精细调度算法，带来接近原生物理内存的流畅表现。官方称，搭载该技术的 4GB 内存手机在日常使用中，流畅度可媲美传统 6GB…",
+      "vi": "IT House đưa tin vào ngày 21/11 rằng UNISOC Uniswap Ultra Engine đêm qua đã công bố ra mắt UNISOC UniSwap Ultra Engine, một công cụ lưu trữ thông minh đa chiều. Thông qua tối ưu hóa cấp độ chip sâu và đồng thiết kế phần mềm và phần cứng sâu, nó có thể mở rộng linh hoạt không gian bộ nhớ flash UFS dựa trên bộ nhớ vật…",
       "en": "IT House reported on November 21 that UNISOC Uniswap Ultra Engine last night announced the launch of UNISOC UniSwap Ultra Engine, a multi-dimensional smart storage engine. Through deep chip-level optimization and deep software and hardware co-design, it can flexibly expand UFS flash memory space based on limited…"
     },
     "translated": {
-      "vi": false,
+      "vi": "machine",
       "en": "machine"
     }
   },
@@ -6899,6 +6899,515 @@
     "summary": {
       "vi": "Địa chỉ IP của nạn nhân vẫn có thể trở thành 'bàn đạp' để tin tặc thực hiện các hành vi phạm tội.",
       "en": "The victim's IP address can still become a 'springboard' for hackers to commit crimes."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "4f619429a980a2f7": {
+    "title": {
+      "zh-CN": "这群在鸿蒙写应用的年轻人，只想做点「用得上」的",
+      "vi": "Những bạn trẻ viết ứng dụng ở Hongmeng này chỉ muốn làm thứ gì đó \"hữu ích\"",
+      "en": "These young people who write applications in Hongmeng just want to make something \"useful\""
+    },
+    "summary": {
+      "zh-CN": "上周末，今年正式被列入「全国普通高校学科竞赛排行榜」的2026鸿蒙高校创新赛在南京大学迎来全国总决赛颁奖典礼。华为董事、终端BGCEO何刚出席现场致辞并为获奖选手颁奖。他在现场表示，HarmonyOS ... 查看全文",
+      "vi": "Cuối tuần trước, Cuộc thi Đổi mới Đại học Hongmeng 2026, chính thức được đưa vào “Xếp hạng cuộc thi môn học đại học quốc gia” năm nay, đã tổ chức lễ trao giải chung kết quốc gia tại Đại học Nam Kinh. He Gang, Giám đốc Huawei kiêm Giám đốc điều hành của Terminal BG, đã tham dự sự kiện và phát biểu cũng như trao giải…",
+      "en": "Last weekend, the 2026 Hongmeng University Innovation Competition, which was officially included in the \"National College Subject Competition Ranking\" this year, held the national finals award ceremony at Nanjing University. He Gang, Director of Huawei and CEO of Terminal BG, attended the event and delivered a speech…"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "46023def8c116b4a": {
+    "title": {
+      "zh-CN": "有必要但欠平衡：浅评 macOS 27.3 新版权限控制机制",
+      "vi": "Cần thiết nhưng chưa cân bằng: Đánh giá sơ lược cơ chế kiểm soát quyền mới của macOS 27.3",
+      "en": "Necessary but unbalanced: A brief review of the new permission control mechanism of macOS 27.3"
+    },
+    "summary": {
+      "zh-CN": "[......] 查看全文 本文为会员文章，出自 《单篇文章》 ，订阅后可阅读全文。",
+      "vi": "[...] Xem toàn văn Bài viết này là một bài viết thành viên từ \"Single Article\". Bạn có thể đọc toàn văn sau khi đăng ký.",
+      "en": "[...] View full text This article is a member article from \"Single Article\". You can read the full text after subscribing."
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "8d052e0d103e005f": {
+    "title": {
+      "zh-CN": "天花板上的白色盒子，是怎样保护我们的安全的？",
+      "vi": "Chiếc hộp màu trắng trên trần nhà bảo vệ sự an toàn của chúng ta như thế nào?",
+      "en": "How does the white box on the ceiling protect our safety?"
+    },
+    "summary": {
+      "zh-CN": "2026 年 11 月 9 日是第 35 个全国消防日。我们来学点消防知识。 查看全文",
+      "vi": "Ngày 9 tháng 11 năm 2026 là Ngày Phòng cháy chữa cháy Quốc gia lần thứ 35. Cùng tìm hiểu một số kiến ​​thức phòng cháy chữa cháy nhé. Xem toàn văn",
+      "en": "November 9, 2026 is the 35th National Fire Protection Day. Let's learn some fire protection knowledge. View full text"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "f48b45604923f341": {
+    "title": {
+      "zh-CN": "iPhone 变强了，但我没有",
+      "vi": "IPhone đã tốt hơn, nhưng tôi thì không.",
+      "en": "The iPhone got better, but I didn’t."
+    },
+    "summary": {
+      "zh-CN": "我们把 iPhone 18 Pro Max 带到了深圳、香港和吉隆坡，带入了形形色色的街头。在这个过程里，我们记录了使用 iPhone 拍到的美好画面，也借此描绘了自己的心情变化和生活感悟。 查看全文",
+      "vi": "Chúng tôi đã mang iPhone 18 Pro Max đến Thâm Quyến, Hồng Kông và Kuala Lumpur, mang nó đi khắp mọi con phố. Trong quá trình này, chúng tôi đã ghi lại những bức ảnh đẹp được chụp bằng iPhone và cũng sử dụng bức ảnh này để mô tả những thay đổi tâm trạng và hiểu biết sâu sắc về cuộc sống của chúng tôi. Xem toàn văn",
+      "en": "We took iPhone 18 Pro Max to Shenzhen, Hong Kong and Kuala Lumpur, taking it to all kinds of streets. In this process, we recorded the beautiful pictures taken with iPhone, and also used this to describe our mood changes and life insights. View full text"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "7f80f602056cfa96": {
+    "title": {
+      "zh-CN": "更高能效比，带来新惊喜：M6 款 MacBook Pro 初探",
+      "vi": "Tỷ lệ hiệu suất năng lượng cao hơn mang đến những bất ngờ mới: Cái nhìn đầu tiên về M6 MacBook Pro",
+      "en": "Higher energy efficiency ratio brings new surprises: A first look at the M6 ​​MacBook Pro"
+    },
+    "summary": {
+      "zh-CN": "M6 芯片提供了足够的性能保障，无论修图、视频剪辑还是运行入门级的 AI 大模型，它都能应对。在此基础上，你原本可能需要加在 Pro 级 SoC 上的预算就能省下来，花给内存或者硬盘。 查看全文",
+      "vi": "Chip M6 cung cấp đủ đảm bảo hiệu suất, cho dù đó là chỉnh sửa ảnh, chỉnh sửa video hay chạy các mô hình AI cấp thấp, nó đều có thể xử lý được. Trên cơ sở này, ngân sách ban đầu bạn có thể đầu tư vào SoC cấp Pro có thể được tiết kiệm và chi tiêu cho bộ nhớ hoặc đĩa cứng. Xem toàn văn",
+      "en": "The M6 ​​chip provides sufficient performance guarantee, whether it is photo editing, video editing or running entry-level AI large models, it can handle it. On this basis, the budget you may have originally invested in a Pro-level SoC can be saved and spent on memory or hard disk. View full text"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "c1f62b3dc968822a": {
+    "title": {
+      "en": "Scale customized AI across your team with skills in Google Workspace and Workspace Studio",
+      "vi": "Mở rộng quy mô AI tùy chỉnh trong nhóm của bạn bằng các kỹ năng trong Google Workspace và Workspace Studio"
+    },
+    "summary": {
+      "en": "Following our initial announcement and recent rollout update , skills in Google Workspace — reusable, custom instructions that guide Gemini to apply your team’s rules, templates, and reference files — are now rolling out across Google Workspace Studio and Workspace apps. Here’s…",
+      "vi": "Sau thông báo ban đầu của chúng tôi và nội dung cập nhật triển khai gần đây, các kỹ năng trong Google Workspace — những hướng dẫn tùy chỉnh, có thể tái sử dụng nhằm hướng dẫn Gemini áp dụng các quy tắc, mẫu và tệp tham chiếu của nhóm bạn — hiện đang được triển khai trên các ứng dụng Google Workspace Studio và…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "f518388722c49905": {
+    "title": {
+      "en": "Raising the bar for 8 GB Windows 11 PCs: what’s improved and how to get it",
+      "vi": "Nâng tiêu chuẩn cho PC Windows 11 8 GB: những gì được cải thiện và cách có được nó"
+    },
+    "summary": {
+      "en": "A great Windows experience starts with a simple expectation: your PC should respond when you need it to. You open Start. You launch an app. You switch back to the document or browser tab you left an hour ago and pick up whe",
+      "vi": "Trải nghiệm Windows tuyệt vời bắt đầu bằng một kỳ vọng đơn giản: PC của bạn sẽ phản hồi khi bạn cần. Bạn mở Bắt đầu. Bạn khởi chạy một ứng dụng. Bạn quay lại tab tài liệu hoặc trình duyệt mà bạn đã rời khỏi một giờ trước và chọn những gì"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "791d6c9ee4b6d662": {
+    "title": {
+      "en": "v0.103.3062: fix(settings-ui): reject empty normalized search queries (#50531)",
+      "vi": "v0.103.3062: fix(settings-ui): từ chối các truy vấn tìm kiếm chuẩn hóa trống (#50531)"
+    },
+    "summary": {
+      "en": "Summary of the Pull Request Prevent Settings search from passing queries that normalize to empty or whitespace-only text into fuzzy matching, and make the shared matcher return its existing no-match result for whitespace-only queries. PR Checklist Communication: Scoped to the…",
+      "vi": "Tóm tắt về tìm kiếm Ngăn chặn Yêu cầu Kéo trong việc chuyển các truy vấn chuẩn hóa thành văn bản trống hoặc chỉ có khoảng trắng thành đối sánh mờ và làm cho trình so khớp được chia sẻ trả về kết quả không khớp hiện có cho các truy vấn chỉ có khoảng trắng. Danh sách kiểm tra PR Truyền thông: Phạm vi theo…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "73d60418285cd4ad": {
+    "title": {
+      "en": "Firefox has a hidden snake game, here’s how to play it",
+      "vi": "Firefox có game rắn ẩn, đây là cách chơi"
+    },
+    "summary": {
+      "en": "If you get bored and fancy a quick game of something, you can play one in Firefox’s address bar – once you know how. Mozilla’s browser boasts an easter-egg, as spotted by Soeren Hentzschel, that is only triggered when using the address bar’s calculator feature. Normally, the sum…",
+      "vi": "Nếu bạn cảm thấy nhàm chán và thích chơi một trò chơi nhanh về một thứ gì đó, bạn có thể chơi một trò chơi trên thanh địa chỉ của Firefox - một khi bạn biết cách. Trình duyệt của Mozilla tự hào có một quả trứng Phục sinh, được phát hiện bởi Soeren Hentzschel, nó chỉ được kích hoạt khi sử dụng tính năng máy tính của…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "62df8fdc1d26d162": {
+    "title": {
+      "en": "Build for an expanding lineup of Android XR devices with production-ready tools from Android Developer Summit",
+      "vi": "Xây dựng dòng thiết bị Android XR ngày càng mở rộng với các công cụ sẵn sàng sản xuất từ ​​Hội nghị thượng đỉnh dành cho nhà phát triển Android"
+    },
+    "summary": {
+      "en": "From full immersion at home to glanceable experiences on the go, building on Android XR lets you meet users at any moment across the entire spectrum of spatial applications. At Android Developer Summit, we marked an exciting milestone with the launch of XREAL AURA.",
+      "vi": "Từ việc đắm mình hoàn toàn tại nhà đến những trải nghiệm có thể xem nhanh khi đang di chuyển, việc xây dựng trên Android XR cho phép bạn gặp gỡ người dùng bất cứ lúc nào trên toàn bộ phạm vi ứng dụng không gian. Tại Hội nghị thượng đỉnh dành cho nhà phát triển Android, chúng tôi đã đánh dấu một cột mốc thú vị bằng…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "2ba7b82c031be6d1": {
+    "title": {
+      "en": "Upload an image to create a custom avatar in Google Vids",
+      "vi": "Tải hình ảnh lên để tạo hình đại diện tùy chỉnh trong Google Vids"
+    },
+    "summary": {
+      "en": "Update: November 3, 2026: Rollout for this feature is paused. We will post an update when it resumes. We have updated the rollout timelines listed below in this post to reflect this change. Users can now upload images to create custom avatars directly within Google Vids . This…",
+      "vi": "Update: November 3, 2026: Rollout for this feature is paused. Chúng tôi sẽ đăng bản cập nhật khi nó tiếp tục. We have updated the rollout timelines listed below in this post to reflect this change. Users can now upload images to create custom avatars directly within Google Vids . Cái này…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "8304ef5f4f46473a": {
+    "title": {
+      "en": "Ubuntu users blast Canonical for slow kernel security fix",
+      "vi": "Người dùng Ubuntu phản đối Canonical để sửa lỗi bảo mật kernel chậm"
+    },
+    "summary": {
+      "en": "Canonical is fixing a critical Linux kernel flaw in Ubuntu, weeks after Debian and other distros did – and users aren’t happy about the wait. As of 3 November, patched kernels for CVE-2026-98432 are in testing for Ubuntu 22.04, 24.04 and 26.04 LTS, but are yet to hit the stable…",
+      "vi": "Canonical đang sửa một lỗ hổng nghiêm trọng trong nhân Linux trong Ubuntu, vài tuần sau khi Debian và các bản phân phối khác sửa lỗi – và người dùng không hài lòng về việc phải chờ đợi. Kể từ ngày 3 tháng 11, các nhân được vá cho CVE-2026-98432 đang được thử nghiệm cho Ubuntu 22.04, 24.04 và 26.04 LTS, nhưng vẫn chưa…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "a7a4443eb612c81a": {
+    "title": {
+      "en": "Hate Chromium? Well, There’s a Linux Desktop Based on it Now",
+      "vi": "Bạn ghét Crom? Chà, hiện đã có máy tính để bàn Linux dựa trên nó"
+    },
+    "summary": {
+      "en": "Domicile lets you build your desktop in React and CSS, with Manganese being included as the ready-made tiling option.",
+      "vi": "Domicile cho phép bạn xây dựng máy tính để bàn của mình bằng React và CSS, trong đó Mangan được đưa vào làm tùy chọn ốp lát sẵn."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "86f92144e20a5795": {
+    "title": {
+      "en": "Google is quietly reworking Gemini’s sidebar and testing a new overlay animation",
+      "vi": "Google đang âm thầm làm lại thanh bên của Gemini và thử nghiệm hoạt ảnh lớp phủ mới"
+    },
+    "summary": {
+      "en": "Meanwhile, the Google app’s You tab could get a Shortcuts section to view or erase your search history.",
+      "vi": "Trong khi đó, tab Bạn của ứng dụng Google có thể có phần Phím tắt để xem hoặc xóa lịch sử tìm kiếm của bạn."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "aaa1826627b9e69a": {
+    "title": {
+      "en": "Google and Adobe partner to add app integration in Google Drive, Gemini",
+      "vi": "Google và Adobe hợp tác để tích hợp ứng dụng vào Google Drive, Gemini"
+    },
+    "summary": {
+      "en": "Google Drive will soon prompt users to switch to Adobe Acrobat while viewing PDFs, and Gemini will get a few new tricks powered by the company’s creative suite.",
+      "vi": "Google Drive sẽ sớm nhắc người dùng chuyển sang Adobe Acrobat trong khi xem các tệp PDF và Gemini sẽ nhận được một số thủ thuật mới được cung cấp bởi bộ công cụ sáng tạo của công ty."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "493e91c50238a66c": {
+    "title": {
+      "en": "Google and Adobe are teaming up to make editing PDFs and photos a whole lot easier",
+      "vi": "Google và Adobe đang hợp tác để giúp việc chỉnh sửa tệp PDF và ảnh dễ dàng hơn rất nhiều"
+    },
+    "summary": {
+      "en": "Adobe's bringing its editing tricks to Google, and we're not complaining.",
+      "vi": "Adobe đang mang các thủ thuật chỉnh sửa của mình tới Google và chúng tôi không phàn nàn."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "bc17b8a3d859c596": {
+    "title": {
+      "en": "SonicWall warns of new SSL-VPN MFA bypass flaw exploited in attacks",
+      "vi": "SonicWall cảnh báo lỗ hổng vượt qua SSL-VPN MFA mới bị khai thác trong các cuộc tấn công"
+    },
+    "summary": {
+      "en": "SonicWall has released security updates to fix seven vulnerabilities in SonicOS firewalls, including an SSL-VPN authentication bypass flaw exploited in attacks.",
+      "vi": "SonicWall đã phát hành các bản cập nhật bảo mật để khắc phục bảy lỗ hổng trong tường lửa SonicOS, bao gồm lỗ hổng bỏ qua xác thực SSL-VPN bị khai thác trong các cuộc tấn công."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "4a41deae68542d95": {
+    "title": {
+      "en": "Google’s original Nest Doorbell is broken for many right now",
+      "vi": "Nest Doorbell ban đầu của Google hiện đã bị hỏng đối với nhiều người"
+    },
+    "summary": {
+      "en": "An issue with Google’s original Nest Doorbell has left live view of the video feed broken for many owners, and there’s no word on a fix just yet.",
+      "vi": "Một sự cố xảy ra với Nest Doorbell ban đầu của Google đã khiến nhiều chủ sở hữu không thể xem trực tiếp nguồn cấp dữ liệu video và vẫn chưa có thông tin gì về cách khắc phục."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "cf67ea80814ef9cb": {
+    "title": {
+      "en": "Amazon cuts TCL S55H soundbar to near all-time low",
+      "vi": "Amazon cắt soundbar TCL S55H xuống gần mức thấp nhất mọi thời đại"
+    },
+    "summary": {
+      "en": "Save $60 on the TCL S55H soundbar and get fuller TV sound, stronger bass, and a 4.5-star Amazon-rated setup for $99.99.",
+      "vi": "Tiết kiệm 60 đô la cho soundbar TCL S55H và có được âm thanh TV đầy đủ hơn, âm trầm mạnh hơn và thiết lập 4,5 sao được Amazon xếp hạng với giá 99,99 đô la."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "b013cda695e92f7d": {
+    "title": {
+      "en": "Latest Google app reveals Gemini Live’s offline mode requires an online setup",
+      "vi": "Ứng dụng mới nhất của Google tiết lộ chế độ ngoại tuyến của Gemini Live yêu cầu thiết lập trực tuyến"
+    },
+    "summary": {
+      "en": "You should also brace for a limited experience compared to online Gemini Live.",
+      "vi": "Bạn cũng nên chuẩn bị cho trải nghiệm hạn chế so với Gemini Live trực tuyến."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "be862286aeb98279": {
+    "title": {
+      "en": "Lame-duck Congress might actually do something: speed up energy projects",
+      "vi": "Quốc hội vịt què thực sự có thể làm điều gì đó: tăng tốc các dự án năng lượng"
+    },
+    "summary": {
+      "en": "A massive permitting bill that could help energy projects come online much quicker and potentially lower utility bills for Americans is advancing with bipartisan support. And while it could be a catalyst for lots of clean energy, it could also speed up polluting projects and…",
+      "vi": "Một dự luật cấp phép khổng lồ có thể giúp các dự án năng lượng triển khai nhanh hơn nhiều và có khả năng giảm hóa đơn tiện ích cho người Mỹ đang được tiến hành với sự hỗ trợ của lưỡng đảng. Và mặc dù nó có thể là chất xúc tác cho nhiều năng lượng sạch, nhưng nó cũng có thể đẩy nhanh tốc độ các dự án gây ô nhiễm và…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "52e0623fab799a21": {
+    "title": {
+      "en": "Meta’s Muse AI can create custom ‘spaces’ for the version of the app you need right now",
+      "vi": "Muse AI của Meta có thể tạo 'khoảng trắng' tùy chỉnh cho phiên bản ứng dụng bạn cần ngay bây giờ"
+    },
+    "summary": {
+      "en": "Meta will now allow you to build customized, app-like experiences within Muse. The new feature, called \"spaces,\" allows its AI assistant to build things like a shopping hub, school dashboard, music tracker, trivia game, and more, which you can interact with directly in the Muse…",
+      "vi": "Giờ đây, Meta sẽ cho phép bạn xây dựng các trải nghiệm tùy chỉnh, giống như ứng dụng trong Muse. Tính năng mới, được gọi là \"không gian\", cho phép trợ lý AI của nó xây dựng những thứ như trung tâm mua sắm, bảng thông tin trường học, trình theo dõi âm nhạc, trò chơi đố vui, v.v. mà bạn có thể tương tác trực tiếp trong…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "5c065ab090712d1e": {
+    "title": {
+      "en": "Apple @ Work: Mac admins are shipping AI-written code with mistakes, but fixing the problems is taking days",
+      "vi": "Apple @ Work: Quản trị viên Mac đang gửi mã do AI viết có lỗi nhưng việc khắc phục sự cố mất nhiều ngày"
+    },
+    "summary": {
+      "en": "Apple @ Work is exclusively brought to you by Mosyle , the only Apple Unified Platform. Mosyle is the only solution that integrates in a single professional grade platform all the solutions necessary to seamlessly and automatically deploy, manage, and protect Apple devices at…",
+      "vi": "Apple @ Work được Mosyle, Nền tảng hợp nhất duy nhất của Apple mang đến cho bạn độc quyền. Mosyle là giải pháp duy nhất tích hợp trong một nền tảng cấp chuyên nghiệp duy nhất tất cả các giải pháp cần thiết để triển khai, quản lý và bảo vệ các thiết bị Apple một cách liền mạch và tự động tại…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "66f45ac4e630afea": {
+    "title": {
+      "en": "Zelda is back and better than ever",
+      "vi": "Zelda đã trở lại và lợi hại hơn xưa"
+    },
+    "summary": {
+      "en": "Hi, friends! Welcome to Installer No. 151, your guide to the best and Verge-iest stuff in the world. (If you're new here, welcome, get psyched because it's officially Bad Holiday Movie Season, and also you can read all the old editions at the Installer homepage.) This week, I've…",
+      "vi": "Xin chào các bạn! Chào mừng bạn đến với Trình cài đặt số 151, hướng dẫn của bạn về những thứ tốt nhất và tốt nhất trên thế giới. (Nếu bạn là người mới ở đây, xin chào mừng bạn, hãy vui lên vì đây chính thức là Mùa phim kỳ nghỉ tồi tệ và bạn cũng có thể đọc tất cả các ấn bản cũ tại trang chủ Trình cài đặt.) Tuần này…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "4a05af922163aa89": {
+    "title": {
+      "en": "Report: John Ternus pushing Craig Federighi to speed up Apple software engineering",
+      "vi": "Báo cáo: John Ternus thúc đẩy Craig Federighi tăng tốc công nghệ phần mềm của Apple"
+    },
+    "summary": {
+      "en": "In the past few years, a major Apple story (especially in the age of AI) has been that the company isn’t moving fast enough in the space to keep up with competitors. According to Bloomberg’s Mark Gurman , new Apple CEO John Ternus is reportedly pushing on software chief Craig…",
+      "vi": "Trong vài năm qua, một câu chuyện lớn của Apple (đặc biệt là trong thời đại AI) là công ty không phát triển đủ nhanh trong lĩnh vực này để theo kịp các đối thủ. Theo Mark Gurman của Bloomberg, Giám đốc điều hành mới của Apple, John Ternus, được cho là đang thúc đẩy giám đốc phần mềm Craig…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "76c4989e4e21db73": {
+    "title": {
+      "en": "Google wants to lock Android down, but Droynis teaches you how to stay safe instead",
+      "vi": "Google muốn khóa Android, nhưng thay vào đó Droynis lại dạy bạn cách giữ an toàn"
+    },
+    "summary": {
+      "en": "Droynis keeps me accountable for the security settings I select.",
+      "vi": "Droynis yêu cầu tôi phải chịu trách nhiệm về các cài đặt bảo mật mà tôi chọn."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "ca75c8e2c174429a": {
+    "title": {
+      "en": "Today’s macOS updates fix security gap involving eMudhra certificates",
+      "vi": "Các bản cập nhật macOS hôm nay khắc phục lỗ hổng bảo mật liên quan đến chứng chỉ eMudhra"
+    },
+    "summary": {
+      "en": "Apple today released macOS updates that address a security gap involving compromised eMudhra certificates, after initially blocking them in Safari, Mail, and other apps in October. Here are the details.",
+      "vi": "Apple hôm nay đã phát hành bản cập nhật macOS nhằm giải quyết lỗ hổng bảo mật liên quan đến chứng chỉ eMudhra bị xâm phạm, sau khi chặn chúng lần đầu trong Safari, Mail và các ứng dụng khác vào tháng 10. Dưới đây là chi tiết."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "f24c7b2161465104": {
+    "title": {
+      "en": "Pixel Tag tidbits: Surprise NFC, Find Hub setup, & Bellroy keychain cases",
+      "vi": "Các mẩu tin nhỏ về Pixel Tag: NFC bất ngờ, thiết lập Find Hub và hộp đựng móc khóa Bellroy"
+    },
+    "summary": {
+      "en": "The Made by Google 2026 lineup is finally complete with tomorrow’s retail launch of the Pixel Tag . You can find our review here , while there are some additional details about the device since the August announcement.",
+      "vi": "Dòng sản phẩm Made by Google 2026 cuối cùng đã hoàn thiện với đợt ra mắt bán lẻ Pixel Tag vào ngày mai. Bạn có thể tìm thấy bài đánh giá của chúng tôi tại đây, đồng thời có một số chi tiết bổ sung về thiết bị kể từ thông báo vào tháng 8."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "897edcb402e0b25d": {
+    "title": {
+      "en": "The Verge’s 2026 holiday gift guide for moms",
+      "vi": "Hướng dẫn quà tặng kỳ nghỉ năm 2026 của The Verge dành cho các bà mẹ"
+    },
+    "summary": {
+      "en": "Given everything moms do for us, it feels good to give back during the holidays. But where to start? How do you come up with a physical representation of how you feel about such a key and influential figure in your life? The possibilities seem as endless as they are daunting…",
+      "vi": "Với tất cả những gì mẹ làm cho chúng ta, chúng ta cảm thấy thật tuyệt khi được đền đáp trong những ngày nghỉ lễ. Nhưng bắt đầu từ đâu? Làm thế nào để bạn nghĩ ra một cách thể hiện cụ thể về cảm giác của bạn về một nhân vật quan trọng và có ảnh hưởng như vậy trong cuộc đời bạn? Những khả năng dường như là vô tận nhưng…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "4beceeca752b597c": {
+    "title": {
+      "en": "Reddit wants to guide your next purchase",
+      "vi": "Reddit muốn hướng dẫn lần mua hàng tiếp theo của bạn"
+    },
+    "summary": {
+      "en": "Millions of people turn to Reddit for firsthand recommendations and reviews of consumer goods. Now, the platform is leaning into its role as a destination for shoppers in a challenge to more traditional outlets that publish product reviews and roundups. The company is launching…",
+      "vi": "Hàng triệu người tìm đến Reddit để nhận được những lời khuyên và đánh giá trực tiếp về hàng tiêu dùng. Giờ đây, nền tảng này đang tập trung vào vai trò là điểm đến cho người mua sắm trong thách thức đối với các cửa hàng truyền thống hơn chuyên đăng các bài đánh giá và tổng hợp sản phẩm. Công ty đang triển khai…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "fb904ba6593cab96": {
+    "title": {
+      "en": "Microsoft November 2026 Patch Tuesday fixes 1,235 flaws, Outlook zero-day",
+      "vi": "Bản vá thứ ba tháng 11 năm 2026 của Microsoft sửa 1.235 lỗi, lỗi zero-day của Outlook"
+    },
+    "summary": {
+      "en": "Today is Microsoft's November 2026 Patch Tuesday, with security updates addressing a record-breaking 1,235 flaws, including one actively exploited Microsoft Outlook zero-day vulnerability.",
+      "vi": "Hôm nay là Bản vá thứ ba tháng 11 năm 2026 của Microsoft, với các bản cập nhật bảo mật giải quyết 1.235 lỗi phá kỷ lục, trong đó có một lỗ hổng zero-day của Microsoft Outlook bị khai thác tích cực."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "5038a5ce1224f0b5": {
+    "title": {
+      "en": "Android 17 QPR2 November update rolling out with 33 Pixel fixes",
+      "vi": "Bản cập nhật Android 17 QPR2 tháng 11 ra mắt với 33 bản sửa lỗi Pixel"
+    },
+    "summary": {
+      "en": "Android 17 QPR2 is rolling out a month early with the November 2026 Feature Drop and security patch. The update is available for the Pixel 6a, 7, 7 Pro, 7a, Tablet, Fold, 8, 8 Pro, 8a, 9, 9 Pro, 9 Pro XL, 9 Pro Fold, 9a, 10, 10 Pro, 10 Pro XL, 10a, 11, 11 Pro, 11 Pro XL, and 11…",
+      "vi": "Android 17 QPR2 sẽ ra mắt sớm một tháng với bản vá bảo mật và tính năng thả xuống tháng 11 năm 2026. Bản cập nhật có sẵn cho Pixel 6a, 7, 7 Pro, 7a, Máy tính bảng, Fold, 8, 8 Pro, 8a, 9, 9 Pro, 9 Pro XL, 9 Pro Fold, 9a, 10, 10 Pro, 10 Pro XL, 10a, 11, 11 Pro, 11 Pro XL và 11…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "246b561396f3af99": {
+    "title": {
+      "en": "Google’s November Pixel update packs dozens of bug fixes, and you can get it now",
+      "vi": "Bản cập nhật Pixel tháng 11 của Google chứa hàng tá bản sửa lỗi và bạn có thể tải xuống ngay bây giờ"
+    },
+    "summary": {
+      "en": "Sideload one of Google's OTA downloads if you just can't wait a moment longer.",
+      "vi": "Tải xuống một trong các bản tải xuống OTA của Google nếu bạn không thể đợi lâu hơn."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "5e2ec67fb5b13f35": {
+    "title": {
+      "en": "Big Googlebook November update rolling out with 31 fixes, improvements",
+      "vi": "Bản cập nhật Googlebook lớn tháng 11 ra mắt với 31 bản sửa lỗi, cải tiến"
+    },
+    "summary": {
+      "en": "Just over a month after the launch, Google is rolling out the “Googlebook November update” with “many bug fixes, stability improvements, and firmware updates.”",
+      "vi": "Chỉ hơn một tháng sau khi ra mắt, Google sẽ tung ra “Bản cập nhật Googlebook tháng 11” với “nhiều bản sửa lỗi, cải thiện độ ổn định và bản cập nhật chương trình cơ sở”."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "0adec608c081b3fb": {
+    "title": {
+      "vi": "Claude giúp máy tính lượng tử giảm hàng triệu cổng tính toán",
+      "en": "Claude helps quantum computers reduce computational gates by millions"
+    },
+    "summary": {
+      "vi": "Thay vì phải lưu mọi kết quả trung gian, Claude tìm cách khôi phục chúng, giúp giảm khoảng 17 lần số cổng tính toán trong mạch lượng tử.",
+      "en": "Instead of having to save all intermediate results, Claude finds a way to restore them, reducing the number of computational gates in a quantum circuit by about 17 times."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "178d633cd4c6cbe4": {
+    "title": {
+      "vi": "Phát hiện mã độc mới tinh vi tấn công hệ điều hành Windows",
+      "en": "Detecting sophisticated new malware attacking the Windows operating system"
+    },
+    "summary": {
+      "vi": "Không phát tán tập tin đáng ngờ theo cách thông thường, tin tặc lợi dụng các chương trình hợp pháp để đưa mã độc vào hệ thống Windows của cơ quan chính phủ.",
+      "en": "Without spreading suspicious files in the usual way, hackers take advantage of legitimate programs to inject malicious code into government agencies' Windows systems."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "c4e1d1b246a1f699": {
+    "title": {
+      "vi": "Cách dùng AI tìm bằng chứng khoa học trước khi viết khóa luận",
+      "en": "How to use AI to find scientific evidence before writing a thesis"
+    },
+    "summary": {
+      "vi": "Câu 'nhiều nghiên cứu đã chứng minh' xuất hiện rất thường xuyên trong khóa luận, luận văn, thậm chí trong bài báo đại chúng. Không ít trường hợp người viết chưa từng thấy các nghiên cứu ấy.",
+      "en": "The sentence 'many studies have proven it' appears very often in theses, dissertations, and even popular articles. In many cases, the writer has never seen those studies."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "8a43acce4b9913e2": {
+    "title": {
+      "vi": "Cách lấy lại 15GB dung lượng trên iPhone",
+      "en": "How to reclaim 15GB of space on iPhone"
+    },
+    "summary": {
+      "vi": "Một thay đổi trong cài đặt có thể giúp người dùng iPhone lấy lại hàng chục GB bộ nhớ.",
+      "en": "A change in settings can help iPhone users reclaim tens of gigabytes of memory."
     },
     "translated": {
       "en": "machine"
