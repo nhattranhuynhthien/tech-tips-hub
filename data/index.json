@@ -691,8 +691,12 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 2,
-      "en": 2
+      "vi": 3,
+      "en": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T22:32:22+00:00",
+      "en": "2026-11-23T22:32:25+00:00"
     }
   },
   "4c626d1f1609f29d": {
@@ -730,7 +734,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "77e32da8e58573a6": {
@@ -842,6 +846,45 @@
       "en": "machine"
     }
   },
+  "b24b57126d519d21": {
+    "id": "b24b57126d519d21",
+    "slug": "ubuntu-2704-daily-builds-are-available-to-download-b24b57",
+    "url": "https://www.omgubuntu.co.uk/2026/11/ubuntu-2704-daily-builds-are-out",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "2026-11-21T16:26:14+00:00",
+    "fetched_at": "2026-11-22T22:31:32.604554+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Ubuntu 27.04 daily builds are available to download",
+      "vi": "Ubuntu 27.04 daily builds are available to download"
+    },
+    "summary": {
+      "en": "If you plan to track development of Ubuntu 27.04 ‘Tenacious T-Rex’ up close, daily build images are now available for download. Daily builds are produced for the duration of a development cycle, right up until the final, stable release. They’re built from development code…",
+      "vi": "If you plan to track development of Ubuntu 27.04 ‘Tenacious T-Rex’ up close, daily build images are now available for download. Daily builds are produced for the duration of a development cycle, right up until the final, stable release. They’re built from development code…"
+    },
+    "categories": [
+      "linux",
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.45,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
   "2e3be40b3917e2f5": {
     "id": "2e3be40b3917e2f5",
     "slug": "chapter-2-basics-of-n8n-2e3be4",
@@ -922,6 +965,44 @@
     },
     "translate_next_retry": {
       "vi": "2026-11-23T08:09:04+00:00"
+    }
+  },
+  "4cafab87c83f0ba4": {
+    "id": "4cafab87c83f0ba4",
+    "slug": "high-tide-linux-tidal-client-adds-support-for-dlna-chromecas-4cafab",
+    "url": "https://www.omgubuntu.co.uk/2026/11/high-tide-chromecast-dlna-support",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "2026-11-22T21:17:14+00:00",
+    "fetched_at": "2026-11-22T22:31:32.604554+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "High Tide (Linux TIDAL client) adds support for DLNA, Chromecast",
+      "vi": "High Tide (Linux TIDAL client) adds support for DLNA, Chromecast"
+    },
+    "summary": {
+      "en": "High Tide, the open-source TIDAL client for Linux, can now play to Chromecast and DLNA devices like TVs and smart speakers. The feature rolls out in v1.8.0, released this weekend with a variety of smaller bug fixes and minor bumps, including showing artist names over Discord…",
+      "vi": "High Tide, the open-source TIDAL client for Linux, can now play to Chromecast and DLNA devices like TVs and smart speakers. The feature rolls out in v1.8.0, released this weekend with a variety of smaller bug fixes and minor bumps, including showing artist names over Discord…"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.42,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "9b755754b5efea43": {
@@ -1146,6 +1227,84 @@
     },
     "translate_next_retry": {
       "vi": "2026-11-23T08:08:59+00:00"
+    }
+  },
+  "51a810bb5af66af1": {
+    "id": "51a810bb5af66af1",
+    "slug": "ios-27-has-a-clever-fix-for-unreliable-wi-fi-connections-51a810",
+    "url": "https://9to5mac.com/2026/11/22/ios-27-has-a-clever-fix-for-unreliable-wi-fi-connections",
+    "source": {
+      "id": "9to5mac",
+      "name": "9to5Mac",
+      "site_url": "https://9to5mac.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Chance Miller",
+    "published_at": "2026-11-22T22:02:43+00:00",
+    "fetched_at": "2026-11-22T22:31:32.604554+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "iOS 27 has a clever fix for unreliable Wi-Fi connections",
+      "vi": "iOS 27 has a clever fix for unreliable Wi-Fi connections"
+    },
+    "summary": {
+      "en": "9to5Mac is brought to you by Tello Mobile. Switching to Tello Mobile can bring the cost of your plan down to as little as $5 a month, or an unlimited plan for just $25 a month, all on America’s largest 5G network. See all of the available plans at tello.com . iOS 27 includes a…",
+      "vi": "9to5Mac is brought to you by Tello Mobile. Switching to Tello Mobile can bring the cost of your plan down to as little as $5 a month, or an unlimited plan for just $25 a month, all on America’s largest 5G network. See all of the available plans at tello.com . iOS 27 includes a…"
+    },
+    "categories": [
+      "ios",
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "a67545cd4ad30393": {
+    "id": "a67545cd4ad30393",
+    "slug": "apple-tested-a-complication-column-for-the-iphone-duo-lock-s-a67545",
+    "url": "https://9to5mac.com/2026/11/22/apple-tested-a-complication-column-for-the-iphone-duo-lock-screen-per-leak",
+    "source": {
+      "id": "9to5mac",
+      "name": "9to5Mac",
+      "site_url": "https://9to5mac.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Chance Miller",
+    "published_at": "2026-11-22T17:13:56+00:00",
+    "fetched_at": "2026-11-22T22:31:32.604554+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Apple tested a ‘complication column’ for the iPhone Duo Lock Screen, per leak",
+      "vi": "Apple tested a ‘complication column’ for the iPhone Duo Lock Screen, per leak"
+    },
+    "summary": {
+      "en": "Apple made a bunch of changes to iOS to optimize it for the iPhone Duo’s form factor, including revamping the Lock Screen. According to a new leak today, the company has tested another change, referred to as a “complication column.” Here’s what it looks like. 9to5Mac is…",
+      "vi": "Apple made a bunch of changes to iOS to optimize it for the iPhone Duo’s form factor, including revamping the Lock Screen. According to a new leak today, the company has tested another change, referred to as a “complication column.” Here’s what it looks like. 9to5Mac is…"
+    },
+    "categories": [
+      "ios",
+      "macos"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "009d89703dd91abd": {
@@ -1674,6 +1833,44 @@
     },
     "translate_next_retry": {
       "vi": "2026-11-23T08:08:59+00:00"
+    }
+  },
+  "32066f88a6bcc634": {
+    "id": "32066f88a6bcc634",
+    "slug": "hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devi-32066f",
+    "url": "https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices",
+    "source": {
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "site_url": "https://www.bleepingcomputer.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Lawrence Abrams",
+    "published_at": "2026-11-22T18:45:37+00:00",
+    "fetched_at": "2026-11-22T22:31:32.604554+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
+      "vi": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices"
+    },
+    "summary": {
+      "en": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices.",
+      "vi": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "73d60418285cd4ad": {
@@ -2504,8 +2701,12 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 2,
-      "en": 2
+      "vi": 3,
+      "en": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T22:32:22+00:00",
+      "en": "2026-11-23T22:32:25+00:00"
     }
   },
   "50176baa8d9864ae": {
@@ -2543,7 +2744,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T22:32:49+00:00"
     }
   },
   "c80c5fcac2e3fe98": {
@@ -3677,6 +3881,44 @@
     },
     "translate_next_retry": {
       "en": "2026-11-23T08:09:31+00:00"
+    }
+  },
+  "8a3c70b7b080caca": {
+    "id": "8a3c70b7b080caca",
+    "slug": "give-your-gaming-setup-a-serious-upgrade-with-the-razer-basi-8a3c70",
+    "url": "https://www.tomshardware.com/pc-components/give-your-gaming-setup-a-serious-upgrade-with-the-razer-basilisk-v3-for-half-price-for-just-usd32-99-you-get-26-000-dpi-sensitivity-programmable-buttons-and-plenty-of-rgb",
+    "source": {
+      "id": "tomshardware",
+      "name": "Tom's Hardware",
+      "site_url": "https://www.tomshardware.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Kunal Khullar",
+    "published_at": "2026-11-22T18:17:53+00:00",
+    "fetched_at": "2026-11-22T22:31:32.604554+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Give your gaming setup a serious upgrade with the Razer Basilisk V3 for half price",
+      "vi": "Give your gaming setup a serious upgrade with the Razer Basilisk V3 for half price"
+    },
+    "summary": {
+      "en": "Whether you play competitive shooters, racing games, or RPGs, the Basilisk V3 offers customizable controls and an adjustable scroll wheel to suit different gaming preferences.",
+      "vi": "Whether you play competitive shooters, racing games, or RPGs, the Basilisk V3 offers customizable controls and an adjustable scroll wheel to suit different gaming preferences."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.09,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "db85abacb121d037": {
@@ -5042,7 +5284,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T22:32:49+00:00"
     }
   },
   "6b954b36142cda5a": {
@@ -5731,41 +5976,44 @@
     },
     "hidden": false
   },
-  "494dec1bba8b15b8": {
-    "id": "494dec1bba8b15b8",
-    "url": "https://genk.vn/ky-nguyen-dien-anh-ai-nam-2026-su-that-ve-nhung-bo-phim-dai-hang-gio-va-cach-san-xuat-165261029113319504.chn",
+  "e02a3f3a918fb26c": {
+    "id": "e02a3f3a918fb26c",
+    "slug": "the-birds-of-gta-6-a-field-guide-to-vice-city-and-leonidas-w-e02a3f",
+    "url": "https://www.audubon.org/magazine/birds-of-gta-6-field-guide-vice-city-wildlife",
     "source": {
-      "id": "genk",
-      "name": "GenK Thủ Thuật",
-      "site_url": "https://genk.vn",
-      "kind": "tips",
-      "content_type": "article"
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
     },
-    "author": null,
-    "published_at": "2026-10-29T04:39:00+00:00",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "vi",
+    "author": "gaws",
+    "published_at": "2026-11-22T19:10:34+00:00",
+    "fetched_at": "2026-11-22T22:31:32.604554+00:00",
+    "original_lang": "en",
     "title": {
-      "vi": "Kỷ nguyên điện ảnh AI năm 2026: Sự thật về những bộ phim dài hàng giờ và cách sản xuất",
-      "en": "The AI ​​Cinema Era of 2026: The Truth About Hour-Long Movies and Their Production"
+      "en": "The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife",
+      "vi": "The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife"
     },
     "summary": {
-      "vi": "Phim tạo bằng AI không còn dừng lại ở những đoạn video ngắn ngủi vô nghĩa. Năm 2026 chứng kiến sự bùng nổ của các tác phẩm điện ảnh dài hàng giờ, mở ra một kỷ nguyên mới cho ngành công nghiệp giải trí với những bước tiến công nghệ đột phá và đầy thách thức.",
-      "en": "Movies created with AI no longer stop at short, meaningless videos. The year 2026 will see an explosion of hour-long cinematic works, opening a new era for the entertainment industry with groundbreaking and challenging technological advances."
+      "en": "Discussion on Hacker News (221 points, 74 comments).",
+      "vi": "Discussion on Hacker News (221 points, 74 comments)."
     },
     "categories": [
-      "ai"
+      "security"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.96,
+    "score": 0.97,
     "howto": true,
-    "reading_time_min": 2,
+    "reading_time_min": 1,
     "translated": {
-      "en": "machine"
+      "vi": false
     },
-    "hidden": false,
-    "slug": "ky-nguyen-dien-anh-ai-nam-2026-su-that-ve-nhung-bo-phim-dai-494dec"
+    "hn_points": 221,
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "a37126ae39270f18": {
     "id": "a37126ae39270f18",
@@ -5803,6 +6051,42 @@
       "vi": "machine"
     },
     "hidden": false
+  },
+  "494dec1bba8b15b8": {
+    "id": "494dec1bba8b15b8",
+    "url": "https://genk.vn/ky-nguyen-dien-anh-ai-nam-2026-su-that-ve-nhung-bo-phim-dai-hang-gio-va-cach-san-xuat-165261029113319504.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "2026-10-29T04:39:00+00:00",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Kỷ nguyên điện ảnh AI năm 2026: Sự thật về những bộ phim dài hàng giờ và cách sản xuất",
+      "en": "The AI ​​Cinema Era of 2026: The Truth About Hour-Long Movies and Their Production"
+    },
+    "summary": {
+      "vi": "Phim tạo bằng AI không còn dừng lại ở những đoạn video ngắn ngủi vô nghĩa. Năm 2026 chứng kiến sự bùng nổ của các tác phẩm điện ảnh dài hàng giờ, mở ra một kỷ nguyên mới cho ngành công nghiệp giải trí với những bước tiến công nghệ đột phá và đầy thách thức.",
+      "en": "Movies created with AI no longer stop at short, meaningless videos. The year 2026 will see an explosion of hour-long cinematic works, opening a new era for the entertainment industry with groundbreaking and challenging technological advances."
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.96,
+    "howto": true,
+    "reading_time_min": 2,
+    "translated": {
+      "en": "machine"
+    },
+    "hidden": false,
+    "slug": "ky-nguyen-dien-anh-ai-nam-2026-su-that-ve-nhung-bo-phim-dai-494dec"
   },
   "0dd866e0bf3ef228": {
     "id": "0dd866e0bf3ef228",
@@ -7164,7 +7448,10 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 2
+      "en": 3
+    },
+    "translate_next_retry": {
+      "en": "2026-11-23T22:32:55+00:00"
     }
   },
   "a07d8ae926f256fd": {
@@ -7728,11 +8015,11 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 4
+      "vi": 5
     },
     "hidden": false,
     "translate_next_retry": {
-      "vi": "2026-11-22T19:28:27+00:00"
+      "vi": "2026-11-23T22:32:34+00:00"
     }
   },
   "8879475e62b3793a": {
@@ -7770,11 +8057,11 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 4
+      "vi": 5
     },
     "hidden": false,
     "translate_next_retry": {
-      "vi": "2026-11-22T19:28:32+00:00"
+      "vi": "2026-11-23T22:32:34+00:00"
     }
   },
   "cbc470459f8e4735": {
@@ -7812,11 +8099,11 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 4
+      "vi": 5
     },
     "hidden": false,
     "translate_next_retry": {
-      "vi": "2026-11-22T19:28:32+00:00"
+      "vi": "2026-11-23T22:32:34+00:00"
     }
   },
   "16a1528631dc2501": {
@@ -7854,11 +8141,11 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 4
+      "vi": 5
     },
     "hidden": false,
     "translate_next_retry": {
-      "vi": "2026-11-22T19:28:32+00:00"
+      "vi": "2026-11-23T22:32:39+00:00"
     }
   },
   "ac80ab5279f0a454": {
@@ -7896,11 +8183,11 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 4
+      "vi": 5
     },
     "hidden": false,
     "translate_next_retry": {
-      "vi": "2026-11-22T19:28:32+00:00"
+      "vi": "2026-11-23T22:32:39+00:00"
     }
   },
   "3580f27471445fcb": {
@@ -7939,11 +8226,11 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 4
+      "vi": 5
     },
     "hidden": false,
     "translate_next_retry": {
-      "vi": "2026-11-22T19:28:32+00:00"
+      "vi": "2026-11-23T22:32:39+00:00"
     }
   },
   "c14e0f0a734d1070": {
@@ -8017,11 +8304,11 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 4
+      "vi": 5
     },
     "hidden": false,
     "translate_next_retry": {
-      "vi": "2026-11-22T19:28:36+00:00"
+      "vi": "2026-11-23T22:32:39+00:00"
     }
   },
   "ed92cce55db567e8": {
@@ -8059,11 +8346,11 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 4
+      "vi": 5
     },
     "hidden": false,
     "translate_next_retry": {
-      "vi": "2026-11-22T19:28:36+00:00"
+      "vi": "2026-11-23T22:32:39+00:00"
     }
   },
   "d317b9a45d00622a": {
@@ -8104,11 +8391,11 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 4
+      "vi": 5
     },
     "hidden": false,
     "translate_next_retry": {
-      "vi": "2026-11-22T19:28:36+00:00"
+      "vi": "2026-11-23T22:32:44+00:00"
     }
   },
   "c40d9ac220e1b1de": {
@@ -8149,11 +8436,11 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 4
+      "vi": 5
     },
     "hidden": false,
     "translate_next_retry": {
-      "vi": "2026-11-22T19:28:36+00:00"
+      "vi": "2026-11-23T22:32:44+00:00"
     }
   },
   "5495c1febb178a14": {
@@ -8191,11 +8478,11 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 4
+      "vi": 5
     },
     "hidden": false,
     "translate_next_retry": {
-      "vi": "2026-11-22T19:28:36+00:00"
+      "vi": "2026-11-23T22:32:44+00:00"
     }
   },
   "6f7743a9465550a4": {
@@ -11337,7 +11624,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "8a2e6d2c33ee39b0": {
@@ -11566,11 +11853,11 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 4
+      "vi": 5
     },
     "hidden": false,
     "translate_next_retry": {
-      "vi": "2026-11-22T19:28:41+00:00"
+      "vi": "2026-11-23T22:32:44+00:00"
     }
   },
   "cf61c804dd9bbfb6": {
@@ -11609,7 +11896,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "6cc520c9004f9169": {
@@ -11724,11 +12011,11 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 4
+      "en": 5
     },
     "hidden": false,
     "translate_next_retry": {
-      "en": "2026-11-22T19:29:00+00:00"
+      "en": "2026-11-23T22:32:55+00:00"
     }
   },
   "c06ec870b4e1dac0": {
@@ -11769,11 +12056,11 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 4
+      "en": 5
     },
     "hidden": false,
     "translate_next_retry": {
-      "en": "2026-11-22T19:29:01+00:00"
+      "en": "2026-11-23T22:32:55+00:00"
     }
   },
   "d3a089a79de6f388": {
@@ -12181,6 +12468,45 @@
     },
     "hidden": false
   },
+  "5f16696a8573af30": {
+    "id": "5f16696a8573af30",
+    "slug": "ask-hn-tips-for-transitioning-from-web-development-to-embedd-5f1669",
+    "url": "https://news.ycombinator.com/item?id=50555002",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "llmblockchain",
+    "published_at": "2026-11-19T01:37:45+00:00",
+    "fetched_at": "2026-11-22T22:31:32.604554+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Ask HN: Tips for transitioning from web development to embedded/firmware?",
+      "vi": "Ask HN: Tips for transitioning from web development to embedded/firmware?"
+    },
+    "summary": {
+      "en": "Discussion on Hacker News (101 points, 66 comments).",
+      "vi": "Discussion on Hacker News (101 points, 66 comments)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.76,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "hn_points": 101,
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
   "3bc1509c6bdcff93": {
     "id": "3bc1509c6bdcff93",
     "slug": "loi-sms-of-death-cua-android-co-the-danh-sap-dien-thoai-cua-3bc150",
@@ -12364,30 +12690,31 @@
     },
     "hidden": false
   },
-  "fadd7467dc36644c": {
-    "id": "fadd7467dc36644c",
-    "url": "https://dev.to/bowentse/word-counting-is-harder-than-it-looks-a-devs-guide-1jpb",
+  "3de8d5df6f454d1a": {
+    "id": "3de8d5df6f454d1a",
+    "slug": "stonehenge-nguoi-tien-su-di-chuyen-nhung-khoi-da-hang-chuc-t-3de8d5",
+    "url": "https://tinhte.vn/thread/stonehenge-nguoi-tien-su-di-chuyen-nhung-khoi-da-hang-chuc-tan-bang-cach-nao.4187005",
     "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips",
-      "content_type": "community"
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news",
+      "content_type": "article"
     },
-    "author": "bowen Tse",
-    "published_at": "2026-10-29T02:58:56+00:00",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
+    "author": "Quocxi",
+    "published_at": "2026-10-30T10:32:55+00:00",
+    "fetched_at": "2026-10-30T10:48:57.185065+00:00",
+    "original_lang": "vi",
     "title": {
-      "en": "Word Counting Is Harder Than It Looks: A Dev's Guide",
-      "vi": "Đếm từ khó hơn vẻ ngoài của nó: Hướng dẫn dành cho nhà phát triển"
+      "vi": "Stonehenge: người tiền sử di chuyển những khối đá hàng chục tấn bằng cách nào",
+      "en": "Stonehenge: how prehistoric people moved tens of tons of stone blocks"
     },
     "summary": {
-      "en": "Every developer has written the naive version at least once: const words =",
-      "vi": "Mọi nhà phát triển đều đã viết phiên bản ngây thơ ít nhất một lần: constwords ="
+      "vi": "Trên đồng bằng Salisbury ở hạt Wiltshire, miền nam nước Anh, có một vòng đá khổng lồ đã đứng đó hơn 4.000 năm. Người dựng Stonehenge không để lại chữ viết, chưa dùng kim loại và chưa biết đến bánh",
+      "en": "On Salisbury Plain in Wiltshire, southern England, there is a giant ring of stones that has stood there for more than 4,000 years. The people who built Stonehenge left no writing, did not use metal and did not know about cake"
     },
     "categories": [
-      "office"
+      "ios"
     ],
     "tags": [],
     "difficulty": "medium",
@@ -12395,10 +12722,9 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": "machine"
+      "en": "machine"
     },
-    "hidden": false,
-    "slug": "dem-tu-kho-hon-ve-ngoai-cua-no-huong-dan-danh-cho-nha-phat-t-fadd74"
+    "hidden": false
   },
   "7b15ec4f543529d7": {
     "id": "7b15ec4f543529d7",
@@ -12435,42 +12761,6 @@
     },
     "hidden": false,
     "slug": "oura-xac-nhan-loi-dong-bo-hoa-ring-4-nhung-cach-khac-phuc-ra-7b15ec"
-  },
-  "3de8d5df6f454d1a": {
-    "id": "3de8d5df6f454d1a",
-    "slug": "stonehenge-nguoi-tien-su-di-chuyen-nhung-khoi-da-hang-chuc-t-3de8d5",
-    "url": "https://tinhte.vn/thread/stonehenge-nguoi-tien-su-di-chuyen-nhung-khoi-da-hang-chuc-tan-bang-cach-nao.4187005",
-    "source": {
-      "id": "tinhte",
-      "name": "Tinh tế",
-      "site_url": "https://tinhte.vn",
-      "kind": "news",
-      "content_type": "article"
-    },
-    "author": "Quocxi",
-    "published_at": "2026-10-30T10:32:55+00:00",
-    "fetched_at": "2026-10-30T10:48:57.185065+00:00",
-    "original_lang": "vi",
-    "title": {
-      "vi": "Stonehenge: người tiền sử di chuyển những khối đá hàng chục tấn bằng cách nào",
-      "en": "Stonehenge: how prehistoric people moved tens of tons of stone blocks"
-    },
-    "summary": {
-      "vi": "Trên đồng bằng Salisbury ở hạt Wiltshire, miền nam nước Anh, có một vòng đá khổng lồ đã đứng đó hơn 4.000 năm. Người dựng Stonehenge không để lại chữ viết, chưa dùng kim loại và chưa biết đến bánh",
-      "en": "On Salisbury Plain in Wiltshire, southern England, there is a giant ring of stones that has stood there for more than 4,000 years. The people who built Stonehenge left no writing, did not use metal and did not know about cake"
-    },
-    "categories": [
-      "ios"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.74,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "en": "machine"
-    },
-    "hidden": false
   },
   "989f63e3510db413": {
     "id": "989f63e3510db413",
@@ -12620,9 +12910,9 @@
     },
     "hidden": false
   },
-  "f4cb4a6778724aeb": {
-    "id": "f4cb4a6778724aeb",
-    "url": "https://dev.to/toolsyhub/how-to-compress-an-image-to-an-exact-kb-limit-in-the-browser-canvas-binary-search-and-when-to-2d7i",
+  "fadd7467dc36644c": {
+    "id": "fadd7467dc36644c",
+    "url": "https://dev.to/bowentse/word-counting-is-harder-than-it-looks-a-devs-guide-1jpb",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
@@ -12630,20 +12920,20 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "Toolsy Hub",
-    "published_at": "2026-10-29T02:52:26+00:00",
+    "author": "bowen Tse",
+    "published_at": "2026-10-29T02:58:56+00:00",
     "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "How to compress an image to an exact KB limit in the browser (canvas, binary search, and when to stop lowering quality)",
-      "vi": "Cách nén hình ảnh đến giới hạn KB chính xác trong trình duyệt (canvas, tìm kiếm nhị phân và thời điểm ngừng giảm chất lượng)"
+      "en": "Word Counting Is Harder Than It Looks: A Dev's Guide",
+      "vi": "Đếm từ khó hơn vẻ ngoài của nó: Hướng dẫn dành cho nhà phát triển"
     },
     "summary": {
-      "en": "Upload forms for visas, exams and job portals often say \"photo must be under 100 KB\". A phone photo",
-      "vi": "Tải lên các biểu mẫu xin thị thực, kỳ thi và cổng thông tin việc làm thường ghi \"ảnh phải dưới 100 KB\". Một bức ảnh điện thoại"
+      "en": "Every developer has written the naive version at least once: const words =",
+      "vi": "Mọi nhà phát triển đều đã viết phiên bản ngây thơ ít nhất một lần: constwords ="
     },
     "categories": [
-      "dev"
+      "office"
     ],
     "tags": [],
     "difficulty": "medium",
@@ -12654,7 +12944,7 @@
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "cach-nen-hinh-anh-den-gioi-han-kb-chinh-xac-trong-trinh-duye-f4cb4a"
+    "slug": "dem-tu-kho-hon-ve-ngoai-cua-no-huong-dan-danh-cho-nha-phat-t-fadd74"
   },
   "f18d65f7da2a2657": {
     "id": "f18d65f7da2a2657",
@@ -12801,9 +13091,9 @@
     },
     "hidden": false
   },
-  "6508908febf34a09": {
-    "id": "6508908febf34a09",
-    "url": "https://dev.to/tomaszkrystman/building-an-mlops-workflow-from-experiment-to-production-4d3c",
+  "f4cb4a6778724aeb": {
+    "id": "f4cb4a6778724aeb",
+    "url": "https://dev.to/toolsyhub/how-to-compress-an-image-to-an-exact-kb-limit-in-the-browser-canvas-binary-search-and-when-to-2d7i",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
@@ -12811,17 +13101,17 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "Tomasz Krystman",
-    "published_at": "2026-10-29T03:00:59+00:00",
+    "author": "Toolsy Hub",
+    "published_at": "2026-10-29T02:52:26+00:00",
     "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Building an MLOps Workflow: From Experiment to Production",
-      "vi": "Xây dựng quy trình làm việc MLOps: Từ thử nghiệm đến sản xuất"
+      "en": "How to compress an image to an exact KB limit in the browser (canvas, binary search, and when to stop lowering quality)",
+      "vi": "Cách nén hình ảnh đến giới hạn KB chính xác trong trình duyệt (canvas, tìm kiếm nhị phân và thời điểm ngừng giảm chất lượng)"
     },
     "summary": {
-      "en": "A practical guide to MLOps workflows, maturity levels, governance, monitoring, and the relationship between MLOps and DevOps.",
-      "vi": "Hướng dẫn thực tế về quy trình làm việc MLOps, mức độ trưởng thành, quản trị, giám sát và mối quan hệ giữa MLOps và DevOps."
+      "en": "Upload forms for visas, exams and job portals often say \"photo must be under 100 KB\". A phone photo",
+      "vi": "Tải lên các biểu mẫu xin thị thực, kỳ thi và cổng thông tin việc làm thường ghi \"ảnh phải dưới 100 KB\". Một bức ảnh điện thoại"
     },
     "categories": [
       "dev"
@@ -12835,7 +13125,7 @@
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "xay-dung-quy-trinh-lam-viec-mlops-tu-thu-nghiem-den-san-xuat-650890"
+    "slug": "cach-nen-hinh-anh-den-gioi-han-kb-chinh-xac-trong-trinh-duye-f4cb4a"
   },
   "2551552469f4fa95": {
     "id": "2551552469f4fa95",
@@ -12910,6 +13200,42 @@
       "vi": "machine"
     },
     "hidden": false
+  },
+  "6508908febf34a09": {
+    "id": "6508908febf34a09",
+    "url": "https://dev.to/tomaszkrystman/building-an-mlops-workflow-from-experiment-to-production-4d3c",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "Tomasz Krystman",
+    "published_at": "2026-10-29T03:00:59+00:00",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Building an MLOps Workflow: From Experiment to Production",
+      "vi": "Xây dựng quy trình làm việc MLOps: Từ thử nghiệm đến sản xuất"
+    },
+    "summary": {
+      "en": "A practical guide to MLOps workflows, maturity levels, governance, monitoring, and the relationship between MLOps and DevOps.",
+      "vi": "Hướng dẫn thực tế về quy trình làm việc MLOps, mức độ trưởng thành, quản trị, giám sát và mối quan hệ giữa MLOps và DevOps."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.74,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "xay-dung-quy-trinh-lam-viec-mlops-tu-thu-nghiem-den-san-xuat-650890"
   },
   "64bb151c75ac96d4": {
     "id": "64bb151c75ac96d4",
@@ -13091,42 +13417,6 @@
       "vi": "machine"
     },
     "hidden": false
-  },
-  "256c27b306f09301": {
-    "id": "256c27b306f09301",
-    "url": "https://dev.to/dinesh_04/how-to-plan-a-game-vertical-slice-in-7-days-with-a-one-page-gdd-e7",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "Dinesh",
-    "published_at": "2026-10-29T03:17:16+00:00",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "How to Plan a Game Vertical Slice in 7 Days with a One-Page GDD",
-      "vi": "Cách lập kế hoạch phân chia trò chơi theo chiều dọc trong 7 ngày với GDD một trang"
-    },
-    "summary": {
-      "en": "Most solo devs skip the game design document because it feels like homework. Then scope creep eats a",
-      "vi": "Hầu hết các nhà phát triển solo đều bỏ qua tài liệu thiết kế trò chơi vì nó giống như bài tập về nhà. Sau đó, phạm vi leo ăn một"
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.74,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "cach-lap-ke-hoach-phan-chia-tro-choi-theo-chieu-doc-trong-7-256c27"
   },
   "f74bf914fe0a2409": {
     "id": "f74bf914fe0a2409",
@@ -13344,9 +13634,9 @@
     "hidden": false,
     "slug": "nhung-cach-giup-smartphone-dung-ben-den-7-nam-40b007"
   },
-  "b302cd56f6ec631a": {
-    "id": "b302cd56f6ec631a",
-    "url": "https://dev.to/annavi11arrea1/understanding-what-ai-just-created-in-the-500mph-landscape-1m52",
+  "256c27b306f09301": {
+    "id": "256c27b306f09301",
+    "url": "https://dev.to/dinesh_04/how-to-plan-a-game-vertical-slice-in-7-days-with-a-one-page-gdd-e7",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
@@ -13354,20 +13644,20 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "Anna Villarreal",
-    "published_at": "2026-10-23T15:59:05+00:00",
-    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "author": "Dinesh",
+    "published_at": "2026-10-29T03:17:16+00:00",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Understanding What AI just Created in the 500mph Landscape",
-      "vi": "Hiểu những gì AI vừa tạo ra trong bối cảnh vận tốc 500 dặm/giờ"
+      "en": "How to Plan a Game Vertical Slice in 7 Days with a One-Page GDD",
+      "vi": "Cách lập kế hoạch phân chia trò chơi theo chiều dọc trong 7 ngày với GDD một trang"
     },
     "summary": {
-      "en": "How to understand what AI wrote: For beginners! Avoid lack of dopamine, mental atrophy,",
-      "vi": "Làm thế nào để hiểu những gì AI đã viết: Dành cho người mới bắt đầu! Tránh tình trạng thiếu dopamin, teo tâm thần,"
+      "en": "Most solo devs skip the game design document because it feels like homework. Then scope creep eats a",
+      "vi": "Hầu hết các nhà phát triển solo đều bỏ qua tài liệu thiết kế trò chơi vì nó giống như bài tập về nhà. Sau đó, phạm vi leo ăn một"
     },
     "categories": [
-      "ai"
+      "dev"
     ],
     "tags": [],
     "difficulty": "medium",
@@ -13378,7 +13668,7 @@
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "hieu-nhung-gi-ai-vua-tao-ra-trong-boi-canh-van-toc-500-damgi-b302cd"
+    "slug": "cach-lap-ke-hoach-phan-chia-tro-choi-theo-chieu-doc-trong-7-256c27"
   },
   "f73f11092849b85a": {
     "id": "f73f11092849b85a",
@@ -13532,10 +13822,9 @@
       "vi": "2026-11-23T08:09:04+00:00"
     }
   },
-  "5f14c29ca41dcbe8": {
-    "id": "5f14c29ca41dcbe8",
-    "slug": "debloating-an-android-tv-with-claude-code-5f14c2",
-    "url": "https://dev.to/shubham399/debloating-an-android-tv-with-claude-code-3b8",
+  "b302cd56f6ec631a": {
+    "id": "b302cd56f6ec631a",
+    "url": "https://dev.to/annavi11arrea1/understanding-what-ai-just-created-in-the-500mph-landscape-1m52",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
@@ -13543,35 +13832,31 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "Shubham",
-    "published_at": "2026-11-18T04:38:57+00:00",
-    "fetched_at": "2026-11-20T13:09:24.007904+00:00",
+    "author": "Anna Villarreal",
+    "published_at": "2026-10-23T15:59:05+00:00",
+    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Debloating an Android TV with Claude Code",
-      "vi": "Debloating an Android TV with Claude Code"
+      "en": "Understanding What AI just Created in the 500mph Landscape",
+      "vi": "Hiểu những gì AI vừa tạo ra trong bối cảnh vận tốc 500 dặm/giờ"
     },
     "summary": {
-      "en": "I used Claude Code and CleanYourTV to strip TV bloatware over ADB. The set is faster and easier to use, with a one-line restore path.",
-      "vi": "I used Claude Code and CleanYourTV to strip TV bloatware over ADB. The set is faster and easier to use, with a one-line restore path."
+      "en": "How to understand what AI wrote: For beginners! Avoid lack of dopamine, mental atrophy,",
+      "vi": "Làm thế nào để hiểu những gì AI đã viết: Dành cho người mới bắt đầu! Tránh tình trạng thiếu dopamin, teo tâm thần,"
     },
     "categories": [
-      "android",
       "ai"
     ],
-    "tags": [
-      "claude"
-    ],
-    "difficulty": null,
+    "tags": [],
+    "difficulty": "medium",
     "score": 0.74,
-    "howto": false,
+    "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
-    "translate_attempts": {
-      "vi": 1
-    }
+    "hidden": false,
+    "slug": "hieu-nhung-gi-ai-vua-tao-ra-trong-boi-canh-van-toc-500-damgi-b302cd"
   },
   "c83e4a34493e1229": {
     "id": "c83e4a34493e1229",
@@ -13647,6 +13932,83 @@
     "hidden": false,
     "slug": "loi-khuyen-cho-nhung-gia-dinh-hay-tat-wifi-bang-cach-rut-phi-df7f2e"
   },
+  "5f14c29ca41dcbe8": {
+    "id": "5f14c29ca41dcbe8",
+    "slug": "debloating-an-android-tv-with-claude-code-5f14c2",
+    "url": "https://dev.to/shubham399/debloating-an-android-tv-with-claude-code-3b8",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "Shubham",
+    "published_at": "2026-11-18T04:38:57+00:00",
+    "fetched_at": "2026-11-20T13:09:24.007904+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Debloating an Android TV with Claude Code",
+      "vi": "Debloating an Android TV with Claude Code"
+    },
+    "summary": {
+      "en": "I used Claude Code and CleanYourTV to strip TV bloatware over ADB. The set is faster and easier to use, with a one-line restore path.",
+      "vi": "I used Claude Code and CleanYourTV to strip TV bloatware over ADB. The set is faster and easier to use, with a one-line restore path."
+    },
+    "categories": [
+      "android",
+      "ai"
+    ],
+    "tags": [
+      "claude"
+    ],
+    "difficulty": null,
+    "score": 0.74,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 2
+    }
+  },
+  "7a82ad8fe469044c": {
+    "id": "7a82ad8fe469044c",
+    "url": "https://genk.vn/thong-tin-quan-trong-den-tat-ca-nguoi-dung-iphone-165260825041529642.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "2026-08-25T03:25:00+00:00",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Thông tin quan trọng đến tất cả người dùng iPhone",
+      "en": "Important information for all iPhone users"
+    },
+    "summary": {
+      "vi": "Một thay đổi nhỏ trong cách sử dụng iPhone có thể tạo ra khác biệt lớn với người dùng.",
+      "en": "A small change in how you use your iPhone can make a big difference to users."
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.73,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": "machine"
+    },
+    "hidden": false,
+    "slug": "thong-tin-quan-trong-den-tat-ca-nguoi-dung-iphone-7a82ad"
+  },
   "11c1f6c108023853": {
     "id": "11c1f6c108023853",
     "slug": "how-to-tell-a-cyberattack-from-a-plain-old-outage-11c1f6",
@@ -13687,42 +14049,6 @@
     "translate_next_retry": {
       "vi": "2026-11-23T08:09:04+00:00"
     }
-  },
-  "7a82ad8fe469044c": {
-    "id": "7a82ad8fe469044c",
-    "url": "https://genk.vn/thong-tin-quan-trong-den-tat-ca-nguoi-dung-iphone-165260825041529642.chn",
-    "source": {
-      "id": "genk",
-      "name": "GenK Thủ Thuật",
-      "site_url": "https://genk.vn",
-      "kind": "tips",
-      "content_type": "article"
-    },
-    "author": null,
-    "published_at": "2026-08-25T03:25:00+00:00",
-    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
-    "original_lang": "vi",
-    "title": {
-      "vi": "Thông tin quan trọng đến tất cả người dùng iPhone",
-      "en": "Important information for all iPhone users"
-    },
-    "summary": {
-      "vi": "Một thay đổi nhỏ trong cách sử dụng iPhone có thể tạo ra khác biệt lớn với người dùng.",
-      "en": "A small change in how you use your iPhone can make a big difference to users."
-    },
-    "categories": [
-      "ios"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.73,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "en": "machine"
-    },
-    "hidden": false,
-    "slug": "thong-tin-quan-trong-den-tat-ca-nguoi-dung-iphone-7a82ad"
   },
   "0c65ea38b833d6ec": {
     "id": "0c65ea38b833d6ec",
@@ -13832,43 +14158,41 @@
     "hidden": false,
     "slug": "nhung-ung-dung-tien-ich-nay-giup-android-auto-10x-tro-nen-hu-73d75c"
   },
-  "4b544d4f2401d22a": {
-    "id": "4b544d4f2401d22a",
-    "slug": "turn-any-image-into-a-3d-scene-25d-and-gaussian-splats-4b544d",
-    "url": "https://dev.to/hiper2d/turn-any-image-into-a-3d-scene-25d-and-gaussian-splats-37i3",
+  "16d638755f3b4490": {
+    "id": "16d638755f3b4490",
+    "slug": "nguoi-dung-android-canh-giac-ngay-nhan-duoc-tin-nhan-nay-la-16d638",
+    "url": "https://genk.vn/nguoi-dung-android-canh-giac-ngay-nhan-duoc-tin-nhan-nay-la-dien-thoai-bien-thanh-cuc-gach-ngay-lap-tuc-165261111043644305.chn",
     "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
       "kind": "tips",
-      "content_type": "community"
+      "content_type": "article"
     },
-    "author": "Aliaksei Zelianouski",
-    "published_at": "2026-11-20T13:25:01+00:00",
-    "fetched_at": "2026-11-21T19:27:35.867239+00:00",
-    "original_lang": "en",
+    "author": null,
+    "published_at": "2026-11-11T03:30:00+00:00",
+    "fetched_at": "2026-11-11T06:43:50.891911+00:00",
+    "original_lang": "vi",
     "title": {
-      "en": "Turn Any Image into a 3D Scene: 2.5D and Gaussian Splats",
-      "vi": "Turn Any Image into a 3D Scene: 2.5D and Gaussian Splats"
+      "vi": "Người dùng Android cảnh giác ngay: Nhận được tin nhắn này là điện thoại biến thành \"cục gạch\" ngay lập tức",
+      "en": "Android users should be alert immediately: Receiving this message will instantly turn your phone into a \"brick\"."
     },
     "summary": {
-      "en": "One still image, a camera that moves through it, lights that go out, a room that burns into embers.",
-      "vi": "One still image, a camera that moves through it, lights that go out, a room that burns into embers."
+      "vi": "Tin nhắn độc hại này có thể làm gián đoạn các cuộc gọi và khiến điện thoại Android bị kẹt trong vòng lặp khởi động lại mà chủ sở hữu không hề biết chuyện gì đã xảy ra.",
+      "en": "This malicious message can interrupt calls and leave Android phones stuck in a reboot loop without the owner even knowing what happened."
     },
     "categories": [
-      "dev"
+      "android"
     ],
     "tags": [],
     "difficulty": null,
-    "score": 0.74,
+    "score": 0.71,
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "en": "machine"
     },
-    "translate_attempts": {
-      "vi": 1
-    }
+    "hidden": false
   },
   "c09e0a4abc10ff4e": {
     "id": "c09e0a4abc10ff4e",
@@ -13943,31 +14267,31 @@
     "hidden": false,
     "slug": "cuoi-cung-toi-da-tim-ra-muc-dich-thuc-su-cua-nhung-luoi-cua-4a2990"
   },
-  "16d638755f3b4490": {
-    "id": "16d638755f3b4490",
-    "slug": "nguoi-dung-android-canh-giac-ngay-nhan-duoc-tin-nhan-nay-la-16d638",
-    "url": "https://genk.vn/nguoi-dung-android-canh-giac-ngay-nhan-duoc-tin-nhan-nay-la-dien-thoai-bien-thanh-cuc-gach-ngay-lap-tuc-165261111043644305.chn",
+  "9fd899d67bf7abfb": {
+    "id": "9fd899d67bf7abfb",
+    "url": "https://www.howtogeek.com/forget-microsoft-word-heres-why-i-do-all-my-writing-in-markdown",
     "source": {
-      "id": "genk",
-      "name": "GenK Thủ Thuật",
-      "site_url": "https://genk.vn",
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
       "kind": "tips",
       "content_type": "article"
     },
-    "author": null,
-    "published_at": "2026-11-11T03:30:00+00:00",
-    "fetched_at": "2026-11-11T06:43:50.891911+00:00",
-    "original_lang": "vi",
+    "author": "Shan Abdul",
+    "published_at": "2026-10-29T13:30:16+00:00",
+    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
+    "original_lang": "en",
     "title": {
-      "vi": "Người dùng Android cảnh giác ngay: Nhận được tin nhắn này là điện thoại biến thành \"cục gạch\" ngay lập tức",
-      "en": "Android users should be alert immediately: Receiving this message will instantly turn your phone into a \"brick\"."
+      "en": "Forget Microsoft Word: Here's why I do all my writing in Markdown",
+      "vi": "Quên Microsoft Word: Đây là lý do tại sao tôi viết tất cả bằng Markdown"
     },
     "summary": {
-      "vi": "Tin nhắn độc hại này có thể làm gián đoạn các cuộc gọi và khiến điện thoại Android bị kẹt trong vòng lặp khởi động lại mà chủ sở hữu không hề biết chuyện gì đã xảy ra.",
-      "en": "This malicious message can interrupt calls and leave Android phones stuck in a reboot loop without the owner even knowing what happened."
+      "en": "Markdown: clean, simple, unbeatable.",
+      "vi": "Markdown: sạch sẽ, đơn giản, không thể đánh bại."
     },
     "categories": [
-      "android"
+      "windows",
+      "office"
     ],
     "tags": [],
     "difficulty": null,
@@ -13975,9 +14299,10 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "en": "machine"
+      "vi": "machine"
     },
-    "hidden": false
+    "hidden": false,
+    "slug": "quen-microsoft-word-day-la-ly-do-tai-sao-toi-viet-tat-ca-ban-9fd899"
   },
   "38c002f3c5475354": {
     "id": "38c002f3c5475354",
@@ -14051,78 +14376,43 @@
     },
     "hidden": false
   },
-  "9fd899d67bf7abfb": {
-    "id": "9fd899d67bf7abfb",
-    "url": "https://www.howtogeek.com/forget-microsoft-word-heres-why-i-do-all-my-writing-in-markdown",
+  "4b544d4f2401d22a": {
+    "id": "4b544d4f2401d22a",
+    "slug": "turn-any-image-into-a-3d-scene-25d-and-gaussian-splats-4b544d",
+    "url": "https://dev.to/hiper2d/turn-any-image-into-a-3d-scene-25d-and-gaussian-splats-37i3",
     "source": {
-      "id": "howtogeek",
-      "name": "How-To Geek",
-      "site_url": "https://www.howtogeek.com",
-      "kind": "tips",
-      "content_type": "article"
-    },
-    "author": "Shan Abdul",
-    "published_at": "2026-10-29T13:30:16+00:00",
-    "fetched_at": "2026-10-29T13:47:33.353322+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Forget Microsoft Word: Here's why I do all my writing in Markdown",
-      "vi": "Quên Microsoft Word: Đây là lý do tại sao tôi viết tất cả bằng Markdown"
-    },
-    "summary": {
-      "en": "Markdown: clean, simple, unbeatable.",
-      "vi": "Markdown: sạch sẽ, đơn giản, không thể đánh bại."
-    },
-    "categories": [
-      "windows",
-      "office"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.71,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "quen-microsoft-word-day-la-ly-do-tai-sao-toi-viet-tat-ca-ban-9fd899"
-  },
-  "3e314b72883b118a": {
-    "id": "3e314b72883b118a",
-    "slug": "adobe-muon-9999-usd-de-toi-co-the-huy-toi-da-yeu-cau-ho-tro-3e314b",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xkr94m/lpt_adobe_wanted_9999_to_let_me_cancel_i_asked",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "https://www.reddit.com/r/LifeProTips/",
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "/u/foreverfidel",
-    "published_at": "2026-11-01T01:52:25+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "author": "Aliaksei Zelianouski",
+    "published_at": "2026-11-20T13:25:01+00:00",
+    "fetched_at": "2026-11-21T19:27:35.867239+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund.",
-      "vi": "Adobe muốn 99,99 USD để tôi có thể hủy. Tôi đã yêu cầu hỗ trợ qua trò chuyện và nhận được miễn trừ cộng với khoản tiền hoàn lại theo tỷ lệ."
+      "en": "Turn Any Image into a 3D Scene: 2.5D and Gaussian Splats",
+      "vi": "Turn Any Image into a 3D Scene: 2.5D and Gaussian Splats"
     },
     "summary": {
-      "en": "\"Hi, I need to cancel my subscription today. Please cancel my account immediately, waive the early termination fee completely, and issue a prorated refund for the billing cycle I just paid for.” The result: subscription canceled, the entire $99.99 cancellation fee waived, and a…",
-      "vi": "\"Xin chào, tôi cần hủy đăng ký ngay hôm nay. Vui lòng hủy tài khoản của tôi ngay lập tức, miễn hoàn toàn phí chấm dứt sớm và hoàn lại tiền theo tỷ lệ cho chu kỳ thanh toán mà tôi vừa thanh toán.\" Kết quả: đăng ký bị hủy, toàn bộ phí hủy 99,99 USD được miễn và…"
+      "en": "One still image, a camera that moves through it, lights that go out, a room that burns into embers.",
+      "vi": "One still image, a camera that moves through it, lights that go out, a room that burns into embers."
     },
     "categories": [
-      "windows"
+      "dev"
     ],
     "tags": [],
     "difficulty": null,
-    "score": 0.71,
+    "score": 0.74,
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": "machine"
+      "vi": false
     },
-    "hidden": false
+    "translate_attempts": {
+      "vi": 2
+    }
   },
   "79567c1813154a92": {
     "id": "79567c1813154a92",
@@ -14268,10 +14558,10 @@
     },
     "hidden": false
   },
-  "9724dd0a88181e75": {
-    "id": "9724dd0a88181e75",
-    "slug": "bat-cu-khi-nao-noi-chuyen-voi-nhan-vien-dich-vu-khach-hang-q-9724dd",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xk4zad/lpt_whenever_speaking_to_a_customer_service",
+  "3e314b72883b118a": {
+    "id": "3e314b72883b118a",
+    "slug": "adobe-muon-9999-usd-de-toi-co-the-huy-toi-da-yeu-cau-ho-tro-3e314b",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xkr94m/lpt_adobe_wanted_9999_to_let_me_cancel_i_asked",
     "source": {
       "id": "reddit-lpt",
       "name": "Reddit r/LifeProTips",
@@ -14279,17 +14569,17 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "/u/TomsMorello",
-    "published_at": "2026-10-31T08:38:41+00:00",
+    "author": "/u/foreverfidel",
+    "published_at": "2026-11-01T01:52:25+00:00",
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "whenever speaking to a customer service person on the phone make sure to record the call and tell them you are doing so. They suddenly become a lot",
-      "vi": "bất cứ khi nào nói chuyện với nhân viên dịch vụ khách hàng qua điện thoại, hãy đảm bảo ghi âm cuộc gọi và cho họ biết bạn đang làm như vậy. Họ đột nhiên trở nên nhiều"
+      "en": "Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund.",
+      "vi": "Adobe muốn 99,99 USD để tôi có thể hủy. Tôi đã yêu cầu hỗ trợ qua trò chuyện và nhận được miễn trừ cộng với khoản tiền hoàn lại theo tỷ lệ."
     },
     "summary": {
-      "en": "A few years ago I had a problem with a PayPal transaction. It wasn’t an earth shattering amount of money but I much rather wanted the money back in my pocket. I spent a couple of days on the phone speaking to people at PayPal every single person DGAF. On what turned out to be my…",
-      "vi": "Cách đây vài năm, tôi gặp vấn đề với giao dịch PayPal. Đó không phải là một số tiền khủng khiếp nhưng tôi muốn tiền trở lại túi của mình hơn. Tôi đã dành vài ngày nói chuyện qua điện thoại với mọi người ở PayPal từng người DGAF. Về những gì hóa ra là của tôi…"
+      "en": "\"Hi, I need to cancel my subscription today. Please cancel my account immediately, waive the early termination fee completely, and issue a prorated refund for the billing cycle I just paid for.” The result: subscription canceled, the entire $99.99 cancellation fee waived, and a…",
+      "vi": "\"Xin chào, tôi cần hủy đăng ký ngay hôm nay. Vui lòng hủy tài khoản của tôi ngay lập tức, miễn hoàn toàn phí chấm dứt sớm và hoàn lại tiền theo tỷ lệ cho chu kỳ thanh toán mà tôi vừa thanh toán.\" Kết quả: đăng ký bị hủy, toàn bộ phí hủy 99,99 USD được miễn và…"
     },
     "categories": [
       "windows"
@@ -14375,6 +14665,42 @@
     },
     "hidden": false,
     "slug": "samsung-good-lock-da-mang-den-cho-chiec-galaxy-cua-toi-mot-t-b5dd38"
+  },
+  "9724dd0a88181e75": {
+    "id": "9724dd0a88181e75",
+    "slug": "bat-cu-khi-nao-noi-chuyen-voi-nhan-vien-dich-vu-khach-hang-q-9724dd",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xk4zad/lpt_whenever_speaking_to_a_customer_service",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "https://www.reddit.com/r/LifeProTips/",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/TomsMorello",
+    "published_at": "2026-10-31T08:38:41+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "whenever speaking to a customer service person on the phone make sure to record the call and tell them you are doing so. They suddenly become a lot",
+      "vi": "bất cứ khi nào nói chuyện với nhân viên dịch vụ khách hàng qua điện thoại, hãy đảm bảo ghi âm cuộc gọi và cho họ biết bạn đang làm như vậy. Họ đột nhiên trở nên nhiều"
+    },
+    "summary": {
+      "en": "A few years ago I had a problem with a PayPal transaction. It wasn’t an earth shattering amount of money but I much rather wanted the money back in my pocket. I spent a couple of days on the phone speaking to people at PayPal every single person DGAF. On what turned out to be my…",
+      "vi": "Cách đây vài năm, tôi gặp vấn đề với giao dịch PayPal. Đó không phải là một số tiền khủng khiếp nhưng tôi muốn tiền trở lại túi của mình hơn. Tôi đã dành vài ngày nói chuyện qua điện thoại với mọi người ở PayPal từng người DGAF. Về những gì hóa ra là của tôi…"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.71,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false
   },
   "f31034dae2dd9dde": {
     "id": "f31034dae2dd9dde",
@@ -14558,42 +14884,6 @@
     },
     "hidden": false,
     "slug": "fire-tv-stick-cu-cua-toi-tu-dieu-chinh-cho-den-khi-toi-thay-435a65"
-  },
-  "71d01e5f69b83d3a": {
-    "id": "71d01e5f69b83d3a",
-    "slug": "neu-ban-muon-doc-them-nhung-thay-minh-dang-cuon-minh-tren-gi-71d01e",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xk2y3t/lpt_if_you_want_to_read_more_but_find_yourself",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "https://www.reddit.com/r/LifeProTips/",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/AbsolutelyNotASnail",
-    "published_at": "2026-10-31T06:29:20+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "if you want to read more but find yourself doomscrolling in bed: move your phone charger",
-      "vi": "nếu bạn muốn đọc thêm nhưng thấy mình đang cuộn mình trên giường: hãy di chuyển bộ sạc điện thoại của bạn"
-    },
-    "summary": {
-      "en": "It might not work for everyone but it really got me reading a lot more. Doomscrolling was a big problem for me, and not reading was another. I tried putting my phone charger further from my bed on a table opposite from it, and while it was hard at first I finally started to read…",
-      "vi": "Nó có thể không hiệu quả với tất cả mọi người nhưng nó thực sự khiến tôi đọc nhiều hơn. Doomscrolling là một vấn đề lớn đối với tôi, và không đọc lại là một vấn đề khác. Tôi đã thử đặt bộ sạc điện thoại của mình xa giường hơn trên một chiếc bàn đối diện với nó, và mặc dù lúc đầu thật khó khăn nhưng cuối cùng tôi cũng…"
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.71,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false
   },
   "afc8621767fb8933": {
     "id": "afc8621767fb8933",
@@ -14813,10 +15103,10 @@
     },
     "hidden": false
   },
-  "72935a7f76dc92ab": {
-    "id": "72935a7f76dc92ab",
-    "slug": "luon-dat-may-tinh-o-che-do-ngu-khi-ra-khoi-nha-hoac-di-ngu-72935a",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xj5yl8/lpt_always_put_your_computer_to_sleep_when_you",
+  "71d01e5f69b83d3a": {
+    "id": "71d01e5f69b83d3a",
+    "slug": "neu-ban-muon-doc-them-nhung-thay-minh-dang-cuon-minh-tren-gi-71d01e",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xk2y3t/lpt_if_you_want_to_read_more_but_find_yourself",
     "source": {
       "id": "reddit-lpt",
       "name": "Reddit r/LifeProTips",
@@ -14824,24 +15114,22 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "/u/rebel-yeller",
-    "published_at": "2026-10-30T04:30:02+00:00",
+    "author": "/u/AbsolutelyNotASnail",
+    "published_at": "2026-10-31T06:29:20+00:00",
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Always put your computer to sleep when you leave the house or go to bed",
-      "vi": "Luôn đặt máy tính ở chế độ ngủ khi ra khỏi nhà hoặc đi ngủ"
+      "en": "if you want to read more but find yourself doomscrolling in bed: move your phone charger",
+      "vi": "nếu bạn muốn đọc thêm nhưng thấy mình đang cuộn mình trên giường: hãy di chuyển bộ sạc điện thoại của bạn"
     },
     "summary": {
-      "en": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers.",
-      "vi": "Đảm bảo máy tính của bạn được bảo vệ bằng mật khẩu. Đặt nó vào chế độ ngủ ít nhất sẽ bảo vệ mọi tập tin hoặc dữ liệu cá nhân/bí mật nếu máy tính của bạn bị đánh cắp. Có vẻ như hầu hết những kẻ trộm đều không thân thiện với tin tặc máy tính."
+      "en": "It might not work for everyone but it really got me reading a lot more. Doomscrolling was a big problem for me, and not reading was another. I tried putting my phone charger further from my bed on a table opposite from it, and while it was hard at first I finally started to read…",
+      "vi": "Nó có thể không hiệu quả với tất cả mọi người nhưng nó thực sự khiến tôi đọc nhiều hơn. Doomscrolling là một vấn đề lớn đối với tôi, và không đọc lại là một vấn đề khác. Tôi đã thử đặt bộ sạc điện thoại của mình xa giường hơn trên một chiếc bàn đối diện với nó, và mặc dù lúc đầu thật khó khăn nhưng cuối cùng tôi cũng…"
     },
     "categories": [
-      "security"
+      "windows"
     ],
-    "tags": [
-      "password"
-    ],
+    "tags": [],
     "difficulty": null,
     "score": 0.71,
     "howto": false,
@@ -14998,10 +15286,10 @@
     "hidden": false,
     "slug": "netflix-se-mang-den-nhung-bo-phim-kinh-di-nay-dung-luc-cho-b-43c516"
   },
-  "13c87e8494b641fa": {
-    "id": "13c87e8494b641fa",
-    "slug": "tai-su-dung-pin-chuot-aa-da-chet-trong-dong-ho-13c87e",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xiiawy/lpt_reuse_a_dead_aa_mous_battery_in_a_clock",
+  "72935a7f76dc92ab": {
+    "id": "72935a7f76dc92ab",
+    "slug": "luon-dat-may-tinh-o-che-do-ngu-khi-ra-khoi-nha-hoac-di-ngu-72935a",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xj5yl8/lpt_always_put_your_computer_to_sleep_when_you",
     "source": {
       "id": "reddit-lpt",
       "name": "Reddit r/LifeProTips",
@@ -15009,23 +15297,23 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "/u/mywifeapprovesthis",
-    "published_at": "2026-10-29T12:14:04+00:00",
+    "author": "/u/rebel-yeller",
+    "published_at": "2026-10-30T04:30:02+00:00",
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "reuse a \"dead\" AA mous battery in a clock",
-      "vi": "tái sử dụng pin chuột AA \"đã chết\" trong đồng hồ"
+      "en": "Always put your computer to sleep when you leave the house or go to bed",
+      "vi": "Luôn đặt máy tính ở chế độ ngủ khi ra khỏi nhà hoặc đi ngủ"
     },
     "summary": {
-      "en": "Today I learned that the \"dead\" AA battery which can no longer power my wireless mouse still has enough oomph* to be able to power a clock for a while. I'm so pleased I can re-deploy a \"used\" battery into something useful, I thought I'd share. *oomph is a technical term as a…",
-      "vi": "Hôm nay tôi được biết rằng pin AA \"đã chết\" không còn có thể cung cấp năng lượng cho con chuột không dây của tôi vẫn còn đủ năng lượng* để có thể cung cấp năng lượng cho đồng hồ trong một thời gian. Tôi rất vui vì có thể tái triển khai cục pin \"đã qua sử dụng\" thành một thứ hữu ích, tôi nghĩ mình nên chia sẻ. *oomph…"
+      "en": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers.",
+      "vi": "Đảm bảo máy tính của bạn được bảo vệ bằng mật khẩu. Đặt nó vào chế độ ngủ ít nhất sẽ bảo vệ mọi tập tin hoặc dữ liệu cá nhân/bí mật nếu máy tính của bạn bị đánh cắp. Có vẻ như hầu hết những kẻ trộm đều không thân thiện với tin tặc máy tính."
     },
     "categories": [
-      "hardware"
+      "security"
     ],
     "tags": [
-      "battery"
+      "password"
     ],
     "difficulty": null,
     "score": 0.71,
@@ -15107,6 +15395,44 @@
     },
     "hidden": false,
     "slug": "5-ung-dung-dong-hanh-cua-google-maps-lap-day-khoang-trong-lo-29d0fd"
+  },
+  "13c87e8494b641fa": {
+    "id": "13c87e8494b641fa",
+    "slug": "tai-su-dung-pin-chuot-aa-da-chet-trong-dong-ho-13c87e",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xiiawy/lpt_reuse_a_dead_aa_mous_battery_in_a_clock",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "https://www.reddit.com/r/LifeProTips/",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/mywifeapprovesthis",
+    "published_at": "2026-10-29T12:14:04+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "reuse a \"dead\" AA mous battery in a clock",
+      "vi": "tái sử dụng pin chuột AA \"đã chết\" trong đồng hồ"
+    },
+    "summary": {
+      "en": "Today I learned that the \"dead\" AA battery which can no longer power my wireless mouse still has enough oomph* to be able to power a clock for a while. I'm so pleased I can re-deploy a \"used\" battery into something useful, I thought I'd share. *oomph is a technical term as a…",
+      "vi": "Hôm nay tôi được biết rằng pin AA \"đã chết\" không còn có thể cung cấp năng lượng cho con chuột không dây của tôi vẫn còn đủ năng lượng* để có thể cung cấp năng lượng cho đồng hồ trong một thời gian. Tôi rất vui vì có thể tái triển khai cục pin \"đã qua sử dụng\" thành một thứ hữu ích, tôi nghĩ mình nên chia sẻ. *oomph…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [
+      "battery"
+    ],
+    "difficulty": null,
+    "score": 0.71,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false
   },
   "fabd9eb4d1e11f1b": {
     "id": "fabd9eb4d1e11f1b",
@@ -15288,42 +15614,6 @@
     "difficulty": "medium",
     "score": 0.69,
     "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false
-  },
-  "33d256014ccf120b": {
-    "id": "33d256014ccf120b",
-    "slug": "su-dung-ten-ban-muon-trong-chu-ky-thay-vi-ten-chinh-thuc-cua-33d256",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xh29vq/lpt_use_the_name_you_want_in_your_signature",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "https://www.reddit.com/r/LifeProTips/",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/deten",
-    "published_at": "2026-10-27T19:31:27+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Use the name you want in your signature instead of your formal name",
-      "vi": "Sử dụng tên bạn muốn trong chữ ký thay vì tên chính thức của bạn"
-    },
-    "summary": {
-      "en": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…",
-      "vi": "Tôi không thể tin được đã là năm 2026 và mọi người vẫn đang ký vào tin nhắn và email bằng những cái tên mà họ không thực sự sử dụng. Nếu tên bạn là Nicholas nhưng bạn muốn được gọi là Nick, hãy sử dụng Nick trong chữ ký của bạn. Tôi làm việc trong lĩnh vực bán hàng và liên tục phải gửi email hoặc gọi điện cho những…"
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.71,
-    "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
@@ -15547,43 +15837,41 @@
     },
     "hidden": false
   },
-  "843e2f5d387fbdbf": {
-    "id": "843e2f5d387fbdbf",
-    "url": "https://dev.to/qunirice_verase_1ab0caeba/steamos-or-windows-11-deciding-with-powershell-before-you-partition-14hj",
+  "33d256014ccf120b": {
+    "id": "33d256014ccf120b",
+    "slug": "su-dung-ten-ban-muon-trong-chu-ky-thay-vi-ten-chinh-thuc-cua-33d256",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xh29vq/lpt_use_the_name_you_want_in_your_signature",
     "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "https://www.reddit.com/r/LifeProTips/",
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "AI Release",
-    "published_at": "2026-10-29T03:23:06+00:00",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "/u/deten",
+    "published_at": "2026-10-27T19:31:27+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "SteamOS or Windows 11: deciding with PowerShell before you partition",
-      "vi": "SteamOS hoặc Windows 11: quyết định sử dụng PowerShell trước khi phân vùng"
+      "en": "Use the name you want in your signature instead of your formal name",
+      "vi": "Sử dụng tên bạn muốn trong chữ ký thay vì tên chính thức của bạn"
     },
     "summary": {
-      "en": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11.",
-      "vi": "Hướng dẫn thực tế: kiểm tra UEFI, TPM và Secure Boot, kiểm kê thư viện trò chơi của bạn trên ProtonDB, sau đó quyết định giữa SteamOS và Windows 11."
+      "en": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…",
+      "vi": "Tôi không thể tin được đã là năm 2026 và mọi người vẫn đang ký vào tin nhắn và email bằng những cái tên mà họ không thực sự sử dụng. Nếu tên bạn là Nicholas nhưng bạn muốn được gọi là Nick, hãy sử dụng Nick trong chữ ký của bạn. Tôi làm việc trong lĩnh vực bán hàng và liên tục phải gửi email hoặc gọi điện cho những…"
     },
     "categories": [
       "windows"
     ],
-    "tags": [
-      "powershell"
-    ],
-    "difficulty": "advanced",
-    "score": 0.68,
-    "howto": true,
+    "tags": [],
+    "difficulty": null,
+    "score": 0.71,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
-    "hidden": false,
-    "slug": "steamos-hoac-windows-11-quyet-dinh-su-dung-powershell-truoc-843e2f"
+    "hidden": false
   },
   "7ed6df94e7174704": {
     "id": "7ed6df94e7174704",
@@ -15731,6 +16019,44 @@
       "en": "machine"
     },
     "hidden": false
+  },
+  "843e2f5d387fbdbf": {
+    "id": "843e2f5d387fbdbf",
+    "url": "https://dev.to/qunirice_verase_1ab0caeba/steamos-or-windows-11-deciding-with-powershell-before-you-partition-14hj",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "AI Release",
+    "published_at": "2026-10-29T03:23:06+00:00",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "SteamOS or Windows 11: deciding with PowerShell before you partition",
+      "vi": "SteamOS hoặc Windows 11: quyết định sử dụng PowerShell trước khi phân vùng"
+    },
+    "summary": {
+      "en": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11.",
+      "vi": "Hướng dẫn thực tế: kiểm tra UEFI, TPM và Secure Boot, kiểm kê thư viện trò chơi của bạn trên ProtonDB, sau đó quyết định giữa SteamOS và Windows 11."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [
+      "powershell"
+    ],
+    "difficulty": "advanced",
+    "score": 0.68,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "steamos-hoac-windows-11-quyet-dinh-su-dung-powershell-truoc-843e2f"
   },
   "84934b4fdd2aba87": {
     "id": "84934b4fdd2aba87",
@@ -16241,7 +16567,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "1ef8ba8857793b35": {
