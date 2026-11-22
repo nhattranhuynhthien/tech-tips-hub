@@ -691,8 +691,46 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
+    }
+  },
+  "4c626d1f1609f29d": {
+    "id": "4c626d1f1609f29d",
+    "slug": "your-linux-laptop-wont-suspend-heres-what-you-can-do-4c626d",
+    "url": "https://feed.itsfoss.com/link/24361/17537621/linux-laptop-suspend-inhibitor-lock",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Community",
+    "published_at": "2026-11-22T13:44:00+00:00",
+    "fetched_at": "2026-11-22T16:24:19.170486+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Your Linux Laptop Won't Suspend? Here's What You Can Do",
+      "vi": "Your Linux Laptop Won't Suspend? Here's What You Can Do"
+    },
+    "summary": {
+      "en": "When a Linux laptop refuses to sleep, the first instinct should be to check what's stopping it. Here's a troubleshoot guide for your reference.",
+      "vi": "When a Linux laptop refuses to sleep, the first instinct should be to check what's stopping it. Here's a troubleshoot guide for your reference."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "77e32da8e58573a6": {
@@ -1903,11 +1941,11 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 4
+      "vi": 5
     },
     "hidden": false,
     "translate_next_retry": {
-      "vi": "2026-11-22T11:24:46+00:00"
+      "vi": "2026-11-23T16:24:55+00:00"
     }
   },
   "bcd4b1c040e9ef33": {
@@ -2466,8 +2504,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
   "50176baa8d9864ae": {
@@ -2505,7 +2543,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "c80c5fcac2e3fe98": {
@@ -3045,7 +3083,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T16:24:55+00:00"
     }
   },
   "80d8af39f334e205": {
@@ -3084,7 +3125,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T16:24:55+00:00"
     }
   },
   "623748b4f3c591ae": {
@@ -3166,7 +3210,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T16:25:00+00:00"
     }
   },
   "e9b0f41de924aee8": {
@@ -3205,7 +3252,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T16:25:00+00:00"
     }
   },
   "be2753a8757ba661": {
@@ -3243,7 +3293,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T16:25:00+00:00"
     }
   },
   "f58b4a23562d7cee": {
@@ -3957,7 +4010,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T16:25:00+00:00"
     }
   },
   "6fcf1a0b13dc9fb2": {
@@ -4740,7 +4796,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T16:25:00+00:00"
     }
   },
   "ad6f6410f7502cc5": {
@@ -4779,7 +4838,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T16:25:04+00:00"
     }
   },
   "b90789d892d039a6": {
@@ -4817,7 +4879,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T16:25:04+00:00"
     }
   },
   "eb96cf3da654dea0": {
@@ -4855,7 +4920,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T16:25:04+00:00"
     }
   },
   "2e79680d684bd68d": {
@@ -4930,7 +4998,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T16:25:04+00:00"
     }
   },
   "c8cc58f907ae3685": {
@@ -4971,7 +5042,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "6b954b36142cda5a": {
@@ -7093,7 +7164,7 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 1
+      "en": 2
     }
   },
   "a07d8ae926f256fd": {
@@ -11262,7 +11333,12 @@
     "score": 0.86,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "8a2e6d2c33ee39b0": {
     "id": "8a2e6d2c33ee39b0",
@@ -11529,7 +11605,12 @@
     "score": 0.86,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "6cc520c9004f9169": {
     "id": "6cc520c9004f9169",
@@ -13485,7 +13566,12 @@
     "score": 0.74,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "c83e4a34493e1229": {
     "id": "c83e4a34493e1229",
@@ -13777,7 +13863,12 @@
     "score": 0.74,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "c09e0a4abc10ff4e": {
     "id": "c09e0a4abc10ff4e",
@@ -16146,7 +16237,12 @@
     "score": 0.65,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "1ef8ba8857793b35": {
     "id": "1ef8ba8857793b35",
