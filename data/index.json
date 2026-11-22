@@ -653,6 +653,48 @@
       "vi": "machine"
     }
   },
+  "83d486224772a424": {
+    "id": "83d486224772a424",
+    "slug": "1-83d486",
+    "url": "https://www.ithome.com/1/030/604.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "2026-11-22T07:49:59+00:00",
+    "fetched_at": "2026-11-22T08:08:22.937547+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "张雪机车计划明年推出针对外卖骑手的电动摩托车，价格尽量控制在 1 万元左右",
+      "vi": "张雪机车计划明年推出针对外卖骑手的电动摩托车，价格尽量控制在 1 万元左右",
+      "en": "张雪机车计划明年推出针对外卖骑手的电动摩托车，价格尽量控制在 1 万元左右"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 22 日消息，张雪机车创始人张雪在珠海“张雪机车 · 京东 WSBK 嘉年华”现场受访时透露，计划于明年（2027 年）推出针对外卖骑手设计的电动摩托车。 IT之家获悉，新车可能会提供两个续航版本（100 公里、150 公里），涵盖 99% 骑手需求；并优化快充补能，利用吃饭的时间就能把电量充满。 你就在吃个午饭的时间，你的车就补能好了。 咱们外卖小哥百分之八九十日均的使用里程在 100（公里）左右， 我们的补能时间目标是 10 分钟 。 据介绍，新车在操控方面也要向油摩看齐，整车重量兼顾驾驶质感与安全底线。 张雪坦言价格尽量控制在…",
+      "vi": "IT之家 11 月 22 日消息，张雪机车创始人张雪在珠海“张雪机车 · 京东 WSBK 嘉年华”现场受访时透露，计划于明年（2027 年）推出针对外卖骑手设计的电动摩托车。 IT之家获悉，新车可能会提供两个续航版本（100 公里、150 公里），涵盖 99% 骑手需求；并优化快充补能，利用吃饭的时间就能把电量充满。 你就在吃个午饭的时间，你的车就补能好了。 咱们外卖小哥百分之八九十日均的使用里程在 100（公里）左右， 我们的补能时间目标是 10 分钟 。 据介绍，新车在操控方面也要向油摩看齐，整车重量兼顾驾驶质感与安全底线。 张雪坦言价格尽量控制在…",
+      "en": "IT之家 11 月 22 日消息，张雪机车创始人张雪在珠海“张雪机车 · 京东 WSBK 嘉年华”现场受访时透露，计划于明年（2027 年）推出针对外卖骑手设计的电动摩托车。 IT之家获悉，新车可能会提供两个续航版本（100 公里、150 公里），涵盖 99% 骑手需求；并优化快充补能，利用吃饭的时间就能把电量充满。 你就在吃个午饭的时间，你的车就补能好了。 咱们外卖小哥百分之八九十日均的使用里程在 100（公里）左右， 我们的补能时间目标是 10 分钟 。 据介绍，新车在操控方面也要向油摩看齐，整车重量兼顾驾驶质感与安全底线。 张雪坦言价格尽量控制在…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
   "77e32da8e58573a6": {
     "id": "77e32da8e58573a6",
     "slug": "sap-xep-va-truyen-dat-thong-tin-phuc-tap-bang-danh-sach-duoc-77e32d",
@@ -797,7 +839,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:09:04+00:00"
     }
   },
   "7edc04edbf10f662": {
@@ -835,7 +880,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:09:04+00:00"
     }
   },
   "9b755754b5efea43": {
@@ -1015,7 +1063,10 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 2
+      "en": 3
+    },
+    "translate_next_retry": {
+      "en": "2026-11-23T08:09:31+00:00"
     }
   },
   "c1d86eadf669c9b2": {
@@ -1053,7 +1104,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:08:59+00:00"
     }
   },
   "009d89703dd91abd": {
@@ -1397,7 +1451,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:09:09+00:00"
     }
   },
   "776f5abe5fb88ecb": {
@@ -1575,7 +1632,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:08:59+00:00"
     }
   },
   "73d60418285cd4ad": {
@@ -2073,7 +2133,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:09:09+00:00"
     }
   },
   "6f16a7d9ab1b6067": {
@@ -2111,7 +2174,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:09:09+00:00"
     }
   },
   "d8c954bf3f853794": {
@@ -2149,7 +2215,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:09:09+00:00"
     }
   },
   "4f619429a980a2f7": {
@@ -2225,7 +2294,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:09:09+00:00"
     }
   },
   "34eed4964366b6fc": {
@@ -2267,7 +2339,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:09:13+00:00"
     }
   },
   "bdbeddfb85020a8c": {
@@ -2306,7 +2381,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:09:13+00:00"
     }
   },
   "520c82ccf41b03d1": {
@@ -2344,7 +2422,90 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:09:13+00:00"
+    }
+  },
+  "4f8b996126a594cb": {
+    "id": "4f8b996126a594cb",
+    "slug": "tip-4f8b99",
+    "url": "https://sspai.com/post/119318",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "侧脸君",
+    "published_at": "2026-11-22T01:05:44+00:00",
+    "fetched_at": "2026-11-22T08:08:22.937547+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "从深圳到上海，少数派的共创故事还在继续",
+      "vi": "从深圳到上海，少数派的共创故事还在继续",
+      "en": "从深圳到上海，少数派的共创故事还在继续"
+    },
+    "summary": {
+      "zh-CN": "11月20日，2026虹桥国际科技周在上海举行。作为聚焦科技创新、产业协作与未来趋势的交流平台，本届科技周汇聚了来自不同领域的创新者、创业者与行业观察者。少数派也在现场带来了主题论坛分享，与参与者一起 ... 查看全文",
+      "vi": "11月20日，2026虹桥国际科技周在上海举行。作为聚焦科技创新、产业协作与未来趋势的交流平台，本届科技周汇聚了来自不同领域的创新者、创业者与行业观察者。少数派也在现场带来了主题论坛分享，与参与者一起 ... 查看全文",
+      "en": "11月20日，2026虹桥国际科技周在上海举行。作为聚焦科技创新、产业协作与未来趋势的交流平台，本届科技周汇聚了来自不同领域的创新者、创业者与行业观察者。少数派也在现场带来了主题论坛分享，与参与者一起 ... 查看全文"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
+  "50176baa8d9864ae": {
+    "id": "50176baa8d9864ae",
+    "slug": "my-hybrid-ai-system-in-obsidian-local-and-cloud-ai-integrati-50176b",
+    "url": "https://feed.itsfoss.com/link/24361/17537415/obsidian-hybrid-ai-system",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Sreenath",
+    "published_at": "2026-11-22T05:18:03+00:00",
+    "fetched_at": "2026-11-22T08:08:22.937547+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "My Hybrid AI System in Obsidian: Local and Cloud AI Integration",
+      "vi": "My Hybrid AI System in Obsidian: Local and Cloud AI Integration"
+    },
+    "summary": {
+      "en": "Using AI with notes gives superpower to your notes. But should you give AI access to your knowledge base?",
+      "vi": "Using AI with notes gives superpower to your notes. But should you give AI access to your knowledge base?"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "c80c5fcac2e3fe98": {
@@ -2603,7 +2764,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:09:13+00:00"
     }
   },
   "24667ebd409b6cab": {
@@ -2719,7 +2883,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:09:18+00:00"
     }
   },
   "a30cefc1e3e6ed9f": {
@@ -2799,7 +2966,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:09:18+00:00"
     }
   },
   "0d5647ba57feb748": {
@@ -2875,7 +3045,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "80d8af39f334e205": {
@@ -2914,7 +3084,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "623748b4f3c591ae": {
@@ -2955,7 +3125,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:09:18+00:00"
     }
   },
   "38ad85f05b209a3c": {
@@ -2993,7 +3166,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "e9b0f41de924aee8": {
@@ -3032,7 +3205,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "be2753a8757ba661": {
@@ -3070,7 +3243,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "f58b4a23562d7cee": {
@@ -3406,7 +3579,10 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 2
+      "en": 3
+    },
+    "translate_next_retry": {
+      "en": "2026-11-23T08:09:31+00:00"
     }
   },
   "8c90d3066df4a2be": {
@@ -3444,7 +3620,10 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 2
+      "en": 3
+    },
+    "translate_next_retry": {
+      "en": "2026-11-23T08:09:31+00:00"
     }
   },
   "db85abacb121d037": {
@@ -3778,7 +3957,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "6fcf1a0b13dc9fb2": {
@@ -4561,7 +4740,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "ad6f6410f7502cc5": {
@@ -4600,7 +4779,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "b90789d892d039a6": {
@@ -4638,7 +4817,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "eb96cf3da654dea0": {
@@ -4676,7 +4855,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "2e79680d684bd68d": {
@@ -4751,7 +4930,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "c8cc58f907ae3685": {
@@ -4936,7 +5115,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:08:59+00:00"
     }
   },
   "a8b9571f5922480c": {
@@ -4975,7 +5157,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:08:59+00:00"
     }
   },
   "d9c39429d489eec5": {
@@ -7978,7 +8163,10 @@
     "hidden": false,
     "slug": "oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-6f7743",
     "translate_attempts": {
-      "en": 2
+      "en": 3
+    },
+    "translate_next_retry": {
+      "en": "2026-11-23T08:09:31+00:00"
     }
   },
   "e9337c15641891f4": {
@@ -11185,7 +11373,10 @@
     },
     "hn_points": 304,
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:08:59+00:00"
     }
   },
   "fc1520313d731b21": {
@@ -13254,7 +13445,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:09:04+00:00"
     }
   },
   "5f14c29ca41dcbe8": {
@@ -13402,7 +13596,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:09:04+00:00"
     }
   },
   "7a82ad8fe469044c": {
@@ -17417,7 +17614,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-23T08:09:04+00:00"
     }
   },
   "da96698ef028a283": {
