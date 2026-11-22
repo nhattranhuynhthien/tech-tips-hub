@@ -1,11 +1,5 @@
 [
   {
-    "id": "8f88aafaa21088c5",
-    "title": "Chia sẻ bàn làm việc của thợ chụp hình thích setup theo phong cách game thủ",
-    "featured_at": "2026-11-07T10:27:36.150072+00:00",
-    "date": "2026-11-07"
-  },
-  {
     "id": "c06ec870b4e1dac0",
     "title": "Apple hướng dẫn tắt logo phát sáng trên MacBook Pro mới, nhưng chỉ có cách dùng Terminal",
     "featured_at": "2026-11-08T07:30:40.983505+00:00",
@@ -46,5 +40,11 @@
     "title": "4 GB nhật ký mỗi phút: Một sự cố giám sát Kafka có 20 phút dự phòng",
     "featured_at": "2026-11-21T02:31:10.663863+00:00",
     "date": "2026-11-21"
+  },
+  {
+    "id": "014fbd7525a9667d",
+    "title": "Chương 4: Xây dựng Tác nhân AI cá nhân với n8n",
+    "featured_at": "2026-11-22T00:27:14.155691+00:00",
+    "date": "2026-11-22"
   }
 ]

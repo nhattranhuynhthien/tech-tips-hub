@@ -797,7 +797,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "7edc04edbf10f662": {
@@ -835,7 +835,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "9b755754b5efea43": {
@@ -1015,7 +1015,7 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 1
+      "en": 2
     }
   },
   "c1d86eadf669c9b2": {
@@ -1053,7 +1053,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "009d89703dd91abd": {
@@ -1397,7 +1397,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "776f5abe5fb88ecb": {
@@ -1575,7 +1575,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "73d60418285cd4ad": {
@@ -2073,7 +2073,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "6f16a7d9ab1b6067": {
@@ -2111,7 +2111,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "d8c954bf3f853794": {
@@ -2149,7 +2149,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "4f619429a980a2f7": {
@@ -2225,7 +2225,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "34eed4964366b6fc": {
@@ -2267,7 +2267,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "bdbeddfb85020a8c": {
@@ -2306,7 +2306,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "520c82ccf41b03d1": {
@@ -2344,7 +2344,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "c80c5fcac2e3fe98": {
@@ -2603,7 +2603,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "24667ebd409b6cab": {
@@ -2719,7 +2719,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "a30cefc1e3e6ed9f": {
@@ -2799,7 +2799,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "0d5647ba57feb748": {
@@ -2871,7 +2871,12 @@
     "score": 1.17,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "80d8af39f334e205": {
     "id": "80d8af39f334e205",
@@ -2905,7 +2910,12 @@
     "score": 1.17,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "623748b4f3c591ae": {
     "id": "623748b4f3c591ae",
@@ -2945,7 +2955,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "38ad85f05b209a3c": {
@@ -2979,7 +2989,12 @@
     "score": 1.17,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "e9b0f41de924aee8": {
     "id": "e9b0f41de924aee8",
@@ -3013,7 +3028,12 @@
     "score": 1.17,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "be2753a8757ba661": {
     "id": "be2753a8757ba661",
@@ -3046,7 +3066,12 @@
     "score": 1.17,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "f58b4a23562d7cee": {
     "id": "f58b4a23562d7cee",
@@ -3381,7 +3406,7 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 1
+      "en": 2
     }
   },
   "8c90d3066df4a2be": {
@@ -3419,7 +3444,7 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 1
+      "en": 2
     }
   },
   "db85abacb121d037": {
@@ -3749,7 +3774,12 @@
     "score": 1.05,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "6fcf1a0b13dc9fb2": {
     "id": "6fcf1a0b13dc9fb2",
@@ -4527,7 +4557,12 @@
     "score": 1.02,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "ad6f6410f7502cc5": {
     "id": "ad6f6410f7502cc5",
@@ -4561,7 +4596,12 @@
     "score": 1.02,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "b90789d892d039a6": {
     "id": "b90789d892d039a6",
@@ -4594,7 +4634,12 @@
     "score": 1.02,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "eb96cf3da654dea0": {
     "id": "eb96cf3da654dea0",
@@ -4627,7 +4672,12 @@
     "score": 1.02,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "2e79680d684bd68d": {
     "id": "2e79680d684bd68d",
@@ -4697,7 +4747,12 @@
     "score": 1.02,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "c8cc58f907ae3685": {
     "id": "c8cc58f907ae3685",
@@ -4733,7 +4788,12 @@
     "score": 1.02,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "6b954b36142cda5a": {
     "id": "6b954b36142cda5a",
@@ -4876,7 +4936,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "a8b9571f5922480c": {
@@ -4915,7 +4975,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "d9c39429d489eec5": {
@@ -5071,9 +5131,12 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 3
+      "vi": 4
     },
-    "hidden": false
+    "hidden": false,
+    "translate_next_retry": {
+      "vi": "2026-11-23T00:27:09+00:00"
+    }
   },
   "604f9be9642ce51f": {
     "id": "604f9be9642ce51f",
@@ -6841,7 +6904,12 @@
     "score": 0.93,
     "howto": false,
     "reading_time_min": 1,
-    "translated": {}
+    "translated": {
+      "en": false
+    },
+    "translate_attempts": {
+      "en": 1
+    }
   },
   "a07d8ae926f256fd": {
     "id": "a07d8ae926f256fd",
@@ -7910,7 +7978,7 @@
     "hidden": false,
     "slug": "oppo-find-x10-pro-max-smartphone-co-ba-camera-200-megapixel-6f7743",
     "translate_attempts": {
-      "en": 1
+      "en": 2
     }
   },
   "e9337c15641891f4": {
@@ -11117,7 +11185,7 @@
     },
     "hn_points": 304,
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "fc1520313d731b21": {
@@ -13186,7 +13254,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "5f14c29ca41dcbe8": {
@@ -13334,7 +13402,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "7a82ad8fe469044c": {
@@ -17349,7 +17417,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "da96698ef028a283": {
