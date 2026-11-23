@@ -716,11 +716,11 @@
     "original_lang": "en",
     "title": {
       "en": "Your Linux Laptop Won't Suspend? Here's What You Can Do",
-      "vi": "Your Linux Laptop Won't Suspend? Here's What You Can Do"
+      "vi": "Máy tính xách tay Linux của bạn sẽ không bị treo? Đây là những gì bạn có thể làm"
     },
     "summary": {
       "en": "When a Linux laptop refuses to sleep, the first instinct should be to check what's stopping it. Here's a troubleshoot guide for your reference.",
-      "vi": "When a Linux laptop refuses to sleep, the first instinct should be to check what's stopping it. Here's a troubleshoot guide for your reference."
+      "vi": "Khi một máy tính xách tay Linux không chịu ngủ, bản năng đầu tiên là kiểm tra xem điều gì đang ngăn nó lại. Đây là hướng dẫn khắc phục sự cố để bạn tham khảo."
     },
     "categories": [
       "linux"
@@ -731,10 +731,45 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
+    }
+  },
+  "d7e63d18c07df797": {
+    "id": "d7e63d18c07df797",
+    "slug": "corsair-ra-mat-khung-may-tram-ws-3200d-rs-trang-bi-lo-khoa-b-d7e63d",
+    "url": "https://www.ithome.com/1/030/779.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
     },
-    "translate_attempts": {
-      "vi": 2
+    "author": null,
+    "published_at": "2026-11-23T02:28:01+00:00",
+    "fetched_at": "2026-11-23T03:46:56.934984+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "海盗船推出 WS 3200D RS 工作站机箱：配备安全锁孔、防盗螺丝",
+      "vi": "Corsair ra mắt khung máy trạm WS 3200D RS: trang bị lỗ khóa bảo mật và vít chống trộm",
+      "en": "Corsair launches WS 3200D RS workstation chassis: equipped with security lock holes and anti-theft screws"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 23 日消息，CORSAIR（海盗船）本月中旬推出了 WS 3200D RS 机箱。这一型号与面向游戏 PC 的标准 3200D RS 共享基础，但针对工作站工作负载进行了优化调整。 WS 3200D RS 两侧均配备钢制面板，前脸则是 Y 型开孔的大气流面板； 内置 Kensington 安全锁孔 ， 采用 TORX 防盗螺丝 ；新增对宽度不超过 277mm 的 E-ATX 主板的支持。 该机箱三维 495×458×219 (mm) ，考虑前置风扇后仍有 375mm 的扩展卡空间 ；GPU…",
+      "vi": "IT House đưa tin vào ngày 23 tháng 11 rằng CORSAIR đã ra mắt khung gầm WS 3200D RS vào giữa tháng này. Model này có chung nền tảng với 3200D RS tiêu chuẩn dành cho PC chơi game nhưng được tối ưu hóa cho khối lượng công việc của máy trạm. WS 3200D RS được trang bị tấm thép 2 bên, mặt trước là tấm điều hòa gió lớn có…",
+      "en": "IT House reported on November 23 that CORSAIR launched the WS 3200D RS chassis in the middle of this month. This model shares its underpinnings with the standard 3200D RS for gaming PCs, but is optimized for workstation workloads. WS 3200D RS is equipped with steel panels on both sides, and the front face is a large…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
     }
   },
   "77e32da8e58573a6": {
@@ -863,11 +898,11 @@
     "original_lang": "en",
     "title": {
       "en": "Ubuntu 27.04 daily builds are available to download",
-      "vi": "Ubuntu 27.04 daily builds are available to download"
+      "vi": "Bản dựng hàng ngày Ubuntu 27.04 có sẵn để tải xuống"
     },
     "summary": {
       "en": "If you plan to track development of Ubuntu 27.04 ‘Tenacious T-Rex’ up close, daily build images are now available for download. Daily builds are produced for the duration of a development cycle, right up until the final, stable release. They’re built from development code…",
-      "vi": "If you plan to track development of Ubuntu 27.04 ‘Tenacious T-Rex’ up close, daily build images are now available for download. Daily builds are produced for the duration of a development cycle, right up until the final, stable release. They’re built from development code…"
+      "vi": "Nếu bạn dự định theo dõi kỹ sự phát triển của Ubuntu 27.04 'Tenacious T-Rex', các hình ảnh bản dựng hàng ngày hiện có sẵn để tải xuống. Các bản dựng hàng ngày được sản xuất trong suốt chu kỳ phát triển, cho đến bản phát hành ổn định cuối cùng. Chúng được xây dựng từ mã phát triển…"
     },
     "categories": [
       "linux",
@@ -879,10 +914,7 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 1
+      "vi": "machine"
     }
   },
   "2e3be40b3917e2f5": {
@@ -984,11 +1016,11 @@
     "original_lang": "en",
     "title": {
       "en": "High Tide (Linux TIDAL client) adds support for DLNA, Chromecast",
-      "vi": "High Tide (Linux TIDAL client) adds support for DLNA, Chromecast"
+      "vi": "High Tide (máy khách Linux TIDAL) bổ sung hỗ trợ cho DLNA, Chromecast"
     },
     "summary": {
       "en": "High Tide, the open-source TIDAL client for Linux, can now play to Chromecast and DLNA devices like TVs and smart speakers. The feature rolls out in v1.8.0, released this weekend with a variety of smaller bug fixes and minor bumps, including showing artist names over Discord…",
-      "vi": "High Tide, the open-source TIDAL client for Linux, can now play to Chromecast and DLNA devices like TVs and smart speakers. The feature rolls out in v1.8.0, released this weekend with a variety of smaller bug fixes and minor bumps, including showing artist names over Discord…"
+      "vi": "High Tide, ứng dụng khách TIDAL mã nguồn mở dành cho Linux, hiện có thể phát trên các thiết bị Chromecast và DLNA như TV và loa thông minh. Tính năng này ra mắt trong phiên bản v1.8.0, được phát hành vào cuối tuần này với nhiều bản sửa lỗi nhỏ hơn và những va chạm nhỏ, bao gồm hiển thị tên nghệ sĩ trên Discord…"
     },
     "categories": [
       "linux"
@@ -999,10 +1031,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 1
+      "vi": "machine"
     }
   },
   "9b755754b5efea43": {
@@ -1246,11 +1275,11 @@
     "original_lang": "en",
     "title": {
       "en": "iOS 27 has a clever fix for unreliable Wi-Fi connections",
-      "vi": "iOS 27 has a clever fix for unreliable Wi-Fi connections"
+      "vi": "iOS 27 có bản sửa lỗi thông minh cho kết nối Wi-Fi không đáng tin cậy"
     },
     "summary": {
       "en": "9to5Mac is brought to you by Tello Mobile. Switching to Tello Mobile can bring the cost of your plan down to as little as $5 a month, or an unlimited plan for just $25 a month, all on America’s largest 5G network. See all of the available plans at tello.com . iOS 27 includes a…",
-      "vi": "9to5Mac is brought to you by Tello Mobile. Switching to Tello Mobile can bring the cost of your plan down to as little as $5 a month, or an unlimited plan for just $25 a month, all on America’s largest 5G network. See all of the available plans at tello.com . iOS 27 includes a…"
+      "vi": "9to5Mac được Tello Mobile mang đến cho bạn. Việc chuyển sang Tello Mobile có thể giảm chi phí gói của bạn xuống chỉ còn 5 đô la một tháng hoặc gói không giới hạn chỉ với 25 đô la một tháng, tất cả đều trên mạng 5G lớn nhất nước Mỹ. Xem tất cả các gói có sẵn tại Tello.com. iOS 27 bao gồm…"
     },
     "categories": [
       "ios",
@@ -1262,10 +1291,7 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 1
+      "vi": "machine"
     }
   },
   "a67545cd4ad30393": {
@@ -1285,11 +1311,11 @@
     "original_lang": "en",
     "title": {
       "en": "Apple tested a ‘complication column’ for the iPhone Duo Lock Screen, per leak",
-      "vi": "Apple tested a ‘complication column’ for the iPhone Duo Lock Screen, per leak"
+      "vi": "Apple đã thử nghiệm một 'cột phức tạp' cho Màn hình khóa Duo của iPhone, theo một lần rò rỉ"
     },
     "summary": {
       "en": "Apple made a bunch of changes to iOS to optimize it for the iPhone Duo’s form factor, including revamping the Lock Screen. According to a new leak today, the company has tested another change, referred to as a “complication column.” Here’s what it looks like. 9to5Mac is…",
-      "vi": "Apple made a bunch of changes to iOS to optimize it for the iPhone Duo’s form factor, including revamping the Lock Screen. According to a new leak today, the company has tested another change, referred to as a “complication column.” Here’s what it looks like. 9to5Mac is…"
+      "vi": "Apple đã thực hiện một loạt thay đổi đối với iOS để tối ưu hóa nó cho kiểu dáng của iPhone Duo, bao gồm cả việc cải tiến Màn hình khóa. Theo một rò rỉ mới ngày hôm nay, công ty đã thử nghiệm một thay đổi khác, được gọi là “cột phức tạp”. Đây là những gì nó trông giống như. 9to5Mac là…"
     },
     "categories": [
       "ios",
@@ -1301,10 +1327,7 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 1
+      "vi": "machine"
     }
   },
   "009d89703dd91abd": {
@@ -1852,11 +1875,11 @@
     "original_lang": "en",
     "title": {
       "en": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices",
-      "vi": "Hackers exploit GL.iNet cloud flaw to infect routers, KVM devices"
+      "vi": "Hacker khai thác lỗ hổng đám mây GL.iNet để lây nhiễm vào bộ định tuyến, thiết bị KVM"
     },
     "summary": {
       "en": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices.",
-      "vi": "GL.iNet has confirmed that hackers exploited a vulnerability in its cloud remote management services to install custom malware on customers' routers and KVM devices, with some affected users reporting backdoors and reverse shells giving remote access to infected devices."
+      "vi": "GL.iNet đã xác nhận rằng tin tặc đã khai thác lỗ hổng trong dịch vụ quản lý từ xa trên đám mây của họ để cài đặt phần mềm độc hại tùy chỉnh trên bộ định tuyến và thiết bị KVM của khách hàng, trong đó một số người dùng bị ảnh hưởng đã báo cáo các cửa sau và trình bao đảo ngược cho phép truy cập từ xa vào các thiết bị…"
     },
     "categories": [
       "security"
@@ -1867,10 +1890,7 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 1
+      "vi": "machine"
     }
   },
   "73d60418285cd4ad": {
@@ -3900,11 +3920,11 @@
     "original_lang": "en",
     "title": {
       "en": "Give your gaming setup a serious upgrade with the Razer Basilisk V3 for half price",
-      "vi": "Give your gaming setup a serious upgrade with the Razer Basilisk V3 for half price"
+      "vi": "Nâng cấp nghiêm túc thiết lập chơi trò chơi của bạn với Razer Basilisk V3 với mức giá chỉ bằng một nửa"
     },
     "summary": {
       "en": "Whether you play competitive shooters, racing games, or RPGs, the Basilisk V3 offers customizable controls and an adjustable scroll wheel to suit different gaming preferences.",
-      "vi": "Whether you play competitive shooters, racing games, or RPGs, the Basilisk V3 offers customizable controls and an adjustable scroll wheel to suit different gaming preferences."
+      "vi": "Cho dù bạn chơi game bắn súng cạnh tranh, game đua xe hay game nhập vai, Basilisk V3 đều cung cấp các điều khiển có thể tùy chỉnh và bánh xe cuộn có thể điều chỉnh để phù hợp với các sở thích chơi game khác nhau."
     },
     "categories": [
       "hardware"
@@ -3915,10 +3935,7 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 1
+      "vi": "machine"
     }
   },
   "db85abacb121d037": {
@@ -4295,6 +4312,43 @@
       "vi": "machine",
       "en": "machine"
     }
+  },
+  "4f0ed76760ef2783": {
+    "id": "4f0ed76760ef2783",
+    "slug": "a-beginners-guide-to-local-ai-with-inkling-qwen-and-unsloth-4f0ed7",
+    "url": "https://www.gpupartner.com/blog/beginners-guide-local-ai-inkling-qwen-unsloth",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "Retell15",
+    "published_at": "2026-11-22T21:01:16+00:00",
+    "fetched_at": "2026-11-23T03:46:56.934984+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "A Beginner's Guide to Local AI with Inkling, Qwen, and Unsloth",
+      "vi": "Hướng dẫn cho người mới bắt đầu về AI cục bộ với Inkling, Qwen và Unsloth"
+    },
+    "summary": {
+      "en": "Discussion on Hacker News (305 points, 129 comments).",
+      "vi": "Thảo luận về Hacker News (305 điểm, 129 bình luận)."
+    },
+    "categories": [
+      "ai",
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.05,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hn_points": 305
   },
   "7b5ed5dd303b816a": {
     "id": "7b5ed5dd303b816a",
@@ -5479,6 +5533,41 @@
       "vi": "2026-11-23T08:08:59+00:00"
     }
   },
+  "2f72c2eedd5f8e05": {
+    "id": "2f72c2eedd5f8e05",
+    "slug": "nang-cap-ram-hay-ssd-de-cai-thien-hieu-nang-may-tinh-2f72c2",
+    "url": "https://thanhnien.vn/nang-cap-ram-hay-ssd-de-cai-thien-hieu-nang-may-tinh-185261122111245591.htm",
+    "source": {
+      "id": "thanhnien_tech",
+      "name": "Thanh Niên Công Nghệ",
+      "site_url": "https://thanhnien.vn/cong-nghe",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "2026-11-23T03:26:00+00:00",
+    "fetched_at": "2026-11-23T03:46:56.934984+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Nâng cấp RAM hay SSD để cải thiện hiệu năng máy tính?",
+      "en": "Upgrade RAM or SSD to improve computer performance?"
+    },
+    "summary": {
+      "vi": "Bên cạnh việc lựa chọn RAM và SSD phù hợp, những thiết lập phần cứng tưởng chừng đơn giản cũng có thể tạo ra khác biệt về hiệu năng.",
+      "en": "Besides choosing the right RAM and SSD, seemingly simple hardware settings can also make a difference in performance."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": "machine"
+    }
+  },
   "d9c39429d489eec5": {
     "id": "d9c39429d489eec5",
     "url": "https://linuxhandbook.com/courses/tmux/tmux-essential-shortcuts",
@@ -5612,11 +5701,11 @@
     "original_lang": "en",
     "title": {
       "en": "I Got Tired of Remembering Ports for 30 Docker Apps in My Homelab. Here's How I Fixed it",
-      "vi": "I Got Tired of Remembering Ports for 30 Docker Apps in My Homelab. Here's How I Fixed it"
+      "vi": "Tôi mệt mỏi vì phải nhớ cổng của 30 ứng dụng Docker trong Homelab của mình. Đây là cách tôi sửa nó"
     },
     "summary": {
       "en": "Stop bookmarking IP:ports. Tailscale Services gives every Docker container in your homelab its own HTTPS name on your tailnet, without a reverse proxy or a sidecar per container.",
-      "vi": "Stop bookmarking IP:ports. Tailscale Services gives every Docker container in your homelab its own HTTPS name on your tailnet, without a reverse proxy or a sidecar per container."
+      "vi": "Dừng đánh dấu IP:port. Dịch vụ Tailscale cung cấp cho mỗi vùng chứa Docker trong phòng thí nghiệm gia đình của bạn tên HTTPS riêng trên tailnet của bạn mà không cần proxy ngược hoặc sidecar cho mỗi vùng chứa."
     },
     "categories": [
       "dev"
@@ -5629,15 +5718,9 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
-    "translate_attempts": {
-      "vi": 4
-    },
-    "hidden": false,
-    "translate_next_retry": {
-      "vi": "2026-11-23T00:27:09+00:00"
-    }
+    "hidden": false
   },
   "604f9be9642ce51f": {
     "id": "604f9be9642ce51f",
@@ -5993,11 +6076,11 @@
     "original_lang": "en",
     "title": {
       "en": "The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife",
-      "vi": "The Birds of GTA 6: A Field Guide to Vice City and Leonida's Wildlife"
+      "vi": "The Birds of GTA 6: Hướng dẫn thực địa về Vice City và động vật hoang dã của Leonida"
     },
     "summary": {
       "en": "Discussion on Hacker News (221 points, 74 comments).",
-      "vi": "Discussion on Hacker News (221 points, 74 comments)."
+      "vi": "Thảo luận về Hacker News (221 điểm, 74 bình luận)."
     },
     "categories": [
       "security"
@@ -6008,12 +6091,9 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
-    "hn_points": 221,
-    "translate_attempts": {
-      "vi": 1
-    }
+    "hn_points": 221
   },
   "a37126ae39270f18": {
     "id": "a37126ae39270f18",
@@ -11606,11 +11686,11 @@
     "original_lang": "en",
     "title": {
       "en": "LHB Linux Digest #26.18: F for follow, Self-hosted Analytics, SSH Vulnerability and More",
-      "vi": "LHB Linux Digest #26.18: F for follow, Self-hosted Analytics, SSH Vulnerability and More"
+      "vi": "LHB Linux Digest #26.18: F để theo dõi, Phân tích tự lưu trữ, Lỗ hổng SSH và hơn thế nữa"
     },
     "summary": {
       "en": "F is for follow... for following files and logs in real time.",
-      "vi": "F is for follow... for following files and logs in real time."
+      "vi": "F là để theo dõi... để theo dõi các tệp và nhật ký trong thời gian thực."
     },
     "categories": [
       "linux"
@@ -11621,10 +11701,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 2
+      "vi": "machine"
     }
   },
   "8a2e6d2c33ee39b0": {
@@ -11877,11 +11954,11 @@
     "original_lang": "en",
     "title": {
       "en": "Polo is a Wayland compositor for the MATE desktop",
-      "vi": "Polo is a Wayland compositor for the MATE desktop"
+      "vi": "Polo là bộ tổng hợp Wayland cho máy tính để bàn MATE"
     },
     "summary": {
       "en": "Polo is an unofficial Wayland compositor for MATE, inspired by Marco. It's early and needs testers, but the 3D cube and wobbly windows already work. You're reading Polo is a Wayland compositor for the MATE desktop , a blog post from OMG! Ubuntu . Do not reproduce elsewhere…",
-      "vi": "Polo is an unofficial Wayland compositor for MATE, inspired by Marco. It's early and needs testers, but the 3D cube and wobbly windows already work. You're reading Polo is a Wayland compositor for the MATE desktop , a blog post from OMG! Ubuntu . Do not reproduce elsewhere…"
+      "vi": "Polo là nhà soạn nhạc Wayland không chính thức cho MATE, lấy cảm hứng từ Marco. Vẫn còn sớm và cần người thử nghiệm, nhưng khối 3D và cửa sổ lung lay đã hoạt động. Bạn đang đọc Polo là bộ tổng hợp Wayland dành cho máy tính để bàn MATE, một bài đăng trên blog từ OMG! Ubuntu . Không sao chép ở nơi khác…"
     },
     "categories": [
       "linux",
@@ -11893,10 +11970,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 2
+      "vi": "machine"
     }
   },
   "6cc520c9004f9169": {
@@ -12485,11 +12559,11 @@
     "original_lang": "en",
     "title": {
       "en": "Ask HN: Tips for transitioning from web development to embedded/firmware?",
-      "vi": "Ask HN: Tips for transitioning from web development to embedded/firmware?"
+      "vi": "Hỏi HN: Lời khuyên khi chuyển từ phát triển web sang nhúng/firmware?"
     },
     "summary": {
       "en": "Discussion on Hacker News (101 points, 66 comments).",
-      "vi": "Discussion on Hacker News (101 points, 66 comments)."
+      "vi": "Thảo luận về Hacker News (101 điểm, 66 bình luận)."
     },
     "categories": [
       "security"
@@ -12500,12 +12574,9 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
-    "hn_points": 101,
-    "translate_attempts": {
-      "vi": 1
-    }
+    "hn_points": 101
   },
   "3bc1509c6bdcff93": {
     "id": "3bc1509c6bdcff93",
@@ -13949,11 +14020,11 @@
     "original_lang": "en",
     "title": {
       "en": "Debloating an Android TV with Claude Code",
-      "vi": "Debloating an Android TV with Claude Code"
+      "vi": "Gỡ lỗi Android TV bằng mã Claude"
     },
     "summary": {
       "en": "I used Claude Code and CleanYourTV to strip TV bloatware over ADB. The set is faster and easier to use, with a one-line restore path.",
-      "vi": "I used Claude Code and CleanYourTV to strip TV bloatware over ADB. The set is faster and easier to use, with a one-line restore path."
+      "vi": "Tôi đã sử dụng Claude Code và CleanYourTV để loại bỏ bloatware TV trên ADB. Bộ này nhanh hơn và dễ sử dụng hơn với đường dẫn khôi phục một dòng."
     },
     "categories": [
       "android",
@@ -13967,10 +14038,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 2
+      "vi": "machine"
     }
   },
   "7a82ad8fe469044c": {
@@ -14393,11 +14461,11 @@
     "original_lang": "en",
     "title": {
       "en": "Turn Any Image into a 3D Scene: 2.5D and Gaussian Splats",
-      "vi": "Turn Any Image into a 3D Scene: 2.5D and Gaussian Splats"
+      "vi": "Biến bất kỳ hình ảnh nào thành cảnh 3D: Các mảng 2.5D và Gaussian"
     },
     "summary": {
       "en": "One still image, a camera that moves through it, lights that go out, a room that burns into embers.",
-      "vi": "One still image, a camera that moves through it, lights that go out, a room that burns into embers."
+      "vi": "Một hình ảnh tĩnh, một chiếc camera di chuyển qua nó, đèn tắt, một căn phòng cháy thành than hồng."
     },
     "categories": [
       "dev"
@@ -14408,10 +14476,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 2
+      "vi": "machine"
     }
   },
   "79567c1813154a92": {
@@ -16549,11 +16614,11 @@
     "original_lang": "en",
     "title": {
       "en": "C# Without a Project File: File-Based Apps in .NET 11 (a 5-Minute Refresh)",
-      "vi": "C# Without a Project File: File-Based Apps in .NET 11 (a 5-Minute Refresh)"
+      "vi": "C# không có tệp dự án: Ứng dụng dựa trên tệp trong .NET 11 (Làm mới trong 5 phút)"
     },
     "summary": {
       "en": "Since .NET 10 you can run a C# file without a project: dotnet run app.cs. No .sln, no .csproj. But it",
-      "vi": "Since .NET 10 you can run a C# file without a project: dotnet run app.cs. No .sln, no .csproj. But it"
+      "vi": "Vì .NET 10 nên bạn có thể chạy tệp C# mà không cần dự án: dotnet run app.cs. Không .sln, không .csproj. Nhưng nó"
     },
     "categories": [
       "dev"
@@ -16564,10 +16629,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 2
+      "vi": "machine"
     }
   },
   "1ef8ba8857793b35": {

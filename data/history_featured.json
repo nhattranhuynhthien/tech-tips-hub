@@ -1,11 +1,5 @@
 [
   {
-    "id": "c06ec870b4e1dac0",
-    "title": "Apple hướng dẫn tắt logo phát sáng trên MacBook Pro mới, nhưng chỉ có cách dùng Terminal",
-    "featured_at": "2026-11-08T07:30:40.983505+00:00",
-    "date": "2026-11-08"
-  },
-  {
     "id": "8a43acce4b9913e2",
     "title": "Cách lấy lại 15GB dung lượng trên iPhone",
     "featured_at": "2026-11-09T06:52:02.572603+00:00",
@@ -46,5 +40,11 @@
     "title": "Chương 4: Xây dựng Tác nhân AI cá nhân với n8n",
     "featured_at": "2026-11-22T00:27:14.155691+00:00",
     "date": "2026-11-22"
+  },
+  {
+    "id": "ae6c3ff4fe1c414b",
+    "title": "Chương 3: Xây dựng quy trình làm việc đầu tiên của bạn trong n8n",
+    "featured_at": "2026-11-23T03:48:09.347068+00:00",
+    "date": "2026-11-23"
   }
 ]
