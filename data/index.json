@@ -655,7 +655,7 @@
   },
   "83d486224772a424": {
     "id": "83d486224772a424",
-    "slug": "1-83d486",
+    "slug": "zhang-xue-motorcycle-co-ke-hoach-ra-mat-mot-chiec-xe-may-die-83d486",
     "url": "https://www.ithome.com/1/030/604.htm",
     "source": {
       "id": "ithome-cn",
@@ -670,13 +670,13 @@
     "original_lang": "zh-CN",
     "title": {
       "zh-CN": "张雪机车计划明年推出针对外卖骑手的电动摩托车，价格尽量控制在 1 万元左右",
-      "vi": "张雪机车计划明年推出针对外卖骑手的电动摩托车，价格尽量控制在 1 万元左右",
-      "en": "张雪机车计划明年推出针对外卖骑手的电动摩托车，价格尽量控制在 1 万元左右"
+      "vi": "Zhang Xue Motorcycle có kế hoạch ra mắt một chiếc xe máy điện dành cho người giao đồ ăn vào năm tới, với mức giá được giữ ở mức khoảng 10.000 nhân dân tệ.",
+      "en": "Zhang Xue Motorcycle plans to launch an electric motorcycle for food delivery riders next year, with the price kept at around 10,000 yuan."
     },
     "summary": {
       "zh-CN": "IT之家 11 月 22 日消息，张雪机车创始人张雪在珠海“张雪机车 · 京东 WSBK 嘉年华”现场受访时透露，计划于明年（2027 年）推出针对外卖骑手设计的电动摩托车。 IT之家获悉，新车可能会提供两个续航版本（100 公里、150 公里），涵盖 99% 骑手需求；并优化快充补能，利用吃饭的时间就能把电量充满。 你就在吃个午饭的时间，你的车就补能好了。 咱们外卖小哥百分之八九十日均的使用里程在 100（公里）左右， 我们的补能时间目标是 10 分钟 。 据介绍，新车在操控方面也要向油摩看齐，整车重量兼顾驾驶质感与安全底线。 张雪坦言价格尽量控制在…",
-      "vi": "IT之家 11 月 22 日消息，张雪机车创始人张雪在珠海“张雪机车 · 京东 WSBK 嘉年华”现场受访时透露，计划于明年（2027 年）推出针对外卖骑手设计的电动摩托车。 IT之家获悉，新车可能会提供两个续航版本（100 公里、150 公里），涵盖 99% 骑手需求；并优化快充补能，利用吃饭的时间就能把电量充满。 你就在吃个午饭的时间，你的车就补能好了。 咱们外卖小哥百分之八九十日均的使用里程在 100（公里）左右， 我们的补能时间目标是 10 分钟 。 据介绍，新车在操控方面也要向油摩看齐，整车重量兼顾驾驶质感与安全底线。 张雪坦言价格尽量控制在…",
-      "en": "IT之家 11 月 22 日消息，张雪机车创始人张雪在珠海“张雪机车 · 京东 WSBK 嘉年华”现场受访时透露，计划于明年（2027 年）推出针对外卖骑手设计的电动摩托车。 IT之家获悉，新车可能会提供两个续航版本（100 公里、150 公里），涵盖 99% 骑手需求；并优化快充补能，利用吃饭的时间就能把电量充满。 你就在吃个午饭的时间，你的车就补能好了。 咱们外卖小哥百分之八九十日均的使用里程在 100（公里）左右， 我们的补能时间目标是 10 分钟 。 据介绍，新车在操控方面也要向油摩看齐，整车重量兼顾驾驶质感与安全底线。 张雪坦言价格尽量控制在…"
+      "vi": "IT House đưa tin vào ngày 22 tháng 11 rằng Zhang Xue, người sáng lập Zhangxue Motorcycle, đã tiết lộ trong một cuộc phỏng vấn tại chỗ tại \"Zhangxue Motorcycle·JD WSBK Carnival\" ở Chu Hải rằng ông có kế hoạch ra mắt một chiếc xe máy điện được thiết kế cho người đi xe mang đi vào năm tới (2027). IT House được biết rằng…",
+      "en": "IT House reported on November 22 that Zhang Xue, the founder of Zhangxue Motorcycle, revealed during an on-site interview at the \"Zhangxue Motorcycle·JD WSBK Carnival\" in Zhuhai that he plans to launch an electric motorcycle designed for takeaway riders next year (2027). IT House has learned that the new car may…"
     },
     "categories": [
       "hardware"
@@ -687,16 +687,8 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false,
-      "en": false
-    },
-    "translate_attempts": {
-      "vi": 3,
-      "en": 3
-    },
-    "translate_next_retry": {
-      "vi": "2026-11-23T22:32:22+00:00",
-      "en": "2026-11-23T22:32:25+00:00"
+      "vi": "machine",
+      "en": "machine"
     }
   },
   "4c626d1f1609f29d": {
@@ -1380,6 +1372,113 @@
       "vi": "machine"
     }
   },
+  "f82dba330f6fa1b9": {
+    "id": "f82dba330f6fa1b9",
+    "slug": "anthropic-launches-new-claude-ship-feature-for-builders-f82dba",
+    "url": "https://9to5mac.com/2026/11/23/anthropic-launches-new-claude-ship-feature-for-builders",
+    "source": {
+      "id": "9to5mac",
+      "name": "9to5Mac",
+      "site_url": "https://9to5mac.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Zac Hall",
+    "published_at": "2026-11-23T20:32:31+00:00",
+    "fetched_at": "2026-11-24T02:20:02.392856+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Anthropic launches new Claude Ship feature for builders",
+      "vi": "Anthropic ra mắt tính năng Claude Ship mới dành cho thợ xây"
+    },
+    "summary": {
+      "en": "Anthropic is launching a new tool for builders called Claude Ship. The new AI feature allows Claude to “review pull requests, fix them, and approve the ones that a team’s policy allows.”",
+      "vi": "Anthropic đang tung ra một công cụ mới dành cho thợ xây có tên là Claude Ship. Tính năng AI mới cho phép Claude “xem xét các yêu cầu kéo, sửa chúng và phê duyệt những yêu cầu mà chính sách của nhóm cho phép”."
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "claude"
+    ],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "c531b2418ca624fa": {
+    "id": "c531b2418ca624fa",
+    "slug": "10-hidden-controls-every-gta-6-player-should-know-c531b2",
+    "url": "https://lifehacker.com/tech/10-hidden-controls-every-gta-6-player-should-know",
+    "source": {
+      "id": "lifehacker",
+      "name": "Lifehacker",
+      "site_url": "https://lifehacker.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Pranay Parab",
+    "published_at": "2026-11-23T22:30:00+00:00",
+    "fetched_at": "2026-11-24T02:20:02.392856+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "10 Hidden Controls Every 'GTA 6' Player Should Know",
+      "vi": "10 điều khiển ẩn mà mọi người chơi 'GTA 6' nên biết"
+    },
+    "summary": {
+      "en": "There are a ton of \"GTA 6\" controls the game doesn't advertise.",
+      "vi": "Có rất nhiều điều khiển \"GTA 6\" mà trò chơi không quảng cáo."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "89d2a35976f430f5": {
+    "id": "89d2a35976f430f5",
+    "slug": "the-verges-2026-holiday-gift-guide-89d2a3",
+    "url": "https://www.theverge.com/gadgets/1026041/holiday-gift-guide-2026",
+    "source": {
+      "id": "theverge",
+      "name": "The Verge",
+      "site_url": "https://www.theverge.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Ryan Waniata",
+    "published_at": "2026-11-23T23:14:10+00:00",
+    "fetched_at": "2026-11-24T02:20:02.392856+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "The Verge’s 2026 holiday gift guide",
+      "vi": "Hướng dẫn quà tặng kỳ nghỉ năm 2026 của The Verge"
+    },
+    "summary": {
+      "en": "Gift-giving isn't just about grabbing something solid under a determined spending limit. It's an expression of love, a way to show someone how well you really know them. That doesn't mean you have to do it all on your own, though. Sometimes you just need a push in the right…",
+      "vi": "Tặng quà không chỉ là lấy một thứ gì đó chắc chắn trong giới hạn chi tiêu đã xác định. Đó là cách thể hiện tình yêu, một cách để cho ai đó thấy bạn thực sự hiểu họ như thế nào. Tuy nhiên, điều đó không có nghĩa là bạn phải tự mình làm tất cả. Đôi khi bạn chỉ cần một cú đẩy đúng…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
   "009d89703dd91abd": {
     "id": "009d89703dd91abd",
     "slug": "chinh-sua-toan-bo-ban-trinh-bay-voi-gemini-trong-google-tran-009d89",
@@ -1931,6 +2030,41 @@
       "vi": "machine"
     }
   },
+  "356f88bd617ba462": {
+    "id": "356f88bd617ba462",
+    "slug": "12-things-to-do-on-christmas-if-you-dont-celebrate-356f88",
+    "url": "https://lifehacker.com/home/what-to-do-on-christmas-if-you-dont-celebrate",
+    "source": {
+      "id": "lifehacker",
+      "name": "Lifehacker",
+      "site_url": "https://lifehacker.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Stephen Johnson",
+    "published_at": "2026-11-23T22:00:00+00:00",
+    "fetched_at": "2026-11-24T02:20:02.392856+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "12 Things to Do on Christmas If You Don’t Celebrate",
+      "vi": "12 Điều Nên Làm Vào Lễ Giáng Sinh Nếu Bạn Không Ăn Mừng"
+    },
+    "summary": {
+      "en": "There's a world of non-holiday fun to be had on Christmas Day—if you know were to look.",
+      "vi": "Có một thế giới vui vẻ ngoài ngày lễ sẽ diễn ra vào Ngày Giáng sinh—nếu bạn biết hãy xem."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
   "73d60418285cd4ad": {
     "id": "73d60418285cd4ad",
     "slug": "firefox-has-a-hidden-snake-game-heres-how-to-play-it-73d604",
@@ -2178,11 +2312,11 @@
     "original_lang": "en",
     "title": {
       "en": "Build for every screen with the latest Jetpack Compose updates from Android Developer Summit",
-      "vi": "Build for every screen with the latest Jetpack Compose updates from Android Developer Summit"
+      "vi": "Xây dựng cho mọi màn hình với bản cập nhật Jetpack Compose mới nhất từ ​​Hội nghị thượng đỉnh dành cho nhà phát triển Android"
     },
     "summary": {
       "en": "The Android ecosystem is a multi-device reality that spans phones, foldables, tablets, wearables, in-car displays, XR, and Googlebook. In this landscape, adaptive development is foundational to reaching users wherever they are.",
-      "vi": "The Android ecosystem is a multi-device reality that spans phones, foldables, tablets, wearables, in-car displays, XR, and Googlebook. In this landscape, adaptive development is foundational to reaching users wherever they are."
+      "vi": "Hệ sinh thái Android là một thực tế đa thiết bị bao gồm điện thoại, thiết bị gập, máy tính bảng, thiết bị đeo, màn hình trong ô tô, XR và Googlebook. Trong bối cảnh này, phát triển thích ứng là nền tảng để tiếp cận người dùng mọi lúc mọi nơi."
     },
     "categories": [
       "android"
@@ -2193,15 +2327,9 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
-    "translate_attempts": {
-      "vi": 5
-    },
-    "hidden": false,
-    "translate_next_retry": {
-      "vi": "2026-11-23T16:24:55+00:00"
-    }
+    "hidden": false
   },
   "bcd4b1c040e9ef33": {
     "id": "bcd4b1c040e9ef33",
@@ -2681,7 +2809,7 @@
   },
   "4f8b996126a594cb": {
     "id": "4f8b996126a594cb",
-    "slug": "tip-4f8b99",
+    "slug": "tu-tham-quyen-den-thuong-hai-cau-chuyen-dong-sang-tao-cua-th-4f8b99",
     "url": "https://sspai.com/post/119318",
     "source": {
       "id": "sspai-cn",
@@ -2696,13 +2824,13 @@
     "original_lang": "zh-CN",
     "title": {
       "zh-CN": "从深圳到上海，少数派的共创故事还在继续",
-      "vi": "从深圳到上海，少数派的共创故事还在继续",
-      "en": "从深圳到上海，少数派的共创故事还在继续"
+      "vi": "Từ Thâm Quyến đến Thượng Hải, câu chuyện đồng sáng tạo của thiểu số vẫn tiếp tục",
+      "en": "From Shenzhen to Shanghai, the minority’s co-creation story continues"
     },
     "summary": {
       "zh-CN": "11月20日，2026虹桥国际科技周在上海举行。作为聚焦科技创新、产业协作与未来趋势的交流平台，本届科技周汇聚了来自不同领域的创新者、创业者与行业观察者。少数派也在现场带来了主题论坛分享，与参与者一起 ... 查看全文",
-      "vi": "11月20日，2026虹桥国际科技周在上海举行。作为聚焦科技创新、产业协作与未来趋势的交流平台，本届科技周汇聚了来自不同领域的创新者、创业者与行业观察者。少数派也在现场带来了主题论坛分享，与参与者一起 ... 查看全文",
-      "en": "11月20日，2026虹桥国际科技周在上海举行。作为聚焦科技创新、产业协作与未来趋势的交流平台，本届科技周汇聚了来自不同领域的创新者、创业者与行业观察者。少数派也在现场带来了主题论坛分享，与参与者一起 ... 查看全文"
+      "vi": "Vào ngày 20 tháng 11, Tuần lễ Khoa học và Công nghệ Quốc tế Hồng Kiều năm 2026 đã được tổ chức tại Thượng Hải. Là một nền tảng truyền thông tập trung vào đổi mới công nghệ, hợp tác công nghiệp và các xu hướng trong tương lai, Tuần lễ Khoa học và Công nghệ này quy tụ các nhà đổi mới, doanh nhân và nhà quan sát ngành từ…",
+      "en": "On November 20, the 2026 Hongqiao International Science and Technology Week was held in Shanghai. As a communication platform focusing on technological innovation, industrial collaboration and future trends, this Science and Technology Week brings together innovators, entrepreneurs and industry observers from…"
     },
     "categories": [
       "dev"
@@ -2713,16 +2841,8 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false,
-      "en": false
-    },
-    "translate_attempts": {
-      "vi": 3,
-      "en": 3
-    },
-    "translate_next_retry": {
-      "vi": "2026-11-23T22:32:22+00:00",
-      "en": "2026-11-23T22:32:25+00:00"
+      "vi": "machine",
+      "en": "machine"
     }
   },
   "50176baa8d9864ae": {
@@ -2742,11 +2862,11 @@
     "original_lang": "en",
     "title": {
       "en": "My Hybrid AI System in Obsidian: Local and Cloud AI Integration",
-      "vi": "My Hybrid AI System in Obsidian: Local and Cloud AI Integration"
+      "vi": "Hệ thống AI lai của tôi trong Obsidian: Tích hợp AI cục bộ và đám mây"
     },
     "summary": {
       "en": "Using AI with notes gives superpower to your notes. But should you give AI access to your knowledge base?",
-      "vi": "Using AI with notes gives superpower to your notes. But should you give AI access to your knowledge base?"
+      "vi": "Sử dụng AI với ghi chú mang lại sức mạnh siêu việt cho ghi chú của bạn. Nhưng bạn có nên cấp cho AI quyền truy cập vào cơ sở kiến ​​thức của mình không?"
     },
     "categories": [
       "ai"
@@ -2757,13 +2877,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 3
-    },
-    "translate_next_retry": {
-      "vi": "2026-11-23T22:32:49+00:00"
+      "vi": "machine"
     }
   },
   "24bcd9ac743e0ff9": {
@@ -2839,10 +2953,48 @@
       "vi": "machine"
     }
   },
-  "c80c5fcac2e3fe98": {
-    "id": "c80c5fcac2e3fe98",
-    "slug": "euro-office-the-onlyoffice-fork-now-has-a-desktop-app-c80c5f",
-    "url": "https://www.omgubuntu.co.uk/2026/11/euro-office-desktop-apps-nextcloud",
+  "f356335a241f6471": {
+    "id": "f356335a241f6471",
+    "slug": "no-one-is-using-real-firefox-browser-on-iphones-blame-it-on-f35633",
+    "url": "https://feed.itsfoss.com/link/24361/17538371/firefox-apple-dispute",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Abhishek Prakash",
+    "published_at": "2026-11-23T15:24:42+00:00",
+    "fetched_at": "2026-11-24T02:20:02.392856+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "No One is Using Real Firefox Browser on iPhones (Blame it on Apple)",
+      "vi": "Không ai sử dụng trình duyệt Firefox thực sự trên iPhone (Đổ lỗi cho Apple)"
+    },
+    "summary": {
+      "en": "The EU told Apple to open up. Apple said \"fine.\" Then it published its own set of conditions so that complying in practice is nearly impossible for Mozilla Firefox.",
+      "vi": "EU yêu cầu Apple mở cửa. Apple nói \"ổn.\" Sau đó, nó công bố bộ điều kiện riêng của mình nên việc tuân thủ trên thực tế là gần như không thể đối với Mozilla Firefox."
+    },
+    "categories": [
+      "macos",
+      "browser"
+    ],
+    "tags": [
+      "firefox"
+    ],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "d0b0e458895d7d3e": {
+    "id": "d0b0e458895d7d3e",
+    "slug": "ladybird-web-browser-enters-alpha-d0b0e4",
+    "url": "https://www.omgubuntu.co.uk/2026/11/ladybird-browser-enters-alpha",
     "source": {
       "id": "omgubuntu",
       "name": "OMG! Ubuntu!",
@@ -2851,24 +3003,64 @@
       "content_type": "article"
     },
     "author": "Joey Sneddon",
-    "published_at": "2026-11-13T20:14:18+00:00",
-    "fetched_at": "2026-11-20T13:09:24.007904+00:00",
+    "published_at": "2026-11-23T23:59:00+00:00",
+    "fetched_at": "2026-11-24T02:20:02.392856+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Euro-Office, the ONLYOFFICE fork, now has a desktop app",
-      "vi": "Euro-Office, nhánh DUY NHẤT, hiện có ứng dụng dành cho máy tính để bàn"
+      "en": "Ladybird web browser enters alpha",
+      "vi": "Trình duyệt web Ladybird bước vào giai đoạn alpha"
     },
     "summary": {
-      "en": "Euro-Office, the Nextcloud-backed fork of ONLYOFFICE, is now available to download and install on desktops as Nextcloud Office Desktop. Announced in March 2026, Euro-Office is a European-based alternative to Microsoft 365 and a fork of ONLYOFFICE. It’s currently something users…",
-      "vi": "Euro-Office, một nhánh của ONLYOFFICE được Nextcloud hỗ trợ, hiện có sẵn để tải xuống và cài đặt trên máy tính để bàn dưới dạng Nextcloud Office Desktop. Được công bố vào tháng 3 năm 2026, Euro-Office là một giải pháp thay thế cho Microsoft 365 có trụ sở tại Châu Âu và là một nhánh của ONLYOFFICE. Hiện tại nó là thứ…"
+      "en": "Building a new web browser around a rendering engine written from scratch is no mean feat, but after four years of effort, Ladybird has finally reached alpha, with Linux and macOS builds available for testing. The Ladybird Alpha is billed as a ‘modest, but functional’ testing…",
+      "vi": "Xây dựng một trình duyệt web mới dựa trên một công cụ kết xuất được viết từ đầu không phải là điều dễ dàng, nhưng sau bốn năm nỗ lực, Ladybird cuối cùng đã đạt đến giai đoạn alpha, với các bản dựng Linux và macOS có sẵn để thử nghiệm. Ladybird Alpha được quảng cáo là một thử nghiệm ‘khiêm tốn nhưng đầy đủ chức năng’…"
     },
     "categories": [
-      "windows"
+      "macos",
+      "linux"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.26,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "33dc6903c5128526": {
+    "id": "33dc6903c5128526",
+    "slug": "firefox-161-brings-classic-theme-options-smarter-vpn-33dc69",
+    "url": "https://www.omgubuntu.co.uk/2026/11/firefox-161-released-vpn-classic-themes",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "2026-11-23T21:09:58+00:00",
+    "fetched_at": "2026-11-24T02:20:02.392856+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Firefox 161 brings classic theme options, smarter VPN",
+      "vi": "Firefox 161 mang đến các tùy chọn chủ đề cổ điển, VPN thông minh hơn"
+    },
+    "summary": {
+      "en": "Mozilla Firefox 161 is now available to download, bringing a set of minor feature refinements that should make your everyday browsing a little smoother. Customisation fans are well served with this update. A set of “classic themes” are available to install from the browser’s…",
+      "vi": "Mozilla Firefox 161 hiện có sẵn để tải xuống, mang đến một loạt các cải tiến tính năng nhỏ giúp việc duyệt web hàng ngày của bạn mượt mà hơn một chút. Người hâm mộ tùy chỉnh được phục vụ tốt với bản cập nhật này. Một bộ “chủ đề cổ điển” có sẵn để cài đặt từ…"
+    },
+    "categories": [
+      "browser",
+      "security"
+    ],
+    "tags": [
+      "firefox",
+      "vpn"
+    ],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
@@ -2907,6 +3099,41 @@
     "reading_time_min": 1,
     "translated": {
       "en": "machine"
+    }
+  },
+  "c80c5fcac2e3fe98": {
+    "id": "c80c5fcac2e3fe98",
+    "slug": "euro-office-the-onlyoffice-fork-now-has-a-desktop-app-c80c5f",
+    "url": "https://www.omgubuntu.co.uk/2026/11/euro-office-desktop-apps-nextcloud",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "2026-11-13T20:14:18+00:00",
+    "fetched_at": "2026-11-20T13:09:24.007904+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Euro-Office, the ONLYOFFICE fork, now has a desktop app",
+      "vi": "Euro-Office, nhánh DUY NHẤT, hiện có ứng dụng dành cho máy tính để bàn"
+    },
+    "summary": {
+      "en": "Euro-Office, the Nextcloud-backed fork of ONLYOFFICE, is now available to download and install on desktops as Nextcloud Office Desktop. Announced in March 2026, Euro-Office is a European-based alternative to Microsoft 365 and a fork of ONLYOFFICE. It’s currently something users…",
+      "vi": "Euro-Office, một nhánh của ONLYOFFICE được Nextcloud hỗ trợ, hiện có sẵn để tải xuống và cài đặt trên máy tính để bàn dưới dạng Nextcloud Office Desktop. Được công bố vào tháng 3 năm 2026, Euro-Office là một giải pháp thay thế cho Microsoft 365 có trụ sở tại Châu Âu và là một nhánh của ONLYOFFICE. Hiện tại nó là thứ…"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.26,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
     }
   },
   "47ca8ea2ff5adb9e": {
@@ -3375,11 +3602,11 @@
     "original_lang": "en",
     "title": {
       "en": "Soverin Suite Joins a Growing Wave of European Companies Selling \"Sovereignty as a Service\"",
-      "vi": "Soverin Suite Joins a Growing Wave of European Companies Selling \"Sovereignty as a Service\""
+      "vi": "Soverin Suite tham gia vào làn sóng ngày càng tăng của các công ty châu Âu bán \"Chủ quyền như một dịch vụ\""
     },
     "summary": {
       "en": "The Dutch email provider now bundles Nextcloud and Euro-Office into a managed Microsoft 365 alternative hosted entirely in the Netherlands.",
-      "vi": "The Dutch email provider now bundles Nextcloud and Euro-Office into a managed Microsoft 365 alternative hosted entirely in the Netherlands."
+      "vi": "Nhà cung cấp email Hà Lan hiện kết hợp Nextcloud và Euro-Office thành một giải pháp thay thế Microsoft 365 được quản lý được lưu trữ hoàn toàn ở Hà Lan."
     },
     "categories": [
       "windows"
@@ -3390,13 +3617,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 3
-    },
-    "translate_next_retry": {
-      "vi": "2026-11-23T16:24:55+00:00"
+      "vi": "machine"
     }
   },
   "80d8af39f334e205": {
@@ -3416,11 +3637,11 @@
     "original_lang": "en",
     "title": {
       "en": "The Much Awaited Linux Multi-Tool Flipper One is Now Available for Pre-order",
-      "vi": "The Much Awaited Linux Multi-Tool Flipper One is Now Available for Pre-order"
+      "vi": "Flipper One đa công cụ Linux được chờ đợi nhiều hiện đã có sẵn để đặt hàng trước"
     },
     "summary": {
       "en": "The open Linux multi-tool packs an RK3576 chip, 8 GB RAM, Wi-Fi 6E and M.2 expansion, and Flipper Devices says it's selling it with no profit margin.",
-      "vi": "The open Linux multi-tool packs an RK3576 chip, 8 GB RAM, Wi-Fi 6E and M.2 expansion, and Flipper Devices says it's selling it with no profit margin."
+      "vi": "Công cụ đa năng Linux mở này chứa chip RK3576, RAM 8 GB, mở rộng Wi-Fi 6E và M.2 và Flipper Devices cho biết họ bán nó mà không có lợi nhuận."
     },
     "categories": [
       "linux",
@@ -3432,13 +3653,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 3
-    },
-    "translate_next_retry": {
-      "vi": "2026-11-23T16:24:55+00:00"
+      "vi": "machine"
     }
   },
   "623748b4f3c591ae": {
@@ -3496,11 +3711,11 @@
     "original_lang": "en",
     "title": {
       "en": "Two Independent Projects Want to Bring MATE to Wayland, Each in its Own Way",
-      "vi": "Two Independent Projects Want to Bring MATE to Wayland, Each in its Own Way"
+      "vi": "Hai dự án độc lập muốn đưa MATE đến Wayland, mỗi dự án theo cách riêng"
     },
     "summary": {
       "en": "Polo builds a new compositor for MATE, while MATE Wayland Desktop runs MATE on labwc from an Ubuntu-based ISO.",
-      "vi": "Polo builds a new compositor for MATE, while MATE Wayland Desktop runs MATE on labwc from an Ubuntu-based ISO."
+      "vi": "Polo xây dựng bộ tổng hợp mới cho MATE, trong khi MATE Wayland Desktop chạy MATE trên labwc từ ISO dựa trên Ubuntu."
     },
     "categories": [
       "linux"
@@ -3511,13 +3726,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 3
-    },
-    "translate_next_retry": {
-      "vi": "2026-11-23T16:25:00+00:00"
+      "vi": "machine"
     }
   },
   "e9b0f41de924aee8": {
@@ -3537,11 +3746,11 @@
     "original_lang": "en",
     "title": {
       "en": "Dhruva Dock extension for GNOME revives old school desktop bling",
-      "vi": "Dhruva Dock extension for GNOME revives old school desktop bling"
+      "vi": "Tiện ích mở rộng Dhruva Dock dành cho Gnome làm sống lại vẻ đẹp của máy tính để bàn kiểu cũ"
     },
     "summary": {
       "en": "Ubuntu’s had a dock (or launcher, if you will) down the left-hand side of the screen since it made Unity the default desktop in 2011, a design point it stuck to when it switched back to GNOME in 2017. If you want something a bit different, like a floating dock with flashy…",
-      "vi": "Ubuntu’s had a dock (or launcher, if you will) down the left-hand side of the screen since it made Unity the default desktop in 2011, a design point it stuck to when it switched back to GNOME in 2017. If you want something a bit different, like a floating dock with flashy…"
+      "vi": "Ubuntu có một dock (hoặc launcher, nếu bạn muốn) ở phía bên trái màn hình vì nó đã biến Unity thành máy tính để bàn mặc định vào năm 2011, một điểm thiết kế mà nó đã sử dụng khi chuyển trở lại Gnome vào năm 2017. Nếu bạn muốn thứ gì đó khác biệt một chút, chẳng hạn như một chiếc dock nổi với hào nhoáng…"
     },
     "categories": [
       "linux",
@@ -3553,13 +3762,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 3
-    },
-    "translate_next_retry": {
-      "vi": "2026-11-23T16:25:00+00:00"
+      "vi": "machine"
     }
   },
   "be2753a8757ba661": {
@@ -3579,11 +3782,11 @@
     "original_lang": "en",
     "title": {
       "en": "MNT Reform Next, the ultra-open laptop, starts shipping",
-      "vi": "MNT Reform Next, the ultra-open laptop, starts shipping"
+      "vi": "MNT Reform Next, máy tính xách tay siêu mở, bắt đầu xuất xưởng"
     },
     "summary": {
       "en": "Before Framework took the idea of modular, easily upgradable laptops mainstream, there was the MNT Reform, a laptop with openness in every part of its design. I was pleased to see see (via notebookcheck) it’s started shipping high-end Hyper configurations of its laptop model…",
-      "vi": "Before Framework took the idea of modular, easily upgradable laptops mainstream, there was the MNT Reform, a laptop with openness in every part of its design. I was pleased to see see (via notebookcheck) it’s started shipping high-end Hyper configurations of its laptop model…"
+      "vi": "Trước khi Framework đưa ra ý tưởng về dòng máy tính xách tay theo mô-đun, có thể nâng cấp dễ dàng, đã có MNT Reform, một chiếc máy tính xách tay có tính mở trong mọi phần thiết kế. Tôi rất vui khi thấy (thông qua notebookcheck) hãng bắt đầu cung cấp các cấu hình Hyper cao cấp cho mẫu máy tính xách tay của mình…"
     },
     "categories": [
       "linux"
@@ -3594,13 +3797,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 3
-    },
-    "translate_next_retry": {
-      "vi": "2026-11-23T16:25:00+00:00"
+      "vi": "machine"
     }
   },
   "f58b4a23562d7cee": {
@@ -4076,6 +4273,77 @@
       "en": "machine"
     }
   },
+  "4f9577781e5be200": {
+    "id": "4f9577781e5be200",
+    "slug": "russia-will-launch-a-routine-iss-supply-mission-tomorrowappa-4f9577",
+    "url": "https://arstechnica.com/space/2026/11/russia-will-launch-a-routine-iss-supply-mission-tomorrow-apparently-its-a-big-secret",
+    "source": {
+      "id": "arstechnica",
+      "name": "Ars Technica",
+      "site_url": "https://arstechnica.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Eric Berger",
+    "published_at": "2026-11-23T20:34:51+00:00",
+    "fetched_at": "2026-11-24T02:20:02.392856+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Russia will launch a routine ISS supply mission tomorrow—apparently, it's a big secret",
+      "vi": "Nga sẽ khởi động sứ mệnh cung cấp ISS thường lệ vào ngày mai - rõ ràng đó là một bí mật lớn"
+    },
+    "summary": {
+      "en": "\"I would ask you to please reach out to Roscosmos directly.\"",
+      "vi": "\"Tôi yêu cầu bạn vui lòng liên hệ trực tiếp với Roscosmos.\""
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.09,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "8d0aed6c596c9780": {
+    "id": "8d0aed6c596c9780",
+    "slug": "cai-dat-quyen-rieng-tu-giup-ngan-ung-dung-android-tu-y-bat-c-8d0aed",
+    "url": "https://thanhnien.vn/cai-dat-quyen-rieng-tu-giup-ngan-ung-dung-android-tu-y-bat-camera-185261122154004193.htm",
+    "source": {
+      "id": "thanhnien_tech",
+      "name": "Thanh Niên Công Nghệ",
+      "site_url": "https://thanhnien.vn/cong-nghe",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "2026-11-23T23:19:00+00:00",
+    "fetched_at": "2026-11-24T02:20:02.392856+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Cài đặt quyền riêng tư giúp ngăn ứng dụng Android tự ý bật camera",
+      "en": "Privacy settings help prevent Android apps from turning on the camera arbitrarily"
+    },
+    "summary": {
+      "vi": "Người dùng Android có thể kiểm soát chặt chẽ quyền truy cập camera thông qua cài đặt để ngăn nguy cơ bị theo dõi và tin tặc xâm nhập.",
+      "en": "Android users can strictly control camera access through settings to prevent the risk of surveillance and hackers."
+    },
+    "categories": [
+      "android",
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 1.09,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": "machine"
+    }
+  },
   "db85abacb121d037": {
     "id": "db85abacb121d037",
     "slug": "sanket-cho-phep-ban-thiet-ke-lai-menu-ngay-va-cai-dat-nhanh-db85ab",
@@ -4388,11 +4656,11 @@
     "original_lang": "en",
     "title": {
       "en": "LHB Linux Digest #26.19: New n8n Mini-Course, Kubernetes Learning, Managing Server Space and More",
-      "vi": "LHB Linux Digest #26.19: New n8n Mini-Course, Kubernetes Learning, Managing Server Space and More"
+      "vi": "LHB Linux Digest #26.19: Khóa học nhỏ n8n mới, Học tập Kubernetes, Quản lý không gian máy chủ và hơn thế nữa"
     },
     "summary": {
       "en": "New course is here for you.",
-      "vi": "New course is here for you."
+      "vi": "Khóa học mới dành cho bạn."
     },
     "categories": [
       "linux",
@@ -4404,13 +4672,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 3
-    },
-    "translate_next_retry": {
-      "vi": "2026-11-23T16:25:00+00:00"
+      "vi": "machine"
     }
   },
   "6fcf1a0b13dc9fb2": {
@@ -5287,11 +5549,11 @@
     "original_lang": "en",
     "title": {
       "en": "NextCloud Has Launched an Office Suite for Desktop Users",
-      "vi": "NextCloud Has Launched an Office Suite for Desktop Users"
+      "vi": "NextCloud đã ra mắt bộ Office dành cho người dùng máy tính để bàn"
     },
     "summary": {
       "en": "Powered by Euro-Office, the app works offline on local files and connects to Nextcloud for co-editing on Linux, Windows, and macOS.",
-      "vi": "Powered by Euro-Office, the app works offline on local files and connects to Nextcloud for co-editing on Linux, Windows, and macOS."
+      "vi": "Được cung cấp bởi Euro-Office, ứng dụng hoạt động ngoại tuyến trên các tệp cục bộ và kết nối với Nextcloud để đồng chỉnh sửa trên Linux, Windows và macOS."
     },
     "categories": [
       "windows",
@@ -5303,13 +5565,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 3
-    },
-    "translate_next_retry": {
-      "vi": "2026-11-23T16:25:00+00:00"
+      "vi": "machine"
     }
   },
   "ad6f6410f7502cc5": {
@@ -5329,11 +5585,11 @@
     "original_lang": "en",
     "title": {
       "en": "Microsoft’s Outage Shows the Cost of One Vendor Running Everything",
-      "vi": "Microsoft’s Outage Shows the Cost of One Vendor Running Everything"
+      "vi": "Sự cố ngừng hoạt động của Microsoft cho thấy chi phí của một nhà cung cấp vận hành mọi thứ"
     },
     "summary": {
       "en": "After Microsoft’s global email outage, open source rivals say the real problem is putting everything in one basket.",
-      "vi": "After Microsoft’s global email outage, open source rivals say the real problem is putting everything in one basket."
+      "vi": "Sau sự cố email toàn cầu của Microsoft, các đối thủ nguồn mở cho biết vấn đề thực sự là đặt mọi thứ vào một giỏ."
     },
     "categories": [
       "windows",
@@ -5345,13 +5601,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 3
-    },
-    "translate_next_retry": {
-      "vi": "2026-11-23T16:25:04+00:00"
+      "vi": "machine"
     }
   },
   "b90789d892d039a6": {
@@ -5371,11 +5621,11 @@
     "original_lang": "en",
     "title": {
       "en": "Discord’s Linux app sure did improve a lot this year",
-      "vi": "Discord’s Linux app sure did improve a lot this year"
+      "vi": "Ứng dụng Linux của Discord chắc chắn đã cải thiện rất nhiều trong năm nay"
     },
     "summary": {
       "en": "Discord recently shared a potted roundup of improvements made to its Linux app this year, including smarter updating, better screen sharing on Wayland and working push-to-talk. Their Discord <3 Linux: A Year of Upgrades blog post also reveals that per-app audio sharing is…",
-      "vi": "Discord recently shared a potted roundup of improvements made to its Linux app this year, including smarter updating, better screen sharing on Wayland and working push-to-talk. Their Discord <3 Linux: A Year of Upgrades blog post also reveals that per-app audio sharing is…"
+      "vi": "Discord gần đây đã chia sẻ một loạt các cải tiến được thực hiện cho ứng dụng Linux của mình trong năm nay, bao gồm cập nhật thông minh hơn, chia sẻ màn hình tốt hơn trên Wayland và tính năng push-to-talk. Bài đăng trên blog Discord <3 Linux: Một năm nâng cấp của họ cũng tiết lộ rằng việc chia sẻ âm thanh trên mỗi ứng…"
     },
     "categories": [
       "linux"
@@ -5386,13 +5636,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 3
-    },
-    "translate_next_retry": {
-      "vi": "2026-11-23T16:25:04+00:00"
+      "vi": "machine"
     }
   },
   "eb96cf3da654dea0": {
@@ -5412,11 +5656,11 @@
     "original_lang": "en",
     "title": {
       "en": "Snap Store saw several hundred new apps added in one weekend",
-      "vi": "Snap Store saw several hundred new apps added in one weekend"
+      "vi": "Snap Store chứng kiến ​​hàng trăm ứng dụng mới được thêm vào trong một ngày cuối tuần"
     },
     "summary": {
       "en": "Canonical’s Snap Store has seen a huge uptick in app uploads over the past few days – one account published more than 114 new titles in 24 hours alone. What gives? Is the snap store finally seeing its second wind? Not quite. In a typical month, the snap store sees between 15-30…",
-      "vi": "Canonical’s Snap Store has seen a huge uptick in app uploads over the past few days – one account published more than 114 new titles in 24 hours alone. What gives? Is the snap store finally seeing its second wind? Not quite. In a typical month, the snap store sees between 15-30…"
+      "vi": "Snap Store của Canonical đã chứng kiến ​​lượng tải ứng dụng lên tăng mạnh trong vài ngày qua – một tài khoản đã xuất bản hơn 114 tựa game mới chỉ trong 24 giờ. Cái gì mang lại? Có phải cửa hàng snap cuối cùng cũng nhìn thấy làn gió thứ hai? Không hẳn. Trong một tháng thông thường, cửa hàng bán đồ nhanh có từ 15-30…"
     },
     "categories": [
       "linux"
@@ -5427,13 +5671,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 3
-    },
-    "translate_next_retry": {
-      "vi": "2026-11-23T16:25:04+00:00"
+      "vi": "machine"
     }
   },
   "2e79680d684bd68d": {
@@ -5586,6 +5824,76 @@
     ],
     "tags": [],
     "difficulty": "easy",
+    "score": 1.01,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "ab0dad67afd07649": {
+    "id": "ab0dad67afd07649",
+    "slug": "10-hacks-every-gta-6-player-should-know-ab0dad",
+    "url": "https://lifehacker.com/tech/10-hacks-every-gta-6-player-should-know",
+    "source": {
+      "id": "lifehacker",
+      "name": "Lifehacker",
+      "site_url": "https://lifehacker.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Pranay Parab",
+    "published_at": "2026-11-23T20:00:00+00:00",
+    "fetched_at": "2026-11-24T02:20:02.392856+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "10 Hacks Every 'GTA 6' Player Should Know",
+      "vi": "10 thủ thuật mọi người chơi 'GTA 6' nên biết"
+    },
+    "summary": {
+      "en": "These hacks will help you make the most of \"GTA 6.\"",
+      "vi": "Những thủ thuật này sẽ giúp bạn tận dụng tối đa \"GTA 6.\""
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.01,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "d08ee3d00b1d7abd": {
+    "id": "d08ee3d00b1d7abd",
+    "slug": "10-find-hub-hacks-every-android-user-should-know-d08ee3",
+    "url": "https://lifehacker.com/tech/10-find-hub-hacks-every-android-user-should-know",
+    "source": {
+      "id": "lifehacker",
+      "name": "Lifehacker",
+      "site_url": "https://lifehacker.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Khamosh Pathak",
+    "published_at": "2026-11-23T15:30:00+00:00",
+    "fetched_at": "2026-11-24T02:20:02.392856+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "10 'Find Hub' Hacks Every Android User Should Know",
+      "vi": "10 thủ thuật 'Find Hub' mà mọi người dùng Android nên biết"
+    },
+    "summary": {
+      "en": "These Find Hub hacks help you keep tabs on your devices.",
+      "vi": "Những thủ thuật Find Hub này giúp bạn theo dõi thiết bị của mình."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
     "score": 1.01,
     "howto": true,
     "reading_time_min": 1,
@@ -8349,11 +8657,11 @@
     "original_lang": "en",
     "title": {
       "en": "Just about anyone can rent access to White House IP addresses",
-      "vi": "Just about anyone can rent access to White House IP addresses"
+      "vi": "Hầu hết mọi người đều có thể thuê quyền truy cập vào các địa chỉ IP của Nhà Trắng"
     },
     "summary": {
       "en": "Someone at the White House appears to be running software that could enable outsiders to rent access on the presidential network for just \"a few dollars,\" as reported by Krebs on Security and The Register. That's according to findings from the security firms Layer3 Intel and…",
-      "vi": "Someone at the White House appears to be running software that could enable outsiders to rent access on the presidential network for just \"a few dollars,\" as reported by Krebs on Security and The Register. That's according to findings from the security firms Layer3 Intel and…"
+      "vi": "Theo báo cáo của Krebs trên Security và The Register, ai đó ở Nhà Trắng dường như đang chạy phần mềm có thể cho phép người ngoài thuê quyền truy cập vào mạng của tổng thống chỉ với \"vài đô la\". Đó là theo phát hiện từ các công ty bảo mật Layer3 Intel và…"
     },
     "categories": [
       "hardware"
@@ -8364,15 +8672,9 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
-    "translate_attempts": {
-      "vi": 5
-    },
-    "hidden": false,
-    "translate_next_retry": {
-      "vi": "2026-11-23T22:32:34+00:00"
-    }
+    "hidden": false
   },
   "8879475e62b3793a": {
     "id": "8879475e62b3793a",
@@ -8391,11 +8693,11 @@
     "original_lang": "en",
     "title": {
       "en": "Why a new report on Anthropic automating AI development is alarming researchers",
-      "vi": "Why a new report on Anthropic automating AI development is alarming researchers"
+      "vi": "Tại sao một báo cáo mới về phát triển AI tự động hóa của con người lại khiến các nhà nghiên cứu cảnh báo"
     },
     "summary": {
       "en": "Anthropic is using AI to build more powerful AI. And it appears to be working remarkably well, with the company's models improving roughly twice as quickly as a year ago, with little indication of slowing down. That's according to a new report published Thursday by the AI safety…",
-      "vi": "Anthropic is using AI to build more powerful AI. And it appears to be working remarkably well, with the company's models improving roughly twice as quickly as a year ago, with little indication of slowing down. That's according to a new report published Thursday by the AI safety…"
+      "vi": "Anthropic đang sử dụng AI để xây dựng AI mạnh mẽ hơn. Và nó dường như đang hoạt động rất tốt, với các mô hình của công ty được cải thiện nhanh gấp đôi so với một năm trước mà không có dấu hiệu chậm lại. Đó là theo một báo cáo mới được công bố hôm thứ Năm bởi cơ quan an toàn AI…"
     },
     "categories": [
       "ai"
@@ -8406,15 +8708,9 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
-    "translate_attempts": {
-      "vi": 5
-    },
-    "hidden": false,
-    "translate_next_retry": {
-      "vi": "2026-11-23T22:32:34+00:00"
-    }
+    "hidden": false
   },
   "cbc470459f8e4735": {
     "id": "cbc470459f8e4735",
@@ -8433,11 +8729,11 @@
     "original_lang": "en",
     "title": {
       "en": "Remove your personal info from the web (and stop it coming back)",
-      "vi": "Remove your personal info from the web (and stop it coming back)"
+      "vi": "Xóa thông tin cá nhân của bạn khỏi web (và ngăn thông tin đó quay trở lại)"
     },
     "summary": {
       "en": "It seems incredible that anyone can legally create a business which involves scraping your personal data from the web and then selling it, yet here we are. There are literally hundreds of data brokers doing just this. They also buy data from app developers, who use…",
-      "vi": "It seems incredible that anyone can legally create a business which involves scraping your personal data from the web and then selling it, yet here we are. There are literally hundreds of data brokers doing just this. They also buy data from app developers, who use…"
+      "vi": "Có vẻ khó tin rằng bất kỳ ai cũng có thể tạo ra một doanh nghiệp hợp pháp liên quan đến việc thu thập dữ liệu cá nhân của bạn từ web và sau đó bán nó, tuy nhiên chúng ta vẫn ở đây. Thực sự có hàng trăm nhà môi giới dữ liệu đang làm việc này. Họ cũng mua dữ liệu từ các nhà phát triển ứng dụng, những người sử dụng…"
     },
     "categories": [
       "ios"
@@ -8448,15 +8744,9 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
-    "translate_attempts": {
-      "vi": 5
-    },
-    "hidden": false,
-    "translate_next_retry": {
-      "vi": "2026-11-23T22:32:34+00:00"
-    }
+    "hidden": false
   },
   "16a1528631dc2501": {
     "id": "16a1528631dc2501",
@@ -8475,11 +8765,11 @@
     "original_lang": "en",
     "title": {
       "en": "iPadOS 27.3 adds new iPad setting I instantly turned on",
-      "vi": "iPadOS 27.3 adds new iPad setting I instantly turned on"
+      "vi": "iPadOS 27.3 bổ sung cài đặt iPad mới mà tôi đã bật ngay lập tức"
     },
     "summary": {
       "en": "iPadOS 27.3 is currently available in beta , and it introduces a new iPad setting for app windowing that I instantly turned on. Here are the details.",
-      "vi": "iPadOS 27.3 is currently available in beta , and it introduces a new iPad setting for app windowing that I instantly turned on. Here are the details."
+      "vi": "iPadOS 27.3 hiện có sẵn ở phiên bản beta và nó giới thiệu một cài đặt iPad mới cho cửa sổ ứng dụng mà tôi đã bật ngay lập tức. Dưới đây là chi tiết."
     },
     "categories": [
       "ios"
@@ -8490,15 +8780,9 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
-    "translate_attempts": {
-      "vi": 5
-    },
-    "hidden": false,
-    "translate_next_retry": {
-      "vi": "2026-11-23T22:32:39+00:00"
-    }
+    "hidden": false
   },
   "ac80ab5279f0a454": {
     "id": "ac80ab5279f0a454",
@@ -8517,11 +8801,11 @@
     "original_lang": "en",
     "title": {
       "en": "Fireworks AI discloses new breach after cloud provider hack",
-      "vi": "Fireworks AI discloses new breach after cloud provider hack"
+      "vi": "Fireworks AI tiết lộ vi phạm mới sau vụ hack nhà cung cấp đám mây"
     },
     "summary": {
       "en": "AI infrastructure startup Fireworks has disclosed a new security breach in which attackers accessed its development machines after breaching a third-party cloud provider.",
-      "vi": "AI infrastructure startup Fireworks has disclosed a new security breach in which attackers accessed its development machines after breaching a third-party cloud provider."
+      "vi": "Công ty khởi nghiệp cơ sở hạ tầng AI Fireworks đã tiết lộ một vi phạm bảo mật mới, trong đó những kẻ tấn công truy cập vào các máy phát triển của nó sau khi xâm phạm nhà cung cấp đám mây bên thứ ba."
     },
     "categories": [
       "ai"
@@ -8532,15 +8816,9 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
-    "translate_attempts": {
-      "vi": 5
-    },
-    "hidden": false,
-    "translate_next_retry": {
-      "vi": "2026-11-23T22:32:39+00:00"
-    }
+    "hidden": false
   },
   "3580f27471445fcb": {
     "id": "3580f27471445fcb",
@@ -8559,11 +8837,11 @@
     "original_lang": "en",
     "title": {
       "en": "Instagram Effect Builder lets you create images with an AI prompt",
-      "vi": "Instagram Effect Builder lets you create images with an AI prompt"
+      "vi": "Instagram Effect Builder cho phép bạn tạo hình ảnh bằng lời nhắc AI"
     },
     "summary": {
       "en": "Instagram launched an Edits app for iPhone back in 2025, with a Mac version introduced just a few days ago. Meta has now supplemented this with an AI-powered Instagram Effect Builder, letting users create imagery for Stories simply by describing what they want to see …",
-      "vi": "Instagram launched an Edits app for iPhone back in 2025, with a Mac version introduced just a few days ago. Meta has now supplemented this with an AI-powered Instagram Effect Builder, letting users create imagery for Stories simply by describing what they want to see …"
+      "vi": "Instagram đã ra mắt ứng dụng Chỉnh sửa cho iPhone vào năm 2025, với phiên bản Mac được giới thiệu chỉ vài ngày trước. Meta hiện đã bổ sung tính năng này bằng Trình tạo hiệu ứng Instagram được hỗ trợ bởi AI, cho phép người dùng tạo hình ảnh cho Câu chuyện chỉ bằng cách mô tả những gì họ muốn xem…"
     },
     "categories": [
       "ai",
@@ -8575,15 +8853,9 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
-    "translate_attempts": {
-      "vi": 5
-    },
-    "hidden": false,
-    "translate_next_retry": {
-      "vi": "2026-11-23T22:32:39+00:00"
-    }
+    "hidden": false
   },
   "c14e0f0a734d1070": {
     "id": "c14e0f0a734d1070",
@@ -8638,11 +8910,11 @@
     "original_lang": "en",
     "title": {
       "en": "Spotify’s AI DJ adds nine voices and a setting to reduce interruptions",
-      "vi": "Spotify’s AI DJ adds nine voices and a setting to reduce interruptions"
+      "vi": "DJ AI của Spotify bổ sung chín giọng nói và cài đặt để giảm gián đoạn"
     },
     "summary": {
       "en": "Spotify today expanded customization options for its AI DJ, allowing users to choose between different voices and personalities, as well as control how much the DJ talks between songs. Here are the details.",
-      "vi": "Spotify today expanded customization options for its AI DJ, allowing users to choose between different voices and personalities, as well as control how much the DJ talks between songs. Here are the details."
+      "vi": "Spotify hôm nay đã mở rộng các tùy chọn tùy chỉnh cho AI DJ của mình, cho phép người dùng lựa chọn giữa các giọng nói và tính cách khác nhau, cũng như kiểm soát lượng DJ nói giữa các bài hát. Dưới đây là chi tiết."
     },
     "categories": [
       "ai"
@@ -8653,15 +8925,9 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
-    "translate_attempts": {
-      "vi": 5
-    },
-    "hidden": false,
-    "translate_next_retry": {
-      "vi": "2026-11-23T22:32:39+00:00"
-    }
+    "hidden": false
   },
   "ed92cce55db567e8": {
     "id": "ed92cce55db567e8",
@@ -8680,11 +8946,11 @@
     "original_lang": "en",
     "title": {
       "en": "November Pixel Watch Drop: Create My Widget, Phone-to-Watch Unlock, and Wear OS 7.1",
-      "vi": "November Pixel Watch Drop: Create My Widget, Phone-to-Watch Unlock, and Wear OS 7.1"
+      "vi": "Pixel Watch Drop tháng 11: Tạo tiện ích của tôi, Mở khóa điện thoại để xem và Wear OS 7.1"
     },
     "summary": {
       "en": "Besides a big update for phones , there’s also a sizable Pixel Watch Drop today, but it’s mostly a preview of what’s to come.",
-      "vi": "Besides a big update for phones , there’s also a sizable Pixel Watch Drop today, but it’s mostly a preview of what’s to come."
+      "vi": "Bên cạnh một bản cập nhật lớn dành cho điện thoại, hôm nay còn có một đợt Pixel Watch Drop khá lớn, nhưng chủ yếu là bản xem trước về những gì sắp diễn ra."
     },
     "categories": [
       "android"
@@ -8695,15 +8961,9 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
-    "translate_attempts": {
-      "vi": 5
-    },
-    "hidden": false,
-    "translate_next_retry": {
-      "vi": "2026-11-23T22:32:39+00:00"
-    }
+    "hidden": false
   },
   "d317b9a45d00622a": {
     "id": "d317b9a45d00622a",
@@ -8722,11 +8982,11 @@
     "original_lang": "en",
     "title": {
       "en": "November 2026 Pixel Drop: Create My Widget, HiLight for Google Messages, Pixel 10 Rambler, & more",
-      "vi": "November 2026 Pixel Drop: Create My Widget, HiLight for Google Messages, Pixel 10 Rambler, & more"
+      "vi": "Pixel Drop tháng 11 năm 2026: Tạo tiện ích của tôi, HiLight cho Google Messages, Pixel 10 Rambler, v.v."
     },
     "summary": {
       "en": "Like last year, the next Pixel Drop is rolling out a month early in November. Coupled with Android 17 QPR2 , it’s quite a big Feature Drop for Gemini and other AI capabilities, as well as the Pixel 10 series.",
-      "vi": "Like last year, the next Pixel Drop is rolling out a month early in November. Coupled with Android 17 QPR2 , it’s quite a big Feature Drop for Gemini and other AI capabilities, as well as the Pixel 10 series."
+      "vi": "Giống như năm ngoái, Pixel Drop tiếp theo sẽ ra mắt vào đầu tháng 11. Kết hợp với Android 17 QPR2, đây là một sự sụt giảm tính năng khá lớn đối với Gemini và các khả năng AI khác, cũng như dòng Pixel 10."
     },
     "categories": [
       "android",
@@ -8740,15 +9000,9 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
-    "translate_attempts": {
-      "vi": 5
-    },
-    "hidden": false,
-    "translate_next_retry": {
-      "vi": "2026-11-23T22:32:44+00:00"
-    }
+    "hidden": false
   },
   "c40d9ac220e1b1de": {
     "id": "c40d9ac220e1b1de",
@@ -8767,11 +9021,11 @@
     "original_lang": "en",
     "title": {
       "en": "Google’s November Pixel Drop brings over 12 new features, and Pixel 10 owners are the big winners",
-      "vi": "Google’s November Pixel Drop brings over 12 new features, and Pixel 10 owners are the big winners"
+      "vi": "Pixel Drop tháng 11 của Google mang đến 12 tính năng mới và chủ sở hữu Pixel 10 là người chiến thắng lớn"
     },
     "summary": {
       "en": "Pixel Solver, Create My Widget, and Gemini Call Screen lead the way, while Pixel 10 owners finally get Gemini Intelligence.",
-      "vi": "Pixel Solver, Create My Widget, and Gemini Call Screen lead the way, while Pixel 10 owners finally get Gemini Intelligence."
+      "vi": "Pixel Solver, Create My Widget và Gemini Call Screen dẫn đầu, trong khi chủ sở hữu Pixel 10 cuối cùng cũng nhận được Gemini Intelligence."
     },
     "categories": [
       "android",
@@ -8785,15 +9039,9 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
-    "translate_attempts": {
-      "vi": 5
-    },
-    "hidden": false,
-    "translate_next_retry": {
-      "vi": "2026-11-23T22:32:44+00:00"
-    }
+    "hidden": false
   },
   "5495c1febb178a14": {
     "id": "5495c1febb178a14",
@@ -8812,11 +9060,11 @@
     "original_lang": "en",
     "title": {
       "en": "Google rolls out Create My Widget to Pixel 10 and 11 series, but the Pixel 10a misses out",
-      "vi": "Google rolls out Create My Widget to Pixel 10 and 11 series, but the Pixel 10a misses out"
+      "vi": "Google tung ra tính năng Tạo Widget của tôi cho dòng Pixel 10 và 11, nhưng Pixel 10a lại bỏ lỡ"
     },
     "summary": {
       "en": "You can now use natural language commands to generate widgets, but not on the budget Pixel.",
-      "vi": "You can now use natural language commands to generate widgets, but not on the budget Pixel."
+      "vi": "Giờ đây, bạn có thể sử dụng các lệnh ngôn ngữ tự nhiên để tạo tiện ích nhưng không phải trên Pixel bình dân."
     },
     "categories": [
       "android"
@@ -8827,15 +9075,9 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
-    "translate_attempts": {
-      "vi": 5
-    },
-    "hidden": false,
-    "translate_next_retry": {
-      "vi": "2026-11-23T22:32:44+00:00"
-    }
+    "hidden": false
   },
   "6f7743a9465550a4": {
     "id": "6f7743a9465550a4",
@@ -12172,11 +12414,11 @@
     "original_lang": "en",
     "title": {
       "en": "Five Smartwatch Heart Rate Zone Hacks Every Runner Should Know",
-      "vi": "Five Smartwatch Heart Rate Zone Hacks Every Runner Should Know"
+      "vi": "Năm thủ thuật đo nhịp tim trên Smartwatch mà mọi người chạy bộ nên biết"
     },
     "summary": {
       "en": "The best tips to keep you in the zone.",
-      "vi": "The best tips to keep you in the zone."
+      "vi": "Những lời khuyên tốt nhất để giữ bạn trong khu vực."
     },
     "categories": [
       "windows"
@@ -12187,15 +12429,9 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
     },
-    "translate_attempts": {
-      "vi": 5
-    },
-    "hidden": false,
-    "translate_next_retry": {
-      "vi": "2026-11-23T22:32:44+00:00"
-    }
+    "hidden": false
   },
   "cf61c804dd9bbfb6": {
     "id": "cf61c804dd9bbfb6",
@@ -12327,11 +12563,11 @@
     "original_lang": "vi",
     "title": {
       "vi": "Chia sẻ bàn làm việc của thợ chụp hình thích setup theo phong cách game thủ",
-      "en": "Chia sẻ bàn làm việc của thợ chụp hình thích setup theo phong cách game thủ"
+      "en": "Sharing the desk of a photographer who likes to set up in a gamer style"
     },
     "summary": {
       "vi": "Chào mọi người, đầu tiên xin được giới thiệu sơ qua về công việc hiện tại của bản thân và lý do từ đâu mình có ý tưởng để makeup cho bàn làm việc của bản thân để nó không gây nhàm chán theo ý kiến",
-      "en": "Chào mọi người, đầu tiên xin được giới thiệu sơ qua về công việc hiện tại của bản thân và lý do từ đâu mình có ý tưởng để makeup cho bàn làm việc của bản thân để nó không gây nhàm chán theo ý kiến"
+      "en": "Hello everyone, first of all, I would like to briefly introduce my current job and how I got the idea to decorate my desk so that it doesn't get boring in my opinion."
     },
     "categories": [
       "ios"
@@ -12342,15 +12578,9 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "en": false
+      "en": "machine"
     },
-    "translate_attempts": {
-      "en": 5
-    },
-    "hidden": false,
-    "translate_next_retry": {
-      "en": "2026-11-23T22:32:55+00:00"
-    }
+    "hidden": false
   },
   "c06ec870b4e1dac0": {
     "id": "c06ec870b4e1dac0",
@@ -12369,11 +12599,11 @@
     "original_lang": "vi",
     "title": {
       "vi": "Apple hướng dẫn tắt logo phát sáng trên MacBook Pro mới, nhưng chỉ có cách dùng Terminal",
-      "en": "Apple hướng dẫn tắt logo phát sáng trên MacBook Pro mới, nhưng chỉ có cách dùng Terminal"
+      "en": "Apple instructs to turn off the glowing logo on the new MacBook Pro, but only using Terminal"
     },
     "summary": {
       "vi": "Logo quả táo phát sáng huyền thoại đã quay lại trên MacBook Pro mới với màn hình PROLED, lần đầu sau",
-      "en": "Logo quả táo phát sáng huyền thoại đã quay lại trên MacBook Pro mới với màn hình PROLED, lần đầu sau"
+      "en": "The legendary glowing apple logo is back on the new MacBook Pro with PROLED screen, for the first time since then"
     },
     "categories": [
       "macos",
@@ -12387,15 +12617,9 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "en": false
+      "en": "machine"
     },
-    "translate_attempts": {
-      "en": 5
-    },
-    "hidden": false,
-    "translate_next_retry": {
-      "en": "2026-11-23T22:32:55+00:00"
-    }
+    "hidden": false
   },
   "d3a089a79de6f388": {
     "id": "d3a089a79de6f388",
@@ -13241,9 +13465,10 @@
     },
     "hidden": false
   },
-  "fadd7467dc36644c": {
-    "id": "fadd7467dc36644c",
-    "url": "https://dev.to/bowentse/word-counting-is-harder-than-it-looks-a-devs-guide-1jpb",
+  "38ce929f036e3fe6": {
+    "id": "38ce929f036e3fe6",
+    "slug": "how-to-scroll-between-separate-components-in-react-38ce92",
+    "url": "https://dev.to/amelia2802/how-to-scroll-between-separate-components-in-react-gf2",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
@@ -13251,31 +13476,29 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "bowen Tse",
-    "published_at": "2026-10-29T02:58:56+00:00",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "Amelia Dutta",
+    "published_at": "2026-11-13T11:34:52+00:00",
+    "fetched_at": "2026-11-24T02:20:02.392856+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Word Counting Is Harder Than It Looks: A Dev's Guide",
-      "vi": "Đếm từ khó hơn vẻ ngoài của nó: Hướng dẫn dành cho nhà phát triển"
+      "en": "How to Scroll Between Separate Components in React",
+      "vi": "Cách cuộn giữa các thành phần riêng biệt trong React"
     },
     "summary": {
-      "en": "Every developer has written the naive version at least once: const words =",
-      "vi": "Mọi nhà phát triển đều đã viết phiên bản ngây thơ ít nhất một lần: constwords ="
+      "en": "Let's say you're creating a reusable button component in React and want to use it to navigate to a",
+      "vi": "Giả sử bạn đang tạo một thành phần nút có thể tái sử dụng trong React và muốn sử dụng nó để điều hướng đến một"
     },
     "categories": [
-      "office"
+      "dev"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.74,
+    "score": 0.75,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "dem-tu-kho-hon-ve-ngoai-cua-no-huong-dan-danh-cho-nha-phat-t-fadd74"
+    }
   },
   "f18d65f7da2a2657": {
     "id": "f18d65f7da2a2657",
@@ -13422,9 +13645,9 @@
     },
     "hidden": false
   },
-  "f4cb4a6778724aeb": {
-    "id": "f4cb4a6778724aeb",
-    "url": "https://dev.to/toolsyhub/how-to-compress-an-image-to-an-exact-kb-limit-in-the-browser-canvas-binary-search-and-when-to-2d7i",
+  "fadd7467dc36644c": {
+    "id": "fadd7467dc36644c",
+    "url": "https://dev.to/bowentse/word-counting-is-harder-than-it-looks-a-devs-guide-1jpb",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
@@ -13432,20 +13655,20 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "Toolsy Hub",
-    "published_at": "2026-10-29T02:52:26+00:00",
+    "author": "bowen Tse",
+    "published_at": "2026-10-29T02:58:56+00:00",
     "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "How to compress an image to an exact KB limit in the browser (canvas, binary search, and when to stop lowering quality)",
-      "vi": "Cách nén hình ảnh đến giới hạn KB chính xác trong trình duyệt (canvas, tìm kiếm nhị phân và thời điểm ngừng giảm chất lượng)"
+      "en": "Word Counting Is Harder Than It Looks: A Dev's Guide",
+      "vi": "Đếm từ khó hơn vẻ ngoài của nó: Hướng dẫn dành cho nhà phát triển"
     },
     "summary": {
-      "en": "Upload forms for visas, exams and job portals often say \"photo must be under 100 KB\". A phone photo",
-      "vi": "Tải lên các biểu mẫu xin thị thực, kỳ thi và cổng thông tin việc làm thường ghi \"ảnh phải dưới 100 KB\". Một bức ảnh điện thoại"
+      "en": "Every developer has written the naive version at least once: const words =",
+      "vi": "Mọi nhà phát triển đều đã viết phiên bản ngây thơ ít nhất một lần: constwords ="
     },
     "categories": [
-      "dev"
+      "office"
     ],
     "tags": [],
     "difficulty": "medium",
@@ -13456,7 +13679,7 @@
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "cach-nen-hinh-anh-den-gioi-han-kb-chinh-xac-trong-trinh-duye-f4cb4a"
+    "slug": "dem-tu-kho-hon-ve-ngoai-cua-no-huong-dan-danh-cho-nha-phat-t-fadd74"
   },
   "2551552469f4fa95": {
     "id": "2551552469f4fa95",
@@ -13532,9 +13755,9 @@
     },
     "hidden": false
   },
-  "6508908febf34a09": {
-    "id": "6508908febf34a09",
-    "url": "https://dev.to/tomaszkrystman/building-an-mlops-workflow-from-experiment-to-production-4d3c",
+  "f4cb4a6778724aeb": {
+    "id": "f4cb4a6778724aeb",
+    "url": "https://dev.to/toolsyhub/how-to-compress-an-image-to-an-exact-kb-limit-in-the-browser-canvas-binary-search-and-when-to-2d7i",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
@@ -13542,17 +13765,17 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "Tomasz Krystman",
-    "published_at": "2026-10-29T03:00:59+00:00",
+    "author": "Toolsy Hub",
+    "published_at": "2026-10-29T02:52:26+00:00",
     "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Building an MLOps Workflow: From Experiment to Production",
-      "vi": "Xây dựng quy trình làm việc MLOps: Từ thử nghiệm đến sản xuất"
+      "en": "How to compress an image to an exact KB limit in the browser (canvas, binary search, and when to stop lowering quality)",
+      "vi": "Cách nén hình ảnh đến giới hạn KB chính xác trong trình duyệt (canvas, tìm kiếm nhị phân và thời điểm ngừng giảm chất lượng)"
     },
     "summary": {
-      "en": "A practical guide to MLOps workflows, maturity levels, governance, monitoring, and the relationship between MLOps and DevOps.",
-      "vi": "Hướng dẫn thực tế về quy trình làm việc MLOps, mức độ trưởng thành, quản trị, giám sát và mối quan hệ giữa MLOps và DevOps."
+      "en": "Upload forms for visas, exams and job portals often say \"photo must be under 100 KB\". A phone photo",
+      "vi": "Tải lên các biểu mẫu xin thị thực, kỳ thi và cổng thông tin việc làm thường ghi \"ảnh phải dưới 100 KB\". Một bức ảnh điện thoại"
     },
     "categories": [
       "dev"
@@ -13566,7 +13789,7 @@
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "xay-dung-quy-trinh-lam-viec-mlops-tu-thu-nghiem-den-san-xuat-650890"
+    "slug": "cach-nen-hinh-anh-den-gioi-han-kb-chinh-xac-trong-trinh-duye-f4cb4a"
   },
   "64bb151c75ac96d4": {
     "id": "64bb151c75ac96d4",
@@ -13965,9 +14188,9 @@
     "hidden": false,
     "slug": "nhung-cach-giup-smartphone-dung-ben-den-7-nam-40b007"
   },
-  "256c27b306f09301": {
-    "id": "256c27b306f09301",
-    "url": "https://dev.to/dinesh_04/how-to-plan-a-game-vertical-slice-in-7-days-with-a-one-page-gdd-e7",
+  "6508908febf34a09": {
+    "id": "6508908febf34a09",
+    "url": "https://dev.to/tomaszkrystman/building-an-mlops-workflow-from-experiment-to-production-4d3c",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
@@ -13975,17 +14198,17 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "Dinesh",
-    "published_at": "2026-10-29T03:17:16+00:00",
+    "author": "Tomasz Krystman",
+    "published_at": "2026-10-29T03:00:59+00:00",
     "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "How to Plan a Game Vertical Slice in 7 Days with a One-Page GDD",
-      "vi": "Cách lập kế hoạch phân chia trò chơi theo chiều dọc trong 7 ngày với GDD một trang"
+      "en": "Building an MLOps Workflow: From Experiment to Production",
+      "vi": "Xây dựng quy trình làm việc MLOps: Từ thử nghiệm đến sản xuất"
     },
     "summary": {
-      "en": "Most solo devs skip the game design document because it feels like homework. Then scope creep eats a",
-      "vi": "Hầu hết các nhà phát triển solo đều bỏ qua tài liệu thiết kế trò chơi vì nó giống như bài tập về nhà. Sau đó, phạm vi leo ăn một"
+      "en": "A practical guide to MLOps workflows, maturity levels, governance, monitoring, and the relationship between MLOps and DevOps.",
+      "vi": "Hướng dẫn thực tế về quy trình làm việc MLOps, mức độ trưởng thành, quản trị, giám sát và mối quan hệ giữa MLOps và DevOps."
     },
     "categories": [
       "dev"
@@ -13999,7 +14222,7 @@
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "cach-lap-ke-hoach-phan-chia-tro-choi-theo-chieu-doc-trong-7-256c27"
+    "slug": "xay-dung-quy-trinh-lam-viec-mlops-tu-thu-nghiem-den-san-xuat-650890"
   },
   "f73f11092849b85a": {
     "id": "f73f11092849b85a",
@@ -14147,9 +14370,9 @@
       "vi": "machine"
     }
   },
-  "b302cd56f6ec631a": {
-    "id": "b302cd56f6ec631a",
-    "url": "https://dev.to/annavi11arrea1/understanding-what-ai-just-created-in-the-500mph-landscape-1m52",
+  "256c27b306f09301": {
+    "id": "256c27b306f09301",
+    "url": "https://dev.to/dinesh_04/how-to-plan-a-game-vertical-slice-in-7-days-with-a-one-page-gdd-e7",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
@@ -14157,20 +14380,20 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "Anna Villarreal",
-    "published_at": "2026-10-23T15:59:05+00:00",
-    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "author": "Dinesh",
+    "published_at": "2026-10-29T03:17:16+00:00",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Understanding What AI just Created in the 500mph Landscape",
-      "vi": "Hiểu những gì AI vừa tạo ra trong bối cảnh vận tốc 500 dặm/giờ"
+      "en": "How to Plan a Game Vertical Slice in 7 Days with a One-Page GDD",
+      "vi": "Cách lập kế hoạch phân chia trò chơi theo chiều dọc trong 7 ngày với GDD một trang"
     },
     "summary": {
-      "en": "How to understand what AI wrote: For beginners! Avoid lack of dopamine, mental atrophy,",
-      "vi": "Làm thế nào để hiểu những gì AI đã viết: Dành cho người mới bắt đầu! Tránh tình trạng thiếu dopamin, teo tâm thần,"
+      "en": "Most solo devs skip the game design document because it feels like homework. Then scope creep eats a",
+      "vi": "Hầu hết các nhà phát triển solo đều bỏ qua tài liệu thiết kế trò chơi vì nó giống như bài tập về nhà. Sau đó, phạm vi leo ăn một"
     },
     "categories": [
-      "ai"
+      "dev"
     ],
     "tags": [],
     "difficulty": "medium",
@@ -14181,7 +14404,7 @@
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "hieu-nhung-gi-ai-vua-tao-ra-trong-boi-canh-van-toc-500-damgi-b302cd"
+    "slug": "cach-lap-ke-hoach-phan-chia-tro-choi-theo-chieu-doc-trong-7-256c27"
   },
   "c83e4a34493e1229": {
     "id": "c83e4a34493e1229",
@@ -14257,10 +14480,9 @@
     "hidden": false,
     "slug": "loi-khuyen-cho-nhung-gia-dinh-hay-tat-wifi-bang-cach-rut-phi-df7f2e"
   },
-  "5f14c29ca41dcbe8": {
-    "id": "5f14c29ca41dcbe8",
-    "slug": "debloating-an-android-tv-with-claude-code-5f14c2",
-    "url": "https://dev.to/shubham399/debloating-an-android-tv-with-claude-code-3b8",
+  "b302cd56f6ec631a": {
+    "id": "b302cd56f6ec631a",
+    "url": "https://dev.to/annavi11arrea1/understanding-what-ai-just-created-in-the-500mph-landscape-1m52",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
@@ -14268,32 +14490,31 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "Shubham",
-    "published_at": "2026-11-18T04:38:57+00:00",
-    "fetched_at": "2026-11-20T13:09:24.007904+00:00",
+    "author": "Anna Villarreal",
+    "published_at": "2026-10-23T15:59:05+00:00",
+    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Debloating an Android TV with Claude Code",
-      "vi": "Gỡ lỗi Android TV bằng mã Claude"
+      "en": "Understanding What AI just Created in the 500mph Landscape",
+      "vi": "Hiểu những gì AI vừa tạo ra trong bối cảnh vận tốc 500 dặm/giờ"
     },
     "summary": {
-      "en": "I used Claude Code and CleanYourTV to strip TV bloatware over ADB. The set is faster and easier to use, with a one-line restore path.",
-      "vi": "Tôi đã sử dụng Claude Code và CleanYourTV để loại bỏ bloatware TV trên ADB. Bộ này nhanh hơn và dễ sử dụng hơn với đường dẫn khôi phục một dòng."
+      "en": "How to understand what AI wrote: For beginners! Avoid lack of dopamine, mental atrophy,",
+      "vi": "Làm thế nào để hiểu những gì AI đã viết: Dành cho người mới bắt đầu! Tránh tình trạng thiếu dopamin, teo tâm thần,"
     },
     "categories": [
-      "android",
       "ai"
     ],
-    "tags": [
-      "claude"
-    ],
-    "difficulty": null,
+    "tags": [],
+    "difficulty": "medium",
     "score": 0.74,
-    "howto": false,
+    "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
-    }
+    },
+    "hidden": false,
+    "slug": "hieu-nhung-gi-ai-vua-tao-ra-trong-boi-canh-van-toc-500-damgi-b302cd"
   },
   "7a82ad8fe469044c": {
     "id": "7a82ad8fe469044c",
@@ -14692,10 +14913,10 @@
     },
     "hidden": false
   },
-  "4b544d4f2401d22a": {
-    "id": "4b544d4f2401d22a",
-    "slug": "turn-any-image-into-a-3d-scene-25d-and-gaussian-splats-4b544d",
-    "url": "https://dev.to/hiper2d/turn-any-image-into-a-3d-scene-25d-and-gaussian-splats-37i3",
+  "5f14c29ca41dcbe8": {
+    "id": "5f14c29ca41dcbe8",
+    "slug": "debloating-an-android-tv-with-claude-code-5f14c2",
+    "url": "https://dev.to/shubham399/debloating-an-android-tv-with-claude-code-3b8",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
@@ -14703,22 +14924,25 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "Aliaksei Zelianouski",
-    "published_at": "2026-11-20T13:25:01+00:00",
-    "fetched_at": "2026-11-21T19:27:35.867239+00:00",
+    "author": "Shubham",
+    "published_at": "2026-11-18T04:38:57+00:00",
+    "fetched_at": "2026-11-20T13:09:24.007904+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Turn Any Image into a 3D Scene: 2.5D and Gaussian Splats",
-      "vi": "Biến bất kỳ hình ảnh nào thành cảnh 3D: Các mảng 2.5D và Gaussian"
+      "en": "Debloating an Android TV with Claude Code",
+      "vi": "Gỡ lỗi Android TV bằng mã Claude"
     },
     "summary": {
-      "en": "One still image, a camera that moves through it, lights that go out, a room that burns into embers.",
-      "vi": "Một hình ảnh tĩnh, một chiếc camera di chuyển qua nó, đèn tắt, một căn phòng cháy thành than hồng."
+      "en": "I used Claude Code and CleanYourTV to strip TV bloatware over ADB. The set is faster and easier to use, with a one-line restore path.",
+      "vi": "Tôi đã sử dụng Claude Code và CleanYourTV để loại bỏ bloatware TV trên ADB. Bộ này nhanh hơn và dễ sử dụng hơn với đường dẫn khôi phục một dòng."
     },
     "categories": [
-      "dev"
+      "android",
+      "ai"
     ],
-    "tags": [],
+    "tags": [
+      "claude"
+    ],
     "difficulty": null,
     "score": 0.74,
     "howto": false,
@@ -14871,41 +15095,40 @@
     },
     "hidden": false
   },
-  "3e314b72883b118a": {
-    "id": "3e314b72883b118a",
-    "slug": "adobe-muon-9999-usd-de-toi-co-the-huy-toi-da-yeu-cau-ho-tro-3e314b",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xkr94m/lpt_adobe_wanted_9999_to_let_me_cancel_i_asked",
+  "4b544d4f2401d22a": {
+    "id": "4b544d4f2401d22a",
+    "slug": "turn-any-image-into-a-3d-scene-25d-and-gaussian-splats-4b544d",
+    "url": "https://dev.to/hiper2d/turn-any-image-into-a-3d-scene-25d-and-gaussian-splats-37i3",
     "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "https://www.reddit.com/r/LifeProTips/",
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "/u/foreverfidel",
-    "published_at": "2026-11-01T01:52:25+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "author": "Aliaksei Zelianouski",
+    "published_at": "2026-11-20T13:25:01+00:00",
+    "fetched_at": "2026-11-21T19:27:35.867239+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund.",
-      "vi": "Adobe muốn 99,99 USD để tôi có thể hủy. Tôi đã yêu cầu hỗ trợ qua trò chuyện và nhận được miễn trừ cộng với khoản tiền hoàn lại theo tỷ lệ."
+      "en": "Turn Any Image into a 3D Scene: 2.5D and Gaussian Splats",
+      "vi": "Biến bất kỳ hình ảnh nào thành cảnh 3D: Các mảng 2.5D và Gaussian"
     },
     "summary": {
-      "en": "\"Hi, I need to cancel my subscription today. Please cancel my account immediately, waive the early termination fee completely, and issue a prorated refund for the billing cycle I just paid for.” The result: subscription canceled, the entire $99.99 cancellation fee waived, and a…",
-      "vi": "\"Xin chào, tôi cần hủy đăng ký ngay hôm nay. Vui lòng hủy tài khoản của tôi ngay lập tức, miễn hoàn toàn phí chấm dứt sớm và hoàn lại tiền theo tỷ lệ cho chu kỳ thanh toán mà tôi vừa thanh toán.\" Kết quả: đăng ký bị hủy, toàn bộ phí hủy 99,99 USD được miễn và…"
+      "en": "One still image, a camera that moves through it, lights that go out, a room that burns into embers.",
+      "vi": "Một hình ảnh tĩnh, một chiếc camera di chuyển qua nó, đèn tắt, một căn phòng cháy thành than hồng."
     },
     "categories": [
-      "windows"
+      "dev"
     ],
     "tags": [],
     "difficulty": null,
-    "score": 0.71,
+    "score": 0.74,
     "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
-    },
-    "hidden": false
+    }
   },
   "4a8d15ba801ad04d": {
     "id": "4a8d15ba801ad04d",
@@ -14979,10 +15202,10 @@
     "hidden": false,
     "slug": "samsung-good-lock-da-mang-den-cho-chiec-galaxy-cua-toi-mot-t-b5dd38"
   },
-  "9724dd0a88181e75": {
-    "id": "9724dd0a88181e75",
-    "slug": "bat-cu-khi-nao-noi-chuyen-voi-nhan-vien-dich-vu-khach-hang-q-9724dd",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xk4zad/lpt_whenever_speaking_to_a_customer_service",
+  "3e314b72883b118a": {
+    "id": "3e314b72883b118a",
+    "slug": "adobe-muon-9999-usd-de-toi-co-the-huy-toi-da-yeu-cau-ho-tro-3e314b",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xkr94m/lpt_adobe_wanted_9999_to_let_me_cancel_i_asked",
     "source": {
       "id": "reddit-lpt",
       "name": "Reddit r/LifeProTips",
@@ -14990,17 +15213,17 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "/u/TomsMorello",
-    "published_at": "2026-10-31T08:38:41+00:00",
+    "author": "/u/foreverfidel",
+    "published_at": "2026-11-01T01:52:25+00:00",
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "whenever speaking to a customer service person on the phone make sure to record the call and tell them you are doing so. They suddenly become a lot",
-      "vi": "bất cứ khi nào nói chuyện với nhân viên dịch vụ khách hàng qua điện thoại, hãy đảm bảo ghi âm cuộc gọi và cho họ biết bạn đang làm như vậy. Họ đột nhiên trở nên nhiều"
+      "en": "Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund.",
+      "vi": "Adobe muốn 99,99 USD để tôi có thể hủy. Tôi đã yêu cầu hỗ trợ qua trò chuyện và nhận được miễn trừ cộng với khoản tiền hoàn lại theo tỷ lệ."
     },
     "summary": {
-      "en": "A few years ago I had a problem with a PayPal transaction. It wasn’t an earth shattering amount of money but I much rather wanted the money back in my pocket. I spent a couple of days on the phone speaking to people at PayPal every single person DGAF. On what turned out to be my…",
-      "vi": "Cách đây vài năm, tôi gặp vấn đề với giao dịch PayPal. Đó không phải là một số tiền khủng khiếp nhưng tôi muốn tiền trở lại túi của mình hơn. Tôi đã dành vài ngày nói chuyện qua điện thoại với mọi người ở PayPal từng người DGAF. Về những gì hóa ra là của tôi…"
+      "en": "\"Hi, I need to cancel my subscription today. Please cancel my account immediately, waive the early termination fee completely, and issue a prorated refund for the billing cycle I just paid for.” The result: subscription canceled, the entire $99.99 cancellation fee waived, and a…",
+      "vi": "\"Xin chào, tôi cần hủy đăng ký ngay hôm nay. Vui lòng hủy tài khoản của tôi ngay lập tức, miễn hoàn toàn phí chấm dứt sớm và hoàn lại tiền theo tỷ lệ cho chu kỳ thanh toán mà tôi vừa thanh toán.\" Kết quả: đăng ký bị hủy, toàn bộ phí hủy 99,99 USD được miễn và…"
     },
     "categories": [
       "windows"
@@ -15416,10 +15639,10 @@
     },
     "hidden": false
   },
-  "71d01e5f69b83d3a": {
-    "id": "71d01e5f69b83d3a",
-    "slug": "neu-ban-muon-doc-them-nhung-thay-minh-dang-cuon-minh-tren-gi-71d01e",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xk2y3t/lpt_if_you_want_to_read_more_but_find_yourself",
+  "9724dd0a88181e75": {
+    "id": "9724dd0a88181e75",
+    "slug": "bat-cu-khi-nao-noi-chuyen-voi-nhan-vien-dich-vu-khach-hang-q-9724dd",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xk4zad/lpt_whenever_speaking_to_a_customer_service",
     "source": {
       "id": "reddit-lpt",
       "name": "Reddit r/LifeProTips",
@@ -15427,17 +15650,17 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "/u/AbsolutelyNotASnail",
-    "published_at": "2026-10-31T06:29:20+00:00",
+    "author": "/u/TomsMorello",
+    "published_at": "2026-10-31T08:38:41+00:00",
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "if you want to read more but find yourself doomscrolling in bed: move your phone charger",
-      "vi": "nếu bạn muốn đọc thêm nhưng thấy mình đang cuộn mình trên giường: hãy di chuyển bộ sạc điện thoại của bạn"
+      "en": "whenever speaking to a customer service person on the phone make sure to record the call and tell them you are doing so. They suddenly become a lot",
+      "vi": "bất cứ khi nào nói chuyện với nhân viên dịch vụ khách hàng qua điện thoại, hãy đảm bảo ghi âm cuộc gọi và cho họ biết bạn đang làm như vậy. Họ đột nhiên trở nên nhiều"
     },
     "summary": {
-      "en": "It might not work for everyone but it really got me reading a lot more. Doomscrolling was a big problem for me, and not reading was another. I tried putting my phone charger further from my bed on a table opposite from it, and while it was hard at first I finally started to read…",
-      "vi": "Nó có thể không hiệu quả với tất cả mọi người nhưng nó thực sự khiến tôi đọc nhiều hơn. Doomscrolling là một vấn đề lớn đối với tôi, và không đọc lại là một vấn đề khác. Tôi đã thử đặt bộ sạc điện thoại của mình xa giường hơn trên một chiếc bàn đối diện với nó, và mặc dù lúc đầu thật khó khăn nhưng cuối cùng tôi cũng…"
+      "en": "A few years ago I had a problem with a PayPal transaction. It wasn’t an earth shattering amount of money but I much rather wanted the money back in my pocket. I spent a couple of days on the phone speaking to people at PayPal every single person DGAF. On what turned out to be my…",
+      "vi": "Cách đây vài năm, tôi gặp vấn đề với giao dịch PayPal. Đó không phải là một số tiền khủng khiếp nhưng tôi muốn tiền trở lại túi của mình hơn. Tôi đã dành vài ngày nói chuyện qua điện thoại với mọi người ở PayPal từng người DGAF. Về những gì hóa ra là của tôi…"
     },
     "categories": [
       "windows"
@@ -15599,10 +15822,10 @@
     "hidden": false,
     "slug": "netflix-se-mang-den-nhung-bo-phim-kinh-di-nay-dung-luc-cho-b-43c516"
   },
-  "72935a7f76dc92ab": {
-    "id": "72935a7f76dc92ab",
-    "slug": "luon-dat-may-tinh-o-che-do-ngu-khi-ra-khoi-nha-hoac-di-ngu-72935a",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xj5yl8/lpt_always_put_your_computer_to_sleep_when_you",
+  "71d01e5f69b83d3a": {
+    "id": "71d01e5f69b83d3a",
+    "slug": "neu-ban-muon-doc-them-nhung-thay-minh-dang-cuon-minh-tren-gi-71d01e",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xk2y3t/lpt_if_you_want_to_read_more_but_find_yourself",
     "source": {
       "id": "reddit-lpt",
       "name": "Reddit r/LifeProTips",
@@ -15610,24 +15833,22 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "/u/rebel-yeller",
-    "published_at": "2026-10-30T04:30:02+00:00",
+    "author": "/u/AbsolutelyNotASnail",
+    "published_at": "2026-10-31T06:29:20+00:00",
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Always put your computer to sleep when you leave the house or go to bed",
-      "vi": "Luôn đặt máy tính ở chế độ ngủ khi ra khỏi nhà hoặc đi ngủ"
+      "en": "if you want to read more but find yourself doomscrolling in bed: move your phone charger",
+      "vi": "nếu bạn muốn đọc thêm nhưng thấy mình đang cuộn mình trên giường: hãy di chuyển bộ sạc điện thoại của bạn"
     },
     "summary": {
-      "en": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers.",
-      "vi": "Đảm bảo máy tính của bạn được bảo vệ bằng mật khẩu. Đặt nó vào chế độ ngủ ít nhất sẽ bảo vệ mọi tập tin hoặc dữ liệu cá nhân/bí mật nếu máy tính của bạn bị đánh cắp. Có vẻ như hầu hết những kẻ trộm đều không thân thiện với tin tặc máy tính."
+      "en": "It might not work for everyone but it really got me reading a lot more. Doomscrolling was a big problem for me, and not reading was another. I tried putting my phone charger further from my bed on a table opposite from it, and while it was hard at first I finally started to read…",
+      "vi": "Nó có thể không hiệu quả với tất cả mọi người nhưng nó thực sự khiến tôi đọc nhiều hơn. Doomscrolling là một vấn đề lớn đối với tôi, và không đọc lại là một vấn đề khác. Tôi đã thử đặt bộ sạc điện thoại của mình xa giường hơn trên một chiếc bàn đối diện với nó, và mặc dù lúc đầu thật khó khăn nhưng cuối cùng tôi cũng…"
     },
     "categories": [
-      "security"
+      "windows"
     ],
-    "tags": [
-      "password"
-    ],
+    "tags": [],
     "difficulty": null,
     "score": 0.71,
     "howto": false,
@@ -15709,10 +15930,10 @@
     "hidden": false,
     "slug": "5-ung-dung-dong-hanh-cua-google-maps-lap-day-khoang-trong-lo-29d0fd"
   },
-  "13c87e8494b641fa": {
-    "id": "13c87e8494b641fa",
-    "slug": "tai-su-dung-pin-chuot-aa-da-chet-trong-dong-ho-13c87e",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xiiawy/lpt_reuse_a_dead_aa_mous_battery_in_a_clock",
+  "72935a7f76dc92ab": {
+    "id": "72935a7f76dc92ab",
+    "slug": "luon-dat-may-tinh-o-che-do-ngu-khi-ra-khoi-nha-hoac-di-ngu-72935a",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xj5yl8/lpt_always_put_your_computer_to_sleep_when_you",
     "source": {
       "id": "reddit-lpt",
       "name": "Reddit r/LifeProTips",
@@ -15720,23 +15941,23 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "/u/mywifeapprovesthis",
-    "published_at": "2026-10-29T12:14:04+00:00",
+    "author": "/u/rebel-yeller",
+    "published_at": "2026-10-30T04:30:02+00:00",
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "reuse a \"dead\" AA mous battery in a clock",
-      "vi": "tái sử dụng pin chuột AA \"đã chết\" trong đồng hồ"
+      "en": "Always put your computer to sleep when you leave the house or go to bed",
+      "vi": "Luôn đặt máy tính ở chế độ ngủ khi ra khỏi nhà hoặc đi ngủ"
     },
     "summary": {
-      "en": "Today I learned that the \"dead\" AA battery which can no longer power my wireless mouse still has enough oomph* to be able to power a clock for a while. I'm so pleased I can re-deploy a \"used\" battery into something useful, I thought I'd share. *oomph is a technical term as a…",
-      "vi": "Hôm nay tôi được biết rằng pin AA \"đã chết\" không còn có thể cung cấp năng lượng cho con chuột không dây của tôi vẫn còn đủ năng lượng* để có thể cung cấp năng lượng cho đồng hồ trong một thời gian. Tôi rất vui vì có thể tái triển khai cục pin \"đã qua sử dụng\" thành một thứ hữu ích, tôi nghĩ mình nên chia sẻ. *oomph…"
+      "en": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers.",
+      "vi": "Đảm bảo máy tính của bạn được bảo vệ bằng mật khẩu. Đặt nó vào chế độ ngủ ít nhất sẽ bảo vệ mọi tập tin hoặc dữ liệu cá nhân/bí mật nếu máy tính của bạn bị đánh cắp. Có vẻ như hầu hết những kẻ trộm đều không thân thiện với tin tặc máy tính."
     },
     "categories": [
-      "hardware"
+      "security"
     ],
     "tags": [
-      "battery"
+      "password"
     ],
     "difficulty": null,
     "score": 0.71,
@@ -16150,10 +16371,10 @@
     },
     "hidden": false
   },
-  "33d256014ccf120b": {
-    "id": "33d256014ccf120b",
-    "slug": "su-dung-ten-ban-muon-trong-chu-ky-thay-vi-ten-chinh-thuc-cua-33d256",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xh29vq/lpt_use_the_name_you_want_in_your_signature",
+  "13c87e8494b641fa": {
+    "id": "13c87e8494b641fa",
+    "slug": "tai-su-dung-pin-chuot-aa-da-chet-trong-dong-ho-13c87e",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xiiawy/lpt_reuse_a_dead_aa_mous_battery_in_a_clock",
     "source": {
       "id": "reddit-lpt",
       "name": "Reddit r/LifeProTips",
@@ -16161,22 +16382,24 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "/u/deten",
-    "published_at": "2026-10-27T19:31:27+00:00",
+    "author": "/u/mywifeapprovesthis",
+    "published_at": "2026-10-29T12:14:04+00:00",
     "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Use the name you want in your signature instead of your formal name",
-      "vi": "Sử dụng tên bạn muốn trong chữ ký thay vì tên chính thức của bạn"
+      "en": "reuse a \"dead\" AA mous battery in a clock",
+      "vi": "tái sử dụng pin chuột AA \"đã chết\" trong đồng hồ"
     },
     "summary": {
-      "en": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…",
-      "vi": "Tôi không thể tin được đã là năm 2026 và mọi người vẫn đang ký vào tin nhắn và email bằng những cái tên mà họ không thực sự sử dụng. Nếu tên bạn là Nicholas nhưng bạn muốn được gọi là Nick, hãy sử dụng Nick trong chữ ký của bạn. Tôi làm việc trong lĩnh vực bán hàng và liên tục phải gửi email hoặc gọi điện cho những…"
+      "en": "Today I learned that the \"dead\" AA battery which can no longer power my wireless mouse still has enough oomph* to be able to power a clock for a while. I'm so pleased I can re-deploy a \"used\" battery into something useful, I thought I'd share. *oomph is a technical term as a…",
+      "vi": "Hôm nay tôi được biết rằng pin AA \"đã chết\" không còn có thể cung cấp năng lượng cho con chuột không dây của tôi vẫn còn đủ năng lượng* để có thể cung cấp năng lượng cho đồng hồ trong một thời gian. Tôi rất vui vì có thể tái triển khai cục pin \"đã qua sử dụng\" thành một thứ hữu ích, tôi nghĩ mình nên chia sẻ. *oomph…"
     },
     "categories": [
-      "windows"
+      "hardware"
     ],
-    "tags": [],
+    "tags": [
+      "battery"
+    ],
     "difficulty": null,
     "score": 0.71,
     "howto": false,
@@ -16333,43 +16556,41 @@
     },
     "hidden": false
   },
-  "843e2f5d387fbdbf": {
-    "id": "843e2f5d387fbdbf",
-    "url": "https://dev.to/qunirice_verase_1ab0caeba/steamos-or-windows-11-deciding-with-powershell-before-you-partition-14hj",
+  "33d256014ccf120b": {
+    "id": "33d256014ccf120b",
+    "slug": "su-dung-ten-ban-muon-trong-chu-ky-thay-vi-ten-chinh-thuc-cua-33d256",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xh29vq/lpt_use_the_name_you_want_in_your_signature",
     "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "https://www.reddit.com/r/LifeProTips/",
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "AI Release",
-    "published_at": "2026-10-29T03:23:06+00:00",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "/u/deten",
+    "published_at": "2026-10-27T19:31:27+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "SteamOS or Windows 11: deciding with PowerShell before you partition",
-      "vi": "SteamOS hoặc Windows 11: quyết định sử dụng PowerShell trước khi phân vùng"
+      "en": "Use the name you want in your signature instead of your formal name",
+      "vi": "Sử dụng tên bạn muốn trong chữ ký thay vì tên chính thức của bạn"
     },
     "summary": {
-      "en": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11.",
-      "vi": "Hướng dẫn thực tế: kiểm tra UEFI, TPM và Secure Boot, kiểm kê thư viện trò chơi của bạn trên ProtonDB, sau đó quyết định giữa SteamOS và Windows 11."
+      "en": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…",
+      "vi": "Tôi không thể tin được đã là năm 2026 và mọi người vẫn đang ký vào tin nhắn và email bằng những cái tên mà họ không thực sự sử dụng. Nếu tên bạn là Nicholas nhưng bạn muốn được gọi là Nick, hãy sử dụng Nick trong chữ ký của bạn. Tôi làm việc trong lĩnh vực bán hàng và liên tục phải gửi email hoặc gọi điện cho những…"
     },
     "categories": [
       "windows"
     ],
-    "tags": [
-      "powershell"
-    ],
-    "difficulty": "advanced",
-    "score": 0.68,
-    "howto": true,
+    "tags": [],
+    "difficulty": null,
+    "score": 0.71,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
-    "hidden": false,
-    "slug": "steamos-hoac-windows-11-quyet-dinh-su-dung-powershell-truoc-843e2f"
+    "hidden": false
   },
   "84934b4fdd2aba87": {
     "id": "84934b4fdd2aba87",
@@ -16442,6 +16663,44 @@
       "vi": "machine"
     },
     "hidden": false
+  },
+  "843e2f5d387fbdbf": {
+    "id": "843e2f5d387fbdbf",
+    "url": "https://dev.to/qunirice_verase_1ab0caeba/steamos-or-windows-11-deciding-with-powershell-before-you-partition-14hj",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "AI Release",
+    "published_at": "2026-10-29T03:23:06+00:00",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "SteamOS or Windows 11: deciding with PowerShell before you partition",
+      "vi": "SteamOS hoặc Windows 11: quyết định sử dụng PowerShell trước khi phân vùng"
+    },
+    "summary": {
+      "en": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11.",
+      "vi": "Hướng dẫn thực tế: kiểm tra UEFI, TPM và Secure Boot, kiểm kê thư viện trò chơi của bạn trên ProtonDB, sau đó quyết định giữa SteamOS và Windows 11."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [
+      "powershell"
+    ],
+    "difficulty": "advanced",
+    "score": 0.68,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "steamos-hoac-windows-11-quyet-dinh-su-dung-powershell-truoc-843e2f"
   },
   "ef9bb7c17bc1bce5": {
     "id": "ef9bb7c17bc1bce5",
@@ -17101,6 +17360,43 @@
     "hidden": false,
     "slug": "thong-tin-quan-trong-tren-vneid-tat-ca-nguoi-dan-di-may-bay-474875"
   },
+  "acb868617334bc3b": {
+    "id": "acb868617334bc3b",
+    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
+    "source": {
+      "id": "githubblog",
+      "name": "GitHub Blog",
+      "site_url": "https://github.blog",
+      "kind": "news",
+      "content_type": "vendor"
+    },
+    "author": "Christopher Harrison",
+    "published_at": "2026-10-12T17:43:59+00:00",
+    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
+      "vi": "Ứng dụng GitHub Copilot dành cho người mới bắt đầu: Cách dạy Copilot về cơ sở mã của bạn"
+    },
+    "summary": {
+      "en": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright.",
+      "vi": "Tìm hiểu cách thêm hướng dẫn và kỹ năng tùy chỉnh vào kho lưu trữ của bạn, sử dụng tác nhân tùy chỉnh và kết nối máy chủ MCP như Playwright."
+    },
+    "categories": [
+      "ai",
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.57,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "ung-dung-github-copilot-danh-cho-nguoi-moi-bat-dau-cach-day-acb868"
+  },
   "3cbe5eb393bebabf": {
     "id": "3cbe5eb393bebabf",
     "url": "https://dev.to/devopsdaily/how-to-resolve-merge-conflicts-in-git-without-guessing-markers-ours-theirs-and-the-rebase-flip-b4g",
@@ -17138,43 +17434,6 @@
     },
     "hidden": false,
     "slug": "cach-giai-quyet-xung-dot-hop-nhat-trong-git-ma-khong-can-doa-3cbe5e"
-  },
-  "acb868617334bc3b": {
-    "id": "acb868617334bc3b",
-    "url": "https://github.blog/ai-and-ml/github-copilot/github-copilot-app-for-beginners-how-to-teach-copilot-about-your-codebase",
-    "source": {
-      "id": "githubblog",
-      "name": "GitHub Blog",
-      "site_url": "https://github.blog",
-      "kind": "news",
-      "content_type": "vendor"
-    },
-    "author": "Christopher Harrison",
-    "published_at": "2026-10-12T17:43:59+00:00",
-    "fetched_at": "2026-10-28T05:36:09.755308+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "GitHub Copilot app for Beginners: How to teach Copilot about your codebase",
-      "vi": "Ứng dụng GitHub Copilot dành cho người mới bắt đầu: Cách dạy Copilot về cơ sở mã của bạn"
-    },
-    "summary": {
-      "en": "Learn how to add custom instructions and skills to your repository, use custom agents, and connect MCP servers like Playwright.",
-      "vi": "Tìm hiểu cách thêm hướng dẫn và kỹ năng tùy chỉnh vào kho lưu trữ của bạn, sử dụng tác nhân tùy chỉnh và kết nối máy chủ MCP như Playwright."
-    },
-    "categories": [
-      "ai",
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.57,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "ung-dung-github-copilot-danh-cho-nguoi-moi-bat-dau-cach-day-acb868"
   },
   "2ad84ab401bee4f9": {
     "id": "2ad84ab401bee4f9",
@@ -17835,42 +18094,6 @@
     "hidden": false,
     "slug": "toi-da-xay-dung-thu-vien-nhac-lossless-khong-can-dang-ky-ban-024e8d"
   },
-  "3b1a643c22cd5cd6": {
-    "id": "3b1a643c22cd5cd6",
-    "url": "https://dev.to/johnnylemonny/stop-waiting-for-github-actions-make-your-ci-faster-today-a2l",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "𝗝𝗼𝗵𝗻",
-    "published_at": "2026-09-29T15:30:00+00:00",
-    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Stop Waiting for GitHub Actions: Make Your CI Faster Today",
-      "vi": "Ngừng chờ đợi các hành động GitHub: Giúp CI của bạn nhanh hơn ngay hôm nay"
-    },
-    "summary": {
-      "en": "A practical guide to canceling outdated runs, caching dependencies, reducing duplicate work, and getting faster feedback from GitHub Actions.",
-      "vi": "Hướng dẫn thực tế để hủy các lần chạy lỗi thời, lưu các phần phụ thuộc vào bộ nhớ đệm, giảm công việc trùng lặp và nhận phản hồi nhanh hơn từ Tác vụ GitHub."
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.57,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "ngung-cho-doi-cac-hanh-dong-github-giup-ci-cua-ban-nhanh-hon-3b1a64"
-  },
   "10ef57b720dca9c5": {
     "id": "10ef57b720dca9c5",
     "url": "https://www.makeuseof.com/the-next-big-wi-fi-upgrade-is-tackling-something-more-important-than-speed",
@@ -17907,6 +18130,42 @@
     "hidden": false,
     "slug": "ban-nang-cap-wi-fi-lon-tiep-theo-dang-giai-quyet-mot-van-de-10ef57"
   },
+  "3b1a643c22cd5cd6": {
+    "id": "3b1a643c22cd5cd6",
+    "url": "https://dev.to/johnnylemonny/stop-waiting-for-github-actions-make-your-ci-faster-today-a2l",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "𝗝𝗼𝗵𝗻",
+    "published_at": "2026-09-29T15:30:00+00:00",
+    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Stop Waiting for GitHub Actions: Make Your CI Faster Today",
+      "vi": "Ngừng chờ đợi các hành động GitHub: Giúp CI của bạn nhanh hơn ngay hôm nay"
+    },
+    "summary": {
+      "en": "A practical guide to canceling outdated runs, caching dependencies, reducing duplicate work, and getting faster feedback from GitHub Actions.",
+      "vi": "Hướng dẫn thực tế để hủy các lần chạy lỗi thời, lưu các phần phụ thuộc vào bộ nhớ đệm, giảm công việc trùng lặp và nhận phản hồi nhanh hơn từ Tác vụ GitHub."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.57,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "ngung-cho-doi-cac-hanh-dong-github-giup-ci-cua-ban-nhanh-hon-3b1a64"
+  },
   "0f61e1e47dbe051e": {
     "id": "0f61e1e47dbe051e",
     "url": "https://www.makeuseof.com/ikea-kreativ-home-furnishings",
@@ -17942,42 +18201,6 @@
     },
     "hidden": false,
     "slug": "ikea-co-cach-mua-do-noi-that-tot-hon-la-cuon-trang-san-pham-0f61e1"
-  },
-  "de7b7e50d713f055": {
-    "id": "de7b7e50d713f055",
-    "url": "https://genk.vn/vi-sao-khong-nen-su-dung-khuon-mat-van-tay-de-mo-khoa-dien-thoai-1652610011748567.chn",
-    "source": {
-      "id": "genk",
-      "name": "GenK Thủ Thuật",
-      "site_url": "https://genk.vn",
-      "kind": "tips",
-      "content_type": "article"
-    },
-    "author": null,
-    "published_at": "2026-10-01T12:36:00+00:00",
-    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
-    "original_lang": "vi",
-    "title": {
-      "vi": "Vì sao không nên sử dụng khuôn mặt, vân tay để mở khóa điện thoại?",
-      "en": "Why shouldn't you use your face or fingerprint to unlock your phone?"
-    },
-    "summary": {
-      "vi": "Sử dụng vân tay, khuôn mặt để mở khóa điện thoại tồn tại những rủi ro gì?",
-      "en": "What are the risks of using fingerprints and face to unlock the phone?"
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.54,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "en": "machine"
-    },
-    "hidden": false,
-    "slug": "vi-sao-khong-nen-su-dung-khuon-mat-van-tay-de-mo-khoa-dien-t-de7b7e"
   },
   "51f8dcdc7f9b270d": {
     "id": "51f8dcdc7f9b270d",
@@ -18016,6 +18239,42 @@
     "hidden": false,
     "slug": "microsoft-muon-tao-ra-bo-luu-tru-co-tuoi-tho-10000-nam-va-kh-51f8dc"
   },
+  "de7b7e50d713f055": {
+    "id": "de7b7e50d713f055",
+    "url": "https://genk.vn/vi-sao-khong-nen-su-dung-khuon-mat-van-tay-de-mo-khoa-dien-thoai-1652610011748567.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "2026-10-01T12:36:00+00:00",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Vì sao không nên sử dụng khuôn mặt, vân tay để mở khóa điện thoại?",
+      "en": "Why shouldn't you use your face or fingerprint to unlock your phone?"
+    },
+    "summary": {
+      "vi": "Sử dụng vân tay, khuôn mặt để mở khóa điện thoại tồn tại những rủi ro gì?",
+      "en": "What are the risks of using fingerprints and face to unlock the phone?"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.54,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "en": "machine"
+    },
+    "hidden": false,
+    "slug": "vi-sao-khong-nen-su-dung-khuon-mat-van-tay-de-mo-khoa-dien-t-de7b7e"
+  },
   "8099aaefadc9434a": {
     "id": "8099aaefadc9434a",
     "url": "https://www.makeuseof.com/windows-reset-options-explained",
@@ -18052,42 +18311,6 @@
     "hidden": false,
     "slug": "toi-da-biet-duoc-tinh-nang-dat-lai-pc-nay-thuc-su-co-trong-w-8099aa"
   },
-  "657c1b7c5a36fe10": {
-    "id": "657c1b7c5a36fe10",
-    "url": "https://linuxhandbook.com/newsletter/26-15",
-    "source": {
-      "id": "linuxhandbook",
-      "name": "Linux Handbook",
-      "site_url": "https://linuxhandbook.com",
-      "kind": "tips",
-      "content_type": "article"
-    },
-    "author": "Abhishek Prakash",
-    "published_at": "2026-10-16T12:34:23+00:00",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "LHB Linux Digest #26.15: Taming stderr, Cybersecurity Certification and More",
-      "vi": "LHB Linux Digest #26.15: Thuần hóa stderr, Chứng nhận an ninh mạng và hơn thế nữa"
-    },
-    "summary": {
-      "en": "Errors are output too. Learn where they go.",
-      "vi": "Lỗi cũng xuất hiện. Tìm hiểu xem họ đi đâu."
-    },
-    "categories": [
-      "linux"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.54,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "lhb-linux-digest-2615-thuan-hoa-stderr-chung-nhan-an-ninh-ma-657c1b"
-  },
   "e3b74b75e702204f": {
     "id": "e3b74b75e702204f",
     "url": "https://www.makeuseof.com/bentopdf-local-browser-pdf-tools",
@@ -18123,6 +18346,42 @@
     },
     "hidden": false,
     "slug": "bay-gio-toi-thuc-hien-hau-het-moi-cong-viec-pdf-kho-chiu-tre-e3b74b"
+  },
+  "657c1b7c5a36fe10": {
+    "id": "657c1b7c5a36fe10",
+    "url": "https://linuxhandbook.com/newsletter/26-15",
+    "source": {
+      "id": "linuxhandbook",
+      "name": "Linux Handbook",
+      "site_url": "https://linuxhandbook.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Abhishek Prakash",
+    "published_at": "2026-10-16T12:34:23+00:00",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "LHB Linux Digest #26.15: Taming stderr, Cybersecurity Certification and More",
+      "vi": "LHB Linux Digest #26.15: Thuần hóa stderr, Chứng nhận an ninh mạng và hơn thế nữa"
+    },
+    "summary": {
+      "en": "Errors are output too. Learn where they go.",
+      "vi": "Lỗi cũng xuất hiện. Tìm hiểu xem họ đi đâu."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.54,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "lhb-linux-digest-2615-thuan-hoa-stderr-chung-nhan-an-ninh-ma-657c1b"
   },
   "7c214f2efd884062": {
     "id": "7c214f2efd884062",
