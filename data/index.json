@@ -802,6 +802,114 @@
       "en": "machine"
     }
   },
+  "b63967e9c50969f4": {
+    "id": "b63967e9c50969f4",
+    "slug": "ios-27-adds-new-messages-app-setting-i-instantly-started-usi-b63967",
+    "url": "https://9to5mac.com/2026/11/24/ios-27-adds-new-messages-app-setting-i-instantly-started-using",
+    "source": {
+      "id": "9to5mac",
+      "name": "9to5Mac",
+      "site_url": "https://9to5mac.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Ryan Christoffel",
+    "published_at": "2026-11-24T15:05:11+00:00",
+    "fetched_at": "2026-11-24T23:05:31.752144+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "iOS 27 adds new Messages app setting I instantly started using",
+      "vi": "iOS 27 bổ sung cài đặt ứng dụng Tin nhắn mới mà tôi đã bắt đầu sử dụng ngay lập tức"
+    },
+    "summary": {
+      "en": "iOS 27 brought several new features to the Messages app, including a setting that’s long been a popular request: the ability to customize or turn off the audio button. Here’s how to use it.",
+      "vi": "iOS 27 mang đến một số tính năng mới cho ứng dụng Tin nhắn, bao gồm một cài đặt từ lâu đã được yêu cầu phổ biến: khả năng tùy chỉnh hoặc tắt nút âm thanh. Đây là cách sử dụng nó."
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "0069eac5aeec3bdc": {
+    "id": "0069eac5aeec3bdc",
+    "slug": "cat-dinh-va-lap-day-thung-lung-yu-chengdong-tiet-lo-nguyen-l-0069ea",
+    "url": "https://www.ithome.com/1/031/895.htm",
+    "source": {
+      "id": "ithome-cn",
+      "name": "IT之家",
+      "site_url": "https://www.ithome.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "2026-11-24T16:47:59+00:00",
+    "fetched_at": "2026-11-24T23:05:31.752144+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "削峰填谷！余承东揭秘华为 Mate X8“超平整”内屏原理，首创磁控展平技术定向修复",
+      "vi": "Cắt đỉnh và lấp đầy thung lũng! Yu Chengdong tiết lộ nguyên lý của Huawei Mate",
+      "en": "Cut peaks and fill valleys! Yu Chengdong reveals the principle of Huawei Mate"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 25 日消息，在昨天下午的 HUAWEI Mate X8 及全场景新品发布会上， 华为 Mate X8 大折旗舰机正式发布 ，全系搭载麒麟 9050 Pro 处理器，售价 12,999 元起。 此次华为 Mate X8 在屏幕上又有新技术突破。其中，大家最关心的就是折痕水平。根据此前曝光的视频来看，Mate X8 内屏在采用“亮面”设计的情况下，折痕多角度查看处于几乎不可见的状态。 而据华为官方数据， Mate X8 内屏平整度对比前代 X7 提升了 90% 。华为常务董事、产品投资评审委员会主任、终端 BG…",
+      "vi": "IT House đưa tin vào ngày 25 tháng 11 rằng tại hội nghị ra mắt sản phẩm mới toàn kịch bản và Huawei Mate X8 vào chiều hôm qua, chiếc điện thoại hàng đầu Huawei Mate X8 đã chính thức được ra mắt với mức giá ưu đãi. Toàn bộ dòng máy được trang bị bộ vi xử lý Redmi 9050 Pro, có giá từ 12.999 nhân dân tệ. Lần này Huawei…",
+      "en": "IT House reported on November 25 that at the HUAWEI Mate X8 and full-scenario new product launch conference yesterday afternoon, the Huawei Mate X8 flagship phone was officially released at a discount. The entire series is equipped with the Kirin 9050 Pro processor, priced from 12,999 yuan. This time Huawei Mate X8…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "ffd370e1eb45e7d8": {
+    "id": "ffd370e1eb45e7d8",
+    "slug": "simplifying-agent-access-while-keeping-organizations-in-cont-ffd370",
+    "url": "http://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html",
+    "source": {
+      "id": "workspace-updates",
+      "name": "Google Workspace Updates",
+      "site_url": "https://workspaceupdates.googleblog.com",
+      "kind": "news",
+      "content_type": "vendor"
+    },
+    "author": "Dan C (noreply@blogger.com)",
+    "published_at": "2026-11-24T17:02:59+00:00",
+    "fetched_at": "2026-11-24T23:05:31.752144+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Simplifying agent access while keeping organizations in control: MCP servers, CLI, standardized usage tiers, and admin policies",
+      "vi": "Đơn giản hóa quyền truy cập của tác nhân trong khi vẫn giữ quyền kiểm soát cho các tổ chức: máy chủ MCP, CLI, cấp độ sử dụng được tiêu chuẩn hóa và chính sách quản trị viên"
+    },
+    "summary": {
+      "en": "As AI agents transform how people work, we want to make it simple for developers to build agentic workflows while keeping organizations in control of their data in Google Workspace. We are making Workspace Model Context Protocol (MCP) servers and the official Workspace CLI…",
+      "vi": "Khi các tác nhân AI thay đổi cách mọi người làm việc, chúng tôi muốn giúp các nhà phát triển dễ dàng xây dựng quy trình làm việc tự động trong khi vẫn giúp các tổ chức có quyền kiểm soát dữ liệu của họ trong Google Workspace. Chúng tôi đang tạo các máy chủ Giao thức bối cảnh mô hình không gian làm việc (MCP) và…"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "advanced",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
   "77e32da8e58573a6": {
     "id": "77e32da8e58573a6",
     "slug": "sap-xep-va-truyen-dat-thong-tin-phuc-tap-bang-danh-sach-duoc-77e32d",
@@ -837,41 +945,6 @@
       "vi": "machine"
     },
     "hidden": false
-  },
-  "7b79f8be4c63a7e9": {
-    "id": "7b79f8be4c63a7e9",
-    "slug": "schedule-meetings-with-a-default-5-minute-buffer-in-google-c-7b79f8",
-    "url": "http://workspaceupdates.googleblog.com/2026/11/schedule-meetings-with-default-buffer-google-calendar.html",
-    "source": {
-      "id": "workspace-updates",
-      "name": "Google Workspace Updates",
-      "site_url": "https://workspaceupdates.googleblog.com",
-      "kind": "news",
-      "content_type": "vendor"
-    },
-    "author": "Dan C (noreply@blogger.com)",
-    "published_at": "2026-11-16T14:41:41+00:00",
-    "fetched_at": "2026-11-20T13:09:24.007904+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Schedule meetings with a default 5-minute buffer in Google Calendar",
-      "vi": "Lên lịch cuộc họp với khoảng thời gian đệm 5 phút mặc định trong Lịch Google"
-    },
-    "summary": {
-      "en": "Back-to-back meetings can leave no time for a break in your day. To help you build in short breaks, we’re expanding the “Speedy meetings” setting in Google Calendar into new, per-calendar Event duration & buffer settings. Previously, Speedy meetings was an account-level setting…",
-      "vi": "Những cuộc họp liên tiếp có thể khiến bạn không có thời gian để nghỉ ngơi trong ngày. Để giúp bạn xây dựng các khoảng thời gian nghỉ ngắn, chúng tôi đang mở rộng cài đặt “Cuộc họp nhanh” trong Lịch Google thành cài đặt thời gian đệm và thời lượng sự kiện mới theo lịch. Trước đây, Cuộc họp nhanh chóng là cài đặt cấp…"
-    },
-    "categories": [
-      "office"
-    ],
-    "tags": [],
-    "difficulty": "easy",
-    "score": 1.49,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    }
   },
   "673a0004d679b424": {
     "id": "673a0004d679b424",
@@ -909,6 +982,41 @@
     "translated": {
       "vi": "machine",
       "en": "machine"
+    }
+  },
+  "7b79f8be4c63a7e9": {
+    "id": "7b79f8be4c63a7e9",
+    "slug": "schedule-meetings-with-a-default-5-minute-buffer-in-google-c-7b79f8",
+    "url": "http://workspaceupdates.googleblog.com/2026/11/schedule-meetings-with-default-buffer-google-calendar.html",
+    "source": {
+      "id": "workspace-updates",
+      "name": "Google Workspace Updates",
+      "site_url": "https://workspaceupdates.googleblog.com",
+      "kind": "news",
+      "content_type": "vendor"
+    },
+    "author": "Dan C (noreply@blogger.com)",
+    "published_at": "2026-11-16T14:41:41+00:00",
+    "fetched_at": "2026-11-20T13:09:24.007904+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Schedule meetings with a default 5-minute buffer in Google Calendar",
+      "vi": "Lên lịch cuộc họp với khoảng thời gian đệm 5 phút mặc định trong Lịch Google"
+    },
+    "summary": {
+      "en": "Back-to-back meetings can leave no time for a break in your day. To help you build in short breaks, we’re expanding the “Speedy meetings” setting in Google Calendar into new, per-calendar Event duration & buffer settings. Previously, Speedy meetings was an account-level setting…",
+      "vi": "Những cuộc họp liên tiếp có thể khiến bạn không có thời gian để nghỉ ngơi trong ngày. Để giúp bạn xây dựng các khoảng thời gian nghỉ ngắn, chúng tôi đang mở rộng cài đặt “Cuộc họp nhanh” trong Lịch Google thành cài đặt thời gian đệm và thời lượng sự kiện mới theo lịch. Trước đây, Cuộc họp nhanh chóng là cài đặt cấp…"
+    },
+    "categories": [
+      "office"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 1.49,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
     }
   },
   "b24b57126d519d21": {
@@ -2138,6 +2246,119 @@
       "vi": "machine"
     }
   },
+  "3002a378c3a59e3e": {
+    "id": "3002a378c3a59e3e",
+    "slug": "new-gemini-setting-lets-you-keep-chat-history-but-turn-off-a-3002a3",
+    "url": "https://9to5google.com/2026/11/24/gemini-history-ai-training",
+    "source": {
+      "id": "9to5mac",
+      "name": "9to5Mac",
+      "site_url": "https://9to5mac.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "9to5Google",
+    "published_at": "2026-11-24T21:11:31+00:00",
+    "fetched_at": "2026-11-24T23:05:31.752144+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "New Gemini setting lets you keep chat history, but turn off AI training [U]",
+      "vi": "Cài đặt Gemini mới cho phép bạn giữ lịch sử trò chuyện nhưng tắt đào tạo AI [U]"
+    },
+    "summary": {
+      "en": "Google is rolling out new privacy settings for the Gemini app that will let you “keep your history while independently controlling generative AI model training.”",
+      "vi": "Google đang triển khai cài đặt quyền riêng tư mới cho ứng dụng Gemini, cho phép bạn “lưu giữ lịch sử của mình trong khi kiểm soát độc lập quá trình đào tạo mô hình AI tổng hợp”."
+    },
+    "categories": [
+      "ai",
+      "security"
+    ],
+    "tags": [
+      "privacy",
+      "gemini"
+    ],
+    "difficulty": "easy",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "3e707bede64eaa2c": {
+    "id": "3e707bede64eaa2c",
+    "slug": "google-maps-might-change-its-colors-again-but-its-optional-t-3e707b",
+    "url": "https://9to5google.com/2026/11/24/google-maps-new-colors-high-visibility",
+    "source": {
+      "id": "9to5google",
+      "name": "9to5Google",
+      "site_url": "https://9to5google.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Ben Schoon",
+    "published_at": "2026-11-24T18:40:00+00:00",
+    "fetched_at": "2026-11-24T23:05:31.752144+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Google Maps might change its colors again, but it’s optional this time [Gallery]",
+      "vi": "Google Maps có thể thay đổi màu sắc một lần nữa nhưng lần này là tùy chọn [Thư viện]"
+    },
+    "summary": {
+      "en": "Google Maps has a pretty consistent style, but a new option appears to be in the works with a darker “high-visibility” setting.",
+      "vi": "Google Maps có phong cách khá nhất quán nhưng có vẻ như một tùy chọn mới đang hoạt động với cài đặt “khả năng hiển thị cao” tối hơn."
+    },
+    "categories": [
+      "browser"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "83b7d0d15eb92c92": {
+    "id": "83b7d0d15eb92c92",
+    "slug": "now-firefox-can-select-which-sites-use-its-vpn-and-clear-you-83b7d0",
+    "url": "https://www.theverge.com/tech/1041474/firefox-161-vpn-rules-fire-button",
+    "source": {
+      "id": "theverge",
+      "name": "The Verge",
+      "site_url": "https://www.theverge.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Stevie Bonifield",
+    "published_at": "2026-11-24T18:44:57+00:00",
+    "fetched_at": "2026-11-24T23:05:31.752144+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Now Firefox can select which sites use its VPN, and clear your browsing history with one click",
+      "vi": "Giờ đây Firefox có thể chọn trang web nào sử dụng VPN của nó và xóa lịch sử duyệt web của bạn chỉ bằng một cú nhấp chuột"
+    },
+    "summary": {
+      "en": "Mozilla released Firefox 161 on Tuesday with a new setting you can use to choose which pages automatically open with the browser's VPN active. Using the \"Manage VPN rules\" option in Firefox's VPN panel, you can set it to \"always on\" or \"always off\" for specific sites, so you…",
+      "vi": "Mozilla đã phát hành Firefox 161 vào thứ Ba với một cài đặt mới mà bạn có thể sử dụng để chọn những trang nào sẽ tự động mở khi VPN của trình duyệt đang hoạt động. Bằng cách sử dụng tùy chọn \"Quản lý quy tắc VPN\" trong bảng điều khiển VPN của Firefox, bạn có thể đặt tùy chọn này thành \"luôn bật\" hoặc \"luôn tắt\" cho…"
+    },
+    "categories": [
+      "security",
+      "browser"
+    ],
+    "tags": [
+      "firefox",
+      "vpn"
+    ],
+    "difficulty": "easy",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
   "73d60418285cd4ad": {
     "id": "73d60418285cd4ad",
     "slug": "firefox-has-a-hidden-snake-game-heres-how-to-play-it-73d604",
@@ -3237,6 +3458,41 @@
     ],
     "tags": [],
     "difficulty": "medium",
+    "score": 1.19,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "d94abafa6f8b4593": {
+    "id": "d94abafa6f8b4593",
+    "slug": "rosetta-sap-het-han-kiem-tra-app-intel-tren-mac-truoc-khi-le-d94aba",
+    "url": "https://tinhte.vn/thread/rosetta-sap-het-han-kiem-tra-app-intel-tren-mac-truoc-khi-len-macos-28.4195152",
+    "source": {
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "osx",
+    "published_at": "2026-11-24T13:48:58+00:00",
+    "fetched_at": "2026-11-24T23:05:31.752144+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Rosetta sắp hết hạn: kiểm tra app Intel trên Mac trước khi lên macOS 28",
+      "en": "Rosetta is about to expire: check Intel apps on Mac before upgrading to macOS 28"
+    },
+    "summary": {
+      "vi": "Áp dụng cho: máy Mac dùng chip Apple silicon (M1, M2, M3, M4 trở về sau). Cách xem danh sách app Intel trong Cài đặt hệ thống cần macOS 27 Golden Gate trở lên; cách kiểm tra từng app bằng Finder",
+      "en": "Applies to: Macs using Apple silicon chips (M1, M2, M3, M4 and later). How to view the Intel app list in System Settings requires macOS 27 Golden Gate or later; How to check each app using Finder"
+    },
+    "categories": [
+      "macos"
+    ],
+    "tags": [],
+    "difficulty": "easy",
     "score": 1.19,
     "howto": true,
     "reading_time_min": 1,
@@ -4445,6 +4701,76 @@
     ],
     "tags": [],
     "difficulty": "easy",
+    "score": 1.09,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "44bbba50d547691a": {
+    "id": "44bbba50d547691a",
+    "slug": "toms-hardwares-ces-2027-awards-how-to-enter-your-product-44bbba",
+    "url": "https://www.tomshardware.com/pc-components/toms-hardwares-ces-2027-awards-how-to-enter-your-product",
+    "source": {
+      "id": "tomshardware",
+      "name": "Tom's Hardware",
+      "site_url": "https://www.tomshardware.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "The Editors of Tom&#039;s Hardware",
+    "published_at": "2026-11-24T16:03:29+00:00",
+    "fetched_at": "2026-11-24T23:05:31.752144+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Tom's Hardware’s CES 2027 Awards: How to enter your product",
+      "vi": "Giải thưởng CES 2027 của Tom's Hardware: Cách nhập sản phẩm của bạn"
+    },
+    "summary": {
+      "en": "Here’s how to submit your products for Tom's Hardware CES 2027 Awards.",
+      "vi": "Dưới đây là cách gửi sản phẩm của bạn cho Giải thưởng Tom's Hardware CES 2027."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.09,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "0f00d87bf8353e7f": {
+    "id": "0f00d87bf8353e7f",
+    "slug": "4-sai-lam-pho-bien-khi-su-dung-pin-sac-du-phong-0f00d8",
+    "url": "https://thanhnien.vn/4-sai-lam-pho-bien-khi-su-dung-pin-sac-du-phong-18526111811431109.htm",
+    "source": {
+      "id": "thanhnien_tech",
+      "name": "Thanh Niên Công Nghệ",
+      "site_url": "https://thanhnien.vn/cong-nghe",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "2026-11-24T14:29:00+00:00",
+    "fetched_at": "2026-11-24T23:05:31.752144+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "4 sai lầm phổ biến khi sử dụng pin sạc dự phòng",
+      "en": "4 common mistakes when using backup batteries"
+    },
+    "summary": {
+      "vi": "Pin sạc dự phòng giúp duy trì năng lượng cho thiết bị di động nhưng dễ giảm tuổi thọ hoặc mất an toàn nếu dùng sai cách.",
+      "en": "Backup batteries help maintain power for mobile devices but can easily reduce their lifespan or become unsafe if used incorrectly."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
     "score": 1.09,
     "howto": true,
     "reading_time_min": 1,

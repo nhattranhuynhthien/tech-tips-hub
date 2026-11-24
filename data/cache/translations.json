@@ -8762,5 +8762,125 @@
     "translated": {
       "en": "machine"
     }
+  },
+  "0069eac5aeec3bdc": {
+    "title": {
+      "zh-CN": "削峰填谷！余承东揭秘华为 Mate X8“超平整”内屏原理，首创磁控展平技术定向修复",
+      "vi": "Cắt đỉnh và lấp đầy thung lũng! Yu Chengdong tiết lộ nguyên lý của Huawei Mate",
+      "en": "Cut peaks and fill valleys! Yu Chengdong reveals the principle of Huawei Mate"
+    },
+    "summary": {
+      "zh-CN": "IT之家 11 月 25 日消息，在昨天下午的 HUAWEI Mate X8 及全场景新品发布会上， 华为 Mate X8 大折旗舰机正式发布 ，全系搭载麒麟 9050 Pro 处理器，售价 12,999 元起。 此次华为 Mate X8 在屏幕上又有新技术突破。其中，大家最关心的就是折痕水平。根据此前曝光的视频来看，Mate X8 内屏在采用“亮面”设计的情况下，折痕多角度查看处于几乎不可见的状态。 而据华为官方数据， Mate X8 内屏平整度对比前代 X7 提升了 90% 。华为常务董事、产品投资评审委员会主任、终端 BG…",
+      "vi": "IT House đưa tin vào ngày 25 tháng 11 rằng tại hội nghị ra mắt sản phẩm mới toàn kịch bản và Huawei Mate X8 vào chiều hôm qua, chiếc điện thoại hàng đầu Huawei Mate X8 đã chính thức được ra mắt với mức giá ưu đãi. Toàn bộ dòng máy được trang bị bộ vi xử lý Redmi 9050 Pro, có giá từ 12.999 nhân dân tệ. Lần này Huawei…",
+      "en": "IT House reported on November 25 that at the HUAWEI Mate X8 and full-scenario new product launch conference yesterday afternoon, the Huawei Mate X8 flagship phone was officially released at a discount. The entire series is equipped with the Kirin 9050 Pro processor, priced from 12,999 yuan. This time Huawei Mate X8…"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "b63967e9c50969f4": {
+    "title": {
+      "en": "iOS 27 adds new Messages app setting I instantly started using",
+      "vi": "iOS 27 bổ sung cài đặt ứng dụng Tin nhắn mới mà tôi đã bắt đầu sử dụng ngay lập tức"
+    },
+    "summary": {
+      "en": "iOS 27 brought several new features to the Messages app, including a setting that’s long been a popular request: the ability to customize or turn off the audio button. Here’s how to use it.",
+      "vi": "iOS 27 mang đến một số tính năng mới cho ứng dụng Tin nhắn, bao gồm một cài đặt từ lâu đã được yêu cầu phổ biến: khả năng tùy chỉnh hoặc tắt nút âm thanh. Đây là cách sử dụng nó."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "ffd370e1eb45e7d8": {
+    "title": {
+      "en": "Simplifying agent access while keeping organizations in control: MCP servers, CLI, standardized usage tiers, and admin policies",
+      "vi": "Đơn giản hóa quyền truy cập của tác nhân trong khi vẫn giữ quyền kiểm soát cho các tổ chức: máy chủ MCP, CLI, cấp độ sử dụng được tiêu chuẩn hóa và chính sách quản trị viên"
+    },
+    "summary": {
+      "en": "As AI agents transform how people work, we want to make it simple for developers to build agentic workflows while keeping organizations in control of their data in Google Workspace. We are making Workspace Model Context Protocol (MCP) servers and the official Workspace CLI…",
+      "vi": "Khi các tác nhân AI thay đổi cách mọi người làm việc, chúng tôi muốn giúp các nhà phát triển dễ dàng xây dựng quy trình làm việc tự động trong khi vẫn giúp các tổ chức có quyền kiểm soát dữ liệu của họ trong Google Workspace. Chúng tôi đang tạo các máy chủ Giao thức bối cảnh mô hình không gian làm việc (MCP) và…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "3002a378c3a59e3e": {
+    "title": {
+      "en": "New Gemini setting lets you keep chat history, but turn off AI training [U]",
+      "vi": "Cài đặt Gemini mới cho phép bạn giữ lịch sử trò chuyện nhưng tắt đào tạo AI [U]"
+    },
+    "summary": {
+      "en": "Google is rolling out new privacy settings for the Gemini app that will let you “keep your history while independently controlling generative AI model training.”",
+      "vi": "Google đang triển khai cài đặt quyền riêng tư mới cho ứng dụng Gemini, cho phép bạn “lưu giữ lịch sử của mình trong khi kiểm soát độc lập quá trình đào tạo mô hình AI tổng hợp”."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "3e707bede64eaa2c": {
+    "title": {
+      "en": "Google Maps might change its colors again, but it’s optional this time [Gallery]",
+      "vi": "Google Maps có thể thay đổi màu sắc một lần nữa nhưng lần này là tùy chọn [Thư viện]"
+    },
+    "summary": {
+      "en": "Google Maps has a pretty consistent style, but a new option appears to be in the works with a darker “high-visibility” setting.",
+      "vi": "Google Maps có phong cách khá nhất quán nhưng có vẻ như một tùy chọn mới đang hoạt động với cài đặt “khả năng hiển thị cao” tối hơn."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "83b7d0d15eb92c92": {
+    "title": {
+      "en": "Now Firefox can select which sites use its VPN, and clear your browsing history with one click",
+      "vi": "Giờ đây Firefox có thể chọn trang web nào sử dụng VPN của nó và xóa lịch sử duyệt web của bạn chỉ bằng một cú nhấp chuột"
+    },
+    "summary": {
+      "en": "Mozilla released Firefox 161 on Tuesday with a new setting you can use to choose which pages automatically open with the browser's VPN active. Using the \"Manage VPN rules\" option in Firefox's VPN panel, you can set it to \"always on\" or \"always off\" for specific sites, so you…",
+      "vi": "Mozilla đã phát hành Firefox 161 vào thứ Ba với một cài đặt mới mà bạn có thể sử dụng để chọn những trang nào sẽ tự động mở khi VPN của trình duyệt đang hoạt động. Bằng cách sử dụng tùy chọn \"Quản lý quy tắc VPN\" trong bảng điều khiển VPN của Firefox, bạn có thể đặt tùy chọn này thành \"luôn bật\" hoặc \"luôn tắt\" cho…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "44bbba50d547691a": {
+    "title": {
+      "en": "Tom's Hardware’s CES 2027 Awards: How to enter your product",
+      "vi": "Giải thưởng CES 2027 của Tom's Hardware: Cách nhập sản phẩm của bạn"
+    },
+    "summary": {
+      "en": "Here’s how to submit your products for Tom's Hardware CES 2027 Awards.",
+      "vi": "Dưới đây là cách gửi sản phẩm của bạn cho Giải thưởng Tom's Hardware CES 2027."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "d94abafa6f8b4593": {
+    "title": {
+      "vi": "Rosetta sắp hết hạn: kiểm tra app Intel trên Mac trước khi lên macOS 28",
+      "en": "Rosetta is about to expire: check Intel apps on Mac before upgrading to macOS 28"
+    },
+    "summary": {
+      "vi": "Áp dụng cho: máy Mac dùng chip Apple silicon (M1, M2, M3, M4 trở về sau). Cách xem danh sách app Intel trong Cài đặt hệ thống cần macOS 27 Golden Gate trở lên; cách kiểm tra từng app bằng Finder",
+      "en": "Applies to: Macs using Apple silicon chips (M1, M2, M3, M4 and later). How to view the Intel app list in System Settings requires macOS 27 Golden Gate or later; How to check each app using Finder"
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "0f00d87bf8353e7f": {
+    "title": {
+      "vi": "4 sai lầm phổ biến khi sử dụng pin sạc dự phòng",
+      "en": "4 common mistakes when using backup batteries"
+    },
+    "summary": {
+      "vi": "Pin sạc dự phòng giúp duy trì năng lượng cho thiết bị di động nhưng dễ giảm tuổi thọ hoặc mất an toàn nếu dùng sai cách.",
+      "en": "Backup batteries help maintain power for mobile devices but can easily reduce their lifespan or become unsafe if used incorrectly."
+    },
+    "translated": {
+      "en": "machine"
+    }
   }
 }
