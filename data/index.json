@@ -1479,6 +1479,79 @@
       "vi": "machine"
     }
   },
+  "673aaa483b6568ba": {
+    "id": "673aaa483b6568ba",
+    "slug": "android-canary-2611-hides-an-iphone-style-scroll-to-top-shor-673aaa",
+    "url": "https://www.androidauthority.com/android-scroll-to-top-feature-canary-2611-apk-teardown-3738735",
+    "source": {
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Aamir Siddiqui",
+    "published_at": "2026-11-24T11:50:40+00:00",
+    "fetched_at": "2026-11-24T12:39:10.568343+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Android Canary 2611 hides an iPhone-style scroll-to-top shortcut, and we got it working",
+      "vi": "Android Canary 2611 ẩn lối tắt cuộn lên trên kiểu iPhone và chúng tôi đã làm cho nó hoạt động"
+    },
+    "summary": {
+      "en": "Google hasn't added a way to trigger it yet, but you can almost guess what gesture it would adopt for this shortcut.",
+      "vi": "Google chưa thêm cách kích hoạt nó, nhưng bạn gần như có thể đoán được cử chỉ nào sẽ áp dụng cho phím tắt này."
+    },
+    "categories": [
+      "android",
+      "ios"
+    ],
+    "tags": [
+      "shortcut"
+    ],
+    "difficulty": "easy",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "77a0a17125e44a2e": {
+    "id": "77a0a17125e44a2e",
+    "slug": "the-best-android-keyboard-app-isnt-on-the-play-store-heres-h-77a0a1",
+    "url": "https://www.androidauthority.com/gboard-alternative-heliboard-how-to-install-3737967",
+    "source": {
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Dhruv Bhutani",
+    "published_at": "2026-11-24T09:00:38+00:00",
+    "fetched_at": "2026-11-24T12:39:10.568343+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "The best Android keyboard app isn’t on the Play Store. Here’s how to install it",
+      "vi": "Ứng dụng bàn phím Android tốt nhất không có trên Play Store. Đây là cách cài đặt nó"
+    },
+    "summary": {
+      "en": "HeliBoard brings customization, clipboard history and offline typing to Android, without Google’s data collection.",
+      "vi": "HeliBoard mang đến khả năng tùy chỉnh, lịch sử clipboard và nhập ngoại tuyến cho Android mà không cần thu thập dữ liệu của Google."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
   "009d89703dd91abd": {
     "id": "009d89703dd91abd",
     "slug": "chinh-sua-toan-bo-ban-trinh-bay-voi-gemini-trong-google-tran-009d89",
@@ -4098,6 +4171,41 @@
       "vi": "machine"
     }
   },
+  "287419dc3ebdaba3": {
+    "id": "287419dc3ebdaba3",
+    "slug": "samsung-hid-some-of-one-ui-95s-coolest-customization-feature-287419",
+    "url": "https://www.androidauthority.com/one-ui-9-5-lock-screen-how-to-customize-3738261",
+    "source": {
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Pankil Shah",
+    "published_at": "2026-11-24T10:30:41+00:00",
+    "fetched_at": "2026-11-24T12:39:10.568343+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Samsung hid some of One UI 9.5’s coolest customization features: Here’s how to try them",
+      "vi": "Samsung đã giấu một số tính năng tùy chỉnh thú vị nhất của One UI 9.5: Đây là cách dùng thử"
+    },
+    "summary": {
+      "en": "My lock screen finally feels alive.",
+      "vi": "Màn hình khóa của tôi cuối cùng cũng cảm thấy sống động."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.1,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
   "da854c7971235a7a": {
     "id": "da854c7971235a7a",
     "slug": "thousands-of-vulnerable-fridges-patched-against-cyberattacks-da854c",
@@ -4864,6 +4972,44 @@
       "vi": "machine"
     },
     "hidden": false
+  },
+  "00758af3808ec06a": {
+    "id": "00758af3808ec06a",
+    "slug": "viet-sau-su-hon-loan-mot-ngay-binh-thuong-di-dao-o-paris-00758a",
+    "url": "https://sspai.com/post/119412",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "中天与大瓶子",
+    "published_at": "2026-11-24T03:03:10+00:00",
+    "fetched_at": "2026-11-24T12:39:10.568343+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "写在动荡之后：漫步巴黎的寻常一日",
+      "vi": "Viết sau sự hỗn loạn: một ngày bình thường đi dạo ở Paris",
+      "en": "Written after the turmoil: an ordinary day walking in Paris"
+    },
+    "summary": {
+      "zh-CN": "巴黎市徽上的那艘船，依然留着它的格言：「任凭风浪，亦不沉没。」 查看全文",
+      "vi": "Con tàu trên quốc huy của Paris vẫn giữ nguyên khẩu hiệu: “Nó sẽ không chìm dù có gió và sóng”. Xem toàn văn",
+      "en": "The ship on the coat of arms of Paris still retains its motto: \"It will not sink despite the wind and waves.\" View full text"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.05,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
   },
   "86f92144e20a5795": {
     "id": "86f92144e20a5795",
@@ -5728,11 +5874,11 @@
     "original_lang": "en",
     "title": {
       "en": "Blanc, the browser made with AI, swaps Electron for Chromium",
-      "vi": "Blanc, the browser made with AI, swaps Electron for Chromium"
+      "vi": "Blanc, trình duyệt được tạo bằng AI, hoán đổi Electron lấy Chrome"
     },
     "summary": {
       "en": "A new beta of Blanc, the AI-built web browser, is available for testing – and this one is built directly on Chromium. Current versions of Blanc use castLabs’ Electron fork, which includes Widevine so sites like Netflix work. But Electron only includes enough Chromium to display…",
-      "vi": "A new beta of Blanc, the AI-built web browser, is available for testing – and this one is built directly on Chromium. Current versions of Blanc use castLabs’ Electron fork, which includes Widevine so sites like Netflix work. But Electron only includes enough Chromium to display…"
+      "vi": "Bản beta mới của Blanc, trình duyệt web do AI xây dựng, hiện có sẵn để thử nghiệm – và bản này được xây dựng trực tiếp trên Chrome. Các phiên bản hiện tại của Blanc sử dụng phân nhánh Electron của castLabs, bao gồm Widevine để các trang web như Netflix hoạt động. Nhưng Electron chỉ bao gồm đủ lượng Crom để hiển thị…"
     },
     "categories": [
       "ai"
@@ -5743,13 +5889,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 3
-    },
-    "translate_next_retry": {
-      "vi": "2026-11-23T16:25:04+00:00"
+      "vi": "machine"
     }
   },
   "c8cc58f907ae3685": {
@@ -5769,11 +5909,11 @@
     "original_lang": "en",
     "title": {
       "en": "Norway’s Dropbox Rival Jottacloud is building a Linux app",
-      "vi": "Norway’s Dropbox Rival Jottacloud is building a Linux app"
+      "vi": "Đối thủ Dropbox của Na Uy Jottacloud đang xây dựng một ứng dụng Linux"
     },
     "summary": {
       "en": "Norwegian Dropbox rival Jottacloud is finally working on a desktop app for Linux. Jottacloud, run by Jotta Group AS, has been around since 2008, offering file and photo backup, syncing and sharing via official Windows, Apple and Android apps. What it hasn’t had is a ‘proper…",
-      "vi": "Norwegian Dropbox rival Jottacloud is finally working on a desktop app for Linux. Jottacloud, run by Jotta Group AS, has been around since 2008, offering file and photo backup, syncing and sharing via official Windows, Apple and Android apps. What it hasn’t had is a ‘proper…"
+      "vi": "Đối thủ của Dropbox ở Na Uy, Jottacloud cuối cùng cũng đang phát triển một ứng dụng dành cho máy tính để bàn dành cho Linux. Jottacloud, do Jotta Group AS điều hành, đã hoạt động từ năm 2008, cung cấp tính năng sao lưu, đồng bộ hóa và chia sẻ tệp và ảnh thông qua các ứng dụng chính thức của Windows, Apple và Android.…"
     },
     "categories": [
       "linux",
@@ -5787,13 +5927,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 3
-    },
-    "translate_next_retry": {
-      "vi": "2026-11-23T22:32:49+00:00"
+      "vi": "machine"
     }
   },
   "6b954b36142cda5a": {
@@ -8090,11 +8224,11 @@
     "original_lang": "vi",
     "title": {
       "vi": "Công an thông báo: Người dân có thể chủ động khóa khẩn cấp tài khoản VNeID khi có dấu hiệu sau",
-      "en": "Công an thông báo: Người dân có thể chủ động khóa khẩn cấp tài khoản VNeID khi có dấu hiệu sau"
+      "en": "Police announced: People can proactively lock their VNeID accounts when the following signs appear"
     },
     "summary": {
       "vi": "Công an tỉnh Thái Nguyên khuyến cáo người dân tuyệt đối không chia sẻ mật khẩu, mã OTP, mã passcode và thông tin đăng nhập VNeID cho bất kỳ cá nhân nào, kể cả người tự xưng là cán bộ Công an hoặc nhân viên cơ quan nhà nước.",
-      "en": "Công an tỉnh Thái Nguyên khuyến cáo người dân tuyệt đối không chia sẻ mật khẩu, mã OTP, mã passcode và thông tin đăng nhập VNeID cho bất kỳ cá nhân nào, kể cả người tự xưng là cán bộ Công an hoặc nhân viên cơ quan nhà nước."
+      "en": "Thai Nguyen Provincial Police advise people to absolutely not share passwords, OTP codes, passcodes and VNeID login information with any individual, including people claiming to be police officers or state agency employees."
     },
     "categories": [
       "security"
@@ -8105,13 +8239,7 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "en": false
-    },
-    "translate_attempts": {
-      "en": 3
-    },
-    "translate_next_retry": {
-      "en": "2026-11-23T22:32:55+00:00"
+      "en": "machine"
     }
   },
   "a07d8ae926f256fd": {

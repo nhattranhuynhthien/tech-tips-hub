@@ -8668,5 +8668,99 @@
     "translated": {
       "en": "machine"
     }
+  },
+  "00758af3808ec06a": {
+    "title": {
+      "zh-CN": "写在动荡之后：漫步巴黎的寻常一日",
+      "vi": "Viết sau sự hỗn loạn: một ngày bình thường đi dạo ở Paris",
+      "en": "Written after the turmoil: an ordinary day walking in Paris"
+    },
+    "summary": {
+      "zh-CN": "巴黎市徽上的那艘船，依然留着它的格言：「任凭风浪，亦不沉没。」 查看全文",
+      "vi": "Con tàu trên quốc huy của Paris vẫn giữ nguyên khẩu hiệu: “Nó sẽ không chìm dù có gió và sóng”. Xem toàn văn",
+      "en": "The ship on the coat of arms of Paris still retains its motto: \"It will not sink despite the wind and waves.\" View full text"
+    },
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "673aaa483b6568ba": {
+    "title": {
+      "en": "Android Canary 2611 hides an iPhone-style scroll-to-top shortcut, and we got it working",
+      "vi": "Android Canary 2611 ẩn lối tắt cuộn lên trên kiểu iPhone và chúng tôi đã làm cho nó hoạt động"
+    },
+    "summary": {
+      "en": "Google hasn't added a way to trigger it yet, but you can almost guess what gesture it would adopt for this shortcut.",
+      "vi": "Google chưa thêm cách kích hoạt nó, nhưng bạn gần như có thể đoán được cử chỉ nào sẽ áp dụng cho phím tắt này."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "77a0a17125e44a2e": {
+    "title": {
+      "en": "The best Android keyboard app isn’t on the Play Store. Here’s how to install it",
+      "vi": "Ứng dụng bàn phím Android tốt nhất không có trên Play Store. Đây là cách cài đặt nó"
+    },
+    "summary": {
+      "en": "HeliBoard brings customization, clipboard history and offline typing to Android, without Google’s data collection.",
+      "vi": "HeliBoard mang đến khả năng tùy chỉnh, lịch sử clipboard và nhập ngoại tuyến cho Android mà không cần thu thập dữ liệu của Google."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "287419dc3ebdaba3": {
+    "title": {
+      "en": "Samsung hid some of One UI 9.5’s coolest customization features: Here’s how to try them",
+      "vi": "Samsung đã giấu một số tính năng tùy chỉnh thú vị nhất của One UI 9.5: Đây là cách dùng thử"
+    },
+    "summary": {
+      "en": "My lock screen finally feels alive.",
+      "vi": "Màn hình khóa của tôi cuối cùng cũng cảm thấy sống động."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "6c57f7675e0c1ccb": {
+    "title": {
+      "en": "Blanc, the browser made with AI, swaps Electron for Chromium",
+      "vi": "Blanc, trình duyệt được tạo bằng AI, hoán đổi Electron lấy Chrome"
+    },
+    "summary": {
+      "en": "A new beta of Blanc, the AI-built web browser, is available for testing – and this one is built directly on Chromium. Current versions of Blanc use castLabs’ Electron fork, which includes Widevine so sites like Netflix work. But Electron only includes enough Chromium to display…",
+      "vi": "Bản beta mới của Blanc, trình duyệt web do AI xây dựng, hiện có sẵn để thử nghiệm – và bản này được xây dựng trực tiếp trên Chrome. Các phiên bản hiện tại của Blanc sử dụng phân nhánh Electron của castLabs, bao gồm Widevine để các trang web như Netflix hoạt động. Nhưng Electron chỉ bao gồm đủ lượng Crom để hiển thị…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "c8cc58f907ae3685": {
+    "title": {
+      "en": "Norway’s Dropbox Rival Jottacloud is building a Linux app",
+      "vi": "Đối thủ Dropbox của Na Uy Jottacloud đang xây dựng một ứng dụng Linux"
+    },
+    "summary": {
+      "en": "Norwegian Dropbox rival Jottacloud is finally working on a desktop app for Linux. Jottacloud, run by Jotta Group AS, has been around since 2008, offering file and photo backup, syncing and sharing via official Windows, Apple and Android apps. What it hasn’t had is a ‘proper…",
+      "vi": "Đối thủ của Dropbox ở Na Uy, Jottacloud cuối cùng cũng đang phát triển một ứng dụng dành cho máy tính để bàn dành cho Linux. Jottacloud, do Jotta Group AS điều hành, đã hoạt động từ năm 2008, cung cấp tính năng sao lưu, đồng bộ hóa và chia sẻ tệp và ảnh thông qua các ứng dụng chính thức của Windows, Apple và Android.…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "0db107b8ed055fe9": {
+    "title": {
+      "vi": "Công an thông báo: Người dân có thể chủ động khóa khẩn cấp tài khoản VNeID khi có dấu hiệu sau",
+      "en": "Police announced: People can proactively lock their VNeID accounts when the following signs appear"
+    },
+    "summary": {
+      "vi": "Công an tỉnh Thái Nguyên khuyến cáo người dân tuyệt đối không chia sẻ mật khẩu, mã OTP, mã passcode và thông tin đăng nhập VNeID cho bất kỳ cá nhân nào, kể cả người tự xưng là cán bộ Công an hoặc nhân viên cơ quan nhà nước.",
+      "en": "Thai Nguyen Provincial Police advise people to absolutely not share passwords, OTP codes, passcodes and VNeID login information with any individual, including people claiming to be police officers or state agency employees."
+    },
+    "translated": {
+      "en": "machine"
+    }
   }
 }
