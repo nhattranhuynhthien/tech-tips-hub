@@ -912,7 +912,7 @@
   },
   "801e86407e3d3393": {
     "id": "801e86407e3d3393",
-    "slug": "23-5-win11-801e86",
+    "slug": "it-nhat-5-lan-thu-trong-khoang-23-nam-microsoft-lai-dau-con-801e86",
     "url": "https://www.ithome.com/1/032/084.htm",
     "source": {
       "id": "ithome-cn",
@@ -927,13 +927,13 @@
     "original_lang": "zh-CN",
     "title": {
       "zh-CN": "约 23 年里至少 5 次尝试：微软再战“人脉”，Win11 小部件可直达聊天",
-      "vi": "约 23 年里至少 5 次尝试：微软再战“人脉”，Win11 小部件可直达聊天",
-      "en": "约 23 年里至少 5 次尝试：微软再战“人脉”，Win11 小部件可直达聊天"
+      "vi": "Ít nhất 5 lần thử trong khoảng 23 năm: Microsoft lại đấu \"con người\", widget Win11 có thể vào thẳng chat",
+      "en": "At least 5 attempts in about 23 years: Microsoft battles \"people\" again, Win11 widget can directly access chat"
     },
     "summary": {
       "zh-CN": "IT之家 11 月 25 日消息，科技媒体 NeoWin 今天（11 月 25 日）发布博文，报道称 在 Windows 11 Build 26340.10032 预览版中 ，微软正在测试全新的“人脉”（People）小部件，试图在系统小部件面板中集中呈现常用联系人。 根据微软官方公告内容，这款新小部件会从支持的通讯应用中读取联系人，并将其集中显示在 Windows 11 的小部件面板里。用户点击某个联系人后，可直接跳转到对应应用中的聊天界面，从而减少来回切换多个通讯软件的操作。 在应用支持方面， 微软官方表示目前仅支持 WhatsApp 和…",
-      "vi": "IT之家 11 月 25 日消息，科技媒体 NeoWin 今天（11 月 25 日）发布博文，报道称 在 Windows 11 Build 26340.10032 预览版中 ，微软正在测试全新的“人脉”（People）小部件，试图在系统小部件面板中集中呈现常用联系人。 根据微软官方公告内容，这款新小部件会从支持的通讯应用中读取联系人，并将其集中显示在 Windows 11 的小部件面板里。用户点击某个联系人后，可直接跳转到对应应用中的聊天界面，从而减少来回切换多个通讯软件的操作。 在应用支持方面， 微软官方表示目前仅支持 WhatsApp 和…",
-      "en": "IT之家 11 月 25 日消息，科技媒体 NeoWin 今天（11 月 25 日）发布博文，报道称 在 Windows 11 Build 26340.10032 预览版中 ，微软正在测试全新的“人脉”（People）小部件，试图在系统小部件面板中集中呈现常用联系人。 根据微软官方公告内容，这款新小部件会从支持的通讯应用中读取联系人，并将其集中显示在 Windows 11 的小部件面板里。用户点击某个联系人后，可直接跳转到对应应用中的聊天界面，从而减少来回切换多个通讯软件的操作。 在应用支持方面， 微软官方表示目前仅支持 WhatsApp 和…"
+      "vi": "IT House đưa tin vào ngày 25 tháng 11 rằng phương tiện truyền thông công nghệ NeoWin đã đăng một bài đăng trên blog vào ngày hôm nay (25 tháng 11), báo cáo rằng trong phiên bản xem trước của Windows 11 Build 26340.10032, Microsoft đang thử nghiệm tiện ích \"People\" mới nhằm cố gắng hiển thị tập trung các liên hệ được…",
+      "en": "IT House reported on November 25 that technology media NeoWin published a blog post today (November 25), reporting that in the preview version of Windows 11 Build 26340.10032, Microsoft is testing a new \"People\" widget in an attempt to centrally display frequently used contacts in the system widget panel. According to…"
     },
     "categories": [
       "windows"
@@ -944,12 +944,47 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false,
-      "en": false
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "5ddbde0e5503e1b8": {
+    "id": "5ddbde0e5503e1b8",
+    "slug": "app1yab-trinh-duyet-loi-kep-ma-nguon-mo-than-thien-voi-ai-da-5ddbde",
+    "url": "https://sspai.com/post/119310",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
     },
-    "translate_attempts": {
-      "vi": 1,
-      "en": 1
+    "author": "宛潼",
+    "published_at": "2026-11-25T06:59:16+00:00",
+    "fetched_at": "2026-11-25T17:24:27.723080+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "App+1｜Yab：开源、AI 友好的双内核浏览器，给舍不得 Arc 的你",
+      "vi": "App+1｜Yab: Trình duyệt lõi kép mã nguồn mở, thân thiện với AI, dành cho những ai không thể rời khỏi Arc",
+      "en": "App+1｜Yab: Open source, AI-friendly dual-core browser, for those of you who can’t bear to leave Arc"
+    },
+    "summary": {
+      "zh-CN": "Arc 花了很大力气重新设计「人该如何使用浏览器」，YAB 在继承这份交互遗产的同时，又顺手为 AI 打开了另一扇门。 查看全文",
+      "vi": "Arc đã dành rất nhiều nỗ lực để thiết kế lại “cách mọi người sử dụng trình duyệt”. Mặc dù YAB kế thừa di sản tương tác này nhưng nó cũng mở ra một cánh cửa khác cho AI. Xem toàn văn",
+      "en": "Arc has spent a lot of effort redesigning \"how people use browsers.\" While YAB inherits this interactive legacy, it also opens another door for AI. View full text"
+    },
+    "categories": [
+      "browser",
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
     }
   },
   "77e32da8e58573a6": {
@@ -1719,11 +1754,11 @@
     "original_lang": "en",
     "title": {
       "en": "The Verge’s 2026 gift guide for dads",
-      "vi": "The Verge’s 2026 gift guide for dads"
+      "vi": "Hướng dẫn quà tặng năm 2026 của The Verge dành cho các ông bố"
     },
     "summary": {
       "en": "Gone are the days when you could just buy your father a random tie or some leather-clad alcohol vessel or a shaving kit. Dads want - nay, deserve - something memorable. Luckily for you, it's not that hard to find something special that he'll approve of, and we're here to guide…",
-      "vi": "Gone are the days when you could just buy your father a random tie or some leather-clad alcohol vessel or a shaving kit. Dads want - nay, deserve - something memorable. Luckily for you, it's not that hard to find something special that he'll approve of, and we're here to guide…"
+      "vi": "Đã qua rồi cái thời bạn có thể mua ngẫu nhiên cho bố mình một chiếc cà vạt, một chiếc lọ đựng cồn bọc da hay một bộ dụng cụ cạo râu. Các ông bố muốn - không, xứng đáng - một điều gì đó đáng nhớ. Thật may mắn cho bạn, không khó để tìm thấy điều gì đó đặc biệt mà anh ấy sẽ chấp thuận và chúng tôi ở đây để hướng dẫn…"
     },
     "categories": [
       "hardware"
@@ -1734,10 +1769,147 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
+    }
+  },
+  "74b608e4c0cfebe9": {
+    "id": "74b608e4c0cfebe9",
+    "slug": "microsoft-fixes-microsoft-365-bug-blocking-access-to-office-74b608",
+    "url": "https://www.bleepingcomputer.com/news/microsoft/microsoft-fixes-blank-dialog-that-made-microsoft-365-office-apps-unusable",
+    "source": {
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "site_url": "https://www.bleepingcomputer.com",
+      "kind": "news",
+      "content_type": "article"
     },
-    "translate_attempts": {
-      "vi": 1
+    "author": "Sergiu Gatlan",
+    "published_at": "2026-11-25T11:16:32+00:00",
+    "fetched_at": "2026-11-25T17:24:27.723080+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Microsoft fixes Microsoft 365 bug blocking access to Office apps",
+      "vi": "Microsoft sửa lỗi Microsoft 365 chặn quyền truy cập vào ứng dụng Office"
+    },
+    "summary": {
+      "en": "Earlier this week, Microsoft resolved a known issue that was preventing some Microsoft 365 customers from accessing Office applications.",
+      "vi": "Đầu tuần này, Microsoft đã giải quyết một sự cố đã biết khiến một số khách hàng Microsoft 365 không thể truy cập các ứng dụng Office."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "cd2a6c2b8c56eb61": {
+    "id": "cd2a6c2b8c56eb61",
+    "slug": "motorolas-android-17-update-fixes-android-auto-connections-o-cd2a6c",
+    "url": "https://www.androidauthority.com/motorola-razr-android-17-android-auto-fix-3739365",
+    "source": {
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Hillary Keverenge",
+    "published_at": "2026-11-25T13:18:36+00:00",
+    "fetched_at": "2026-11-25T17:24:27.723080+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Motorola’s Android 17 update fixes Android Auto connections on folded Razr phones",
+      "vi": "Bản cập nhật Android 17 của Motorola sửa lỗi kết nối Android Auto trên điện thoại Razr màn hình gập"
+    },
+    "summary": {
+      "en": "No more flipping open your Razr every time you start your car.",
+      "vi": "Không cần phải mở Razr mỗi khi bạn khởi động xe nữa."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "cb7227ebb4b0b518": {
+    "id": "cb7227ebb4b0b518",
+    "slug": "the-verges-guide-to-the-best-gifts-under-100-cb7227",
+    "url": "https://www.theverge.com/gadgets/1028004/best-gifts-under-100-2026",
+    "source": {
+      "id": "theverge",
+      "name": "The Verge",
+      "site_url": "https://www.theverge.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Ryan Waniata",
+    "published_at": "2026-11-25T17:00:00+00:00",
+    "fetched_at": "2026-11-25T17:24:27.723080+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "The Verge’s guide to the best gifts under $100",
+      "vi": "Hướng dẫn của The Verge về những món quà tốt nhất dưới 100 đô la"
+    },
+    "summary": {
+      "en": "Even in an era of inflation like the one we're living through now, $100 can still buy a lot… if you know where to look. In fact, it's enough to get something useful and well-made, but not so pricey that it's likely to leave you with lingering guilt or lead to insurmountable…",
+      "vi": "Ngay cả trong thời đại lạm phát như thời đại chúng ta đang trải qua hiện nay, 100 đô la vẫn có thể mua được rất nhiều thứ… nếu bạn biết tìm ở đâu. Trên thực tế, chỉ cần mua thứ gì đó hữu ích và được làm tốt là đủ, nhưng không quá đắt đến mức khiến bạn cảm thấy tội lỗi kéo dài hoặc dẫn đến những cảm giác không thể vượt…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "922b907db07d414c": {
+    "id": "922b907db07d414c",
+    "slug": "the-verges-guide-to-affordable-holiday-gifts-under-25-922b90",
+    "url": "https://www.theverge.com/gadgets/1023735/best-gifts-under-25-2026",
+    "source": {
+      "id": "theverge",
+      "name": "The Verge",
+      "site_url": "https://www.theverge.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Ryan Waniata",
+    "published_at": "2026-11-25T15:00:00+00:00",
+    "fetched_at": "2026-11-25T17:24:27.723080+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "The Verge’s guide to affordable holiday gifts under $25",
+      "vi": "Hướng dẫn của The Verge về quà tặng kỳ nghỉ giá cả phải chăng dưới 25 đô la"
+    },
+    "summary": {
+      "en": "Gift-giving on a tight budget is tough, but constraints can also encourage some creative thinking. We thought for a long while (and asked other Verge staffers) about the best items out there, and we're pretty happy with what we came up with. For this list, we've rounded up a…",
+      "vi": "Tặng quà với ngân sách eo hẹp là điều khó khăn nhưng những hạn chế cũng có thể khuyến khích một số tư duy sáng tạo. Chúng tôi đã suy nghĩ rất lâu (và hỏi các nhân viên khác của Verge) về những mặt hàng tốt nhất hiện có và chúng tôi khá hài lòng với những gì mình nghĩ ra. Đối với danh sách này, chúng tôi đã tổng hợp…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
     }
   },
   "009d89703dd91abd": {
@@ -3442,7 +3614,7 @@
   },
   "1b8f233e2b31e70d": {
     "id": "1b8f233e2b31e70d",
-    "slug": "palm-pre-1b8f23",
+    "slug": "ghi-chu-hoai-niem-palm-pre-dien-thoai-tich-hop-he-thong-lam-1b8f23",
     "url": "https://sspai.com/post/118791",
     "source": {
       "id": "sspai-cn",
@@ -3457,13 +3629,13 @@
     "original_lang": "zh-CN",
     "title": {
       "zh-CN": "怀旧手记｜Palm Pre：内藏「划时代」系统的手机",
-      "vi": "怀旧手记｜Palm Pre：内藏「划时代」系统的手机",
-      "en": "怀旧手记｜Palm Pre：内藏「划时代」系统的手机"
+      "vi": "Ghi Chú Hoài Niệm | Palm Pre: Điện thoại tích hợp hệ thống “làm nên kỷ nguyên”",
+      "en": "Nostalgic Notes | Palm Pre: A mobile phone with a built-in “epoch-making” system"
     },
     "summary": {
       "zh-CN": "Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ... 查看全文",
-      "vi": "Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ... 查看全文",
-      "en": "Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ... 查看全文"
+      "vi": "Được đề xuất trên trang chủ Matrix Matrix là một cộng đồng viết lách thiểu số. Chúng tôi chủ trương chia sẻ trải nghiệm thực tế về sản phẩm, kinh nghiệm và suy nghĩ thực tế. Thỉnh thoảng, chúng tôi sẽ chọn những bài viết chất lượng cao nhất của Matrix để giới thiệu những trải nghiệm và ý kiến ​​xác thực nhất từ…",
+      "en": "Recommended on Matrix home page Matrix is ​​a minority writing community. We advocate sharing real product experiences, practical experiences and thoughts. We will occasionally select Matrix's highest-quality articles to showcase the most authentic experiences and opinions from users. The article represents the…"
     },
     "categories": [
       "dev"
@@ -3474,12 +3646,8 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false,
-      "en": false
-    },
-    "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": "machine",
+      "en": "machine"
     }
   },
   "9174e1b86371fb60": {
@@ -3499,11 +3667,11 @@
     "original_lang": "en",
     "title": {
       "en": "Ubuntu details plans to replace its app grid with an AI smart launcher",
-      "vi": "Ubuntu details plans to replace its app grid with an AI smart launcher"
+      "vi": "Chi tiết Ubuntu có kế hoạch thay thế lưới ứng dụng của nó bằng trình khởi chạy thông minh AI"
     },
     "summary": {
       "en": "Canonical has shared more detail on plans for an AI-powered Ubuntu launcher, which it hopes will offer users “a new way to interact” with the desktop. In a post on Ubuntu Discourse, Canonical desktop engineer Didier Roche says the goal is to create a unified ‘entry point’ that…",
-      "vi": "Canonical has shared more detail on plans for an AI-powered Ubuntu launcher, which it hopes will offer users “a new way to interact” with the desktop. In a post on Ubuntu Discourse, Canonical desktop engineer Didier Roche says the goal is to create a unified ‘entry point’ that…"
+      "vi": "Canonical đã chia sẻ chi tiết hơn về các kế hoạch dành cho trình khởi chạy Ubuntu được hỗ trợ bởi AI, công ty hy vọng sẽ mang đến cho người dùng “một cách mới để tương tác” với máy tính để bàn. Trong một bài đăng trên Ubuntu Discourse, kỹ sư máy tính để bàn của Canonical, Didier Roche, cho biết mục tiêu là tạo ra một…"
     },
     "categories": [
       "linux",
@@ -3515,10 +3683,118 @@
     "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
+      "vi": "machine"
+    }
+  },
+  "5aaaa86e33a33f7a": {
+    "id": "5aaaa86e33a33f7a",
+    "slug": "buoc-sang-nam-2027-goi-y-lich-tet-dang-mua-5aaaa8",
+    "url": "https://sspai.com/post/119264",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
     },
-    "translate_attempts": {
-      "vi": 1
+    "author": "ElijahLee",
+    "published_at": "2026-11-25T09:48:34+00:00",
+    "fetched_at": "2026-11-25T17:24:27.723080+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "翻开 2027， 值得入手的新年日历推荐",
+      "vi": "Bước sang năm 2027, gợi ý lịch Tết đáng mua",
+      "en": "Turning to 2027, recommended New Year calendars worth buying"
+    },
+    "summary": {
+      "zh-CN": "按照中国的农历纪年法，2027年是羊年，《说文解字》说「羊，祥也」。《诗经・小雅・无羊》云「尔羊来思，其角濈濈」，写羊群缓缓归野，安然相聚，恰合丁未岁的平和气象。一只吉羊，一册日历，便是收纳这一年日常 ... 查看全文",
+      "vi": "Theo âm lịch của Trung Quốc, năm 2027 là năm con Cừu. \"Shuowen Jiezi\" nói \"Cừu là điềm lành.\" \"Sách Bài ca, Xiaoya, No Sheep\" nói, \"Khi những con cừu nghĩ về bạn, sừng của chúng sẽ cong lại.\" Nó mô tả đàn cừu từ từ trở về nơi hoang dã và tụ tập với nhau một cách hòa bình, phù hợp với bầu không khí yên bình của Ding…",
+      "en": "According to the Chinese lunar calendar, 2027 is the Year of the Sheep. \"Shuowen Jiezi\" says \"Sheep is auspicious.\" \"The Book of Songs, Xiaoya, No Sheep\" says, \"When the sheep come to think about you, their horns are curled.\" It describes that the sheep slowly return to the wild and gather together peacefully, which…"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine",
+      "en": "machine"
+    }
+  },
+  "df3fa76614dec23c": {
+    "id": "df3fa76614dec23c",
+    "slug": "popos-2604-lts-is-out-heres-what-a-year-of-cosmic-work-gets-df3fa7",
+    "url": "https://feed.itsfoss.com/link/24361/17540275/pop-os-26-04-release",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "2026-11-25T13:18:52+00:00",
+    "fetched_at": "2026-11-25T17:24:27.723080+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Pop!_OS 26.04 LTS Is Out: Here's What a Year of COSMIC Work Gets You",
+      "vi": "Pop!_OS 26.04 LTS đã ra mắt: Đây là những gì một năm làm việc COSMIC mang lại cho bạn"
+    },
+    "summary": {
+      "en": "Pop!_OS 26.04 LTS is based on Ubuntu 26.04 with Linux 7.2 and COSMIC 1.11. You get a redesigned store, automatic updates and a frosted glass look.",
+      "vi": "Pop!_OS 26.04 LTS dựa trên Ubuntu 26.04 với Linux 7.2 và COSMIC 1.11. Bạn nhận được một cửa hàng được thiết kế lại, cập nhật tự động và giao diện bằng kính mờ."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "5aa7458c52855c91": {
+    "id": "5aa7458c52855c91",
+    "slug": "after-29-years-of-konsole-theres-a-new-kde-terminal-and-i-to-5aa745",
+    "url": "https://feed.itsfoss.com/link/24361/17540145/kwi-terminal",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Abhishek Prakash",
+    "published_at": "2026-11-25T06:45:00+00:00",
+    "fetched_at": "2026-11-25T17:24:27.723080+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "After 29 Years of Konsole, There's a New KDE Terminal and I Took It for a Spin",
+      "vi": "Sau 29 năm Konsole, có một thiết bị đầu cuối KDE mới và tôi đã thử nó"
+    },
+    "summary": {
+      "en": "KDE has a new modern terminal in works. It has a Ghostty connection, and it offers GPU acceleration. Take a look at it in this hands-on review.",
+      "vi": "KDE có một thiết bị đầu cuối hiện đại mới đang hoạt động. Nó có kết nối Ghostty và cung cấp khả năng tăng tốc GPU. Hãy xem nó trong bài đánh giá thực hành này."
+    },
+    "categories": [
+      "linux",
+      "dev"
+    ],
+    "tags": [
+      "terminal"
+    ],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
     }
   },
   "c80c5fcac2e3fe98": {
@@ -4956,11 +5232,11 @@
     "original_lang": "vi",
     "title": {
       "vi": "Làm cách nào PS4 Pro “yếu” thế mà vẫn chơi được game trên TV 4K?",
-      "en": "Làm cách nào PS4 Pro “yếu” thế mà vẫn chơi được game trên TV 4K?"
+      "en": "How can the PS4 Pro be so \"weak\" and still be able to play games on a 4K TV?"
     },
     "summary": {
       "vi": "Cần nhắc lại, GPU nền Radeon trang bị trong chiếc máy console PS4 Pro có sức mạnh xử lý thô 4.2 Teraflops. Con số này tương đương với sức mạnh xử lý của mẫu card đồ hoạ GTX 1060 phiên bản 6GB, sức",
-      "en": "Cần nhắc lại, GPU nền Radeon trang bị trong chiếc máy console PS4 Pro có sức mạnh xử lý thô 4.2 Teraflops. Con số này tương đương với sức mạnh xử lý của mẫu card đồ hoạ GTX 1060 phiên bản 6GB, sức"
+      "en": "It should be mentioned that the Radeon-based GPU equipped in the PS4 Pro console has a raw processing power of 4.2 Teraflops. This number is equivalent to the processing power of the 6GB version of the GTX 1060 graphics card."
     },
     "categories": [
       "hardware"
@@ -4971,10 +5247,7 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "en": false
-    },
-    "translate_attempts": {
-      "en": 1
+      "en": "machine"
     }
   },
   "918536d85732596c": {
@@ -4994,11 +5267,11 @@
     "original_lang": "vi",
     "title": {
       "vi": "Phát hiện cài đặt trên Chrome âm thầm ngốn RAM dù đã đóng trình duyệt",
-      "en": "Phát hiện cài đặt trên Chrome âm thầm ngốn RAM dù đã đóng trình duyệt"
+      "en": "Detected settings on Chrome that silently consume RAM even when the browser is closed"
     },
     "summary": {
       "vi": "Một tùy chọn mặc định trên Google Chrome duy trì tiến trình chạy ngầm, tiêu tốn bộ nhớ ngay cả khi người dùng đã bấm nút tắt.",
-      "en": "Một tùy chọn mặc định trên Google Chrome duy trì tiến trình chạy ngầm, tiêu tốn bộ nhớ ngay cả khi người dùng đã bấm nút tắt."
+      "en": "A default option on Google Chrome keeps the process running in the background, consuming memory even when the user has pressed the shutdown button."
     },
     "categories": [
       "browser",
@@ -5012,10 +5285,7 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "en": false
-    },
-    "translate_attempts": {
-      "en": 1
+      "en": "machine"
     }
   },
   "db85abacb121d037": {
@@ -5762,6 +6032,44 @@
     },
     "hidden": false,
     "slug": "ios-272-cung-cap-cho-ung-dung-phim-tat-nhung-tinh-nang-moi-v-6f35d2"
+  },
+  "275a94abd355eccd": {
+    "id": "275a94abd355eccd",
+    "slug": "da-dong-chrome-van-bi-ngon-toi-700mb-ram-thu-pham-nam-o-mot-275a94",
+    "url": "https://genk.vn/da-dong-chrome-van-bi-ngon-toi-700mb-ram-thu-pham-nam-o-mot-tuy-chon-it-ai-de-y-165261125131316931.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "2026-11-25T06:30:00+00:00",
+    "fetched_at": "2026-11-25T17:24:27.723080+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Đã đóng Chrome vẫn bị ngốn tới 700MB RAM, thủ phạm nằm ở một tùy chọn ít ai để ý",
+      "en": "Closed Chrome still consumes up to 700MB of RAM, the culprit lies in an option that few people pay attention to"
+    },
+    "summary": {
+      "vi": "Người dùng phát hiện Chrome vẫn giữ nhiều tiến trình chạy nền dù đã đóng toàn bộ cửa sổ và tắt tùy chọn cho phép ứng dụng hoạt động ngầm.",
+      "en": "Users discovered that Chrome still kept many processes running in the background even after closing all windows and turning off the option to allow applications to run in the background."
+    },
+    "categories": [
+      "browser",
+      "ai"
+    ],
+    "tags": [
+      "chrome"
+    ],
+    "difficulty": null,
+    "score": 1.04,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "en": "machine"
+    }
   },
   "2300a891d5e063b3": {
     "id": "2300a891d5e063b3",
@@ -6846,6 +7154,80 @@
     "reading_time_min": 1,
     "translated": {
       "en": "machine"
+    }
+  },
+  "777816c50f03e837": {
+    "id": "777816c50f03e837",
+    "slug": "bypassing-ios-safaris-60-fps-limit-to-build-web-applications-777816",
+    "url": "https://rida.dev/blog/bypassing-ios-safari-60-fps-limit",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "vinhnx",
+    "published_at": "2026-11-25T03:04:37+00:00",
+    "fetched_at": "2026-11-25T17:24:27.723080+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Bypassing iOS Safari's 60 FPS Limit to Build Web Applications That Feel Native",
+      "vi": "Vượt qua giới hạn 60 FPS của iOS Safari để xây dựng các ứng dụng web có cảm giác nguyên bản"
+    },
+    "summary": {
+      "en": "Discussion on Hacker News (369 points, 129 comments).",
+      "vi": "Thảo luận về Hacker News (369 điểm, 129 bình luận)."
+    },
+    "categories": [
+      "ios",
+      "browser"
+    ],
+    "tags": [
+      "safari"
+    ],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hn_points": 369
+  },
+  "3ae03c86dd4c8df9": {
+    "id": "3ae03c86dd4c8df9",
+    "slug": "us-treasury-information-chief-spent-three-days-vibecoding-ci-3ae03c",
+    "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/us-treasury-information-chief-spent-three-days-vibecoding-civilization-game-clone-amidst-treasury-database-hack-ai-agent-studiously-attends-to-personal-project-github-users-raise-tickets-asking-him-to-attend-to-cybersecurity-incident",
+    "source": {
+      "id": "tomshardware",
+      "name": "Tom's Hardware",
+      "site_url": "https://www.tomshardware.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Jhet Borja",
+    "published_at": "2026-11-25T15:00:00+00:00",
+    "fetched_at": "2026-11-25T17:24:27.723080+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "US Treasury information chief spent three days vibecoding Civilization game clone amidst Treasury database hack",
+      "vi": "Giám đốc thông tin Kho bạc Hoa Kỳ đã dành ba ngày để sao chép trò chơi Văn minh Vibe trong bối cảnh cơ sở dữ liệu Kho bạc bị hack"
+    },
+    "summary": {
+      "en": "Legatum, a vibecoded browser-based Civilization clone by the US Treasury's own CIO is getting constant updates while the Treasury faces a cybersecurity issue.",
+      "vi": "Legatum, một bản sao Civilization dựa trên trình duyệt được mã hóa rung cảm bởi CIO của Bộ Tài chính Hoa Kỳ đang nhận được các bản cập nhật liên tục trong khi Bộ Tài chính phải đối mặt với vấn đề an ninh mạng."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
     }
   },
   "d9c39429d489eec5": {
