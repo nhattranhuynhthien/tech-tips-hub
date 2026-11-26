@@ -2093,7 +2093,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "009d89703dd91abd": {
@@ -2865,7 +2865,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "6a02e36133622d88": {
@@ -2904,7 +2904,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "73d60418285cd4ad": {
@@ -4132,8 +4132,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
   "f01842307932cb5c": {
@@ -4212,8 +4212,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
   "983343b891fc524d": {
@@ -4251,7 +4251,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "1dc558d1ede55d2c": {
@@ -4280,6 +4280,86 @@
     "categories": [
       "linux",
       "macos"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 2
+    }
+  },
+  "1ac1f703ca091bce": {
+    "id": "1ac1f703ca091bce",
+    "slug": "signal-takes-a-radical-step-to-block-gemini-and-siri-from-re-1ac1f7",
+    "url": "https://feed.itsfoss.com/link/24361/17541571/signal-blocks-gemini-siri-ai",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "2026-11-26T17:01:00+00:00",
+    "fetched_at": "2026-11-26T20:15:22.849744+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Signal Takes a Radical Step to Block Gemini and Siri From Reading Your Chats",
+      "vi": "Signal Takes a Radical Step to Block Gemini and Siri From Reading Your Chats"
+    },
+    "summary": {
+      "en": "Signal wants Apple and Google to give apps an easy way to opt out of AI data access.",
+      "vi": "Signal wants Apple and Google to give apps an easy way to opt out of AI data access."
+    },
+    "categories": [
+      "ai",
+      "ios"
+    ],
+    "tags": [
+      "gemini"
+    ],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "8b7e5956e702f878": {
+    "id": "8b7e5956e702f878",
+    "slug": "quoth-a-local-ai-speech-to-text-tool-for-linux-that-picks-yo-8b7e59",
+    "url": "https://feed.itsfoss.com/link/24361/17541371/quoth-review",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Abhishek Prakash",
+    "published_at": "2026-11-26T11:52:00+00:00",
+    "fetched_at": "2026-11-26T20:15:22.849744+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Quoth: A Local AI Speech to Text Tool for Linux That Picks Your Hardware",
+      "vi": "Quoth: A Local AI Speech to Text Tool for Linux That Picks Your Hardware"
+    },
+    "summary": {
+      "en": "Quoth is a new open source dictation app made only for Linux. It runs Whisper AI models locally and benchmarks your CPU, GPU and NPU to pick the fastest one. Pretty good tool actually.",
+      "vi": "Quoth is a new open source dictation app made only for Linux. It runs Whisper AI models locally and benchmarks your CPU, GPU and NPU to pick the fastest one. Pretty good tool actually."
+    },
+    "categories": [
+      "linux",
+      "ai"
     ],
     "tags": [],
     "difficulty": null,
@@ -5855,7 +5935,7 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 1
+      "en": 2
     }
   },
   "db85abacb121d037": {
@@ -6455,8 +6535,8 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 1,
-      "en": 1
+      "vi": 2,
+      "en": 2
     }
   },
   "86f92144e20a5795": {
@@ -6721,7 +6801,7 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 1
+      "en": 2
     }
   },
   "2300a891d5e063b3": {
@@ -7918,7 +7998,45 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 1
+      "en": 2
+    }
+  },
+  "6ffd309fca6a7159": {
+    "id": "6ffd309fca6a7159",
+    "slug": "electronics-manufacturers-set-up-memory-war-rooms-to-find-lo-6ffd30",
+    "url": "https://www.tomshardware.com/pc-components/dram/electronics-manufacturers-set-up-memory-war-rooms-to-find-lock-in-dram-supplies-amid-worst-shortage-in-history-employees-scour-ebay-contact-hundreds-of-brokers-and-snap-up-even-small-batches-of-just-5-to-12-units",
+    "source": {
+      "id": "tomshardware",
+      "name": "Tom's Hardware",
+      "site_url": "https://www.tomshardware.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Jowi Morales",
+    "published_at": "2026-11-26T16:11:07+00:00",
+    "fetched_at": "2026-11-26T20:15:22.849744+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Electronics manufacturers set up memory 'war rooms' to find, lock in DRAM supplies amid worst shortage in history",
+      "vi": "Electronics manufacturers set up memory 'war rooms' to find, lock in DRAM supplies amid worst shortage in history"
+    },
+    "summary": {
+      "en": "The memory chip shortage is forcing companies to find supplies using non-traditional avenues, such as online listings and the gray market. Some have even taken out loans just to have enough cash to buy chips as soon as they become available.",
+      "vi": "The memory chip shortage is forcing companies to find supplies using non-traditional avenues, such as online listings and the gray market. Some have even taken out loans just to have enough cash to buy chips as soon as they become available."
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "d9c39429d489eec5": {
@@ -14164,41 +14282,43 @@
     "hidden": false,
     "slug": "nordvpn-60-cho-linux-sap-ra-mat-voi-nhung-thay-doi-dot-pha-91283f"
   },
-  "1ee03a3e671258f8": {
-    "id": "1ee03a3e671258f8",
-    "slug": "five-smartwatch-heart-rate-zone-hacks-every-runner-should-kn-1ee03a",
-    "url": "https://lifehacker.com/health/best-smartwatch-heart-rate-zone-training-hacks",
+  "f596a5228c7118c6": {
+    "id": "f596a5228c7118c6",
+    "slug": "why-cant-we-just-include-functionsc-in-mainc-f596a5",
+    "url": "https://dev.to/necoz/why-cant-we-just-include-functionsc-in-mainc-1a73",
     "source": {
-      "id": "lifehacker",
-      "name": "Lifehacker",
-      "site_url": "https://lifehacker.com",
-      "kind": "news",
-      "content_type": "article"
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
     },
-    "author": "Meredith Dietz",
-    "published_at": "2026-11-06T17:30:00+00:00",
-    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "author": "EffessDev",
+    "published_at": "2026-11-26T12:21:47+00:00",
+    "fetched_at": "2026-11-26T20:15:22.849744+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Five Smartwatch Heart Rate Zone Hacks Every Runner Should Know",
-      "vi": "Năm thủ thuật đo nhịp tim trên Smartwatch mà mọi người chạy bộ nên biết"
+      "en": "Why Can't We Just #include \"functions.c\" in \"main.c\"? 🤔",
+      "vi": "Why Can't We Just #include \"functions.c\" in \"main.c\"? 🤔"
     },
     "summary": {
-      "en": "The best tips to keep you in the zone.",
-      "vi": "Những lời khuyên tốt nhất để giữ bạn trong khu vực."
+      "en": "Suppose we have two files. functions.c: #include <stdio.h> void greet(void) {",
+      "vi": "Suppose we have two files. functions.c: #include <stdio.h> void greet(void) {"
     },
     "categories": [
-      "windows"
+      "dev"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.82,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.83,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": "machine"
+      "vi": false
     },
-    "hidden": false
+    "translate_attempts": {
+      "vi": 1
+    }
   },
   "cf61c804dd9bbfb6": {
     "id": "cf61c804dd9bbfb6",
@@ -14235,6 +14355,42 @@
     "translated": {
       "vi": "machine"
     }
+  },
+  "1ee03a3e671258f8": {
+    "id": "1ee03a3e671258f8",
+    "slug": "five-smartwatch-heart-rate-zone-hacks-every-runner-should-kn-1ee03a",
+    "url": "https://lifehacker.com/health/best-smartwatch-heart-rate-zone-training-hacks",
+    "source": {
+      "id": "lifehacker",
+      "name": "Lifehacker",
+      "site_url": "https://lifehacker.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Meredith Dietz",
+    "published_at": "2026-11-06T17:30:00+00:00",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Five Smartwatch Heart Rate Zone Hacks Every Runner Should Know",
+      "vi": "Năm thủ thuật đo nhịp tim trên Smartwatch mà mọi người chạy bộ nên biết"
+    },
+    "summary": {
+      "en": "The best tips to keep you in the zone.",
+      "vi": "Những lời khuyên tốt nhất để giữ bạn trong khu vực."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.82,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false
   },
   "6cc520c9004f9169": {
     "id": "6cc520c9004f9169",
@@ -14685,42 +14841,6 @@
     "hidden": false,
     "slug": "google-maps-se-chi-duong-chinh-xac-nhat-khi-ban-bat-tinh-nan-70f0bd"
   },
-  "04205c205494c548": {
-    "id": "04205c205494c548",
-    "slug": "just-switch-to-bing-whenever-google-stops-you-with-their-cap-04205c",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xpvgzc/lpt_just_switch_to_bing_whenever_google_stops_you",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "https://www.reddit.com/r/LifeProTips/",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/huhuhahamwuah",
-    "published_at": "2026-11-07T02:43:33+00:00",
-    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Just switch to Bing whenever Google stops you with their captcha",
-      "vi": "Chỉ cần chuyển sang Bing bất cứ khi nào Google chặn bạn bằng hình ảnh xác thực của họ"
-    },
-    "summary": {
-      "en": "I got annoyed whenever I do simple, basic search on Google then hit back with a roadblock called captcha. What I do? I just switch to their competitors because I cannot fathom to be mistaken for a robot when you correctly do what is asked, especially that multiple choices where…",
-      "vi": "Tôi cảm thấy khó chịu bất cứ khi nào tôi thực hiện tìm kiếm cơ bản, đơn giản trên Google rồi lại gặp phải rào cản gọi là hình ảnh xác thực. Tôi làm gì? Tôi chỉ chuyển sang đối thủ cạnh tranh của họ vì tôi không thể hiểu được việc bị nhầm với robot khi bạn thực hiện chính xác những gì được yêu cầu, đặc biệt là nhiều…"
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.79,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false
-  },
   "e0c4a27393065c73": {
     "id": "e0c4a27393065c73",
     "url": "https://genk.vn/di-nuoc-ngoai-duoc-mang-toi-da-bao-nhieu-usd-tien-mat-165261024175952763.chn",
@@ -14793,41 +14913,41 @@
     },
     "hidden": false
   },
-  "5f16696a8573af30": {
-    "id": "5f16696a8573af30",
-    "slug": "ask-hn-tips-for-transitioning-from-web-development-to-embedd-5f1669",
-    "url": "https://news.ycombinator.com/item?id=50555002",
+  "04205c205494c548": {
+    "id": "04205c205494c548",
+    "slug": "just-switch-to-bing-whenever-google-stops-you-with-their-cap-04205c",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xpvgzc/lpt_just_switch_to_bing_whenever_google_stops_you",
     "source": {
-      "id": "hackernews",
-      "name": "Hacker News",
-      "site_url": "https://news.ycombinator.com",
-      "kind": "news",
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "https://www.reddit.com/r/LifeProTips/",
+      "kind": "tips",
       "content_type": "community"
     },
-    "author": "llmblockchain",
-    "published_at": "2026-11-19T01:37:45+00:00",
-    "fetched_at": "2026-11-22T22:31:32.604554+00:00",
+    "author": "/u/huhuhahamwuah",
+    "published_at": "2026-11-07T02:43:33+00:00",
+    "fetched_at": "2026-11-07T10:25:58.721404+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Ask HN: Tips for transitioning from web development to embedded/firmware?",
-      "vi": "Hỏi HN: Lời khuyên khi chuyển từ phát triển web sang nhúng/firmware?"
+      "en": "Just switch to Bing whenever Google stops you with their captcha",
+      "vi": "Chỉ cần chuyển sang Bing bất cứ khi nào Google chặn bạn bằng hình ảnh xác thực của họ"
     },
     "summary": {
-      "en": "Discussion on Hacker News (101 points, 66 comments).",
-      "vi": "Thảo luận về Hacker News (101 điểm, 66 bình luận)."
+      "en": "I got annoyed whenever I do simple, basic search on Google then hit back with a roadblock called captcha. What I do? I just switch to their competitors because I cannot fathom to be mistaken for a robot when you correctly do what is asked, especially that multiple choices where…",
+      "vi": "Tôi cảm thấy khó chịu bất cứ khi nào tôi thực hiện tìm kiếm cơ bản, đơn giản trên Google rồi lại gặp phải rào cản gọi là hình ảnh xác thực. Tôi làm gì? Tôi chỉ chuyển sang đối thủ cạnh tranh của họ vì tôi không thể hiểu được việc bị nhầm với robot khi bạn thực hiện chính xác những gì được yêu cầu, đặc biệt là nhiều…"
     },
     "categories": [
-      "security"
+      "windows"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 0.76,
-    "howto": true,
+    "difficulty": null,
+    "score": 0.79,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
-    "hn_points": 101
+    "hidden": false
   },
   "3bc1509c6bdcff93": {
     "id": "3bc1509c6bdcff93",
@@ -14903,6 +15023,42 @@
       "vi": "machine"
     },
     "hidden": false
+  },
+  "5f16696a8573af30": {
+    "id": "5f16696a8573af30",
+    "slug": "ask-hn-tips-for-transitioning-from-web-development-to-embedd-5f1669",
+    "url": "https://news.ycombinator.com/item?id=50555002",
+    "source": {
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
+      "content_type": "community"
+    },
+    "author": "llmblockchain",
+    "published_at": "2026-11-19T01:37:45+00:00",
+    "fetched_at": "2026-11-22T22:31:32.604554+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Ask HN: Tips for transitioning from web development to embedded/firmware?",
+      "vi": "Hỏi HN: Lời khuyên khi chuyển từ phát triển web sang nhúng/firmware?"
+    },
+    "summary": {
+      "en": "Discussion on Hacker News (101 points, 66 comments).",
+      "vi": "Thảo luận về Hacker News (101 điểm, 66 bình luận)."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.76,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hn_points": 101
   },
   "3930d00ef77468d3": {
     "id": "3930d00ef77468d3",
@@ -15412,42 +15568,6 @@
     },
     "hidden": false
   },
-  "fadd7467dc36644c": {
-    "id": "fadd7467dc36644c",
-    "url": "https://dev.to/bowentse/word-counting-is-harder-than-it-looks-a-devs-guide-1jpb",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "bowen Tse",
-    "published_at": "2026-10-29T02:58:56+00:00",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Word Counting Is Harder Than It Looks: A Dev's Guide",
-      "vi": "Đếm từ khó hơn vẻ ngoài của nó: Hướng dẫn dành cho nhà phát triển"
-    },
-    "summary": {
-      "en": "Every developer has written the naive version at least once: const words =",
-      "vi": "Mọi nhà phát triển đều đã viết phiên bản ngây thơ ít nhất một lần: constwords ="
-    },
-    "categories": [
-      "office"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.74,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "dem-tu-kho-hon-ve-ngoai-cua-no-huong-dan-danh-cho-nha-phat-t-fadd74"
-  },
   "2551552469f4fa95": {
     "id": "2551552469f4fa95",
     "slug": "linus-torvalds-says-that-ai-fixes-drove-most-of-the-progress-255155",
@@ -15522,9 +15642,9 @@
     },
     "hidden": false
   },
-  "f4cb4a6778724aeb": {
-    "id": "f4cb4a6778724aeb",
-    "url": "https://dev.to/toolsyhub/how-to-compress-an-image-to-an-exact-kb-limit-in-the-browser-canvas-binary-search-and-when-to-2d7i",
+  "fadd7467dc36644c": {
+    "id": "fadd7467dc36644c",
+    "url": "https://dev.to/bowentse/word-counting-is-harder-than-it-looks-a-devs-guide-1jpb",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
@@ -15532,20 +15652,20 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "Toolsy Hub",
-    "published_at": "2026-10-29T02:52:26+00:00",
+    "author": "bowen Tse",
+    "published_at": "2026-10-29T02:58:56+00:00",
     "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "How to compress an image to an exact KB limit in the browser (canvas, binary search, and when to stop lowering quality)",
-      "vi": "Cách nén hình ảnh đến giới hạn KB chính xác trong trình duyệt (canvas, tìm kiếm nhị phân và thời điểm ngừng giảm chất lượng)"
+      "en": "Word Counting Is Harder Than It Looks: A Dev's Guide",
+      "vi": "Đếm từ khó hơn vẻ ngoài của nó: Hướng dẫn dành cho nhà phát triển"
     },
     "summary": {
-      "en": "Upload forms for visas, exams and job portals often say \"photo must be under 100 KB\". A phone photo",
-      "vi": "Tải lên các biểu mẫu xin thị thực, kỳ thi và cổng thông tin việc làm thường ghi \"ảnh phải dưới 100 KB\". Một bức ảnh điện thoại"
+      "en": "Every developer has written the naive version at least once: const words =",
+      "vi": "Mọi nhà phát triển đều đã viết phiên bản ngây thơ ít nhất một lần: constwords ="
     },
     "categories": [
-      "dev"
+      "office"
     ],
     "tags": [],
     "difficulty": "medium",
@@ -15556,7 +15676,7 @@
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "cach-nen-hinh-anh-den-gioi-han-kb-chinh-xac-trong-trinh-duye-f4cb4a"
+    "slug": "dem-tu-kho-hon-ve-ngoai-cua-no-huong-dan-danh-cho-nha-phat-t-fadd74"
   },
   "64bb151c75ac96d4": {
     "id": "64bb151c75ac96d4",
@@ -15629,6 +15749,42 @@
     },
     "hidden": false,
     "slug": "tinhtelookback-galaxy-z-fold8-sau-3-thang-da-thay-doi-cach-m-902446"
+  },
+  "f4cb4a6778724aeb": {
+    "id": "f4cb4a6778724aeb",
+    "url": "https://dev.to/toolsyhub/how-to-compress-an-image-to-an-exact-kb-limit-in-the-browser-canvas-binary-search-and-when-to-2d7i",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "Toolsy Hub",
+    "published_at": "2026-10-29T02:52:26+00:00",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "How to compress an image to an exact KB limit in the browser (canvas, binary search, and when to stop lowering quality)",
+      "vi": "Cách nén hình ảnh đến giới hạn KB chính xác trong trình duyệt (canvas, tìm kiếm nhị phân và thời điểm ngừng giảm chất lượng)"
+    },
+    "summary": {
+      "en": "Upload forms for visas, exams and job portals often say \"photo must be under 100 KB\". A phone photo",
+      "vi": "Tải lên các biểu mẫu xin thị thực, kỳ thi và cổng thông tin việc làm thường ghi \"ảnh phải dưới 100 KB\". Một bức ảnh điện thoại"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.74,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "cach-nen-hinh-anh-den-gioi-han-kb-chinh-xac-trong-trinh-duye-f4cb4a"
   },
   "f335a5077f36cc12": {
     "id": "f335a5077f36cc12",
@@ -16137,42 +16293,6 @@
       "vi": "machine"
     }
   },
-  "256c27b306f09301": {
-    "id": "256c27b306f09301",
-    "url": "https://dev.to/dinesh_04/how-to-plan-a-game-vertical-slice-in-7-days-with-a-one-page-gdd-e7",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "Dinesh",
-    "published_at": "2026-10-29T03:17:16+00:00",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "How to Plan a Game Vertical Slice in 7 Days with a One-Page GDD",
-      "vi": "Cách lập kế hoạch phân chia trò chơi theo chiều dọc trong 7 ngày với GDD một trang"
-    },
-    "summary": {
-      "en": "Most solo devs skip the game design document because it feels like homework. Then scope creep eats a",
-      "vi": "Hầu hết các nhà phát triển solo đều bỏ qua tài liệu thiết kế trò chơi vì nó giống như bài tập về nhà. Sau đó, phạm vi leo ăn một"
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.74,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "cach-lap-ke-hoach-phan-chia-tro-choi-theo-chieu-doc-trong-7-256c27"
-  },
   "c83e4a34493e1229": {
     "id": "c83e4a34493e1229",
     "url": "https://genk.vn/loi-khuyen-danh-cho-tat-ca-nhung-ai-hay-dung-google-maps-de-tra-duong-165261010112912055.chn",
@@ -16247,9 +16367,9 @@
     "hidden": false,
     "slug": "loi-khuyen-cho-nhung-gia-dinh-hay-tat-wifi-bang-cach-rut-phi-df7f2e"
   },
-  "b302cd56f6ec631a": {
-    "id": "b302cd56f6ec631a",
-    "url": "https://dev.to/annavi11arrea1/understanding-what-ai-just-created-in-the-500mph-landscape-1m52",
+  "256c27b306f09301": {
+    "id": "256c27b306f09301",
+    "url": "https://dev.to/dinesh_04/how-to-plan-a-game-vertical-slice-in-7-days-with-a-one-page-gdd-e7",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
@@ -16257,20 +16377,20 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "Anna Villarreal",
-    "published_at": "2026-10-23T15:59:05+00:00",
-    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "author": "Dinesh",
+    "published_at": "2026-10-29T03:17:16+00:00",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Understanding What AI just Created in the 500mph Landscape",
-      "vi": "Hiểu những gì AI vừa tạo ra trong bối cảnh vận tốc 500 dặm/giờ"
+      "en": "How to Plan a Game Vertical Slice in 7 Days with a One-Page GDD",
+      "vi": "Cách lập kế hoạch phân chia trò chơi theo chiều dọc trong 7 ngày với GDD một trang"
     },
     "summary": {
-      "en": "How to understand what AI wrote: For beginners! Avoid lack of dopamine, mental atrophy,",
-      "vi": "Làm thế nào để hiểu những gì AI đã viết: Dành cho người mới bắt đầu! Tránh tình trạng thiếu dopamin, teo tâm thần,"
+      "en": "Most solo devs skip the game design document because it feels like homework. Then scope creep eats a",
+      "vi": "Hầu hết các nhà phát triển solo đều bỏ qua tài liệu thiết kế trò chơi vì nó giống như bài tập về nhà. Sau đó, phạm vi leo ăn một"
     },
     "categories": [
-      "ai"
+      "dev"
     ],
     "tags": [],
     "difficulty": "medium",
@@ -16281,7 +16401,7 @@
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "hieu-nhung-gi-ai-vua-tao-ra-trong-boi-canh-van-toc-500-damgi-b302cd"
+    "slug": "cach-lap-ke-hoach-phan-chia-tro-choi-theo-chieu-doc-trong-7-256c27"
   },
   "7a82ad8fe469044c": {
     "id": "7a82ad8fe469044c",
@@ -16353,6 +16473,42 @@
     "translated": {
       "vi": "machine"
     }
+  },
+  "b302cd56f6ec631a": {
+    "id": "b302cd56f6ec631a",
+    "url": "https://dev.to/annavi11arrea1/understanding-what-ai-just-created-in-the-500mph-landscape-1m52",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "Anna Villarreal",
+    "published_at": "2026-10-23T15:59:05+00:00",
+    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Understanding What AI just Created in the 500mph Landscape",
+      "vi": "Hiểu những gì AI vừa tạo ra trong bối cảnh vận tốc 500 dặm/giờ"
+    },
+    "summary": {
+      "en": "How to understand what AI wrote: For beginners! Avoid lack of dopamine, mental atrophy,",
+      "vi": "Làm thế nào để hiểu những gì AI đã viết: Dành cho người mới bắt đầu! Tránh tình trạng thiếu dopamin, teo tâm thần,"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.74,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "hieu-nhung-gi-ai-vua-tao-ra-trong-boi-canh-van-toc-500-damgi-b302cd"
   },
   "0c65ea38b833d6ec": {
     "id": "0c65ea38b833d6ec",
@@ -16862,41 +17018,6 @@
     },
     "hidden": false
   },
-  "4b544d4f2401d22a": {
-    "id": "4b544d4f2401d22a",
-    "slug": "turn-any-image-into-a-3d-scene-25d-and-gaussian-splats-4b544d",
-    "url": "https://dev.to/hiper2d/turn-any-image-into-a-3d-scene-25d-and-gaussian-splats-37i3",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "Aliaksei Zelianouski",
-    "published_at": "2026-11-20T13:25:01+00:00",
-    "fetched_at": "2026-11-21T19:27:35.867239+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Turn Any Image into a 3D Scene: 2.5D and Gaussian Splats",
-      "vi": "Biến bất kỳ hình ảnh nào thành cảnh 3D: Các mảng 2.5D và Gaussian"
-    },
-    "summary": {
-      "en": "One still image, a camera that moves through it, lights that go out, a room that burns into embers.",
-      "vi": "Một hình ảnh tĩnh, một chiếc camera di chuyển qua nó, đèn tắt, một căn phòng cháy thành than hồng."
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.74,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    }
-  },
   "4a8d15ba801ad04d": {
     "id": "4a8d15ba801ad04d",
     "url": "https://www.makeuseof.com/xpipe-open-source-app-a-shot-and-it-put-ssh-docker-proxmox-and-my-remote-files-in-one-place",
@@ -16932,78 +17053,6 @@
     },
     "hidden": false,
     "slug": "xpipe-lam-cho-viec-quan-ly-phong-thi-nghiem-tai-nha-tro-nen-4a8d15"
-  },
-  "b5dd38c1b651141f": {
-    "id": "b5dd38c1b651141f",
-    "url": "https://www.makeuseof.com/samsung-good-lock-gave-my-galaxy-a-feature-i-thought-i-needed-a-new-phone-for",
-    "source": {
-      "id": "makeuseof",
-      "name": "MakeUseOf",
-      "site_url": "https://www.makeuseof.com",
-      "kind": "tips",
-      "content_type": "article"
-    },
-    "author": "Brandon Miniman",
-    "published_at": "2026-10-28T18:30:16+00:00",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Samsung Good Lock gave my Galaxy a feature I thought I needed a new phone for",
-      "vi": "Samsung Good Lock đã mang đến cho chiếc Galaxy của tôi một tính năng mà tôi nghĩ tôi cần một chiếc điện thoại mới"
-    },
-    "summary": {
-      "en": "This Good Lock module makes split-screen multitasking feel more like a foldable",
-      "vi": "Mô-đun Good Lock này giúp đa nhiệm chia đôi màn hình giống như một màn hình có thể gập lại"
-    },
-    "categories": [
-      "android"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.71,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "samsung-good-lock-da-mang-den-cho-chiec-galaxy-cua-toi-mot-t-b5dd38"
-  },
-  "3e314b72883b118a": {
-    "id": "3e314b72883b118a",
-    "slug": "adobe-muon-9999-usd-de-toi-co-the-huy-toi-da-yeu-cau-ho-tro-3e314b",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xkr94m/lpt_adobe_wanted_9999_to_let_me_cancel_i_asked",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "https://www.reddit.com/r/LifeProTips/",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/foreverfidel",
-    "published_at": "2026-11-01T01:52:25+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund.",
-      "vi": "Adobe muốn 99,99 USD để tôi có thể hủy. Tôi đã yêu cầu hỗ trợ qua trò chuyện và nhận được miễn trừ cộng với khoản tiền hoàn lại theo tỷ lệ."
-    },
-    "summary": {
-      "en": "\"Hi, I need to cancel my subscription today. Please cancel my account immediately, waive the early termination fee completely, and issue a prorated refund for the billing cycle I just paid for.” The result: subscription canceled, the entire $99.99 cancellation fee waived, and a…",
-      "vi": "\"Xin chào, tôi cần hủy đăng ký ngay hôm nay. Vui lòng hủy tài khoản của tôi ngay lập tức, miễn hoàn toàn phí chấm dứt sớm và hoàn lại tiền theo tỷ lệ cho chu kỳ thanh toán mà tôi vừa thanh toán.\" Kết quả: đăng ký bị hủy, toàn bộ phí hủy 99,99 USD được miễn và…"
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.71,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false
   },
   "f31034dae2dd9dde": {
     "id": "f31034dae2dd9dde",
@@ -17042,6 +17091,77 @@
     "hidden": false,
     "slug": "thanh-trang-thai-android-cua-ban-chua-day-cac-bieu-tuong-vi-f31034"
   },
+  "4b544d4f2401d22a": {
+    "id": "4b544d4f2401d22a",
+    "slug": "turn-any-image-into-a-3d-scene-25d-and-gaussian-splats-4b544d",
+    "url": "https://dev.to/hiper2d/turn-any-image-into-a-3d-scene-25d-and-gaussian-splats-37i3",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "Aliaksei Zelianouski",
+    "published_at": "2026-11-20T13:25:01+00:00",
+    "fetched_at": "2026-11-21T19:27:35.867239+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Turn Any Image into a 3D Scene: 2.5D and Gaussian Splats",
+      "vi": "Biến bất kỳ hình ảnh nào thành cảnh 3D: Các mảng 2.5D và Gaussian"
+    },
+    "summary": {
+      "en": "One still image, a camera that moves through it, lights that go out, a room that burns into embers.",
+      "vi": "Một hình ảnh tĩnh, một chiếc camera di chuyển qua nó, đèn tắt, một căn phòng cháy thành than hồng."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.74,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "b5dd38c1b651141f": {
+    "id": "b5dd38c1b651141f",
+    "url": "https://www.makeuseof.com/samsung-good-lock-gave-my-galaxy-a-feature-i-thought-i-needed-a-new-phone-for",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Brandon Miniman",
+    "published_at": "2026-10-28T18:30:16+00:00",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Samsung Good Lock gave my Galaxy a feature I thought I needed a new phone for",
+      "vi": "Samsung Good Lock đã mang đến cho chiếc Galaxy của tôi một tính năng mà tôi nghĩ tôi cần một chiếc điện thoại mới"
+    },
+    "summary": {
+      "en": "This Good Lock module makes split-screen multitasking feel more like a foldable",
+      "vi": "Mô-đun Good Lock này giúp đa nhiệm chia đôi màn hình giống như một màn hình có thể gập lại"
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.71,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "samsung-good-lock-da-mang-den-cho-chiec-galaxy-cua-toi-mot-t-b5dd38"
+  },
   "c1db73a21d9033c7": {
     "id": "c1db73a21d9033c7",
     "url": "https://linuxhandbook.com/newsletter/26-16",
@@ -17079,6 +17199,42 @@
     },
     "hidden": false,
     "slug": "lhb-linux-digest-2616-bash-arrays-mapfile-giai-phap-thay-the-c1db73"
+  },
+  "3e314b72883b118a": {
+    "id": "3e314b72883b118a",
+    "slug": "adobe-muon-9999-usd-de-toi-co-the-huy-toi-da-yeu-cau-ho-tro-3e314b",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xkr94m/lpt_adobe_wanted_9999_to_let_me_cancel_i_asked",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "https://www.reddit.com/r/LifeProTips/",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/foreverfidel",
+    "published_at": "2026-11-01T01:52:25+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Adobe wanted $99.99 to let me cancel. I asked chat support and got it waived plus a prorated refund.",
+      "vi": "Adobe muốn 99,99 USD để tôi có thể hủy. Tôi đã yêu cầu hỗ trợ qua trò chuyện và nhận được miễn trừ cộng với khoản tiền hoàn lại theo tỷ lệ."
+    },
+    "summary": {
+      "en": "\"Hi, I need to cancel my subscription today. Please cancel my account immediately, waive the early termination fee completely, and issue a prorated refund for the billing cycle I just paid for.” The result: subscription canceled, the entire $99.99 cancellation fee waived, and a…",
+      "vi": "\"Xin chào, tôi cần hủy đăng ký ngay hôm nay. Vui lòng hủy tài khoản của tôi ngay lập tức, miễn hoàn toàn phí chấm dứt sớm và hoàn lại tiền theo tỷ lệ cho chu kỳ thanh toán mà tôi vừa thanh toán.\" Kết quả: đăng ký bị hủy, toàn bộ phí hủy 99,99 USD được miễn và…"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.71,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false
   },
   "9aa5f95e9aeb6813": {
     "id": "9aa5f95e9aeb6813",
@@ -17589,42 +17745,6 @@
     "hidden": false,
     "slug": "netflix-se-mang-den-nhung-bo-phim-kinh-di-nay-dung-luc-cho-b-43c516"
   },
-  "71d01e5f69b83d3a": {
-    "id": "71d01e5f69b83d3a",
-    "slug": "neu-ban-muon-doc-them-nhung-thay-minh-dang-cuon-minh-tren-gi-71d01e",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xk2y3t/lpt_if_you_want_to_read_more_but_find_yourself",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "https://www.reddit.com/r/LifeProTips/",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/AbsolutelyNotASnail",
-    "published_at": "2026-10-31T06:29:20+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "if you want to read more but find yourself doomscrolling in bed: move your phone charger",
-      "vi": "nếu bạn muốn đọc thêm nhưng thấy mình đang cuộn mình trên giường: hãy di chuyển bộ sạc điện thoại của bạn"
-    },
-    "summary": {
-      "en": "It might not work for everyone but it really got me reading a lot more. Doomscrolling was a big problem for me, and not reading was another. I tried putting my phone charger further from my bed on a table opposite from it, and while it was hard at first I finally started to read…",
-      "vi": "Nó có thể không hiệu quả với tất cả mọi người nhưng nó thực sự khiến tôi đọc nhiều hơn. Doomscrolling là một vấn đề lớn đối với tôi, và không đọc lại là một vấn đề khác. Tôi đã thử đặt bộ sạc điện thoại của mình xa giường hơn trên một chiếc bàn đối diện với nó, và mặc dù lúc đầu thật khó khăn nhưng cuối cùng tôi cũng…"
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.71,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false
-  },
   "3b94f401db45eb9e": {
     "id": "3b94f401db45eb9e",
     "url": "https://www.howtogeek.com/photoshop-plugins-so-essential-they-should-be-built-in",
@@ -17660,80 +17780,6 @@
     },
     "hidden": false,
     "slug": "4-plugin-photoshop-rat-can-thiet-nen-duoc-tich-hop-san-3b94f4"
-  },
-  "29d0fd5470988252": {
-    "id": "29d0fd5470988252",
-    "url": "https://www.howtogeek.com/google-maps-companion-apps-that-fill-its-biggest-gaps",
-    "source": {
-      "id": "howtogeek",
-      "name": "How-To Geek",
-      "site_url": "https://www.howtogeek.com",
-      "kind": "tips",
-      "content_type": "article"
-    },
-    "author": "Sanya Shah",
-    "published_at": "2026-10-28T20:30:15+00:00",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "5 Google Maps companion apps that fill its biggest gaps",
-      "vi": "5 ứng dụng đồng hành của Google Maps lấp đầy khoảng trống lớn nhất của nó"
-    },
-    "summary": {
-      "en": "Why settle for basic maps?",
-      "vi": "Tại sao giải quyết cho các bản đồ cơ bản?"
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.71,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "5-ung-dung-dong-hanh-cua-google-maps-lap-day-khoang-trong-lo-29d0fd"
-  },
-  "72935a7f76dc92ab": {
-    "id": "72935a7f76dc92ab",
-    "slug": "luon-dat-may-tinh-o-che-do-ngu-khi-ra-khoi-nha-hoac-di-ngu-72935a",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xj5yl8/lpt_always_put_your_computer_to_sleep_when_you",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "https://www.reddit.com/r/LifeProTips/",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/rebel-yeller",
-    "published_at": "2026-10-30T04:30:02+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Always put your computer to sleep when you leave the house or go to bed",
-      "vi": "Luôn đặt máy tính ở chế độ ngủ khi ra khỏi nhà hoặc đi ngủ"
-    },
-    "summary": {
-      "en": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers.",
-      "vi": "Đảm bảo máy tính của bạn được bảo vệ bằng mật khẩu. Đặt nó vào chế độ ngủ ít nhất sẽ bảo vệ mọi tập tin hoặc dữ liệu cá nhân/bí mật nếu máy tính của bạn bị đánh cắp. Có vẻ như hầu hết những kẻ trộm đều không thân thiện với tin tặc máy tính."
-    },
-    "categories": [
-      "security"
-    ],
-    "tags": [
-      "password"
-    ],
-    "difficulty": null,
-    "score": 0.71,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false
   },
   "fabd9eb4d1e11f1b": {
     "id": "fabd9eb4d1e11f1b",
@@ -17771,6 +17817,78 @@
     },
     "hidden": false
   },
+  "71d01e5f69b83d3a": {
+    "id": "71d01e5f69b83d3a",
+    "slug": "neu-ban-muon-doc-them-nhung-thay-minh-dang-cuon-minh-tren-gi-71d01e",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xk2y3t/lpt_if_you_want_to_read_more_but_find_yourself",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "https://www.reddit.com/r/LifeProTips/",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/AbsolutelyNotASnail",
+    "published_at": "2026-10-31T06:29:20+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "if you want to read more but find yourself doomscrolling in bed: move your phone charger",
+      "vi": "nếu bạn muốn đọc thêm nhưng thấy mình đang cuộn mình trên giường: hãy di chuyển bộ sạc điện thoại của bạn"
+    },
+    "summary": {
+      "en": "It might not work for everyone but it really got me reading a lot more. Doomscrolling was a big problem for me, and not reading was another. I tried putting my phone charger further from my bed on a table opposite from it, and while it was hard at first I finally started to read…",
+      "vi": "Nó có thể không hiệu quả với tất cả mọi người nhưng nó thực sự khiến tôi đọc nhiều hơn. Doomscrolling là một vấn đề lớn đối với tôi, và không đọc lại là một vấn đề khác. Tôi đã thử đặt bộ sạc điện thoại của mình xa giường hơn trên một chiếc bàn đối diện với nó, và mặc dù lúc đầu thật khó khăn nhưng cuối cùng tôi cũng…"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.71,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false
+  },
+  "29d0fd5470988252": {
+    "id": "29d0fd5470988252",
+    "url": "https://www.howtogeek.com/google-maps-companion-apps-that-fill-its-biggest-gaps",
+    "source": {
+      "id": "howtogeek",
+      "name": "How-To Geek",
+      "site_url": "https://www.howtogeek.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Sanya Shah",
+    "published_at": "2026-10-28T20:30:15+00:00",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "5 Google Maps companion apps that fill its biggest gaps",
+      "vi": "5 ứng dụng đồng hành của Google Maps lấp đầy khoảng trống lớn nhất của nó"
+    },
+    "summary": {
+      "en": "Why settle for basic maps?",
+      "vi": "Tại sao giải quyết cho các bản đồ cơ bản?"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.71,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "5-ung-dung-dong-hanh-cua-google-maps-lap-day-khoang-trong-lo-29d0fd"
+  },
   "98429c255b62a883": {
     "id": "98429c255b62a883",
     "slug": "google-is-bringing-ios-style-settings-icons-to-chrome-for-an-98429c",
@@ -17804,6 +17922,44 @@
     "difficulty": "easy",
     "score": 0.69,
     "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false
+  },
+  "72935a7f76dc92ab": {
+    "id": "72935a7f76dc92ab",
+    "slug": "luon-dat-may-tinh-o-che-do-ngu-khi-ra-khoi-nha-hoac-di-ngu-72935a",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xj5yl8/lpt_always_put_your_computer_to_sleep_when_you",
+    "source": {
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "https://www.reddit.com/r/LifeProTips/",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "/u/rebel-yeller",
+    "published_at": "2026-10-30T04:30:02+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Always put your computer to sleep when you leave the house or go to bed",
+      "vi": "Luôn đặt máy tính ở chế độ ngủ khi ra khỏi nhà hoặc đi ngủ"
+    },
+    "summary": {
+      "en": "Make sure your computer is password protected. Putting it to sleep will at least protect any files or personal/confidential data if your computer is stolen. Likely most burglars are not friendly with computer hackers.",
+      "vi": "Đảm bảo máy tính của bạn được bảo vệ bằng mật khẩu. Đặt nó vào chế độ ngủ ít nhất sẽ bảo vệ mọi tập tin hoặc dữ liệu cá nhân/bí mật nếu máy tính của bạn bị đánh cắp. Có vẻ như hầu hết những kẻ trộm đều không thân thiện với tin tặc máy tính."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [
+      "password"
+    ],
+    "difficulty": null,
+    "score": 0.71,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
@@ -18323,42 +18479,6 @@
     },
     "hidden": false
   },
-  "33d256014ccf120b": {
-    "id": "33d256014ccf120b",
-    "slug": "su-dung-ten-ban-muon-trong-chu-ky-thay-vi-ten-chinh-thuc-cua-33d256",
-    "url": "https://www.reddit.com/r/LifeProTips/comments/1xh29vq/lpt_use_the_name_you_want_in_your_signature",
-    "source": {
-      "id": "reddit-lpt",
-      "name": "Reddit r/LifeProTips",
-      "site_url": "https://www.reddit.com/r/LifeProTips/",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "/u/deten",
-    "published_at": "2026-10-27T19:31:27+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Use the name you want in your signature instead of your formal name",
-      "vi": "Sử dụng tên bạn muốn trong chữ ký thay vì tên chính thức của bạn"
-    },
-    "summary": {
-      "en": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…",
-      "vi": "Tôi không thể tin được đã là năm 2026 và mọi người vẫn đang ký vào tin nhắn và email bằng những cái tên mà họ không thực sự sử dụng. Nếu tên bạn là Nicholas nhưng bạn muốn được gọi là Nick, hãy sử dụng Nick trong chữ ký của bạn. Tôi làm việc trong lĩnh vực bán hàng và liên tục phải gửi email hoặc gọi điện cho những…"
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.71,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false
-  },
   "84934b4fdd2aba87": {
     "id": "84934b4fdd2aba87",
     "slug": "elon-musk-wants-to-build-a-s-24-billion-gas-powered-ai-super-84934b",
@@ -18431,43 +18551,41 @@
     },
     "hidden": false
   },
-  "843e2f5d387fbdbf": {
-    "id": "843e2f5d387fbdbf",
-    "url": "https://dev.to/qunirice_verase_1ab0caeba/steamos-or-windows-11-deciding-with-powershell-before-you-partition-14hj",
+  "33d256014ccf120b": {
+    "id": "33d256014ccf120b",
+    "slug": "su-dung-ten-ban-muon-trong-chu-ky-thay-vi-ten-chinh-thuc-cua-33d256",
+    "url": "https://www.reddit.com/r/LifeProTips/comments/1xh29vq/lpt_use_the_name_you_want_in_your_signature",
     "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
+      "id": "reddit-lpt",
+      "name": "Reddit r/LifeProTips",
+      "site_url": "https://www.reddit.com/r/LifeProTips/",
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "AI Release",
-    "published_at": "2026-10-29T03:23:06+00:00",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "/u/deten",
+    "published_at": "2026-10-27T19:31:27+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "SteamOS or Windows 11: deciding with PowerShell before you partition",
-      "vi": "SteamOS hoặc Windows 11: quyết định sử dụng PowerShell trước khi phân vùng"
+      "en": "Use the name you want in your signature instead of your formal name",
+      "vi": "Sử dụng tên bạn muốn trong chữ ký thay vì tên chính thức của bạn"
     },
     "summary": {
-      "en": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11.",
-      "vi": "Hướng dẫn thực tế: kiểm tra UEFI, TPM và Secure Boot, kiểm kê thư viện trò chơi của bạn trên ProtonDB, sau đó quyết định giữa SteamOS và Windows 11."
+      "en": "I cant believe its 2026 and people are still signing their texts and emails with names they dont actually use. If your name is Nicholas but you want to be called Nick, use Nick in your signature. I work in sales and am constantly having to email or call people that have only…",
+      "vi": "Tôi không thể tin được đã là năm 2026 và mọi người vẫn đang ký vào tin nhắn và email bằng những cái tên mà họ không thực sự sử dụng. Nếu tên bạn là Nicholas nhưng bạn muốn được gọi là Nick, hãy sử dụng Nick trong chữ ký của bạn. Tôi làm việc trong lĩnh vực bán hàng và liên tục phải gửi email hoặc gọi điện cho những…"
     },
     "categories": [
       "windows"
     ],
-    "tags": [
-      "powershell"
-    ],
-    "difficulty": "advanced",
-    "score": 0.68,
-    "howto": true,
+    "tags": [],
+    "difficulty": null,
+    "score": 0.71,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
-    "hidden": false,
-    "slug": "steamos-hoac-windows-11-quyet-dinh-su-dung-powershell-truoc-843e2f"
+    "hidden": false
   },
   "ef9bb7c17bc1bce5": {
     "id": "ef9bb7c17bc1bce5",
@@ -18540,6 +18658,44 @@
       "vi": "machine"
     },
     "hidden": false
+  },
+  "843e2f5d387fbdbf": {
+    "id": "843e2f5d387fbdbf",
+    "url": "https://dev.to/qunirice_verase_1ab0caeba/steamos-or-windows-11-deciding-with-powershell-before-you-partition-14hj",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "AI Release",
+    "published_at": "2026-10-29T03:23:06+00:00",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "SteamOS or Windows 11: deciding with PowerShell before you partition",
+      "vi": "SteamOS hoặc Windows 11: quyết định sử dụng PowerShell trước khi phân vùng"
+    },
+    "summary": {
+      "en": "A practical walkthrough: check UEFI, TPM and Secure Boot, inventory your game library on ProtonDB, then decide between SteamOS and Windows 11.",
+      "vi": "Hướng dẫn thực tế: kiểm tra UEFI, TPM và Secure Boot, kiểm kê thư viện trò chơi của bạn trên ProtonDB, sau đó quyết định giữa SteamOS và Windows 11."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [
+      "powershell"
+    ],
+    "difficulty": "advanced",
+    "score": 0.68,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "steamos-hoac-windows-11-quyet-dinh-su-dung-powershell-truoc-843e2f"
   },
   "85daa6a854746cd3": {
     "id": "85daa6a854746cd3",
@@ -19054,43 +19210,6 @@
     },
     "hidden": false
   },
-  "01ee4bd34dad4014": {
-    "id": "01ee4bd34dad4014",
-    "slug": "cac-mach-don-gian-co-the-tao-ra-cac-hanh-vi-phuc-tap-01ee4b",
-    "url": "https://aatishb.com/myriad/lets-build-a-brain",
-    "source": {
-      "id": "hackernews",
-      "name": "Hacker News",
-      "site_url": "https://news.ycombinator.com",
-      "kind": "news",
-      "content_type": "community"
-    },
-    "author": "aatish",
-    "published_at": "2026-10-27T16:01:06+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Simple circuits can create complex behaviors",
-      "vi": "Các mạch đơn giản có thể tạo ra các hành vi phức tạp"
-    },
-    "summary": {
-      "en": "Discussion on Hacker News (239 points, 77 comments).",
-      "vi": "Thảo luận trên Hacker News (239 điểm, 77 bình luận)."
-    },
-    "categories": [
-      "security"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.61,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hn_points": 239,
-    "hidden": false
-  },
   "47487520da62623a": {
     "id": "47487520da62623a",
     "url": "https://genk.vn/thong-tin-quan-trong-tren-vneid-tat-ca-nguoi-dan-di-may-bay-can-biet-165260829141738442.chn",
@@ -19164,43 +19283,42 @@
     "hidden": false,
     "slug": "ung-dung-github-copilot-danh-cho-nguoi-moi-bat-dau-cach-day-acb868"
   },
-  "3cbe5eb393bebabf": {
-    "id": "3cbe5eb393bebabf",
-    "url": "https://dev.to/devopsdaily/how-to-resolve-merge-conflicts-in-git-without-guessing-markers-ours-theirs-and-the-rebase-flip-b4g",
+  "01ee4bd34dad4014": {
+    "id": "01ee4bd34dad4014",
+    "slug": "cac-mach-don-gian-co-the-tao-ra-cac-hanh-vi-phuc-tap-01ee4b",
+    "url": "https://aatishb.com/myriad/lets-build-a-brain",
     "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips",
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
       "content_type": "community"
     },
-    "author": "DevOps Daily",
-    "published_at": "2026-10-08T10:15:49+00:00",
-    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "author": "aatish",
+    "published_at": "2026-10-27T16:01:06+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "How to resolve merge conflicts in Git without guessing: markers, --ours/--theirs and the rebase flip",
-      "vi": "Cách giải quyết xung đột hợp nhất trong Git mà không cần đoán: điểm đánh dấu, --ours/--của họ và lật rebase"
+      "en": "Simple circuits can create complex behaviors",
+      "vi": "Các mạch đơn giản có thể tạo ra các hành vi phức tạp"
     },
     "summary": {
-      "en": "You are rebasing your branch onto main. Git stops on a conflict in limits.py. You want to keep your",
-      "vi": "Bạn đang khởi động lại chi nhánh của mình vào main. Git dừng khi có xung đột trong limit.py. Bạn muốn giữ của bạn"
+      "en": "Discussion on Hacker News (239 points, 77 comments).",
+      "vi": "Thảo luận trên Hacker News (239 điểm, 77 bình luận)."
     },
     "categories": [
-      "dev"
+      "security"
     ],
-    "tags": [
-      "git"
-    ],
+    "tags": [],
     "difficulty": "medium",
-    "score": 0.57,
+    "score": 0.61,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
-    "hidden": false,
-    "slug": "cach-giai-quyet-xung-dot-hop-nhat-trong-git-ma-khong-can-doa-3cbe5e"
+    "hn_points": 239,
+    "hidden": false
   },
   "2ad84ab401bee4f9": {
     "id": "2ad84ab401bee4f9",
@@ -19273,6 +19391,44 @@
     },
     "hidden": false,
     "slug": "di-tim-giai-phap-cap-khi-tuoi-cho-cafe-tinh-te-50-b62740"
+  },
+  "3cbe5eb393bebabf": {
+    "id": "3cbe5eb393bebabf",
+    "url": "https://dev.to/devopsdaily/how-to-resolve-merge-conflicts-in-git-without-guessing-markers-ours-theirs-and-the-rebase-flip-b4g",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "DevOps Daily",
+    "published_at": "2026-10-08T10:15:49+00:00",
+    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "How to resolve merge conflicts in Git without guessing: markers, --ours/--theirs and the rebase flip",
+      "vi": "Cách giải quyết xung đột hợp nhất trong Git mà không cần đoán: điểm đánh dấu, --ours/--của họ và lật rebase"
+    },
+    "summary": {
+      "en": "You are rebasing your branch onto main. Git stops on a conflict in limits.py. You want to keep your",
+      "vi": "Bạn đang khởi động lại chi nhánh của mình vào main. Git dừng khi có xung đột trong limit.py. Bạn muốn giữ của bạn"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [
+      "git"
+    ],
+    "difficulty": "medium",
+    "score": 0.57,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "cach-giai-quyet-xung-dot-hop-nhat-trong-git-ma-khong-can-doa-3cbe5e"
   },
   "28c9ec341b6e3347": {
     "id": "28c9ec341b6e3347",
@@ -19789,42 +19945,6 @@
     "hidden": false,
     "slug": "toi-da-bo-ca-7-zip-va-winrar-cho-giai-phap-thay-the-nay-vi-l-f370cc"
   },
-  "5866f3208980265c": {
-    "id": "5866f3208980265c",
-    "slug": "xay-dung-bot-discord-voi-discordjs-v14-thiet-lap-ung-dung-le-5866f3",
-    "url": "https://dev.to/botnexio/build-a-discord-bot-with-discordjs-v14-app-setup-your-first-slash-command-and-keeping-it-online-1bkj",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "Botnexio",
-    "published_at": "2026-10-18T12:54:39+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Build a Discord bot with discord.js v14: app setup, your first slash command and keeping it online",
-      "vi": "Xây dựng bot Discord với discord.js v14: thiết lập ứng dụng, lệnh gạch chéo đầu tiên của bạn và giữ nó trực tuyến"
-    },
-    "summary": {
-      "en": "Create a Discord application, register slash commands with REST and Routes, handle interactionCreate, and keep your bot running 24/7.",
-      "vi": "Tạo ứng dụng Discord, đăng ký các lệnh gạch chéo với REST và Routes, xử lý tương tácTạo và giữ cho bot của bạn hoạt động 24/7."
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.57,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false
-  },
   "024e8db1df02dbee": {
     "id": "024e8db1df02dbee",
     "url": "https://www.makeuseof.com/i-built-a-lossless-music-library",
@@ -19860,6 +19980,78 @@
     },
     "hidden": false,
     "slug": "toi-da-xay-dung-thu-vien-nhac-lossless-khong-can-dang-ky-ban-024e8d"
+  },
+  "de7b7e50d713f055": {
+    "id": "de7b7e50d713f055",
+    "url": "https://genk.vn/vi-sao-khong-nen-su-dung-khuon-mat-van-tay-de-mo-khoa-dien-thoai-1652610011748567.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "2026-10-01T12:36:00+00:00",
+    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Vì sao không nên sử dụng khuôn mặt, vân tay để mở khóa điện thoại?",
+      "en": "Why shouldn't you use your face or fingerprint to unlock your phone?"
+    },
+    "summary": {
+      "vi": "Sử dụng vân tay, khuôn mặt để mở khóa điện thoại tồn tại những rủi ro gì?",
+      "en": "What are the risks of using fingerprints and face to unlock the phone?"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.54,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "en": "machine"
+    },
+    "hidden": false,
+    "slug": "vi-sao-khong-nen-su-dung-khuon-mat-van-tay-de-mo-khoa-dien-t-de7b7e"
+  },
+  "5866f3208980265c": {
+    "id": "5866f3208980265c",
+    "slug": "xay-dung-bot-discord-voi-discordjs-v14-thiet-lap-ung-dung-le-5866f3",
+    "url": "https://dev.to/botnexio/build-a-discord-bot-with-discordjs-v14-app-setup-your-first-slash-command-and-keeping-it-online-1bkj",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "Botnexio",
+    "published_at": "2026-10-18T12:54:39+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Build a Discord bot with discord.js v14: app setup, your first slash command and keeping it online",
+      "vi": "Xây dựng bot Discord với discord.js v14: thiết lập ứng dụng, lệnh gạch chéo đầu tiên của bạn và giữ nó trực tuyến"
+    },
+    "summary": {
+      "en": "Create a Discord application, register slash commands with REST and Routes, handle interactionCreate, and keep your bot running 24/7.",
+      "vi": "Tạo ứng dụng Discord, đăng ký các lệnh gạch chéo với REST và Routes, xử lý tương tácTạo và giữ cho bot của bạn hoạt động 24/7."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.57,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false
   },
   "10ef57b720dca9c5": {
     "id": "10ef57b720dca9c5",
@@ -19897,42 +20089,6 @@
     "hidden": false,
     "slug": "ban-nang-cap-wi-fi-lon-tiep-theo-dang-giai-quyet-mot-van-de-10ef57"
   },
-  "3b1a643c22cd5cd6": {
-    "id": "3b1a643c22cd5cd6",
-    "url": "https://dev.to/johnnylemonny/stop-waiting-for-github-actions-make-your-ci-faster-today-a2l",
-    "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips",
-      "content_type": "community"
-    },
-    "author": "𝗝𝗼𝗵𝗻",
-    "published_at": "2026-09-29T15:30:00+00:00",
-    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "Stop Waiting for GitHub Actions: Make Your CI Faster Today",
-      "vi": "Ngừng chờ đợi các hành động GitHub: Giúp CI của bạn nhanh hơn ngay hôm nay"
-    },
-    "summary": {
-      "en": "A practical guide to canceling outdated runs, caching dependencies, reducing duplicate work, and getting faster feedback from GitHub Actions.",
-      "vi": "Hướng dẫn thực tế để hủy các lần chạy lỗi thời, lưu các phần phụ thuộc vào bộ nhớ đệm, giảm công việc trùng lặp và nhận phản hồi nhanh hơn từ Tác vụ GitHub."
-    },
-    "categories": [
-      "dev"
-    ],
-    "tags": [],
-    "difficulty": "medium",
-    "score": 0.57,
-    "howto": true,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "ngung-cho-doi-cac-hanh-dong-github-giup-ci-cua-ban-nhanh-hon-3b1a64"
-  },
   "0f61e1e47dbe051e": {
     "id": "0f61e1e47dbe051e",
     "url": "https://www.makeuseof.com/ikea-kreativ-home-furnishings",
@@ -19968,6 +20124,42 @@
     },
     "hidden": false,
     "slug": "ikea-co-cach-mua-do-noi-that-tot-hon-la-cuon-trang-san-pham-0f61e1"
+  },
+  "3b1a643c22cd5cd6": {
+    "id": "3b1a643c22cd5cd6",
+    "url": "https://dev.to/johnnylemonny/stop-waiting-for-github-actions-make-your-ci-faster-today-a2l",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "𝗝𝗼𝗵𝗻",
+    "published_at": "2026-09-29T15:30:00+00:00",
+    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Stop Waiting for GitHub Actions: Make Your CI Faster Today",
+      "vi": "Ngừng chờ đợi các hành động GitHub: Giúp CI của bạn nhanh hơn ngay hôm nay"
+    },
+    "summary": {
+      "en": "A practical guide to canceling outdated runs, caching dependencies, reducing duplicate work, and getting faster feedback from GitHub Actions.",
+      "vi": "Hướng dẫn thực tế để hủy các lần chạy lỗi thời, lưu các phần phụ thuộc vào bộ nhớ đệm, giảm công việc trùng lặp và nhận phản hồi nhanh hơn từ Tác vụ GitHub."
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 0.57,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "ngung-cho-doi-cac-hanh-dong-github-giup-ci-cua-ban-nhanh-hon-3b1a64"
   },
   "51f8dcdc7f9b270d": {
     "id": "51f8dcdc7f9b270d",
@@ -20006,42 +20198,6 @@
     "hidden": false,
     "slug": "microsoft-muon-tao-ra-bo-luu-tru-co-tuoi-tho-10000-nam-va-kh-51f8dc"
   },
-  "de7b7e50d713f055": {
-    "id": "de7b7e50d713f055",
-    "url": "https://genk.vn/vi-sao-khong-nen-su-dung-khuon-mat-van-tay-de-mo-khoa-dien-thoai-1652610011748567.chn",
-    "source": {
-      "id": "genk",
-      "name": "GenK Thủ Thuật",
-      "site_url": "https://genk.vn",
-      "kind": "tips",
-      "content_type": "article"
-    },
-    "author": null,
-    "published_at": "2026-10-01T12:36:00+00:00",
-    "fetched_at": "2026-10-29T06:55:21.278157+00:00",
-    "original_lang": "vi",
-    "title": {
-      "vi": "Vì sao không nên sử dụng khuôn mặt, vân tay để mở khóa điện thoại?",
-      "en": "Why shouldn't you use your face or fingerprint to unlock your phone?"
-    },
-    "summary": {
-      "vi": "Sử dụng vân tay, khuôn mặt để mở khóa điện thoại tồn tại những rủi ro gì?",
-      "en": "What are the risks of using fingerprints and face to unlock the phone?"
-    },
-    "categories": [
-      "windows"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.54,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "en": "machine"
-    },
-    "hidden": false,
-    "slug": "vi-sao-khong-nen-su-dung-khuon-mat-van-tay-de-mo-khoa-dien-t-de7b7e"
-  },
   "8099aaefadc9434a": {
     "id": "8099aaefadc9434a",
     "url": "https://www.makeuseof.com/windows-reset-options-explained",
@@ -20078,42 +20234,6 @@
     "hidden": false,
     "slug": "toi-da-biet-duoc-tinh-nang-dat-lai-pc-nay-thuc-su-co-trong-w-8099aa"
   },
-  "e3b74b75e702204f": {
-    "id": "e3b74b75e702204f",
-    "url": "https://www.makeuseof.com/bentopdf-local-browser-pdf-tools",
-    "source": {
-      "id": "makeuseof",
-      "name": "MakeUseOf",
-      "site_url": "https://www.makeuseof.com",
-      "kind": "tips",
-      "content_type": "article"
-    },
-    "author": "Oluwademilade Afolabi",
-    "published_at": "2026-10-28T15:45:18+00:00",
-    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
-    "original_lang": "en",
-    "title": {
-      "en": "I do almost every annoying PDF job locally in my browser now",
-      "vi": "Bây giờ tôi thực hiện hầu hết mọi công việc PDF khó chịu trên trình duyệt của mình"
-    },
-    "summary": {
-      "en": "I’m running out of reasons to open a dedicated PDF app.",
-      "vi": "Tôi không còn lý do để mở một ứng dụng PDF chuyên dụng."
-    },
-    "categories": [
-      "office"
-    ],
-    "tags": [],
-    "difficulty": null,
-    "score": 0.55,
-    "howto": false,
-    "reading_time_min": 1,
-    "translated": {
-      "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "bay-gio-toi-thuc-hien-hau-het-moi-cong-viec-pdf-kho-chiu-tre-e3b74b"
-  },
   "657c1b7c5a36fe10": {
     "id": "657c1b7c5a36fe10",
     "url": "https://linuxhandbook.com/newsletter/26-15",
@@ -20149,6 +20269,42 @@
     },
     "hidden": false,
     "slug": "lhb-linux-digest-2615-thuan-hoa-stderr-chung-nhan-an-ninh-ma-657c1b"
+  },
+  "e3b74b75e702204f": {
+    "id": "e3b74b75e702204f",
+    "url": "https://www.makeuseof.com/bentopdf-local-browser-pdf-tools",
+    "source": {
+      "id": "makeuseof",
+      "name": "MakeUseOf",
+      "site_url": "https://www.makeuseof.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Oluwademilade Afolabi",
+    "published_at": "2026-10-28T15:45:18+00:00",
+    "fetched_at": "2026-10-29T07:34:48.891250+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "I do almost every annoying PDF job locally in my browser now",
+      "vi": "Bây giờ tôi thực hiện hầu hết mọi công việc PDF khó chịu trên trình duyệt của mình"
+    },
+    "summary": {
+      "en": "I’m running out of reasons to open a dedicated PDF app.",
+      "vi": "Tôi không còn lý do để mở một ứng dụng PDF chuyên dụng."
+    },
+    "categories": [
+      "office"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.55,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "bay-gio-toi-thuc-hien-hau-het-moi-cong-viec-pdf-kho-chiu-tre-e3b74b"
   },
   "7c214f2efd884062": {
     "id": "7c214f2efd884062",
