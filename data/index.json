@@ -987,6 +987,80 @@
       "en": "machine"
     }
   },
+  "d3ae90b2571686e8": {
+    "id": "d3ae90b2571686e8",
+    "slug": "claudes-desktop-app-can-now-make-and-install-apps-not-on-lin-d3ae90",
+    "url": "https://www.omgubuntu.co.uk/2026/11/claude-artifact-apps-not-on-linux-yet",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "2026-11-25T18:35:40+00:00",
+    "fetched_at": "2026-11-26T01:50:32.867968+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Claude’s desktop app can now make and install apps (not on Linux yet)",
+      "vi": "Ứng dụng dành cho máy tính để bàn của Claude hiện có thể tạo và cài đặt ứng dụng (chưa có trên Linux)"
+    },
+    "summary": {
+      "en": "Claude now lets users install artifacts, the small interactive tools the LLM can create during chats, as standalone(ish) desktop apps. The new ‘artifact apps’ (sic) run in their own window and get their own desktop shortcut and icon. They show notifications and add panel…",
+      "vi": "Claude hiện cho phép người dùng cài đặt các tạo phẩm, các công cụ tương tác nhỏ mà LLM có thể tạo trong các cuộc trò chuyện, dưới dạng ứng dụng máy tính để bàn (ish) độc lập. 'Ứng dụng tạo tác' mới (sic) chạy trong cửa sổ riêng và có biểu tượng và lối tắt trên màn hình của riêng chúng. Họ hiển thị thông báo và thêm…"
+    },
+    "categories": [
+      "ai",
+      "linux"
+    ],
+    "tags": [
+      "claude",
+      "shortcut"
+    ],
+    "difficulty": "easy",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "9cd7e84cbfd231ee": {
+    "id": "9cd7e84cbfd231ee",
+    "slug": "the-verges-2026-holiday-gift-guide-for-travelers-9cd7e8",
+    "url": "https://www.theverge.com/gadgets/1021917/best-gifts-for-travelers-2026",
+    "source": {
+      "id": "theverge",
+      "name": "The Verge",
+      "site_url": "https://www.theverge.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Ryan Waniata",
+    "published_at": "2026-11-25T21:48:00+00:00",
+    "fetched_at": "2026-11-26T01:50:32.867968+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "The Verge’s 2026 holiday gift guide for travelers",
+      "vi": "Hướng dẫn quà tặng kỳ nghỉ năm 2026 của The Verge dành cho khách du lịch"
+    },
+    "summary": {
+      "en": "Everyone has that traveler in their life. That person who feels more at home on a 14-hour train ride than a quiet Sunday on the couch. They speak multiple languages, have a gut like a goat, and make friends wherever they go. Whether they're your kindred spirit or the person you…",
+      "vi": "Mọi người đều có người du hành đó trong cuộc đời của họ. Người đó cảm thấy như ở nhà trên chuyến tàu kéo dài 14 giờ hơn là một ngày Chủ nhật yên tĩnh trên ghế dài. Họ nói được nhiều thứ tiếng, có lòng can đảm như một con dê và kết bạn ở bất cứ nơi đâu họ đến. Cho dù họ là tâm hồn đồng điệu của bạn hay người mà bạn…"
+    },
+    "categories": [
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.5,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
   "77e32da8e58573a6": {
     "id": "77e32da8e58573a6",
     "slug": "sap-xep-va-truyen-dat-thong-tin-phuc-tap-bang-danh-sach-duoc-77e32d",
@@ -1912,6 +1986,78 @@
       "vi": "machine"
     }
   },
+  "06d22c037263112d": {
+    "id": "06d22c037263112d",
+    "slug": "gemini-for-home-gets-faster-responses-smoother-chats-and-fix-06d22c",
+    "url": "https://www.androidauthority.com/gemini-for-home-update-faster-commands-bug-fixes-3739481",
+    "source": {
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Hillary Keverenge",
+    "published_at": "2026-11-25T20:15:58+00:00",
+    "fetched_at": "2026-11-26T01:50:32.867968+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Gemini for Home gets faster responses, smoother chats, and fixes for follow-up and music bugs",
+      "vi": "Gemini for Home nhận được phản hồi nhanh hơn, trò chuyện mượt mà hơn và sửa lỗi theo dõi và lỗi âm nhạc"
+    },
+    "summary": {
+      "en": "Everyday voice commands should feel a little less frustrating.",
+      "vi": "Lệnh thoại hàng ngày sẽ cảm thấy bớt bực bội hơn một chút."
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "gemini"
+    ],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "6d78f8a95248385a": {
+    "id": "6d78f8a95248385a",
+    "slug": "10-of-the-best-gta-6-cheat-codes-and-how-to-use-them-6d78f8",
+    "url": "https://lifehacker.com/tech/best-gta-6-cheat-codes-and-how-to-use-them",
+    "source": {
+      "id": "lifehacker",
+      "name": "Lifehacker",
+      "site_url": "https://lifehacker.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Pranay Parab",
+    "published_at": "2026-11-25T20:30:00+00:00",
+    "fetched_at": "2026-11-26T01:50:32.867968+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "10 of the Best 'GTA 6' Cheat Codes, and How to Use Them",
+      "vi": "10 mã gian lận 'GTA 6' hay nhất và cách sử dụng chúng"
+    },
+    "summary": {
+      "en": "You need to finish the main story first to access cheats in GTA 6.",
+      "vi": "Trước tiên, bạn cần hoàn thành câu chuyện chính để truy cập các mánh gian lận trong GTA 6."
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
   "009d89703dd91abd": {
     "id": "009d89703dd91abd",
     "slug": "chinh-sua-toan-bo-ban-trinh-bay-voi-gemini-trong-google-tran-009d89",
@@ -2604,6 +2750,41 @@
       "vpn"
     ],
     "difficulty": "easy",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "ceecf9e348f1c1f1": {
+    "id": "ceecf9e348f1c1f1",
+    "slug": "googles-patent-for-custom-ai-video-feeds-paints-a-bleak-pict-ceecf9",
+    "url": "https://www.theverge.com/entertainment/1042221/google-my-channel-ai-video-patent",
+    "source": {
+      "id": "theverge",
+      "name": "The Verge",
+      "site_url": "https://www.theverge.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Charles Pulliam-Moore",
+    "published_at": "2026-11-25T21:51:26+00:00",
+    "fetched_at": "2026-11-26T01:50:32.867968+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Google’s patent for custom AI video feeds paints a bleak picture of entertainment’s future",
+      "vi": "Bằng sáng chế của Google về nguồn cấp dữ liệu video AI tùy chỉnh vẽ nên một bức tranh ảm đạm về tương lai của ngành giải trí"
+    },
+    "summary": {
+      "en": "Last year, Google filed a patent for a system called My Channel that's designed to create feeds filled with personalized, AI-generated videos and advertisements based on information the company knows about its users. The patent has been rejected, but unfortunately, Google might…",
+      "vi": "Năm ngoái, Google đã nộp bằng sáng chế cho một hệ thống có tên My Channel được thiết kế để tạo các nguồn cấp dữ liệu chứa đầy các video và quảng cáo được cá nhân hóa do AI tạo ra dựa trên thông tin mà công ty biết về người dùng của mình. Bằng sáng chế đã bị từ chối, nhưng thật không may, Google có thể…"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
     "score": 1.29,
     "howto": true,
     "reading_time_min": 1,
@@ -3827,6 +4008,42 @@
     "difficulty": "medium",
     "score": 1.26,
     "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "f01842307932cb5c": {
+    "id": "f01842307932cb5c",
+    "slug": "meet-warty-the-ai-launcher-canonical-is-building-for-ubuntu-f01842",
+    "url": "https://feed.itsfoss.com/link/24361/17540845/ubuntu-ai-launcher-plans",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "2026-11-25T15:58:00+00:00",
+    "fetched_at": "2026-11-26T01:50:32.867968+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Meet Warty, the AI Launcher Canonical Is Building for Ubuntu",
+      "vi": "Gặp Warty, AI Launcher Canonical đang được xây dựng cho Ubuntu"
+    },
+    "summary": {
+      "en": "Ubuntu's AI launcher should be available in January. Every AI feature introduced is being strictly opt-in and local-first.",
+      "vi": "Trình khởi chạy AI của Ubuntu sẽ có mặt vào tháng 1. Mọi tính năng AI được giới thiệu đều được chọn tham gia nghiêm ngặt và ưu tiên cục bộ."
+    },
+    "categories": [
+      "ai",
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
@@ -5286,6 +5503,42 @@
     "reading_time_min": 1,
     "translated": {
       "en": "machine"
+    }
+  },
+  "b45d58e25dc6779d": {
+    "id": "b45d58e25dc6779d",
+    "slug": "how-to-choose-the-next-safe-step-in-application-modernizatio-b45d58",
+    "url": "https://github.blog/ai-and-ml/github-copilot/how-to-choose-the-next-safe-step-in-application-modernization",
+    "source": {
+      "id": "githubblog",
+      "name": "GitHub Blog",
+      "site_url": "https://github.blog",
+      "kind": "news",
+      "content_type": "vendor"
+    },
+    "author": "Sam Quakenbush",
+    "published_at": "2026-11-25T15:00:00+00:00",
+    "fetched_at": "2026-11-26T01:50:32.867968+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "How to choose the next safe step in application modernization",
+      "vi": "Cách chọn bước an toàn tiếp theo trong quá trình hiện đại hóa ứng dụng"
+    },
+    "summary": {
+      "en": "Learn how to assess a legacy application, choose a bounded modernization step, and reuse the method with a GitHub Copilot agent skill.",
+      "vi": "Tìm hiểu cách đánh giá một ứng dụng cũ, chọn bước hiện đại hóa có giới hạn và sử dụng lại phương pháp này bằng kỹ năng tác nhân GitHub Copilot."
+    },
+    "categories": [
+      "ai",
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.09,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
     }
   },
   "db85abacb121d037": {

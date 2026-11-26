@@ -1,11 +1,5 @@
 [
   {
-    "id": "f18d65f7da2a2657",
-    "title": "iPhone mất hàng chục GB bộ nhớ vì một mục ít người để ý",
-    "featured_at": "2026-11-11T06:45:17.285179+00:00",
-    "date": "2026-11-11"
-  },
-  {
     "id": "64bb151c75ac96d4",
     "title": "Robot học nghề từ video người thật: từ GR00T N1 năm 2025 đến GR00T 2",
     "featured_at": "2026-11-12T20:56:47.053298+00:00",
@@ -46,5 +40,11 @@
     "title": "Zhang Xue Motorcycle có kế hoạch ra mắt một chiếc xe máy điện dành cho người giao đồ ăn vào năm tới, với mức giá được giữ ở mức khoảng 10.000 nhân dân tệ.",
     "featured_at": "2026-11-25T05:30:04.594883+00:00",
     "date": "2026-11-25"
+  },
+  {
+    "id": "d3ae90b2571686e8",
+    "title": "Ứng dụng dành cho máy tính để bàn của Claude hiện có thể tạo và cài đặt ứng dụng (chưa có trên Linux)",
+    "featured_at": "2026-11-26T01:51:16.952374+00:00",
+    "date": "2026-11-26"
   }
 ]
