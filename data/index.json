@@ -2058,6 +2058,44 @@
       "vi": "machine"
     }
   },
+  "ab4f86d113c0823a": {
+    "id": "ab4f86d113c0823a",
+    "slug": "heres-how-to-get-app-lock-on-your-android-phone-right-now-ab4f86",
+    "url": "https://www.androidauthority.com/how-to-get-app-lock-on-android-phone-3738771",
+    "source": {
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Andy Walker",
+    "published_at": "2026-11-26T09:00:10+00:00",
+    "fetched_at": "2026-11-26T11:03:17.143573+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Here’s how to get app lock on your Android phone right now",
+      "vi": "Here’s how to get app lock on your Android phone right now"
+    },
+    "summary": {
+      "en": "You don't need to upgrade your phone to get the latest Samsung security feature.",
+      "vi": "You don't need to upgrade your phone to get the latest Samsung security feature."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
   "009d89703dd91abd": {
     "id": "009d89703dd91abd",
     "slug": "chinh-sua-toan-bo-ban-trinh-bay-voi-gemini-trong-google-tran-009d89",
@@ -2790,6 +2828,83 @@
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
+    }
+  },
+  "0c51ce2d7c73711b": {
+    "id": "0c51ce2d7c73711b",
+    "slug": "motorola-signature-27-hands-on-a-1600-flagship-that-samsung-0c51ce",
+    "url": "https://www.androidauthority.com/motorolas-done-the-hard-part-with-the-signature-27-3739407",
+    "source": {
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Stephen Radochia",
+    "published_at": "2026-11-26T11:00:56+00:00",
+    "fetched_at": "2026-11-26T11:03:17.143573+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Motorola Signature 27 hands-on: A $1,600 flagship that Samsung and Google can’t match",
+      "vi": "Motorola Signature 27 hands-on: A $1,600 flagship that Samsung and Google can’t match"
+    },
+    "summary": {
+      "en": "The Motorola Signature 27 is a worthy flagship, but it takes more than top-tier specs to create a winning device.",
+      "vi": "The Motorola Signature 27 is a worthy flagship, but it takes more than top-tier specs to create a winning device."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "6a02e36133622d88": {
+    "id": "6a02e36133622d88",
+    "slug": "android-17-is-getting-a-new-setting-to-prevent-unwanted-blue-6a02e3",
+    "url": "https://www.androidauthority.com/android-17-keep-audio-in-headphones-3739645",
+    "source": {
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Adamya Sharma",
+    "published_at": "2026-11-26T08:45:41+00:00",
+    "fetched_at": "2026-11-26T11:03:17.143573+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Android 17 is getting a new setting to prevent unwanted Bluetooth audio switching",
+      "vi": "Android 17 is getting a new setting to prevent unwanted Bluetooth audio switching"
+    },
+    "summary": {
+      "en": "Google looks set to borrow a handy feature from Apple's iOS 26 playbook.",
+      "vi": "Google looks set to borrow a handy feature from Apple's iOS 26 playbook."
+    },
+    "categories": [
+      "android",
+      "hardware"
+    ],
+    "tags": [],
+    "difficulty": "easy",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "73d60418285cd4ad": {
@@ -3978,39 +4093,47 @@
       "vi": "machine"
     }
   },
-  "c80c5fcac2e3fe98": {
-    "id": "c80c5fcac2e3fe98",
-    "slug": "euro-office-the-onlyoffice-fork-now-has-a-desktop-app-c80c5f",
-    "url": "https://www.omgubuntu.co.uk/2026/11/euro-office-desktop-apps-nextcloud",
+  "ec18c15544985141": {
+    "id": "ec18c15544985141",
+    "slug": "app1agora-android-llm-ec18c1",
+    "url": "https://sspai.com/post/116773",
     "source": {
-      "id": "omgubuntu",
-      "name": "OMG! Ubuntu!",
-      "site_url": "https://www.omgubuntu.co.uk",
-      "kind": "tips",
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
       "content_type": "article"
     },
-    "author": "Joey Sneddon",
-    "published_at": "2026-11-13T20:14:18+00:00",
-    "fetched_at": "2026-11-20T13:09:24.007904+00:00",
-    "original_lang": "en",
+    "author": "爱拼安小匠",
+    "published_at": "2026-11-26T09:30:00+00:00",
+    "fetched_at": "2026-11-26T11:03:17.143573+00:00",
+    "original_lang": "zh-CN",
     "title": {
-      "en": "Euro-Office, the ONLYOFFICE fork, now has a desktop app",
-      "vi": "Euro-Office, nhánh DUY NHẤT, hiện có ứng dụng dành cho máy tính để bàn"
+      "zh-CN": "App+1｜Agora：开源、易用、好用，给 Android 用户的 LLM 聊天工具",
+      "vi": "App+1｜Agora：开源、易用、好用，给 Android 用户的 LLM 聊天工具",
+      "en": "App+1｜Agora：开源、易用、好用，给 Android 用户的 LLM 聊天工具"
     },
     "summary": {
-      "en": "Euro-Office, the Nextcloud-backed fork of ONLYOFFICE, is now available to download and install on desktops as Nextcloud Office Desktop. Announced in March 2026, Euro-Office is a European-based alternative to Microsoft 365 and a fork of ONLYOFFICE. It’s currently something users…",
-      "vi": "Euro-Office, một nhánh của ONLYOFFICE được Nextcloud hỗ trợ, hiện có sẵn để tải xuống và cài đặt trên máy tính để bàn dưới dạng Nextcloud Office Desktop. Được công bố vào tháng 3 năm 2026, Euro-Office là một giải pháp thay thế cho Microsoft 365 có trụ sở tại Châu Âu và là một nhánh của ONLYOFFICE. Hiện tại nó là thứ…"
+      "zh-CN": "如果你在通过 API 调用你喜欢的大模型，希望它们能像 Kimi 等商业 AI 客户端那样用着顺手，那 Agora 就是为你而来的。相信我，Agora 不会让你失望。 查看全文",
+      "vi": "如果你在通过 API 调用你喜欢的大模型，希望它们能像 Kimi 等商业 AI 客户端那样用着顺手，那 Agora 就是为你而来的。相信我，Agora 不会让你失望。 查看全文",
+      "en": "如果你在通过 API 调用你喜欢的大模型，希望它们能像 Kimi 等商业 AI 客户端那样用着顺手，那 Agora 就是为你而来的。相信我，Agora 不会让你失望。 查看全文"
     },
     "categories": [
-      "windows"
+      "ai",
+      "android"
     ],
     "tags": [],
-    "difficulty": "medium",
-    "score": 1.26,
-    "howto": true,
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
     "reading_time_min": 1,
     "translated": {
-      "vi": "machine"
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
     }
   },
   "f01842307932cb5c": {
@@ -4044,6 +4167,162 @@
     "difficulty": null,
     "score": 1.27,
     "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "b67cfcb4e211dd43": {
+    "id": "b67cfcb4e211dd43",
+    "slug": "chatgpt-keynote-b67cfc",
+    "url": "https://sspai.com/post/119563",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "胡拉图说",
+    "published_at": "2026-11-26T07:00:00+00:00",
+    "fetched_at": "2026-11-26T11:03:17.143573+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "论文作图不求人，用 ChatGPT 和 Keynote 免费搞定机理图",
+      "vi": "论文作图不求人，用 ChatGPT 和 Keynote 免费搞定机理图",
+      "en": "论文作图不求人，用 ChatGPT 和 Keynote 免费搞定机理图"
+    },
+    "summary": {
+      "zh-CN": "在 AI 工具玲琅满目的今天，用各种方法「写」出一篇论文已经不算难事。但有一个环节依然很让人头疼——论文里的机理图。 查看全文",
+      "vi": "在 AI 工具玲琅满目的今天，用各种方法「写」出一篇论文已经不算难事。但有一个环节依然很让人头疼——论文里的机理图。 查看全文",
+      "en": "在 AI 工具玲琅满目的今天，用各种方法「写」出一篇论文已经不算难事。但有一个环节依然很让人头疼——论文里的机理图。 查看全文"
+    },
+    "categories": [
+      "ai"
+    ],
+    "tags": [
+      "chatgpt"
+    ],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
+  "983343b891fc524d": {
+    "id": "983343b891fc524d",
+    "slug": "linus-torvalds-is-angry-again-this-time-with-ext4-dev-983343",
+    "url": "https://feed.itsfoss.com/link/24361/17541208/linux-torvalds-scolds-ext4-maintainer",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "2026-11-26T08:11:12+00:00",
+    "fetched_at": "2026-11-26T11:03:17.143573+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Linus Torvalds is Angry Again, This Time With ext4 Dev",
+      "vi": "Linus Torvalds is Angry Again, This Time With ext4 Dev"
+    },
+    "summary": {
+      "en": "\"You are full of crap\". Linux creator Linus Torvalds gets angry at ext4 maintainer.",
+      "vi": "\"You are full of crap\". Linux creator Linus Torvalds gets angry at ext4 maintainer."
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "1dc558d1ede55d2c": {
+    "id": "1dc558d1ede55d2c",
+    "slug": "xnulinux-lets-you-run-macos-on-linux-without-a-vm-1dc558",
+    "url": "https://www.omgubuntu.co.uk/2026/11/xnulinux-runs-mac-desktop-on-linux-natively",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "2026-11-26T03:03:52+00:00",
+    "fetched_at": "2026-11-26T11:03:17.143573+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "XNULinux lets you run macOS on Linux without a VM",
+      "vi": "XNULinux lets you run macOS on Linux without a VM"
+    },
+    "summary": {
+      "en": "A new open-source project loads Apple’s XNU kernel as a module inside the Linux kernel, allowing the macOS desktop to run natively – no virtual machine required. The XNULinux project is open source, highly experimental and likely not-something Apple bods will be thrilled to see.…",
+      "vi": "A new open-source project loads Apple’s XNU kernel as a module inside the Linux kernel, allowing the macOS desktop to run natively – no virtual machine required. The XNULinux project is open source, highly experimental and likely not-something Apple bods will be thrilled to see.…"
+    },
+    "categories": [
+      "linux",
+      "macos"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "c80c5fcac2e3fe98": {
+    "id": "c80c5fcac2e3fe98",
+    "slug": "euro-office-the-onlyoffice-fork-now-has-a-desktop-app-c80c5f",
+    "url": "https://www.omgubuntu.co.uk/2026/11/euro-office-desktop-apps-nextcloud",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "2026-11-13T20:14:18+00:00",
+    "fetched_at": "2026-11-20T13:09:24.007904+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Euro-Office, the ONLYOFFICE fork, now has a desktop app",
+      "vi": "Euro-Office, nhánh DUY NHẤT, hiện có ứng dụng dành cho máy tính để bàn"
+    },
+    "summary": {
+      "en": "Euro-Office, the Nextcloud-backed fork of ONLYOFFICE, is now available to download and install on desktops as Nextcloud Office Desktop. Announced in March 2026, Euro-Office is a European-based alternative to Microsoft 365 and a fork of ONLYOFFICE. It’s currently something users…",
+      "vi": "Euro-Office, một nhánh của ONLYOFFICE được Nextcloud hỗ trợ, hiện có sẵn để tải xuống và cài đặt trên máy tính để bàn dưới dạng Nextcloud Office Desktop. Được công bố vào tháng 3 năm 2026, Euro-Office là một giải pháp thay thế cho Microsoft 365 có trụ sở tại Châu Âu và là một nhánh của ONLYOFFICE. Hiện tại nó là thứ…"
+    },
+    "categories": [
+      "windows"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.26,
+    "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
@@ -5541,6 +5820,44 @@
       "vi": "machine"
     }
   },
+  "33bc6f41102f9a25": {
+    "id": "33bc6f41102f9a25",
+    "slug": "bambu-lab-p3c-may-in-3d-7-dau-in-doi-tu-dong-gia-1149-usd-kh-33bc6f",
+    "url": "https://tinhte.vn/thread/bambu-lab-p3c-may-in-3d-7-dau-in-doi-tu-dong-gia-1-149-usd-khoang-29-9-trieu-dong.4195602",
+    "source": {
+      "id": "tinhte",
+      "name": "Tinh tế",
+      "site_url": "https://tinhte.vn",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Quocxi",
+    "published_at": "2026-11-26T07:09:47+00:00",
+    "fetched_at": "2026-11-26T11:03:17.143573+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Bambu Lab P3C: máy in 3D 7 đầu in đổi tự động, giá 1.149 USD (khoảng 29,9 triệu đồng)",
+      "en": "Bambu Lab P3C: máy in 3D 7 đầu in đổi tự động, giá 1.149 USD (khoảng 29,9 triệu đồng)"
+    },
+    "summary": {
+      "vi": "In 3D nhiều màu trước giờ có hai cách quen thuộc: một đầu in đổi nhựa liên tục, vừa chậm vừa xả nhựa thừa, hoặc máy hai đầu in giá cao hơn. Bambu Lab vừa đưa ra P3C, máy in thế hệ thứ ba của hãng",
+      "en": "In 3D nhiều màu trước giờ có hai cách quen thuộc: một đầu in đổi nhựa liên tục, vừa chậm vừa xả nhựa thừa, hoặc máy hai đầu in giá cao hơn. Bambu Lab vừa đưa ra P3C, máy in thế hệ thứ ba của hãng"
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.09,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": false
+    },
+    "translate_attempts": {
+      "en": 1
+    }
+  },
   "db85abacb121d037": {
     "id": "db85abacb121d037",
     "slug": "sanket-cho-phep-ban-thiet-ke-lai-menu-ngay-va-cai-dat-nhanh-db85ab",
@@ -6100,6 +6417,48 @@
       "en": "machine"
     }
   },
+  "f973f65a01de8d9f": {
+    "id": "f973f65a01de8d9f",
+    "slug": "ai-f973f6",
+    "url": "https://sspai.com/post/117510",
+    "source": {
+      "id": "sspai-cn",
+      "name": "少数派",
+      "site_url": "https://sspai.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "DeanChen",
+    "published_at": "2026-11-26T03:13:53+00:00",
+    "fetched_at": "2026-11-26T11:03:17.143573+00:00",
+    "original_lang": "zh-CN",
+    "title": {
+      "zh-CN": "我用AI做了一张两千年的中国历史地图",
+      "vi": "我用AI做了一张两千年的中国历史地图",
+      "en": "我用AI做了一张两千年的中国历史地图"
+    },
+    "summary": {
+      "zh-CN": "希望这张地图，能陪更多人走一遍故纸堆里的万里江山。 查看全文",
+      "vi": "希望这张地图，能陪更多人走一遍故纸堆里的万里江山。 查看全文",
+      "en": "希望这张地图，能陪更多人走一遍故纸堆里的万里江山。 查看全文"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.05,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false,
+      "en": false
+    },
+    "translate_attempts": {
+      "vi": 1,
+      "en": 1
+    }
+  },
   "86f92144e20a5795": {
     "id": "86f92144e20a5795",
     "slug": "google-is-quietly-reworking-geminis-sidebar-and-testing-a-ne-86f921",
@@ -6322,6 +6681,47 @@
     "reading_time_min": 1,
     "translated": {
       "en": "machine"
+    }
+  },
+  "60243017ffb2c214": {
+    "id": "60243017ffb2c214",
+    "slug": "tien-ich-adobe-bi-nguoi-dung-phat-hien-am-tham-bao-ssd-lien-602430",
+    "url": "https://genk.vn/tien-ich-adobe-bi-nguoi-dung-phat-hien-am-tham-bao-ssd-lien-tuc-ghi-du-lieu-du-may-de-khong-165261126125459526.chn",
+    "source": {
+      "id": "genk",
+      "name": "GenK Thủ Thuật",
+      "site_url": "https://genk.vn",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "2026-11-26T05:54:00+00:00",
+    "fetched_at": "2026-11-26T11:03:17.143573+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "Tiện ích Adobe bị người dùng phát hiện âm thầm “bào” SSD, liên tục ghi dữ liệu dù máy để không",
+      "en": "Tiện ích Adobe bị người dùng phát hiện âm thầm “bào” SSD, liên tục ghi dữ liệu dù máy để không"
+    },
+    "summary": {
+      "vi": "Một người dùng Windows 11 phát hiện hoạt động ghi dữ liệu bất thường liên quan đến tiện ích Adobe trên Chrome.",
+      "en": "Một người dùng Windows 11 phát hiện hoạt động ghi dữ liệu bất thường liên quan đến tiện ích Adobe trên Chrome."
+    },
+    "categories": [
+      "hardware",
+      "windows"
+    ],
+    "tags": [
+      "chrome"
+    ],
+    "difficulty": null,
+    "score": 1.04,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "en": false
+    },
+    "translate_attempts": {
+      "en": 1
     }
   },
   "2300a891d5e063b3": {
@@ -7481,6 +7881,44 @@
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
+    }
+  },
+  "0f38ffd231ca3084": {
+    "id": "0f38ffd231ca3084",
+    "slug": "gta-6-lap-ky-luc-39-trieu-nguoi-choi-sau-3-ngay-0f38ff",
+    "url": "https://thanhnien.vn/gta-6-lap-ky-luc-39-trieu-nguoi-choi-sau-3-ngay-185261126103640085.htm",
+    "source": {
+      "id": "thanhnien_tech",
+      "name": "Thanh Niên Công Nghệ",
+      "site_url": "https://thanhnien.vn/cong-nghe",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": null,
+    "published_at": "2026-11-26T04:24:00+00:00",
+    "fetched_at": "2026-11-26T11:03:17.143573+00:00",
+    "original_lang": "vi",
+    "title": {
+      "vi": "GTA 6 lập kỷ lục 39 triệu người chơi sau 3 ngày",
+      "en": "GTA 6 lập kỷ lục 39 triệu người chơi sau 3 ngày"
+    },
+    "summary": {
+      "vi": "Tựa game bom tấn GTA 6 đạt doanh thu bán lẻ ngày đầu ước tính 3,79 tỉ USD và thiết lập hàng loạt kỷ lục về lượng người chơi lẫn thời gian trải nghiệm.",
+      "en": "Tựa game bom tấn GTA 6 đạt doanh thu bán lẻ ngày đầu ước tính 3,79 tỉ USD và thiết lập hàng loạt kỷ lục về lượng người chơi lẫn thời gian trải nghiệm."
+    },
+    "categories": [
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.0,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "en": false
+    },
+    "translate_attempts": {
+      "en": 1
     }
   },
   "d9c39429d489eec5": {
