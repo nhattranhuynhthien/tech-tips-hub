@@ -2169,6 +2169,83 @@
       "vi": "machine"
     }
   },
+  "5e1bd4fab40afb8f": {
+    "id": "5e1bd4fab40afb8f",
+    "slug": "your-firewall-isnt-enough-the-hidden-risk-of-unmanaged-vms-5e1bd4",
+    "url": "https://www.bleepingcomputer.com/news/security/your-firewall-isnt-enough-the-hidden-risk-of-unmanaged-vms",
+    "source": {
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "site_url": "https://www.bleepingcomputer.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Sponsored by ISPsystem",
+    "published_at": "2026-11-27T15:00:10+00:00",
+    "fetched_at": "2026-11-27T22:05:44.651665+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Your Firewall Isn't Enough: The Hidden Risk of Unmanaged VMs",
+      "vi": "Your Firewall Isn't Enough: The Hidden Risk of Unmanaged VMs"
+    },
+    "summary": {
+      "en": "Forgotten virtual machines, unpatched servers, and excessive access permissions can create security blind spots across IT infrastructure. ISPsystem explains how centralized infrastructure management, access controls, and resource lifecycle automation can help reduce these risks.",
+      "vi": "Forgotten virtual machines, unpatched servers, and excessive access permissions can create security blind spots across IT infrastructure. ISPsystem explains how centralized infrastructure management, access controls, and resource lifecycle automation can help reduce these risks."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
+  "c6d5b476cd828486": {
+    "id": "c6d5b476cd828486",
+    "slug": "openai-countersues-apple-alleging-trade-secret-theft-and-sup-c6d5b4",
+    "url": "https://9to5mac.com/2026/11/27/openai-countersues-apple-alleging-trade-secret-theft-and-supplier-threats",
+    "source": {
+      "id": "9to5mac",
+      "name": "9to5Mac",
+      "site_url": "https://9to5mac.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Zac Hall",
+    "published_at": "2026-11-27T18:42:21+00:00",
+    "fetched_at": "2026-11-27T22:05:44.651665+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "OpenAI countersues Apple, alleging trade secret theft and supplier threats",
+      "vi": "OpenAI countersues Apple, alleging trade secret theft and supplier threats"
+    },
+    "summary": {
+      "en": "OpenAI has countersued Apple, accusing the iPhone maker of stealing trade secrets and threatening suppliers working on its upcoming devices. The filing escalates a legal fight that began with Apple’s lawsuit against OpenAI in July .",
+      "vi": "OpenAI has countersued Apple, accusing the iPhone maker of stealing trade secrets and threatening suppliers working on its upcoming devices. The filing escalates a legal fight that began with Apple’s lawsuit against OpenAI in July ."
+    },
+    "categories": [
+      "macos",
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.41,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
+    }
+  },
   "009d89703dd91abd": {
     "id": "009d89703dd91abd",
     "slug": "chinh-sua-toan-bo-ban-trinh-bay-voi-gemini-trong-google-tran-009d89",
@@ -2984,6 +3061,47 @@
     },
     "translate_next_retry": {
       "vi": "2026-11-28T02:56:50+00:00"
+    }
+  },
+  "df62691ea8c084b9": {
+    "id": "df62691ea8c084b9",
+    "slug": "pcloud-confirms-password-manager-hack-after-suspicious-login-df6269",
+    "url": "https://www.bleepingcomputer.com/news/security/pcloud-confirms-password-manager-hack-after-suspicious-login-alerts",
+    "source": {
+      "id": "bleepingcomputer",
+      "name": "BleepingComputer",
+      "site_url": "https://www.bleepingcomputer.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Lawrence Abrams",
+    "published_at": "2026-11-27T19:26:04+00:00",
+    "fetched_at": "2026-11-27T22:05:44.651665+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "pCloud confirms password manager hack after suspicious login alerts",
+      "vi": "pCloud confirms password manager hack after suspicious login alerts"
+    },
+    "summary": {
+      "en": "The pCloud Pass password manager suffered a cyberattack, with users reporting that unknown devices had connected to their accounts even with two-factor authentication (2FA) enabled.",
+      "vi": "The pCloud Pass password manager suffered a cyberattack, with users reporting that unknown devices had connected to their accounts even with two-factor authentication (2FA) enabled."
+    },
+    "categories": [
+      "security"
+    ],
+    "tags": [
+      "password",
+      "2fa"
+    ],
+    "difficulty": "medium",
+    "score": 1.29,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 1
     }
   },
   "73d60418285cd4ad": {
