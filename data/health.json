@@ -1,10 +1,10 @@
 {
-  "updated_at": "2026-11-27T02:56:58+00:00",
+  "updated_at": "2026-11-27T12:45:54+00:00",
   "sources": {
     "sspai-cn": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:13.078540+00:00",
+      "last_success": "2026-11-27T12:44:37.937956+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -12,7 +12,7 @@
     "ithome-cn": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:14.016051+00:00",
+      "last_success": "2026-11-27T12:44:38.609834+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -20,7 +20,7 @@
     "itsfoss": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:15.822367+00:00",
+      "last_success": "2026-11-27T12:44:40.263365+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -28,7 +28,7 @@
     "linuxhandbook": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:17.559271+00:00",
+      "last_success": "2026-11-27T12:44:41.635656+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -36,7 +36,7 @@
     "omgubuntu": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:17.932480+00:00",
+      "last_success": "2026-11-27T12:44:42.039577+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -44,7 +44,7 @@
     "hackernews": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:20.690866+00:00",
+      "last_success": "2026-11-27T12:44:43.606330+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -52,7 +52,7 @@
     "devto_tips": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:21.135129+00:00",
+      "last_success": "2026-11-27T12:44:44.090048+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -60,7 +60,7 @@
     "bleepingcomputer": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:21.496149+00:00",
+      "last_success": "2026-11-27T12:44:44.459226+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -68,7 +68,7 @@
     "9to5mac": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:21.930919+00:00",
+      "last_success": "2026-11-27T12:44:44.956496+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -76,7 +76,7 @@
     "9to5google": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:22.374870+00:00",
+      "last_success": "2026-11-27T12:44:45.439100+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -84,7 +84,7 @@
     "arstechnica": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:22.751374+00:00",
+      "last_success": "2026-11-27T12:44:45.852964+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -92,7 +92,7 @@
     "androidauthority": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:23.186061+00:00",
+      "last_success": "2026-11-27T12:44:46.348364+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -100,7 +100,7 @@
     "githubblog": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:23.531440+00:00",
+      "last_success": "2026-11-27T12:44:46.756812+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -108,7 +108,7 @@
     "krebsonsecurity": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:23.972898+00:00",
+      "last_success": "2026-11-27T12:44:47.222284+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -116,7 +116,7 @@
     "tomshardware": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:24.909385+00:00",
+      "last_success": "2026-11-27T12:44:48.155472+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -124,7 +124,7 @@
     "genk": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:26.459096+00:00",
+      "last_success": "2026-11-27T12:44:50.729957+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -132,7 +132,7 @@
     "tinhte": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:27.823223+00:00",
+      "last_success": "2026-11-27T12:44:52.597957+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -140,7 +140,7 @@
     "thanhnien_tech": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:28.911103+00:00",
+      "last_success": "2026-11-27T12:44:53.992174+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -148,87 +148,87 @@
     "vietnamnet_tech": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:31.826396+00:00",
+      "last_success": "2026-11-27T12:44:56.388833+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
     },
     "reddit-lpt": {
       "status": "paused",
-      "failure_count": 10,
+      "failure_count": 11,
       "last_success": "2026-11-10T17:57:40.117825+00:00",
-      "last_failure": "2026-11-26T11:03:38.605232+00:00",
-      "paused_until": "2026-11-27T11:03:38.605248+00:00",
+      "last_failure": "2026-11-27T12:44:56.858881+00:00",
+      "paused_until": "2026-11-28T12:44:56.858896+00:00",
       "last_error": "HTTP 404"
     },
     "reddit-androidtips": {
       "status": "paused",
-      "failure_count": 13,
+      "failure_count": 14,
       "last_success": "2026-11-01T07:39:00.911927+00:00",
-      "last_failure": "2026-11-26T11:03:40.753355+00:00",
-      "paused_until": "2026-11-27T11:03:40.753372+00:00",
+      "last_failure": "2026-11-27T12:44:59.289084+00:00",
+      "paused_until": "2026-11-28T12:44:59.289099+00:00",
       "last_error": "HTTP 429"
     },
     "reddit-iostips": {
       "status": "paused",
-      "failure_count": 13,
+      "failure_count": 14,
       "last_success": null,
-      "last_failure": "2026-11-26T11:03:42.783961+00:00",
-      "paused_until": "2026-11-27T11:03:42.783977+00:00",
-      "last_error": "HTTP 429"
+      "last_failure": "2026-11-27T12:45:00.507086+00:00",
+      "paused_until": "2026-11-28T12:45:00.507102+00:00",
+      "last_error": "HTTP 404"
     },
     "reddit-win11": {
       "status": "paused",
-      "failure_count": 13,
+      "failure_count": 14,
       "last_success": null,
-      "last_failure": "2026-11-26T11:03:45.027728+00:00",
-      "paused_until": "2026-11-27T11:03:45.027763+00:00",
+      "last_failure": "2026-11-27T12:45:02.451465+00:00",
+      "paused_until": "2026-11-28T12:45:02.451481+00:00",
       "last_error": "HTTP 429"
     },
     "reddit-excel": {
       "status": "paused",
-      "failure_count": 13,
+      "failure_count": 14,
       "last_success": null,
-      "last_failure": "2026-11-26T11:03:47.113540+00:00",
-      "paused_until": "2026-11-27T11:03:47.113554+00:00",
+      "last_failure": "2026-11-27T12:45:04.946485+00:00",
+      "paused_until": "2026-11-28T12:45:04.946501+00:00",
       "last_error": "HTTP 429"
     },
     "reddit-selfhosted": {
       "status": "paused",
-      "failure_count": 13,
+      "failure_count": 14,
       "last_success": null,
-      "last_failure": "2026-11-26T11:03:49.290334+00:00",
-      "paused_until": "2026-11-27T11:03:49.290350+00:00",
+      "last_failure": "2026-11-27T12:45:06.982136+00:00",
+      "paused_until": "2026-11-28T12:45:06.982153+00:00",
       "last_error": "HTTP 429"
     },
     "reddit-linux4noobs": {
       "status": "paused",
-      "failure_count": 13,
+      "failure_count": 14,
       "last_success": null,
-      "last_failure": "2026-11-26T11:03:51.190961+00:00",
-      "paused_until": "2026-11-27T11:03:51.190978+00:00",
+      "last_failure": "2026-11-27T12:45:09.438196+00:00",
+      "paused_until": "2026-11-28T12:45:09.438212+00:00",
       "last_error": "HTTP 429"
     },
     "reddit-technology": {
       "status": "paused",
-      "failure_count": 13,
+      "failure_count": 14,
       "last_success": null,
-      "last_failure": "2026-11-26T11:03:52.973992+00:00",
-      "paused_until": "2026-11-27T11:03:52.974008+00:00",
+      "last_failure": "2026-11-27T12:45:11.737349+00:00",
+      "paused_until": "2026-11-28T12:45:11.737364+00:00",
       "last_error": "HTTP 429"
     },
     "reddit-gadgets": {
       "status": "paused",
-      "failure_count": 13,
+      "failure_count": 14,
       "last_success": null,
-      "last_failure": "2026-11-26T11:03:55.196376+00:00",
-      "paused_until": "2026-11-27T11:03:55.196392+00:00",
+      "last_failure": "2026-11-27T12:45:13.745384+00:00",
+      "paused_until": "2026-11-28T12:45:13.745399+00:00",
       "last_error": "HTTP 429"
     },
     "hn-algolia": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:32.433787+00:00",
+      "last_success": "2026-11-27T12:45:16.023584+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -236,7 +236,7 @@
     "lifehacker": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:33.526567+00:00",
+      "last_success": "2026-11-27T12:45:17.271901+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -244,7 +244,7 @@
     "theverge": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:33.919590+00:00",
+      "last_success": "2026-11-27T12:45:17.807134+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -252,7 +252,7 @@
     "workspace-updates": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:34.785315+00:00",
+      "last_success": "2026-11-27T12:45:18.724067+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -260,7 +260,7 @@
     "android-dev": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:35.470065+00:00",
+      "last_success": "2026-11-27T12:45:20.006836+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -268,7 +268,7 @@
     "windows-blog": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:35.859237+00:00",
+      "last_success": "2026-11-27T12:45:20.426809+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -276,31 +276,31 @@
     "mozilla": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:36.281981+00:00",
+      "last_success": "2026-11-27T12:45:21.184654+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
     },
     "vnexpress-sohoa-news": {
       "status": "paused",
-      "failure_count": 13,
+      "failure_count": 14,
       "last_success": null,
-      "last_failure": "2026-11-26T11:04:00.907380+00:00",
-      "paused_until": "2026-11-27T11:04:00.907398+00:00",
+      "last_failure": "2026-11-27T12:45:22.804924+00:00",
+      "paused_until": "2026-11-28T12:45:22.804940+00:00",
       "last_error": "HTTP 404"
     },
     "dantri-smd": {
       "status": "paused",
-      "failure_count": 9,
+      "failure_count": 10,
       "last_success": "2026-11-11T22:48:04.421007+00:00",
-      "last_failure": "2026-11-26T11:04:02.173521+00:00",
-      "paused_until": "2026-11-27T11:04:02.173539+00:00",
+      "last_failure": "2026-11-27T12:45:23.937957+00:00",
+      "paused_until": "2026-11-28T12:45:23.937974+00:00",
       "last_error": "HTTP 404"
     },
     "tuoitre-nsso": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:37.979944+00:00",
+      "last_success": "2026-11-27T12:45:24.885824+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -308,7 +308,7 @@
     "obsidian-release": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:38.560049+00:00",
+      "last_success": "2026-11-27T12:45:25.585504+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null
@@ -316,7 +316,7 @@
     "powertoys-release": {
       "status": "ok",
       "failure_count": 0,
-      "last_success": "2026-11-27T02:56:39.991428+00:00",
+      "last_success": "2026-11-27T12:45:26.855741+00:00",
       "last_failure": null,
       "paused_until": null,
       "last_error": null

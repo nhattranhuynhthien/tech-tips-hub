@@ -9206,5 +9206,187 @@
     "translated": {
       "vi": "machine"
     }
+  },
+  "76e94f530dfa3054": {
+    "title": {
+      "en": "Got a MediaTek, Exynos, or Pixel device? Here are 11 tips for emulation",
+      "vi": "Bạn có thiết bị MediaTek, Exynos hoặc Pixel? Dưới đây là 11 mẹo thi đua"
+    },
+    "summary": {
+      "en": "From specific settings to alternative emulators, here's what you can try on your non-Snapdragon device.",
+      "vi": "Từ cài đặt cụ thể đến trình mô phỏng thay thế, đây là những gì bạn có thể thử trên thiết bị không phải Snapdragon của mình."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "c4f4c770d4bbe9e6": {
+    "title": {
+      "en": "Microsoft pushes emergency hotpatch to fix Windows Server crashes",
+      "vi": "Microsoft tung ra bản vá khẩn cấp để khắc phục sự cố Windows Server"
+    },
+    "summary": {
+      "en": "Microsoft has released an emergency hotpatch update to address Windows Server 2025 crashes triggered after installing this month's security hotpatch update (KB5131077).",
+      "vi": "Microsoft đã phát hành bản cập nhật hotpatch khẩn cấp để giải quyết các sự cố Windows Server 2025 xảy ra sau khi cài đặt bản cập nhật hotpatch bảo mật của tháng này (KB5131077)."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "6ffd309fca6a7159": {
+    "title": {
+      "en": "Electronics manufacturers set up memory 'war rooms' to find, lock in DRAM supplies amid worst shortage in history",
+      "vi": "Các nhà sản xuất điện tử lập 'phòng chiến' bộ nhớ để tìm, chốt nguồn cung DRAM trong bối cảnh thiếu hụt trầm trọng nhất lịch sử"
+    },
+    "summary": {
+      "en": "The memory chip shortage is forcing companies to find supplies using non-traditional avenues, such as online listings and the gray market. Some have even taken out loans just to have enough cash to buy chips as soon as they become available.",
+      "vi": "Sự thiếu hụt chip bộ nhớ đang buộc các công ty phải tìm nguồn cung bằng những con đường phi truyền thống, chẳng hạn như niêm yết trực tuyến và thị trường chợ đen. Một số thậm chí đã vay tiền chỉ để có đủ tiền mặt mua chip ngay khi chúng có sẵn."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "2a8bd297ef4d81b7": {
+    "title": {
+      "en": "AMD and Winbond vulnerabilities let attackers brute-force BitLocker PINs on millions of PCs",
+      "vi": "Lỗ hổng AMD và Winbond cho phép kẻ tấn công dùng mã PIN BitLocker trên hàng triệu PC"
+    },
+    "summary": {
+      "en": "AMD and Winbond vulnerabilities let hacks let malfeasants guess Bitlocker PINs on millions of machines — brute-forcing a six-digit PIN takes 20 days instead of 19 years, at most",
+      "vi": "Các lỗ hổng của AMD và Winbond cho phép kẻ xấu đoán mã PIN Bitlocker trên hàng triệu máy - việc ép buộc mã PIN gồm sáu chữ số mất nhiều nhất là 20 ngày thay vì 19 năm"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "1ac1f703ca091bce": {
+    "title": {
+      "en": "Signal Takes a Radical Step to Block Gemini and Siri From Reading Your Chats",
+      "vi": "Signal Thực hiện một bước đi triệt để để chặn Gemini và Siri đọc cuộc trò chuyện của bạn"
+    },
+    "summary": {
+      "en": "Signal wants Apple and Google to give apps an easy way to opt out of AI data access.",
+      "vi": "Signal muốn Apple và Google cung cấp cho các ứng dụng một cách dễ dàng để từ chối quyền truy cập dữ liệu AI."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "8b7e5956e702f878": {
+    "title": {
+      "en": "Quoth: A Local AI Speech to Text Tool for Linux That Picks Your Hardware",
+      "vi": "Quoth: Công cụ phát biểu thành văn bản AI cục bộ dành cho Linux giúp chọn phần cứng của bạn"
+    },
+    "summary": {
+      "en": "Quoth is a new open source dictation app made only for Linux. It runs Whisper AI models locally and benchmarks your CPU, GPU and NPU to pick the fastest one. Pretty good tool actually.",
+      "vi": "Quoth là một ứng dụng đọc chính tả mã nguồn mở mới chỉ dành cho Linux. Nó chạy cục bộ các mô hình Whisper AI và đánh giá CPU, GPU và NPU của bạn để chọn mô hình nhanh nhất. Công cụ khá tốt thực sự."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "770dae15730a56fc": {
+    "title": {
+      "en": "Linux Mint 27 beta downloads are available for testing",
+      "vi": "Bản tải xuống Linux Mint 27 beta có sẵn để thử nghiệm"
+    },
+    "summary": {
+      "en": "Beta builds of Linux Mint 27 ‘Adrien’ have hit the distro’s official download mirrors, though there’s been no official announcement about it yet. Linux Mint 27 is built on Ubuntu 26.04 LTS and the Linux 7.0 kernel. The main edition ships with Cinnamon 6.8, with versions using…",
+      "vi": "Các bản dựng beta của Linux Mint 27 ‘Adrien’ đã xuất hiện trên bản tải xuống chính thức của bản phân phối, mặc dù vẫn chưa có thông báo chính thức nào về nó. Linux Mint 27 được xây dựng trên Ubuntu 26.04 LTS và nhân Linux 7.0. Phiên bản chính đi kèm với Cinnamon 6.8, với các phiên bản sử dụng…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "313b0416edb2367e": {
+    "title": {
+      "en": "9 Model Context Protocol (MCP) Servers Every DevOps Engineer Should Know",
+      "vi": "9 máy chủ Giao thức bối cảnh mô hình (MCP) mà mọi kỹ sư DevOps nên biết"
+    },
+    "summary": {
+      "en": "Stop juggling ten open tabs during an incident. Here is how Model Context Protocol (MCP) connects your AI assistant directly to Kubernetes, Grafana, OpenSearch, AWS, and CI/CD pipelines.",
+      "vi": "Dừng việc tung hứng mười tab đang mở trong khi xảy ra sự cố. Đây là cách Giao thức bối cảnh mô hình (MCP) kết nối trực tiếp trợ lý AI của bạn với các quy trình Kubernetes, Grafana, OpenSearch, AWS và CI/CD."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "c26b1a7a6c6d42a3": {
+    "title": {
+      "en": "New Linux kernel patches unlock native resolution on 4K/5K iMacs",
+      "vi": "Các bản vá nhân Linux mới mở khóa độ phân giải gốc trên iMac 4K/5K"
+    },
+    "summary": {
+      "en": "Owners of 4K and 5K iMacs could soon enjoy their screen’s full native resolution on Linux, thanks to a set of proposed kernel patches. I run Ubuntu on a 2017 21.5-inch iMac with a 4K display. The distro runs and looks great, but with a catch: it doesn’t use the native panel…",
+      "vi": "Chủ sở hữu iMac 4K và 5K có thể sớm tận hưởng độ phân giải gốc đầy đủ của màn hình trên Linux nhờ một bộ bản vá kernel được đề xuất. Tôi chạy Ubuntu trên iMac 21,5 inch 2017 với màn hình 4K. Bản phân phối chạy và trông rất đẹp, nhưng có một nhược điểm: nó không sử dụng bảng điều khiển gốc…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "f596a5228c7118c6": {
+    "title": {
+      "en": "Why Can't We Just #include \"functions.c\" in \"main.c\"? 🤔",
+      "vi": "Tại sao chúng ta không thể #bao gồm \"functions.c\" trong \"main.c\"? 🤔"
+    },
+    "summary": {
+      "en": "Suppose we have two files. functions.c: #include <stdio.h> void greet(void) {",
+      "vi": "Giả sử chúng ta có hai tập tin. Hàm.c: #include <stdio.h> void hello(void) {"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "3c06419e3e380f5b": {
+    "title": {
+      "en": "Hello again, DEV! Learning in public and coding over a cuppa",
+      "vi": "Xin chào một lần nữa, DEV! Học ở nơi công cộng và viết mã qua một tách trà"
+    },
+    "summary": {
+      "en": "Hello again, DEV! After quite the hiatus, I’m coming back to the community. A little background: I",
+      "vi": "Xin chào một lần nữa, DEV! Sau một thời gian gián đoạn, tôi sẽ quay trở lại với cộng đồng. Một chút thông tin cơ bản: Tôi"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "7d08d9de79d6224d": {
+    "title": {
+      "vi": "Hơn 220.000 thiết bị Android bị cài mã độc ngay từ khâu sản xuất",
+      "en": "More than 220,000 Android devices were installed with malicious code right from the production stage"
+    },
+    "summary": {
+      "vi": "Nghiên cứu của Kaspersky cho thấy loại mã độc mang tên Keenadu có thể ẩn thân hơn 2 tháng trước khi kích hoạt và gần như không thể gỡ bỏ bằng cách thông thường.",
+      "en": "Kaspersky's research shows that a malware called Keenadu can hide for more than 2 months before activating and is almost impossible to remove using normal methods."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "8c89982bb4982b2b": {
+    "title": {
+      "vi": "Google sửa lỗi khiến Chrome ngốn hơn 5 GB RAM khi không sử dụng",
+      "en": "Google fixes a bug that caused Chrome to consume more than 5 GB of RAM when not in use"
+    },
+    "summary": {
+      "vi": "Sau nhiều phản ánh về tình trạng Gemini trên Chrome ngốn RAM, Google cho biết đã sửa lỗi nhưng chưa công bố nguyên nhân cụ thể.",
+      "en": "After many complaints about Gemini on Chrome consuming RAM, Google said it has fixed the error but has not announced the specific cause."
+    },
+    "translated": {
+      "en": "machine"
+    }
+  },
+  "0d1ae92dc1b84893": {
+    "title": {
+      "vi": "Hơn 1.000 thợ đào bị lừa khai thác Bitcoin cho kẻ gian",
+      "en": "More than 1,000 miners were tricked into mining Bitcoin for crooks"
+    },
+    "summary": {
+      "vi": "Kẻ gian đã lợi dụng lỗ hổng về niềm tin để lừa hơn 1.000 thợ đào Bitcoin với thủ đoạn đơn giản bằng cách gửi một yêu cầu giả đến hệ thống định tuyến của internet đến nạn nhân.",
+      "en": "Thieves took advantage of a trust gap to trick more than 1,000 Bitcoin miners with the simple trick of sending a fake request to the internet's routing system to the victim."
+    },
+    "translated": {
+      "en": "machine"
+    }
   }
 }
