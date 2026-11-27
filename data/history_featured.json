@@ -1,11 +1,5 @@
 [
   {
-    "id": "64bb151c75ac96d4",
-    "title": "Robot học nghề từ video người thật: từ GR00T N1 năm 2025 đến GR00T 2",
-    "featured_at": "2026-11-12T20:56:47.053298+00:00",
-    "date": "2026-11-12"
-  },
-  {
     "id": "c1605ed0d66185da",
     "title": "Bây giờ Nginx có lỗ hổng nghiêm trọng",
     "featured_at": "2026-11-20T13:12:01.996596+00:00",
@@ -46,5 +40,11 @@
     "title": "Ứng dụng dành cho máy tính để bàn của Claude hiện có thể tạo và cài đặt ứng dụng (chưa có trên Linux)",
     "featured_at": "2026-11-26T01:51:16.952374+00:00",
     "date": "2026-11-26"
+  },
+  {
+    "id": "b63967e9c50969f4",
+    "title": "iOS 27 bổ sung cài đặt ứng dụng Tin nhắn mới mà tôi đã bắt đầu sử dụng ngay lập tức",
+    "featured_at": "2026-11-27T02:56:58.532936+00:00",
+    "date": "2026-11-27"
   }
 ]

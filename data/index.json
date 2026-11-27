@@ -2093,7 +2093,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-28T02:56:50+00:00"
     }
   },
   "009d89703dd91abd": {
@@ -2865,7 +2868,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-28T02:56:50+00:00"
     }
   },
   "6a02e36133622d88": {
@@ -2904,7 +2910,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-28T02:56:50+00:00"
     }
   },
   "73d60418285cd4ad": {
@@ -4132,8 +4141,12 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 2,
-      "en": 2
+      "vi": 3,
+      "en": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-28T02:56:42+00:00",
+      "en": "2026-11-28T02:56:46+00:00"
     }
   },
   "f01842307932cb5c": {
@@ -4212,8 +4225,12 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 2,
-      "en": 2
+      "vi": 3,
+      "en": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-28T02:56:42+00:00",
+      "en": "2026-11-28T02:56:46+00:00"
     }
   },
   "983343b891fc524d": {
@@ -4251,7 +4268,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-28T02:56:50+00:00"
     }
   },
   "1dc558d1ede55d2c": {
@@ -4290,7 +4310,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 2
+      "vi": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-28T02:56:55+00:00"
     }
   },
   "1ac1f703ca091bce": {
@@ -4331,7 +4354,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "8b7e5956e702f878": {
@@ -4360,6 +4383,44 @@
     "categories": [
       "linux",
       "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": false
+    },
+    "translate_attempts": {
+      "vi": 2
+    }
+  },
+  "770dae15730a56fc": {
+    "id": "770dae15730a56fc",
+    "slug": "linux-mint-27-beta-downloads-are-available-for-testing-770dae",
+    "url": "https://www.omgubuntu.co.uk/2026/11/linux-mint-27-beta-download",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "2026-11-26T22:17:05+00:00",
+    "fetched_at": "2026-11-27T02:56:12.102463+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Linux Mint 27 beta downloads are available for testing",
+      "vi": "Linux Mint 27 beta downloads are available for testing"
+    },
+    "summary": {
+      "en": "Beta builds of Linux Mint 27 ‘Adrien’ have hit the distro’s official download mirrors, though there’s been no official announcement about it yet. Linux Mint 27 is built on Ubuntu 26.04 LTS and the Linux 7.0 kernel. The main edition ships with Cinnamon 6.8, with versions using…",
+      "vi": "Beta builds of Linux Mint 27 ‘Adrien’ have hit the distro’s official download mirrors, though there’s been no official announcement about it yet. Linux Mint 27 is built on Ubuntu 26.04 LTS and the Linux 7.0 kernel. The main edition ships with Cinnamon 6.8, with versions using…"
+    },
+    "categories": [
+      "linux"
     ],
     "tags": [],
     "difficulty": null,
@@ -5935,7 +5996,10 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 2
+      "en": 3
+    },
+    "translate_next_retry": {
+      "en": "2026-11-28T02:56:58+00:00"
     }
   },
   "db85abacb121d037": {
@@ -6535,8 +6599,12 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 2,
-      "en": 2
+      "vi": 3,
+      "en": 3
+    },
+    "translate_next_retry": {
+      "vi": "2026-11-28T02:56:42+00:00",
+      "en": "2026-11-28T02:56:46+00:00"
     }
   },
   "86f92144e20a5795": {
@@ -6801,7 +6869,10 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 2
+      "en": 3
+    },
+    "translate_next_retry": {
+      "en": "2026-11-28T02:56:58+00:00"
     }
   },
   "2300a891d5e063b3": {
@@ -7998,7 +8069,10 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 2
+      "en": 3
+    },
+    "translate_next_retry": {
+      "en": "2026-11-28T02:56:58+00:00"
     }
   },
   "6ffd309fca6a7159": {
@@ -8036,7 +8110,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "d9c39429d489eec5": {
@@ -14317,7 +14391,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "cf61c804dd9bbfb6": {
