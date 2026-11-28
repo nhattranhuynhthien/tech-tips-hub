@@ -2128,10 +2128,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 3
+      "vi": 4
     },
     "translate_next_retry": {
-      "vi": "2026-11-28T02:56:50+00:00"
+      "vi": "2026-11-29T03:59:56+00:00"
     }
   },
   "c4f4c770d4bbe9e6": {
@@ -2204,7 +2204,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "c6d5b476cd828486": {
@@ -2243,7 +2243,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "009d89703dd91abd": {
@@ -3015,10 +3015,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 3
+      "vi": 4
     },
     "translate_next_retry": {
-      "vi": "2026-11-28T02:56:50+00:00"
+      "vi": "2026-11-29T03:59:56+00:00"
     }
   },
   "6a02e36133622d88": {
@@ -3057,10 +3057,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 3
+      "vi": 4
     },
     "translate_next_retry": {
-      "vi": "2026-11-28T02:56:50+00:00"
+      "vi": "2026-11-29T03:59:56+00:00"
     }
   },
   "df62691ea8c084b9": {
@@ -3101,7 +3101,7 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 1
+      "vi": 2
     }
   },
   "73d60418285cd4ad": {
@@ -4329,12 +4329,12 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 3,
-      "en": 3
+      "vi": 4,
+      "en": 4
     },
     "translate_next_retry": {
-      "vi": "2026-11-28T02:56:42+00:00",
-      "en": "2026-11-28T02:56:46+00:00"
+      "vi": "2026-11-29T03:59:48+00:00",
+      "en": "2026-11-29T03:59:51+00:00"
     }
   },
   "f01842307932cb5c": {
@@ -4413,12 +4413,12 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 3,
-      "en": 3
+      "vi": 4,
+      "en": 4
     },
     "translate_next_retry": {
-      "vi": "2026-11-28T02:56:42+00:00",
-      "en": "2026-11-28T02:56:46+00:00"
+      "vi": "2026-11-29T03:59:48+00:00",
+      "en": "2026-11-29T03:59:51+00:00"
     }
   },
   "983343b891fc524d": {
@@ -4456,10 +4456,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 3
+      "vi": 4
     },
     "translate_next_retry": {
-      "vi": "2026-11-28T02:56:50+00:00"
+      "vi": "2026-11-29T03:59:59+00:00"
     }
   },
   "1dc558d1ede55d2c": {
@@ -4498,10 +4498,10 @@
       "vi": false
     },
     "translate_attempts": {
-      "vi": 3
+      "vi": 4
     },
     "translate_next_retry": {
-      "vi": "2026-11-28T02:56:55+00:00"
+      "vi": "2026-11-29T03:59:59+00:00"
     }
   },
   "1ac1f703ca091bce": {
@@ -6283,10 +6283,10 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 3
+      "en": 4
     },
     "translate_next_retry": {
-      "en": "2026-11-28T02:56:58+00:00"
+      "en": "2026-11-29T04:00:02+00:00"
     }
   },
   "8c89982bb4982b2b": {
@@ -6961,12 +6961,12 @@
       "en": false
     },
     "translate_attempts": {
-      "vi": 3,
-      "en": 3
+      "vi": 4,
+      "en": 4
     },
     "translate_next_retry": {
-      "vi": "2026-11-28T02:56:42+00:00",
-      "en": "2026-11-28T02:56:46+00:00"
+      "vi": "2026-11-29T03:59:48+00:00",
+      "en": "2026-11-29T03:59:51+00:00"
     }
   },
   "86f92144e20a5795": {
@@ -7231,10 +7231,10 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 3
+      "en": 4
     },
     "translate_next_retry": {
-      "en": "2026-11-28T02:56:58+00:00"
+      "en": "2026-11-29T04:00:02+00:00"
     }
   },
   "2300a891d5e063b3": {
@@ -8431,10 +8431,10 @@
       "en": false
     },
     "translate_attempts": {
-      "en": 3
+      "en": 4
     },
     "translate_next_retry": {
-      "en": "2026-11-28T02:56:58+00:00"
+      "en": "2026-11-29T04:00:02+00:00"
     }
   },
   "6ffd309fca6a7159": {
