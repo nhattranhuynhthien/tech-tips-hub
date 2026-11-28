@@ -2186,11 +2186,11 @@
     "original_lang": "en",
     "title": {
       "en": "Your Firewall Isn't Enough: The Hidden Risk of Unmanaged VMs",
-      "vi": "Your Firewall Isn't Enough: The Hidden Risk of Unmanaged VMs"
+      "vi": "Tường lửa của bạn không đủ: Nguy cơ tiềm ẩn của máy ảo không được quản lý"
     },
     "summary": {
       "en": "Forgotten virtual machines, unpatched servers, and excessive access permissions can create security blind spots across IT infrastructure. ISPsystem explains how centralized infrastructure management, access controls, and resource lifecycle automation can help reduce these risks.",
-      "vi": "Forgotten virtual machines, unpatched servers, and excessive access permissions can create security blind spots across IT infrastructure. ISPsystem explains how centralized infrastructure management, access controls, and resource lifecycle automation can help reduce these risks."
+      "vi": "Các máy ảo bị lãng quên, máy chủ chưa được vá lỗi và quyền truy cập quá mức có thể tạo ra các điểm mù bảo mật trên cơ sở hạ tầng CNTT. Hệ thống ISP giải thích cách quản lý cơ sở hạ tầng tập trung, kiểm soát quyền truy cập và tự động hóa vòng đời tài nguyên có thể giúp giảm thiểu những rủi ro này."
     },
     "categories": [
       "security"
@@ -2201,10 +2201,7 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 2
+      "vi": "machine"
     }
   },
   "c6d5b476cd828486": {
@@ -2224,11 +2221,11 @@
     "original_lang": "en",
     "title": {
       "en": "OpenAI countersues Apple, alleging trade secret theft and supplier threats",
-      "vi": "OpenAI countersues Apple, alleging trade secret theft and supplier threats"
+      "vi": "OpenAI kiện Apple, cáo buộc đánh cắp bí mật thương mại và đe dọa nhà cung cấp"
     },
     "summary": {
       "en": "OpenAI has countersued Apple, accusing the iPhone maker of stealing trade secrets and threatening suppliers working on its upcoming devices. The filing escalates a legal fight that began with Apple’s lawsuit against OpenAI in July .",
-      "vi": "OpenAI has countersued Apple, accusing the iPhone maker of stealing trade secrets and threatening suppliers working on its upcoming devices. The filing escalates a legal fight that began with Apple’s lawsuit against OpenAI in July ."
+      "vi": "OpenAI đã kiện lại Apple, cáo buộc nhà sản xuất iPhone đánh cắp bí mật thương mại và đe dọa các nhà cung cấp đang phát triển các thiết bị sắp ra mắt của họ. Việc nộp đơn làm leo thang cuộc chiến pháp lý bắt đầu bằng vụ kiện của Apple chống lại OpenAI vào tháng 7."
     },
     "categories": [
       "macos",
@@ -2240,10 +2237,7 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 2
+      "vi": "machine"
     }
   },
   "009d89703dd91abd": {
@@ -3080,11 +3074,11 @@
     "original_lang": "en",
     "title": {
       "en": "pCloud confirms password manager hack after suspicious login alerts",
-      "vi": "pCloud confirms password manager hack after suspicious login alerts"
+      "vi": "pCloud xác nhận vụ hack trình quản lý mật khẩu sau khi có cảnh báo đăng nhập đáng ngờ"
     },
     "summary": {
       "en": "The pCloud Pass password manager suffered a cyberattack, with users reporting that unknown devices had connected to their accounts even with two-factor authentication (2FA) enabled.",
-      "vi": "The pCloud Pass password manager suffered a cyberattack, with users reporting that unknown devices had connected to their accounts even with two-factor authentication (2FA) enabled."
+      "vi": "Trình quản lý mật khẩu pCloud Pass bị tấn công mạng, người dùng báo cáo rằng các thiết bị không xác định đã kết nối với tài khoản của họ ngay cả khi đã bật xác thực hai yếu tố (2FA)."
     },
     "categories": [
       "security"
@@ -3098,10 +3092,7 @@
     "howto": true,
     "reading_time_min": 1,
     "translated": {
-      "vi": false
-    },
-    "translate_attempts": {
-      "vi": 2
+      "vi": "machine"
     }
   },
   "73d60418285cd4ad": {
@@ -4685,6 +4676,112 @@
       "vi": "machine"
     }
   },
+  "a1fdb353893c2410": {
+    "id": "a1fdb353893c2410",
+    "slug": "swiss-developer-built-this-open-source-app-to-help-his-wife-a1fdb3",
+    "url": "https://feed.itsfoss.com/link/24361/17542521/klacks-overview",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "2026-11-28T12:43:00+00:00",
+    "fetched_at": "2026-11-28T13:14:37.474322+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Swiss Developer Built This Open Source App to Help His Wife Schedule Staff With AI",
+      "vi": "Nhà phát triển người Thụy Sĩ đã xây dựng ứng dụng mã nguồn mở này để giúp vợ sắp xếp lịch làm việc cho nhân viên bằng AI"
+    },
+    "summary": {
+      "en": "After seeing his wife's home care service provider being overwhelmed by scheduling, this Swiss developer created a self hosted, open source staff scheduling software that you can interact with in natural language.",
+      "vi": "Sau khi thấy nhà cung cấp dịch vụ chăm sóc tại nhà của vợ mình bị choáng ngợp bởi việc lập kế hoạch, nhà phát triển người Thụy Sĩ này đã tạo ra một phần mềm lập kế hoạch nhân viên nguồn mở, tự lưu trữ mà bạn có thể tương tác bằng ngôn ngữ tự nhiên."
+    },
+    "categories": [
+      "linux",
+      "ai"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "0abc067402ec8df4": {
+    "id": "0abc067402ec8df4",
+    "slug": "google-will-soon-start-showing-app-devs-phone-number-and-add-0abc06",
+    "url": "https://feed.itsfoss.com/link/24361/17542522/google-play-developer-address-public",
+    "source": {
+      "id": "itsfoss",
+      "name": "It's FOSS",
+      "site_url": "https://itsfoss.com",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Sourav Rudra",
+    "published_at": "2026-11-28T12:19:00+00:00",
+    "fetched_at": "2026-11-28T13:14:37.474322+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Google Will Soon Start Showing App Dev's Phone Number and Address on the Play Store",
+      "vi": "Google sẽ sớm bắt đầu hiển thị số điện thoại và địa chỉ của nhà phát triển ứng dụng trên Play Store"
+    },
+    "summary": {
+      "en": "Google now considers app developer as trader and requires them to share their address and phone number which will be listed on Play Store for public.",
+      "vi": "Google hiện coi nhà phát triển ứng dụng là nhà kinh doanh và yêu cầu họ chia sẻ địa chỉ và số điện thoại của mình sẽ được liệt kê công khai trên Play Store."
+    },
+    "categories": [
+      "android"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "81ec820a8fb759cd": {
+    "id": "81ec820a8fb759cd",
+    "slug": "frameworks-99-wireless-touchpad-keyboard-is-up-for-pre-order-81ec82",
+    "url": "https://www.omgubuntu.co.uk/2026/11/frameworks-wireless-touchpad-keyboard-preorder",
+    "source": {
+      "id": "omgubuntu",
+      "name": "OMG! Ubuntu!",
+      "site_url": "https://www.omgubuntu.co.uk",
+      "kind": "tips",
+      "content_type": "article"
+    },
+    "author": "Joey Sneddon",
+    "published_at": "2026-11-28T04:10:59+00:00",
+    "fetched_at": "2026-11-28T13:14:37.474322+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Framework’s $99 Wireless Touchpad Keyboard is up for pre-order",
+      "vi": "Bàn phím Touchpad không dây giá 99 USD của Framework đã sẵn sàng để đặt hàng trước"
+    },
+    "summary": {
+      "en": "Framework is better known for its repair-friendly laptops, but it’s branching out into peripherals too – the Wireless Touchpad Keyboard is now up for pre-order. The company announced a compact keyboard earlier this year. Like its laptops, this is made with repairability in mind…",
+      "vi": "Framework được biết đến nhiều hơn với những chiếc máy tính xách tay dễ sửa chữa, nhưng nó cũng đang mở rộng sang các thiết bị ngoại vi – Bàn phím cảm ứng không dây hiện đã có thể đặt hàng trước. Công ty đã công bố một bàn phím nhỏ gọn vào đầu năm nay. Giống như máy tính xách tay của nó, nó được tạo ra với mục đích có…"
+    },
+    "categories": [
+      "linux"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 1.27,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
   "c80c5fcac2e3fe98": {
     "id": "c80c5fcac2e3fe98",
     "slug": "euro-office-the-onlyoffice-fork-now-has-a-desktop-app-c80c5f",
@@ -4859,6 +4956,41 @@
     "reading_time_min": 1,
     "translated": {
       "en": "machine"
+    }
+  },
+  "90572c968a47960d": {
+    "id": "90572c968a47960d",
+    "slug": "how-to-booby-trap-your-home-network-a-comprehensive-tutorial-90572c",
+    "url": "https://dev.to/numbpill3d/how-to-booby-trap-your-home-network-a-comprehensive-tutorial-46dg",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "v. Splicer",
+    "published_at": "2026-11-27T15:27:22+00:00",
+    "fetched_at": "2026-11-28T13:14:37.474322+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "How to Booby-Trap Your Home Network: A Comprehensive Tutorial",
+      "vi": "Cách bẫy Booby-Bẫy mạng gia đình của bạn: Hướng dẫn toàn diện"
+    },
+    "summary": {
+      "en": "Put a fake server on your own LAN. Anything that touches it is telling on itself. There is a box on",
+      "vi": "Đặt một máy chủ giả trên mạng LAN của riêng bạn. Bất cứ điều gì chạm vào nó đều tự nói lên điều đó. Có một hộp trên"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": "medium",
+    "score": 1.19,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
     }
   },
   "8304ef5f4f46473a": {
@@ -8068,6 +8200,42 @@
     ],
     "tags": [],
     "difficulty": "medium",
+    "score": 1.01,
+    "howto": true,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "0563150c1b8ff4fb": {
+    "id": "0563150c1b8ff4fb",
+    "slug": "as-an-android-user-these-are-the-first-5-settings-i-changed-056315",
+    "url": "https://www.androidauthority.com/iphone-18-pro-settings-for-android-users-3738127",
+    "source": {
+      "id": "androidauthority",
+      "name": "Android Authority",
+      "site_url": "https://www.androidauthority.com",
+      "kind": "news",
+      "content_type": "article"
+    },
+    "author": "Shimul Sood",
+    "published_at": "2026-11-28T12:00:20+00:00",
+    "fetched_at": "2026-11-28T13:14:37.474322+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "As an Android user, these are the first 5 settings I changed on the iPhone 18 Pro",
+      "vi": "Là người dùng Android, đây là 5 cài đặt đầu tiên tôi thay đổi trên iPhone 18 Pro"
+    },
+    "summary": {
+      "en": "An Apple with a Pixel complex.",
+      "vi": "Một Apple với phức hợp Pixel."
+    },
+    "categories": [
+      "android",
+      "ios"
+    ],
+    "tags": [],
+    "difficulty": "easy",
     "score": 1.01,
     "howto": true,
     "reading_time_min": 1,
@@ -19748,10 +19916,10 @@
     "hidden": false,
     "slug": "ung-dung-github-copilot-danh-cho-nguoi-moi-bat-dau-cach-day-acb868"
   },
-  "01ee4bd34dad4014": {
-    "id": "01ee4bd34dad4014",
-    "slug": "cac-mach-don-gian-co-the-tao-ra-cac-hanh-vi-phuc-tap-01ee4b",
-    "url": "https://aatishb.com/myriad/lets-build-a-brain",
+  "e21a1751fff0a4bf": {
+    "id": "e21a1751fff0a4bf",
+    "slug": "build-your-own-amp-modeler-78-diy-pedal-kit-from-tone3000-e21a17",
+    "url": "https://www.guitarworld.com/gear/guitar-pedals/tone3000-daisy-audio-diy-pedal-kit",
     "source": {
       "id": "hackernews",
       "name": "Hacker News",
@@ -19759,31 +19927,30 @@
       "kind": "news",
       "content_type": "community"
     },
-    "author": "aatish",
-    "published_at": "2026-10-27T16:01:06+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "author": "gregsadetsky",
+    "published_at": "2026-11-24T17:55:27+00:00",
+    "fetched_at": "2026-11-28T13:14:37.474322+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Simple circuits can create complex behaviors",
-      "vi": "Các mạch đơn giản có thể tạo ra các hành vi phức tạp"
+      "en": "Build your own amp modeler: $78 DIY pedal kit from TONE3000",
+      "vi": "Xây dựng mô hình amp của riêng bạn: Bộ bàn đạp tự làm trị giá $78 từ TONE3000"
     },
     "summary": {
-      "en": "Discussion on Hacker News (239 points, 77 comments).",
-      "vi": "Thảo luận trên Hacker News (239 điểm, 77 bình luận)."
+      "en": "Discussion on Hacker News (100 points, 25 comments).",
+      "vi": "Thảo luận về Hacker News (100 điểm, 25 bình luận)."
     },
     "categories": [
       "security"
     ],
     "tags": [],
     "difficulty": "medium",
-    "score": 0.61,
+    "score": 0.64,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
-    "hn_points": 239,
-    "hidden": false
+    "hn_points": 100
   },
   "2ad84ab401bee4f9": {
     "id": "2ad84ab401bee4f9",
@@ -19857,43 +20024,42 @@
     "hidden": false,
     "slug": "di-tim-giai-phap-cap-khi-tuoi-cho-cafe-tinh-te-50-b62740"
   },
-  "3cbe5eb393bebabf": {
-    "id": "3cbe5eb393bebabf",
-    "url": "https://dev.to/devopsdaily/how-to-resolve-merge-conflicts-in-git-without-guessing-markers-ours-theirs-and-the-rebase-flip-b4g",
+  "01ee4bd34dad4014": {
+    "id": "01ee4bd34dad4014",
+    "slug": "cac-mach-don-gian-co-the-tao-ra-cac-hanh-vi-phuc-tap-01ee4b",
+    "url": "https://aatishb.com/myriad/lets-build-a-brain",
     "source": {
-      "id": "devto_tips",
-      "name": "Dev.to Tutorials",
-      "site_url": "https://dev.to",
-      "kind": "tips",
+      "id": "hackernews",
+      "name": "Hacker News",
+      "site_url": "https://news.ycombinator.com",
+      "kind": "news",
       "content_type": "community"
     },
-    "author": "DevOps Daily",
-    "published_at": "2026-10-08T10:15:49+00:00",
-    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "author": "aatish",
+    "published_at": "2026-10-27T16:01:06+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "How to resolve merge conflicts in Git without guessing: markers, --ours/--theirs and the rebase flip",
-      "vi": "Cách giải quyết xung đột hợp nhất trong Git mà không cần đoán: điểm đánh dấu, --ours/--của họ và lật rebase"
+      "en": "Simple circuits can create complex behaviors",
+      "vi": "Các mạch đơn giản có thể tạo ra các hành vi phức tạp"
     },
     "summary": {
-      "en": "You are rebasing your branch onto main. Git stops on a conflict in limits.py. You want to keep your",
-      "vi": "Bạn đang khởi động lại chi nhánh của mình vào main. Git dừng khi có xung đột trong limit.py. Bạn muốn giữ của bạn"
+      "en": "Discussion on Hacker News (239 points, 77 comments).",
+      "vi": "Thảo luận trên Hacker News (239 điểm, 77 bình luận)."
     },
     "categories": [
-      "dev"
+      "security"
     ],
-    "tags": [
-      "git"
-    ],
+    "tags": [],
     "difficulty": "medium",
-    "score": 0.57,
+    "score": 0.61,
     "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
     },
-    "hidden": false,
-    "slug": "cach-giai-quyet-xung-dot-hop-nhat-trong-git-ma-khong-can-doa-3cbe5e"
+    "hn_points": 239,
+    "hidden": false
   },
   "28c9ec341b6e3347": {
     "id": "28c9ec341b6e3347",
@@ -20228,9 +20394,9 @@
     },
     "hidden": false
   },
-  "c345484e72e039b1": {
-    "id": "c345484e72e039b1",
-    "url": "https://dev.to/composiodev/how-to-moderate-live-chat-in-real-time-with-jev-and-composio-discord-twitch-5ab0",
+  "3cbe5eb393bebabf": {
+    "id": "3cbe5eb393bebabf",
+    "url": "https://dev.to/devopsdaily/how-to-resolve-merge-conflicts-in-git-without-guessing-markers-ours-theirs-and-the-rebase-flip-b4g",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
@@ -20238,22 +20404,24 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "Shrijal Acharya",
-    "published_at": "2026-09-30T13:05:00+00:00",
+    "author": "DevOps Daily",
+    "published_at": "2026-10-08T10:15:49+00:00",
     "fetched_at": "2026-10-29T06:11:44.609442+00:00",
     "original_lang": "en",
     "title": {
-      "en": "How to Moderate Live Chat in Real Time with Jev and Composio (Discord + Twitch)",
-      "vi": "Cách kiểm duyệt cuộc trò chuyện trực tiếp trong thời gian thực với Jev và Composio (Discord + Twitch)"
+      "en": "How to resolve merge conflicts in Git without guessing: markers, --ours/--theirs and the rebase flip",
+      "vi": "Cách giải quyết xung đột hợp nhất trong Git mà không cần đoán: điểm đánh dấu, --ours/--của họ và lật rebase"
     },
     "summary": {
-      "en": "Anyone who has moderated a live chat knows how fast things go wrong. Someone says something bad and",
-      "vi": "Bất cứ ai đã kiểm duyệt cuộc trò chuyện trực tiếp đều biết mọi thứ diễn ra nhanh như thế nào. Ai đó nói điều gì đó xấu và"
+      "en": "You are rebasing your branch onto main. Git stops on a conflict in limits.py. You want to keep your",
+      "vi": "Bạn đang khởi động lại chi nhánh của mình vào main. Git dừng khi có xung đột trong limit.py. Bạn muốn giữ của bạn"
     },
     "categories": [
       "dev"
     ],
-    "tags": [],
+    "tags": [
+      "git"
+    ],
     "difficulty": "medium",
     "score": 0.57,
     "howto": true,
@@ -20262,7 +20430,7 @@
       "vi": "machine"
     },
     "hidden": false,
-    "slug": "cach-kiem-duyet-cuoc-tro-chuyen-truc-tiep-trong-thoi-gian-th-c34548"
+    "slug": "cach-giai-quyet-xung-dot-hop-nhat-trong-git-ma-khong-can-doa-3cbe5e"
   },
   "61edf3cbed8ccf17": {
     "id": "61edf3cbed8ccf17",
@@ -20482,10 +20650,9 @@
     "hidden": false,
     "slug": "vi-sao-khong-nen-su-dung-khuon-mat-van-tay-de-mo-khoa-dien-t-de7b7e"
   },
-  "5866f3208980265c": {
-    "id": "5866f3208980265c",
-    "slug": "xay-dung-bot-discord-voi-discordjs-v14-thiet-lap-ung-dung-le-5866f3",
-    "url": "https://dev.to/botnexio/build-a-discord-bot-with-discordjs-v14-app-setup-your-first-slash-command-and-keeping-it-online-1bkj",
+  "c345484e72e039b1": {
+    "id": "c345484e72e039b1",
+    "url": "https://dev.to/composiodev/how-to-moderate-live-chat-in-real-time-with-jev-and-composio-discord-twitch-5ab0",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
@@ -20493,17 +20660,17 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "Botnexio",
-    "published_at": "2026-10-18T12:54:39+00:00",
-    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
+    "author": "Shrijal Acharya",
+    "published_at": "2026-09-30T13:05:00+00:00",
+    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Build a Discord bot with discord.js v14: app setup, your first slash command and keeping it online",
-      "vi": "Xây dựng bot Discord với discord.js v14: thiết lập ứng dụng, lệnh gạch chéo đầu tiên của bạn và giữ nó trực tuyến"
+      "en": "How to Moderate Live Chat in Real Time with Jev and Composio (Discord + Twitch)",
+      "vi": "Cách kiểm duyệt cuộc trò chuyện trực tiếp trong thời gian thực với Jev và Composio (Discord + Twitch)"
     },
     "summary": {
-      "en": "Create a Discord application, register slash commands with REST and Routes, handle interactionCreate, and keep your bot running 24/7.",
-      "vi": "Tạo ứng dụng Discord, đăng ký các lệnh gạch chéo với REST và Routes, xử lý tương tácTạo và giữ cho bot của bạn hoạt động 24/7."
+      "en": "Anyone who has moderated a live chat knows how fast things go wrong. Someone says something bad and",
+      "vi": "Bất cứ ai đã kiểm duyệt cuộc trò chuyện trực tiếp đều biết mọi thứ diễn ra nhanh như thế nào. Ai đó nói điều gì đó xấu và"
     },
     "categories": [
       "dev"
@@ -20516,7 +20683,8 @@
     "translated": {
       "vi": "machine"
     },
-    "hidden": false
+    "hidden": false,
+    "slug": "cach-kiem-duyet-cuoc-tro-chuyen-truc-tiep-trong-thoi-gian-th-c34548"
   },
   "10ef57b720dca9c5": {
     "id": "10ef57b720dca9c5",
@@ -20590,9 +20758,10 @@
     "hidden": false,
     "slug": "ikea-co-cach-mua-do-noi-that-tot-hon-la-cuon-trang-san-pham-0f61e1"
   },
-  "3b1a643c22cd5cd6": {
-    "id": "3b1a643c22cd5cd6",
-    "url": "https://dev.to/johnnylemonny/stop-waiting-for-github-actions-make-your-ci-faster-today-a2l",
+  "5866f3208980265c": {
+    "id": "5866f3208980265c",
+    "slug": "xay-dung-bot-discord-voi-discordjs-v14-thiet-lap-ung-dung-le-5866f3",
+    "url": "https://dev.to/botnexio/build-a-discord-bot-with-discordjs-v14-app-setup-your-first-slash-command-and-keeping-it-online-1bkj",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
@@ -20600,17 +20769,17 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "𝗝𝗼𝗵𝗻",
-    "published_at": "2026-09-29T15:30:00+00:00",
-    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
+    "author": "Botnexio",
+    "published_at": "2026-10-18T12:54:39+00:00",
+    "fetched_at": "2026-11-01T07:38:37.124686+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Stop Waiting for GitHub Actions: Make Your CI Faster Today",
-      "vi": "Ngừng chờ đợi các hành động GitHub: Giúp CI của bạn nhanh hơn ngay hôm nay"
+      "en": "Build a Discord bot with discord.js v14: app setup, your first slash command and keeping it online",
+      "vi": "Xây dựng bot Discord với discord.js v14: thiết lập ứng dụng, lệnh gạch chéo đầu tiên của bạn và giữ nó trực tuyến"
     },
     "summary": {
-      "en": "A practical guide to canceling outdated runs, caching dependencies, reducing duplicate work, and getting faster feedback from GitHub Actions.",
-      "vi": "Hướng dẫn thực tế để hủy các lần chạy lỗi thời, lưu các phần phụ thuộc vào bộ nhớ đệm, giảm công việc trùng lặp và nhận phản hồi nhanh hơn từ Tác vụ GitHub."
+      "en": "Create a Discord application, register slash commands with REST and Routes, handle interactionCreate, and keep your bot running 24/7.",
+      "vi": "Tạo ứng dụng Discord, đăng ký các lệnh gạch chéo với REST và Routes, xử lý tương tácTạo và giữ cho bot của bạn hoạt động 24/7."
     },
     "categories": [
       "dev"
@@ -20623,8 +20792,7 @@
     "translated": {
       "vi": "machine"
     },
-    "hidden": false,
-    "slug": "ngung-cho-doi-cac-hanh-dong-github-giup-ci-cua-ban-nhanh-hon-3b1a64"
+    "hidden": false
   },
   "51f8dcdc7f9b270d": {
     "id": "51f8dcdc7f9b270d",
@@ -20958,10 +21126,9 @@
     "hidden": false,
     "slug": "vi-sao-wifi-trong-nha-o-rat-gan-nhung-tin-hieu-lai-yeu-hon-c-7bc142"
   },
-  "cdc816a6e219e081": {
-    "id": "cdc816a6e219e081",
-    "slug": "get-your-free-got-apage-subdomain-a-step-by-step-guide-cdc816",
-    "url": "https://dev.to/dhanushnehru/get-your-free-got-apage-subdomain-a-step-by-step-guide-39il",
+  "3b1a643c22cd5cd6": {
+    "id": "3b1a643c22cd5cd6",
+    "url": "https://dev.to/johnnylemonny/stop-waiting-for-github-actions-make-your-ci-faster-today-a2l",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
@@ -20969,17 +21136,17 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "Dhanush N",
-    "published_at": "2026-10-21T08:12:58+00:00",
-    "fetched_at": "2026-11-20T13:09:24.007904+00:00",
+    "author": "𝗝𝗼𝗵𝗻",
+    "published_at": "2026-09-29T15:30:00+00:00",
+    "fetched_at": "2026-10-29T06:11:44.609442+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Get Your Free got-a.page Subdomain: A Step-by-Step Guide",
-      "vi": "Nhận tên miền phụ got-a.page miễn phí của bạn: Hướng dẫn từng bước"
+      "en": "Stop Waiting for GitHub Actions: Make Your CI Faster Today",
+      "vi": "Ngừng chờ đợi các hành động GitHub: Giúp CI của bạn nhanh hơn ngay hôm nay"
     },
     "summary": {
-      "en": "I recently bought the domain got-a.page and turned it into a free, community-run subdomain service.",
-      "vi": "Gần đây tôi đã mua miền got-a.page và biến nó thành một dịch vụ miền phụ miễn phí do cộng đồng điều hành."
+      "en": "A practical guide to canceling outdated runs, caching dependencies, reducing duplicate work, and getting faster feedback from GitHub Actions.",
+      "vi": "Hướng dẫn thực tế để hủy các lần chạy lỗi thời, lưu các phần phụ thuộc vào bộ nhớ đệm, giảm công việc trùng lặp và nhận phản hồi nhanh hơn từ Tác vụ GitHub."
     },
     "categories": [
       "dev"
@@ -20991,7 +21158,9 @@
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
-    }
+    },
+    "hidden": false,
+    "slug": "ngung-cho-doi-cac-hanh-dong-github-giup-ci-cua-ban-nhanh-hon-3b1a64"
   },
   "da96698ef028a283": {
     "id": "da96698ef028a283",
@@ -21067,9 +21236,10 @@
     "hidden": false,
     "slug": "dat-wifi-xuong-san-nha-co-lam-sao-khong-hoa-ra-day-la-loi-nh-5e6652"
   },
-  "8fb639d936f65def": {
-    "id": "8fb639d936f65def",
-    "url": "https://dev.to/morsezone/building-a-morse-code-practice-timer-in-javascript-timing-dits-dahs-and-gaps-39ol",
+  "cdc816a6e219e081": {
+    "id": "cdc816a6e219e081",
+    "slug": "get-your-free-got-apage-subdomain-a-step-by-step-guide-cdc816",
+    "url": "https://dev.to/dhanushnehru/get-your-free-got-apage-subdomain-a-step-by-step-guide-39il",
     "source": {
       "id": "devto_tips",
       "name": "Dev.to Tutorials",
@@ -21077,31 +21247,29 @@
       "kind": "tips",
       "content_type": "community"
     },
-    "author": "Morse Zone",
-    "published_at": "2026-10-29T04:29:52+00:00",
-    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "author": "Dhanush N",
+    "published_at": "2026-10-21T08:12:58+00:00",
+    "fetched_at": "2026-11-20T13:09:24.007904+00:00",
     "original_lang": "en",
     "title": {
-      "en": "Building a Morse Code Practice Timer in JavaScript: Timing Dits, Dahs and Gaps",
-      "vi": "Xây dựng bộ đếm thời gian thực hành mã Morse trong JavaScript: Thời gian, dấu gạch ngang và khoảng trống"
+      "en": "Get Your Free got-a.page Subdomain: A Step-by-Step Guide",
+      "vi": "Nhận tên miền phụ got-a.page miễn phí của bạn: Hướng dẫn từng bước"
     },
     "summary": {
-      "en": "Learning Morse code is not only about memorising dots and dashes. It is about rhythm. If your timing",
-      "vi": "Học mã Morse không chỉ là ghi nhớ dấu chấm và dấu gạch ngang. Đó là về nhịp điệu. Nếu thời gian của bạn"
+      "en": "I recently bought the domain got-a.page and turned it into a free, community-run subdomain service.",
+      "vi": "Gần đây tôi đã mua miền got-a.page và biến nó thành một dịch vụ miền phụ miễn phí do cộng đồng điều hành."
     },
     "categories": [
       "dev"
     ],
     "tags": [],
-    "difficulty": null,
-    "score": 0.55,
-    "howto": false,
+    "difficulty": "medium",
+    "score": 0.57,
+    "howto": true,
     "reading_time_min": 1,
     "translated": {
       "vi": "machine"
-    },
-    "hidden": false,
-    "slug": "xay-dung-bo-dem-thoi-gian-thuc-hanh-ma-morse-trong-javascrip-8fb639"
+    }
   },
   "789154b52a9575e1": {
     "id": "789154b52a9575e1",
@@ -21174,6 +21342,42 @@
     },
     "hidden": false,
     "slug": "loi-khuyen-cho-nhung-nguoi-dang-dung-android-677923"
+  },
+  "8fb639d936f65def": {
+    "id": "8fb639d936f65def",
+    "url": "https://dev.to/morsezone/building-a-morse-code-practice-timer-in-javascript-timing-dits-dahs-and-gaps-39ol",
+    "source": {
+      "id": "devto_tips",
+      "name": "Dev.to Tutorials",
+      "site_url": "https://dev.to",
+      "kind": "tips",
+      "content_type": "community"
+    },
+    "author": "Morse Zone",
+    "published_at": "2026-10-29T04:29:52+00:00",
+    "fetched_at": "2026-10-29T04:55:47.488469+00:00",
+    "original_lang": "en",
+    "title": {
+      "en": "Building a Morse Code Practice Timer in JavaScript: Timing Dits, Dahs and Gaps",
+      "vi": "Xây dựng bộ đếm thời gian thực hành mã Morse trong JavaScript: Thời gian, dấu gạch ngang và khoảng trống"
+    },
+    "summary": {
+      "en": "Learning Morse code is not only about memorising dots and dashes. It is about rhythm. If your timing",
+      "vi": "Học mã Morse không chỉ là ghi nhớ dấu chấm và dấu gạch ngang. Đó là về nhịp điệu. Nếu thời gian của bạn"
+    },
+    "categories": [
+      "dev"
+    ],
+    "tags": [],
+    "difficulty": null,
+    "score": 0.55,
+    "howto": false,
+    "reading_time_min": 1,
+    "translated": {
+      "vi": "machine"
+    },
+    "hidden": false,
+    "slug": "xay-dung-bo-dem-thoi-gian-thuc-hanh-ma-morse-trong-javascrip-8fb639"
   },
   "c55a4eec3fa5eaad": {
     "id": "c55a4eec3fa5eaad",

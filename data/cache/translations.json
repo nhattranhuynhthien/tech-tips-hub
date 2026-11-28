@@ -9388,5 +9388,122 @@
     "translated": {
       "en": "machine"
     }
+  },
+  "5e1bd4fab40afb8f": {
+    "title": {
+      "en": "Your Firewall Isn't Enough: The Hidden Risk of Unmanaged VMs",
+      "vi": "Tường lửa của bạn không đủ: Nguy cơ tiềm ẩn của máy ảo không được quản lý"
+    },
+    "summary": {
+      "en": "Forgotten virtual machines, unpatched servers, and excessive access permissions can create security blind spots across IT infrastructure. ISPsystem explains how centralized infrastructure management, access controls, and resource lifecycle automation can help reduce these risks.",
+      "vi": "Các máy ảo bị lãng quên, máy chủ chưa được vá lỗi và quyền truy cập quá mức có thể tạo ra các điểm mù bảo mật trên cơ sở hạ tầng CNTT. Hệ thống ISP giải thích cách quản lý cơ sở hạ tầng tập trung, kiểm soát quyền truy cập và tự động hóa vòng đời tài nguyên có thể giúp giảm thiểu những rủi ro này."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "c6d5b476cd828486": {
+    "title": {
+      "en": "OpenAI countersues Apple, alleging trade secret theft and supplier threats",
+      "vi": "OpenAI kiện Apple, cáo buộc đánh cắp bí mật thương mại và đe dọa nhà cung cấp"
+    },
+    "summary": {
+      "en": "OpenAI has countersued Apple, accusing the iPhone maker of stealing trade secrets and threatening suppliers working on its upcoming devices. The filing escalates a legal fight that began with Apple’s lawsuit against OpenAI in July .",
+      "vi": "OpenAI đã kiện lại Apple, cáo buộc nhà sản xuất iPhone đánh cắp bí mật thương mại và đe dọa các nhà cung cấp đang phát triển các thiết bị sắp ra mắt của họ. Việc nộp đơn làm leo thang cuộc chiến pháp lý bắt đầu bằng vụ kiện của Apple chống lại OpenAI vào tháng 7."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "df62691ea8c084b9": {
+    "title": {
+      "en": "pCloud confirms password manager hack after suspicious login alerts",
+      "vi": "pCloud xác nhận vụ hack trình quản lý mật khẩu sau khi có cảnh báo đăng nhập đáng ngờ"
+    },
+    "summary": {
+      "en": "The pCloud Pass password manager suffered a cyberattack, with users reporting that unknown devices had connected to their accounts even with two-factor authentication (2FA) enabled.",
+      "vi": "Trình quản lý mật khẩu pCloud Pass bị tấn công mạng, người dùng báo cáo rằng các thiết bị không xác định đã kết nối với tài khoản của họ ngay cả khi đã bật xác thực hai yếu tố (2FA)."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "90572c968a47960d": {
+    "title": {
+      "en": "How to Booby-Trap Your Home Network: A Comprehensive Tutorial",
+      "vi": "Cách bẫy Booby-Bẫy mạng gia đình của bạn: Hướng dẫn toàn diện"
+    },
+    "summary": {
+      "en": "Put a fake server on your own LAN. Anything that touches it is telling on itself. There is a box on",
+      "vi": "Đặt một máy chủ giả trên mạng LAN của riêng bạn. Bất cứ điều gì chạm vào nó đều tự nói lên điều đó. Có một hộp trên"
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "0563150c1b8ff4fb": {
+    "title": {
+      "en": "As an Android user, these are the first 5 settings I changed on the iPhone 18 Pro",
+      "vi": "Là người dùng Android, đây là 5 cài đặt đầu tiên tôi thay đổi trên iPhone 18 Pro"
+    },
+    "summary": {
+      "en": "An Apple with a Pixel complex.",
+      "vi": "Một Apple với phức hợp Pixel."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "e21a1751fff0a4bf": {
+    "title": {
+      "en": "Build your own amp modeler: $78 DIY pedal kit from TONE3000",
+      "vi": "Xây dựng mô hình amp của riêng bạn: Bộ bàn đạp tự làm trị giá $78 từ TONE3000"
+    },
+    "summary": {
+      "en": "Discussion on Hacker News (100 points, 25 comments).",
+      "vi": "Thảo luận về Hacker News (100 điểm, 25 bình luận)."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "a1fdb353893c2410": {
+    "title": {
+      "en": "Swiss Developer Built This Open Source App to Help His Wife Schedule Staff With AI",
+      "vi": "Nhà phát triển người Thụy Sĩ đã xây dựng ứng dụng mã nguồn mở này để giúp vợ sắp xếp lịch làm việc cho nhân viên bằng AI"
+    },
+    "summary": {
+      "en": "After seeing his wife's home care service provider being overwhelmed by scheduling, this Swiss developer created a self hosted, open source staff scheduling software that you can interact with in natural language.",
+      "vi": "Sau khi thấy nhà cung cấp dịch vụ chăm sóc tại nhà của vợ mình bị choáng ngợp bởi việc lập kế hoạch, nhà phát triển người Thụy Sĩ này đã tạo ra một phần mềm lập kế hoạch nhân viên nguồn mở, tự lưu trữ mà bạn có thể tương tác bằng ngôn ngữ tự nhiên."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "0abc067402ec8df4": {
+    "title": {
+      "en": "Google Will Soon Start Showing App Dev's Phone Number and Address on the Play Store",
+      "vi": "Google sẽ sớm bắt đầu hiển thị số điện thoại và địa chỉ của nhà phát triển ứng dụng trên Play Store"
+    },
+    "summary": {
+      "en": "Google now considers app developer as trader and requires them to share their address and phone number which will be listed on Play Store for public.",
+      "vi": "Google hiện coi nhà phát triển ứng dụng là nhà kinh doanh và yêu cầu họ chia sẻ địa chỉ và số điện thoại của mình sẽ được liệt kê công khai trên Play Store."
+    },
+    "translated": {
+      "vi": "machine"
+    }
+  },
+  "81ec820a8fb759cd": {
+    "title": {
+      "en": "Framework’s $99 Wireless Touchpad Keyboard is up for pre-order",
+      "vi": "Bàn phím Touchpad không dây giá 99 USD của Framework đã sẵn sàng để đặt hàng trước"
+    },
+    "summary": {
+      "en": "Framework is better known for its repair-friendly laptops, but it’s branching out into peripherals too – the Wireless Touchpad Keyboard is now up for pre-order. The company announced a compact keyboard earlier this year. Like its laptops, this is made with repairability in mind…",
+      "vi": "Framework được biết đến nhiều hơn với những chiếc máy tính xách tay dễ sửa chữa, nhưng nó cũng đang mở rộng sang các thiết bị ngoại vi – Bàn phím cảm ứng không dây hiện đã có thể đặt hàng trước. Công ty đã công bố một bàn phím nhỏ gọn vào đầu năm nay. Giống như máy tính xách tay của nó, nó được tạo ra với mục đích có…"
+    },
+    "translated": {
+      "vi": "machine"
+    }
   }
 }
